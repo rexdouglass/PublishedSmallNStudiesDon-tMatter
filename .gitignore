@@ -1,0 +1,45 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter/Quarto execution byproducts
+.ipynb_checkpoints/
+.jupyter_cache/
+.quarto/
+*_cache/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local/raw data
+data/raw/cochrane_packages/*
+!data/raw/cochrane_packages/README.md
+data/raw/osf/*
+!data/raw/osf/README.md
+data/raw/bear/*
+!data/raw/bear/README.md
+data/cache/*
+!data/cache/README.md
+data/derived/*
+!data/derived/README.md
+data/interim/*
+!data/interim/README.md
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*~
+.vscode/
+.idea/
+
+
+/.quarto/

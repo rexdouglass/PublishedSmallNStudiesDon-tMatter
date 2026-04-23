@@ -1,0 +1,10 @@
+
+::: {.paper-table}
+**Table 39. Aggregate replication-project summaries**
+
+| Project | Experiments | Orig d (median) | Repl d (median) | Replication rate | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Reproducibility Project: Cancer Biology (Errington et al. 2021) | 50 experiments from 23 papers; 158 effects | 2.96 | 0.43 | 46% (39/97 positive effects on ≥3 of 5 criteria) | mean SMD 5.41 → 1.19; 85% effect-size shrinkage; animal experiments 12% replication, in vitro 54% |
+| SCORE project (Tyner et al. 2026, Nature) | 274 claims from 164 papers across 6 disciplines; 282 plotted here from the analyst_data.RData master file | 0.49 | 0.25 | 55.1% overall (Tyner 2026); ≈50% shrinkage in median d | OSF repo g5sny/bzfgy; per-claim partial correlations converted to Cohen’s d via standard formula |
+| Experimental philosophy replicability (Cova et al. 2021) | 40 replications of published x-phi studies; 33 with complete pairs | — | — | 70% (24/34 with sufficient power) | mean original r ≈ 0.39 → mean replication r ≈ 0.34; per-study data from OSF XPhiReplicability_CompleteData.csv |
+:::

@@ -1,0 +1,562 @@
+
+::: {.paper-table}
+**Table 38. Appendix D — Replication pairs: original vs. large-N replication**
+
+| # | Study | N orig | d orig | N repl | d repl | Replication |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Strack pen-in-teeth | 92 | 0.82 | 1,894 | 0.03 | RRR Wagenmakers 2016 |
+| 2 | Baumeister radishes/ego depletion | 67 | 1.76 | 2,141 | 0.04 | RRR Hagger 2016 |
+| 3 | Schooler verbal overshadowing (RRR1) | 90 | 0.80 | 2,319 | 0.03 | RRR Alogna 2014 |
+| 4 | Schooler verbal overshadowing (RRR2) | 90 | 0.80 | 3,026 | 0.16 | RRR Alogna 2014 v2 |
+| 5 | Dijksterhuis professor priming | 80 | 0.51 | 4,493 | 0.01 | RRR O’Donnell 2018 |
+| 6 | Mazar/Amir/Ariely moral reminders | 229 | 0.48 | 5,786 | 0.02 | RRR Verschuere 2018 |
+| 7 | Srull-Wyer hostility priming | 96 | 0.35 | 7,300 | 0.06 | RRR McCarthy 2018 |
+| 8 | Rand et al intuitive cooperation | 343 | 0.40 | 3,596 | 0.01 | RRR Bouwmeester 2017 |
+| 9 | Finkel commitment/forgiveness | 98 | 0.40 | 5,070 | 0.28 | RRR Cheung 2016 |
+| 10 | Bargh elderly priming | 30 | 0.70 | 120 | 0.02 | Doyen 2012 |
+| 11 | Carney power pose | 42 | 0.65 | 200 | 0.02 | Ranehill 2015 |
+| 12 | Bem precognition | 100 | 0.22 | 3,289 | 0.01 | Galak 2012 |
+| 13 | Anchoring 1 (Tversky 1974) | 152 | 0.88 | 6,344 | 0.70 | Many Labs 1 |
+| 14 | Retrospective gambler’s fallacy | 105 | 0.80 | 6,344 | 0.50 | Many Labs 1 |
+| 15 | Anchoring 2 | 152 | 0.72 | 6,344 | 0.54 | Many Labs 1 |
+| 16 | Anchoring 3 | 152 | 0.71 | 6,344 | 0.54 | Many Labs 1 |
+| 17 | Gain/loss framing (Tversky 1981) | 122 | 0.70 | 6,344 | 0.60 | Many Labs 1 |
+| 18 | Gambler’s fallacy (Oppenheimer 2009) | 59 | 0.67 | 6,344 | 0.70 | Many Labs 1 |
+| 19 | Anchoring 4 | 152 | 0.65 | 6,344 | 0.48 | Many Labs 1 |
+| 20 | Allowed/forbidden asymmetry | 122 | 0.60 | 6,344 | 0.35 | Many Labs 1 |
+| 21 | Sunk cost (Oppenheimer 2009) | 211 | 0.53 | 6,344 | 0.46 | Many Labs 1 |
+| 22 | Quote attribution (anchoring) | 89 | 0.48 | 6,344 | 0.30 | Many Labs 1 |
+| 23 | Imagined contact (Husnu 2010) | 144 | 0.38 | 6,344 | 0.01 | Many Labs 1 |
+| 24 | Flag priming (Carter 2011) | 235 | 0.30 | 6,344 | 0.01 | Many Labs 1 |
+| 25 | Currency priming (Caruso 2013) | 148 | 0.30 | 6,344 | 0.01 | Many Labs 1 |
+| 26 | Hauser 2007 trolley (side-effect) | 2,646 | 2.50 | 6,842 | 1.35 | Many Labs 2 |
+| 27 | Miyamoto 2002 correspondence bias | 58 | 1.75 | 7,197 | 1.82 | Many Labs 2 |
+| 28 | Knobe 2003 side-effect intentionality | 78 | 1.45 | 7,982 | 1.75 | Many Labs 2 |
+| 29 | Zhong-Liljenquist 2006 Macbeth | 27 | 1.02 | 7,001 | 0.00 | Many Labs 2 |
+| 30 | Ross 1977 false consensus (supermarket) | 80 | 0.99 | 7,205 | 1.18 | Many Labs 2 |
+| 31 | Tversky-Kahneman 1981 framing | 181 | 0.89 | 7,228 | 0.40 | Many Labs 2 |
+| 32 | Bauer 2012 consumerism/trust | 77 | 0.87 | 6,608 | 0.12 | Many Labs 2 |
+| 33 | Ross 1977 false consensus (traffic) | 80 | 0.80 | 7,827 | 0.95 | Many Labs 2 |
+| 34 | Gray-Wegner 2009 moral typecasting | 69 | 0.80 | 8,002 | 0.95 | Many Labs 2 |
+| 35 | Rottenstreich-Hsee 2001 affect/probability | 40 | 0.74 | 7,218 | -0.08 | Many Labs 2 |
+| 36 | Inbar 2009 disgust/gay-kissing | 44 | 0.70 | 7,117 | 0.05 | Many Labs 2 |
+| 37 | Hsee 1998 less-is-better | 83 | 0.69 | 7,646 | 0.78 | Many Labs 2 |
+| 38 | Huang 2014 direction/SES | 180 | 0.68 | 6,591 | 0.40 | Many Labs 2 |
+| 39 | Norenzayan 2002 formal/intuitive | 53 | 0.67 | 7,396 | 0.86 | Many Labs 2 |
+| 40 | Savani 2010 choice (Indian) | 128 | -0.65 | 122 | -0.03 | Many Labs 2 |
+| 41 | Alter 2007 disfluency | 41 | 0.64 | 2,580 | -0.03 | Many Labs 2 |
+| 42 | Anderson 2012 status/wellbeing | 228 | 0.57 | 6,905 | -0.04 | Many Labs 2 |
+| 43 | Giessner-Schubert 2007 vertical/power | 64 | 0.55 | 7,890 | 0.03 | Many Labs 2 |
+| 44 | Graham 2009 moral foundations | 1,548 | 0.52 | 6,966 | 0.29 | Many Labs 2 |
+| 45 | Kay 2014 structure/goal | 67 | 0.49 | 6,506 | -0.02 | Many Labs 2 |
+| 46 | Schwarz 1991 question order | 100 | 0.48 | 7,460 | -0.07 | Many Labs 2 |
+| 47 | Tversky-Gati 1978 similarity asymmetry | 144 | 0.48 | 3,549 | 0.01 | Many Labs 2 |
+| 48 | Risen-Gilovich 2008 tempting fate | 120 | 0.39 | 8,000 | 0.18 | Many Labs 2 |
+| 49 | Shafir 1993 choose/reject | 170 | 0.35 | 7,901 | -0.13 | Many Labs 2 |
+| 50 | Hauser 2007 trolley (Ned/Oscar) | 2,612 | 0.34 | 7,923 | 0.25 | Many Labs 2 |
+| 51 | Zaval 2014 heat priming | 300 | 0.31 | 4,204 | -0.03 | Many Labs 2 |
+| 52 | Critcher-Gilovich 2008 incidental anchor | 207 | 0.30 | 6,826 | 0.04 | Many Labs 2 |
+| 53 | Van Lange 1997 SVO/siblings | 631 | 0.19 | 6,234 | -0.04 | Many Labs 2 |
+| 54 | Credential-ego depletion (ML3) | 60 | 0.80 | 3,000 | 0.04 | Many Labs 3 |
+| 55 | Subjective distance (ML3) | 50 | 0.60 | 3,000 | 0.04 | Many Labs 3 |
+| 56 | Weight-importance (ML3 Jostmann) | 40 | 0.60 | 3,000 | 0.02 | Many Labs 3 |
+| 57 | Metaphoric structuring (ML3) | 50 | 0.50 | 3,000 | 0.08 | Many Labs 3 |
+| 58 | Warmth-competence (ML3) | 90 | 0.50 | 3,000 | 0.10 | Many Labs 3 |
+| 59 | Stroop conflict adaptation (ML3) | 70 | 0.45 | 3,000 | 0.06 | Many Labs 3 |
+| 60 | Availability (ML3) | 80 | 0.40 | 3,000 | 0.25 | Many Labs 3 |
+| 61 | Elaboration likelihood (ML3) | 100 | 0.40 | 3,000 | 0.20 | Many Labs 3 |
+| 62 | Mortality salience (Greenberg 1994) | 124 | 0.60 | 2,281 | 0.03 | Many Labs 4 |
+| 63 | Crosby 2008 social referencing gaze (ML5) | 25 | 1.38 | 277 | 0.40 | Many Labs 5 |
+| 64 | Eskine 2011 bitter taste → moral judgment (ML5) | 54 | 1.12 | 1,137 | 0.10 | Many Labs 5 |
+| 65 | LoBue & DeLoache 2008 snake detection (ML5) | 48 | 1.09 | 553 | 0.04 | Many Labs 5 |
+| 66 | van Dijk 2008 anger-in-bargaining (ML5) | 103 | 0.96 | 663 | 0.19 | Many Labs 5 |
+| 67 | Vohs & Schooler 2008 free will cheating (ML5) | 30 | 0.88 | 621 | 0.08 | Many Labs 5 |
+| 68 | Albarracín 2008 action priming (ML5) | 36 | 0.79 | 884 | 0.10 | Many Labs 5 |
+| 69 | Aviezer body emotions (Science) | 15 | 2.67 | 400 | 1.50 | SSRP |
+| 70 | Karpicke retrieval practice (Science) | 40 | 1.71 | 236 | 1.39 | SSRP |
+| 71 | Wilson just-think (Science) | 42 | 1.50 | 380 | 1.01 | SSRP |
+| 72 | Morewedge imagined eating (Science) | 51 | 1.39 | 732 | 0.77 | SSRP |
+| 73 | Duncan memory penumbra (Science) | 22 | 1.32 | 950 | 0.52 | SSRP |
+| 74 | Pyc mediator effectiveness (Science) | 54 | 1.32 | 1,400 | 0.70 | SSRP |
+| 75 | Janssen commons (Science) | 224 | 1.22 | 1,200 | 0.95 | SSRP |
+| 76 | Shah scarcity (Science) | 42 | 1.22 | 3,000 | 0.10 | SSRP |
+| 77 | Nishi inequality (Nature) | 1,462 | 1.09 | 1,920 | 0.75 | SSRP |
+| 78 | Ramirez writing/math (Science) | 106 | 1.09 | 1,496 | 0.02 | SSRP |
+| 79 | Hauser future cooperation (Nature) | 96 | 1.06 | 5,400 | 0.87 | SSRP |
+| 80 | Ackerman haptic priming (Nature) | 54 | 1.04 | 1,158 | 0.10 | SSRP |
+| 81 | Derex cultural complexity (Nature) | 366 | 1.01 | 2,000 | 0.75 | SSRP |
+| 82 | Kovacs social-sense (Science) | 48 | 0.85 | 456 | 0.63 | SSRP |
+| 83 | Lee washing dissonance (Science) | 72 | 0.85 | 1,024 | 0.10 | SSRP |
+| 84 | Balafoutas affirmative action | 154 | 0.75 | 2,000 | 0.63 | SSRP |
+| 85 | Gervais analytic→atheism (Science) | 179 | 0.68 | 528 | 0.06 | SSRP |
+| 86 | Kidd literary-fiction ToM (Science) | 86 | 0.58 | 792 | 0.04 | SSRP |
+| 87 | Sparrow Google effects (Science) | 46 | 0.58 | 520 | 0.06 | SSRP |
+| 88 | Gneezy overhead aversion | 237 | 0.54 | 1,268 | 0.41 | SSRP |
+| 89 | Kessler-Roth matching markets | 120 | 0.62 | 385 | 0.55 | EERP 2016 |
+| 90 | Bartling self-control contracts | 144 | 0.60 | 450 | 0.50 | EERP 2016 |
+| 91 | Friedman continuous-time games | 120 | 0.60 | 385 | 0.50 | EERP 2016 |
+| 92 | Duffy-Puzzello endogenous institutions | 240 | 0.55 | 770 | 0.48 | EERP 2016 |
+| 93 | Abeler effort/loss aversion | 120 | 0.52 | 400 | 0.45 | EERP 2016 |
+| 94 | Dulleck expert markets | 288 | 0.50 | 920 | 0.40 | EERP 2016 |
+| 95 | Fudenberg-Rand-Dreber cooperation | 180 | 0.50 | 575 | 0.42 | EERP 2016 |
+| 96 | Ambrus cheap talk | 156 | 0.48 | 500 | 0.42 | EERP 2016 |
+| 97 | Kirchler bubble markets | 200 | 0.48 | 640 | 0.40 | EERP 2016 |
+| 98 | Charness-Dufwenberg promises | 180 | 0.45 | 580 | 0.40 | EERP 2016 |
+| 99 | Kogan dual-action | 216 | 0.45 | 690 | 0.07 | EERP 2016 |
+| 100 | Ericson beliefs about future | 168 | 0.42 | 540 | 0.06 | EERP 2016 |
+| 101 | de Clippel choice consistency | 144 | 0.40 | 460 | 0.05 | EERP 2016 |
+| 102 | Huck duopoly | 192 | 0.40 | 615 | 0.08 | EERP 2016 |
+| 103 | Fehr children bargaining | 432 | 0.38 | 1,380 | 0.30 | EERP 2016 |
+| 104 | Kuziemko last-place aversion | 180 | 0.38 | 575 | 0.06 | EERP 2016 |
+| 105 | Chen allocation fairness | 200 | 0.35 | 650 | 0.08 | EERP 2016 |
+| 106 | Ifcher-Zarghamee happiness/discount | 144 | 0.35 | 460 | 0.05 | EERP 2016 |
+| 107 | RPP Palmer 2008 (PS) | 8 | 3.37 | 8 | 0.24 | RPP 2015 |
+| 108 | RPP Turk-Browne 2008 (JEPLMC) | 8 | 2.19 | 15 | 1.98 | RPP 2015 |
+| 109 | RPP Forti 2008 (PS) | 14 | 2.09 | 19 | 0.42 | RPP 2015 |
+| 110 | RPP Alvarez 2008 (PS) | 8 | 2.09 | 17 | 4.80 | RPP 2015 |
+| 111 | RPP Beaman 2008 (JEPLMC) | 100 | 2.04 | 15 | 0.26 | RPP 2015 |
+| 112 | RPP Pacton 2008 (JEPLMC) | 24 | 2.04 | 24 | 1.86 | RPP 2015 |
+| 113 | RPP McKinstry 2008 (PS) | 141 | 1.97 | 51 | 2.27 | RPP 2015 |
+| 114 | RPP Ganor-Stern 2008 (JEPLMC) | 32 | 1.96 | 32 | 2.50 | RPP 2015 |
+| 115 | RPP Winawer 2008 (PS) | 29 | 1.88 | 26 | 1.24 | RPP 2015 |
+| 116 | RPP Armor 2008 (PS) | 125 | 1.86 | 177 | 2.37 | RPP 2015 |
+| 117 | RPP Mirman 2008 (JEPLMC) | 22 | 1.81 | 30 | 1.05 | RPP 2015 |
+| 118 | RPP White 2008 (JEPLMC) | 37 | 1.59 | 38 | 1.10 | RPP 2015 |
+| 119 | RPP Morris 2008 (JEPLMC) | 24 | 1.54 | 24 | 0.47 | RPP 2015 |
+| 120 | RPP Berry 2008 (JEPLMC) | 24 | 1.48 | 32 | 0.86 | RPP 2015 |
+| 121 | RPP Roelofs 2008 (JEPLMC) | 24 | 1.48 | 29 | 0.30 | RPP 2015 |
+| 122 | RPP Tamir 2008 (PS) | 82 | 1.47 | 88 | 1.54 | RPP 2015 |
+| 123 | RPP Addis 2008 (PS) | 32 | 1.39 | 32 | 1.72 | RPP 2015 |
+| 124 | RPP Dodson 2008 (JEPLMC) | 39 | 1.35 | 33 | 0.22 | RPP 2015 |
+| 125 | RPP Oberauer 2008 (JEPLMC) | 32 | 1.35 | 21 | 0.88 | RPP 2015 |
+| 126 | RPP Farris 2008 (PS) | 280 | 1.33 | 144 | 0.18 | RPP 2015 |
+| 127 | RPP McKinstry 2008 motion | 28 | 1.32 | 110 | 1.01 | RPP 2015 |
+| 128 | RPP Morewedge 2008 imagined | 52 | 1.32 | 160 | 0.63 | RPP 2015 |
+| 129 | RPP Rule 2008 face perception | 50 | 1.32 | 155 | 0.87 | RPP 2015 |
+| 130 | RPP Campbell 2008 (JEPLMC) | 36 | 1.23 | 36 | 1.23 | RPP 2015 |
+| 131 | RPP Fischer 2008 selective exposure | 52 | 1.16 | 150 | 0.45 | RPP 2015 |
+| 132 | RPP Nurmsoo 2008 (PS) | 32 | 1.16 | 8 | 1.01 | RPP 2015 |
+| 133 | RPP Knutson 2008 neuroeconomics | 45 | 1.15 | 180 | 0.82 | RPP 2015 |
+| 134 | RPP Nurmsoo 2008 children trust | 40 | 1.15 | 120 | 0.45 | RPP 2015 |
+| 135 | RPP Vohs 2008 (PS) | 30 | 1.15 | 58 | 0.20 | RPP 2015 |
+| 136 | RPP Demany 2008 (PS) | 4 | 1.14 | 5 | 1.17 | RPP 2015 |
+| 137 | RPP LoBue 2008 (PS) | 48 | 1.10 | 48 | 0.36 | RPP 2015 |
+| 138 | RPP Eitam 2013 control | 80 | 1.09 | 250 | 0.75 | RPP 2015 |
+| 139 | RPP Williams 2008 warm coffee | 41 | 1.06 | 132 | 0.10 | RPP 2015 |
+| 140 | RPP Mitchell 2008 (JEPLMC) | 32 | 1.04 | 48 | 0.27 | RPP 2015 |
+| 141 | RPP Duncan 2008 memory | 45 | 1.01 | 180 | 0.41 | RPP 2015 |
+| 142 | RPP Schmidt 2008 face processing | 96 | 1.01 | 300 | 0.58 | RPP 2015 |
+| 143 | RPP Exline 2008 wrongdoing | 45 | 0.96 | 135 | 0.02 | RPP 2015 |
+| 144 | RPP Förster 2008 global/local | 82 | 0.94 | 71 | 0.23 | RPP 2015 |
+| 145 | RPP Liefooghe 2008 (JEPLMC) | 25 | 0.94 | 32 | 0.44 | RPP 2015 |
+| 146 | RPP Estes 2008 language | 88 | 0.93 | 280 | 0.70 | RPP 2015 |
+| 147 | RPP Mirman 2008 phonology | 55 | 0.93 | 170 | 0.70 | RPP 2015 |
+| 148 | RPP Schnall 2008 (PS) | 43 | 0.87 | 126 | 0.01 | RPP 2015 |
+| 149 | RPP Ackerman 2010 haptic | 80 | 0.87 | 320 | 0.08 | RPP 2015 |
+| 150 | RPP Moeller 2008 motor | 66 | 0.87 | 210 | 0.04 | RPP 2015 |
+| 151 | RPP Payne 2008 reversal | 88 | 0.87 | 275 | 0.56 | RPP 2015 |
+| 152 | RPP Goff 2008 stereotype threat distance | 55 | 0.86 | 51 | 0.03 | RPP 2015 |
+| 153 | RPP Lau 2008 (PS) | 36 | 0.83 | 70 | 0.07 | RPP 2015 |
+| 154 | RPP Dessalegn 2008 (PS) | 36 | 0.83 | 47 | 0.46 | RPP 2015 |
+| 155 | RPP Bartels 2011 moral time | 110 | 0.82 | 340 | 0.12 | RPP 2015 |
+| 156 | RPP Farris 2008 perception | 78 | 0.82 | 260 | 0.58 | RPP 2015 |
+| 157 | RPP van Dijk 2008 (JPSP) | 103 | 0.82 | 83 | 0.08 | RPP 2015 |
+| 158 | RPP Yap 2008 (JEPLMC) | 32 | 0.82 | 71 | 0.82 | RPP 2015 |
+| 159 | RPP Amodio 2008 (JPSP) | 48 | 0.81 | 75 | 0.15 | RPP 2015 |
+| 160 | RPP Richeson 2008 (PS) | 28 | 0.80 | 66 | 0.04 | RPP 2015 |
+| 161 | RPP Heine 2008 metacognition | 160 | 0.80 | 500 | 0.45 | RPP 2015 |
+| 162 | RPP Pleskac 2008 (JEPLMC) | 68 | 0.79 | 153 | 0.20 | RPP 2015 |
+| 163 | RPP Larsen 2008 smile | 60 | 0.77 | 200 | 0.20 | RPP 2015 |
+| 164 | RPP Cohen 2006 working self | 120 | 0.75 | 400 | 0.22 | RPP 2015 |
+| 165 | RPP Lemay 2008 partner | 145 | 0.75 | 450 | 0.39 | RPP 2015 |
+| 166 | RPP Purdie-Vaughns 2008 ID threat | 90 | 0.75 | 290 | 0.04 | RPP 2015 |
+| 167 | RPP Couture 2008 (JEPLMC) | 24 | 0.74 | 63 | 0.57 | RPP 2015 |
+| 168 | RPP McCrea 2008 (JPSP) | 28 | 0.73 | 61 | 0.61 | RPP 2015 |
+| 169 | RPP Monin 2008 moral credentialing | 188 | 0.72 | 600 | 0.10 | RPP 2015 |
+| 170 | RPP Shnabel 2008 reconciliation | 90 | 0.72 | 280 | 0.06 | RPP 2015 |
+| 171 | RPP Janiszewski 2008 (PS) | 59 | 0.71 | 120 | 0.46 | RPP 2015 |
+| 172 | RPP Morrison-Miller 2008 minorities | 37 | 0.68 | 120 | 0.41 | RPP 2015 |
+| 173 | RPP Ersner-Hershfield 2008 reg fit | 66 | 0.68 | 205 | 0.08 | RPP 2015 |
+| 174 | RPP Savani 2008 choice | 128 | 0.68 | 405 | 0.08 | RPP 2015 |
+| 175 | RPP Murray 2008 (JPSP) | 91 | 0.67 | 76 | 0.27 | RPP 2015 |
+| 176 | RPP Moeller 2008 (PS) | 53 | 0.65 | 72 | 0.07 | RPP 2015 |
+| 177 | RPP Fiedler 2008 (JEPLMC) | 39 | 0.64 | 47 | 0.97 | RPP 2015 |
+| 178 | RPP Rule-Ambady 2008 CEO profits | 50 | 0.63 | 50 | 0.56 | RPP 2015 |
+| 179 | RPP Harris 2008 cost-benefit | 120 | 0.63 | 380 | 0.08 | RPP 2015 |
+| 180 | RPP Dai 2008 (PS) | 56 | 0.59 | 51 | 0.35 | RPP 2015 |
+| 181 | RPP Halevy 2008 ingroup love | 130 | 0.58 | 400 | 0.16 | RPP 2015 |
+| 182 | RPP Oppenheimer 2008 rhyme | 100 | 0.58 | 320 | 0.06 | RPP 2015 |
+| 183 | RPP Correll 2008 implicit bias | 71 | 0.57 | 148 | 0.15 | RPP 2015 |
+| 184 | RPP Henderson 2008 implemental mindset | 46 | 0.54 | 70 | 0.31 | RPP 2015 |
+| 185 | RPP Williams 2008 (PS) | 84 | 0.48 | 125 | 0.09 | RPP 2015 |
+| 186 | RPP Harmon-Jones 2008 (JPSP) | 57 | 0.47 | 71 | 0.13 | RPP 2015 |
+| 187 | RPP Storm 2008 (JEPLMC) | 240 | 0.47 | 270 | 0.01 | RPP 2015 |
+| 188 | RPP Cox 2008 (JPSP) | 100 | 0.46 | 200 | 0.10 | RPP 2015 |
+| 189 | RPP Sahakyan 2008 (JEPLMC) | 96 | 0.46 | 108 | 0.04 | RPP 2015 |
+| 190 | RPP Stanovich-West 2008 biases/ability | 375 | 0.46 | 177 | 0.15 | RPP 2015 |
+| 191 | RPP Eitam 2008 (PS) | 86 | 0.46 | 158 | 0.21 | RPP 2015 |
+| 192 | RPP Ersner-Hershfield 2008 (JPSP) | 110 | 0.45 | 222 | 0.01 | RPP 2015 |
+| 193 | RPP Colzato 2008 (JEPLMC) | 18 | 0.45 | 32 | 0.13 | RPP 2015 |
+| 194 | RPP Masicampo 2008 (PS) | 115 | 0.44 | 166 | 0.10 | RPP 2015 |
+| 195 | RPP Fischer 2008 self-regulation | 85 | 0.43 | 140 | 0.24 | RPP 2015 |
+| 196 | RPP Blankenship-Wegener 2008 resistance | 261 | 0.42 | 251 | 0.09 | RPP 2015 |
+| 197 | RPP Centerbar 2008 (JPSP) | 133 | 0.42 | 113 | 0.19 | RPP 2015 |
+| 198 | RPP Risen-Gilovich 2008 tempting fate | 122 | 0.38 | 226 | 0.01 | RPP 2015 |
+| 199 | RPP Marsh 2008 (JEPLMC) | 48 | 0.36 | 118 | 0.17 | RPP 2015 |
+| 200 | RPP Epley 2008 (PS) | 57 | 0.35 | 78 | 0.12 | RPP 2015 |
+| 201 | RPP Lemay-Clark 2008 eggshells | 186 | 0.34 | 280 | 0.07 | RPP 2015 |
+| 202 | RPP Eastwick 2008 (JPSP) | 163 | 0.28 | 304 | 0.06 | RPP 2015 |
+| 203 | RPP Vul 2008 (PS) | 12 | 0.26 | 12 | 0.24 | RPP 2015 |
+| 204 | RPP Ranganath 2008 (PS) | 564 | 0.01 | 3,597 | 0.21 | RPP 2015 |
+| 205 | Dawson 2011 (Nature) BCL2 MV4;11 | 3 | 26.00 | 3 | 10.31 | RP:CB 2021 |
+| 206 | Dawson 2011 (Nature) BCL2 MV4;11 vs K-562 | 6 | 17.34 | 6 | 14.07 | RP:CB 2021 |
+| 207 | Ward 2010 2HG IDH1-mut AML | 4 | 8.40 | 4 | 2.23 | RP:CB 2021 |
+| 208 | Sugahara 2010 (Science) DOX accumulation 22Rv1 | 6 | 7.41 | 8 | -0.32 | RP:CB 2021 |
+| 209 | Ward 2010 2HG IDH2-mut AML | 4 | 6.75 | 4 | 4.60 | RP:CB 2021 |
+| 210 | Garnett 2012 (Nature) olaparib Ewing vs osteo | 13 | 5.06 | 12 | 0.72 | RP:CB 2021 |
+| 211 | Ward 2010 2HG IDH-mut combined | 8 | 4.36 | 8 | 3.09 | RP:CB 2021 |
+| 212 | Lin 2012 (Cell) RNA/cell 0h vs 24h | 3 | 4.19 | 3 | 0.83 | RP:CB 2021 |
+| 213 | Lin 2012 (Cell) RNA/cell Lot 2 | 3 | 4.19 | 3 | 4.11 | RP:CB 2021 |
+| 214 | Delmore 2011 (Cell) OS JQ1 xenograft | 19 | 3.26 | 24 | 1.32 | RP:CB 2021 |
+| 215 | Sirota 2011 A549 doxorubicin (pos ctrl) | 12 | 3.00 | 18 | 1.26 | RP:CB 2021 |
+| 216 | Willingham 2012 MT1A2 tumor weight | 10 | 2.54 | 13 | -1.13 | RP:CB 2021 |
+| 217 | Delmore 2011 (Cell) MYC mRNA 1h JQ1 | 2 | 2.48 | 5 | 17.41 | RP:CB 2021 |
+| 218 | Delmore 2011 (Cell) MYC mRNA 8h JQ1 | 2 | 2.41 | 5 | 11.22 | RP:CB 2021 |
+| 219 | Dawson 2011 (Nature) MV4;11 OS I-BET151 | 10 | 2.33 | 23 | 0.36 | RP:CB 2021 |
+| 220 | Delmore 2011 (Cell) MM.1S tumor burden | 19 | 2.30 | 18 | 0.56 | RP:CB 2021 |
+| 221 | Sugahara 2010 (Science) TUNEL apoptosis | 6 | 2.30 | 12 | 0.25 | RP:CB 2021 |
+| 222 | Berger 2012 (Nature) PREX2-Q1430* TFS | 20 | 1.74 | 22 | -0.03 | RP:CB 2021 |
+| 223 | Sugahara 2010 (Science) tumor weight ± iRGD | 14 | 1.61 | 14 | 0.22 | RP:CB 2021 |
+| 224 | Berger 2012 (Nature) PREX2-G844D TFS | 20 | 1.41 | 28 | 0.08 | RP:CB 2021 |
+| 225 | Sirota 2011 A549 xenograft cimetidine | 12 | 1.36 | 27 | 0.93 | RP:CB 2021 |
+| 226 | Dawson 2011 (Nature) BCL2 K-562 | 3 | 1.30 | 3 | -2.04 | RP:CB 2021 |
+| 227 | Castellarin 2012 F. nucleatum CRC | 99 | 1.01 | 40 | 0.49 | RP:CB 2021 |
+| 228 | Sirota 2011 ACHN cimetidine (neg ctrl) | 12 | 0.61 | 30 | -0.18 | RP:CB 2021 |
+| 229 | Du 2020 (psychology and health) | 64 | 3.19 | 63 | 4.29 | SCORE COVID-19 |
+| 230 | Pfattheicher 2020 (psychology and health) | 322 | 1.54 | 63 | 1.20 | SCORE COVID-19 |
+| 231 | Abouk 2020 (psychology and health) | 51 | 1.16 | 51 | 0.43 | SCORE COVID-19 |
+| 232 | González-Marrón 2020 (psychology and health) | 27 | 1.08 | 27 | 1.17 | SCORE COVID-19 |
+| 233 | Sternisko 2020 (psychology and health) | 293 | 1.08 | 1,552 | 1.21 | SCORE COVID-19 |
+| 234 | Pennycook 2020 (psychology and health) | 689 | 1.04 | 87 | 0.88 | SCORE COVID-19 |
+| 235 | Bertin 2020 (psychology and health) | 409 | 1.01 | 59 | 1.13 | SCORE COVID-19 |
+| 236 | Messner 2020 (psychology and health) | 1,140 | 0.96 | 1,142 | 0.52 | SCORE COVID-19 |
+| 237 | Malik 2020 (psychology and health) | 41 | 0.95 | 39 | 1.42 | SCORE COVID-19 |
+| 238 | Imhoff 2020 (psychology and health) | 220 | 0.81 | 102 | 0.68 | SCORE COVID-19 |
+| 239 | Bischetti 2020 (psychology and health) | 36 | 0.73 | 214,696 | 0.23 | SCORE COVID-19 |
+| 240 | Hossain 2020 (psychology and health) | 139 | 0.68 | 150 | 0.04 | SCORE COVID-19 |
+| 241 | De La Vega 2020 (psychology and health) | 64 | 0.65 | 691 | 0.03 | SCORE COVID-19 |
+| 242 | Goh 2020 (psychology and health) | 241 | 0.60 | 167 | 0.43 | SCORE COVID-19 |
+| 243 | Kachanoff 2020 (psychology and health) | 259 | 0.56 | 246 | 0.20 | SCORE COVID-19 |
+| 244 | Sala 2020 (psychology and health) | 136 | 0.54 | 162 | 0.08 | SCORE COVID-19 |
+| 245 | Wissmath 2020 (psychology and health) | 1,565 | 0.50 | 958 | 0.22 | SCORE COVID-19 |
+| 246 | Rothgerber 2020 (psychology and health) | 573 | 0.49 | 322 | 0.43 | SCORE COVID-19 |
+| 247 | Columbus 2020 (psychology and health) | 401 | 0.49 | 314 | 1.08 | SCORE COVID-19 |
+| 248 | Teovanovic 2020 (psychology and health) | 407 | 0.48 | 257 | 1.37 | SCORE COVID-19 |
+| 249 | Blagov 2020 (psychology and health) | 501 | 0.43 | 450 | 1.36 | SCORE COVID-19 |
+| 250 | Erceg 2020 (psychology and health) | 880 | 0.41 | 531 | 0.74 | SCORE COVID-19 |
+| 251 | Šrol 2020 (psychology and health) | 783 | 0.34 | 288 | 0.22 | SCORE COVID-19 |
+| 252 | Seale 2020 (psychology and health) | 1,420 | 0.30 | 660 | 0.02 | SCORE COVID-19 |
+| 253 | Stanley 2020 (psychology and health) | 278 | 0.28 | 2,140 | 0.04 | SCORE COVID-19 |
+| 254 | Simione 2020 (psychology and health) | 353 | 0.27 | 552 | 0.11 | SCORE COVID-19 |
+| 255 | Wise 2020 (psychology and health) | 1,152 | 0.25 | 1,339 | 0.01 | SCORE COVID-19 |
+| 256 | Kuratani 2020 (psychology and health) | 78 | 0.17 | 824 | 0.10 | SCORE COVID-19 |
+| 257 | Flesia 2020 (psychology and health) | 2,035 | 0.15 | 1,844 | 0.01 | SCORE COVID-19 |
+| 258 | Gerhold 2020 (psychology and health) | 1,242 | 0.15 | 10,767 | 0.17 | SCORE COVID-19 |
+| 259 | Kavanagh 2020 (psychology and health) | 3,037 | 0.14 | 3,076 | 0.16 | SCORE COVID-19 |
+| 260 | Carrillo-Vega 2020 (psychology and health) | 9,845 | 0.10 | 271,427 | 0.09 | SCORE COVID-19 |
+| 261 | Muto 2020 (psychology and health) | 8,548 | 0.09 | 3,119 | 0.22 | SCORE COVID-19 |
+| 262 | Pennycook 2020 (psychology and health) | 14,932 | 0.06 | 36,930 | 0.02 | SCORE COVID-19 |
+| 263 | Ballard 2016 (psychology and health) | 20 | 13.48 | 20 | 6.02 | SCORE main |
+| 264 | Gârleanu 2011 (economics and finance) | 18 | 5.39 | 32 | 0.93 | SCORE main |
+| 265 | Chung 2014 (economics and finance) | 1,743 | 3.27 | 2,142 | 0.10 | SCORE main |
+| 266 | Christensen 2018 (psychology and health) | 516 | 2.94 | 477 | 1.58 | SCORE main |
+| 267 | Muis 2009 (education) | 201 | 2.87 | 978 | 0.61 | SCORE main |
+| 268 | Lindqvist 2010 (political science) | 24 | 2.48 | 26 | 0.36 | SCORE main |
+| 269 | Lindqvist 2010 (political science) | 24 | 2.48 | 30 | 0.42 | SCORE main |
+| 270 | Ohtsubo 2014 (psychology and health) | 29 | 2.27 | 79 | 0.11 | SCORE main |
+| 271 | Kim 2014 (education) | 11,767 | 2.25 | 2,513 | 0.17 | SCORE main |
+| 272 | Lindqvist 2010 (political science) | 33 | 2.23 | 28 | 1.97 | SCORE main |
+| 273 | Lindqvist 2010 (political science) | 33 | 1.99 | 28 | 0.49 | SCORE main |
+| 274 | Rinaldi 2016 (psychology and health) | 20 | 1.87 | 50 | 0.27 | SCORE main |
+| 275 | Petersen 2017 (psychology and health) | 28 | 1.81 | 26 | 2.02 | SCORE main |
+| 276 | Zhou 2014 (psychology and health) | 16 | 1.80 | 13 | 0.96 | SCORE main |
+| 277 | Welzel 2012 (political science) | 118 | 1.77 | 31 | 1.63 | SCORE main |
+| 278 | Zhang 2009 (economics and finance) | 14 | 1.74 | 32 | 0.15 | SCORE main |
+| 279 | Rodriguez-Lara 2012 (economics and finance) | 9 | 1.72 | 30 | 1.59 | SCORE main |
+| 280 | Rodriguez-Lara 2012 (economics and finance) | 24 | 1.70 | 178 | 1.79 | SCORE main |
+| 281 | Yiend 2015 (psychology and health) | 14 | 1.70 | 63 | 0.03 | SCORE main |
+| 282 | Chudgar 2009 (education) | 25 | 1.62 | 48 | 0.32 | SCORE main |
+| 283 | Zhu 2009 (business) | 23 | 1.61 | 69 | 0.32 | SCORE main |
+| 284 | Burgoon 2014 (political science) | 146,090 | 1.60 | 79,242 | 0.47 | SCORE main |
+| 285 | Lai 2011 (psychology and health) | 27 | 1.55 | 78 | 0.22 | SCORE main |
+| 286 | Zakharova 2014 (political science) | 7,554 | 1.47 | 5,704 | 1.03 | SCORE main |
+| 287 | Liang 2018 (economics and finance) | 17,554 | 1.46 | 21,945 | 0.30 | SCORE main |
+| 288 | Goerg 2010 (economics and finance) | 24 | 1.44 | 28 | 0.88 | SCORE main |
+| 289 | Rodriguez-Lara 2012 (economics and finance) | 13 | 1.43 | 130 | 1.63 | SCORE main |
+| 290 | Goeree 2011 (economics and finance) | 157 | 1.40 | 198 | 1.95 | SCORE main |
+| 291 | Liang 2018 (economics and finance) | 17,554 | 1.37 | 21,945 | 0.26 | SCORE main |
+| 292 | Tsay 2014 (business) | 41 | 1.35 | 96 | 0.24 | SCORE main |
+| 293 | Griffiths 2011 (psychology and health) | 19 | 1.32 | 174 | 1.29 | SCORE main |
+| 294 | Liang 2018 (economics and finance) | 393 | 1.27 | 491 | 0.11 | SCORE main |
+| 295 | Liang 2018 (economics and finance) | 393 | 1.27 | 391 | 1.27 | SCORE main |
+| 296 | Liang 2018 (economics and finance) | 17,554 | 1.22 | 21,945 | 0.15 | SCORE main |
+| 297 | Kang 2009 (psychology and health) | 48 | 1.22 | 55 | 0.75 | SCORE main |
+| 298 | Barsbai 2017 (economics and finance) | 848 | 1.20 | 224 | 0.46 | SCORE main |
+| 299 | Barsbai 2017 (economics and finance) | 848 | 1.20 | 224 | 0.54 | SCORE main |
+| 300 | Barsbai 2017 (economics and finance) | 848 | 1.20 | 192 | 0.53 | SCORE main |
+| 301 | Lindqvist 2010 (political science) | 29 | 1.20 | 24 | 1.26 | SCORE main |
+| 302 | Hurst 2017 (psychology and health) | 138 | 1.19 | 68 | 0.80 | SCORE main |
+| 303 | Tai 2013 (sociology and criminology) | 7,840 | 1.18 | 6,904 | 1.13 | SCORE main |
+| 304 | Rodriguez-Lara 2012 (economics and finance) | 21 | 1.13 | 100 | 1.35 | SCORE main |
+| 305 | Rodriguez-Lara 2012 (economics and finance) | 21 | 1.13 | 108 | 1.35 | SCORE main |
+| 306 | Welzel 2012 (political science) | 73,175 | 1.10 | 45,119 | 0.41 | SCORE main |
+| 307 | Ku 2014 (psychology and health) | 81 | 1.10 | 454 | 0.35 | SCORE main |
+| 308 | Thomas 2014 (psychology and health) | 276 | 1.10 | 247 | 0.50 | SCORE main |
+| 309 | Bruner 2017 (economics and finance) | 106 | 1.04 | 117 | 0.45 | SCORE main |
+| 310 | Ma-Kellams 2011 (psychology and health) | 42 | 1.04 | 437 | 0.10 | SCORE main |
+| 311 | Kollmeyer 2009 (sociology and criminology) | 566 | 1.00 | 168 | 0.01 | SCORE main |
+| 312 | Vermeulen 2010 (psychology and health) | 107 | 0.98 | 556 | 0.38 | SCORE main |
+| 313 | Kollmeyer 2009 (sociology and criminology) | 566 | 0.98 | 168 | 0.49 | SCORE main |
+| 314 | Case 2011 (sociology and criminology) | 119 | 0.96 | 159 | 0.05 | SCORE main |
+| 315 | Brough 2016 (business) | 194 | 0.96 | 188 | 0.65 | SCORE main |
+| 316 | Kollmeyer 2009 (sociology and criminology) | 566 | 0.96 | 168 | 0.35 | SCORE main |
+| 317 | Rodriguez-Lara 2012 (economics and finance) | 29 | 0.96 | 188 | 1.52 | SCORE main |
+| 318 | Vermeulen 2010 (psychology and health) | 107 | 0.95 | 556 | 0.55 | SCORE main |
+| 319 | Zakharova 2014 (political science) | 2,673 | 0.94 | 4,309 | 1.02 | SCORE main |
+| 320 | Biernat 2013 (psychology and health) | 76 | 0.93 | 113 | 0.25 | SCORE main |
+| 321 | Zakharova 2014 (political science) | 5,659 | 0.91 | 5,881 | 0.87 | SCORE main |
+| 322 | Benjamin 2010 (economics and finance) | 284 | 0.89 | 1,812 | 0.00 | SCORE main |
+| 323 | Barsbai 2017 (economics and finance) | 848 | 0.89 | 224 | 0.24 | SCORE main |
+| 324 | Rodriguez-Lara 2012 (economics and finance) | 34 | 0.88 | 230 | 0.93 | SCORE main |
+| 325 | Triana 2009 (business) | 181 | 0.88 | 105 | 0.72 | SCORE main |
+| 326 | Calzo 2013 (psychology and health) | 5,867 | 0.85 | 2,438 | 0.06 | SCORE main |
+| 327 | Usta 2011 (business) | 36 | 0.85 | 274 | 0.14 | SCORE main |
+| 328 | Niehaus 2014 (education) | 1,020 | 0.84 | 1,342 | 0.53 | SCORE main |
+| 329 | Rodriguez-Lara 2012 (economics and finance) | 38 | 0.84 | 218 | 1.50 | SCORE main |
+| 330 | Woltin 2011 (psychology and health) | 36 | 0.82 | 265 | 0.11 | SCORE main |
+| 331 | Linkenauger 2009 (psychology and health) | 30 | 0.82 | 112 | 0.02 | SCORE main |
+| 332 | Sandra 2018 (psychology and health) | 43 | 0.81 | 127 | 0.01 | SCORE main |
+| 333 | Petit 2017 (business) | 47 | 0.81 | 928 | 0.04 | SCORE main |
+| 334 | Lefevre 2014 (psychology and health) | 102 | 0.81 | 288 | 0.35 | SCORE main |
+| 335 | Kollmeyer 2009 (sociology and criminology) | 397 | 0.81 | 208 | 0.24 | SCORE main |
+| 336 | Kollmeyer 2009 (sociology and criminology) | 566 | 0.78 | 168 | 0.40 | SCORE main |
+| 337 | Da 2009 (economics and finance) | 30 | 0.77 | 30 | 0.48 | SCORE main |
+| 338 | Ståhl 2012 (psychology and health) | 63 | 0.75 | 305 | 0.02 | SCORE main |
+| 339 | Srinivasan 2010 (psychology and health) | 34 | 0.74 | 144 | 0.35 | SCORE main |
+| 340 | Denson 2009 (education) | 236 | 0.73 | 222 | 0.87 | SCORE main |
+| 341 | Vermeulen 2010 (psychology and health) | 107 | 0.73 | 540 | 0.35 | SCORE main |
+| 342 | O’brien 2015 (sociology and criminology) | 1,860 | 0.71 | 1,438 | 0.87 | SCORE main |
+| 343 | Van Dijck 2009 (psychology and health) | 40 | 0.70 | 158 | 0.18 | SCORE main |
+| 344 | Ritov 2014 (business) | 109 | 0.70 | 358 | 0.36 | SCORE main |
+| 345 | Yang 2013 (business) | 101 | 0.69 | 636 | 0.24 | SCORE main |
+| 346 | Vollmann 2011 (psychology and health) | 85 | 0.67 | 101 | 1.35 | SCORE main |
+| 347 | Etkin 2015 (business) | 123 | 0.67 | 522 | 0.21 | SCORE main |
+| 348 | Rubin 2010 (business) | 475 | 0.66 | 170 | 1.49 | SCORE main |
+| 349 | Zakharova 2014 (political science) | 3,388 | 0.66 | 6,550 | 0.79 | SCORE main |
+| 350 | Lee 2018 (psychology and health) | 48 | 0.64 | 156 | 0.08 | SCORE main |
+| 351 | Vermeulen 2010 (psychology and health) | 107 | 0.64 | 540 | 0.53 | SCORE main |
+| 352 | Rich 2018 (psychology and health) | 95 | 0.60 | 474 | 0.45 | SCORE main |
+| 353 | Pastötter 2013 (psychology and health) | 400 | 0.60 | 1,392 | 0.54 | SCORE main |
+| 354 | Mason 2012 (psychology and health) | 77 | 0.59 | 484 | 0.02 | SCORE main |
+| 355 | Banerjee 2016 (economics and finance) | 68 | 0.59 | 276 | 0.26 | SCORE main |
+| 356 | Vermeulen 2010 (psychology and health) | 107 | 0.59 | 556 | 0.49 | SCORE main |
+| 357 | Navarrete 2010 (psychology and health) | 62 | 0.58 | 545 | 0.23 | SCORE main |
+| 358 | Bursztyn 2017 (economics and finance) | 60 | 0.58 | 528 | 0.01 | SCORE main |
+| 359 | Trémolière 2012 (psychology and health) | 85 | 0.58 | 667 | 0.04 | SCORE main |
+| 360 | Anderson 2011 (economics and finance) | 1,295 | 0.57 | 2,537 | 0.20 | SCORE main |
+| 361 | Gabriel 2011 (psychology and health) | 342 | 0.57 | 410 | 0.31 | SCORE main |
+| 362 | Zakharova 2014 (political science) | 5,841 | 0.57 | 6,038 | 0.84 | SCORE main |
+| 363 | Campbell 2013 (psychology and health) | 197 | 0.57 | 924 | 0.19 | SCORE main |
+| 364 | Janssen 2011 (economics and finance) | 270 | 0.57 | 630 | 0.76 | SCORE main |
+| 365 | King 2017 (business) | 81 | 0.56 | 359 | 0.93 | SCORE main |
+| 366 | Vermeulen 2010 (psychology and health) | 107 | 0.56 | 556 | 0.58 | SCORE main |
+| 367 | Mccarter 2010 (business) | 62 | 0.56 | 403 | 0.02 | SCORE main |
+| 368 | Vermeulen 2010 (psychology and health) | 107 | 0.56 | 1,096 | 0.09 | SCORE main |
+| 369 | Bateson 2012 (political science) | 38,102 | 0.55 | 27,940 | 0.54 | SCORE main |
+| 370 | Bateson 2012 (political science) | 38,102 | 0.55 | 36,496 | 0.59 | SCORE main |
+| 371 | Nakai 2011 (business) | 173 | 0.54 | 740 | 0.16 | SCORE main |
+| 372 | Vermeulen 2010 (psychology and health) | 107 | 0.54 | 556 | 0.41 | SCORE main |
+| 373 | Netemeyer 2018 (business) | 106 | 0.54 | 262 | 0.45 | SCORE main |
+| 374 | Cutright 2011 (business) | 138 | 0.54 | 497 | 0.02 | SCORE main |
+| 375 | Bhattacharjee 2017 (psychology and health) | 400 | 0.53 | 327 | 0.42 | SCORE main |
+| 376 | Vermeulen 2010 (psychology and health) | 107 | 0.53 | 1,096 | 0.09 | SCORE main |
+| 377 | Lowe 2017 (business) | 94 | 0.52 | 615 | 0.13 | SCORE main |
+| 378 | Wilcox 2009 (business) | 138 | 0.52 | 275 | 0.63 | SCORE main |
+| 379 | Ahlerup 2016 (economics and finance) | 62 | 0.52 | 77 | 0.02 | SCORE main |
+| 380 | Kappes 2012 (psychology and health) | 97 | 0.52 | 313 | 0.11 | SCORE main |
+| 381 | Bhattacharjee 2017 (psychology and health) | 360 | 0.51 | 1,020 | 0.71 | SCORE main |
+| 382 | Vermeulen 2010 (psychology and health) | 107 | 0.51 | 556 | 0.53 | SCORE main |
+| 383 | Vermeulen 2010 (psychology and health) | 107 | 0.51 | 540 | 0.61 | SCORE main |
+| 384 | Chittoor 2009 (business) | 206 | 0.50 | 174 | 0.30 | SCORE main |
+| 385 | Alves 2018 (psychology and health) | 210 | 0.49 | 749 | 0.39 | SCORE main |
+| 386 | Nelson 2009 (business) | 102 | 0.49 | 1,125 | 0.15 | SCORE main |
+| 387 | Zakharova 2014 (political science) | 933 | 0.48 | 3,054 | 0.14 | SCORE main |
+| 388 | Vermeulen 2010 (psychology and health) | 107 | 0.47 | 556 | 0.45 | SCORE main |
+| 389 | Lu 2017 (business) | 79 | 0.47 | 364 | 0.21 | SCORE main |
+| 390 | Bartels 2015 (business) | 88 | 0.46 | 750 | 0.01 | SCORE main |
+| 391 | Altmann 2012 (economics and finance) | 124 | 0.46 | 312 | 0.16 | SCORE main |
+| 392 | Hurst 2013 (psychology and health) | 2,474 | 0.45 | 22,418 | 0.30 | SCORE main |
+| 393 | Axt 2018 (psychology and health) | 1,607 | 0.45 | 372 | 0.52 | SCORE main |
+| 394 | Maluch 2015 (education) | 2,835 | 0.45 | 14,940 | 0.23 | SCORE main |
+| 395 | Wentzel 2009 (business) | 209 | 0.44 | 857 | 0.02 | SCORE main |
+| 396 | Zimmerman 2014 (education) | 507 | 0.44 | 366 | 0.51 | SCORE main |
+| 397 | Fitzgerald 2018 (sociology and criminology) | 350 | 0.44 | 150 | 0.42 | SCORE main |
+| 398 | Savani 2010 (psychology and health) | 128 | 0.44 | 448 | 0.42 | SCORE main |
+| 399 | Seuntjens 2015 (psychology and health) | 290 | 0.43 | 510 | 0.71 | SCORE main |
+| 400 | Baillon 2018 (economics and finance) | 198 | 0.43 | 846 | 0.27 | SCORE main |
+| 401 | Denson 2009 (education) | 236 | 0.42 | 222 | 0.87 | SCORE main |
+| 402 | Umashankar 2017 (business) | 192 | 0.42 | 952 | 0.03 | SCORE main |
+| 403 | Weijters 2013 (business) | 218 | 0.42 | 975 | 0.15 | SCORE main |
+| 404 | Bateson 2012 (political science) | 38,031 | 0.41 | 27,940 | 0.39 | SCORE main |
+| 405 | Vermeulen 2010 (psychology and health) | 107 | 0.41 | 540 | 0.41 | SCORE main |
+| 406 | Cohen 2015 (economics and finance) | 575 | 0.41 | 493 | 1.14 | SCORE main |
+| 407 | Alves 2018 (psychology and health) | 223 | 0.40 | 530 | 0.05 | SCORE main |
+| 408 | Bollerslev 2009 (economics and finance) | 204 | 0.40 | 153 | 0.10 | SCORE main |
+| 409 | Vermeulen 2010 (psychology and health) | 107 | 0.40 | 1,096 | 1.06 | SCORE main |
+| 410 | Vermeulen 2010 (psychology and health) | 107 | 0.40 | 1,096 | 0.07 | SCORE main |
+| 411 | Bersani 2013 (sociology and criminology) | 430 | 0.40 | 619 | 0.23 | SCORE main |
+| 412 | Leboeuf 2010 (business) | 206 | 0.39 | 557 | 0.28 | SCORE main |
+| 413 | Rozenkrants 2017 (business) | 127 | 0.39 | 376 | 0.24 | SCORE main |
+| 414 | Lammers 2018 (psychology and health) | 263 | 0.39 | 379 | 0.33 | SCORE main |
+| 415 | Li 2011 (economics and finance) | 189 | 0.38 | 256 | 0.34 | SCORE main |
+| 416 | De Langhe 2014 (business) | 114 | 0.38 | 516 | 0.18 | SCORE main |
+| 417 | Ihme 2018 (political science) | 368 | 0.37 | 1,502 | 0.08 | SCORE main |
+| 418 | Nyhan 2015 (political science) | 764 | 0.37 | 626 | 0.10 | SCORE main |
+| 419 | Kausel 2015 (business) | 271 | 0.37 | 1,062 | 0.11 | SCORE main |
+| 420 | Reh 2018 (psychology and health) | 90 | 0.36 | 574 | 0.27 | SCORE main |
+| 421 | Pickett 2014 (sociology and criminology) | 393 | 0.36 | 642 | 0.39 | SCORE main |
+| 422 | Vermeulen 2010 (psychology and health) | 107 | 0.35 | 540 | 0.45 | SCORE main |
+| 423 | Pfattheicher 2018 (psychology and health) | 225 | 0.35 | 722 | 0.03 | SCORE main |
+| 424 | Luttrell 2016 (psychology and health) | 174 | 0.35 | 813 | 0.33 | SCORE main |
+| 425 | Bhattacharjee 2017 (psychology and health) | 196 | 0.34 | 161 | 0.16 | SCORE main |
+| 426 | Bhattacharjee 2017 (psychology and health) | 198 | 0.34 | 163 | 0.38 | SCORE main |
+| 427 | Pappu 2014 (business) | 189 | 0.34 | 855 | 0.10 | SCORE main |
+| 428 | Mosimann 2017 (political science) | 19,296 | 0.33 | 18,558 | 0.51 | SCORE main |
+| 429 | Popper 2009 (business) | 238 | 0.33 | 215 | 0.45 | SCORE main |
+| 430 | Mclaren 2012 (political science) | 110,732 | 0.32 | 90,286 | 0.33 | SCORE main |
+| 431 | Einstein 2017 (political science) | 549 | 0.32 | 738 | 0.05 | SCORE main |
+| 432 | Robinson 2011 (education) | 13,213 | 0.31 | 14,057 | 0.43 | SCORE main |
+| 433 | Kupor 2018 (business) | 200 | 0.29 | 2,060 | 0.06 | SCORE main |
+| 434 | Mcdevitt 2014 (economics and finance) | 2,293 | 0.28 | 2,320 | 0.11 | SCORE main |
+| 435 | Fritz 2010 (business) | 229 | 0.27 | 471 | 0.26 | SCORE main |
+| 436 | Bersani 2013 (sociology and criminology) | 813 | 0.27 | 785 | 0.15 | SCORE main |
+| 437 | Bersani 2013 (sociology and criminology) | 813 | 0.27 | 1,384 | 0.00 | SCORE main |
+| 438 | Mclaren 2012 (political science) | 110,732 | 0.27 | 17,134 | 0.32 | SCORE main |
+| 439 | Crossley 2009 (business) | 218 | 0.27 | 1,116 | 0.11 | SCORE main |
+| 440 | Raver 2010 (psychology and health) | 226 | 0.26 | 2,006 | 0.18 | SCORE main |
+| 441 | Brons 2017 (sociology and criminology) | 25 | 0.26 | 27 | 1.04 | SCORE main |
+| 442 | Mclaren 2012 (political science) | 110,732 | 0.26 | 89,939 | 0.30 | SCORE main |
+| 443 | Mclaren 2012 (political science) | 110,732 | 0.26 | 90,130 | 0.28 | SCORE main |
+| 444 | Dumas 2018 (business) | 353 | 0.26 | 921 | 0.01 | SCORE main |
+| 445 | Alves 2018 (psychology and health) | 208 | 0.25 | 1,245 | 0.02 | SCORE main |
+| 446 | Bateson 2012 (political science) | 37,562 | 0.25 | 27,940 | 0.15 | SCORE main |
+| 447 | Denson 2009 (education) | 236 | 0.25 | 222 | 0.42 | SCORE main |
+| 448 | Pitts 2011 (political science) | 217,504 | 0.24 | 319,719 | 0.22 | SCORE main |
+| 449 | Denson 2009 (education) | 236 | 0.23 | 222 | 0.39 | SCORE main |
+| 450 | Bateson 2012 (political science) | 36,962 | 0.23 | 27,940 | 0.19 | SCORE main |
+| 451 | Datar 2017 (psychology and health) | 10,080 | 0.23 | 8,987 | 0.18 | SCORE main |
+| 452 | Liu 2016 (business) | 2,347 | 0.22 | 729 | 0.57 | SCORE main |
+| 453 | Wurst 2017 (psychology and health) | 2,001 | 0.21 | 3,281 | 0.20 | SCORE main |
+| 454 | Subramanian 2013 (business) | 18,949 | 0.21 | 12,344 | 0.03 | SCORE main |
+| 455 | Andrew 2014 (sociology and criminology) | 8,808 | 0.21 | 1,980 | 0.39 | SCORE main |
+| 456 | Roberts 2010 (education) | 1,200 | 0.20 | 13,281 | 0.18 | SCORE main |
+| 457 | Bateson 2012 (political science) | 35,963 | 0.20 | 27,940 | 0.16 | SCORE main |
+| 458 | Ready 2011 (education) | 9,493 | 0.19 | 11,286 | 0.13 | SCORE main |
+| 459 | Amira 2018 (political science) | 586 | 0.18 | 2,231 | 0.11 | SCORE main |
+| 460 | Duriez 2012 (psychology and health) | 499 | 0.18 | 1,270 | 0.03 | SCORE main |
+| 461 | Tomz 2009 (political science) | 647 | 0.17 | 2,684 | 0.01 | SCORE main |
+| 462 | Ishida 2010 (psychology and health) | 4,409 | 0.17 | 7,207 | 0.20 | SCORE main |
+| 463 | Allendorf 2013 (sociology and criminology) | 62,721 | 0.16 | 51,995 | 0.05 | SCORE main |
+| 464 | Kuo 2016 (sociology and criminology) | 1,142 | 0.16 | 2,437 | 0.07 | SCORE main |
+| 465 | Van Gastel 2013 (psychology and health) | 1,929 | 0.15 | 1,362 | 0.01 | SCORE main |
+| 466 | Seaton 2010 (education) | 265,180 | 0.15 | 62,880 | 0.62 | SCORE main |
+| 467 | Roberts 2010 (education) | 12,012 | 0.14 | 13,281 | 0.20 | SCORE main |
+| 468 | Raley 2012 (sociology and criminology) | 3,062 | 0.13 | 1,264 | 0.02 | SCORE main |
+| 469 | Vermeulen 2010 (psychology and health) | 107 | 0.13 | 556 | 0.44 | SCORE main |
+| 470 | Humphrey 2017 (psychology and health) | 10,730 | 0.13 | 319 | 0.38 | SCORE main |
+| 471 | Kim 2016 (psychology and health) | 1,064 | 0.13 | 673 | 0.18 | SCORE main |
+| 472 | Seaton 2010 (education) | 10,221 | 0.13 | 5,298 | 0.19 | SCORE main |
+| 473 | Denson 2009 (education) | 236 | 0.12 | 222 | 0.14 | SCORE main |
+| 474 | Seaton 2010 (education) | 265,180 | 0.12 | 62,880 | 0.30 | SCORE main |
+| 475 | Raley 2012 (sociology and criminology) | 7,838 | 0.11 | 2,524 | 0.01 | SCORE main |
+| 476 | Vermeulen 2010 (psychology and health) | 107 | 0.11 | 540 | 0.52 | SCORE main |
+| 477 | Roberts 2010 (education) | 12,012 | 0.11 | 13,281 | 0.18 | SCORE main |
+| 478 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 4,971 | 0.08 | SCORE main |
+| 479 | Raley 2012 (sociology and criminology) | 7,838 | 0.10 | 2,888 | 0.04 | SCORE main |
+| 480 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 4,971 | 0.04 | SCORE main |
+| 481 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 6,126 | 0.01 | SCORE main |
+| 482 | Raley 2012 (sociology and criminology) | 2,605 | 0.10 | 392 | 0.03 | SCORE main |
+| 483 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 4,971 | 0.14 | SCORE main |
+| 484 | Hiskey 2018 (political science) | 2,236 | 0.10 | 2,042 | 0.10 | SCORE main |
+| 485 | Denson 2009 (education) | 236 | 0.09 | 222 | 0.13 | SCORE main |
+| 486 | Denson 2009 (education) | 236 | 0.09 | 222 | 0.10 | SCORE main |
+| 487 | Denson 2009 (education) | 236 | 0.09 | 225 | 0.50 | SCORE main |
+| 488 | Kim 2016 (psychology and health) | 4,209 | 0.09 | 1,930 | 0.06 | SCORE main |
+| 489 | Kieffer 2011 (education) | 9,189 | 0.09 | 8,043 | 0.08 | SCORE main |
+| 490 | Armon 2013 (psychology and health) | 2,664 | 0.08 | 37,148 | 0.05 | SCORE main |
+| 491 | Fox 2009 (economics and finance) | 359,092 | 0.08 | 370,778 | 0.01 | SCORE main |
+| 492 | Seaton 2010 (education) | 265,180 | 0.07 | 62,880 | 0.54 | SCORE main |
+| 493 | Welzel 2012 (political science) | 73,175 | 0.07 | 60,452 | 0.08 | SCORE main |
+| 494 | Hiskey 2018 (political science) | 2,236 | 0.07 | 3,238 | 0.03 | SCORE main |
+| 495 | Seaton 2010 (education) | 265,180 | 0.07 | 62,880 | 0.43 | SCORE main |
+| 496 | Hiskey 2018 (political science) | 4,648 | 0.06 | 7,013 | 0.00 | SCORE main |
+| 497 | Chen 2018 (sociology and criminology) | 3,617 | 0.05 | 8,227 | 0.02 | SCORE main |
+| 498 | Echávarri 2016 (economics and finance) | 43,576 | 0.05 | 305,244 | 0.02 | SCORE main |
+| 499 | Boehm 2015 (psychology and health) | 4,458 | 0.05 | 4,971 | 0.06 | SCORE main |
+| 500 | Mclaren 2012 (political science) | 110,732 | 0.05 | 89,939 | 0.02 | SCORE main |
+| 501 | Mclaren 2012 (political science) | 110,732 | 0.05 | 90,130 | 0.07 | SCORE main |
+| 502 | Button 2017 (sociology and criminology) | 7,741 | 0.04 | 7,101 | 0.03 | SCORE main |
+| 503 | Boehm 2015 (psychology and health) | 4,458 | 0.04 | 4,971 | 0.11 | SCORE main |
+| 504 | Welzel 2012 (political science) | 73,175 | 0.04 | 60,452 | 0.11 | SCORE main |
+| 505 | Welzel 2012 (political science) | 73,175 | 0.03 | 59,584 | 0.03 | SCORE main |
+| 506 | Welzel 2012 (political science) | 73,175 | 0.03 | 59,584 | 0.09 | SCORE main |
+| 507 | Roberts 2010 (education) | 12,012 | 0.03 | 13,281 | 0.08 | SCORE main |
+| 508 | Thomas 2012 (sociology and criminology) | 160,274 | 0.02 | 110,747 | 0.03 | SCORE main |
+| 509 | Teney 2016 (sociology and criminology) | 27 | 0.01 | 28 | 0.02 | SCORE main |
+| 510 | Travers 2018 (education) | 7,977,660 | 0.00 | 49,196,731 | 0.00 | SCORE main |
+| 511 | Nichols 2004 Phil Psych | 54 | 1.44 | 131 | 1.27 | Cova 2018 xphi |
+| 512 | Liao 2014 BJA | 30 | 1.28 | 99 | 1.32 | Cova 2018 xphi |
+| 513 | Buckwalter & Schaffer 2015 Nous | 264 | 1.24 | 442 | 0.90 | Cova 2018 xphi |
+| 514 | Sarkissian 2011 M&L | 223 | 0.87 | 363 | 0.67 | Cova 2018 xphi |
+| 515 | Sytsma & Machery 2010 Phil Stud | 295 | 0.87 | 180 | 0.52 | Cova 2018 xphi |
+| 516 | Nichols 2006 JCC | 8 | 0.75 | 50 | 0.44 | Cova 2018 xphi |
+| 517 | Hitchcock & Knobe 2009 J Phil | 3,422 | 0.74 | 200 | 0.63 | Cova 2018 xphi |
+| 518 | Beebe & Buckwalter 2010 M&L | 749 | 0.74 | 514 | 0.66 | Cova 2018 xphi |
+| 519 | Nahmias 2007 Midwest Phil | 632 | 0.70 | 183 | 0.69 | Cova 2018 xphi |
+| 520 | Nadelhoffer 2004 JTPP | 44 | 0.69 | 47 | 0.83 | Cova 2018 xphi |
+| 521 | Roxborough & Cumby 2009 Phil Psych | 118 | 0.69 | 204 | 0.20 | Cova 2018 xphi |
+| 522 | Schaffer & Knobe 2012 Nous | 100 | 0.68 | 150 | 0.58 | Cova 2018 xphi |
+| 523 | Machery 2004 Cognition | 72 | 0.61 | 181 | 0.00 | Cova 2018 xphi |
+| 524 | Knobe 2004 Analysis | 77 | 0.61 | 127 | 1.27 | Cova 2018 xphi |
+| 525 | Knobe & Burra 2006 JCC | 61 | 0.61 | 102 | 0.61 | Cova 2018 xphi |
+| 526 | Knobe 2003a Analysis | 78 | 0.59 | 100 | 0.61 | Cova 2018 xphi |
+| 527 | Beebe & Shea 2013 Episteme | 376 | 0.58 | 418 | 0.74 | Cova 2018 xphi |
+| 528 | Kominsky 2015 Cognition | 60 | 0.57 | 200 | 0.58 | Cova 2018 xphi |
+| 529 | Nahmias 2005 Phil Psych | 21 | 0.52 | 186 | 0.60 | Cova 2018 xphi |
+| 530 | Alicke 2011 J Phil | 319 | 0.50 | 327 | 0.14 | Cova 2018 xphi |
+| 531 | Knobe 2003b Phil Psych | 80 | 0.46 | 292 | 0.60 | Cova 2018 xphi |
+| 532 | Nadelhoffer 2005 Phil Psych | 40 | 0.45 | 128 | 0.38 | Cova 2018 xphi |
+| 533 | Paxton 2012 Cog Sci | 92 | 0.43 | 298 | 0.13 | Cova 2018 xphi |
+| 534 | Livengood & Machery 2007 MidPhil | 95 | 0.42 | 272 | 0.57 | Cova 2018 xphi |
+| 535 | Grau & Pury 2014 RPP | 162 | 0.41 | 387 | 0.20 | Cova 2018 xphi |
+| 536 | May & Holton 2012 Phil Stud | 117 | 0.38 | 368 | 0.28 | Cova 2018 xphi |
+| 537 | Nichols & Knobe 2007 Nous | 41 | 0.38 | 80 | 0.73 | Cova 2018 xphi |
+| 538 | De Brigard 2010 Phil Psych | 72 | 0.36 | 87 | 0.27 | Cova 2018 xphi |
+| 539 | Nahmias 2006 PPR | 86 | 0.32 | 182 | 0.12 | Cova 2018 xphi |
+| 540 | Nadelhoffer & Feltz 2008 Neuroethics | 85 | 0.30 | 150 | 0.00 | Cova 2018 xphi |
+| 541 | Björnsson 2015 Phil Psych | 248 | 0.30 | 456 | 0.26 | Cova 2018 xphi |
+| 542 | Nadelhoffer 2006 Phil Explor | 126 | 0.25 | 259 | 0.41 | Cova 2018 xphi |
+| 543 | McCann 2005 Phil Psych | 106 | 0.15 | 300 | 0.04 | Cova 2018 xphi |
+| 544 | Bigot-misanthrope (Uhlmann) | 46 | 1.81 | 3,040 | 2.38 | Pipeline Project 2016 |
+| 545 | Moral cliff (Zhu & Uhlmann) | 114 | 1.37 | 3,592 | 0.40 | Pipeline Project 2016 |
+| 546 | Cold-hearted prosociality (Uhlmann) | 79 | 1.22 | 3,016 | 0.92 | Pipeline Project 2016 |
+| 547 | Higher standards, charity (Srinivasan) | 265 | 0.93 | 2,888 | 0.88 | Pipeline Project 2016 |
+| 548 | Intuitive economics (Uhlmann-Diermeier) | 226 | 0.85 | 3,192 | 1.12 | Pipeline Project 2016 |
+| 549 | Moral inversion (Uhlmann) | 130 | 0.78 | 3,133 | 0.37 | Pipeline Project 2016 |
+| 550 | Bad tipper (Uhlmann) | 79 | 0.64 | 3,706 | 0.63 | Pipeline Project 2016 |
+| 551 | Burn in hell (Uhlmann-Diermeier) | 158 | 0.46 | 3,430 | 0.48 | Pipeline Project 2016 |
+| 552 | Belief-act inconsistency (Uhlmann) | 192 | 0.38 | 3,708 | 0.33 | Pipeline Project 2016 |
+| 553 | Higher standards, company (Srinivasan) | 265 | 0.35 | 2,888 | 1.04 | Pipeline Project 2016 |
+| 554 | Nudges academic vs gov at scale | 30,000 | 0.20 | 24,000,000 | 0.03 | DellaVigna-Linos 2022 |
+| 555 | Brain-behavior r (BWAS pre-2022) | 25 | 1.50 | 50,000 | 0.16 | Marek 2022 BWAS |
+:::

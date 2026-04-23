@@ -1,0 +1,27 @@
+---
+title: "Published Small-N Studies Don't Matter (and We're Lucky They Don't)"
+subtitle: "Life with Universally Huge Treatment Effects Would Be a Nightmare"
+author: "Rex W. Douglass PhD"
+date: "April 15, 2026"
+bibliography: references.bib
+nocite: "@*"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    embed-resources: true
+    html-math-method: katex
+    css: paper.css
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{=html}
+<p class="byline">Rex W. Douglass PhD — <a href="https://www.rexdouglass.com">rexdouglass.com</a> — April 15, 2026</p>
+```
+
+{{< include _generated/paper_body.qmd >}}
