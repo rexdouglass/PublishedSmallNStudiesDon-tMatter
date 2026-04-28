@@ -90,6 +90,7 @@ PREREG_CTGOV_PRIMARY_RANDOMIZED_FIG = FIG_DIR / "plot3_ctgov_phase2plus_primary_
 ALL_SOURCE_FIG = FIG_DIR / "plot4_all_source_dn_dump.png"
 
 Z_05 = 1.959963984540054
+DN_AXIS_X_CAP = 100_000.0
 
 
 @dataclass(frozen=True)
@@ -1675,11 +1676,10 @@ def compact_axis_label(value: float) -> str:
 
 def sidecar_log_axis_bounds(df: pd.DataFrame, x_cap: float) -> tuple[float, float, float, float]:
     x_min_data = float(df["N"].min())
-    x_max_data = float(df["N"].max())
     y_min_data = float(df["D"].min())
     y_max_data = float(df["D"].max())
     x_min = 10.0 if x_min_data >= 10 else 1.0
-    x_max = min(10 ** math.ceil(math.log10(x_max_data * 1.15)), x_cap)
+    x_max = x_cap
     y_min = min(0.02, 10 ** math.floor(math.log10(max(y_min_data * 0.8, 1e-8))))
     y_min = max(y_min, 1e-5)
     y_max = max(5.0, 10 ** math.ceil(math.log10(y_max_data * 1.1)))
@@ -2235,7 +2235,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     }
 
     x_min_plot = 10
-    x_max_plot = max(100000, float(df["N"].max()) * 1.15)
+    x_max_plot = DN_AXIS_X_CAP
     y_min_plot = 0.005
     y_max_plot = 3.0
     xs = np.logspace(np.log10(x_min_plot), np.log10(x_max_plot), 400)
@@ -2400,7 +2400,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         -0.105,
         (
             "Both panels use the same preregistered confirmatory result rows; "
-            "the lower panel shows the same point estimates on a linear D axis."
+            "the x-axis is capped at 100k for comparability, while statistics use all rows."
         ),
         transform=ax.transAxes,
         fontsize=8.8,
@@ -2511,7 +2511,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
             "pct_above_p10": float("nan"),
         }
 
-    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=10_000_000.0)
+    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=DN_AXIS_X_CAP)
     xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
 
     fig = plt.figure(figsize=(10.5, 8.7), dpi=180)
@@ -2634,7 +2634,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
         -0.105,
         (
             "Both panels use D/N rows that fail the strict Figure 3 gate; "
-            "the lower panel shows the same comparator estimates on a linear D axis."
+            "the x-axis is capped at 100k for comparability, while statistics use all rows."
         ),
         transform=ax.transAxes,
         fontsize=8.8,
@@ -2689,7 +2689,7 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
         plt.close(fig)
         return {"n_rows": 0, "median_d": float("nan"), "median_n": float("nan")}
 
-    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=100_000.0)
+    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=DN_AXIS_X_CAP)
     xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
 
     fig = plt.figure(figsize=(10.5, 8.7), dpi=180)
@@ -2796,7 +2796,7 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
         -0.105,
         (
             "One phase-2+ randomized primary registry outcome per trial; "
-            "the lower panel shows the same comparator estimates on a linear D axis."
+            "the x-axis is capped at 100k for comparability, while statistics use all rows."
         ),
         transform=ax.transAxes,
         fontsize=8.8,
