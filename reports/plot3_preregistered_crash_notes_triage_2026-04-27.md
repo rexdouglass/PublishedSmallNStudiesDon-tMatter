@@ -2,6 +2,8 @@
 
 Date: 2026-04-27
 
+> Superseded status note: this triage has now been executed into the generated source catalog. The current strict layer is 172 rows, including ManyBabies 1 Bilingual, and the new rescue queues are in `plot3_scheel_quote_stat_rescue_candidates.csv`, `plot3_vandenakker_first_stat_candidates.csv`, and `plot3_rpcb_preclinical_paper_level_candidates.csv`.
+
 These notes reconcile the crashed research output against the current repo state. The main correction is that the notes mix strict rows, native-metric sidecars, already-consumed replication evidence, and large rescue queues. I did not treat any new row as strict without a verified focal selector, D-like effect, and analytic N.
 
 ## Full-Memo Corrections

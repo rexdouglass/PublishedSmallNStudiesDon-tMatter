@@ -1,5 +1,7 @@
 # Plot 3 Preregistered Missing-Points Audit - 2026-04-27
 
+> Superseded status note: this was the initial missing-points audit at the 156-row stage. The current machine-readable source catalog and generated docs are authoritative after the later Plot 3 rescue commits: `plot3_preregistered_results.csv` now contains 172 strict rows, and `plot3_preregistered_source_catalog.csv` records the additional included and staged sources.
+
 ## Current Plot 3 Gate
 
 Plot 3 currently admits standalone preregistered confirmatory result rows when all of these are true:

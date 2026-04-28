@@ -1059,6 +1059,15 @@ MANUAL_PAPER_OVERRIDES: dict[str, dict[str, str]] = {
         "url": "https://doi.org/10.1177/2515245920974622",
         "metadata_source": "manual",
     },
+    "manyBabies2AnalysisRepo": {
+        "entry_type": "misc",
+        "title": "ManyBabies 2 analysis repository",
+        "publisher": "GitHub",
+        "year": "n.d.",
+        "url": "https://github.com/manybabies/mb2-analysis",
+        "note": "Public analysis repository and paper source for the ManyBabies 2 knowledge/ignorance anticipatory-looking registered-report project; strict D/N extraction remains blocked by native model coefficients and unavailable processed result objects.",
+        "metadata_source": "manual",
+    },
     "fyfe2021manyclasses1": {
         "entry_type": "article",
         "authors": "Fyfe, Emily R. and de Leeuw, Joshua R. and Carvalho, Paulo F. and Goldstone, Robert L. and Sherman, Janelle and Motz, Benjamin A. and others",
@@ -1510,6 +1519,7 @@ SUPPLEMENTAL_PAPER_REFERENCE_KEYS = (
     "jaljuliKafkafi2023MousePhenome",
     "manyBabies2020Ids",
     "byersHeinlein2021manybabiesBilingual",
+    "manyBabies2AnalysisRepo",
     "manyBabies3Osf",
     "manyBabies4Project",
     "fyfe2021manyclasses1",
