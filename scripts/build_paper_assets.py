@@ -981,18 +981,10 @@ def groups_by_descending_count(df: pd.DataFrame, column: str) -> list[tuple[obje
 
 def point_alpha_for_count(count: int, base: float = 0.64) -> float:
     if count >= 1000:
-        return min(base, 0.18)
+        return min(base, 0.34)
     if count >= 100:
         return min(base, 0.50)
     return min(base, 0.68)
-
-
-def point_size_for_count(count: int, base: float = 34.0) -> float:
-    if count >= 1000:
-        return 18.0
-    if count >= 100:
-        return 27.0
-    return base
 
 
 def build_tess_study_index() -> pd.DataFrame:
@@ -3409,7 +3401,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "sociology and criminology": "#8b6f21",
         "business": "#c44a1e",
         "preclinical biology": "#6f6a1f",
-        "clinical medicine": "#8f969c",
+        "clinical medicine": "#9a6324",
         "mixed social/behavioral science": "#555555",
     }
     markers = {
@@ -3420,7 +3412,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "sociology and criminology": "P",
         "business": "X",
         "preclinical biology": "*",
-        "clinical medicine": ".",
+        "clinical medicine": "h",
         "mixed social/behavioral science": "v",
     }
 
@@ -3440,7 +3432,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         ax.scatter(
             group["N"],
             group["D"],
-            s=point_size_for_count(len(group)),
+            s=34,
             marker=markers.get(field, "o"),
             color=color,
             edgecolors="none",
@@ -3558,7 +3550,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
                 color="none",
                 markerfacecolor=color,
                 markeredgecolor="none",
-                markersize=6 if int(row.n_rows) >= 1000 else 8,
+                markersize=8,
                 alpha=point_alpha_for_count(int(row.n_rows), base=0.78),
                 label=f"{safe_text(row.field_label)} (n={fmt_int(row.n_rows)}, {fmt_int(row.n_sources)} source families)",
             )
