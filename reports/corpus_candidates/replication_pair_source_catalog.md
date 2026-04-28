@@ -23,7 +23,7 @@ This catalog records every source pulled in the latest replication-pair sweep, i
 | Many Labs 2 | Many Labs 2 public join | project-specific joined pair table | yes | 28 | 28 | Built from public replication summary plus original-effects files. |
 | Many Labs 3 | Altmejd harmonized Many Labs 3 | harmonized aggregated pair table | yes | 10 | 10 | Used because the ML3 manuscript tables expose ES cleanly but not a ready original-N row structure. |
 | Many Labs 3 | ML3 manuscript tables bundle | pair-buildable / cross-check | no | 10 | 0 | Pulled txt/pdf/xlsx/zip bundle and verified the project-level effect table. |
-| Many Labs 4 | ML4 public site results | replication-side near-hit | no | 17 | 0 | Site-level replication results and meta objects are public; original-side pair row still needs a clean source. |
+| Many Labs 4 | ML4 public site results | replication-side cross-check | no | 17 | 0 | Site-level replication results and meta objects are public and retained as a cross-check; the live build uses the local ML4 meta-analysis pair row. |
 | Many Labs 5 | Many Labs 5 overarching analyses | direct pair-buildable | yes | 20 | 20 | Build uses `ML5FigureData.csv` for ES and the single-effects file for version-specific Ns; adds ML5 RP:P and ML5 Revised arrows. |
 | EPRP | EPRP complete data | direct pair table | yes | 40 | 34 | Direct project CSV; effect sizes are parsed directly or recovered from numeric analysis strings. |
 | EERP | ReplicationSuccess RProjects.rda | harmonized project-specific pair table | yes | 18 | 18 | Uses the Experimental Economics subset of the harmonized 143-row RProjects object. |
@@ -47,6 +47,7 @@ This catalog records every source pulled in the latest replication-pair sweep, i
 | Other direct replications | Communication privacy SEM paths | harvest-promoted pair table | yes | 30 | 30 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Communication privacy SEM/spec-curve paths | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Contextual bias in verbal credibility (OSF raw) | harvest-promoted pair table | yes | 6 | 6 | Auto-discovered promoted harvested lead source. |
+| Coppock 2019 generalizability corpus | Coppock 2019 generalizability corpus | harvest-promoted pair table | yes | 50 | 50 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Deceptive intentions verbal credibility (OSF raw) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Doyen et al. 2012 article (manual) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | EERP | EERP 2016 supplement (manual) | harvest-promoted pair table | yes | 7 | 7 | Auto-discovered promoted harvested lead source. |
@@ -54,31 +55,39 @@ This catalog records every source pulled in the latest replication-pair sweep, i
 | Registered Replication Reports | Eerland 2016 Intention_attribution.csv | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | Eerland 2016 Intentionality.csv | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | Eerland 2016 imagery.csv | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
+| Eyewitness memory distortion in ten countries | Eyewitness ten-country paper table rescue | harvest-promoted pair table | yes | 5 | 5 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Galak et al. 2012 psi meta-analysis (manual) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Greed x SES meta-analysis script | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | Hagger 2016 RTV.csv | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
+| Clinical phase II to phase III pairs | Kerschbaumer 2020 rheumatology phase II/III | harvest-promoted pair table | yes | 32 | 32 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Linguistic frame liability clean csvs | harvest-promoted pair table | yes | 6 | 6 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Chen et al. 2013 report table | harvest-promoted pair table | yes | 3 | 3 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Croson and Donohue 2006 report | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
+| Management Science Replication Project | MSRP Davis et al. 2011 report table | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Engelbrecht-Wiggans & Katok 2008 report table | harvest-promoted pair table | yes | 4 | 4 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Ho & Zhang 2008 report table | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Kremer & Debo 2016 report table | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
+| Management Science Replication Project | MSRP Kremer et al. 2011 report table | harvest-promoted pair table | yes | 4 | 4 | Auto-discovered promoted harvested lead source. |
+| Management Science Replication Project | MSRP Ozer et al. 2011 report table | harvest-promoted pair table | yes | 4 | 4 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Schweitzer & Cachon 2000 report | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
 | Management Science Replication Project | MSRP Shunko et al. 2018 report table | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
 | Many Labs 4 | Many Labs 4 local meta-analysis (manual) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Marek 2022 BWAS | Marek 2022 BWAS paper (manual) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | O'Donnell 2018 site-level meta csvs | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Online image credibility README equivalence table | harvest-promoted pair table | yes | 11 | 11 | Auto-discovered promoted harvested lead source. |
+| PSA 004 JTB Turri | PSA 004 Turri article table rescue | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | PSA-002 object orientation lab rows | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | PSA-006 trolley country rows | harvest-promoted pair table | yes | 90 | 90 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Protzko NHB asymmetry writeup | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Protzko NHB labels writeup | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Protzko NHB referrals writeup | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
+| Other direct replications | Public-admin blame Wiley table reconstruction | harvest-promoted pair table | yes | 9 | 9 | Auto-discovered promoted harvested lead source. |
 | OSC 2015 | RPP project record alias (manual) | harvest-promoted pair table | yes | 4 | 4 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR Alogna 2014 (manual) | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR Bouwmeester 2017 (manual) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR Bouwmeester 2017 site csvs | harvest-promoted pair table | yes | 21 | 21 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR Cheung 2016 site csvs | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
+| Registered Replication Reports | RRR Colling 2020 Att-SNARC table reconstruction | harvest-promoted pair table | yes | 4 | 4 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR Elliott 2021 aggregate table rows | harvest-promoted pair table | yes | 3 | 3 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR Hagger 2016 (manual) | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | RRR McCarthy 2018 site csvs | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
@@ -91,3 +100,4 @@ This catalog records every source pulled in the latest replication-pair sweep, i
 | Other direct replications | Transparent Psi Project combined raw | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Registered Replication Reports | Wagenmakers 2016 site csv | harvest-promoted pair table | yes | 1 | 1 | Auto-discovered promoted harvested lead source. |
 | Other direct replications | Wood scaffolding participant csv | harvest-promoted pair table | yes | 2 | 2 | Auto-discovered promoted harvested lead source. |
+| Ying 2023 pilot-full-scale trials | Ying 2023 manual partial reconstruction | harvest-promoted pair table | yes | 5 | 5 | Auto-discovered promoted harvested lead source. |

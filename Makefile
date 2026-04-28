@@ -2,7 +2,7 @@ PYTHON ?= python3
 VENV ?= .venv
 QUARTO ?= quarto
 QUARTO_PYTHON := $(CURDIR)/$(VENV)/bin/python
-DOC ?= docs/index.qmd
+DOC ?=
 
 .PHONY: setup render preview clean check-quarto check-venv bibliography paper-assets
 

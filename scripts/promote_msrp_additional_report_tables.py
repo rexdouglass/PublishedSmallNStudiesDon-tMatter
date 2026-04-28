@@ -32,6 +32,10 @@ def mean_diff_se_to_d(mean_a: float, mean_b: float, se_diff: float, total_n: int
     return abs(2 * (mean_a - mean_b) / (se_diff * math.sqrt(total_n)))
 
 
+def coefficient_test_to_d(coef: float, se: float, n_subjects: int, null_value: float = 0.0) -> float:
+    return abs((coef - null_value) / se) / math.sqrt(n_subjects)
+
+
 def build_rows() -> list[dict]:
     rows: list[dict] = []
 
@@ -63,6 +67,32 @@ def build_rows() -> list[dict]:
             }
         )
 
+    davis_pdf = HARVEST / "DavisEtAl2011_ReplicationReport.pdf"
+    davis_original_d = coefficient_test_to_d(3.311, 0.104, 20)
+    davis_specs = [
+        ("wisconsin", "Wisconsin", 3.200, 0.093, 41),
+        ("michigan", "Michigan", 2.791, 0.098, 40),
+    ]
+    for suffix, label, coef, se, n_subjects in davis_specs:
+        rows.append(
+            {
+                "source_dataset": "MSRP Davis et al. 2011 report table",
+                "project": "Management Science Replication Project",
+                "pair_id": f"msrp_davis_reserve_price_{suffix}",
+                "original_title": "Davis et al. (2011) auction reserve prices",
+                "replication_title": f"MSRP Davis et al. replication ({label})",
+                "original_doi": "",
+                "replication_doi": "",
+                "outcome": "Reserve-price coefficient for number of bidders",
+                "D_original": davis_original_d,
+                "N_original": 20,
+                "D_replication": coefficient_test_to_d(coef, se, n_subjects),
+                "N_replication": n_subjects,
+                "raw_file": str(davis_pdf),
+                "match_author": "davis_auction_reserve_prices",
+            }
+        )
+
     ho_pdf = HARVEST / "HoZhang2008_ReplicationReport.pdf"
     ho_original_d = pooled_d_from_summary(76.37, 36.18, 242, 69.51, 41.27, 264)
     ho_original_n = 242 + 264
@@ -90,6 +120,73 @@ def build_rows() -> list[dict]:
             }
         )
 
+    kremer_etal_pdf = HARVEST / "KremerEtAl2011_ReplicationReport.pdf"
+    kremer_etal_specs = [
+        (
+            "condition1_utd",
+            "Condition 1, UT Dallas",
+            "Condition 1 forecast-weight deviation from rational benchmark",
+            0.39,
+            0.04,
+            43,
+            0.367,
+            0.050,
+            65,
+        ),
+        (
+            "condition1_michigan",
+            "Condition 1, Michigan",
+            "Condition 1 forecast-weight deviation from rational benchmark",
+            0.39,
+            0.04,
+            43,
+            0.286,
+            0.028,
+            69,
+        ),
+        (
+            "condition5_utd",
+            "Condition 5, UT Dallas",
+            "Condition 5 forecast-weight deviation from rational benchmark",
+            0.70,
+            0.03,
+            43,
+            0.790,
+            0.036,
+            70,
+        ),
+        (
+            "condition5_michigan",
+            "Condition 5, Michigan",
+            "Condition 5 forecast-weight deviation from rational benchmark",
+            0.70,
+            0.03,
+            43,
+            0.786,
+            0.032,
+            70,
+        ),
+    ]
+    for suffix, label, outcome, orig_coef, orig_se, orig_n, rep_coef, rep_se, rep_n in kremer_etal_specs:
+        rows.append(
+            {
+                "source_dataset": "MSRP Kremer et al. 2011 report table",
+                "project": "Management Science Replication Project",
+                "pair_id": f"msrp_kremer_etal_system_neglect_{suffix}",
+                "original_title": "Kremer et al. (2011) demand forecasting system neglect",
+                "replication_title": f"MSRP Kremer et al. replication ({label})",
+                "original_doi": "",
+                "replication_doi": "",
+                "outcome": outcome,
+                "D_original": coefficient_test_to_d(orig_coef, orig_se, orig_n, null_value=0.94),
+                "N_original": orig_n,
+                "D_replication": coefficient_test_to_d(rep_coef, rep_se, rep_n, null_value=0.94),
+                "N_replication": rep_n,
+                "raw_file": str(kremer_etal_pdf),
+                "match_author": "kremer_etal_system_neglect",
+            }
+        )
+
     kremer_pdf = HARVEST / "KremerDebo2016_ReplicationReport.pdf"
     kremer_original_d = chisq1_to_d(74.34, 100)
     kremer_specs = [
@@ -113,6 +210,73 @@ def build_rows() -> list[dict]:
                 "N_replication": n_total,
                 "raw_file": str(kremer_pdf),
                 "match_author": "kremer_debo_waittime_interaction",
+            }
+        )
+
+    ozer_pdf = HARVEST / "OzerEtAl2011_ReplicationReport.pdf"
+    ozer_specs = [
+        (
+            "cornell_report_forecast",
+            "Cornell manufacturer report",
+            "Manufacturer report sensitivity to private forecast",
+            0.643,
+            0.052,
+            8,
+            0.716,
+            0.046,
+            44,
+        ),
+        (
+            "michigan_report_forecast",
+            "Michigan manufacturer report",
+            "Manufacturer report sensitivity to private forecast",
+            0.643,
+            0.052,
+            8,
+            0.749,
+            0.046,
+            46,
+        ),
+        (
+            "cornell_capacity_report",
+            "Cornell supplier capacity",
+            "Supplier capacity sensitivity to manufacturer report",
+            0.662,
+            0.070,
+            8,
+            0.609,
+            0.051,
+            44,
+        ),
+        (
+            "michigan_capacity_report",
+            "Michigan supplier capacity",
+            "Supplier capacity sensitivity to manufacturer report",
+            0.662,
+            0.070,
+            8,
+            0.587,
+            0.051,
+            46,
+        ),
+    ]
+    for suffix, label, outcome, orig_coef, orig_se, orig_n, rep_coef, rep_se, rep_n in ozer_specs:
+        rows.append(
+            {
+                "source_dataset": "MSRP Ozer et al. 2011 report table",
+                "project": "Management Science Replication Project",
+                "pair_id": f"msrp_ozer_forecast_sharing_{suffix}",
+                "original_title": "Ozer et al. (2011) trust in forecast information sharing",
+                "replication_title": f"MSRP Ozer et al. replication ({label})",
+                "original_doi": "",
+                "replication_doi": "",
+                "outcome": outcome,
+                "D_original": coefficient_test_to_d(orig_coef, orig_se, orig_n),
+                "N_original": orig_n,
+                "D_replication": coefficient_test_to_d(rep_coef, rep_se, rep_n),
+                "N_replication": rep_n,
+                "raw_file": str(ozer_pdf),
+                "match_author": "ozer_forecast_information_sharing",
             }
         )
 

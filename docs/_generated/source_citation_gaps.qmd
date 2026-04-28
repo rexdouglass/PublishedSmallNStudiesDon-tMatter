@@ -1,0 +1,48 @@
+## Source Citation Coverage
+
+Machine-readable gap log: [source_citation_gaps.csv](../data/derived/effect_inflation_dataset/source_citation_gaps.csv)
+
+Any source row that renders without an inline citation is now tracked explicitly here. This turns missing citations into a concrete cataloging queue rather than a visual annoyance caught in screenshots.
+
+Current uncited source rows: `17` across Plot 1-3 source catalogs.
+
+### Uncited-row counts by plot and priority
+
+::: {.dataset-table .compact-count-table}
+
+| Plot | Priority | Uncited rows |
+| --- | --- | --- |
+| Plot 1 | high | 1 |
+| Plot 1 | low | 4 |
+| Plot 2 | low | 2 |
+| Plot 3 | low | 10 |
+
+:::
+
+### Highest-priority uncited rows
+
+::: {.dataset-table .source-gap-table}
+
+| Plot | Source row | Inclusion status | Priority | Gap reason |
+| --- | --- | --- | --- | --- |
+| Plot 1 | Clinical phase II to phase III pairs — Kerschbaumer 2020 rheumatology phase II/III | included | high | no_citation_key_mapped |
+| Plot 1 | Kerschbaumer 2020 rheumatology phase II/III | not_included | low | no_citation_key_mapped |
+| Plot 1 | Li 2024 PD-1/PD-L1 phase II/III oncology | not_included | low | no_citation_key_mapped |
+| Plot 1 | Marcus Four Lab Replication Hcmv7 | not_included | low | no_citation_key_mapped |
+| Plot 1 | Wils 2023 IBD phase II/III | not_included | low | no_citation_key_mapped |
+| Plot 2 | replication-pair original-side bridge | included | low | no_citation_key_mapped |
+| Plot 2 | Aczel negative-claim t-test comparator | not_included | low | no_citation_key_mapped |
+| Plot 3 | COMPare prespecified outcome audit | not_included | low | no_citation_key_mapped |
+| Plot 3 | FORRT FReD / Replication Database | not_included | low | no_citation_key_mapped |
+| Plot 3 | FReD archived workflow rescue queue | not_included | low | no_citation_key_mapped |
+| Plot 3 | Many Labs 1-5 project-level replication rows | not_included | low | no_citation_key_mapped |
+| Plot 3 | Nordic trial registration-publication linkage | not_included | low | no_citation_key_mapped |
+| Plot 3 | PSA replication-pair rows | not_included | low | no_citation_key_mapped |
+| Plot 3 | Registered Replication Reports Plot 1 pair rows | not_included | low | no_citation_key_mapped |
+| Plot 3 | Registered Replication Reports per-lab rows | not_included | low | no_citation_key_mapped |
+| Plot 3 | Self-control fMRI preregistered materials | not_included | low | no_citation_key_mapped |
+| Plot 3 | Twomey kinesiology article audit | not_included | low | no_citation_key_mapped |
+
+:::
+
+High-priority rows are included source families whose visible labels look like project titles rather than file artifacts. Those are the best low-hanging fruit for tightening citation coverage without changing plot logic.

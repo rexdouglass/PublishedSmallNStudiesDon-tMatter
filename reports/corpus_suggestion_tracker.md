@@ -187,6 +187,14 @@ as aggregating and expanding large-scale replication attempts, public lists of
 replications, and individual replications. Its inclusion criterion requires a
 replication study to specify which original study it planned to replicate.
 
+Freshness check on 2026-04-27 verified that the current OSF clean export
+`/0 Data/FReD.xlsx` is byte-for-byte identical to the local file. The local
+canonical export has 2,164 effect-level rows, 56 columns, 1,116 unique
+`fred_id` values, 786 original DOIs, and 320 replication DOIs. The data-paper
+abstract's 1,239-row count refers to the older reported-analysis snapshot
+(`qtkzy`), not to the current clean OSF export used in this build. See
+`reports/corpus_candidates/fred_freshness_check_2026-04-27.md`.
+
 Each row represents a phenomenon/effect paired between an original finding and
 a replication finding. That makes FReD closer to the question "what original
 claims did replication projects choose to test?" than to "what do journal
@@ -205,6 +213,12 @@ In the raw FReD file, about 83% of original findings with parseable p-values
 are significant at p<.05 and about 88% meet p<.10. Our D/N-normalized subset is
 more selected again, because it keeps rows with enough numeric information to
 compute D.
+
+The OSF project also contains larger archived/workflow workbooks. A spot check
+of `FReD_2.4.1.xlsx` found additional N/effect-complete rows, but the workbook
+also mixes headers, pending rows, excluded records, duplicates, and partial
+submissions. Treat that archive as a possible future rescue queue, not as a
+drop-in replacement for the current clean `FReD.xlsx`.
 
 ## Worked Or Useful Locally
 

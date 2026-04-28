@@ -3483,12 +3483,12 @@ def build_source_catalog(all_pairs: pd.DataFrame) -> pd.DataFrame:
         {
             "project": "Many Labs 4",
             "source_dataset": "ML4 public site results",
-            "classification": "replication-side near-hit",
+            "classification": "replication-side cross-check",
             "integrated_in_build": False,
             "file_rows": 17,
             "usable_pair_rows": 0,
             "raw_file": str(RAW_REPL / "ml4" / "combinedresults1.csv"),
-            "notes": "Site-level replication results and meta objects are public; original-side pair row still needs a clean source.",
+            "notes": "Site-level replication results and meta objects are public and retained as a cross-check; the live build uses the local ML4 meta-analysis pair row.",
         },
         {
             "project": "Many Labs 5",

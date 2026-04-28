@@ -191,7 +191,10 @@ def plot_main_papers(papers: pd.DataFrame, out_dir: Path, derived_dir: Path) -> 
         "Cognitive / Behavioral": "*",
         "Medicine / Clinical": "<",
     }
-    fig, ax = plt.subplots(figsize=(10.5, 7.5))
+    fig = plt.figure(figsize=(10.5, 9.3))
+    gs = fig.add_gridspec(2, 1, height_ratios=[5.1, 1.55], hspace=0.34)
+    ax = fig.add_subplot(gs[0, 0])
+    ax_hist = fig.add_subplot(gs[1, 0])
     for field_group, g in main.groupby("field_group"):
         color = colors.get(field_group, "#666666")
         marker = markers.get(field_group, "o")
@@ -359,13 +362,13 @@ def plot_main_papers(papers: pd.DataFrame, out_dir: Path, derived_dir: Path) -> 
     )
     ax.text(
         0.01,
-        -0.13,
+        -0.105,
         (
-            "Published-original candidate papers only. "
-            "Fields are collapsed from raw tags; small categories are merged."
+            "Both panels use one paper/unit median per published-original candidate; "
+            "the lower panel shows the same point estimates on a linear D axis."
         ),
         transform=ax.transAxes,
-        fontsize=9,
+        fontsize=8.8,
         color="#333333",
         ha="left",
     )
@@ -373,8 +376,72 @@ def plot_main_papers(papers: pd.DataFrame, out_dir: Path, derived_dir: Path) -> 
     ax.grid(True, which="minor", alpha=0.06, linestyle=":")
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    fig.tight_layout()
-    fig.savefig(out_dir / "candidate_published_paper_d_vs_n.png", dpi=200)
+
+    linear_d_max = 3.0
+    linear_bin_width = 0.1
+    linear_bins = np.arange(0, linear_d_max + linear_bin_width, linear_bin_width)
+    paper_values = main["D_median"].dropna()
+    paper_clipped = paper_values.clip(lower=0, upper=linear_d_max)
+    if len(paper_clipped):
+        ax_hist.hist(
+            paper_clipped,
+            bins=linear_bins,
+            density=True,
+            histtype="stepfilled",
+            color="#c44a1e",
+            alpha=0.16,
+            label=f"Published paper/unit results (n={len(paper_values):,})",
+        )
+        ax_hist.hist(
+            paper_clipped,
+            bins=linear_bins,
+            density=True,
+            histtype="step",
+            linewidth=1.6,
+            color="#c44a1e",
+        )
+    for x, label in [(0.2, "small"), (0.5, "medium"), (0.8, "large")]:
+        ax_hist.axvline(x, color="#777777", lw=0.9, linestyle=":", alpha=0.75)
+        ax_hist.text(
+            x,
+            0.94,
+            f"{label}\nd={x:g}",
+            transform=blended_transform_factory(ax_hist.transData, ax_hist.transAxes),
+            ha="center",
+            va="top",
+            fontsize=7.6,
+            color="#555555",
+        )
+    if len(paper_values):
+        paper_median = float(paper_values.median())
+        paper_median_clip = float(np.clip(paper_median, 0.0, linear_d_max))
+        ax_hist.axvline(paper_median_clip, color="#c44a1e", lw=1.1, linestyle="--")
+        ax_hist.annotate(
+            rf"$\tilde{{D}}={paper_median:.2f}$",
+            xy=(paper_median_clip, 1.0),
+            xycoords=blended_transform_factory(ax_hist.transData, ax_hist.transAxes),
+            xytext=(0, 2),
+            textcoords="offset points",
+            ha="center",
+            va="bottom",
+            fontsize=7.8,
+            color="#a33d18",
+            clip_on=False,
+        )
+    ax_hist.set_xlim(0, linear_d_max)
+    linear_ticks = np.arange(0, linear_d_max + 0.001, 0.5)
+    linear_tick_labels = [f"{tick:g}" for tick in linear_ticks]
+    linear_tick_labels[-1] = "3+"
+    ax_hist.set_xticks(linear_ticks)
+    ax_hist.set_xticklabels(linear_tick_labels)
+    ax_hist.set_ylabel("Density")
+    ax_hist.set_xlabel("Effect size magnitude D (linear scale, clipped at 3)")
+    ax_hist.legend(frameon=False, loc="upper right", fontsize=8, handlelength=2.3)
+    ax_hist.grid(False)
+    for spine in ["top", "right"]:
+        ax_hist.spines[spine].set_visible(False)
+
+    fig.savefig(out_dir / "candidate_published_paper_d_vs_n.png", dpi=200, bbox_inches="tight")
     plt.close(fig)
 
 

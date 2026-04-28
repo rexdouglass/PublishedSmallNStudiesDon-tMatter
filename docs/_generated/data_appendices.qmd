@@ -1,0 +1,1649 @@
+This generated archive preserves appendix material moved out of the main manuscript. It is not rendered inline in the companion dataset page until each section has been sorted into the plot-specific source audits. Use it as an integration backlog rather than as a reader-facing appendix.
+
+
+## Appendix A --- The real distribution --- effect sizes across science
+
+This appendix compiles the quantitative evidence underlying the claim that most treatment effects are small. It draws on replication projects, meta-analyses of meta-analyses, government-scale RCT databases, Cochrane reviews, and meta-research studies of publication bias. Within each field, the organizing question is the same: what does the distribution of true effects actually look like, once we correct for the filters between reality and what ends up in print?
+
+::: appendix-toc
+**Appendix A --- The real distribution (you are here)** [A.1 Metrics](#a-overview)[·]{.sep} [A.2 Headline numbers](#a-headline)[·]{.sep} [A.3 Psychology](#a-psych)[·]{.sep} [A.4 Medicine](#a-med)[·]{.sep} [A.5 Surgery](#a-surg)[·]{.sep} [A.6 Alt medicine](#a-alt)[·]{.sep} [A.7 Mental health](#a-mh)[·]{.sep} [A.8 Epidemiology](#a-epi)[·]{.sep} [A.9 Genetics](#a-gen)[·]{.sep} [A.10 Neuroscience](#a-neuro)[·]{.sep} [A.11 Economics](#a-econ)[·]{.sep} [A.12 Development econ](#a-dev)[·]{.sep} [A.13 Education](#a-edu)[·]{.sep} [A.14 Political science](#a-poli)[·]{.sep} [A.15 Criminology](#a-crim)[·]{.sep} [A.16 Sociology](#a-soc)[·]{.sep} [A.17 Organizational](#a-org)[·]{.sep} [A.18 Marketing](#a-mkt)[·]{.sep} [A.19 Environmental](#a-env)[·]{.sep} [A.20 Sports science](#a-sport)[·]{.sep} [A.21 Agriculture](#a-ag)[·]{.sep} [A.22 COVID-19](#a-covid)[·]{.sep} [A.23 Publication bias](#a-pubbias)[·]{.sep} [A.24 Many-analysts](#a-many)[·]{.sep} [A.25 Obs→exp reversals](#a-obs-exp)[·]{.sep} [A.26 WEIRD samples](#a-weird)[·]{.sep} [A.27 Time trajectory](#a-time) **Appendix B --- When the world gives you large effects** [B.1 Infectious disease](#b-infectious)[·]{.sep} [B.2 Deficiency replacement](#b-replacement)[·]{.sep} [B.3 Mechanical/structural](#b-mechanical)[·]{.sep} [B.4 Cardiovascular](#b-cv)[·]{.sep} [B.5 Mental health exceptions](#b-mh)[·]{.sep} [B.6 Education exceptions](#b-edu)[·]{.sep} [B.7 Policy architecture](#b-policy)[·]{.sep} [B.8 Agriculture](#b-ag)[·]{.sep} [B.9 Management](#b-mgmt)[·]{.sep} [B.10 What exceptions share](#b-pattern) **Appendix C --- The hellscape catalog** [C.1 Social priming](#c-priming)[·]{.sep} [C.2 Self-regulation](#c-depletion)[·]{.sep} [C.3 Stereotype effects](#c-stereo)[·]{.sep} [C.4 Candidate genes](#c-genes)
+:::
+
+### A.1   Metrics and what counts as "small" {#a-overview}
+
+Most of what follows uses three metrics. **Cohen's *d*** (and its near-equivalents Hedges' *g*, SMD) expresses a group difference in standard deviations. **Pearson's *r*** expresses an association as a correlation coefficient. For small effects, *r* ≈ *d*/2; so *d* = 0.20 corresponds to *r* ≈ 0.10. For binary outcomes, **odds ratios**, **risk ratios**, and **hazard ratios** express multiplicative effects on event rates.
+
+Cohen's original benchmarks --- *d* = 0.20 small, 0.50 medium, 0.80 large; *r* = 0.10 small, 0.30 medium, 0.50 large --- were proposed in 1988 as rough guides, not empirical claims. Four decades of meta-research have shown them to be systematically optimistic for most of social and behavioral science. Empirically calibrated benchmarks vary by field:
+
+::: {.paper-table}
+**Table 1. A.1 Metrics and what counts as “small”**
+
+| Source | Field | Small (25th) | Medium (50th) | Large (75th) |
+| --- | --- | --- | --- | --- |
+| Cohen [@cohen1988] | Proposed universally | r =0.10 | r =0.30 | r =0.50 |
+| Gignac & Szodorai [@gignac2016] | Individual differences (708 meta-analytic r ’s) | r =0.11 | r =0.19 | r =0.29 |
+| Lovakov & Agadullina [@lovakov2021] | Social psychology (12,170 r ’s, 134 meta-analyses) | r =0.12 | r =0.24 | r =0.41 |
+| Funder & Ozer [@funder2019] | Psychology, recommended | r =0.05 | r =0.20 | r =0.30 |
+| Doucouliagos [@doucouliagos2011] | Economics (22,000 partial r ’s) | 0.07 | 0.17 | 0.33 |
+| Kraft [@kraft2020] | Education RCTs | d <0.05 | d =0.05–0.20 | d ≥0.20 |
+:::
+
+Cohen's "medium" of *r* = 0.30 is the 75th percentile of social psychology and above the 90th percentile of education RCTs. His "large" of *r* = 0.50 is functionally absent from published meta-analyses of interventions in most applied fields. When this appendix refers to an effect as "small," it means small relative to the empirical distribution in that field, not relative to Cohen's out-of-calibration benchmarks.
+
+### A.2   Headline numbers, one row per field {#a-headline}
+
+The table below is the executive summary of this appendix. Each row is a claim about the typical effect size in a field, with the source that supplies the number. Subsequent sections unpack each row.
+
+::: {.paper-table}
+**Table 2. A.2 Headline numbers, one row per field**
+
+| Field | Typical effect | Metric | Source |
+| --- | --- | --- | --- |
+| Social psychology | r = 0.24 (median) | correlation | Lovakov & Agadullina [@lovakov2021] |
+| Psychology, replications | d → 0.15–0.20 | SMD after replication | OSC 2015; Many Labs 2; SSRP 2018; SCORE 2026 |
+| Clinical medicine (all Cochrane RCTs) | median power 13% | typical exaggeration ≈ 3× | van Zwet, Schwab & Senn [@zwet2021] |
+| Pharmacotherapy, all drugs vs. placebo | SMD = 0.37–0.41 | median Hedges’ g | Leucht et al. [@leucht2012] |
+| Oncology drugs, median OS gain | 2.1 months | overall survival | Fojo et al. |
+| Psychotherapy vs. no treatment | d = 0.70–0.80 | SMD | Wampold [@wampold2019] |
+| Psychotherapy vs. active control | d = 0.20–0.30 | SMD | Cuijpers et al. [@cuijpers2018] |
+| Brain-behavior (reproducible BWAS) | r = 0.01 | correlation | Marek et al. [@marek2022] |
+| Individual genetic variants (GWAS) | <0.1% variance each | per-SNP R ² | Visscher et al.; Yengo et al. |
+| Academic nudge studies | 8.7 pp | percentage points | DellaVigna & Linos [@dellavigna2022] |
+| Same nudges at government scale | 1.4 pp (6× shrinkage) | percentage points | DellaVigna & Linos [@dellavigna2022] |
+| Development interventions | d ≈ 0.12 | SMD | Vivalt [@vivalt2020] |
+| Education RCTs | median d = 0.10; weighted mean 0.04 | SMD | Kraft [@kraft2020] |
+| Campaign persuasion effects | ≈ 0 | percentage points | Kalla & Broockman [@kalla2018] |
+| Hot-spots policing | d = 0.13 | SMD | Braga et al. [@braga2019] |
+| Nutritional epidemiology (meta-analyses) | RR ≈ 0.96 | relative risk | Schoenfeld & Ioannidis [@schoenfeld2013] |
+| Personnel selection (cognitive ability) | r = 0.31 | validity coefficient | Sackett et al. [@sackett2022] |
+| Digital advertising on sales ( R ²) | ≈ 0.000005 | individual-level R ² | Lewis & Rao [@lewis2015] |
+| Carbon pricing on emissions | −5 to −21% | % emissions | Döbbeling-Hildebrandt et al. [@d2024] |
+| Nitrogen fertilizer on crop yield | +30 to +75% | % yield | Global meta-analyses |
+| Insecticide-treated bednets on child mortality | RR = 0.83 (17% reduction) | relative risk | Cochrane |
+:::
+
+::: {#a-fields .part-label}
+Part I --- Field by field
+:::
+
+### A.3   Psychology {#a-psych}
+
+#### Empirical benchmarks across the whole field
+
+Richard, Bond, and Stokes-Zoota [@richard2003] synthesized 322 meta-analyses covering one century of social psychology --- roughly 25,000 studies and 8 million participants --- and reported a mean effect of *r* = 0.21 with a median of 0.18. Fewer than 24% of effects reached Cohen's "medium" threshold of *r* = 0.30. Lovakov and Agadullina [@lovakov2021] updated this using 12,170 correlations from 134 meta-analyses, with 25th/50th/75th percentiles at 0.12/0.24/0.41. Gignac and Szodorai [@gignac2016], examining 708 individual-differences correlations, found percentiles at 0.11/0.19/0.29, with fewer than 3% of correlations reaching Cohen's "large" of *r* = 0.50. Funder and Ozer [@funder2019] argued that *r* ≥ 0.40 should be viewed with suspicion as likely inflated.
+
+#### Replication projects
+
+::: {.paper-table}
+**Table 3. Replication projects**
+
+| Project | Scope | Original | Replicated | Pass rate |
+| --- | --- | --- | --- | --- |
+| Open Science Collaboration [@collaboration2015] | 100 psych studies | r =0.403 | r =0.197 | 36% |
+| Many Labs 2 [@klein2018] | 28 effects, 125 samples, N=15,305 | d =0.60 | d =0.15 | 50–54% |
+| SSRP [@camerer2018] | 21 Nature/Science studies | — | ~50% of original | 62% |
+| Exp. Economics RP [@camerer2016] | 18 AER/QJE lab studies | — | 66% of original | 61% |
+| SCORE [@tyner2026] | 274 claims, 164 papers, 12 disciplines | r =0.25 | r =0.10 | 55% |
+:::
+
+#### Famous failed and severely shrunken effects
+
+::: {.paper-table}
+**Table 4. Famous failed and severely shrunken effects**
+
+| Effect | Original | Replication | Shrinkage |
+| --- | --- | --- | --- |
+| Ego depletion | d =0.62 | d =0.04 (23 labs, N=2,141) | ~94% |
+| Facial feedback (pen-in-mouth) | 0.82 units | 0.03 units (17 labs) | ~96% |
+| Elderly-walking priming (Bargh) | d =0.82–1.08 | d ≈0 | ~100% |
+| Power posing (hormonal effects) | significant | p >0.16 (Ranehill) | ~100% |
+| Money priming | d =0.34–0.75 | d =−0.02 (36 labs) | ~100% |
+| Warm cup → warm personality | r =0.28–0.31 | r ≈0 (N=861) | ~100% |
+| Implicit bias (IAT) → behavior | r =0.274 | r =0.148 (Oswald meta) | ~46% |
+| Growth mindset interventions | d =0.08 [@sisk2018] | d =0.02 (highest-quality, Macnamara 2023) | ~75% |
+| Stereotype threat | d >0.5 | d =0.22–0.26 meta; possibly null after bias correction | 50–100% |
+:::
+
+::: {.callout .coral}
+**Anchoring is the exception.** Numerical anchoring on judgments replicates consistently and at substantial magnitudes (*d* ≈ 0.4--0.8). It is the rare social priming effect that survives. Its survival may tell us something about the others: anchoring operates on an explicit numerical judgment, a short causal chain with a clean measurement. Most failed priming effects asked whether an incidental cue changed a distant behavior through an inferred cognitive route.
+:::
+
+#### Noncognitive skills: grit, mindset, deliberate practice
+
+**Grit** (Credé, Tynan & Harms [@cred2017] (2017); 88 samples, N = 66,807): population-corrected correlation with academic performance is ρ = 0.18. Grit correlates ρ = 0.84 with conscientiousness, and after controlling for conscientiousness its incremental validity is β = −0.02 --- null.
+
+**Growth mindset**: the correlation with achievement is *r* ≈ 0.09 (about 1% of variance). Intervention effects are *d* = 0.08 overall [@sisk2018], declining to *d* = 0.05 in Macnamara & Burgoyne [@macnamara2023] (63 studies, N = 97,672), and *d* = 0.02 in the six highest-quality studies. After publication-bias correction, effects are non-significant. Studies by authors with financial conflicts of interest reported significantly larger effects.
+
+**Deliberate practice** (Macnamara, Hambrick & Oswald [@macnamara2014]; 88 studies): practice explains 26% of variance in games, 21% in music, 18% in sports, 4% in education, and less than 1% in professional performance. Among elite performers specifically, practice explains about 1%. Ericsson's "10,000 hours" substantially overstated the contribution.
+
+#### Cognitive training and far transfer
+
+Sala et al. [@sala2019] conducted a second-order meta-analysis across 233 comparisons spanning all cognitive training domains. Once placebo effects and publication bias were controlled, the overall far-transfer effect was zero, with zero between-study variance. Near transfer exists (*g* ≈ 0.37--0.72), but far transfer to fluid intelligence, academic achievement, or real-world performance is consistently null. Owen et al. [@owen2010] tested over 11,000 participants on online brain training and found no transfer.
+
+#### Clinical psychology and psychotherapy
+
+See section A.7.
+
+### A.4   Medicine & pharmacology {#a-med}
+
+#### The Cochrane baseline
+
+Van Zwet, Schwab, and Senn [@zwet2021] analyzed 23,551 RCTs from the Cochrane Database and found median statistical power of only 13%. At this power level, significant results overestimate true effects by approximately a factor of 3; even a just-significant result (*p* = 0.05) overestimates by about 70%. About 88% of RCTs have power below 80%.
+
+Leucht et al. [@leucht2012] compared drug efficacy across 94 meta-analyses and found median SMDs of 0.37 for general medicine and 0.41 for psychiatric drugs --- small by Cohen's benchmarks, and indistinguishable between fields. Leucht et al. [@leucht2015] subsequently found that only 11 of 17 commonly used medications demonstrated a minimal clinically important difference.
+
+Pereira, Horwitz, and Ioannidis [@pereira2012] asked how often medical interventions produce very large effects (OR ≥ 5). Across 85,002 forest plots from 3,082 Cochrane reviews, roughly 10% of first-published trials reported very large effects, but these almost always came from small studies with fewer than 20 events. Only one intervention across the entire Cochrane database --- extracorporeal oxygenation for neonates --- demonstrated a very large effect on mortality with high-quality supporting evidence.
+
+#### Drug-class summary
+
+::: {.paper-table}
+**Table 5. Drug-class summary**
+
+| Intervention | Comparator | Effect | Source |
+| --- | --- | --- | --- |
+| Antidepressants (21 drugs) | Placebo | SMD=0.30 | Cipriani et al. [@cipriani2018] (522 RCTs, N=116,477) |
+| Antidepressants, FDA vs. published | — | Published inflated ~32% | Turner et al. [@turner2008] |
+| Antipsychotics (schizophrenia) | Placebo | SMD=0.47; NNT=5 for minimal response | Huhn et al. [@huhn2019] ; Leucht |
+| Anxiolytics (SSRI/SNRI/benzo, GAD) | Placebo | g =0.37 | Bandelow et al. |
+| Methylphenidate (ADHD core symptoms) | Placebo | SMD=−0.78 (large) | Multiple meta-analyses |
+| Paracetamol (back pain) | Placebo | Zero | Machado et al. [@machado2015] |
+| NSAIDs (spinal pain) | Placebo | Clinically unimportant | Machado et al. [@machado2017] |
+| Ibuprofen 400mg (acute pain) | Placebo | NNT=2.5 | Moore et al. |
+| Statins (primary prev., low risk) | Placebo | NNT=167 over 5 years | CTT Collaboration |
+| Statins (secondary prev.) | Placebo | NNT=19–21 over 10 years | CTT Collaboration |
+| Antihypertensives, per 10 mmHg SBP | — | RR=0.80 for CVD events | Ettehad et al. [@ettehad2016] |
+| SGLT2 inhibitors (empagliflozin) | Placebo | HR=0.62 CV death | EMPA-REG OUTCOME |
+| GLP-1 agonists (liraglutide) | Placebo | HR=0.87 MACE | LEADER trial |
+| Oncology drugs (median OS gain) | Control | 2.1 months | Fojo et al. |
+| Cancer drugs at EMA approval | — | 57% lacked evidence of OS/QoL benefit | Davis et al. [@davis2017] |
+| Nicotine replacement therapy | Placebo | OR=1.37–1.41 for quit | Cochrane |
+| Varenicline | Placebo | OR=2.33 for quit | Cochrane |
+| Naltrexone (alcohol, heavy drinking) | Placebo | NNT=12 | Jonas et al. [@jonas2014] |
+| Opioid agonist treatment (mortality) | Out of treatment | Rate ratio ~3.2× lower | Sordo et al. [@sordo2017] |
+:::
+
+::: {.callout .blue}
+**Preclinical to clinical.** Sena et al. [@sena2010] showed publication bias inflates preclinical animal stroke effects by \~31%. The Reproducibility Project: Cancer Biology [@errington2021] replicated 50 experiments and found replication effects 85% smaller on average, with 40% replication rate. Roughly 5% of animal-tested therapeutic interventions obtain human regulatory approval [@ineichen2024] --- a useful anchor for the magnitude of the preclinical-to-clinical translation gap.
+:::
+
+### A.5   Surgery & procedures {#a-surg}
+
+Sham-controlled surgical trials have produced some of modern medicine's most striking null findings. Jonas et al. [@jonas2015] meta-analyzed 39 studies comparing real surgery to sham procedures and found an overall SMD of 0.34, falling to 0.13 (non-significant) for pain-related conditions. Sham-surgery patients achieved 78% of the improvement seen in active surgery groups for pain outcomes.
+
+::: {.paper-table}
+**Table 6. A.5 Surgery & procedures**
+
+| Procedure | Trial | Finding |
+| --- | --- | --- |
+| Arthroscopic knee surgery (OA) | Moseley et al. [@moseley2002] , N=180 | Zero vs. sham |
+| Arthroscopic partial meniscectomy | Sihvonen et al. (FIDELITY) 2013, N=146 | Zero vs. sham at 2y and 5y |
+| PCI for stable angina | ORBITA 2018, N=200 | +16.6 s exercise time (NS) |
+| PCI monotherapy for stable angina | ORBITA-2 2023, N=301 | +59.5 s — about 1 antianginal med |
+| Invasive vs. conservative strategy, stable CAD | ISCHEMIA 2020, N=5,179 | No difference in composite CV outcome |
+| Vertebroplasty (spinal fractures) | Multiple blinded RCTs | Null vs. sham |
+:::
+
+A review of 53 sham-controlled surgical trials found sham surgery as effective as real surgery in more than half. Because most surgical trials cannot be blinded, the published surgical literature is systematically inflated relative to what properly controlled designs reveal.
+
+### A.6   Alternative & complementary medicine {#a-alt}
+
+**Acupuncture** (Vickers et al. individual patient meta-analysis, 39 RCTs, 20,827 patients): acupuncture vs. sham acupuncture shows SMDs of 0.15--0.23; acupuncture vs. no treatment shows 0.42--0.57. About 75% of the total effect is attributable to non-specific (placebo) factors; roughly 25% is the "specific" needling effect.
+
+**Homeopathy** (Shang et al. [@shang2005], 110 trials): the eight largest, highest-quality trials yielded OR = 0.88 (95% CI 0.66--1.18, *p* = 0.41) --- non-significant. Australia's NHMRC [@nhmrc2015] concluded there is no good-quality evidence homeopathy is effective for any health condition.
+
+**Chiropractic / spinal manipulation** for chronic low back pain: SMT vs. recommended therapies produces a pain reduction of −5.63 points on a 0--100 scale --- statistically significant, clinically trivial.
+
+### A.7   Mental health treatments {#a-mh}
+
+Effect sizes in psychotherapy research depend critically on the comparison group.
+
+::: {.paper-table}
+**Table 7. A.7 Mental health treatments**
+
+| Intervention | Comparison | Effect | Source |
+| --- | --- | --- | --- |
+| Psychotherapy (general, depression) | Waitlist / no treatment | d =0.70–0.80 | Smith & Glass [@smith1977] ; Wampold 2019 |
+| Psychotherapy (depression) | Active placebo | d =0.20–0.30 | Cuijpers et al. [@cuijpers2018] |
+| Bona fide therapy A vs. bona fide therapy B | — | d =0.00–0.20 (“Dodo bird”) | Luborsky; Wampold |
+| CBT for anxiety | Waitlist | d =1.23 | Carpenter et al. [@carpenter2018] |
+| CBT for anxiety | Placebo | g =0.56 (2008–2018); 0.24 (2017–2022) | Carpenter et al. |
+| Mindfulness-based programs | Active controls | SMD=0.30–0.38 | Goyal et al. [@goyal2014] (JAMA) |
+| Trauma-focused CBT, EMDR (PTSD) | Waitlist | d ≈1.0+; NNT<4 | Cusack et al. [@cusack2016] |
+| CBT-I (insomnia) | Control | g =0.57–0.98 | van Straten et al. [@straten2017] (2017) |
+:::
+
+::: {.callout .purple}
+**The waitlist inflation problem.** Waitlist controls typically show *negative* change over time as symptomatic clients wait for help they know is coming; this inflates the apparent effect of any intervention compared against them. Active placebo and treatment-as-usual comparisons, which are more honest counterfactuals, routinely yield effects half the size or smaller. Almost every flagship psychotherapy finding collapses by about 50--70% when the comparator moves from waitlist to active control.
+:::
+
+### A.8   Epidemiology & nutrition {#a-epi}
+
+Nutritional epidemiology is the field where the gap between individual studies and meta-analyses is largest. Schoenfeld and Ioannidis [@schoenfeld2013] found that 80% of common cookbook ingredients had been linked to cancer in at least one study. Individual studies claimed median relative risks of 2.20 (increased-risk claims) or 0.52 (decreased-risk claims). Meta-analyses of the same associations yielded a median RR of 0.96, with interquartile range 0.85--1.10 --- essentially null.
+
+::: {.paper-table}
+**Table 8. A.8 Epidemiology & nutrition**
+
+| Exposure | Outcome | Effect | Source |
+| --- | --- | --- | --- |
+| Smoking | Lung cancer | RR≈15–30 | Established epidemiology |
+| Mediterranean diet | Composite CVD | HR=0.70 | PREDIMED |
+| Mediterranean diet | All-cause mortality | HR=1.0 (null) | PREDIMED |
+| Processed meat (per 50g/day) | Colorectal cancer | RR=1.18 | IARC meta |
+| Coffee (3–5 cups/day) | All-cause mortality | RR=0.87 | Meta-analyses |
+| Sugar-sweetened beverages (per serving/day) | Type 2 diabetes | RR=1.27 | Meta-analyses |
+| Vitamin D supplementation | Mortality, CVD, cancer | ~Null | VITAL trial; Bolland meta |
+| Multivitamins | All-cause mortality | RR=0.98 (null) | 21-RCT meta |
+| Fish oil (EPA+DHA) | MACE | HR=0.99 (STRENGTH) vs. 0.75 (REDUCE-IT) | Conflicting RCTs |
+| Salt reduction (6 g/day) | SBP in hypertensives | −7.1 mmHg | He & MacGregor |
+| Exercise (vs. sedentary, meeting guidelines) | All-cause mortality | HR≈0.80 | Multiple large cohorts |
+| PM2.5 (per 10 μg/m³) | All-cause mortality | RR=1.08 | WHO; Chen & Hoek [@chen2020] |
+:::
+
+::: {.callout .teal}
+**Mendelian randomization has overturned many observational findings.** The alcohol "J-curve" (observational RR = 0.75--0.85 for moderate drinking) was undone by MR studies showing monotonically increasing harm (OR = 1.27 per SD increase). Vitamin D's extensive observational protective associations are mostly null in MR. HDL cholesterol's inverse association with CVD proved non-causal. Where MR confirms causality --- LDL → CHD, BMI → diabetes, smoking → cancer --- concordance with RCTs strengthens confidence that the effect is genuinely causal.
+:::
+
+### A.9   Genetics {#a-gen}
+
+The central tension in genetics is between large aggregate heritability and minuscule per-variant effects. Polderman et al. [@polderman2015] meta-analyzed 17,804 traits across 2,748 twin publications and 14.6 million twin pairs, finding overall heritability of 49%. Yet individual genetic variants each explain less than 0.1% of variance for complex traits.
+
+::: {.paper-table}
+**Table 9. A.9 Genetics**
+
+| Trait | Twin h ² | PGS R ² | Per-SNP contribution |
+| --- | --- | --- | --- |
+| Height | 80–90% | ~25–40% | ~0.003% (12,111 SNPs in Yengo 2022) |
+| Intelligence | 50–80% | ~10% | <0.01% |
+| BMI | 40–70% | ~8–9% | <0.01% |
+| Schizophrenia | 60–80% | ~7–18% liability | <0.05% |
+| Major depression | 30–40% | ~2–3% | <0.01% |
+| Educational attainment | 40–60% | ~10–15% | <0.01% |
+:::
+
+**The candidate gene era was a catastrophe.** Border et al. [@border2019] definitively showed that the 18 most-studied candidate genes for depression --- including 5-HTTLPR --- are all null in adequately powered samples (N \> 100,000). As a set, depression candidate genes were no more associated with depression than randomly selected non-candidate genes. Duncan and Keller [@duncan2011] found that 96% of novel candidate gene-by-environment interaction studies reported significant results, but only 27% of replication attempts did --- consistent with the interpretation that most or all positive cG×E findings are type I errors.
+
+### A.10   Neuroscience {#a-neuro}
+
+Marek et al. [@marek2022], analyzing \~50,000 individuals across ABCD, HCP, and UK Biobank, found that the median reproducible brain-behavior correlation is *r* = 0.01, with the top 1% of effects at *r* \> 0.06. Published small-sample neuroimaging studies (median N ≈ 25) routinely reported correlations of *r* = 0.20 to 0.80 --- inflated by one to two orders of magnitude. Even at N = 1,000, half of statistically significant associations were inflated by at least 100%. Approximately N = 9,500 individuals are needed for 80% power to detect the largest 1% of brain-behavior effects.
+
+Button et al. [@button2013] found the median statistical power of neuroscience studies to be about 21%. Szucs and Ioannidis [@szucs2017] examined 26,841 statistical records from 3,801 neuroscience and psychology papers and found median power of 12%, with significant results reporting median *d* = 0.93 while non-significant results sat at *d* = 0.24 --- the fingerprint of massive selective inflation.
+
+### A.11   Economics & behavioral policy {#a-econ}
+
+Ioannidis, Stanley, and Doucouliagos [@ioannidis2017] analyzed 64,076 estimates from 6,700+ empirical studies across 159 economics research literatures. They found median statistical power of 18%, with roughly 80% of reported effects exaggerated; the typical inflation factor was 2×, and one-third of effects were inflated by a factor of four or more. Doucouliagos [@doucouliagos2011] examined 22,000 partial correlations and found a median absolute partial *r* of 0.173.
+
+The clearest demonstration of publication-to-reality shrinkage comes from DellaVigna and Linos [@dellavigna2022], who compared 26 academic nudge studies to 126 RCTs (covering 23 million individuals) run by the U.S. Office of Evaluation Sciences and the Behavioural Insights Team North America. Academic papers reported an average impact of 8.7 percentage points (a 33% increase over control groups). Government nudge units found 1.4 percentage points (an 8% increase) --- a 6× gap, roughly 70% of which is attributable to selective publication.
+
+::: {.paper-table}
+**Table 10. A.11 Economics & behavioral policy**
+
+| Finding | Effect | Source |
+| --- | --- | --- |
+| Auto-enrollment 401(k) participation | 37% → 86% | Madrian & Shea [@madrian2001] |
+| Opt-out vs. opt-in organ donation | ~99% vs. low teens | Johnson & Goldstein [@johnson2003] |
+| Default effects (meta-analytic) | d =0.68, I²=98% | Jachimowicz et al. [@jachimowicz2019] |
+| Loss aversion coefficient λ (original) | ~2.25 | Kahneman & Tversky |
+| Loss aversion λ (meta-analytic) | 1.31 to 1.96 | Brown et al. [@brown2024] ; others |
+| Financial literacy interventions on behavior | ~0.1% variance ( r ≈0.03) | Fernandes, Lynch & Netemeyer [@fernandes2014] |
+| Financial literacy (updated meta) | ~3× larger than above | Kaiser et al. [@kaiser2022] |
+| Minimum wage employment effect (bias-corrected) | Close to zero | Doucouliagos & Stanley [@doucouliagos2009] |
+| Active labor market programs, short run | ~Zero | Card, Kluve & Weber [@card2018] (207 studies) |
+| Active labor market programs, 2–3 years later | Modestly positive | Card, Kluve & Weber [@card2018] |
+:::
+
+Three independently collected economics corpora --- the Brodeur, Cook & Heyes [@brodeur2020] "Methods Matter" file of causal-inference tests in top-25 econ journals (2015--2018), the Gechert--Havránek--Iršová--Kolcunová [@gechert2022] meta-analysis of the capital-labor elasticity σ (121 studies, 1961--2017), and the Havránek [@havranek2015] meta-analysis of the elasticity of intertemporal substitution (41 micro-panel studies, 1981--2012) --- when placed on the same log *N* × log \|*d*\| axes as psychology's statcheck corpus, produce a combined slope of -0.55 (*r* = -0.84, 272 papers, 75% above *p* \< 0.05). This is essentially identical to psychology's −0.45 (64% shrinkage per tenfold *N*) and close to the −0.5 theoretical slope a pure publication filter would produce. The three corpora span completely different research methods (reduced-form causal inference, structural parameter estimation, and household-panel consumption-Euler regression), different time periods (1961--2018), and different sample-size regimes (σ median *N* ≈ 44, Brodeur ≈ 4,800, EIS ≈ 5,700), yet all three produce the same boundary-hugging scatter. Economics is not a cleaner filter regime than psychology; it is the same filter regime. The 272 paper-level points appear as green circles in @fig-published-d-vs-n; the three corpora's filter derivations are documented in the data-extraction appendix.
+
+### A.12   Development economics {#a-dev}
+
+Vivalt [@vivalt2020] compiled the AidGrade database of 15,024 estimates from 635 papers spanning 20 intervention types. The average standardized effect was about 0.12 SD. Heterogeneity was extreme --- predicting the result of the next study from existing studies produced errors 99% as large as the effect itself. Even predicting the correct sign of an effect succeeded only 61% of the time. Government-implemented programs showed significantly smaller effects than academic or NGO implementations.
+
+::: {.paper-table}
+**Table 11. A.12 Development economics**
+
+| Intervention | Effect | Source |
+| --- | --- | --- |
+| Microcredit (6-country RCTs) | Modest, not transformative; ~7% business profit, could be zero | Banerjee et al. [@banerjee2015] ; Meager 2019 |
+| Cash transfers (GiveDirectly) | +13% consumption; fiscal multiplier 2.4–2.7 | Egger et al. [@egger2022] |
+| Graduation approach | +8% consumption, +15% assets, B/C ratio 379% by year 10 | Banerjee et al. [@banerjee2015] (Science); Bandiera et al. |
+| Insecticide-treated bednets | RR=0.83 child mortality; 5.6 lives/1,000/yr | 22-RCT Cochrane |
+| Deworming (short-run, Cochrane) | Little effect on most outcomes | Cochrane reviews |
+| Deworming (20-year Kenya follow-up) | +14% consumption, +13% earnings, 37% annualized return | Hamory et al. [@hamory2021] |
+| Electrification (quasi-experimental) | +40% income over 40 years | Lipscomb et al. |
+| Electrification (RCT) | Null | Lee, Miguel & Wolfram |
+| International education RCTs | Median d =0.10 on learning; 0.07 on access | Evans & Yuan [@evans2022] |
+:::
+
+::: {.callout .coral}
+**The electrification gap is instructive.** Quasi-experimental designs yield estimates an order of magnitude larger than the RCT of the same intervention. This can be read in two ways: quasi-experimental studies are contaminated by confounding, or RCTs miss long-run general-equilibrium effects. The deworming long-run follow-up (20 years out) showing large effects when short-run studies showed little suggests that for interventions whose benefits accumulate over decades, short-run RCTs may genuinely understate impact. The lesson is not that RCTs are wrong but that the time horizon of measurement matters.
+:::
+
+### A.13   Education {#a-edu}
+
+Kraft [@kraft2020], analyzing 1,942 effect sizes from 747 education RCTs, found median effect 0.10 SD and weighted mean only 0.04 SD on standardized achievement. The 25th percentile was approximately zero (0.01 SD); the 75th was 0.25 SD. Pre-registered Department of Education studies showed a median of 0.03 SD. Kraft proposed recalibrated benchmarks: **small \< 0.05 SD, medium 0.05--0.20 SD, large ≥ 0.20 SD** --- making his "large" equivalent to Cohen's "small."
+
+Lortie-Forgues and Inglis [@lortieforgues2019] analyzed 141 large-scale education RCTs representing over 1.2 million students and found a mean effect of 0.06 SD. Only 23% of effects were statistically significant. The median Bayes factor was 0.56 --- most results were literally uninformative.
+
+::: {.paper-table}
+**Table 12. A.13 Education**
+
+| Intervention | Effect | Source |
+| --- | --- | --- |
+| Tutoring (pooled) | d =0.29 | Nickow, Oreopoulos & Quan [@nickow2024] |
+| Tutoring at scale (realistic) | d =0.14–0.21 | Kraft, Schueler & Falken [@kraft2024] |
+| Class-size reduction (Project STAR) | d =0.15–0.25 | Krueger; Finn & Achilles |
+| Class size (Hoxby natural variation) | ≈0, precision rules out > 0.03 SD | Hoxby 2000 |
+| Perry Preschool, IQ at age 5 | d =0.87 | Original |
+| Perry Preschool, IQ by age 14 | ~0 (faded) | Follow-ups |
+| Perry Preschool, life outcomes age 40+ | Large (+20pp HS grad, crime reduction) | Heckman et al. |
+| Head Start (cognitive, short-run) | d =0.15–0.25, fades within 1–3y | HSIS |
+| Teacher value-added (per SD of teacher quality) | 0.10–0.20 SD annual test scores | Rivkin, Hanushek & Kain [@rivkin2005] ; Chetty et al. [@chetty2014] |
+| Replace bottom-5% teacher with average teacher | +$250K lifetime earnings per classroom | Chetty et al. [@chetty2014] |
+| Hattie “Visible Learning” average | d =0.40 — inflated 4–7× | Kraft 2020 critique |
+:::
+
+### A.14   Political science {#a-poli}
+
+Kalla and Broockman [@kalla2018] synthesized 49 field experiments on campaign contact in general elections and concluded that the best estimate of the average persuasive effect on vote choice is zero. The distribution of test statistics followed a normal distribution nearly perfectly, consistent with null effects. This held across mail, phone, canvassing, and advertising. Narrow exceptions exist: when candidates hold unusually unpopular positions, or when contact occurs very far before election day (though this early persuasion decays).
+
+Get-out-the-vote effects are small but real. Door-to-door canvassing increases turnout by about 4.3 percentage points among those contacted (complier average causal effect), but since only 25--30% of targets are actually reached, the intent-to-treat effect is about 1 percentage point. Standard GOTV mail raises turnout by about 0.5 percentage points per piece. Social-pressure mailings are more effective at 2.3--2.85 percentage points. Robocalls and mass email show no statistically significant effects.
+
+### A.15   Criminology {#a-crim}
+
+::: {.paper-table}
+**Table 13. A.15 Criminology**
+
+| Intervention | Effect | Source |
+| --- | --- | --- |
+| Hot-spots policing | d =0.132, no displacement | Braga et al. [@braga2019] (65 studies) |
+| Juvenile delinquency interventions | d =0.10–0.15 | Lipsey & Cullen [@lipsey2007] |
+| Drug courts (adult) | Recidivism 50% → 38%; OR=1.65 | Mitchell et al. |
+| Scared Straight programs | OR=1.68–1.72 (increase offending) | Petrosino et al. [@petrosino2013] |
+| Routine vs. researcher-led practice | Routine is ~half the demonstration effect | Multiple |
+:::
+
+### A.16   Sociology & discrimination {#a-soc}
+
+Quillian et al. [@quillian2017] meta-analyzed all U.S. hiring audit studies from 1989--2015 and found whites received 36% more callbacks than African Americans, **with no change over 25 years** despite civil rights legislation, anti-discrimination law, and cultural shifts. Anti-Hispanic discrimination showed a modest decline.
+
+Gender differences are mostly small. Hyde [@hyde2005] found 78% of gender effect sizes were *d* \< 0.35 across 124 effects from 46 meta-analyses; math performance differences are *d* = −0.05 (trivial). Del Giudice [@giudice2012] showed that the multivariate Mahalanobis *D* for personality differences reaches 2.71 at the facet level --- small univariate differences combine into substantial aggregate differences.
+
+Values-affirmation writing interventions [@cohen2006] initially appeared to reduce the racial achievement gap by 40%. A well-powered registered replication [@hanselman2016] found no effect, with precision sufficient to reject benefits larger than *d* = 0.10. Effectiveness appears highly context-dependent.
+
+### A.17   Organizational & management {#a-org}
+
+Management quality explains 20--33% of cross-country and within-country productivity variation (Bloom and Van Reenen 2007; World Management Survey). An RCT providing management consulting to Indian textile firms improved productivity by 17% and profitability by about \$325,000 per year [@bloom2013].
+
+Leadership training (Lacerenza et al. [@lacerenza2017]; 335 samples) shows δ = 0.63 for reactions, 0.73 for learning, 0.82 for behavioral transfer, 0.72 for results --- among the largest intervention effects in applied psychology. General organizational training [@arthur2003] shows *d* ≈ 0.60--0.63. These effects may partly reflect measurement sensitivity to immediate post-training assessment.
+
+Employee selection validity was substantially revised downward by Sackett et al. [@sackett2022]. Corrected validity for cognitive ability dropped from *r* = 0.51 (Schmidt & Hunter [@schmidt1998]) to 0.31 --- a 39% reduction. Structured interviews emerged as the best predictor at 0.42, dethroning cognitive ability from its 25-year position.
+
+### A.18   Marketing & advertising {#a-mkt}
+
+Lewis and Rao [@lewis2015] showed that the *R*² of even a highly profitable ad campaign on individual-level sales is approximately 0.000005 --- essentially zero. The standard deviation of individual-level sales is typically 10 times the mean. Experiments require over 10 million person-weeks to distinguish a profitable campaign from a null effect.
+
+Blake, Nosko and Tadelis [@blake2015] demonstrated this experimentally at eBay: when the company stopped bidding on branded search terms, virtually all traffic arrived organically. The causal effect of brand advertising was near zero. Sethuraman, Tellis and Briesch [@sethuraman2011] found mean short-term advertising elasticity of 0.12 (a 1% ad-spending increase yields 0.12% sales increase), with roughly half of campaigns showing no statistically significant effect.
+
+### A.19   Environmental & climate {#a-env}
+
+**Carbon pricing** reduces emissions by 5--21% across schemes, shrinking to 4--15% after publication-bias correction (Döbbeling-Hildebrandt et al. [@d2024] (2024), Nature Communications). Sweden's carbon tax reduced transport emissions by 11% [@andersson2019].
+
+**Energy conservation nudges** (Allcott 2011 OPOWER): social-norm messaging reduces household electricity use by about 2.0% in the U.S. (range 1.4--3.3%), but only 0.7% in Germany. Pro-environmental behavior interventions produce very small effects: *d* = −0.09 for household climate action [@nisa2019]. After publication-bias correction, climate mitigation nudge effects may approach zero.
+
+**WASH interventions** experienced a dramatic downgrade. Three large RCTs (WASH Benefits in Bangladesh and Kenya; SHINE in Zimbabwe) found no effect on child linear growth and mixed effects on diarrhea --- overturning historical meta-analytic estimates of 23--37% diarrhea reduction. **Clean cookstoves** similarly showed null health effects in the HAPIN trial despite achieving 66% reductions in PM2.5 exposure (birth weight +19.5g, non-significant; no pneumonia reduction).
+
+### A.20   Sports science {#a-sport}
+
+::: {.paper-table}
+**Table 14. A.20 Sports science**
+
+| Intervention | Effect | Source |
+| --- | --- | --- |
+| Caffeine on endurance performance | d =0.33 (I²=0%) | Meta-analyses |
+| Beta-alanine (all uses) | ES=0.18 | Meta-analyses |
+| Beta-alanine (0.5–10 min tasks) | ES=0.50 | Meta-analyses |
+| Strength training on injury prevention | RR≈0.32 (68% reduction) | Lauersen et al. [@lauersen2014] |
+| Stretching alone on injury prevention | Null | Multiple meta-analyses |
+| Cold-water immersion on soreness | SMD=−0.37 to −0.89 | Meta-analyses |
+| Compression garments on recovery | g =0.40–0.49 | Meta-analyses |
+:::
+
+### A.21   Agriculture {#a-ag}
+
+Nitrogen fertilization increases crop yield by about 30--75% relative to no fertilization across global meta-analyses. Enhanced-efficiency fertilizers add another 8--10% on top of standard fertilizer. These effects are 5--50× larger than typical social-science intervention effects measured in comparable terms.
+
+### A.22   COVID-19 {#a-covid}
+
+::: {.paper-table}
+**Table 15. A.22 COVID-19**
+
+| Intervention | Effect | Source |
+| --- | --- | --- |
+| mRNA vaccines (phase 3, short-term) | 94–95% RRR; ARR<1.2% | Pfizer; Moderna trials |
+| Dexamethasone (ventilated patients) | 35% mortality reduction; NNT=8 | RECOVERY trial |
+| Medical/surgical masks | RR=0.95 (NS) | Cochrane [@jefferson2023] |
+| Masks in Bangladesh NORM trial | 9.5–11.5% reduction in seroprevalence | Abaluck et al. |
+:::
+
+::: {#a-patterns .part-label}
+Part II --- Cross-cutting patterns
+:::
+
+### A.23   Publication bias inflation factors by literature
+
+::: {.paper-table}
+**Table 16. A.23 Publication bias inflation factors by literature**
+
+| Literature | Published | Bias-corrected | Inflation |
+| --- | --- | --- | --- |
+| All Cochrane RCTs (median power 13%) | Significant result at p =0.05 | True effect | ~3× |
+| Economics (Stanley & Doucouliagos methods) | Reported effect | PET-PEESE corrected | ~2× |
+| Social psychology priming / ego depletion | d =0.5–1.0 | d =0–0.10 | 5–∞× |
+| Growth mindset interventions | d =0.08 | d =0.02 | ~4× |
+| Nudges: academic vs. government scale | 8.7 pp | 1.4 pp | 6× |
+| Nutritional epidemiology (single studies vs. MA) | RR=2.2 | RR=0.96 | ~23× |
+| Candidate gene×environment | 96% significant (novel) | 27% significant (replications) | ~3.6× |
+| NHLBI CV trials, pre- vs. post-registration | 57% positive (pre-2000) | 8% positive (post-2000) | ~7× |
+| Antidepressants: FDA vs. published | 94% positive in print | 51% positive in FDA database | ~1.8× positive-rate; ~32% effect-size inflation |
+| Small-sample BWAS vs. adequately powered | r =0.20–0.80 | r =0.01–0.06 | 10–80× |
+| Preclinical animal stroke studies | Published effect | Corrected effect | ~31% inflation |
+| Economics, pre- vs. non-pre-registered (implied) | r =0.36 (schools of fish) | r =0.16 | ~2× |
+:::
+
+### A.24   The many-analysts problem
+
+Three landmark crowdsourced reanalyses demonstrate how much effect sizes and significance depend on analytical choices rather than the data alone.
+
+::: {.paper-table}
+**Table 17. A.24 The many-analysts problem**
+
+| Study | Design | Finding |
+| --- | --- | --- |
+| Silberzahn et al. [@silberzahn2018] | 29 teams, same soccer red-card dataset | ORs ranged 0.89–2.93; 69% significant, 31% not |
+| Botvinik-Nezer et al. [@botviniknezer2020] | 70 teams, same fMRI dataset | No two identical workflows; map overlap near zero |
+| Breznau et al. [@breznau2022] | 73 teams, same immigration data | 1,261 unique models; results strongly negative to strongly positive |
+| Orben & Przybylski [@orben2019] | Screens & wellbeing, specification curve | 600M+ valid specifications; median β=−0.04 |
+:::
+
+### A.25   Observational → experimental reversals
+
+Anglemyer et al. [@anglemyer2014] (2014 Cochrane review) found that on average, observational studies and RCTs produce similar estimates (ratio of ratios 1.04, 95% CI 0.89--1.21). But this average masks consequential discordances: observational associations routinely turn out to be confounded. Mendelian randomization studies have been particularly useful reality checks.
+
+::: {.paper-table}
+**Table 18. A.25 Observational → experimental reversals**
+
+| Claim | Observational | Experimental / MR |
+| --- | --- | --- |
+| Moderate alcohol lowers mortality (J-curve) | RR=0.75–0.85 | Monotonic harm; OR=1.27 per SD |
+| Vitamin D supplementation reduces mortality | Protective | ~Null (VITAL, Bolland; MR) |
+| HDL cholesterol protects against CVD | Strong inverse | Non-causal (MR) |
+| β-carotene, vitamin E, selenium | Protective against cancer | Null or harmful in RCTs |
+| HRT protects against CVD | Protective | Harmful (WHI) |
+| Rural electrification on income | +40% over 40 years | Null in RCT |
+| LDL → CHD, BMI → T2D, smoking → cancer | Causal | Confirmed by MR/RCTs |
+:::
+
+### A.26   WEIRD samples and generalization
+
+Henrich, Heine, and Norenzayan [@henrich2010] documented that 96% of psychology research participants come from Western, Educated, Industrialized, Rich, Democratic societies representing 12% of the world's population. WEIRD subjects are frequent outliers --- Ultimatum Game offers (Western \~40% vs. 26% in some small-scale societies), susceptibility to visual illusions, self-concept independence. Effect sizes calibrated on WEIRD samples may not generalize globally.
+
+In development economics, Vivalt [@vivalt2020] found that geography has surprisingly little explanatory power for effect-size variation. A result from Kenya does not even generalize to Kenya very well --- prediction errors are about 99% of actual effect sizes. Whatever drives heterogeneity in treatment effects operates at a finer grain than country or region.
+
+### A.27   The time trajectory of published effects
+
+The decline effect --- the phenomenon that published effects shrink over time as a field matures --- is largely an artifact of reduced publication bias as replication becomes possible. Three data points:
+
+-   NHLBI cardiovascular trials: 57% significant pre-ClinicalTrials.gov (2000), 8% significant afterward (Kaplan & Irvin [@kaplan2015]).
+-   Dumas-Mallet et al.: initial highly-cited findings in biomedical research are subsequently refuted or substantially revised about 40% of the time.
+-   Fanelli [@fanelli2010]: positive-result rates increased 22% from 1990 to 2007 across disciplines --- not because science got better, but because publication pressures intensified.
+
+## Appendix B --- When the world gives you large effects
+
+Appendix A argued that the modal real effect is small. This appendix catalogs the exceptions --- interventions that produce genuinely large effects, survive replication, and translate to field implementation without collapsing. The catalog is not long relative to the appendix that precedes it, and that is the point. Across the full range of things humans have tried to change about human beings, animals, ecosystems, and economies, the interventions that produce order-of-magnitude effects on outcomes we care about number in the dozens, not the thousands. Examining them closely reveals why: they share a specific structural signature, and most candidate interventions do not meet it.
+
+The working definitions: an effect is "genuinely large" if (a) its magnitude sits at or above the 90th percentile of its field's published effect-size distribution, (b) the point estimate is stable under high-quality replication or large-scale implementation, and (c) the bias-corrected estimate remains substantial after accounting for publication selection, small-sample inflation, and the winner's curse. Most of the entries below clear those bars by wide margins. Several are so large that the normal machinery of effect-size statistics gives up --- a *d* of 3 or a number-needed-to-treat of 2 is not a number, it is a therapeutic miracle that predates the tools invented to measure lesser interventions.
+
+### B.1   Infectious disease --- antibiotics, vaccines, antivirals {#b-infectious}
+
+The first and still the largest class of genuinely large effects is the control of infectious disease. An effective antimicrobial against a susceptible pathogen produces cure rates that approach the natural history of the untreated condition in its severity, with NNTs of 2 or 3 to prevent mortality in conditions that were otherwise reliably fatal.
+
+::: {.paper-table}
+**Table 19. B.1 Infectious disease — antibiotics, vaccines, antivirals**
+
+| Intervention | Condition | Effect | Source / note |
+| --- | --- | --- | --- |
+| Penicillin | Bacterial pneumonia, endocarditis | Mortality ~90% → ~10% | Historical pre/post 1940s |
+| Streptomycin | Tuberculous meningitis | Mortality 100% → ~30% | MRC 1948, first modern RCT |
+| Smallpox vaccine | Smallpox | ~100% protection; disease eradicated 1980 | WHO |
+| Polio vaccine | Paralytic polio | US incidence 58,000/yr → ~0 | Salk/Sabin era |
+| Measles vaccine | Measles | 97% effective (2 doses); 60%+ global mortality reduction since 2000 | WHO/CDC |
+| HPV vaccine | Cervical cancer (precursors) | ~90% reduction in CIN2+ in vaccinated cohorts | Swedish, UK register studies |
+| mRNA COVID vaccines (phase 3) | Symptomatic COVID-19 | 94–95% RRR; VE against severe disease > 90% early | Pfizer, Moderna pivotal trials |
+| HAART (combination ART) | HIV / AIDS | Life expectancy near-normal; mortality down >80% | Post-1996 |
+| Direct-acting antivirals | Hepatitis C | SVR >95%; a chronic disease now curable | Sofosbuvir era |
+| Oseltamivir (early, high-risk) | Influenza hospitalization/mortality | ~25% mortality reduction in hospitalized | IPD meta-analyses |
+| Insecticide-treated bednets | Child malaria mortality | RR=0.83 overall; RR=0.45 vs. no nets | Cochrane |
+| Artemisinin combination therapy | Uncomplicated falciparum malaria | Cure rate > 95% vs. ~50–70% on older regimens | WHO |
+| Oral rehydration therapy | Cholera and diarrheal mortality | Case fatality from 30–50% to < 1% | Mahalanabis, Bangladesh |
+:::
+
+The pattern across these interventions is consistent. A single dominant cause (the pathogen) produces a clinical outcome (infection, death) that is essentially absent without that cause. Remove the pathogen and the outcome largely disappears. The effect size is enormous because the counterfactual is catastrophic, the causal chain has one link, and the measurement is unambiguous. This architecture is not available in most of medicine, let alone most of the interventions evaluated in behavioral and social science.
+
+### B.2   Deficiency replacement --- supplying what is missing {#b-replacement}
+
+A second class of large effects comes from supplying a substance the body requires and is not producing in adequate quantity. These interventions do not act on a distant mediator or nudge a multiply-determined outcome; they restore a necessary input, and the outcome follows almost mechanically.
+
+::: {.paper-table}
+**Table 20. B.2 Deficiency replacement — supplying what is missing**
+
+| Intervention | Condition | Effect | Source / note |
+| --- | --- | --- | --- |
+| Insulin | Type 1 diabetes | Life expectancy < 1 yr → near-normal | Banting/Best 1922 |
+| Levothyroxine | Overt hypothyroidism | Symptom normalization; near-complete reversal | Standard of care |
+| Vitamin B 12 | Pernicious anemia | Mortality ~90% → near-zero | Post-1926 |
+| Vitamin D | Rickets | Disease resolution; near-complete prevention | Well-established |
+| Iodine fortification | Goiter, cretinism | Near-elimination in iodine-replete regions | Public health |
+| Iron supplementation | Iron-deficiency anemia | Hemoglobin and symptoms normalize | Cochrane |
+| Folate fortification | Neural tube defects | ~30–50% reduction | US post-1998 |
+| Enzyme replacement (Pompe, Gaucher) | Lysosomal storage diseases | Disease course fundamentally altered | Multiple trials |
+| Growth hormone | GH deficiency | Near-normalization of growth | Pediatric endocrinology |
+:::
+
+Deficiency replacement is the cleanest case of a dominant causal bottleneck. The deficiency *is* the disease. The treatment removes the deficiency. Whatever else is happening in the organism, the outcome moves because the missing input is restored. Contrast with supplementation in non-deficient populations (vitamin E for cardiovascular disease, multivitamins for mortality, vitamin D for all-cause mortality in replete populations), where effects are null or harmful. The large effect requires the deficiency; without it, the intervention is operating on an outcome the body already has under control.
+
+### B.3   Mechanical and structural interventions {#b-mechanical}
+
+When the dysfunction is mechanical, the intervention can be mechanical, and effects are correspondingly large. These are interventions that restore a physical function --- vision, circulation, airway, joint --- rather than nudging a chemical or behavioral process.
+
+::: {.paper-table}
+**Table 21. B.3 Mechanical and structural interventions**
+
+| Intervention | Condition | Effect | Source / note |
+| --- | --- | --- | --- |
+| Cataract surgery | Cataract-related blindness | Near-complete vision restoration; millions/year | Standard procedure |
+| Hip replacement | End-stage hip OA | Pain elimination; function restoration; NNT~1 | Canadian and UK registry data |
+| Knee replacement | End-stage knee OA | Large pain and function improvement (note: sham effect in mild OA is null) | Cf. Moseley 2002 for milder disease |
+| Appendectomy | Appendicitis with perforation | Near-universal survival vs. historical ~100% mortality | Historical |
+| Coronary bypass / PCI in STEMI | Acute MI, large ischemic territory | NNT ~30 for mortality; enormous for the subset with cardiogenic shock | Distinct from stable angina (see ORBITA) |
+| Pacemakers | Complete heart block, severe bradycardia | Historical mortality dominant → near-normal | Standard |
+| Defibrillation (VF/VT) | Shockable cardiac arrest | Survival 0% → 40–70% with early shock | AHA data |
+| Tracheostomy / endotracheal intubation | Acute airway obstruction | Near-immediate rescue from certain death | Emergency medicine |
+| Dialysis | ESRD | Weeks-to-live → years-to-decades | Standard |
+| ECMO (neonatal respiratory failure) | Severe neonatal respiratory failure | The sole Cochrane intervention with very large mortality benefit and high-quality evidence | Pereira et al. [@pereira2012] |
+| Cochlear implants | Severe-profound deafness (pre-lingual) | Functional hearing restoration; transformative | Multi-decade evidence |
+:::
+
+The structural pattern: the causal pathway is short (intervention acts directly on the physical problem), the counterfactual is catastrophic (death or profound functional loss), and the measurement is unambiguous (the person sees or does not, breathes or does not, lives or does not). Notice the contrast with the arthroscopic knee and stable-angina PCI results in Appendix A: once the mechanical target is not clearly the cause of the symptom, the large effect vanishes. The architecture is doing the work.
+
+### B.4   Cardiovascular and metabolic --- a class of real, modest-to-large effects {#b-cv}
+
+Several pharmacologic interventions in cardiovascular and metabolic disease have effects large enough to be clinically transformative, though the effect sizes are smaller than in the infectious-disease or deficiency-replacement classes. They are included here because the cumulative population impact is enormous and the evidence is as strong as clinical trials produce.
+
+::: {.paper-table}
+**Table 22. B.4 Cardiovascular and metabolic — a class of real, modest-to-large effects**
+
+| Intervention | Outcome | Effect | Source |
+| --- | --- | --- | --- |
+| Statins, secondary prevention | CV mortality, MI, stroke | Relative risk reduction ~25–30%; NNT 19–21 over 10 years | CTT Collaboration |
+| Antihypertensives, per 10 mmHg SBP | Major CV events | RR=0.80; consistent across drug classes | Ettehad et al. [@ettehad2016] |
+| SGLT2 inhibitors (empagliflozin) | CV death in T2D with CV disease | HR=0.62 | EMPA-REG OUTCOME 2015 |
+| SGLT2 inhibitors (dapagliflozin) | Heart failure hospitalization / CV death | HR=0.74 | DAPA-HF 2019 |
+| PCSK9 inhibitors | LDL-C lowering | ~60% additional reduction on top of statin | FOURIER, ODYSSEY |
+| Aspirin in acute MI | Vascular mortality | 23% RRR | ISIS-2 1988 |
+| Warfarin / DOACs in AF | Stroke prevention | ~65% RRR | AFASAK, multiple pivotal trials |
+| Semaglutide 2.4mg (obesity) | Weight loss | ~15% body weight reduction vs. ~2.5% placebo | STEP trials |
+| Tirzepatide 15mg (obesity) | Weight loss | ~21% body weight reduction | SURMOUNT-1 |
+:::
+
+The GLP-1 and SGLT2 classes deserve particular attention. Most pharmacologic advances in the last two decades have produced effects indistinguishable from prior standards-of-care. These two classes did not --- they produced large enough incremental benefits that the counterfactual-gap argument against large effects is suspended. The reason appears to be genuine biological novelty: both classes act through mechanisms that were not targeted by prior therapies, restoring regulatory pathways that the body was failing to use. They are closer to deficiency replacement than to a typical incremental improvement.
+
+### B.5   Mental health --- the genuine exceptions {#b-mh}
+
+Appendix A documented that most mental-health interventions produce small-to-moderate effects, shrinking substantially when compared against active controls and when measured blind. A small number of interventions break this pattern.
+
+::: {.paper-table}
+**Table 23. B.5 Mental health — the genuine exceptions**
+
+| Intervention | Condition | Effect | Source |
+| --- | --- | --- | --- |
+| Clozapine | Treatment-resistant schizophrenia | Superior to all other antipsychotics in head-to-head trials; reduces suicide ~25% | InterSePT, Huhn et al. [@huhn2019] |
+| Lithium | Bipolar disorder | Reduces suicide ~60–80%; unique among mood stabilizers | Cipriani et al. meta-analyses |
+| ECT | Severe treatment-resistant depression | d ≈ 0.9–1.0 vs. sham; response rates 60–80% | UK ECT Review Group 2003 |
+| Methylphenidate | ADHD core symptoms (children) | SMD=−0.78 vs. placebo; rapid onset; replicates across settings | Multiple meta-analyses |
+| Trauma-focused CBT / EMDR | PTSD | d ≥ 1.0 vs. waitlist; NNT < 4 | Cusack et al. [@cusack2016] |
+| CBT for OCD (ERP) | OCD | d ≈ 1.1 vs. waitlist | Multiple meta-analyses |
+| Opioid agonist therapy (methadone, buprenorphine) | Opioid use disorder mortality | All-cause mortality rate ratio ~3.2× lower in treatment | Sordo et al. [@sordo2017] |
+| Exposure therapy for specific phobia | Specific phobia | Single-session success rates 80–90% | Öst and follow-ups |
+:::
+
+The pattern: these interventions work on conditions with a relatively clear target mechanism and they work directly on it. Trauma-focused therapy reprocesses the traumatic memory that *is* the disorder. ERP extinguishes the compulsion that *is* the disorder. Clozapine acts on a dopamine/serotonin profile that the other antipsychotics do not reach. Lithium's anti-suicide effect appears to be a genuine pharmacologic property no other mood stabilizer shares. When a psychiatric intervention has a dominant mechanism and a short causal chain to the outcome, effects are large. When it does not --- most of the SSRI literature, most of mindfulness research, most of psychotherapy against active controls --- effects are small.
+
+### B.6   Education --- the real exceptions {#b-edu}
+
+Appendix A documented that the modal education RCT produces a median effect of *d* = 0.10 and a weighted mean of *d* = 0.04. The exceptions are few, and they are exceptions for structural reasons.
+
+::: {.paper-table}
+**Table 24. B.6 Education — the real exceptions**
+
+| Intervention | Effect | Structural note |
+| --- | --- | --- |
+| High-dosage tutoring (pre-K to 12) | ~ d =0.37 overall; larger in early grades | Nickow, Oreopoulos & Quan [@nickow2024] ; short chain, intensive dose, active matching of content to student |
+| Teacher value-added (top quartile vs. bottom quartile) | +$250K lifetime earnings per classroom | Chetty, Friedman & Rockoff [@chetty2014] ; small per-year effects compounded over many years of exposure |
+| Perry Preschool | Long-run earnings, crime, welfare effects | Heckman; a very high-quality, intensive, early-childhood intervention on an undertreated population |
+| Scripted early literacy curricula (developing countries) | d ≈ 0.3–0.5 in some RCTs | Tusome (Kenya), similar; low counterfactual + structured dose |
+| Teach at the Right Level (India) | Large gains in basic literacy/numeracy for lagging students | Banerjee et al.; targets the specific skill gap |
+| Direct Instruction (Project Follow Through) | Largest effects on basic skills among tested curricula | Relative to other curricula; historical |
+| Removing extreme class-size (Tennessee STAR, early grades) | d ≈ 0.2 per ~7-student reduction | Krueger 1999; specific to early grades and large reductions |
+:::
+
+The pattern is that "education" is a multiply-determined outcome with small effects per intervention, *except* when the intervention is intensive, targeted at a specific skill gap, delivered against a counterfactual of near-zero instruction, or compounded over many years of exposure. Tutoring satisfies three of those conditions. Teacher value-added compounds over a career. Perry Preschool combined intensity, early timing, and undertreated baseline. The rule is "education RCTs produce small effects"; the exceptions are where the structural conditions for a large effect happen to line up.
+
+### B.7   Policy and behavioral architecture --- changing the default {#b-policy}
+
+The largest behavioral-policy effects in the literature are not from persuasion, education, or incentives. They are from changing the structural default so that the behavior one wants is the path of least resistance.
+
+::: {.paper-table}
+**Table 25. B.7 Policy and behavioral architecture — changing the default**
+
+| Intervention | Outcome | Effect | Source |
+| --- | --- | --- | --- |
+| Auto-enrollment in 401(k) | Participation | 37% → 86% (Madrian & Shea [@madrian2001] ); persists long-term | Multi-cohort evidence |
+| Opt-out organ donation | Registered donors | ~15% (opt-in countries) → 85–99% (opt-out) | Johnson & Goldstein [@johnson2003] |
+| EITC expansions | Single-mother labor supply | Large positive employment effects | Eissa & Liebman; Meyer & Rosenbaum |
+| Conditional cash transfers (Progresa/Oportunidades) | School attendance, health visits | Large and durable | Schultz; Gertler |
+| Large unconditional cash transfers (GiveDirectly) | Consumption, assets | Durable increases in assets and consumption | Haushofer & Shapiro; Egger et al. |
+| Graduation programs for ultra-poor | Consumption, assets, mental health | Durable effects at 3 and 7 years across 6 countries | Banerjee et al. [@banerjee2015] Science , Bandiera et al. |
+| Smoking bans in public places | Acute coronary events | ~15% reduction in hospital admissions | Multiple pre/post studies, IOM review |
+| Graduated licensing | Teen crash mortality | ~20–40% reduction | CDC systematic reviews |
+| Seatbelt laws + primary enforcement | Motor vehicle fatalities | Substantial and durable | NHTSA |
+| Motorcycle helmet laws | Motorcyclist mortality | ~37% reduction in fatal injury risk | Cochrane |
+| Alcohol taxation | Consumption, harm | Elasticity ~−0.5; translates to substantial mortality effects | Wagenaar meta-analyses |
+:::
+
+The unifying feature is that these interventions do not attempt to change preferences, knowledge, or motivation. They change the choice architecture so that the default action produces the desired outcome. The person does not have to do anything differently; they have to *not do* something differently. This is why the effects are large where persuasion and education produce small effects on the same outcomes: removing a structural friction is a high-leverage move; arguing someone into better choices is not.
+
+### B.8   Agriculture and environment --- technological leverage {#b-ag}
+
+::: {.paper-table}
+**Table 26. B.8 Agriculture and environment — technological leverage**
+
+| Intervention | Effect | Note |
+| --- | --- | --- |
+| Nitrogen fertilizer on grain yield | +30 to +75% | Global meta-analyses; supplying a limiting nutrient |
+| Green Revolution semi-dwarf wheat/rice | Regional yields doubled to tripled | 1960s–1980s; architecture change plus fertilizer plus irrigation |
+| Irrigation (where water was limiting) | Yields multiplied | Historical and contemporary evidence |
+| Bt cotton (where bollworm was dominant pest) | 40–60% yield increases; 50% pesticide reduction | Where conditions match the trait |
+| Lead removal from gasoline | Average blood lead fell ~90% in US cohort | Pre/post; enormous population health implications |
+| Ozone layer (Montreal Protocol) | Halted and partially reversed ozone depletion | Global; regulatory intervention on a well-defined cause |
+| Sulfur dioxide controls (Acid Rain Program) | SO 2 emissions down > 90% in US | Cap-and-trade on a well-defined pollutant |
+| Chlorination of drinking water | Waterborne infectious mortality → near-zero in served populations | Early 20th century US cities |
+:::
+
+Agricultural and environmental large effects share the architecture with deficiency replacement and infectious-disease control. A limiting factor (nitrogen, water, a specific pest, a specific pollutant) is dominant. The intervention addresses it directly. The outcome responds.
+
+### B.9   Management and firm-level --- information and structure {#b-mgmt}
+
+::: {.paper-table}
+**Table 27. B.9 Management and firm-level — information and structure**
+
+| Intervention | Outcome | Effect | Source |
+| --- | --- | --- | --- |
+| Management consulting (SMEs, India) | Productivity, profit | +17% productivity; +$325K/yr profit | Bloom et al. [@bloom2013] |
+| Work-from-home (where feasible, pre-COVID) | Performance / satisfaction | Large positive in one large RCT; variable elsewhere | Bloom, Liang, Roberts, Ying 2015 |
+| Targeted wage subsidies (hard-to-employ) | Employment | Substantial effects on specific populations | Card, Kluve & Weber [@card2018] |
+| Vocational training (long-term follow-up) | Earnings | Small short-term; meaningful long-run | Card et al.; “large” relative to typical short-run nulls |
+:::
+
+### B.10   What the exceptions share {#b-pattern}
+
+Examining the preceding sections together yields a checklist. Interventions produce large effects when *most* of the following conditions hold simultaneously:
+
+1.  **A dominant causal bottleneck.** One factor explains most of the variance in the outcome. The pathogen in an infectious disease. The missing hormone in a deficiency. The limiting nutrient in a crop yield. The structural friction in an enrollment decision. Most of behavioral and social science concerns outcomes with no such bottleneck.
+2.  **Short causal chain.** The intervention acts directly on or adjacent to the outcome. Antibiotic on the infection. Insulin on glucose regulation. Cataract surgery on the opacity that blocks vision. Chain length is one or two steps, not five.
+3.  **Large counterfactual gap.** The comparison is something-versus-nothing, not something-versus-existing-good-treatment. Most of modern medicine is in the second regime, which is why most new drugs produce small effects; the exceptions (HAART, DAAs for HCV, SGLT2s, GLP-1 obesity drugs) opened genuinely new mechanism space and recovered the first regime.
+4.  **Well-measured proximal outcome.** Blood pressure moves in days and is measured with high reliability. Vision is present or absent. Mortality is unambiguous. Noisy distal outcomes cap observable effect sizes regardless of intervention potency.
+5.  **Compounded or prevented-catastrophe endpoints.** Small per-unit effects can produce enormous lifetime or population effects when applied across many exposures (teacher value-added, statins, seatbelts). And effects on prevention of rare catastrophic events (cardiac arrest rescue, anaphylaxis, suicide) can look mathematically unbounded because the counterfactual outcome is death.
+6.  **Rigorous methodology in a pre-specified design.** The interventions above were not identified by scanning for *p* \< 0.05 in small samples. They were tested in large trials against appropriate controls, and the large effects were what remained. Many interventions that pass (1)--(5) in theory fail to produce large effects in practice; large effects without large trials are not credible, because the filter is too strong.
+
+Interventions that satisfy fewer of these conditions produce smaller effects, and interventions that satisfy none of them are the domain of Appendix C. The distribution of "what works, and how much" across science is not random; it is a function of how many of these structural conditions the intervention meets. The small-effects world is not pessimism about human agency. It is the empirical shadow of a structural fact --- that most outcomes humans care about are multiply caused, distally measured, and already embedded in a context of existing partial solutions --- combined with a filtering process that makes the literature pretend otherwise.
+
+## Appendix C --- The hellscape catalog --- effects the literature claimed
+
+*This appendix catalogs effects at the magnitudes their original studies reported, with no bias correction, no replication attempt, no meta-analytic shrinkage. Each entry is presented as if the originally published estimate were the true effect. The third column states what the effect would imply for everyday life if it were real. The fourth column gives the published figure. What has happened to these figures under subsequent scrutiny is documented in Appendix A.*
+
+The organizing principle is that the published literature in several fields described a world in which human behavior, cognition, health, and judgment were routinely moved by large fractions of a standard deviation through almost any incidental intervention the researcher could imagine. Taking that literature at face value for the span of this appendix reveals what kind of world would have to exist for the studies to have been describing something real. We do not live in that world. The fact that we do not is Appendix A's core claim restated as a phenomenology.
+
+::: {.callout .coral}
+**Reading protocol.** Every effect size in this appendix comes from at least one published, peer-reviewed study --- typically a prominent one, often a widely cited one, in several cases a textbook result. The deadpan presentation is not an endorsement. It is an exercise in what the literature committed us to believing, before replication forced a retreat. Read for tone; the numbers are real.
+:::
+
+### C.1   Social priming --- your environment reshapes you continuously {#c-priming}
+
+If the social priming literature of the 1996--2012 era were correct, incidental features of your environment move cognition, judgment, and behavior at effect sizes normally reserved for medication. The following is a sampling.
+
+::: {.paper-table}
+**Table 28. C.1 Social priming — your environment reshapes you continuously**
+
+| Finding | Published effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| Elderly-trait priming slows walking | d =0.82–1.08 | Merely reading words like “Florida” or “bingo” makes you physically slower for the next ~30 seconds | Bargh, Chen & Burrows [@bargh1996] |
+| Warm cup → warm personality judgment | r =0.28–0.31 | Briefly holding a hot vs. cold beverage substantially changes how trustworthy you find the next stranger you meet | Williams & Bargh [@williams2008] |
+| Money priming → selfish behavior | d =0.34–0.75 | Seeing a picture of cash makes you measurably less helpful for the rest of the session | Vohs, Mead & Goode [@vohs2006] |
+| Professor priming → better trivia performance | 13% accuracy gain | Thinking about a professor before a quiz makes you score as if you had studied more | Dijksterhuis & van Knippenberg 1998 |
+| Macbeth effect (moral cleansing) | d =0.6–0.9 | Recalling an unethical act makes you prefer hand sanitizer by a large margin | Zhong & Liljenquist [@zhong2006] |
+| Cleanliness → moral judgment | d large | Being in a clean room makes you judge moral transgressions more harshly | Schnall, Haidt, Clore & Jordan [@schnall2008] |
+| Flag exposure → political shift | d reported large | Glimpsing a US flag shifts political attitudes rightward for 8+ months | Carter, Ferguson & Hassin [@carter2011] |
+| Heavy clipboard → weighty judgment | substantial | Holding a heavier clipboard makes you rate a CV as more important | Ackerman, Nocera & Bargh [@ackerman2010] |
+| Disgust primes → moral condemnation | d large | A bad smell in the room makes you condemn unrelated moral transgressions more harshly | Schnall, Haidt, Clore & Jordan [@schnall2008] |
+| Hand washing → reduces cognitive dissonance | substantial | Washing your hands after a choice makes you less likely to rationalize it | Lee & Schwarz [@lee2010] |
+| Fast-food cues → impatience | substantial | Subliminally seeing a fast-food logo makes you less willing to save money | Zhong & DeVoe [@zhong2010] |
+| Red → attractiveness judgments | d moderate-large | Wearing red (or having your photo on a red background) substantially raises your perceived attractiveness | Elliot & Niesta [@elliot2008] |
+:::
+
+If this literature were correct, a typical day exposes you to dozens of cues each of which moves some aspect of your cognition by a substantial fraction of a standard deviation. Personality is an emergent average over a violent sea of momentary influences. Reliable self-knowledge is impossible because the self is being re-primed every few minutes.
+
+### C.2   Self-regulation and willpower {#c-depletion}
+
+::: {.paper-table}
+**Table 29. C.2 Self-regulation and willpower**
+
+| Finding | Published effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| Ego depletion | d =0.62 (meta-analytic) | Every act of self-control drains a finite budget; restraint in the morning predicts indulgence in the afternoon | Hagger et al. [@hagger2010] meta-analysis |
+| Glucose restores self-control | substantial | A lemonade rescues willpower; low blood sugar is moral weakness | Gailliot, Baumeister et al. [@baumeister2007] |
+| Decision fatigue → judicial sentencing | large swings by time of day | Parole decisions depend heavily on whether the judge has eaten recently | Danziger, Levav & Avnaim-Pesso [@danziger2011] |
+| Power posing (hormonal) | T +20%, C −25% | Two minutes of expansive posture substantially alters your endocrine profile | Carney, Cuddy & Yap [@carney2010] |
+| Smiling pen → cartoon enjoyment | 0.82 units (original) | The muscles of your face alone substantially determine whether something is funny | Strack, Martin & Stepper [@strack1988] |
+:::
+
+If these findings were real, the self is a limited battery that discharges throughout the day and recharges on sugar; your posture sets your hormones; your zygomaticus sets your emotions. Moral evaluation of another person should probably condition on their most recent blood glucose reading and the chair they are sitting in.
+
+### C.3   Stereotype effects and implicit attitudes {#c-stereo}
+
+::: {.paper-table}
+**Table 30. C.3 Stereotype effects and implicit attitudes**
+
+| Finding | Published effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| Stereotype threat (standardized-test performance) | d > 0.5 in many published studies | Mentioning demographics before a test substantially alters group-average performance; much of the Black–White test-score gap is a priming effect | Steele & Aronson [@steele1995] and a large derivative literature |
+| IAT predicts discriminatory behavior | original r =0.274 | A 5-minute reaction-time task measures unconscious attitudes that cause real-world discrimination | Greenwald, McGhee & Schwartz [@greenwald1998] and derivatives |
+| Implicit bias training changes behavior | substantial short-run | Brief training meaningfully reduces discriminatory behavior in hiring, policing, medicine | Widely assumed; largely unreplicated |
+| Math-prime stereotype vulnerability (Asian women) | substantial | Priming either “Asian” or “woman” before a math test substantially shifts performance | Shih, Pittinsky & Ambady [@shih1999] |
+| Soccer-referee red cards and skin tone | OR ≈ 1.4 in typical specification | Professional referees issue disciplinary cards at meaningfully different rates based on player skin tone | Silberzahn et al. [@silberzahn2018] original data; depended heavily on analytic choices |
+:::
+
+If these findings were correct at the magnitudes claimed, most standardized testing is a priming experiment and the gender gap in STEM is a half-hour intervention away from resolution. A brief unconscious-bias module would measurably change hiring outcomes. The fact that none of the above has translated to a demonstrable real-world intervention, despite massive investment, is itself data.
+
+### C.4   Candidate-gene studies --- a single polymorphism determines your fate {#c-genes}
+
+Between roughly 1998 and 2015, a large literature claimed that individual genetic variants --- 5-HTTLPR in the serotonin transporter, DRD4 in the dopamine D4 receptor, COMT, MAOA --- had substantial main effects or gene-by-environment interactions on psychological and behavioral outcomes. Published results were significant in 96% of novel reports (Duncan & Keller [@duncan2011]). Replication rates in independent samples were 27%. The full set of claims, taken at published face value, implied the following.
+
+::: {.paper-table}
+**Table 31. C.4 Candidate-gene studies — a single polymorphism determines your fate**
+
+| Claim (at published magnitude) | Implication if true | Source |
+| --- | --- | --- |
+| 5-HTTLPR short allele + life stress → depression | Whether you develop depression after a bad year is substantially determined by which variant of a single gene you carry | Caspi et al. [@caspi2003] |
+| MAOA low-activity + maltreatment → antisocial behavior | A single polymorphism substantially moderates whether childhood abuse produces a violent adult (“warrior gene”) | Caspi et al. [@caspi2002] |
+| DRD4 7-repeat → novelty seeking, ADHD, parenting | A single dopamine-receptor variant substantially predicts personality and clinical outcomes across domains | Benjamin et al. [@benjamin1996] and many derivatives |
+| COMT val/met → cognition, pain, psychosis | A single amino-acid substitution substantially predicts cognitive performance, pain sensitivity, and psychosis risk | Extensive 2000s literature |
+| OXTR polymorphisms → empathy, trust, parenting | Variants in the oxytocin-receptor gene substantially predict social-cognitive outcomes | Numerous 2005–2015 |
+:::
+
+If this literature had been correct, behavioral traits of interest would be substantially explained by single variants, and a small commercial genotyping panel could tell you your likely depression risk, your violence risk, your parenting style, your cognitive profile, and your empathy trait. The entire candidate-gene paradigm collapsed when adequately-powered GWAS (typically requiring N \> 10,000) showed that the real genetic architecture of these traits is polygenic with thousands of variants each explaining \< 0.1% of variance [@border2019].
+
+### C.5   Brain imaging --- neural correlates at implausible magnitudes {#c-brain}
+
+::: {.paper-table}
+**Table 32. C.5 Brain imaging — neural correlates at implausible magnitudes**
+
+| Finding class | Published effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| Brain-wide associations with behavior in small-sample fMRI (2000s–2010s) | r = 0.5–0.8 | Specific brain regions substantially explain individual differences in personality, politics, decision-making; a quick scan reveals deep aspects of character | Numerous N < 40 studies |
+| “Voodoo correlations” in social neuroscience | r > 0.8 with personality measures | Self-report measures of love, empathy, rejection map onto specific brain regions at near-ceiling correlations | Studies critiqued by Vul, Harris, Winkielman & Pashler [@vul2009] |
+| Neuroeconomic predictors of real-world choice | substantial | fMRI signals in the reward circuit predict commercial, political, and financial behavior | Early 2000s neuromarketing |
+| Libet-style “no free will” effect | strong | Your brain commits to your actions hundreds of milliseconds before you are aware of deciding | Libet 1983 and extensions |
+| Dead salmon shows emotional responses (control critique) | significant voxels | Without multiple-comparison correction, a dead fish exhibits emotion-processing activation | Bennett et al. [@bennett2009] — cited here as the critique that defined the problem |
+:::
+
+If the small-sample BWAS literature had been correct, a 30-minute scan could substantially profile a person's personality, political attitudes, and life outcomes. Marek et al. [@marek2022] established that the true correlations at adequate sample sizes are in the *r* = 0.01 range --- the published literature was overstating by one to two orders of magnitude.
+
+### C.6   Education and self-improvement at original billing {#c-edu}
+
+::: {.paper-table}
+**Table 33. C.6 Education and self-improvement at original billing**
+
+| Finding | Published framing / effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| 10,000 hours → expert performance | Deliberate practice as the dominant predictor | Expertise is almost entirely a function of practice; innate differences are small | Ericsson, Krampe & Tesch-Römer 1993; popularized by Gladwell |
+| Grit predicts academic and life outcomes beyond conscientiousness | r > 0.3 unique variance in early papers | A brief scale measures a trait that substantially predicts who succeeds, independent of the Big Five | Duckworth et al. [@duckworth2007] |
+| Growth mindset interventions | d = 0.3–0.5 in early studies | A brief classroom intervention substantially raises achievement, especially among disadvantaged students | Dweck, Blackwell et al. |
+| Brain training → fluid intelligence | d large in early reports | N-back and similar training substantially raises IQ, with far-transfer to academic and professional outcomes | Jaeggi et al. [@jaeggi2008] |
+| Learning styles matching | assumed large | Tailoring instruction to a student’s “visual” vs. “auditory” style substantially improves learning | Wide belief, vanishing evidence |
+| Mozart effect | d large short-term | Listening to classical music briefly substantially raises spatial reasoning; early-childhood exposure permanently raises IQ | Rauscher, Shaw & Ky [@rauscher1993] ; stronger claims in popularization |
+| Nun Study — early-life writing predicts Alzheimer’s | very strong | Autobiographical complexity at age 22 substantially predicts dementia risk 60 years later | Snowdon et al. |
+:::
+
+If this literature had been correct, closing achievement gaps would require only a brief psychological intervention, expertise would be a function of practice time alone, and IQ would be trainable. The actual state of evidence after bias correction is in Appendix A: growth mindset produces *d* = 0.02 in the highest-quality studies; brain training has zero far transfer; learning-styles matching has no reliable empirical support; deliberate practice explains 4% of variance in education and 1% among elite performers.
+
+### C.7   Nutritional and lifestyle epidemiology {#c-nutri}
+
+Schoenfeld and Ioannidis [@schoenfeld2013] examined 50 common cookbook ingredients and found that 40 of the 50 had been associated with cancer risk in published studies, with an average published relative risk of 2.20 across the set. Meta-analyses collapsed these associations to RR ≈ 0.96 --- a 23-fold inflation factor from single studies. Taken at published face value, the last forty years of nutritional epidemiology committed the reader to something like the following.
+
+::: {.paper-table}
+**Table 34. C.7 Nutritional and lifestyle epidemiology**
+
+| Claim (at original published magnitude) | Implication if true | Source |
+| --- | --- | --- |
+| Coffee → cancer (varied specific sites) | Multiple daily exposures substantially change your oncologic risk | Pre-2000s epidemiology; since largely reversed |
+| Eggs → cardiovascular death | Daily eggs substantially raise CVD mortality | Pre-RCT era; reversed |
+| Moderate alcohol protective for CV mortality (J-curve) | One to two drinks daily substantially lowers all-cause mortality vs. abstention | Decades of observational; contradicted by MR [@holmes2014] |
+| Vitamin E, β-carotene, selenium → cancer prevention | Inexpensive supplements substantially reduce cancer and CV mortality | Observational; null/harmful in RCTs (SELECT, CARET, ATBC) |
+| HDL cholesterol protects against CVD | Pharmacologic HDL elevation should substantially reduce CV events | MR and RCTs (torcetrapib etc.) show non-causal |
+| HRT protects against CVD | Long-term hormone therapy meaningfully reduces heart attacks | WHI [@investigators2002] reversed this |
+| Red meat → cancer | Normal Western consumption substantially raises cancer risk | Associations much weaker after bias correction |
+| Low-fat diet → CV protection | A population-level shift in macronutrients substantially reduces CVD | Women’s Health Initiative dietary trial: null |
+:::
+
+If the observational nutrition literature had been correct, diet would be the dominant lever for population health, supplements would have transformed longevity by 1990, and hormone replacement would have halved cardiovascular disease in postmenopausal women. Randomized trials have systematically reversed the largest of these claims.
+
+### C.8   Economics, nudges, and campaign persuasion {#c-econ}
+
+::: {.paper-table}
+**Table 35. C.8 Economics, nudges, and campaign persuasion**
+
+| Finding | Published effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| Academic nudge studies (social comparison, defaults, framing) | 8.7 percentage points average | Low-cost behavioral interventions produce substantial real-world changes when deployed at population scale | DellaVigna & Linos [@dellavigna2022] — academic sample |
+| Microcredit as poverty reduction | Substantial positive effects | Small loans are a general-purpose anti-poverty instrument at population scale | 1990s observational and small-sample reports |
+| Door-to-door canvassing on vote choice | Several pp per contact in early papers | A small number of well-targeted doorstep conversations could decide a national election | Pre-Kalla-Broockman literature |
+| Contact hypothesis on prejudice | d large in early work | Brief positive cross-group contact substantially reduces prejudice long-term | Paluck & Green lit reviews reveal more mixed evidence |
+| LaCour canvassing on gay marriage attitudes | d very large, durable | A single 20-minute conversation permanently shifts political attitudes on polarized issues | LaCour & Green [@lacour2014] — retracted 2015 for fabricated data |
+| Financial literacy education → behavior | substantial in early work | Classroom financial education substantially improves real-world financial decisions | Fernandes, Lynch & Netemeyer [@fernandes2014] collapse this to r ≈ 0.04 |
+| CEO effects on firm performance | reported large | Hiring the right CEO substantially determines shareholder returns | Bertrand & Schoar find small effects; most variance is firm and industry |
+| Hurricane-name matching on charitable giving | d reported large | Sharing a first letter with a hurricane’s name substantially raises your probability of donating | Chandler et al. [@chandler2008] |
+| Name-letter effect (Dennis → dentist) | substantial | People are meaningfully more likely to choose careers and spouses sharing letters with their own name | Pelham et al. [@pelham2002] series |
+:::
+
+If this literature were real, nudges would scale, campaigns would decide elections at small budgets, canvassing would resolve culture-war disputes, and the career you chose was substantially determined by your own first initial. The actual scale effects (1.4 pp for nudges at government scale), the actual canvassing effects on vote choice (indistinguishable from zero in Kalla & Broockman [@kalla2018]), and the actual robustness of the name-letter literature to confounders are documented in Appendix A.
+
+### C.9   Parapsychology --- the limit case {#c-psi}
+
+The strongest test of whether the standard methodological toolkit of psychology can manufacture false positives at publication-quality effect sizes is whether it can produce significant evidence for effects known in advance to be impossible. It can.
+
+::: {.paper-table}
+**Table 36. C.9 Parapsychology — the limit case**
+
+| Finding | Published effect | Implication if true | Source |
+| --- | --- | --- | --- |
+| Precognition of future stimuli | 9 experiments, p < 0.05 in 8 | The effect of a future event can be detected in present behavior; time-reversed causation in human cognition | Bem 2011 JPSP |
+| Telepathic ganzfeld hit rates | ~32% vs. 25% chance | Mind-to-mind information transfer operates at a small but reliable rate | Honorton and meta-analyses |
+| Global Consciousness Project — RNG deviations during major events | p small across events | Collective human attention substantially influences physical random-number generators | PEAR lab and successors |
+:::
+
+Bem [@bem2011] was published in the field's leading journal using its standard methods. The study is methodologically indistinguishable from hundreds of uncontested publications. It is included here because it establishes the upper bound on what the standard toolkit can produce: a result with *p* \< 0.05 for an effect that is nomologically impossible. If the methods that produced Bem also produced the rest of the social priming literature, the results are not differentially credible.
+
+### C.10   Animal models and preclinical translation {#c-preclin}
+
+The preclinical animal literature reports substantial therapeutic effects in roughly every disease model in which it is tested. If taken at published face value, thousands of interventions should work in humans. Approximately 5% actually do [@ineichen2024]. Several representative classes:
+
+::: {.paper-table}
+**Table 37. C.10 Animal models and preclinical translation**
+
+| Claim (at preclinical published magnitude) | Implication if true | Source |
+| --- | --- | --- |
+| Hundreds of neuroprotective agents for stroke | Dozens of drugs should prevent stroke damage in humans | ALL failed in human trials until tPA |
+| Many anti-amyloid agents for Alzheimer’s | Reducing amyloid plaque in mice should translate to substantial cognitive benefit in humans | Decades of failures before marginal anti-amyloid antibody effects |
+| Cancer biology reproducibility | Landmark oncology findings should reliably replicate across labs | Errington et al. [@errington2021] : effects 85% smaller; 40% replication rate |
+:::
+
+Publication bias in preclinical stroke inflates effects by \~31% [@sena2010] and small-sample bias compounds this. If the full preclinical literature had been correct, modern medicine would already have cured the major neurodegenerative and cerebrovascular diseases, rather than confronting them.
+
+### C.11   What taking the literature at face value commits you to {#c-sum}
+
+Collecting the appendix into a single inventory of the world implied by the published literature before replication arrived:
+
+-   Every ambient environmental cue --- cup temperature, object weight, color, smell, background image, posture --- substantially reshapes your cognition and judgment within minutes.
+-   Self-control is a quantifiable liquid battery that discharges across the day and recharges on sugar, with measurable consequences for judicial, professional, and moral decisions.
+-   Standardized testing is largely a priming experiment, and much of the racial and gender achievement gap is manipulable in a half-hour session.
+-   Specific individual genetic variants substantially determine depression, aggression, personality, cognition, and parenting.
+-   A 30-minute MRI scan reveals deep individual differences at correlations of *r* \> 0.7.
+-   Expertise is overwhelmingly practice; talent is small; IQ is trainable; brief classroom interventions close achievement gaps.
+-   Diet is the dominant driver of chronic disease; supplements substantially extend life; hormone replacement protects the heart.
+-   Behavioral nudges solve policy at population scale; canvassing decides elections; microcredit ends poverty; financial literacy education fixes household finance.
+-   The careers you choose and the people you marry are non-trivially determined by letter-match heuristics with your own name.
+-   Precognition and telepathy are measurable phenomena at small but reliable effect sizes, and collective consciousness perturbs physical hardware.
+-   Almost every preclinical therapeutic finding translates to human benefit.
+
+None of these propositions, taken at the magnitudes the original literature claimed, survived adequate-powered replication. Most survived partially, with effect sizes one-half to one-tenth of the published values and heterogeneity sufficient to prevent confident application. Several are genuine methodological artifacts of a pre-registration, pre-replication era and have vanished entirely under scrutiny.
+
+The point of Appendix C is not that the investigators who produced these findings were uniformly mistaken or dishonest. Most were neither. The point is that the standard methodological toolkit, operating on small samples, with undisclosed analytic flexibility, in the presence of strong publication filters, was capable of producing a literature that described a world that does not exist. That literature was taken seriously for decades. It shaped clinical practice, educational policy, public health messaging, and the popular understanding of human nature. The gap between the world Appendix C describes and the world Appendices A and B describe is the scale of the correction still in progress.
+
+*The upshot of Appendix C: the literature we retired was a literature describing a universe whose rules differ from ours. We do not live in a world where holding a warm cup rewires trust by a third of a standard deviation. We lived for two decades in one that acted like we did.*
+
+## Appendix D --- Replication pairs: original vs. large-N replication
+
+The current replication-pair build contains 1,548 usable original/replication endpoint pairs. Across those rows, 80% of effects shrink and 41% drop below the p \< .05 boundary at the replication sample size.
+
+::: {.paper-table}
+**Table 38. Appendix D — Replication pairs: original vs. large-N replication**
+
+| # | Study | N orig | d orig | N repl | d repl | Replication |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Strack pen-in-teeth | 92 | 0.82 | 1,894 | 0.03 | RRR Wagenmakers 2016 |
+| 2 | Baumeister radishes/ego depletion | 67 | 1.76 | 2,141 | 0.04 | RRR Hagger 2016 |
+| 3 | Schooler verbal overshadowing (RRR1) | 90 | 0.80 | 2,319 | 0.03 | RRR Alogna 2014 |
+| 4 | Schooler verbal overshadowing (RRR2) | 90 | 0.80 | 3,026 | 0.16 | RRR Alogna 2014 v2 |
+| 5 | Dijksterhuis professor priming | 80 | 0.51 | 4,493 | 0.01 | RRR O’Donnell 2018 |
+| 6 | Mazar/Amir/Ariely moral reminders | 229 | 0.48 | 5,786 | 0.02 | RRR Verschuere 2018 |
+| 7 | Srull-Wyer hostility priming | 96 | 0.35 | 7,300 | 0.06 | RRR McCarthy 2018 |
+| 8 | Rand et al intuitive cooperation | 343 | 0.40 | 3,596 | 0.01 | RRR Bouwmeester 2017 |
+| 9 | Finkel commitment/forgiveness | 98 | 0.40 | 5,070 | 0.28 | RRR Cheung 2016 |
+| 10 | Bargh elderly priming | 30 | 0.70 | 120 | 0.02 | Doyen 2012 |
+| 11 | Carney power pose | 42 | 0.65 | 200 | 0.02 | Ranehill 2015 |
+| 12 | Bem precognition | 100 | 0.22 | 3,289 | 0.01 | Galak 2012 |
+| 13 | Anchoring 1 (Tversky 1974) | 152 | 0.88 | 6,344 | 0.70 | Many Labs 1 |
+| 14 | Retrospective gambler’s fallacy | 105 | 0.80 | 6,344 | 0.50 | Many Labs 1 |
+| 15 | Anchoring 2 | 152 | 0.72 | 6,344 | 0.54 | Many Labs 1 |
+| 16 | Anchoring 3 | 152 | 0.71 | 6,344 | 0.54 | Many Labs 1 |
+| 17 | Gain/loss framing (Tversky 1981) | 122 | 0.70 | 6,344 | 0.60 | Many Labs 1 |
+| 18 | Gambler’s fallacy (Oppenheimer 2009) | 59 | 0.67 | 6,344 | 0.70 | Many Labs 1 |
+| 19 | Anchoring 4 | 152 | 0.65 | 6,344 | 0.48 | Many Labs 1 |
+| 20 | Allowed/forbidden asymmetry | 122 | 0.60 | 6,344 | 0.35 | Many Labs 1 |
+| 21 | Sunk cost (Oppenheimer 2009) | 211 | 0.53 | 6,344 | 0.46 | Many Labs 1 |
+| 22 | Quote attribution (anchoring) | 89 | 0.48 | 6,344 | 0.30 | Many Labs 1 |
+| 23 | Imagined contact (Husnu 2010) | 144 | 0.38 | 6,344 | 0.01 | Many Labs 1 |
+| 24 | Flag priming (Carter 2011) | 235 | 0.30 | 6,344 | 0.01 | Many Labs 1 |
+| 25 | Currency priming (Caruso 2013) | 148 | 0.30 | 6,344 | 0.01 | Many Labs 1 |
+| 26 | Hauser 2007 trolley (side-effect) | 2,646 | 2.50 | 6,842 | 1.35 | Many Labs 2 |
+| 27 | Miyamoto 2002 correspondence bias | 58 | 1.75 | 7,197 | 1.82 | Many Labs 2 |
+| 28 | Knobe 2003 side-effect intentionality | 78 | 1.45 | 7,982 | 1.75 | Many Labs 2 |
+| 29 | Zhong-Liljenquist 2006 Macbeth | 27 | 1.02 | 7,001 | 0.00 | Many Labs 2 |
+| 30 | Ross 1977 false consensus (supermarket) | 80 | 0.99 | 7,205 | 1.18 | Many Labs 2 |
+| 31 | Tversky-Kahneman 1981 framing | 181 | 0.89 | 7,228 | 0.40 | Many Labs 2 |
+| 32 | Bauer 2012 consumerism/trust | 77 | 0.87 | 6,608 | 0.12 | Many Labs 2 |
+| 33 | Ross 1977 false consensus (traffic) | 80 | 0.80 | 7,827 | 0.95 | Many Labs 2 |
+| 34 | Gray-Wegner 2009 moral typecasting | 69 | 0.80 | 8,002 | 0.95 | Many Labs 2 |
+| 35 | Rottenstreich-Hsee 2001 affect/probability | 40 | 0.74 | 7,218 | -0.08 | Many Labs 2 |
+| 36 | Inbar 2009 disgust/gay-kissing | 44 | 0.70 | 7,117 | 0.05 | Many Labs 2 |
+| 37 | Hsee 1998 less-is-better | 83 | 0.69 | 7,646 | 0.78 | Many Labs 2 |
+| 38 | Huang 2014 direction/SES | 180 | 0.68 | 6,591 | 0.40 | Many Labs 2 |
+| 39 | Norenzayan 2002 formal/intuitive | 53 | 0.67 | 7,396 | 0.86 | Many Labs 2 |
+| 40 | Savani 2010 choice (Indian) | 128 | -0.65 | 122 | -0.03 | Many Labs 2 |
+| 41 | Alter 2007 disfluency | 41 | 0.64 | 2,580 | -0.03 | Many Labs 2 |
+| 42 | Anderson 2012 status/wellbeing | 228 | 0.57 | 6,905 | -0.04 | Many Labs 2 |
+| 43 | Giessner-Schubert 2007 vertical/power | 64 | 0.55 | 7,890 | 0.03 | Many Labs 2 |
+| 44 | Graham 2009 moral foundations | 1,548 | 0.52 | 6,966 | 0.29 | Many Labs 2 |
+| 45 | Kay 2014 structure/goal | 67 | 0.49 | 6,506 | -0.02 | Many Labs 2 |
+| 46 | Schwarz 1991 question order | 100 | 0.48 | 7,460 | -0.07 | Many Labs 2 |
+| 47 | Tversky-Gati 1978 similarity asymmetry | 144 | 0.48 | 3,549 | 0.01 | Many Labs 2 |
+| 48 | Risen-Gilovich 2008 tempting fate | 120 | 0.39 | 8,000 | 0.18 | Many Labs 2 |
+| 49 | Shafir 1993 choose/reject | 170 | 0.35 | 7,901 | -0.13 | Many Labs 2 |
+| 50 | Hauser 2007 trolley (Ned/Oscar) | 2,612 | 0.34 | 7,923 | 0.25 | Many Labs 2 |
+| 51 | Zaval 2014 heat priming | 300 | 0.31 | 4,204 | -0.03 | Many Labs 2 |
+| 52 | Critcher-Gilovich 2008 incidental anchor | 207 | 0.30 | 6,826 | 0.04 | Many Labs 2 |
+| 53 | Van Lange 1997 SVO/siblings | 631 | 0.19 | 6,234 | -0.04 | Many Labs 2 |
+| 54 | Credential-ego depletion (ML3) | 60 | 0.80 | 3,000 | 0.04 | Many Labs 3 |
+| 55 | Subjective distance (ML3) | 50 | 0.60 | 3,000 | 0.04 | Many Labs 3 |
+| 56 | Weight-importance (ML3 Jostmann) | 40 | 0.60 | 3,000 | 0.02 | Many Labs 3 |
+| 57 | Metaphoric structuring (ML3) | 50 | 0.50 | 3,000 | 0.08 | Many Labs 3 |
+| 58 | Warmth-competence (ML3) | 90 | 0.50 | 3,000 | 0.10 | Many Labs 3 |
+| 59 | Stroop conflict adaptation (ML3) | 70 | 0.45 | 3,000 | 0.06 | Many Labs 3 |
+| 60 | Availability (ML3) | 80 | 0.40 | 3,000 | 0.25 | Many Labs 3 |
+| 61 | Elaboration likelihood (ML3) | 100 | 0.40 | 3,000 | 0.20 | Many Labs 3 |
+| 62 | Mortality salience (Greenberg 1994) | 124 | 0.60 | 2,281 | 0.03 | Many Labs 4 |
+| 63 | Crosby 2008 social referencing gaze (ML5) | 25 | 1.38 | 277 | 0.40 | Many Labs 5 |
+| 64 | Eskine 2011 bitter taste → moral judgment (ML5) | 54 | 1.12 | 1,137 | 0.10 | Many Labs 5 |
+| 65 | LoBue & DeLoache 2008 snake detection (ML5) | 48 | 1.09 | 553 | 0.04 | Many Labs 5 |
+| 66 | van Dijk 2008 anger-in-bargaining (ML5) | 103 | 0.96 | 663 | 0.19 | Many Labs 5 |
+| 67 | Vohs & Schooler 2008 free will cheating (ML5) | 30 | 0.88 | 621 | 0.08 | Many Labs 5 |
+| 68 | Albarracín 2008 action priming (ML5) | 36 | 0.79 | 884 | 0.10 | Many Labs 5 |
+| 69 | Aviezer body emotions (Science) | 15 | 2.67 | 400 | 1.50 | SSRP |
+| 70 | Karpicke retrieval practice (Science) | 40 | 1.71 | 236 | 1.39 | SSRP |
+| 71 | Wilson just-think (Science) | 42 | 1.50 | 380 | 1.01 | SSRP |
+| 72 | Morewedge imagined eating (Science) | 51 | 1.39 | 732 | 0.77 | SSRP |
+| 73 | Duncan memory penumbra (Science) | 22 | 1.32 | 950 | 0.52 | SSRP |
+| 74 | Pyc mediator effectiveness (Science) | 54 | 1.32 | 1,400 | 0.70 | SSRP |
+| 75 | Janssen commons (Science) | 224 | 1.22 | 1,200 | 0.95 | SSRP |
+| 76 | Shah scarcity (Science) | 42 | 1.22 | 3,000 | 0.10 | SSRP |
+| 77 | Nishi inequality (Nature) | 1,462 | 1.09 | 1,920 | 0.75 | SSRP |
+| 78 | Ramirez writing/math (Science) | 106 | 1.09 | 1,496 | 0.02 | SSRP |
+| 79 | Hauser future cooperation (Nature) | 96 | 1.06 | 5,400 | 0.87 | SSRP |
+| 80 | Ackerman haptic priming (Nature) | 54 | 1.04 | 1,158 | 0.10 | SSRP |
+| 81 | Derex cultural complexity (Nature) | 366 | 1.01 | 2,000 | 0.75 | SSRP |
+| 82 | Kovacs social-sense (Science) | 48 | 0.85 | 456 | 0.63 | SSRP |
+| 83 | Lee washing dissonance (Science) | 72 | 0.85 | 1,024 | 0.10 | SSRP |
+| 84 | Balafoutas affirmative action | 154 | 0.75 | 2,000 | 0.63 | SSRP |
+| 85 | Gervais analytic→atheism (Science) | 179 | 0.68 | 528 | 0.06 | SSRP |
+| 86 | Kidd literary-fiction ToM (Science) | 86 | 0.58 | 792 | 0.04 | SSRP |
+| 87 | Sparrow Google effects (Science) | 46 | 0.58 | 520 | 0.06 | SSRP |
+| 88 | Gneezy overhead aversion | 237 | 0.54 | 1,268 | 0.41 | SSRP |
+| 89 | Kessler-Roth matching markets | 120 | 0.62 | 385 | 0.55 | EERP 2016 |
+| 90 | Bartling self-control contracts | 144 | 0.60 | 450 | 0.50 | EERP 2016 |
+| 91 | Friedman continuous-time games | 120 | 0.60 | 385 | 0.50 | EERP 2016 |
+| 92 | Duffy-Puzzello endogenous institutions | 240 | 0.55 | 770 | 0.48 | EERP 2016 |
+| 93 | Abeler effort/loss aversion | 120 | 0.52 | 400 | 0.45 | EERP 2016 |
+| 94 | Dulleck expert markets | 288 | 0.50 | 920 | 0.40 | EERP 2016 |
+| 95 | Fudenberg-Rand-Dreber cooperation | 180 | 0.50 | 575 | 0.42 | EERP 2016 |
+| 96 | Ambrus cheap talk | 156 | 0.48 | 500 | 0.42 | EERP 2016 |
+| 97 | Kirchler bubble markets | 200 | 0.48 | 640 | 0.40 | EERP 2016 |
+| 98 | Charness-Dufwenberg promises | 180 | 0.45 | 580 | 0.40 | EERP 2016 |
+| 99 | Kogan dual-action | 216 | 0.45 | 690 | 0.07 | EERP 2016 |
+| 100 | Ericson beliefs about future | 168 | 0.42 | 540 | 0.06 | EERP 2016 |
+| 101 | de Clippel choice consistency | 144 | 0.40 | 460 | 0.05 | EERP 2016 |
+| 102 | Huck duopoly | 192 | 0.40 | 615 | 0.08 | EERP 2016 |
+| 103 | Fehr children bargaining | 432 | 0.38 | 1,380 | 0.30 | EERP 2016 |
+| 104 | Kuziemko last-place aversion | 180 | 0.38 | 575 | 0.06 | EERP 2016 |
+| 105 | Chen allocation fairness | 200 | 0.35 | 650 | 0.08 | EERP 2016 |
+| 106 | Ifcher-Zarghamee happiness/discount | 144 | 0.35 | 460 | 0.05 | EERP 2016 |
+| 107 | RPP Palmer 2008 (PS) | 8 | 3.37 | 8 | 0.24 | RPP 2015 |
+| 108 | RPP Turk-Browne 2008 (JEPLMC) | 8 | 2.19 | 15 | 1.98 | RPP 2015 |
+| 109 | RPP Forti 2008 (PS) | 14 | 2.09 | 19 | 0.42 | RPP 2015 |
+| 110 | RPP Alvarez 2008 (PS) | 8 | 2.09 | 17 | 4.80 | RPP 2015 |
+| 111 | RPP Beaman 2008 (JEPLMC) | 100 | 2.04 | 15 | 0.26 | RPP 2015 |
+| 112 | RPP Pacton 2008 (JEPLMC) | 24 | 2.04 | 24 | 1.86 | RPP 2015 |
+| 113 | RPP McKinstry 2008 (PS) | 141 | 1.97 | 51 | 2.27 | RPP 2015 |
+| 114 | RPP Ganor-Stern 2008 (JEPLMC) | 32 | 1.96 | 32 | 2.50 | RPP 2015 |
+| 115 | RPP Winawer 2008 (PS) | 29 | 1.88 | 26 | 1.24 | RPP 2015 |
+| 116 | RPP Armor 2008 (PS) | 125 | 1.86 | 177 | 2.37 | RPP 2015 |
+| 117 | RPP Mirman 2008 (JEPLMC) | 22 | 1.81 | 30 | 1.05 | RPP 2015 |
+| 118 | RPP White 2008 (JEPLMC) | 37 | 1.59 | 38 | 1.10 | RPP 2015 |
+| 119 | RPP Morris 2008 (JEPLMC) | 24 | 1.54 | 24 | 0.47 | RPP 2015 |
+| 120 | RPP Berry 2008 (JEPLMC) | 24 | 1.48 | 32 | 0.86 | RPP 2015 |
+| 121 | RPP Roelofs 2008 (JEPLMC) | 24 | 1.48 | 29 | 0.30 | RPP 2015 |
+| 122 | RPP Tamir 2008 (PS) | 82 | 1.47 | 88 | 1.54 | RPP 2015 |
+| 123 | RPP Addis 2008 (PS) | 32 | 1.39 | 32 | 1.72 | RPP 2015 |
+| 124 | RPP Dodson 2008 (JEPLMC) | 39 | 1.35 | 33 | 0.22 | RPP 2015 |
+| 125 | RPP Oberauer 2008 (JEPLMC) | 32 | 1.35 | 21 | 0.88 | RPP 2015 |
+| 126 | RPP Farris 2008 (PS) | 280 | 1.33 | 144 | 0.18 | RPP 2015 |
+| 127 | RPP McKinstry 2008 motion | 28 | 1.32 | 110 | 1.01 | RPP 2015 |
+| 128 | RPP Morewedge 2008 imagined | 52 | 1.32 | 160 | 0.63 | RPP 2015 |
+| 129 | RPP Rule 2008 face perception | 50 | 1.32 | 155 | 0.87 | RPP 2015 |
+| 130 | RPP Campbell 2008 (JEPLMC) | 36 | 1.23 | 36 | 1.23 | RPP 2015 |
+| 131 | RPP Fischer 2008 selective exposure | 52 | 1.16 | 150 | 0.45 | RPP 2015 |
+| 132 | RPP Nurmsoo 2008 (PS) | 32 | 1.16 | 8 | 1.01 | RPP 2015 |
+| 133 | RPP Knutson 2008 neuroeconomics | 45 | 1.15 | 180 | 0.82 | RPP 2015 |
+| 134 | RPP Nurmsoo 2008 children trust | 40 | 1.15 | 120 | 0.45 | RPP 2015 |
+| 135 | RPP Vohs 2008 (PS) | 30 | 1.15 | 58 | 0.20 | RPP 2015 |
+| 136 | RPP Demany 2008 (PS) | 4 | 1.14 | 5 | 1.17 | RPP 2015 |
+| 137 | RPP LoBue 2008 (PS) | 48 | 1.10 | 48 | 0.36 | RPP 2015 |
+| 138 | RPP Eitam 2013 control | 80 | 1.09 | 250 | 0.75 | RPP 2015 |
+| 139 | RPP Williams 2008 warm coffee | 41 | 1.06 | 132 | 0.10 | RPP 2015 |
+| 140 | RPP Mitchell 2008 (JEPLMC) | 32 | 1.04 | 48 | 0.27 | RPP 2015 |
+| 141 | RPP Duncan 2008 memory | 45 | 1.01 | 180 | 0.41 | RPP 2015 |
+| 142 | RPP Schmidt 2008 face processing | 96 | 1.01 | 300 | 0.58 | RPP 2015 |
+| 143 | RPP Exline 2008 wrongdoing | 45 | 0.96 | 135 | 0.02 | RPP 2015 |
+| 144 | RPP Förster 2008 global/local | 82 | 0.94 | 71 | 0.23 | RPP 2015 |
+| 145 | RPP Liefooghe 2008 (JEPLMC) | 25 | 0.94 | 32 | 0.44 | RPP 2015 |
+| 146 | RPP Estes 2008 language | 88 | 0.93 | 280 | 0.70 | RPP 2015 |
+| 147 | RPP Mirman 2008 phonology | 55 | 0.93 | 170 | 0.70 | RPP 2015 |
+| 148 | RPP Schnall 2008 (PS) | 43 | 0.87 | 126 | 0.01 | RPP 2015 |
+| 149 | RPP Ackerman 2010 haptic | 80 | 0.87 | 320 | 0.08 | RPP 2015 |
+| 150 | RPP Moeller 2008 motor | 66 | 0.87 | 210 | 0.04 | RPP 2015 |
+| 151 | RPP Payne 2008 reversal | 88 | 0.87 | 275 | 0.56 | RPP 2015 |
+| 152 | RPP Goff 2008 stereotype threat distance | 55 | 0.86 | 51 | 0.03 | RPP 2015 |
+| 153 | RPP Lau 2008 (PS) | 36 | 0.83 | 70 | 0.07 | RPP 2015 |
+| 154 | RPP Dessalegn 2008 (PS) | 36 | 0.83 | 47 | 0.46 | RPP 2015 |
+| 155 | RPP Bartels 2011 moral time | 110 | 0.82 | 340 | 0.12 | RPP 2015 |
+| 156 | RPP Farris 2008 perception | 78 | 0.82 | 260 | 0.58 | RPP 2015 |
+| 157 | RPP van Dijk 2008 (JPSP) | 103 | 0.82 | 83 | 0.08 | RPP 2015 |
+| 158 | RPP Yap 2008 (JEPLMC) | 32 | 0.82 | 71 | 0.82 | RPP 2015 |
+| 159 | RPP Amodio 2008 (JPSP) | 48 | 0.81 | 75 | 0.15 | RPP 2015 |
+| 160 | RPP Richeson 2008 (PS) | 28 | 0.80 | 66 | 0.04 | RPP 2015 |
+| 161 | RPP Heine 2008 metacognition | 160 | 0.80 | 500 | 0.45 | RPP 2015 |
+| 162 | RPP Pleskac 2008 (JEPLMC) | 68 | 0.79 | 153 | 0.20 | RPP 2015 |
+| 163 | RPP Larsen 2008 smile | 60 | 0.77 | 200 | 0.20 | RPP 2015 |
+| 164 | RPP Cohen 2006 working self | 120 | 0.75 | 400 | 0.22 | RPP 2015 |
+| 165 | RPP Lemay 2008 partner | 145 | 0.75 | 450 | 0.39 | RPP 2015 |
+| 166 | RPP Purdie-Vaughns 2008 ID threat | 90 | 0.75 | 290 | 0.04 | RPP 2015 |
+| 167 | RPP Couture 2008 (JEPLMC) | 24 | 0.74 | 63 | 0.57 | RPP 2015 |
+| 168 | RPP McCrea 2008 (JPSP) | 28 | 0.73 | 61 | 0.61 | RPP 2015 |
+| 169 | RPP Monin 2008 moral credentialing | 188 | 0.72 | 600 | 0.10 | RPP 2015 |
+| 170 | RPP Shnabel 2008 reconciliation | 90 | 0.72 | 280 | 0.06 | RPP 2015 |
+| 171 | RPP Janiszewski 2008 (PS) | 59 | 0.71 | 120 | 0.46 | RPP 2015 |
+| 172 | RPP Morrison-Miller 2008 minorities | 37 | 0.68 | 120 | 0.41 | RPP 2015 |
+| 173 | RPP Ersner-Hershfield 2008 reg fit | 66 | 0.68 | 205 | 0.08 | RPP 2015 |
+| 174 | RPP Savani 2008 choice | 128 | 0.68 | 405 | 0.08 | RPP 2015 |
+| 175 | RPP Murray 2008 (JPSP) | 91 | 0.67 | 76 | 0.27 | RPP 2015 |
+| 176 | RPP Moeller 2008 (PS) | 53 | 0.65 | 72 | 0.07 | RPP 2015 |
+| 177 | RPP Fiedler 2008 (JEPLMC) | 39 | 0.64 | 47 | 0.97 | RPP 2015 |
+| 178 | RPP Rule-Ambady 2008 CEO profits | 50 | 0.63 | 50 | 0.56 | RPP 2015 |
+| 179 | RPP Harris 2008 cost-benefit | 120 | 0.63 | 380 | 0.08 | RPP 2015 |
+| 180 | RPP Dai 2008 (PS) | 56 | 0.59 | 51 | 0.35 | RPP 2015 |
+| 181 | RPP Halevy 2008 ingroup love | 130 | 0.58 | 400 | 0.16 | RPP 2015 |
+| 182 | RPP Oppenheimer 2008 rhyme | 100 | 0.58 | 320 | 0.06 | RPP 2015 |
+| 183 | RPP Correll 2008 implicit bias | 71 | 0.57 | 148 | 0.15 | RPP 2015 |
+| 184 | RPP Henderson 2008 implemental mindset | 46 | 0.54 | 70 | 0.31 | RPP 2015 |
+| 185 | RPP Williams 2008 (PS) | 84 | 0.48 | 125 | 0.09 | RPP 2015 |
+| 186 | RPP Harmon-Jones 2008 (JPSP) | 57 | 0.47 | 71 | 0.13 | RPP 2015 |
+| 187 | RPP Storm 2008 (JEPLMC) | 240 | 0.47 | 270 | 0.01 | RPP 2015 |
+| 188 | RPP Cox 2008 (JPSP) | 100 | 0.46 | 200 | 0.10 | RPP 2015 |
+| 189 | RPP Sahakyan 2008 (JEPLMC) | 96 | 0.46 | 108 | 0.04 | RPP 2015 |
+| 190 | RPP Stanovich-West 2008 biases/ability | 375 | 0.46 | 177 | 0.15 | RPP 2015 |
+| 191 | RPP Eitam 2008 (PS) | 86 | 0.46 | 158 | 0.21 | RPP 2015 |
+| 192 | RPP Ersner-Hershfield 2008 (JPSP) | 110 | 0.45 | 222 | 0.01 | RPP 2015 |
+| 193 | RPP Colzato 2008 (JEPLMC) | 18 | 0.45 | 32 | 0.13 | RPP 2015 |
+| 194 | RPP Masicampo 2008 (PS) | 115 | 0.44 | 166 | 0.10 | RPP 2015 |
+| 195 | RPP Fischer 2008 self-regulation | 85 | 0.43 | 140 | 0.24 | RPP 2015 |
+| 196 | RPP Blankenship-Wegener 2008 resistance | 261 | 0.42 | 251 | 0.09 | RPP 2015 |
+| 197 | RPP Centerbar 2008 (JPSP) | 133 | 0.42 | 113 | 0.19 | RPP 2015 |
+| 198 | RPP Risen-Gilovich 2008 tempting fate | 122 | 0.38 | 226 | 0.01 | RPP 2015 |
+| 199 | RPP Marsh 2008 (JEPLMC) | 48 | 0.36 | 118 | 0.17 | RPP 2015 |
+| 200 | RPP Epley 2008 (PS) | 57 | 0.35 | 78 | 0.12 | RPP 2015 |
+| 201 | RPP Lemay-Clark 2008 eggshells | 186 | 0.34 | 280 | 0.07 | RPP 2015 |
+| 202 | RPP Eastwick 2008 (JPSP) | 163 | 0.28 | 304 | 0.06 | RPP 2015 |
+| 203 | RPP Vul 2008 (PS) | 12 | 0.26 | 12 | 0.24 | RPP 2015 |
+| 204 | RPP Ranganath 2008 (PS) | 564 | 0.01 | 3,597 | 0.21 | RPP 2015 |
+| 205 | Dawson 2011 (Nature) BCL2 MV4;11 | 3 | 26.00 | 3 | 10.31 | RP:CB 2021 |
+| 206 | Dawson 2011 (Nature) BCL2 MV4;11 vs K-562 | 6 | 17.34 | 6 | 14.07 | RP:CB 2021 |
+| 207 | Ward 2010 2HG IDH1-mut AML | 4 | 8.40 | 4 | 2.23 | RP:CB 2021 |
+| 208 | Sugahara 2010 (Science) DOX accumulation 22Rv1 | 6 | 7.41 | 8 | -0.32 | RP:CB 2021 |
+| 209 | Ward 2010 2HG IDH2-mut AML | 4 | 6.75 | 4 | 4.60 | RP:CB 2021 |
+| 210 | Garnett 2012 (Nature) olaparib Ewing vs osteo | 13 | 5.06 | 12 | 0.72 | RP:CB 2021 |
+| 211 | Ward 2010 2HG IDH-mut combined | 8 | 4.36 | 8 | 3.09 | RP:CB 2021 |
+| 212 | Lin 2012 (Cell) RNA/cell 0h vs 24h | 3 | 4.19 | 3 | 0.83 | RP:CB 2021 |
+| 213 | Lin 2012 (Cell) RNA/cell Lot 2 | 3 | 4.19 | 3 | 4.11 | RP:CB 2021 |
+| 214 | Delmore 2011 (Cell) OS JQ1 xenograft | 19 | 3.26 | 24 | 1.32 | RP:CB 2021 |
+| 215 | Sirota 2011 A549 doxorubicin (pos ctrl) | 12 | 3.00 | 18 | 1.26 | RP:CB 2021 |
+| 216 | Willingham 2012 MT1A2 tumor weight | 10 | 2.54 | 13 | -1.13 | RP:CB 2021 |
+| 217 | Delmore 2011 (Cell) MYC mRNA 1h JQ1 | 2 | 2.48 | 5 | 17.41 | RP:CB 2021 |
+| 218 | Delmore 2011 (Cell) MYC mRNA 8h JQ1 | 2 | 2.41 | 5 | 11.22 | RP:CB 2021 |
+| 219 | Dawson 2011 (Nature) MV4;11 OS I-BET151 | 10 | 2.33 | 23 | 0.36 | RP:CB 2021 |
+| 220 | Delmore 2011 (Cell) MM.1S tumor burden | 19 | 2.30 | 18 | 0.56 | RP:CB 2021 |
+| 221 | Sugahara 2010 (Science) TUNEL apoptosis | 6 | 2.30 | 12 | 0.25 | RP:CB 2021 |
+| 222 | Berger 2012 (Nature) PREX2-Q1430* TFS | 20 | 1.74 | 22 | -0.03 | RP:CB 2021 |
+| 223 | Sugahara 2010 (Science) tumor weight ± iRGD | 14 | 1.61 | 14 | 0.22 | RP:CB 2021 |
+| 224 | Berger 2012 (Nature) PREX2-G844D TFS | 20 | 1.41 | 28 | 0.08 | RP:CB 2021 |
+| 225 | Sirota 2011 A549 xenograft cimetidine | 12 | 1.36 | 27 | 0.93 | RP:CB 2021 |
+| 226 | Dawson 2011 (Nature) BCL2 K-562 | 3 | 1.30 | 3 | -2.04 | RP:CB 2021 |
+| 227 | Castellarin 2012 F. nucleatum CRC | 99 | 1.01 | 40 | 0.49 | RP:CB 2021 |
+| 228 | Sirota 2011 ACHN cimetidine (neg ctrl) | 12 | 0.61 | 30 | -0.18 | RP:CB 2021 |
+| 229 | Du 2020 (psychology and health) | 64 | 3.19 | 63 | 4.29 | SCORE COVID-19 |
+| 230 | Pfattheicher 2020 (psychology and health) | 322 | 1.54 | 63 | 1.20 | SCORE COVID-19 |
+| 231 | Abouk 2020 (psychology and health) | 51 | 1.16 | 51 | 0.43 | SCORE COVID-19 |
+| 232 | González-Marrón 2020 (psychology and health) | 27 | 1.08 | 27 | 1.17 | SCORE COVID-19 |
+| 233 | Sternisko 2020 (psychology and health) | 293 | 1.08 | 1,552 | 1.21 | SCORE COVID-19 |
+| 234 | Pennycook 2020 (psychology and health) | 689 | 1.04 | 87 | 0.88 | SCORE COVID-19 |
+| 235 | Bertin 2020 (psychology and health) | 409 | 1.01 | 59 | 1.13 | SCORE COVID-19 |
+| 236 | Messner 2020 (psychology and health) | 1,140 | 0.96 | 1,142 | 0.52 | SCORE COVID-19 |
+| 237 | Malik 2020 (psychology and health) | 41 | 0.95 | 39 | 1.42 | SCORE COVID-19 |
+| 238 | Imhoff 2020 (psychology and health) | 220 | 0.81 | 102 | 0.68 | SCORE COVID-19 |
+| 239 | Bischetti 2020 (psychology and health) | 36 | 0.73 | 214,696 | 0.23 | SCORE COVID-19 |
+| 240 | Hossain 2020 (psychology and health) | 139 | 0.68 | 150 | 0.04 | SCORE COVID-19 |
+| 241 | De La Vega 2020 (psychology and health) | 64 | 0.65 | 691 | 0.03 | SCORE COVID-19 |
+| 242 | Goh 2020 (psychology and health) | 241 | 0.60 | 167 | 0.43 | SCORE COVID-19 |
+| 243 | Kachanoff 2020 (psychology and health) | 259 | 0.56 | 246 | 0.20 | SCORE COVID-19 |
+| 244 | Sala 2020 (psychology and health) | 136 | 0.54 | 162 | 0.08 | SCORE COVID-19 |
+| 245 | Wissmath 2020 (psychology and health) | 1,565 | 0.50 | 958 | 0.22 | SCORE COVID-19 |
+| 246 | Rothgerber 2020 (psychology and health) | 573 | 0.49 | 322 | 0.43 | SCORE COVID-19 |
+| 247 | Columbus 2020 (psychology and health) | 401 | 0.49 | 314 | 1.08 | SCORE COVID-19 |
+| 248 | Teovanovic 2020 (psychology and health) | 407 | 0.48 | 257 | 1.37 | SCORE COVID-19 |
+| 249 | Blagov 2020 (psychology and health) | 501 | 0.43 | 450 | 1.36 | SCORE COVID-19 |
+| 250 | Erceg 2020 (psychology and health) | 880 | 0.41 | 531 | 0.74 | SCORE COVID-19 |
+| 251 | Šrol 2020 (psychology and health) | 783 | 0.34 | 288 | 0.22 | SCORE COVID-19 |
+| 252 | Seale 2020 (psychology and health) | 1,420 | 0.30 | 660 | 0.02 | SCORE COVID-19 |
+| 253 | Stanley 2020 (psychology and health) | 278 | 0.28 | 2,140 | 0.04 | SCORE COVID-19 |
+| 254 | Simione 2020 (psychology and health) | 353 | 0.27 | 552 | 0.11 | SCORE COVID-19 |
+| 255 | Wise 2020 (psychology and health) | 1,152 | 0.25 | 1,339 | 0.01 | SCORE COVID-19 |
+| 256 | Kuratani 2020 (psychology and health) | 78 | 0.17 | 824 | 0.10 | SCORE COVID-19 |
+| 257 | Flesia 2020 (psychology and health) | 2,035 | 0.15 | 1,844 | 0.01 | SCORE COVID-19 |
+| 258 | Gerhold 2020 (psychology and health) | 1,242 | 0.15 | 10,767 | 0.17 | SCORE COVID-19 |
+| 259 | Kavanagh 2020 (psychology and health) | 3,037 | 0.14 | 3,076 | 0.16 | SCORE COVID-19 |
+| 260 | Carrillo-Vega 2020 (psychology and health) | 9,845 | 0.10 | 271,427 | 0.09 | SCORE COVID-19 |
+| 261 | Muto 2020 (psychology and health) | 8,548 | 0.09 | 3,119 | 0.22 | SCORE COVID-19 |
+| 262 | Pennycook 2020 (psychology and health) | 14,932 | 0.06 | 36,930 | 0.02 | SCORE COVID-19 |
+| 263 | Ballard 2016 (psychology and health) | 20 | 13.48 | 20 | 6.02 | SCORE main |
+| 264 | Gârleanu 2011 (economics and finance) | 18 | 5.39 | 32 | 0.93 | SCORE main |
+| 265 | Chung 2014 (economics and finance) | 1,743 | 3.27 | 2,142 | 0.10 | SCORE main |
+| 266 | Christensen 2018 (psychology and health) | 516 | 2.94 | 477 | 1.58 | SCORE main |
+| 267 | Muis 2009 (education) | 201 | 2.87 | 978 | 0.61 | SCORE main |
+| 268 | Lindqvist 2010 (political science) | 24 | 2.48 | 26 | 0.36 | SCORE main |
+| 269 | Lindqvist 2010 (political science) | 24 | 2.48 | 30 | 0.42 | SCORE main |
+| 270 | Ohtsubo 2014 (psychology and health) | 29 | 2.27 | 79 | 0.11 | SCORE main |
+| 271 | Kim 2014 (education) | 11,767 | 2.25 | 2,513 | 0.17 | SCORE main |
+| 272 | Lindqvist 2010 (political science) | 33 | 2.23 | 28 | 1.97 | SCORE main |
+| 273 | Lindqvist 2010 (political science) | 33 | 1.99 | 28 | 0.49 | SCORE main |
+| 274 | Rinaldi 2016 (psychology and health) | 20 | 1.87 | 50 | 0.27 | SCORE main |
+| 275 | Petersen 2017 (psychology and health) | 28 | 1.81 | 26 | 2.02 | SCORE main |
+| 276 | Zhou 2014 (psychology and health) | 16 | 1.80 | 13 | 0.96 | SCORE main |
+| 277 | Welzel 2012 (political science) | 118 | 1.77 | 31 | 1.63 | SCORE main |
+| 278 | Zhang 2009 (economics and finance) | 14 | 1.74 | 32 | 0.15 | SCORE main |
+| 279 | Rodriguez-Lara 2012 (economics and finance) | 9 | 1.72 | 30 | 1.59 | SCORE main |
+| 280 | Rodriguez-Lara 2012 (economics and finance) | 24 | 1.70 | 178 | 1.79 | SCORE main |
+| 281 | Yiend 2015 (psychology and health) | 14 | 1.70 | 63 | 0.03 | SCORE main |
+| 282 | Chudgar 2009 (education) | 25 | 1.62 | 48 | 0.32 | SCORE main |
+| 283 | Zhu 2009 (business) | 23 | 1.61 | 69 | 0.32 | SCORE main |
+| 284 | Burgoon 2014 (political science) | 146,090 | 1.60 | 79,242 | 0.47 | SCORE main |
+| 285 | Lai 2011 (psychology and health) | 27 | 1.55 | 78 | 0.22 | SCORE main |
+| 286 | Zakharova 2014 (political science) | 7,554 | 1.47 | 5,704 | 1.03 | SCORE main |
+| 287 | Liang 2018 (economics and finance) | 17,554 | 1.46 | 21,945 | 0.30 | SCORE main |
+| 288 | Goerg 2010 (economics and finance) | 24 | 1.44 | 28 | 0.88 | SCORE main |
+| 289 | Rodriguez-Lara 2012 (economics and finance) | 13 | 1.43 | 130 | 1.63 | SCORE main |
+| 290 | Goeree 2011 (economics and finance) | 157 | 1.40 | 198 | 1.95 | SCORE main |
+| 291 | Liang 2018 (economics and finance) | 17,554 | 1.37 | 21,945 | 0.26 | SCORE main |
+| 292 | Tsay 2014 (business) | 41 | 1.35 | 96 | 0.24 | SCORE main |
+| 293 | Griffiths 2011 (psychology and health) | 19 | 1.32 | 174 | 1.29 | SCORE main |
+| 294 | Liang 2018 (economics and finance) | 393 | 1.27 | 491 | 0.11 | SCORE main |
+| 295 | Liang 2018 (economics and finance) | 393 | 1.27 | 391 | 1.27 | SCORE main |
+| 296 | Liang 2018 (economics and finance) | 17,554 | 1.22 | 21,945 | 0.15 | SCORE main |
+| 297 | Kang 2009 (psychology and health) | 48 | 1.22 | 55 | 0.75 | SCORE main |
+| 298 | Barsbai 2017 (economics and finance) | 848 | 1.20 | 224 | 0.46 | SCORE main |
+| 299 | Barsbai 2017 (economics and finance) | 848 | 1.20 | 224 | 0.54 | SCORE main |
+| 300 | Barsbai 2017 (economics and finance) | 848 | 1.20 | 192 | 0.53 | SCORE main |
+| 301 | Lindqvist 2010 (political science) | 29 | 1.20 | 24 | 1.26 | SCORE main |
+| 302 | Hurst 2017 (psychology and health) | 138 | 1.19 | 68 | 0.80 | SCORE main |
+| 303 | Tai 2013 (sociology and criminology) | 7,840 | 1.18 | 6,904 | 1.13 | SCORE main |
+| 304 | Rodriguez-Lara 2012 (economics and finance) | 21 | 1.13 | 100 | 1.35 | SCORE main |
+| 305 | Rodriguez-Lara 2012 (economics and finance) | 21 | 1.13 | 108 | 1.35 | SCORE main |
+| 306 | Welzel 2012 (political science) | 73,175 | 1.10 | 45,119 | 0.41 | SCORE main |
+| 307 | Ku 2014 (psychology and health) | 81 | 1.10 | 454 | 0.35 | SCORE main |
+| 308 | Thomas 2014 (psychology and health) | 276 | 1.10 | 247 | 0.50 | SCORE main |
+| 309 | Bruner 2017 (economics and finance) | 106 | 1.04 | 117 | 0.45 | SCORE main |
+| 310 | Ma-Kellams 2011 (psychology and health) | 42 | 1.04 | 437 | 0.10 | SCORE main |
+| 311 | Kollmeyer 2009 (sociology and criminology) | 566 | 1.00 | 168 | 0.01 | SCORE main |
+| 312 | Vermeulen 2010 (psychology and health) | 107 | 0.98 | 556 | 0.38 | SCORE main |
+| 313 | Kollmeyer 2009 (sociology and criminology) | 566 | 0.98 | 168 | 0.49 | SCORE main |
+| 314 | Case 2011 (sociology and criminology) | 119 | 0.96 | 159 | 0.05 | SCORE main |
+| 315 | Brough 2016 (business) | 194 | 0.96 | 188 | 0.65 | SCORE main |
+| 316 | Kollmeyer 2009 (sociology and criminology) | 566 | 0.96 | 168 | 0.35 | SCORE main |
+| 317 | Rodriguez-Lara 2012 (economics and finance) | 29 | 0.96 | 188 | 1.52 | SCORE main |
+| 318 | Vermeulen 2010 (psychology and health) | 107 | 0.95 | 556 | 0.55 | SCORE main |
+| 319 | Zakharova 2014 (political science) | 2,673 | 0.94 | 4,309 | 1.02 | SCORE main |
+| 320 | Biernat 2013 (psychology and health) | 76 | 0.93 | 113 | 0.25 | SCORE main |
+| 321 | Zakharova 2014 (political science) | 5,659 | 0.91 | 5,881 | 0.87 | SCORE main |
+| 322 | Benjamin 2010 (economics and finance) | 284 | 0.89 | 1,812 | 0.00 | SCORE main |
+| 323 | Barsbai 2017 (economics and finance) | 848 | 0.89 | 224 | 0.24 | SCORE main |
+| 324 | Rodriguez-Lara 2012 (economics and finance) | 34 | 0.88 | 230 | 0.93 | SCORE main |
+| 325 | Triana 2009 (business) | 181 | 0.88 | 105 | 0.72 | SCORE main |
+| 326 | Calzo 2013 (psychology and health) | 5,867 | 0.85 | 2,438 | 0.06 | SCORE main |
+| 327 | Usta 2011 (business) | 36 | 0.85 | 274 | 0.14 | SCORE main |
+| 328 | Niehaus 2014 (education) | 1,020 | 0.84 | 1,342 | 0.53 | SCORE main |
+| 329 | Rodriguez-Lara 2012 (economics and finance) | 38 | 0.84 | 218 | 1.50 | SCORE main |
+| 330 | Woltin 2011 (psychology and health) | 36 | 0.82 | 265 | 0.11 | SCORE main |
+| 331 | Linkenauger 2009 (psychology and health) | 30 | 0.82 | 112 | 0.02 | SCORE main |
+| 332 | Sandra 2018 (psychology and health) | 43 | 0.81 | 127 | 0.01 | SCORE main |
+| 333 | Petit 2017 (business) | 47 | 0.81 | 928 | 0.04 | SCORE main |
+| 334 | Lefevre 2014 (psychology and health) | 102 | 0.81 | 288 | 0.35 | SCORE main |
+| 335 | Kollmeyer 2009 (sociology and criminology) | 397 | 0.81 | 208 | 0.24 | SCORE main |
+| 336 | Kollmeyer 2009 (sociology and criminology) | 566 | 0.78 | 168 | 0.40 | SCORE main |
+| 337 | Da 2009 (economics and finance) | 30 | 0.77 | 30 | 0.48 | SCORE main |
+| 338 | Ståhl 2012 (psychology and health) | 63 | 0.75 | 305 | 0.02 | SCORE main |
+| 339 | Srinivasan 2010 (psychology and health) | 34 | 0.74 | 144 | 0.35 | SCORE main |
+| 340 | Denson 2009 (education) | 236 | 0.73 | 222 | 0.87 | SCORE main |
+| 341 | Vermeulen 2010 (psychology and health) | 107 | 0.73 | 540 | 0.35 | SCORE main |
+| 342 | O’brien 2015 (sociology and criminology) | 1,860 | 0.71 | 1,438 | 0.87 | SCORE main |
+| 343 | Van Dijck 2009 (psychology and health) | 40 | 0.70 | 158 | 0.18 | SCORE main |
+| 344 | Ritov 2014 (business) | 109 | 0.70 | 358 | 0.36 | SCORE main |
+| 345 | Yang 2013 (business) | 101 | 0.69 | 636 | 0.24 | SCORE main |
+| 346 | Vollmann 2011 (psychology and health) | 85 | 0.67 | 101 | 1.35 | SCORE main |
+| 347 | Etkin 2015 (business) | 123 | 0.67 | 522 | 0.21 | SCORE main |
+| 348 | Rubin 2010 (business) | 475 | 0.66 | 170 | 1.49 | SCORE main |
+| 349 | Zakharova 2014 (political science) | 3,388 | 0.66 | 6,550 | 0.79 | SCORE main |
+| 350 | Lee 2018 (psychology and health) | 48 | 0.64 | 156 | 0.08 | SCORE main |
+| 351 | Vermeulen 2010 (psychology and health) | 107 | 0.64 | 540 | 0.53 | SCORE main |
+| 352 | Rich 2018 (psychology and health) | 95 | 0.60 | 474 | 0.45 | SCORE main |
+| 353 | Pastötter 2013 (psychology and health) | 400 | 0.60 | 1,392 | 0.54 | SCORE main |
+| 354 | Mason 2012 (psychology and health) | 77 | 0.59 | 484 | 0.02 | SCORE main |
+| 355 | Banerjee 2016 (economics and finance) | 68 | 0.59 | 276 | 0.26 | SCORE main |
+| 356 | Vermeulen 2010 (psychology and health) | 107 | 0.59 | 556 | 0.49 | SCORE main |
+| 357 | Navarrete 2010 (psychology and health) | 62 | 0.58 | 545 | 0.23 | SCORE main |
+| 358 | Bursztyn 2017 (economics and finance) | 60 | 0.58 | 528 | 0.01 | SCORE main |
+| 359 | Trémolière 2012 (psychology and health) | 85 | 0.58 | 667 | 0.04 | SCORE main |
+| 360 | Anderson 2011 (economics and finance) | 1,295 | 0.57 | 2,537 | 0.20 | SCORE main |
+| 361 | Gabriel 2011 (psychology and health) | 342 | 0.57 | 410 | 0.31 | SCORE main |
+| 362 | Zakharova 2014 (political science) | 5,841 | 0.57 | 6,038 | 0.84 | SCORE main |
+| 363 | Campbell 2013 (psychology and health) | 197 | 0.57 | 924 | 0.19 | SCORE main |
+| 364 | Janssen 2011 (economics and finance) | 270 | 0.57 | 630 | 0.76 | SCORE main |
+| 365 | King 2017 (business) | 81 | 0.56 | 359 | 0.93 | SCORE main |
+| 366 | Vermeulen 2010 (psychology and health) | 107 | 0.56 | 556 | 0.58 | SCORE main |
+| 367 | Mccarter 2010 (business) | 62 | 0.56 | 403 | 0.02 | SCORE main |
+| 368 | Vermeulen 2010 (psychology and health) | 107 | 0.56 | 1,096 | 0.09 | SCORE main |
+| 369 | Bateson 2012 (political science) | 38,102 | 0.55 | 27,940 | 0.54 | SCORE main |
+| 370 | Bateson 2012 (political science) | 38,102 | 0.55 | 36,496 | 0.59 | SCORE main |
+| 371 | Nakai 2011 (business) | 173 | 0.54 | 740 | 0.16 | SCORE main |
+| 372 | Vermeulen 2010 (psychology and health) | 107 | 0.54 | 556 | 0.41 | SCORE main |
+| 373 | Netemeyer 2018 (business) | 106 | 0.54 | 262 | 0.45 | SCORE main |
+| 374 | Cutright 2011 (business) | 138 | 0.54 | 497 | 0.02 | SCORE main |
+| 375 | Bhattacharjee 2017 (psychology and health) | 400 | 0.53 | 327 | 0.42 | SCORE main |
+| 376 | Vermeulen 2010 (psychology and health) | 107 | 0.53 | 1,096 | 0.09 | SCORE main |
+| 377 | Lowe 2017 (business) | 94 | 0.52 | 615 | 0.13 | SCORE main |
+| 378 | Wilcox 2009 (business) | 138 | 0.52 | 275 | 0.63 | SCORE main |
+| 379 | Ahlerup 2016 (economics and finance) | 62 | 0.52 | 77 | 0.02 | SCORE main |
+| 380 | Kappes 2012 (psychology and health) | 97 | 0.52 | 313 | 0.11 | SCORE main |
+| 381 | Bhattacharjee 2017 (psychology and health) | 360 | 0.51 | 1,020 | 0.71 | SCORE main |
+| 382 | Vermeulen 2010 (psychology and health) | 107 | 0.51 | 556 | 0.53 | SCORE main |
+| 383 | Vermeulen 2010 (psychology and health) | 107 | 0.51 | 540 | 0.61 | SCORE main |
+| 384 | Chittoor 2009 (business) | 206 | 0.50 | 174 | 0.30 | SCORE main |
+| 385 | Alves 2018 (psychology and health) | 210 | 0.49 | 749 | 0.39 | SCORE main |
+| 386 | Nelson 2009 (business) | 102 | 0.49 | 1,125 | 0.15 | SCORE main |
+| 387 | Zakharova 2014 (political science) | 933 | 0.48 | 3,054 | 0.14 | SCORE main |
+| 388 | Vermeulen 2010 (psychology and health) | 107 | 0.47 | 556 | 0.45 | SCORE main |
+| 389 | Lu 2017 (business) | 79 | 0.47 | 364 | 0.21 | SCORE main |
+| 390 | Bartels 2015 (business) | 88 | 0.46 | 750 | 0.01 | SCORE main |
+| 391 | Altmann 2012 (economics and finance) | 124 | 0.46 | 312 | 0.16 | SCORE main |
+| 392 | Hurst 2013 (psychology and health) | 2,474 | 0.45 | 22,418 | 0.30 | SCORE main |
+| 393 | Axt 2018 (psychology and health) | 1,607 | 0.45 | 372 | 0.52 | SCORE main |
+| 394 | Maluch 2015 (education) | 2,835 | 0.45 | 14,940 | 0.23 | SCORE main |
+| 395 | Wentzel 2009 (business) | 209 | 0.44 | 857 | 0.02 | SCORE main |
+| 396 | Zimmerman 2014 (education) | 507 | 0.44 | 366 | 0.51 | SCORE main |
+| 397 | Fitzgerald 2018 (sociology and criminology) | 350 | 0.44 | 150 | 0.42 | SCORE main |
+| 398 | Savani 2010 (psychology and health) | 128 | 0.44 | 448 | 0.42 | SCORE main |
+| 399 | Seuntjens 2015 (psychology and health) | 290 | 0.43 | 510 | 0.71 | SCORE main |
+| 400 | Baillon 2018 (economics and finance) | 198 | 0.43 | 846 | 0.27 | SCORE main |
+| 401 | Denson 2009 (education) | 236 | 0.42 | 222 | 0.87 | SCORE main |
+| 402 | Umashankar 2017 (business) | 192 | 0.42 | 952 | 0.03 | SCORE main |
+| 403 | Weijters 2013 (business) | 218 | 0.42 | 975 | 0.15 | SCORE main |
+| 404 | Bateson 2012 (political science) | 38,031 | 0.41 | 27,940 | 0.39 | SCORE main |
+| 405 | Vermeulen 2010 (psychology and health) | 107 | 0.41 | 540 | 0.41 | SCORE main |
+| 406 | Cohen 2015 (economics and finance) | 575 | 0.41 | 493 | 1.14 | SCORE main |
+| 407 | Alves 2018 (psychology and health) | 223 | 0.40 | 530 | 0.05 | SCORE main |
+| 408 | Bollerslev 2009 (economics and finance) | 204 | 0.40 | 153 | 0.10 | SCORE main |
+| 409 | Vermeulen 2010 (psychology and health) | 107 | 0.40 | 1,096 | 1.06 | SCORE main |
+| 410 | Vermeulen 2010 (psychology and health) | 107 | 0.40 | 1,096 | 0.07 | SCORE main |
+| 411 | Bersani 2013 (sociology and criminology) | 430 | 0.40 | 619 | 0.23 | SCORE main |
+| 412 | Leboeuf 2010 (business) | 206 | 0.39 | 557 | 0.28 | SCORE main |
+| 413 | Rozenkrants 2017 (business) | 127 | 0.39 | 376 | 0.24 | SCORE main |
+| 414 | Lammers 2018 (psychology and health) | 263 | 0.39 | 379 | 0.33 | SCORE main |
+| 415 | Li 2011 (economics and finance) | 189 | 0.38 | 256 | 0.34 | SCORE main |
+| 416 | De Langhe 2014 (business) | 114 | 0.38 | 516 | 0.18 | SCORE main |
+| 417 | Ihme 2018 (political science) | 368 | 0.37 | 1,502 | 0.08 | SCORE main |
+| 418 | Nyhan 2015 (political science) | 764 | 0.37 | 626 | 0.10 | SCORE main |
+| 419 | Kausel 2015 (business) | 271 | 0.37 | 1,062 | 0.11 | SCORE main |
+| 420 | Reh 2018 (psychology and health) | 90 | 0.36 | 574 | 0.27 | SCORE main |
+| 421 | Pickett 2014 (sociology and criminology) | 393 | 0.36 | 642 | 0.39 | SCORE main |
+| 422 | Vermeulen 2010 (psychology and health) | 107 | 0.35 | 540 | 0.45 | SCORE main |
+| 423 | Pfattheicher 2018 (psychology and health) | 225 | 0.35 | 722 | 0.03 | SCORE main |
+| 424 | Luttrell 2016 (psychology and health) | 174 | 0.35 | 813 | 0.33 | SCORE main |
+| 425 | Bhattacharjee 2017 (psychology and health) | 196 | 0.34 | 161 | 0.16 | SCORE main |
+| 426 | Bhattacharjee 2017 (psychology and health) | 198 | 0.34 | 163 | 0.38 | SCORE main |
+| 427 | Pappu 2014 (business) | 189 | 0.34 | 855 | 0.10 | SCORE main |
+| 428 | Mosimann 2017 (political science) | 19,296 | 0.33 | 18,558 | 0.51 | SCORE main |
+| 429 | Popper 2009 (business) | 238 | 0.33 | 215 | 0.45 | SCORE main |
+| 430 | Mclaren 2012 (political science) | 110,732 | 0.32 | 90,286 | 0.33 | SCORE main |
+| 431 | Einstein 2017 (political science) | 549 | 0.32 | 738 | 0.05 | SCORE main |
+| 432 | Robinson 2011 (education) | 13,213 | 0.31 | 14,057 | 0.43 | SCORE main |
+| 433 | Kupor 2018 (business) | 200 | 0.29 | 2,060 | 0.06 | SCORE main |
+| 434 | Mcdevitt 2014 (economics and finance) | 2,293 | 0.28 | 2,320 | 0.11 | SCORE main |
+| 435 | Fritz 2010 (business) | 229 | 0.27 | 471 | 0.26 | SCORE main |
+| 436 | Bersani 2013 (sociology and criminology) | 813 | 0.27 | 785 | 0.15 | SCORE main |
+| 437 | Bersani 2013 (sociology and criminology) | 813 | 0.27 | 1,384 | 0.00 | SCORE main |
+| 438 | Mclaren 2012 (political science) | 110,732 | 0.27 | 17,134 | 0.32 | SCORE main |
+| 439 | Crossley 2009 (business) | 218 | 0.27 | 1,116 | 0.11 | SCORE main |
+| 440 | Raver 2010 (psychology and health) | 226 | 0.26 | 2,006 | 0.18 | SCORE main |
+| 441 | Brons 2017 (sociology and criminology) | 25 | 0.26 | 27 | 1.04 | SCORE main |
+| 442 | Mclaren 2012 (political science) | 110,732 | 0.26 | 89,939 | 0.30 | SCORE main |
+| 443 | Mclaren 2012 (political science) | 110,732 | 0.26 | 90,130 | 0.28 | SCORE main |
+| 444 | Dumas 2018 (business) | 353 | 0.26 | 921 | 0.01 | SCORE main |
+| 445 | Alves 2018 (psychology and health) | 208 | 0.25 | 1,245 | 0.02 | SCORE main |
+| 446 | Bateson 2012 (political science) | 37,562 | 0.25 | 27,940 | 0.15 | SCORE main |
+| 447 | Denson 2009 (education) | 236 | 0.25 | 222 | 0.42 | SCORE main |
+| 448 | Pitts 2011 (political science) | 217,504 | 0.24 | 319,719 | 0.22 | SCORE main |
+| 449 | Denson 2009 (education) | 236 | 0.23 | 222 | 0.39 | SCORE main |
+| 450 | Bateson 2012 (political science) | 36,962 | 0.23 | 27,940 | 0.19 | SCORE main |
+| 451 | Datar 2017 (psychology and health) | 10,080 | 0.23 | 8,987 | 0.18 | SCORE main |
+| 452 | Liu 2016 (business) | 2,347 | 0.22 | 729 | 0.57 | SCORE main |
+| 453 | Wurst 2017 (psychology and health) | 2,001 | 0.21 | 3,281 | 0.20 | SCORE main |
+| 454 | Subramanian 2013 (business) | 18,949 | 0.21 | 12,344 | 0.03 | SCORE main |
+| 455 | Andrew 2014 (sociology and criminology) | 8,808 | 0.21 | 1,980 | 0.39 | SCORE main |
+| 456 | Roberts 2010 (education) | 1,200 | 0.20 | 13,281 | 0.18 | SCORE main |
+| 457 | Bateson 2012 (political science) | 35,963 | 0.20 | 27,940 | 0.16 | SCORE main |
+| 458 | Ready 2011 (education) | 9,493 | 0.19 | 11,286 | 0.13 | SCORE main |
+| 459 | Amira 2018 (political science) | 586 | 0.18 | 2,231 | 0.11 | SCORE main |
+| 460 | Duriez 2012 (psychology and health) | 499 | 0.18 | 1,270 | 0.03 | SCORE main |
+| 461 | Tomz 2009 (political science) | 647 | 0.17 | 2,684 | 0.01 | SCORE main |
+| 462 | Ishida 2010 (psychology and health) | 4,409 | 0.17 | 7,207 | 0.20 | SCORE main |
+| 463 | Allendorf 2013 (sociology and criminology) | 62,721 | 0.16 | 51,995 | 0.05 | SCORE main |
+| 464 | Kuo 2016 (sociology and criminology) | 1,142 | 0.16 | 2,437 | 0.07 | SCORE main |
+| 465 | Van Gastel 2013 (psychology and health) | 1,929 | 0.15 | 1,362 | 0.01 | SCORE main |
+| 466 | Seaton 2010 (education) | 265,180 | 0.15 | 62,880 | 0.62 | SCORE main |
+| 467 | Roberts 2010 (education) | 12,012 | 0.14 | 13,281 | 0.20 | SCORE main |
+| 468 | Raley 2012 (sociology and criminology) | 3,062 | 0.13 | 1,264 | 0.02 | SCORE main |
+| 469 | Vermeulen 2010 (psychology and health) | 107 | 0.13 | 556 | 0.44 | SCORE main |
+| 470 | Humphrey 2017 (psychology and health) | 10,730 | 0.13 | 319 | 0.38 | SCORE main |
+| 471 | Kim 2016 (psychology and health) | 1,064 | 0.13 | 673 | 0.18 | SCORE main |
+| 472 | Seaton 2010 (education) | 10,221 | 0.13 | 5,298 | 0.19 | SCORE main |
+| 473 | Denson 2009 (education) | 236 | 0.12 | 222 | 0.14 | SCORE main |
+| 474 | Seaton 2010 (education) | 265,180 | 0.12 | 62,880 | 0.30 | SCORE main |
+| 475 | Raley 2012 (sociology and criminology) | 7,838 | 0.11 | 2,524 | 0.01 | SCORE main |
+| 476 | Vermeulen 2010 (psychology and health) | 107 | 0.11 | 540 | 0.52 | SCORE main |
+| 477 | Roberts 2010 (education) | 12,012 | 0.11 | 13,281 | 0.18 | SCORE main |
+| 478 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 4,971 | 0.08 | SCORE main |
+| 479 | Raley 2012 (sociology and criminology) | 7,838 | 0.10 | 2,888 | 0.04 | SCORE main |
+| 480 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 4,971 | 0.04 | SCORE main |
+| 481 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 6,126 | 0.01 | SCORE main |
+| 482 | Raley 2012 (sociology and criminology) | 2,605 | 0.10 | 392 | 0.03 | SCORE main |
+| 483 | Boehm 2015 (psychology and health) | 4,458 | 0.10 | 4,971 | 0.14 | SCORE main |
+| 484 | Hiskey 2018 (political science) | 2,236 | 0.10 | 2,042 | 0.10 | SCORE main |
+| 485 | Denson 2009 (education) | 236 | 0.09 | 222 | 0.13 | SCORE main |
+| 486 | Denson 2009 (education) | 236 | 0.09 | 222 | 0.10 | SCORE main |
+| 487 | Denson 2009 (education) | 236 | 0.09 | 225 | 0.50 | SCORE main |
+| 488 | Kim 2016 (psychology and health) | 4,209 | 0.09 | 1,930 | 0.06 | SCORE main |
+| 489 | Kieffer 2011 (education) | 9,189 | 0.09 | 8,043 | 0.08 | SCORE main |
+| 490 | Armon 2013 (psychology and health) | 2,664 | 0.08 | 37,148 | 0.05 | SCORE main |
+| 491 | Fox 2009 (economics and finance) | 359,092 | 0.08 | 370,778 | 0.01 | SCORE main |
+| 492 | Seaton 2010 (education) | 265,180 | 0.07 | 62,880 | 0.54 | SCORE main |
+| 493 | Welzel 2012 (political science) | 73,175 | 0.07 | 60,452 | 0.08 | SCORE main |
+| 494 | Hiskey 2018 (political science) | 2,236 | 0.07 | 3,238 | 0.03 | SCORE main |
+| 495 | Seaton 2010 (education) | 265,180 | 0.07 | 62,880 | 0.43 | SCORE main |
+| 496 | Hiskey 2018 (political science) | 4,648 | 0.06 | 7,013 | 0.00 | SCORE main |
+| 497 | Chen 2018 (sociology and criminology) | 3,617 | 0.05 | 8,227 | 0.02 | SCORE main |
+| 498 | Echávarri 2016 (economics and finance) | 43,576 | 0.05 | 305,244 | 0.02 | SCORE main |
+| 499 | Boehm 2015 (psychology and health) | 4,458 | 0.05 | 4,971 | 0.06 | SCORE main |
+| 500 | Mclaren 2012 (political science) | 110,732 | 0.05 | 89,939 | 0.02 | SCORE main |
+| 501 | Mclaren 2012 (political science) | 110,732 | 0.05 | 90,130 | 0.07 | SCORE main |
+| 502 | Button 2017 (sociology and criminology) | 7,741 | 0.04 | 7,101 | 0.03 | SCORE main |
+| 503 | Boehm 2015 (psychology and health) | 4,458 | 0.04 | 4,971 | 0.11 | SCORE main |
+| 504 | Welzel 2012 (political science) | 73,175 | 0.04 | 60,452 | 0.11 | SCORE main |
+| 505 | Welzel 2012 (political science) | 73,175 | 0.03 | 59,584 | 0.03 | SCORE main |
+| 506 | Welzel 2012 (political science) | 73,175 | 0.03 | 59,584 | 0.09 | SCORE main |
+| 507 | Roberts 2010 (education) | 12,012 | 0.03 | 13,281 | 0.08 | SCORE main |
+| 508 | Thomas 2012 (sociology and criminology) | 160,274 | 0.02 | 110,747 | 0.03 | SCORE main |
+| 509 | Teney 2016 (sociology and criminology) | 27 | 0.01 | 28 | 0.02 | SCORE main |
+| 510 | Travers 2018 (education) | 7,977,660 | 0.00 | 49,196,731 | 0.00 | SCORE main |
+| 511 | Nichols 2004 Phil Psych | 54 | 1.44 | 131 | 1.27 | Cova 2018 xphi |
+| 512 | Liao 2014 BJA | 30 | 1.28 | 99 | 1.32 | Cova 2018 xphi |
+| 513 | Buckwalter & Schaffer 2015 Nous | 264 | 1.24 | 442 | 0.90 | Cova 2018 xphi |
+| 514 | Sarkissian 2011 M&L | 223 | 0.87 | 363 | 0.67 | Cova 2018 xphi |
+| 515 | Sytsma & Machery 2010 Phil Stud | 295 | 0.87 | 180 | 0.52 | Cova 2018 xphi |
+| 516 | Nichols 2006 JCC | 8 | 0.75 | 50 | 0.44 | Cova 2018 xphi |
+| 517 | Hitchcock & Knobe 2009 J Phil | 3,422 | 0.74 | 200 | 0.63 | Cova 2018 xphi |
+| 518 | Beebe & Buckwalter 2010 M&L | 749 | 0.74 | 514 | 0.66 | Cova 2018 xphi |
+| 519 | Nahmias 2007 Midwest Phil | 632 | 0.70 | 183 | 0.69 | Cova 2018 xphi |
+| 520 | Nadelhoffer 2004 JTPP | 44 | 0.69 | 47 | 0.83 | Cova 2018 xphi |
+| 521 | Roxborough & Cumby 2009 Phil Psych | 118 | 0.69 | 204 | 0.20 | Cova 2018 xphi |
+| 522 | Schaffer & Knobe 2012 Nous | 100 | 0.68 | 150 | 0.58 | Cova 2018 xphi |
+| 523 | Machery 2004 Cognition | 72 | 0.61 | 181 | 0.00 | Cova 2018 xphi |
+| 524 | Knobe 2004 Analysis | 77 | 0.61 | 127 | 1.27 | Cova 2018 xphi |
+| 525 | Knobe & Burra 2006 JCC | 61 | 0.61 | 102 | 0.61 | Cova 2018 xphi |
+| 526 | Knobe 2003a Analysis | 78 | 0.59 | 100 | 0.61 | Cova 2018 xphi |
+| 527 | Beebe & Shea 2013 Episteme | 376 | 0.58 | 418 | 0.74 | Cova 2018 xphi |
+| 528 | Kominsky 2015 Cognition | 60 | 0.57 | 200 | 0.58 | Cova 2018 xphi |
+| 529 | Nahmias 2005 Phil Psych | 21 | 0.52 | 186 | 0.60 | Cova 2018 xphi |
+| 530 | Alicke 2011 J Phil | 319 | 0.50 | 327 | 0.14 | Cova 2018 xphi |
+| 531 | Knobe 2003b Phil Psych | 80 | 0.46 | 292 | 0.60 | Cova 2018 xphi |
+| 532 | Nadelhoffer 2005 Phil Psych | 40 | 0.45 | 128 | 0.38 | Cova 2018 xphi |
+| 533 | Paxton 2012 Cog Sci | 92 | 0.43 | 298 | 0.13 | Cova 2018 xphi |
+| 534 | Livengood & Machery 2007 MidPhil | 95 | 0.42 | 272 | 0.57 | Cova 2018 xphi |
+| 535 | Grau & Pury 2014 RPP | 162 | 0.41 | 387 | 0.20 | Cova 2018 xphi |
+| 536 | May & Holton 2012 Phil Stud | 117 | 0.38 | 368 | 0.28 | Cova 2018 xphi |
+| 537 | Nichols & Knobe 2007 Nous | 41 | 0.38 | 80 | 0.73 | Cova 2018 xphi |
+| 538 | De Brigard 2010 Phil Psych | 72 | 0.36 | 87 | 0.27 | Cova 2018 xphi |
+| 539 | Nahmias 2006 PPR | 86 | 0.32 | 182 | 0.12 | Cova 2018 xphi |
+| 540 | Nadelhoffer & Feltz 2008 Neuroethics | 85 | 0.30 | 150 | 0.00 | Cova 2018 xphi |
+| 541 | Björnsson 2015 Phil Psych | 248 | 0.30 | 456 | 0.26 | Cova 2018 xphi |
+| 542 | Nadelhoffer 2006 Phil Explor | 126 | 0.25 | 259 | 0.41 | Cova 2018 xphi |
+| 543 | McCann 2005 Phil Psych | 106 | 0.15 | 300 | 0.04 | Cova 2018 xphi |
+| 544 | Bigot-misanthrope (Uhlmann) | 46 | 1.81 | 3,040 | 2.38 | Pipeline Project 2016 |
+| 545 | Moral cliff (Zhu & Uhlmann) | 114 | 1.37 | 3,592 | 0.40 | Pipeline Project 2016 |
+| 546 | Cold-hearted prosociality (Uhlmann) | 79 | 1.22 | 3,016 | 0.92 | Pipeline Project 2016 |
+| 547 | Higher standards, charity (Srinivasan) | 265 | 0.93 | 2,888 | 0.88 | Pipeline Project 2016 |
+| 548 | Intuitive economics (Uhlmann-Diermeier) | 226 | 0.85 | 3,192 | 1.12 | Pipeline Project 2016 |
+| 549 | Moral inversion (Uhlmann) | 130 | 0.78 | 3,133 | 0.37 | Pipeline Project 2016 |
+| 550 | Bad tipper (Uhlmann) | 79 | 0.64 | 3,706 | 0.63 | Pipeline Project 2016 |
+| 551 | Burn in hell (Uhlmann-Diermeier) | 158 | 0.46 | 3,430 | 0.48 | Pipeline Project 2016 |
+| 552 | Belief-act inconsistency (Uhlmann) | 192 | 0.38 | 3,708 | 0.33 | Pipeline Project 2016 |
+| 553 | Higher standards, company (Srinivasan) | 265 | 0.35 | 2,888 | 1.04 | Pipeline Project 2016 |
+| 554 | Nudges academic vs gov at scale | 30,000 | 0.20 | 24,000,000 | 0.03 | DellaVigna-Linos 2022 |
+| 555 | Brain-behavior r (BWAS pre-2022) | 25 | 1.50 | 50,000 | 0.16 | Marek 2022 BWAS |
+:::
+
+### Aggregate replication-project summaries
+
+Some coordinated replication projects released aggregate meta-analytic statistics as an addition to per-experiment data. These are reported below.
+
+::: {.paper-table}
+**Table 39. Aggregate replication-project summaries**
+
+| Project | Experiments | Orig d (median) | Repl d (median) | Replication rate | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Reproducibility Project: Cancer Biology (Errington et al. 2021) | 50 experiments from 23 papers; 158 effects | 2.96 | 0.43 | 46% (39/97 positive effects on ≥3 of 5 criteria) | mean SMD 5.41 → 1.19; 85% effect-size shrinkage; animal experiments 12% replication, in vitro 54% |
+| SCORE project (Tyner et al. 2026, Nature) | 274 claims from 164 papers across 6 disciplines; 282 plotted here from the analyst_data.RData master file | 0.49 | 0.25 | 55.1% overall (Tyner 2026); ≈50% shrinkage in median d | OSF repo g5sny/bzfgy; per-claim partial correlations converted to Cohen’s d via standard formula |
+| Experimental philosophy replicability (Cova et al. 2021) | 40 replications of published x-phi studies; 33 with complete pairs | — | — | 70% (24/34 with sufficient power) | mean original r ≈ 0.39 → mean replication r ≈ 0.34; per-study data from OSF XPhiReplicability_CompleteData.csv |
+:::
+
+### Coverage and known gaps
+
+The pairs plotted above and listed in the main table are the most rigorous direct replications I was able to verify from primary sources. A handful of replication targets were checked but yielded no extractable rows, and are noted here for completeness rather than hidden.
+
+Within RP:CB, seven further original papers were checked directly against the eLife collection and the RP:CB project summary in Errington et al. 2021 *eLife* 10:e67995. Three --- Possemato et al. 2011 *Nature* (PHGDH), Prahallad et al. 2012 *Nature* (BRAF/EGFR feedback), and Metallo et al. 2011 *Nature* (reductive glutamine metabolism) --- were registered for replication but the experiments were never completed; their OSF projects contain no data. Four others --- Bhang et al. 2015 *Nat Med* (ClonTracer), Zhang et al. 2013 *Nature* (CRM1), Morrison et al. 2012 *Science* (mouse OXPHOS), and Schwitalla et al. 2013 *Cell* (NF-κB intestinal tumor initiation) --- were outside RP:CB's 2010--2012 sampling frame or were misidentified in my earlier search and have no RP:CB replication on record. Zero additional pairs were added from these seven. The total RP:CB contribution in the main table (24 pairs from 15 papers) is the complete set that could be verified from the published Replication Studies at the time of writing.
+
+The SCORE master dataset (Tyner et al. 2026 *Nature* 652:143--150), made public through the OSF repositories g5sny and bzfgy, was pulled directly from the `analyst_data.RData` analyst file and joined on claim ID between `orig_outcomes` (825 records) and `repli_outcomes` (427 records, filtered to version-of-record). Of 309 merged version-of-record rows, 282 had non-missing values for all four required fields (original N, original partial correlation, replication N, replication partial correlation) and are included in the main table. Effect sizes were converted from SCORE's native partial-correlation metric to Cohen's *d* using the standard *d* = 2*r*/√(1−*r*²) formula. Five additional SCORE-related rows from Landy et al. 2020 *Psychological Bulletin* and Breznau et al. 2022 *PNAS* are not plotted because the original effect sizes were unpublished pilots or not scalar; they would appear only as replication-side points.
+
+The Protzko, Krosnick, Nelson et al. "High-Replicability Research" project (16 effects × 3 stages = 48 data points from four labs) was retrieved from its OSF materials and initially considered for inclusion as a counter-pattern dataset, since its preregistered discovery--self-replication--adversarial-replication design does not produce the shrinkage pattern that the selection-filtered literature does. The project paper was published in *Nature Human Behaviour* 8:311--319 (2024) but was **retracted in September 2024** at the publisher's initiative, on the grounds that the editors no longer had confidence in the reliability of the findings and conclusions. In keeping with the rule that this note relies only on primary sources in good standing, the 48 Protzko rows are not included in the main table and not plotted. The retraction itself is a useful data point about the literature, but the specific effect-size values cannot be cited here as settled evidence.
+
+The preregistered-hypotheses curve on the empirical density plot is drawn from two sources. The first is Scheel, Schijen & Lakens [@scheel2021], who assembled the complete corpus of 71 psychology Registered Reports published through the end of 2018 and coded whether each study's first preregistered hypothesis was supported. The OSF dataset for that paper (`positive_results_in_registered_reports_data.tsv`) contains only the binary supported/not-supported coding, so the per-hypothesis effect sizes and sample sizes had to be extracted from the individual Registered Reports themselves. Of the 71 articles, 32 reported both an exact *N* and a native-metric effect statistic (*d*, *t*, *F*, *r*, partial η², or χ²) that could be cleanly converted to Cohen's *d* without back-calculation from *df*. The other 39 were excluded because the reported test statistic could not be converted to *d* without introducing estimation error (e.g., unstandardized regression coefficients without SEs, Bayes factors only, multilevel models with unusual *df* structures).
+
+The second source is the Psychological Science Accelerator's Rapid-Response project **PSA-CR001** (Dorison et al. 2022, *Affective Science*) [@dorison2022], a 52-country preregistered test of loss-versus-gain framing in COVID-19 health messaging. The study preregistered four primary confirmatory outcomes (behavioral intentions, two subscales of policy support, and information seeking) and posted country-level effect sizes with 95% CIs on OSF. I pooled each primary outcome across the 52 countries via sample-size-weighted average of \|*d*\|, producing four preregistered-publication rows, each with pooled *N* ≈ 15,772 (the combined sample across all countries after applying the PSA's minimum-per-country *N* ≥ 25 cutoff).
+
+This archived 36-row seed has now been expanded in the active Plot 3 build by adding 89 Schäfer/Schwarz preregistered psychology key-effect rows. The current plotted preregistered-results file therefore contains 125 rows. The four PSA-CR001 rows still sit near the low end of the distribution (\|*d*\| between 0.02 and 0.10 at very large *N*), while the Schäfer/Schwarz rows enter with support status marked as not coded.
+
+### Multi-lab coordinated projects: per-lab data availability
+
+Three separate attempts were made to pull per-lab (or per-country, per-site) effect sizes from the major coordinated multi-lab projects so that we could examine within-project heterogeneity independently of the replication-pair corpus. The results of those attempts are documented here so that readers who want to go deeper on lab-to-lab variability can find the extracted data or see what remains unavailable.
+
+**Registered Replication Reports.** The 10 major published RRRs (Alogna verbal overshadowing Study 1, Alogna Study 2, Hagger ego depletion, Wagenmakers facial feedback, Cheung commitment/forgiveness, Eerland grammatical aspect, McCarthy hostile priming, O'Donnell professor priming, Bouwmeester intuitive cooperation, Verschuere moral self) together contributed 205 verified per-lab rows after applying each project's primary-analysis inclusion rules (e.g., McCarthy's 22-lab primary analysis, O'Donnell's 23-lab main analysis). Per-lab effect sizes were converted to Cohen's \|*d*\| from each project's posted forest-plot input: 23 rows came with Cohen's *d* directly (Hagger), 53 as risk differences with 95% CIs (Alogna Study 1 and Study 2), and 129 as raw mean differences with 95% CIs (Cheung, Eerland, McCarthy, O'Donnell, Bouwmeester, Verschuere, Wagenmakers). For the non-*d* rows, the conversion used the standard rearrangement *d* = 2·\|effect\|/(SE·√*N*), where SE is derived from the reported CI width as (CI_upper − CI_lower)/(2·1.96). The per-lab dataset (205 rows) is **not plotted on the main density plot**, because the 10 RRRs are each already represented as the replication side of one of the 555 original--replication pairs. Plotting them again as individual lab contributions would double-count the same replication evidence. The 205-row lab-level CSV is available as a downloadable artifact for readers interested in within-study heterogeneity. Of the 226 expected combinations from the announced RRR protocols, 21 labs were excluded for falling under each project's own primary-analysis rules (sample-size thresholds, native-English criteria, MTurk exclusions, and ancillary-only sample memberships), matching the RRRs' published analyses.
+
+**Psychological Science Accelerator.** An attempt to pull per-site confirmatory effect sizes across all published PSA projects returned usable data only for PSA-CR001 (Loss-Gain framing, 208 country×hypothesis cells, of which the 4 pooled rows shown above enter the main density plot). Published PSA projects where per-site files remained inaccessible through the environment's OSF interface included PSA001 (Social Faces), Many Smiles (facial-feedback, Coles et al. 2022), PSA006 (CNI model of moral dilemmas, Bago et al. 2022 --- the OSF node returns a 410 Gone error as of April 2026), and SPAM-L (semantic priming across languages). PSA002, PSA003, PSA005, PSA008, PSA009, and the JTF-funded projects are listed on the PSA website but lack published Stage 2 papers with country-level confirmatory data as of April 2026. The per-country PSA-CR001 extract (208 cells with *N* ≥ 25) is available as a downloadable artifact; the other PSA projects will require direct OSF collaboration with project leads to obtain clean per-site confirmatory files.
+
+**Many Labs 1--5.** An attempt to extract per-lab effect sizes across the five Many Labs projects (target: \~4,000 effect×lab combinations) failed at the data-access layer: the Many Labs OSF repositories store per-lab analyses in child components with nested directories, and the OSF API does not expose them cleanly for bulk retrieval. A handful of replicate-group-level rows could be pulled from one ML2 effect (Trolley Dilemma 2) as a demonstration, but these do not correspond to individual labs and are not suitable for within-project heterogeneity analysis. The replication-pair corpus already contains the ML1--ML5 project-level findings (13 from ML1, 28 from ML2, 10 from ML3, 1 from ML4, 6 from ML5) as their primary contribution to the density plot and the arrow plot. Recovering the \~4,000 lab-level rows would require direct scripting inside the OSF environment or collaboration with the Many Labs project leads.
+
+### Statcheck general-literature corpus (@fig-published-d-vs-n) {#statcheck-general-literature-corpus-figure-2}
+
+The @fig-published-d-vs-n scatter is built from the Nuijten et al. 2016 export on OSF (`150211FullFile_AllStatcheckData_Automatic1Tail.csv` at osf.io/gdr4q/download) as a fallback after the full 688,112-row Hartgerink 2016 DANS dataset could not be retrieved in the extraction environment. The fallback file contains 258,105 raw APA-formatted test results from 30,717 articles across eight psychology journals, 1985--2013: JPSP (44.3% of retained tests), Developmental Psychology, PLOS, Journal of Consulting and Clinical Psychology, JEP: General, Psychological Science, Journal of Applied Psychology, and Frontiers in Psychology.
+
+Filtering retained 163,322 individual tests from 13,842 papers. The filter stages were: drop 24,961 rows where statcheck flagged internal inconsistency (`Error` or `DecisionError`); drop 9,289 rows with both df fields blank (mostly *Z* rows); drop 46,202 *F* rows with numerator df \> 1 (omnibus tests that cannot be converted to a single *d*); drop 11,110 χ² rows with df ≠ 1 and 2,450 χ²(1) rows without an explicit *N*; drop 591 rows with non-finite converted *d*; drop 178 rows failing the quality filter (*N* \< 4 or *N* \> 10,000,000 or \|*d*\| \> 30). After filtering, the surviving test types are *F*(1, df) at 86,681 rows, two-sample *t* at 60,186 rows, *r* at 9,036 rows, and χ²(1) at 7,419 rows. *N* was recovered from df via *N* = df + 2 for two-sample *t* and *r*, *N* = df2 + 2 for *F*(1, df2), and from the explicit `N =` field for χ²(1). Cohen's *d* was computed test-by-test: *d* = 2*t*/√df for *t*; *d* = 2√(*F*/df2) for *F*(1, df2); *d* = 2*r*/√(1 − *r*²) for *r*; *d* = 2φ/√(1 − φ²) with φ = √(χ²/*N*) for χ²(1).
+
+For the scatter, the 163,322 tests were collapsed to 13,842 paper-level rows by taking the median \|*d*\| and median *N* within each paper. Four additional rows were dropped from the plotted subset (13,838 plotted) because their collapsed median effect size was zero or otherwise invalid for log-scale display. The regression line is a log--log OLS fit across those 13,838 points: slope −0.4465, intercept 0.678, *r*² = 0.42. Translated to the figure's framing: a tenfold increase in *N* corresponds to a 64.2% reduction in reported \|*d*\|.
+
+**Methodological caveat worth flagging.** All *t* rows in the fallback corpus were treated as two-sample by default, because the statcheck package does not distinguish one-sample/paired *t* from two-sample *t*. Psychology's top journals use heavy within-subjects designs (repeated-measures ANOVA, paired *t*-tests), for which the two-sample formula inflates *d* by a factor of roughly √2. A sensitivity check run by the extraction pipeline shows that if every *t* were instead treated as one-sample/paired, median \|*d*\| across the corpus would drop from 0.72 to 0.58. The cross-section pattern (cloud hugging the significance boundary, 87% above *p* \< 0.05, regression slope near −0.45) is robust to this assumption; the specific median is not. Readers who want the raw test-level data or the full filter-accounting log can find `statcheck_tests.csv` (163,322 rows), `statcheck_studies.csv` (13,842 rows), and `statcheck_summary.md` in the project's downloadable artifacts.
+
+### Brodeur economics corpus (@fig-published-d-vs-n, green circles) {#brodeur-economics-corpus-figure-2-gold-squares}
+
+110 of the green circles in @fig-published-d-vs-n come from the Brodeur, Cook & Heyes [@brodeur2020] "Methods Matter" replication package for their 2020 *AER* paper on *p*-hacking in causal-inference economics. That paper harvested 21,740 test statistics from 684 articles across the top--25 economics journals, 2015--2018, stratified by causal-inference design (RCT, RDD, DiD, IV).
+
+Of the 21,740 test rows in the cleaned CSV (`methods_matter_clean.csv`), only 1,350 have a non-missing `sample_size` field --- the column was populated inconsistently in the original Stata file and many articles lost the *N* metadata in the conversion. Aggregating those 1,350 tests to article-level medians (analogous to the statcheck processing) yields 112 articles with both median test-level *N* and median derived *d*; two further articles had median \|*d*\| = 0 exactly (all their tests yielded round-to-zero effects) and were dropped for log-axis compatibility. The remaining 110 are green circles.
+
+Effect sizes were derived from the de-rounded *t*-statistics via the standard formula *d* = 2*t*/√df, treating sample_size as df. This is the same conversion used for *t*-rows in the statcheck corpus. For tests reported with coefficients and standard errors instead of *t*, the *t* was recomputed as coef/se before conversion.
+
+The 110-article sample is a *convenience subset* of the full 684--article Brodeur corpus, not a random sample. Articles whose Stata files preserved the `sample_size` column are disproportionately those where the authors reported *N* prominently in their tables, which may correlate with study design (RCTs report *N* clearly; some DiD papers collapse data at aggregated levels that complicate *N* attribution). The stratification within the 110 is: 53 DiD articles (median *d* = 0.055, median *N* = 9,474), 25 RCT articles (*d* = 0.135, *N* = 1,093), 21 IV articles (*d* = 0.123, *N* = 4,441), and 13 RDD articles (*d* = 0.112, *N* = 3,596). Until the full corpus can be recovered with *N* attached, the 110-article overlay should be read as a preliminary cross-discipline check rather than a definitive economics distribution.
+
+The companion "Star Wars" dataset (Brodeur, Lé, Sangnier & Zylberberg 2016; 50,000 tests from AER, JPE, QJE, 2005--2011) [@brodeur2016] is available in our archive but its public CSV does not include a sample-size column, so those 17,883 test-level observations cannot currently be placed on the log-*N* vs log-*d* axes of @fig-published-d-vs-n. They would contribute a classic Brodeur *z*-curve (density of test statistics) but not a scatter. Recovering *N* from the original ICPSR Stata file (openicpsr project 113633) is pending; it would expand the economics overlay by roughly two orders of magnitude.
+
+### Havránek EIS micro subset (@fig-published-d-vs-n, green circles) {#havranek-eis-micro-subset-figure-2-gold-squares}
+
+41 of the green circles in @fig-published-d-vs-n come from the Havránek [@havranek2015] meta-analysis of the elasticity of intertemporal substitution, which harvested 2,735 EIS estimates from 169 studies published in economics journals through 2014. The raw meta-file mixes two incompatible study designs: macro time-series work where *N* counts quarters of aggregate consumption, and micro panel work where *N* counts individual households. Only the micro subset is comparable to psychology's statcheck corpus and to the Brodeur causal-inference corpus, where *N* counts experimental units.
+
+The filter applied to build the @fig-published-d-vs-n overlay proceeded in three steps. First, restrict to `micro == 1` --- 41 studies using household-level panel data where *N* = individuals --- leaving 512 estimates. Second, winsorize to \|EIS\| ≤ 5; this drops 24 of 512 estimates (4.7%), all implausible-magnitude outliers for an elasticity parameter whose true value theory and micro evidence put in roughly \[0, 1\]. Third, convert each estimate to a Cohen's-*d* analogue using *d* = 2\|*t*\|/√*N* with *t* = EIS/SE, the same conversion used for *t* rows in the statcheck corpus and for test statistics in the Brodeur corpus. Estimates were then collapsed to study-level medians (median \|*d*\| at median *N* within each study), paralleling the paper-level collapse used for the blue and the other-green point clouds. This yields 41 paper-level points; three fall below the plot's *d* = 0.01 floor and are omitted from the visible scatter.
+
+Sub-corpus profile in isolation: median *N* = 5,704 individuals, median \|*d*\| = 0.072, 66% above *p* \< 0.05, standalone log--log slope −0.55 (*r* = −0.79). The cleaned micro subset with columns `estimate_id, study_id, study, country, eis, se, sample_size, abs_t, d_proxy, is_micro, is_panel, ols, tsls, ml, bayes, pubyear` is available as `havranek_eis_comparable.csv` in the project's downloadable artifacts (486 rows, 41 studies).
+
+### Gechert--Havránek σ meta-analysis (@fig-published-d-vs-n, green circles) {#gechert-havranek-sigma-figure-2-gold-squares}
+
+121 of the green circles in @fig-published-d-vs-n come from the Gechert--Havránek--Iršová--Kolcunová [@gechert2022] meta-analysis of the capital-labor elasticity of substitution σ, published in the *Review of Economics and Statistics* (2022). The meta-file contains 3,186 estimates from 121 studies spanning 1961--2017, harvested from production-function and factor-demand regressions in the macroeconomics and growth literatures. Unlike the EIS dataset, the σ dataset does not separate micro from macro study designs along a single indicator; it instead carries three flags (`is_panel`, `is_crosssec`, `is_timeseries`) identifying the data structure behind each estimate. For the @fig-published-d-vs-n overlay we did not filter by design; the 121 paper-level medians include all three design types.
+
+The filter applied was: winsorize to \|σ\| ≤ 5 (drops \~0.8% of estimates as implausible magnitudes, since σ is bounded below by 0 and above by \~2 for plausible production technologies); convert to Cohen's-*d* analogue via *d* = 2\|*t*\|/√*N* with *t* = σ/SE; collapse to study-level medians. Sub-corpus profile in isolation: median *N* = 44, median \|*d*\|  = 1.48, 87% above *p* \< 0.05, standalone log--log slope  −0.41 (*r* = −0.55). Note the very small median *N*: σ studies often estimate production functions on country--year or industry--year panels with dozens rather than thousands of observations, which places them in the same sample-size regime as psychology and at the small-*N* extreme of the econ overlay. The cleaned subset with columns `study_id, study, country, sigma, se, sample_size, abs_t, d_proxy, is_panel, is_crosssec, is_timeseries, pubyear` is available as `havranek_sigma_comparable.csv` in the project's downloadable artifacts (3,161 rows, 121 studies).
+
+**Robustness note across the three econ sub-corpora.** The three standalone slopes are −0.45 (Brodeur), −0.41 (σ), and −0.55 (EIS). The combined slope across all 272 paper-level points is -0.55 (*r* = -0.84). The EIS slope is steeper than the pure-filter prediction of −0.5; the other two match it within noise. The EIS case is consistent with residual heterogeneity in true EIS values correlated with study design (smaller EIS studies can load onto sub-literatures with larger true effects or tighter instruments), which is additive to the filter slope rather than substitutive. Cluster-robust standard errors on `study_id` are warranted if anyone wants a confidence interval on the combined econ slope; one estimate = one observation here overweights studies that contribute many estimates, but that does not bias the slope estimate itself, only its standard error.
+
+*The upshot of Appendix D: the ratio of original-to-replication effect sizes is not a bug at the edges of psychology. It is the central tendency of the literature.*
+
+## Appendix E --- Material retired from the main flow (reference archive) {#appendix-e-reference-archive}
+
+The four subsections below were previously cited by figures in the main text. The figures they document have been removed from the current flow, but the data and notes are kept here as a deliberate reference archive so the analysis is not lost. Some of it may later return as standalone figures or medicine-specific supplements, but it no longer sits in the main manuscript as an unresolved placeholder.
+
+### Preregistered hypotheses: Scheel 2021 + PSA-CR001 corpus
+
+These archived rows are the original 36-row preregistered seed from the Scheel / Lakens and PSA-CR001 corpora. In the active data-paper flow they are plotted as part of Plot 3, alongside the newly added Schäfer/Schwarz preregistered psychology key-effect rows. Rows 1--32 are from Scheel, Schijen & Lakens [@scheel2021]: each is one hypothesis from a published psychology Registered Report, showing what the preregistered confirmatory test returned with no replication attempt. Rows 33--36 are from PSA-CR001 (Dorison et al. 2022) [@dorison2022]: each is one of four primary preregistered hypotheses tested across 52 countries, pooled to a single effect size and sample count. Supported = the hypothesis was judged supported by the authors of the original report; the Schäfer/Schwarz extension has D/N but no support-status coding.
+
+::: {.paper-table}
+**Table 40. Preregistered hypotheses: Scheel 2021 + PSA-CR001 corpus**
+
+| # | Study | N | \|d\| | Supported | Journal |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Kuppuraj 2018 — Online statistical learning reliability | 42 | 1.80 | yes | Royal Society Open Science |
+| 2 | Grubb 2018 — Former targets capture | 80 | 1.10 | yes | Attention Perception Psychophysics |
+| 3 | Zanolie 2014 — Magnitude×side Exp3 | 20 | 1.09 | yes | Frontiers in Psychology |
+| 4 | Voorspoels 2014 — Coalition encoding + cue | 463 | 0.85 | yes | Frontiers in Psychology |
+| 5 | van ’t Veer 2015 — Liars liked less | 155 | 0.60 | yes | Frontiers in Psychology |
+| 6 | Dutilh 2017 — WM drift rate hard | 916 | 0.58 | yes | Attention Perception Psychophysics |
+| 7 | van ’t Veer 2015 — Liars trusted less | 155 | 0.56 | yes | Frontiers in Psychology |
+| 8 | Dutilh 2017 — WM drift rate easy | 916 | 0.49 | yes | Attention Perception Psychophysics |
+| 9 | Rotteveel 2015 — Lever congruency Exp2 | 50 | 0.49 | no | Frontiers in Psychology |
+| 10 | Steegen 2014 — Guess averaging immediate | 471 | 0.40 | yes | Frontiers in Psychology |
+| 11 | Rowland 2014 — RIF Exp2 | 140 | 0.38 | yes | Frontiers in Psychology |
+| 12 | Ong 2015 — Comfort food MTurk | 366 | 0.38 | no | Frontiers in Psychology |
+| 13 | Verkoeijen 2014 — Spacing inductive learning | 123 | 0.37 | yes | Frontiers in Psychology |
+| 14 | Evers 2014 — Diagnosticity Study 1b | 199 | 0.36 | yes | Frontiers in Psychology |
+| 15 | Rotteveel 2015 — Lever congruency Exp1 | 99 | 0.35 | no | Frontiers in Psychology |
+| 16 | Steegen 2014 — Guess averaging delayed | 140 | 0.34 | yes | Frontiers in Psychology |
+| 17 | Ong 2015 — Comfort food SG | 198 | 0.32 | no | Frontiers in Psychology |
+| 18 | Rowland 2014 — RIF Exp1 | 72 | 0.31 | yes | Frontiers in Psychology |
+| 19 | van ’t Veer 2015 — Skin temp observing liar | 155 | 0.31 | yes | Frontiers in Psychology |
+| 20 | Kvetnaya 2018 — Irrelevant speech spatial | 40 | 0.29 | no | J European Psych Students |
+| 21 | Bombari 2017 — Body posture felt power | 200 | 0.28 | yes | Comprehensive Results in Social Psychology |
+| 22 | Grubb 2018 — Feedback capture diff | 80 | 0.20 | no | Attention Perception Psychophysics |
+| 23 | Voorspoels 2014 — Race encoding + coalition cue | 463 | 0.18 | yes | Frontiers in Psychology |
+| 24 | Zanolie 2014 — Magnitude×side Exp2 | 24 | 0.17 | no | Frontiers in Psychology |
+| 25 | Jackson 2017 — Posture self-concept size | 128 | 0.15 | no | Comprehensive Results in Social Psychology |
+| 26 | Bombari 2017 — Body posture gambling | 200 | 0.08 | no | Comprehensive Results in Social Psychology |
+| 27 | Zanolie 2014 — Magnitude×side Exp1 | 20 | 0.08 | no | Frontiers in Psychology |
+| 28 | Evers 2014 — Diagnosticity Study 1a | 253 | 0.06 | no | Frontiers in Psychology |
+| 29 | Rowland 2014 — Cue-independent RIF Exp3 | 67 | 0.05 | no | Frontiers in Psychology |
+| 30 | Johnson 2014 — Cleanliness moral judgment Exp1 | 208 | 0.01 | no | Social Psychology |
+| 31 | Johnson 2014 — Cleanliness moral judgment Exp2 | 126 | 0.01 | no | Social Psychology |
+| 32 | Ong 2015 — Comfort food NL | 176 | 0.01 | no | Frontiers in Psychology |
+:::
+
+### Added preregistered rows from PSA-CR001 (Dorison et al. 2022)
+
+::: {.paper-table}
+**Table 41. Added preregistered rows from PSA-CR001 (Dorison et al. 2022)**
+
+| # | Primary hypothesis (preregistered) | Pooled N | Pooled \|d\| | Supported |
+| --- | --- | --- | --- | --- |
+| 33 | Behavioral intentions (loss vs gain framing) | 15,772 | 0.10 | no |
+| 34 | Policy support: individual autonomy subscale | 15,772 | 0.07 | no |
+| 35 | Policy support: government power subscale | 15,772 | 0.08 | no |
+| 36 | Information seeking (loss vs gain framing) | 15,772 | 0.02 | no |
+:::
+
+### Cochrane CDSR medicine corpus (pending --- data extracted, separate figure to be added) {#cdsr-medicine-corpus-figure-2-red-dots}
+
+This corpus is not currently plotted in @fig-published-d-vs-n; the extract is documented here for reference and for a separate medicine-specific figure to be added later. The data come from the van Zwet & Schwab [@vanzwet2021] working extract of the Cochrane Database of Systematic Reviews (CDSR), distributed via OSF project xjv9g. The raw extract contains 411,984 trial-level treatment-effect estimates from Cochrane reviews covering RCTs and non-RCTs, across efficacy / safety / dropout / bias outcomes and multiple outcomes per study. The analytic subset used here applied six filters: (i) restrict to randomized trials only; (ii) restrict to primary efficacy outcomes; (iii) require non-null effect size, standard error, and total *N*; (iv) require \|*z*\| \< 20; (v) deduplicate to one row per (review, study) pair; (vi) apply sanity bounds on *d*-proxy and \|*t*\|. This yielded 38,029 trial-level estimates from 6,330 reviews across 19 medical specialties, collapsible to 33,391 unique (trial, year) pairs.
+
+**Why pre-2005.** The ICMJE announced mandatory prospective trial registration as a condition of publication in major medical journals in September 2004, with enforcement taking effect for trials starting July 1, 2005. The 2007 FDAAA extended mandatory registration and reporting to US-regulated trials. Together these mandates plausibly shift the filter regime for post-2005 medical trials toward a partial pre-committed state in which at least the primary outcome and design are locked before data analysis. For a cleanly filter-exposed regime in any future @fig-published-d-vs-n inclusion, we restrict CDSR to trials with `study_year < 2005`. This yields 17,320 pre-2005 paper-level medians, with effectively zero prospective pre-registration prevalence, and therefore represents a medicine sample drawn from the same filter regime as the psychology and economics populations.
+
+For later plotting on the same log-log axes as @fig-published-d-vs-n, trials would be converted to a Cohen's-*d* analogue via *d* = 2\|*t*\|/√*N* with *t* = effect/SE, and plotted at each trial's total sample size.
+
+Sub-corpus profile: median *N* = 74 (1919--2004 coverage is weighted toward smaller older trials), 29% above *p* \< 0.05, log--log slope -0.42 (*r* = -0.44, n = 16,921 plotted points within the \[*N* ∈ \[10, 10⁶\], *d* ∈ \[0.01, 5\]\] plot window). The above-*p*-threshold rate is lower than the psychology statcheck corpus (87%) or the economics corpora (65--87% by sub-corpus), reflecting that Cochrane aggregates trials by topic rather than by significance. The *post*-2005 CDSR subset (not plotted) has a near-identical slope (−0.41) and above-*p* rate (32%) --- i.e., restricting to pre-2005 does not visibly change the filter signature, suggesting the 2005 ICMJE change did not substantially shift the published effect-size distribution in CDSR-harvested trials. Direct separation of registered vs. unregistered post-2005 sub-populations would require linking trial names to ClinicalTrials.gov NCT numbers, which is a custom entity-resolution task not attempted here.
+
+The cleaned extract (all 38,029 rows, both pre- and post-2005) is available as `cdsr_medicine.csv` in the project's downloadable artifacts, with `study_year` populated for 37,882 rows to enable re-filtering.
+
+### AACT biomedical corpus (retired from main flow, data preserved below) {#aact-biomedical-corpus-figure-3-purple-plus-signs}
+
+The 2,720 biomedical trials previously displayed alongside the 32 preregistered psychology hypotheses are drawn from the Jian Du & Xuanyu Shi 2024 Figshare derivative of the AACT (Aggregate Analysis of ClinicalTrials.gov) database [@du2024], DOI 10.6084/m9.figshare.24225166. This is a **fallback derivative**, not a raw AACT extraction. The intended path --- querying the AACT monthly snapshot directly through the `studies`, `outcomes`, `outcome_measurements`, `outcome_counts`, and `result_groups` tables --- could not be executed in the build environment. A downstream rebuild against the official AACT schema or the DuckDB mirror is available as `aact_build.py` in the project artifacts.
+
+The derivative contains 119,968 raw pairwise-comparison rows from 8,665 unique trials. Filtering retained 23,252 primary-outcome rows (dropping secondary and exploratory outcomes), then 8,113 rows with either a CI or an explicit *p*-value from which a test statistic could be derived. Invalid-*N* and invalid-\|*d*\| rows (13 total) and rows missing a completion-year proxy (187 rows) were dropped. The remaining 8,309 rows were collapsed to 3,735 trial-outcome-level rows and then to 2,731 trial-level rows by taking the median \|*d*\| and median *N* within each trial; 17 trials fell outside the *N* ≥ 10 plot window, leaving 2,720 plotted. The phase distribution (Phase 1 *n* = 66 with median *d* = 0.69, Phase 3 *n* = 1,291 with median *d* = 0.31) is sensible and tracks the expected Phase 1 small-*N*/large-*d* to Phase 3 large-*N*/moderate-*d* gradient.
+
+**Methodological caveats worth flagging.** The derivative does not contain arm-level means or pooled SDs, so Cohen's *d* is approximated, not computed from arm statistics. The fallback path converted each row's reported 95% CI or *p*-value into a test statistic, then used that test statistic with total enrollment under an equal-arm split assumption to derive \|*d*\|. For most two-arm Phase 2--4 trials this approximation is reasonable; for crossover trials and for trials with unequal randomization it is biased in direction and magnitude. Industry-sponsored trials are 85.6% of the sample, which is not the same composition as the broader biomedical literature --- the full NIH, academic-medical-center, and investigator-initiated trial ecosystem is under-represented. Completion year is used as a proxy for start year in any year-stratified analysis because start year is not available in the derivative.
+
+**Registered ≠ preregistered.** Every ClinicalTrials.gov entry is *registered* in the administrative ICMJE and FDA regulatory sense. That is not the same as analytic preregistration with a locked, timestamped analysis plan. Outcomes are pre-specified, but the full statistical analysis plan can evolve between registration and reporting; investigators retain flexibility over covariate choice, subgroup emphasis, and analysis population definition. The primary-endpoint-switching literature (Chan et al., and the POST-REG studies) documents meaningful rates of outcome shifts between registration and publication even in trials that made it to journal publication. Nonetheless, the forced-disclosure norm *is* a brake on the file-drawer effect, which is consistent with the 55% above *p* \< 0.05 rate seen in the AACT cloud --- substantially below psychology's 87% but still higher than a clean locked-SAP regime would predict. Readers wanting the raw rows can find `aact_trials.csv` (3,735 trial-outcome rows), `aact_studies.csv` (2,731 trial rows), `aact_summary.md`, `aact_build.py`, and `aact_exact_query.sql` in the project's downloadable artifacts.

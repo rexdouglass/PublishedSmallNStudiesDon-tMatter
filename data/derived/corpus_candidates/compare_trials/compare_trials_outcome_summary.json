@@ -1,0 +1,328 @@
+{
+  "n_files": 59,
+  "n_rows": 1171,
+  "section_counts": {
+    "prespecified_secondary": 660,
+    "non_prespecified_publication": 422,
+    "prespecified_primary": 89
+  },
+  "status_counts": {
+    "correct_main": {
+      "Yes": 384,
+      "No": 382
+    },
+    "incorrect_main": {
+      "No": 89,
+      "Yes": 5
+    },
+    "reported_elsewhere": {
+      "Yes": 76,
+      "No": 62
+    },
+    "not_reported_journal": {
+      "Yes": 571,
+      "No": 33,
+      "Unclear": 3
+    },
+    "insufficiently_prespecified": {
+      "Yes": 60
+    }
+  },
+  "file_stats": [
+    {
+      "file": "study_1.csv",
+      "parsed_rows": 13,
+      "study_id": "1"
+    },
+    {
+      "file": "study_10.csv",
+      "parsed_rows": 30,
+      "study_id": "Trial 10"
+    },
+    {
+      "file": "study_14.csv",
+      "parsed_rows": 14,
+      "study_id": "14"
+    },
+    {
+      "file": "study_15.csv",
+      "parsed_rows": 10,
+      "study_id": "15"
+    },
+    {
+      "file": "study_16.csv",
+      "parsed_rows": 13,
+      "study_id": "16"
+    },
+    {
+      "file": "study_17.csv",
+      "parsed_rows": 79,
+      "study_id": "17"
+    },
+    {
+      "file": "study_18.csv",
+      "parsed_rows": 6,
+      "study_id": "18"
+    },
+    {
+      "file": "study_19A.csv",
+      "parsed_rows": 22,
+      "study_id": "19A - SET trial"
+    },
+    {
+      "file": "study_19B.csv",
+      "parsed_rows": 13,
+      "study_id": "19B RESET"
+    },
+    {
+      "file": "study_2.csv",
+      "parsed_rows": 24,
+      "study_id": "2"
+    },
+    {
+      "file": "study_20.csv",
+      "parsed_rows": 19,
+      "study_id": "20"
+    },
+    {
+      "file": "study_22.csv",
+      "parsed_rows": 16,
+      "study_id": "22"
+    },
+    {
+      "file": "study_23.csv",
+      "parsed_rows": 11,
+      "study_id": "23"
+    },
+    {
+      "file": "study_24.csv",
+      "parsed_rows": 15,
+      "study_id": "24"
+    },
+    {
+      "file": "study_25.csv",
+      "parsed_rows": 29,
+      "study_id": "25"
+    },
+    {
+      "file": "study_26.csv",
+      "parsed_rows": 13,
+      "study_id": "26"
+    },
+    {
+      "file": "study_27.csv",
+      "parsed_rows": 22,
+      "study_id": "27"
+    },
+    {
+      "file": "study_28.csv",
+      "parsed_rows": 14,
+      "study_id": "28"
+    },
+    {
+      "file": "study_29.csv",
+      "parsed_rows": 20,
+      "study_id": "29"
+    },
+    {
+      "file": "study_3.csv",
+      "parsed_rows": 5,
+      "study_id": "3"
+    },
+    {
+      "file": "study_30.csv",
+      "parsed_rows": 22,
+      "study_id": "30"
+    },
+    {
+      "file": "study_31.csv",
+      "parsed_rows": 15,
+      "study_id": "31"
+    },
+    {
+      "file": "study_32.csv",
+      "parsed_rows": 12,
+      "study_id": "32"
+    },
+    {
+      "file": "study_33.csv",
+      "parsed_rows": 30,
+      "study_id": "33"
+    },
+    {
+      "file": "study_34.csv",
+      "parsed_rows": 8,
+      "study_id": "34"
+    },
+    {
+      "file": "study_35.csv",
+      "parsed_rows": 25,
+      "study_id": "35"
+    },
+    {
+      "file": "study_36.csv",
+      "parsed_rows": 17,
+      "study_id": "36"
+    },
+    {
+      "file": "study_37.csv",
+      "parsed_rows": 17,
+      "study_id": "37"
+    },
+    {
+      "file": "study_38.csv",
+      "parsed_rows": 20,
+      "study_id": "Trial 038"
+    },
+    {
+      "file": "study_39.csv",
+      "parsed_rows": 92,
+      "study_id": "Trial 039"
+    },
+    {
+      "file": "study_4.csv",
+      "parsed_rows": 6,
+      "study_id": "4"
+    },
+    {
+      "file": "study_40.csv",
+      "parsed_rows": 18,
+      "study_id": "40"
+    },
+    {
+      "file": "study_41.csv",
+      "parsed_rows": 46,
+      "study_id": "41"
+    },
+    {
+      "file": "study_42.csv",
+      "parsed_rows": 14,
+      "study_id": "42"
+    },
+    {
+      "file": "study_43.csv",
+      "parsed_rows": 5,
+      "study_id": "43"
+    },
+    {
+      "file": "study_44.csv",
+      "parsed_rows": 11,
+      "study_id": "44"
+    },
+    {
+      "file": "study_45.csv",
+      "parsed_rows": 10,
+      "study_id": "45"
+    },
+    {
+      "file": "study_46.csv",
+      "parsed_rows": 52,
+      "study_id": "46"
+    },
+    {
+      "file": "study_47.csv",
+      "parsed_rows": 17,
+      "study_id": "47"
+    },
+    {
+      "file": "study_49.csv",
+      "parsed_rows": 9,
+      "study_id": "49"
+    },
+    {
+      "file": "study_5.csv",
+      "parsed_rows": 16,
+      "study_id": "5"
+    },
+    {
+      "file": "study_50.csv",
+      "parsed_rows": 9,
+      "study_id": "50"
+    },
+    {
+      "file": "study_51A.csv",
+      "parsed_rows": 8,
+      "study_id": "51A (Genotype 2)"
+    },
+    {
+      "file": "study_51B.csv",
+      "parsed_rows": 8,
+      "study_id": "51B (Genotype 3)"
+    },
+    {
+      "file": "study_52.csv",
+      "parsed_rows": 17,
+      "study_id": "52"
+    },
+    {
+      "file": "study_53.csv",
+      "parsed_rows": 73,
+      "study_id": "53"
+    },
+    {
+      "file": "study_54.csv",
+      "parsed_rows": 8,
+      "study_id": "54"
+    },
+    {
+      "file": "study_55.csv",
+      "parsed_rows": 6,
+      "study_id": "55"
+    },
+    {
+      "file": "study_57.csv",
+      "parsed_rows": 14,
+      "study_id": "57"
+    },
+    {
+      "file": "study_58.csv",
+      "parsed_rows": 9,
+      "study_id": "Trial 58"
+    },
+    {
+      "file": "study_59.csv",
+      "parsed_rows": 20,
+      "study_id": "Trial 059"
+    },
+    {
+      "file": "study_6.csv",
+      "parsed_rows": 9,
+      "study_id": "6"
+    },
+    {
+      "file": "study_60.csv",
+      "parsed_rows": 8,
+      "study_id": "60"
+    },
+    {
+      "file": "study_62.csv",
+      "parsed_rows": 15,
+      "study_id": "62"
+    },
+    {
+      "file": "study_7.csv",
+      "parsed_rows": 29,
+      "study_id": "7"
+    },
+    {
+      "file": "study_70.csv",
+      "parsed_rows": 30,
+      "study_id": "70"
+    },
+    {
+      "file": "study_71.csv",
+      "parsed_rows": 20,
+      "study_id": "71"
+    },
+    {
+      "file": "study_8.csv",
+      "parsed_rows": 14,
+      "study_id": "8"
+    },
+    {
+      "file": "study_9.csv",
+      "parsed_rows": 24,
+      "study_id": "9"
+    }
+  ]
+}

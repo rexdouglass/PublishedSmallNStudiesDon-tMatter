@@ -79,6 +79,39 @@ def to_num(x: object) -> float:
     return float(match.group(0)) if match else np.nan
 
 
+def normalize_doi(value: object) -> str:
+    if pd.isna(value):
+        return ""
+    text = str(value).strip().lower()
+    if not text or text in {"nan", "none", "na", "n/a"}:
+        return ""
+    text = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", text)
+    text = re.sub(r"^doi:\s*", "", text)
+    return text.strip().strip(".")
+
+
+def normalize_title_key(value: object) -> str:
+    if pd.isna(value):
+        return ""
+    text = str(value).lower()
+    text = re.sub(r"https?://\S+", " ", text)
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def short_key(value: object, prefix: str) -> str:
+    key = normalize_title_key(value)
+    if not key:
+        key = str(value).strip().lower()
+    key = re.sub(r"[^a-z0-9]+", "_", key).strip("_")
+    if len(key) > 80:
+        import hashlib
+
+        digest = hashlib.sha1(str(value).encode("utf-8", errors="ignore")).hexdigest()[:10]
+        key = f"{key[:68].strip('_')}_{digest}"
+    return f"{prefix}_{key or 'missing'}"
+
+
 def numeric(series: pd.Series) -> pd.Series:
     return series.map(to_num)
 
@@ -2169,6 +2202,163 @@ def build_olsson_sundell_2023(raw_dir: Path) -> pd.DataFrame:
     )
 
 
+def replication_pair_project_field(project: object) -> str:
+    text = str(project).lower()
+    if any(token in text for token in ["clinical", "ying", "rpcb", "cancer", "rheumatology"]):
+        return "medicine"
+    if "sports" in text:
+        return "sports science"
+    if "management science" in text:
+        return "management science"
+    if any(token in text for token in ["coppock", "dellavigna", "decision-market"]):
+        return "political science / economics"
+    if any(token in text for token in ["eprp", "psa 004", "jtb", "trolley"]):
+        return "experimental philosophy"
+    if "public admin" in text:
+        return "public administration"
+    if "marek" in text or "bwas" in text:
+        return "neuroscience"
+    return "psychology and adjacent replication targets"
+
+
+def extract_existing_plot2_keys(rows: pd.DataFrame) -> tuple[set[str], set[str]]:
+    main = rows[
+        rows["published_original_candidate"].fillna(False).astype(bool)
+        & ~rows["comparator_only"].fillna(False).astype(bool)
+    ].copy()
+    paper_id = main["paper_id"].fillna("").astype(str)
+    doi_keys = set(
+        paper_id.str.replace(r"^DOI:", "", regex=True)
+        .map(normalize_doi)
+        .loc[lambda s: s.ne("")]
+    )
+    title_keys = set(main["title"].map(normalize_title_key).loc[lambda s: s.ne("")])
+    return doi_keys, title_keys
+
+
+def build_replication_pair_original_bridge(existing_rows: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
+    """Add original-side point estimates from plotted replication pairs when absent.
+
+    The point-estimate plot and the replication-pair plot answer different
+    questions, but every plotted pair has an original-side D/N estimate. This
+    bridge checks whether those originals are already represented in Plot 2 by
+    DOI or normalized title; if not, it adds the original-side estimate as a
+    clearly labeled replication-target-original row.
+    """
+    path = ROOT / "data" / "derived" / "replication_pairs" / "replication_pairs_figure2_rule_subset.csv"
+    if not path.exists():
+        return pd.DataFrame()
+
+    pairs = pd.read_csv(path)
+    existing_dois, existing_titles = extract_existing_plot2_keys(existing_rows)
+
+    d_original = pd.to_numeric(pairs["D_original"], errors="coerce")
+    n_original = pd.to_numeric(pairs["N_original"], errors="coerce")
+    doi_norm = pairs["original_doi"].map(normalize_doi)
+    title_key = pairs["original_title"].map(normalize_title_key)
+    eligible_dn = d_original.gt(0) & np.isfinite(d_original) & n_original.ge(10) & np.isfinite(n_original)
+    traceable = doi_norm.ne("") | title_key.ne("")
+    represented_by_doi = doi_norm.ne("") & doi_norm.isin(existing_dois)
+    represented_by_title = title_key.ne("") & title_key.isin(existing_titles)
+    already_represented = represented_by_doi | represented_by_title
+    include = eligible_dn & traceable & ~already_represented
+
+    reason = np.select(
+        [
+            ~eligible_dn,
+            ~traceable,
+            already_represented,
+            include,
+        ],
+        [
+            "not_eligible_missing_or_invalid_original_D_or_N",
+            "not_eligible_no_original_identifier",
+            "already_represented_in_plot2_by_doi_or_title",
+            "included_as_replication_pair_original_bridge",
+        ],
+        default="not_included_unclassified",
+    )
+    audit = pairs[
+        [
+            "source_dataset",
+            "project",
+            "pair_id",
+            "original_title",
+            "original_doi",
+            "outcome",
+            "D_original",
+            "N_original",
+            "replication_title",
+            "replication_doi",
+            "D_replication",
+            "N_replication",
+            "category",
+        ]
+    ].copy()
+    audit["original_doi_normalized"] = doi_norm
+    audit["original_title_key"] = title_key
+    audit["eligible_original_D_N"] = eligible_dn
+    audit["traceable_original"] = traceable
+    audit["already_in_plot2_by_doi"] = represented_by_doi
+    audit["already_in_plot2_by_title"] = represented_by_title
+    audit["already_in_plot2"] = already_represented
+    audit["included_in_plot2_bridge"] = include
+    audit["plot2_bridge_reason"] = reason
+    audit_path = out_dir / "replication_pair_originals_plot2_bridge_audit.csv"
+    ensure_dir(out_dir)
+    audit.to_csv(audit_path, index=False)
+
+    if not include.any():
+        return pd.DataFrame()
+
+    d = pairs.loc[include].copy()
+    doi_keep = doi_norm.loc[include]
+    title_keep = title_key.loc[include]
+    paper_id = np.where(
+        doi_keep.ne(""),
+        "DOI:" + doi_keep,
+        "REPL_ORIG:" + title_keep.map(lambda x: short_key(x, "title")).astype(str),
+    )
+    row_id = "replication_pair_original_" + d["pair_id"].astype(str).map(lambda x: short_key(x, "pair"))
+    notes = (
+        "Original-side estimate from a row already plotted in the replication-pair figure; "
+        "added because the original DOI/title was not already represented in Plot 2. "
+        "Project=" + d["project"].fillna("").astype(str) + "; source_dataset=" + d["source_dataset"].fillna("").astype(str)
+    )
+    return finalize(
+        pd.DataFrame(
+            {
+                "source_corpus": "replication_pair_originals_bridge",
+                "field": d["project"].map(replication_pair_project_field),
+                "source_kind": "replication_pair_original_side_estimate",
+                "published_scope": "original_claims_from_rule_qualified_replication_pairs",
+                "published_original_candidate": True,
+                "comparator_only": False,
+                "row_id": row_id,
+                "paper_id": paper_id,
+                "study_id": row_id,
+                "title": d["original_title"].fillna("").astype(str),
+                "journal": "",
+                "year": np.nan,
+                "outcome": d["outcome"].fillna("").astype(str),
+                "effect_type": "D_original_from_replication_pair",
+                "effect": pd.to_numeric(d["D_original"], errors="coerce"),
+                "se": np.nan,
+                "z": np.nan,
+                "abs_z": np.nan,
+                "N": pd.to_numeric(d["N_original"], errors="coerce"),
+                "D": pd.to_numeric(d["D_original"], errors="coerce"),
+                "D_method": "plot1_original_D",
+                "N_method": "plot1_original_N",
+                "main_result_flag": "original_side_of_rule_qualified_replication_pair",
+                "published_flag": "published_or_curated_replication_target_original",
+                "raw_file": str(path),
+                "notes": notes,
+            }
+        )
+    )
+
+
 BUILDERS: list[tuple[str, Callable[[Path], pd.DataFrame]]] = [
     ("score_cos_claims", build_score),
     ("forrt_fred", build_fred),
@@ -2351,6 +2541,9 @@ def main() -> None:
     if not frames:
         raise SystemExit("No candidate corpora produced usable D/N rows.")
     rows = pd.concat(frames, ignore_index=True)
+    bridge = build_replication_pair_original_bridge(rows, args.out_dir)
+    if not bridge.empty:
+        rows = pd.concat([rows, bridge], ignore_index=True)
     write_outputs(rows, args.out_dir)
 
     if failures:

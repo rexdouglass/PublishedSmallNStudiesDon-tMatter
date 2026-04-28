@@ -1,0 +1,74 @@
+## Current Audit Snapshot
+
+Every checked replication source should now be traceable through the canonical audit files listed below. In practice, `cataloged` means the source shows up in the non-lossy evidence inventory, the canonical source-family audit, the build-known source catalog, or the unresolved worklist as appropriate.
+
+- Canonical source-family audit rows: `107` in [replication_source_audit.csv](../data/derived/replication_pairs/replication_source_audit.csv)
+- Non-lossy evidence-surface rows: `346` in [replication_source_evidence_inventory.csv](../data/derived/replication_pairs/replication_source_evidence_inventory.csv)
+- Source datasets known to the current build: `97` in [replication_pair_source_catalog.csv](../data/derived/replication_pairs/replication_pair_source_catalog.csv)
+- Prioritized unresolved checked sources: `10` in [replication_source_worklist.csv](../data/derived/replication_pairs/replication_source_worklist.csv)
+- Live integrated pair rows: `2,246` in [replication_pairs_all_on_hand.csv](../data/derived/replication_pairs/replication_pairs_all_on_hand.csv)
+- Figure 2 rule-qualified rows: `1,548` in [replication_pairs_figure2_rule_subset.csv](../data/derived/replication_pairs/replication_pairs_figure2_rule_subset.csv)
+- Audit rows with integrated live data: `70`
+- Audit rows with staged artifacts: `54`
+- Audit rows with promoted artifacts: `26`
+- Audit rows with raw directories present: `53`
+- Audit rows flagged for manual backfill: `26`
+- Legacy Appendix D target coverage: `527` / `555` rows, leaving a gap of `28`
+
+### Canonical audit status counts
+
+::: {.dataset-table .compact-count-table}
+
+| Audit status | Source families |
+| --- | --- |
+| integrated_live | 68 |
+| staged_only | 24 |
+| catalog_not_integrated | 12 |
+| catalog_integrated | 2 |
+| raw_artifact_only | 1 |
+
+:::
+
+### Legacy Appendix D family coverage
+
+::: {.dataset-table .compact-count-table}
+
+| Appendix family | Target rows | Covered rows | Remaining gap |
+| --- | --- | --- | --- |
+| Registered Replication Reports | 9 | 0 | 9 |
+| Other direct replications | 3 | 0 | 3 |
+| Many Labs 1 | 13 | 10 | 3 |
+| Many Labs 2 | 28 | 28 | 0 |
+| Many Labs 3 | 8 | 8 | 0 |
+| Many Labs 4 | 1 | 0 | 1 |
+| Many Labs 5 | 6 | 6 | 0 |
+| SSRP | 20 | 20 | 0 |
+| EERP | 18 | 18 | 0 |
+| RPP / OSC 2015 | 98 | 98 | 0 |
+| RP:CB | 24 | 24 | 0 |
+| SCORE | 282 | 282 | 0 |
+| Experimental philosophy / x-phi | 33 | 33 | 0 |
+| Pipeline Project | 10 | 0 | 10 |
+| DellaVigna-Linos 2022 | 1 | 0 | 1 |
+| Marek 2022 BWAS | 1 | 0 | 1 |
+
+:::
+
+### Highest-priority unresolved checked sources
+
+::: {.dataset-table .worklist-table}
+
+| Source | Recommended next step | Priority |
+| --- | --- | --- |
+| Marcus Four Lab Replication Hcmv7 | stage_downloaded_payload | 90 |
+| Ying 2023 pilot-full-scale trials | complete_partial_manual_reconstruction | 85 |
+| Border 2019 candidate gene replication | consider_native_metric_lane | 70 |
+| EGAP Metaketa I | consider_native_metric_lane | 70 |
+| ERN Pe RRR OpenNeuro | consider_native_metric_lane | 70 |
+| Mullinix Leeper Druckman Freese 2015 | consider_native_metric_lane | 70 |
+| Wood and Porter elusive backfire effect | consider_native_metric_lane | 70 |
+| ManyBabies 3 | locate_machine_readable_payload | 55 |
+| Self control neuroimaging replication | locate_machine_readable_payload | 55 |
+| Media priming direct replication | resolve_access_block | 45 |
+
+:::

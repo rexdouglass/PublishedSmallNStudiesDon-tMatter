@@ -1,0 +1,641 @@
+:root {
+  --dataset-accent: #0b6e5f;
+  --dataset-accent-2: #0e4f6b;
+  --dataset-bg: #f5fbf9;
+  --dataset-panel: #eef6f3;
+  --dataset-border: rgba(11, 110, 95, 0.18);
+}
+
+body {
+  background: var(--dataset-bg);
+}
+
+#quarto-margin-sidebar,
+nav#TOC {
+  display: none !important;
+}
+
+#quarto-content.page-layout-full,
+#quarto-content.page-layout-article {
+  margin: 0 auto;
+  max-width: 1760px;
+  padding: 0 1rem;
+}
+
+main.content {
+  background: #ffffff;
+  border-left: 1px solid var(--dataset-border);
+  border-right: 1px solid var(--dataset-border);
+  grid-column: screen-start / screen-end !important;
+  margin: 0 auto;
+  max-width: 1560px !important;
+  min-width: 0;
+  padding-left: clamp(1.2rem, 2.6vw, 3rem);
+  padding-right: clamp(1.2rem, 2.6vw, 3rem);
+  width: 100%;
+}
+
+.quarto-title-block {
+  background: var(--dataset-panel);
+  border: 1px solid var(--dataset-border);
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  padding: 1.2rem 1.4rem 0.4rem;
+}
+
+.quarto-title h1.title {
+  border-bottom-color: var(--dataset-accent);
+}
+
+h2 {
+  color: var(--dataset-accent);
+}
+
+h3 {
+  color: var(--dataset-accent-2);
+}
+
+.dataset-kicker {
+  background: var(--dataset-panel);
+  border: 1px solid var(--dataset-border);
+  border-radius: 6px;
+  color: var(--dataset-accent-2);
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0.25rem 0 1.25rem;
+  padding: 0.35rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.dataset-contents {
+  background: transparent;
+  border-top: 2px solid var(--dataset-border);
+  border-bottom: 1px solid var(--dataset-border);
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  margin: 0 0 1.75rem;
+  max-width: none;
+  padding: 0.85rem 0 0.9rem;
+  position: static;
+}
+
+.dataset-contents-title {
+  color: var(--dataset-accent-2);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.dataset-contents ul {
+  column-gap: 2rem;
+  columns: 2;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.dataset-contents li {
+  break-inside: avoid;
+  margin-bottom: 0.25rem;
+  max-width: none;
+}
+
+.dataset-contents a {
+  text-decoration: none;
+}
+
+.dataset-contents a:hover,
+.dataset-contents a:focus {
+  text-decoration: underline;
+}
+
+main.content p,
+main.content li,
+main.content blockquote,
+main.content dl,
+main.content > section > div.quarto-figure,
+main.content > section > figure {
+  max-width: 82ch;
+}
+
+table {
+  font-size: 0.92rem;
+}
+
+.source-keyline {
+  color: #5b6b76;
+  display: inline-block;
+  font-size: 0.82em;
+  margin-top: 0.15rem;
+}
+
+.source-citeline {
+  color: #5b6b76;
+  display: inline-block;
+  font-size: 0.82em;
+  margin-top: 0.1rem;
+}
+
+.source-citeline a[role="doc-biblioref"] {
+  text-decoration: none;
+}
+
+.source-citeline a[role="doc-biblioref"]:hover,
+.source-citeline a[role="doc-biblioref"]:focus {
+  text-decoration: underline;
+}
+
+thead th {
+  background: var(--dataset-panel);
+}
+
+.dataset-table {
+  margin: 1rem 0 1.45rem;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.paper-table {
+  background: #fbfefd;
+  border-left-color: var(--dataset-accent);
+  margin: 1.3rem 0 1.9rem;
+  max-height: none;
+  overflow: auto;
+  padding: 0.8rem 0.95rem;
+}
+
+.paper-table p,
+.paper-table li {
+  max-width: none;
+}
+
+main.content table.table,
+.paper-table table {
+  border-collapse: collapse;
+  display: table;
+  line-height: 1.24;
+  margin-bottom: 0;
+  max-width: none;
+  table-layout: fixed;
+  width: 100%;
+}
+
+main.content table.table colgroup col,
+.paper-table table colgroup col {
+  width: auto !important;
+}
+
+main.content table.table td,
+main.content table.table th,
+.paper-table td,
+.paper-table th {
+  hyphens: auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+  padding: 0.34rem 0.45rem;
+  vertical-align: top;
+  white-space: normal;
+  word-break: normal;
+}
+
+main.content table.table th,
+.paper-table th {
+  font-size: 0.82em;
+  line-height: 1.12;
+}
+
+.dataset-table table.table {
+  min-width: 900px;
+}
+
+.dataset-table td,
+.dataset-table th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dataset-status-table table.table {
+  min-width: 1040px;
+}
+
+.dataset-status-table th:nth-child(1),
+.dataset-status-table td:nth-child(1) {
+  width: 23%;
+}
+
+.dataset-status-table th:nth-child(2),
+.dataset-status-table td:nth-child(2) {
+  width: 14%;
+}
+
+.dataset-status-table th:nth-child(3),
+.dataset-status-table td:nth-child(3),
+.dataset-status-table th:nth-child(4),
+.dataset-status-table td:nth-child(4),
+.dataset-status-table th:nth-child(5),
+.dataset-status-table td:nth-child(5) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 9%;
+}
+
+.dataset-status-table th:nth-child(6),
+.dataset-status-table td:nth-child(6) {
+  width: 36%;
+}
+
+.source-audit-table table.table {
+  min-width: 1250px;
+}
+
+.source-audit-table th:nth-child(1),
+.source-audit-table td:nth-child(1) {
+  width: 20%;
+}
+
+.source-audit-table th:nth-child(2),
+.source-audit-table td:nth-child(2) {
+  width: 24%;
+}
+
+.source-audit-table th:nth-child(3),
+.source-audit-table td:nth-child(3) {
+  width: 48%;
+}
+
+.source-audit-table th:nth-child(4),
+.source-audit-table td:nth-child(4) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 8%;
+}
+
+.plot2-source-audit-table table.table {
+  font-size: 0.86rem;
+  min-width: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.plot2-source-audit-table table.table colgroup col:nth-child(1) {
+  width: 17% !important;
+}
+
+.plot2-source-audit-table table.table colgroup col:nth-child(2) {
+  width: 25% !important;
+}
+
+.plot2-source-audit-table table.table colgroup col:nth-child(3) {
+  width: 23% !important;
+}
+
+.plot2-source-audit-table table.table colgroup col:nth-child(4) {
+  width: 29% !important;
+}
+
+.plot2-source-audit-table table.table colgroup col:nth-child(5) {
+  width: 6% !important;
+}
+
+.plot2-source-audit-table th:nth-child(1),
+.plot2-source-audit-table td:nth-child(1) {
+  width: 17%;
+}
+
+.plot2-source-audit-table th:nth-child(2),
+.plot2-source-audit-table td:nth-child(2) {
+  width: 25%;
+}
+
+.plot2-source-audit-table th:nth-child(3),
+.plot2-source-audit-table td:nth-child(3) {
+  width: 23%;
+}
+
+.plot2-source-audit-table th:nth-child(4),
+.plot2-source-audit-table td:nth-child(4) {
+  text-align: left;
+  overflow-wrap: break-word;
+  white-space: normal !important;
+  width: 29%;
+}
+
+.plot2-source-audit-table th:nth-child(5),
+.plot2-source-audit-table td:nth-child(5) {
+  text-align: right;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 6%;
+}
+
+.plot3-source-audit-table table.table {
+  font-size: 0.86rem;
+  min-width: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.plot3-source-audit-table table.table colgroup col:nth-child(1) {
+  width: 17% !important;
+}
+
+.plot3-source-audit-table table.table colgroup col:nth-child(2) {
+  width: 25% !important;
+}
+
+.plot3-source-audit-table table.table colgroup col:nth-child(3) {
+  width: 23% !important;
+}
+
+.plot3-source-audit-table table.table colgroup col:nth-child(4) {
+  width: 29% !important;
+}
+
+.plot3-source-audit-table table.table colgroup col:nth-child(5) {
+  width: 6% !important;
+}
+
+.plot3-source-audit-table th:nth-child(1),
+.plot3-source-audit-table td:nth-child(1) {
+  width: 17%;
+}
+
+.plot3-source-audit-table th:nth-child(2),
+.plot3-source-audit-table td:nth-child(2) {
+  width: 25%;
+}
+
+.plot3-source-audit-table th:nth-child(3),
+.plot3-source-audit-table td:nth-child(3) {
+  width: 23%;
+}
+
+.plot3-source-audit-table th:nth-child(4),
+.plot3-source-audit-table td:nth-child(4) {
+  text-align: left;
+  overflow-wrap: break-word;
+  white-space: normal !important;
+  width: 29%;
+}
+
+.plot3-source-audit-table th:nth-child(5),
+.plot3-source-audit-table td:nth-child(5) {
+  text-align: right;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 6%;
+}
+
+.combined-source-audit-table table.table {
+  min-width: 1250px;
+}
+
+.combined-source-audit-table th:nth-child(1),
+.combined-source-audit-table td:nth-child(1) {
+  width: 17%;
+}
+
+.combined-source-audit-table th:nth-child(2),
+.combined-source-audit-table td:nth-child(2) {
+  width: 29%;
+}
+
+.combined-source-audit-table th:nth-child(3),
+.combined-source-audit-table td:nth-child(3) {
+  width: 28%;
+}
+
+.combined-source-audit-table th:nth-child(n + 4),
+.combined-source-audit-table td:nth-child(n + 4) {
+  text-align: center;
+  width: 5.2%;
+}
+
+.combined-source-audit-table td:nth-child(n + 4) {
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+}
+
+.specific-observation-table table.table {
+  min-width: 1280px;
+}
+
+.specific-observation-table th,
+.specific-observation-table td {
+  font-size: 0.86rem;
+}
+
+.specific-observation-table th:last-child,
+.specific-observation-table td:last-child {
+  text-align: center;
+}
+
+.replication-observation-table table.table {
+  min-width: 1250px;
+}
+
+.replication-observation-table th:nth-child(1),
+.replication-observation-table td:nth-child(1) {
+  width: 18%;
+}
+
+.replication-observation-table th:nth-child(2),
+.replication-observation-table td:nth-child(2),
+.replication-observation-table th:nth-child(3),
+.replication-observation-table td:nth-child(3) {
+  width: 17%;
+}
+
+.replication-observation-table th:nth-child(4),
+.replication-observation-table td:nth-child(4) {
+  width: 25%;
+}
+
+.replication-observation-table th:nth-child(5),
+.replication-observation-table td:nth-child(5),
+.replication-observation-table th:nth-child(6),
+.replication-observation-table td:nth-child(6) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 8%;
+}
+
+.replication-observation-table th:nth-child(7),
+.replication-observation-table td:nth-child(7) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 7%;
+}
+
+.published-observation-table table.table {
+  min-width: 1250px;
+}
+
+.published-observation-table th:nth-child(1),
+.published-observation-table td:nth-child(1) {
+  width: 18%;
+}
+
+.published-observation-table th:nth-child(2),
+.published-observation-table td:nth-child(2) {
+  width: 12%;
+}
+
+.published-observation-table th:nth-child(3),
+.published-observation-table td:nth-child(3) {
+  width: 34%;
+}
+
+.published-observation-table th:nth-child(4),
+.published-observation-table td:nth-child(4) {
+  width: 10%;
+}
+
+.published-observation-table th:nth-child(5),
+.published-observation-table td:nth-child(5) {
+  width: 12%;
+}
+
+.published-observation-table th:nth-child(6),
+.published-observation-table td:nth-child(6),
+.published-observation-table th:nth-child(7),
+.published-observation-table td:nth-child(7) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 7%;
+}
+
+.preregistered-observation-table table.table {
+  min-width: 1120px;
+}
+
+.preregistered-observation-table th:nth-child(1),
+.preregistered-observation-table td:nth-child(1) {
+  width: 20%;
+}
+
+.preregistered-observation-table th:nth-child(2),
+.preregistered-observation-table td:nth-child(2) {
+  width: 40%;
+}
+
+.preregistered-observation-table th:nth-child(3),
+.preregistered-observation-table td:nth-child(3) {
+  width: 18%;
+}
+
+.preregistered-observation-table th:nth-child(4),
+.preregistered-observation-table td:nth-child(4),
+.preregistered-observation-table th:nth-child(5),
+.preregistered-observation-table td:nth-child(5) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 11%;
+}
+
+.worklist-table table.table {
+  min-width: 1000px;
+}
+
+.worklist-table th:nth-child(1),
+.worklist-table td:nth-child(1) {
+  width: 30%;
+}
+
+.worklist-table th:nth-child(2),
+.worklist-table td:nth-child(2) {
+  width: 58%;
+}
+
+.worklist-table th:nth-child(3),
+.worklist-table td:nth-child(3) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+  width: 12%;
+}
+
+.dataset-criteria-table table.table {
+  min-width: 1180px;
+}
+
+.dataset-criteria-table th:first-child,
+.dataset-criteria-table td:first-child {
+  text-align: left;
+  width: 24%;
+}
+
+.dataset-criteria-table th:not(:first-child),
+.dataset-criteria-table td:not(:first-child) {
+  text-align: center;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+}
+
+.compact-count-table table.table {
+  min-width: 760px;
+}
+
+.compact-count-table th:not(:first-child),
+.compact-count-table td:not(:first-child) {
+  text-align: right;
+  overflow-wrap: normal;
+  white-space: nowrap !important;
+}
+
+.source-gap-table table.table {
+  min-width: 980px;
+}
+
+blockquote {
+  background: #fbfefd;
+  border-left-color: var(--dataset-accent);
+}
+
+@media (max-width: 900px) {
+  #quarto-content.page-layout-full,
+  #quarto-content.page-layout-article {
+    padding: 0;
+  }
+
+  main.content {
+    border-left: none;
+    border-right: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  main.content p,
+  main.content li,
+  main.content blockquote,
+  main.content dl {
+    max-width: none;
+  }
+
+  .dataset-table {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+  }
+
+  main.content table.table td,
+  main.content table.table th,
+  .paper-table td,
+  .paper-table th {
+    padding: 0.32rem 0.4rem;
+  }
+
+  .dataset-contents ul {
+    columns: 1;
+  }
+}

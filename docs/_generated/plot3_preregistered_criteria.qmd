@@ -1,0 +1,54 @@
+Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_criteria_matrix.csv)
+
+These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates.
+
+Across the currently named Plot 3 source families, `10,650` / `23,077` considered rows already have local D/N encoding somewhere in the project, and `156` rows enter the preregistered-results plot after the gates are applied.
+
+Source-table column criteria:
+
+::: {.dataset-table .dataset-criteria-table .source-column-criteria-table}
+
+| Column | Criterion used |
+| --- | --- |
+| Corpus considered | One source family or deliberately tracked comparator family audited for Plot 3 admission. |
+| What it is / why possible candidate | Brief source identity plus the concrete reason we thought it might contain preregistered confirmatory D/N rows. |
+| Confirmed fields | Only fields verified locally or documented in the current audit: row counts, preregistration/registration status, D/N availability, support-status availability, and key caveats. |
+| Why in/out | Final current gate call: included, excluded by analytic-preregistration, excluded by retraction, excluded as duplicate/nested evidence, or blocked by missing local row table. |
+| # obs in | Number of result rows from that source family entering `plot3_preregistered_results.csv` and therefore the plotted figure. |
+
+:::
+
+::: {.dataset-table .dataset-criteria-table}
+
+| Source family | Rows considered | Preregistered-confirmatory equivalent | Public local backing | Extractable D/N rows | Non-retracted source | Currently included |
+| --- | --- | --- | --- | --- | --- | --- |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 93 | 93 | 93 | 89 | 93 | 89 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 32 |
+| SCORE/COS preregistration-indicated papers [@tyner2026] | 245 | 245 | 245 | 31 | 245 | 31 |
+| PSA-CR001 pooled preregistered rows [@dorison2022] | 4 | 4 | 4 | 4 | 4 | 4 |
+| ClinicalTrials.gov registry-result D/N comparator [@du2024] | 7,722 | 0 | 7,722 | 7,722 | 7,722 | 0 |
+| FORRT FReD / Replication Database | 843 | 0 | 843 | 843 | 843 | 0 |
+| Schäfer/Schwarz non-preregistered comparator [@schaefer2019meaningfulness] | 900 | 0 | 900 | 682 | 900 | 0 |
+| FReD archived workflow rescue queue | 343 | 0 | 343 | 343 | 343 | 0 |
+| CliniFact published trial primary-outcome rows [@zhang2025clinifact] | 339 | 0 | 339 | 339 | 339 | 0 |
+| Linden focal/random psychology sample [@linden2024publicationBiasPsychology] | 316 | 0 | 316 | 316 | 316 | 0 |
+| PSA replication-pair rows | 93 | 93 | 93 | 93 | 93 | 0 |
+| Many Labs 1-5 project-level replication rows | 69 | 69 | 69 | 69 | 69 | 0 |
+| Registered Replication Reports Plot 1 pair rows | 49 | 49 | 49 | 49 | 49 | 0 |
+| Communication privacy preregistered corpus [@masur2025privacy] | 31 | 31 | 31 | 31 | 31 | 0 |
+| High-Replicability Research project [@protzko2024highrep] | 48 | 48 | 3 | 3 | 0 | 0 |
+| Retrieval-extinction rats preregistered replication [@luyten2017retrievalExtinction] | 3 | 3 | 3 | 3 | 3 | 0 |
+| Transparent Psi Project / Bem row [@kekecs2023tpp] | 1 | 1 | 1 | 1 | 1 | 0 |
+| Nordic trial registration-publication linkage | 7,461 | 0 | 7,461 | 0 | 7,461 | 0 |
+| AACT x PubMed registered primary outcomes [@du2024] | 2,720 | 0 | 0 | 0 | 2,720 | 0 |
+| COMPare prespecified outcome audit | 1,171 | 749 | 1,171 | 0 | 1,171 | 0 |
+| Twomey kinesiology article audit | 300 | 27 | 300 | 0 | 300 | 0 |
+| Registered Replication Reports per-lab rows | 205 | 205 | 0 | 0 | 205 | 0 |
+| ManyClasses 2 classroom materials [@manyClasses2Osf] | 30 | 30 | 30 | 0 | 30 | 0 |
+| ManyBabies 3 registered-report materials [@manyBabies3Osf] | 15 | 15 | 0 | 0 | 15 | 0 |
+| Self-control fMRI preregistered materials | 4 | 4 | 0 | 0 | 4 | 0 |
+| ERN/Pe RRR OpenNeuro/OSF hubs [@ernPeRrrOpenNeuro] | 1 | 1 | 0 | 0 | 1 | 0 |
+
+:::
+
+For Plot 3, the real bottleneck is not discovery. It is converting conceptually relevant preregistered-like sources into local auditable source tables that survive the non-retraction and analytic-preregistration gates.

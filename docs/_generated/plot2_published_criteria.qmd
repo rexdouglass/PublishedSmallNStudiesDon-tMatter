@@ -1,0 +1,23 @@
+Machine-readable matrix: [plot2_published_criteria_matrix.csv](../data/derived/effect_inflation_dataset/plot2_published_criteria_matrix.csv)
+
+The counts below are strict current-layer counts, not best-case theoretical recoverability. If a source only has a `partial` flag for journal provenance or main-result identification, that criterion is counted as `0` here and left to the notes column rather than silently rounded up.
+
+Under the current Plot 2 build, `10,507` paper points are plotted from `26` source corpora. Only `4,311` known paper units come from corpora that already carry an explicit or near-explicit main-result selector, which is why the current figure is still a paper-level published-result cloud rather than a clean main-result-only figure.
+
+### Source-table column criteria
+
+These definitions govern the `Corpora Considered` table below. They are intentionally explicit so source-audit language does not drift as new Plot 2 leads are checked.
+
+::: {.dataset-table .dataset-criteria-table .source-column-criteria-table}
+
+| Column | Criterion |
+| --- | --- |
+| Corpus considered | Name the source family evaluated for Plot 2. Use the canonical display label and citation when available. |
+| What it is / why possible candidate | Describe the source type and why it looked like it could contribute published paper-level D/N point estimates. |
+| Confirmed fields | Report the local evidence counts: known paper units, known test/effect rows, direct journal provenance, paper grouping, paper-level D/N, and main-result selector availability. |
+| Why in/out | State the current Plot 2 decision. If included, name the remaining caveat; if excluded, name the blocking gate rather than just saying unavailable. |
+| # obs in | Count plotted paper/unit rows entering the current Plot 2 cloud. Zero means the source is considered but contributes no plotted paper point right now. |
+
+:::
+
+The source-by-source gate counts are folded into the combined `Corpora Considered` table below so the qualitative admission note and quantitative rule outcomes stay on the same row.

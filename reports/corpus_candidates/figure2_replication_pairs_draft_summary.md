@@ -1,19 +1,19 @@
 # Draft Figure 2 Summary
 
-- All on-hand source-recovered pair rows with usable original and replication D/N: **2,130**
-- Source-recovered Figure 2 subset before Appendix D backfill: **1,445**
-- Figure 2 subset after Appendix D backfill: **1,451**
-- Source-recovered plotted subset before Appendix D backfill: **1,445**
-- Plotted subset after Appendix D backfill: **1,451**
+- All on-hand source-recovered pair rows with usable original and replication D/N: **2,246**
+- Source-recovered Figure 2 subset before Appendix D backfill: **1,542**
+- Figure 2 subset after Appendix D backfill: **1,548**
+- Source-recovered plotted subset before Appendix D backfill: **1,542**
+- Plotted subset after Appendix D backfill: **1,548**
 - Appendix D rows added to the rule subset: **6**
 - Appendix D rows added to the plotted subset: **6**
-- Projects represented in the plotted subset: **31**
+- Projects represented in the plotted subset: **36**
 
 ## All usable pairs by project
 
 - FReD other additions: **504**
 - SCORE: **282**
-- Other direct replications: **205**
+- Other direct replications: **214**
 - RPCB: **118**
 - LOOPR: **118**
 - Student Replication Projects: **114**
@@ -22,103 +22,118 @@
 - FReD SoSci submissions: **84**
 - FReD OpenMKT: **82**
 - FReD CurateScience: **74**
+- Coppock 2019 generalizability corpus: **50**
+- Registered Replication Reports: **46**
 - Brazilian Reproducibility Initiative: **45**
-- Registered Replication Reports: **42**
 - EPRP: **34**
+- Clinical phase II to phase III pairs: **32**
 - 251 Rescue Projects: **30**
 - Many Labs 2: **28**
+- Management Science Replication Project: **26**
 - Decision-Market Replication Project: **26**
 - EERP: **25**
 - SSRP: **23**
 - Many Labs 5: **20**
 - Sports science replications: **19**
-- Management Science Replication Project: **16**
 - FReD FORRT: **11**
 - Pipeline Project: **10**
 - Many Labs 1: **10**
 - Many Labs 3: **10**
 - Clinical highly cited replications: **7**
+- Ying 2023 pilot-full-scale trials: **5**
+- Eyewitness memory distortion in ten countries: **5**
 - FReD new RRR: **3**
-- Marek 2022 BWAS: **1**
+- PSA 004 JTB Turri: **1**
 - Many Labs 4: **1**
+- Marek 2022 BWAS: **1**
 
 ## Rule-qualified subset by project
 
 - FReD other additions: **378**
 - SCORE: **171**
 - LOOPR: **104**
+- Other direct replications: **89**
 - FReD CORE: **82**
 - FReD OpenMKT: **80**
-- Other direct replications: **80**
 - OSC 2015: **71**
 - FReD CurateScience: **70**
 - FReD SoSci submissions: **61**
 - Student Replication Projects: **35**
+- Coppock 2019 generalizability corpus: **35**
 - RPCB: **33**
+- Clinical phase II to phase III pairs: **32**
 - Many Labs 2: **28**
 - EPRP: **28**
 - Decision-Market Replication Project: **26**
+- Registered Replication Reports: **25**
 - Brazilian Reproducibility Initiative: **21**
-- Registered Replication Reports: **21**
-- Many Labs 5: **20**
 - SSRP: **20**
+- Many Labs 5: **20**
+- Management Science Replication Project: **20**
 - EERP: **18**
 - 251 Rescue Projects: **17**
 - Sports science replications: **16**
-- Management Science Replication Project: **14**
 - Many Labs 1: **13**
 - FReD FORRT: **11**
 - Many Labs 3: **10**
 - Pipeline Project: **10**
 - Clinical highly cited replications: **7**
+- Ying 2023 pilot-full-scale trials: **5**
+- Eyewitness memory distortion in ten countries: **5**
 - FReD new RRR: **3**
 - DellaVigna-Linos 2022: **1**
-- Marek 2022 BWAS: **1**
+- PSA 004 JTB Turri: **1**
 - Many Labs 4: **1**
+- Marek 2022 BWAS: **1**
 
 ## Plotted subset by project
 
 - FReD other additions: **378**
 - SCORE: **171**
 - LOOPR: **104**
+- Other direct replications: **89**
 - FReD CORE: **82**
 - FReD OpenMKT: **80**
-- Other direct replications: **80**
 - OSC 2015: **71**
 - FReD CurateScience: **70**
 - FReD SoSci submissions: **61**
 - Student Replication Projects: **35**
+- Coppock 2019 generalizability corpus: **35**
 - RPCB: **33**
+- Clinical phase II to phase III pairs: **32**
 - Many Labs 2: **28**
 - EPRP: **28**
 - Decision-Market Replication Project: **26**
+- Registered Replication Reports: **25**
 - Brazilian Reproducibility Initiative: **21**
-- Registered Replication Reports: **21**
-- Many Labs 5: **20**
 - SSRP: **20**
+- Many Labs 5: **20**
+- Management Science Replication Project: **20**
 - EERP: **18**
 - 251 Rescue Projects: **17**
 - Sports science replications: **16**
-- Management Science Replication Project: **14**
 - Many Labs 1: **13**
 - FReD FORRT: **11**
 - Many Labs 3: **10**
 - Pipeline Project: **10**
 - Clinical highly cited replications: **7**
+- Ying 2023 pilot-full-scale trials: **5**
+- Eyewitness memory distortion in ten countries: **5**
 - FReD new RRR: **3**
 - DellaVigna-Linos 2022: **1**
-- Marek 2022 BWAS: **1**
+- PSA 004 JTB Turri: **1**
 - Many Labs 4: **1**
+- Marek 2022 BWAS: **1**
 
 ## Rule-Qualified Arrow Categories
 
-- shrunk, still significant: **569**
-- shrunk below p < .05: **613**
-- grew: **269**
+- shrunk, still significant: **610**
+- shrunk below p < .05: **632**
+- grew: **306**
 
 ## Pair Origins In The Plotted Subset
 
-- source_recovered: **1,445**
+- source_recovered: **1,542**
 - appendix_backfill: **6**
 
 ## Notes
