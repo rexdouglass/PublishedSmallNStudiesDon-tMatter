@@ -3458,20 +3458,6 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         .reset_index()
     )
 
-    for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False):
-        color = colors.get(row.field, "#444444")
-        marker = markers.get(row.field, "o")
-        ax.scatter(
-            row.median_N,
-            row.median_D,
-            s=120,
-            marker=marker,
-            facecolors="white",
-            edgecolors=color,
-            linewidths=1.8,
-            zorder=5,
-        )
-
     for z, label, style, x_label_target, y_multiplier in [
         (1.6448536269514722, "p=.10", ":", 95_000.0, 0.95),
         (1.96, "p=.05", "--", 140_000.0, 1.05),
@@ -3482,9 +3468,9 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
             2 * z / np.sqrt(xs),
             style,
             color="#444444",
-            linewidth=2.7,
-            alpha=1.0,
-            zorder=11,
+            linewidth=2.2,
+            alpha=0.82,
+            zorder=6,
         )
         x_label = min(max(x_min_plot * 12, x_label_target), x_max_plot / 1.7)
         y_label = max(y_min_plot * 1.1, 2 * z / np.sqrt(x_label) * y_multiplier)
@@ -3500,7 +3486,31 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
             rotation_mode="anchor",
             bbox=dict(facecolor="white", edgecolor="none", alpha=0.78, pad=0.35),
             clip_on=True,
-            zorder=12,
+            zorder=7,
+        )
+
+    for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False):
+        color = colors.get(row.field, "#444444")
+        marker = markers.get(row.field, "o")
+        ax.scatter(
+            row.median_N,
+            row.median_D,
+            s=250,
+            marker=marker,
+            facecolors="white",
+            edgecolors="#111111",
+            linewidths=3.1,
+            zorder=20,
+        )
+        ax.scatter(
+            row.median_N,
+            row.median_D,
+            s=165,
+            marker=marker,
+            facecolors="white",
+            edgecolors=color,
+            linewidths=2.3,
+            zorder=21,
         )
 
     ax.set_xscale("log")
