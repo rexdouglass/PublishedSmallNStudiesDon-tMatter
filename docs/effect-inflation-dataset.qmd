@@ -342,7 +342,7 @@ The source-family audit is now centralized in Section 3.3 and in [plot2_publishe
 
 # Plot 3 --- Preregistered Results
 
-Plot 3 now has a first rendered version built from the preregistered-results files already on hand. It is a comparison layer, not a registry layer: each point is a preregistered confirmatory result with a recoverable `D` and `N`.
+Plot 3 is the preregistered-results comparison layer, not a registry layer. Under the relaxed rule, "confirmatory" means the result is inside a plan written before the result was known. A paper no longer needs a single main-result selector if the local source identifies multiple preregistered hypothesis results; those planned results are collapsed to a paper/project median before plotting when the source exposes a matched result set.
 
 ## Figure
 
@@ -350,7 +350,7 @@ Plot 3 now has a first rendered version built from the preregistered-results fil
 
 ## Registry and Table-Test Comparators
 
-Figure 3 is restricted to preregistered confirmatory result rows: one row should correspond to a precommitted hypothesis/result with recoverable `D` and `N`. The comparator panels below deliberately show large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
+Figure 3 is restricted to preregistered confirmatory result rows or paper/project medians of such rows: the underlying statistic must map to a precommitted hypothesis/result and have recoverable `D` and `N`. The comparator panels below deliberately show large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
 
 - **ClinicalTrials.gov registry-result comparator:** `7,722` trial-level registry-result rows from the local finer-grained CT.gov efficacy extraction. These are collapsed registry rows with `D/N` derived from registry p-values and enrollment-like `N`, not locked article-level confirmatory analyses.
 - **Brodeur preregistered/PAP economics table tests:** `3,724` extracted economics table-test rows from papers flagged as preregistered, having a pre-analysis plan, or having PAP power information. The flags are paper/PAP-level evidence, while the plotted rows are individual published coefficients/tests.
@@ -371,10 +371,11 @@ The larger ClinicalTrials.gov API pass below is the scale check. It uses the off
 
 Plot 3 should include a source family when:
 
-- the row family represents **preregistered confirmatory results** rather than post hoc exploratory findings,
-- `D` and `N` are recoverable or already encoded at the row level,
+- the row family represents **planned preregistered results** rather than post hoc exploratory findings,
+- `D` and `N` are recoverable or already encoded at the result level,
 - the source is public and locally auditable,
-- and the unit is a preregistered hypothesis/result row, not merely a registry entry or broad study metadata record.
+- the unit is a preregistered hypothesis/result row or a median collapse of multiple matched planned-result rows from the same paper/project,
+- and the source does not merely say "this paper was preregistered" while leaving the plotted statistic unlinked to the preregistered plan.
 
 That is why mere clinical-trial registration is not enough for this layer. Registration can still be useful as a comparator, but it is not the same thing as an analytically preregistered confirmatory result.
 
@@ -392,6 +393,7 @@ That is why mere clinical-trial registration is not enough for this layer. Regis
 - Cleaner ClinicalTrials.gov sub-sidecar rows: [plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv)
 - ClinicalTrials.gov API registered outcome-analysis rows: [plot3_ctgov_api_registered_outcome_ratio_event_rows.csv.gz](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_outcome_ratio_event_rows.csv.gz)
 - ClinicalTrials.gov API one-trial median rows: [plot3_ctgov_api_registered_trial_medians.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_trial_medians.csv)
+- RPCB preclinical Registered Report medians: [plot3_rpcb_preclinical_paper_level_candidates.csv](../data/derived/effect_inflation_dataset/plot3_rpcb_preclinical_paper_level_candidates.csv)
 - Generated table fragments: [table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd](./_generated/tables/table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd) and [table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd](./_generated/tables/table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd)
 
 ## What Is Already in Hand
@@ -401,9 +403,11 @@ The current preregistered corpus is not hypothetical. It already contains:
 - the Scheel / Schijen / Lakens Registered Reports extraction,
 - the pooled PSA-CR001 confirmatory rows,
 - the Schäfer/Schwarz preregistered psychology key-effect sample,
+- the SCORE and van den Akker paper-median expansions,
+- the RPCB preclinical Registered Report medians,
 - and an explicit source-family table documenting comparator, retraction, registration-only, missing-payload, native-metric, and double-counting exclusions.
 
-So Plot 3 is no longer blocked on first presentation. The source audit now also names the local preregistered-like families that should not silently disappear: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, RPCB Registered Report replication effects, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the van den Akker preregistration-in-practice and selective-hypothesis-reporting corpora. The remaining work is policy cleanup: deciding whether any registry-only biomedical rows, preregistered economics table-test rows, lab-level RRR/RPCB rows, native field-experiment estimates, or other preregistered-like sidecars should get separate lanes rather than entering this confirmatory-result layer.
+So Plot 3 is no longer blocked on first presentation. The source audit now also names the local preregistered-like families that should not silently disappear: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the van den Akker preregistration-in-practice and selective-hypothesis-reporting corpora. The remaining work is policy cleanup: deciding whether any registry-only biomedical rows, preregistered economics table-test rows, lab-level RRR rows, native field-experiment estimates, or other preregistered-like sidecars should get separate lanes rather than entering this confirmatory-result layer.
 
 ## What The First Version Should Show
 

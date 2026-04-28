@@ -1,8 +1,8 @@
 Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_criteria_matrix.csv)
 
-These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates.
+These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates. Under the relaxed rule, a source may expose multiple planned preregistered results per paper/project, but the plotted layer uses a median collapse when that within-paper result set is explicit.
 
-Across the currently named Plot 3 source families, `197,792` / `217,303` considered rows already have local D/N encoding somewhere in the project, and `300` rows enter the preregistered-results plot after the gates are applied.
+Across the currently named Plot 3 source families, `197,792` / `217,303` considered rows already have local D/N encoding somewhere in the project, and `323` rows enter the preregistered-results plot after the gates are applied.
 
 Source-table column criteria:
 
@@ -13,7 +13,7 @@ Source-table column criteria:
 | Corpus considered | One source family or deliberately tracked comparator family audited for Plot 3 admission. |
 | What it is / why possible candidate | Brief source identity plus the concrete reason we thought it might contain preregistered confirmatory D/N rows. |
 | Confirmed fields | Only fields verified locally or documented in the current audit: row counts, preregistration/registration status, D/N availability, support-status availability, and key caveats. |
-| Why in/out | Final current gate call: included, excluded by analytic-preregistration, excluded by retraction, excluded as duplicate/nested evidence, or blocked by missing local row table. |
+| Why in/out | Final current gate call: included, excluded by analytic-preregistration, excluded by retraction, excluded as duplicate/nested evidence, or blocked by missing local row table. The focal-selector gate is now a planned-result gate plus median collapse, not a single-main-result-only gate. |
 | # obs in | Number of result rows from that source family entering `plot3_preregistered_results.csv` and therefore the plotted figure. |
 
 :::
@@ -26,6 +26,7 @@ Source-table column criteria:
 | Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 93 | 93 | 93 | 89 | 93 | 89 |
 | SCORE/COS preregistration-indicated papers [@tyner2026] | 245 | 245 | 245 | 34 | 245 | 34 |
 | Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 32 |
+| RPCB Registered Report replication effects [@errington2021] | 188 | 188 | 188 | 159 | 188 | 23 |
 | PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | 12 | 12 | 12 | 12 | 12 | 12 |
 | PSA-CR001 pooled preregistered rows [@dorison2022] | 4 | 4 | 4 | 4 | 4 | 4 |
 | ManyBabies 1 bilingual IDS pooled row [@byersHeinlein2021manybabiesBilingual] | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -39,7 +40,6 @@ Source-table column criteria:
 | FReD archived workflow rescue queue | 343 | 0 | 343 | 343 | 343 | 0 |
 | CliniFact published trial primary-outcome rows [@zhang2025clinifact] | 339 | 0 | 339 | 339 | 339 | 0 |
 | Linden focal/random psychology sample [@linden2024publicationBiasPsychology] | 316 | 0 | 316 | 316 | 316 | 0 |
-| RPCB Registered Report replication effects [@errington2021] | 188 | 188 | 188 | 159 | 188 | 0 |
 | PSA replication-pair rows | 93 | 93 | 93 | 93 | 93 | 0 |
 | Many Labs 1-5 project-level replication rows | 69 | 69 | 69 | 69 | 69 | 0 |
 | Registered Replication Reports Plot 1 pair rows | 49 | 49 | 49 | 49 | 49 | 0 |

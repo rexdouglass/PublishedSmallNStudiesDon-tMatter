@@ -914,6 +914,8 @@ def plot3_default_field(source_family: object) -> str:
     text = safe_text(source_family).lower()
     if "manyclasses" in text or "learning and instruction" in text:
         return "education"
+    if "cancer biology" in text or "rpcb" in text or "preclinical" in text:
+        return "preclinical biology"
     if "score" in text:
         return "mixed social/behavioral science"
     return "psychology and health"
@@ -928,6 +930,7 @@ def display_field_label(value: object) -> str:
         "sociology and criminology": "Sociology/criminology",
         "business": "Business",
         "education": "Education",
+        "preclinical biology": "Preclinical biology",
         "mixed social/behavioral science": "Mixed social/behavioral science",
     }.get(text, text.replace("_", " ").title())
 
@@ -1219,6 +1222,25 @@ def vandenakker_matched_median_rows() -> pd.DataFrame:
     ready["_psp"] = numeric_series(ready.get("PSP", pd.Series(dtype=float)))
     ready = ready.sort_values(["_psp", "candidate_id"]).drop_duplicates("_psp", keep="first")
     return ready.drop(columns=["_psp"]).reset_index(drop=True)
+
+
+def rpcb_registered_report_median_rows() -> pd.DataFrame:
+    """Return preclinical Registered Report paper medians from RPCB."""
+    if not RPCB_PRECLINICAL_CANDIDATES.exists():
+        return pd.DataFrame()
+    rows = pd.read_csv(RPCB_PRECLINICAL_CANDIDATES)
+    if rows.empty or "strict_append_ready" not in rows.columns:
+        return pd.DataFrame()
+    ready = rows.loc[rows["strict_append_ready"].astype(str).str.lower().eq("true")].copy()
+    ready = ready[
+        (numeric_series(ready.get("D_candidate", pd.Series(dtype=float))) > 0)
+        & (numeric_series(ready.get("N_candidate", pd.Series(dtype=float))) > 0)
+    ].copy()
+    if ready.empty:
+        return ready
+    ready["_paper_number"] = numeric_series(ready.get("paper_number", pd.Series(dtype=float)))
+    ready = ready.sort_values(["_paper_number", "candidate_id"]).drop_duplicates("_paper_number", keep="first")
+    return ready.drop(columns=["_paper_number"]).reset_index(drop=True)
 
 
 def write_qmd_with_table(path: Path, lines: list[str]) -> None:
@@ -1870,6 +1892,35 @@ def normalize_preregistered_results() -> pd.DataFrame:
                 "supported": "not coded",
                 "journal": safe_text(row.get("journal")),
                 "source_file": f"{VANDENAKKER_MEDIAN_CANDIDATES.relative_to(ROOT)}; DOI={doi}",
+                "source_row_number": idx + 1,
+            }
+        )
+
+    rpcb_medians = rpcb_registered_report_median_rows()
+    for idx, row in rpcb_medians.iterrows():
+        paper_number = safe_text(row.get("paper_number")) or str(idx + 1)
+        registered_rows = safe_text(row.get("registered_result_rows"))
+        label_parts = [
+            f"RPCB paper {paper_number}",
+            f"{registered_rows} registered effect(s)" if registered_rows else "registered effect median",
+            safe_text(row.get("effect_description")),
+        ]
+        rows.append(
+            {
+                "point_id": f"rpcb_registered_report_median_{idx + 1:03d}",
+                "plot_name": "Plot 3",
+                "source_layer": "preregistered_confirmatory_result",
+                "source_family": "RPCB eLife Registered Report replication effects",
+                "source_label": "RPCB Registered Report replication effects",
+                "citation_key": "errington2021",
+                "row_unit": "paper_median_of_registered_report_replication_effects",
+                "row_label": " - ".join(part for part in label_parts if part),
+                "D": float(row["D_candidate"]),
+                "N": float(row["N_candidate"]),
+                "supported": "not coded",
+                "journal": "eLife",
+                "field": "preclinical biology",
+                "source_file": str(RPCB_PRECLINICAL_CANDIDATES.relative_to(ROOT)),
                 "source_row_number": idx + 1,
             }
         )
@@ -2655,6 +2706,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "economics and finance": "#7a4d9b",
         "sociology and criminology": "#8b6f21",
         "business": "#c44a1e",
+        "preclinical biology": "#6f6a1f",
         "mixed social/behavioral science": "#555555",
     }
     markers = {
@@ -2664,6 +2716,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "economics and finance": "D",
         "sociology and criminology": "P",
         "business": "X",
+        "preclinical biology": "*",
         "mixed social/behavioral science": "v",
     }
 
@@ -5899,6 +5952,16 @@ def write_plot3_source_catalog() -> None:
     ) if not vandenakker_median_ready.empty else 0
     rpcb_preclinical_candidates = pd.read_csv(RPCB_PRECLINICAL_CANDIDATES) if RPCB_PRECLINICAL_CANDIDATES.exists() else pd.DataFrame()
     rpcb_preclinical_candidate_rows = len(rpcb_preclinical_candidates)
+    rpcb_preclinical_ready = rpcb_registered_report_median_rows()
+    rpcb_preclinical_contributed_rows = len(rpcb_preclinical_ready)
+    rpcb_preclinical_registered_result_rows = int(
+        pd.to_numeric(
+            rpcb_preclinical_ready.get("registered_result_rows", pd.Series(dtype=float)),
+            errors="coerce",
+        )
+        .fillna(0)
+        .sum()
+    ) if not rpcb_preclinical_ready.empty else 0
     score_text_candidates = pd.read_csv(SCORE_TEXT_CLAIM_CANDIDATES) if SCORE_TEXT_CLAIM_CANDIDATES.exists() else pd.DataFrame()
     score_text_candidate_rows = len(score_text_candidates)
     score_text_ready = score_text_claim_rescue_rows()
@@ -6365,21 +6428,21 @@ def write_plot3_source_catalog() -> None:
             },
             {
                 "plot_name": "Plot 3",
-                "plot_inclusion_status": "not_included",
+                "plot_inclusion_status": "included",
                 "source_label": "RPCB eLife Registered Report replication effects",
                 "corpus_what_it_is": "Reproducibility Project: Cancer Biology effect-level replication dataset from eLife Registered Reports and replication studies.",
                 "what_it_is_why_possible_candidate": "RPCB was rechecked because its replication protocols were submitted as Registered Reports before experimental work and the public OSF effect-level table contains replication sample sizes and SMD-like effect-size columns.",
-                "confirmed_fields": f"Known locally: 188 effect-level rows in the RPCB final effect table and {fmt_int(rpcb_pair_rows)} RPCB rows already in the replication-pair file. Confirmed from local table: replication sample size is present for 188 effects; replication SMD effect size is present for 159 effects; original sample size is numeric for 140 effects; original SMD effect size is numeric for 135 effects. A conservative first-effect-per-paper preclinical candidate file now contains {fmt_int(rpcb_preclinical_candidate_rows)} row-ready D/N candidates. Confirmed: Registered Report replication protocol status: yes; standalone non-overlap with Plot 1: no.",
+                "confirmed_fields": f"Known locally: 188 effect-level rows in the RPCB final effect table and {fmt_int(rpcb_pair_rows)} RPCB rows already in the replication-pair file. Confirmed from local table: replication sample size is present for 188 effects; replication SMD effect size is present for 159 effects; original sample size is numeric for 140 effects; original SMD effect size is numeric for 135 effects. The relaxed median-per-paper rule yields {fmt_int(rpcb_preclinical_contributed_rows)} preclinical paper medians from {fmt_int(rpcb_preclinical_registered_result_rows)} registered effect rows. Confirmed: Registered Report replication protocol status: yes; domain caveat: preclinical biology.",
                 "backing_file": f"data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv; {RPCB_PRECLINICAL_CANDIDATES.relative_to(ROOT)}; https://osf.io/e5nvr/",
                 "rows_considered": 188,
                 "rows_preregistered_equivalent": 188,
                 "rows_with_public_local_backing": 188,
                 "rows_with_extractable_DN": 159,
                 "rows_with_non_retracted_source": 188,
-                "rows_contributed": 0,
-                "rows_left_out_within_source": 188,
-                "why": "not included because these are preregistered replication-effect rows already serving the Plot 1 RPCB comparison and are not an independent published-result layer",
-                "why_in_out": f"Not included in the psychology/social-science strict layer: RPCB is a real Registered Report replication source and now has {fmt_int(rpcb_preclinical_candidate_rows)} conservative paper-level D/N candidates, but adding them here would double-count RPCB against Plot 1 and mix preclinical replication effects with standalone confirmatory psychology/social-science rows. The candidate file is ready for a separate preclinical layer decision.",
+                "rows_contributed": rpcb_preclinical_contributed_rows,
+                "rows_left_out_within_source": max(188 - rpcb_preclinical_registered_result_rows, 0),
+                "why": "included as preclinical Registered Report replication evidence under the relaxed median-per-paper policy",
+                "why_in_out": f"Included: {fmt_int(rpcb_preclinical_contributed_rows)} paper medians enter as a separate preclinical-biology field. The source has {fmt_int(rpcb_preclinical_registered_result_rows)} numeric registered effect rows, but the plot uses one median row per replicated paper to avoid within-paper effect inflation. These rows are cross-plot related to RPCB replication-pair evidence, so the preclinical field label is retained.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6888,7 +6951,7 @@ def write_plot3_source_catalog() -> None:
         "",
         f"Machine-readable result-level file: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/{PREREG_RESULTS.name})",
         "",
-        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered result rows. For plotting, those rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
+        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered result rows. Admission now uses the relaxed planned-result rule: a source can contribute more than one preregistered hypothesis/result internally, but papers or projects with multiple planned results are represented by a median row where the local source exposes a match-filtered result set. For plotting, rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
         "",
         markdown_table_block(
             [["Field", "Rows", "Source families", "Median D", "Median N"]]
@@ -6922,8 +6985,8 @@ def write_plot3_source_catalog() -> None:
         "",
         "### What Is Still Missing",
         "",
-        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, SCORE preregistration-indicated paper-level rows, and van den Akker matched preregistered-result paper medians.",
-        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, RPCB Registered Report replication effects, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
+        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, SCORE preregistration-indicated paper-level rows, van den Akker matched preregistered-result paper medians, and RPCB preclinical Registered Report paper medians.",
+        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
         "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.",
         "- The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.",
     ]
@@ -6963,7 +7026,7 @@ def write_plot3_criteria_matrix() -> None:
     lines = [
         f"Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/derived/effect_inflation_dataset/{out_csv.name})",
         "",
-        "These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates.",
+        "These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates. Under the relaxed rule, a source may expose multiple planned preregistered results per paper/project, but the plotted layer uses a median collapse when that within-paper result set is explicit.",
         "",
         f"Across the currently named Plot 3 source families, `{total_dn_ready:,}` / `{total_considered:,}` considered rows already have local D/N encoding somewhere in the project, and `{total_included:,}` rows enter the preregistered-results plot after the gates are applied.",
         "",
@@ -6975,7 +7038,7 @@ def write_plot3_criteria_matrix() -> None:
                 ["Corpus considered", "One source family or deliberately tracked comparator family audited for Plot 3 admission."],
                 ["What it is / why possible candidate", "Brief source identity plus the concrete reason we thought it might contain preregistered confirmatory D/N rows."],
                 ["Confirmed fields", "Only fields verified locally or documented in the current audit: row counts, preregistration/registration status, D/N availability, support-status availability, and key caveats."],
-                ["Why in/out", "Final current gate call: included, excluded by analytic-preregistration, excluded by retraction, excluded as duplicate/nested evidence, or blocked by missing local row table."],
+                ["Why in/out", "Final current gate call: included, excluded by analytic-preregistration, excluded by retraction, excluded as duplicate/nested evidence, or blocked by missing local row table. The focal-selector gate is now a planned-result gate plus median collapse, not a single-main-result-only gate."],
                 ["# obs in", "Number of result rows from that source family entering `plot3_preregistered_results.csv` and therefore the plotted figure."],
             ],
             "dataset-table dataset-criteria-table source-column-criteria-table",

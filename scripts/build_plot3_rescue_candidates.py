@@ -608,29 +608,41 @@ def build_rpcb_candidates() -> pd.DataFrame:
         & df["Replication effect size (SMD)"].notna()
         & df["Paper #"].notna()
     ].copy()
+    rows["D_result"] = pd.to_numeric(rows["Replication effect size (SMD)"], errors="coerce").abs()
+    rows["N_result"] = pd.to_numeric(rows["Replication sample size"], errors="coerce")
+    rows = rows[(rows["D_result"] > 0) & (rows["N_result"] > 0)].copy()
     rows = rows.sort_values(["Paper #", "Experiment #", "Effect #", "Internal replication #"])
-    rows = rows.drop_duplicates("Paper #", keep="first").reset_index(drop=True)
 
-    out = pd.DataFrame(
-        {
-            "candidate_id": rows["Paper #"].astype(int).map(lambda value: f"rpcb_paper_{value:02d}_first_effect"),
-            "source_family": "Reproducibility Project: Cancer Biology Stage-2 Registered Report effects",
-            "source_file": str(RPCB_EFFECTS.relative_to(ROOT)),
-            "paper_number": rows["Paper #"],
-            "experiment_number": rows["Experiment #"],
-            "effect_number": rows["Effect #"],
-            "effect_description": rows["Effect description"],
-            "candidate_status": "preclinical_domain_stage",
-            "strict_append_ready": False,
-            "remaining_blocker": "D/N are row-ready, but the preclinical domain should be accepted explicitly or staged separately from the psychology/social-science strict layer.",
-            "stat_type": rows["Effect size type (SMD)"],
-            "stat_value": rows["Replication effect size (SMD)"],
-            "D_candidate": rows["Replication effect size (SMD)"].abs(),
-            "N_candidate": rows["Replication sample size"],
-            "conversion_method": "reported_replication_smd",
-            "replication_p_value": rows["Replication p value (SMD)"],
-        }
-    )
+    collapsed = []
+    for paper_number, group in rows.groupby("Paper #", sort=True):
+        first = group.iloc[0]
+        collapsed.append(
+            {
+                "candidate_id": f"rpcb_paper_{int(paper_number):02d}_median_registered_effect",
+                "source_family": "Reproducibility Project: Cancer Biology Stage-2 Registered Report effects",
+                "source_file": str(RPCB_EFFECTS.relative_to(ROOT)),
+                "paper_number": paper_number,
+                "experiment_number": first.get("Experiment #"),
+                "effect_number": first.get("Effect #"),
+                "effect_description": first.get("Effect description"),
+                "candidate_status": "paper_median_registered_report_result_ready",
+                "strict_append_ready": True,
+                "remaining_blocker": "",
+                "registered_result_rows": len(group),
+                "stat_type": "; ".join(sorted(set(group["Effect size type (SMD)"].dropna().astype(str)))),
+                "stat_value": float(group["D_result"].median()),
+                "D_candidate": float(group["D_result"].median()),
+                "N_candidate": float(group["N_result"].median()),
+                "conversion_method": "median_reported_replication_smd_per_paper",
+                "replication_p_value": (
+                    group["Replication p value (SMD)"].dropna().iloc[0]
+                    if group["Replication p value (SMD)"].notna().any()
+                    else ""
+                ),
+            }
+        )
+
+    out = pd.DataFrame(collapsed)
     return out
 
 
