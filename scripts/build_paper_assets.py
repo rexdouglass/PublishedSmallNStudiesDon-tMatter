@@ -11,9 +11,11 @@ from __future__ import annotations
 import ast
 import csv
 import math
+import os
 import re
 import shutil
 import subprocess
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urljoin
@@ -38,6 +40,7 @@ TABLE_DIR = ROOT / "data" / "derived" / "paper_tables"
 TABLE_FRAGMENT_DIR = GENERATED / "tables"
 DATASET_DERIVED_DIR = ROOT / "data" / "derived" / "effect_inflation_dataset"
 TESS_STUDY_INDEX = DATASET_DERIVED_DIR / "plot3_tess_study_index_candidates.csv"
+POLISCI_RESCUE_WORKLIST = DATASET_DERIVED_DIR / "plot3_political_science_rescue_worklist.csv"
 BODY_QMD = GENERATED / "paper_body.qmd"
 DATA_APPENDICES_QMD = GENERATED / "data_appendices.qmd"
 DATASET_AUDIT_QMD = GENERATED / "dataset_audit_snapshot.qmd"
@@ -884,6 +887,7 @@ PLOT3_DISPLAY_LABELS = {
     "EGAP Metaketa III natural-resource monitoring native rows": "EGAP Metaketa III native rows",
     "EGAP Metaketa IV community-policing native rows": "EGAP Metaketa IV native rows",
     "TESS peer-reviewed survey-experiment archive": "TESS survey-experiment archive",
+    "Political-science PAP Dataverse/DIME/SCORE rescue worklist": "Political-science rescue worklist",
     "RPCB eLife Registered Report replication effects": "RPCB Registered Report replication effects",
     "Communication privacy preregistered replication corpus": "Communication privacy preregistered corpus",
     "Retrieval-extinction rats preregistered replication": "Retrieval-extinction rats preregistered replication",
@@ -969,17 +973,42 @@ def build_tess_study_index() -> pd.DataFrame:
         "study_slug",
         "title",
         "study_url",
+        "sample_size",
+        "field_period",
+        "data_materials_url",
+        "pap_urls",
+        "manuscript_or_publication_urls",
+        "has_hypotheses",
+        "has_outcomes",
+        "has_summary_results",
+        "summary_result_stat_flags",
+        "summary_results_text",
         "row_status",
         "prereg_evidence",
         "d_n_status",
         "notes",
     ]
+    if TESS_STUDY_INDEX.exists() and os.environ.get("REFRESH_TESS_INDEX") != "1":
+        cached = pd.read_csv(TESS_STUDY_INDEX)
+        for column in columns:
+            if column not in cached.columns:
+                cached[column] = "" if column not in {"has_hypotheses", "has_outcomes", "has_summary_results"} else False
+        cached = cached[columns]
+        cached.to_csv(TESS_STUDY_INDEX, index=False)
+        return cached
+
     try:
         request = Request(url, headers={"User-Agent": "Mozilla/5.0"})
         html = urlopen(request, timeout=30).read().decode("utf-8", "replace")
     except Exception:
         if TESS_STUDY_INDEX.exists():
-            return pd.read_csv(TESS_STUDY_INDEX)
+            cached = pd.read_csv(TESS_STUDY_INDEX)
+            for column in columns:
+                if column not in cached.columns:
+                    cached[column] = "" if column not in {"has_hypotheses", "has_outcomes", "has_summary_results"} else False
+            cached = cached[columns]
+            cached.to_csv(TESS_STUDY_INDEX, index=False)
+            return cached
         return pd.DataFrame(columns=columns)
 
     soup = BeautifulSoup(html, "html.parser")
@@ -1005,6 +1034,16 @@ def build_tess_study_index() -> pd.DataFrame:
                 "study_slug": match.group(1),
                 "title": node.get_text(" ", strip=True),
                 "study_url": study_url,
+                "sample_size": "",
+                "field_period": "",
+                "data_materials_url": "",
+                "pap_urls": "",
+                "manuscript_or_publication_urls": "",
+                "has_hypotheses": False,
+                "has_outcomes": False,
+                "has_summary_results": False,
+                "summary_result_stat_flags": "",
+                "summary_results_text": "",
                 "row_status": "candidate_queue_only",
                 "prereg_evidence": "TESS peer-reviewed proposal/study page predates fielding at the platform level; verify per study before promotion",
                 "d_n_status": "missing final paper-level D/N until linked publication or Roper/data extraction",
@@ -1016,9 +1055,224 @@ def build_tess_study_index() -> pd.DataFrame:
         out = out.drop_duplicates("study_slug", keep="first").sort_values(
             ["year", "study_slug"], ascending=[False, True]
         )
+        refresh_pages = os.environ.get("REFRESH_TESS_PAGES") == "1"
+        enrich_slugs = {
+            slug.strip()
+            for slug in os.environ.get("TESS_ENRICH_SLUGS", "").split(",")
+            if slug.strip()
+        }
+
+        def section_text(lines: list[str], start: str, stops: set[str]) -> str:
+            try:
+                start_idx = lines.index(start)
+            except ValueError:
+                return ""
+            collected: list[str] = []
+            for line in lines[start_idx + 1 :]:
+                if line in stops:
+                    break
+                collected.append(line)
+            return " ".join(collected).strip()
+
+        def value_after_label(lines: list[str], label: str) -> str:
+            for idx, line in enumerate(lines):
+                if line.rstrip(":").lower() == label.lower() and idx + 1 < len(lines):
+                    return lines[idx + 1].strip()
+            return ""
+
+        def enrich_study(row: dict[str, object]) -> dict[str, object]:
+            try:
+                request = Request(safe_text(row["study_url"]), headers={"User-Agent": "Mozilla/5.0"})
+                html = urlopen(request, timeout=6).read().decode("utf-8", "replace")
+            except Exception as exc:
+                row["notes"] = f"{row['notes']} Page-enrichment failed: {type(exc).__name__}."
+                return row
+            soup = BeautifulSoup(html, "html.parser")
+            text = soup.get_text("\n", strip=True)
+            lines = [line.strip() for line in text.splitlines() if line.strip()]
+            all_urls = sorted(set(re.findall(r"https?://[^\s),.]+/?", text)))
+            link_urls = [
+                urljoin(safe_text(row["study_url"]), a.get("href"))
+                for a in soup.select("a[href]")
+                if a.get("href")
+            ]
+            data_url = ""
+            for a in soup.select("a[href]"):
+                label = a.get_text(" ", strip=True).lower()
+                if "download data" in label or "study materials" in label:
+                    data_url = urljoin(safe_text(row["study_url"]), a.get("href"))
+                    break
+            pap_urls = [
+                found
+                for found in all_urls
+                if "osf.io" in found.lower()
+                and found.rstrip("/") != data_url.rstrip("/")
+                and re.search(r"(pre[- ]analysis|analysis plan|pap|plan)", text[max(text.find(found) - 80, 0) : text.find(found) + 120], flags=re.I)
+            ]
+            pub_urls = [
+                found
+                for found in sorted(set(all_urls + link_urls))
+                if any(token in found.lower() for token in ["doi.org", "preprints", "socarxiv", "cambridge.org", "journals", "springer", "science.org"])
+            ]
+            sample_size = value_after_label(lines, "Sample size")
+            field_period = value_after_label(lines, "Field period")
+            summary = section_text(lines, "Summary of Results", {"Additional Information", "links"})
+            stat_flags = []
+            for label, pattern in [
+                ("B/SE", r"\bB\s*=|s\.?e\.?\s*="),
+                ("chi-square", r"chi[- ]square|test statistic\s*="),
+                ("F", r"\bF\s*\("),
+                ("p", r"\bp\s*[<=>]"),
+                ("d", r"\bd\s*="),
+            ]:
+                if re.search(pattern, summary, flags=re.I):
+                    stat_flags.append(label)
+            row["sample_size"] = sample_size.replace(",", "")
+            row["field_period"] = field_period
+            row["data_materials_url"] = data_url
+            row["pap_urls"] = ";".join(sorted(set(pap_urls)))
+            row["manuscript_or_publication_urls"] = ";".join(sorted(set(pub_urls)))
+            row["has_hypotheses"] = "Hypotheses" in lines
+            row["has_outcomes"] = "Outcomes" in lines
+            row["has_summary_results"] = bool(summary)
+            row["summary_result_stat_flags"] = ";".join(stat_flags)
+            row["summary_results_text"] = summary[:1200]
+            if sample_size and summary and stat_flags:
+                row["row_status"] = "native_metric_rescue_candidate"
+                row["d_n_status"] = "sample size and native summary statistic surfaced; D conversion still requires raw outcomes, SDs, arm probabilities, or a justified test-statistic conversion"
+            return row
+
+        if refresh_pages or enrich_slugs:
+            if refresh_pages:
+                to_enrich = out
+            else:
+                to_enrich = out.loc[out["study_slug"].astype(str).isin(enrich_slugs)].copy()
+            enriched_by_slug: dict[str, dict[str, object]] = {}
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                futures = [executor.submit(enrich_study, row.to_dict()) for _, row in to_enrich.iterrows()]
+                for future in as_completed(futures):
+                    enriched = future.result()
+                    enriched_by_slug[safe_text(enriched.get("study_slug"))] = enriched
+            if enriched_by_slug:
+                out = out.copy()
+                out["_study_slug"] = out["study_slug"].astype(str)
+                base_rows = []
+                for _, row in out.iterrows():
+                    slug = safe_text(row.get("_study_slug"))
+                    base_rows.append(enriched_by_slug.get(slug, row.drop(labels=["_study_slug"]).to_dict()))
+                out = pd.DataFrame(base_rows, columns=columns)
+        out = out.sort_values(["year", "study_slug"], ascending=[False, True])
     TESS_STUDY_INDEX.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(TESS_STUDY_INDEX, index=False)
     return out.reset_index(drop=True)
+
+
+def build_political_science_rescue_worklist() -> pd.DataFrame:
+    """Concrete political-science PAP/result rescue targets from the source memo."""
+    rows = [
+        {
+            "row_id": "tess_graham1155",
+            "source_family": "TESS",
+            "paper_or_project": "A Conditional Commitment? Partisan Identity and Support for Democracy in the United States",
+            "field": "political science",
+            "prereg_url": "https://osf.io/gw493/",
+            "result_url": "https://tessexperiments.org/study/graham1155",
+            "data_url": "https://osf.io/qzd3f/",
+            "candidate_status": "native_metric_rescue_candidate",
+            "known_n_or_units": "4027",
+            "known_effect_summary": "TESS summary reports covariate-adjusted B=-0.007, SE=0.008 for support for undemocratic co-partisans; manipulation-check B=0.042, SE=0.027.",
+            "strict_blocker": "No baseline probability, event counts, or outcome SD on the study page; stage native unless OSF data are parsed.",
+            "next_action": "Download OSF data and compute the PAP outcome arm probabilities or standardized difference.",
+        },
+        {
+            "row_id": "tess_johnson1389",
+            "source_family": "TESS",
+            "paper_or_project": "Optimizing Schools? Public Perceptions of Algorithmic versus Status Quo Prioritization in K-12 Schooling",
+            "field": "political science",
+            "prereg_url": "https://osf.io/vx7de/",
+            "result_url": "https://tessexperiments.org/study/johnson1389",
+            "data_url": "https://osf.io/v3bfk/",
+            "candidate_status": "native_metric_rescue_candidate",
+            "known_n_or_units": "5643 overall; 5606 in abstract; 4368 K-12 parent oversample",
+            "known_effect_summary": "TESS summary reports H1 chi-square tests for algorithm fairness versus parent requests, simple rule, counselor discretion, and weighted lottery.",
+            "strict_blocker": "Per-contrast denominators/event counts are not on the page; OSF data required for D conversion.",
+            "next_action": "Download OSF data and reconstruct planned binary outcome contrasts from the PAP.",
+        },
+        {
+            "row_id": "score_azevedo_jeps_replication",
+            "source_family": "SCORE/JEPS",
+            "paper_or_project": "Azevedo et al. JEPS SCORE preregistered replication of candidate-portrait effects",
+            "field": "political science",
+            "prereg_url": "https://osf.io/nxrg7/",
+            "result_url": "https://www.cambridge.org/core/journals/journal-of-experimental-political-science/article/does-stereotype-threat-contribute-to-the-political-knowledge-gender-gap-a-preregistered-replication-study-of-ihme-and-tausendpfund-2018/1021AEEB971D486933CE265040CD0C95",
+            "data_url": "https://doi.org/10.7910/DVN/ETUUOD",
+            "candidate_status": "row_rescue_promising",
+            "known_n_or_units": "N=671 and N=831 components; pooled N=1502 reported in memo",
+            "known_effect_summary": "Reported F statistic / partial eta-squared style results.",
+            "strict_blocker": "Need exact contrast, df, and eta-squared conversion check.",
+            "next_action": "Download Dataverse package and article tables; convert eta-squared to r/d only for the preregistered simple contrast.",
+        },
+        {
+            "row_id": "dime_rio_safe_space",
+            "source_family": "DIME",
+            "paper_or_project": "Kondylis et al. demand for safe spaces in transport",
+            "field": "public policy",
+            "prereg_url": "RIDIE/AEA link to verify",
+            "result_url": "https://github.com/worldbank/rio-safe-space",
+            "data_url": "https://microdata.worldbank.org/index.php/catalog/3745",
+            "candidate_status": "stage_native_metric",
+            "known_n_or_units": "363 women and more than 22000 rides reported in memo",
+            "known_effect_summary": "RCT ATE / percent-reduction style safety and travel outcomes.",
+            "strict_blocker": "PAP link and D conversion inputs not yet verified.",
+            "next_action": "Match RIDIE/AEA preregistration, then parse GitHub tables for ATE/SE/N and arm probabilities if available.",
+        },
+        {
+            "row_id": "cps_golden_gulzar_sonnet_2025",
+            "source_family": "CPS/Dataverse",
+            "paper_or_project": "Golden, Gulzar & Sonnet political responsiveness and information provision",
+            "field": "political science",
+            "prereg_url": "https://egap.org/registration/2476 ; https://osf.io/vadwn",
+            "result_url": "Comparative Political Studies article",
+            "data_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentid=doi:10.7910/DVN/9PWQZT",
+            "candidate_status": "row_rescue_promising",
+            "known_n_or_units": "paper/package required",
+            "known_effect_summary": "Service-delivery / political responsiveness ATEs.",
+            "strict_blocker": "Two PAPs and likely native ATE metrics; avoid pilot/scale-up double-counting.",
+            "next_action": "Download Dataverse package, identify PAP primary outcomes, and stage ATE/SE/N.",
+        },
+        {
+            "row_id": "apsr_campaign_experiments_archive",
+            "source_family": "APSR/Dataverse",
+            "paper_or_project": "How Experiments Help Campaigns Persuade Voters",
+            "field": "political science",
+            "prereg_url": "https://osf.io/q276a/ ; https://osf.io/5c9hx/",
+            "result_url": "APSR article",
+            "data_url": "https://doi.org/10.7910/DVN/LBPSSV",
+            "candidate_status": "row_rescue_promising",
+            "known_n_or_units": "paper/package required",
+            "known_effect_summary": "Campaign persuasion/vote-choice estimates.",
+            "strict_blocker": "Multiple campaigns/experiments; hierarchy must collapse to one paper dot or a component panel.",
+            "next_action": "Download Dataverse package and reconstruct PAP primary vote-choice contrasts.",
+        },
+        {
+            "row_id": "ajps_ghana_debates_ofosu_brierley_kramon",
+            "source_family": "AJPS/Dataverse",
+            "paper_or_project": "Ofosu, Brierley & Kramon candidate debates in Ghana",
+            "field": "political science",
+            "prereg_url": "https://osf.io/2qhg6/",
+            "result_url": "AJPS article",
+            "data_url": "https://doi.org/10.7910/DVN/OJA7YS",
+            "candidate_status": "row_rescue_promising",
+            "known_n_or_units": "paper/package required",
+            "known_effect_summary": "Debate exposure, vote-choice, and accountability outcomes.",
+            "strict_blocker": "Need PAP primary selector and arm/event-count or standardized-index inputs.",
+            "next_action": "Download Dataverse package and extract PAP primary outcome estimate/N.",
+        },
+    ]
+    out = pd.DataFrame(rows)
+    POLISCI_RESCUE_WORKLIST.parent.mkdir(parents=True, exist_ok=True)
+    out.to_csv(POLISCI_RESCUE_WORKLIST, index=False)
+    return out
 
 
 def fmt_year(value: object) -> str:
@@ -6336,6 +6590,12 @@ def write_plot3_source_catalog() -> None:
             }
     tess_index = build_tess_study_index()
     tess_index_rows = len(tess_index)
+    tess_with_n = int(numeric_series(tess_index.get("sample_size", pd.Series(dtype=float))).gt(0).sum()) if not tess_index.empty else 0
+    tess_with_pap = int(tess_index.get("pap_urls", pd.Series(dtype=object)).fillna("").astype(str).str.strip().ne("").sum()) if not tess_index.empty else 0
+    tess_with_results = int(tess_index.get("has_summary_results", pd.Series(dtype=bool)).astype(str).str.lower().isin({"true", "1"}).sum()) if not tess_index.empty else 0
+    tess_native_candidates = int(tess_index.get("row_status", pd.Series(dtype=object)).astype(str).eq("native_metric_rescue_candidate").sum()) if not tess_index.empty else 0
+    polisci_rescue_worklist = build_political_science_rescue_worklist()
+    polisci_rescue_rows = len(polisci_rescue_worklist)
     out_csv = DATASET_DERIVED_DIR / "plot3_preregistered_source_catalog.csv"
 
     plot3 = pd.DataFrame(
@@ -7030,7 +7290,7 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "TESS peer-reviewed survey-experiment archive",
                 "corpus_what_it_is": "Time-sharing Experiments for the Social Sciences archive of fielded survey experiments with peer-reviewed proposals/study pages.",
                 "what_it_is_why_possible_candidate": "TESS was added as the main political-science extraction queue because its public past-studies index is finite, scrapeable, and organized around pre-fielding peer-reviewed study proposals. It is the highest-yield new social-science source, but the public index does not itself contain final article effect sizes or analytic Ns.",
-                "confirmed_fields": f"Verified by scraping `https://tessexperiments.org/paststudies`: {fmt_int(tess_index_rows)} unique study URLs with year, title, slug, and study page. Confirmed: public index: yes; proposal/study page: yes at platform level; extractable final D/N in the index: no; publication/result linkage: pending.",
+                "confirmed_fields": f"Verified by scraping `https://tessexperiments.org/paststudies` plus study pages: {fmt_int(tess_index_rows)} unique study URLs; {fmt_int(tess_with_n)} pages expose sample size; {fmt_int(tess_with_pap)} pages surface a likely PAP/pre-analysis-plan URL; {fmt_int(tess_with_results)} pages include a Summary of Results section; {fmt_int(tess_native_candidates)} pages expose enough N/native-stat text to enter the native-metric rescue queue. Confirmed: public index: yes; proposal/study page: yes at platform level; extractable final D/N in the index: no.",
                 "backing_file": str(TESS_STUDY_INDEX.relative_to(ROOT)),
                 "rows_considered": tess_index_rows,
                 "rows_preregistered_equivalent": tess_index_rows,
@@ -7041,6 +7301,24 @@ def write_plot3_source_catalog() -> None:
                 "rows_left_out_within_source": tess_index_rows,
                 "why": "not included yet because the archive is a discovery queue, not a D/N result table",
                 "why_in_out": "Not included yet: TESS likely contains hundreds of valid pre-fielding survey experiments, but each dot still needs paper/result linkage plus D and analytic N extraction. The generated CSV is the work queue for that extractor, not evidence to plot today.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "not_included",
+                "source_label": "Political-science PAP Dataverse/DIME/SCORE rescue worklist",
+                "corpus_what_it_is": "Concrete political-science PAP/preregistration rescue targets from TESS, SCORE/JEPS, DIME, APSR/AJPS/CPS Dataverse, and OSF/EGAP links.",
+                "what_it_is_why_possible_candidate": "The worklist was added because the latest political-science pass named specific row-level targets with visible preregistration URLs, result pages, and data/package URLs. These are not broad registry metadata rows; they are extraction tickets with enough detail to drive package parsing.",
+                "confirmed_fields": f"Known locally: {fmt_int(polisci_rescue_rows)} concrete rescue tickets. Confirmed for each ticket: prereg/PAP URL or verification target: yes; result or article URL: yes; data/package URL where known: yes; final strict D/N: no, pending package/table extraction.",
+                "backing_file": str(POLISCI_RESCUE_WORKLIST.relative_to(ROOT)),
+                "rows_considered": polisci_rescue_rows,
+                "rows_preregistered_equivalent": polisci_rescue_rows,
+                "rows_with_public_local_backing": polisci_rescue_rows,
+                "rows_with_extractable_DN": 0,
+                "rows_with_non_retracted_source": polisci_rescue_rows,
+                "rows_contributed": 0,
+                "rows_left_out_within_source": polisci_rescue_rows,
+                "why": "not included yet because these are package-level extraction tickets, not completed D/N rows",
+                "why_in_out": "Not included yet: these named TESS/Dataverse/DIME/SCORE targets are the next extraction queue. They need package downloads, PAP selector checks, and either D conversion inputs or native ATE/SE/N extraction before they can enter a plot panel.",
             },
             {
                 "plot_name": "Plot 3",
@@ -7242,7 +7520,7 @@ def write_plot3_source_catalog() -> None:
         "### What Is Still Missing",
         "",
         "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, pooled EGAP Metaketa I/III/IV PAP rows, the Schäfer/Schwarz preregistered key-effect sample, SCORE preregistration-indicated paper-level rows, van den Akker matched preregistered-result paper medians, and RPCB preclinical Registered Report paper medians.",
-        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: TESS study-page extraction queue, Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native/component ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
+        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: enriched TESS study-page extraction queue, concrete political-science PAP/Dataverse/DIME/SCORE worklist, Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native/component ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
         "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.",
         "- The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.",
     ]
