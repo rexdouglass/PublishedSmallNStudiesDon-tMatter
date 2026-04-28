@@ -84,6 +84,7 @@ PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_pha
 SCHEEL_QUOTE_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_scheel_quote_stat_rescue_candidates.csv"
 VANDENAKKER_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_vandenakker_first_stat_candidates.csv"
 RPCB_PRECLINICAL_CANDIDATES = DATASET_DERIVED_DIR / "plot3_rpcb_preclinical_paper_level_candidates.csv"
+SCORE_TEXT_CLAIM_CANDIDATES = DATASET_DERIVED_DIR / "plot3_score_text_claim_rescue_candidates.csv"
 ALL_SOURCE_DN_ROWS = DATASET_DERIVED_DIR / "plot4_all_source_dn_rows.csv"
 PLOT1_PAIR_DETAILS = DATASET_DERIVED_DIR / "plot1_replication_pair_details.csv"
 PLOT2_PAPER_DETAILS = DATASET_DERIVED_DIR / "plot2_published_paper_details.csv"
@@ -1141,6 +1142,25 @@ def score_prereg_indicated_paper_rows(published: pd.DataFrame | None = None) -> 
     return score.reset_index(drop=True), prereg_count, prereg_count - int(len(score))
 
 
+def score_text_claim_rescue_rows() -> pd.DataFrame:
+    """Return extra SCORE preregistration-indicated rows parsed from extracted claim text."""
+    if not SCORE_TEXT_CLAIM_CANDIDATES.exists():
+        return pd.DataFrame()
+    rows = pd.read_csv(SCORE_TEXT_CLAIM_CANDIDATES)
+    if rows.empty or "strict_append_ready" not in rows.columns:
+        return pd.DataFrame()
+    ready = rows.loc[rows["strict_append_ready"].astype(str).str.lower().eq("true")].copy()
+    ready = ready[
+        (numeric_series(ready.get("D_candidate", pd.Series(dtype=float))) > 0)
+        & (numeric_series(ready.get("N_candidate", pd.Series(dtype=float))) > 0)
+    ].copy()
+    if ready.empty:
+        return ready
+    ready["_paper_id"] = ready.get("paper_id", pd.Series("", index=ready.index)).astype(str)
+    ready = ready.sort_values(["_paper_id", "candidate_id"]).drop_duplicates("_paper_id", keep="first")
+    return ready.drop(columns=["_paper_id"]).reset_index(drop=True)
+
+
 def write_qmd_with_table(path: Path, lines: list[str]) -> None:
     path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
 
@@ -1723,6 +1743,37 @@ def normalize_preregistered_results() -> pd.DataFrame:
                     "supported": "not coded",
                     "journal": safe_text(row.get("journal")),
                     "source_file": f"{PUBLISHED_PAPERS.relative_to(ROOT)}; {SCORE_ORIG_PREREG.relative_to(ROOT)}",
+                    "source_row_number": idx + 1,
+                }
+            )
+
+        score_text_rescue = score_text_claim_rescue_rows()
+        for idx, row in score_text_rescue.iterrows():
+            year = safe_text(row.get("pub_year"))
+            year_label = ""
+            if year:
+                try:
+                    year_label = str(int(float(year)))
+                except ValueError:
+                    year_label = year
+            title = safe_text(row.get("title"))
+            paper_id = safe_text(row.get("paper_id"))
+            label_parts = [part for part in [year_label, title or paper_id] if part]
+            rows.append(
+                {
+                    "point_id": f"score_cos_prereg_text_rescue_{idx + 1:03d}",
+                    "plot_name": "Plot 3",
+                    "source_layer": "preregistered_confirmatory_result",
+                    "source_family": "SCORE/COS preregistration-indicated original papers",
+                    "source_label": "SCORE/COS preregistration-indicated original papers",
+                    "citation_key": "tyner2026",
+                    "row_unit": "paper_level_preregistration_indicated_claim_effect",
+                    "row_label": " - ".join(label_parts),
+                    "D": float(row["D_candidate"]),
+                    "N": float(row["N_candidate"]),
+                    "supported": "not coded",
+                    "journal": safe_text(row.get("journal")),
+                    "source_file": f"{SCORE_TEXT_CLAIM_CANDIDATES.relative_to(ROOT)}; data/raw/corpus_candidates/score/extracted_claims.csv.gz",
                     "source_row_number": idx + 1,
                 }
             )
@@ -5563,6 +5614,15 @@ def write_plot3_source_catalog() -> None:
     vandenakker_rescue_candidate_rows = len(vandenakker_rescue_candidates)
     rpcb_preclinical_candidates = pd.read_csv(RPCB_PRECLINICAL_CANDIDATES) if RPCB_PRECLINICAL_CANDIDATES.exists() else pd.DataFrame()
     rpcb_preclinical_candidate_rows = len(rpcb_preclinical_candidates)
+    score_text_candidates = pd.read_csv(SCORE_TEXT_CLAIM_CANDIDATES) if SCORE_TEXT_CLAIM_CANDIDATES.exists() else pd.DataFrame()
+    score_text_candidate_rows = len(score_text_candidates)
+    score_text_ready = score_text_claim_rescue_rows()
+    score_text_ready_rows = len(score_text_ready)
+    score_total_contributed = len(score_prereg) + score_text_ready_rows
+    score_included_papers = set(score_prereg.get("paper_id", pd.Series(dtype=object)).dropna().astype(str))
+    if not score_text_ready.empty:
+        score_included_papers.update(score_text_ready.get("paper_id", pd.Series(dtype=object)).dropna().astype(str))
+    score_left_out = max(score_prereg_count - len(score_included_papers), 0)
 
     if COMPARE_OUTCOME_ROWS.exists():
         compare_outcomes = pd.read_csv(COMPARE_OUTCOME_ROWS)
@@ -5861,17 +5921,17 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "SCORE/COS preregistration-indicated original papers",
                 "corpus_what_it_is": "SCORE/COS sampled social-behavioral papers whose original paper IDs are flagged as preregistration-indicated.",
                 "what_it_is_why_possible_candidate": "The SCORE/COS claim corpus was rechecked because its public OSF files expose separate original-study effect sizes, effective-N fields, and `orig_prereg-indicated.csv`; the later SCORE replicability package at OSF g5sny also exposes an `analyst data.RData` object with original and replication outcome tables. The local SCORE D/N parser already reconstructs paper-level D/N for a subset of preregistration-indicated papers.",
-                "confirmed_fields": f"Known: {fmt_int(score_prereg_count)} unique SCORE paper IDs marked `prereg=True`, {fmt_int(len(score_prereg))} deduplicated paper-level D/N rows. Confirmed: paper-level preregistration indication: yes ({fmt_int(score_prereg_count)}); public flat payloads: `orig_effect-size.csv`, `orig_stats_effective.csv`, and `orig_prereg-indicated.csv`; g5sny package: yes, with 825 original-outcome rows across 306 papers and 427 replication-outcome rows; paper grouping: yes; D/N: yes ({fmt_int(len(score_prereg))}); claim-specific preregistration mapping: no; support status: not coded.",
-                "backing_file": f"{PUBLISHED_PAPERS.relative_to(ROOT)}; {SCORE_ORIG_PREREG.relative_to(ROOT)}",
+                "confirmed_fields": f"Known: {fmt_int(score_prereg_count)} unique SCORE paper IDs marked `prereg=True`, {fmt_int(len(score_prereg))} deduplicated paper-level D/N rows from the paper-level candidate join plus {fmt_int(score_text_ready_rows)} text-claim rescue rows. Confirmed: paper-level preregistration indication: yes ({fmt_int(score_prereg_count)}); public flat payloads: `orig_outcomes.csv`, `orig_prereg-indicated.csv`, and `extracted_claims.csv`; text-claim rescue queue: {fmt_int(score_text_candidate_rows)} parsed D/N candidates; D/N entering strict layer: yes ({fmt_int(score_total_contributed)}); claim-specific preregistration mapping: no; support status: not coded.",
+                "backing_file": f"{PUBLISHED_PAPERS.relative_to(ROOT)}; {SCORE_ORIG_PREREG.relative_to(ROOT)}; {SCORE_TEXT_CLAIM_CANDIDATES.relative_to(ROOT)}",
                 "rows_considered": score_prereg_count,
                 "rows_preregistered_equivalent": score_prereg_count,
                 "rows_with_public_local_backing": score_prereg_count,
-                "rows_with_extractable_DN": len(score_prereg),
+                "rows_with_extractable_DN": score_total_contributed,
                 "rows_with_non_retracted_source": score_prereg_count,
-                "rows_contributed": len(score_prereg),
-                "rows_left_out_within_source": score_prereg_left_out,
+                "rows_contributed": score_total_contributed,
+                "rows_left_out_within_source": score_left_out,
                 "why": "included as a paper-level preregistration-indicated SCORE subset; journal TOP-factor preregistration-policy scores are deliberately ignored",
-                "why_in_out": f"Included: {fmt_int(len(score_prereg))} paper-level rows enter. The remaining {fmt_int(score_prereg_left_out)} preregistration-indicated SCORE paper IDs do not currently have a deduplicated positive D/N row in the local SCORE candidate build. Caveat: the public files are split across claim-level effect sizes, claim-level effective-N rows, paper-level preregistration flags, and g5sny RData objects, so the table does not assert that every extracted claim was the exact preregistered primary hypothesis.",
+                "why_in_out": f"Included: {fmt_int(score_total_contributed)} paper-level rows enter ({fmt_int(len(score_prereg))} from the existing paper-level join and {fmt_int(score_text_ready_rows)} from parsed extracted-claim text). The remaining {fmt_int(score_left_out)} preregistration-indicated SCORE paper IDs do not currently have a deduplicated positive D/N row that passes the local parser. Caveat: the public files are split across claim-level effect sizes, claim-level effective-N rows, and paper-level preregistration flags, so the table does not assert that every extracted claim was the exact preregistered primary hypothesis.",
             },
             {
                 "plot_name": "Plot 3",
