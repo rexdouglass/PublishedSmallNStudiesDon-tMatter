@@ -60,6 +60,7 @@ REPLICATION_SOURCE_CATALOG = ROOT / "data" / "derived" / "replication_pairs" / "
 REPLICATION_APPENDIX_COVERAGE = ROOT / "data" / "derived" / "replication_pairs" / "replication_pairs_appendix_coverage.csv"
 PUBLISHED_FIG = ROOT / "reports" / "corpus_candidates" / "candidate_published_paper_d_vs_n.png"
 PUBLISHED_PAPERS = ROOT / "data" / "derived" / "corpus_candidates" / "candidate_d_n_papers.csv"
+CANDIDATE_ROWS = ROOT / "data" / "derived" / "corpus_candidates" / "candidate_d_n_rows.csv.gz"
 PUBLISHED_PAPER_SUMMARY = ROOT / "data" / "derived" / "published_papers" / "published_original_paper_d_vs_n.csv"
 FIELD_GROUPS = ROOT / "data" / "derived" / "corpus_candidates" / "candidate_published_field_groups.csv"
 PUBLISHED_SOURCE_LIST = ROOT / "data" / "derived" / "corpus_candidates" / "current_peer_reviewed_journal_d_n_list.csv"
@@ -790,6 +791,7 @@ PLOT3_CITATION_KEYS = {
     "AACT x PubMed registered primary outcomes": "du2024",
     "ClinicalTrials.gov registry-result D/N comparator": "du2024",
     "CliniFact published trial primary-outcome rows": "zhang2025clinifact",
+    "Brodeur et al. 2024 preregistered/PAP economics table tests": "brodeur2020",
     "Transparent Psi Project / Bem preregistered replication": "kekecs2023tpp",
     "ManyBabies 3 rule-learning registered-report materials": "manyBabies3Osf",
     "ERN/Pe RRR OpenNeuro and OSF analysis hubs": "ernPeRrrOpenNeuro",
@@ -809,6 +811,7 @@ PLOT3_DISPLAY_LABELS = {
     "AACT x PubMed registered primary outcomes": "AACT x PubMed registered primary outcomes",
     "ClinicalTrials.gov registry-result D/N comparator": "ClinicalTrials.gov registry-result D/N comparator",
     "CliniFact published trial primary-outcome rows": "CliniFact published trial primary-outcome rows",
+    "Brodeur et al. 2024 preregistered/PAP economics table tests": "Brodeur preregistered/PAP table tests",
     "Registered Replication Reports per-lab rows": "Registered Replication Reports per-lab rows",
     "Registered Replication Reports Plot 1 pair rows": "Registered Replication Reports Plot 1 pair rows",
     "Many Labs 1-5 project-level replication rows": "Many Labs 1-5 project-level replication rows",
@@ -4596,6 +4599,44 @@ def write_plot3_source_catalog() -> None:
         .mul(numeric_series(clinifact.get("N_median", pd.Series(dtype=float))) > 0)
         .sum()
     )
+    brodeur_rows = 0
+    brodeur_flagged_rows = 0
+    brodeur_flagged_papers = 0
+    brodeur_prereg_rows = 0
+    brodeur_pap_rows = 0
+    brodeur_pap_power_rows = 0
+    if CANDIDATE_ROWS.exists():
+        try:
+            candidate_rows = pd.read_csv(
+                CANDIDATE_ROWS,
+                usecols=["source_corpus", "paper_id", "notes", "D", "N"],
+                low_memory=False,
+            )
+            brodeur = candidate_rows.loc[candidate_rows["source_corpus"].eq("economics_brodeur_2024")].copy()
+            brodeur_rows = len(brodeur)
+            if not brodeur.empty:
+                notes = brodeur.get("notes", pd.Series("", index=brodeur.index)).fillna("").astype(str)
+                prereg_flag = notes.str.extract(r"prereg=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+                pap_flag = notes.str.extract(r"preanalysisplan=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+                pap_power_flag = notes.str.extract(r"pap_power=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+                truthy = {"1", "1.0", "true", "yes"}
+                is_prereg = prereg_flag.isin(truthy)
+                is_pap = pap_flag.isin(truthy)
+                is_pap_power = pap_power_flag.isin(truthy)
+                flagged = is_prereg | is_pap | is_pap_power
+                dn_ready = (numeric_series(brodeur["D"]) > 0) & (numeric_series(brodeur["N"]) > 0)
+                brodeur_prereg_rows = int((is_prereg & dn_ready).sum())
+                brodeur_pap_rows = int((is_pap & dn_ready).sum())
+                brodeur_pap_power_rows = int((is_pap_power & dn_ready).sum())
+                brodeur_flagged_rows = int((flagged & dn_ready).sum())
+                brodeur_flagged_papers = int(brodeur.loc[flagged & dn_ready, "paper_id"].astype(str).nunique())
+        except Exception:
+            brodeur_rows = 0
+            brodeur_flagged_rows = 0
+            brodeur_flagged_papers = 0
+            brodeur_prereg_rows = 0
+            brodeur_pap_rows = 0
+            brodeur_pap_power_rows = 0
     fred_published = (
         published.loc[published["source_corpus"].eq("forrt_fred")].copy()
         if not published.empty
@@ -5001,6 +5042,24 @@ def write_plot3_source_catalog() -> None:
             {
                 "plot_name": "Plot 3",
                 "plot_inclusion_status": "not_included",
+                "source_label": "Brodeur et al. 2024 preregistered/PAP economics table tests",
+                "corpus_what_it_is": "Top-journal economics table-test extraction with row-level preregistration, pre-analysis-plan, and PAP-power flags in the local raw notes.",
+                "what_it_is_why_possible_candidate": "The Brodeur economics corpus was rechecked because it is the other local source that produces thousands of preregistration-flagged D/N rows: many extracted table tests are from studies marked as preregistered or having a pre-analysis plan.",
+                "confirmed_fields": f"Known locally: {fmt_int(brodeur_rows)} extracted economics test rows, {fmt_int(brodeur_flagged_rows)} D/N-ready rows with preregistration/PAP/PAP-power flags, collapsing to {fmt_int(brodeur_flagged_papers)} papers. Confirmed: preregistration flag rows: {fmt_int(brodeur_prereg_rows)}; pre-analysis-plan flag rows: {fmt_int(brodeur_pap_rows)}; PAP-power flag rows: {fmt_int(brodeur_pap_power_rows)}; D/N: yes; focal/main-result selector: no.",
+                "backing_file": str(CANDIDATE_ROWS.relative_to(ROOT)) if CANDIDATE_ROWS.exists() else "data/derived/corpus_candidates/candidate_d_n_rows.csv.gz",
+                "rows_considered": brodeur_rows,
+                "rows_preregistered_equivalent": brodeur_flagged_rows,
+                "rows_with_public_local_backing": brodeur_rows,
+                "rows_with_extractable_DN": brodeur_flagged_rows,
+                "rows_with_non_retracted_source": brodeur_rows,
+                "rows_contributed": 0,
+                "rows_left_out_within_source": brodeur_flagged_rows,
+                "why": "not included because these are preregistration/PAP-flagged extracted table tests without a paper-level focal or main-result selector",
+                "why_in_out": f"Not included: the preregistration/PAP flags are real and account for {fmt_int(brodeur_flagged_rows)} D/N-ready extracted test rows, but all rows are coded as published table tests rather than source-selected main results. They are a good sensitivity lane candidate, not clean Plot 3 confirmatory-result rows.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "not_included",
                 "source_label": "Nordic trial registration-publication linkage database",
                 "corpus_what_it_is": "Clinical-trial registration/publication linkage audit with trial IDs, publication status, DOI/PMID, and matching criteria.",
                 "what_it_is_why_possible_candidate": "The Nordic trial-reporting database looked like the missing large clinical-trial preregistration source because it has thousands of trial-registration to publication links and records whether publications matched the registered design, population, intervention, comparator, and any outcome.",
@@ -5189,8 +5248,8 @@ def write_plot3_source_catalog() -> None:
         "### What Is Still Missing",
         "",
         "- The included core now combines Registered Reports, PSA-CR001 pooled preregistered outcomes, and the Schäfer/Schwarz preregistered key-effect sample.",
-        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, ManyBabies 3, ManyClasses 2, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Nordic trial reporting, FReD, communication privacy, and retrieval-extinction rats.",
-        "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, or document/native-metric payloads without a compact D/N result table.",
+        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, ManyBabies 3, ManyClasses 2, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, and retrieval-extinction rats.",
+        "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.",
         "- The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.",
     ]
     write_qmd_with_table(PLOT3_SOURCES_QMD, lines)
