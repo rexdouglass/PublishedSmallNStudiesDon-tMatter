@@ -1665,6 +1665,147 @@ def normalize_ctgov_primary_randomized_sidecar_rows() -> pd.DataFrame:
     return df
 
 
+def compact_axis_label(value: float) -> str:
+    if value >= 1_000_000:
+        return f"{value / 1_000_000:g}M"
+    if value >= 1_000:
+        return f"{value / 1_000:g}k"
+    return f"{value:g}"
+
+
+def sidecar_log_axis_bounds(df: pd.DataFrame, x_cap: float) -> tuple[float, float, float, float]:
+    x_min_data = float(df["N"].min())
+    x_max_data = float(df["N"].max())
+    y_min_data = float(df["D"].min())
+    y_max_data = float(df["D"].max())
+    x_min = 10.0 if x_min_data >= 10 else 1.0
+    x_max = min(10 ** math.ceil(math.log10(x_max_data * 1.15)), x_cap)
+    y_min = min(0.02, 10 ** math.floor(math.log10(max(y_min_data * 0.8, 1e-8))))
+    y_min = max(y_min, 1e-5)
+    y_max = max(5.0, 10 ** math.ceil(math.log10(y_max_data * 1.1)))
+    y_max = min(y_max, 20.0)
+    return x_min, x_max, y_min, y_max
+
+
+def apply_general_results_axes(
+    ax: plt.Axes,
+    *,
+    x_min: float,
+    x_max: float,
+    y_min: float,
+    y_max: float,
+    xlabel: str,
+    ylabel: str,
+) -> None:
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(y_min, y_max)
+
+    x_candidates = [1, 10, 100, 1_000, 10_000, 100_000, 1_000_000, 10_000_000]
+    x_ticks = [tick for tick in x_candidates if x_min <= tick <= x_max]
+    ax.xaxis.set_major_locator(FixedLocator(x_ticks))
+    ax.xaxis.set_major_formatter(FixedFormatter([compact_axis_label(float(tick)) for tick in x_ticks]))
+    ax.xaxis.set_minor_formatter(NullFormatter())
+
+    y_candidates = [1e-5, 1e-4, 1e-3, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10]
+    y_ticks = [tick for tick in y_candidates if y_min <= tick <= y_max]
+    ax.yaxis.set_major_locator(FixedLocator(y_ticks))
+    ax.yaxis.set_major_formatter(FixedFormatter([f"{tick:g}" for tick in y_ticks]))
+    ax.yaxis.set_minor_formatter(NullFormatter())
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid(True, which="major", alpha=0.18, linestyle=":")
+    ax.grid(True, which="minor", alpha=0.06, linestyle=":")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+
+def draw_general_results_thresholds(ax: plt.Axes, xs: np.ndarray, *, x_min: float, x_max: float, y_min: float) -> None:
+    label_y_reference = max(y_min, 0.02)
+    for z, label, style, y_multiplier in [
+        (1.6448536269514722, "p=.10", ":", 0.95),
+        (Z_05, "p=.05", "--", 1.05),
+        (2.5758293035489004, "p=.01", "-.", 1.15),
+    ]:
+        ax.plot(
+            xs,
+            2 * z / np.sqrt(xs),
+            style,
+            color="#444444",
+            linewidth=3.0,
+            alpha=1.0,
+            zorder=11,
+        )
+        x_intercept = min(x_max, max(x_min, (2 * z / label_y_reference) ** 2))
+        x_label = min(max(x_min * 12, x_intercept), x_max / 1.7)
+        y_label = max(y_min * 1.1, 2 * z / np.sqrt(x_label) * y_multiplier)
+        ax.text(
+            x_label,
+            y_label,
+            label,
+            color="#444444",
+            fontsize=9,
+            ha="left",
+            va="bottom",
+            rotation=-28,
+            rotation_mode="anchor",
+            bbox=dict(facecolor="white", edgecolor="none", alpha=0.78, pad=0.35),
+            clip_on=True,
+            zorder=12,
+        )
+
+
+def draw_general_results_histogram_references(
+    ax_hist: plt.Axes,
+    *,
+    median_d: float | None,
+    median_color: str,
+) -> None:
+    for x, label in [(0.2, "small"), (0.5, "medium"), (0.8, "large")]:
+        ax_hist.axvline(x, color="#777777", lw=0.9, linestyle=":", alpha=0.75)
+        ax_hist.text(
+            x,
+            0.94,
+            f"{label}\nd={x:g}",
+            transform=blended_transform_factory(ax_hist.transData, ax_hist.transAxes),
+            ha="center",
+            va="top",
+            fontsize=7.6,
+            color="#555555",
+        )
+    if median_d is not None and np.isfinite(median_d):
+        median_clip = float(np.clip(median_d, 0.0, 3.0))
+        ax_hist.axvline(median_clip, color=median_color, lw=1.1, linestyle="--")
+        ax_hist.annotate(
+            rf"$\tilde{{D}}={median_d:.2f}$",
+            xy=(median_clip, 1.0),
+            xycoords=blended_transform_factory(ax_hist.transData, ax_hist.transAxes),
+            xytext=(0, 2),
+            textcoords="offset points",
+            ha="center",
+            va="bottom",
+            fontsize=7.8,
+            color=median_color,
+            clip_on=False,
+        )
+
+
+def finish_general_results_histogram(ax_hist: plt.Axes) -> None:
+    ax_hist.set_xlim(0, 3.0)
+    linear_ticks = np.arange(0, 3.0 + 0.001, 0.5)
+    linear_tick_labels = [f"{tick:g}" for tick in linear_ticks]
+    linear_tick_labels[-1] = "3+"
+    ax_hist.set_xticks(linear_ticks)
+    ax_hist.set_xticklabels(linear_tick_labels)
+    ax_hist.set_ylabel("Density")
+    ax_hist.set_xlabel("Effect size magnitude D (linear scale, clipped at 3)")
+    ax_hist.grid(False)
+    for spine in ["top", "right"]:
+        ax_hist.spines[spine].set_visible(False)
+
+
 def normalize_staged_harvest_dn_rows(live_pair_ids: set[str]) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
     for path in sorted(HARVEST_STAGED_DIR.glob("*.csv")):
@@ -2370,10 +2511,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
             "pct_above_p10": float("nan"),
         }
 
-    x_min = max(1.0, 10 ** math.floor(math.log10(float(df["N"].min()) * 0.8)))
-    x_max = min(10 ** math.ceil(math.log10(float(df["N"].max()) * 1.15)), 10_000_000.0)
-    y_min = max(10 ** math.floor(math.log10(float(df["D"].min()) * 0.8)), 0.00001)
-    y_max = min(max(10 ** math.ceil(math.log10(float(df["D"].max()) * 1.1)), 3.0), 20.0)
+    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=10_000_000.0)
     xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
 
     fig = plt.figure(figsize=(10.5, 8.7), dpi=180)
@@ -2381,12 +2519,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
     ax = fig.add_subplot(gs[0, 0])
     ax_hist = fig.add_subplot(gs[1, 0])
 
-    boundary_05 = 2 * Z_05 / np.sqrt(xs)
-    boundary_10 = 2 * 1.6448536269514722 / np.sqrt(xs)
-    ax.fill_between(xs, boundary_05, y_max, color="#e8f5ee", alpha=0.34, zorder=0)
-    ax.fill_between(xs, y_min, boundary_05, color="#fceaea", alpha=0.27, zorder=0)
-    ax.plot(xs, boundary_05, color="#202020", lw=1.7, linestyle="--", zorder=1)
-    ax.plot(xs, boundary_10, color="#606060", lw=1.25, linestyle=":", zorder=1)
+    draw_general_results_thresholds(ax, xs, x_min=x_min, x_max=x_max, y_min=y_min)
 
     medians = (
         df.groupby("source_family", sort=False)
@@ -2403,11 +2536,11 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
         ax.scatter(
             group["N"],
             group["D"],
-            s=9 if "ClinicalTrials.gov" in source_family else 13,
+            s=10 if "ClinicalTrials.gov" in source_family else 13,
             marker=markers.get(source_family, "o"),
             color=color,
             edgecolors="none",
-            alpha=0.24 if "ClinicalTrials.gov" in source_family else 0.32,
+            alpha=0.22 if "ClinicalTrials.gov" in source_family else 0.30,
             rasterized=True,
             zorder=3,
         )
@@ -2425,49 +2558,42 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
             zorder=5,
         )
 
-    ax.text(
-        0.03,
-        0.04,
-        (
-            f"{len(df):,} registered/preregistered-like sidecar rows\n"
-            f"median |D| = {df['D'].median():.2f}; median N = {df['N'].median():,.0f}\n"
-            "Not part of the strict Plot 3 confirmatory-result gate"
-        ),
-        transform=ax.transAxes,
-        fontsize=8.7,
-        color="#1a1a1a",
-        bbox={"boxstyle": "round,pad=0.35", "facecolor": "white", "edgecolor": "#d8e3df", "alpha": 0.92},
-        zorder=6,
+    pct_above_p10 = 100 * float((df["D"] >= (2 * 1.6448536269514722 / np.sqrt(df["N"]))).mean())
+    apply_general_results_axes(
+        ax,
+        x_min=x_min,
+        x_max=x_max,
+        y_min=y_min,
+        y_max=y_max,
+        xlabel="Sample size N (log scale)",
+        ylabel="Effect size D (log scale)",
     )
-    for z, label, x_divisor, y_multiplier in [
-        (Z_05, "p=.05", 2.8, 1.08),
-        (1.6448536269514722, "p=.10", 4.2, 0.9),
-    ]:
-        x_label = x_max / x_divisor
-        y_label = max(y_min * 1.2, 2 * z / np.sqrt(x_label) * y_multiplier)
-        ax.text(
-            x_label,
-            y_label,
-            label,
-            color="#333333",
-            fontsize=8.8,
-            ha="left",
-            va="bottom",
-            rotation=-25,
-            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.72, "pad": 0.3},
-            zorder=8,
-        )
+    ax.set_title(
+        "Registry and Table-Test Comparator Rows",
+        fontsize=15,
+        fontweight="bold",
+        pad=28,
+    )
+    ax.annotate(
+        (
+            f"{len(df):,} comparator rows | p≤.10 proxy {pct_above_p10:.0f}% | "
+            f"median D = {df['D'].median():.2f}"
+        ),
+        xy=(0.5, 1.0),
+        xycoords="axes fraction",
+        xytext=(0, 2),
+        textcoords="offset points",
+        ha="center",
+        va="bottom",
+        fontsize=13,
+        color="#333333",
+    )
 
-    ax.set_xscale("log")
-    ax.set_yscale("log")
-    ax.set_xlim(x_min, x_max)
-    ax.set_ylim(y_min, y_max)
-    ax.set_xlabel("Sample size N (log scale)")
-    ax.set_ylabel("Effect size magnitude D (log scale)")
-    ax.set_title("Registered / Preregistered-Like Sidecar Rows", fontsize=15, fontweight="bold", pad=22)
-    ax.grid(True, which="major", alpha=0.14, linestyle=":")
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
+    medians["pct_above_p10"] = medians["source_family"].map(
+        df.groupby("source_family").apply(
+            lambda g: 100 * float((g["D"] >= (2 * 1.6448536269514722 / np.sqrt(g["N"]))).mean())
+        )
+    )
     ax.legend(
         handles=[
             Line2D(
@@ -2477,15 +2603,43 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
                 color="none",
                 markerfacecolor=colors.get(row.source_family, "#444444"),
                 markeredgecolor="none",
-                markersize=7,
-                alpha=0.78,
-                label=f"{safe_text(row.source_label)} (n={fmt_int(row.n_rows)})",
+                markersize=8,
+                alpha=0.8,
+                label=f"{safe_text(row.source_label)} (n={fmt_int(row.n_rows)}, p≤.10 proxy {row.pct_above_p10:.0f}%)",
             )
             for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False)
+        ]
+        + [
+            Line2D(
+                [0],
+                [0],
+                marker="o",
+                color="none",
+                markerfacecolor="white",
+                markeredgecolor="#333333",
+                markeredgewidth=1.6,
+                markersize=8,
+                label="Hollow marker = source median",
+            )
         ],
         loc="upper right",
         frameon=False,
-        fontsize=8.3,
+        fontsize=9.3,
+        borderpad=0.2,
+        handletextpad=0.5,
+        labelspacing=0.45,
+    )
+    ax.text(
+        0.01,
+        -0.105,
+        (
+            "Both panels use D/N rows that fail the strict Figure 3 gate; "
+            "the lower panel shows the same comparator estimates on a linear D axis."
+        ),
+        transform=ax.transAxes,
+        fontsize=8.8,
+        color="#333333",
+        ha="left",
     )
 
     linear_d_max = 3.0
@@ -2510,18 +2664,9 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
             color=color,
             label=safe_text(group["source_label"].iloc[0]),
         )
-    ax_hist.set_xlim(0, linear_d_max)
-    linear_ticks = np.arange(0, linear_d_max + 0.001, 0.5)
-    linear_tick_labels = [f"{tick:g}" for tick in linear_ticks]
-    linear_tick_labels[-1] = "3+"
-    ax_hist.set_xticks(linear_ticks)
-    ax_hist.set_xticklabels(linear_tick_labels)
-    ax_hist.set_xlabel("Effect size magnitude D (linear scale, clipped at 3)")
-    ax_hist.set_ylabel("Density")
-    ax_hist.legend(frameon=False, loc="upper right", fontsize=7.8, handlelength=2.3)
-    ax_hist.grid(False)
-    for spine in ["top", "right"]:
-        ax_hist.spines[spine].set_visible(False)
+    draw_general_results_histogram_references(ax_hist, median_d=float(df["D"].median()), median_color="#444444")
+    finish_general_results_histogram(ax_hist)
+    ax_hist.legend(frameon=False, loc="upper right", fontsize=8, handlelength=2.3)
 
     fig.savefig(out_path, bbox_inches="tight")
     plt.close(fig)
@@ -2544,23 +2689,15 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
         plt.close(fig)
         return {"n_rows": 0, "median_d": float("nan"), "median_n": float("nan")}
 
-    x_min = max(1.0, 10 ** math.floor(math.log10(float(df["N"].min()) * 0.8)))
-    x_max = min(10 ** math.ceil(math.log10(float(df["N"].max()) * 1.15)), 10_000_000.0)
-    y_min = max(10 ** math.floor(math.log10(float(df["D"].min()) * 0.8)), 0.00001)
-    y_max = min(max(10 ** math.ceil(math.log10(float(df["D"].max()) * 1.1)), 3.0), 20.0)
+    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=100_000.0)
     xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
 
-    fig = plt.figure(figsize=(10.5, 8.3), dpi=180)
-    gs = fig.add_gridspec(2, 1, height_ratios=[5.0, 1.35], hspace=0.32)
+    fig = plt.figure(figsize=(10.5, 8.7), dpi=180)
+    gs = fig.add_gridspec(2, 1, height_ratios=[5.1, 1.45], hspace=0.32)
     ax = fig.add_subplot(gs[0, 0])
     ax_hist = fig.add_subplot(gs[1, 0])
 
-    boundary_05 = 2 * Z_05 / np.sqrt(xs)
-    boundary_10 = 2 * 1.6448536269514722 / np.sqrt(xs)
-    ax.fill_between(xs, boundary_05, y_max, color="#e8f5ee", alpha=0.34, zorder=0)
-    ax.fill_between(xs, y_min, boundary_05, color="#fceaea", alpha=0.27, zorder=0)
-    ax.plot(xs, boundary_05, color="#202020", lw=1.7, linestyle="--", zorder=1)
-    ax.plot(xs, boundary_10, color="#606060", lw=1.25, linestyle=":", zorder=1)
+    draw_general_results_thresholds(ax, xs, x_min=x_min, x_max=x_max, y_min=y_min)
 
     color = "#2f6f9f"
     phase2plus = df["phase_2plus_flag"].astype(bool) if "phase_2plus_flag" in df.columns else pd.Series(True, index=df.index)
@@ -2597,50 +2734,75 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
         zorder=6,
     )
 
-    ax.text(
-        0.03,
-        0.04,
+    pct_above_p10 = 100 * float((df["D"] >= (2 * 1.6448536269514722 / np.sqrt(df["N"]))).mean())
+    apply_general_results_axes(
+        ax,
+        x_min=x_min,
+        x_max=x_max,
+        y_min=y_min,
+        y_max=y_max,
+        xlabel="Sample size N (log scale)",
+        ylabel="Effect size D (log scale)",
+    )
+    ax.set_title("ClinicalTrials.gov Phase-2+ Primary-Outcome Comparators", fontsize=15, fontweight="bold", pad=28)
+    ax.annotate(
         (
-            f"{len(df):,} CT.gov cleaner sidecar rows\n"
-            f"phase 2+ randomized trial, one eligible primary registry outcome\n"
-            f"median |D| = {df['D'].median():.2f}; median N = {df['N'].median():,.0f}"
+            f"{len(df):,} one-row-per-trial registry rows | "
+            f"p≤.10 proxy {pct_above_p10:.0f}% | median D = {df['D'].median():.2f}"
+        ),
+        xy=(0.5, 1.0),
+        xycoords="axes fraction",
+        xytext=(0, 2),
+        textcoords="offset points",
+        ha="center",
+        va="bottom",
+        fontsize=13,
+        color="#333333",
+    )
+    ax.legend(
+        handles=[
+            Line2D(
+                [0],
+                [0],
+                marker="o",
+                color="none",
+                markerfacecolor=color,
+                markeredgecolor="none",
+                markersize=8,
+                alpha=0.8,
+                label=f"Phase 2+ trials (n={fmt_int(phase2plus.sum())}, p≤.10 proxy {pct_above_p10:.0f}%)",
+            ),
+            Line2D(
+                [0],
+                [0],
+                marker="o",
+                color="none",
+                markerfacecolor="white",
+                markeredgecolor="#333333",
+                markeredgewidth=1.6,
+                markersize=8,
+                label="Hollow marker = median",
+            ),
+        ],
+        frameon=False,
+        loc="upper right",
+        fontsize=10,
+        borderpad=0.2,
+        handletextpad=0.5,
+        labelspacing=0.45,
+    )
+    ax.text(
+        0.01,
+        -0.105,
+        (
+            "One phase-2+ randomized primary registry outcome per trial; "
+            "the lower panel shows the same comparator estimates on a linear D axis."
         ),
         transform=ax.transAxes,
-        fontsize=8.7,
-        color="#1a1a1a",
-        bbox={"boxstyle": "round,pad=0.35", "facecolor": "white", "edgecolor": "#d8e3df", "alpha": 0.92},
-        zorder=7,
+        fontsize=8.8,
+        color="#333333",
+        ha="left",
     )
-    for z, label, x_divisor, y_multiplier in [
-        (Z_05, "p=.05", 2.8, 1.08),
-        (1.6448536269514722, "p=.10", 4.2, 0.9),
-    ]:
-        x_label = x_max / x_divisor
-        y_label = max(y_min * 1.2, 2 * z / np.sqrt(x_label) * y_multiplier)
-        ax.text(
-            x_label,
-            y_label,
-            label,
-            color="#333333",
-            fontsize=8.8,
-            ha="left",
-            va="bottom",
-            rotation=-25,
-            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.72, "pad": 0.3},
-            zorder=8,
-        )
-
-    ax.set_xscale("log")
-    ax.set_yscale("log")
-    ax.set_xlim(x_min, x_max)
-    ax.set_ylim(y_min, y_max)
-    ax.set_xlabel("Sample size N (log scale)")
-    ax.set_ylabel("Effect size magnitude D (log scale)")
-    ax.set_title("ClinicalTrials.gov Phase-2+ Primary-Outcome Sidecar", fontsize=15, fontweight="bold", pad=20)
-    ax.grid(True, which="major", alpha=0.14, linestyle=":")
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-    ax.legend(frameon=False, loc="upper right", fontsize=8.2)
 
     linear_d_max = 3.0
     linear_bin_width = 0.1
@@ -2660,18 +2822,11 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
         histtype="step",
         linewidth=1.4,
         color=color,
+        label=f"CT.gov phase-2+ primary rows (n={len(df):,})",
     )
-    ax_hist.set_xlim(0, linear_d_max)
-    linear_ticks = np.arange(0, linear_d_max + 0.001, 0.5)
-    linear_tick_labels = [f"{tick:g}" for tick in linear_ticks]
-    linear_tick_labels[-1] = "3+"
-    ax_hist.set_xticks(linear_ticks)
-    ax_hist.set_xticklabels(linear_tick_labels)
-    ax_hist.set_xlabel("Effect size magnitude D (linear scale, clipped at 3)")
-    ax_hist.set_ylabel("Density")
-    ax_hist.grid(False)
-    for spine in ["top", "right"]:
-        ax_hist.spines[spine].set_visible(False)
+    draw_general_results_histogram_references(ax_hist, median_d=float(df["D"].median()), median_color=color)
+    finish_general_results_histogram(ax_hist)
+    ax_hist.legend(frameon=False, loc="upper right", fontsize=8, handlelength=2.3)
 
     fig.savefig(out_path, bbox_inches="tight")
     plt.close(fig)
