@@ -81,6 +81,8 @@ PROTZKO_PROMOTED = HARVEST_PROMOTED_DIR / "protzko_nhb_pairs__promoted_pairs.csv
 PREREG_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_results.csv"
 PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitivity_sidecar_rows.csv"
 PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv"
+CTGOV_API_REGISTERED_ROWS = DATASET_DERIVED_DIR / "plot3_ctgov_api_registered_outcome_ratio_event_rows.csv"
+CTGOV_API_REGISTERED_TRIAL_MEDIANS = DATASET_DERIVED_DIR / "plot3_ctgov_api_registered_trial_medians.csv"
 SCHEEL_QUOTE_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_scheel_quote_stat_rescue_candidates.csv"
 VANDENAKKER_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_vandenakker_first_stat_candidates.csv"
 VANDENAKKER_MEDIAN_CANDIDATES = DATASET_DERIVED_DIR / "plot3_vandenakker_matched_result_median_candidates.csv"
@@ -92,6 +94,7 @@ PLOT2_PAPER_DETAILS = DATASET_DERIVED_DIR / "plot2_published_paper_details.csv"
 PREREG_FIG = FIG_DIR / "plot3_preregistered_d_vs_n.png"
 PREREG_SENSITIVITY_FIG = FIG_DIR / "plot3_preregistered_sensitivity_sidecar.png"
 PREREG_CTGOV_PRIMARY_RANDOMIZED_FIG = FIG_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar.png"
+CTGOV_API_REGISTERED_TRIAL_MEDIAN_FIG = FIG_DIR / "plot3_ctgov_api_registered_trial_medians.png"
 ALL_SOURCE_FIG = FIG_DIR / "plot4_all_source_dn_dump.png"
 
 Z_05 = 1.959963984540054
@@ -812,6 +815,7 @@ PLOT3_CITATION_KEYS = {
     "Protzko et al. 2024 High-Replicability Research project": "protzko2024highrep",
     "AACT x PubMed registered primary outcomes": "du2024",
     "ClinicalTrials.gov registry-result D/N comparator": "du2024",
+    "ClinicalTrials.gov API registered outcome-result universe": "du2024",
     "CliniFact published trial primary-outcome rows": "zhang2025clinifact",
     "Brodeur et al. 2024 preregistered/PAP economics table tests": "brodeur2020",
     "Transparent Psi Project / Bem preregistered replication": "kekecs2023tpp",
@@ -3267,6 +3271,186 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
     }
 
 
+def draw_ctgov_api_registered_trial_medians(out_path: Path) -> dict[str, float | int]:
+    if not CTGOV_API_REGISTERED_TRIAL_MEDIANS.exists():
+        fig, ax = plt.subplots(figsize=(9, 5), dpi=180)
+        ax.text(0.5, 0.5, "No CT.gov API registered-result trial medians available", ha="center", va="center")
+        ax.axis("off")
+        fig.savefig(out_path, bbox_inches="tight")
+        plt.close(fig)
+        return {"n_rows": 0, "median_d": float("nan"), "median_n": float("nan")}
+
+    df = pd.read_csv(CTGOV_API_REGISTERED_TRIAL_MEDIANS)
+    df["D"] = numeric_series(df["D"])
+    df["N"] = numeric_series(df["N"])
+    df = df[(df["D"] > 0) & (df["N"] > 0)].copy()
+    if df.empty:
+        fig, ax = plt.subplots(figsize=(9, 5), dpi=180)
+        ax.text(0.5, 0.5, "No CT.gov API registered-result trial medians available", ha="center", va="center")
+        ax.axis("off")
+        fig.savefig(out_path, bbox_inches="tight")
+        plt.close(fig)
+        return {"n_rows": 0, "median_d": float("nan"), "median_n": float("nan")}
+
+    row_level_n = 0
+    primary_row_n = 0
+    direct_row_n = 0
+    if CTGOV_API_REGISTERED_ROWS.exists():
+        ctgov_rows = pd.read_csv(CTGOV_API_REGISTERED_ROWS, usecols=["outcome_type", "conversion_method"])
+        row_level_n = len(ctgov_rows)
+        primary_row_n = int(ctgov_rows["outcome_type"].eq("PRIMARY").sum())
+        direct_row_n = int(
+            (~ctgov_rows["conversion_method"].eq("two_sided_p_value_proxy_with_api_group_denominators")).sum()
+        )
+
+    x_min, x_max, y_min, y_max = sidecar_log_axis_bounds(df, x_cap=DN_AXIS_X_CAP)
+    xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
+
+    fig = plt.figure(figsize=(10.5, 8.7), dpi=180)
+    gs = fig.add_gridspec(2, 1, height_ratios=[5.1, 1.45], hspace=0.32)
+    ax = fig.add_subplot(gs[0, 0])
+    ax_hist = fig.add_subplot(gs[1, 0])
+
+    draw_general_results_thresholds(ax, xs, x_min=x_min, x_max=x_max, y_min=y_min)
+    color = "#8b3f1f"
+    primary_any = df["primary_rows"].fillna(0) > 0 if "primary_rows" in df.columns else pd.Series(True, index=df.index)
+    if (~primary_any).sum() > 0:
+        ax.scatter(
+            df.loc[~primary_any, "N"],
+            df.loc[~primary_any, "D"],
+            s=9,
+            color="#8c8c8c",
+            edgecolors="none",
+            alpha=0.22,
+            rasterized=True,
+            label=f"secondary/other-only trial medians (n={fmt_int((~primary_any).sum())})",
+            zorder=3,
+        )
+    ax.scatter(
+        df.loc[primary_any, "N"],
+        df.loc[primary_any, "D"],
+        s=10,
+        color=color,
+        edgecolors="none",
+        alpha=0.30,
+        rasterized=True,
+        label=f"trial medians with primary rows (n={fmt_int(primary_any.sum())})",
+        zorder=4,
+    )
+    ax.scatter(
+        df["N"].median(),
+        df["D"].median(),
+        s=150,
+        facecolors="white",
+        edgecolors=color,
+        linewidths=2.1,
+        zorder=6,
+    )
+
+    pct_above_p10 = 100 * float((df["D"] >= (2 * 1.6448536269514722 / np.sqrt(df["N"]))).mean())
+    apply_general_results_axes(
+        ax,
+        x_min=x_min,
+        x_max=x_max,
+        y_min=y_min,
+        y_max=y_max,
+        xlabel="Sample size N (log scale)",
+        ylabel="Effect size D (log scale)",
+    )
+    ax.set_title("ClinicalTrials.gov Registered Outcome-Result Trial Medians", fontsize=15, fontweight="bold", pad=28)
+    ax.annotate(
+        (
+            f"{len(df):,} trial medians from {fmt_int(row_level_n)} registered outcome rows | "
+            f"{fmt_int(primary_row_n)} primary rows | median D = {df['D'].median():.2f}"
+        ),
+        xy=(0.5, 1.0),
+        xycoords="axes fraction",
+        xytext=(0, 2),
+        textcoords="offset points",
+        ha="center",
+        va="bottom",
+        fontsize=13,
+        color="#333333",
+    )
+    ax.legend(
+        handles=[
+            Line2D(
+                [0],
+                [0],
+                marker="o",
+                color="none",
+                markerfacecolor=color,
+                markeredgecolor="none",
+                markersize=8,
+                alpha=0.8,
+                label=f"Clinical trial medians (n={fmt_int(len(df))}, p≤.10 proxy {pct_above_p10:.0f}%)",
+            ),
+            Line2D(
+                [0],
+                [0],
+                marker="o",
+                color="none",
+                markerfacecolor="white",
+                markeredgecolor="#333333",
+                markeredgewidth=1.6,
+                markersize=8,
+                label="Hollow marker = median",
+            ),
+        ],
+        frameon=False,
+        loc="upper right",
+        fontsize=10,
+        borderpad=0.2,
+        handletextpad=0.5,
+        labelspacing=0.45,
+    )
+    ax.text(
+        0.01,
+        -0.105,
+        (
+            "One median row per randomized interventional trial; row-level file keeps all registered primary, secondary, "
+            "and other pre-specified outcome-analysis rows. Axes are capped at N=100k and D=0.02-5; statistics use all rows."
+        ),
+        transform=ax.transAxes,
+        fontsize=8.8,
+        color="#333333",
+        ha="left",
+    )
+
+    linear_d_max = 3.0
+    linear_bin_width = 0.1
+    linear_bins = np.arange(0, linear_d_max + linear_bin_width, linear_bin_width)
+    ax_hist.hist(
+        df["D"].clip(lower=0, upper=linear_d_max),
+        bins=linear_bins,
+        density=True,
+        histtype="stepfilled",
+        color=color,
+        alpha=0.18,
+    )
+    ax_hist.hist(
+        df["D"].clip(lower=0, upper=linear_d_max),
+        bins=linear_bins,
+        density=True,
+        histtype="step",
+        linewidth=1.4,
+        color=color,
+        label=f"CT.gov API trial medians (n={len(df):,}; {fmt_int(direct_row_n)} direct rows)",
+    )
+    draw_general_results_histogram_references(ax_hist, median_d=float(df["D"].median()), median_color=color)
+    finish_general_results_histogram(ax_hist)
+    ax_hist.legend(frameon=False, loc="upper right", fontsize=8, handlelength=2.3)
+
+    fig.savefig(out_path, bbox_inches="tight")
+    plt.close(fig)
+    return {
+        "n_rows": len(df),
+        "row_level_rows": row_level_n,
+        "median_d": float(df["D"].median()),
+        "median_n": float(df["N"].median()),
+    }
+
+
 def draw_all_source_dn_dump(out_path: Path) -> dict[str, float | int]:
     prereg = normalize_preregistered_results()
     df = normalize_all_source_dn_rows(prereg)
@@ -3363,6 +3547,7 @@ def generate_figures() -> dict[str, FigureSpec]:
     draw_preregistered_results(PREREG_FIG)
     draw_preregistered_sensitivity_sidecar(PREREG_SENSITIVITY_FIG)
     draw_ctgov_primary_randomized_sidecar(PREREG_CTGOV_PRIMARY_RANDOMIZED_FIG)
+    draw_ctgov_api_registered_trial_medians(CTGOV_API_REGISTERED_TRIAL_MEDIAN_FIG)
     draw_all_source_dn_dump(ALL_SOURCE_FIG)
     repl_stats = replication_stats()
 
@@ -5780,6 +5965,22 @@ def write_plot3_source_catalog() -> None:
     ctgov_clean_phase2plus = int(
         ctgov_clean.get("phase_2plus_flag", pd.Series(dtype=bool)).astype(bool).sum()
     ) if not ctgov_clean.empty else 0
+    ctgov_api = pd.read_csv(CTGOV_API_REGISTERED_ROWS) if CTGOV_API_REGISTERED_ROWS.exists() else pd.DataFrame()
+    ctgov_api_medians = (
+        pd.read_csv(CTGOV_API_REGISTERED_TRIAL_MEDIANS)
+        if CTGOV_API_REGISTERED_TRIAL_MEDIANS.exists()
+        else pd.DataFrame()
+    )
+    ctgov_api_rows = len(ctgov_api)
+    ctgov_api_trials = int(ctgov_api["nct_id"].nunique()) if not ctgov_api.empty and "nct_id" in ctgov_api.columns else 0
+    ctgov_api_primary_rows = int((ctgov_api.get("outcome_type", pd.Series(dtype=object)) == "PRIMARY").sum())
+    ctgov_api_direct_rows = int(
+        (
+            ctgov_api.get("conversion_method", pd.Series(dtype=object))
+            != "two_sided_p_value_proxy_with_api_group_denominators"
+        ).sum()
+    ) if not ctgov_api.empty else 0
+    ctgov_api_p_proxy_rows = max(ctgov_api_rows - ctgov_api_direct_rows, 0)
     clinifact = (
         published.loc[published["source_corpus"].eq("clinifact_published_primary_pairs")].copy()
         if not published.empty
@@ -6399,20 +6600,20 @@ def write_plot3_source_catalog() -> None:
             {
                 "plot_name": "Plot 3",
                 "plot_inclusion_status": "not_included",
-                "source_label": "ClinicalTrials.gov registry-result D/N comparator",
-                "corpus_what_it_is": "Finer-grained ClinicalTrials.gov results extraction with D/N proxies for registry outcome rows.",
-                "what_it_is_why_possible_candidate": "ClinicalTrials.gov results were rechecked because they are the largest local preregistered-like bucket: trial records have registered outcomes and the parser recovers N plus p-value/effect-size proxies. A cleaner sub-sidecar now isolates phase-2+ randomized interventional trials with exactly one locally eligible primary two-group row.",
-                "confirmed_fields": f"Known locally: broad sidecar has {fmt_int(len(ctgov_registry))} trial-median registry rows and {fmt_int(ctgov_dn_rows)} D/N-ready rows. Cleaner local sub-sidecar has {fmt_int(ctgov_clean_rows)} phase-2+ one-primary randomized rows. Confirmed: outcome type: yes in raw file; study type/allocation/phase: yes in raw file; N/effect proxy: yes; direct arm-level D: no; protocol/SAP timing audit: no.",
-                "backing_file": str(PUBLISHED_PAPERS.relative_to(ROOT)),
-                "rows_considered": len(ctgov_registry),
-                "rows_preregistered_equivalent": ctgov_clean_rows,
-                "rows_with_public_local_backing": len(ctgov_registry),
-                "rows_with_extractable_DN": ctgov_dn_rows,
-                "rows_with_non_retracted_source": len(ctgov_registry),
+                "source_label": "ClinicalTrials.gov API registered outcome-result universe",
+                "corpus_what_it_is": "ClinicalTrials.gov API v2 result records parsed into registered primary, secondary, and other pre-specified two-group outcome-analysis rows with API denominators.",
+                "what_it_is_why_possible_candidate": "ClinicalTrials.gov is the scale source. The official API exposes result outcome measures, comparison groups, denominators, measurements, p-values, and ratio estimates in one JSON record. A dedicated local API pull now recovers the real-world registered-results universe rather than only the older p-value-proxy KG sidecar.",
+                "confirmed_fields": f"Known locally from the API pull: {fmt_int(ctgov_api_rows)} registered outcome-analysis D/N rows across {fmt_int(ctgov_api_trials)} randomized interventional trials, collapsed to {fmt_int(len(ctgov_api_medians))} one-trial median rows for non-inflated plotting. The row-level file includes {fmt_int(ctgov_api_primary_rows)} primary-outcome rows; {fmt_int(ctgov_api_direct_rows)} rows use direct ratio/event-count conversion and {fmt_int(ctgov_api_p_proxy_rows)} use a p-value-to-D proxy with actual API group denominators. Older local sidecars remain available: {fmt_int(len(ctgov_registry))} KG trial medians and {fmt_int(ctgov_clean_rows)} cleaner phase-2+ primary randomized trial medians.",
+                "backing_file": f"{CTGOV_API_REGISTERED_ROWS.relative_to(ROOT)}; {CTGOV_API_REGISTERED_TRIAL_MEDIANS.relative_to(ROOT)}; {PUBLISHED_PAPERS.relative_to(ROOT)}",
+                "rows_considered": ctgov_api_rows or len(ctgov_registry),
+                "rows_preregistered_equivalent": len(ctgov_api_medians) or ctgov_clean_rows,
+                "rows_with_public_local_backing": ctgov_api_rows or len(ctgov_registry),
+                "rows_with_extractable_DN": ctgov_api_rows or ctgov_dn_rows,
+                "rows_with_non_retracted_source": ctgov_api_rows or len(ctgov_registry),
                 "rows_contributed": 0,
-                "rows_left_out_within_source": len(ctgov_registry),
-                "why": "not included because this is registry-result evidence, not the current standalone published/preregistered confirmatory-result layer",
-                "why_in_out": f"Not included in strict Plot 3: {fmt_int(ctgov_dn_rows)} broad D/N rows and {fmt_int(ctgov_clean_rows)} cleaner one-primary randomized rows are real and local, but the current D is a registry p-value/enrollment proxy and no protocol/SAP pre-measurement audit proves exact analytic prespecification. The cleaner subset remains a named sensitivity sidecar.",
+                "rows_left_out_within_source": ctgov_api_rows or len(ctgov_registry),
+                "why": "not included because this is a registered outcome-result universe, not the current standalone published analytic-preregistration layer",
+                "why_in_out": f"Not included in strict Plot 3: the {fmt_int(ctgov_api_rows)} API rows are real registered medical outcome results and solve the scale problem, but they are registry-result rows rather than paper-level analytic preregistration rows. They should be plotted as a clinical registered-results field layer or as one-trial medians, not silently merged with Registered Reports and matched psychology preregistration corpora.",
             },
             {
                 "plot_name": "Plot 3",

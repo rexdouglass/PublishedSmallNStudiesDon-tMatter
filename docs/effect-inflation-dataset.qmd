@@ -350,7 +350,7 @@ Plot 3 now has a first rendered version built from the preregistered-results fil
 
 ## Registry and Table-Test Comparators
 
-Figure 3 is restricted to preregistered confirmatory result rows: one row should correspond to a precommitted hypothesis/result with recoverable `D` and `N`. The comparator panel below deliberately shows two large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
+Figure 3 is restricted to preregistered confirmatory result rows: one row should correspond to a precommitted hypothesis/result with recoverable `D` and `N`. The comparator panels below deliberately show large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
 
 - **ClinicalTrials.gov registry-result comparator:** `7,722` trial-level registry-result rows from the local finer-grained CT.gov efficacy extraction. These are collapsed registry rows with `D/N` derived from registry p-values and enrollment-like `N`, not locked article-level confirmatory analyses.
 - **Brodeur preregistered/PAP economics table tests:** `3,724` extracted economics table-test rows from papers flagged as preregistered, having a pre-analysis plan, or having PAP power information. The flags are paper/PAP-level evidence, while the plotted rows are individual published coefficients/tests.
@@ -362,6 +362,10 @@ They stay out of Figure 3 for opposite reasons. CT.gov fails the analytic-prespe
 The cleaner ClinicalTrials.gov panel below applies the strongest fully local rule we can support right now: phase-2+ randomized interventional trials with exactly one locally eligible primary two-group outcome row, plotted one row per trial. This fixes much of the multiplicity problem, but it still remains outside Figure 3 because `D` is still a registry p-value/enrollment proxy and the row has not been matched to a locked protocol or SAP analysis.
 
 ![Cleaner ClinicalTrials.gov sub-sidecar: phase-2+ randomized trials with one locally eligible primary registry outcome per trial.](_generated/figures/plot3_ctgov_phase2plus_primary_randomized_sidecar.png)
+
+The larger ClinicalTrials.gov API pass below is the scale check. It uses the official API record, not the older KG proxy, and keeps registered primary, secondary, and other pre-specified outcome-analysis rows when a two-group denominator is present and `D` is recoverable from a ratio estimate, event-count/proportion row, or p-value proxy. The row-level file currently has `67,486` registered outcome-analysis rows from `5,628` randomized interventional trials; the figure plots one median per trial so the visual is not inflated by trials with hundreds of reported outcomes.
+
+![ClinicalTrials.gov API registered outcome-result trial medians, one median row per randomized interventional trial.](_generated/figures/plot3_ctgov_api_registered_trial_medians.png)
 
 ## Inclusion Criteria
 
@@ -386,6 +390,8 @@ That is why mere clinical-trial registration is not enough for this layer. Regis
 - Normalized plot rows: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_results.csv)
 - Sensitivity sidecar rows: [plot3_preregistered_sensitivity_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_sensitivity_sidecar_rows.csv)
 - Cleaner ClinicalTrials.gov sub-sidecar rows: [plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv)
+- ClinicalTrials.gov API registered outcome-analysis rows: [plot3_ctgov_api_registered_outcome_ratio_event_rows.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_outcome_ratio_event_rows.csv)
+- ClinicalTrials.gov API one-trial median rows: [plot3_ctgov_api_registered_trial_medians.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_trial_medians.csv)
 - Generated table fragments: [table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd](./_generated/tables/table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd) and [table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd](./_generated/tables/table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd)
 
 ## What Is Already in Hand
