@@ -1243,6 +1243,55 @@ def rpcb_registered_report_median_rows() -> pd.DataFrame:
     return ready.drop(columns=["_paper_number"]).reset_index(drop=True)
 
 
+def plot3_paper_group_key(row: pd.Series) -> str:
+    """Stable paper/project key for Plot 3's one-dot-per-paper rule."""
+    source_family = safe_text(row.get("source_family")).lower()
+    point_id = safe_text(row.get("point_id"))
+    if "psa-cr001" in source_family:
+        return "psa-cr001:dorison2022"
+    if "psa-cr002" in source_family:
+        return "psa-cr002:wang2021"
+    if "scheel et al. 2021" in source_family:
+        paper_stub = re.split(r"\s+[—-]\s+", safe_text(row.get("row_label")), maxsplit=1)[0]
+        return f"scheel2021:{paper_stub.lower() or point_id}"
+    return point_id or f"row:{row.name}"
+
+
+def collapse_plot3_to_one_dot_per_paper(df: pd.DataFrame) -> pd.DataFrame:
+    """Collapse explicit multi-result paper/project clusters to median D/N rows."""
+    if df.empty:
+        return df
+    work = df.copy()
+    work["_paper_group_key"] = work.apply(plot3_paper_group_key, axis=1)
+    collapsed_rows: list[pd.Series] = []
+    for _, group in work.groupby("_paper_group_key", sort=False):
+        group = group.copy()
+        first = group.iloc[0].copy()
+        if len(group) == 1:
+            collapsed_rows.append(first)
+            continue
+        source_slug = slugify(safe_text(first.get("source_label")), "plot3_paper")
+        first["point_id"] = f"{source_slug}_paper_median_{len(collapsed_rows) + 1:03d}"
+        first["row_unit"] = "paper_median_of_preregistered_results"
+        first["row_label"] = (
+            f"{safe_text(first.get('source_label'))} - paper median of "
+            f"{len(group)} preregistered result rows"
+        )
+        first["D"] = float(pd.to_numeric(group["D"], errors="coerce").median())
+        first["N"] = float(pd.to_numeric(group["N"], errors="coerce").median())
+        support_values = sorted(set(group["supported"].fillna("").astype(str).str.strip().str.lower()) - {""})
+        first["supported"] = support_values[0] if len(support_values) == 1 else "mixed"
+        row_numbers = ";".join(group["source_row_number"].astype(str).tolist())
+        first["source_row_number"] = row_numbers
+        first["source_file"] = (
+            f"{safe_text(first.get('source_file'))}; median collapse of "
+            f"{len(group)} preregistered result rows"
+        )
+        collapsed_rows.append(first)
+    out = pd.DataFrame(collapsed_rows).drop(columns=["_paper_group_key"], errors="ignore")
+    return out.reset_index(drop=True)
+
+
 def write_qmd_with_table(path: Path, lines: list[str]) -> None:
     path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
 
@@ -1929,6 +1978,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
     df["D"] = numeric_series(df["D"]).abs()
     df["N"] = numeric_series(df["N"])
     df = df[(df["D"] > 0) & (df["N"] > 0)].copy()
+    df = collapse_plot3_to_one_dot_per_paper(df)
     if "field" not in df.columns:
         df["field"] = ""
     field_text = df["field"].fillna("").astype(str).str.strip()
@@ -5938,6 +5988,15 @@ def write_plot3_source_catalog() -> None:
     score_prereg, score_prereg_count, score_prereg_left_out = score_prereg_indicated_paper_rows(published)
     manual_prereg = pd.DataFrame(MANUAL_PREREGISTERED_ADDITIONS)
     manual_source_counts = manual_prereg["source_family"].value_counts().to_dict()
+    plot3_current = normalize_preregistered_results()
+    plot3_source_counts = plot3_current["source_family"].value_counts().to_dict()
+
+    def plot3_source_count(source_family: str) -> int:
+        return int(plot3_source_counts.get(source_family, 0))
+
+    scheel_contributed = plot3_source_count("Scheel et al. 2021 preregistered-hypotheses corpus")
+    psacr001_contributed = plot3_source_count("Dorison et al. 2022 PSA-CR001 pooled preregistered rows")
+    psacr002_contributed = plot3_source_count("PSA-CR002 cognitive reappraisal preregistered hypotheses")
     scheel_quote_candidates = pd.read_csv(SCHEEL_QUOTE_RESCUE_CANDIDATES) if SCHEEL_QUOTE_RESCUE_CANDIDATES.exists() else pd.DataFrame()
     scheel_quote_candidate_rows = len(scheel_quote_candidates)
     scheel_quote_candidates_with_n = int(scheel_quote_candidates.get("N_candidate", pd.Series(dtype=float)).notna().sum()) if not scheel_quote_candidates.empty else 0
@@ -6180,17 +6239,17 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "Scheel et al. 2021 preregistered-hypotheses corpus",
                 "corpus_what_it_is": "Registered Reports/preregistered-hypothesis table with a recoverable D/N subset.",
                 "what_it_is_why_possible_candidate": "Published psychology Registered Reports coded by Scheel et al. as preregistered hypotheses. Possible Plot 3 candidate because each row is an analytically preregistered confirmatory hypothesis and the local appendix table recovers D/N for the extractable subset.",
-                "confirmed_fields": f"Known: 71 preregistered hypothesis rows, {fmt_int(len(table40))} D/N-ready rows. Confirmed: analytic preregistration: yes (71); support status: yes ({fmt_int(len(table40))}); journal provenance: yes ({fmt_int(len(table40))}); paper D/N: yes ({fmt_int(len(table40))}). New quote-stat rescue queue: {fmt_int(scheel_quote_candidate_rows)} candidate statistic rows, {fmt_int(scheel_quote_candidates_with_n)} with candidate N, all marked not strict-ready pending PDF/focal checks.",
+                "confirmed_fields": f"Known: 71 preregistered hypothesis rows, {fmt_int(len(table40))} D/N-ready result rows, collapsed to {fmt_int(scheel_contributed)} paper dots under the one-dot-per-paper rule. Confirmed: analytic preregistration: yes (71); support status: yes ({fmt_int(len(table40))}); journal provenance: yes ({fmt_int(len(table40))}); paper D/N: yes ({fmt_int(len(table40))}). New quote-stat rescue queue: {fmt_int(scheel_quote_candidate_rows)} candidate statistic rows, {fmt_int(scheel_quote_candidates_with_n)} with candidate N, all marked not strict-ready pending PDF/focal checks.",
                 "backing_file": f"{PREREG_TABLE_40.relative_to(ROOT)}; {SCHEEL_QUOTE_RESCUE_CANDIDATES.relative_to(ROOT)}",
                 "rows_considered": 71,
                 "rows_preregistered_equivalent": 71,
                 "rows_with_public_local_backing": 71,
                 "rows_with_extractable_DN": len(table40),
                 "rows_with_non_retracted_source": 71,
-                "rows_contributed": len(table40),
+                "rows_contributed": scheel_contributed,
                 "rows_left_out_within_source": 71 - len(table40),
                 "why": "base preregistered-results corpus already on disk; 32 hypotheses have extractable D/N rows and 39 do not",
-                "why_in_out": f"Included: {fmt_int(len(table40))} hypotheses enter. The remaining {fmt_int(71 - len(table40))} Scheel rows are real preregistered hypotheses. The local quote-stat pass now identifies {fmt_int(scheel_quote_candidate_rows)} rescue candidates, but they remain outside strict Plot 3 until their article PDFs verify the exact first-hypothesis row and analytic N.",
+                "why_in_out": f"Included: {fmt_int(scheel_contributed)} paper-level median rows enter from {fmt_int(len(table40))} D/N-ready hypotheses. The remaining {fmt_int(71 - len(table40))} Scheel rows are real preregistered hypotheses. The local quote-stat pass now identifies {fmt_int(scheel_quote_candidate_rows)} rescue candidates, but they remain outside strict Plot 3 until their article PDFs verify the exact preregistered-result row and analytic N.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6198,17 +6257,17 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "Dorison et al. 2022 PSA-CR001 pooled preregistered rows",
                 "corpus_what_it_is": "Pooled primary preregistered PSA-CR001 confirmatory rows.",
                 "what_it_is_why_possible_candidate": "PSA-CR001 was a preregistered 52-country COVID-19 framing project. Possible Plot 3 candidate because four primary confirmatory outcomes can be represented as pooled D/N rows rather than as nested country cells.",
-                "confirmed_fields": f"Known: {fmt_int(len(table41))} pooled primary outcomes. Confirmed: analytic preregistration: yes ({fmt_int(len(table41))}); support status: yes ({fmt_int(len(table41))}); pooled N: yes ({fmt_int(len(table41))}); pooled D: yes ({fmt_int(len(table41))}).",
+                "confirmed_fields": f"Known: {fmt_int(len(table41))} pooled primary outcomes, collapsed to {fmt_int(psacr001_contributed)} paper dot under the one-dot-per-paper rule. Confirmed: analytic preregistration: yes ({fmt_int(len(table41))}); support status: yes ({fmt_int(len(table41))}); pooled N: yes ({fmt_int(len(table41))}); pooled D: yes ({fmt_int(len(table41))}).",
                 "backing_file": str(PREREG_TABLE_41.relative_to(ROOT)),
                 "rows_considered": len(table41),
                 "rows_preregistered_equivalent": len(table41),
                 "rows_with_public_local_backing": len(table41),
                 "rows_with_extractable_DN": len(table41),
                 "rows_with_non_retracted_source": len(table41),
-                "rows_contributed": len(table41),
+                "rows_contributed": psacr001_contributed,
                 "rows_left_out_within_source": 0,
                 "why": "adds pooled confirmatory preregistered rows that belong in the same comparison layer",
-                "why_in_out": "Included: the four primary PSA-CR001 confirmatory outcomes enter as pooled rows. Country-level cells stay collapsed here to avoid nested non-independent Plot 3 rows.",
+                "why_in_out": "Included: the four primary PSA-CR001 confirmatory outcomes are represented by one paper median. Country-level cells stay collapsed here to avoid nested non-independent Plot 3 rows.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6216,17 +6275,17 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "PSA-CR002 cognitive reappraisal preregistered hypotheses",
                 "corpus_what_it_is": "Psychological Science Accelerator COVID-19 cognitive-reappraisal project with article-reported preregistered hypothesis rows.",
                 "what_it_is_why_possible_candidate": "PSA-CR002 was considered because the article explicitly labels Table 2 as effect sizes and statistics for each preregistered hypothesis, while Table 3 reports the relevant arm sample sizes after preregistered exclusions.",
-                "confirmed_fields": "Known: 12 Table 2 preregistered hypothesis rows. Confirmed: analytic preregistration: yes (12); source focal selector: Table 2 preregistered hypothesis rows; reported Cohen's d: yes (12); arm/sample N: yes from Table 3 (12); support status: yes.",
+                "confirmed_fields": "Known: 12 Table 2 preregistered hypothesis rows, collapsed to 1 paper dot under the one-dot-per-paper rule. Confirmed: analytic preregistration: yes (12); source result selector: Table 2 preregistered hypothesis rows; reported Cohen's d: yes (12); arm/sample N: yes from Table 3 (12); support status: yes.",
                 "backing_file": "Wang et al. 2021 Tables 2-3; DOI 10.1038/s41562-021-01173-x",
                 "rows_considered": 12,
                 "rows_preregistered_equivalent": 12,
                 "rows_with_public_local_backing": 12,
                 "rows_with_extractable_DN": manual_source_counts.get("PSA-CR002 cognitive reappraisal preregistered hypotheses", 0),
                 "rows_with_non_retracted_source": 12,
-                "rows_contributed": manual_source_counts.get("PSA-CR002 cognitive reappraisal preregistered hypotheses", 0),
-                "rows_left_out_within_source": 12 - manual_source_counts.get("PSA-CR002 cognitive reappraisal preregistered hypotheses", 0),
+                "rows_contributed": psacr002_contributed,
+                "rows_left_out_within_source": 0,
                 "why": "included because it has explicit preregistered hypothesis rows, reported D, and source-reported arm Ns",
-                "why_in_out": "Included: 12 preregistered PSA-CR002 Table 2 hypotheses enter. The signs of the reported effects are hypothesis-direction-coded in the article; the plotted D axis uses magnitudes.",
+                "why_in_out": "Included: 12 preregistered PSA-CR002 Table 2 hypotheses are represented by one paper median. The signs of the reported effects are hypothesis-direction-coded in the article; the plotted D axis uses magnitudes.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6951,7 +7010,7 @@ def write_plot3_source_catalog() -> None:
         "",
         f"Machine-readable result-level file: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/{PREREG_RESULTS.name})",
         "",
-        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered result rows. Admission now uses the relaxed planned-result rule: a source can contribute more than one preregistered hypothesis/result internally, but papers or projects with multiple planned results are represented by a median row where the local source exposes a match-filtered result set. For plotting, rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
+        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered paper/project dots. Admission now uses the relaxed planned-result rule plus the one-dot-per-paper rule: a source can contribute more than one preregistered hypothesis/result internally, but papers or projects with multiple planned results are represented by a median row where the local source exposes a match-filtered result set. For plotting, rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
         "",
         markdown_table_block(
             [["Field", "Rows", "Source families", "Median D", "Median N"]]

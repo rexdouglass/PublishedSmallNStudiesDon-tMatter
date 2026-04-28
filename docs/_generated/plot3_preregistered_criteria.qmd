@@ -2,7 +2,7 @@ Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/deriv
 
 These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates. Under the relaxed rule, a source may expose multiple planned preregistered results per paper/project, but the plotted layer uses a median collapse when that within-paper result set is explicit.
 
-Across the currently named Plot 3 source families, `197,792` / `217,303` considered rows already have local D/N encoding somewhere in the project, and `323` rows enter the preregistered-results plot after the gates are applied.
+Across the currently named Plot 3 source families, `197,792` / `217,303` considered rows already have local D/N encoding somewhere in the project, and `293` rows enter the preregistered-results plot after the gates are applied.
 
 Source-table column criteria:
 
@@ -25,10 +25,10 @@ Source-table column criteria:
 | van den Akker matched-result medians [@vanDenAkkerSelectiveHypothesis2023] | 193 | 193 | 193 | 126 | 193 | 125 |
 | Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 93 | 93 | 93 | 89 | 93 | 89 |
 | SCORE/COS preregistration-indicated papers [@tyner2026] | 245 | 245 | 245 | 34 | 245 | 34 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 32 |
 | RPCB Registered Report replication effects [@errington2021] | 188 | 188 | 188 | 159 | 188 | 23 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | 12 | 12 | 12 | 12 | 12 | 12 |
-| PSA-CR001 pooled preregistered rows [@dorison2022] | 4 | 4 | 4 | 4 | 4 | 4 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 16 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | 12 | 12 | 12 | 12 | 12 | 1 |
+| PSA-CR001 pooled preregistered rows [@dorison2022] | 4 | 4 | 4 | 4 | 4 | 1 |
 | ManyBabies 1 bilingual IDS pooled row [@byersHeinlein2021manybabiesBilingual] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyBabies 1 IDS pooled row [@manyBabies2020Ids] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyClasses 1 feedback pooled row [@fyfe2021manyclasses1] | 1 | 1 | 1 | 1 | 1 | 1 |

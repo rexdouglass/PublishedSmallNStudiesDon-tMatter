@@ -342,7 +342,7 @@ The source-family audit is now centralized in Section 3.3 and in [plot2_publishe
 
 # Plot 3 --- Preregistered Results
 
-Plot 3 is the preregistered-results comparison layer, not a registry layer. Under the relaxed rule, "confirmatory" means the result is inside a plan written before the result was known. A paper no longer needs a single main-result selector if the local source identifies multiple preregistered hypothesis results; those planned results are collapsed to a paper/project median before plotting when the source exposes a matched result set.
+Plot 3 is the preregistered-results comparison layer, not a registry layer. Under the relaxed rule, "confirmatory" means the result is inside a plan written before the result was known. A paper no longer needs a single main-result selector if the local source identifies multiple preregistered hypothesis results; those planned results are collapsed to one median dot per paper/project before plotting when the source exposes a matched result set.
 
 ## Figure
 
@@ -350,7 +350,7 @@ Plot 3 is the preregistered-results comparison layer, not a registry layer. Unde
 
 ## Registry and Table-Test Comparators
 
-Figure 3 is restricted to preregistered confirmatory result rows or paper/project medians of such rows: the underlying statistic must map to a precommitted hypothesis/result and have recoverable `D` and `N`. The comparator panels below deliberately show large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
+Figure 3 is restricted to one dot per paper/project: either a single preregistered confirmatory result or a median of multiple matched planned-result rows. The underlying statistic must map to a precommitted hypothesis/result and have recoverable `D` and `N`. The comparator panels below deliberately show large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
 
 - **ClinicalTrials.gov registry-result comparator:** `7,722` trial-level registry-result rows from the local finer-grained CT.gov efficacy extraction. These are collapsed registry rows with `D/N` derived from registry p-values and enrollment-like `N`, not locked article-level confirmatory analyses.
 - **Brodeur preregistered/PAP economics table tests:** `3,724` extracted economics table-test rows from papers flagged as preregistered, having a pre-analysis plan, or having PAP power information. The flags are paper/PAP-level evidence, while the plotted rows are individual published coefficients/tests.
@@ -374,7 +374,7 @@ Plot 3 should include a source family when:
 - the row family represents **planned preregistered results** rather than post hoc exploratory findings,
 - `D` and `N` are recoverable or already encoded at the result level,
 - the source is public and locally auditable,
-- the unit is a preregistered hypothesis/result row or a median collapse of multiple matched planned-result rows from the same paper/project,
+- the plotted unit is one paper/project dot: either a preregistered hypothesis/result row or a median collapse of multiple matched planned-result rows from the same paper/project,
 - and the source does not merely say "this paper was preregistered" while leaving the plotted statistic unlinked to the preregistered plan.
 
 That is why mere clinical-trial registration is not enough for this layer. Registration can still be useful as a comparator, but it is not the same thing as an analytically preregistered confirmatory result.
