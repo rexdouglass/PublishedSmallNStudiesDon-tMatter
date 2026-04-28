@@ -77,10 +77,12 @@ COMPARE_OUTCOME_ROWS = ROOT / "data" / "derived" / "corpus_candidates" / "compar
 COMPARE_TRIALS = ROOT / "data" / "raw" / "corpus_candidates" / "compare_trials" / "compare_trials.csv"
 PROTZKO_PROMOTED = HARVEST_PROMOTED_DIR / "protzko_nhb_pairs__promoted_pairs.csv"
 PREREG_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_results.csv"
+PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitivity_sidecar_rows.csv"
 ALL_SOURCE_DN_ROWS = DATASET_DERIVED_DIR / "plot4_all_source_dn_rows.csv"
 PLOT1_PAIR_DETAILS = DATASET_DERIVED_DIR / "plot1_replication_pair_details.csv"
 PLOT2_PAPER_DETAILS = DATASET_DERIVED_DIR / "plot2_published_paper_details.csv"
 PREREG_FIG = FIG_DIR / "plot3_preregistered_d_vs_n.png"
+PREREG_SENSITIVITY_FIG = FIG_DIR / "plot3_preregistered_sensitivity_sidecar.png"
 ALL_SOURCE_FIG = FIG_DIR / "plot4_all_source_dn_dump.png"
 
 Z_05 = 1.959963984540054
@@ -1451,6 +1453,105 @@ def normalize_preregistered_results() -> pd.DataFrame:
     return df
 
 
+def normalize_preregistered_sensitivity_sidecar_rows() -> pd.DataFrame:
+    """Rows that are preregistered-like but outside the strict Plot 3 gate."""
+    rows: list[dict[str, object]] = []
+
+    if PUBLISHED_PAPERS.exists():
+        published = pd.read_csv(PUBLISHED_PAPERS)
+        ctgov = published.loc[
+            published["source_corpus"].eq("ctgov_finer_grained_kg")
+            & (numeric_series(published["D_median"]) > 0)
+            & (numeric_series(published["N_median"]) > 0)
+        ].copy()
+        ctgov = ctgov.sort_values("unit_id", kind="stable").reset_index(drop=True)
+        for idx, row in ctgov.iterrows():
+            unit_id = safe_text(row.get("unit_id")) or f"ctgov_{idx + 1}"
+            rows.append(
+                {
+                    "point_id": f"ctgov_registry_trial_{idx + 1:05d}",
+                    "plot_name": "Plot 3 sensitivity",
+                    "source_layer": "registered_or_preregistered_sidecar",
+                    "source_family": "ClinicalTrials.gov registry-result D/N comparator",
+                    "source_label": "ClinicalTrials.gov registry-result D/N comparator",
+                    "citation_key": "du2024",
+                    "row_unit": "registry_trial_median",
+                    "unit_id": unit_id,
+                    "row_label": safe_text(row.get("title")) or unit_id,
+                    "D": float(row["D_median"]),
+                    "N": float(row["N_median"]),
+                    "support_or_significance": "registry p-value proxy",
+                    "source_file": str(PUBLISHED_PAPERS.relative_to(ROOT)),
+                    "source_row_number": idx + 1,
+                    "admission_reason": "registered registry-result D/N sidecar; excluded from strict Plot 3 because it is registry evidence rather than a published analytic preregistration row",
+                }
+            )
+
+    if CANDIDATE_ROWS.exists():
+        try:
+            candidate_rows = pd.read_csv(CANDIDATE_ROWS, low_memory=False)
+        except Exception:
+            candidate_rows = pd.DataFrame()
+        brodeur = candidate_rows.loc[candidate_rows.get("source_corpus", pd.Series(dtype=object)).eq("economics_brodeur_2024")].copy()
+        if not brodeur.empty:
+            notes = brodeur.get("notes", pd.Series("", index=brodeur.index)).fillna("").astype(str)
+            prereg_flag = notes.str.extract(r"prereg=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+            pap_flag = notes.str.extract(r"preanalysisplan=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+            pap_power_flag = notes.str.extract(r"pap_power=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+            truthy = {"1", "1.0", "true", "yes"}
+            flagged = prereg_flag.isin(truthy) | pap_flag.isin(truthy) | pap_power_flag.isin(truthy)
+            d_values = numeric_series(brodeur.get("abs_D", brodeur.get("D", pd.Series(index=brodeur.index)))).abs()
+            n_values = numeric_series(brodeur.get("N", pd.Series(index=brodeur.index)))
+            brodeur = brodeur.loc[flagged & (d_values > 0) & (n_values > 0)].copy()
+            brodeur["D_plot"] = d_values.loc[brodeur.index]
+            brodeur["N_plot"] = n_values.loc[brodeur.index]
+            brodeur["prereg_flag"] = prereg_flag.loc[brodeur.index]
+            brodeur["preanalysisplan_flag"] = pap_flag.loc[brodeur.index]
+            brodeur["pap_power_flag"] = pap_power_flag.loc[brodeur.index]
+            brodeur = brodeur.sort_values(["paper_id", "row_id"], kind="stable").reset_index(drop=True)
+            for idx, row in brodeur.iterrows():
+                row_id = safe_text(row.get("row_id")) or f"brodeur_{idx + 1}"
+                rows.append(
+                    {
+                        "point_id": f"brodeur_prereg_pap_table_test_{idx + 1:05d}",
+                        "plot_name": "Plot 3 sensitivity",
+                        "source_layer": "registered_or_preregistered_sidecar",
+                        "source_family": "Brodeur et al. 2024 preregistered/PAP economics table tests",
+                        "source_label": "Brodeur preregistered/PAP economics table tests",
+                        "citation_key": "brodeur2020",
+                        "row_unit": "preregistered_or_pap_extracted_table_test",
+                        "unit_id": row_id,
+                        "row_label": safe_text(row.get("title")) or safe_text(row.get("paper_id")) or row_id,
+                        "D": float(row["D_plot"]),
+                        "N": float(row["N_plot"]),
+                        "support_or_significance": "published table-test statistic",
+                        "source_file": str(CANDIDATE_ROWS.relative_to(ROOT)),
+                        "source_row_number": idx + 1,
+                        "admission_reason": (
+                            "preregistration/PAP-flagged economics table-test sidecar; excluded from strict Plot 3 "
+                            "because no focal/main-result selector identifies a confirmatory row per paper"
+                        ),
+                        "prereg_flag": safe_text(row.get("prereg_flag")),
+                        "preanalysisplan_flag": safe_text(row.get("preanalysisplan_flag")),
+                        "pap_power_flag": safe_text(row.get("pap_power_flag")),
+                    }
+                )
+
+    df = pd.DataFrame(rows)
+    if df.empty:
+        df.to_csv(PREREG_SENSITIVITY_RESULTS, index=False)
+        return df
+    df["D"] = numeric_series(df["D"]).abs()
+    df["N"] = numeric_series(df["N"])
+    df = df[(df["D"] > 0) & (df["N"] > 0)].copy()
+    df["log10_N"] = np.log10(df["N"])
+    df["log10_D"] = np.log10(df["D"])
+    df["two_sample_p05_boundary_D"] = 2 * Z_05 / np.sqrt(df["N"])
+    df["above_two_sample_p05_curve"] = df["D"] >= df["two_sample_p05_boundary_D"]
+    df.to_csv(PREREG_SENSITIVITY_RESULTS, index=False)
+    return df
+
+
 def normalize_staged_harvest_dn_rows(live_pair_ids: set[str]) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
     for path in sorted(HARVEST_STAGED_DIR.glob("*.csv")):
@@ -2131,6 +2232,195 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     }
 
 
+def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | int]:
+    df = normalize_preregistered_sensitivity_sidecar_rows()
+    colors = {
+        "ClinicalTrials.gov registry-result D/N comparator": "#2f6f9f",
+        "Brodeur et al. 2024 preregistered/PAP economics table tests": "#b86b2b",
+    }
+    markers = {
+        "ClinicalTrials.gov registry-result D/N comparator": "o",
+        "Brodeur et al. 2024 preregistered/PAP economics table tests": "^",
+    }
+
+    if df.empty:
+        fig, ax = plt.subplots(figsize=(9, 5), dpi=180)
+        ax.text(0.5, 0.5, "No sensitivity sidecar rows available", ha="center", va="center")
+        ax.axis("off")
+        fig.savefig(out_path, bbox_inches="tight")
+        plt.close(fig)
+        return {
+            "n_rows": 0,
+            "n_sources": 0,
+            "median_d": float("nan"),
+            "median_n": float("nan"),
+            "pct_above_p10": float("nan"),
+        }
+
+    x_min = max(1.0, 10 ** math.floor(math.log10(float(df["N"].min()) * 0.8)))
+    x_max = min(10 ** math.ceil(math.log10(float(df["N"].max()) * 1.15)), 10_000_000.0)
+    y_min = max(10 ** math.floor(math.log10(float(df["D"].min()) * 0.8)), 0.00001)
+    y_max = min(max(10 ** math.ceil(math.log10(float(df["D"].max()) * 1.1)), 3.0), 20.0)
+    xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
+
+    fig = plt.figure(figsize=(10.5, 8.7), dpi=180)
+    gs = fig.add_gridspec(2, 1, height_ratios=[5.1, 1.45], hspace=0.32)
+    ax = fig.add_subplot(gs[0, 0])
+    ax_hist = fig.add_subplot(gs[1, 0])
+
+    boundary_05 = 2 * Z_05 / np.sqrt(xs)
+    boundary_10 = 2 * 1.6448536269514722 / np.sqrt(xs)
+    ax.fill_between(xs, boundary_05, y_max, color="#e8f5ee", alpha=0.34, zorder=0)
+    ax.fill_between(xs, y_min, boundary_05, color="#fceaea", alpha=0.27, zorder=0)
+    ax.plot(xs, boundary_05, color="#202020", lw=1.7, linestyle="--", zorder=1)
+    ax.plot(xs, boundary_10, color="#606060", lw=1.25, linestyle=":", zorder=1)
+
+    medians = (
+        df.groupby("source_family", sort=False)
+        .agg(
+            source_label=("source_label", "first"),
+            median_N=("N", "median"),
+            median_D=("D", "median"),
+            n_rows=("D", "size"),
+        )
+        .reset_index()
+    )
+    for source_family, group in df.groupby("source_family", sort=False):
+        color = colors.get(source_family, "#444444")
+        ax.scatter(
+            group["N"],
+            group["D"],
+            s=9 if "ClinicalTrials.gov" in source_family else 13,
+            marker=markers.get(source_family, "o"),
+            color=color,
+            edgecolors="none",
+            alpha=0.24 if "ClinicalTrials.gov" in source_family else 0.32,
+            rasterized=True,
+            zorder=3,
+        )
+
+    for row in medians.itertuples(index=False):
+        color = colors.get(row.source_family, "#444444")
+        ax.scatter(
+            row.median_N,
+            row.median_D,
+            s=140,
+            marker=markers.get(row.source_family, "o"),
+            facecolors="white",
+            edgecolors=color,
+            linewidths=2.0,
+            zorder=5,
+        )
+
+    ax.text(
+        0.03,
+        0.04,
+        (
+            f"{len(df):,} registered/preregistered-like sidecar rows\n"
+            f"median |D| = {df['D'].median():.2f}; median N = {df['N'].median():,.0f}\n"
+            "Not part of the strict Plot 3 confirmatory-result gate"
+        ),
+        transform=ax.transAxes,
+        fontsize=8.7,
+        color="#1a1a1a",
+        bbox={"boxstyle": "round,pad=0.35", "facecolor": "white", "edgecolor": "#d8e3df", "alpha": 0.92},
+        zorder=6,
+    )
+    for z, label, x_divisor, y_multiplier in [
+        (Z_05, "p=.05", 2.8, 1.08),
+        (1.6448536269514722, "p=.10", 4.2, 0.9),
+    ]:
+        x_label = x_max / x_divisor
+        y_label = max(y_min * 1.2, 2 * z / np.sqrt(x_label) * y_multiplier)
+        ax.text(
+            x_label,
+            y_label,
+            label,
+            color="#333333",
+            fontsize=8.8,
+            ha="left",
+            va="bottom",
+            rotation=-25,
+            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.72, "pad": 0.3},
+            zorder=8,
+        )
+
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(y_min, y_max)
+    ax.set_xlabel("Sample size N (log scale)")
+    ax.set_ylabel("Effect size magnitude D (log scale)")
+    ax.set_title("Registered / Preregistered-Like Sidecar Rows", fontsize=15, fontweight="bold", pad=22)
+    ax.grid(True, which="major", alpha=0.14, linestyle=":")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.legend(
+        handles=[
+            Line2D(
+                [0],
+                [0],
+                marker=markers.get(row.source_family, "o"),
+                color="none",
+                markerfacecolor=colors.get(row.source_family, "#444444"),
+                markeredgecolor="none",
+                markersize=7,
+                alpha=0.78,
+                label=f"{safe_text(row.source_label)} (n={fmt_int(row.n_rows)})",
+            )
+            for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False)
+        ],
+        loc="upper right",
+        frameon=False,
+        fontsize=8.3,
+    )
+
+    linear_d_max = 3.0
+    linear_bin_width = 0.1
+    linear_bins = np.arange(0, linear_d_max + linear_bin_width, linear_bin_width)
+    for source_family, group in df.groupby("source_family", sort=False):
+        color = colors.get(source_family, "#444444")
+        ax_hist.hist(
+            group["D"].clip(lower=0, upper=linear_d_max),
+            bins=linear_bins,
+            density=True,
+            histtype="stepfilled",
+            color=color,
+            alpha=0.18,
+        )
+        ax_hist.hist(
+            group["D"].clip(lower=0, upper=linear_d_max),
+            bins=linear_bins,
+            density=True,
+            histtype="step",
+            linewidth=1.3,
+            color=color,
+            label=safe_text(group["source_label"].iloc[0]),
+        )
+    ax_hist.set_xlim(0, linear_d_max)
+    linear_ticks = np.arange(0, linear_d_max + 0.001, 0.5)
+    linear_tick_labels = [f"{tick:g}" for tick in linear_ticks]
+    linear_tick_labels[-1] = "3+"
+    ax_hist.set_xticks(linear_ticks)
+    ax_hist.set_xticklabels(linear_tick_labels)
+    ax_hist.set_xlabel("Effect size magnitude D (linear scale, clipped at 3)")
+    ax_hist.set_ylabel("Density")
+    ax_hist.legend(frameon=False, loc="upper right", fontsize=7.8, handlelength=2.3)
+    ax_hist.grid(False)
+    for spine in ["top", "right"]:
+        ax_hist.spines[spine].set_visible(False)
+
+    fig.savefig(out_path, bbox_inches="tight")
+    plt.close(fig)
+    return {
+        "n_rows": len(df),
+        "n_sources": int(df["source_family"].nunique()),
+        "median_d": float(df["D"].median()),
+        "median_n": float(df["N"].median()),
+        "pct_above_p10": 100 * float((df["D"] >= (2 * 1.6448536269514722 / np.sqrt(df["N"]))).mean()),
+    }
+
+
 def draw_all_source_dn_dump(out_path: Path) -> dict[str, float | int]:
     prereg = normalize_preregistered_results()
     df = normalize_all_source_dn_rows(prereg)
@@ -2225,6 +2515,7 @@ def generate_figures() -> dict[str, FigureSpec]:
     draw_prior_comparison(fig4)
     pub_stats = draw_published_distribution(fig5)
     draw_preregistered_results(PREREG_FIG)
+    draw_preregistered_sensitivity_sidecar(PREREG_SENSITIVITY_FIG)
     draw_all_source_dn_dump(ALL_SOURCE_FIG)
     repl_stats = replication_stats()
 

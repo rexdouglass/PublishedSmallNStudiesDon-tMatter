@@ -348,6 +348,12 @@ Plot 3 now has a first rendered version built from the preregistered-results fil
 
 ![Preregistered confirmatory results on the same D/N scale used by the other plot layers.](_generated/figures/plot3_preregistered_d_vs_n.png)
 
+## Sensitivity Sidecar
+
+The strict Plot 3 panel excludes registry-only and table-test-only evidence. The sidecar below shows the two large local preregistered-like D/N sources that triggered the “thousands” question: ClinicalTrials.gov registry-result rows and Brodeur preregistered/pre-analysis-plan economics table tests. This is a sensitivity panel, not an expansion of the strict confirmatory-result corpus.
+
+![Registered and preregistered-like sidecar rows that have D/N locally but fail the strict Plot 3 confirmatory-result gate.](_generated/figures/plot3_preregistered_sensitivity_sidecar.png)
+
 ## Inclusion Criteria
 
 Plot 3 should include a source family when:
@@ -369,6 +375,7 @@ That is why mere clinical-trial registration is not enough for this layer. Regis
 - Schäfer/Schwarz preregistered and non-preregistered parsed paper rows: [candidate_d_n_papers.csv](../data/derived/corpus_candidates/candidate_d_n_papers.csv)
 - Source-family admission audit: [plot3_preregistered_source_catalog.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv)
 - Normalized plot rows: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_results.csv)
+- Sensitivity sidecar rows: [plot3_preregistered_sensitivity_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_sensitivity_sidecar_rows.csv)
 - Generated table fragments: [table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd](./_generated/tables/table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd) and [table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd](./_generated/tables/table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd)
 
 ## What Is Already in Hand
