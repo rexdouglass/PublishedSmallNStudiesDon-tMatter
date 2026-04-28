@@ -91,6 +91,8 @@ ALL_SOURCE_FIG = FIG_DIR / "plot4_all_source_dn_dump.png"
 
 Z_05 = 1.959963984540054
 DN_AXIS_X_CAP = 100_000.0
+DN_AXIS_Y_MIN = 0.02
+DN_AXIS_Y_MAX = 5.0
 
 
 @dataclass(frozen=True)
@@ -1676,15 +1678,9 @@ def compact_axis_label(value: float) -> str:
 
 def sidecar_log_axis_bounds(df: pd.DataFrame, x_cap: float) -> tuple[float, float, float, float]:
     x_min_data = float(df["N"].min())
-    y_min_data = float(df["D"].min())
-    y_max_data = float(df["D"].max())
     x_min = 10.0 if x_min_data >= 10 else 1.0
     x_max = x_cap
-    y_min = min(0.02, 10 ** math.floor(math.log10(max(y_min_data * 0.8, 1e-8))))
-    y_min = max(y_min, 1e-5)
-    y_max = max(5.0, 10 ** math.ceil(math.log10(y_max_data * 1.1)))
-    y_max = min(y_max, 20.0)
-    return x_min, x_max, y_min, y_max
+    return x_min, x_max, DN_AXIS_Y_MIN, DN_AXIS_Y_MAX
 
 
 def apply_general_results_axes(
@@ -2236,8 +2232,8 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
 
     x_min_plot = 10
     x_max_plot = DN_AXIS_X_CAP
-    y_min_plot = 0.005
-    y_max_plot = 3.0
+    y_min_plot = DN_AXIS_Y_MIN
+    y_max_plot = DN_AXIS_Y_MAX
     xs = np.logspace(np.log10(x_min_plot), np.log10(x_max_plot), 400)
 
     fig = plt.figure(figsize=(10.5, 9.3), dpi=180)
@@ -2326,12 +2322,12 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     ax.set_xlim(x_min_plot, x_max_plot)
     ax.set_ylim(y_min_plot, y_max_plot)
     x_ticks = [10, 100, 1_000, 10_000, 100_000]
-    y_ticks = [0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2]
+    y_ticks = [0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5]
     ax.xaxis.set_major_locator(FixedLocator(x_ticks))
     ax.xaxis.set_major_formatter(FixedFormatter(["10", "100", "1k", "10k", "100k"]))
     ax.xaxis.set_minor_formatter(NullFormatter())
     ax.yaxis.set_major_locator(FixedLocator(y_ticks))
-    ax.yaxis.set_major_formatter(FixedFormatter(["0.005", "0.01", "0.02", "0.05", "0.1", "0.2", "0.5", "1", "2"]))
+    ax.yaxis.set_major_formatter(FixedFormatter(["0.02", "0.05", "0.1", "0.2", "0.5", "1", "2", "5"]))
     ax.yaxis.set_minor_formatter(NullFormatter())
     ax.set_xlabel("Sample size N (result row, log scale)")
     ax.set_ylabel("Effect size magnitude D (log scale)")
@@ -2400,7 +2396,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         -0.105,
         (
             "Both panels use the same preregistered confirmatory result rows; "
-            "the x-axis is capped at 100k for comparability, while statistics use all rows."
+            "axes are capped at N=100k and D=0.02-5 for comparability; statistics use all rows."
         ),
         transform=ax.transAxes,
         fontsize=8.8,
@@ -2634,7 +2630,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
         -0.105,
         (
             "Both panels use D/N rows that fail the strict Figure 3 gate; "
-            "the x-axis is capped at 100k for comparability, while statistics use all rows."
+            "axes are capped at N=100k and D=0.02-5 for comparability; statistics use all rows."
         ),
         transform=ax.transAxes,
         fontsize=8.8,
@@ -2796,7 +2792,7 @@ def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | i
         -0.105,
         (
             "One phase-2+ randomized primary registry outcome per trial; "
-            "the x-axis is capped at 100k for comparability, while statistics use all rows."
+            "axes are capped at N=100k and D=0.02-5 for comparability; statistics use all rows."
         ),
         transform=ax.transAxes,
         fontsize=8.8,
