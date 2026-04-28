@@ -970,6 +970,23 @@ def fmt_number(value: object, digits: int = 2) -> str:
     return f"{float(value):,.{digits}f}"
 
 
+def groups_by_descending_count(df: pd.DataFrame, column: str) -> list[tuple[object, pd.DataFrame]]:
+    counts = df[column].value_counts(dropna=False)
+    groups: list[tuple[object, pd.DataFrame]] = []
+    for value in counts.index:
+        mask = df[column].isna() if pd.isna(value) else df[column].eq(value)
+        groups.append((value, df.loc[mask].copy()))
+    return groups
+
+
+def point_alpha_for_count(count: int, base: float = 0.64) -> float:
+    if count >= 1000:
+        return min(base, 0.34)
+    if count >= 100:
+        return min(base, 0.50)
+    return min(base, 0.68)
+
+
 def build_tess_study_index() -> pd.DataFrame:
     """Scrape the public TESS past-studies index into a stable extraction queue."""
     url = "https://tessexperiments.org/paststudies"
@@ -3384,6 +3401,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "sociology and criminology": "#8b6f21",
         "business": "#c44a1e",
         "preclinical biology": "#6f6a1f",
+        "clinical medicine": "#2f6f9f",
         "mixed social/behavioral science": "#555555",
     }
     markers = {
@@ -3394,6 +3412,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "sociology and criminology": "P",
         "business": "X",
         "preclinical biology": "*",
+        "clinical medicine": "o",
         "mixed social/behavioral science": "v",
     }
 
@@ -3408,7 +3427,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     ax = fig.add_subplot(gs[0, 0])
     ax_hist = fig.add_subplot(gs[1, 0])
 
-    for field, group in df.groupby("field", sort=False):
+    for field, group in groups_by_descending_count(df, "field"):
         color = colors.get(field, "#444444")
         ax.scatter(
             group["N"],
@@ -3417,7 +3436,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
             marker=markers.get(field, "o"),
             color=color,
             edgecolors="none",
-            alpha=0.78,
+            alpha=point_alpha_for_count(len(group), base=0.62),
             rasterized=True,
             zorder=3,
         )
@@ -3439,7 +3458,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         .reset_index()
     )
 
-    for row in medians.itertuples(index=False):
+    for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False):
         color = colors.get(row.field, "#444444")
         marker = markers.get(row.field, "o")
         ax.scatter(
@@ -3532,7 +3551,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
                 markerfacecolor=color,
                 markeredgecolor="none",
                 markersize=8,
-                alpha=0.82,
+                alpha=point_alpha_for_count(int(row.n_rows), base=0.78),
                 label=f"{safe_text(row.field_label)} (n={fmt_int(row.n_rows)}, {fmt_int(row.n_sources)} source families)",
             )
         )
@@ -3694,7 +3713,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
         )
         .reset_index()
     )
-    for source_family, group in df.groupby("source_family", sort=False):
+    for source_family, group in groups_by_descending_count(df, "source_family"):
         color = colors.get(source_family, "#444444")
         ax.scatter(
             group["N"],
@@ -3703,12 +3722,12 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
             marker=markers.get(source_family, "o"),
             color=color,
             edgecolors="none",
-            alpha=0.22 if "ClinicalTrials.gov" in source_family else 0.30,
+            alpha=0.18 if "ClinicalTrials.gov" in source_family else point_alpha_for_count(len(group), base=0.42),
             rasterized=True,
             zorder=3,
         )
 
-    for row in medians.itertuples(index=False):
+    for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False):
         color = colors.get(row.source_family, "#444444")
         ax.scatter(
             row.median_N,
@@ -3808,7 +3827,7 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
     linear_d_max = 3.0
     linear_bin_width = 0.1
     linear_bins = np.arange(0, linear_d_max + linear_bin_width, linear_bin_width)
-    for source_family, group in df.groupby("source_family", sort=False):
+    for source_family, group in groups_by_descending_count(df, "source_family"):
         color = colors.get(source_family, "#444444")
         ax_hist.hist(
             group["D"].clip(lower=0, upper=linear_d_max),
@@ -4210,7 +4229,10 @@ def draw_all_source_dn_dump(out_path: Path) -> dict[str, float | int]:
     ax.plot(xs, boundary_05, color="#1f1f1f", lw=1.5, label="two-sample p < .05 boundary", zorder=1)
     ax.plot(xs, boundary_10, color="#606060", lw=1.0, linestyle="--", label="two-sample p < .10 boundary", zorder=1)
 
-    for layer, (label, color, size, alpha) in layer_specs.items():
+    layer_counts = df["source_layer"].value_counts()
+    ordered_layers = sorted(layer_specs, key=lambda layer: layer_counts.get(layer, 0), reverse=True)
+    for order_index, layer in enumerate(ordered_layers):
+        label, color, size, alpha = layer_specs[layer]
         group = df[df["source_layer"].eq(layer)]
         if group.empty:
             continue
@@ -4223,7 +4245,7 @@ def draw_all_source_dn_dump(out_path: Path) -> dict[str, float | int]:
             linewidths=0,
             rasterized=True,
             label=f"{label} ({len(group):,})",
-            zorder=2 if "published" in layer else 3,
+            zorder=2 + order_index * 0.05,
         )
 
     median_d = float(df["D"].median())
