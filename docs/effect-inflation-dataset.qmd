@@ -348,13 +348,18 @@ Plot 3 now has a first rendered version built from the preregistered-results fil
 
 ![Preregistered confirmatory results on the same D/N scale used by the other plot layers.](_generated/figures/plot3_preregistered_d_vs_n.png)
 
-## Sensitivity Sidecar
+## Registry and Table-Test Comparators
 
-The strict Plot 3 panel excludes registry-only and table-test-only evidence. The sidecar below shows the two large local preregistered-like D/N sources that triggered the “thousands” question: ClinicalTrials.gov registry-result rows and Brodeur preregistered/pre-analysis-plan economics table tests. This is a sensitivity panel, not an expansion of the strict confirmatory-result corpus.
+Figure 3 is restricted to preregistered confirmatory result rows: one row should correspond to a precommitted hypothesis/result with recoverable `D` and `N`. The comparator panel below deliberately shows two large local sources that are close enough to inspect but not comparable enough to enter Figure 3.
+
+- **ClinicalTrials.gov registry-result comparator:** `7,722` trial-level registry-result rows from the local finer-grained CT.gov efficacy extraction. These are collapsed registry rows with `D/N` derived from registry p-values and enrollment-like `N`, not locked article-level confirmatory analyses.
+- **Brodeur preregistered/PAP economics table tests:** `3,724` extracted economics table-test rows from papers flagged as preregistered, having a pre-analysis plan, or having PAP power information. The flags are paper/PAP-level evidence, while the plotted rows are individual published coefficients/tests.
+
+They stay out of Figure 3 for opposite reasons. CT.gov fails the analytic-prespecification gate: a registered primary outcome is not the same as a locked statistical analysis plan, and the local effect is a p-value/enrollment proxy. Brodeur fails the row-unit gate: the data are many table tests per paper, with no source-provided focal hypothesis selector proving that each coefficient is the prespecified confirmatory test. The point of this panel is therefore diagnostic, not inferential: it shows what happens when we loosen the Figure 3 row definition to include preregistered-like registry and table-test evidence.
 
 ![Registered and preregistered-like sidecar rows that have D/N locally but fail the strict Plot 3 confirmatory-result gate.](_generated/figures/plot3_preregistered_sensitivity_sidecar.png)
 
-The cleanest ClinicalTrials.gov subset we can build from the local files is stricter but still not strict-Plot-3 evidence: phase-2+ randomized interventional trials with exactly one locally eligible primary two-group outcome row, plotted one row per trial. It remains a sidecar because `D` is still a registry p-value/enrollment proxy and the row has not been matched to a locked protocol or SAP analysis.
+The cleaner ClinicalTrials.gov panel below applies the strongest fully local rule we can support right now: phase-2+ randomized interventional trials with exactly one locally eligible primary two-group outcome row, plotted one row per trial. This fixes much of the multiplicity problem, but it still remains outside Figure 3 because `D` is still a registry p-value/enrollment proxy and the row has not been matched to a locked protocol or SAP analysis.
 
 ![Cleaner ClinicalTrials.gov sub-sidecar: phase-2+ randomized trials with one locally eligible primary registry outcome per trial.](_generated/figures/plot3_ctgov_phase2plus_primary_randomized_sidecar.png)
 
