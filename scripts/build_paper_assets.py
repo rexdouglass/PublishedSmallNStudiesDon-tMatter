@@ -83,6 +83,7 @@ PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitiv
 PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv"
 SCHEEL_QUOTE_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_scheel_quote_stat_rescue_candidates.csv"
 VANDENAKKER_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_vandenakker_first_stat_candidates.csv"
+VANDENAKKER_MEDIAN_CANDIDATES = DATASET_DERIVED_DIR / "plot3_vandenakker_matched_result_median_candidates.csv"
 RPCB_PRECLINICAL_CANDIDATES = DATASET_DERIVED_DIR / "plot3_rpcb_preclinical_paper_level_candidates.csv"
 SCORE_TEXT_CLAIM_CANDIDATES = DATASET_DERIVED_DIR / "plot3_score_text_claim_rescue_candidates.csv"
 ALL_SOURCE_DN_ROWS = DATASET_DERIVED_DIR / "plot4_all_source_dn_rows.csv"
@@ -806,6 +807,7 @@ PLOT3_CITATION_KEYS = {
     "Schäfer/Schwarz 2019 non-preregistered psychology articles": "schaefer2019meaningfulness",
     "SCORE/COS preregistration-indicated original papers": "tyner2026",
     "Allen and Mehler 2019 Registered Reports support-rate review": "allenMehler2019OpenScience",
+    "van den Akker matched preregistered-result paper medians": "vanDenAkkerSelectiveHypothesis2023",
     "van den Akker selective-hypothesis-reporting psychology corpus": "vanDenAkkerSelectiveHypothesis2023",
     "Protzko et al. 2024 High-Replicability Research project": "protzko2024highrep",
     "AACT x PubMed registered primary outcomes": "du2024",
@@ -840,6 +842,7 @@ PLOT3_DISPLAY_LABELS = {
     "Schäfer/Schwarz 2019 non-preregistered psychology articles": "Schäfer/Schwarz non-preregistered comparator",
     "SCORE/COS preregistration-indicated original papers": "SCORE/COS preregistration-indicated papers",
     "Allen and Mehler 2019 Registered Reports support-rate review": "Allen/Mehler RR support-rate review",
+    "van den Akker matched preregistered-result paper medians": "van den Akker matched-result medians",
     "van den Akker selective-hypothesis-reporting psychology corpus": "van den Akker selective-hypothesis-reporting corpus",
     "Protzko et al. 2024 High-Replicability Research project": "High-Replicability Research project",
     "AACT x PubMed registered primary outcomes": "AACT x PubMed registered primary outcomes",
@@ -892,6 +895,15 @@ def safe_text(value: object) -> str:
     if pd.isna(value):
         return ""
     return str(value).strip()
+
+
+def normalize_doi_value(value: object) -> str:
+    text = safe_text(value).lower()
+    text = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", text)
+    text = re.sub(r"^doi:\s*", "", text)
+    text = re.sub(r"^doi\.org/", "", text)
+    text = re.sub(r"^doi:", "", text)
+    return text.strip().rstrip(".")
 
 
 def fmt_int(value: object) -> str:
@@ -1159,6 +1171,25 @@ def score_text_claim_rescue_rows() -> pd.DataFrame:
     ready["_paper_id"] = ready.get("paper_id", pd.Series("", index=ready.index)).astype(str)
     ready = ready.sort_values(["_paper_id", "candidate_id"]).drop_duplicates("_paper_id", keep="first")
     return ready.drop(columns=["_paper_id"]).reset_index(drop=True)
+
+
+def vandenakker_matched_median_rows() -> pd.DataFrame:
+    """Return paper-level median rows from matched preregistered-result statistics."""
+    if not VANDENAKKER_MEDIAN_CANDIDATES.exists():
+        return pd.DataFrame()
+    rows = pd.read_csv(VANDENAKKER_MEDIAN_CANDIDATES)
+    if rows.empty or "strict_append_ready" not in rows.columns:
+        return pd.DataFrame()
+    ready = rows.loc[rows["strict_append_ready"].astype(str).str.lower().eq("true")].copy()
+    ready = ready[
+        (numeric_series(ready.get("D_candidate", pd.Series(dtype=float))) > 0)
+        & (numeric_series(ready.get("N_candidate", pd.Series(dtype=float))) > 0)
+    ].copy()
+    if ready.empty:
+        return ready
+    ready["_psp"] = numeric_series(ready.get("PSP", pd.Series(dtype=float)))
+    ready = ready.sort_values(["_psp", "candidate_id"]).drop_duplicates("_psp", keep="first")
+    return ready.drop(columns=["_psp"]).reset_index(drop=True)
 
 
 def write_qmd_with_table(path: Path, lines: list[str]) -> None:
@@ -1617,6 +1648,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
     table40 = pd.read_csv(PREREG_TABLE_40)
     table41 = pd.read_csv(PREREG_TABLE_41)
     rows: list[dict[str, object]] = []
+    included_doi_norms: set[str] = set()
 
     for _, row in table40.iterrows():
         row_number = int(row["#"])
@@ -1719,6 +1751,9 @@ def normalize_preregistered_results() -> pd.DataFrame:
         score_prereg, _, _ = score_prereg_indicated_paper_rows(published)
         for idx, row in score_prereg.iterrows():
             unit_id = safe_text(row.get("unit_id")) or f"row_{idx + 1}"
+            score_doi_norm = normalize_doi_value(row.get("DOI")) or normalize_doi_value(unit_id)
+            if score_doi_norm:
+                included_doi_norms.add(score_doi_norm)
             title = safe_text(row.get("title"))
             year = safe_text(row.get("year"))
             year_label = ""
@@ -1777,6 +1812,36 @@ def normalize_preregistered_results() -> pd.DataFrame:
                     "source_row_number": idx + 1,
                 }
             )
+
+    vandenakker_medians = vandenakker_matched_median_rows()
+    if not vandenakker_medians.empty and included_doi_norms:
+        vandenakker_medians["_doi_norm"] = vandenakker_medians.get("doi", pd.Series("", index=vandenakker_medians.index)).map(normalize_doi_value)
+        vandenakker_medians = vandenakker_medians.loc[~vandenakker_medians["_doi_norm"].isin(included_doi_norms)].copy()
+        vandenakker_medians = vandenakker_medians.drop(columns=["_doi_norm"])
+    for idx, row in vandenakker_medians.iterrows():
+        psp = safe_text(row.get("PSP")) or str(idx + 1)
+        title = safe_text(row.get("title"))
+        doi = safe_text(row.get("doi"))
+        matched_rows = safe_text(row.get("matched_result_rows"))
+        label_parts = [part for part in [title or f"PSP {psp}", f"{matched_rows} matched prereg result(s)"] if part]
+        rows.append(
+            {
+                "point_id": f"vandenakker_matched_prereg_median_{idx + 1:03d}",
+                "plot_name": "Plot 3",
+                "source_layer": "preregistered_confirmatory_result",
+                "source_family": "van den Akker matched preregistered-result paper medians",
+                "source_label": "van den Akker matched preregistered-result paper medians",
+                "citation_key": "vanDenAkkerSelectiveHypothesis2023",
+                "row_unit": "paper_median_of_matched_preregistered_result_statistics",
+                "row_label": " - ".join(label_parts),
+                "D": float(row["D_candidate"]),
+                "N": float(row["N_candidate"]),
+                "supported": "not coded",
+                "journal": safe_text(row.get("journal")),
+                "source_file": f"{VANDENAKKER_MEDIAN_CANDIDATES.relative_to(ROOT)}; DOI={doi}",
+                "source_row_number": idx + 1,
+            }
+        )
 
     df = pd.DataFrame(rows)
     df["D"] = numeric_series(df["D"]).abs()
@@ -5612,6 +5677,13 @@ def write_plot3_source_catalog() -> None:
     scheel_quote_candidates_with_n = int(scheel_quote_candidates.get("N_candidate", pd.Series(dtype=float)).notna().sum()) if not scheel_quote_candidates.empty else 0
     vandenakker_rescue_candidates = pd.read_csv(VANDENAKKER_RESCUE_CANDIDATES) if VANDENAKKER_RESCUE_CANDIDATES.exists() else pd.DataFrame()
     vandenakker_rescue_candidate_rows = len(vandenakker_rescue_candidates)
+    vandenakker_median_candidates = pd.read_csv(VANDENAKKER_MEDIAN_CANDIDATES) if VANDENAKKER_MEDIAN_CANDIDATES.exists() else pd.DataFrame()
+    vandenakker_median_ready = vandenakker_matched_median_rows()
+    vandenakker_median_candidate_rows = len(vandenakker_median_candidates)
+    vandenakker_median_ready_rows = len(vandenakker_median_ready)
+    vandenakker_median_multi_paper_rows = int(
+        (pd.to_numeric(vandenakker_median_ready.get("matched_result_rows", pd.Series(dtype=float)), errors="coerce") > 1).sum()
+    ) if not vandenakker_median_ready.empty else 0
     rpcb_preclinical_candidates = pd.read_csv(RPCB_PRECLINICAL_CANDIDATES) if RPCB_PRECLINICAL_CANDIDATES.exists() else pd.DataFrame()
     rpcb_preclinical_candidate_rows = len(rpcb_preclinical_candidates)
     score_text_candidates = pd.read_csv(SCORE_TEXT_CLAIM_CANDIDATES) if SCORE_TEXT_CLAIM_CANDIDATES.exists() else pd.DataFrame()
@@ -5620,9 +5692,30 @@ def write_plot3_source_catalog() -> None:
     score_text_ready_rows = len(score_text_ready)
     score_total_contributed = len(score_prereg) + score_text_ready_rows
     score_included_papers = set(score_prereg.get("paper_id", pd.Series(dtype=object)).dropna().astype(str))
+    score_included_dois = {
+        doi
+        for doi in (
+            score_prereg.get("DOI", pd.Series(dtype=object)).map(normalize_doi_value)
+            if not score_prereg.empty
+            else pd.Series(dtype=object)
+        )
+        if doi
+    }
     if not score_text_ready.empty:
         score_included_papers.update(score_text_ready.get("paper_id", pd.Series(dtype=object)).dropna().astype(str))
     score_left_out = max(score_prereg_count - len(score_included_papers), 0)
+    if not vandenakker_median_ready.empty and score_included_dois:
+        vandenakker_median_contributed = vandenakker_median_ready.copy()
+        vandenakker_median_contributed["_doi_norm"] = vandenakker_median_contributed.get(
+            "doi", pd.Series("", index=vandenakker_median_contributed.index)
+        ).map(normalize_doi_value)
+        vandenakker_median_contributed = vandenakker_median_contributed.loc[
+            ~vandenakker_median_contributed["_doi_norm"].isin(score_included_dois)
+        ].copy()
+    else:
+        vandenakker_median_contributed = vandenakker_median_ready.copy()
+    vandenakker_median_contributed_rows = len(vandenakker_median_contributed)
+    vandenakker_median_score_duplicates = vandenakker_median_ready_rows - vandenakker_median_contributed_rows
 
     if COMPARE_OUTCOME_ROWS.exists():
         compare_outcomes = pd.read_csv(COMPARE_OUTCOME_ROWS)
@@ -6115,21 +6208,21 @@ def write_plot3_source_catalog() -> None:
             },
             {
                 "plot_name": "Plot 3",
-                "plot_inclusion_status": "not_included",
-                "source_label": "van den Akker preregistration-in-practice matched hypothesis corpus",
-                "corpus_what_it_is": "Preregistration-in-practice corpus that reportedly matches preregistered hypotheses to the first corresponding published statistical result.",
-                "what_it_is_why_possible_candidate": "This corpus looked high-yield because the public OSF project exposes a 193-row preregistered-versus-non-preregistered publication table, parsed original-statistic spreadsheets, and selective-hypothesis-reporting coding sheets that can drive a later row-rescue pass.",
-                "confirmed_fields": f"Verified from the OSF API/downloads: `PvNP Data.xlsx` has 193 publication rows, `Original Stats.xlsx` has 640 parsed original-stat rows across 180 PSP IDs, `Control Stats.xlsx` holds the matched control-stat sample, and `Data SHR.xlsx` exposes hypothesis/reporting match fields. The local rescue parser now produces {fmt_int(vandenakker_rescue_candidate_rows)} first-convertible-statistic PSP candidates with D and N, all marked staged because the focal-hypothesis selector, relevance flags, metric conversion, and DOI deduplication are not yet strict-row audited.",
-                "backing_file": f"https://osf.io/pqnvr/; https://osf.io/sujfa/; https://osf.io/xzcnb/; {VANDENAKKER_RESCUE_CANDIDATES.relative_to(ROOT)}",
+                "plot_inclusion_status": "included",
+                "source_label": "van den Akker matched preregistered-result paper medians",
+                "corpus_what_it_is": "Preregistration-in-practice / selective-hypothesis-reporting workbook collapsed to paper medians of publication results explicitly coded as matching preregistered hypotheses.",
+                "what_it_is_why_possible_candidate": "This corpus became admissible under the updated row rule because `Data_SHR.xlsx` marks publication result texts that match preregistered hypotheses, and `PvNP_Data.xlsx` supplies publication-level N for the 193-study preregistered-vs-non-preregistered sample. The strict plotted unit is now one paper median, not one arbitrary extracted statistic.",
+                "confirmed_fields": f"Verified from local OSF downloads: `PvNP Data.xlsx` has 193 publication rows with N; `Data SHR.xlsx` exposes hypothesis/reporting match fields; the matched-result parser finds {fmt_int(vandenakker_median_candidate_rows)} paper-level median D/N candidates, of which {fmt_int(vandenakker_median_contributed_rows)} enter strict Plot 3 after {fmt_int(vandenakker_median_score_duplicates)} DOI duplicate(s) already covered by SCORE are withheld. {fmt_int(vandenakker_median_multi_paper_rows)} included papers have more than one matched preregistered result and are collapsed by median D. The older broad `Original Stats.xlsx` parser still yields {fmt_int(vandenakker_rescue_candidate_rows)} first-convertible-stat candidates but remains staged because it is not match-filtered.",
+                "backing_file": f"{VANDENAKKER_MEDIAN_CANDIDATES.relative_to(ROOT)}; data/raw/corpus_candidates/vandenakker_pqnvr/Data_SHR.xlsx; data/raw/corpus_candidates/vandenakker_pqnvr/PvNP_Data.xlsx",
                 "rows_considered": 193,
                 "rows_preregistered_equivalent": 193,
                 "rows_with_public_local_backing": 193,
-                "rows_with_extractable_DN": vandenakker_rescue_candidate_rows,
+                "rows_with_extractable_DN": vandenakker_median_ready_rows,
                 "rows_with_non_retracted_source": 193,
-                "rows_contributed": 0,
-                "rows_left_out_within_source": 193,
-                "why": "not included yet because the public files need focal-row filtering, statistic parsing, and duplicate overlap checks before any strict append",
-                "why_in_out": f"Not included yet: the OSF payload is real and high-yield, and the local parser now finds {fmt_int(vandenakker_rescue_candidate_rows)} D/N candidates. They are still not automatically the first preregistered confirmatory hypothesis, so promotion still needs field verification, t/F/r-to-D conversion checks, and DOI-level deduplication against existing Schäfer/Schwarz, Scheel, SCORE, PSA, ManyBabies, and ManyClasses rows.",
+                "rows_contributed": vandenakker_median_contributed_rows,
+                "rows_left_out_within_source": 193 - vandenakker_median_contributed_rows,
+                "why": "included under the paper-median policy because each contributing statistic is source-coded as a matched preregistered result and the plotted unit is one median row per paper",
+                "why_in_out": f"Included: {fmt_int(vandenakker_median_contributed_rows)} paper medians enter. The median collapse allows multiple preregistered hypothesis results within a paper while preventing within-paper row inflation. The remaining {fmt_int(193 - vandenakker_median_contributed_rows)} PvNP papers are either not parseable by the matched-result D/N parser or already covered by another strict source.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6573,8 +6666,8 @@ def write_plot3_source_catalog() -> None:
         "",
         "### What Is Still Missing",
         "",
-        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, and SCORE preregistration-indicated paper-level rows.",
-        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, RPCB Registered Report replication effects, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, the van den Akker preregistration-in-practice corpus, and the larger van den Akker selective-hypothesis-reporting corpus.",
+        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, SCORE preregistration-indicated paper-level rows, and van den Akker matched preregistered-result paper medians.",
+        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, RPCB Registered Report replication effects, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
         "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.",
         "- The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.",
     ]

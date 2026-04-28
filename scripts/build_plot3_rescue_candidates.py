@@ -22,6 +22,7 @@ SCHEEL_TSV = ROOT / "data" / "raw" / "corpus_candidates" / "scheel_2021" / "posi
 VDA_RAW = ROOT / "data" / "raw" / "corpus_candidates" / "vandenakker_pqnvr"
 VDA_STATS = VDA_RAW / "Original_Stats.xlsx"
 VDA_PVNP = VDA_RAW / "PvNP_Data.xlsx"
+VDA_SHR = VDA_RAW / "Data_SHR.xlsx"
 RPCB_EFFECTS = ROOT / "data" / "raw" / "corpus_candidates" / "rpcb" / "RP_CB Final Analysis - Effect level data.csv"
 SCORE_RAW = ROOT / "data" / "raw" / "corpus_candidates" / "score"
 SCORE_EXTRACTED_CLAIMS_GZ = SCORE_RAW / "extracted_claims.csv.gz"
@@ -33,6 +34,7 @@ PUBLISHED_PAPERS = ROOT / "data" / "derived" / "corpus_candidates" / "candidate_
 
 SCHEEL_OUT = DATASET_DIR / "plot3_scheel_quote_stat_rescue_candidates.csv"
 VDA_OUT = DATASET_DIR / "plot3_vandenakker_first_stat_candidates.csv"
+VDA_MEDIAN_OUT = DATASET_DIR / "plot3_vandenakker_matched_result_median_candidates.csv"
 RPCB_OUT = DATASET_DIR / "plot3_rpcb_preclinical_paper_level_candidates.csv"
 SCORE_TEXT_OUT = DATASET_DIR / "plot3_score_text_claim_rescue_candidates.csv"
 SUMMARY_OUT = DATASET_DIR / "plot3_rescue_candidate_summary.csv"
@@ -55,6 +57,20 @@ SCORE_PHI_RE = re.compile(r"(?i)(?:\bphi\b|ϕ)\s*[=≈]\s*(?P<phi>[−-]?(?:\d+(
 SCORE_OR_RE = re.compile(r"(?i)(?:odds\s*ratio|\bOR\b)\s*[=≈]\s*(?P<or>\d+(?:\.\d+)?)")
 SCORE_N_DIGIT_RE = re.compile(r"(?i)\b(?:N|n|obs(?:ervations)?|participants|students|subjects)\s*[=:]?\s*(?P<n>\d[\d,]*)")
 SCORE_N_TRAILING_RE = re.compile(r"(?i)\b(?P<n>\d[\d,]*)\s+(?:participants|students|subjects|children|couples)\b")
+WIDE_NUMBER_RE = r"[−-]?(?:\d+(?:\.\d+)?|\.\d+)"
+VDA_D_TEXT_RE = re.compile(rf"(?i)(?:cohen[’']?s\s+)?\bdz?\s*[=≈]\s*(?P<d>{WIDE_NUMBER_RE})")
+VDA_G_TEXT_RE = re.compile(rf"(?i)(?:hedges[’']?\s+)?\bg\s*[=≈]\s*(?P<g>{WIDE_NUMBER_RE})")
+VDA_T_TEXT_RE = re.compile(rf"(?i)\bt\s*\(\s*(?P<df>\d+(?:\.\d+)?)\s*\)\s*[=≈]\s*(?P<t>{WIDE_NUMBER_RE})")
+VDA_F_TEXT_RE = re.compile(
+    rf"(?i)\bF\s*\(\s*(?P<df1>\d+(?:\.\d+)?)\s*,\s*(?P<df2>\d+(?:\.\d+)?)\s*\)\s*[=≈]\s*(?P<f>{WIDE_NUMBER_RE})"
+)
+VDA_R_TEXT_RE = re.compile(
+    rf"(?i)(?:\br\s*[=≈]\s*|\br\s*\(\s*\d+(?:\.\d+)?\s*\)\s*[=≈]\s*)(?P<r>{WIDE_NUMBER_RE})"
+)
+VDA_CHI2_TEXT_RE = re.compile(
+    rf"(?i)(?:χ|x|chi)\s*(?:\^?2|²|square)?\s*\(\s*(?P<df>\d+(?:\.\d+)?)\s*(?:,\s*N\s*=\s*(?P<n>\d+))?\s*\)\s*[=≈]\s*(?P<chi>{WIDE_NUMBER_RE})"
+)
+VDA_OR_TEXT_RE = re.compile(r"(?i)(?:odds\s*ratio|\bOR\b)\s*[=≈]\s*(?P<or>\d+(?:\.\d+)?)")
 
 NUMBER_WORDS = {
     "zero": 0,
@@ -194,6 +210,89 @@ def parse_score_effect(text: object) -> tuple[float | None, str, float | None, s
         or_value = float(match.group("or"))
         d_value = d_from_or(or_value)
         return d_value, "odds_ratio", or_value, "chinn_log_or_to_d"
+    return None, "", None, ""
+
+
+VDA_CODER_PRIORITY = {
+    "OvdAMS": 0,
+    "OvdAMvA": 0,
+    "OvdAMB": 0,
+    "MBOvdA": 0,
+    "MEMdJ": 0,
+    "HOFR": 0,
+    "MvAAS": 0,
+    "MBAS": 0,
+    "ZZZ": 0,
+    "OvdA": 1,
+    "ME": 1,
+    "HO": 1,
+    "MvA": 1,
+    "MB": 1,
+    "ZZ": 1,
+    "MS": 2,
+    "MdJ": 2,
+    "FR": 2,
+    "AS": 2,
+    "Z": 2,
+}
+
+
+def parse_vandenakker_result_text(text: object, n_fallback: float | None) -> tuple[float | None, str, float | None, str]:
+    """Parse D-like effects from a matched result text in the SHR workbook.
+
+    The result text is source-coded as matching a preregistered hypothesis; this
+    parser only chooses the least-loss D conversion available in the text.
+    """
+    if pd.isna(text):
+        return None, "", None, ""
+    cleaned = str(text).replace("\u2212", "-").replace("−", "-").replace("\n", " ")
+
+    match = VDA_D_TEXT_RE.search(cleaned)
+    if match:
+        d_value = abs(parse_float(match.group("d")))
+        return d_value, "reported_d_or_dz", d_value, "reported_d_or_dz"
+
+    match = VDA_G_TEXT_RE.search(cleaned)
+    if match:
+        g_value = abs(parse_float(match.group("g")))
+        return g_value, "reported_g", g_value, "reported_hedges_g"
+
+    match = VDA_T_TEXT_RE.search(cleaned)
+    if match:
+        t_value = parse_float(match.group("t"))
+        df = float(match.group("df"))
+        d_value = d_from_t(t_value, df)
+        return d_value, "t", t_value, "t_df_to_d"
+
+    match = VDA_F_TEXT_RE.search(cleaned)
+    if match:
+        f_value = parse_float(match.group("f"))
+        df1 = float(match.group("df1"))
+        df2 = float(match.group("df2"))
+        d_value = d_from_f(f_value, df1, df2)
+        return d_value, "F", f_value, "F_1_df_to_d"
+
+    match = VDA_R_TEXT_RE.search(cleaned)
+    if match:
+        r_value = parse_float(match.group("r"))
+        d_value = d_from_r(r_value)
+        return d_value, "r", r_value, "r_to_d"
+
+    match = VDA_CHI2_TEXT_RE.search(cleaned)
+    if match and float(match.group("df")) == 1:
+        n_value = float(match.group("n")) if match.group("n") else n_fallback
+        chi_value = parse_float(match.group("chi"))
+        if n_value is not None and n_value > 0 and chi_value >= 0:
+            phi = math.sqrt(chi_value / n_value)
+            d_value = d_from_r(phi)
+            return d_value, "chi_square", chi_value, "chi2_with_publication_n_to_d"
+
+    match = VDA_OR_TEXT_RE.search(cleaned)
+    if match:
+        or_value = float(match.group("or"))
+        d_value = d_from_or(or_value)
+        return d_value, "odds_ratio", or_value, "chinn_log_or_to_d"
+
     return None, "", None, ""
 
 
@@ -390,6 +489,116 @@ def build_vandenakker_candidates() -> pd.DataFrame:
     return out
 
 
+def build_vandenakker_matched_result_median_candidates() -> pd.DataFrame:
+    """Build paper-median rows from result texts matched to preregistered hypotheses.
+
+    Data_SHR.xlsx is the source that makes this usable under the relaxed policy:
+    it codes whether each publication result matched a preregistered hypothesis.
+    We keep all parseable matched result statistics, deduplicate duplicated coder
+    rows by PSP/result slot, then collapse to one median D row per PSP/paper.
+    """
+    if not (VDA_SHR.exists() and VDA_PVNP.exists()):
+        return pd.DataFrame()
+    try:
+        shr = pd.read_excel(VDA_SHR, sheet_name="Part 4")
+    except ValueError:
+        return pd.DataFrame()
+    pvnp = pd.read_excel(VDA_PVNP)
+    metadata = pvnp[
+        ["ID", "TitleOriginal", "DOIOriginal", "JournalOriginal", "NOriginal", "PositiveOriginal"]
+    ].copy()
+    metadata["NOriginal"] = pd.to_numeric(metadata["NOriginal"], errors="coerce")
+    metadata = metadata[metadata["NOriginal"] > 0].copy()
+    n_by_psp = dict(zip(metadata["ID"], metadata["NOriginal"]))
+    valid_psps = set(n_by_psp)
+
+    result_indices = sorted(
+        int(match.group(1))
+        for column in shr.columns
+        if (match := re.match(r"ResultText_(\d+)$", str(column)))
+    )
+    statistic_rows: list[dict[str, object]] = []
+    for source_index, row in shr.loc[shr["PSP"].isin(valid_psps)].iterrows():
+        psp = int(row["PSP"])
+        n_value = float(n_by_psp[psp])
+        coder = str(row.get("Initials", ""))
+        coder_priority = VDA_CODER_PRIORITY.get(coder, 9)
+        for result_index in result_indices:
+            result_text = row.get(f"ResultText_{result_index}")
+            if pd.isna(result_text) or not str(result_text).strip():
+                continue
+            match_flag = str(row.get(f"Match_{result_index}", ""))
+            if not match_flag.startswith("Yes"):
+                continue
+            d_value, stat_type, stat_value, conversion_method = parse_vandenakker_result_text(result_text, n_value)
+            if d_value is None or d_value <= 0:
+                continue
+            statistic_rows.append(
+                {
+                    "PSP": psp,
+                    "result_index": result_index,
+                    "coder": coder,
+                    "coder_priority": coder_priority,
+                    "source_excel_row": int(source_index) + 2,
+                    "match_flag": match_flag,
+                    "support_flag": row.get(f"Support_{result_index}"),
+                    "as_predicted_flag": row.get(f"AsPredicted_{result_index}"),
+                    "importance_flag": row.get(f"Importance_{result_index}"),
+                    "replication_flag": row.get(f"Replication_{result_index}"),
+                    "label_flag": row.get(f"Label_{result_index}"),
+                    "stat_type": stat_type,
+                    "stat_value": stat_value,
+                    "D_result": d_value,
+                    "N_result": n_value,
+                    "conversion_method": conversion_method,
+                    "result_text": compact_text([result_text])[:500],
+                }
+            )
+
+    if not statistic_rows:
+        return pd.DataFrame()
+    stats = pd.DataFrame(statistic_rows)
+    stats = stats.sort_values(["PSP", "result_index", "coder_priority", "source_excel_row"])
+    stats = stats.drop_duplicates(["PSP", "result_index"], keep="first").reset_index(drop=True)
+    merged = stats.merge(metadata, left_on="PSP", right_on="ID", how="left")
+
+    rows: list[dict[str, object]] = []
+    for psp, group in merged.groupby("PSP", sort=True):
+        group = group.sort_values("result_index")
+        methods = "; ".join(sorted(set(group["conversion_method"].dropna().astype(str))))
+        stat_types = "; ".join(sorted(set(group["stat_type"].dropna().astype(str))))
+        examples = " || ".join(group["result_text"].dropna().astype(str).head(3))
+        rows.append(
+            {
+                "candidate_id": f"vandenakker_psp_{int(psp):03d}_matched_result_median",
+                "source_family": "van den Akker matched preregistered-result paper medians",
+                "source_file": f"{VDA_SHR.relative_to(ROOT)}; {VDA_PVNP.relative_to(ROOT)}",
+                "PSP": int(psp),
+                "title": group["TitleOriginal"].dropna().iloc[0] if group["TitleOriginal"].notna().any() else "",
+                "doi": group["DOIOriginal"].dropna().iloc[0] if group["DOIOriginal"].notna().any() else "",
+                "journal": group["JournalOriginal"].dropna().iloc[0] if group["JournalOriginal"].notna().any() else "",
+                "candidate_status": "paper_median_matched_preregistered_result_ready",
+                "strict_append_ready": True,
+                "remaining_blocker": "",
+                "matched_result_rows": len(group),
+                "matched_result_indices": ";".join(str(int(value)) for value in group["result_index"].tolist()),
+                "stat_types": stat_types,
+                "conversion_methods": methods,
+                "D_candidate": float(group["D_result"].median()),
+                "N_candidate": float(group["N_result"].median()),
+                "N_candidate_basis": "PvNP_Data.NOriginal_publication_sample_size",
+                "positive_original": group["PositiveOriginal"].dropna().iloc[0] if group["PositiveOriginal"].notna().any() else "",
+                "result_text_examples": examples,
+            }
+        )
+
+    out = pd.DataFrame(rows)
+    if out.empty:
+        return out
+    out = out.sort_values(["PSP"]).reset_index(drop=True)
+    return out
+
+
 def build_rpcb_candidates() -> pd.DataFrame:
     if not RPCB_EFFECTS.exists():
         return pd.DataFrame()
@@ -537,6 +746,10 @@ def write_outputs() -> None:
     outputs = {
         "scheel_quote_stat_candidates": (build_scheel_candidates(), SCHEEL_OUT),
         "vandenakker_first_stat_candidates": (build_vandenakker_candidates(), VDA_OUT),
+        "vandenakker_matched_result_median_candidates": (
+            build_vandenakker_matched_result_median_candidates(),
+            VDA_MEDIAN_OUT,
+        ),
         "rpcb_preclinical_paper_level_candidates": (build_rpcb_candidates(), RPCB_OUT),
         "score_text_claim_candidates": (build_score_text_claim_candidates(), SCORE_TEXT_OUT),
     }
