@@ -2,7 +2,7 @@ Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/deriv
 
 These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates. Under the relaxed rule, a source may expose multiple planned preregistered results per paper/project, but the plotted layer uses a median collapse when that within-paper result set is explicit.
 
-Across the currently named Plot 3 source families, `197,796` / `217,838` considered rows already have local D/N encoding somewhere in the project, and `297` rows enter the preregistered-results plot after the gates are applied.
+Across the currently named Plot 3 source families, `200,945` / `220,987` considered rows already have local D/N encoding somewhere in the project, and `3,516` rows enter the preregistered-results plot after the gates are applied.
 
 Source-table column criteria:
 
@@ -22,8 +22,10 @@ Source-table column criteria:
 
 | Source family | Rows considered | Preregistered-confirmatory equivalent | Public local backing | Extractable D/N rows | Non-retracted source | Currently included |
 | --- | --- | --- | --- | --- | --- | --- |
+| CT.gov phase-2+ primary randomized rows [@du2024] | 3,149 | 3,149 | 3,149 | 3,149 | 3,149 | 3,149 |
 | van den Akker matched-result medians [@vanDenAkkerSelectiveHypothesis2023] | 193 | 193 | 193 | 126 | 193 | 125 |
 | Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 93 | 93 | 93 | 89 | 93 | 89 |
+| Brodeur preregistered/PAP table tests [@brodeur2020] | 10,071 | 3,724 | 10,071 | 3,724 | 10,071 | 70 |
 | SCORE/COS preregistration-indicated papers [@tyner2026] | 245 | 245 | 245 | 34 | 245 | 34 |
 | RPCB Registered Report replication effects [@errington2021] | 188 | 188 | 188 | 159 | 188 | 23 |
 | Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 16 |
@@ -38,7 +40,6 @@ Source-table column criteria:
 | Mousa 2020 Iraq soccer field experiment [@mousa2020soccerZenodo] | 1 | 1 | 1 | 1 | 1 | 1 |
 | PSA004 true-belief/Gettier pooled row [@hall2024psa004Turri] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ClinicalTrials.gov API registered outcome-result universe [@du2024] | 190,836 | 17,726 | 190,836 | 190,836 | 190,836 | 0 |
-| Brodeur preregistered/PAP table tests [@brodeur2020] | 10,071 | 3,724 | 10,071 | 3,724 | 10,071 | 0 |
 | FORRT FReD / Replication Database | 843 | 0 | 843 | 843 | 843 | 0 |
 | Schäfer/Schwarz non-preregistered comparator [@schaefer2019meaningfulness] | 900 | 0 | 900 | 682 | 900 | 0 |
 | FReD archived workflow rescue queue | 343 | 0 | 343 | 343 | 343 | 0 |

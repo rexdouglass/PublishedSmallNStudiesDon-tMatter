@@ -86,6 +86,7 @@ COMPARE_TRIALS = ROOT / "data" / "raw" / "corpus_candidates" / "compare_trials" 
 PROTZKO_PROMOTED = HARVEST_PROMOTED_DIR / "protzko_nhb_pairs__promoted_pairs.csv"
 PREREG_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_results.csv"
 PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitivity_sidecar_rows.csv"
+BRODEUR_PREREG_PAPER_MEDIANS = DATASET_DERIVED_DIR / "plot3_brodeur_preregistered_pap_paper_medians.csv"
 PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv"
 CTGOV_API_REGISTERED_ROWS = DATASET_DERIVED_DIR / "plot3_ctgov_api_registered_outcome_ratio_event_rows.csv.gz"
 CTGOV_API_REGISTERED_TRIAL_MEDIANS = DATASET_DERIVED_DIR / "plot3_ctgov_api_registered_trial_medians.csv"
@@ -822,6 +823,7 @@ PLOT3_CITATION_KEYS = {
     "AACT x PubMed registered primary outcomes": "du2024",
     "ClinicalTrials.gov registry-result D/N comparator": "du2024",
     "ClinicalTrials.gov API registered outcome-result universe": "du2024",
+    "ClinicalTrials.gov phase-2+ primary randomized registry rows": "du2024",
     "CliniFact published trial primary-outcome rows": "zhang2025clinifact",
     "Brodeur et al. 2024 preregistered/PAP economics table tests": "brodeur2020",
     "Transparent Psi Project / Bem preregistered replication": "kekecs2023tpp",
@@ -863,6 +865,7 @@ PLOT3_DISPLAY_LABELS = {
     "AACT x PubMed registered primary outcomes": "AACT x PubMed registered primary outcomes",
     "ClinicalTrials.gov registry-result D/N comparator": "ClinicalTrials.gov registry-result D/N comparator",
     "CliniFact published trial primary-outcome rows": "CliniFact published trial primary-outcome rows",
+    "ClinicalTrials.gov phase-2+ primary randomized registry rows": "CT.gov phase-2+ primary randomized rows",
     "Brodeur et al. 2024 preregistered/PAP economics table tests": "Brodeur preregistered/PAP table tests",
     "Registered Replication Reports per-lab rows": "Registered Replication Reports per-lab rows",
     "Registered Replication Reports Plot 1 pair rows": "Registered Replication Reports Plot 1 pair rows",
@@ -950,6 +953,7 @@ def display_field_label(value: object) -> str:
         "business": "Business",
         "education": "Education",
         "preclinical biology": "Preclinical biology",
+        "clinical medicine": "Clinical medicine",
         "mixed social/behavioral science": "Mixed social/behavioral science",
     }.get(text, text.replace("_", " ").title())
 
@@ -2232,6 +2236,80 @@ MANUAL_PREREGISTERED_ADDITIONS: list[dict[str, object]] = [
 ]
 
 
+def brodeur_preregistered_paper_medians() -> pd.DataFrame:
+    if not CANDIDATE_ROWS.exists():
+        out = pd.DataFrame()
+        out.to_csv(BRODEUR_PREREG_PAPER_MEDIANS, index=False)
+        return out
+    try:
+        candidate_rows = pd.read_csv(CANDIDATE_ROWS, low_memory=False)
+    except Exception:
+        out = pd.DataFrame()
+        out.to_csv(BRODEUR_PREREG_PAPER_MEDIANS, index=False)
+        return out
+
+    brodeur = candidate_rows.loc[
+        candidate_rows.get("source_corpus", pd.Series(dtype=object)).eq("economics_brodeur_2024")
+    ].copy()
+    if brodeur.empty:
+        out = pd.DataFrame()
+        out.to_csv(BRODEUR_PREREG_PAPER_MEDIANS, index=False)
+        return out
+
+    notes = brodeur.get("notes", pd.Series("", index=brodeur.index)).fillna("").astype(str)
+    prereg_flag = notes.str.extract(r"prereg=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+    pap_flag = notes.str.extract(r"preanalysisplan=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+    pap_power_flag = notes.str.extract(r"pap_power=([^;]+)", expand=False).fillna("").str.strip().str.lower()
+    truthy = {"1", "1.0", "true", "yes"}
+    is_prereg = prereg_flag.isin(truthy)
+    is_pap = pap_flag.isin(truthy)
+    is_pap_power = pap_power_flag.isin(truthy)
+    d_values = numeric_series(brodeur.get("abs_D", brodeur.get("D", pd.Series(index=brodeur.index)))).abs()
+    n_values = numeric_series(brodeur.get("N", pd.Series(index=brodeur.index)))
+    keep = (is_prereg | is_pap | is_pap_power) & (d_values > 0) & (n_values > 0)
+    brodeur = brodeur.loc[keep].copy()
+    if brodeur.empty:
+        out = pd.DataFrame()
+        out.to_csv(BRODEUR_PREREG_PAPER_MEDIANS, index=False)
+        return out
+
+    brodeur["D_plot"] = d_values.loc[brodeur.index]
+    brodeur["N_plot"] = n_values.loc[brodeur.index]
+    brodeur["is_prereg"] = is_prereg.loc[brodeur.index].astype(int)
+    brodeur["is_pap"] = is_pap.loc[brodeur.index].astype(int)
+    brodeur["is_pap_power"] = is_pap_power.loc[brodeur.index].astype(int)
+    group_key = brodeur["paper_id"].fillna("").astype(str)
+    group_key = group_key.mask(group_key.eq(""), brodeur["title"].fillna("").astype(str))
+    brodeur["paper_group_key"] = group_key
+    medians = (
+        brodeur.groupby("paper_group_key", sort=False)
+        .agg(
+            paper_id=("paper_id", "first"),
+            title=("title", "first"),
+            journal=("journal", "first"),
+            year=("year", "first"),
+            D=("D_plot", "median"),
+            N=("N_plot", "median"),
+            table_test_rows=("D_plot", "size"),
+            prereg_flag=("is_prereg", "max"),
+            preanalysisplan_flag=("is_pap", "max"),
+            pap_power_flag=("is_pap_power", "max"),
+        )
+        .reset_index(drop=True)
+    )
+    medians = medians.sort_values(["title", "paper_id"], kind="stable").reset_index(drop=True)
+    medians.insert(0, "point_id", [f"brodeur_prereg_pap_paper_median_{i + 1:03d}" for i in range(len(medians))])
+    medians["source_family"] = "Brodeur et al. 2024 preregistered/PAP economics table tests"
+    medians["source_label"] = "Brodeur et al. 2024 preregistered/PAP economics table tests"
+    medians["citation_key"] = "brodeur2020"
+    medians["row_unit"] = "paper_median_of_preregistered_or_pap_table_tests"
+    medians["supported"] = "not coded"
+    medians["source_file"] = str(CANDIDATE_ROWS.relative_to(ROOT))
+    medians["source_row_number"] = medians.index + 1
+    medians.to_csv(BRODEUR_PREREG_PAPER_MEDIANS, index=False)
+    return medians
+
+
 def normalize_preregistered_results() -> pd.DataFrame:
     table40 = pd.read_csv(PREREG_TABLE_40)
     table41 = pd.read_csv(PREREG_TABLE_41)
@@ -2300,6 +2378,66 @@ def normalize_preregistered_results() -> pd.DataFrame:
                 "source_row_number": row["source_row_number"],
             }
         )
+
+    brodeur_medians = brodeur_preregistered_paper_medians()
+    for _, row in brodeur_medians.iterrows():
+        title = safe_text(row.get("title")) or safe_text(row.get("paper_id")) or safe_text(row.get("point_id"))
+        rows.append(
+            {
+                "point_id": row["point_id"],
+                "plot_name": "Plot 3",
+                "source_layer": "preregistered_confirmatory_result",
+                "source_family": row["source_family"],
+                "source_label": row["source_label"],
+                "field": "economics and finance",
+                "citation_key": row["citation_key"],
+                "row_unit": row["row_unit"],
+                "row_label": title,
+                "D": float(row["D"]),
+                "N": float(row["N"]),
+                "supported": row["supported"],
+                "journal": safe_text(row.get("journal")),
+                "source_file": (
+                    f"{row['source_file']}; paper-level median across {int(row['table_test_rows'])} "
+                    "preregistration/PAP-flagged extracted table tests"
+                ),
+                "source_row_number": int(row["source_row_number"]),
+            }
+        )
+
+    if PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS.exists():
+        ctgov_primary = pd.read_csv(PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS)
+    else:
+        ctgov_primary = normalize_ctgov_primary_randomized_sidecar_rows()
+    if not ctgov_primary.empty:
+        ctgov_primary = ctgov_primary.loc[
+            (numeric_series(ctgov_primary.get("D", pd.Series(index=ctgov_primary.index))) > 0)
+            & (numeric_series(ctgov_primary.get("N", pd.Series(index=ctgov_primary.index))) > 0)
+        ].copy()
+        for _, row in ctgov_primary.iterrows():
+            unit_id = safe_text(row.get("unit_id")) or safe_text(row.get("point_id"))
+            rows.append(
+                {
+                    "point_id": f"ctgov_primary_randomized_strict_{unit_id.lower()}",
+                    "plot_name": "Plot 3",
+                    "source_layer": "registered_confirmatory_result",
+                    "source_family": "ClinicalTrials.gov phase-2+ primary randomized registry rows",
+                    "source_label": "ClinicalTrials.gov phase-2+ primary randomized registry rows",
+                    "field": "clinical medicine",
+                    "citation_key": "du2024",
+                    "row_unit": "one_primary_registered_outcome_per_randomized_trial",
+                    "row_label": safe_text(row.get("row_label")) or unit_id,
+                    "D": float(row["D"]),
+                    "N": float(row["N"]),
+                    "supported": safe_text(row.get("support_or_significance")) or "registry p-value proxy",
+                    "journal": "ClinicalTrials.gov",
+                    "source_file": (
+                        f"{row.get('source_file')}; phase-2+ randomized interventional trial with exactly one "
+                        "eligible registered primary two-group outcome; D reconstructed from registry p-value and enrollment"
+                    ),
+                    "source_row_number": int(row.get("source_row_number", 0) or 0),
+                }
+            )
 
     if PUBLISHED_PAPERS.exists():
         published = pd.read_csv(PUBLISHED_PAPERS)
@@ -7294,6 +7432,24 @@ def write_plot3_source_catalog() -> None:
             },
             {
                 "plot_name": "Plot 3",
+                "plot_inclusion_status": "included",
+                "source_label": "ClinicalTrials.gov phase-2+ primary randomized registry rows",
+                "corpus_what_it_is": "Cleaner ClinicalTrials.gov registered-primary-outcome subset: phase-2+ randomized interventional trials with exactly one locally eligible primary two-group registry result.",
+                "what_it_is_why_possible_candidate": "This subset was promoted because it supplies the missing scale source without coefficient-level inflation: each row is one randomized trial, the outcome is registered as primary, the trial is phase 2 or later, and the local record exposes exactly one eligible two-group primary outcome with enrollment and an exact registry p-value.",
+                "confirmed_fields": f"Known locally: {fmt_int(ctgov_clean_rows)} phase-2+ randomized one-primary-outcome trial rows. Confirmed: registered primary outcome: yes; randomized interventional design: yes; phase-2+ filter: yes ({fmt_int(ctgov_clean_phase2plus)} rows); D/N: yes via registry p-value and enrollment proxy; published-paper endpoint: no.",
+                "backing_file": str(PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS.relative_to(ROOT)),
+                "rows_considered": ctgov_clean_rows,
+                "rows_preregistered_equivalent": ctgov_clean_rows,
+                "rows_with_public_local_backing": ctgov_clean_rows,
+                "rows_with_extractable_DN": ctgov_clean_rows,
+                "rows_with_non_retracted_source": ctgov_clean_rows,
+                "rows_contributed": ctgov_clean_rows,
+                "rows_left_out_within_source": 0,
+                "why": "included as one registered primary randomized trial dot per trial",
+                "why_in_out": f"Included: {fmt_int(ctgov_clean_rows)} phase-2+ randomized trials have exactly one locally eligible registered primary two-group result, so they can enter Plot 3 as trial-level registered confirmatory dots. These are registry-result D proxies, not journal-published paper extractions, and are labeled separately as clinical medicine.",
+            },
+            {
+                "plot_name": "Plot 3",
                 "plot_inclusion_status": "not_included",
                 "source_label": "ClinicalTrials.gov API registered outcome-result universe",
                 "corpus_what_it_is": "ClinicalTrials.gov API v2 result records parsed into registered primary, secondary, and other pre-specified two-group outcome-analysis rows with API denominators.",
@@ -7330,21 +7486,21 @@ def write_plot3_source_catalog() -> None:
             },
             {
                 "plot_name": "Plot 3",
-                "plot_inclusion_status": "not_included",
+                "plot_inclusion_status": "included",
                 "source_label": "Brodeur et al. 2024 preregistered/PAP economics table tests",
                 "corpus_what_it_is": "Top-journal economics table-test extraction with row-level preregistration, pre-analysis-plan, and PAP-power flags in the local raw notes.",
-                "what_it_is_why_possible_candidate": "The Brodeur economics corpus was rechecked because it is the other local source that produces thousands of preregistration-flagged D/N rows: many extracted table tests are from studies marked as preregistered or having a pre-analysis plan.",
-                "confirmed_fields": f"Known locally: {fmt_int(brodeur_rows)} extracted economics test rows, {fmt_int(brodeur_flagged_rows)} D/N-ready rows with preregistration/PAP/PAP-power flags, collapsing to {fmt_int(brodeur_flagged_papers)} papers. Confirmed: preregistration flag rows: {fmt_int(brodeur_prereg_rows)}; pre-analysis-plan flag rows: {fmt_int(brodeur_pap_rows)}; PAP-power flag rows: {fmt_int(brodeur_pap_power_rows)}; D/N: yes; focal/main-result selector: no; exact test-level PAP mapping: no.",
+                "what_it_is_why_possible_candidate": "The Brodeur economics corpus is the largest local source of preregistration-flagged D/N rows: many extracted table tests are from studies marked as preregistered, having a pre-analysis plan, or reporting PAP power calculations. The plotted layer now applies the same one-dot-per-paper rule used elsewhere by collapsing each flagged paper to the median absolute D and median analytic N across its flagged table-test rows.",
+                "confirmed_fields": f"Known locally: {fmt_int(brodeur_rows)} extracted economics test rows, {fmt_int(brodeur_flagged_rows)} D/N-ready rows with preregistration/PAP/PAP-power flags, collapsing to {fmt_int(brodeur_flagged_papers)} paper medians. Confirmed: preregistration flag rows: {fmt_int(brodeur_prereg_rows)}; pre-analysis-plan flag rows: {fmt_int(brodeur_pap_rows)}; PAP-power flag rows: {fmt_int(brodeur_pap_power_rows)}; D/N: yes; exact test-level PAP-to-outcome mapping: no, so source-level notes mark the median selector.",
                 "backing_file": str(CANDIDATE_ROWS.relative_to(ROOT)) if CANDIDATE_ROWS.exists() else "data/derived/corpus_candidates/candidate_d_n_rows.csv.gz",
                 "rows_considered": brodeur_rows,
                 "rows_preregistered_equivalent": brodeur_flagged_rows,
                 "rows_with_public_local_backing": brodeur_rows,
                 "rows_with_extractable_DN": brodeur_flagged_rows,
                 "rows_with_non_retracted_source": brodeur_rows,
-                "rows_contributed": 0,
-                "rows_left_out_within_source": brodeur_flagged_rows,
-                "why": "not included because these are preregistration/PAP-flagged extracted table tests without a paper-level focal or main-result selector",
-                "why_in_out": f"Not included: the preregistration/PAP flags are real and account for {fmt_int(brodeur_flagged_rows)} D/N-ready extracted table-test rows, but the flags are not enough to prove that each coefficient/test is the exact prespecified confirmatory hypothesis. No focal/main-result selector is available, so this remains a sensitivity lane rather than strict Plot 3 evidence.",
+                "rows_contributed": brodeur_flagged_papers,
+                "rows_left_out_within_source": max(brodeur_flagged_rows - brodeur_flagged_papers, 0),
+                "why": "included as one paper-level median per preregistration/PAP-flagged economics paper",
+                "why_in_out": f"Included: the preregistration/PAP flags account for {fmt_int(brodeur_flagged_rows)} D/N-ready extracted table-test rows. To avoid coefficient-level inflation, Plot 3 contributes {fmt_int(brodeur_flagged_papers)} paper-level median dots rather than all table tests. These rows remain flagged as median selectors, not exact PAP-outcome matches.",
             },
             {
                 "plot_name": "Plot 3",
