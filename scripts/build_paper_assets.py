@@ -16,6 +16,8 @@ import shutil
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import urljoin
+from urllib.request import Request, urlopen
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -35,6 +37,7 @@ FIG_DIR = GENERATED / "figures"
 TABLE_DIR = ROOT / "data" / "derived" / "paper_tables"
 TABLE_FRAGMENT_DIR = GENERATED / "tables"
 DATASET_DERIVED_DIR = ROOT / "data" / "derived" / "effect_inflation_dataset"
+TESS_STUDY_INDEX = DATASET_DERIVED_DIR / "plot3_tess_study_index_candidates.csv"
 BODY_QMD = GENERATED / "paper_body.qmd"
 DATA_APPENDICES_QMD = GENERATED / "data_appendices.qmd"
 DATASET_AUDIT_QMD = GENERATED / "dataset_audit_snapshot.qmd"
@@ -826,9 +829,13 @@ PLOT3_CITATION_KEYS = {
     "ERN/Pe RRR OpenNeuro and OSF analysis hubs": "ernPeRrrOpenNeuro",
     "Linden et al. 2024 focal/random psychology sample": "linden2024publicationBiasPsychology",
     "ManyClasses 2 classroom registered-report materials": "manyClasses2Osf",
+    "EGAP Metaketa I information/accountability pooled PAP row": "metaketaIRepo",
+    "EGAP Metaketa III natural-resource monitoring pooled PAP row": "metaketaIIIProject",
+    "EGAP Metaketa IV community-policing pooled PAP row": "metaketaIVProject",
     "EGAP Metaketa I information/accountability native ATE rows": "metaketaIRepo",
     "EGAP Metaketa III natural-resource monitoring native rows": "metaketaIIIProject",
     "EGAP Metaketa IV community-policing native rows": "metaketaIVProject",
+    "TESS peer-reviewed survey-experiment archive": "tessPastStudiesArchive",
     "RPCB eLife Registered Report replication effects": "errington2021",
     "Communication privacy preregistered replication corpus": "masur2025privacy",
     "Retrieval-extinction rats preregistered replication": "luyten2017retrievalExtinction",
@@ -870,9 +877,13 @@ PLOT3_DISPLAY_LABELS = {
     "FORRT FReD / Replication Database": "FORRT FReD / Replication Database",
     "FReD archived workflow workbook / OSF Registries queue": "FReD archived workflow rescue queue",
     "ManyClasses 2 classroom registered-report materials": "ManyClasses 2 classroom materials",
+    "EGAP Metaketa I information/accountability pooled PAP row": "EGAP Metaketa I pooled PAP row",
+    "EGAP Metaketa III natural-resource monitoring pooled PAP row": "EGAP Metaketa III pooled PAP row",
+    "EGAP Metaketa IV community-policing pooled PAP row": "EGAP Metaketa IV pooled PAP row",
     "EGAP Metaketa I information/accountability native ATE rows": "EGAP Metaketa I native ATE rows",
     "EGAP Metaketa III natural-resource monitoring native rows": "EGAP Metaketa III native rows",
     "EGAP Metaketa IV community-policing native rows": "EGAP Metaketa IV native rows",
+    "TESS peer-reviewed survey-experiment archive": "TESS survey-experiment archive",
     "RPCB eLife Registered Report replication effects": "RPCB Registered Report replication effects",
     "Communication privacy preregistered replication corpus": "Communication privacy preregistered corpus",
     "Retrieval-extinction rats preregistered replication": "Retrieval-extinction rats preregistered replication",
@@ -914,6 +925,8 @@ def plot3_default_field(source_family: object) -> str:
     text = safe_text(source_family).lower()
     if "manyclasses" in text or "learning and instruction" in text:
         return "education"
+    if "metaketa" in text or "egap" in text or "tess" in text:
+        return "political science"
     if "cancer biology" in text or "rpcb" in text or "preclinical" in text:
         return "preclinical biology"
     if "score" in text:
@@ -945,6 +958,67 @@ def fmt_number(value: object, digits: int = 2) -> str:
     if pd.isna(value) or value == "":
         return ""
     return f"{float(value):,.{digits}f}"
+
+
+def build_tess_study_index() -> pd.DataFrame:
+    """Scrape the public TESS past-studies index into a stable extraction queue."""
+    url = "https://tessexperiments.org/paststudies"
+    columns = [
+        "source_family",
+        "year",
+        "study_slug",
+        "title",
+        "study_url",
+        "row_status",
+        "prereg_evidence",
+        "d_n_status",
+        "notes",
+    ]
+    try:
+        request = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        html = urlopen(request, timeout=30).read().decode("utf-8", "replace")
+    except Exception:
+        if TESS_STUDY_INDEX.exists():
+            return pd.read_csv(TESS_STUDY_INDEX)
+        return pd.DataFrame(columns=columns)
+
+    soup = BeautifulSoup(html, "html.parser")
+    rows: list[dict[str, object]] = []
+    current_year = ""
+    for node in soup.find_all(["h3", "a"]):
+        if node.name == "h3":
+            year_text = node.get_text(" ", strip=True)
+            if re.fullmatch(r"20\d{2}", year_text):
+                current_year = year_text
+            continue
+        href = node.get("href") or ""
+        if "./study/" not in href and not href.startswith("/study/") and "/study/" not in href:
+            continue
+        study_url = urljoin(url, href)
+        match = re.search(r"/study/([^/?#]+)", study_url)
+        if not match:
+            continue
+        rows.append(
+            {
+                "source_family": "TESS peer-reviewed survey-experiment archive",
+                "year": current_year,
+                "study_slug": match.group(1),
+                "title": node.get_text(" ", strip=True),
+                "study_url": study_url,
+                "row_status": "candidate_queue_only",
+                "prereg_evidence": "TESS peer-reviewed proposal/study page predates fielding at the platform level; verify per study before promotion",
+                "d_n_status": "missing final paper-level D/N until linked publication or Roper/data extraction",
+                "notes": "Do not plot from this queue until the linked final publication/result and analytic N are extracted.",
+            }
+        )
+    out = pd.DataFrame(rows, columns=columns)
+    if not out.empty:
+        out = out.drop_duplicates("study_slug", keep="first").sort_values(
+            ["year", "study_slug"], ascending=[False, True]
+        )
+    TESS_STUDY_INDEX.parent.mkdir(parents=True, exist_ok=True)
+    out.to_csv(TESS_STUDY_INDEX, index=False)
+    return out.reset_index(drop=True)
 
 
 def fmt_year(value: object) -> str:
@@ -1741,6 +1815,51 @@ MANUAL_PREREGISTERED_ADDITIONS: list[dict[str, object]] = [
         "source_file": "Fyfe et al. 2021; DOI 10.1177/25152459211027575; Δz=0.002, N=2,081",
         "source_row_number": 1,
     },
+    {
+        "point_id": "metaketa1_information_accountability_pooled_median",
+        "source_family": "EGAP Metaketa I information/accountability pooled PAP row",
+        "source_label": "EGAP Metaketa I pooled PAP row",
+        "citation_key": "metaketaIRepo",
+        "row_unit": "pooled_project_median_of_preregistered_binary_outcomes",
+        "row_label": "Information/accountability pooled vote-choice and turnout effects",
+        "D": 0.03945133390306835,
+        "N": 26778.5,
+        "supported": "not coded",
+        "journal": "Science Advances",
+        "field": "political science",
+        "source_file": "data/raw/replication_projects/lead_harvest/metaketa_i_2019/github_metaketa_i/metaketa-i-main.zip; tab_11.1_main_effects.tex; Chinn conversion from overall binary ATE plus control mean, median of vote choice and turnout",
+        "source_row_number": 1,
+    },
+    {
+        "point_id": "metaketa3_natural_resource_monitoring_pooled_median",
+        "source_family": "EGAP Metaketa III natural-resource monitoring pooled PAP row",
+        "source_label": "EGAP Metaketa III pooled PAP row",
+        "citation_key": "metaketaIIIProject",
+        "row_unit": "pooled_project_median_of_preregistered_standardized_indices",
+        "row_label": "Natural-resource monitoring pooled standardized index effects",
+        "D": 0.06627377,
+        "N": 16177,
+        "supported": "not coded",
+        "journal": "Proceedings of the National Academy of Sciences",
+        "field": "political science",
+        "source_file": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_259yz/Replication.zip; site_estimates.Rdata and respondent_vars.Rdata; local random-effects pooling of Cov site ITTs, median of four standardized indices",
+        "source_row_number": 1,
+    },
+    {
+        "point_id": "metaketa4_community_policing_pooled_median",
+        "source_family": "EGAP Metaketa IV community-policing pooled PAP row",
+        "source_label": "EGAP Metaketa IV pooled PAP row",
+        "citation_key": "metaketaIVProject",
+        "row_unit": "pooled_project_median_of_preregistered_standardized_indices",
+        "row_label": "Community-policing pooled standardized primary-index effects",
+        "D": 0.01757533,
+        "N": 18382,
+        "supported": "not coded",
+        "journal": "Science",
+        "field": "political science",
+        "source_file": "data/raw/replication_projects/lead_harvest/metaketa_iv_2021/osf_xqd3v_outputs/patrick_roach/data-examples-new/integrated RDS outputs/meta-estimates-main-hypotheses.RDS; median of eight primary standardized index estimates; respondent N from article/source",
+        "source_row_number": 1,
+    },
 ]
 
 
@@ -1800,6 +1919,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
                 "source_layer": "preregistered_confirmatory_result",
                 "source_family": row["source_family"],
                 "source_label": row["source_label"],
+                "field": safe_text(row.get("field")),
                 "citation_key": row["citation_key"],
                 "row_unit": row["row_unit"],
                 "row_label": row["row_label"],
@@ -5997,6 +6117,9 @@ def write_plot3_source_catalog() -> None:
     scheel_contributed = plot3_source_count("Scheel et al. 2021 preregistered-hypotheses corpus")
     psacr001_contributed = plot3_source_count("Dorison et al. 2022 PSA-CR001 pooled preregistered rows")
     psacr002_contributed = plot3_source_count("PSA-CR002 cognitive reappraisal preregistered hypotheses")
+    metaketa_i_contributed = plot3_source_count("EGAP Metaketa I information/accountability pooled PAP row")
+    metaketa_iii_contributed = plot3_source_count("EGAP Metaketa III natural-resource monitoring pooled PAP row")
+    metaketa_iv_contributed = plot3_source_count("EGAP Metaketa IV community-policing pooled PAP row")
     scheel_quote_candidates = pd.read_csv(SCHEEL_QUOTE_RESCUE_CANDIDATES) if SCHEEL_QUOTE_RESCUE_CANDIDATES.exists() else pd.DataFrame()
     scheel_quote_candidate_rows = len(scheel_quote_candidates)
     scheel_quote_candidates_with_n = int(scheel_quote_candidates.get("N_candidate", pd.Series(dtype=float)).notna().sum()) if not scheel_quote_candidates.empty else 0
@@ -6211,6 +6334,8 @@ def write_plot3_source_catalog() -> None:
                 "promotion_blocker": "",
                 "notes": "",
             }
+    tess_index = build_tess_study_index()
+    tess_index_rows = len(tess_index)
     out_csv = DATASET_DERIVED_DIR / "plot3_preregistered_source_catalog.csv"
 
     plot3 = pd.DataFrame(
@@ -6358,6 +6483,60 @@ def write_plot3_source_catalog() -> None:
                 "rows_left_out_within_source": 1 - manual_source_counts.get("ManyClasses 1 feedback pooled preregistered row", 0),
                 "why": "included as a pooled preregistered project result with a standardized Δz effect and source-reported N",
                 "why_in_out": "Included: one pooled ManyClasses 1 immediate-versus-delayed-feedback row enters. Class-level estimates and moderator rows are deliberately not added to avoid nested non-independent Plot 3 rows.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "included",
+                "source_label": "EGAP Metaketa I information/accountability pooled PAP row",
+                "corpus_what_it_is": "EGAP Metaketa I coordinated information-and-accountability field experiments with a harmonized meta-pre-analysis plan.",
+                "what_it_is_why_possible_candidate": "Metaketa I was promoted because the local GitHub archive contains the preregistered pooled binary outcomes, observations, control means, and SEs in the CUP/Science Advances meta-analysis table. Under the one-dot-per-project rule, the plotted value is the median of the two overall pooled binary endpoints after a documented Chinn conversion.",
+                "confirmed_fields": "Verified locally in `tab_11.1_main_effects.tex`: overall vote-choice ATE=0.003, control mean=0.369, N=25,820; overall turnout ATE=0.017, control mean=0.837, N=27,737. Confirmed: meta-PAP/preregistered coordinated source: yes; pooled focal outcomes: yes; D conversion: yes, from binary ATE plus control probability via log-OR/Chinn; paper/project median: yes.",
+                "backing_file": "data/raw/replication_projects/lead_harvest/metaketa_i_2019/github_metaketa_i/metaketa-i-main.zip; CUP_Book/ch11_meta-analysis/tables/tab_11.1_main_effects.tex",
+                "rows_considered": 1,
+                "rows_preregistered_equivalent": 1,
+                "rows_with_public_local_backing": 1,
+                "rows_with_extractable_DN": 1,
+                "rows_with_non_retracted_source": 1,
+                "rows_contributed": metaketa_i_contributed,
+                "rows_left_out_within_source": 1 - metaketa_i_contributed,
+                "why": "included as a pooled PAP-locked field-experiment project median with auditable binary-outcome conversion",
+                "why_in_out": "Included: one Metaketa I pooled paper/project dot enters. Component-country rows stay staged so the pooled round and its components are not mixed as independent dots in the same strict layer.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "included",
+                "source_label": "EGAP Metaketa III natural-resource monitoring pooled PAP row",
+                "corpus_what_it_is": "EGAP Metaketa III coordinated natural-resource-monitoring field experiments with public OSF replication materials.",
+                "what_it_is_why_possible_candidate": "Metaketa III was promoted because the local OSF replication archive contains site-level preregistered ITT estimates for standardized resource, satisfaction, knowledge, and stewardship indices plus respondent counts. Under the one-dot-per-project rule, the plotted row is the median of locally pooled standardized-index estimates.",
+                "confirmed_fields": "Verified locally in `site_estimates.Rdata` and `respondent_vars.Rdata`: Cov ITT site estimates exist for resource, satisfaction, knowledge, and stewardship indices across six countries; respondent N sums to 16,177. Confirmed: meta-PAP/preregistered coordinated source: yes; standardized index effects: yes; N: yes; paper/project median: yes.",
+                "backing_file": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_259yz/Replication.zip; Replication/Combined/site_estimates.Rdata; Replication/Combined/respondent_vars.Rdata",
+                "rows_considered": 1,
+                "rows_preregistered_equivalent": 1,
+                "rows_with_public_local_backing": 1,
+                "rows_with_extractable_DN": 1,
+                "rows_with_non_retracted_source": 1,
+                "rows_contributed": metaketa_iii_contributed,
+                "rows_left_out_within_source": 1 - metaketa_iii_contributed,
+                "why": "included as a pooled PAP-locked field-experiment project median with standardized index effects",
+                "why_in_out": "Included: one Metaketa III pooled paper/project dot enters. Native component outcomes such as forest cover, pollution concentration, and site-specific ATEs remain staged rather than force-converted.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "included",
+                "source_label": "EGAP Metaketa IV community-policing pooled PAP row",
+                "corpus_what_it_is": "EGAP Metaketa IV community-policing field experiments with integrated public OSF result outputs.",
+                "what_it_is_why_possible_candidate": "Metaketa IV was promoted because the local integrated OSF RDS output has the preregistered pooled meta-analysis estimates for the eight primary standardized indices. Under the one-dot-per-project rule, the plotted row is the median of those eight primary pooled standardized effects.",
+                "confirmed_fields": "Verified locally in `meta-estimates-main-hypotheses.RDS`: 16 meta-analysis rows, of which the first 8 are primary standardized-index outcomes; median absolute primary estimate is 0.0176. Confirmed: EGAP registration/meta-PAP source: yes; pooled standardized effects: yes; N: 18,382 citizens from article/source; paper/project median: yes.",
+                "backing_file": "data/raw/replication_projects/lead_harvest/metaketa_iv_2021/osf_xqd3v_outputs/patrick_roach/data-examples-new/integrated RDS outputs/meta-estimates-main-hypotheses.RDS",
+                "rows_considered": 1,
+                "rows_preregistered_equivalent": 1,
+                "rows_with_public_local_backing": 1,
+                "rows_with_extractable_DN": 1,
+                "rows_with_non_retracted_source": 1,
+                "rows_contributed": metaketa_iv_contributed,
+                "rows_left_out_within_source": 1 - metaketa_iv_contributed,
+                "why": "included as a pooled PAP-locked field-experiment project median with source-standardized index effects",
+                "why_in_out": "Included: one Metaketa IV pooled paper/project dot enters. Country/site rows and police/cluster-specific native rows stay staged to avoid nested non-independent Plot 3 dots.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6848,6 +7027,24 @@ def write_plot3_source_catalog() -> None:
             {
                 "plot_name": "Plot 3",
                 "plot_inclusion_status": "not_included",
+                "source_label": "TESS peer-reviewed survey-experiment archive",
+                "corpus_what_it_is": "Time-sharing Experiments for the Social Sciences archive of fielded survey experiments with peer-reviewed proposals/study pages.",
+                "what_it_is_why_possible_candidate": "TESS was added as the main political-science extraction queue because its public past-studies index is finite, scrapeable, and organized around pre-fielding peer-reviewed study proposals. It is the highest-yield new social-science source, but the public index does not itself contain final article effect sizes or analytic Ns.",
+                "confirmed_fields": f"Verified by scraping `https://tessexperiments.org/paststudies`: {fmt_int(tess_index_rows)} unique study URLs with year, title, slug, and study page. Confirmed: public index: yes; proposal/study page: yes at platform level; extractable final D/N in the index: no; publication/result linkage: pending.",
+                "backing_file": str(TESS_STUDY_INDEX.relative_to(ROOT)),
+                "rows_considered": tess_index_rows,
+                "rows_preregistered_equivalent": tess_index_rows,
+                "rows_with_public_local_backing": tess_index_rows,
+                "rows_with_extractable_DN": 0,
+                "rows_with_non_retracted_source": tess_index_rows,
+                "rows_contributed": 0,
+                "rows_left_out_within_source": tess_index_rows,
+                "why": "not included yet because the archive is a discovery queue, not a D/N result table",
+                "why_in_out": "Not included yet: TESS likely contains hundreds of valid pre-fielding survey experiments, but each dot still needs paper/result linkage plus D and analytic N extraction. The generated CSV is the work queue for that extractor, not evidence to plot today.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "not_included",
                 "source_label": "EGAP Metaketa I information/accountability native ATE rows",
                 "corpus_what_it_is": "Coordinated EGAP Metaketa I information-and-accountability field experiments with a harmonized meta-pre-analysis plan and native ATE tables.",
                 "what_it_is_why_possible_candidate": "Metaketa I was rechecked because the local GitHub archive contains the CUP Book chapter 11 meta-analysis scripts and tables for the preregistered information/accountability experiments. The pooled primary vote-choice estimate is a strong PAP/native-metric candidate.",
@@ -6860,8 +7057,8 @@ def write_plot3_source_catalog() -> None:
                 "rows_with_non_retracted_source": 1,
                 "rows_contributed": 0,
                 "rows_left_out_within_source": 1,
-                "why": "not included in strict Plot 3 because the public result is an adjusted percentage-point ATE, not a defensible source-provided D row",
-                "why_in_out": "Not included: EGAP Metaketa I is a clean preregistered/PAP field-experiment source, but the local table is a covariate-adjusted linear-probability ATE with clustered SEs and nontrivial row construction, including Uganda 2 duplicate office-level observations. It should be staged as native ATE evidence unless a defensible standardized-D conversion is separately documented.",
+                "why": "not included as separate native/component rows because the pooled project dot is now included and component ATE rows need a native-metric lane",
+                "why_in_out": "Not included as component/native rows: the pooled Metaketa I paper/project median now enters strict Plot 3. Separate good-news, bad-news, country, and adjusted ATE rows stay staged because mixing them with the pooled row would double-count nested evidence and some component metrics are native clustered ATEs.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6878,8 +7075,8 @@ def write_plot3_source_catalog() -> None:
                 "rows_with_non_retracted_source": staged_counts["metaketa_iii_2021__stage.csv"]["expected_rows"],
                 "rows_contributed": 0,
                 "rows_left_out_within_source": staged_counts["metaketa_iii_2021__stage.csv"]["expected_rows"],
-                "why": "not included because this is native field-experiment ATE/ITT evidence, not a D-axis result table",
-                "why_in_out": "Not included: Metaketa III is a strong PAP/coordinated-trial source, but the local payload is native site-estimate and field-experiment output. It belongs in a native metric side lane unless a source-defensible D conversion and one-row-per-study rule are added.",
+                "why": "not included as separate native/component rows because the pooled standardized-index project dot is now included",
+                "why_in_out": "Not included as component/native rows: the pooled Metaketa III paper/project median now enters strict Plot 3. Site-specific ATEs and native resource outcomes such as forest cover and pollution concentration stay staged for a native-metric or component panel.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6896,8 +7093,8 @@ def write_plot3_source_catalog() -> None:
                 "rows_with_non_retracted_source": staged_counts["metaketa_iv_2021__stage.csv"]["expected_rows"],
                 "rows_contributed": 0,
                 "rows_left_out_within_source": staged_counts["metaketa_iv_2021__stage.csv"]["expected_rows"],
-                "why": "not included because this is native community-policing field-experiment evidence, not a D-axis result table",
-                "why_in_out": "Not included: Metaketa IV is a strong PAP/coordinated-trial source, but the local results are native study and meta estimates. It should remain staged until a field-experiment native-metric lane or defensible D conversion policy exists.",
+                "why": "not included as separate native/component rows because the pooled standardized-index project dot is now included",
+                "why_in_out": "Not included as component/native rows: the pooled Metaketa IV paper/project median now enters strict Plot 3. Country/site rows, police rows, cluster-level rows, and native administrative outcomes stay staged to avoid nested non-independent evidence in the main layer.",
             },
             {
                 "plot_name": "Plot 3",
@@ -7044,8 +7241,8 @@ def write_plot3_source_catalog() -> None:
         "",
         "### What Is Still Missing",
         "",
-        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, SCORE preregistration-indicated paper-level rows, van den Akker matched preregistered-result paper medians, and RPCB preclinical Registered Report paper medians.",
-        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
+        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, pooled EGAP Metaketa I/III/IV PAP rows, the Schäfer/Schwarz preregistered key-effect sample, SCORE preregistration-indicated paper-level rows, van den Akker matched preregistered-result paper medians, and RPCB preclinical Registered Report paper medians.",
+        "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: TESS study-page extraction queue, Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native/component ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the larger van den Akker selective-hypothesis-reporting corpus.",
         "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.",
         "- The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.",
     ]

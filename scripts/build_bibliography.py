@@ -1147,7 +1147,7 @@ MANUAL_PAPER_OVERRIDES: dict[str, dict[str, str]] = {
         "publisher": "GitHub",
         "year": "2019",
         "url": "https://github.com/egap/metaketa-i",
-        "note": "Staged harvested field-experiment source; blocked from the shared D axis by non-D metrics.",
+        "note": "Harvested field-experiment source used for one pooled PAP row; component/native rows remain staged.",
         "metadata_source": "manual",
     },
     "metaketaIIIProject": {
@@ -1156,7 +1156,7 @@ MANUAL_PAPER_OVERRIDES: dict[str, dict[str, str]] = {
         "publisher": "Open Science Framework",
         "year": "2021",
         "url": "https://osf.io/knje7/",
-        "note": "Downloaded harvested field-experiment source; blocked from the shared D axis by non-D metrics.",
+        "note": "Downloaded harvested field-experiment source used for one pooled standardized-index PAP row; component/native rows remain staged.",
         "metadata_source": "manual",
     },
     "metaketaIVProject": {
@@ -1165,7 +1165,16 @@ MANUAL_PAPER_OVERRIDES: dict[str, dict[str, str]] = {
         "publisher": "Open Science Framework",
         "year": "2021",
         "url": "https://osf.io/tzy82/",
-        "note": "Harvested field-experiment source; blocked from the shared D axis by non-D metrics.",
+        "note": "Harvested field-experiment source used for one pooled standardized-index PAP row; component/native rows remain staged.",
+        "metadata_source": "manual",
+    },
+    "tessPastStudiesArchive": {
+        "entry_type": "misc",
+        "title": "TESS past studies archive",
+        "publisher": "Time-sharing Experiments for the Social Sciences",
+        "year": "2026",
+        "url": "https://tessexperiments.org/paststudies",
+        "note": "Scraped as a Plot 3 political-science extraction queue; study-page index does not itself contain final D/N rows.",
         "metadata_source": "manual",
     },
     "mullinix2015Dataverse": {
@@ -1530,6 +1539,7 @@ SUPPLEMENTAL_PAPER_REFERENCE_KEYS = (
     "metaketaIRepo",
     "metaketaIIIProject",
     "metaketaIVProject",
+    "tessPastStudiesArchive",
     "mullinix2015Dataverse",
     "musicianshipEegDataverse",
     "newsDiscernmentReplicationOsf",

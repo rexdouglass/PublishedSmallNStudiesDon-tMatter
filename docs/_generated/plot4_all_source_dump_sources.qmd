@@ -4,7 +4,7 @@ Machine-readable catalog: [plot4_all_source_dump_catalog.csv](../data/derived/ef
 
 Machine-readable normalized row dump: [plot4_all_source_dn_rows.csv](../data/derived/effect_inflation_dataset/plot4_all_source_dn_rows.csv)
 
-Plot 4 now has a first-pass all-source D/N surface map with `30,648` positive-D/N points. It is intentionally a descriptive dump, not a clean inferential layer.
+Plot 4 now has a first-pass all-source D/N surface map with `30,651` positive-D/N points. It is intentionally a descriptive dump, not a clean inferential layer.
 
 This first table is the feeder-corpus admission audit: what was considered, what it is, why it is in or out of the all-source dump, and how many observations made it in.
 
@@ -14,7 +14,7 @@ This first table is the feeder-corpus admission audit: what was considered, what
 | --- | --- | --- | --- |
 | Published-paper endpoint candidate corpus | Paper/unit-level published endpoint candidates with recoverable D and N. | included: include every candidate paper/study unit with positive D and N from the current candidate paper-level file; mixes published-original candidates, comparator-only rows, and other paper-level candidates; source_status carries that distinction | 25,881 |
 | Replication-pairs live corpus | Original and follow-up sides from the live replication-pair corpus. | included: split each live endpoint pair into original-side and follow-up-side D/N points; side-level points intentionally duplicate pair membership; this layer is descriptive, not an inferential paired analysis | 4,472 |
-| Preregistered-results tables | Normalized preregistered confirmatory result rows from Plot 3. | included: include each normalized preregistered confirmatory D/N result from Plot 3; small curated layer; not an exhaustive registry of preregistered science | 293 |
+| Preregistered-results tables | Normalized preregistered confirmatory result rows from Plot 3. | included: include each normalized preregistered confirmatory D/N result from Plot 3; small curated layer; not an exhaustive registry of preregistered science | 296 |
 | Staged replication harvest artifacts | Non-promoted staged harvest rows that already expose positive D and N for a side. | sidecar included: include non-promoted staged rows only when a positive D and N are already present for a side; most staged files are roster-only, native-metric, or otherwise D-blocked and therefore remain out of this D/N figure | 2 |
 | Promoted harvest pair tables | Source-specific promoted harvest outputs already folded into the live replication-pair table. | not separately included: not separately loaded; promoted rows are already folded into the live replication-pairs corpus above, so direct inclusion would duplicate them | 0 |
 
@@ -24,7 +24,7 @@ This first table is the feeder-corpus admission audit: what was considered, what
 
 Machine-readable row-level file: [plot4_all_source_dn_rows.csv](../data/derived/effect_inflation_dataset/plot4_all_source_dn_rows.csv)
 
-The specific-row layer has `30,648` positive-`D`/`N` points. It records source family, source file, row unit, row label, point id, source layer, side, `D`, `N`, and publication-boundary flags.
+The specific-row layer has `30,651` positive-`D`/`N` points. It records source family, source file, row unit, row label, point id, source layer, side, `D`, `N`, and publication-boundary flags.
 
 Layer summary:
 
@@ -35,7 +35,7 @@ Layer summary:
 | published_candidate_paper | 25,881 | 30 | 0.28 | 322 |
 | replication_pair_original | 2,241 | 83 | 0.61 | 107 |
 | replication_pair_followup | 2,231 | 83 | 0.31 | 262 |
-| preregistered_confirmatory_result | 293 | 11 | 0.40 | 205 |
+| preregistered_confirmatory_result | 296 | 14 | 0.39 | 207 |
 | staged_harvest_followup | 1 | 1 | 0.20 | 285 |
 | staged_harvest_original | 1 | 1 | 0.48 | 92 |
 

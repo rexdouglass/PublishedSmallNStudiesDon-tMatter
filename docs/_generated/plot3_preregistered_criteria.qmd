@@ -2,7 +2,7 @@ Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/deriv
 
 These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates. Under the relaxed rule, a source may expose multiple planned preregistered results per paper/project, but the plotted layer uses a median collapse when that within-paper result set is explicit.
 
-Across the currently named Plot 3 source families, `197,792` / `217,303` considered rows already have local D/N encoding somewhere in the project, and `293` rows enter the preregistered-results plot after the gates are applied.
+Across the currently named Plot 3 source families, `197,795` / `217,823` considered rows already have local D/N encoding somewhere in the project, and `296` rows enter the preregistered-results plot after the gates are applied.
 
 Source-table column criteria:
 
@@ -29,6 +29,9 @@ Source-table column criteria:
 | Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 16 |
 | PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | 12 | 12 | 12 | 12 | 12 | 1 |
 | PSA-CR001 pooled preregistered rows [@dorison2022] | 4 | 4 | 4 | 4 | 4 | 1 |
+| EGAP Metaketa I pooled PAP row [@metaketaIRepo] | 1 | 1 | 1 | 1 | 1 | 1 |
+| EGAP Metaketa III pooled PAP row [@metaketaIIIProject] | 1 | 1 | 1 | 1 | 1 | 1 |
+| EGAP Metaketa IV pooled PAP row [@metaketaIVProject] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyBabies 1 bilingual IDS pooled row [@byersHeinlein2021manybabiesBilingual] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyBabies 1 IDS pooled row [@manyBabies2020Ids] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyClasses 1 feedback pooled row [@fyfe2021manyclasses1] | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -50,6 +53,7 @@ Source-table column criteria:
 | Nordic trial registration-publication linkage | 7,461 | 0 | 7,461 | 0 | 7,461 | 0 |
 | AACT x PubMed registered primary outcomes [@du2024] | 2,720 | 0 | 0 | 0 | 2,720 | 0 |
 | COMPare prespecified outcome audit | 1,171 | 749 | 1,171 | 0 | 1,171 | 0 |
+| TESS survey-experiment archive [@tessPastStudiesArchive] | 517 | 517 | 517 | 0 | 517 | 0 |
 | van den Akker selective-hypothesis-reporting corpus [@vanDenAkkerSelectiveHypothesis2023] | 459 | 459 | 446 | 0 | 459 | 0 |
 | Twomey kinesiology article audit | 300 | 27 | 300 | 0 | 300 | 0 |
 | Registered Replication Reports per-lab rows | 205 | 205 | 0 | 0 | 205 | 0 |
