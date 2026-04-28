@@ -81,6 +81,9 @@ PROTZKO_PROMOTED = HARVEST_PROMOTED_DIR / "protzko_nhb_pairs__promoted_pairs.csv
 PREREG_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_results.csv"
 PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitivity_sidecar_rows.csv"
 PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv"
+SCHEEL_QUOTE_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_scheel_quote_stat_rescue_candidates.csv"
+VANDENAKKER_RESCUE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_vandenakker_first_stat_candidates.csv"
+RPCB_PRECLINICAL_CANDIDATES = DATASET_DERIVED_DIR / "plot3_rpcb_preclinical_paper_level_candidates.csv"
 ALL_SOURCE_DN_ROWS = DATASET_DERIVED_DIR / "plot4_all_source_dn_rows.csv"
 PLOT1_PAIR_DETAILS = DATASET_DERIVED_DIR / "plot1_replication_pair_details.csv"
 PLOT2_PAPER_DETAILS = DATASET_DERIVED_DIR / "plot2_published_paper_details.csv"
@@ -796,6 +799,7 @@ PLOT3_CITATION_KEYS = {
     "PSA-CR002 cognitive reappraisal preregistered hypotheses": "wang2021psacr002",
     "PSA004 true-belief/Gettier pooled preregistered row": "hall2024psa004Turri",
     "ManyBabies 1 infant-directed speech pooled preregistered row": "manyBabies2020Ids",
+    "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row": "byersHeinlein2021manybabiesBilingual",
     "ManyClasses 1 feedback pooled preregistered row": "fyfe2021manyclasses1",
     "Schäfer/Schwarz 2019 preregistered psychology articles": "schaefer2019meaningfulness",
     "Schäfer/Schwarz 2019 non-preregistered psychology articles": "schaefer2019meaningfulness",
@@ -828,6 +832,7 @@ PLOT3_DISPLAY_LABELS = {
     "PSA-CR002 cognitive reappraisal preregistered hypotheses": "PSA-CR002 cognitive reappraisal hypotheses",
     "PSA004 true-belief/Gettier pooled preregistered row": "PSA004 true-belief/Gettier pooled row",
     "ManyBabies 1 infant-directed speech pooled preregistered row": "ManyBabies 1 IDS pooled row",
+    "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row": "ManyBabies 1 bilingual IDS pooled row",
     "ManyClasses 1 feedback pooled preregistered row": "ManyClasses 1 feedback pooled row",
     "Schäfer/Schwarz 2019 preregistered psychology articles": "Schäfer/Schwarz preregistered psychology articles",
     "Schäfer/Schwarz 2019 non-preregistered psychology articles": "Schäfer/Schwarz non-preregistered comparator",
@@ -1553,6 +1558,20 @@ MANUAL_PREREGISTERED_ADDITIONS: list[dict[str, object]] = [
         "supported": "yes",
         "journal": "Advances in Methods and Practices in Psychological Science",
         "source_file": "ManyBabies 1 project page and ManyBabies Consortium 2020; DOI 10.1177/2515245919900809",
+        "source_row_number": 1,
+    },
+    {
+        "point_id": "manybabies1_bilingual_ids_preference_pooled",
+        "source_family": "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row",
+        "source_label": "ManyBabies 1 bilingual IDS pooled row",
+        "citation_key": "byersHeinlein2021manybabiesBilingual",
+        "row_unit": "pooled_primary_preregistered_project_effect",
+        "row_label": "Bilingual infants' infant-directed speech versus adult-directed speech pooled preference effect",
+        "D": 0.26,
+        "N": 324,
+        "supported": "yes",
+        "journal": "Advances in Methods and Practices in Psychological Science",
+        "source_file": "Byers-Heinlein et al. 2021; DOI 10.1177/2515245920974622; full-dataset bilingual dz=0.26 and local processed usable N=324",
         "source_row_number": 1,
     },
     {
@@ -2481,6 +2500,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "PSA-CR002 cognitive reappraisal preregistered hypotheses": "#c44a1e",
         "PSA004 true-belief/Gettier pooled preregistered row": "#2f8c61",
         "ManyBabies 1 infant-directed speech pooled preregistered row": "#b56b00",
+        "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row": "#a84f9a",
         "ManyClasses 1 feedback pooled preregistered row": "#8b6f21",
         "Schäfer/Schwarz 2019 preregistered psychology articles": "#7a4d9b",
         "SCORE/COS preregistration-indicated original papers": "#555555",
@@ -2491,6 +2511,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
         "PSA-CR002 cognitive reappraisal preregistered hypotheses": "D",
         "PSA004 true-belief/Gettier pooled preregistered row": "P",
         "ManyBabies 1 infant-directed speech pooled preregistered row": "v",
+        "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row": "<",
         "ManyClasses 1 feedback pooled preregistered row": "X",
         "Schäfer/Schwarz 2019 preregistered psychology articles": "^",
         "SCORE/COS preregistration-indicated original papers": "o",
@@ -5533,6 +5554,13 @@ def write_plot3_source_catalog() -> None:
     score_prereg, score_prereg_count, score_prereg_left_out = score_prereg_indicated_paper_rows(published)
     manual_prereg = pd.DataFrame(MANUAL_PREREGISTERED_ADDITIONS)
     manual_source_counts = manual_prereg["source_family"].value_counts().to_dict()
+    scheel_quote_candidates = pd.read_csv(SCHEEL_QUOTE_RESCUE_CANDIDATES) if SCHEEL_QUOTE_RESCUE_CANDIDATES.exists() else pd.DataFrame()
+    scheel_quote_candidate_rows = len(scheel_quote_candidates)
+    scheel_quote_candidates_with_n = int(scheel_quote_candidates.get("N_candidate", pd.Series(dtype=float)).notna().sum()) if not scheel_quote_candidates.empty else 0
+    vandenakker_rescue_candidates = pd.read_csv(VANDENAKKER_RESCUE_CANDIDATES) if VANDENAKKER_RESCUE_CANDIDATES.exists() else pd.DataFrame()
+    vandenakker_rescue_candidate_rows = len(vandenakker_rescue_candidates)
+    rpcb_preclinical_candidates = pd.read_csv(RPCB_PRECLINICAL_CANDIDATES) if RPCB_PRECLINICAL_CANDIDATES.exists() else pd.DataFrame()
+    rpcb_preclinical_candidate_rows = len(rpcb_preclinical_candidates)
 
     if COMPARE_OUTCOME_ROWS.exists():
         compare_outcomes = pd.read_csv(COMPARE_OUTCOME_ROWS)
@@ -5705,8 +5733,8 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "Scheel et al. 2021 preregistered-hypotheses corpus",
                 "corpus_what_it_is": "Registered Reports/preregistered-hypothesis table with a recoverable D/N subset.",
                 "what_it_is_why_possible_candidate": "Published psychology Registered Reports coded by Scheel et al. as preregistered hypotheses. Possible Plot 3 candidate because each row is an analytically preregistered confirmatory hypothesis and the local appendix table recovers D/N for the extractable subset.",
-                "confirmed_fields": f"Known: 71 preregistered hypothesis rows, {fmt_int(len(table40))} D/N-ready rows. Confirmed: analytic preregistration: yes (71); support status: yes ({fmt_int(len(table40))}); journal provenance: yes ({fmt_int(len(table40))}); paper D/N: yes ({fmt_int(len(table40))}).",
-                "backing_file": str(PREREG_TABLE_40.relative_to(ROOT)),
+                "confirmed_fields": f"Known: 71 preregistered hypothesis rows, {fmt_int(len(table40))} D/N-ready rows. Confirmed: analytic preregistration: yes (71); support status: yes ({fmt_int(len(table40))}); journal provenance: yes ({fmt_int(len(table40))}); paper D/N: yes ({fmt_int(len(table40))}). New quote-stat rescue queue: {fmt_int(scheel_quote_candidate_rows)} candidate statistic rows, {fmt_int(scheel_quote_candidates_with_n)} with candidate N, all marked not strict-ready pending PDF/focal checks.",
+                "backing_file": f"{PREREG_TABLE_40.relative_to(ROOT)}; {SCHEEL_QUOTE_RESCUE_CANDIDATES.relative_to(ROOT)}",
                 "rows_considered": 71,
                 "rows_preregistered_equivalent": 71,
                 "rows_with_public_local_backing": 71,
@@ -5715,7 +5743,7 @@ def write_plot3_source_catalog() -> None:
                 "rows_contributed": len(table40),
                 "rows_left_out_within_source": 71 - len(table40),
                 "why": "base preregistered-results corpus already on disk; 32 hypotheses have extractable D/N rows and 39 do not",
-                "why_in_out": f"Included: {fmt_int(len(table40))} hypotheses enter. The remaining {fmt_int(71 - len(table40))} Scheel rows are real preregistered hypotheses but do not have local D/N rows in the current table.",
+                "why_in_out": f"Included: {fmt_int(len(table40))} hypotheses enter. The remaining {fmt_int(71 - len(table40))} Scheel rows are real preregistered hypotheses. The local quote-stat pass now identifies {fmt_int(scheel_quote_candidate_rows)} rescue candidates, but they remain outside strict Plot 3 until their article PDFs verify the exact first-hypothesis row and analytic N.",
             },
             {
                 "plot_name": "Plot 3",
@@ -5788,6 +5816,24 @@ def write_plot3_source_catalog() -> None:
                 "rows_left_out_within_source": 1 - manual_source_counts.get("ManyBabies 1 infant-directed speech pooled preregistered row", 0),
                 "why": "included as a pooled preregistered many-lab primary result with N and reported D",
                 "why_in_out": "Included: one pooled ManyBabies 1 infant-directed-speech preference row enters. Lab, method, age, and language moderator rows are deliberately not added to avoid nested non-independent Plot 3 rows.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "included",
+                "source_label": "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row",
+                "corpus_what_it_is": "ManyBabies 1 Bilingual pooled infant-directed-speech versus adult-directed-speech preference project.",
+                "what_it_is_why_possible_candidate": "ManyBabies 1 Bilingual was considered because it is the preregistered companion project to ManyBabies 1 and reports the bilingual-infant pooled IDS-versus-ADS preference effect with a standardized within-infant effect size.",
+                "confirmed_fields": "Known: one pooled primary bilingual IDS-versus-ADS effect. Confirmed locally from the public analysis repository: preregistered many-lab project: yes; focal pooled bilingual effect: yes; usable bilingual full-dataset N: 324 infants; reported full-dataset bilingual dz: 0.26; Plot 1 duplicate check: no local ManyBabies 1 Bilingual pair row found.",
+                "backing_file": "Byers-Heinlein et al. 2021; DOI 10.1177/2515245920974622; public mb1b-analysis repository processed_data/04_full_dataset_diff.csv",
+                "rows_considered": 1,
+                "rows_preregistered_equivalent": 1,
+                "rows_with_public_local_backing": 1,
+                "rows_with_extractable_DN": manual_source_counts.get("ManyBabies 1 Bilingual infant-directed speech pooled preregistered row", 0),
+                "rows_with_non_retracted_source": 1,
+                "rows_contributed": manual_source_counts.get("ManyBabies 1 Bilingual infant-directed speech pooled preregistered row", 0),
+                "rows_left_out_within_source": 1 - manual_source_counts.get("ManyBabies 1 Bilingual infant-directed speech pooled preregistered row", 0),
+                "why": "included as a pooled preregistered many-lab primary result with usable N and reported standardized effect",
+                "why_in_out": "Included: one pooled ManyBabies 1 Bilingual infant-directed-speech preference row enters. The monolingual comparison rows and site/moderator rows are deliberately not added to avoid nested non-independent Plot 3 rows.",
             },
             {
                 "plot_name": "Plot 3",
@@ -5939,8 +5985,8 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "RPCB eLife Registered Report replication effects",
                 "corpus_what_it_is": "Reproducibility Project: Cancer Biology effect-level replication dataset from eLife Registered Reports and replication studies.",
                 "what_it_is_why_possible_candidate": "RPCB was rechecked because its replication protocols were submitted as Registered Reports before experimental work and the public OSF effect-level table contains replication sample sizes and SMD-like effect-size columns.",
-                "confirmed_fields": f"Known locally: 188 effect-level rows in the RPCB final effect table and {fmt_int(rpcb_pair_rows)} RPCB rows already in the replication-pair file. Confirmed from local table: replication sample size is present for 188 effects; replication SMD effect size is present for 159 effects; original sample size is numeric for 140 effects; original SMD effect size is numeric for 135 effects. Confirmed: Registered Report replication protocol status: yes; standalone non-overlap with Plot 1: no.",
-                "backing_file": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv; https://osf.io/e5nvr/",
+                "confirmed_fields": f"Known locally: 188 effect-level rows in the RPCB final effect table and {fmt_int(rpcb_pair_rows)} RPCB rows already in the replication-pair file. Confirmed from local table: replication sample size is present for 188 effects; replication SMD effect size is present for 159 effects; original sample size is numeric for 140 effects; original SMD effect size is numeric for 135 effects. A conservative first-effect-per-paper preclinical candidate file now contains {fmt_int(rpcb_preclinical_candidate_rows)} row-ready D/N candidates. Confirmed: Registered Report replication protocol status: yes; standalone non-overlap with Plot 1: no.",
+                "backing_file": f"data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv; {RPCB_PRECLINICAL_CANDIDATES.relative_to(ROOT)}; https://osf.io/e5nvr/",
                 "rows_considered": 188,
                 "rows_preregistered_equivalent": 188,
                 "rows_with_public_local_backing": 188,
@@ -5949,7 +5995,7 @@ def write_plot3_source_catalog() -> None:
                 "rows_contributed": 0,
                 "rows_left_out_within_source": 188,
                 "why": "not included because these are preregistered replication-effect rows already serving the Plot 1 RPCB comparison and are not an independent published-result layer",
-                "why_in_out": "Not included: RPCB is a real Registered Report replication source with many extractable replication-side effects, but the same evidence is already used as original-versus-replication evidence. Adding it to strict Plot 3 would double-count RPCB and mix nested preclinical replication effects with standalone confirmatory published-result rows.",
+                "why_in_out": f"Not included in the psychology/social-science strict layer: RPCB is a real Registered Report replication source and now has {fmt_int(rpcb_preclinical_candidate_rows)} conservative paper-level D/N candidates, but adding them here would double-count RPCB against Plot 1 and mix preclinical replication effects with standalone confirmatory psychology/social-science rows. The candidate file is ready for a separate preclinical layer decision.",
             },
             {
                 "plot_name": "Plot 3",
@@ -5993,17 +6039,17 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "van den Akker preregistration-in-practice matched hypothesis corpus",
                 "corpus_what_it_is": "Preregistration-in-practice corpus that reportedly matches preregistered hypotheses to the first corresponding published statistical result.",
                 "what_it_is_why_possible_candidate": "This corpus looked high-yield because the public OSF project exposes a 193-row preregistered-versus-non-preregistered publication table, parsed original-statistic spreadsheets, and selective-hypothesis-reporting coding sheets that can drive a later row-rescue pass.",
-                "confirmed_fields": "Verified from the OSF API/downloads: `PvNP Data.xlsx` has 193 publication rows, `Original Stats.xlsx` has 640 parsed original-stat rows across 180 PSP IDs, `Control Stats.xlsx` holds the matched control-stat sample, and `Data SHR.xlsx` exposes hypothesis/reporting match fields. A first-pass parse found 105 PSP IDs with t/F plus N candidates, but the focal-hypothesis selector, relevance flags, metric conversion, and DOI deduplication are not yet strict-row audited.",
-                "backing_file": "https://osf.io/pqnvr/; https://osf.io/sujfa/; https://osf.io/xzcnb/",
+                "confirmed_fields": f"Verified from the OSF API/downloads: `PvNP Data.xlsx` has 193 publication rows, `Original Stats.xlsx` has 640 parsed original-stat rows across 180 PSP IDs, `Control Stats.xlsx` holds the matched control-stat sample, and `Data SHR.xlsx` exposes hypothesis/reporting match fields. The local rescue parser now produces {fmt_int(vandenakker_rescue_candidate_rows)} first-convertible-statistic PSP candidates with D and N, all marked staged because the focal-hypothesis selector, relevance flags, metric conversion, and DOI deduplication are not yet strict-row audited.",
+                "backing_file": f"https://osf.io/pqnvr/; https://osf.io/sujfa/; https://osf.io/xzcnb/; {VANDENAKKER_RESCUE_CANDIDATES.relative_to(ROOT)}",
                 "rows_considered": 193,
                 "rows_preregistered_equivalent": 193,
                 "rows_with_public_local_backing": 193,
-                "rows_with_extractable_DN": 0,
+                "rows_with_extractable_DN": vandenakker_rescue_candidate_rows,
                 "rows_with_non_retracted_source": 193,
                 "rows_contributed": 0,
                 "rows_left_out_within_source": 193,
                 "why": "not included yet because the public files need focal-row filtering, statistic parsing, and duplicate overlap checks before any strict append",
-                "why_in_out": "Not included yet: the OSF payload is real and high-yield, but the parsed statistic rows are not automatically the first preregistered confirmatory hypothesis. It needs field verification, t/F/r-to-D conversion checks, and DOI-level deduplication against existing Schäfer/Schwarz, Scheel, SCORE, PSA, ManyBabies, and ManyClasses rows.",
+                "why_in_out": f"Not included yet: the OSF payload is real and high-yield, and the local parser now finds {fmt_int(vandenakker_rescue_candidate_rows)} D/N candidates. They are still not automatically the first preregistered confirmatory hypothesis, so promotion still needs field verification, t/F/r-to-D conversion checks, and DOI-level deduplication against existing Schäfer/Schwarz, Scheel, SCORE, PSA, ManyBabies, and ManyClasses rows.",
             },
             {
                 "plot_name": "Plot 3",
@@ -6012,7 +6058,7 @@ def write_plot3_source_catalog() -> None:
                 "corpus_what_it_is": "Large psychology preregistration-to-publication hypothesis-matching corpus from Selective Hypothesis Reporting in Psychology.",
                 "what_it_is_why_possible_candidate": "The selective-hypothesis-reporting corpus was separated from the 193-study preregistration-in-practice sample because the paper and local workbook expose a much larger study/hypothesis matching surface that can drive a later strict row-rescue pass.",
                 "confirmed_fields": "Known from the article: 459 preregistered studies and 2,119 identified hypotheses. Verified locally in `Data SHR.xlsx`: 484 PSP IDs total, 446 PSP IDs marked `Inclusion=Yes`, 5,723 filled preregistered-hypothesis cells among included PSP IDs, and 3,342 publication-match cells beginning with `Yes`. Confirmed: preregistration/publication hypothesis matching: yes; support/match status: yes; source-provided D/N: no.",
-                "backing_file": "tmp/osf_pqnvr/Data_SHR.xlsx (downloaded audit copy); https://doi.org/10.1177/25152459231187988",
+                "backing_file": "data/raw/corpus_candidates/vandenakker_pqnvr/Data_SHR.xlsx (downloaded audit copy); https://doi.org/10.1177/25152459231187988",
                 "rows_considered": 459,
                 "rows_preregistered_equivalent": 459,
                 "rows_with_public_local_backing": 446,
@@ -6447,7 +6493,7 @@ def write_plot3_source_catalog() -> None:
         "",
         "### What Is Still Missing",
         "",
-        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, and SCORE preregistration-indicated paper-level rows.",
+        "- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1 and ManyBabies 1 Bilingual, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, and SCORE preregistration-indicated paper-level rows.",
         "- The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, RPCB Registered Report replication effects, Allen/Mehler RR support-rate evidence, ManyBabies 3, ManyBabies 4, ManyClasses 2, EGAP Metaketa I/III/IV native ATE rows, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, the van den Akker preregistration-in-practice corpus, and the larger van den Akker selective-hypothesis-reporting corpus.",
         "- Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.",
         "- The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.",
