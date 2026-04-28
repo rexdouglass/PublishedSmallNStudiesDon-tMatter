@@ -8,6 +8,7 @@ and synced figure captions.
 
 from __future__ import annotations
 
+import ast
 import csv
 import math
 import re
@@ -73,16 +74,19 @@ SCHAEFER_PREREG_RAW = ROOT / "data" / "raw" / "corpus_candidates" / "schaefer_sc
 SCHAEFER_NON_PREREG_RAW = ROOT / "data" / "raw" / "corpus_candidates" / "schaefer_schwarz_2019" / "studies_without_prereg.xlsx"
 SCORE_ORIG_PREREG = ROOT / "data" / "raw" / "corpus_candidates" / "score" / "orig_prereg-indicated.csv"
 SCORE_PAPER_METADATA = ROOT / "data" / "raw" / "corpus_candidates" / "score" / "paper_metadata.csv"
+CTGOV_EFFICACY_RAW = ROOT / "data" / "raw" / "corpus_candidates" / "ctgov_kg" / "efficacy_df.csv"
 COMPARE_OUTCOME_ROWS = ROOT / "data" / "derived" / "corpus_candidates" / "compare_trials" / "compare_trials_outcome_rows.csv"
 COMPARE_TRIALS = ROOT / "data" / "raw" / "corpus_candidates" / "compare_trials" / "compare_trials.csv"
 PROTZKO_PROMOTED = HARVEST_PROMOTED_DIR / "protzko_nhb_pairs__promoted_pairs.csv"
 PREREG_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_results.csv"
 PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitivity_sidecar_rows.csv"
+PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv"
 ALL_SOURCE_DN_ROWS = DATASET_DERIVED_DIR / "plot4_all_source_dn_rows.csv"
 PLOT1_PAIR_DETAILS = DATASET_DERIVED_DIR / "plot1_replication_pair_details.csv"
 PLOT2_PAPER_DETAILS = DATASET_DERIVED_DIR / "plot2_published_paper_details.csv"
 PREREG_FIG = FIG_DIR / "plot3_preregistered_d_vs_n.png"
 PREREG_SENSITIVITY_FIG = FIG_DIR / "plot3_preregistered_sensitivity_sidecar.png"
+PREREG_CTGOV_PRIMARY_RANDOMIZED_FIG = FIG_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar.png"
 ALL_SOURCE_FIG = FIG_DIR / "plot4_all_source_dn_dump.png"
 
 Z_05 = 1.959963984540054
@@ -1552,6 +1556,115 @@ def normalize_preregistered_sensitivity_sidecar_rows() -> pd.DataFrame:
     return df
 
 
+def ctgov_literal_list_len(value: object) -> float:
+    try:
+        parsed = ast.literal_eval(str(value))
+    except Exception:
+        return float("nan")
+    if isinstance(parsed, list):
+        return float(len(parsed))
+    return float("nan")
+
+
+def ctgov_p_value_to_abs_z(values: pd.Series) -> pd.Series:
+    p_text = values.fillna("").astype(str)
+    p_values = pd.to_numeric(
+        p_text.str.extract(r"([0-9]*\.?[0-9]+(?:[eE][-+]?\d+)?)", expand=False),
+        errors="coerce",
+    )
+    valid = (p_values > 0) & (p_values < 1)
+    z = pd.Series(np.nan, index=values.index, dtype=float)
+    z.loc[valid] = stats.norm.isf(p_values.loc[valid] / 2)
+    return z
+
+
+def normalize_ctgov_primary_randomized_sidecar_rows() -> pd.DataFrame:
+    """Cleaner CT.gov sub-sidecar: one eligible phase-2+ primary randomized registry outcome per trial."""
+    if not CTGOV_EFFICACY_RAW.exists():
+        df = pd.DataFrame()
+        df.to_csv(PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS, index=False)
+        return df
+
+    source = pd.read_csv(CTGOV_EFFICACY_RAW, low_memory=False)
+    source["_p_abs_z"] = ctgov_p_value_to_abs_z(source.get("p_value", pd.Series("", index=source.index)))
+    source["_N"] = numeric_series(source.get("enrollment_num", pd.Series(index=source.index)))
+    source["_group_count"] = source.get("groups", pd.Series("", index=source.index)).map(ctgov_literal_list_len)
+    phase_text = source.get("trial_phase", pd.Series("", index=source.index)).fillna("").astype(str).str.lower()
+    source["_phase_2plus_flag"] = phase_text.isin({"phase 2", "phase 2/phase 3", "phase 3", "phase 3/phase 4", "phase 4"})
+    eligible = (
+        source.get("study_type", pd.Series("", index=source.index)).astype(str).str.lower().eq("interventional")
+        & source.get("allocation", pd.Series("", index=source.index)).astype(str).str.lower().eq("randomized")
+        & source.get("outcome_type", pd.Series("", index=source.index)).astype(str).str.lower().eq("primary")
+        & source.get("completion_year", pd.Series(index=source.index)).notna()
+        & source["_phase_2plus_flag"]
+        & source["_group_count"].eq(2)
+        & source["_p_abs_z"].notna()
+        & source["_N"].gt(0)
+    )
+    subset = source.loc[eligible].copy()
+    if subset.empty:
+        df = pd.DataFrame()
+        df.to_csv(PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS, index=False)
+        return df
+
+    # Keep only trials whose local record exposes exactly one eligible primary row.
+    # This avoids choosing among multiple primaries by significance or arbitrary row order.
+    per_trial = subset.groupby("NCT_ID").size()
+    single_primary_nct = set(per_trial.loc[per_trial.eq(1)].index.astype(str))
+    subset = subset.loc[subset["NCT_ID"].astype(str).isin(single_primary_nct)].copy()
+    subset["_D"] = (2 * subset["_p_abs_z"] / np.sqrt(subset["_N"])).abs()
+    subset = subset.loc[subset["_D"].gt(0) & subset["_N"].gt(0)].sort_values("NCT_ID", kind="stable").reset_index()
+
+    rows: list[dict[str, object]] = []
+    for idx, row in subset.iterrows():
+        nct_id = safe_text(row.get("NCT_ID")) or f"ctgov_primary_{idx + 1}"
+        rows.append(
+            {
+                "point_id": f"ctgov_primary_randomized_{idx + 1:05d}",
+                "plot_name": "Plot 3 sensitivity",
+                "source_layer": "registered_primary_randomized_sidecar",
+                "source_family": "ClinicalTrials.gov phase-2+ primary randomized one-row-per-trial sub-sidecar",
+                "source_label": "CT.gov phase-2+ primary randomized registry rows",
+                "citation_key": "du2024",
+                "row_unit": "one_primary_registry_outcome_per_randomized_trial",
+                "unit_id": nct_id,
+                "row_label": safe_text(row.get("outcome_title")) or nct_id,
+                "D": float(row["_D"]),
+                "N": float(row["_N"]),
+                "support_or_significance": "registry p-value proxy",
+                "source_file": str(CTGOV_EFFICACY_RAW.relative_to(ROOT)),
+                "source_row_number": int(row["index"]) + 1,
+                "study_type": safe_text(row.get("study_type")),
+                "allocation": safe_text(row.get("allocation")),
+                "trial_phase": safe_text(row.get("trial_phase")),
+                "completion_year": row.get("completion_year"),
+                "outcome_type": safe_text(row.get("outcome_type")),
+                "outcome_id": row.get("outcome_id"),
+                "p_value": safe_text(row.get("p_value")),
+                "method": safe_text(row.get("method")),
+                "param_type": safe_text(row.get("param_type")),
+                "param_value": row.get("param_value"),
+                "phase_2plus_flag": bool(row["_phase_2plus_flag"]),
+                "admission_reason": (
+                    "cleaner CT.gov registry sidecar: phase-2+ randomized interventional trial with exactly one locally "
+                    "eligible primary two-group outcome; still excluded from strict Plot 3 because D is a "
+                    "registry p-value/enrollment proxy and no protocol/SAP timing audit is attached"
+                ),
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    if not df.empty:
+        df["D"] = numeric_series(df["D"]).abs()
+        df["N"] = numeric_series(df["N"])
+        df["log10_N"] = np.log10(df["N"])
+        df["log10_D"] = np.log10(df["D"])
+        df["two_sample_p05_boundary_D"] = 2 * Z_05 / np.sqrt(df["N"])
+        df["above_two_sample_p05_curve"] = df["D"] >= df["two_sample_p05_boundary_D"]
+    df.to_csv(PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS, index=False)
+    return df
+
+
 def normalize_staged_harvest_dn_rows(live_pair_ids: set[str]) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
     for path in sorted(HARVEST_STAGED_DIR.glob("*.csv")):
@@ -2421,6 +2534,155 @@ def draw_preregistered_sensitivity_sidecar(out_path: Path) -> dict[str, float | 
     }
 
 
+def draw_ctgov_primary_randomized_sidecar(out_path: Path) -> dict[str, float | int]:
+    df = normalize_ctgov_primary_randomized_sidecar_rows()
+    if df.empty:
+        fig, ax = plt.subplots(figsize=(9, 5), dpi=180)
+        ax.text(0.5, 0.5, "No CT.gov primary randomized sidecar rows available", ha="center", va="center")
+        ax.axis("off")
+        fig.savefig(out_path, bbox_inches="tight")
+        plt.close(fig)
+        return {"n_rows": 0, "median_d": float("nan"), "median_n": float("nan")}
+
+    x_min = max(1.0, 10 ** math.floor(math.log10(float(df["N"].min()) * 0.8)))
+    x_max = min(10 ** math.ceil(math.log10(float(df["N"].max()) * 1.15)), 10_000_000.0)
+    y_min = max(10 ** math.floor(math.log10(float(df["D"].min()) * 0.8)), 0.00001)
+    y_max = min(max(10 ** math.ceil(math.log10(float(df["D"].max()) * 1.1)), 3.0), 20.0)
+    xs = np.logspace(np.log10(x_min), np.log10(x_max), 500)
+
+    fig = plt.figure(figsize=(10.5, 8.3), dpi=180)
+    gs = fig.add_gridspec(2, 1, height_ratios=[5.0, 1.35], hspace=0.32)
+    ax = fig.add_subplot(gs[0, 0])
+    ax_hist = fig.add_subplot(gs[1, 0])
+
+    boundary_05 = 2 * Z_05 / np.sqrt(xs)
+    boundary_10 = 2 * 1.6448536269514722 / np.sqrt(xs)
+    ax.fill_between(xs, boundary_05, y_max, color="#e8f5ee", alpha=0.34, zorder=0)
+    ax.fill_between(xs, y_min, boundary_05, color="#fceaea", alpha=0.27, zorder=0)
+    ax.plot(xs, boundary_05, color="#202020", lw=1.7, linestyle="--", zorder=1)
+    ax.plot(xs, boundary_10, color="#606060", lw=1.25, linestyle=":", zorder=1)
+
+    color = "#2f6f9f"
+    phase2plus = df["phase_2plus_flag"].astype(bool) if "phase_2plus_flag" in df.columns else pd.Series(True, index=df.index)
+    if (~phase2plus).sum() > 0:
+        ax.scatter(
+            df.loc[~phase2plus, "N"],
+            df.loc[~phase2plus, "D"],
+            s=10,
+            color="#8aa9b5",
+            edgecolors="none",
+            alpha=0.24,
+            rasterized=True,
+            label=f"Other/unspecified phase (n={fmt_int((~phase2plus).sum())})",
+            zorder=3,
+        )
+    ax.scatter(
+        df.loc[phase2plus, "N"],
+        df.loc[phase2plus, "D"],
+        s=10,
+        color=color,
+        edgecolors="none",
+        alpha=0.30,
+        rasterized=True,
+        label=f"Phase 2+ trials (n={fmt_int(phase2plus.sum())})",
+        zorder=4,
+    )
+    ax.scatter(
+        df["N"].median(),
+        df["D"].median(),
+        s=150,
+        facecolors="white",
+        edgecolors=color,
+        linewidths=2.1,
+        zorder=6,
+    )
+
+    ax.text(
+        0.03,
+        0.04,
+        (
+            f"{len(df):,} CT.gov cleaner sidecar rows\n"
+            f"phase 2+ randomized trial, one eligible primary registry outcome\n"
+            f"median |D| = {df['D'].median():.2f}; median N = {df['N'].median():,.0f}"
+        ),
+        transform=ax.transAxes,
+        fontsize=8.7,
+        color="#1a1a1a",
+        bbox={"boxstyle": "round,pad=0.35", "facecolor": "white", "edgecolor": "#d8e3df", "alpha": 0.92},
+        zorder=7,
+    )
+    for z, label, x_divisor, y_multiplier in [
+        (Z_05, "p=.05", 2.8, 1.08),
+        (1.6448536269514722, "p=.10", 4.2, 0.9),
+    ]:
+        x_label = x_max / x_divisor
+        y_label = max(y_min * 1.2, 2 * z / np.sqrt(x_label) * y_multiplier)
+        ax.text(
+            x_label,
+            y_label,
+            label,
+            color="#333333",
+            fontsize=8.8,
+            ha="left",
+            va="bottom",
+            rotation=-25,
+            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.72, "pad": 0.3},
+            zorder=8,
+        )
+
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(y_min, y_max)
+    ax.set_xlabel("Sample size N (log scale)")
+    ax.set_ylabel("Effect size magnitude D (log scale)")
+    ax.set_title("ClinicalTrials.gov Phase-2+ Primary-Outcome Sidecar", fontsize=15, fontweight="bold", pad=20)
+    ax.grid(True, which="major", alpha=0.14, linestyle=":")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.legend(frameon=False, loc="upper right", fontsize=8.2)
+
+    linear_d_max = 3.0
+    linear_bin_width = 0.1
+    linear_bins = np.arange(0, linear_d_max + linear_bin_width, linear_bin_width)
+    ax_hist.hist(
+        df["D"].clip(lower=0, upper=linear_d_max),
+        bins=linear_bins,
+        density=True,
+        histtype="stepfilled",
+        color=color,
+        alpha=0.18,
+    )
+    ax_hist.hist(
+        df["D"].clip(lower=0, upper=linear_d_max),
+        bins=linear_bins,
+        density=True,
+        histtype="step",
+        linewidth=1.4,
+        color=color,
+    )
+    ax_hist.set_xlim(0, linear_d_max)
+    linear_ticks = np.arange(0, linear_d_max + 0.001, 0.5)
+    linear_tick_labels = [f"{tick:g}" for tick in linear_ticks]
+    linear_tick_labels[-1] = "3+"
+    ax_hist.set_xticks(linear_ticks)
+    ax_hist.set_xticklabels(linear_tick_labels)
+    ax_hist.set_xlabel("Effect size magnitude D (linear scale, clipped at 3)")
+    ax_hist.set_ylabel("Density")
+    ax_hist.grid(False)
+    for spine in ["top", "right"]:
+        ax_hist.spines[spine].set_visible(False)
+
+    fig.savefig(out_path, bbox_inches="tight")
+    plt.close(fig)
+    return {
+        "n_rows": len(df),
+        "median_d": float(df["D"].median()),
+        "median_n": float(df["N"].median()),
+        "phase2plus_rows": int(phase2plus.sum()),
+    }
+
+
 def draw_all_source_dn_dump(out_path: Path) -> dict[str, float | int]:
     prereg = normalize_preregistered_results()
     df = normalize_all_source_dn_rows(prereg)
@@ -2516,6 +2778,7 @@ def generate_figures() -> dict[str, FigureSpec]:
     pub_stats = draw_published_distribution(fig5)
     draw_preregistered_results(PREREG_FIG)
     draw_preregistered_sensitivity_sidecar(PREREG_SENSITIVITY_FIG)
+    draw_ctgov_primary_randomized_sidecar(PREREG_CTGOV_PRIMARY_RANDOMIZED_FIG)
     draw_all_source_dn_dump(ALL_SOURCE_FIG)
     repl_stats = replication_stats()
 
@@ -4878,6 +5141,14 @@ def write_plot3_source_catalog() -> None:
         .mul(numeric_series(ctgov_registry.get("N_median", pd.Series(dtype=float))) > 0)
         .sum()
     )
+    if PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS.exists():
+        ctgov_clean = pd.read_csv(PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS)
+    else:
+        ctgov_clean = normalize_ctgov_primary_randomized_sidecar_rows()
+    ctgov_clean_rows = len(ctgov_clean)
+    ctgov_clean_phase2plus = int(
+        ctgov_clean.get("phase_2plus_flag", pd.Series(dtype=bool)).astype(bool).sum()
+    ) if not ctgov_clean.empty else 0
     clinifact = (
         published.loc[published["source_corpus"].eq("clinifact_published_primary_pairs")].copy()
         if not published.empty
@@ -5299,18 +5570,18 @@ def write_plot3_source_catalog() -> None:
                 "plot_inclusion_status": "not_included",
                 "source_label": "ClinicalTrials.gov registry-result D/N comparator",
                 "corpus_what_it_is": "Finer-grained ClinicalTrials.gov results extraction with D/N proxies for registry outcome rows.",
-                "what_it_is_why_possible_candidate": "ClinicalTrials.gov results were rechecked because they are the largest local preregistered-like bucket: trial records have registered outcomes and the parser recovers N plus p-value/effect-size proxies for thousands of primary registry-result rows.",
-                "confirmed_fields": f"Known locally: {fmt_int(len(ctgov_registry))} registry-result rows, {fmt_int(ctgov_dn_rows)} D/N-ready rows. Confirmed: registry outcome/result table: yes; N/effect proxy: yes; journal-published confirmatory result row: no; analytic plan/hypothesis row: no.",
+                "what_it_is_why_possible_candidate": "ClinicalTrials.gov results were rechecked because they are the largest local preregistered-like bucket: trial records have registered outcomes and the parser recovers N plus p-value/effect-size proxies. A cleaner sub-sidecar now isolates phase-2+ randomized interventional trials with exactly one locally eligible primary two-group row.",
+                "confirmed_fields": f"Known locally: broad sidecar has {fmt_int(len(ctgov_registry))} trial-median registry rows and {fmt_int(ctgov_dn_rows)} D/N-ready rows. Cleaner local sub-sidecar has {fmt_int(ctgov_clean_rows)} phase-2+ one-primary randomized rows. Confirmed: outcome type: yes in raw file; study type/allocation/phase: yes in raw file; N/effect proxy: yes; direct arm-level D: no; protocol/SAP timing audit: no.",
                 "backing_file": str(PUBLISHED_PAPERS.relative_to(ROOT)),
                 "rows_considered": len(ctgov_registry),
-                "rows_preregistered_equivalent": 0,
+                "rows_preregistered_equivalent": ctgov_clean_rows,
                 "rows_with_public_local_backing": len(ctgov_registry),
                 "rows_with_extractable_DN": ctgov_dn_rows,
                 "rows_with_non_retracted_source": len(ctgov_registry),
                 "rows_contributed": 0,
                 "rows_left_out_within_source": len(ctgov_registry),
                 "why": "not included because this is registry-result evidence, not the current standalone published/preregistered confirmatory-result layer",
-                "why_in_out": f"Not included: {fmt_int(ctgov_dn_rows)} D/N rows are real and local, but they are registry-outcome rows. They belong in a registry sensitivity lane unless Plot 3's inclusion rule is broadened beyond published analytic preregistration.",
+                "why_in_out": f"Not included in strict Plot 3: {fmt_int(ctgov_dn_rows)} broad D/N rows and {fmt_int(ctgov_clean_rows)} cleaner one-primary randomized rows are real and local, but the current D is a registry p-value/enrollment proxy and no protocol/SAP pre-measurement audit proves exact analytic prespecification. The cleaner subset remains a named sensitivity sidecar.",
             },
             {
                 "plot_name": "Plot 3",
@@ -5336,7 +5607,7 @@ def write_plot3_source_catalog() -> None:
                 "source_label": "Brodeur et al. 2024 preregistered/PAP economics table tests",
                 "corpus_what_it_is": "Top-journal economics table-test extraction with row-level preregistration, pre-analysis-plan, and PAP-power flags in the local raw notes.",
                 "what_it_is_why_possible_candidate": "The Brodeur economics corpus was rechecked because it is the other local source that produces thousands of preregistration-flagged D/N rows: many extracted table tests are from studies marked as preregistered or having a pre-analysis plan.",
-                "confirmed_fields": f"Known locally: {fmt_int(brodeur_rows)} extracted economics test rows, {fmt_int(brodeur_flagged_rows)} D/N-ready rows with preregistration/PAP/PAP-power flags, collapsing to {fmt_int(brodeur_flagged_papers)} papers. Confirmed: preregistration flag rows: {fmt_int(brodeur_prereg_rows)}; pre-analysis-plan flag rows: {fmt_int(brodeur_pap_rows)}; PAP-power flag rows: {fmt_int(brodeur_pap_power_rows)}; D/N: yes; focal/main-result selector: no.",
+                "confirmed_fields": f"Known locally: {fmt_int(brodeur_rows)} extracted economics test rows, {fmt_int(brodeur_flagged_rows)} D/N-ready rows with preregistration/PAP/PAP-power flags, collapsing to {fmt_int(brodeur_flagged_papers)} papers. Confirmed: preregistration flag rows: {fmt_int(brodeur_prereg_rows)}; pre-analysis-plan flag rows: {fmt_int(brodeur_pap_rows)}; PAP-power flag rows: {fmt_int(brodeur_pap_power_rows)}; D/N: yes; focal/main-result selector: no; exact test-level PAP mapping: no.",
                 "backing_file": str(CANDIDATE_ROWS.relative_to(ROOT)) if CANDIDATE_ROWS.exists() else "data/derived/corpus_candidates/candidate_d_n_rows.csv.gz",
                 "rows_considered": brodeur_rows,
                 "rows_preregistered_equivalent": brodeur_flagged_rows,
@@ -5346,7 +5617,7 @@ def write_plot3_source_catalog() -> None:
                 "rows_contributed": 0,
                 "rows_left_out_within_source": brodeur_flagged_rows,
                 "why": "not included because these are preregistration/PAP-flagged extracted table tests without a paper-level focal or main-result selector",
-                "why_in_out": f"Not included: the preregistration/PAP flags are real and account for {fmt_int(brodeur_flagged_rows)} D/N-ready extracted test rows, but all rows are coded as published table tests rather than source-selected main results. They are a good sensitivity lane candidate, not clean Plot 3 confirmatory-result rows.",
+                "why_in_out": f"Not included: the preregistration/PAP flags are real and account for {fmt_int(brodeur_flagged_rows)} D/N-ready extracted table-test rows, but the flags are not enough to prove that each coefficient/test is the exact prespecified confirmatory hypothesis. No focal/main-result selector is available, so this remains a sensitivity lane rather than strict Plot 3 evidence.",
             },
             {
                 "plot_name": "Plot 3",

@@ -354,6 +354,10 @@ The strict Plot 3 panel excludes registry-only and table-test-only evidence. The
 
 ![Registered and preregistered-like sidecar rows that have D/N locally but fail the strict Plot 3 confirmatory-result gate.](_generated/figures/plot3_preregistered_sensitivity_sidecar.png)
 
+The cleanest ClinicalTrials.gov subset we can build from the local files is stricter but still not strict-Plot-3 evidence: phase-2+ randomized interventional trials with exactly one locally eligible primary two-group outcome row, plotted one row per trial. It remains a sidecar because `D` is still a registry p-value/enrollment proxy and the row has not been matched to a locked protocol or SAP analysis.
+
+![Cleaner ClinicalTrials.gov sub-sidecar: phase-2+ randomized trials with one locally eligible primary registry outcome per trial.](_generated/figures/plot3_ctgov_phase2plus_primary_randomized_sidecar.png)
+
 ## Inclusion Criteria
 
 Plot 3 should include a source family when:
@@ -376,6 +380,7 @@ That is why mere clinical-trial registration is not enough for this layer. Regis
 - Source-family admission audit: [plot3_preregistered_source_catalog.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv)
 - Normalized plot rows: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_results.csv)
 - Sensitivity sidecar rows: [plot3_preregistered_sensitivity_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_sensitivity_sidecar_rows.csv)
+- Cleaner ClinicalTrials.gov sub-sidecar rows: [plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv)
 - Generated table fragments: [table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd](./_generated/tables/table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd) and [table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd](./_generated/tables/table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd)
 
 ## What Is Already in Hand
