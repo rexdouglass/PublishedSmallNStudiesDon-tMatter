@@ -1034,6 +1034,37 @@ MANUAL_PAPER_OVERRIDES: dict[str, dict[str, str]] = {
         "note": "Downloaded lead source; local OSF file list currently contains registered-report PDFs and appendices rather than a machine-readable pair-result table.",
         "metadata_source": "manual",
     },
+    "manyBabies2020Ids": {
+        "entry_type": "article",
+        "authors": "literal:ManyBabies Consortium",
+        "title": "Quantifying Sources of Variability in Infancy Research Using the Infant-Directed-Speech Preference",
+        "journal": "Advances in Methods and Practices in Psychological Science",
+        "year": "2020",
+        "volume": "3",
+        "number": "1",
+        "pages": "24--52",
+        "doi": "10.1177/2515245919900809",
+        "url": "https://doi.org/10.1177/2515245919900809",
+        "metadata_source": "manual",
+    },
+    "manyBabies4Project": {
+        "entry_type": "misc",
+        "title": "ManyBabies 4 helpers/hinderers project",
+        "publisher": "ManyBabies",
+        "year": "n.d.",
+        "url": "https://manybabies.org/MB4/",
+        "note": "Stage 1 and Stage 2 Registered Report project with public analysis repository; exact Plot 3 row extraction pending.",
+        "metadata_source": "manual",
+    },
+    "vanDenAkkerPreregPractice": {
+        "entry_type": "misc",
+        "title": "Preregistration in practice matched hypothesis corpus",
+        "publisher": "Open Science Framework",
+        "year": "n.d.",
+        "url": "https://osf.io/pqnvr/",
+        "note": "Candidate preregistered-hypothesis/result corpus; local variable and duplicate audit pending.",
+        "metadata_source": "manual",
+    },
     "manyClasses2Osf": {
         "entry_type": "misc",
         "title": "ManyClasses 2 OSF project",
@@ -1124,6 +1155,18 @@ MANUAL_PAPER_OVERRIDES: dict[str, dict[str, str]] = {
         "year": "n.d.",
         "url": "https://osf.io/x978m/",
         "note": "Staged harvested Philosophy Science Association replication source; effect-conversion policy remains pending.",
+        "metadata_source": "manual",
+    },
+    "wang2021psacr002": {
+        "entry_type": "article",
+        "authors": "Wang, Ke and Goldenberg, Amit and Dorison, Charles A. and others",
+        "title": "A Multi-Country Test of Brief Reappraisal Interventions on Emotions During the COVID-19 Pandemic",
+        "journal": "Nature Human Behaviour",
+        "year": "2021",
+        "volume": "5",
+        "pages": "1089--1110",
+        "doi": "10.1038/s41562-021-01173-x",
+        "url": "https://doi.org/10.1038/s41562-021-01173-x",
         "metadata_source": "manual",
     },
     "hall2024psa004Turri": {
@@ -1416,7 +1459,9 @@ SUPPLEMENTAL_PAPER_REFERENCE_KEYS = (
     "iesSystematicReplicationAwards",
     "klein2016independentReplicationInitiative",
     "jaljuliKafkafi2023MousePhenome",
+    "manyBabies2020Ids",
     "manyBabies3Osf",
+    "manyBabies4Project",
     "manyClasses2Osf",
     "mediaPriming2017Dataverse",
     "metaketaIRepo",
@@ -1427,7 +1472,9 @@ SUPPLEMENTAL_PAPER_REFERENCE_KEYS = (
     "newsDiscernmentReplicationOsf",
     "nieuwland2018delong",
     "psa004TurriOsf",
+    "wang2021psacr002",
     "hall2024psa004Turri",
+    "vanDenAkkerPreregPractice",
     "james2016publicAdminBlame",
     "walker2024publicAdminBlame",
     "rrrColling2020Osf",
@@ -2310,7 +2357,10 @@ def bibtex_entry(entry: BibEntry) -> str:
     ]
     rendered = [f"@{entry.entry_type}{{{entry.key},"]
     for field_name, value in fields:
-        value_text = bibtex_escape(value)
+        if field_name == "author" and clean_text(value).startswith("literal:"):
+            value_text = "{" + clean_text(value).removeprefix("literal:") + "}"
+        else:
+            value_text = bibtex_escape(value)
         if value_text:
             rendered.append(f"  {field_name} = {{{value_text}}},")
     if rendered[-1].endswith(","):
@@ -3008,7 +3058,8 @@ def write_csl_json(entries: list[BibEntry]) -> None:
             "title": entry.title,
         }
         if entry.authors:
-            item["author"] = [{"literal": part.strip()} for part in re.split(r"\s+and\s+", entry.authors) if part.strip()]
+            author_text = entry.authors.removeprefix("literal:")
+            item["author"] = [{"literal": part.strip()} for part in re.split(r"\s+and\s+", author_text) if part.strip()]
         if entry.year:
             item["issued"] = {"date-parts": [[int(entry.year)]]} if entry.year.isdigit() else {"raw": entry.year}
         if entry.journal:
