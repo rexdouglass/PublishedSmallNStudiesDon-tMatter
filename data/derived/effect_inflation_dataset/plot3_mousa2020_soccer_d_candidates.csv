@@ -1,0 +1,11 @@
+row_id,outcome,outcome_label,source_file,n_treatment,n_control,analytic_n,control_mean,treated_mean,D_candidate,abs_D_candidate,D_se_approx,conversion_method
+mousa2020_own_group_preference,own_group_preference,Mixed Team Sign-Up,wave-2.csv,104,128,232.0,0.46875,0.6057692307692307,0.3058363640321569,0.3058363640321569,0.14756244378186426,chinn_log_or_to_d_from_event_counts
+mousa2020_voted_muslim_extra,voted_muslim_extra,Vote Muslim Award,wave-2.csv,95,88,183.0,0.3068181818181818,0.5368421052631579,0.5307494400746389,0.5307494400746389,0.17061433255231467,chinn_log_or_to_d_from_event_counts
+mousa2020_train_t1,train_t1,Train w/ Muslims,waves-1-and-2.csv,197,262,459.0,0.17938931297709923,0.6142131979695431,1.0946897826079611,1.0946897826079611,0.11996961874213381,chinn_log_or_to_d_from_event_counts
+mousa2020_attend,attend,Attend Mixed Event,waves-1-and-2.csv,197,262,459.0,0.3320610687022901,0.39593908629441626,0.15242214453179878,0.15242214453179878,0.10808354477469724,chinn_log_or_to_d_from_event_counts
+mousa2020_went_mosul,went_mosul,Visit Mosul,mosul-outcome-wave-2.csv,140,178,318.0,0.2303370786516854,0.3142857142857143,0.23500410794013255,0.23500410794013255,0.14038164661028515,chinn_log_or_to_d_from_event_counts
+mousa2020_donate_t1_new1,donate_t1_new1,Donate Mixed NGO,wave-2.csv,98,123,221.0,0.6991869918699187,0.7244897959183674,0.06804149888971224,0.06804149888971224,0.16519315078976077,chinn_log_or_to_d_from_event_counts
+mousa2020_dv_secular_t1,dv_secular_t1,National Unity,wave-2.csv,104,128,232.0,-0.19233176388726192,0.11667565053030304,0.27969091536792223,0.27969091536792223,0.13265724001625775,mean_difference_over_control_sd
+mousa2020_dv_neigh_t1,dv_neigh_t1,Muslim Neighbor,wave-2.csv,104,128,232.0,0.10338063514098601,-0.1247919794523605,-0.18364353206268735,0.18364353206268735,0.132292099980583,mean_difference_over_control_sd
+mousa2020_dv_blame_t1,dv_blame_t1,Muslim Blame,wave-2.csv,104,128,232.0,-0.09644293914611833,0.08035753409596737,0.19881720499962788,0.19881720499962788,0.13233977354161217,mean_difference_over_control_sd
+mousa2020_paper_median_main_outcomes,paper_median,Median of nine main behavioral/attitudinal outcomes,main-analyses.R outcome set,,,232.0,,,0.23500410794013255,0.23500410794013255,,paper_median_abs_D

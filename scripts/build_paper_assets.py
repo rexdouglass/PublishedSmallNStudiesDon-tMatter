@@ -835,6 +835,7 @@ PLOT3_CITATION_KEYS = {
     "EGAP Metaketa I information/accountability pooled PAP row": "metaketaIRepo",
     "EGAP Metaketa III natural-resource monitoring pooled PAP row": "metaketaIIIProject",
     "EGAP Metaketa IV community-policing pooled PAP row": "metaketaIVProject",
+    "Mousa 2020 Iraq soccer social-cohesion preregistered field experiment": "mousa2020soccerZenodo",
     "EGAP Metaketa I information/accountability native ATE rows": "metaketaIRepo",
     "EGAP Metaketa III natural-resource monitoring native rows": "metaketaIIIProject",
     "EGAP Metaketa IV community-policing native rows": "metaketaIVProject",
@@ -883,6 +884,7 @@ PLOT3_DISPLAY_LABELS = {
     "EGAP Metaketa I information/accountability pooled PAP row": "EGAP Metaketa I pooled PAP row",
     "EGAP Metaketa III natural-resource monitoring pooled PAP row": "EGAP Metaketa III pooled PAP row",
     "EGAP Metaketa IV community-policing pooled PAP row": "EGAP Metaketa IV pooled PAP row",
+    "Mousa 2020 Iraq soccer social-cohesion preregistered field experiment": "Mousa 2020 Iraq soccer field experiment",
     "EGAP Metaketa I information/accountability native ATE rows": "EGAP Metaketa I native ATE rows",
     "EGAP Metaketa III natural-resource monitoring native rows": "EGAP Metaketa III native rows",
     "EGAP Metaketa IV community-policing native rows": "EGAP Metaketa IV native rows",
@@ -2210,6 +2212,21 @@ MANUAL_PREREGISTERED_ADDITIONS: list[dict[str, object]] = [
         "journal": "Science",
         "field": "political science",
         "source_file": "data/raw/replication_projects/lead_harvest/metaketa_iv_2021/osf_xqd3v_outputs/patrick_roach/data-examples-new/integrated RDS outputs/meta-estimates-main-hypotheses.RDS; median of eight primary standardized index estimates; respondent N from article/source",
+        "source_row_number": 1,
+    },
+    {
+        "point_id": "mousa2020_iraq_soccer_social_cohesion_median",
+        "source_family": "Mousa 2020 Iraq soccer social-cohesion preregistered field experiment",
+        "source_label": "Mousa 2020 Iraq soccer field experiment",
+        "citation_key": "mousa2020soccerZenodo",
+        "row_unit": "paper_median_of_preregistered_behavioral_and_attitudinal_outcomes",
+        "row_label": "Soccer-team social cohesion median behavioral/attitudinal effect",
+        "D": 0.23500410794013252,
+        "N": 232,
+        "supported": "not coded",
+        "journal": "Science",
+        "field": "political science",
+        "source_file": "data/derived/effect_inflation_dataset/plot3_mousa2020_soccer_d_candidates.csv; generated from data/raw/corpus_candidates/political_science_unlock/zenodo/3942437; binary outcomes converted with Chinn from arm event counts and attitudinal indices as mean difference over control SD; median absolute D and median outcome N",
         "source_row_number": 1,
     },
 ]
@@ -6472,6 +6489,7 @@ def write_plot3_source_catalog() -> None:
     metaketa_i_contributed = plot3_source_count("EGAP Metaketa I information/accountability pooled PAP row")
     metaketa_iii_contributed = plot3_source_count("EGAP Metaketa III natural-resource monitoring pooled PAP row")
     metaketa_iv_contributed = plot3_source_count("EGAP Metaketa IV community-policing pooled PAP row")
+    mousa_contributed = plot3_source_count("Mousa 2020 Iraq soccer social-cohesion preregistered field experiment")
     scheel_quote_candidates = pd.read_csv(SCHEEL_QUOTE_RESCUE_CANDIDATES) if SCHEEL_QUOTE_RESCUE_CANDIDATES.exists() else pd.DataFrame()
     scheel_quote_candidate_rows = len(scheel_quote_candidates)
     scheel_quote_candidates_with_n = int(scheel_quote_candidates.get("N_candidate", pd.Series(dtype=float)).notna().sum()) if not scheel_quote_candidates.empty else 0
@@ -6913,6 +6931,24 @@ def write_plot3_source_catalog() -> None:
                 "rows_left_out_within_source": score_left_out,
                 "why": "included as a paper-level preregistration-indicated SCORE subset; journal TOP-factor preregistration-policy scores are deliberately ignored",
                 "why_in_out": f"Included: {fmt_int(score_total_contributed)} paper-level rows enter ({fmt_int(len(score_prereg))} from the existing paper-level join and {fmt_int(score_text_ready_rows)} from parsed extracted-claim text). The remaining {fmt_int(score_left_out)} preregistration-indicated SCORE paper IDs do not currently have a deduplicated positive D/N row that passes the local parser. Caveat: the public files are split across claim-level effect sizes, claim-level effective-N rows, and paper-level preregistration flags, so the table does not assert that every extracted claim was the exact preregistered primary hypothesis.",
+            },
+            {
+                "plot_name": "Plot 3",
+                "plot_inclusion_status": "included",
+                "source_label": "Mousa 2020 Iraq soccer social-cohesion preregistered field experiment",
+                "corpus_what_it_is": "AEA-registered Iraq field experiment testing whether mixed Christian-Muslim soccer teams changed social-cohesion behaviors and attitudes.",
+                "what_it_is_why_possible_candidate": "The Zenodo replication files are public and contain the main analysis script plus outcome-level CSVs. The row uses the one-paper median of nine main outcomes: six binary behavioral outcomes converted from arm event counts with the Chinn log-OR-to-d rule and three attitudinal indices converted as treated-control mean difference over the control SD.",
+                "confirmed_fields": "Verified locally: AEA trial AEARCTR-0003540 exists in the registry snapshot with an analysis-plan date; Zenodo record 10.5281/zenodo.3942437 downloaded; main-analyses.R names the focal outcome set; raw CSV files contain treated/control assignments and outcome values; median absolute D=0.235 and median outcome N=232. Caveat: this is a raw-data reconstruction rather than the covariate-adjusted clustered model table.",
+                "backing_file": "data/raw/corpus_candidates/political_science_unlock/zenodo/3942437",
+                "rows_considered": 1,
+                "rows_preregistered_equivalent": 1,
+                "rows_with_public_local_backing": 1,
+                "rows_with_extractable_DN": 1,
+                "rows_with_non_retracted_source": 1,
+                "rows_contributed": mousa_contributed,
+                "rows_left_out_within_source": 1 - mousa_contributed,
+                "why": "included as a preregistered field-experiment paper median with raw-data D/N reconstruction",
+                "why_in_out": "Included: one paper-level dot enters. Outcome-level rows remain child calculations; a future Stata/R-compatible extractor could replace the raw arm-count reconstruction with the exact covariate-adjusted published estimates.",
             },
             {
                 "plot_name": "Plot 3",
