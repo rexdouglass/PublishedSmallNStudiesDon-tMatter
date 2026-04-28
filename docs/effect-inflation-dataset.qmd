@@ -363,7 +363,7 @@ The cleaner ClinicalTrials.gov panel below applies the strongest fully local rul
 
 ![Cleaner ClinicalTrials.gov sub-sidecar: phase-2+ randomized trials with one locally eligible primary registry outcome per trial.](_generated/figures/plot3_ctgov_phase2plus_primary_randomized_sidecar.png)
 
-The larger ClinicalTrials.gov API pass below is the scale check. It uses the official API record, not the older KG proxy, and keeps registered primary, secondary, and other pre-specified outcome-analysis rows when a two-group denominator is present and `D` is recoverable from a ratio estimate, event-count/proportion row, or p-value proxy. The row-level file currently has `67,486` registered outcome-analysis rows from `5,628` randomized interventional trials; the figure plots one median per trial so the visual is not inflated by trials with hundreds of reported outcomes.
+The larger ClinicalTrials.gov API pass below is the scale check. It uses the official API record, not the older KG proxy, and keeps registered primary, secondary, and other pre-specified outcome-analysis rows when a two-group denominator is present and `D` is recoverable from a ratio estimate, event-count/proportion row, or p-value proxy. The row-level file currently has `190,836` registered outcome-analysis rows from `17,726` randomized interventional trials; the figure plots one median per trial so the visual is not inflated by trials with hundreds of reported outcomes.
 
 ![ClinicalTrials.gov API registered outcome-result trial medians, one median row per randomized interventional trial.](_generated/figures/plot3_ctgov_api_registered_trial_medians.png)
 
@@ -390,7 +390,7 @@ That is why mere clinical-trial registration is not enough for this layer. Regis
 - Normalized plot rows: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_results.csv)
 - Sensitivity sidecar rows: [plot3_preregistered_sensitivity_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_sensitivity_sidecar_rows.csv)
 - Cleaner ClinicalTrials.gov sub-sidecar rows: [plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv)
-- ClinicalTrials.gov API registered outcome-analysis rows: [plot3_ctgov_api_registered_outcome_ratio_event_rows.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_outcome_ratio_event_rows.csv)
+- ClinicalTrials.gov API registered outcome-analysis rows: [plot3_ctgov_api_registered_outcome_ratio_event_rows.csv.gz](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_outcome_ratio_event_rows.csv.gz)
 - ClinicalTrials.gov API one-trial median rows: [plot3_ctgov_api_registered_trial_medians.csv](../data/derived/effect_inflation_dataset/plot3_ctgov_api_registered_trial_medians.csv)
 - Generated table fragments: [table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd](./_generated/tables/table_40_preregistered_hypotheses_scheel_2021_psa_cr001_corpus.qmd) and [table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd](./_generated/tables/table_41_added_preregistered_rows_from_psa_cr001_dorison_et_al_2022.qmd)
 

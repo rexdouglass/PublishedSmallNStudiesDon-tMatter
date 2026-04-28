@@ -28,10 +28,11 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW_CTGOV_KG = ROOT / "data" / "raw" / "corpus_candidates" / "ctgov_kg" / "efficacy_df.csv"
 CACHE_DIR = ROOT / "data" / "cache" / "ctgov_api_v2_studies"
 OUT_DIR = ROOT / "data" / "derived" / "effect_inflation_dataset"
-ROW_OUT = OUT_DIR / "plot3_ctgov_api_registered_outcome_ratio_event_rows.csv"
+ROW_OUT = OUT_DIR / "plot3_ctgov_api_registered_outcome_ratio_event_rows.csv.gz"
 TRIAL_MEDIAN_OUT = OUT_DIR / "plot3_ctgov_api_registered_trial_medians.csv"
 SUMMARY_OUT = OUT_DIR / "plot3_ctgov_api_registered_summary.csv"
 API_BASE = "https://clinicaltrials.gov/api/v2/studies"
+API_SEARCH_QUERY = "AREA[StudyType]Interventional AND AREA[DesignAllocation]Randomized AND AREA[HasResults]true"
 
 ALLOWED_OUTCOME_TYPES = {"PRIMARY", "SECONDARY", "OTHER_PRE_SPECIFIED"}
 P_VALUE_NUMBER_RE = re.compile(r"(?P<p>\d*\.?\d+(?:e[+-]?\d+)?)", re.IGNORECASE)
@@ -226,8 +227,7 @@ def group_title_map(outcome: dict[str, Any]) -> dict[str, str]:
     return {safe_text(group.get("id")): safe_text(group.get("title")) for group in outcome.get("groups") or []}
 
 
-def parse_study(nct_id: str, refresh_cache: bool = False, delay: float = 0.0) -> list[dict[str, object]]:
-    data = fetch_study(nct_id, refresh_cache=refresh_cache, delay=delay)
+def parse_study_data(data: dict[str, Any] | None, fallback_nct_id: str = "") -> list[dict[str, object]]:
     if not data:
         return []
     protocol = data.get("protocolSection", {})
@@ -238,7 +238,7 @@ def parse_study(nct_id: str, refresh_cache: bool = False, delay: float = 0.0) ->
     arms = protocol.get("armsInterventionsModule", {})
     results = data.get("resultsSection", {})
     outcome_module = results.get("outcomeMeasuresModule", {})
-    nct = safe_text(identification.get("nctId")) or nct_id
+    nct = safe_text(identification.get("nctId")) or fallback_nct_id
     rows: list[dict[str, object]] = []
     for outcome_idx, outcome in enumerate(outcome_module.get("outcomeMeasures") or [], start=1):
         outcome_type = safe_text(outcome.get("type")).upper()
@@ -313,6 +313,11 @@ def parse_study(nct_id: str, refresh_cache: bool = False, delay: float = 0.0) ->
     return rows
 
 
+def parse_study(nct_id: str, refresh_cache: bool = False, delay: float = 0.0) -> list[dict[str, object]]:
+    data = fetch_study(nct_id, refresh_cache=refresh_cache, delay=delay)
+    return parse_study_data(data, fallback_nct_id=nct_id)
+
+
 def randomized_interventional_nct_ids(limit: int | None = None) -> list[str]:
     source = pd.read_csv(
         RAW_CTGOV_KG,
@@ -333,15 +338,7 @@ def randomized_interventional_nct_ids(limit: int | None = None) -> list[str]:
     return ids[:limit] if limit else ids
 
 
-def build_rows(limit: int | None, workers: int, refresh_cache: bool, delay: float) -> pd.DataFrame:
-    ids = randomized_interventional_nct_ids(limit=limit)
-    rows: list[dict[str, object]] = []
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = {executor.submit(parse_study, nct_id, refresh_cache, delay): nct_id for nct_id in ids}
-        for idx, future in enumerate(as_completed(futures), start=1):
-            rows.extend(future.result())
-            if idx % 500 == 0:
-                print(f"processed {idx:,}/{len(ids):,} studies; rows={len(rows):,}", flush=True)
+def normalize_rows(rows: list[dict[str, object]]) -> pd.DataFrame:
     df = pd.DataFrame(rows)
     if df.empty:
         return df
@@ -362,8 +359,73 @@ def build_rows(limit: int | None, workers: int, refresh_cache: bool, delay: floa
     )
     df["log10_N"] = df["N"].map(math.log10)
     df["log10_D"] = df["D"].map(math.log10)
-    df = df.sort_values(["nct_id", "outcome_type", "outcome_title", "point_id"]).reset_index(drop=True)
-    return df
+    return df.sort_values(["nct_id", "outcome_type", "outcome_title", "point_id"]).reset_index(drop=True)
+
+
+def build_rows_from_local_seed(limit: int | None, workers: int, refresh_cache: bool, delay: float) -> pd.DataFrame:
+    ids = randomized_interventional_nct_ids(limit=limit)
+    rows: list[dict[str, object]] = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(parse_study, nct_id, refresh_cache, delay): nct_id for nct_id in ids}
+        for idx, future in enumerate(as_completed(futures), start=1):
+            rows.extend(future.result())
+            if idx % 500 == 0:
+                print(f"processed {idx:,}/{len(ids):,} studies; rows={len(rows):,}", flush=True)
+    return normalize_rows(rows)
+
+
+def build_rows_from_api_search(limit: int | None, page_size: int) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    params = {
+        "format": "json",
+        "pageSize": page_size,
+        "query.term": API_SEARCH_QUERY,
+    }
+    page_token = None
+    pages = 0
+    studies_seen = 0
+    while True:
+        request_params = params.copy()
+        if page_token:
+            request_params["pageToken"] = page_token
+        response = requests.get(API_BASE, params=request_params, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+        studies = data.get("studies") or []
+        pages += 1
+        for study in studies:
+            if limit is not None and studies_seen >= limit:
+                break
+            rows.extend(parse_study_data(study))
+            studies_seen += 1
+        print(
+            f"processed api page {pages:,}; studies={studies_seen:,}; rows={len(rows):,}",
+            flush=True,
+        )
+        if limit is not None and studies_seen >= limit:
+            break
+        page_token = data.get("nextPageToken")
+        if not page_token:
+            break
+    return normalize_rows(rows)
+
+
+def build_rows(
+    limit: int | None,
+    workers: int,
+    refresh_cache: bool,
+    delay: float,
+    source: str,
+    page_size: int,
+) -> pd.DataFrame:
+    if source == "api-search":
+        return build_rows_from_api_search(limit=limit, page_size=page_size)
+    return build_rows_from_local_seed(
+        limit=limit,
+        workers=workers,
+        refresh_cache=refresh_cache,
+        delay=delay,
+    )
 
 
 def write_trial_medians(rows: pd.DataFrame) -> pd.DataFrame:
@@ -431,14 +493,21 @@ def write_summary(rows: pd.DataFrame, trial_medians: pd.DataFrame) -> pd.DataFra
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=None, help="Optional number of local randomized interventional NCT IDs to process.")
+    parser.add_argument(
+        "--source",
+        choices=["api-search", "local-kg"],
+        default="api-search",
+        help="api-search enumerates the full ClinicalTrials.gov randomized/results query; local-kg uses the older local CT.gov KG NCT seed.",
+    )
+    parser.add_argument("--limit", type=int, default=None, help="Optional number of studies to process.")
+    parser.add_argument("--page-size", type=int, default=500, help="ClinicalTrials.gov API search page size.")
     parser.add_argument("--workers", type=int, default=24)
     parser.add_argument("--refresh-cache", action="store_true")
     parser.add_argument("--delay", type=float, default=0.0, help="Optional per-request delay in seconds.")
     args = parser.parse_args()
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    rows = build_rows(args.limit, args.workers, args.refresh_cache, args.delay)
+    rows = build_rows(args.limit, args.workers, args.refresh_cache, args.delay, args.source, args.page_size)
     rows.to_csv(ROW_OUT, index=False)
     trial_medians = write_trial_medians(rows)
     trial_medians.to_csv(TRIAL_MEDIAN_OUT, index=False)
