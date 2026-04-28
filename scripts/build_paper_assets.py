@@ -906,6 +906,28 @@ def normalize_doi_value(value: object) -> str:
     return text.strip().rstrip(".")
 
 
+def plot3_default_field(source_family: object) -> str:
+    text = safe_text(source_family).lower()
+    if "manyclasses" in text or "learning and instruction" in text:
+        return "education"
+    if "score" in text:
+        return "mixed social/behavioral science"
+    return "psychology and health"
+
+
+def display_field_label(value: object) -> str:
+    text = safe_text(value) or "unknown field"
+    return {
+        "psychology and health": "Psychology/health",
+        "political science": "Political science",
+        "economics and finance": "Economics/finance",
+        "sociology and criminology": "Sociology/criminology",
+        "business": "Business",
+        "education": "Education",
+        "mixed social/behavioral science": "Mixed social/behavioral science",
+    }.get(text, text.replace("_", " ").title())
+
+
 def fmt_int(value: object) -> str:
     if pd.isna(value) or value == "":
         return ""
@@ -1170,6 +1192,9 @@ def score_text_claim_rescue_rows() -> pd.DataFrame:
         return ready
     ready["_paper_id"] = ready.get("paper_id", pd.Series("", index=ready.index)).astype(str)
     ready = ready.sort_values(["_paper_id", "candidate_id"]).drop_duplicates("_paper_id", keep="first")
+    if SCORE_PAPER_METADATA.exists() and "paper_id" in ready.columns:
+        metadata = pd.read_csv(SCORE_PAPER_METADATA, usecols=["paper_id", "COS_pub_category"])
+        ready = ready.merge(metadata, on="paper_id", how="left")
     return ready.drop(columns=["_paper_id"]).reset_index(drop=True)
 
 
@@ -1770,6 +1795,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
                     "source_layer": "preregistered_confirmatory_result",
                     "source_family": "SCORE/COS preregistration-indicated original papers",
                     "source_label": "SCORE/COS preregistration-indicated original papers",
+                    "field": safe_text(row.get("field")) or plot3_default_field("SCORE/COS preregistration-indicated original papers"),
                     "citation_key": "tyner2026",
                     "row_unit": "paper_level_preregistration_indicated_claim_effect",
                     "row_label": " - ".join(label_parts),
@@ -1801,6 +1827,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
                     "source_layer": "preregistered_confirmatory_result",
                     "source_family": "SCORE/COS preregistration-indicated original papers",
                     "source_label": "SCORE/COS preregistration-indicated original papers",
+                    "field": safe_text(row.get("COS_pub_category")) or plot3_default_field("SCORE/COS preregistration-indicated original papers"),
                     "citation_key": "tyner2026",
                     "row_unit": "paper_level_preregistration_indicated_claim_effect",
                     "row_label": " - ".join(label_parts),
@@ -1847,6 +1874,11 @@ def normalize_preregistered_results() -> pd.DataFrame:
     df["D"] = numeric_series(df["D"]).abs()
     df["N"] = numeric_series(df["N"])
     df = df[(df["D"] > 0) & (df["N"] > 0)].copy()
+    if "field" not in df.columns:
+        df["field"] = ""
+    field_text = df["field"].fillna("").astype(str).str.strip()
+    df["field"] = field_text.where(field_text.ne(""), df["source_family"].map(plot3_default_field))
+    df["field_label"] = df["field"].map(display_field_label)
     df["log10_N"] = np.log10(df["N"])
     df["log10_D"] = np.log10(df["D"])
     df["two_sample_p05_boundary_D"] = 2 * Z_05 / np.sqrt(df["N"])
@@ -2613,26 +2645,22 @@ def draw_published_distribution(out_path: Path) -> dict[str, float | int]:
 def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     df = normalize_preregistered_results()
     colors = {
-        "Scheel et al. 2021 preregistered-hypotheses corpus": "#2a4d7a",
-        "Dorison et al. 2022 PSA-CR001 pooled preregistered rows": "#0b6e5f",
-        "PSA-CR002 cognitive reappraisal preregistered hypotheses": "#c44a1e",
-        "PSA004 true-belief/Gettier pooled preregistered row": "#2f8c61",
-        "ManyBabies 1 infant-directed speech pooled preregistered row": "#b56b00",
-        "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row": "#a84f9a",
-        "ManyClasses 1 feedback pooled preregistered row": "#8b6f21",
-        "Schäfer/Schwarz 2019 preregistered psychology articles": "#7a4d9b",
-        "SCORE/COS preregistration-indicated original papers": "#555555",
+        "psychology and health": "#2a4d7a",
+        "education": "#b56b00",
+        "political science": "#0b6e5f",
+        "economics and finance": "#7a4d9b",
+        "sociology and criminology": "#8b6f21",
+        "business": "#c44a1e",
+        "mixed social/behavioral science": "#555555",
     }
     markers = {
-        "Scheel et al. 2021 preregistered-hypotheses corpus": "o",
-        "Dorison et al. 2022 PSA-CR001 pooled preregistered rows": "s",
-        "PSA-CR002 cognitive reappraisal preregistered hypotheses": "D",
-        "PSA004 true-belief/Gettier pooled preregistered row": "P",
-        "ManyBabies 1 infant-directed speech pooled preregistered row": "v",
-        "ManyBabies 1 Bilingual infant-directed speech pooled preregistered row": "<",
-        "ManyClasses 1 feedback pooled preregistered row": "X",
-        "Schäfer/Schwarz 2019 preregistered psychology articles": "^",
-        "SCORE/COS preregistration-indicated original papers": "o",
+        "psychology and health": "o",
+        "education": "s",
+        "political science": "^",
+        "economics and finance": "D",
+        "sociology and criminology": "P",
+        "business": "X",
+        "mixed social/behavioral science": "v",
     }
 
     x_min_plot = 10
@@ -2646,14 +2674,13 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     ax = fig.add_subplot(gs[0, 0])
     ax_hist = fig.add_subplot(gs[1, 0])
 
-    for source_family, group in df.groupby("source_family", sort=False):
-        color = colors.get(source_family, "#444444")
-        display = safe_text(group["source_label"].iloc[0]) or source_family
+    for field, group in df.groupby("field", sort=False):
+        color = colors.get(field, "#444444")
         ax.scatter(
             group["N"],
             group["D"],
             s=34,
-            marker=markers.get(source_family, "o"),
+            marker=markers.get(field, "o"),
             color=color,
             edgecolors="none",
             alpha=0.78,
@@ -2667,19 +2694,20 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     pct_above_p10 = 100 * float((df["D"] >= (2 * z10 / np.sqrt(df["N"]))).mean())
 
     medians = (
-        df.groupby("source_family", sort=False)
+        df.groupby("field", sort=False)
         .agg(
-            source_label=("source_label", "first"),
+            field_label=("field_label", "first"),
             median_N=("N", "median"),
             median_D=("D", "median"),
             n_rows=("D", "size"),
+            n_sources=("source_family", "nunique"),
         )
         .reset_index()
     )
 
     for row in medians.itertuples(index=False):
-        color = colors.get(row.source_family, "#444444")
-        marker = markers.get(row.source_family, "o")
+        color = colors.get(row.field, "#444444")
+        marker = markers.get(row.field, "o")
         ax.scatter(
             row.median_N,
             row.median_D,
@@ -2744,7 +2772,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     )
     ax.annotate(
         (
-            f"{len(df):,} rows from {df['source_family'].nunique():,} source families | "
+            f"{len(df):,} rows across {df['field'].nunique():,} fields | "
             f"Sig. {pct_above_p10:.0f}% (p≤.10) | "
             f"median D = {median_d:.2f}"
         ),
@@ -2759,8 +2787,8 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     )
     legend_handles = []
     for row in medians.sort_values("n_rows", ascending=False).itertuples(index=False):
-        color = colors.get(row.source_family, "#444444")
-        marker = markers.get(row.source_family, "o")
+        color = colors.get(row.field, "#444444")
+        marker = markers.get(row.field, "o")
         legend_handles.append(
             Line2D(
                 [0],
@@ -2771,7 +2799,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
                 markeredgecolor="none",
                 markersize=8,
                 alpha=0.82,
-                label=f"{safe_text(row.source_label)} (n={fmt_int(row.n_rows)})",
+                label=f"{safe_text(row.field_label)} (n={fmt_int(row.n_rows)}, {fmt_int(row.n_sources)} source families)",
             )
         )
     legend_handles.append(
@@ -2784,7 +2812,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
             markeredgecolor="#333333",
             markeredgewidth=1.6,
             markersize=8,
-            label="Hollow marker = source median",
+            label="Hollow marker = field median",
         )
     )
     ax.legend(
@@ -2879,7 +2907,7 @@ def draw_preregistered_results(out_path: Path) -> dict[str, float | int]:
     plt.close(fig)
     return {
         "n_rows": len(df),
-        "n_sources": int(df["source_family"].nunique()),
+        "n_sources": int(df["field"].nunique()),
         "median_d": median_d,
         "median_n": median_n,
         "pct_above_p05": 100 * float(df["above_two_sample_p05_curve"].mean()),
@@ -6615,6 +6643,17 @@ def write_plot3_source_catalog() -> None:
     plot3.to_csv(out_csv, index=False)
 
     prereg_details = normalize_preregistered_results()
+    field_summary = (
+        prereg_details.groupby(["field", "field_label"], sort=False)
+        .agg(
+            rows=("D", "size"),
+            source_families=("source_family", "nunique"),
+            median_D=("D", "median"),
+            median_N=("N", "median"),
+        )
+        .reset_index()
+        .sort_values(["rows", "field_label"], ascending=[False, True])
+    )
     included = plot3.loc[plot3["plot_inclusion_status"] == "included"].copy()
     excluded = plot3.loc[plot3["plot_inclusion_status"] == "not_included"].copy()
     corpus_rows = pd.concat([included, excluded], ignore_index=True)
@@ -6648,18 +6687,34 @@ def write_plot3_source_catalog() -> None:
         "",
         f"Machine-readable result-level file: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/{PREREG_RESULTS.name})",
         "",
-        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered result rows. It records source citation, result label, journal, `D`, `N`, and the source row number. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
+        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered result rows. For plotting, those rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
         "",
         markdown_table_block(
-            [["Source", "Specific paper/result", "Journal", "D/N"]]
+            [["Field", "Rows", "Source families", "Median D", "Median N"]]
             + [
                 [
+                    safe_text(row.field_label),
+                    fmt_int(row.rows),
+                    fmt_int(row.source_families),
+                    fmt_number(row.median_D, 3),
+                    fmt_int(row.median_N),
+                ]
+                for row in field_summary.itertuples(index=False)
+            ],
+            "dataset-table field-summary-table preregistered-field-summary-table",
+        ),
+        "",
+        markdown_table_block(
+            [["Field", "Source", "Specific paper/result", "Journal", "D/N"]]
+            + [
+                [
+                    safe_text(row.field_label),
                     source_key_badge(row.source_label, row.source_family, row.citation_key),
                     safe_text(row.row_label)[:90],
                     safe_text(row.journal),
                     f"{fmt_number(row.D, 3)} / {fmt_int(row.N)}",
                 ]
-                for row in prereg_details.sort_values(["source_family", "source_row_number"]).itertuples(index=False)
+                for row in prereg_details.sort_values(["field", "source_family", "source_row_number"]).itertuples(index=False)
             ],
             "dataset-table specific-observation-table preregistered-observation-table",
         ),
