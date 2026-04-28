@@ -2,7 +2,7 @@
 
 Machine-readable catalog: [plot3_preregistered_source_catalog.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv)
 
-At the moment Plot 3 has `7` included source families and `25` explicitly considered but not included source families.
+At the moment Plot 3 has `8` included source families and `25` explicitly considered but not included source families.
 
 This table is the corpus-level admission audit: what was considered, why it looked eligible, what fields were actually confirmed, why it is in or out, and how many observations made it into the plotted layer.
 
@@ -16,6 +16,7 @@ This table is the corpus-level admission audit: what was considered, why it look
 | PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | PSA-CR002 was considered because the article explicitly labels Table 2 as effect sizes and statistics for each preregistered hypothesis, while Table 3 reports the relevant arm sample sizes after preregistered exclusions. | Known: 12 Table 2 preregistered hypothesis rows. Confirmed: analytic preregistration: yes (12); source focal selector: Table 2 preregistered hypothesis rows; reported Cohen's d: yes (12); arm/sample N: yes from Table 3 (12); support status: yes. | Included: 12 preregistered PSA-CR002 Table 2 hypotheses enter. The signs of the reported effects are hypothesis-direction-coded in the article; the plotted D axis uses magnitudes. | 12 |
 | PSA-CR001 pooled preregistered rows [@dorison2022] | PSA-CR001 was a preregistered 52-country COVID-19 framing project. Possible Plot 3 candidate because four primary confirmatory outcomes can be represented as pooled D/N rows rather than as nested country cells. | Known: 4 pooled primary outcomes. Confirmed: analytic preregistration: yes (4); support status: yes (4); pooled N: yes (4); pooled D: yes (4). | Included: the four primary PSA-CR001 confirmatory outcomes enter as pooled rows. Country-level cells stay collapsed here to avoid nested non-independent Plot 3 rows. | 4 |
 | ManyBabies 1 IDS pooled row [@manyBabies2020Ids] | ManyBabies 1 was considered because the project page documents a large preregistered many-lab infant study and the AMPPS article reports the pooled primary infant-directed-speech preference effect with N and Cohen's d. | Known: one pooled primary IDS-versus-ADS effect. Confirmed: preregistered many-lab project: yes; focal pooled primary effect: yes; N: 2,329 babies tested; reported Cohen's d: 0.35; Plot 1 duplicate check: no local ManyBabies 1 pair row found. | Included: one pooled ManyBabies 1 infant-directed-speech preference row enters. Lab, method, age, and language moderator rows are deliberately not added to avoid nested non-independent Plot 3 rows. | 1 |
+| ManyClasses 1 feedback pooled row [@fyfe2021manyclasses1] | ManyClasses 1 was considered because the article documents a time-stamped preregistration, public materials/data/scripts, and a single pooled primary classroom-learning estimate for immediate versus delayed feedback timing. | Known: one pooled primary feedback-timing effect across 38 classes. Confirmed: preregistration: yes (OSF registration dated July 22, 2019); source focal selector: overall feedback-timing estimate; N: 2,081 participating students; standardized pooled effect: Δz = 0.002 with 95% HDI [-0.05, 0.05]; support status: no. | Included: one pooled ManyClasses 1 immediate-versus-delayed-feedback row enters. Class-level estimates and moderator rows are deliberately not added to avoid nested non-independent Plot 3 rows. | 1 |
 | PSA004 true-belief/Gettier pooled row [@hall2024psa004Turri] | PSA004 was considered because the public PSA project page and Hall et al. article report a pooled preregistered cross-cultural contrast for standard justified true belief versus Gettier-type cases, with N and an odds ratio. | Known: one pooled standard JTB-versus-Gettier project effect. Confirmed: preregistered PSA project: yes; focal pooled effect: yes; N: 4,724; OR: 1.86; D conversion: yes via Chinn log-OR-to-d. | Included: one pooled PSA004 standard JTB-versus-Gettier row enters. This is related to, but not identical with, the Darrel-vignette PSA004 Plot 1 replication-pair rescue; the source catalog flags the cross-plot overlap risk. | 1 |
 | AACT x PubMed registered primary outcomes [@du2024] | ClinicalTrials.gov/AACT primary-outcome linkages were considered because trial registration can identify focal biomedical outcomes at scale. | Known: 2,720 registered primary-outcome rows in the earlier audit. Confirmed: trial registration: yes; analytic preregistration plan: no/insufficient; local Plot 3 D/N result rows: no. | Not included: registry metadata can support a comparator layer, but these rows are not yet analytic-preregistration result rows on the shared D/N axis. | 0 |
 | Brodeur preregistered/PAP table tests [@brodeur2020] | The Brodeur economics corpus was rechecked because it is the other local source that produces thousands of preregistration-flagged D/N rows: many extracted table tests are from studies marked as preregistered or having a pre-analysis plan. | Known locally: 10,071 extracted economics test rows, 3,724 D/N-ready rows with preregistration/PAP/PAP-power flags, collapsing to 70 papers. Confirmed: preregistration flag rows: 3,547; pre-analysis-plan flag rows: 2,006; PAP-power flag rows: 1,720; D/N: yes; focal/main-result selector: no; exact test-level PAP mapping: no. | Not included: the preregistration/PAP flags are real and account for 3,724 D/N-ready extracted table-test rows, but the flags are not enough to prove that each coefficient/test is the exact prespecified confirmatory hypothesis. No focal/main-result selector is available, so this remains a sensitivity lane rather than strict Plot 3 evidence. | 0 |
@@ -30,7 +31,7 @@ This table is the corpus-level admission audit: what was considered, why it look
 | Many Labs 1-5 project-level replication rows | Many Labs 1-5 looked like Plot 3 candidates because the projects are coordinated large-sample replication efforts with preregistered or protocol-locked analyses and local D/N rows. | Known locally: 69 project-level D/N pair rows across Many Labs 1-5 in the replication-pair file. Confirmed: replication protocol status: yes; original and replication D/N: yes; independent single-result Plot 3 table: no. | Not included: local D/N rows exist, but they are already consumed by the replication-pair plot. Adding them here would double-count replication-side evidence unless Plot 3 gets a separate multi-lab-replication lane. | 0 |
 | ManyBabies 3 registered-report materials [@manyBabies3Osf] | ManyBabies 3 looked eligible because it is a preregistered infant rule-learning multi-lab project. The repo has the OSF registered-report PDFs and public GitHub materials cached. | Known: target project expected roughly 15 lab/result rows in the harvest worklist. Confirmed: preregistered project materials: yes; final machine-readable site-level D/N result payload: no; promoted rows: 0. | Not included: preregistered materials are local, but the checked OSF archive and public GitHub repository did not expose final machine-readable infant result rows. | 0 |
 | ManyBabies 4 helpers/hinderers RR materials [@manyBabies4Project] | ManyBabies 4 looked eligible because it is a Stage 1 and Stage 2 Registered Report, reports N tested and N included, and exposes public analysis/data files. It is a plausible one-row pooled primary-result rescue. | Known from the research pass: N tested = 1,018, N included = 567, public analysis repo names clean_data.csv and analysis qmd files. Confirmed: Registered Report status: yes; final machine-readable data likely public; exact Stage 1 focal contrast and exact denominators: not yet locally verified. | Not included yet: this is a strong near-row, but the current repo has not verified the Stage 1 focal contrast or exact counts from clean_data.csv. Rounded abstract percentages are not enough for strict Plot 3. | 0 |
-| ManyClasses 2 classroom materials [@manyClasses2Osf] | ManyClasses 2 was rechecked because it is a coordinated classroom project with public OSF materials and a staged worklist estimate of multiple classroom result rows. | Known locally: 30 expected rows, 12 downloaded files. Confirmed: public OSF payload: yes; Terracotta/classroom data and scripts: yes; compact D/N confirmatory result table: no. | Not included: source files are local, but they require a separate education/classroom parser and metric policy before any Plot 3 points can be admitted. | 0 |
+| ManyClasses 2 classroom materials [@manyClasses2Osf] | ManyClasses 2 was rechecked because it is a coordinated preregistered classroom project with public OSF materials and a reported pooled prequestion-learning effect. The surfaced confirmatory result is a hierarchical log-odds/OR learning effect rather than a direct standardized D row. | Known locally: 30 expected rows, 12 downloaded files. Confirmed: public OSF payload: yes; Terracotta/classroom data and scripts: yes; N reported in the literature as 1,571; pooled log-odds/OR result surfaced; direct D/N confirmatory result table: no. | Not included: the best surfaced row is native log-odds/OR from a hierarchical classroom design. It stays staged until the project has an explicit, defensible OR-to-D policy and one-row-per-project extraction. | 0 |
 | Nordic trial registration-publication linkage | The Nordic trial-reporting database looked like the missing large clinical-trial preregistration source because it has thousands of trial-registration to publication links and records whether publications matched the registered design, population, intervention, comparator, and any outcome. | Known locally: 7,461 registry-publication search rows, 5,660 journal-publication rows. Confirmed: trial registration IDs: yes; publication DOI/PMID: yes where found; outcome/effect/N fields for D conversion: no. | Not included: the rows confirm publication linkage and matching metadata, but they do not contain exact result statistics or D/N fields for the preregistered point-estimate plot. | 0 |
 | High-Replicability Research project [@protzko2024highrep] | High-Replicability Research was considered because it was designed as a preregistered counter-pattern source with many planned high-replicability findings. | Known: 48 project findings claimed in the audit trail; 3 local D/N pair rows recovered in the replication-harvest sidecar. Confirmed: analytic preregistration: yes; D/N: partial (3); non-retracted status: no. | Not included: the source fails the non-retraction gate, so even locally recovered rows stay out of Plot 3. | 0 |
 | PSA replication-pair rows | PSA projects looked eligible because they are preregistered, multi-site confirmatory projects. The local repo has PSA-002, PSA-004, and PSA-006 D/N pair rows. | Known locally: 93 PSA D/N pair rows (PSA-002 object orientation, PSA-004 Turri, PSA-006 trolley) in the replication-pair file. Confirmed: preregistered/multi-site status: yes; original and replication D/N: yes; standalone non-pair Plot 3 table: no. | Not included: the PSA pair rows are already part of the replication-pair evidence. PSA-CR001 is the exception because it contributes four pooled preregistered confirmatory outcomes without an original-vs-replication arrow. | 0 |
@@ -49,188 +50,189 @@ This table is the corpus-level admission audit: what was considered, why it look
 
 Machine-readable result-level file: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/plot3_preregistered_results.csv)
 
-The specific-observation layer has `170` plotted preregistered result rows. It records source citation, result label, journal, `D`, `N`, and the source row number. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.
+The specific-observation layer has `171` plotted preregistered result rows. It records source citation, result label, journal, `D`, `N`, and the source row number. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.
 
 ::: {.dataset-table .specific-observation-table .preregistered-observation-table}
 
 | Source | Specific paper/result | Journal | D/N |
 | --- | --- | --- | --- |
-| PSA-CR001 pooled preregistered rows [@dorison2022] | Behavioral intentions (loss vs gain framing) | Affective Science | 0.10 / 15,772 |
-| PSA-CR001 pooled preregistered rows [@dorison2022] | Policy support: individual autonomy subscale | Affective Science | 0.07 / 15,772 |
-| PSA-CR001 pooled preregistered rows [@dorison2022] | Policy support: government power subscale | Affective Science | 0.08 / 15,772 |
-| PSA-CR001 pooled preregistered rows [@dorison2022] | Information seeking (loss vs gain framing) | Affective Science | 0.02 / 15,772 |
-| ManyBabies 1 IDS pooled row [@manyBabies2020Ids] | Infant-directed speech versus adult-directed speech pooled preference effect | Advances in Methods and Practices in Psychological Science | 0.35 / 2,329 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H1a: reappraisal versus control reduces negative emotions in response to photos | Nature Human Behaviour | 0.39 / 21,644 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H1b: reappraisal versus control reduces negative state emotions | Nature Human Behaviour | 0.31 / 21,644 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H1c: reappraisal versus control reduces negative emotions about COVID-19 | Nature Human Behaviour | 0.24 / 21,644 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H2a: reappraisal versus control increases positive emotions in response to photos | Nature Human Behaviour | 0.59 / 21,644 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H2b: reappraisal versus control increases positive state emotions | Nature Human Behaviour | 0.33 / 21,644 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H2c: reappraisal versus control increases positive emotions about COVID-19 | Nature Human Behaviour | 0.27 / 21,644 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H3a: reconstrual versus repurposing, negative photo emotions | Nature Human Behaviour | 0.04 / 10,499 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H3b: reconstrual versus repurposing, negative state emotions | Nature Human Behaviour | 0.01 / 10,499 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H3c: reconstrual versus repurposing, negative COVID-19 emotions | Nature Human Behaviour | 0.07 / 10,499 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H4a: repurposing versus reconstrual, positive photo emotions | Nature Human Behaviour | 0.11 / 10,499 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H4b: repurposing versus reconstrual, positive state emotions | Nature Human Behaviour | 0.01 / 10,499 |
-| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H4c: repurposing versus reconstrual, positive COVID-19 emotions | Nature Human Behaviour | 0.05 / 10,499 |
-| PSA004 true-belief/Gettier pooled row [@hall2024psa004Turri] | Pooled standard justified-true-belief versus Gettier knowledge attribution | Advances in Methods and Practices in Psychological Science | 0.34 / 4,724 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Remotely Close Associations: Openness To Experience And Semantic Memory Structure | European Journal of Personality | 1.29 / 516 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Delaying Access To A Problem-Skipping Option Increases Effortful Practice: Applicat | Computers & Education | 0.07 / 50,433 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - The Morality Of Action: The Asymmetry Between Judgments Of Praise And Blame In The | Journal of Experimental Social Psychology | 0.52 / 59 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - (Pre)Occupations: A Data-Driven Model Of Jobs And Its Consequences For Categorizati | Journal of Experimental Social Psychology | 0.54 / 183 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Ceos Imbue Organizations With Feelings, Increasing Punishment Satisfaction And Apol | Journal of Experimental Social Psychology | 0.29 / 302 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - How Internal Constraints Shape Interest Group Activities: Evidence From Access-Seek | American Political Science Review | 0.00 / 2,647,085 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Treating Depression With Physical Activity In Adolescents And Young Adults: A Syste | Psychological Medicine | 0.82 / 771 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Classified Or Coverup? The Effect Of Redactions On Conspiracy Theory Beliefs | Journal of Experimental Political Science | 0.10 / 2,524 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - The Effect Of Segregation On Intergroup Relations | Journal of Experimental Political Science | 0.20 / 1,081 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Preferences For Domestic Action Over International Transfers In Global Climate Poli | Journal of Experimental Political Science | 0.15 / 1,140 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Do Gender Quotas Really Reduce Bias? Evidence From A Policy Experiment In Southern | Journal of Experimental Political Science | 0.61 / 51 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2014 - Paying More When Paying For Others. | Journal of Personality and Social Psychology | 0.36 / 151 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - A Functional Analysis Of Two Transdiagnostic, Emotion-Focused Interventions On Nons | Journal of Consulting and Clinical Psychology | 0.27 / 855 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2015 - The Question–Behavior Effect: Genuine Effect Or Spurious Phenomenon? A Systematic R | Health Psychology | 0.09 / 37,452 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Imagine That! The Effect Of Counterstereotypic Imagined Intergroup Contact On Weigh | Health Psychology | 0.53 / 107 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Being Observed Magnifies Action. | Journal of Personality and Social Psychology | 0.46 / 100 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - Hypocritical Flip-Flop, Or Courageous Evolution? When Leaders Change Their Moral Mi | Journal of Personality and Social Psychology | 0.22 / 5,552 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Selection Bias, Vote Counting, And Money-Priming Effects: A Comment On Rohrer, Pash | Journal of Experimental Psychology: General | 3.13 / 12 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Atheist Horns And Religious Halos: Mental Representations Of Atheists And Theists. | Journal of Experimental Psychology: General | 0.40 / 273 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Experimental Evidence Of Discrimination In The Labour Market: Intersections Between | European Sociological Review | 0.24 / 400 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Worms At Work: Long-Run Impacts Of A Child Health Investment | The Quarterly Journal of Economics | 0.15 / 470 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2013 - Temperament Moderates Associations Between Exposure To Stress And Children's Extern | Child Development | 0.17 / 556 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Inferring Beliefs And Desires From Emotional Reactions To Anticipated And Observed | Child Development | 1.17 / 16 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - When Wanting To Be Fair Is Not Enough: The Effects Of Depletion And Self-Appraisal | Journal of Management | 1.36 / 83 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2015 - Leveling The Playing Field | Psychological Science | 0.40 / 167 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - A Large-Scale Test Of The Goldilocks Hypothesis | Psychological Science | 0.19 / 120,115 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Is Implicit Theory Of Mind A Real And Robust Phenomenon? Results From A Systematic | Psychological Science | 0.58 / 19 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - A Cognitive-Ecological Explanation Of Intergroup Biases | Psychological Science | 0.38 / 209 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Culture-Independent Prerequisites For Early Arithmetic | Psychological Science | 0.68 / 41 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Native Language Promotes Access To Visual Consciousness | Psychological Science | 0.82 / 28 |
-| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - ‘Acting Wife’: Marriage Market Incentives And Labor Market Investments | American Economic Review | 0.58 / 60 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Kuppuraj 2018 — Online statistical learning reliability | Royal Society Open Science | 1.80 / 42 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Grubb 2018 — Former targets capture | Attention Perception Psychophysics | 1.10 / 80 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Zanolie 2014 — Magnitude×side Exp3 | Frontiers in Psychology | 1.09 / 20 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Voorspoels 2014 — Coalition encoding + cue | Frontiers in Psychology | 0.85 / 463 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | van ’t Veer 2015 — Liars liked less | Frontiers in Psychology | 0.60 / 155 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Dutilh 2017 — WM drift rate hard | Attention Perception Psychophysics | 0.58 / 916 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | van ’t Veer 2015 — Liars trusted less | Frontiers in Psychology | 0.56 / 155 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Dutilh 2017 — WM drift rate easy | Attention Perception Psychophysics | 0.49 / 916 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rotteveel 2015 — Lever congruency Exp2 | Frontiers in Psychology | 0.49 / 50 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Steegen 2014 — Guess averaging immediate | Frontiers in Psychology | 0.40 / 471 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rowland 2014 — RIF Exp2 | Frontiers in Psychology | 0.38 / 140 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Ong 2015 — Comfort food MTurk | Frontiers in Psychology | 0.38 / 366 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Verkoeijen 2014 — Spacing inductive learning | Frontiers in Psychology | 0.37 / 123 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Evers 2014 — Diagnosticity Study 1b | Frontiers in Psychology | 0.36 / 199 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rotteveel 2015 — Lever congruency Exp1 | Frontiers in Psychology | 0.35 / 99 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Steegen 2014 — Guess averaging delayed | Frontiers in Psychology | 0.34 / 140 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Ong 2015 — Comfort food SG | Frontiers in Psychology | 0.32 / 198 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rowland 2014 — RIF Exp1 | Frontiers in Psychology | 0.31 / 72 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | van ’t Veer 2015 — Skin temp observing liar | Frontiers in Psychology | 0.31 / 155 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Kvetnaya 2018 — Irrelevant speech spatial | J European Psych Students | 0.29 / 40 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Bombari 2017 — Body posture felt power | Comprehensive Results in Social Psychology | 0.28 / 200 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Grubb 2018 — Feedback capture diff | Attention Perception Psychophysics | 0.20 / 80 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Voorspoels 2014 — Race encoding + coalition cue | Frontiers in Psychology | 0.18 / 463 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Zanolie 2014 — Magnitude×side Exp2 | Frontiers in Psychology | 0.17 / 24 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Jackson 2017 — Posture self-concept size | Comprehensive Results in Social Psychology | 0.15 / 128 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Bombari 2017 — Body posture gambling | Comprehensive Results in Social Psychology | 0.08 / 200 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Zanolie 2014 — Magnitude×side Exp1 | Frontiers in Psychology | 0.08 / 20 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Evers 2014 — Diagnosticity Study 1a | Frontiers in Psychology | 0.06 / 253 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rowland 2014 — Cue-independent RIF Exp3 | Frontiers in Psychology | 0.05 / 67 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Johnson 2014 — Cleanliness moral judgment Exp1 | Social Psychology | 0.01 / 208 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Johnson 2014 — Cleanliness moral judgment Exp2 | Social Psychology | 0.01 / 126 |
-| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Ong 2015 — Comfort food NL | Frontiers in Psychology | 0.01 / 176 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_0) | not coded | 0.41 / 250 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_1) | not coded | 0.08 / 197 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_10) | not coded | 0.41 / 811 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_11) | not coded | 0.17 / 216 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_12) | not coded | 0.49 / 570 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_13) | not coded | 0.05 / 736 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_14) | not coded | 0.48 / 176 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_15) | not coded | 0.20 / 220 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_16) | not coded | 0.22 / 541 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_18) | not coded | 0.91 / 68 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_19) | not coded | 1.29 / 38 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_2) | not coded | 0.06 / 650 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_20) | not coded | 1.64 / 195 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_21) | not coded | 2.73 / 381 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_22) | not coded | 0.25 / 71 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_23) | not coded | 0.37 / 122 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_24) | not coded | 1.54 / 363 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_25) | not coded | 0.26 / 732 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_26) | not coded | 0.09 / 400 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_27) | not coded | 0.12 / 794 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_28) | not coded | 0.08 / 95 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_29) | not coded | 0.77 / 127 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_3) | not coded | 0.93 / 627 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_30) | not coded | 0.48 / 202 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_31) | not coded | 0.19 / 468 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_32) | not coded | 0.67 / 50 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_33) | not coded | 0.06 / 302 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_34) | not coded | 0.04 / 2,141 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_35) | not coded | 0.02 / 2,284 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_36) | not coded | 0.06 / 377 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_38) | not coded | 0.18 / 1,250 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_39) | not coded | 0.02 / 98 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_4) | not coded | 0.75 / 45 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_40) | not coded | 0.10 / 360 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_41) | not coded | 0.06 / 223 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_42) | not coded | 0.93 / 58 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_43) | not coded | 0.65 / 300 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_44) | not coded | 0.13 / 139 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_45) | not coded | 0.43 / 440 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_46) | not coded | 0.44 / 297 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_47) | not coded | 0.20 / 35 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_48) | not coded | 0.34 / 92 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_49) | not coded | 0.20 / 356 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_5) | not coded | 0.20 / 4,754 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_50) | not coded | 0.33 / 266 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_51) | not coded | 0.12 / 240 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_52) | not coded | 0.29 / 356 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_53) | not coded | 0.94 / 148 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_54) | not coded | 0.22 / 2,053 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_55) | not coded | 0.13 / 1,618 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_56) | not coded | 0.20 / 264 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_57) | not coded | 0.47 / 81 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_58) | not coded | 0.35 / 374 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_6) | not coded | 0.08 / 55 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_60) | not coded | 0.41 / 272 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_61) | not coded | 0.28 / 205 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_62) | not coded | 0.27 / 268 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_63) | not coded | 1.03 / 545 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_64) | not coded | 0.34 / 87 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_65) | not coded | 0.36 / 252 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_66) | not coded | 0.70 / 177 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_67) | not coded | 0.80 / 101 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_68) | not coded | 0.80 / 379 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_69) | not coded | 0.59 / 297 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_7) | not coded | 0.41 / 905 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_70) | not coded | 0.14 / 1,673 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_72) | not coded | 0.84 / 51 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_73) | not coded | 1.34 / 37 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_74) | not coded | 0.23 / 80 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_75) | not coded | 0.29 / 400 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_76) | not coded | 0.18 / 120,115 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_77) | not coded | 0.49 / 621 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_78) | not coded | 1.34 / 37 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_79) | not coded | 0.54 / 332 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_8) | not coded | 0.16 / 680 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_80) | not coded | 0.03 / 386 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_81) | not coded | 0.24 / 53 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_82) | not coded | 2.63 / 1,462 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_83) | not coded | 0.09 / 242 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_84) | not coded | 0.22 / 199 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_85) | not coded | 0.47 / 471 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_86) | not coded | 0.18 / 463 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_87) | not coded | 1.50 / 90 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_88) | not coded | 0.63 / 36 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_89) | not coded | 0.19 / 631 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_9) | not coded | 0.61 / 257 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_90) | not coded | 1.37 / 20 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_91) | not coded | 0.03 / 1,894 |
-| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_92) | not coded | 1.15 / 79 |
+| PSA-CR001 pooled preregistered rows [@dorison2022] | Behavioral intentions (loss vs gain framing) | Affective Science | 0.100 / 15,772 |
+| PSA-CR001 pooled preregistered rows [@dorison2022] | Policy support: individual autonomy subscale | Affective Science | 0.070 / 15,772 |
+| PSA-CR001 pooled preregistered rows [@dorison2022] | Policy support: government power subscale | Affective Science | 0.080 / 15,772 |
+| PSA-CR001 pooled preregistered rows [@dorison2022] | Information seeking (loss vs gain framing) | Affective Science | 0.020 / 15,772 |
+| ManyBabies 1 IDS pooled row [@manyBabies2020Ids] | Infant-directed speech versus adult-directed speech pooled preference effect | Advances in Methods and Practices in Psychological Science | 0.350 / 2,329 |
+| ManyClasses 1 feedback pooled row [@fyfe2021manyclasses1] | Immediate versus delayed feedback timing pooled classroom-learning effect | Advances in Methods and Practices in Psychological Science | 0.002 / 2,081 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H1a: reappraisal versus control reduces negative emotions in response to photos | Nature Human Behaviour | 0.392 / 21,644 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H1b: reappraisal versus control reduces negative state emotions | Nature Human Behaviour | 0.313 / 21,644 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H1c: reappraisal versus control reduces negative emotions about COVID-19 | Nature Human Behaviour | 0.239 / 21,644 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H2a: reappraisal versus control increases positive emotions in response to photos | Nature Human Behaviour | 0.590 / 21,644 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H2b: reappraisal versus control increases positive state emotions | Nature Human Behaviour | 0.326 / 21,644 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H2c: reappraisal versus control increases positive emotions about COVID-19 | Nature Human Behaviour | 0.266 / 21,644 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H3a: reconstrual versus repurposing, negative photo emotions | Nature Human Behaviour | 0.043 / 10,499 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H3b: reconstrual versus repurposing, negative state emotions | Nature Human Behaviour | 0.008 / 10,499 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H3c: reconstrual versus repurposing, negative COVID-19 emotions | Nature Human Behaviour | 0.067 / 10,499 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H4a: repurposing versus reconstrual, positive photo emotions | Nature Human Behaviour | 0.114 / 10,499 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H4b: repurposing versus reconstrual, positive state emotions | Nature Human Behaviour | 0.011 / 10,499 |
+| PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | H4c: repurposing versus reconstrual, positive COVID-19 emotions | Nature Human Behaviour | 0.047 / 10,499 |
+| PSA004 true-belief/Gettier pooled row [@hall2024psa004Turri] | Pooled standard justified-true-belief versus Gettier knowledge attribution | Advances in Methods and Practices in Psychological Science | 0.342 / 4,724 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Remotely Close Associations: Openness To Experience And Semantic Memory Structure | European Journal of Personality | 1.290 / 516 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Delaying Access To A Problem-Skipping Option Increases Effortful Practice: Applicat | Computers & Education | 0.074 / 50,433 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - The Morality Of Action: The Asymmetry Between Judgments Of Praise And Blame In The | Journal of Experimental Social Psychology | 0.524 / 59 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - (Pre)Occupations: A Data-Driven Model Of Jobs And Its Consequences For Categorizati | Journal of Experimental Social Psychology | 0.539 / 183 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Ceos Imbue Organizations With Feelings, Increasing Punishment Satisfaction And Apol | Journal of Experimental Social Psychology | 0.290 / 302 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - How Internal Constraints Shape Interest Group Activities: Evidence From Access-Seek | American Political Science Review | 0.004 / 2,647,085 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Treating Depression With Physical Activity In Adolescents And Young Adults: A Syste | Psychological Medicine | 0.820 / 771 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Classified Or Coverup? The Effect Of Redactions On Conspiracy Theory Beliefs | Journal of Experimental Political Science | 0.103 / 2,524 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - The Effect Of Segregation On Intergroup Relations | Journal of Experimental Political Science | 0.200 / 1,081 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Preferences For Domestic Action Over International Transfers In Global Climate Poli | Journal of Experimental Political Science | 0.153 / 1,140 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Do Gender Quotas Really Reduce Bias? Evidence From A Policy Experiment In Southern | Journal of Experimental Political Science | 0.608 / 51 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2014 - Paying More When Paying For Others. | Journal of Personality and Social Psychology | 0.357 / 151 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - A Functional Analysis Of Two Transdiagnostic, Emotion-Focused Interventions On Nons | Journal of Consulting and Clinical Psychology | 0.266 / 855 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2015 - The Question–Behavior Effect: Genuine Effect Or Spurious Phenomenon? A Systematic R | Health Psychology | 0.090 / 37,452 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Imagine That! The Effect Of Counterstereotypic Imagined Intergroup Contact On Weigh | Health Psychology | 0.530 / 107 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Being Observed Magnifies Action. | Journal of Personality and Social Psychology | 0.458 / 100 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - Hypocritical Flip-Flop, Or Courageous Evolution? When Leaders Change Their Moral Mi | Journal of Personality and Social Psychology | 0.220 / 5,552 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Selection Bias, Vote Counting, And Money-Priming Effects: A Comment On Rohrer, Pash | Journal of Experimental Psychology: General | 3.129 / 12 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Atheist Horns And Religious Halos: Mental Representations Of Atheists And Theists. | Journal of Experimental Psychology: General | 0.398 / 273 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Experimental Evidence Of Discrimination In The Labour Market: Intersections Between | European Sociological Review | 0.241 / 400 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2016 - Worms At Work: Long-Run Impacts Of A Child Health Investment | The Quarterly Journal of Economics | 0.152 / 470 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2013 - Temperament Moderates Associations Between Exposure To Stress And Children's Extern | Child Development | 0.166 / 556 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Inferring Beliefs And Desires From Emotional Reactions To Anticipated And Observed | Child Development | 1.173 / 16 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - When Wanting To Be Fair Is Not Enough: The Effects Of Depletion And Self-Appraisal | Journal of Management | 1.358 / 83 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2015 - Leveling The Playing Field | Psychological Science | 0.396 / 167 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - A Large-Scale Test Of The Goldilocks Hypothesis | Psychological Science | 0.190 / 120,115 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Is Implicit Theory Of Mind A Real And Robust Phenomenon? Results From A Systematic | Psychological Science | 0.580 / 19 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - A Cognitive-Ecological Explanation Of Intergroup Biases | Psychological Science | 0.384 / 209 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Culture-Independent Prerequisites For Early Arithmetic | Psychological Science | 0.678 / 41 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2018 - Native Language Promotes Access To Visual Consciousness | Psychological Science | 0.815 / 28 |
+| SCORE/COS preregistration-indicated original papers [@tyner2026] | 2017 - ‘Acting Wife’: Marriage Market Incentives And Labor Market Investments | American Economic Review | 0.583 / 60 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Kuppuraj 2018 — Online statistical learning reliability | Royal Society Open Science | 1.800 / 42 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Grubb 2018 — Former targets capture | Attention Perception Psychophysics | 1.100 / 80 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Zanolie 2014 — Magnitude×side Exp3 | Frontiers in Psychology | 1.090 / 20 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Voorspoels 2014 — Coalition encoding + cue | Frontiers in Psychology | 0.850 / 463 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | van ’t Veer 2015 — Liars liked less | Frontiers in Psychology | 0.600 / 155 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Dutilh 2017 — WM drift rate hard | Attention Perception Psychophysics | 0.580 / 916 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | van ’t Veer 2015 — Liars trusted less | Frontiers in Psychology | 0.560 / 155 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Dutilh 2017 — WM drift rate easy | Attention Perception Psychophysics | 0.490 / 916 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rotteveel 2015 — Lever congruency Exp2 | Frontiers in Psychology | 0.490 / 50 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Steegen 2014 — Guess averaging immediate | Frontiers in Psychology | 0.400 / 471 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rowland 2014 — RIF Exp2 | Frontiers in Psychology | 0.380 / 140 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Ong 2015 — Comfort food MTurk | Frontiers in Psychology | 0.380 / 366 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Verkoeijen 2014 — Spacing inductive learning | Frontiers in Psychology | 0.370 / 123 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Evers 2014 — Diagnosticity Study 1b | Frontiers in Psychology | 0.360 / 199 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rotteveel 2015 — Lever congruency Exp1 | Frontiers in Psychology | 0.350 / 99 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Steegen 2014 — Guess averaging delayed | Frontiers in Psychology | 0.340 / 140 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Ong 2015 — Comfort food SG | Frontiers in Psychology | 0.320 / 198 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rowland 2014 — RIF Exp1 | Frontiers in Psychology | 0.310 / 72 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | van ’t Veer 2015 — Skin temp observing liar | Frontiers in Psychology | 0.310 / 155 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Kvetnaya 2018 — Irrelevant speech spatial | J European Psych Students | 0.290 / 40 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Bombari 2017 — Body posture felt power | Comprehensive Results in Social Psychology | 0.280 / 200 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Grubb 2018 — Feedback capture diff | Attention Perception Psychophysics | 0.200 / 80 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Voorspoels 2014 — Race encoding + coalition cue | Frontiers in Psychology | 0.180 / 463 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Zanolie 2014 — Magnitude×side Exp2 | Frontiers in Psychology | 0.170 / 24 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Jackson 2017 — Posture self-concept size | Comprehensive Results in Social Psychology | 0.150 / 128 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Bombari 2017 — Body posture gambling | Comprehensive Results in Social Psychology | 0.080 / 200 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Zanolie 2014 — Magnitude×side Exp1 | Frontiers in Psychology | 0.080 / 20 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Evers 2014 — Diagnosticity Study 1a | Frontiers in Psychology | 0.060 / 253 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Rowland 2014 — Cue-independent RIF Exp3 | Frontiers in Psychology | 0.050 / 67 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Johnson 2014 — Cleanliness moral judgment Exp1 | Social Psychology | 0.010 / 208 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Johnson 2014 — Cleanliness moral judgment Exp2 | Social Psychology | 0.010 / 126 |
+| Registered Reports preregistered-hypotheses corpus [@scheel2021] | Ong 2015 — Comfort food NL | Frontiers in Psychology | 0.010 / 176 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_0) | not coded | 0.408 / 250 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_1) | not coded | 0.080 / 197 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_10) | not coded | 0.408 / 811 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_11) | not coded | 0.170 / 216 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_12) | not coded | 0.494 / 570 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_13) | not coded | 0.050 / 736 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_14) | not coded | 0.480 / 176 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_15) | not coded | 0.201 / 220 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_16) | not coded | 0.221 / 541 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_18) | not coded | 0.905 / 68 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_19) | not coded | 1.291 / 38 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_2) | not coded | 0.059 / 650 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_20) | not coded | 1.640 / 195 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_21) | not coded | 2.726 / 381 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_22) | not coded | 0.247 / 71 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_23) | not coded | 0.370 / 122 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_24) | not coded | 1.540 / 363 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_25) | not coded | 0.262 / 732 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_26) | not coded | 0.090 / 400 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_27) | not coded | 0.120 / 794 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_28) | not coded | 0.080 / 95 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_29) | not coded | 0.773 / 127 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_3) | not coded | 0.926 / 627 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_30) | not coded | 0.480 / 202 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_31) | not coded | 0.191 / 468 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_32) | not coded | 0.667 / 50 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_33) | not coded | 0.060 / 302 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_34) | not coded | 0.040 / 2,141 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_35) | not coded | 0.020 / 2,284 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_36) | not coded | 0.060 / 377 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_38) | not coded | 0.181 / 1,250 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_39) | not coded | 0.020 / 98 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_4) | not coded | 0.747 / 45 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_40) | not coded | 0.100 / 360 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_41) | not coded | 0.063 / 223 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_42) | not coded | 0.930 / 58 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_43) | not coded | 0.650 / 300 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_44) | not coded | 0.127 / 139 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_45) | not coded | 0.430 / 440 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_46) | not coded | 0.444 / 297 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_47) | not coded | 0.201 / 35 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_48) | not coded | 0.340 / 92 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_49) | not coded | 0.201 / 356 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_5) | not coded | 0.201 / 4,754 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_50) | not coded | 0.327 / 266 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_51) | not coded | 0.120 / 240 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_52) | not coded | 0.290 / 356 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_53) | not coded | 0.937 / 148 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_54) | not coded | 0.221 / 2,053 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_55) | not coded | 0.127 / 1,618 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_56) | not coded | 0.201 / 264 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_57) | not coded | 0.470 / 81 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_58) | not coded | 0.352 / 374 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_6) | not coded | 0.080 / 55 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_60) | not coded | 0.414 / 272 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_61) | not coded | 0.279 / 205 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_62) | not coded | 0.270 / 268 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_63) | not coded | 1.031 / 545 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_64) | not coded | 0.340 / 87 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_65) | not coded | 0.360 / 252 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_66) | not coded | 0.703 / 177 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_67) | not coded | 0.797 / 101 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_68) | not coded | 0.800 / 379 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_69) | not coded | 0.590 / 297 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_7) | not coded | 0.408 / 905 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_70) | not coded | 0.140 / 1,673 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_72) | not coded | 0.837 / 51 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_73) | not coded | 1.341 / 37 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_74) | not coded | 0.230 / 80 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_75) | not coded | 0.286 / 400 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_76) | not coded | 0.180 / 120,115 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_77) | not coded | 0.494 / 621 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_78) | not coded | 1.341 / 37 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2018 preregistered key-question effect (schaefer_2019_preg_79) | not coded | 0.540 / 332 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_8) | not coded | 0.160 / 680 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_80) | not coded | 0.030 / 386 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_81) | not coded | 0.240 / 53 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_82) | not coded | 2.630 / 1,462 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_83) | not coded | 0.090 / 242 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_84) | not coded | 0.220 / 199 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_85) | not coded | 0.470 / 471 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2014 preregistered key-question effect (schaefer_2019_preg_86) | not coded | 0.181 / 463 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_87) | not coded | 1.500 / 90 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_88) | not coded | 0.629 / 36 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_89) | not coded | 0.190 / 631 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2017 preregistered key-question effect (schaefer_2019_preg_9) | not coded | 0.606 / 257 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_90) | not coded | 1.372 / 20 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2016 preregistered key-question effect (schaefer_2019_preg_91) | not coded | 0.030 / 1,894 |
+| Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 2015 preregistered key-question effect (schaefer_2019_preg_92) | not coded | 1.155 / 79 |
 
 :::
 
 ### What Is Still Missing
 
-- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1, the Schäfer/Schwarz preregistered key-effect sample, and SCORE preregistration-indicated paper-level rows.
+- The included core now combines Registered Reports, PSA-CR001 and PSA-CR002 pooled/preregistered hypothesis rows, PSA004 pooled Gettier evidence, ManyBabies 1, ManyClasses 1, the Schäfer/Schwarz preregistered key-effect sample, and SCORE preregistration-indicated paper-level rows.
 - The expanded considered-but-not-included list now names the major local preregistered-like sidecars separately: Many Labs, RRR pair rows, PSA replication rows, Transparent Psi, ManyBabies 3, ManyBabies 4, ManyClasses 2, ERN/Pe, self-control fMRI, Twomey, Linden, Protzko, AACT/ClinicalTrials.gov, CliniFact, Brodeur preregistered/PAP economics table tests, Nordic trial reporting, FReD, communication privacy, retrieval-extinction rats, and the van den Akker preregistration-in-practice corpus.
 - Most of those extra local sources are out because they are already Plot 1 replication-pair evidence, registry metadata rather than analytic preregistration, publication-linkage metadata without effect statistics, document/native-metric payloads without a compact D/N result table, or extracted table-test corpora without a focal/main-result selector.
 - The considered list is still a working audit, not a claim that every preregistered-like source on the web has been exhausted.
