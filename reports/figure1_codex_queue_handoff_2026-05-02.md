@@ -2,6 +2,20 @@
 
 This is the durable handoff point after the interrupted Codex session that was clearing the Figure 1 result-artifact Codex queue.
 
+## Cleared State
+
+The remaining 8 active Codex rows were reviewed source-by-source and terminal dispositions were recorded in:
+
+- `steps/source_inventory/figure1/result_artifact_acquisition/followup/codex/figure1-result-artifact-codex-source-specific-dispositions.tsv`
+
+After regenerating `make figure1-result-artifact-codex-decisions`, the active Codex queue is header-only:
+
+- `assign_after_codex=none`: 121 rows
+- `assign_after_codex=gpt`: 18 rows
+- `assign_after_codex=codex`: 0 rows
+
+The 18 remaining rows are GPT/manual external-artifact resolution rows, not Codex local-parser rows.
+
 ## Saved State
 
 - The checkout was on `main`, ahead of `origin/main` by 32 commits before this checkpoint commit.
@@ -25,7 +39,9 @@ The pasted GPT response in chat was malformed Markdown/JSON and was not applied 
 
 ## Active Codex Rows
 
-All 8 active rows have decision `local_source_specific_mapping_needed` and should be cleared by inspecting local samples/files and writing a source-specific mapping or parser decision.
+Resolved by the source-specific disposition table above. The list below is retained as the original interruption handoff inventory.
+
+At interruption time, all 8 active rows had decision `local_source_specific_mapping_needed` and required local source-specific review.
 
 | followup_id | corpus_database_id | name |
 | --- | --- | --- |

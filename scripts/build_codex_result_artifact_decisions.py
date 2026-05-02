@@ -88,6 +88,19 @@ def repair_attempt_paths(plot_label: str) -> list[Path]:
     return sorted(root.glob("repair/*-attempts.tsv"))
 
 
+def source_specific_disposition_path(plot_label: str) -> Path:
+    return (
+        ROOT
+        / "steps"
+        / "source_inventory"
+        / plot_label
+        / "result_artifact_acquisition"
+        / "followup"
+        / "codex"
+        / f"{plot_label}-result-artifact-codex-source-specific-dispositions.tsv"
+    )
+
+
 def source_catalog_rows(plot_label: str) -> list[dict[str, str]]:
     catalog_path = ROOT / "data" / "derived" / "effect_inflation_dataset" / f"plot{plot_label.removeprefix('figure')}_replication_source_catalog.csv"
     if not catalog_path.exists():
@@ -352,12 +365,22 @@ def repair_attempt_status(parent_id: str, attempts_by_parent: dict[str, list[dic
     return " | ".join(f"{row.get('strategy')}:{row.get('status')}:{row.get('detail')}" for row in rows[:8])
 
 
+def source_specific_disposition(
+    followup: dict[str, str],
+    by_followup: dict[str, dict[str, str]],
+    by_parent: dict[str, dict[str, str]],
+) -> dict[str, str]:
+    return by_followup.get(followup.get("followup_id", "")) or by_parent.get(followup.get("corpus_database_id", "")) or {}
+
+
 def decide(
     followup: dict[str, str],
     parser_rows: list[dict[str, str]],
     extracted_ids: set[str],
     attempts_by_parent: dict[str, list[dict[str, str]]],
     catalog_rows: list[dict[str, str]],
+    source_specific_by_followup: dict[str, dict[str, str]],
+    source_specific_by_parent: dict[str, dict[str, str]],
 ) -> dict[str, str]:
     track = followup.get("followup_track", "")
     parent_id = followup.get("corpus_database_id", "")
@@ -391,6 +414,7 @@ def decide(
         or "sidecar" in row.get("classification", "").lower()
         or "not a pair table" in (row.get("source_catalog_notes", "") + " " + row.get("notes", "")).lower()
     ]
+    source_specific_row = source_specific_disposition(followup, source_specific_by_followup, source_specific_by_parent)
 
     if extracted_rows:
         decision = "already_extracted_corpus_result_rows"
@@ -416,6 +440,14 @@ def decide(
         gpt_needed = "no"
         basis = "High parser-priority table/workbook artifact with pair/effect/N/identity field signatures."
         selected = high_rows
+    elif source_specific_row:
+        decision = source_specific_row.get("decision") or "codex_source_specific_disposition"
+        confidence = source_specific_row.get("confidence") or "medium"
+        action = source_specific_row.get("recommended_next_action") or "Keep this source-specific Codex disposition as the terminal queue decision."
+        assign_after_codex = source_specific_row.get("assign_after_codex") or "none"
+        gpt_needed = source_specific_row.get("gpt_needed") or "no"
+        basis = source_specific_row.get("decision_basis") or "Codex reviewed the local source-specific artifacts and recorded a terminal disposition."
+        selected = parser_rows[:8]
     elif is_tracker_only(followup, parser_rows):
         decision = "tracker_context_not_result_artifact"
         confidence = "high"
@@ -679,9 +711,24 @@ def main() -> None:
     attempts_by_parent = group_by(attempts, "corpus_database_id")
     extracted_ids = extracted_artifact_ids(args.plot_label)
     catalog_rows = source_catalog_rows(args.plot_label)
+    source_specific_rows = read_tsv(source_specific_disposition_path(args.plot_label))
+    source_specific_by_followup = {
+        row.get("followup_id", ""): row for row in source_specific_rows if row.get("followup_id", "")
+    }
+    source_specific_by_parent = {
+        row.get("corpus_database_id", ""): row for row in source_specific_rows if row.get("corpus_database_id", "")
+    }
 
     decisions = [
-        decide(row, parser_by_parent.get(row.get("corpus_database_id", ""), []), extracted_ids, attempts_by_parent, catalog_rows)
+        decide(
+            row,
+            parser_by_parent.get(row.get("corpus_database_id", ""), []),
+            extracted_ids,
+            attempts_by_parent,
+            catalog_rows,
+            source_specific_by_followup,
+            source_specific_by_parent,
+        )
         for row in followup_rows
     ]
     columns = [
@@ -727,6 +774,8 @@ def main() -> None:
             "followup_input": repo_path(followup_path),
             "parser_inputs": [repo_path(path) for path in parser_inputs],
             "repair_attempt_inputs": [repo_path(path) for path in attempt_inputs],
+            "source_specific_disposition_input": repo_path(source_specific_disposition_path(args.plot_label)),
+            "source_specific_disposition_count": len(source_specific_rows),
             "source_catalog_rows": len(catalog_rows),
             "extracted_artifact_count": len(extracted_ids),
             "decision_count": len(decisions),

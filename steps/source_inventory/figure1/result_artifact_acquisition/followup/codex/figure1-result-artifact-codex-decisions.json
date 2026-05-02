@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-05-02T11:59:26",
+  "created_at": "2026-05-02T12:12:01",
   "decision_count": 139,
   "extracted_artifact_count": 7,
   "followup_input": "steps/source_inventory/figure1/result_artifact_acquisition/followup/codex/figure1-result-artifact-codex-queue.tsv",
@@ -12,11 +12,11 @@
   ],
   "records": [
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "biblio_search_crossref_480bdd504b25",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_nonhuman_llm_replication_not_current_figure1",
+      "decision_basis": "Local MOESM tables contain human_size, Human_r, Gpt_r_recode, Human_p_value, and Gpt_p_value fields comparing published human effects with GPT/LLM responses. This is a useful AI-replication source, but it is not an independent human replication sample on the current Figure 1 D/N axis.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_d55e71bdfef18769",
       "followup_track": "codex_parser_or_result_mapping",
@@ -27,10 +27,10 @@
       "parser_evidence_counts": "parser_rows=9; sampled=5; high=0; medium=3; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_2484a8e13eafc140 | source_artifact_bad4644b12d90286 | source_artifact_616aff02bd00003a",
-      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_2484a8e13eafc140__43588_2025_840_MOESM4_ESM.csv | data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_bad4644b12d90286__43588_2025_840_MOESM5_ESM.csv | data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_616aff02bd00003a__43588_2025_840_MOESM8_ESM.csv",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_2484a8e13eafc140.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_bad4644b12d90286.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_616aff02bd00003a.json"
+      "recommended_next_action": "Keep as context or a future nonhuman/LLM replication lane. Do not extract into the current Figure 1 human original-replication corpus.",
+      "selected_artifact_ids": "source_artifact_2484a8e13eafc140 | source_artifact_bad4644b12d90286 | source_artifact_616aff02bd00003a | source_artifact_adf713f54d3ffe91 | source_artifact_df4f8c540c0d71e9 | source_artifact_4f5e3ce6a2133cb1 | source_artifact_f2ef7f8ed88cd39e | source_artifact_6468bbb2d5fd3b4a",
+      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_2484a8e13eafc140__43588_2025_840_MOESM4_ESM.csv | data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_bad4644b12d90286__43588_2025_840_MOESM5_ESM.csv | data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_616aff02bd00003a__43588_2025_840_MOESM8_ESM.csv | data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_adf713f54d3ffe91__43588_2025_840_MOESM6_ESM.zip | data/raw/source_artifacts/figure1_acquisition_tabular_first/biblio_search_crossref_480bdd504b25/source_artifact_df4f8c540c0d71e9__43588_2025_840_MOESM7_ESM.zip",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_2484a8e13eafc140.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_bad4644b12d90286.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_616aff02bd00003a.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_adf713f54d3ffe91.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_df4f8c540c0d71e9.json"
     },
     {
       "assign_after_codex": "none",
@@ -117,11 +117,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_remaining_downloadable/artifact_samples/source_artifact_aafc089eaeb41ace.json"
     },
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "repo_search_datacite_1afe2afc30e4",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_single_study_dataset_not_replication_source",
+      "decision_basis": "The mirrored Zenodo Dataset.csv is individual-level psychometric and sociodemographic data with fields such as Codigo_user, Edad, Sexo, TC, CDRISC, LOTR, and RMEQ_TOT. It does not contain original/replication mapping rows or paired effect/N assertions.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_376f815512e69837",
       "followup_track": "codex_parser_or_result_mapping",
@@ -132,10 +132,10 @@
       "parser_evidence_counts": "parser_rows=3; sampled=2; high=0; medium=1; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_4f426212c129ce3f",
-      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_datacite_1afe2afc30e4/source_artifact_4f426212c129ce3f__Dataset.csv",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_4f426212c129ce3f.json"
+      "recommended_next_action": "Keep as a one-study dataset context source only. Do not parse as a Figure 1 result-artifact source family.",
+      "selected_artifact_ids": "source_artifact_4f426212c129ce3f | source_artifact_0f89c9b8bd2a6de0 | source_artifact_c9142528a0395444",
+      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_datacite_1afe2afc30e4/source_artifact_4f426212c129ce3f__Dataset.csv | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_datacite_1afe2afc30e4/source_artifact_0f89c9b8bd2a6de0__Readme.txt | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_datacite_1afe2afc30e4/source_artifact_c9142528a0395444__Dataset.sav",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_4f426212c129ce3f.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_0f89c9b8bd2a6de0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_c9142528a0395444.json"
     },
     {
       "assign_after_codex": "none",
@@ -432,11 +432,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_remaining_downloadable/artifact_samples/source_artifact_f0879646f3370157.json"
     },
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "repo_search_osf_2b928c9c5eb3",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_original_study_raw_data_not_replication_source",
+      "decision_basis": "The OSF lead is titled Original Study and the sampled TRICO_BEHAVIORAL_DATA.xlsx and TRICO_CONTINGENCY_DATA.xlsx files are raw participant/session tables with fields such as ID, session, trial, cue, prepost, group, pressFreq, and contingency ratings. They are not replication-result rows or an original/replication source-family table.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_7bb51bfa88f9a17f",
       "followup_track": "codex_parser_or_result_mapping",
@@ -447,10 +447,10 @@
       "parser_evidence_counts": "parser_rows=27; sampled=19; high=0; medium=2; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_93d54dff365b9d5f | source_artifact_f41a09156dd55edb",
-      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_93d54dff365b9d5f__TRICO_BEHAVIORAL_DATA.xlsx | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_f41a09156dd55edb__TRICO_CONTINGENCY_DATA.xlsx",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_93d54dff365b9d5f.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_f41a09156dd55edb.json"
+      "recommended_next_action": "Keep as original-study raw data provenance if needed. Do not promote to Figure 1 result extraction.",
+      "selected_artifact_ids": "source_artifact_93d54dff365b9d5f | source_artifact_f41a09156dd55edb | source_artifact_b7c94334e41615a1 | source_artifact_a8df6ddf93087137 | source_artifact_216d7de421b4e8ab | source_artifact_70ef09a5a82f3226 | source_artifact_af6ec013142a001e | source_artifact_11f3557f182e7b2c",
+      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_93d54dff365b9d5f__TRICO_BEHAVIORAL_DATA.xlsx | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_f41a09156dd55edb__TRICO_CONTINGENCY_DATA.xlsx | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_b7c94334e41615a1__Rcode_analysis.R | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_a8df6ddf93087137__makeIndividualDiffPlot.R | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_216d7de421b4e8ab__makeSplitGroupPlot.R | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_70ef09a5a82f3226__makeSplitGroupPlotCovariate.R | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_af6ec013142a001e__RCode_Trico_Preprocessing_Data_Analysis.R | data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_11f3557f182e7b2c__RCode_Trico_Exploratory_Analysis.R",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_93d54dff365b9d5f.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_f41a09156dd55edb.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_b7c94334e41615a1.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_a8df6ddf93087137.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_216d7de421b4e8ab.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_70ef09a5a82f3226.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_af6ec013142a001e.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_11f3557f182e7b2c.json"
     },
     {
       "assign_after_codex": "none",
@@ -621,11 +621,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_remaining_downloadable/artifact_samples/source_artifact_503e3bd61cc44d96.json"
     },
     {
-      "assign_after_codex": "codex",
+      "assign_after_codex": "none",
       "confidence": "medium",
       "corpus_database_id": "repo_search_osf_92e639ac2dc7",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_student_replication_project_raw_outputs_not_pair_table",
+      "decision_basis": "The S23-1 OSF files are student/class project raw outputs and analyses, including survey exports, descriptive-analysis CSVs, and heatmap workbooks. The sampled files do not expose a canonical table linking original studies to replication effect sizes and N values on the current Figure 1 axis.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_a7f4073b1930038b",
       "followup_track": "codex_parser_or_result_mapping",
@@ -636,10 +636,10 @@
       "parser_evidence_counts": "parser_rows=53; sampled=32; high=0; medium=6; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_5f3f015480a0814a | source_artifact_aa275362aeafa074 | source_artifact_a357001689287a9f | source_artifact_a04a122f60487dc2 | source_artifact_8e8c1ecd9d833e1c | source_artifact_a82bfcb5746beff4",
-      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_5f3f015480a0814a__Datenanalyse_S23-1_Brueckner_Bojic_Kohse_Frey.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_aa275362aeafa074__Deskriptive_Analysen_S23-1_Brueckner_Bojic_Kohse_Frey.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_a357001689287a9f__Datensatz_LenaJestrimski_SelinBayram.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_a04a122f60487dc2__Heatmap_LynHeintzen_NadjaMiroshnikova_LaraPenz_NeleStruckhof.xlsx | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_8e8c1ecd9d833e1c__Heatmap_TimSa_ger_LindaFriese.xlsx | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_a82bfcb5746beff4__Rohdatensatz_TimSaeger_LindaFriese.csv",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_5f3f015480a0814a.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_aa275362aeafa074.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_a357001689287a9f.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_a04a122f60487dc2.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_8e8c1ecd9d833e1c.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_a82bfcb5746beff4.json"
+      "recommended_next_action": "Keep as context or route individual projects through a separate individual-paper worklist only if affirmative original/replication evidence is later needed.",
+      "selected_artifact_ids": "source_artifact_5f3f015480a0814a | source_artifact_aa275362aeafa074 | source_artifact_a357001689287a9f | source_artifact_a04a122f60487dc2 | source_artifact_8e8c1ecd9d833e1c | source_artifact_a82bfcb5746beff4 | source_artifact_bbf9fd3b6409235c | source_artifact_d7e1e06f695bc8cb",
+      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_5f3f015480a0814a__Datenanalyse_S23-1_Brueckner_Bojic_Kohse_Frey.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_aa275362aeafa074__Deskriptive_Analysen_S23-1_Brueckner_Bojic_Kohse_Frey.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_a357001689287a9f__Datensatz_LenaJestrimski_SelinBayram.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_a04a122f60487dc2__Heatmap_LynHeintzen_NadjaMiroshnikova_LaraPenz_NeleStruckhof.xlsx | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_8e8c1ecd9d833e1c__Heatmap_TimSa_ger_LindaFriese.xlsx | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_a82bfcb5746beff4__Rohdatensatz_TimSaeger_LindaFriese.csv | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_bbf9fd3b6409235c__Fragebogen_LenaJestrimski_SelinBayram.pdf | data/raw/source_artifacts/figure1_acquisition_repair/repo_search_osf_92e639ac2dc7/source_artifact_d7e1e06f695bc8cb__Handout_Replikationsstudie_TimSa_ger_LindaFriese.pdf",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_5f3f015480a0814a.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_aa275362aeafa074.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_a357001689287a9f.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_a04a122f60487dc2.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_8e8c1ecd9d833e1c.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_a82bfcb5746beff4.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_bbf9fd3b6409235c.json | steps/source_inventory/figure1/result_artifact_acquisition/repair/mirror_sample/artifact_samples/source_artifact_d7e1e06f695bc8cb.json"
     },
     {
       "assign_after_codex": "none",
@@ -663,11 +663,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_37f06ce96310e435.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_838331e7004cd2bd.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_6de42ee00e97bd13.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_8dccb4dea91962c2.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_366ecc3e33a21d53.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_b0e6ec96d035a5bc.json"
     },
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "repo_search_dataverse_e6b5cf171269",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_false_positive_text_classification_dataset",
+      "decision_basis": "The mirrored Stanford Data file is a Stanford Sentiment Treebank-style table with CATEGORY and RAWTEXT columns containing movie-review text. It is not a replication dataset, result table, or source-family artifact for Figure 1.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_776d4bd553ba86e2",
       "followup_track": "codex_parser_or_result_mapping",
@@ -678,7 +678,7 @@
       "parser_evidence_counts": "parser_rows=1; sampled=1; high=0; medium=1; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
+      "recommended_next_action": "Reject as a false-positive artifact lead for Figure 1.",
       "selected_artifact_ids": "source_artifact_6e346074045853c4",
       "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_dataverse_e6b5cf171269/source_artifact_6e346074045853c4__stanford.tab",
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_6e346074045853c4.json"
@@ -726,11 +726,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_remaining_downloadable/artifact_samples/source_artifact_e173edfbe0df75bb.json"
     },
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "repo_search_osf_2584049b16b9",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_individual_paper_pdf_collection_not_result_table",
+      "decision_basis": "The Undergraduate Replication Projects OSF mirror contains individual article PDFs and paper-level materials. Sampled PDFs are ordinary publication text, not a reusable corpus table enumerating original/replication rows or machine-readable D/N fields.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_fb0efbbada68a67c",
       "followup_track": "codex_parser_or_result_mapping",
@@ -741,10 +741,10 @@
       "parser_evidence_counts": "parser_rows=19; sampled=13; high=0; medium=0; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_21eee56615c7a3f0 | source_artifact_46a1f99a41cc51f0 | source_artifact_bbbe0bec73036810 | source_artifact_2540fb7649bbc832 | source_artifact_a3ecf9597e321fab | source_artifact_cefd210754af8041 | source_artifact_7be27106d755422c | source_artifact_b6a39ea5749a7426 | source_artifact_dc41b97f779f0f73 | source_artifact_81f9d2ac95fb533d | source_artifact_d1d8fce587fb0dbf | source_artifact_6ae4e7134971ad7b",
-      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_21eee56615c7a3f0__014616_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_46a1f99a41cc51f0__1-s2.0-S0022103119301350-main_1_.pdf | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_bbbe0bec73036810__BLADER_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_2540fb7649bbc832__CONSEQ_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_a3ecf9597e321fab__Dietze_Craig_-_2020_-_Framing_economic_inequality_and_policy_as_group_disadvantages_versus_group_advantages_spurs_support_for_action.pdf | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_cefd210754af8041__EBERSO_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_7be27106d755422c__GALINS_2.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_b6a39ea5749a7426__KLEINE_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_dc41b97f779f0f73__LANDY__1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_81f9d2ac95fb533d__Phillips_Lowery_-_2015_-_The_hard-knock_life_Whites_claim_hardships_in_response_to_racial_inequity.pdf | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_d1d8fce587fb0dbf__SPARKM_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_6ae4e7134971ad7b__tempt_JPSP_2008_1_.pdf",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_21eee56615c7a3f0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_46a1f99a41cc51f0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_bbbe0bec73036810.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_2540fb7649bbc832.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_a3ecf9597e321fab.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_cefd210754af8041.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_7be27106d755422c.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_b6a39ea5749a7426.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_dc41b97f779f0f73.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_81f9d2ac95fb533d.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_d1d8fce587fb0dbf.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_6ae4e7134971ad7b.json"
+      "recommended_next_action": "Keep as a document collection/context lead. Do not send to generic parser or GPT as a result-bearing corpus artifact.",
+      "selected_artifact_ids": "source_artifact_21eee56615c7a3f0 | source_artifact_46a1f99a41cc51f0 | source_artifact_bbbe0bec73036810 | source_artifact_2540fb7649bbc832 | source_artifact_a3ecf9597e321fab | source_artifact_cefd210754af8041 | source_artifact_7be27106d755422c | source_artifact_b6a39ea5749a7426",
+      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_21eee56615c7a3f0__014616_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_46a1f99a41cc51f0__1-s2.0-S0022103119301350-main_1_.pdf | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_bbbe0bec73036810__BLADER_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_2540fb7649bbc832__CONSEQ_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_a3ecf9597e321fab__Dietze_Craig_-_2020_-_Framing_economic_inequality_and_policy_as_group_disadvantages_versus_group_advantages_spurs_support_for_action.pdf | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_cefd210754af8041__EBERSO_1.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_7be27106d755422c__GALINS_2.PDF | data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_2584049b16b9/source_artifact_b6a39ea5749a7426__KLEINE_1.PDF",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_21eee56615c7a3f0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_46a1f99a41cc51f0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_bbbe0bec73036810.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_2540fb7649bbc832.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_a3ecf9597e321fab.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_cefd210754af8041.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_7be27106d755422c.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_b6a39ea5749a7426.json"
     },
     {
       "assign_after_codex": "gpt",
@@ -1755,11 +1755,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_0d28c95980f466fb.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_00a58264b98e7534.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_3c64325db431ad44.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_3a5ec544d886a8a4.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_48c75cf5a44ec499.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_505868554b9b221d.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_5ab2eb360ca61e4c.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_a6f4ac3afc903c1e.json"
     },
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "corpus_db_lead_marcus_four_lab_replication_hcmv7",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_individual_replication_raw_project_not_pair_table",
+      "decision_basis": "The local harvest is a real close multi-center replication project for Marcus et al. 1999, with Analyses.Rmd/HTML and raw source material. The current artifact set is raw analysis material rather than a structured source-family D/N pair table ready for Figure 1 extraction.",
       "existing_local_paths": "data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7",
       "followup_id": "result_artifact_followup_89f86c9b08b2c0b6",
       "followup_track": "codex_local_mirror_identification",
@@ -1770,10 +1770,10 @@
       "parser_evidence_counts": "parser_rows=4; sampled=3; high=0; medium=0; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_191b95027fe27e71 | source_artifact_a5e1c18287f34b32 | source_artifact_acd8b3af179da819",
-      "selected_local_paths": "data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/Analyses.Rmd | data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/original_marcus_1999_rule_learning.pdf | data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/Analyses.html",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_191b95027fe27e71.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_a5e1c18287f34b32.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_acd8b3af179da819.json"
+      "recommended_next_action": "Keep in the source catalog as raw_artifact_only and stage separately before any plot inclusion. Do not leave in the Codex parser queue.",
+      "selected_artifact_ids": "source_artifact_191b95027fe27e71 | source_artifact_a5e1c18287f34b32 | source_artifact_acd8b3af179da819 | source_artifact_4c7bb4923c2b94c5",
+      "selected_local_paths": "data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/Analyses.Rmd | data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/original_marcus_1999_rule_learning.pdf | data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/Analyses.html | data/raw/replication_projects/lead_harvest/marcus_four_lab_replication_hcmv7/osfstorage-hcmv7.zip",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_191b95027fe27e71.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_a5e1c18287f34b32.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_acd8b3af179da819.json | steps/source_inventory/figure1/result_artifact_acquisition/codex_local/mirror_sample/artifact_samples/source_artifact_4c7bb4923c2b94c5.json"
     },
     {
       "assign_after_codex": "none",
@@ -2868,11 +2868,11 @@
       "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_documents/artifact_samples/source_artifact_17f23ad52e9f44ca.json"
     },
     {
-      "assign_after_codex": "codex",
-      "confidence": "medium",
+      "assign_after_codex": "none",
+      "confidence": "high",
       "corpus_database_id": "lead_wood_porter_2019",
-      "decision": "local_source_specific_mapping_needed",
-      "decision_basis": "Local sampled artifacts have some Figure 1 signals but do not pass the generic result-table gate.",
+      "decision": "reviewed_native_metric_stage_blocked",
+      "decision_basis": "The Wood and Porter Dataverse bundle is local and includes participant-level correction/survey tables plus R scripts. The existing staged row records promotion_blocker=metric_not_on_shared_d_axis, and strict target pairing/shared-D conversion still requires a native-metric lane or hand extraction.",
       "existing_local_paths": "",
       "followup_id": "result_artifact_followup_99820fa1dfa2fea6",
       "followup_track": "codex_parser_or_result_mapping",
@@ -2883,10 +2883,10 @@
       "parser_evidence_counts": "parser_rows=31; sampled=31; high=0; medium=13; extracted=0",
       "plot_label": "figure1",
       "raw_url": "",
-      "recommended_next_action": "Inspect local samples/files and write a source-specific mapping or parser decision; generic parser routing is not enough.",
-      "selected_artifact_ids": "source_artifact_67ae58e6568feb32 | source_artifact_ebdfcb6906406816 | source_artifact_528aee8856f95202 | source_artifact_5baaac9d5f5c77e4 | source_artifact_6a4db98467909b82 | source_artifact_519b482f9c5c06b0 | source_artifact_7b4c9ed559ea9b37 | source_artifact_734a2df7398b3d31 | source_artifact_78ab9c16eea0dd27 | source_artifact_2742b9dbc57eb1f3 | source_artifact_0d3096940b54041a | source_artifact_e161be5543d51211",
-      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_67ae58e6568feb32__elusive-tab_7.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_ebdfcb6906406816__elusive-tab_8.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_528aee8856f95202__elusive-tab_2.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_5baaac9d5f5c77e4__elusive-tab_1.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_6a4db98467909b82__elusive-tab_10.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_519b482f9c5c06b0__elusive-tab_11.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_7b4c9ed559ea9b37__elusive-tab_12.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_734a2df7398b3d31__elusive-tab_13.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_78ab9c16eea0dd27__elusive-tab_3.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_2742b9dbc57eb1f3__elusive-tab_4.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_0d3096940b54041a__elusive-tab_5.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_e161be5543d51211__elusive-tab_6.tab",
-      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_67ae58e6568feb32.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_ebdfcb6906406816.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_528aee8856f95202.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_5baaac9d5f5c77e4.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_6a4db98467909b82.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_519b482f9c5c06b0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_7b4c9ed559ea9b37.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_734a2df7398b3d31.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_78ab9c16eea0dd27.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_2742b9dbc57eb1f3.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_0d3096940b54041a.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_e161be5543d51211.json"
+      "recommended_next_action": "Keep the staged Dataverse source as not included until a native-metric conversion policy or hand extraction resolves the blocker. Do not keep it active in the Codex queue.",
+      "selected_artifact_ids": "source_artifact_67ae58e6568feb32 | source_artifact_ebdfcb6906406816 | source_artifact_528aee8856f95202 | source_artifact_5baaac9d5f5c77e4 | source_artifact_6a4db98467909b82 | source_artifact_519b482f9c5c06b0 | source_artifact_7b4c9ed559ea9b37 | source_artifact_734a2df7398b3d31",
+      "selected_local_paths": "data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_67ae58e6568feb32__elusive-tab_7.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_ebdfcb6906406816__elusive-tab_8.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_528aee8856f95202__elusive-tab_2.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_5baaac9d5f5c77e4__elusive-tab_1.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_6a4db98467909b82__elusive-tab_10.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_519b482f9c5c06b0__elusive-tab_11.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_7b4c9ed559ea9b37__elusive-tab_12.tab | data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_734a2df7398b3d31__elusive-tab_13.tab",
+      "selected_sample_paths": "steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_67ae58e6568feb32.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_ebdfcb6906406816.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_528aee8856f95202.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_5baaac9d5f5c77e4.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_6a4db98467909b82.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_519b482f9c5c06b0.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_7b4c9ed559ea9b37.json | steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/artifact_samples/source_artifact_734a2df7398b3d31.json"
     },
     {
       "assign_after_codex": "none",
@@ -2934,5 +2934,7 @@
   "repair_attempt_inputs": [
     "steps/source_inventory/figure1/result_artifact_acquisition/repair/figure1-result-artifact-codex-repair-attempts.tsv"
   ],
-  "source_catalog_rows": 107
+  "source_catalog_rows": 107,
+  "source_specific_disposition_count": 8,
+  "source_specific_disposition_input": "steps/source_inventory/figure1/result_artifact_acquisition/followup/codex/figure1-result-artifact-codex-source-specific-dispositions.tsv"
 }
