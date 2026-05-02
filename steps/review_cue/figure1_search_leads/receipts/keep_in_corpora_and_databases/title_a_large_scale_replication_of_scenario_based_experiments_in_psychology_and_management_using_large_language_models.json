@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.1038/s43588-025-00840-7",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:a_large_scale_replication_of_scenario_based_experiments_in_psychology_and_management_using_large_language_models",
+  "next_action": "inventory_article_data_availability_supplements_and_repository_links_for_multi_row_original_replication_mapping",
+  "notes": "Keep as an existing candidate, not plot-ready evidence.",
+  "promote_payload": {},
+  "reason": "The Nature Computational Science article title identifies a large-scale replication of scenario-based experiments. It is plausibly a multi-study source-family candidate, but source inventory must confirm whether article data or supplements expose original/replication mapping and usable result fields.",
+  "review_id": "review_figure1_search_leads_29d4d29c1ba2",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1038%2Fs43588-025-00840-7",
+    "CORPORA_AND_DATABASES.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

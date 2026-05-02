@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "qdx7p",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:compilation_of_diener_et_al_2010_osf_multi_site_replication_projects",
+  "next_action": "inventory_osf_qdx7p_files_for_data_tables_analysis_outputs_and_pair_mapping",
+  "notes": "OSF API confirmed the public project and description.",
+  "promote_payload": {},
+  "reason": "The OSF page is a source-family/data package compiling Diener et al. (2010) multi-site replication datasets and analysis materials. It should be inventoried for reusable original/replication result tables.",
+  "review_id": "review_figure1_search_leads_27d5775f87b9",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/qdx7p/"
+  ],
+  "user_gpt_prompt_request": ""
+}

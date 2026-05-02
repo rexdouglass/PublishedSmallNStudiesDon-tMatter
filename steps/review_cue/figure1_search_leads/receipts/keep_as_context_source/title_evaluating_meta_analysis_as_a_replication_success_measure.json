@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.1371/journal.pone.0308495",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:evaluating_meta_analysis_as_a_replication_success_measure",
+  "next_action": "keep_as_methods_context_not_primary_figure1_source",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a methods evaluation using original and replication studies from two existing large-scale replication projects. It is not the primary pair source; those projects should remain the authoritative artifacts.",
+  "review_id": "review_figure1_search_leads_12b18a2b607a",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1371%2Fjournal.pone.0308495"
+  ],
+  "user_gpt_prompt_request": ""
+}

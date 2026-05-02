@@ -1,0 +1,23 @@
+{
+  "canonical_source_key": "10.1162/opmi_a_00134",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:evidence_for_infant_directed_speech_preference_is_consistent_across_large_scale_multi_site_replication_and_meta_analysis",
+  "next_action": "route_to_individual_replication_paper_worklist_and_check_supplements_if_infant_speech_pair_extraction_is_needed",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This paper combines and compares a meta-analysis with a large-scale multi-lab replication for infant-directed speech preference. It appears to address one target domain/effect rather than a broad corpus source family.",
+  "review_id": "review_figure1_search_leads_3c4dddb6790c",
+  "route_payload": {
+    "replication_relation_evidence": "The title and abstract identify a large-scale multi-site replication and meta-analysis of infant-directed speech preference.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1162%2Fopmi_a_00134"
+  ],
+  "user_gpt_prompt_request": ""
+}

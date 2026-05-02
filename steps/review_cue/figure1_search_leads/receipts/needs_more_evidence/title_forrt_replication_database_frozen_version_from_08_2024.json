@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "c9rny",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "needs_more_evidence",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:forrt_replication_database_frozen_version_from_08_2024",
+  "next_action": "manually_check_osf_c9rny_or_forrt_archive_for_a_public_frozen_2024_fred_export",
+  "notes": "Do not duplicate OSF 9r62x unless this frozen route is confirmed.",
+  "promote_payload": {},
+  "reason": "The lead claims to be a frozen FORRT Replication Database version, but the OSF API route returned 404 during this review. It may be a stale/private/deleted file or node and should not be advanced without route confirmation.",
+  "review_id": "review_figure1_search_leads_fa29ed98a4b6",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/c9rny/",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": "Check whether https://osf.io/c9rny/ is a public frozen August 2024 FORRT/FReD export, and if so identify the parent project, file names, and whether it contains original/replication effect rows."
+}

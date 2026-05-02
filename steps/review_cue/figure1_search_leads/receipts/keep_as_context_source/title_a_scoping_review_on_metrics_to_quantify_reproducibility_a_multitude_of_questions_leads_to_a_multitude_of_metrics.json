@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "doi:10.1098/rsos.242076",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:a_scoping_review_on_metrics_to_quantify_reproducibility_a_multitude_of_questions_leads_to_a_multitude_of_metrics",
+  "next_action": "keep_as_context_and_possible_seed_list_not_figure1_pair_parser",
+  "notes": "Crossref exposes Royal Society PDF and XML links.",
+  "promote_payload": {},
+  "reason": "This is a scoping review and live-table resource about reproducibility metrics and large-scale projects. It is useful for context or seed discovery, but it is not itself an original/replication pair corpus.",
+  "review_id": "review_figure1_search_leads_55a96c22e10c",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1098%2Frsos.242076"
+  ],
+  "user_gpt_prompt_request": ""
+}

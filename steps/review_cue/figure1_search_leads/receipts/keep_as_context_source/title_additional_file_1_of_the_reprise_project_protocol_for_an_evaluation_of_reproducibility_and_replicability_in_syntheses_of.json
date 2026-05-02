@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.6084/m9.figshare.14442918.v1",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:additional_file_1_of_the_reprise_project_protocol_for_an_evaluation_of_reproducibility_and_replicability_in_syntheses_of",
+  "next_action": "keep_as_protocol_context_only_unless_a_completed_reprise_results_dataset_is_found_separately",
+  "notes": "Figshare API exposed one PDF search-strategy file, 13643_2021_1670_MOESM1_ESM.pdf.",
+  "promote_payload": {},
+  "reason": "This is a search-strategy supplement for the REPRISE protocol. It is protocol/context material, not a result-bearing source-family artifact or pair table.",
+  "review_id": "review_figure1_search_leads_6b43402f01f7",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.figshare.com/v2/articles/14442918",
+    "https://springernature.figshare.com/articles/journal_contribution/Additional_file_1_of_The_REPRISE_project_protocol_for_an_evaluation_of_REProducibility_and_Replicability_In_Syntheses_of_Evidence/14442918"
+  ],
+  "user_gpt_prompt_request": ""
+}

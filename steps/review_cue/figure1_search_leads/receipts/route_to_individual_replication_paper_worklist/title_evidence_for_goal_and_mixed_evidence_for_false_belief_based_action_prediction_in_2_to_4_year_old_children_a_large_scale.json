@@ -1,0 +1,23 @@
+{
+  "canonical_source_key": "10.1111/desc.13224",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:evidence_for_goal_and_mixed_evidence_for_false_belief_based_action_prediction_in_2_to_4_year_old_children_a_large_scale_",
+  "next_action": "route_to_individual_replication_paper_worklist_for_paper_level_extraction_if_needed",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a single large-scale longitudinal replication study of a false-belief paradigm. It has affirmative replication evidence but does not appear to be a reusable multi-study corpus.",
+  "review_id": "review_figure1_search_leads_2822063673be",
+  "route_payload": {
+    "replication_relation_evidence": "The title says 'large-scale longitudinal anticipatory looking replication study' and the abstract names the original paradigm.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1111%2Fdesc.13224"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "kdbsa",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:caballero_2021_replication_project",
+  "next_action": "route_to_individual_replication_paper_worklist_and_recheck_osf_or_parent_project_if_this_single_replication_is_prioritized",
+  "notes": "OSF API returned 404 for kdbsa during this check, so future acquisition should recheck the route or parent project.",
+  "promote_payload": {},
+  "reason": "The lead text explicitly describes a direct replication of Study 2 from Caballero et al. (2021). The evidence describes one OSF replication package, not a broader source-family corpus.",
+  "review_id": "review_figure1_search_leads_f5860736bcb1",
+  "route_payload": {
+    "replication_relation_evidence": "The lead description says 'This project is a direct replication of Study 2 from Caballero et al. (2021)'.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/kdbsa/",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch002-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

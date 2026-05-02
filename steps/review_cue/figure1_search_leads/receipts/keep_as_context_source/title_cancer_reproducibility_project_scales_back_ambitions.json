@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.1038/nature.2015.18938",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:cancer_reproducibility_project_scales_back_ambitions",
+  "next_action": "keep_as_rpcb_context_only",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This Nature item is news/context about the Cancer Biology reproducibility project, not a reusable data source or pair table.",
+  "review_id": "review_figure1_search_leads_3b461705e061",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1038%2Fnature.2015.18938"
+  ],
+  "user_gpt_prompt_request": ""
+}

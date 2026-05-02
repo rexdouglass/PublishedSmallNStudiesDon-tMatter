@@ -1,0 +1,354 @@
+{
+  "batch_id": "batch001",
+  "decisions": [
+    {
+      "review_id": "review_figure1_search_leads_7207a6e0789b",
+      "lead_key": "title:additional_file_1_of_is_there_prejudice_from_thin_air_replicating_the_effect_of_emotion_on_automatic_intergroup_attitude",
+      "canonical_source_key": "doi:10.6084/m9.figshare.12262283.v1",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "reason": "The Figshare record is a single supplementary file for a paper that explicitly self-describes as replicating the effect of emotion on automatic intergroup attitudes. It is not a reusable corpus/database source-family row.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_acquire_the_supplement_only_if_paper_level_extraction_is_needed",
+      "sources_checked": [
+        "https://api.figshare.com/v2/articles/12262283",
+        "https://springernature.figshare.com/articles/journal_contribution/Additional_file_1_of_Is_there_prejudice_from_thin_air_Replicating_the_effect_of_emotion_on_automatic_intergroup_attitudes/12262283"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The source title says 'Replicating the effect of emotion on automatic intergroup attitudes'."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "Figshare API exposed one DOCX file, 40359_2020_414_MOESM1_ESM.docx."
+    },
+    {
+      "review_id": "review_figure1_search_leads_da6e1c0421a5",
+      "lead_key": "title:additional_file_1_of_semantic_and_cognitive_tools_to_aid_statistical_science_replace_confidence_and_significance_by_comp",
+      "canonical_source_key": "doi:10.6084/m9.figshare.13031530.v1",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a supplementary appendix for a statistical-interpretation methods paper. It may be general methodological context, but it does not expose original/replication pair rows or a replication source family.",
+      "next_action": "keep_as_methods_context_not_figure1_pair_source",
+      "sources_checked": [
+        "https://api.figshare.com/v2/articles/13031530",
+        "https://api.crossref.org/works/10.6084%2Fm9.figshare.13031530"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Figshare API exposed one PDF appendix file, 12874_2020_1105_MOESM1_ESM.pdf."
+    },
+    {
+      "review_id": "review_figure1_search_leads_6b43402f01f7",
+      "lead_key": "title:additional_file_1_of_the_reprise_project_protocol_for_an_evaluation_of_reproducibility_and_replicability_in_syntheses_of",
+      "canonical_source_key": "doi:10.6084/m9.figshare.14442918.v1",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a search-strategy supplement for the REPRISE protocol. It is protocol/context material, not a result-bearing source-family artifact or pair table.",
+      "next_action": "keep_as_protocol_context_only_unless_a_completed_reprise_results_dataset_is_found_separately",
+      "sources_checked": [
+        "https://api.figshare.com/v2/articles/14442918",
+        "https://springernature.figshare.com/articles/journal_contribution/Additional_file_1_of_The_REPRISE_project_protocol_for_an_evaluation_of_REProducibility_and_Replicability_In_Syntheses_of_Evidence/14442918"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Figshare API exposed one PDF search-strategy file, 13643_2021_1670_MOESM1_ESM.pdf."
+    },
+    {
+      "review_id": "review_figure1_search_leads_714fabed70fe",
+      "lead_key": "title:additional_file_1_of_traditional_and_biomedical_care_pathways_for_mental_well_being_in_rural_nepal",
+      "canonical_source_key": "doi:10.6084/m9.figshare.13545817.v1",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "The Figshare record is a qualitative supplement containing key illustrative quotes for a Nepal mental-wellbeing care-pathways article. It has no Figure 1 replication-pair evidence.",
+      "next_action": "stop_for_figure1_replication_pair_intake",
+      "sources_checked": [
+        "https://api.figshare.com/v2/articles/13545817"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Figshare API exposed one DOCX file, 13033_2020_433_MOESM1_ESM.docx."
+    },
+    {
+      "review_id": "review_figure1_search_leads_a0d3ac02fdf4",
+      "lead_key": "title:additional_file_2_of_traditional_and_biomedical_care_pathways_for_mental_well_being_in_rural_nepal",
+      "canonical_source_key": "doi:10.6084/m9.figshare.13545820.v1",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "The Figshare record is a policy/framework supplement for the same Nepal mental-wellbeing care-pathways article. It is not a replication or corpus/database artifact.",
+      "next_action": "stop_for_figure1_replication_pair_intake",
+      "sources_checked": [
+        "https://api.figshare.com/v2/articles/13545820"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Figshare API exposed one DOCX file, 13033_2020_433_MOESM2_ESM.docx."
+    },
+    {
+      "review_id": "review_figure1_search_leads_889e202a4dd5",
+      "lead_key": "title:ljcolling_fischerrrr_eyetracking_fischer_et_al_2003_multi_lab_replication_main_task",
+      "canonical_source_key": "doi:10.5281/zenodo.3406447",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "reason": "The Zenodo record is a code snapshot for the Fischer et al. (2003) multi-lab replication main task. It is an individual RRR-style replication artifact, not a new corpus/database root.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_link_to_related_github_code_if_this_rrr_is_extracted",
+      "sources_checked": [
+        "https://zenodo.org/api/records/3406447",
+        "https://github.com/ljcolling/FischerRRR-eyetracking/tree/v1.0"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The record title says 'Fischer et al (2003) multi-lab replication main task'."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "Zenodo exposes one zip file, ljcolling/FischerRRR-eyetracking-v1.0.zip."
+    },
+    {
+      "review_id": "review_figure1_search_leads_21b3e8caa4aa",
+      "lead_key": "title:pass_study_replication_dataset_msr25",
+      "canonical_source_key": "doi:10.5281/zenodo.14066441",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "This Zenodo record is for a software-engineering technical paper dataset about LLM summarization for legacy program documentation. The word replication appears to refer to a package/dataset route, not an independent replication of scientific findings.",
+      "next_action": "stop_for_figure1_replication_pair_intake",
+      "sources_checked": [
+        "https://zenodo.org/api/records/14066441"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Zenodo API showed no files on the record during this check."
+    },
+    {
+      "review_id": "review_figure1_search_leads_f4f3c376d419",
+      "lead_key": "title:replication_package",
+      "canonical_source_key": "doi:10.7910/DVN/KYJQPC",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "The Dataverse title is a generic 'Replication Package' for an economics VAT pass-through article. The description is an original empirical paper reproduction package, not a replication/follow-up source-family object.",
+      "next_action": "do_not_advance_ordinary_original_article_replication_package_for_figure1",
+      "sources_checked": [
+        "https://doi.org/10.7910/DVN/KYJQPC",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch001-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Applied ordinary replication-package demotion gate."
+    },
+    {
+      "review_id": "review_figure1_search_leads_38018a44fd54",
+      "lead_key": "title:rescience_c_contents",
+      "canonical_source_key": "https://rescience.github.io/read/",
+      "decision": "promote_to_corpora_and_databases",
+      "confidence": "high",
+      "reason": "ReScience C is a journal/source-family contents page for computational replication articles, with many article records and code/review metadata. It is a reusable source-family object rather than a single paper.",
+      "next_action": "inventory_rescience_c_static_contents_and_site_repository_for_replication_article_metadata_code_doi_and_original_paper_links",
+      "sources_checked": [
+        "https://rescience.github.io/read/",
+        "PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml",
+        "reports/provenance_universe_search_plan.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Promote as a source-family candidate; table-level integration still requires extracting original-paper links and comparable metrics from individual records."
+    },
+    {
+      "review_id": "review_figure1_search_leads_1791596725b9",
+      "lead_key": "title:a_large_scale_in_silico_replication_of_ecological_and_evolutionary_studies",
+      "canonical_source_key": "doi:10.1038/s41559-024-02530-5",
+      "decision": "keep_as_context_source",
+      "confidence": "medium",
+      "reason": "The Nature Ecology and Evolution article is a large in-silico replicability analysis rather than a direct independent original-versus-replication corpus. It may be useful as cross-field context or a manual claim-replication target, but should not advance as a Figure 1 pair source without a stricter mapping review.",
+      "next_action": "keep_as_context_or_manual_followup_not_current_figure1_pair_parser",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1038%2Fs41559-024-02530-5",
+        "FIGURE1_REPLICATION_SOURCE_FAMILY_SEEDS.yml"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref links VOR PDF/HTML, but the semantics are in-silico/meta-analytic rather than direct replication-pair rows."
+    },
+    {
+      "review_id": "review_figure1_search_leads_29d4d29c1ba2",
+      "lead_key": "title:a_large_scale_replication_of_scenario_based_experiments_in_psychology_and_management_using_large_language_models",
+      "canonical_source_key": "doi:10.1038/s43588-025-00840-7",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "medium",
+      "reason": "The Nature Computational Science article title identifies a large-scale replication of scenario-based experiments. It is plausibly a multi-study source-family candidate, but source inventory must confirm whether article data or supplements expose original/replication mapping and usable result fields.",
+      "next_action": "inventory_article_data_availability_supplements_and_repository_links_for_multi_row_original_replication_mapping",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1038%2Fs43588-025-00840-7",
+        "CORPORA_AND_DATABASES.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Keep as an existing candidate, not plot-ready evidence."
+    },
+    {
+      "review_id": "review_figure1_search_leads_ec299d9c57b4",
+      "lead_key": "title:a_multi_site_registered_replication_report_of_olson_amp_fazio_2001_implicit_attitude_formation_through_classical_conditi",
+      "canonical_source_key": "3hjpf",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "The stale OSF 3hjpf lead is the Olson and Fazio registered replication source family; the canonical public project is OSF hs32y and the article DOI is 10.1177/0956797620968526. It should be kept but deduplicated to that canonical route.",
+      "next_action": "deduplicate_3hjpf_to_hs32y_and_inventory_hs32y_for_result_bearing_data_code_or_tables",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/3hjpf/",
+        "https://api.osf.io/v2/nodes/hs32y/",
+        "https://api.crossref.org/works/10.1177%2F0956797620968526"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "OSF API returned 404 for 3hjpf and public metadata for hs32y."
+    },
+    {
+      "review_id": "review_figure1_search_leads_6720e58edd1a",
+      "lead_key": "title:a_multilab_preregistered_replication_of_the_ego_depletion_effect",
+      "canonical_source_key": "doi:10.1177/1745691616652873",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This Registered Replication Report is a multi-lab source-family candidate: the abstract reports 23 laboratories and N=2141 for a standardized ego-depletion replication protocol. It should stay for source inventory and table extraction review.",
+      "next_action": "inventory_sage_xml_pdf_supplements_and_any_project_repository_for_lab_level_or_aggregate_effect_rows",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1177%2F1745691616652873",
+        "CORPORA_AND_DATABASES.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref exposes Sage PDF and full XML links."
+    },
+    {
+      "review_id": "review_figure1_search_leads_434c463074a7",
+      "lead_key": "title:a_problem_in_theory_and_more_measuring_the_moderating_role_of_culture_in_many_labs_2",
+      "canonical_source_key": "doi:10.31234/osf.io/hmnrx",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a critique/reanalysis of Many Labs 2 culture-moderation methods. Many Labs 2 itself is already the source-family candidate; this preprint is contextual and should not create a separate Figure 1 source-family row.",
+      "next_action": "keep_as_many_labs_2_context_only",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.31234%2Fosf.io%2Fhmnrx",
+        "https://api.osf.io/v2/nodes/8cd4r/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref abstract explicitly frames it as a reanalysis/critique of ML2."
+    },
+    {
+      "review_id": "review_figure1_search_leads_55a96c22e10c",
+      "lead_key": "title:a_scoping_review_on_metrics_to_quantify_reproducibility_a_multitude_of_questions_leads_to_a_multitude_of_metrics",
+      "canonical_source_key": "doi:10.1098/rsos.242076",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a scoping review and live-table resource about reproducibility metrics and large-scale projects. It is useful for context or seed discovery, but it is not itself an original/replication pair corpus.",
+      "next_action": "keep_as_context_and_possible_seed_list_not_figure1_pair_parser",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1098%2Frsos.242076"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref exposes Royal Society PDF and XML links."
+    },
+    {
+      "review_id": "review_figure1_search_leads_115f5ee33aea",
+      "lead_key": "title:absence_of_a_meaningful_effect_of_intranasal_oxytocin_on_trusting_behavior_a_registered_report_with_pooled_equivalence_t",
+      "canonical_source_key": "doi:10.1016/j.cortex.2026.03.006",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "reason": "The abstract explicitly says the study performed a large-scale replication of Kosfeld et al. (2005) and pooled it with another replication. This is a single replication paper/workflow, not a broad source-family database.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_acquire_article_or_data_availability_links_if_paper_level_extraction_is_prioritized",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1016%2Fj.cortex.2026.03.006",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch001-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The abstract says 'We performed a large-scale replication (n = 211) of Kosfeld et al. (2005)' and describes pooling with Declerck et al. (2020)."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref lists Elsevier XML/text API routes."
+    },
+    {
+      "review_id": "review_figure1_search_leads_b7d63ec6dc91",
+      "lead_key": "title:administering_a_victim_impact_curriculum_to_inmates_a_multi_site_replication",
+      "canonical_source_key": "doi:10.1080/1478601x.2015.1014037",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "reason": "The article title explicitly self-describes as a multi-site replication. No evidence in the current metadata shows a reusable multi-row corpus/database table, so it should be handled as an individual replication paper.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_check_article_full_text_or_supplement_only_if_needed",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1080%2F1478601x.2015.1014037"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The title says 'Administering a victim impact curriculum to inmates: a multi-site replication'."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref did not expose an abstract, only bibliographic metadata and a publisher PDF link."
+    },
+    {
+      "review_id": "review_figure1_search_leads_08428e8f58d8",
+      "lead_key": "title:advancing_the_cognitive_science_of_religion_through_replication_and_open_science",
+      "canonical_source_key": "doi:10.1558/jcsr.39039",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This article discusses replication and open science in cognitive science of religion and mentions the Cross-Cultural Religious Replication Project, but it is not itself a result-bearing source family or pair table.",
+      "next_action": "keep_as_context_seed_for_cross_cultural_religious_replication_project_search",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1558%2Fjcsr.39039"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref exposes a VOR PDF link and abstract-style context."
+    },
+    {
+      "review_id": "review_figure1_search_leads_1a654f61e08b",
+      "lead_key": "title:an_open_investigation_of_the_reproducibility_of_cancer_biology_research",
+      "canonical_source_key": "rpcb | doi:10.7554/elife.04333",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This eLife article defines the Reproducibility Project: Cancer Biology source family, identifying 50 high-impact cancer biology articles and planned replication studies. It should be retained but deduplicated with the later RPCB result-data source-family records.",
+      "next_action": "deduplicate_to_rpcb_source_family_and_use_later_rpcb_final_analysis_data_for_result_extraction",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.7554%2Felife.04333",
+        "steps/source_inventory/figure1/source-family-artifact-inventory-queue.tsv",
+        "steps/review_cue/figure1_search_leads/reviewcue-clustered-routing-table-figure1_search_leads.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref exposes eLife PDF/XML links; current cluster review already has RPCB inventory routes."
+    },
+    {
+      "review_id": "review_figure1_search_leads_d39d12c4d968",
+      "lead_key": "title:analysis_of_rare_parkinson_s_disease_variants_in_millions_of_people",
+      "canonical_source_key": "doi:10.1038/s41531-023-00608-8",
+      "decision": "reject_irrelevant",
+      "confidence": "medium",
+      "reason": "This is a single genetics association/meta-analysis paper using the language of variant replication across cohorts. It does not provide a Figure 1 source-family object linking published original findings to independent replication/follow-up studies under the current gate.",
+      "next_action": "stop_for_current_figure1_pair_intake_unless_a_separate_genetics_validation_corpus_rule_is_added",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1038%2Fs41531-023-00608-8",
+        "FIGURE1_REPLICATION_SOURCE_FAMILY_SEEDS.yml"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "This applies the genetics validation strict-gate caution; it is not a judgment that the article lacks statistical results."
+    }
+  ]
+}

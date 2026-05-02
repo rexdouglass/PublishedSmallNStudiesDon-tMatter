@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.1037/bul0000294",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:heterogeneity_in_direct_replications_in_psychology_and_its_association_with_effect_size",
+  "next_action": "keep_as_secondary_analysis_context_not_primary_figure1_pair_source",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a secondary heterogeneity analysis of 68 meta-analyses from 13 preregistered multilab replication projects. It may help with context or dedupe, but original/replication effect extraction should prefer the underlying projects.",
+  "review_id": "review_figure1_search_leads_91f39c20a32f",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1037%2Fbul0000294"
+  ],
+  "user_gpt_prompt_request": ""
+}

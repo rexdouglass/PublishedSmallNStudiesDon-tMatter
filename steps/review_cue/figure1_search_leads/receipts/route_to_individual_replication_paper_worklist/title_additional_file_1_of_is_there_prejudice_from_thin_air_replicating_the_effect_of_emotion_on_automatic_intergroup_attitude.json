@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "doi:10.6084/m9.figshare.12262283.v1",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:additional_file_1_of_is_there_prejudice_from_thin_air_replicating_the_effect_of_emotion_on_automatic_intergroup_attitude",
+  "next_action": "route_to_individual_replication_paper_worklist_and_acquire_the_supplement_only_if_paper_level_extraction_is_needed",
+  "notes": "Figshare API exposed one DOCX file, 40359_2020_414_MOESM1_ESM.docx.",
+  "promote_payload": {},
+  "reason": "The Figshare record is a single supplementary file for a paper that explicitly self-describes as replicating the effect of emotion on automatic intergroup attitudes. It is not a reusable corpus/database source-family row.",
+  "review_id": "review_figure1_search_leads_7207a6e0789b",
+  "route_payload": {
+    "replication_relation_evidence": "The source title says 'Replicating the effect of emotion on automatic intergroup attitudes'.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.figshare.com/v2/articles/12262283",
+    "https://springernature.figshare.com/articles/journal_contribution/Additional_file_1_of_Is_there_prejudice_from_thin_air_Replicating_the_effect_of_emotion_on_automatic_intergroup_attitudes/12262283"
+  ],
+  "user_gpt_prompt_request": ""
+}

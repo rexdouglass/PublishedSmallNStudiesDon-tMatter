@@ -229,6 +229,7 @@ def apply_decision_to_row(columns: list[str], routing: dict[str, str], existing:
     if is_advance:
         row["current_scope_roles"] = merge_pipe(row.get("current_scope_roles"), "figure1_candidate")
         row["parser_status"] = row.get("parser_status") or "not_started"
+        row["why_relevant"] = row.get("why_relevant") or routing.get("reason")
     elif decision == "route_to_result_table_worklist":
         row["current_scope_roles"] = merge_pipe(row.get("current_scope_roles"), "figure1_routed_result_table")
     elif decision == "route_to_individual_replication_paper_worklist":

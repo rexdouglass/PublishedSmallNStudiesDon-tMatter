@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "doi:10.5281/zenodo.3406447",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:ljcolling_fischerrrr_eyetracking_fischer_et_al_2003_multi_lab_replication_main_task",
+  "next_action": "route_to_individual_replication_paper_worklist_and_link_to_related_github_code_if_this_rrr_is_extracted",
+  "notes": "Zenodo exposes one zip file, ljcolling/FischerRRR-eyetracking-v1.0.zip.",
+  "promote_payload": {},
+  "reason": "The Zenodo record is a code snapshot for the Fischer et al. (2003) multi-lab replication main task. It is an individual RRR-style replication artifact, not a new corpus/database root.",
+  "review_id": "review_figure1_search_leads_889e202a4dd5",
+  "route_payload": {
+    "replication_relation_evidence": "The record title says 'Fischer et al (2003) multi-lab replication main task'.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://zenodo.org/api/records/3406447",
+    "https://github.com/ljcolling/FischerRRR-eyetracking/tree/v1.0"
+  ],
+  "user_gpt_prompt_request": ""
+}

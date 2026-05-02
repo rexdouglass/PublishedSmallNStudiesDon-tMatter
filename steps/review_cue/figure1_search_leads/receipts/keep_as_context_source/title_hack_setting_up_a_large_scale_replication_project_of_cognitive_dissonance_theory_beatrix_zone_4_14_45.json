@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "294bx",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:hack_setting_up_a_large_scale_replication_project_of_cognitive_dissonance_theory_beatrix_zone_4_14_45",
+  "next_action": "keep_as_context_only_unless_a_completed_cognitive_dissonance_replication_project_source_is_found",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "The OSF node appears to be a hack/session page about setting up a replication project. It does not expose evidence of completed result rows in the metadata reviewed here.",
+  "review_id": "review_figure1_search_leads_4267dbece1dc",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/294bx/"
+  ],
+  "user_gpt_prompt_request": ""
+}

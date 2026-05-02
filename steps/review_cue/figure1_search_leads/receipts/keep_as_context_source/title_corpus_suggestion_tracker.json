@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "internal:corpus_suggestion_tracker",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:corpus_suggestion_tracker",
+  "next_action": "keep_internal_tracker_as_context_do_not_ingest_as_external_corpus",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is an internal derived tracker/report, not an external source-family, database, repository, or result table. It can remain provenance context only.",
+  "review_id": "review_figure1_search_leads_09abed40d362",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

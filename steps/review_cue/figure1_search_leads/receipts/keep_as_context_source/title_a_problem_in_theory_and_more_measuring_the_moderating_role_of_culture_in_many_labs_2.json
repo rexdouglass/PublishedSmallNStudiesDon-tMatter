@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.31234/osf.io/hmnrx",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:a_problem_in_theory_and_more_measuring_the_moderating_role_of_culture_in_many_labs_2",
+  "next_action": "keep_as_many_labs_2_context_only",
+  "notes": "Crossref abstract explicitly frames it as a reanalysis/critique of ML2.",
+  "promote_payload": {},
+  "reason": "This is a critique/reanalysis of Many Labs 2 culture-moderation methods. Many Labs 2 itself is already the source-family candidate; this preprint is contextual and should not create a separate Figure 1 source-family row.",
+  "review_id": "review_figure1_search_leads_434c463074a7",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.31234%2Fosf.io%2Fhmnrx",
+    "https://api.osf.io/v2/nodes/8cd4r/"
+  ],
+  "user_gpt_prompt_request": ""
+}

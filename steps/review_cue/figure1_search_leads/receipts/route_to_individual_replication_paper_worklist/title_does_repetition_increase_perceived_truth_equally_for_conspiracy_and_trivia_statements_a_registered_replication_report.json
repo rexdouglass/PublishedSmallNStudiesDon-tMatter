@@ -1,0 +1,23 @@
+{
+  "canonical_source_key": "10.3758/s13423-025-02836-w",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:does_repetition_increase_perceived_truth_equally_for_conspiracy_and_trivia_statements_a_registered_replication_report",
+  "next_action": "route_to_individual_replication_paper_worklist_and_check_supplements_if_this_rrr_is_prioritized",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This registered replication report studies the illusory-truth effect for conspiracy and trivia statements. The current evidence indicates a single replication paper rather than a multi-row source-family database.",
+  "review_id": "review_figure1_search_leads_46613d3e6bc2",
+  "route_payload": {
+    "replication_relation_evidence": "The title says 'registered replication report' and the abstract says the results replicate the generality of the illusory truth effect.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.crossref.org/works/10.3758%2Fs13423-025-02836-w"
+  ],
+  "user_gpt_prompt_request": ""
+}

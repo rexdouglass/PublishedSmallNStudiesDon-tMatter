@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.6084/m9.figshare.13031530.v1",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:additional_file_1_of_semantic_and_cognitive_tools_to_aid_statistical_science_replace_confidence_and_significance_by_comp",
+  "next_action": "keep_as_methods_context_not_figure1_pair_source",
+  "notes": "Figshare API exposed one PDF appendix file, 12874_2020_1105_MOESM1_ESM.pdf.",
+  "promote_payload": {},
+  "reason": "This is a supplementary appendix for a statistical-interpretation methods paper. It may be general methodological context, but it does not expose original/replication pair rows or a replication source family.",
+  "review_id": "review_figure1_search_leads_da6e1c0421a5",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.figshare.com/v2/articles/13031530",
+    "https://api.crossref.org/works/10.6084%2Fm9.figshare.13031530"
+  ],
+  "user_gpt_prompt_request": ""
+}

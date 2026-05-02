@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "u49zv",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:earth_science_citation_replication_project",
+  "next_action": "route_to_individual_replication_paper_worklist_and_recheck_osf_route_or_parent_registration_before_acquisition",
+  "notes": "OSF API returned 404 for u49zv during this check.",
+  "promote_payload": {},
+  "reason": "The lead text describes a planned replication and scaling of White 2019 citation practices. It is a single project registration rather than a corpus/database source family.",
+  "review_id": "review_figure1_search_leads_5a6989d0ac69",
+  "route_payload": {
+    "replication_relation_evidence": "The lead description says the registration planned to replicate White 2019 and scale the original study.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/u49zv/",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

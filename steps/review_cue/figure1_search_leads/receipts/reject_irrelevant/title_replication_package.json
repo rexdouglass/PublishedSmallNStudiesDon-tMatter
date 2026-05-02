@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.7910/DVN/KYJQPC",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:replication_package",
+  "next_action": "do_not_advance_ordinary_original_article_replication_package_for_figure1",
+  "notes": "Applied ordinary replication-package demotion gate.",
+  "promote_payload": {},
+  "reason": "The Dataverse title is a generic 'Replication Package' for an economics VAT pass-through article. The description is an original empirical paper reproduction package, not a replication/follow-up source-family object.",
+  "review_id": "review_figure1_search_leads_f4f3c376d419",
+  "route_payload": {},
+  "sources_checked": [
+    "https://doi.org/10.7910/DVN/KYJQPC",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch001-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

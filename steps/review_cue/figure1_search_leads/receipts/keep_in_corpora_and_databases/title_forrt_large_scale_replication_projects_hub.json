@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "https://forrt.org/replication-hub/large-scale-replication-projects/",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:forrt_large_scale_replication_projects_hub",
+  "next_action": "inventory_forrt_hub_links_as_project_seed_aliases_and_deduplicate_against_existing_source_families",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "The FORRT large-scale replication projects page is a reusable source-family hub for identifying replication projects and aliases. It should be kept as a discovery/inventory source, while individual project rows still need artifact-level validation.",
+  "review_id": "review_figure1_search_leads_404c6c8bc341",
+  "route_payload": {},
+  "sources_checked": [
+    "https://forrt.org/replication-hub/large-scale-replication-projects/",
+    "steps/review_cue/figure1_search_leads/coverage_audit/missing_or_undersearched_source_families.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "9r62x",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:forrt_replication_database",
+  "next_action": "inventory_osf_9r62x_files_and_map_to_existing_fred_parser_outputs",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "The OSF node explicitly contains materials and data for the FORRT Replication Database/FReD, a major source of original and replication findings. It belongs in source-family inventory.",
+  "review_id": "review_figure1_search_leads_4c3314063449",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/9r62x/"
+  ],
+  "user_gpt_prompt_request": ""
+}

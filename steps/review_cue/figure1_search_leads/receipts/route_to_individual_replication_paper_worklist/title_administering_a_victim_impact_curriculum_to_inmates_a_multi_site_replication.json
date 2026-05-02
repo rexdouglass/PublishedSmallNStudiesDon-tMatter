@@ -1,0 +1,23 @@
+{
+  "canonical_source_key": "doi:10.1080/1478601x.2015.1014037",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:administering_a_victim_impact_curriculum_to_inmates_a_multi_site_replication",
+  "next_action": "route_to_individual_replication_paper_worklist_and_check_article_full_text_or_supplement_only_if_needed",
+  "notes": "Crossref did not expose an abstract, only bibliographic metadata and a publisher PDF link.",
+  "promote_payload": {},
+  "reason": "The article title explicitly self-describes as a multi-site replication. No evidence in the current metadata shows a reusable multi-row corpus/database table, so it should be handled as an individual replication paper.",
+  "review_id": "review_figure1_search_leads_b7d63ec6dc91",
+  "route_payload": {
+    "replication_relation_evidence": "The title says 'Administering a victim impact curriculum to inmates: a multi-site replication'.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1080%2F1478601x.2015.1014037"
+  ],
+  "user_gpt_prompt_request": ""
+}

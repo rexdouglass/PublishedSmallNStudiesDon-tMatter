@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "wusvb",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:fork_of_reproducibility_project_psychology",
+  "next_action": "keep_as_rpp_alias_context_and_use_canonical_rpp_source_family_for_inventory",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a fork/alias of Reproducibility Project: Psychology. The canonical RPP OSF/GitHub source family is already represented, so this fork should not create a duplicate root row.",
+  "review_id": "review_figure1_search_leads_a5175f329fbc",
+  "route_payload": {},
+  "sources_checked": [
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

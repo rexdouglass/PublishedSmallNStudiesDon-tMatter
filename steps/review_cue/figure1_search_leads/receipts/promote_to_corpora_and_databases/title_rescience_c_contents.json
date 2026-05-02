@@ -1,0 +1,22 @@
+{
+  "canonical_source_key": "https://rescience.github.io/read/",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "promote_to_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:rescience_c_contents",
+  "next_action": "inventory_rescience_c_static_contents_and_site_repository_for_replication_article_metadata_code_doi_and_original_paper_links",
+  "notes": "Promote as a source-family candidate; table-level integration still requires extracting original-paper links and comparable metrics from individual records.",
+  "promote_payload": {},
+  "reason": "ReScience C is a journal/source-family contents page for computational replication articles, with many article records and code/review metadata. It is a reusable source-family object rather than a single paper.",
+  "review_id": "review_figure1_search_leads_38018a44fd54",
+  "route_payload": {},
+  "sources_checked": [
+    "https://rescience.github.io/read/",
+    "PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml",
+    "reports/provenance_universe_search_plan.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

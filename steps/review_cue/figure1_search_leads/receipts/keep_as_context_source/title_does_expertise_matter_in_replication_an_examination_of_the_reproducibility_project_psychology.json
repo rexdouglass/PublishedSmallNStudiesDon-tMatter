@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.1016/j.jesp.2016.07.003",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:does_expertise_matter_in_replication_an_examination_of_the_reproducibility_project_psychology",
+  "next_action": "keep_as_rpp_context_only",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a secondary analysis of expertise in the Reproducibility Project: Psychology. It is not the authoritative pair/result source; RPP remains the source-family object.",
+  "review_id": "review_figure1_search_leads_958c630e6e83",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1016%2Fj.jesp.2016.07.003"
+  ],
+  "user_gpt_prompt_request": ""
+}

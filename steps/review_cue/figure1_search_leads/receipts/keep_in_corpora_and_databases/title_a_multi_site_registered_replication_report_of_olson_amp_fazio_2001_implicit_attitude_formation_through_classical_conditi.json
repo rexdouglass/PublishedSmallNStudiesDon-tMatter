@@ -1,0 +1,22 @@
+{
+  "canonical_source_key": "3hjpf",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:a_multi_site_registered_replication_report_of_olson_amp_fazio_2001_implicit_attitude_formation_through_classical_conditi",
+  "next_action": "deduplicate_3hjpf_to_hs32y_and_inventory_hs32y_for_result_bearing_data_code_or_tables",
+  "notes": "OSF API returned 404 for 3hjpf and public metadata for hs32y.",
+  "promote_payload": {},
+  "reason": "The stale OSF 3hjpf lead is the Olson and Fazio registered replication source family; the canonical public project is OSF hs32y and the article DOI is 10.1177/0956797620968526. It should be kept but deduplicated to that canonical route.",
+  "review_id": "review_figure1_search_leads_ec299d9c57b4",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/3hjpf/",
+    "https://api.osf.io/v2/nodes/hs32y/",
+    "https://api.crossref.org/works/10.1177%2F0956797620968526"
+  ],
+  "user_gpt_prompt_request": ""
+}

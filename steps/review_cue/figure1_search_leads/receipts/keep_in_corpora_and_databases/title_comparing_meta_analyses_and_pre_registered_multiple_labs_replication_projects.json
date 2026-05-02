@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "10.31219/osf.io/brzwt",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:comparing_meta_analyses_and_pre_registered_multiple_labs_replication_projects",
+  "next_action": "inventory_osf_preprint_article_and_supplemental_data_for_the_17_meta_replication_pairs",
+  "notes": "Keep as candidate, not plot-ready evidence.",
+  "promote_payload": {},
+  "reason": "The preprint describes a reusable multi-row comparison of 17 meta-analyses with matching multiple-labs replication projects, including meta-analytic and replication effect sizes. It should be inventoried as a candidate source-family/table source before extraction.",
+  "review_id": "review_figure1_search_leads_6061ab8657b3",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.31219%2Fosf.io%2Fbrzwt",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch002-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

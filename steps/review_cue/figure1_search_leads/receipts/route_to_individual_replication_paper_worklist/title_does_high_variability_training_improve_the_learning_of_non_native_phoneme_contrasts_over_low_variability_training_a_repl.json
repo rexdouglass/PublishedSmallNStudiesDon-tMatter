@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "10.1016/j.jml.2022.104352",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:does_high_variability_training_improve_the_learning_of_non_native_phoneme_contrasts_over_low_variability_training_a_repl",
+  "next_action": "route_to_individual_replication_paper_worklist_for_paper_level_extraction_if_needed",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a single large-scale replication paper targeting earlier phonetic-training findings. It has explicit replication relation evidence but is not a reusable corpus/database source family.",
+  "review_id": "review_figure1_search_leads_e2c9f63ac70c",
+  "route_payload": {
+    "replication_relation_evidence": "The title says 'A replication' and the abstract describes a large-scale replication of the original studies.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1016%2Fj.jml.2022.104352",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

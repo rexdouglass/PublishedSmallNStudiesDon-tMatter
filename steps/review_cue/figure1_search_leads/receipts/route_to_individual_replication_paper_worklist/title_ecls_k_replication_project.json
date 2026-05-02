@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "gvzwe",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:ecls_k_replication_project",
+  "next_action": "route_to_individual_replication_paper_worklist_and_link_to_rescience_c_if_the_article_is_inventoried",
+  "notes": "OSF gvzwe was public; hsgj2 returned 404.",
+  "promote_payload": {},
+  "reason": "The OSF project is explicitly titled as a replication project for a ReScience X article, but current metadata is too sparse to justify a root corpus/database row. Treat it as an individual computational replication project under ReScience-style work.",
+  "review_id": "review_figure1_search_leads_6c2f7ee495da",
+  "route_payload": {
+    "replication_relation_evidence": "The OSF title is 'ECLS-K Replication Project'.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/gvzwe/",
+    "https://api.osf.io/v2/nodes/hsgj2/"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,336 @@
+{
+  "batch_id": "batch002",
+  "decisions": [
+    {
+      "review_id": "review_figure1_search_leads_dda29ca9aa76",
+      "lead_key": "title:analyzing_data_of_a_multilab_replication_project_with_individual_participant_data_meta_analysis",
+      "canonical_source_key": "10.1027/2151-2604/a000483",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a tutorial/methods article about analyzing multilab replication projects with IPD meta-analysis. It uses an RRR as an example but is not itself a source-family corpus or result table.",
+      "next_action": "keep_as_methods_context_not_figure1_pair_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1027%2F2151-2604%2Fa000483"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_ce0d98ff2acc",
+      "lead_key": "title:analyzing_data_of_a_multilab_replication_project_with_individual_participant_data_meta_analysis_a_tutorial",
+      "canonical_source_key": "10.31222/osf.io/9tmua",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This OSF preprint is the tutorial/version of the same IPD meta-analysis methods article. It is context for analysis methods, not a new Figure 1 source family.",
+      "next_action": "keep_as_methods_context_and_deduplicate_with_the_published_tutorial",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.31222%2Fosf.io%2F9tmua"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_77bdfd624563",
+      "lead_key": "title:artificial_intelligence_in_psychology_research",
+      "canonical_source_key": "10.31234/osf.io/rva3w",
+      "decision": "keep_as_context_source",
+      "confidence": "medium",
+      "reason": "The preprint re-replicates Many Labs 2 studies using GPT-3.5. It may be useful context for LLM-based replications, but it is not a primary human original-versus-follow-up source family under the current Figure 1 gate.",
+      "next_action": "keep_as_context_or_later_llm_replication_scope_review_not_current_pair_parser",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.31234%2Fosf.io%2Frva3w"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_f7268b4a35f7",
+      "lead_key": "title:author_response_investigating_the_replicability_of_preclinical_cancer_biology",
+      "canonical_source_key": "10.7554/elife.71601.sa2",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is the eLife author response attached to the RPCB results article. The RPCB source family and final-analysis data are handled separately, so this response should remain context only.",
+      "next_action": "keep_as_rpcb_article_context_not_a_separate_source_family",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.7554%2Felife.71601.sa2"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_4599c36edb44",
+      "lead_key": "title:bringing_an_intersectional_lens_to_open_science_an_analysis_of_representation_in_the_reproducibility_project",
+      "canonical_source_key": "10.1177/03616843211035678",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This article analyzes representation and context in the Reproducibility Project: Psychology reports. It is a secondary critique/context source, not a result-bearing original/replication pair table.",
+      "next_action": "keep_as_rpp_context_not_figure1_pair_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1177%2F03616843211035678"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_f5860736bcb1",
+      "lead_key": "title:caballero_2021_replication_project",
+      "canonical_source_key": "kdbsa",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "reason": "The lead text explicitly describes a direct replication of Study 2 from Caballero et al. (2021). The evidence describes one OSF replication package, not a broader source-family corpus.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_recheck_osf_or_parent_project_if_this_single_replication_is_prioritized",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/kdbsa/",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch002-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The lead description says 'This project is a direct replication of Study 2 from Caballero et al. (2021)'."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "OSF API returned 404 for kdbsa during this check, so future acquisition should recheck the route or parent project."
+    },
+    {
+      "review_id": "review_figure1_search_leads_ed3a377a1fcd",
+      "lead_key": "title:can_cancer_researchers_accurately_judge_whether_preclinical_reports_will_reproduce",
+      "canonical_source_key": "10.1371/journal.pbio.2002212",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a forecasting/judgment study about whether experts predicted RP:CB replication outcomes. It is useful RPCB context, but the authoritative effect rows should come from RPCB final-analysis data, not this forecast article.",
+      "next_action": "keep_as_rpcb_forecasting_context_not_primary_figure1_result_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1371%2Fjournal.pbio.2002212"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_75bf3c17e235",
+      "lead_key": "title:can_large_language_models_replace_human_subjects_a_large_scale_replication_of_scenario_based_experiments_in_psychology_a",
+      "canonical_source_key": "10.6084/m9.figshare.27157524.v1",
+      "decision": "route_to_result_table_worklist",
+      "confidence": "medium",
+      "reason": "This Figshare dataset is the code/data package for the LLM scenario-experiment replication project kept as a candidate in batch001. It should be reviewed as a child result-table/artifact package, not as a separate root source family.",
+      "next_action": "inspect_osf_final_zip_for_multi_row_original_human_llm_comparison_tables_before_any_plot_scope_decision",
+      "sources_checked": [
+        "https://api.figshare.com/v2/articles/27157524"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "parent_corpus_database_id_or_key": "doi:10.1038/s43588-025-00840-7",
+        "artifact_relation": "child_data_code_package"
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "Figshare API exposes one large file, OSF final.zip."
+    },
+    {
+      "review_id": "review_figure1_search_leads_3b461705e061",
+      "lead_key": "title:cancer_reproducibility_project_scales_back_ambitions",
+      "canonical_source_key": "10.1038/nature.2015.18938",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This Nature item is news/context about the Cancer Biology reproducibility project, not a reusable data source or pair table.",
+      "next_action": "keep_as_rpcb_context_only",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1038%2Fnature.2015.18938"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_62a5c00b9ba8",
+      "lead_key": "title:challenges_and_suggestions_for_defining_replication_success_when_effects_may_be_heterogeneous_comment_on_hedges_and_scha",
+      "canonical_source_key": "10.1037/met0000223",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a methodological comment on defining replication success and heterogeneity. It can inform methods but is not an original/replication source-family artifact.",
+      "next_action": "keep_as_methods_context_only",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1037%2Fmet0000223"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_6061ab8657b3",
+      "lead_key": "title:comparing_meta_analyses_and_pre_registered_multiple_labs_replication_projects",
+      "canonical_source_key": "10.31219/osf.io/brzwt",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "medium",
+      "reason": "The preprint describes a reusable multi-row comparison of 17 meta-analyses with matching multiple-labs replication projects, including meta-analytic and replication effect sizes. It should be inventoried as a candidate source-family/table source before extraction.",
+      "next_action": "inventory_osf_preprint_article_and_supplemental_data_for_the_17_meta_replication_pairs",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.31219%2Fosf.io%2Fbrzwt",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch002-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Keep as candidate, not plot-ready evidence."
+    },
+    {
+      "review_id": "review_figure1_search_leads_27d5775f87b9",
+      "lead_key": "title:compilation_of_diener_et_al_2010_osf_multi_site_replication_projects",
+      "canonical_source_key": "qdx7p",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "The OSF page is a source-family/data package compiling Diener et al. (2010) multi-site replication datasets and analysis materials. It should be inventoried for reusable original/replication result tables.",
+      "next_action": "inventory_osf_qdx7p_files_for_data_tables_analysis_outputs_and_pair_mapping",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/qdx7p/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "OSF API confirmed the public project and description."
+    },
+    {
+      "review_id": "review_figure1_search_leads_3bb59d13d306",
+      "lead_key": "title:confounds_in_failed_replications",
+      "canonical_source_key": "10.31234/osf.io/gth8u",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a commentary/reanalysis of selected failed replications from the Reproducibility Project: Psychology, not a primary source-family table. RPP should remain the authoritative source object.",
+      "next_action": "keep_as_rpp_context_only",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.31234%2Fosf.io%2Fgth8u"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_7d6514b80c79",
+      "lead_key": "title:construct_validity_and_the_validity_of_replication_studies_a_systematic_review",
+      "canonical_source_key": "10.1037/amp0001006",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a systematic review of construct-validity issues in the RPP original and replication studies. It is useful context but not a primary D/N pair source.",
+      "next_action": "keep_as_measurement_context_not_figure1_pair_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1037%2Famp0001006"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_09abed40d362",
+      "lead_key": "title:corpus_suggestion_tracker",
+      "canonical_source_key": "internal:corpus_suggestion_tracker",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is an internal derived tracker/report, not an external source-family, database, repository, or result table. It can remain provenance context only.",
+      "next_action": "keep_internal_tracker_as_context_do_not_ingest_as_external_corpus",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_53d32984a608",
+      "lead_key": "title:cross_platform_metabolomics_imputation_using_importance_weighted_autoencoders",
+      "canonical_source_key": "10.1038/s41540-025-00644-5",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "This is a metabolomics platform-imputation/validation paper. The term large-scale replication refers to assay or observational-association validation, not an original-study versus replication/follow-up source family for Figure 1.",
+      "next_action": "stop_for_figure1_replication_pair_intake",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1038%2Fs41540-025-00644-5",
+        "https://api.crossref.org/works/10.1101%2F2025.03.06.25323475"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_c003e8bf12be",
+      "lead_key": "title:data_from_investigating_variation_in_replicability_a_many_labs_replication_project",
+      "canonical_source_key": "10.5334/jopd.ad",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This Journal of Open Psychology Data article is the data source for the Many Labs replication project and should be retained as a source-family/data-package candidate.",
+      "next_action": "inventory_jopd_article_osf_links_and_many_labs_data_files_for_existing_ml1_pair_rows",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.5334%2Fjopd.ad",
+        "CORPORA_AND_DATABASES.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Likely overlaps with existing Many Labs 1 local derived rows; deduplicate during inventory."
+    },
+    {
+      "review_id": "review_figure1_search_leads_7f8c8d6ea1da",
+      "lead_key": "title:data_from_evaluating_the_foraging_performance_of_individual_honey_bees_in_different_environments_with_automated_field_rf",
+      "canonical_source_key": "doi:10.5061/dryad.83bk3j9s6",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "This Dryad record is a honey-bee RFID dataset whose description says the method may enable future large-scale replication. It is not itself a replication source-family object or original/replication pair table.",
+      "next_action": "stop_for_figure1_replication_pair_intake",
+      "sources_checked": [
+        "https://doi.org/10.5061/dryad.83bk3j9s6",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch002-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_0a55b6cc7790",
+      "lead_key": "title:die_vertrauensw_rdigkeit_von_replikationen_der_einfluss_von_pr_registrierungen_auf_den_replikationserfolg",
+      "canonical_source_key": "10.20378/irb-105013",
+      "decision": "keep_as_context_source",
+      "confidence": "medium",
+      "reason": "This dissertation analyzes preregistration and replication success using the FORRT Replication Database. It is a secondary analysis of an external database, so FORRT/FReD should be the primary source object.",
+      "next_action": "keep_as_forrt_replication_database_context_not_primary_pair_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.20378%2Firb-105013"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_958c630e6e83",
+      "lead_key": "title:does_expertise_matter_in_replication_an_examination_of_the_reproducibility_project_psychology",
+      "canonical_source_key": "10.1016/j.jesp.2016.07.003",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a secondary analysis of expertise in the Reproducibility Project: Psychology. It is not the authoritative pair/result source; RPP remains the source-family object.",
+      "next_action": "keep_as_rpp_context_only",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1016%2Fj.jesp.2016.07.003"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    }
+  ]
+}

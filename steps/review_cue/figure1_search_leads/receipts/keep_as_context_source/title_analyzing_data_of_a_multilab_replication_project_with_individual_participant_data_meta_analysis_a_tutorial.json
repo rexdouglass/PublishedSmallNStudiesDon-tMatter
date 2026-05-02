@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.31222/osf.io/9tmua",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:analyzing_data_of_a_multilab_replication_project_with_individual_participant_data_meta_analysis_a_tutorial",
+  "next_action": "keep_as_methods_context_and_deduplicate_with_the_published_tutorial",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This OSF preprint is the tutorial/version of the same IPD meta-analysis methods article. It is context for analysis methods, not a new Figure 1 source family.",
+  "review_id": "review_figure1_search_leads_ce0d98ff2acc",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.31222%2Fosf.io%2F9tmua"
+  ],
+  "user_gpt_prompt_request": ""
+}

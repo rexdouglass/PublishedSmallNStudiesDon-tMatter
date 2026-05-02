@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.1098/rsos.231240",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:eleven_years_of_student_replication_projects_provide_evidence_on_the_correlates_of_replicability_in_psychology",
+  "next_action": "inventory_rsos_article_xml_pdf_supplement_and_data_availability_for_176_replication_rows",
+  "notes": "Crossref exposes Royal Society PDF and XML links.",
+  "promote_payload": {},
+  "reason": "The article introduces a new dataset of 176 student replications, including comparable effect-size information for many rows. This is a reusable corpus/source-family candidate for Figure 1 inventory.",
+  "review_id": "review_figure1_search_leads_24788ac9a7b9",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1098%2Frsos.231240"
+  ],
+  "user_gpt_prompt_request": ""
+}

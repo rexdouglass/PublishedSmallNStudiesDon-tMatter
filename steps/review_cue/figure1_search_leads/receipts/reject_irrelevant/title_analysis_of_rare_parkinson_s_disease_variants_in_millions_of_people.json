@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.1038/s41531-023-00608-8",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:analysis_of_rare_parkinson_s_disease_variants_in_millions_of_people",
+  "next_action": "stop_for_current_figure1_pair_intake_unless_a_separate_genetics_validation_corpus_rule_is_added",
+  "notes": "This applies the genetics validation strict-gate caution; it is not a judgment that the article lacks statistical results.",
+  "promote_payload": {},
+  "reason": "This is a single genetics association/meta-analysis paper using the language of variant replication across cohorts. It does not provide a Figure 1 source-family object linking published original findings to independent replication/follow-up studies under the current gate.",
+  "review_id": "review_figure1_search_leads_d39d12c4d968",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1038%2Fs41531-023-00608-8",
+    "FIGURE1_REPLICATION_SOURCE_FAMILY_SEEDS.yml"
+  ],
+  "user_gpt_prompt_request": ""
+}

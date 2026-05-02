@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "10.25504/fairsharing.ee7dba",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:fairsharing_record_for_framework_for_open_and_reproducible_research_training_replication_database",
+  "next_action": "keep_as_fred_metadata_context_and_use_osf_9r62x_or_fred_export_for_inventory",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This FAIRsharing page is metadata about FORRT/FReD, not the data source itself. The OSF/FReD records should be used as the primary source-family routes.",
+  "review_id": "review_figure1_search_leads_04919281e4bd",
+  "route_payload": {},
+  "sources_checked": [
+    "https://fairsharing.org/10.25504/FAIRsharing.ee7dba",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

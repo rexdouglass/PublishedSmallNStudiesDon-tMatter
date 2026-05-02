@@ -1,0 +1,351 @@
+{
+  "batch_id": "batch003",
+  "decisions": [
+    {
+      "review_id": "review_figure1_search_leads_e2c9f63ac70c",
+      "lead_key": "title:does_high_variability_training_improve_the_learning_of_non_native_phoneme_contrasts_over_low_variability_training_a_repl",
+      "canonical_source_key": "10.1016/j.jml.2022.104352",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "reason": "This is a single large-scale replication paper targeting earlier phonetic-training findings. It has explicit replication relation evidence but is not a reusable corpus/database source family.",
+      "next_action": "route_to_individual_replication_paper_worklist_for_paper_level_extraction_if_needed",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1016%2Fj.jml.2022.104352",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The title says 'A replication' and the abstract describes a large-scale replication of the original studies."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_46613d3e6bc2",
+      "lead_key": "title:does_repetition_increase_perceived_truth_equally_for_conspiracy_and_trivia_statements_a_registered_replication_report",
+      "canonical_source_key": "10.3758/s13423-025-02836-w",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "reason": "This registered replication report studies the illusory-truth effect for conspiracy and trivia statements. The current evidence indicates a single replication paper rather than a multi-row source-family database.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_check_supplements_if_this_rrr_is_prioritized",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.3758%2Fs13423-025-02836-w"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The title says 'registered replication report' and the abstract says the results replicate the generality of the illusory truth effect."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_5a6989d0ac69",
+      "lead_key": "title:earth_science_citation_replication_project",
+      "canonical_source_key": "u49zv",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "reason": "The lead text describes a planned replication and scaling of White 2019 citation practices. It is a single project registration rather than a corpus/database source family.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_recheck_osf_route_or_parent_registration_before_acquisition",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/u49zv/",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The lead description says the registration planned to replicate White 2019 and scale the original study."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "OSF API returned 404 for u49zv during this check."
+    },
+    {
+      "review_id": "review_figure1_search_leads_6c2f7ee495da",
+      "lead_key": "title:ecls_k_replication_project",
+      "canonical_source_key": "gvzwe",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "reason": "The OSF project is explicitly titled as a replication project for a ReScience X article, but current metadata is too sparse to justify a root corpus/database row. Treat it as an individual computational replication project under ReScience-style work.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_link_to_rescience_c_if_the_article_is_inventoried",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/gvzwe/",
+        "https://api.osf.io/v2/nodes/hsgj2/"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The OSF title is 'ECLS-K Replication Project'."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": "OSF gvzwe was public; hsgj2 returned 404."
+    },
+    {
+      "review_id": "review_figure1_search_leads_24788ac9a7b9",
+      "lead_key": "title:eleven_years_of_student_replication_projects_provide_evidence_on_the_correlates_of_replicability_in_psychology",
+      "canonical_source_key": "10.1098/rsos.231240",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "The article introduces a new dataset of 176 student replications, including comparable effect-size information for many rows. This is a reusable corpus/source-family candidate for Figure 1 inventory.",
+      "next_action": "inventory_rsos_article_xml_pdf_supplement_and_data_availability_for_176_replication_rows",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1098%2Frsos.231240"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref exposes Royal Society PDF and XML links."
+    },
+    {
+      "review_id": "review_figure1_search_leads_95434678b310",
+      "lead_key": "title:estimating_the_replicability_of_sports_and_exercise_science_research",
+      "canonical_source_key": "10.1007/s40279-025-02201-w",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This is the Sports Science Replication Centre result article, reporting 25 replication studies with original and replication effect-size comparisons. It is a high-value source-family candidate.",
+      "next_action": "inventory_springer_fulltext_supplements_and_project_site_for_study_level_original_replication_effect_rows",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1007%2Fs40279-025-02201-w"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Crossref exposes Springer PDF and HTML links."
+    },
+    {
+      "review_id": "review_figure1_search_leads_12b18a2b607a",
+      "lead_key": "title:evaluating_meta_analysis_as_a_replication_success_measure",
+      "canonical_source_key": "10.1371/journal.pone.0308495",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a methods evaluation using original and replication studies from two existing large-scale replication projects. It is not the primary pair source; those projects should remain the authoritative artifacts.",
+      "next_action": "keep_as_methods_context_not_primary_figure1_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1371%2Fjournal.pone.0308495"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_2822063673be",
+      "lead_key": "title:evidence_for_goal_and_mixed_evidence_for_false_belief_based_action_prediction_in_2_to_4_year_old_children_a_large_scale_",
+      "canonical_source_key": "10.1111/desc.13224",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "reason": "This is a single large-scale longitudinal replication study of a false-belief paradigm. It has affirmative replication evidence but does not appear to be a reusable multi-study corpus.",
+      "next_action": "route_to_individual_replication_paper_worklist_for_paper_level_extraction_if_needed",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1111%2Fdesc.13224"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The title says 'large-scale longitudinal anticipatory looking replication study' and the abstract names the original paradigm."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_3c4dddb6790c",
+      "lead_key": "title:evidence_for_infant_directed_speech_preference_is_consistent_across_large_scale_multi_site_replication_and_meta_analysis",
+      "canonical_source_key": "10.1162/opmi_a_00134",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "reason": "This paper combines and compares a meta-analysis with a large-scale multi-lab replication for infant-directed speech preference. It appears to address one target domain/effect rather than a broad corpus source family.",
+      "next_action": "route_to_individual_replication_paper_worklist_and_check_supplements_if_infant_speech_pair_extraction_is_needed",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1162%2Fopmi_a_00134"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence_status": "explicit_self_described_replication",
+        "replication_relation_evidence": "The title and abstract identify a large-scale multi-site replication and meta-analysis of infant-directed speech preference."
+      },
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_c7808e6c3826",
+      "lead_key": "title:examining_the_replicability_of_online_experiments_selected_by_a_decision_market",
+      "canonical_source_key": "10.1038/s41562-024-02062-9",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This is a systematic replication source family: 41 MTurk experiments were candidates, 26 were selected for replication, and the article reports original/replication effect-size relationships. It already has routed result-table child artifacts.",
+      "next_action": "deduplicate_with_raw_replication_project_decision_market_and_inventory_osf_project_sk82q_for_result_tables",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1038%2Fs41562-024-02062-9",
+        "steps/result_tables/figure1/result-table-worklist-from-cluster-review.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_17f20eab2f6e",
+      "lead_key": "title:experimental_economics_replication_project",
+      "canonical_source_key": "bzm54",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This is the Experimental Economics Replication Project source-family lead, describing replications of 18 laboratory experimental studies with high powered designs. It belongs in source-family inventory and should be deduplicated to the canonical website/OSF route already identified.",
+      "next_action": "deduplicate_to_eerp_source_family_and_inventory_experimentaleconreplications_com_plus_osf_pnwuz_materials",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/bzm54/",
+        "steps/source_inventory/figure1/source-family-artifact-inventory-queue.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_04919281e4bd",
+      "lead_key": "title:fairsharing_record_for_framework_for_open_and_reproducible_research_training_replication_database",
+      "canonical_source_key": "10.25504/fairsharing.ee7dba",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This FAIRsharing page is metadata about FORRT/FReD, not the data source itself. The OSF/FReD records should be used as the primary source-family routes.",
+      "next_action": "keep_as_fred_metadata_context_and_use_osf_9r62x_or_fred_export_for_inventory",
+      "sources_checked": [
+        "https://fairsharing.org/10.25504/FAIRsharing.ee7dba",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_a5175f329fbc",
+      "lead_key": "title:fork_of_reproducibility_project_psychology",
+      "canonical_source_key": "wusvb",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a fork/alias of Reproducibility Project: Psychology. The canonical RPP OSF/GitHub source family is already represented, so this fork should not create a duplicate root row.",
+      "next_action": "keep_as_rpp_alias_context_and_use_canonical_rpp_source_family_for_inventory",
+      "sources_checked": [
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_404c6c8bc341",
+      "lead_key": "title:forrt_large_scale_replication_projects_hub",
+      "canonical_source_key": "https://forrt.org/replication-hub/large-scale-replication-projects/",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "The FORRT large-scale replication projects page is a reusable source-family hub for identifying replication projects and aliases. It should be kept as a discovery/inventory source, while individual project rows still need artifact-level validation.",
+      "next_action": "inventory_forrt_hub_links_as_project_seed_aliases_and_deduplicate_against_existing_source_families",
+      "sources_checked": [
+        "https://forrt.org/replication-hub/large-scale-replication-projects/",
+        "steps/review_cue/figure1_search_leads/coverage_audit/missing_or_undersearched_source_families.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_4c3314063449",
+      "lead_key": "title:forrt_replication_database",
+      "canonical_source_key": "9r62x",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "The OSF node explicitly contains materials and data for the FORRT Replication Database/FReD, a major source of original and replication findings. It belongs in source-family inventory.",
+      "next_action": "inventory_osf_9r62x_files_and_map_to_existing_fred_parser_outputs",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/9r62x/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_fa29ed98a4b6",
+      "lead_key": "title:forrt_replication_database_frozen_version_from_08_2024",
+      "canonical_source_key": "c9rny",
+      "decision": "needs_more_evidence",
+      "confidence": "medium",
+      "reason": "The lead claims to be a frozen FORRT Replication Database version, but the OSF API route returned 404 during this review. It may be a stale/private/deleted file or node and should not be advanced without route confirmation.",
+      "next_action": "manually_check_osf_c9rny_or_forrt_archive_for_a_public_frozen_2024_fred_export",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/c9rny/",
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "Check whether https://osf.io/c9rny/ is a public frozen August 2024 FORRT/FReD export, and if so identify the parent project, file names, and whether it contains original/replication effect rows.",
+      "notes": "Do not duplicate OSF 9r62x unless this frozen route is confirmed."
+    },
+    {
+      "review_id": "review_figure1_search_leads_9fabfd38878d",
+      "lead_key": "title:forrt_replication_database_fred",
+      "canonical_source_key": "reports/corpus_suggestion_tracker.md",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is an internal manual tracker row documenting that FReD parsing already yielded local original-claim rows. It should remain provenance/context and should not be ingested as an external root source by itself.",
+      "next_action": "keep_internal_tracker_context_and_use_osf_fred_source_for_external_inventory",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_e4909bfbc5b5",
+      "lead_key": "title:growth_from_uncertainty_understanding_the_replication_crisis_in_infant_cognition",
+      "canonical_source_key": "10.1017/psa.2023.157",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "This is a philosophy/history-of-science discussion of infant-cognition replication work, not a result-bearing source-family artifact.",
+      "next_action": "keep_as_context_only",
+      "sources_checked": [
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-batch003-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_4267dbece1dc",
+      "lead_key": "title:hack_setting_up_a_large_scale_replication_project_of_cognitive_dissonance_theory_beatrix_zone_4_14_45",
+      "canonical_source_key": "294bx",
+      "decision": "keep_as_context_source",
+      "confidence": "medium",
+      "reason": "The OSF node appears to be a hack/session page about setting up a replication project. It does not expose evidence of completed result rows in the metadata reviewed here.",
+      "next_action": "keep_as_context_only_unless_a_completed_cognitive_dissonance_replication_project_source_is_found",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/294bx/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_91f39c20a32f",
+      "lead_key": "title:heterogeneity_in_direct_replications_in_psychology_and_its_association_with_effect_size",
+      "canonical_source_key": "10.1037/bul0000294",
+      "decision": "keep_as_context_source",
+      "confidence": "medium",
+      "reason": "This is a secondary heterogeneity analysis of 68 meta-analyses from 13 preregistered multilab replication projects. It may help with context or dedupe, but original/replication effect extraction should prefer the underlying projects.",
+      "next_action": "keep_as_secondary_analysis_context_not_primary_figure1_pair_source",
+      "sources_checked": [
+        "https://api.crossref.org/works/10.1037%2Fbul0000294"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    }
+  ]
+}

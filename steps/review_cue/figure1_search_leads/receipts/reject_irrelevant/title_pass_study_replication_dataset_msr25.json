@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "doi:10.5281/zenodo.14066441",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:pass_study_replication_dataset_msr25",
+  "next_action": "stop_for_figure1_replication_pair_intake",
+  "notes": "Zenodo API showed no files on the record during this check.",
+  "promote_payload": {},
+  "reason": "This Zenodo record is for a software-engineering technical paper dataset about LLM summarization for legacy program documentation. The word replication appears to refer to a package/dataset route, not an independent replication of scientific findings.",
+  "review_id": "review_figure1_search_leads_21b3e8caa4aa",
+  "route_payload": {},
+  "sources_checked": [
+    "https://zenodo.org/api/records/14066441"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "doi:10.6084/m9.figshare.13545820.v1",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:additional_file_2_of_traditional_and_biomedical_care_pathways_for_mental_well_being_in_rural_nepal",
+  "next_action": "stop_for_figure1_replication_pair_intake",
+  "notes": "Figshare API exposed one DOCX file, 13033_2020_433_MOESM2_ESM.docx.",
+  "promote_payload": {},
+  "reason": "The Figshare record is a policy/framework supplement for the same Nepal mental-wellbeing care-pathways article. It is not a replication or corpus/database artifact.",
+  "review_id": "review_figure1_search_leads_a0d3ac02fdf4",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.figshare.com/v2/articles/13545820"
+  ],
+  "user_gpt_prompt_request": ""
+}

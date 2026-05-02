@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "10.5334/jopd.ad",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:data_from_investigating_variation_in_replicability_a_many_labs_replication_project",
+  "next_action": "inventory_jopd_article_osf_links_and_many_labs_data_files_for_existing_ml1_pair_rows",
+  "notes": "Likely overlaps with existing Many Labs 1 local derived rows; deduplicate during inventory.",
+  "promote_payload": {},
+  "reason": "This Journal of Open Psychology Data article is the data source for the Many Labs replication project and should be retained as a source-family/data-package candidate.",
+  "review_id": "review_figure1_search_leads_c003e8bf12be",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.5334%2Fjopd.ad",
+    "CORPORA_AND_DATABASES.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,24 @@
+{
+  "canonical_source_key": "doi:10.1016/j.cortex.2026.03.006",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:absence_of_a_meaningful_effect_of_intranasal_oxytocin_on_trusting_behavior_a_registered_report_with_pooled_equivalence_t",
+  "next_action": "route_to_individual_replication_paper_worklist_and_acquire_article_or_data_availability_links_if_paper_level_extraction_is_prioritized",
+  "notes": "Crossref lists Elsevier XML/text API routes.",
+  "promote_payload": {},
+  "reason": "The abstract explicitly says the study performed a large-scale replication of Kosfeld et al. (2005) and pooled it with another replication. This is a single replication paper/workflow, not a broad source-family database.",
+  "review_id": "review_figure1_search_leads_115f5ee33aea",
+  "route_payload": {
+    "replication_relation_evidence": "The abstract says 'We performed a large-scale replication (n = 211) of Kosfeld et al. (2005)' and describes pooling with Declerck et al. (2020).",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1016%2Fj.cortex.2026.03.006",
+    "steps/review_cue/figure1_search_leads/reviewcue-codex-batch001-figure1_search_leads.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

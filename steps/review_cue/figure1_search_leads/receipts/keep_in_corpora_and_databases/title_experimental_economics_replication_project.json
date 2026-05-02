@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "bzm54",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:experimental_economics_replication_project",
+  "next_action": "deduplicate_to_eerp_source_family_and_inventory_experimentaleconreplications_com_plus_osf_pnwuz_materials",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is the Experimental Economics Replication Project source-family lead, describing replications of 18 laboratory experimental studies with high powered designs. It belongs in source-family inventory and should be deduplicated to the canonical website/OSF route already identified.",
+  "review_id": "review_figure1_search_leads_17f20eab2f6e",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/bzm54/",
+    "steps/source_inventory/figure1/source-family-artifact-inventory-queue.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.1177/1745691616652873",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:a_multilab_preregistered_replication_of_the_ego_depletion_effect",
+  "next_action": "inventory_sage_xml_pdf_supplements_and_any_project_repository_for_lab_level_or_aggregate_effect_rows",
+  "notes": "Crossref exposes Sage PDF and full XML links.",
+  "promote_payload": {},
+  "reason": "This Registered Replication Report is a multi-lab source-family candidate: the abstract reports 23 laboratories and N=2141 for a standardized ego-depletion replication protocol. It should stay for source inventory and table extraction review.",
+  "review_id": "review_figure1_search_leads_6720e58edd1a",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1177%2F1745691616652873",
+    "CORPORA_AND_DATABASES.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

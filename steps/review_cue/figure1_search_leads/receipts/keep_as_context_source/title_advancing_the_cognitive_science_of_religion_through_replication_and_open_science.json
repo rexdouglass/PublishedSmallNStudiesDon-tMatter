@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "doi:10.1558/jcsr.39039",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:advancing_the_cognitive_science_of_religion_through_replication_and_open_science",
+  "next_action": "keep_as_context_seed_for_cross_cultural_religious_replication_project_search",
+  "notes": "Crossref exposes a VOR PDF link and abstract-style context.",
+  "promote_payload": {},
+  "reason": "This article discusses replication and open science in cognitive science of religion and mentions the Cross-Cultural Religious Replication Project, but it is not itself a result-bearing source family or pair table.",
+  "review_id": "review_figure1_search_leads_08428e8f58d8",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1558%2Fjcsr.39039"
+  ],
+  "user_gpt_prompt_request": ""
+}

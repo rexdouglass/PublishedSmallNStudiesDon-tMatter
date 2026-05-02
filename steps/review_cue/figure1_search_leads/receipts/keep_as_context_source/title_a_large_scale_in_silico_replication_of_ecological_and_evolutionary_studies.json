@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "doi:10.1038/s41559-024-02530-5",
+  "confidence": "medium",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:a_large_scale_in_silico_replication_of_ecological_and_evolutionary_studies",
+  "next_action": "keep_as_context_or_manual_followup_not_current_figure1_pair_parser",
+  "notes": "Crossref links VOR PDF/HTML, but the semantics are in-silico/meta-analytic rather than direct replication-pair rows.",
+  "promote_payload": {},
+  "reason": "The Nature Ecology and Evolution article is a large in-silico replicability analysis rather than a direct independent original-versus-replication corpus. It may be useful as cross-field context or a manual claim-replication target, but should not advance as a Figure 1 pair source without a stricter mapping review.",
+  "review_id": "review_figure1_search_leads_1791596725b9",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1038%2Fs41559-024-02530-5",
+    "FIGURE1_REPLICATION_SOURCE_FAMILY_SEEDS.yml"
+  ],
+  "user_gpt_prompt_request": ""
+}

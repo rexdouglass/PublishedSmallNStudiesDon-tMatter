@@ -1,0 +1,22 @@
+{
+  "canonical_source_key": "rpcb | doi:10.7554/elife.04333",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:49:34+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:an_open_investigation_of_the_reproducibility_of_cancer_biology_research",
+  "next_action": "deduplicate_to_rpcb_source_family_and_use_later_rpcb_final_analysis_data_for_result_extraction",
+  "notes": "Crossref exposes eLife PDF/XML links; current cluster review already has RPCB inventory routes.",
+  "promote_payload": {},
+  "reason": "This eLife article defines the Reproducibility Project: Cancer Biology source family, identifying 50 high-impact cancer biology articles and planned replication studies. It should be retained but deduplicated with the later RPCB result-data source-family records.",
+  "review_id": "review_figure1_search_leads_1a654f61e08b",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.7554%2Felife.04333",
+    "steps/source_inventory/figure1/source-family-artifact-inventory-queue.tsv",
+    "steps/review_cue/figure1_search_leads/reviewcue-clustered-routing-table-figure1_search_leads.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

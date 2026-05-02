@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "reports/corpus_suggestion_tracker.md",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:55:49+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch003.json",
+  "duplicate_of": "",
+  "lead_key": "title:forrt_replication_database_fred",
+  "next_action": "keep_internal_tracker_context_and_use_osf_fred_source_for_external_inventory",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is an internal manual tracker row documenting that FReD parsing already yielded local original-claim rows. It should remain provenance/context and should not be ingested as an external root source by itself.",
+  "review_id": "review_figure1_search_leads_9fabfd38878d",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

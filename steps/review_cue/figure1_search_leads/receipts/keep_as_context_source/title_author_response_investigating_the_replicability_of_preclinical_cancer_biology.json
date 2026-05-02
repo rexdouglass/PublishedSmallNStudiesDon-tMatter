@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.7554/elife.71601.sa2",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:author_response_investigating_the_replicability_of_preclinical_cancer_biology",
+  "next_action": "keep_as_rpcb_article_context_not_a_separate_source_family",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is the eLife author response attached to the RPCB results article. The RPCB source family and final-analysis data are handled separately, so this response should remain context only.",
+  "review_id": "review_figure1_search_leads_f7268b4a35f7",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.7554%2Felife.71601.sa2"
+  ],
+  "user_gpt_prompt_request": ""
+}

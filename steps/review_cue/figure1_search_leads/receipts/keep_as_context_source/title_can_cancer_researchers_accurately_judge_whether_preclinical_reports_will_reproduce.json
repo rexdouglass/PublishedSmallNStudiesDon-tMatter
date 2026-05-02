@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "10.1371/journal.pbio.2002212",
+  "confidence": "high",
+  "created_at": "2026-05-02T19:56:53+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch002.json",
+  "duplicate_of": "",
+  "lead_key": "title:can_cancer_researchers_accurately_judge_whether_preclinical_reports_will_reproduce",
+  "next_action": "keep_as_rpcb_forecasting_context_not_primary_figure1_result_source",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a forecasting/judgment study about whether experts predicted RP:CB replication outcomes. It is useful RPCB context, but the authoritative effect rows should come from RPCB final-analysis data, not this forecast article.",
+  "review_id": "review_figure1_search_leads_ed3a377a1fcd",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.crossref.org/works/10.1371%2Fjournal.pbio.2002212"
+  ],
+  "user_gpt_prompt_request": ""
+}
