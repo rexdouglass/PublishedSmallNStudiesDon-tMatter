@@ -4,9 +4,36 @@
   "file_name": "supplements__survey_elements.pdf",
   "file_type": "pdf",
   "local_path": "data/raw/corpus_candidates/political_science_unlock/osf/vaccine_hesitancy_c8dvm/supplements__survey_elements.pdf",
+  "page_count": 31,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "Vaccine survey elements (for public distribution) Lucas Reddinger, David Levine, Gary Charness This page contains elements used in our survey. These are referenced in the design document. Only half of Latinx participants receive Spanish translations. Accordingly, only messages that are given to the Latinx segment will contain translations below. Photo credits Photo of quinseañera is the work of la Secretaría de Cultura de la Ciudad de México, licensed as CC-BY- 2.0. Photo of Kizzmekia Corbett is her own work, licensed as CC-BY-SA-4.0. Photo of Dr. Anthony Fauci is the work of the NIAID. Photo of Kizzmekia Corbett is her own work, licensed as CC-BY-SA-4.0. Photo of Donald Trump is the work of Michael Vadon, licensed as CC-BY-2.0. Key to the styles Contents not shown to subjects. Denotes survey logic and notes. Contents not shown to subjects. Denotes survey block (a unit of content). Used in the survey to convey information to the subject. Denotes a question that is displayed using typical webpage form elements. Survey Survey: Part I This section includes an introduction, demographic questions, and an introduction to the slides. Introduction to the survey"
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Thank you for taking our survey for academic research on COVID-19 vaccines. Your responses are important and valuable. This survey will take about 7 minutes to complete , for which you will be paid $1.25. Answer 10 demographic multiple-choice questions. Read 10 sentences of information. Answer 4 opinion-based multiple-choice questions. Answer 1 multiple-choice question about the information for a $0.75 bonus. Please complete this survey without interruption. Demographic questionnaire Please answer all questions truthfully. Your participation and compensation will not depend on your responses. [D_reside] Do you currently reside in the United States? [1] Yes [2] No [D_age] How old are you? [1] Under 18 [2] 18 – 24 [3] 25 – 34 [4] 35 – 44 [5] 45 – 54 [6] 55 – 64 [7] 65 – 74 [8] 75 – 84 [9] 85 or older"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "[D_parent] Do you help make health care decisions for any children? [1] Yes [2] No [D_race] Do you identify as African-American or Black? [1] Yes [2] No [D_latinx] Are you Hispanic, Latina, Latino, Latinx, or Spanish? [1] Yes [2] No [D_gender] What is your gender? [1] Male [2] Female [3] Other [D_vote] Did you vote for Biden or Trump in 2020? [1] Biden [2] Trump [3] Other candidate / Didn’t vote / Don’t know Display the next question only if: [D_vote][Biden] is not selected and [D_vote][Trump] is not selected."
+    },
+    {
+      "page_number": 4,
+      "text_preview": "[D_pols] Where would you place yourself on this political scale? [1] Extremely liberal [2] Liberal [3] Slightly liberal [4] Moderate [5] Slightly conservative [6] Conservative [7] Extremely conservative [8] Don’t know [D_relig] What is your religious preference? [1] Protestant - Evangelical [2] Protestant - Mainline [3] Catholic [4] Mormon / member of the Church of Jesus Christ of Latter-day Saints [5] Other Christian [6] Jewish [7] Muslim [8] Buddism / Hinduism / other Eastern religion [9] None / Atheist / Agnostic [10] Other / Don’t know [81] Protestant [old version] [82] Orthodox Christian [old version] Display the next question only if: [D_relig][Protestant - Evangelical] is selected or [D_relig][Protestant - Mainline] is selected or [D_relig][Catholic] is selected or [D_relig][Mormon / member of the Church of Jesus Christ of Latter-day Saints] is selected or [D_relig][Other Christian] is selected or [D_relig][Jewish] is selected or [D_relig][Muslim] is selected or [D_relig][Buddhism / Hinduism / other Eastern religion] is selected"
+    },
+    {
+      "page_number": 5,
+      "text_preview": "[D_relobs] Before the pandemic, how often did you usually attend religious services? [1] Several times per week [2] Once per week [3] Several times per month [4] Once per month [5] Several times per year [6] Once a year [7] Less than once a year [8] Never [9] Don’t know / Not applicable [D_popdens] Which of these do you live in? [1] City or suburb [2] Large town [3] Small town [4] Rural area [81] Large city [old version] [82] Suburb of a large city [old version] [83] Small city or town [old version] [84] Rural area [old version] Introduction to slides Please carefully read the following 8 to 12 slides of information. Then answer a question about this information for a $0.75 bonus. Any quotations may be hypothetical. Survey: Part II Any logic in this section is only approximate. For precise logic, please see the design documents. Messages on trial population"
+    },
+    {
+      "page_number": 6,
+      "text_preview": "M_popl: baseline Consider a COVID-19 vaccine described by the following: The vaccine has been approved by a rigorous FDA process involving tens of thousands of people. La vacuna fue aprobada a través de un proceso riguroso de la FDA que involucró a una población diversa de miles de personas. Consider a COVID-19 vaccine described by the following: The vaccine has been approved by a rigorous FDA process involving tens of thousands of people. M_popl_b: if black Consider a COVID-19 vaccine described by the following: The vaccine has been approved by a rigorous FDA process involving tens of thousands of people – including African Americans. M_popl_l: if latinx Consider a COVID-19 vaccine described by the following: The vaccine has been approved by a rigorous FDA process involving tens of thousands of people – including Latinos. La vacuna fue aprobada a través de un proceso riguroso de la FDA que involucró a una población diversa de miles de personas – incluyendo a personas de la población latina."
+    }
+  ],
   "parent_corpus_database_id": "raw_corpus:political_science_unlock",
-  "sample_kind": "metadata_only",
-  "sample_note": "no sampler for file_type=pdf",
-  "sampled_at": "2026-05-01T20:34:44",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T13:08:33",
+  "sampled_page_count": 6,
   "sha256": "d7c60a912c54746f668ce00890feb961dba2b44d60844f73756ac45d98ede087"
 }

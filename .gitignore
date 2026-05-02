@@ -75,6 +75,10 @@ tmp/
 *.sqlite
 *.sqlite-journal
 
+# Large inspection row dumps; compact summaries/table indexes are tracked.
+steps/corpus_results/figure1/source_family_high_inspect_sample/corpus-results-proposal.tsv
+steps/corpus_results/figure1/source_family_high_inspect_sample/corpus-results-proposal.json
+
 # OS/editor noise
 .DS_Store
 Thumbs.db

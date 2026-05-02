@@ -4,9 +4,36 @@
   "file_name": "online-appendix.pdf",
   "file_type": "pdf",
   "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse/4WNEE9/online-appendix.pdf",
+  "page_count": 37,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "ONLINE APPENDIX Testing Legislator Responsiveness to Citizens and Firms in Single-Party Regimes: A Field Experiment in the Vietnamese National Assembly 1. Delegate survey administered by VNA Library 2 2. Transcript coding and dictionary 3 3. Dosage matching 4 4. OLS results assessed by randomization inference 4 5. OLS results with province-clustered standard errors 9 6. Treatment strength: Heterogeneity by province 12 7. Saturation results by original treatment conditions 17 8. Saturation results by treatment share 19 9. Placebo test 25 10. Survey nonresponse 26 11. Examples of delegates’ comments in legislative fora 28 12. Relationship between delegates’ comments and VLOE changes 30 13. Speaking results by legislative forum 34 14. Citizen-firm differences without central nominees 35 1"
+    },
+    {
+      "page_number": 2,
+      "text_preview": "1 Delegate Survey Administered by VNA Library Vietnamese original: English translation: 1. Are you [the delegate] prepared to debate the proposed revisions to the Education Law? (cid:3) I am prepared to debate. (cid:3) I am unprepared to debate (Please answer question two below). 2"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "2 Transcript Coding and Dictionary To construct finer grained measures of responsiveness, we applied basic regular expressions and a custom dictionary to code more targeted content outcomes. The first of these is an indicator variable for whether a delegate mentioned her own province. In order to convey to one’s peers the preferences contained in the infographics, it is quite plausible that a delegate might mention her own province. This should also hold for delegates who do not directly discuss their constituents’ preferences but nonetheless act on the infographics more obliquely. Two of the content-specific indicators are constructed from lists of terms which could be used interchangeably with “citizens” or “firms”. The remaining four indicators identify discussion of particular articles within the draft law that are directly relevant to the treatment infographics. Outcome variables in Table 4.4 (page 8) derived from applying the following Vietnamese regu- lar expressions to the transcripts. To ensure accuracy when character encodings misbehave across operating systems and applications, all Vietnamese regular expressions were first converted to Uni- code strings at https://r12a.github.io/app-conversion/. For example, string detection for “ ” actually looked for “\\u0110i\\u1EC1u 31”. 3"
+    },
+    {
+      "page_number": 4,
+      "text_preview": "Figure 3.1: Provincial-level matching achieved balance. Figure displays balance across three dosages, with the right panel separated for reasons of scale. 3 Dosage Matching Matching was accomplished with the R package Matching (Sekhon, 2011) and 11 covariates: (1) % full-time delegates, (2) % centrally-nominated delegates, (3) % competitively elected delegates, (4) % delegates serving in local assemblies, (5) delegation size, (6) 2016 PAPI score, (7) 2016 PCI score, (8) 2014 GDP per capita, and (9) 2016 fiscal transfers. Figure 3.1 demonstrates that provinces were assigned to three dosages (0%, 50%, and 100%) in a way that maintained balance across each of these covariates. 4"
+    },
+    {
+      "page_number": 5,
+      "text_preview": "4 OLS Results Assessed by Randomization Inference Tables 4.1 and 4.2 contain the primary regression results used in the paper, with statistical signif- icance assessed by randomization inference. Tables 4.3 and 4.4 contain supplementary regressions withfiner-grainedcontent-basedmeasuresofresponsiveness. Theparentheticalquantityunderneath each regression coefficient represents that coefficient’s quantile as compared to 10,000 coefficients estimated from repeated randomizations. For example, a parenthetical value of 0.999 means that our experimental estimate exceeds 99.9% of the coefficients resulting from re-randomized treatment assignments. The auxiliary statistics in the bottom rows refer to regressions on the observed data. 5"
+    },
+    {
+      "page_number": 6,
+      "text_preview": "Table 4.1: Citizen-treated delegates more prepared for debate (Paper Figure 5; Figures 8.1; 8.2). All delegates No central nominees (1) Baseline (2) Covariates (3) Saturation (4) Covariates (5) Saturation Citizen 0.228 0.233 0.148 0.224 0.008 (0.999) (0.999) (0.770) (0.996) (0.510) % Citizen -0.343 -0.428 (0.090) (0.055) Citizen × % Citizen 0.441 0.810 (0.868) (0.967) Firm 0.094 0.091 0.113 0.075 0.102 (0.901) (0.890) (0.709) (0.800) (0.677) % Firm 0.001 -0.072 (0.508) (0.388) Firm × % Firm 0.115 0.196 (0.629) (0.681) Full-time -0.101 -0.12 -0.101 -0.134 (0.402) (0.020) (0.372) (0.003) Central nominee 0.059 0.074 (0.152) (0.725) Competitive -0.086 -0.093 -0.064 -0.069 (0.046) (0.062) (0.031) (0.069) Constant 0.481 0.551 0.598 0.547 0.615 (0.007) (0.011) (0.219) (0.038) (0.444) Observations 293 293 293 250 250 Randomization inference based on 10,000 randomizations. Quantile of experimental estimate in parentheses. 6"
+    }
+  ],
   "parent_corpus_database_id": "raw_corpus:political_science_unlock",
-  "sample_kind": "metadata_only",
-  "sample_note": "no sampler for file_type=pdf",
-  "sampled_at": "2026-05-01T20:34:42",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T13:08:14",
+  "sampled_page_count": 6,
   "sha256": "f9534a5d9ca306ef71ea09f74a673130b40e678e12822c39faaf1346b9457705"
 }

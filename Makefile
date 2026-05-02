@@ -167,7 +167,7 @@ source-artifact-parser-queue: check-venv
 	$(QUARTO_PYTHON) scripts/build_source_artifact_parser_queue.py --replace
 
 figure1-corpus-results-extract: check-venv
-	$(QUARTO_PYTHON) scripts/extract_corpus_results_from_artifacts.py --parser-queue steps/source_inventory/figure1/parser_queue/source-artifact-parser-candidate-queue.tsv --status steps/source_inventory/figure1/result_artifact_acquisition/mirror_sample_tabular_first/source-artifact-mirror-sample-status.tsv --replace
+	$(QUARTO_PYTHON) scripts/extract_corpus_results_from_artifacts.py --parser-queue steps/source_inventory/figure1/parser_queue/source-artifact-parser-candidate-queue.tsv --status steps/source_inventory/figure1/mirror_sample/source-artifact-mirror-sample-status.tsv --replace
 
 cluster-review-worklists: check-venv
 	$(QUARTO_PYTHON) scripts/build_cluster_review_worklists.py --replace

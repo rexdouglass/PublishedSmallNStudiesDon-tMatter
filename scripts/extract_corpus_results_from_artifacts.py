@@ -438,7 +438,7 @@ def main() -> None:
     parser.add_argument(
         "--scope",
         action="append",
-        default=["parse_table_result_candidates"],
+        default=None,
         help="Parser queue recommended_next_stage to extract. Repeat for multiple scopes.",
     )
     parser.add_argument("--parser-queue", default=str(PARSER_QUEUE_TSV))
@@ -456,7 +456,8 @@ def main() -> None:
     proposal_json = output_root / "corpus-results-proposal.json"
     tables_tsv = output_root / "corpus-result-tables-proposal.tsv"
     summary_tsv = output_root / "corpus-results-summary.tsv"
-    queue, status = load_candidates(set(args.scope), parser_queue_tsv, mirror_status_tsv, args.min_parser_priority)
+    scopes = args.scope or ["parse_table_result_candidates"]
+    queue, status = load_candidates(set(scopes), parser_queue_tsv, mirror_status_tsv, args.min_parser_priority)
     groups = group_candidates(queue, status)
     result_rows: list[dict[str, str]] = []
     table_rows: list[dict[str, str]] = []
@@ -482,10 +483,11 @@ def main() -> None:
         {
             "created_at": datetime.now().isoformat(timespec="seconds"),
             "parser_version": PARSER_VERSION,
-            "scope": args.scope,
+            "scope": scopes,
             "input_parser_queue": repo_path(parser_queue_tsv),
             "input_mirror_status": repo_path(mirror_status_tsv),
             "min_parser_priority": args.min_parser_priority,
+            "max_rows_per_table": args.max_rows_per_table,
             "corpus_result_count": len(result_rows),
             "corpus_result_table_count": len(table_rows),
             "skipped_count": len(skipped),

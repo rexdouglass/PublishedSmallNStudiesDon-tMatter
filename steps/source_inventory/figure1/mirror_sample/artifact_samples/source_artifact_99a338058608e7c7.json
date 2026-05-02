@@ -4,9 +4,28 @@
   "file_name": "mousa-science-codebook.pdf",
   "file_type": "pdf",
   "local_path": "data/raw/corpus_candidates/political_science_unlock/zenodo/3942437/mousa-science-codebook.pdf",
+  "page_count": 4,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "Codebook for \"Building social cohesion between Christians and Muslims through soccer in Post-ISIS Iraq.\" Science. Vol. 369, Issue 6505, pp. 866-870. DOI: 10.1126/science.abb3153 Main Outcomes*1: • Attending social event (attend) o 0 = did not attend o 1 = attended • Donating $1 survey compensation for a mixed NGO (donate_t1_new1)* o 0 = chose to donate to an NGO or cause that serves Muslims and Christians o 1 = chose to donate to an NGO or cause that exclusively serves Christians o NA = did not donate • Patronized restaurant in Mosul (went_mosul) o 0 = patronized restaurant o 1 = did not patronize restaurant • Training with Muslims 6 months post-intervention (train_t1)* o 0 = yes o 1 = no • Voted for Muslim added player to receive sportsmanship award (voted_muslim_extra) o 0 = voted for added Muslim player o 1 = voted for added Christian player o NA = did not vote • Registered for a mixed team next season (own_group_preference) o 0 = prefer being on a team with one’s own community o 1 = “would not mind” or “prefer” being on a mixed team next season • National unity index (dv_secular_t1)* o Continuous, composed of items described in Table 1 • Muslim blame index (dv_blame_t1)* o Continuous, composed of items described in Table 1 • Muslim neighbor index (dv_neigh_t1)* o Continuous, composed of items described in Table 1 1 Asterisk (*) denotes that this measure was also collected at baseline, with the same variable name but with a t0 (rather than t1) suffix. 1"
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Covariates: • Highest level of education achieved (edu) o 2 = Some primary schooling or less o 3 = Some secondary schooling o 4 = High school diploma o 5 = Vocational training o 6 = University degree or higher • Church attendance (church) o 1 = Practically never o 2 = Only on special occasions o 3 = Once a year o 4 = Once a month o 5 = Once a week o 6 = More than once a week • Household income per month, in USD (income) o 0 = 0 – 500 o 1 = 500 – 1000 o 2 = 1000 – 1500 o 3 = 1500 – 2000 o 4 = More than 2000 • Economic status (status1) o 0 = Unemployed o 1 = Student o 2 = Employed • Marital status (marital) o 0 = unmarried o 1 = married • Experienced at least one of the following ISIS abuses: family members disappearing, arrest, sexual abuse, physical abuse, expropriation of land or property, jizya tax, torture (isis_abuse) o 0 = did not experience o 1 = experienced • Participant type (player_type) o “Original” = core team member o “Extra” = added team member as part of the intervention o “Coach” = coach • Randomization block, based on baseline item on empathy toward Sunni Arabs (block) o Factor • Age (birth.year) o Continuous 2"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "Exploratory Outcomes: • Feel comfortable going to ethnically mixed neighborhoods (areas_t1_new)* o 0 = no o 1 = yes • Have a few or many Sunni Arab friends (friends_t1_new)* o 0 = no o 1 = yes • Feel proud or very proud to be Iraqi (proud_iraqi_t1_new)* o 0 = no o 1 = yes • Believe that “dividing Iraqi people into Sunnis, Shi’is, and Kurds is artificial and contrary to the reality of the Iraqi society” (secular_t1_new)* o 0 = no o 1 = yes 1. Believe that “Iraq would be a better society if people treat one another as Iraqis, rather than Christians, Shi’is, Sunnis, or Kurds” (secular1_t1_new)* o 0 = no o 1 = yes • Would consider selling land to non-Christians (land_t1_new)* o 0 = no o 1 = yes • Have some or a lot in common with Sunni Arabs (empathy_sunni_t1)* o 0 = no o 1 = yes • Have some or a lot in common with Shabak (empathy_shabak_t1) o 0 = no o 1 = yes • Believe that life in Iraq is unpredictable and dangerous these days (danger_t1_new)* o 0 = yes o 1 = no • Agree with the folk saying that “even if a stranger [understood to mean Muslim] is a piece of gold, he will burn a hole in our pocket” (gold_t1)* o 0 = yes o 1 = no • Selected Shi’ite Shabak as a group one would feel comfortable having as a neighbour (nbr_shiite_shabak_t1)* 3"
+    },
+    {
+      "page_number": 4,
+      "text_preview": "o 0 = no o 1 = yes • Selected Sunni Arab as a group one would feel comfortable having as a neighbour (nbr_sunni_arab_t1)* o 0 = no o 1 = yes • Selected Sunni Arabs as a group responsible for Christian suffering (suff_sa_t1)* o 0 = yes o 1 = no • Selected Shi’ite Shabak as a group responsible for Christian suffering (suff_sh_t1)* o 0 = yes o 1 = no • Selected “Mohammed from Baghdad” or “Ahmed from Erbil” as a fictional profile whom one would trust to receive cash transfer on one’s behalf (cash_muslim_t1)* o 0 = no o 1 = yes • Brought a female guest to the social event (guests_total) o 0 = no o 1 = yes Heterogeneous treatment effects: • By team success: Team reached the final (success) o 0 = no o 1 = yes • By baseline contact: Had a few or many Sunni Arab friends (friends_t0_new) o 0 = no o 1 = yes • By baseline empathy: Have some or a lot in common with Sunni Arabs (empathy_sunni_t0) o 0 = no o 1 = yes 4"
+    }
+  ],
   "parent_corpus_database_id": "raw_corpus:political_science_unlock",
-  "sample_kind": "metadata_only",
-  "sample_note": "no sampler for file_type=pdf",
-  "sampled_at": "2026-05-01T20:34:44",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T13:08:34",
+  "sampled_page_count": 4,
   "sha256": "81d89a980a7a86339aa34d82bd21c7f5b280bb5a57ca4c602e32bab260ae5005"
 }
