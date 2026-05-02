@@ -22,6 +22,8 @@ __pycache__/
 .local/
 
 # Local/raw data
+# Mirrored source bytes stay local. Track compact ledgers, manifests, and
+# extracted structured data outside these raw mirror roots.
 data/raw/cochrane_packages/*
 !data/raw/cochrane_packages/README.md
 data/raw/osf/*
@@ -29,11 +31,17 @@ data/raw/osf/*
 data/raw/bear/*
 !data/raw/bear/README.md
 data/raw/corpus_candidates/*
+!data/raw/corpus_candidates/README.md
 data/raw/processed_user_uploads/*
+!data/raw/processed_user_uploads/README.md
 data/raw/publication_bias_direct/*
+!data/raw/publication_bias_direct/README.md
 data/raw/published_papers/*
+!data/raw/published_papers/README.md
 data/raw/replication_projects/*
+!data/raw/replication_projects/README.md
 data/raw/source_artifacts/*
+!data/raw/source_artifacts/README.md
 data/raw/147561-V3.zip
 data/raw/YING-DISSERTATION-2023.pdf
 data/raw/replication_archive.zip
