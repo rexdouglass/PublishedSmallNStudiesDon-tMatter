@@ -169,6 +169,14 @@ source-artifact-parser-queue: check-venv
 figure1-corpus-results-extract: check-venv
 	$(QUARTO_PYTHON) scripts/extract_corpus_results_from_artifacts.py --parser-queue steps/source_inventory/figure1/parser_queue/source-artifact-parser-candidate-queue.tsv --status steps/source_inventory/figure1/mirror_sample/source-artifact-mirror-sample-status.tsv --replace
 
+.PHONY: figure1-rehydration-manifest figure1-rehydrate-source-artifacts
+
+figure1-rehydration-manifest: check-venv
+	$(QUARTO_PYTHON) scripts/build_figure1_rehydration_manifest.py --replace
+
+figure1-rehydrate-source-artifacts: check-venv
+	$(QUARTO_PYTHON) scripts/rehydrate_figure1_source_artifacts.py --manifest steps/source_inventory/figure1/rehydration/figure1-rehydration-manifest.tsv
+
 cluster-review-worklists: check-venv
 	$(QUARTO_PYTHON) scripts/build_cluster_review_worklists.py --replace
 
