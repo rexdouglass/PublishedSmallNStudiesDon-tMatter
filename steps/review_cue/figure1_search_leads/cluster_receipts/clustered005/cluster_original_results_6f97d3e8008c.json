@@ -1,0 +1,36 @@
+{
+  "batch_id": "clustered005",
+  "cluster_id": "cluster_original_results_6f97d3e8008c",
+  "confidence": "high",
+  "created_at": "2026-05-02T02:32:42+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered005.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_83d5a32ea989",
+      "notes": "_codebook.md is field documentation for decision_market result/planning tables.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_2bfefeee2bf7",
+      "notes": "original_planned_samples.csv is a reusable planning/sample table owned by decision_market.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_2b84fa6f9225",
+      "notes": "original_results.csv is the main candidate result table for the decision_market parent.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Route original_results.csv and original_planned_samples.csv to result-table review/extraction, using _codebook.md for field interpretation; keep all three artifacts under raw_replication_project:decision_market.",
+  "parent_corpus_database_id_or_key": "raw_replication_project:decision_market",
+  "preferred_source_family_name": "Decision Markets / Online Experiments Selected by Decision Market",
+  "reason": "The cluster consists of table/codebook artifacts for the decision-market replication project, not a new source family. original_results.csv and original_planned_samples.csv are reusable table artifacts owned by the decision_market parent.",
+  "sources_checked": [
+    "cluster compact nodes for raw_replication_project:decision_market",
+    "Nature Human Behaviour article DOI 10.1038/s41562-024-02062-9",
+    "OSF project sk82q referenced by the Nature article",
+    "Center for Open Science summary of Decision Markets Predict Replicability of Online Experiments"
+  ]
+}

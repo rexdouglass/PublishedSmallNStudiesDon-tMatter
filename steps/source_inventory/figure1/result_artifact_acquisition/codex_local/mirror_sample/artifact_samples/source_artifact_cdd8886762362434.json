@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_cdd8886762362434",
+  "byte_size": 389,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "nieuwland_2018_delong__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/nieuwland_2018_delong__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_nieuwland_2018_delong",
+  "preview_rows": [
+    {
+      "default_action": "auto_integrate",
+      "downloaded_file_count": 0,
+      "expected_rows": 9,
+      "file_list_csv": null,
+      "landing_url": "https://elifesciences.org/articles/33468",
+      "lead_id": "nieuwland_2018_delong",
+      "local_raw_file": null,
+      "manifest_file": null,
+      "notes": "Nine lab language comprehension replication",
+      "priority": 26,
+      "project": "Nieuwland 2018 DeLong replication",
+      "promotion_blocker": "effect_conversion_policy_missing",
+      "raw_url": null,
+      "source_family": "linguistics"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:54",
+  "sha256": "cb82ae0e8ec5eea38a82144a51e3129ddafb564b02da5614f7856a176603e7a9"
+}

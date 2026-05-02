@@ -1,0 +1,54 @@
+{
+  "artifact_id": "source_artifact_c4317fe8f0b1754c",
+  "byte_size": 840,
+  "file_name": "blocks_forqual.Rdata",
+  "file_type": "rdata",
+  "local_path": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_wscxp/blocks_forqual.Rdata",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "community_ID",
+        "geo_unit_ID",
+        "block_ID"
+      ],
+      "name": "RA_block",
+      "preview_rows": [
+        {
+          "block_ID": "CATUNDA-0",
+          "community_ID": "CATUNDA6",
+          "geo_unit_ID": "CATUNDA"
+        },
+        {
+          "block_ID": "CATUNDA-0",
+          "community_ID": "CATUNDA12",
+          "geo_unit_ID": "CATUNDA"
+        },
+        {
+          "block_ID": "CATUNDA-0",
+          "community_ID": "CATUNDA7",
+          "geo_unit_ID": "CATUNDA"
+        },
+        {
+          "block_ID": "CATUNDA-1",
+          "community_ID": "CATUNDA2",
+          "geo_unit_ID": "CATUNDA"
+        },
+        {
+          "block_ID": "CATUNDA-1",
+          "community_ID": "CATUNDA21",
+          "geo_unit_ID": "CATUNDA"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        120,
+        3
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_metaketa_iii_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:49",
+  "sha256": "5ba4521b2626b069f8a2427b56db1e26cb0364ca6543b4b674c1684f69210884"
+}

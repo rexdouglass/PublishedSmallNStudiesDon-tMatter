@@ -1,0 +1,3458 @@
+PROVENANCE_DATABASE_TABLES_AND_SCHEMAS:
+  status: generated_from_scripts_write_provenance_codebook_py
+  purpose: Root-level, obvious schema index for the provenance database. It mirrors the formal codebook
+    TSVs so humans and LLMs can find the tables and fields without digging through data/derived.
+  pipeline_shape:
+  - search_lead
+  - source / source_access / source_file
+  - source_source_mapping
+  - source_result
+  - canonical_result
+  - plot_membership under plot_universe and plot_criterion
+  root_level_files:
+    tables_tsv: PROVENANCE_DATABASE_TABLES.tsv
+    fields_tsv: PROVENANCE_DATABASE_FIELDS.tsv
+    schemas_yml: PROVENANCE_DATABASE_TABLES_AND_SCHEMAS.yml
+    human_readable_md: PROVENANCE_DATABASE_TABLES_AND_SCHEMAS.md
+  derived_machine_files:
+    tables_tsv: data/derived/effect_inflation_dataset/provenance_codebook.tsv
+    fields_tsv: data/derived/effect_inflation_dataset/provenance_data_dictionary.tsv
+    vocabulary_tsv: data/derived/effect_inflation_dataset/provenance_vocab_dictionary.tsv
+    empty_templates_dir: data/derived/effect_inflation_dataset/schema_templates
+  tables:
+  - table_name: source.tsv
+    grain: One citeable or computational source object.
+    primary_key: source_id
+    required_for_promotion: Required for every promoted source-result row.
+    description: Papers, registry records, corpora, databases, repositories, PDFs, reports, raw files,
+      and derived source tables.
+    columns:
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique source ID.
+      coding_rules: Prefix by source type when useful; do not recycle IDs.
+      example: src_ctgov_kg
+    - name: source_type
+      data_type: category
+      required_level: required
+      allowed_values: paper | registry_record | corpus | database | repository_or_package | pdf | report
+        | website | raw_data_file | code_file | local_derived_table | other
+      definition: Kind of source object.
+      coding_rules: Use the narrowest true object type.
+      example: database
+    - name: title
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Human-readable title of the source.
+      coding_rules: Use source title, registry title, repository title, or file title.
+      example: ''
+    - name: citation_key
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: BibTeX key for this source.
+      coding_rules: Blank only when no real bibliographic source exists. Never use generated dot keys
+        as represented-source citations.
+      example: ''
+    - name: citation_rendered
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Rendered citation text copied from the bibliography process.
+      coding_rules: Keep even when a BibTeX split later changes.
+      example: ''
+    - name: bibtex_file
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Repo-relative path to the BibTeX file containing citation_key.
+      coding_rules: Usually docs/references.bib or plot_dot_references.bib.
+      example: ''
+    - name: doi
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Digital Object Identifier if available.
+      coding_rules: Normalize without https://doi.org/ when possible.
+      example: ''
+    - name: pmid
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: PubMed ID if available.
+      coding_rules: Use numeric PMID only.
+      example: ''
+    - name: registry_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Registry identifier such as NCT, AEARCTR, EGAP, RIDIE, OSF.
+      coding_rules: Required for registry records.
+      example: ''
+    - name: url
+      data_type: url
+      required_level: recommended
+      allowed_values: ''
+      definition: Stable landing URL.
+      coding_rules: Prefer DOI, registry, repository, or official landing page.
+      example: ''
+    - name: publication_year
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Publication or release year.
+      coding_rules: Leave blank if unknown.
+      example: ''
+    - name: source_status
+      data_type: category
+      required_level: required
+      allowed_values: primary | sidecar | support_only | blocked | deprecated
+      definition: Role of this source in the dataset.
+      coding_rules: Use primary for sources that can support extraction rows.
+      example: primary
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Concise source-level notes.
+      coding_rules: Do not store result extraction details here; use source_result/extraction_event.
+      example: ''
+  - table_name: source_access.tsv
+    grain: One route to the bytes for one source.
+    primary_key: access_id
+    required_for_promotion: Required unless the source is intentionally bibliographic-only and not used
+      for extraction.
+    description: Direct URL/API/local path/checksum/access status records.
+    columns:
+    - name: access_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique access ID.
+      coding_rules: One source can have multiple access rows.
+      example: ''
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: Must match source.source_id.
+      example: ''
+    - name: access_role
+      data_type: category
+      required_level: required
+      allowed_values: landing_page | direct_download | api | mirrored_file | file_member | source_file_or_catalog
+        | user_upload | derived_table
+      definition: Role of this access route.
+      coding_rules: Use file_member for files inside archives.
+      example: direct_download
+    - name: remote_url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Direct web URL when available.
+      coding_rules: Prefer direct file/API URL over landing page when it can reproduce bytes.
+      example: ''
+    - name: api_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: API URL used to fetch metadata or files.
+      coding_rules: Use when data came from API rather than browser.
+      example: ''
+    - name: final_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: Final URL after redirects.
+      coding_rules: Keep distinct from remote_url so DOI/publisher redirect chains remain auditable.
+      example: ''
+    - name: http_status
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: HTTP status code or API status from retrieval attempt.
+      coding_rules: Use numeric HTTP status when available; leave blank for local-only files.
+      example: ''
+    - name: redirect_chain
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Redirect chain observed during acquisition.
+      coding_rules: Use pipe-delimited URLs or compact JSON; keep TSV-safe.
+      example: ''
+    - name: host
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Host/domain of final retrieval route.
+      coding_rules: Useful for per-host retry, policy, and blocker audits.
+      example: ''
+    - name: local_path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Repo-relative local mirror path.
+      coding_rules: Required when file is mirrored locally.
+      example: ''
+    - name: file_member_path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Path of a file inside a zip/tar/repository.
+      coding_rules: Use for archive members or package internal files.
+      example: ''
+    - name: content_type
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: File or response type.
+      coding_rules: 'Examples: csv, tsv, pdf, zip, html, json, dta, rds.'
+      example: ''
+    - name: file_sha256
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: SHA-256 checksum of local file.
+      coding_rules: Required for mirrored files unless impractical.
+      example: ''
+    - name: file_size_bytes
+      data_type: integer
+      required_level: conditional
+      allowed_values: ''
+      definition: Size of local file.
+      coding_rules: Required for mirrored files unless impractical.
+      example: ''
+    - name: retrieved_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: ISO date/time of retrieval.
+      coding_rules: Use local current date if exact timestamp unavailable.
+      example: ''
+    - name: retrieved_by
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Who or what retrieved the file.
+      coding_rules: Use codex, user, script name, or unknown.
+      example: ''
+    - name: retrieval_method
+      data_type: category
+      required_level: required
+      allowed_values: automated_download | api_download | osf_clone | dataverse_api | github_clone | user_upload
+        | browser_manual_download | existing_local_file | code_execution_output | not_retrieved
+      definition: How bytes were obtained.
+      coding_rules: Record manual downloads honestly.
+      example: automated_download
+    - name: access_status
+      data_type: category
+      required_level: required
+      allowed_values: local_file_found | downloaded | remote_url_not_cached | local_path_missing | login_required
+        | access_denied | missing_locator | unresolved_locator | blocked | not_applicable
+      definition: Whether the access path is usable.
+      coding_rules: Blocked/gated sources still get rows.
+      example: local_file_found
+    - name: access_strategy
+      data_type: category
+      required_level: recommended
+      allowed_values: registry_clinicaltrials | pubmed_bridge | pmc_fulltext | crossref_metadata | datacite_metadata
+        | unpaywall_metadata | openalex_metadata | semantic_scholar_metadata | europepmc_metadata | oa_candidate_url
+        | preprint_repository_candidate | direct_journal_or_doi_landing | stable_url | other
+      definition: Resolver or acquisition route tried for this access row.
+      coding_rules: Keep direct journal, OA candidate, preprint/repository, registry, and metadata routes
+        separate.
+      example: preprint_repository_candidate
+    - name: source_byte_class
+      data_type: category
+      required_level: recommended
+      allowed_values: full_article_pdf | full_article_xml | full_article_html | author_manuscript_fulltext
+        | supplement_file | dataset_file | code_file | registry_record_full | pmc_fulltext_xml | pubmed_record_or_abstract
+        | metadata_record | publisher_landing_or_abstract | paywall_or_login_page | captcha_page | access_denied_page
+        | blocked_no_source_object | source_object_unclassified | not_retrieved
+      definition: Class of bytes or artifact obtained.
+      coding_rules: Do not count metadata, abstract pages, paywall pages, CAPTCHA pages, or access-denied
+        pages as level 5 unless the plotted value is present on that page.
+      example: publisher_landing_or_abstract
+    - name: level5_eligible
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this access object can qualify as strict level 5 after identity review.
+      coding_rules: True only for value-bearing source objects such as full article, registry record,
+        supplement, data/code, or repository manuscript.
+      example: 'false'
+    - name: license_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: URL or source of license/reuse information.
+      coding_rules: Use license links from Crossref, repository metadata, PMC, publisher pages, or data
+        package metadata.
+      example: ''
+    - name: license_category
+      data_type: category
+      required_level: recommended
+      allowed_values: open | restricted | subscription | unknown | not_applicable
+      definition: Coarse access/reuse category.
+      coding_rules: Use open only when mirroring/reuse appears allowed; otherwise use restricted, subscription,
+        unknown, or not_applicable.
+      example: unknown
+    - name: storage_allowed
+      data_type: boolean_or_unknown
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether local storage/mirroring is allowed for project use.
+      coding_rules: Use true/false/unknown; do not infer true from successful download alone.
+      example: unknown
+    - name: source_version
+      data_type: category
+      required_level: recommended
+      allowed_values: version_of_record | accepted_manuscript | author_manuscript | preprint | supplement
+        | registry_record | dataset | code | metadata | unknown
+      definition: Version/class of the retrieved object.
+      coding_rules: Distinguish VOR, accepted manuscript, preprint, registry record, supplement, dataset,
+        code, and metadata.
+      example: version_of_record
+    - name: retrieval_policy_notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Notes on rate limits, TDM policy, license limits, or manual access constraints.
+      coding_rules: Keep policy facts here; detailed attempts belong in extraction_event.
+      example: ''
+    - name: abstract_or_detail_text
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Short abstract, title, description, registry summary, or landing-page detail extracted
+        during acquisition.
+      coding_rules: Grounding evidence only; do not treat as original-number verification unless it contains
+        the exact plotted value.
+      example: Publisher abstract captured from paywalled DOI page.
+    - name: abstract_or_detail_source_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: URL from which abstract_or_detail_text was extracted.
+      coding_rules: Use the final URL after redirects when available.
+      example: ''
+    - name: paywall_or_login_seen
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this route returned a paywall or login artifact.
+      coding_rules: Use with access_barrier and extraction_problem for manual follow-up.
+      example: 'true'
+    - name: captcha_or_bot_block_seen
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this route triggered a CAPTCHA or bot-check artifact.
+      coding_rules: Stop automated retries for that host/object and record as blocked.
+      example: 'false'
+    - name: preprint_or_repository_candidate
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this route was a preprint, author manuscript, repository, or institutional archive
+        candidate.
+      coding_rules: Usually discovered through OpenAlex, Semantic Scholar, Unpaywall, Crossref, Europe
+        PMC, or repository metadata.
+      example: 'true'
+    - name: access_barrier
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Barrier if not locally accessible.
+      coding_rules: 'Examples: login, license, JS-only, 403, missing file.'
+      example: ''
+    - name: access_notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Extra access details.
+      coding_rules: Keep concise; use extraction_event for procedural details.
+      example: ''
+  - table_name: source_access_attempt.tsv
+    grain: One resolver/download/API attempt for one source.
+    primary_key: attempt_id
+    required_for_promotion: Recommended for all newly resolved sources; required when a source required
+      multiple routes, paywall/CAPTCHA handling, or OA/preprint discovery.
+    description: Append-only acquisition attempts for DOI landing pages, OpenAlex/Unpaywall/Semantic Scholar
+      candidates, PubMed/PMC bridges, registry APIs, repository files, paywalls, abstracts, and failures.
+    columns:
+    - name: attempt_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique attempt ID.
+      coding_rules: One row per resolver/API/download attempt or cache hit.
+      example: ''
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: The source being resolved or acquired.
+      example: ''
+    - name: access_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_access.tsv when the attempt produced or checked a source access
+        row.
+      coding_rules: Leave blank only for rejected candidates not represented in source_access.
+      example: ''
+    - name: attempt_group_id
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: ID grouping attempts for one resolver pass/source target.
+      coding_rules: Use to connect Crossref/OpenAlex/Unpaywall/etc. fanout for one source.
+      example: ''
+    - name: attempt_order
+      data_type: integer
+      required_level: recommended
+      allowed_values: ''
+      definition: Order of this attempt within the source resolver chain.
+      coding_rules: Start at 1 for each source when possible.
+      example: ''
+    - name: resolver_name
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Resolver/plugin name.
+      coding_rules: 'Examples: crossref_metadata, openalex_work, unpaywall_doi, pmc_oa.'
+      example: ''
+    - name: resolver_version
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Resolver/plugin version or code commit.
+      coding_rules: Keep stable enough to reproduce route behavior.
+      example: ''
+    - name: resolver_strategy
+      data_type: category
+      required_level: required
+      allowed_values: registry_clinicaltrials | pubmed_bridge | pmc_fulltext | crossref_metadata | datacite_metadata
+        | unpaywall_metadata | openalex_metadata | semantic_scholar_metadata | europepmc_metadata | oa_candidate_url
+        | preprint_repository_candidate | direct_journal_or_doi_landing | stable_url | other
+      definition: Resolver/acquisition strategy tried.
+      coding_rules: Use the same controlled vocabulary as source_access.access_strategy.
+      example: openalex_metadata
+    - name: candidate_rank
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Rank of candidate within resolver output.
+      coding_rules: Use 1 for top candidate after ranking.
+      example: ''
+    - name: candidate_rank_reason
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Why this candidate was ranked here.
+      coding_rules: Use match scores, route priority, and license/source-object class.
+      example: ''
+    - name: candidate_url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Candidate URL requested or considered.
+      coding_rules: Use DOI/API/OA/preprint/repository URL as attempted.
+      example: ''
+    - name: candidate_url_source
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Where the candidate URL came from.
+      coding_rules: 'Examples: Crossref link, OpenAlex best_oa_location, Unpaywall oa_location, manual.'
+      example: ''
+    - name: final_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: Final URL after redirects.
+      coding_rules: Keep paywall/landing-page final URL for blockers.
+      example: ''
+    - name: host
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Host/domain reached.
+      coding_rules: Useful for per-host policies and blockers.
+      example: ''
+    - name: method
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: HTTP/API/file method.
+      coding_rules: 'Examples: GET, API JSON, local_file_check.'
+      example: ''
+    - name: http_status
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: HTTP/API status code.
+      coding_rules: Leave blank for local-only checks.
+      example: ''
+    - name: redirect_chain
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Redirect chain observed for this attempt.
+      coding_rules: Use compact JSON or pipe-delimited URLs.
+      example: ''
+    - name: cache_key
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Cache key for this request or candidate.
+      coding_rules: Use deterministic key based on method, canonical URL, and resolver version.
+      example: ''
+    - name: cache_hit_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this attempt used cached data.
+      coding_rules: Use true/false.
+      example: ''
+    - name: retry_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Number of retries for this attempt.
+      coding_rules: Use 0 for first successful/terminal attempt.
+      example: ''
+    - name: retry_after_seconds
+      data_type: number
+      required_level: optional
+      allowed_values: ''
+      definition: Retry-After delay if returned by host.
+      coding_rules: Store header value when available.
+      example: ''
+    - name: content_type_header
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Raw content-type header if known.
+      coding_rules: Use exact header when available.
+      example: ''
+    - name: content_type_sniffed
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Content type inferred from bytes, file extension, or classifier.
+      coding_rules: 'Examples: pdf, html, json, csv.'
+      example: ''
+    - name: byte_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Number of bytes obtained.
+      coding_rules: Use local file size where known.
+      example: ''
+    - name: sha256
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: SHA-256 checksum for bytes obtained.
+      coding_rules: Required when mirrored bytes are kept and practical.
+      example: ''
+    - name: local_path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Repo-relative local mirror path produced or checked by this attempt.
+      coding_rules: Leave blank for metadata-only unresolved candidates.
+      example: ''
+    - name: source_byte_class
+      data_type: category
+      required_level: recommended
+      allowed_values: full_article_pdf | full_article_xml | full_article_html | author_manuscript_fulltext
+        | supplement_file | dataset_file | code_file | registry_record_full | pmc_fulltext_xml | pubmed_record_or_abstract
+        | metadata_record | publisher_landing_or_abstract | paywall_or_login_page | captcha_page | access_denied_page
+        | blocked_no_source_object | source_object_unclassified | not_retrieved
+      definition: Class of bytes/artifact obtained by this attempt.
+      coding_rules: Use paywall/abstract/metadata classes honestly.
+      example: metadata_record
+    - name: access_status
+      data_type: category
+      required_level: required
+      allowed_values: local_file_found | downloaded | remote_url_not_cached | local_path_missing | login_required
+        | access_denied | missing_locator | unresolved_locator | blocked | not_applicable
+      definition: Usability status of this attempt.
+      coding_rules: Use blocked/access_denied/login_required rather than overwriting with success.
+      example: downloaded
+    - name: access_barrier
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Barrier hit by this attempt.
+      coding_rules: 'Examples: paywall, login, captcha, 403, no_oa_copy, missing_api_key.'
+      example: ''
+    - name: abstract_or_detail_text
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Abstract/detail/title/description text captured from this route.
+      coding_rules: Grounding text only unless it contains the exact coded value.
+      example: ''
+    - name: paywall_or_login_seen
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this attempt hit a paywall/login artifact.
+      coding_rules: Use true for publisher paywalls and sign-in pages.
+      example: 'false'
+    - name: captcha_or_bot_block_seen
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this attempt hit a CAPTCHA/bot-check artifact.
+      coding_rules: Stop automated retries for that route.
+      example: 'false'
+    - name: preprint_or_repository_candidate
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether the attempted URL is a preprint/repository/manuscript candidate.
+      coding_rules: Typically discovered via OpenAlex, Unpaywall, Semantic Scholar, Europe PMC, or manual
+        search.
+      example: 'true'
+    - name: license_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: License or reuse-policy URL discovered for this attempt.
+      coding_rules: Use repository/publisher/API license when available.
+      example: ''
+    - name: license_category
+      data_type: category
+      required_level: recommended
+      allowed_values: open | restricted | subscription | unknown | not_applicable
+      definition: Coarse license/access category for this attempt.
+      coding_rules: Use unknown when not assessed.
+      example: unknown
+    - name: storage_allowed
+      data_type: boolean_or_unknown
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this attempt's bytes may be stored locally.
+      coding_rules: Use unknown unless policy is clear.
+      example: ''
+    - name: robots_status
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: robots.txt or crawl-policy status for this candidate.
+      coding_rules: 'Examples: allowed, disallowed, unknown, not_checked.'
+      example: ''
+    - name: tdm_policy_status
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: TDM policy status observed for host/route.
+      coding_rules: 'Examples: allowed, restricted, subscription_required, unknown.'
+      example: ''
+    - name: title_match_score
+      data_type: number
+      required_level: optional
+      allowed_values: ''
+      definition: Similarity score between candidate title and target title.
+      coding_rules: Use 0-1 when available.
+      example: ''
+    - name: doi_match_score
+      data_type: number
+      required_level: optional
+      allowed_values: ''
+      definition: DOI/identifier match score.
+      coding_rules: Use 1 for exact DOI match, 0 for mismatch, blank if not checked.
+      example: ''
+    - name: author_year_match_score
+      data_type: number
+      required_level: optional
+      allowed_values: ''
+      definition: Author/year match score.
+      coding_rules: Use 0-1 when available.
+      example: ''
+    - name: identity_decision
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Candidate identity decision.
+      coding_rules: 'Examples: accepted_exact_doi, accepted_title_year, rejected_mismatch, needs_review.'
+      example: ''
+    - name: identity_decision_reason
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Reason for candidate identity decision.
+      coding_rules: Record mismatch or confidence basis.
+      example: ''
+    - name: retrieval_method
+      data_type: category
+      required_level: required
+      allowed_values: automated_download | api_download | osf_clone | dataverse_api | github_clone | user_upload
+        | browser_manual_download | existing_local_file | code_execution_output | not_retrieved
+      definition: How this attempt was made.
+      coding_rules: Record manual and API routes distinctly.
+      example: api_download
+    - name: retrieved_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: ISO date/time attempted.
+      coding_rules: Use batch timestamp when exact time unavailable.
+      example: ''
+    - name: retrieved_by
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Tool/person that performed attempt.
+      coding_rules: 'Examples: codex, user, source resolver script.'
+      example: ''
+    - name: decision
+      data_type: category
+      required_level: required
+      allowed_values: source_object_mirrored | metadata_only | abstract_or_landing_only | paywall_or_login
+        | captcha_or_bot_block | access_denied | blocked | not_retrieved | manual_review | candidate_rejected
+      definition: Outcome decision for this attempt.
+      coding_rules: Do not equate metadata/abstract bytes with value-bearing source objects.
+      example: metadata_only
+    - name: decision_reason
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Why this decision was assigned.
+      coding_rules: Explain access blockers, mismatch, or successful mirror.
+      example: ''
+    - name: stop_reason
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Terminal stop reason for this route.
+      coding_rules: 'Examples: success, paywall, captcha, no_oa_copy, mismatch, rate_limited.'
+      example: ''
+    - name: next_action
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Next action when unresolved.
+      coding_rules: 'Examples: try_pmc, try_unpaywall, manual_library_access, parse_pdf, no_action.'
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Attempt-level notes.
+      coding_rules: Keep route-specific comments here; source-level conclusions go in source_access/source_result.
+      example: ''
+  - table_name: source_file.tsv
+    grain: One mirrored byte artifact or extracted file/member for one source.
+    primary_key: source_file_id
+    required_for_promotion: Required when bytes are mirrored or used as source evidence.
+    description: Content-addressed inventory of PDFs, XML, HTML, registry JSON, supplements, datasets,
+      code, screenshots, archive files, and extracted archive members.
+    columns:
+    - name: source_file_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique file/artifact ID.
+      coding_rules: Prefer content-addressed IDs when practical.
+      example: ''
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: The source this artifact belongs to.
+      example: ''
+    - name: access_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_access.tsv.
+      coding_rules: Required when artifact came through a known access route.
+      example: ''
+    - name: attempt_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_access_attempt.tsv.
+      coding_rules: Required when artifact was produced by an acquisition attempt.
+      example: ''
+    - name: source_version_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_version.tsv.
+      coding_rules: Use when artifact version is known or inferred.
+      example: ''
+    - name: file_role
+      data_type: category
+      required_level: required
+      allowed_values: full_article | author_manuscript | preprint | registry_record | supplement | dataset
+        | code | metadata | screenshot | abstract_page | landing_page | derived_table | archive | archive_member
+        | other
+      definition: Role of artifact.
+      coding_rules: Use dataset/code/supplement/full_article/etc.; do not call internal derived tables
+        original source evidence.
+      example: dataset
+    - name: file_origin
+      data_type: category
+      required_level: required
+      allowed_values: automated_download | api_response | repository_file | publisher_file | existing_local_file
+        | user_upload | manual_browser | code_execution_output | internal_derived | archive_member | unknown
+      definition: How artifact originated.
+      coding_rules: Distinguish repository, publisher, API, user upload, existing local, and internal
+        derived artifacts.
+      example: existing_local_file
+    - name: source_byte_class
+      data_type: category
+      required_level: required
+      allowed_values: full_article_pdf | full_article_xml | full_article_html | author_manuscript_fulltext
+        | supplement_file | dataset_file | code_file | registry_record_full | pmc_fulltext_xml | pubmed_record_or_abstract
+        | metadata_record | publisher_landing_or_abstract | paywall_or_login_page | captcha_page | access_denied_page
+        | blocked_no_source_object | source_object_unclassified | not_retrieved
+      definition: Class of bytes/artifact.
+      coding_rules: Same vocabulary as access attempts.
+      example: dataset_file
+    - name: url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Original URL for artifact.
+      coding_rules: Use direct file/API URL when available.
+      example: ''
+    - name: final_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: Final URL after redirects.
+      coding_rules: Keep distinct from original URL.
+      example: ''
+    - name: storage_uri
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Project storage URI/path.
+      coding_rules: May equal local_path for local file storage.
+      example: ''
+    - name: local_path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Repo-relative local path.
+      coding_rules: Required for mirrored bytes stored in repo/workspace.
+      example: ''
+    - name: filename_original
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Original filename if known.
+      coding_rules: Use download filename or archive member name.
+      example: ''
+    - name: filename_normalized
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Normalized project filename.
+      coding_rules: Useful after de-duplication or extraction.
+      example: ''
+    - name: media_type_reported
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Reported media/content type.
+      coding_rules: Header or metadata value.
+      example: ''
+    - name: media_type_sniffed
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Inferred file/media type.
+      coding_rules: Use extension/magic-byte classifier.
+      example: ''
+    - name: byte_size
+      data_type: integer
+      required_level: conditional
+      allowed_values: ''
+      definition: Artifact size in bytes.
+      coding_rules: Required when local file exists and size is practical to compute.
+      example: ''
+    - name: sha256
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Computed SHA-256 checksum.
+      coding_rules: Required for mirrored bytes unless impractical.
+      example: ''
+    - name: provider_checksum_type
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Provider checksum type.
+      coding_rules: 'Examples: md5, sha1, sha256, etag.'
+      example: ''
+    - name: provider_checksum_value
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Provider checksum value.
+      coding_rules: Keep provider value even when not SHA-256.
+      example: ''
+    - name: content_fingerprint
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Secondary fingerprint for extracted text/content.
+      coding_rules: Useful for de-duplicating normalized text.
+      example: ''
+    - name: text_sha256
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: SHA-256 of extracted text.
+      coding_rules: Populate after text extraction.
+      example: ''
+    - name: archive_member_path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Path inside archive.
+      coding_rules: Use for zip/tar member files.
+      example: ''
+    - name: parent_file_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Parent archive/source_file ID.
+      coding_rules: Required for extracted archive members when parent is tracked.
+      example: ''
+    - name: page_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Page count for PDF/image artifacts.
+      coding_rules: Populate after parsing when possible.
+      example: ''
+    - name: word_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Extracted word count.
+      coding_rules: Populate after text extraction when possible.
+      example: ''
+    - name: extraction_ready_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether artifact is ready for text/data extraction.
+      coding_rules: Use false for paywall pages, blocked artifacts, or unsupported binaries.
+      example: 'true'
+    - name: level5_eligible
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether artifact can qualify as strict level 5.
+      coding_rules: Requires plausible value-bearing source object and lawful/local mirror.
+      example: 'false'
+    - name: created_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: When artifact row/file was created or observed.
+      coding_rules: Use retrieval time or batch timestamp.
+      example: ''
+    - name: fixity_checked_at
+      data_type: datetime
+      required_level: conditional
+      allowed_values: ''
+      definition: When checksum/fixity was checked.
+      coding_rules: Use retrieval time if checksum was computed then.
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Artifact notes.
+      coding_rules: Explain internal derived artifacts or unresolved versioning.
+      example: ''
+  - table_name: source_version.tsv
+    grain: One version assertion for one source.
+    primary_key: source_version_id
+    required_for_promotion: Recommended whenever a source may have VOR, preprint, registry, repository,
+      dataset, or code versions.
+    description: Version labels and relationships for VORs, accepted manuscripts, preprints, registry
+      records, dataset/code versions, and updates.
+    columns:
+    - name: source_version_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable version ID.
+      coding_rules: One version assertion per source/version.
+      example: ''
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: The versioned source.
+      example: ''
+    - name: version_label
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Human-readable version label.
+      coding_rules: 'Examples: version_of_record, preprint v2, registry snapshot 2026-04-30.'
+      example: ''
+    - name: version_number
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Source-native version number.
+      coding_rules: 'Examples: arXiv v2, Dataverse V3, Zenodo record version.'
+      example: ''
+    - name: version_date
+      data_type: datetime
+      required_level: optional
+      allowed_values: ''
+      definition: Version date.
+      coding_rules: Use source-native date where known.
+      example: ''
+    - name: version_source
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Where version information came from.
+      coding_rules: 'Examples: source_access, repository metadata, Crossref relation, manual.'
+      example: ''
+    - name: is_version_of_source_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source ID of another version of the same work.
+      coding_rules: Use for preprint/VOR/source relationships.
+      example: ''
+    - name: is_version_of_identifier
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: External identifier of related version/work.
+      coding_rules: Use DOI/arXiv/PMCID/etc. when source row not created yet.
+      example: ''
+    - name: is_version_of_record
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this version is the publisher version of record.
+      coding_rules: Use true/false/unknown if needed.
+      example: 'false'
+    - name: preprint_version_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this is a preprint version.
+      coding_rules: Use true/false.
+      example: ''
+    - name: accepted_manuscript_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this is an accepted manuscript.
+      coding_rules: Use true/false.
+      example: ''
+    - name: published_vor_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this is a published VOR.
+      coding_rules: Use true/false.
+      example: ''
+    - name: registry_version_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this is a registry/snapshot version.
+      coding_rules: Use true/false.
+      example: ''
+    - name: repository_version_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this is a repository dataset/package version.
+      coding_rules: Use true/false.
+      example: ''
+    - name: correction_or_update_type
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Correction/update/retraction relationship type.
+      coding_rules: 'Examples: correction, retraction, expression_of_concern, updated_registry.'
+      example: ''
+    - name: superseded_by_source_version_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Version that supersedes this version.
+      coding_rules: Use when known.
+      example: ''
+    - name: version_evidence_file_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source file supporting version assertion.
+      coding_rules: Foreign key to source_file.tsv when available.
+      example: ''
+    - name: version_evidence_text
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Text supporting version assertion.
+      coding_rules: Use repository/publisher/version statement.
+      example: ''
+  - table_name: source_access_right.tsv
+    grain: One access-rights or mirroring decision for one source/file.
+    primary_key: access_right_id
+    required_for_promotion: Required for mirrored source files and publisher/repository/manual access
+      routes.
+    description: License, terms, TDM, robots, storage, text-extraction, redistribution, institutional-access,
+      and review decisions.
+    columns:
+    - name: access_right_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable access-right decision ID.
+      coding_rules: One rights decision per source/file/scope.
+      example: ''
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: The source whose rights are assessed.
+      example: ''
+    - name: source_file_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_file.tsv.
+      coding_rules: Required when decision concerns mirrored bytes.
+      example: ''
+    - name: rights_scope
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Scope of rights decision.
+      coding_rules: 'Examples: metadata, source_file, local_mirror, text_extract, redistribute.'
+      example: ''
+    - name: license_name
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: License name.
+      coding_rules: Use source-native name or SPDX when available.
+      example: ''
+    - name: license_spdx
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: SPDX license identifier.
+      coding_rules: Leave blank if unknown.
+      example: ''
+    - name: license_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: License URL.
+      coding_rules: Use repository/publisher/API license evidence.
+      example: ''
+    - name: license_category
+      data_type: category
+      required_level: recommended
+      allowed_values: open | restricted | subscription | unknown | not_applicable
+      definition: Coarse license/access category.
+      coding_rules: Use same vocabulary as access rows.
+      example: unknown
+    - name: terms_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: Terms/TDM/policy URL.
+      coding_rules: Use host/publisher/repository policy URL when known.
+      example: ''
+    - name: tdm_policy_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: Text/data-mining policy URL.
+      coding_rules: Use if separate from license/terms.
+      example: ''
+    - name: robots_status
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: robots.txt/crawl status.
+      coding_rules: 'Examples: allowed, disallowed, unknown, not_checked.'
+      example: ''
+    - name: mirror_allowed_yn
+      data_type: boolean_or_unknown
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether local mirroring is allowed.
+      coding_rules: Use unknown until reviewed.
+      example: ''
+    - name: text_extract_allowed_yn
+      data_type: boolean_or_unknown
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether text extraction is allowed.
+      coding_rules: Use unknown until reviewed.
+      example: ''
+    - name: redistribution_allowed_yn
+      data_type: boolean_or_unknown
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether artifact can be redistributed.
+      coding_rules: Use false/internal-only for subscription/manual files.
+      example: ''
+    - name: share_scope
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Allowed sharing scope.
+      coding_rules: 'Examples: public, internal_only, metadata_only, snippets_only.'
+      example: ''
+    - name: institutional_license_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether access used institutional entitlement.
+      coding_rules: Use false if not used or unknown in pilot.
+      example: 'false'
+    - name: reviewed_by
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Reviewer/tool for rights decision.
+      coding_rules: 'Examples: codex, user, librarian.'
+      example: ''
+    - name: reviewed_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: Review timestamp/date.
+      coding_rules: Use batch timestamp for generated unknown decisions.
+      example: ''
+    - name: rights_decision
+      data_type: category
+      required_level: required
+      allowed_values: open_allowed | internal_only | restricted | subscription_required | not_applicable
+        | unknown | needs_review
+      definition: Rights/mirroring decision.
+      coding_rules: Use needs_review rather than assuming open from a successful download.
+      example: needs_review
+    - name: rights_decision_reason
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Reason for rights decision.
+      coding_rules: State license evidence, internal-only rule, or unknown status.
+      example: ''
+  - table_name: source_identifier.tsv
+    grain: One external identifier, resolver key, or stable URL for one source.
+    primary_key: source_id + identifier_type + identifier_value
+    required_for_promotion: Recommended for every source with more than one identifier or URL; required
+      when identifiers were resolved separately from source.tsv.
+    description: DOI, PMID, PMCID, NCT, AEA, EGAP, RIDIE, OSF, Dataverse, Zenodo, OpenAlex, Semantic Scholar,
+      repository, and URL identifiers.
+    columns:
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: Every identifier row must attach to one source.
+      example: ''
+    - name: identifier_type
+      data_type: category
+      required_level: required
+      allowed_values: doi | pmid | pmcid | nct | aea_trial | egap_registration | ridie | osf | dataverse_doi
+        | zenodo_doi | openicpsr | openalex | semantic_scholar | arxiv | ssrn | url | other
+      definition: Identifier system or URL type.
+      coding_rules: Use the narrowest applicable identifier type.
+      example: doi
+    - name: identifier_value
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Identifier value in source-native form.
+      coding_rules: Normalize consistently but preserve enough to resolve it.
+      example: ''
+    - name: identifier_url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Resolver URL for identifier.
+      coding_rules: Use DOI/registry/repository resolver URL where available.
+      example: ''
+    - name: identifier_source
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Where this identifier was observed or resolved.
+      coding_rules: 'Examples: source.tsv, Crossref, PubMed, OpenAlex, real_world_grounding_sample.'
+      example: ''
+    - name: is_primary
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether this is the preferred identifier for resolving the source.
+      coding_rules: Use true for DOI/NCT/registry URL selected as primary grounding route; otherwise false.
+      example: ''
+    - name: confidence
+      data_type: category
+      required_level: required
+      allowed_values: high | medium | low | blocked
+      definition: Confidence that the identifier belongs to this source.
+      coding_rules: High for exact metadata/registry values; medium/low for inferred matches.
+      example: high
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Identifier notes.
+      coding_rules: Explain ambiguous identifiers or nonstandard formats.
+      example: ''
+  - table_name: source_classification.tsv
+    grain: One classification assertion for one source.
+    primary_key: source_id + classification_source
+    required_for_promotion: Recommended for plot filtering, source-family displays, field counts, and
+      paper/data-paper tables.
+    description: Field, subfield, source family, study design, publication type, and venue classification
+      with provenance.
+    columns:
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: Classify the source, not a plot dot, unless the source is a dot-level internal row.
+      example: ''
+    - name: classification_type
+      data_type: category
+      required_level: required
+      allowed_values: field | subfield | source_family | study_design | publication_type | journal_or_venue
+        | other
+      definition: Kind of classification.
+      coding_rules: Use separate rows for field, subfield, source_family, study_design, publication_type,
+        and venue when needed.
+      example: field
+    - name: classification_value
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Classification value.
+      coding_rules: Use display-stable values such as Political science, Clinical medicine, SCORE/COS,
+        survey experiment.
+      example: ''
+    - name: classification_source
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Source/process that assigned the classification.
+      coding_rules: 'Examples: plot row field, source family catalog, manual coding, registry metadata.'
+      example: ''
+    - name: classification_confidence
+      data_type: category
+      required_level: required
+      allowed_values: high | medium | low | blocked
+      definition: Confidence in classification.
+      coding_rules: Use high for source-provided categories, medium for inferred catalog categories, low
+        for uncertain labels.
+      example: medium
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Classification notes.
+      coding_rules: Explain ambiguous or multi-field sources.
+      example: ''
+  - table_name: search_lead.tsv
+    grain: One discovered lead under one search track or plot universe.
+    primary_key: search_lead_id
+    required_for_promotion: Recommended before a new corpus, database, project, registry record, paper,
+      or replication-paper lead is promoted to source/source_result rows.
+    description: Top-of-pipeline candidates found during universe search, including corpus/database leads
+      and individual replication-paper leads.
+    columns:
+    - name: search_lead_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique search lead ID.
+      coding_rules: Use deterministic IDs within a search track; do not recycle IDs.
+      example: ''
+    - name: plot_universe_id
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Plot universe or future plot context that motivated this lead.
+      coding_rules: Use the YAML plot_universe ID when known; blank only for general catalog leads.
+      example: ''
+    - name: search_track_id
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Search track or plan row that produced this lead.
+      coding_rules: Use provenance_search_plan.search_track_id or a stable equivalent.
+      example: ''
+    - name: lead_type
+      data_type: category
+      required_level: required
+      allowed_values: corpus_or_database | registry_record | paper_or_article | individual_replication_paper
+        | replication_project | preregistration_or_pap | repository_package | candidate_result_table |
+        raw_data_or_code_package | manual_source_suggestion
+      definition: Kind of lead discovered.
+      coding_rules: Distinguish corpus/database leads from individual replication-paper leads before promotion.
+      example: corpus_or_database
+    - name: lead_title
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Human-readable lead title.
+      coding_rules: Use source/project/paper title or a concise descriptive handle.
+      example: ''
+    - name: lead_source_family
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Source-family label or project family.
+      coding_rules: 'Examples: FReD, SCORE, Many Labs, individual_replication_paper.'
+      example: ''
+    - name: lead_url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Landing URL, DOI URL, repository URL, registry URL, or project URL for the lead.
+      coding_rules: Prefer stable project/repository/article URLs over search result URLs.
+      example: ''
+    - name: lead_source_path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Repo-relative path where the lead was found or staged.
+      coding_rules: Use for local inventories, mirrored raw payloads, staged files, or manual PDFs.
+      example: ''
+    - name: query_or_seed
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Query, seed artifact, or manual search term that produced the lead.
+      coding_rules: Keep exact enough to repeat the search.
+      example: ''
+    - name: discovered_by
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Tool/person/process that found the lead.
+      coding_rules: 'Examples: codex, user, rg_local_repo, OSF API, Crossref.'
+      example: ''
+    - name: discovered_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: Discovery timestamp/date.
+      coding_rules: Use ISO date/time or at least YYYY-MM-DD.
+      example: ''
+    - name: candidate_artifact_path_or_url
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: File, page, dataset, package, or paper artifact to inspect next.
+      coding_rules: May be URL or repo-relative path; promote to source/source_access after triage.
+      example: ''
+    - name: expected_result_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Expected number of result rows the lead may emit.
+      coding_rules: Use rough count when available; blank if unknown.
+      example: ''
+    - name: expected_pair_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Expected number of original/replication pairs for replication leads.
+      coding_rules: Use for Plot 1 source planning.
+      example: ''
+    - name: result_fields_available
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Known or suspected result fields available in the lead.
+      coding_rules: 'Examples: D|N, native_effect|SE|N, original_d|replication_d|original_N|replication_N.'
+      example: ''
+    - name: original_source_hint
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Original paper/study/source hint if the lead appears to involve a replication pair.
+      coding_rules: For Plot 1, fill after a replication lead exposes or implies an original target.
+      example: ''
+    - name: replication_or_followup_source_hint
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Replication, reproduction, robustness, extension, or follow-up source hint.
+      coding_rules: For individual replication-paper leads, this is usually the lead paper itself.
+      example: ''
+    - name: pair_relationship_basis
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Evidence that the lead contains or asserts an original/replication relationship.
+      coding_rules: Use verbatim wording or field names where possible.
+      example: ''
+    - name: publication_link_hint
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Publication link or eventual-publication hint.
+      coding_rules: Useful for Figure 2/3 and future contexts; not required for Figure 1.
+      example: ''
+    - name: triage_status
+      data_type: category
+      required_level: required
+      allowed_values: not_started | seeded_from_existing_artifact | candidate_found | candidate_rejected
+        | staged_for_parser | promoted_to_result_target | blocked_access | blocked_no_result_fields |
+        blocked_scope_mismatch | deprecated_duplicate
+      definition: Current search-lead status.
+      coding_rules: Keep blocked/excluded/duplicate leads rather than deleting them.
+      example: candidate_found
+    - name: lead_decision
+      data_type: category
+      required_level: required
+      allowed_values: not_triaged | promote_to_source | promote_to_source_result | stage_for_parser |
+        catalog_only | reject_scope_mismatch | reject_duplicate | blocked_access | blocked_missing_fields
+        | manual_review_required
+      definition: Current decision for this lead.
+      coding_rules: Decide whether to promote, stage, catalog, reject, or send to manual review.
+      example: not_triaged
+    - name: decision_basis
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Why the lead decision was made.
+      coding_rules: Cite fields, URLs, files, scope criteria, or blocker facts.
+      example: ''
+    - name: blocker_codes
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Pipe-delimited blockers if lead is not promotable now.
+      coding_rules: 'Examples: access_blocked|missing_D_N|scope_mismatch|duplicate.'
+      example: ''
+    - name: promoted_source_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source ID created from this lead.
+      coding_rules: Fill when the lead becomes a source.tsv row.
+      example: ''
+    - name: promoted_source_result_ids
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Pipe-delimited source_result IDs emitted from this lead.
+      coding_rules: Fill when parser or manual extraction creates result rows.
+      example: ''
+    - name: next_action
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Next action needed for this lead.
+      coding_rules: 'Examples: download_package, parse_workbook, resolve_original, manual_pdf_check, no_action.'
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Lead-level notes.
+      coding_rules: Keep concise; do not store final extraction evidence here.
+      example: ''
+  - table_name: source_result.tsv
+    grain: One result asserted or exposed by one extraction source.
+    primary_key: source_result_id
+    required_for_promotion: Required for every plotted or staged result.
+    description: 'The lowest-level evidence row: verbatim source text, parsed native values, standardized
+      D/N, and transformation notes.'
+    columns:
+    - name: source_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique assertion/result ID.
+      coding_rules: One extraction source asserting one result. Do not merge alternate sources here.
+      example: ''
+    - name: canonical_result_id
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Foreign key to canonical_result.tsv.
+      coding_rules: May be blank until resolution.
+      example: ''
+    - name: extraction_source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Source where literal extracted text/number came from.
+      coding_rules: May be a database, paper, PDF, result CSV, or package output.
+      example: ''
+    - name: represented_source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Source/study/paper that the result is about.
+      coding_rules: Same as extraction_source_id only when extracting directly from the represented work.
+      example: ''
+    - name: access_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to exact access route.
+      coding_rules: Must point to retrievable bytes or documented barrier.
+      example: ''
+    - name: source_locator
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Precise locator inside source.
+      coding_rules: Use table/page/row/API JSON path/file member/script output; labels alone are insufficient.
+      example: ''
+    - name: result_label
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Human label for the result/dot.
+      coding_rules: Descriptive only; not evidence text.
+      example: ''
+    - name: outcome_label
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Human outcome label.
+      coding_rules: Descriptive only; not a substitute for verbatim outcome text.
+      example: ''
+    - name: verbatim_source_row_text
+      data_type: string
+      required_level: required_for_promotion
+      allowed_values: ''
+      definition: Source row/table/API text copied as directly as practical.
+      coding_rules: This is the human-checkable evidence string; one-line TSV safe.
+      example: ''
+    - name: verbatim_outcome_text
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Exact outcome text from source.
+      coding_rules: Use source wording, not cleaned labels.
+      example: ''
+    - name: verbatim_effect_text
+      data_type: string
+      required_level: required_for_d_or_native
+      allowed_values: ''
+      definition: Exact effect/statistic text from source.
+      coding_rules: Do not put D here unless source itself reports D.
+      example: ''
+    - name: verbatim_se_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Exact SE text from source.
+      coding_rules: Required when native SE is used.
+      example: ''
+    - name: verbatim_n_text
+      data_type: string
+      required_level: required_for_promotion
+      allowed_values: ''
+      definition: Exact N/sample-size text from source.
+      coding_rules: Must identify whether respondent, arm, cluster, enrollment, or analytic N.
+      example: ''
+    - name: verbatim_p_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Exact p/t/z/F text from source.
+      coding_rules: Required if conversion uses a significance statistic.
+      example: ''
+    - name: verbatim_ci_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Exact CI text from source.
+      coding_rules: Required if conversion uses CI.
+      example: ''
+    - name: native_effect_value
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Parsed native effect value.
+      coding_rules: Parse without changing metric.
+      example: ''
+    - name: native_effect_metric
+      data_type: category
+      required_level: conditional
+      allowed_values: mean_difference | standardized_mean_difference | odds_ratio | log_odds_ratio | risk_difference
+        | correlation | regression_coefficient | t_statistic | z_statistic | f_statistic | p_value_only
+        | hazard_ratio | rate_ratio | count_difference | native_ate | elasticity | unknown
+      definition: Metric of native_effect_value.
+      coding_rules: Required when native effect is present.
+      example: ''
+    - name: native_standard_error
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Parsed native standard error.
+      coding_rules: Do not back-calculate if source used adjusted/clustered models unless documented.
+      example: ''
+    - name: native_ci_low
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Parsed native CI lower bound.
+      coding_rules: Only if source reports CI.
+      example: ''
+    - name: native_ci_high
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Parsed native CI upper bound.
+      coding_rules: Only if source reports CI.
+      example: ''
+    - name: native_p_value
+      data_type: number_or_string
+      required_level: conditional
+      allowed_values: ''
+      definition: Parsed p-value, allowing inequalities.
+      coding_rules: Preserve '<0.001' in verbatim field; clean numeric companion may be blank.
+      example: ''
+    - name: native_n_total
+      data_type: number
+      required_level: required_for_promotion
+      allowed_values: ''
+      definition: Parsed total N for the result.
+      coding_rules: Use analytic N when clear; store respondent/cluster split separately.
+      example: ''
+    - name: native_n_treatment
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Treatment-arm N.
+      coding_rules: Required for event-count/log-OR conversions when available.
+      example: ''
+    - name: native_n_control
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Control-arm N.
+      coding_rules: Required for event-count/log-OR conversions when available.
+      example: ''
+    - name: native_cluster_n
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Cluster count.
+      coding_rules: Required for clustered designs when reported.
+      example: ''
+    - name: unit_of_randomization
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Randomization unit.
+      coding_rules: 'Examples: individual, village, school, paper, trial, precinct.'
+      example: ''
+    - name: unit_of_analysis
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Analysis/sample unit.
+      coding_rules: 'Examples: respondent, cluster, trial arm, claim, paper.'
+      example: ''
+    - name: standardized_effect_value
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Final standardized effect for D-axis or proxy.
+      coding_rules: Blank for native-only rows.
+      example: ''
+    - name: standardized_effect_metric
+      data_type: category
+      required_level: conditional
+      allowed_values: d | hedges_g | smd | chinn_log_or_to_d | r_to_d | fisher_z_to_d | t_to_d | z_to_d
+        | d_proxy | native_only | not_promoted
+      definition: Metric for standardized_effect_value.
+      coding_rules: Use native_only when not D-promotable.
+      example: ''
+    - name: standardized_n
+      data_type: number
+      required_level: required_for_plot
+      allowed_values: ''
+      definition: N used for plotting/statistics.
+      coding_rules: Must explain cluster-vs-respondent choice in transformation_explanation.
+      example: ''
+    - name: d
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Cohen's d or D-axis value.
+      coding_rules: Only populate when conversion is defensible.
+      example: ''
+    - name: d_conversion_method
+      data_type: category
+      required_level: required_for_promotion
+      allowed_values: reported_d | reported_g | reported_smd | chinn_log_or_to_d | event_counts_to_log_or_to_d
+        | r_to_d | fisher_z_to_r_to_d | standardized_outcome_coefficient | source_provided_d_proxy | paper_median_of_child_d
+        | no_d_native_metric | blocked_missing_inputs
+      definition: Method used to get D or reason no D exists.
+      coding_rules: Do not force linear-probability ATEs to d without baseline/SD/event counts.
+      example: ''
+    - name: d_conversion_inputs
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Inputs used for D conversion.
+      coding_rules: List formulas and source fields, e.g. logOR=-0.4; d=logOR*sqrt(3)/pi.
+      example: ''
+    - name: transformation_explanation
+      data_type: string
+      required_level: required_for_promotion
+      allowed_values: ''
+      definition: Plain-language explanation from verbatim/native fields to final D/N/native panel row.
+      coding_rules: Must be enough for a human to recalculate.
+      example: ''
+    - name: transformation_confidence
+      data_type: category
+      required_level: required_for_promotion
+      allowed_values: high | medium | low | blocked
+      definition: Confidence in transformation.
+      coding_rules: High only when source fields and formula are explicit.
+      example: ''
+    - name: prereg_status
+      data_type: category
+      required_level: conditional
+      allowed_values: prereg_confirmed_pre_data | prereg_confirmed_pre_analysis | registered_report |
+        proposal_pre_fielding_not_full_prereg | registry_metadata_only | registry_record_timing_not_audited
+        | prereg_asserted_by_corpus_no_artifact | not_preregistered | unknown
+      definition: Pre-registration status for confirmatory panels.
+      coding_rules: Required for preregistered plots.
+      example: ''
+    - name: prereg_mapping_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Mapping row that links the represented study/result to its preregistration, registry
+        record, PAP, MPAP, or registered-report protocol.
+      coding_rules: Required for preregistered panels when a prereg/PAP relationship exists. Use source_source_mapping.mapping_id.
+      example: map_aearctr_0000685_pap_to_good_politicians
+    - name: prereg_source_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source ID of the preregistration/PAP/registered-report protocol used for this result.
+      coding_rules: Use the source that actually contains or asserts the preregistered selector.
+      example: ''
+    - name: prereg_url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Direct URL to preregistration/PAP/registered-report protocol.
+      coding_rules: Prefer registry/PAP URL over a general article page.
+      example: ''
+    - name: prereg_registered_at
+      data_type: date_or_datetime
+      required_level: conditional
+      allowed_values: ''
+      definition: Registration, PAP filing, or Stage-1 acceptance date/time.
+      coding_rules: Use ISO date/time when available; leave blank and add a problem if prereg timing is
+        claimed but not dated.
+      example: ''
+    - name: prereg_timing
+      data_type: category
+      required_level: conditional
+      allowed_values: pre_data_collection | pre_analysis | post_data_pre_results | post_results | not_applicable
+        | unknown
+      definition: Timing of the prereg/PAP relative to data/results.
+      coding_rules: Must be specific, not just yes/no.
+      example: pre_analysis
+    - name: prereg_selector_locator
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Locator of the preregistered hypothesis/outcome/analysis rule.
+      coding_rules: 'Examples: PAP p. 4 H1; registry primary_outcomes[2]; OSF file PAP.pdf section 2.1.'
+      example: ''
+    - name: prereg_selector_verbatim_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Verbatim preregistered selector text for the outcome/hypothesis/analysis rule.
+      coding_rules: Required when a row is selected because it was preregistered. Do not summarize only.
+      example: ''
+    - name: prereg_hypothesis_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Preregistered hypothesis ID or label.
+      coding_rules: 'Examples: H1a, Primary Outcome 1, MPAP family vote_choice.'
+      example: ''
+    - name: prereg_outcome_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Preregistered outcome ID or label.
+      coding_rules: Use source-native ID if present.
+      example: ''
+    - name: selector_status
+      data_type: category
+      required_level: conditional
+      allowed_values: pap_primary | pap_secondary | registry_primary | article_primary | first_confirmatory_hypothesis
+        | median_across_preregistered_primaries | corpus_focal_claim | database_primary_outcome | not_focal
+        | no_focal_selector
+      definition: How focal result was selected.
+      coding_rules: Required for paper-level/corpus-level rows.
+      example: ''
+    - name: selector_rule
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Rule used to pick/collapse this result from eligible results.
+      coding_rules: 'Examples: PAP primary outcome; median across preregistered primary outcomes; first
+        confirmatory result; database primary outcome.'
+      example: ''
+    - name: selector_mapping_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Mapping row that supports the focal-result selector when separate from prereg_mapping_id.
+      coding_rules: Use when a corpus/database identifies a focal claim or when a paper maps PAP outcomes
+        to final tables.
+      example: ''
+    - name: replication_mapping_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Mapping row that links this result/source to an original, replication, computational
+        reproduction, or robustness target.
+      coding_rules: Use source_source_mapping.mapping_id; required when replication status is asserted.
+      example: ''
+    - name: replication_role
+      data_type: category
+      required_level: conditional
+      allowed_values: none | original_study | replication_study | computational_reproduction | robustness_check
+        | corpus_replication_assertion | unknown
+      definition: Role of this result in a replication/reproduction relationship.
+      coding_rules: Do not use a boolean; specify whether this is original, replication, reproduction,
+        robustness check, or corpus assertion.
+      example: replication_study
+    - name: replication_pair_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Stable ID joining original and replication results/papers.
+      coding_rules: Required when original and replication dots are paired or compared.
+      example: ''
+    - name: replication_kind
+      data_type: category
+      required_level: conditional
+      allowed_values: preregistration | pre_analysis_plan | meta_analysis_pre_analysis_plan | registered_report_stage1_protocol
+        | registered_report_stage2_results | trial_registry_record | data_or_code_package | paper_supplement
+        | direct_replication | conceptual_replication | computational_reproduction | robustness_reanalysis
+        | extension_study | pilot_full_scale_pair | pooled_round_component | corpus_child_paper | database_child_result
+        | citation_or_link_only | unknown
+      definition: Kind of replication/reproduction relationship.
+      coding_rules: Use the same controlled vocabulary as source_source_mapping.relationship_subtype.
+      example: direct_replication
+    - name: replication_target_claim
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Claim, hypothesis, or result that the replication/reproduction targets.
+      coding_rules: Copy or closely preserve source wording where available.
+      example: ''
+    - name: source_mapping_ids
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Pipe-delimited source_source_mapping IDs relevant to this result.
+      coding_rules: Use for corpus membership, database-result mapping, paper-package support, preregistration,
+        replication, and publication links.
+      example: ''
+    - name: extraction_confidence
+      data_type: category
+      required_level: required
+      allowed_values: high | medium | low | blocked
+      definition: Confidence in extraction from source.
+      coding_rules: Low if PDF/table parse is uncertain.
+      example: ''
+    - name: human_check_status
+      data_type: category
+      required_level: required
+      allowed_values: source_cells_recovered | n_only_recovered | plot_summary_only | needs_pdf_check
+        | needs_code_execution | verified_by_human
+      definition: Human-check readiness.
+      coding_rules: Must not call source cells recovered unless verbatim source evidence is present.
+      example: ''
+    - name: coding_status
+      data_type: category
+      required_level: required
+      allowed_values: fully_coded | coded_with_schema_gaps | staged_native_metric | blocked_missing_d_or_n
+        | blocked_access | excluded | duplicate_existing
+      definition: Current row disposition.
+      coding_rules: Rows can be staged or blocked without being plotted.
+      example: ''
+    - name: evidence_level
+      data_type: integer
+      required_level: required
+      allowed_values: ''
+      definition: Numeric provenance/evidence level from 0 to 7.
+      coding_rules: 0 blocks the row; public plots should require at least 3; publication-grade paper
+        claims should usually require at least 5.
+      example: '3'
+    - name: evidence_level_name
+      data_type: category
+      required_level: required
+      allowed_values: unanchored_number | internal_trace_only | external_source_assertion | external_assertion_with_target_source
+        | target_source_independently_grounded | original_source_obtained | original_number_extracted
+        | recomputed_from_raw
+      definition: Named provenance/evidence level.
+      coding_rules: Use the seven-level ladder; do not treat corpus assertions as original-source extraction.
+      example: external_assertion_with_target_source
+    - name: target_acquisition_state
+      data_type: category
+      required_level: recommended
+      allowed_values: unanchored | external_assertion_only | target_identity_known | target_located |
+        source_object_mirrorable | source_object_mirrored | text_or_data_extracted
+      definition: State of target identity/location/mirroring/acquisition.
+      coding_rules: Located is not mirrored; mirrored is not verified.
+      example: target_located
+    - name: value_verification_state
+      data_type: category
+      required_level: recommended
+      allowed_values: not_checked | corpus_assertion_only | source_object_obtained_not_parsed | text_or_data_extracted
+        | value_bearing_source_text_found | d_n_verified_from_source
+      definition: State of D/N or native value verification against source objects.
+      coding_rules: Use corpus_assertion_only until original source text/data are checked.
+      example: corpus_assertion_only
+    - name: source_is_original
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether the extraction source is the original paper/registry/API/table for the represented
+        result.
+      coding_rules: False for corpus/database assertions about another paper.
+      example: 'false'
+    - name: number_verified_by_us
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether we directly verified/copied or recomputed the plotted number from original/authoritative
+        source text/output.
+      coding_rules: False when taking an external corpus's word for the represented paper's number.
+      example: 'false'
+    - name: represented_work_identified
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether the represented paper/trial/study has a durable identifier or high-confidence
+        resolved source.
+      coding_rules: True for DOI, PMID, PMCID, NCT, AEA/RIDIE/EGAP ID, Dataverse DOI, or high-confidence
+        Crossref resolution.
+      example: 'true'
+    - name: source_is_external
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether the extraction source is an external real-world source rather than only our
+        internal derived file.
+      coding_rules: True for mirrored corpus/database/registry/paper/package sources; false for internal-only
+        derived tables.
+      example: 'true'
+    - name: requires_manual_review
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether the row still needs human review before final promotion.
+      coding_rules: True for low-confidence Crossref, source gaps, unresolved represented work, or unverified
+        original-source numbers.
+      example: 'true'
+    - name: conversion_verified
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether the native-to-D/native transformation has been verified against source inputs.
+      coding_rules: False if D is a proxy or inherited from corpus without original-source recalculation.
+      example: 'false'
+    - name: citation_status
+      data_type: category
+      required_level: required
+      allowed_values: real_citation | generated_internal | missing
+      definition: Citation status for this source-result row.
+      coding_rules: Use real_citation for real source bibliography; generated_internal is only an audit
+        placeholder.
+      example: real_citation
+    - name: source_citation_key
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Citation key for extraction source.
+      coding_rules: May cite a corpus/database/package.
+      example: ''
+    - name: represented_source_citation_key
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Citation key for represented work.
+      coding_rules: Required when known. Do not use generated dot keys.
+      example: ''
+    - name: represented_source_citation_rendered
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Rendered citation for represented source.
+      coding_rules: Store as TSV text for spreadsheet checking.
+      example: ''
+    - name: generated_result_citation_key
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Internal generated citation key for the dot/result row.
+      coding_rules: Internal audit only; not bibliographic evidence.
+      example: ''
+    - name: generated_result_citation_rendered
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Rendered internal generated result citation.
+      coding_rules: Must be labeled synthetic if present.
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Concise row notes.
+      coding_rules: Do not hide missing fields here; add extraction_problem rows.
+      example: ''
+  - table_name: canonical_result.tsv
+    grain: One deduplicated result selected or summarized from one or more source-result rows.
+    primary_key: canonical_result_id
+    required_for_promotion: Required for plotting and paper-level summaries.
+    description: Preferred result rows and paper/project-level collapses such as median, min, and max.
+    columns:
+    - name: canonical_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable unique canonical result ID.
+      coding_rules: Maps one or more source_result rows to one plotted/staged result.
+      example: ''
+    - name: represented_source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to represented source.
+      coding_rules: Usually the paper/study/trial.
+      example: ''
+    - name: preferred_source_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Chosen source-result row.
+      coding_rules: Must be one of the child source_result IDs.
+      example: ''
+    - name: result_label
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Canonical result label.
+      coding_rules: Keep brief and human-readable.
+      example: ''
+    - name: D
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: D-axis value used in plot.
+      coding_rules: Blank for native-only canonical rows.
+      example: ''
+    - name: N
+      data_type: number
+      required_level: required_for_plot
+      allowed_values: ''
+      definition: N used in plot/statistics.
+      coding_rules: Should match standardized_n in preferred source_result or aggregation rule.
+      example: ''
+    - name: effect_metric_for_plot
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Metric shown by plotted/staged row.
+      coding_rules: 'Examples: d, native_ate, log_or, risk_difference.'
+      example: ''
+    - name: panel
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Destination panel/plot.
+      coding_rules: 'Examples: d_axis, native_panel, plot1, plot2, plot3, plot4.'
+      example: ''
+    - name: row_unit
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Unit represented by canonical row.
+      coding_rules: 'Examples: paper, project, trial, result, pooled_round, component_study.'
+      example: ''
+    - name: source_result_count
+      data_type: integer
+      required_level: required
+      allowed_values: ''
+      definition: Number of source-result rows represented.
+      coding_rules: Use to expose collapsed thousand-row corpora.
+      example: ''
+    - name: aggregation_rule
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: How source-result rows were selected/collapsed.
+      coding_rules: 'Examples: single row, median across planned primaries, paper median, preferred direct
+        source.'
+      example: ''
+    - name: D_min
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Minimum D among children.
+      coding_rules: Required for multi-result paper/project summaries when D exists.
+      example: ''
+    - name: D_median
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Median D among children.
+      coding_rules: Required for multi-result paper/project summaries when D exists.
+      example: ''
+    - name: D_max
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Maximum D among children.
+      coding_rules: Required for multi-result paper/project summaries when D exists.
+      example: ''
+    - name: N_min
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Minimum N among children.
+      coding_rules: Required for multi-result summaries.
+      example: ''
+    - name: N_median
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Median N among children.
+      coding_rules: Required for multi-result summaries.
+      example: ''
+    - name: N_max
+      data_type: number
+      required_level: conditional
+      allowed_values: ''
+      definition: Maximum N among children.
+      coding_rules: Required for multi-result summaries.
+      example: ''
+    - name: resolution_status
+      data_type: category
+      required_level: required
+      allowed_values: single_source_result | preferred_source_selected | multiple_source_results_need_resolution
+        | duplicate_existing | blocked
+      definition: Deduplication/resolution status.
+      coding_rules: Do not silently plot unresolved duplicates.
+      example: ''
+    - name: resolution_notes
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Why this source/result was preferred or how collapse was done.
+      coding_rules: Required for source_result_count > 1.
+      example: ''
+  - table_name: canonical_result_membership.tsv
+    grain: One source-result row's membership in one canonical plotted/staged result.
+    primary_key: canonical_result_id + source_result_id
+    required_for_promotion: Required whenever canonical_result.source_result_count is greater than one;
+      recommended for all canonical results.
+    description: Explicit child rows used in median/min/max/preferred-source collapse decisions.
+    columns:
+    - name: canonical_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to canonical_result.tsv.
+      coding_rules: Every membership row belongs to one canonical result.
+      example: ''
+    - name: source_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source_result.tsv.
+      coding_rules: Every child/member must be an explicit source_result row.
+      example: ''
+    - name: membership_role
+      data_type: category
+      required_level: required
+      allowed_values: preferred | child | excluded_child | duplicate | sensitivity_only
+      definition: Role of the source-result in the canonical result.
+      coding_rules: Use preferred for the preferred direct source, child for included child rows, excluded_child
+        for rejected candidates, duplicate for duplicates, sensitivity_only for sensitivity rows.
+      example: preferred
+    - name: included_in_collapse
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether this source-result contributed to min/median/max/preferred collapse.
+      coding_rules: Use false for duplicate, excluded, or sensitivity-only rows.
+      example: ''
+    - name: included_in_statistics
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether this source-result contributes to reported statistics.
+      coding_rules: Usually false when canonical_result itself is the plotted/statistical unit.
+      example: ''
+    - name: aggregation_role
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Role in aggregation rule.
+      coding_rules: 'Examples: median_child, min_child, max_child, preferred_source, source_assertion_only.'
+      example: ''
+    - name: weight
+      data_type: number
+      required_level: optional
+      allowed_values: ''
+      definition: Weight used in aggregation, if any.
+      coding_rules: Leave blank for unweighted median/preferred-source decisions.
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Membership notes.
+      coding_rules: Explain exclusions, duplicate handling, or child-row provenance gaps.
+      example: ''
+  - table_name: source_result_support.tsv
+    grain: One source/access object supporting one source-result field or decision.
+    primary_key: source_result_id + source_id + access_id + support_role
+    required_for_promotion: Recommended for all rows; required when multiple objects support one result,
+      such as paper plus supplement plus registry plus code output.
+    description: Links result rows to source objects for effect text, N text, selector text, conversion
+      inputs, raw data, code, and recomputed outputs.
+    columns:
+    - name: source_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source_result.tsv.
+      coding_rules: The result row being supported.
+      example: ''
+    - name: source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to source.tsv.
+      coding_rules: The source object providing support.
+      example: ''
+    - name: access_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_access.tsv.
+      coding_rules: Required when support is tied to a specific file/API/page route.
+      example: ''
+    - name: source_file_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Foreign key to source_file.tsv.
+      coding_rules: Use when support is tied to a mirrored artifact/file.
+      example: ''
+    - name: support_role
+      data_type: category
+      required_level: required
+      allowed_values: effect_text | n_text | outcome_text | selector_text | conversion_input | raw_data
+        | analytic_data | code | recomputed_output | bibliographic_identity | access_grounding | relationship_evidence
+        | other
+      definition: What the support object provides.
+      coding_rules: Use effect_text, n_text, selector_text, conversion_input, raw_data, code, relationship_evidence,
+        etc.
+      example: effect_text
+    - name: support_locator
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Locator inside the support source.
+      coding_rules: Use table/page/row/API path/script output locator.
+      example: ''
+    - name: support_locator_type
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Type of locator.
+      coding_rules: 'Examples: csv_row, json_path, pdf_page, table_cell, xpath, script_output, plot_row.'
+      example: ''
+    - name: page_number
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Page number for PDF/page artifacts.
+      coding_rules: Use 1-indexed page when available.
+      example: ''
+    - name: section_heading
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Section heading near support text.
+      coding_rules: Use Methods, Results, Appendix, etc. when available.
+      example: ''
+    - name: table_number
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Table identifier.
+      coding_rules: 'Examples: Table 1, Appendix Table S3.'
+      example: ''
+    - name: figure_number
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Figure identifier.
+      coding_rules: 'Examples: Figure 2, Fig. S1.'
+      example: ''
+    - name: cell_locator
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Cell/row/column locator inside table or dataset.
+      coding_rules: Use row id, column name, sheet name, or API field path.
+      example: ''
+    - name: char_start
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Character start offset in extracted text.
+      coding_rules: Populate after text extraction.
+      example: ''
+    - name: char_end
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Character end offset in extracted text.
+      coding_rules: Populate after text extraction.
+      example: ''
+    - name: xml_xpath
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: XML XPath for support.
+      coding_rules: Use for JATS/PMC/XML artifacts.
+      example: ''
+    - name: html_css_selector
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: HTML CSS selector for support.
+      coding_rules: Use for full HTML/landing page artifacts.
+      example: ''
+    - name: pdf_bbox
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: PDF bounding box for support.
+      coding_rules: Use compact JSON or x0,y0,x1,y1,page.
+      example: ''
+    - name: support_verbatim_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Copied support text from this source.
+      coding_rules: Required when the support role is effect_text, n_text, selector_text, conversion_input,
+        or relationship_evidence and text is available.
+      example: ''
+    - name: verbatim_snippet_hash
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Hash of support_verbatim_text.
+      coding_rules: Useful for long-term fixity without relying on display text.
+      example: ''
+    - name: copied_text_allowed_yn
+      data_type: boolean_or_unknown
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether the copied support text can be shared.
+      coding_rules: Use unknown for pilot rows and restricted sources.
+      example: ''
+    - name: support_confidence
+      data_type: category
+      required_level: required
+      allowed_values: high | medium | low | blocked
+      definition: Confidence in this support relationship.
+      coding_rules: Use high only when the support text/locator is explicit.
+      example: medium
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Support notes.
+      coding_rules: Explain why this object supports the result or why text is unavailable.
+      example: ''
+  - table_name: plot_universe.tsv
+    grain: One reusable plot, panel, statistic set, diagnostic view, or future plot context.
+    primary_key: plot_universe_id
+    required_for_promotion: Recommended when a plot build snapshots YAML-defined criteria into table artifacts.
+    description: Context definitions for Figure 1, Figure 2, Figure 3, diagnostics, sensitivity views,
+      and future plots.
+    columns:
+    - name: plot_universe_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable plot universe/context ID.
+      coding_rules: Use IDs from PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml.
+      example: ''
+    - name: figure_label
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Figure, panel, diagnostic, or future plot label.
+      coding_rules: 'Examples: Figure 1, Figure 2, diagnostic_all_source_dn.'
+      example: ''
+    - name: current_scope_role
+      data_type: category
+      required_level: recommended
+      allowed_values: current_figure | current_diagnostic | catalog_only_future_plot_seed | future_plot_candidate
+        | sensitivity_view | deprecated
+      definition: Role of this universe in the current project scope.
+      coding_rules: Distinguish current figures from catalog-only future seeds.
+      example: current_figure
+    - name: result_target_kind
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Kind of result target this universe evaluates.
+      coding_rules: 'Examples: replication_pair, paper_result, preregistered_result, diagnostic_source_result.'
+      example: ''
+    - name: publication_requirement
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Publication requirement for this universe.
+      coding_rules: 'Examples: not_required, required_eventually_published, mixed_or_not_universal.'
+      example: ''
+    - name: output_unit
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Unit emitted by this plot universe.
+      coding_rules: 'Examples: one original/replication pair, one paper-level D/N result.'
+      example: ''
+    - name: criteria_version
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Version or date of the criteria snapshot.
+      coding_rules: Use YAML schema_version/date or a build-specific criteria version.
+      example: ''
+    - name: universe_definition_source
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Where the definition came from.
+      coding_rules: Usually PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml.
+      example: ''
+    - name: active_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether this universe is active in the current build.
+      coding_rules: Use false for future plots or deprecated contexts.
+      example: 'true'
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Universe-level notes.
+      coding_rules: Keep row-specific decisions in plot_membership.tsv.
+      example: ''
+  - table_name: plot_criterion.tsv
+    grain: One reusable inclusion, exclusion, or context criterion.
+    primary_key: criterion_id
+    required_for_promotion: Recommended when a plot build snapshots YAML-defined criteria into table artifacts.
+    description: Reusable criteria such as ever-published, explicit original/replication pair, D/N availability,
+      prereg selector, and non-retraction checks.
+    columns:
+    - name: criterion_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable reusable criterion ID.
+      coding_rules: Use IDs from PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml.
+      example: ''
+    - name: criterion_label
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Short human-readable criterion label.
+      coding_rules: Use a concise display name.
+      example: ''
+    - name: gate_type
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Criterion gate type.
+      coding_rules: 'Examples: include_if_true, exclude_if_true, required_context.'
+      example: ''
+    - name: applies_to_grain
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: The grain this criterion evaluates.
+      coding_rules: 'Examples: search_lead, source, source_result, canonical_result, represented_result,
+        plot_membership.'
+      example: ''
+    - name: rule_text
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Plain-language criterion rule.
+      coding_rules: Copy from YAML so the table snapshot is understandable without code.
+      example: ''
+    - name: accept_if
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Pipe-delimited or compact text acceptance examples.
+      coding_rules: Use for nontrivial include criteria.
+      example: ''
+    - name: reject_if
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Pipe-delimited or compact text rejection examples.
+      coding_rules: Use for nontrivial exclusion criteria.
+      example: ''
+    - name: evidence_fields
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Pipe-delimited evidence fields used by this criterion.
+      coding_rules: Keep in sync with source/source_result/plot_membership fields where possible.
+      example: ''
+    - name: reusable_in_plot_universe_ids
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Pipe-delimited plot universes where this criterion can be reused.
+      coding_rules: Future plots can reuse criteria without rewriting source/result rows.
+      example: ''
+    - name: status
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Criterion status.
+      coding_rules: 'Examples: active, draft, deprecated.'
+      example: ''
+  - table_name: plot_membership.tsv
+    grain: One canonical result's inclusion/exclusion status in one plot or statistic set.
+    primary_key: plot_id + canonical_result_id
+    required_for_promotion: Required for public plots once a canonical result can appear in more than
+      one plot, diagnostic view, or sensitivity view.
+    description: Plot inclusion, statistics inclusion, field/source-family display labels, render-order
+      groups, and exclusion reasons.
+    columns:
+    - name: plot_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable plot or statistic-set ID.
+      coding_rules: 'Examples: plot1_replication, plot2_published, plot3_preregistered, plot4_all_sources,
+        diagnostic_level5.'
+      example: ''
+    - name: plot_universe_id
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Plot universe/context used to evaluate this canonical result.
+      coding_rules: Use the YAML plot_universe ID; one plot_id may have multiple statistic or sensitivity
+        contexts.
+      example: ''
+    - name: canonical_result_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Foreign key to canonical_result.tsv.
+      coding_rules: The canonical result being plotted, staged, or excluded.
+      example: ''
+    - name: criteria_version
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Criteria version used for this decision.
+      coding_rules: Required for reproducible future plots and sensitivity analyses.
+      example: ''
+    - name: decision_context_type
+      data_type: category
+      required_level: recommended
+      allowed_values: current_plot | diagnostic_view | sensitivity_view | future_plot_draft | manual_review
+        | automated_rule
+      definition: Kind of context that made this decision.
+      coding_rules: Distinguish current plots, diagnostics, sensitivity views, future drafts, manual reviews,
+        and automated rules.
+      example: current_plot
+    - name: eligibility_status
+      data_type: category
+      required_level: recommended
+      allowed_values: included | excluded | catalog_only | diagnostic_only | sensitivity_only | pending
+        | blocked
+      definition: Overall eligibility decision under this plot universe.
+      coding_rules: Use included/excluded/catalog_only/diagnostic_only/sensitivity_only/pending/blocked.
+      example: included
+    - name: included_in_plot
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether this canonical result is shown in the plot.
+      coding_rules: Use false for explicit exclusions or statistics-only memberships.
+      example: ''
+    - name: included_in_statistics
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether this canonical result contributes to plot summary statistics.
+      coding_rules: Use false for visual-only, excluded, or diagnostic-only points.
+      example: ''
+    - name: passed_criteria_ids
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Pipe-delimited criteria passed by this canonical result.
+      coding_rules: Use criterion IDs from plot_criterion/YAML.
+      example: ''
+    - name: failed_criteria_ids
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Pipe-delimited criteria failed by this canonical result.
+      coding_rules: Required when included_in_plot or included_in_statistics is false due to criteria
+        failure.
+      example: ''
+    - name: caveat_criteria_ids
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Pipe-delimited criteria allowed only with caveat.
+      coding_rules: Use for sensitivity or diagnostic contexts.
+      example: ''
+    - name: decision_basis
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Plain-language basis for membership decision.
+      coding_rules: Summarize the decisive criteria and source fields.
+      example: ''
+    - name: decision_source
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Script, YAML, manual review, or artifact that made the decision.
+      coding_rules: 'Examples: build_codebook_pilot_sample.py, PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml.'
+      example: ''
+    - name: decided_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: Decision timestamp/date.
+      coding_rules: Use build date when exact timestamp is unavailable.
+      example: ''
+    - name: plot_field
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Field/category displayed in the plot legend or grouping.
+      coding_rules: 'Examples: Clinical medicine, Psychology/health, Political science.'
+      example: ''
+    - name: plot_source_family
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Source-family label displayed or used for grouping.
+      coding_rules: 'Examples: ClinicalTrials.gov, SCORE/COS, EGAP Metaketa.'
+      example: ''
+    - name: render_order_group_count
+      data_type: integer
+      required_level: optional
+      allowed_values: ''
+      definition: Group count used for draw order.
+      coding_rules: Use to plot high-count groups first and smaller-count groups later/on top.
+      example: ''
+    - name: style_group
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Visual style group.
+      coding_rules: Use for color/shape/alpha decisions when relevant.
+      example: ''
+    - name: exclusion_reason
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Reason this canonical result is not included.
+      coding_rules: Required when included_in_plot=false or included_in_statistics=false for a non-obvious
+        reason.
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Plot membership notes.
+      coding_rules: Keep plot-only decisions out of source_result provenance.
+      example: ''
+  - table_name: source_source_mapping.tsv
+    grain: One directed relationship between two sources.
+    primary_key: mapping_id
+    required_for_promotion: Required whenever extraction source and represented source differ, or for
+      corpus-parent mappings.
+    description: Relationships such as corpus contains paper, database reports paper result, registry
+      preregisters study.
+    columns:
+    - name: mapping_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable relationship ID.
+      coding_rules: One directed relationship per row.
+      example: ''
+    - name: from_source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Source ID for parent/asserting/deriving source.
+      coding_rules: Must match source.tsv.
+      example: ''
+    - name: to_source_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Source ID for child/represented/derived-from source.
+      coding_rules: Must match source.tsv.
+      example: ''
+    - name: relationship_type
+      data_type: category
+      required_level: required
+      allowed_values: extraction_source_reports_result_for_represented_source | corpus_contains_paper
+        | database_reports_paper_result | repository_supports_paper | registry_preregisters_study | registry_links_publication
+        | pre_analysis_plan_supports_study | registered_report_protocol_for_paper | publication_reports_registered_study
+        | replication_of | computational_reproduction_of | robustness_reanalysis_of | meta_analysis_includes_study
+        | corpus_asserts_result_for_paper | corpus_asserts_preregistration_for_paper | paper_uses_dataset
+        | source_derives_from_source | duplicate_of | parent_collection_contains_child
+      definition: Relationship between sources.
+      coding_rules: Use controlled vocabulary.
+      example: ''
+    - name: relationship_subtype
+      data_type: category
+      required_level: recommended
+      allowed_values: preregistration | pre_analysis_plan | meta_analysis_pre_analysis_plan | registered_report_stage1_protocol
+        | registered_report_stage2_results | trial_registry_record | data_or_code_package | paper_supplement
+        | direct_replication | conceptual_replication | computational_reproduction | robustness_reanalysis
+        | extension_study | pilot_full_scale_pair | pooled_round_component | corpus_child_paper | database_child_result
+        | citation_or_link_only | unknown
+      definition: Specific relationship subtype.
+      coding_rules: Use this to distinguish direct replication, conceptual replication, PAP, MPAP, registered
+        report protocol, corpus child paper, package support, etc.
+      example: pre_analysis_plan
+    - name: mapping_assertion_source_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source that asserts or documents this relationship.
+      coding_rules: 'Can equal from_source_id, but do not assume. Example: a corpus asserts Paper B reports
+        Paper A; a registry page links final publication.'
+      example: ''
+    - name: mapping_assertion_access_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Access row for the file/page/API response where this relationship was observed.
+      coding_rules: Use source_access.access_id when available.
+      example: ''
+    - name: mapping_assertion_locator
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Locator inside the assertion source.
+      coding_rules: 'Examples: CSV row ID, registry field paper_url, PAP p. 3, OSF file list, article
+        footnote.'
+      example: ''
+    - name: mapping_assertion_url
+      data_type: url
+      required_level: conditional
+      allowed_values: ''
+      definition: Most direct URL documenting the relationship.
+      coding_rules: Use direct registry, DOI, OSF, Dataverse, package, corpus row, or article URL.
+      example: ''
+    - name: mapping_assertion_verbatim_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Verbatim text/field that asserts the relationship.
+      coding_rules: Required when the relation is not obvious from source IDs alone; one-line TSV-safe.
+      example: ''
+    - name: mapping_evidence_type
+      data_type: category
+      required_level: recommended
+      allowed_values: verbatim_text | metadata_field | doi_link | registry_link | citation_match | title_author_year_match
+        | code_or_package_manifest | manual_judgment | unknown
+      definition: Type of evidence used to assert the mapping.
+      coding_rules: Prefer verbatim_text or metadata_field over manual_judgment when possible.
+      example: metadata_field
+    - name: external_relationship_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: External ID for the relationship.
+      coding_rules: 'Examples: AEARCTR-0000685, NCT ID, OSF registration GUID, SCORE claim ID, Metaketa
+        project ID.'
+      example: ''
+    - name: external_relationship_url
+      data_type: url
+      required_level: optional
+      allowed_values: ''
+      definition: External URL for the relationship or mapping record.
+      coding_rules: Use when different from mapping_assertion_url.
+      example: ''
+    - name: relationship_date
+      data_type: date_or_datetime
+      required_level: optional
+      allowed_values: ''
+      definition: Primary relationship date.
+      coding_rules: For preregistration this is filing/registration date; for replication this can be
+        replication publication/registration date.
+      example: ''
+    - name: relationship_updated_at
+      data_type: date_or_datetime
+      required_level: optional
+      allowed_values: ''
+      definition: Update, amendment, or version date.
+      coding_rules: Use for registry updates, PAP amendments, OSF version timestamps, package versions.
+      example: ''
+    - name: relationship_timing
+      data_type: category
+      required_level: conditional
+      allowed_values: pre_data_collection | pre_analysis | post_data_pre_results | post_results | not_applicable
+        | unknown
+      definition: Timing of this relationship relative to data collection/analysis/results.
+      coding_rules: Required for preregistration and registered-report mappings.
+      example: pre_data_collection
+    - name: prereg_registry_name
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Registry or preregistration platform name.
+      coding_rules: 'Examples: AEA RCT Registry, EGAP, OSF Registries, ClinicalTrials.gov, RIDIE.'
+      example: ''
+    - name: prereg_registration_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Registry/PAP/registered-report identifier.
+      coding_rules: 'Examples: AEARCTR-0000685, EGAP registration/736, NCT02818036, OSF GUID.'
+      example: ''
+    - name: prereg_document_type
+      data_type: category_or_string
+      required_level: conditional
+      allowed_values: ''
+      definition: Specific preregistration document type.
+      coding_rules: 'Examples: registry_metadata, PAP, MPAP, Stage 1 registered report, protocol, amendment.'
+      example: ''
+    - name: prereg_primary_outcome_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Verbatim primary outcome/family text from preregistration/PAP.
+      coding_rules: Use when the mapping supports a focal selector.
+      example: ''
+    - name: prereg_hypothesis_text
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Verbatim hypothesis text from preregistration/PAP.
+      coding_rules: Use when available; do not replace with article wording.
+      example: ''
+    - name: replication_kind
+      data_type: category
+      required_level: conditional
+      allowed_values: preregistration | pre_analysis_plan | meta_analysis_pre_analysis_plan | registered_report_stage1_protocol
+        | registered_report_stage2_results | trial_registry_record | data_or_code_package | paper_supplement
+        | direct_replication | conceptual_replication | computational_reproduction | robustness_reanalysis
+        | extension_study | pilot_full_scale_pair | pooled_round_component | corpus_child_paper | database_child_result
+        | citation_or_link_only | unknown
+      definition: Specific replication/reproduction type.
+      coding_rules: Required when relationship_type is replication_of, computational_reproduction_of,
+        or robustness_reanalysis_of.
+      example: direct_replication
+    - name: replication_target_claim
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Claim/result/hypothesis being replicated or reproduced.
+      coding_rules: Copy source wording when available.
+      example: ''
+    - name: replication_original_result_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Original source_result_id targeted by the replication.
+      coding_rules: Fill when original result row exists in source_result.tsv.
+      example: ''
+    - name: replication_replicating_result_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Replication/reproduction source_result_id.
+      coding_rules: Fill when replication result row exists in source_result.tsv.
+      example: ''
+    - name: replication_outcome_match
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: How closely the replication outcome matches the original.
+      coding_rules: 'Examples: identical measure, same construct, different operationalization, unknown.'
+      example: ''
+    - name: replication_sample_relation
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: How replication sample relates to original.
+      coding_rules: 'Examples: independent sample, same data recomputed, subset, extension sample, unknown.'
+      example: ''
+    - name: replication_design_relation
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: How replication design relates to original.
+      coding_rules: 'Examples: same design, close protocol, conceptual extension, computational rerun,
+        robustness specification.'
+      example: ''
+    - name: collection_role
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Role in a corpus/collection mapping.
+      coding_rules: 'Examples: parent corpus, child paper, child result, pooled round, component study.'
+      example: ''
+    - name: dedupe_group_id
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Group ID for sources/results that should not be double-counted together.
+      coding_rules: Use for pooled/component Metaketa rows, corpus-child rows, and original/replication
+        pair families.
+      example: ''
+    - name: relationship_confidence
+      data_type: category
+      required_level: required
+      allowed_values: high | medium | low | blocked
+      definition: Confidence in relationship.
+      coding_rules: Use blocked only when relation is suspected but unverified.
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Relationship notes.
+      coding_rules: Keep concise.
+      example: ''
+  - table_name: extraction_event.tsv
+    grain: One action or failed action used to obtain, parse, or verify source bytes.
+    primary_key: event_id
+    required_for_promotion: Required for new extraction work; pilot retrace rows may have partial historical
+      events.
+    description: Downloads, user uploads, unzip steps, API calls, table extraction, code execution, manual
+      PDF checks, blocked access.
+    columns:
+    - name: event_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable event ID.
+      coding_rules: One extraction/retrieval/check action.
+      example: ''
+    - name: source_result_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source-result affected by event.
+      coding_rules: Blank only for source-level access events.
+      example: ''
+    - name: access_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Access row involved.
+      coding_rules: Required for download/mirror events.
+      example: ''
+    - name: event_step
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Step name.
+      coding_rules: 'Examples: download, unzip, parse_table, run_script, manual_pdf_check, blocked_login.'
+      example: ''
+    - name: timestamp
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: ISO timestamp/date.
+      coding_rules: At least YYYY-MM-DD.
+      example: ''
+    - name: performed_by
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Actor/tool.
+      coding_rules: 'Examples: codex, user, script name.'
+      example: ''
+    - name: command_or_tool
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Command, script, API client, or manual action.
+      coding_rules: Include enough to repeat when practical.
+      example: ''
+    - name: path
+      data_type: path
+      required_level: conditional
+      allowed_values: ''
+      definition: Path touched by event.
+      coding_rules: Repo-relative where possible.
+      example: ''
+    - name: path_exists
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether path existed at check time.
+      coding_rules: Use true/false.
+      example: ''
+    - name: file_size_bytes
+      data_type: integer
+      required_level: conditional
+      allowed_values: ''
+      definition: File size after event.
+      coding_rules: Required for downloaded/mirrored files.
+      example: ''
+    - name: file_sha256
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Checksum after event.
+      coding_rules: Required for downloaded/mirrored files.
+      example: ''
+    - name: status
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Outcome of event.
+      coding_rules: 'Examples: found, downloaded, parsed, failed, blocked.'
+      example: ''
+    - name: match_method
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: How a source row was matched.
+      coding_rules: 'Examples: DOI exact, NCT_ID + outcome title, title + D/N.'
+      example: ''
+    - name: notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Event details.
+      coding_rules: For failures, state exact blocker.
+      example: ''
+  - table_name: extraction_problem.tsv
+    grain: One quality or provenance problem for one source-result or source object.
+    primary_key: problem_id
+    required_for_promotion: Required when any promotion gate is not met or requires manual follow-up.
+    description: Machine-actionable error and rework queue.
+    columns:
+    - name: problem_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable problem ID.
+      coding_rules: One problem per row.
+      example: ''
+    - name: source_result_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Affected source-result row.
+      coding_rules: Blank only for source-level problems.
+      example: ''
+    - name: table_name
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Table containing problem.
+      coding_rules: Use codebook table name.
+      example: ''
+    - name: column_name
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Column containing problem.
+      coding_rules: Use when field-specific.
+      example: ''
+    - name: problem_code
+      data_type: category
+      required_level: required
+      allowed_values: missing_verbatim_effect_text | missing_verbatim_n_text | missing_source_locator
+        | source_is_derived_not_original_text | access_blocked | needs_pdf_check | needs_code_execution
+        | conversion_not_defensible | duplicate_needs_resolution | missing_bibliographic_key
+      definition: Machine-actionable problem code.
+      coding_rules: Use controlled vocabulary.
+      example: ''
+    - name: severity
+      data_type: category
+      required_level: required
+      allowed_values: high | medium | low
+      definition: Severity.
+      coding_rules: High blocks promotion.
+      example: ''
+    - name: detail
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Human-readable issue.
+      coding_rules: State what is missing or ambiguous.
+      example: ''
+    - name: suggested_rework
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: How to fix.
+      coding_rules: Give URL/path/action if known.
+      example: ''
+    - name: resolved
+      data_type: boolean
+      required_level: required
+      allowed_values: ''
+      definition: Whether problem is resolved.
+      coding_rules: Use false until fixed.
+      example: ''
+    - name: resolved_by
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Who resolved it.
+      coding_rules: Required if resolved=true.
+      example: ''
+    - name: resolved_at
+      data_type: datetime
+      required_level: conditional
+      allowed_values: ''
+      definition: Resolution date/time.
+      coding_rules: Required if resolved=true.
+      example: ''
+  - table_name: manual_acquisition_task.tsv
+    grain: One human/manual acquisition or verification task.
+    primary_key: manual_task_id
+    required_for_promotion: Required when automated acquisition fails or manual/library access is needed.
+    description: Prioritized human workflow for missing source objects, PDFs, supplements, prereg artifacts,
+      result text, and license/access review.
+    columns:
+    - name: manual_task_id
+      data_type: string
+      required_level: required
+      allowed_values: ''
+      definition: Stable manual task ID.
+      coding_rules: One row per human acquisition/review task.
+      example: ''
+    - name: source_result_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source-result needing manual work.
+      coding_rules: Blank only for source-level tasks.
+      example: ''
+    - name: canonical_result_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Canonical result affected by task.
+      coding_rules: Use when task affects a plotted/statistical dot.
+      example: ''
+    - name: represented_source_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Represented source requiring acquisition.
+      coding_rules: Use source_result.represented_source_id when available.
+      example: ''
+    - name: extraction_source_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Current extraction source.
+      coding_rules: Use source_result.extraction_source_id when relevant.
+      example: ''
+    - name: needed_artifact_type
+      data_type: category
+      required_level: required
+      allowed_values: original_source_object | full_article | registry_record | supplement | dataset_or_code
+        | prereg_artifact | replication_evidence | effect_text | n_text | license_review | identity_disambiguation
+        | other
+      definition: Artifact/review type needed.
+      coding_rules: Use the narrowest missing item.
+      example: original_source_object
+    - name: needed_value_fields
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Fields needed from manual work.
+      coding_rules: 'Examples: effect_text|n_text|source_object|license_review.'
+      example: ''
+    - name: priority_score
+      data_type: number
+      required_level: recommended
+      allowed_values: ''
+      definition: Priority score for manual queue.
+      coding_rules: Higher means more useful/tractable.
+      example: ''
+    - name: priority_reason
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Why this task has this priority.
+      coding_rules: Use evidence level, plot membership, identifiers, and likely upgrade value.
+      example: ''
+    - name: failed_route_summary
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Summary of automated routes already tried.
+      coding_rules: Use source_access_attempt decisions and extraction problems.
+      example: ''
+    - name: best_candidate_urls
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Candidate URLs for human to try.
+      coding_rules: Pipe-delimit DOI/registry/repository/publisher URLs.
+      example: ''
+    - name: acceptable_manual_routes
+      data_type: string
+      required_level: recommended
+      allowed_values: ''
+      definition: Allowed manual routes.
+      coding_rules: 'Examples: library access, repository request, author manuscript search, PDF parse.'
+      example: ''
+    - name: library_access_needed_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether library/institutional access may be needed.
+      coding_rules: Use true/false/unknown when possible.
+      example: ''
+    - name: ill_needed_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether interlibrary loan may be needed.
+      coding_rules: Use true/false.
+      example: ''
+    - name: author_contact_needed_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether author contact may be needed.
+      coding_rules: Use true/false.
+      example: ''
+    - name: repository_access_request_needed_yn
+      data_type: boolean
+      required_level: recommended
+      allowed_values: ''
+      definition: Whether repository access request may be needed.
+      coding_rules: Use true/false.
+      example: ''
+    - name: assigned_to
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Human/task owner.
+      coding_rules: Blank until assigned.
+      example: ''
+    - name: status
+      data_type: category
+      required_level: required
+      allowed_values: open | in_progress | blocked | closed | not_needed
+      definition: Manual task status.
+      coding_rules: Use open until completed or ruled out.
+      example: open
+    - name: opened_at
+      data_type: datetime
+      required_level: recommended
+      allowed_values: ''
+      definition: Task creation timestamp/date.
+      coding_rules: Use batch timestamp.
+      example: ''
+    - name: closed_at
+      data_type: datetime
+      required_level: conditional
+      allowed_values: ''
+      definition: Task close timestamp/date.
+      coding_rules: Required if status=closed.
+      example: ''
+    - name: human_outcome
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Outcome after human work.
+      coding_rules: 'Examples: pdf_downloaded, paywalled, no_source_found, value_verified.'
+      example: ''
+    - name: created_source_file_id
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Source file created by manual work.
+      coding_rules: Foreign key to source_file.tsv when available.
+      example: ''
+    - name: created_support_ids
+      data_type: string
+      required_level: conditional
+      allowed_values: ''
+      definition: Support rows created by manual work.
+      coding_rules: Pipe-delimit source_result_support IDs if introduced later.
+      example: ''
+    - name: manual_notes
+      data_type: string
+      required_level: optional
+      allowed_values: ''
+      definition: Manual task notes.
+      coding_rules: Keep concise, actionable, and safe to share.
+      example: ''

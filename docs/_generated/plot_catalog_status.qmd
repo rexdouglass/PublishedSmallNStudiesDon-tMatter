@@ -2,13 +2,23 @@
 
 Machine-readable summary: [plot_catalog_status.csv](../data/derived/effect_inflation_dataset/plot_catalog_status.csv)
 
+Cross-plot ownership ledgers:
+
+- [plot_dot_membership.tsv](../data/derived/effect_inflation_dataset/plot_dot_membership.tsv) records every rendered D/N result dot across Plots 1-4, with its own result-level citation key and rendered citation string in [plot_dot_references.bib](../data/derived/effect_inflation_dataset/plot_dot_references.bib), plus the parent source citation key/rendered citation in `docs/references.bib`.
+- [plot_result_parent_child.tsv](../data/derived/effect_inflation_dataset/plot_result_parent_child.tsv) records the parent collection / corpus / plot source to child result-dot mapping, allowing the same child result or paper to appear in more than one parent collection.
+- [plot_paper_summary.tsv](../data/derived/effect_inflation_dataset/plot_paper_summary.tsv) collapses child result dots to normalized paper/unit keys and reports result counts plus D/N min, median, and max.
+- [plot_paper_membership.tsv](../data/derived/effect_inflation_dataset/plot_paper_membership.tsv) records the paper/unit-level owner for Plots 1-3, including source, citation key, `@key` citation ref, BibTeX presence in `docs/references.bib`, row unit, D/N median, rows represented, and the collapse or selection rule.
+- [plot_paper_exclusivity_audit.tsv](../data/derived/effect_inflation_dataset/plot_paper_exclusivity_audit.tsv) groups the membership ledger by normalized paper/unit key and flags any cross-plot overlaps or weak fallback keys for review; citation keys are carried through for each grouped unit.
+- [plot_source_family_membership.tsv](../data/derived/effect_inflation_dataset/plot_source_family_membership.tsv) records which source families/corpora were considered by which plot catalogs, with BibTeX mapping status.
+- [plot_assignment_rules.tsv](../data/derived/effect_inflation_dataset/plot_assignment_rules.tsv) states the current mutually exclusive plot-assignment rules.
+
 ::: {.dataset-table .dataset-status-table}
 
 | Plot | Catalog maturity | Included | Support-only | Considered out | Main missing piece |
 | --- | --- | --- | --- | --- | --- |
 | Plot 1 — Replication Pairs | mature audit | 57 | 1 | 29 | Resolve the remaining raw/staged lead families by parser, metric-conversion, access, or native-metric-lane decision. |
 | Plot 2 — Published Paper Endpoints | source audit built | 26 | 0 | 9 | Add source-specific collapse-rule prose and resolve high-yield excluded candidates by parser, access, or policy decision. |
-| Plot 3 — Preregistered Results | first figure / partial audit | 17 | 0 | 31 | Expand the considered-source sweep and add a formal preregistered-source evidence inventory. |
+| Plot 3 — Preregistered Results | first figure / partial audit | 47 | 0 | 31 | Expand the considered-source sweep and add a formal preregistered-source evidence inventory. |
 | Plot 4 — All-Source D/N Dump | first-pass surface map | 4 | 1 | 1 | Formalize deduplication rules and a native-metric sidecar policy before using this layer inferentially. |
 
 :::

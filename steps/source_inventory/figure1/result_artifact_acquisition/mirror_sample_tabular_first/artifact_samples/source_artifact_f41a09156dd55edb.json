@@ -1,0 +1,104 @@
+{
+  "artifact_id": "source_artifact_f41a09156dd55edb",
+  "byte_size": 8074,
+  "file_name": "TRICO_CONTINGENCY_DATA.xlsx",
+  "file_type": "xlsx",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_f41a09156dd55edb__TRICO_CONTINGENCY_DATA.xlsx",
+  "parent_corpus_database_id": "repo_search_osf_2b928c9c5eb3",
+  "sample_kind": "excel_workbook",
+  "sampled_at": "2026-05-01T22:32:47",
+  "sha256": "37bfa381520ae52f86c4795b2d08b959c653c5e8251fb511327cf89c0406bf5e",
+  "sheet_count": 1,
+  "sheets": [
+    {
+      "columns": [
+        "ID",
+        "session",
+        "group",
+        "OutcomeDev",
+        "GoldContingency",
+        "DiamondContingency",
+        "RestContingency",
+        "OutcomeValued",
+        "OutcomeDevalued",
+        "LikingFractalValued",
+        "LikingFractalDevalued",
+        "LikingFractalB"
+      ],
+      "preview_rows": [
+        {
+          "DiamondContingency": 5,
+          "GoldContingency": 5,
+          "ID": 1,
+          "LikingFractalB": 0,
+          "LikingFractalDevalued": -5,
+          "LikingFractalValued": 5,
+          "OutcomeDev": "diamond",
+          "OutcomeDevalued": -5,
+          "OutcomeValued": 5,
+          "RestContingency": 0,
+          "group": "1-day",
+          "session": 1
+        },
+        {
+          "DiamondContingency": 5,
+          "GoldContingency": 5,
+          "ID": 3,
+          "LikingFractalB": 0,
+          "LikingFractalDevalued": -5,
+          "LikingFractalValued": 5,
+          "OutcomeDev": "diamond",
+          "OutcomeDevalued": -5,
+          "OutcomeValued": 5,
+          "RestContingency": 0,
+          "group": "1-day",
+          "session": 1
+        },
+        {
+          "DiamondContingency": 5,
+          "GoldContingency": 5,
+          "ID": 5,
+          "LikingFractalB": 5,
+          "LikingFractalDevalued": -5,
+          "LikingFractalValued": 5,
+          "OutcomeDev": "diamond",
+          "OutcomeDevalued": -5,
+          "OutcomeValued": 5,
+          "RestContingency": 0,
+          "group": "1-day",
+          "session": 1
+        },
+        {
+          "DiamondContingency": 4,
+          "GoldContingency": 3,
+          "ID": 7,
+          "LikingFractalB": 3,
+          "LikingFractalDevalued": -5,
+          "LikingFractalValued": 5,
+          "OutcomeDev": "diamond",
+          "OutcomeDevalued": 0,
+          "OutcomeValued": 5,
+          "RestContingency": 0,
+          "group": "1-day",
+          "session": 1
+        },
+        {
+          "DiamondContingency": 5,
+          "GoldContingency": 5,
+          "ID": 9,
+          "LikingFractalB": 0,
+          "LikingFractalDevalued": -5,
+          "LikingFractalValued": 5,
+          "OutcomeDev": "diamond",
+          "OutcomeDevalued": -5,
+          "OutcomeValued": 5,
+          "RestContingency": 0,
+          "group": "1-day",
+          "session": 1
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "Sheet1"
+    }
+  ]
+}

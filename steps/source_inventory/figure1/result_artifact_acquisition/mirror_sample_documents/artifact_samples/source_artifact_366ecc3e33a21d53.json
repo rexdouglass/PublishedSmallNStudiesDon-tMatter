@@ -1,0 +1,39 @@
+{
+  "artifact_id": "source_artifact_366ecc3e33a21d53",
+  "byte_size": 3572558,
+  "file_name": "Expected Power Slides.pdf",
+  "file_type": "pdf",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_documents/repo_search_osf_dc905e11e778/source_artifact_366ecc3e33a21d53__Expected_Power_Slides.pdf",
+  "page_count": 32,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "Expected statistical power: Justifying and evaluating statistical power Jeremy C. Biesanz University of British Columbia library(devtools) install_github(“jbiesanz/fabs”)"
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Overview 2 • Options for justifying sample size. • Why standard power calculations are often biased. • Expected statistical power. library(devtools) install_github(“jbiesanz/fabs”) • What is this? How do we interpret it? • Technical details. • Bells & whistles: Composite nulls and publication bias. • Simple code in R (really!) • Revisiting power in the OSF (2015) Science study. • Coping with the answers and results."
+    },
+    {
+      "page_number": 3,
+      "text_preview": "Justifying Sample Size 3 • Sample size in a study needs to be justified. •As an author you need to make a cogent, rational, and coherent argument. •As a reader, reviewer, and consumer of research, is the argument made by the author strong and justifiable? • Sample sized based on minimal effect size of interest? • Efficient? Can we really always do this? • Using previous research and effect size estimates. • Often there are data available to make an argument. Meta-analyses, previous research, etc. How often is there really NO relevant prior research? • Effect size estimates + G*Power Incorrect Answer"
+    },
+    {
+      "page_number": 4,
+      "text_preview": "Standard Statistical Power Calculations 4 Errors in Hypothesis Testing True State of Affairs H True H False o o Four components of inference H Type II Error Outcome of o 1. Sample size (n) Correct Decision Retained Hypothesis β 2. Significance criterion (α) Test Type I Error Correct Decision 3. Effect size (e.g., δ or ρ) H o 4. Statistical power (1-β) Rejected α (power=1- β) Type I Error: Rejecting a true null hypothesis. Type II Error: Retaining a false null hypothesis. Statistical Power: The probability of correctly rejecting a false null hypothesis. Let’s not even get into Type III error rates…"
+    },
+    {
+      "page_number": 5,
+      "text_preview": "Why are standard power calculations often biased? 5 • Effect size estimates are statistics. • Traditional power calculations require population parameters as input. • Even if effect size estimates are distributed symmetrically and are unbiased, the resulting statistical power calculation estimate is biased! •Why??"
+    },
+    {
+      "page_number": 6,
+      "text_preview": "Why are standard power calculations often biased? 6 −0.5 0.0 0.5 1.0 0.1 8.0 6.0 4.0 2.0 0.0 Observed Standardized Mean Difference rewoP lacitsitatS lautcA Sampling Distribution δ = .20 eziS elpmaS 000,001 000,01 0001 001 01 d=.10 suggests n=1571 and actual power=0.9999 d=.20 suggests n=394 and actual power=.80 d=.30 suggests n=176 and actual power=.465 n=394 n = 25"
+    }
+  ],
+  "parent_corpus_database_id": "repo_search_osf_dc905e11e778",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T09:05:03",
+  "sampled_page_count": 6,
+  "sha256": "f58894e704afd02dfbc97331f816fdbf1f071bbb8b4ca9a1aceeb5f70ff5b87a"
+}

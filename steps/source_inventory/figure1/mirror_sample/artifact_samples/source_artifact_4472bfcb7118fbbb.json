@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_4472bfcb7118fbbb",
+  "byte_size": 2487,
+  "columns": [
+    "unique_claim_id",
+    "threshold",
+    "s1",
+    "s2"
+  ],
+  "estimated_data_rows": 89,
+  "file_name": "orig_n_ser.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_4472bfcb7118fbbb__orig_n_ser.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "s1": 12,
+      "s2": 14,
+      "threshold": 9,
+      "unique_claim_id": "0PZl_single-trace"
+    },
+    {
+      "s1": 26382,
+      "s2": 39568,
+      "threshold": 7240,
+      "unique_claim_id": "0qar_single-trace"
+    },
+    {
+      "s1": 959,
+      "s2": 1426,
+      "threshold": 280,
+      "unique_claim_id": "0wWk_single-trace"
+    },
+    {
+      "s1": 390,
+      "s2": 580,
+      "threshold": 114,
+      "unique_claim_id": "2GKO_single-trace"
+    },
+    {
+      "s1": 341,
+      "s2": 510,
+      "threshold": 96,
+      "unique_claim_id": "2lb5_single-trace"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:39:05",
+  "sha256": "bb3511874ddfe78c590bd885df86b28243f397715d1373d55efd03f832213468"
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "OA Pipeline Bridge",
+  "version": "0.1.0",
+  "description": "Local-only bridge for automated Zotero full-text lookup in the provenance pilot.",
+  "applications": {
+    "zotero": {
+      "id": "oa-pipeline-bridge@local",
+      "strict_min_version": "6.999",
+      "strict_max_version": "7.*"
+    }
+  }
+}

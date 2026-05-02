@@ -30,6 +30,7 @@ execute:
   <ul>
     <li><a href="#abstract">Abstract</a></li>
     <li><a href="#purpose">Purpose</a></li>
+    <li><a href="#provenance-schema-and-100-row-retrace-pilot">Provenance Schema</a></li>
     <li><a href="#plot-1-replication-pairs">Plot 1 — Replication Pairs</a></li>
     <li><a href="#plot-2-published-paper-endpoints">Plot 2 — Published Paper Endpoints</a></li>
     <li><a href="#plot-3-preregistered-results">Plot 3 — Preregistered Results</a></li>
@@ -67,6 +68,7 @@ Each figure section now follows the same plot-first audit structure:
 4. specific observations included, with row-level paper/result details where the project has them.
 
 {{< include _generated/plot_catalog_status.qmd >}}
+{{< include _generated/provenance_schema_pilot.qmd >}}
 {{< include _generated/source_citation_gaps.qmd >}}
 
 # Plot 1 --- Replication Pairs

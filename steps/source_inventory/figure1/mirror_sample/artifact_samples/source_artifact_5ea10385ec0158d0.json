@@ -1,0 +1,108 @@
+{
+  "artifact_id": "source_artifact_5ea10385ec0158d0",
+  "byte_size": 820,
+  "file_name": "est_study_1.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_1.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "estimate_type",
+        "study"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.4231680456,
+          "conf.low": 0.3188000517,
+          "df": 1214.0,
+          "estimate": 0.3709840487,
+          "estimate_type": "Unstandardized",
+          "outcome": "russians_Y",
+          "p.value": 4.0379008e-41,
+          "statistic": 13.9475905661,
+          "std.error": 0.0265984327,
+          "study": "Pre-COVID",
+          "survey": "Hyman and Sheatsley (1950)",
+          "term": "russians_Z"
+        },
+        {
+          "conf.high": 0.270106111,
+          "conf.low": 0.128863951,
+          "df": 675.0,
+          "estimate": 0.199485031,
+          "estimate_type": "Unstandardized",
+          "outcome": "russians_Y",
+          "p.value": 4.19e-08,
+          "statistic": 5.5463014591,
+          "std.error": 0.0359672175,
+          "study": "Pre-COVID",
+          "survey": "Schuman and Presser (1980)",
+          "term": "russians_Z"
+        },
+        {
+          "conf.high": 0.3827717743,
+          "conf.low": 0.1302084957,
+          "df": 222.0,
+          "estimate": 0.256490135,
+          "estimate_type": "Unstandardized",
+          "outcome": "russians_Y",
+          "p.value": 8.53814e-05,
+          "statistic": 4.0026959486,
+          "std.error": 0.0640793451,
+          "study": "Pre-COVID",
+          "survey": "Schuman et al. (1983)",
+          "term": "russians_Z"
+        },
+        {
+          "conf.high": 0.3121155269,
+          "conf.low": 0.1956341326,
+          "df": 1035.0,
+          "estimate": 0.2538748298,
+          "estimate_type": "Unstandardized",
+          "outcome": "russians_Y",
+          "p.value": 4.244064544e-17,
+          "statistic": 8.5536078817,
+          "std.error": 0.0296804382,
+          "study": "Replication",
+          "survey": "Week 3",
+          "term": "russians_Z"
+        },
+        {
+          "conf.high": 0.4231680456,
+          "conf.low": 0.3188000517,
+          "df": 1214.0,
+          "estimate": 0.3709840487,
+          "estimate_type": "Standardized",
+          "outcome": "russians_Y",
+          "p.value": 4.0379008e-41,
+          "statistic": 13.9475905661,
+          "std.error": 0.0265984327,
+          "study": "Pre-COVID",
+          "survey": "Hyman and Sheatsley (1950)",
+          "term": "russians_Z"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        8,
+        12
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "f30bca7fc31239114e453ec1b101d6730d3cca3ba6eadd5e0cc0a3b3441c7654"
+}

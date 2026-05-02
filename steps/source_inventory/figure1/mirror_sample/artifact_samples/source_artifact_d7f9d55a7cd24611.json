@@ -1,0 +1,90 @@
+{
+  "artifact_id": "source_artifact_d7f9d55a7cd24611",
+  "byte_size": 8432,
+  "file_name": "summary_dat_export.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/summary_dat_export.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "study_group_detail",
+        "study",
+        "estimate",
+        "std.error",
+        "study_group",
+        "conf.low",
+        "conf.high",
+        "statistic",
+        "p.value"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.3447145233,
+          "conf.low": 0.2651936956,
+          "estimate": 0.3049541094,
+          "p.value": 0.0,
+          "statistic": 15.0327925772,
+          "std.error": 0.0202859254,
+          "study": "Pre-COVID summary",
+          "study_group": "Hyman & Sheatsley (1950)",
+          "study_group_detail": "Russian reporters"
+        },
+        {
+          "conf.high": 0.3120484886,
+          "conf.low": 0.195701171,
+          "estimate": 0.2538748298,
+          "p.value": 0.0,
+          "statistic": 8.5536078817,
+          "std.error": 0.0296804382,
+          "study": "YCLS summary",
+          "study_group": "Hyman & Sheatsley (1950)",
+          "study_group_detail": "Russian reporters"
+        },
+        {
+          "conf.high": 0.4125715063,
+          "conf.low": 0.2934827138,
+          "estimate": 0.3530271101,
+          "p.value": 0.0,
+          "statistic": 11.6204576664,
+          "std.error": 0.030379794,
+          "study": "Pre-COVID summary",
+          "study_group": "Tversky & Kaheneman (1981) - Cheap/Expensive",
+          "study_group_detail": "Cheap v. Expensive Framing"
+        },
+        {
+          "conf.high": 0.3439458429,
+          "conf.low": 0.1018477761,
+          "estimate": 0.2228968095,
+          "p.value": 0.0003072643,
+          "statistic": 3.6090973583,
+          "std.error": 0.0617597109,
+          "study": "YCLS summary",
+          "study_group": "Tversky & Kaheneman (1981) - Cheap/Expensive",
+          "study_group_detail": "Cheap v. Expensive Framing"
+        },
+        {
+          "conf.high": 0.6501580968,
+          "conf.low": 0.5383576928,
+          "estimate": 0.5942578948,
+          "p.value": 0.0,
+          "statistic": 20.8361585787,
+          "std.error": 0.0285205112,
+          "study": "Pre-COVID summary",
+          "study_group": "Tversky & Kaheneman (1981) - Gain/Loss",
+          "study_group_detail": "Gain v. Loss Framing"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        138,
+        9
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:41",
+  "sha256": "539178fffabcf249633146630d68bb34d4f223b69656707f8c26d2cd02c4bded"
+}

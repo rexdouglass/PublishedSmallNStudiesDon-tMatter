@@ -1,0 +1,266 @@
+{
+  "artifact_id": "source_artifact_13b798f618350ae2",
+  "byte_size": 5370,
+  "file_name": "P0XSAU.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/P0XSAU.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 997,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 7449772,
+      "identifier": "DVN/P0XSAU",
+      "latestVersion": {
+        "citationDate": "2023-11-27",
+        "createTime": "2023-10-06T14:42:27Z",
+        "datasetFileUploadsAvailable": 997,
+        "datasetId": 7449772,
+        "datasetPersistentId": "doi:10.7910/DVN/P0XSAU",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": true,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7236e61d1c0a766af0196dbc64f3e057"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2023-11-27",
+              "fileAccessRequest": true,
+              "filename": "P4P_Analysis2.R",
+              "filesize": 92780,
+              "friendlyType": "R Syntax",
+              "id": 7609620,
+              "lastUpdateTime": "2023-11-27T16:11:37Z",
+              "md5": "7236e61d1c0a766af0196dbc64f3e057",
+              "persistentId": "",
+              "publicationDate": "2023-11-27",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:18c118bad4e-70b0c0361afa",
+              "tabularData": false
+            },
+            "datasetVersionId": 351485,
+            "label": "P4P_Analysis2.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1e4e2aead6ff06bdab474ade553e9593"
+              },
+              "contentType": "application/gzip",
+              "creationDate": "2023-11-27",
+              "fileAccessRequest": true,
+              "filename": "P4P_Clean.rda",
+              "filesize": 326165,
+              "friendlyType": "Gzip Archive",
+              "id": 7609621,
+              "lastUpdateTime": "2023-11-27T16:11:37Z",
+              "md5": "1e4e2aead6ff06bdab474ade553e9593",
+              "persistentId": "",
+              "publicationDate": "2023-11-27",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:18c118bae54-9a825d0f0443",
+              "tabularData": false
+            },
+            "datasetVersionId": 351485,
+            "label": "P4P_Clean.rda",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 351485,
+        "internalVersionNumber": 6,
+        "lastUpdateTime": "2023-11-27T16:11:37Z",
+        "latestVersionPublishingState": "DRAFT",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: Which Job Attributes Attract Individuals High in Public Service Motivation and Self-Efficacy to a Public Service Job?"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "American University, Aarhus University"
+                    },
+                    "authorIdentifier": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorIdentifier",
+                      "value": "0000-0002-8816-088X"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Favero, Nathan"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Copenhagen"
+                    },
+                    "authorIdentifier": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorIdentifier",
+                      "value": "0000-0001-9428-3395"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Pedersen, Mogens Jin"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "American University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Park, Joohyung"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "American University, Aarhus University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "favero@american.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Favero, Nathan"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Replication files: Nathan Favero, Mogens Jin Pedersen, and Joohyung Park. Forthcoming. ``Which Job Attributes Attract Individuals High in Public Service Motivation and Self-Efficacy to a Public Service Job?'' <i>Public Administration</i>.<br>\n\nFor further information on data processing and complete survey materials, see <a href=\"https://doi.org/10.7910/DVN/NSHT68\">https://doi.org/10.7910/DVN/NSHT68</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Favero, Nathan"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2023-10-06"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2023-11-27",
+        "releaseTime": "2023-11-27T16:11:37Z",
+        "storageIdentifier": "s3://10.7910/DVN/P0XSAU",
+        "versionMinorNumber": 0,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/P0XSAU",
+      "protocol": "doi",
+      "publicationDate": "2023-11-27",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/P0XSAU"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "15429da31bbbbbe6173d86d45e430ea40a844a80177bb135c222a61003a64e5b"
+}

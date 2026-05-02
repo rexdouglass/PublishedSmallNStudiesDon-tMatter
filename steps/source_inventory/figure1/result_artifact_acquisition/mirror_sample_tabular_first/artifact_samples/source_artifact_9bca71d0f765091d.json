@@ -1,0 +1,93 @@
+{
+  "artifact_id": "source_artifact_9bca71d0f765091d",
+  "byte_size": 3861,
+  "columns": [
+    "Unnamed: 0",
+    "condition",
+    "age",
+    "gender",
+    "bdi",
+    "prevividness",
+    "postvividness",
+    "preemotionality",
+    "postemotionality",
+    "totalcorrect",
+    "totalmisinfo"
+  ],
+  "estimated_data_rows": 120,
+  "file_name": "replication_clean.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_awesome_emdr_misinfo/source_artifact_9bca71d0f765091d__replication_clean.csv",
+  "parent_corpus_database_id": "lead_awesome_emdr_misinfo",
+  "preview_rows": [
+    {
+      "Unnamed: 0": 1,
+      "age": 19,
+      "bdi": 35,
+      "condition": 1,
+      "gender": 0,
+      "postemotionality": 3.3,
+      "postvividness": 6.2,
+      "preemotionality": 3.1,
+      "prevividness": 6,
+      "totalcorrect": 14,
+      "totalmisinfo": 1
+    },
+    {
+      "Unnamed: 0": 2,
+      "age": 20,
+      "bdi": 13,
+      "condition": 0,
+      "gender": 1,
+      "postemotionality": 3.5,
+      "postvividness": 9.0,
+      "preemotionality": 4.0,
+      "prevividness": 8,
+      "totalcorrect": 11,
+      "totalmisinfo": 3
+    },
+    {
+      "Unnamed: 0": 3,
+      "age": 18,
+      "bdi": 13,
+      "condition": 1,
+      "gender": 0,
+      "postemotionality": 5.0,
+      "postvividness": 7.0,
+      "preemotionality": 4.0,
+      "prevividness": 9,
+      "totalcorrect": 13,
+      "totalmisinfo": 1
+    },
+    {
+      "Unnamed: 0": 4,
+      "age": 26,
+      "bdi": 3,
+      "condition": 0,
+      "gender": 0,
+      "postemotionality": 1.0,
+      "postvividness": 8.0,
+      "preemotionality": 1.0,
+      "prevividness": 9,
+      "totalcorrect": 11,
+      "totalmisinfo": 2
+    },
+    {
+      "Unnamed: 0": 5,
+      "age": 26,
+      "bdi": 14,
+      "condition": 1,
+      "gender": 1,
+      "postemotionality": 4.0,
+      "postvividness": 6.0,
+      "preemotionality": 4.0,
+      "prevividness": 7,
+      "totalcorrect": 11,
+      "totalmisinfo": 2
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T22:20:42",
+  "sha256": "3df80f73206f0ff616926f43744538150e66077ea18f8b5053d058a1ba9501c5"
+}

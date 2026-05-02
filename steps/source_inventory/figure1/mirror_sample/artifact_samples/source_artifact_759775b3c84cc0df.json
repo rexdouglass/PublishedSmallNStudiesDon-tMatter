@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_759775b3c84cc0df",
+  "byte_size": 8916,
+  "columns": [
+    "Location",
+    "Outcome",
+    "Coefficient",
+    "Pvalue"
+  ],
+  "estimated_data_rows": 109,
+  "file_name": "ALL_pvalues.tab",
+  "file_type": "tab",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse/OJA7YS/ALL_pvalues.tab",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview_rows": [
+    {
+      "Coefficient": "Treatment",
+      "Location": "Table 3",
+      "Outcome": "Overall evaluation",
+      "Pvalue": 0.001
+    },
+    {
+      "Coefficient": "Background",
+      "Location": "Table 3",
+      "Outcome": "Overall evaluation",
+      "Pvalue": 0.018
+    },
+    {
+      "Coefficient": "Policy",
+      "Location": "Table 3",
+      "Outcome": "Overall evaluation",
+      "Pvalue": 0.001
+    },
+    {
+      "Coefficient": "Full video",
+      "Location": "Table 3",
+      "Outcome": "Overall evaluation",
+      "Pvalue": 0.009
+    },
+    {
+      "Coefficient": "Full audio",
+      "Location": "Table 3",
+      "Outcome": "Overall evaluation",
+      "Pvalue": 0.011
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:42",
+  "sha256": "679f9bf02b3ef6e7817a0cfed50571af8f4ee13b73078cb702a30943e1ba583d"
+}

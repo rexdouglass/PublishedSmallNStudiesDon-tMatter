@@ -1,0 +1,28 @@
+{
+  "artifact_id": "source_artifact_b7949668d5766c5c",
+  "byte_size": 424,
+  "file_name": "pre-applypatch.sample",
+  "file_type": "sample",
+  "line_preview": [
+    "#!/bin/sh",
+    "#",
+    "# An example hook script to verify what is about to be committed",
+    "# by applypatch from an e-mail message.",
+    "#",
+    "# The hook should exit with non-zero status after issuing an",
+    "# appropriate message if it wants to stop the commit.",
+    "#",
+    "# To enable this hook, rename this file to \"pre-applypatch\".",
+    "",
+    ". git-sh-setup",
+    "precommit=\"$(git rev-parse --git-path hooks/pre-commit)\"",
+    "test -x \"$precommit\" && exec \"$precommit\" ${1+\"$@\"}",
+    ":"
+  ],
+  "line_preview_count": 14,
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/github/Direct-Aid-Replication-Materials/.git/hooks/pre-applypatch.sample",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+}

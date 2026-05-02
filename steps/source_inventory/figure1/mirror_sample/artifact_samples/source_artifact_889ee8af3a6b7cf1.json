@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_889ee8af3a6b7cf1",
+  "byte_size": 174411,
+  "columns": [
+    "paper_id",
+    "cs",
+    "log_count",
+    "cite_age"
+  ],
+  "estimated_data_rows": 3900,
+  "file_name": "corr_citation-counts.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_889ee8af3a6b7cf1__corr_citation-counts.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "cite_age": 14,
+      "cs": 1.397060807,
+      "log_count": 8.3963805712,
+      "paper_id": "0005"
+    },
+    {
+      "cite_age": 15,
+      "cs": 1.2878590527,
+      "log_count": 9.055205875,
+      "paper_id": "00O2"
+    },
+    {
+      "cite_age": 15,
+      "cs": 1.3351318151,
+      "log_count": 10.4737040962,
+      "paper_id": "00bb"
+    },
+    {
+      "cite_age": 11,
+      "cs": 1.4042740661,
+      "log_count": 10.4727141512,
+      "paper_id": "01Ll"
+    },
+    {
+      "cite_age": 15,
+      "cs": 1.6968178471,
+      "log_count": 8.0799277708,
+      "paper_id": "01Wk"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:37:21",
+  "sha256": "22a72d642e99026459798b326a4b685f637c3c6bcbf5e9b13bb1c440fc01231a"
+}

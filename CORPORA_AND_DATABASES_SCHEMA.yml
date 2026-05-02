@@ -1,0 +1,103 @@
+CORPORA_AND_DATABASES_SCHEMA:
+  purpose: One consolidated root-level table for every corpus, database, registry database, replication
+    project, source table, or repository package we discover.
+  table: CORPORA_AND_DATABASES.tsv
+  grain: One corpus/database/source-family lead or inventory object.
+  rule: Any discovered corpus or database-like source goes here before it is split into detailed provenance
+    tables.
+  columns:
+  - name: corpus_database_id
+    definition: Stable ID for this corpus/database inventory row.
+  - name: merge_key
+    definition: Internal consolidation key used to dedupe search outputs and local seed rows.
+  - name: merge_basis
+    definition: Evidence basis for merge_key, such as doi, normalized_url, source_key, or search_title.
+  - name: name
+    definition: Human-readable corpus, database, project, registry, or source-table name.
+  - name: record_kind
+    definition: Coarse kind. Search outputs may be candidate_corpus_or_database, candidate_repository_package,
+      candidate_bibliographic_paper, candidate_individual_paper_or_package, candidate_context_or_methods_paper,
+      or rejected_irrelevant_search_hit before later triage promotes a true corpus/database.
+  - name: inventory_status
+    definition: 'Current disposition: discovered, discovered_search_lead, needs_triage_search_lead, routed_to_individual_paper_search,
+      catalog_only_context_lead, rejected_irrelevant_search_hit, raw_available, staged, integrated, blocked,
+      excluded, needs_triage, or deprecated_duplicate.'
+  - name: source_family
+    definition: Source-family label used by plot/source catalogs when available.
+  - name: domain_or_field
+    definition: Domain or field label when available.
+  - name: description
+    definition: What the source is.
+  - name: why_relevant
+    definition: Why this source may matter for one or more current/future plot universes.
+  - name: plot_universe_ids
+    definition: Pipe-delimited plot universes this source may support.
+  - name: current_scope_roles
+    definition: Pipe-delimited roles such as figure1_candidate, figure2_source, figure3_source, diagnostic_catalog,
+      or future_seed.
+  - name: figure1_replication_relevance
+    definition: yes/no/unknown for original/replication pair discovery.
+  - name: figure2_published_relevance
+    definition: yes/no/unknown for eventually published D/N endpoint discovery.
+  - name: figure3_prereg_relevance
+    definition: yes/no/unknown for preregistered/planned result discovery.
+  - name: discovery_source
+    definition: Which local catalog or inventory exposed this row.
+  - name: discovery_source_path
+    definition: Repo-relative path to the catalog/inventory file or raw directory.
+  - name: source_key
+    definition: Existing source key, handle, lead ID, or canonical source ID if available.
+  - name: citation_key
+    definition: Citation key if already known.
+  - name: landing_url
+    definition: Stable landing page, project page, article page, registry page, or repository URL.
+  - name: raw_url
+    definition: Direct raw/package/download URL if known.
+  - name: host
+    definition: Host, provider, or repository platform.
+  - name: access_class
+    definition: Access class such as public, yes_login, restricted, local_only, or unknown.
+  - name: access_status
+    definition: Observed status such as downloaded, raw_available, integrated, blocked, or unknown.
+  - name: local_raw_paths
+    definition: Pipe-delimited repo-relative raw directories or files already present.
+  - name: backing_files
+    definition: Pipe-delimited repo-relative files or paths that back the catalog/source.
+  - name: staged_paths
+    definition: Pipe-delimited staged parser outputs.
+  - name: promoted_paths
+    definition: Pipe-delimited promoted outputs.
+  - name: expected_rows
+    definition: Expected row count when known.
+  - name: known_rows
+    definition: Known candidate/result rows available now.
+  - name: known_pair_rows
+    definition: Known original/replication pair rows available now.
+  - name: known_paper_units
+    definition: Known paper/study/trial units available now.
+  - name: known_test_rows
+    definition: Known test/effect/outcome rows available now.
+  - name: result_fields_available
+    definition: Compact description of available result fields.
+  - name: has_d_or_convertible_effect
+    definition: yes/no/unknown.
+  - name: has_n
+    definition: yes/no/unknown.
+  - name: has_replication_pair_mapping
+    definition: yes/no/unknown.
+  - name: has_prereg_or_planning_info
+    definition: yes/no/unknown.
+  - name: has_publication_links
+    definition: yes/no/unknown.
+  - name: parser_family
+    definition: Parser family or expected parser if known.
+  - name: parser_status
+    definition: Parser state such as not_started, staged, promoted, integrated, blocked, or unknown.
+  - name: blocker_codes
+    definition: Pipe-delimited blockers.
+  - name: next_action
+    definition: Next action needed.
+  - name: notes
+    definition: Short human notes.
+  - name: last_seen
+    definition: Date this inventory row was generated or refreshed.

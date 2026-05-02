@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_7a18317a5b2bdd1b",
+  "byte_size": 1446,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "paper_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "oa_stat_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 6,
+  "file_name": "changes_pr_outreach.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_7a18317a5b2bdd1b__changes_pr_outreach.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": "no",
+      "change_to": "yes_private",
+      "col_name": "OA_code_shared",
+      "date_implemented": "2025-03-10T00:00:00Z",
+      "oa_stat_version": 2,
+      "paper_id": "dPz2",
+      "rationale": "Note: I did see a note from Brinna in one of our sheets that said this was recoded to reflect the OA response, however I didn't this reflected in our coding sheets or in the processed data. So perhaps may be worth making sure there wasn't a similar change request from Brinna for a different paper before implementing this change? Rationale: This was one of the few late PR contacts/followups and the OA followed up with code (data already publicly available), so updating to reflect that code was privately shared.",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": "no",
+      "change_to": "available_online",
+      "col_name": "OA_data_shared",
+      "date_implemented": "2025-03-11T00:00:00Z",
+      "oa_stat_version": 2,
+      "paper_id": "VBx1",
+      "rationale": "Correcting entry to reflect that both data and code are publicly available.",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": "no",
+      "change_to": "available_online",
+      "col_name": "OA_code_shared",
+      "date_implemented": "2025-03-11T00:00:00Z",
+      "oa_stat_version": 2,
+      "paper_id": "VBx1",
+      "rationale": "Correcting entry to reflect that both data and code are publicly available.",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": "no",
+      "change_to": "available_online",
+      "col_name": "OA_data_shared",
+      "date_implemented": "2025-03-11T00:00:00Z",
+      "oa_stat_version": 2,
+      "paper_id": "LyWB",
+      "rationale": "Correcting entry to reflect that both data and code are publicly available.",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": "no",
+      "change_to": "available_online",
+      "col_name": "OA_code_shared",
+      "date_implemented": "2025-03-11T00:00:00Z",
+      "oa_stat_version": 2,
+      "paper_id": "LyWB",
+      "rationale": "Correcting entry to reflect that both data and code are publicly available.",
+      "reported_by": "Olivia Miske"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:37:00",
+  "sha256": "d33a898b0dd098f3256dcc541f007c750d2df4b5cd28e8d62d4e50af202c9fec"
+}

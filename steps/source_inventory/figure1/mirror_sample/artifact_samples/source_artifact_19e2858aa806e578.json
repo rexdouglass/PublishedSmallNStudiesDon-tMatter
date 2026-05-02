@@ -1,0 +1,438 @@
+{
+  "artifact_id": "source_artifact_19e2858aa806e578",
+  "byte_size": 11384,
+  "file_name": "3VVWPL.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/3VVWPL.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 993,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 4002952,
+      "identifier": "DVN/3VVWPL",
+      "latestVersion": {
+        "UNF": "UNF:6:a3zSXQF/lkQQhkGYNqchGg==",
+        "citationDate": "2020-08-13",
+        "createTime": "2020-08-03T22:59:33Z",
+        "datasetFileUploadsAvailable": 993,
+        "datasetId": 4002952,
+        "datasetPersistentId": "doi:10.7910/DVN/3VVWPL",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8349f984bdf5ac5827d77fb9962e9739"
+              },
+              "contentType": "text/plain",
+              "creationDate": "2020-08-03",
+              "description": "Read me file, explaining how other replication files work.",
+              "fileAccessRequest": false,
+              "filename": "0 READ ME FIRST.txt",
+              "filesize": 1651,
+              "friendlyType": "Plain Text",
+              "id": 4002958,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "8349f984bdf5ac5827d77fb9962e9739",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/VKTEXR",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/VKTEXR",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b6889047-e5f4647cc1d7",
+              "tabularData": false
+            },
+            "datasetVersionId": 202956,
+            "description": "Read me file, explaining how other replication files work.",
+            "label": "0 READ ME FIRST.txt",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:IZTsrNG9kE51gWWmZ6XJtg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "e64a41a59c8bd41302d65477e7013c67"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2020-08-03",
+              "description": "Data from the Australian experiment.",
+              "fileAccessRequest": false,
+              "filename": "1 Australia data JEPS FINAL.tab",
+              "filesize": 165951,
+              "friendlyType": "Tab-Delimited",
+              "id": 4002955,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "e64a41a59c8bd41302d65477e7013c67",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "1 Australia data JEPS FINAL.dta",
+              "originalFileSize": 216527,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/TWY1C6",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/TWY1C6",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b68a58c6-d1c0244be374",
+              "tabularData": true
+            },
+            "datasetVersionId": 202956,
+            "description": "Data from the Australian experiment.",
+            "label": "1 Australia data JEPS FINAL.tab",
+            "restricted": false,
+            "version": 3
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a4261369ab825c15044678e881a37ee4"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-08-03",
+              "description": "Stata do file to replicate tables from the Australian experiment found in the main body of the paper.",
+              "fileAccessRequest": false,
+              "filename": "1 Australia main analysis JEPS FINAL.do",
+              "filesize": 3612,
+              "friendlyType": "Stata Syntax",
+              "id": 4002953,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "a4261369ab825c15044678e881a37ee4",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/UKP50C",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/UKP50C",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b68a5b9a-57e7a7b5f391",
+              "tabularData": false
+            },
+            "datasetVersionId": 202956,
+            "description": "Stata do file to replicate tables from the Australian experiment found in the main body of the paper.",
+            "label": "1 Australia main analysis JEPS FINAL.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e50bdb801b665e89d8c229e3b9836887"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-08-03",
+              "description": "Stata do file to replicate Australian results in online appendix.",
+              "fileAccessRequest": false,
+              "filename": "1 Australia online appendix JEPS FINAL.do",
+              "filesize": 9255,
+              "friendlyType": "Stata Syntax",
+              "id": 4002954,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "e50bdb801b665e89d8c229e3b9836887",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/RTZSUU",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/RTZSUU",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b689f06c-5a5ec8ed74d8",
+              "tabularData": false
+            },
+            "datasetVersionId": 202956,
+            "description": "Stata do file to replicate Australian results in online appendix.",
+            "label": "1 Australia online appendix JEPS FINAL.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:qSJQm67RUxfbxTlrZvOSJg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "cc03a3ffb4743225814ca831dab13497"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2020-08-03",
+              "description": "Data from the New Zealand experiment.",
+              "fileAccessRequest": false,
+              "filename": "2 NZ data JEPS FINAL.tab",
+              "filesize": 77576,
+              "friendlyType": "Tab-Delimited",
+              "id": 4002956,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "cc03a3ffb4743225814ca831dab13497",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "2 NZ data JEPS FINAL.dta",
+              "originalFileSize": 107663,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/3HWXJC",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/3HWXJC",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b689f549-cc73e0146f0e",
+              "tabularData": true
+            },
+            "datasetVersionId": 202956,
+            "description": "Data from the New Zealand experiment.",
+            "label": "2 NZ data JEPS FINAL.tab",
+            "restricted": false,
+            "version": 3
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4c6ceb72523ed2ecb238481087ac388b"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-08-03",
+              "description": "Stata do file to replicate tables from the New Zealand experiment found in the main body of the paper.",
+              "fileAccessRequest": false,
+              "filename": "2 NZ main analysis JEPS FINAL.do",
+              "filesize": 2417,
+              "friendlyType": "Stata Syntax",
+              "id": 4002959,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "4c6ceb72523ed2ecb238481087ac388b",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/L4RT4S",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/L4RT4S",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b689f83d-f9c000adb52a",
+              "tabularData": false
+            },
+            "datasetVersionId": 202956,
+            "description": "Stata do file to replicate tables from the New Zealand experiment found in the main body of the paper.",
+            "label": "2 NZ main analysis JEPS FINAL.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7c95e86abf066e8b5973f1fdb0a1cf4a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-08-03",
+              "description": "Stata do file to replicate tables from the New Zealand experiment found in the online appendix.",
+              "fileAccessRequest": false,
+              "filename": "2 NZ online appendix JEPS FINAL.do",
+              "filesize": 8851,
+              "friendlyType": "Stata Syntax",
+              "id": 4002957,
+              "lastUpdateTime": "2020-08-13T19:26:33Z",
+              "md5": "7c95e86abf066e8b5973f1fdb0a1cf4a",
+              "persistentId": "doi:10.7910/DVN/3VVWPL/WSLJMI",
+              "pidURL": "https://doi.org/10.7910/DVN/3VVWPL/WSLJMI",
+              "publicationDate": "2020-08-13",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:173b689fb5b-41e6267f0160",
+              "tabularData": false
+            },
+            "datasetVersionId": 202956,
+            "description": "Stata do file to replicate tables from the New Zealand experiment found in the online appendix.",
+            "label": "2 NZ online appendix JEPS FINAL.do",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 202956,
+        "internalVersionNumber": 8,
+        "lastUpdateTime": "2020-08-13T19:26:33Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for The effect of geostrategic competition on public attitudes to aid"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Australian National University"
+                    },
+                    "authorIdentifier": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorIdentifier",
+                      "value": "0000-0002-2388-6890"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Wood, Terence"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Australian National University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "terence.wood@anu.edu.au"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Wood, Terence"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2020"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "China’s rise is ushering in a new era of geostrategic contestation involving foreign aid. In many traditional OECD donors, aid policy is changing as a result. We report on a survey experiment studying the impacts of rising Chinese aid on public opinion in traditional donors. We randomly treated people with vignettes emphasising China’s rise as an aid donor in the Pacific, a region of substantial geostrategic competition. We used a large, nationally-representative sample of Australians (Australia is the largest donor to the Pacific.) As expected, treating participants reduced hostility to aid and increased support for more aid focused on the Pacific. Counter to expectations, however, treatment reduced support for using aid to advance Australian interests. These findings were largely replicated in a separate experiment in New Zealand. Knowledge of Chinese competition changes support for aid, but it does not increase support for using aid as a tool of geostrategy."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Foreign aid"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Public opinion"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "publication",
+                "value": [
+                  {
+                    "publicationCitation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationCitation",
+                      "value": "Wood, T, Hoy, C & Pryke, J \"The effect of geostrategic competition on public attitudes to aid\", Journal of Experimental Political Science"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "notesText",
+                "value": "Data and code from Stata V14.2"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Wood, Terence"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2020-08-03"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2020-08-13",
+        "releaseTime": "2020-08-13T19:26:33Z",
+        "storageIdentifier": "s3://10.7910/DVN/3VVWPL",
+        "versionMinorNumber": 0,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/3VVWPL",
+      "protocol": "doi",
+      "publicationDate": "2020-08-13",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/3VVWPL"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "b62814ef3198118ea228460a02f4b7fe18e7f873ef6a15719097e6a1982a5622"
+}

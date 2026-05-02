@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_de342461186312a7",
+  "byte_size": 248847,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "unique_report_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "rr_stat_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 1511,
+  "file_name": "changes_repli_merged.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_de342461186312a7__changes_repli_merged.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": "0",
+      "change_to": "new",
+      "col_name": "rr_original_data_overlap",
+      "date_implemented": "2021-11-17T00:00:00Z",
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "rr_stat_version": 2,
+      "unique_report_id": "65km6_0_1"
+    },
+    {
+      "change_from": "Unidentified",
+      "change_to": "Direct Replication",
+      "col_name": "rr_type_internal",
+      "date_implemented": "2021-11-17T00:00:00Z",
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "rr_stat_version": 2,
+      "unique_report_id": "65km6_0_1"
+    },
+    {
+      "change_from": "Unidentified",
+      "change_to": "Direct Replication",
+      "col_name": "rr_type",
+      "date_implemented": "2021-11-17T00:00:00Z",
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "rr_stat_version": 2,
+      "unique_report_id": "65km6_0_1"
+    },
+    {
+      "change_from": "0",
+      "change_to": "new",
+      "col_name": "rr_original_data_overlap",
+      "date_implemented": "2021-11-17T00:00:00Z",
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "rr_stat_version": 2,
+      "unique_report_id": "65km6_0_2"
+    },
+    {
+      "change_from": "Unidentified",
+      "change_to": "Direct Replication",
+      "col_name": "rr_type_internal",
+      "date_implemented": "2021-11-17T00:00:00Z",
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "rr_stat_version": 2,
+      "unique_report_id": "65km6_0_2"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:37:02",
+  "sha256": "4ea755bae59baaba888dd246bf7a637f539b4b7f08f61a020fc2372540cb25ab"
+}

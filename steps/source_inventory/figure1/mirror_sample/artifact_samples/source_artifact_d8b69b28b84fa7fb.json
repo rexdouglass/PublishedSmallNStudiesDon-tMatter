@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_d8b69b28b84fa7fb",
+  "byte_size": 341,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "paper_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "rationale"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "changes_orig_stats-extended.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_d8b69b28b84fa7fb__changes_orig_stats-extended.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": 0.000337,
+      "change_to": 0.00353,
+      "col_name": "original_effect_size_value_statsteam",
+      "date_implemented": "2025-02-21T00:00:00Z",
+      "paper_id": "Eb2N",
+      "rationale": "Inaccurate input data was given to our collaborators, which resulted in an incorrect output. Input was corrected and we are manually correcting this output ourselves.",
+      "reported_by": "Andrew Tyner"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-01T20:36:55",
+  "sha256": "fe81598653ca47ad2aaaa68699920d06cdf676fa727e5be1bb533dac6cf8c1eb"
+}

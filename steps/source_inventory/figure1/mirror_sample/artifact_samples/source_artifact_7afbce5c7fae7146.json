@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_7afbce5c7fae7146",
+  "byte_size": 373029,
+  "file_name": "dataverse_10__abp_replication.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_10__abp_replication.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "psv_approve_nuke",
+        "psv_approve_nuke_binary",
+        "psv_approve_convent",
+        "psv_approve_convent_binary",
+        "psv_prefer",
+        "psv_prefer_binary",
+        "psv_prospective_acq",
+        "psv_retrospective_approve",
+        "psv_retrospective_ethical",
+        "psv_retrospective_approve_binary",
+        "psv_retrospective_ethical_binary",
+        "psv_retrospective_acq",
+        "psv_Z_prospective",
+        "psv_Z_retrospective"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 45%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 3.0,
+          "psv_approve_convent_binary": 0.0,
+          "psv_approve_nuke": 3.0,
+          "psv_approve_nuke_binary": 0.0,
+          "psv_prefer": 3.0,
+          "psv_prefer_binary": 1.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_acq": 0.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 70%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 6.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 4.0,
+          "psv_approve_nuke_binary": 1.0,
+          "psv_prefer": 2.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 0.0,
+          "psv_retrospective_acq": 0.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null
+        },
+        {
+          "psv_Z_prospective": null,
+          "psv_Z_retrospective": "Nuclear Strike",
+          "psv_approve_convent": null,
+          "psv_approve_convent_binary": 0.0,
+          "psv_approve_nuke": null,
+          "psv_approve_nuke_binary": 0.0,
+          "psv_prefer": null,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 0.0,
+          "psv_retrospective_acq": 1.0,
+          "psv_retrospective_approve": 6.0,
+          "psv_retrospective_approve_binary": 1.0,
+          "psv_retrospective_ethical": 6.0,
+          "psv_retrospective_ethical_binary": 0.0
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 3.0,
+          "psv_approve_convent_binary": 0.0,
+          "psv_approve_nuke": 2.0,
+          "psv_approve_nuke_binary": 0.0,
+          "psv_prefer": 2.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_acq": 0.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 5.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 1.0,
+          "psv_approve_nuke_binary": 0.0,
+          "psv_prefer": 1.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_acq": 0.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        2771,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "1295bea4d0446db6456922501abccd001e3ac0e9d12f6227d4c44bffb74ef9c5"
+}

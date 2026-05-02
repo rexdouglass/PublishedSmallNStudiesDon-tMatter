@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_c9651600c424294e",
+  "byte_size": 2581,
+  "file_name": "est_study_8a.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_8a.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "estimate_type",
+        "outcome_group",
+        "study",
+        "term_group"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.0505801021,
+          "conf.low": -0.1304268454,
+          "df": 694.0,
+          "estimate": -0.0399233716,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_approve_nuke_binary",
+          "outcome_group": "Approve Nuclear Use",
+          "p.value": 0.3867345525,
+          "statistic": -0.8661001617,
+          "std.error": 0.0460955596,
+          "study": "Replication",
+          "survey": "Week 13",
+          "term": "90/70",
+          "term_group": null
+        },
+        {
+          "conf.high": 0.0351848367,
+          "conf.low": -0.1446292812,
+          "df": 694.0,
+          "estimate": -0.0547222222,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_approve_nuke_binary",
+          "outcome_group": "Approve Nuclear Use",
+          "p.value": 0.232486444,
+          "statistic": -1.1950225236,
+          "std.error": 0.0457917915,
+          "study": "Replication",
+          "survey": "Week 13",
+          "term": "90/45",
+          "term_group": null
+        },
+        {
+          "conf.high": 0.0672995434,
+          "conf.low": -0.1715730476,
+          "df": 395.0,
+          "estimate": -0.0521367521,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_approve_nuke_binary",
+          "outcome_group": "Approve Nuclear Use",
+          "p.value": 0.3913025093,
+          "statistic": -0.8581999436,
+          "std.error": 0.0607512882,
+          "study": "Replication",
+          "survey": "Week 6",
+          "term": "90/70",
+          "term_group": null
+        },
+        {
+          "conf.high": -0.0138289234,
+          "conf.low": -0.2541872709,
+          "df": 395.0,
+          "estimate": -0.1340080972,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_approve_nuke_binary",
+          "outcome_group": "Approve Nuclear Use",
+          "p.value": 0.0289470584,
+          "statistic": -2.1922125508,
+          "std.error": 0.0611291533,
+          "study": "Replication",
+          "survey": "Week 6",
+          "term": "90/45",
+          "term_group": null
+        },
+        {
+          "conf.high": 0.1115790811,
+          "conf.low": -0.1508223581,
+          "df": 321.0,
+          "estimate": -0.0196216385,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_approve_nuke_binary",
+          "outcome_group": "Approve Nuclear Use",
+          "p.value": 0.7687719492,
+          "statistic": -0.2942304951,
+          "std.error": 0.0666879839,
+          "study": "Replication",
+          "survey": "Week 5",
+          "term": "90/70",
+          "term_group": null
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        40,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "44c65a94e15eeb3060dd5b461ceee2fe4460c66d64c0fa8b7de751af4d07769e"
+}

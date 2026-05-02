@@ -1,0 +1,25 @@
+{
+  "batch_id": "clustered004",
+  "cluster_id": "cluster_meta_regression_to_explain_shrinkage_and_heterogeneity_in_large_scale_replicatio_40dfdd112362",
+  "confidence": "medium",
+  "created_at": "2026-05-02T01:55:21+00:00",
+  "decision": "keep_source_family_candidate",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered004.json",
+  "lead_level_note_count": 1,
+  "lead_level_notes": [
+    {
+      "notes": "Keep the Zenodo/GitLab repository as the preferred root candidate; article and preprint hits are context.",
+      "suggested_disposition": "root_source_family"
+    }
+  ],
+  "next_action": "Keep as a source-family candidate keyed to the Zenodo/GitLab repository; inspect the zip/file inventory for reusable study-pair or effect-size tables, then map any RPP/RPEE-derived child tables to their originating project parents where appropriate.",
+  "parent_corpus_database_id_or_key": "zenodo:15552808",
+  "preferred_source_family_name": "Heyard and Held heterogeneity_in_replication_projects code/data repository",
+  "reason": "The cluster is not just an isolated article hit: checked sources show an article/preprint plus a Zenodo/GitLab code-and-data repository for analyses of original-replication study-pairs in large-scale replication projects. The repository is a reusable source object, but its internal files still need inventory before any table-level integration.",
+  "sources_checked": [
+    "web:https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327799",
+    "web:https://zenodo.org/records/15552808",
+    "web:https://doi.org/10.31222/osf.io/e9nw2_v3",
+    "web:https://gitlab.uzh.ch/rachel.heyard/heterogeneity_in_replication_projects"
+  ]
+}

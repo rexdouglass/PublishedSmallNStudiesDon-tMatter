@@ -1,0 +1,650 @@
+{
+  "artifact_id": "source_artifact_718a02843e06661b",
+  "byte_size": 943293,
+  "file_name": "raw__MusicianshipEEG-main.zip",
+  "file_type": "zip",
+  "local_path": "data/raw/replication_projects/lead_harvest/musicianship_eeg_2025/raw__MusicianshipEEG-main.zip",
+  "member_count": 106,
+  "members_preview": [
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/"
+    },
+    {
+      "compress_size": 632,
+      "file_size": 1072,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/LICENSE"
+    },
+    {
+      "compress_size": 488,
+      "file_size": 774,
+      "file_type": "md",
+      "filename": "MusicianshipEEG-main/README.md"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/"
+    },
+    {
+      "compress_size": 223039,
+      "file_size": 223039,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_SumAvg_p.mat"
+    },
+    {
+      "compress_size": 901,
+      "file_size": 2220,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_amp_analysis.m"
+    },
+    {
+      "compress_size": 785,
+      "file_size": 1843,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_amp_analysis_p.m"
+    },
+    {
+      "compress_size": 975,
+      "file_size": 2609,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_amp_analysis_splitHalf.m"
+    },
+    {
+      "compress_size": 5824,
+      "file_size": 5895,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_dat.mat"
+    },
+    {
+      "compress_size": 386,
+      "file_size": 415,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_dat_p.mat"
+    },
+    {
+      "compress_size": 10374,
+      "file_size": 10443,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_dat_s.mat"
+    },
+    {
+      "compress_size": 1180,
+      "file_size": 3122,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_stim2resp.m"
+    },
+    {
+      "compress_size": 1693,
+      "file_size": 4991,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_stim2resp_adjusted.m"
+    },
+    {
+      "compress_size": 1846,
+      "file_size": 6227,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/da_stim2resp_adjusted_splitHalf.m"
+    },
+    {
+      "compress_size": 10761,
+      "file_size": 10817,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/dataDa.mat"
+    },
+    {
+      "compress_size": 10752,
+      "file_size": 10805,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/dataDa_noO.mat"
+    },
+    {
+      "compress_size": 15324,
+      "file_size": 15377,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/dataDa_s.mat"
+    },
+    {
+      "compress_size": 15295,
+      "file_size": 15348,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/dataDa_s_noO.mat"
+    },
+    {
+      "compress_size": 8450,
+      "file_size": 8510,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/data_r.mat"
+    },
+    {
+      "compress_size": 13061,
+      "file_size": 13117,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/data_rA.mat"
+    },
+    {
+      "compress_size": 20018,
+      "file_size": 20062,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/data_rA_s.mat"
+    },
+    {
+      "compress_size": 330,
+      "file_size": 606,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/loadEEG_da.m"
+    },
+    {
+      "compress_size": 462,
+      "file_size": 1289,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/loadEEG_da_r.m"
+    },
+    {
+      "compress_size": 428,
+      "file_size": 1057,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/loadEEG_da_r_s.m"
+    },
+    {
+      "compress_size": 350,
+      "file_size": 716,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/loadEEG_da_s.m"
+    },
+    {
+      "compress_size": 813,
+      "file_size": 2285,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plotStimFFRexamples.m"
+    },
+    {
+      "compress_size": 563,
+      "file_size": 1855,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plotWithinSubjFFRs.m"
+    },
+    {
+      "compress_size": 1261,
+      "file_size": 4941,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plot_da_age.m"
+    },
+    {
+      "compress_size": 1625,
+      "file_size": 9007,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plot_da_gender_violin.m"
+    },
+    {
+      "compress_size": 2136,
+      "file_size": 11217,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plot_da_violin.m"
+    },
+    {
+      "compress_size": 1151,
+      "file_size": 2684,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plot_rA_lim_violin.m"
+    },
+    {
+      "compress_size": 1274,
+      "file_size": 3247,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/plot_r_violin.m"
+    },
+    {
+      "compress_size": 1485,
+      "file_size": 3766,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/preprocess_da.m"
+    },
+    {
+      "compress_size": 1498,
+      "file_size": 3787,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/preprocess_da_pilot.m"
+    },
+    {
+      "compress_size": 1498,
+      "file_size": 3783,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/preprocess_da_splitHalf.m"
+    },
+    {
+      "compress_size": 8188,
+      "file_size": 8237,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/rms_da.mat"
+    },
+    {
+      "compress_size": 1751,
+      "file_size": 4257,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/run_da.m"
+    },
+    {
+      "compress_size": 1027,
+      "file_size": 2053,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/run_da_splitHalf.m"
+    },
+    {
+      "compress_size": 959,
+      "file_size": 1784,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/run_withinPilot_da.m"
+    },
+    {
+      "compress_size": 995,
+      "file_size": 8340,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/saveDaData.m"
+    },
+    {
+      "compress_size": 712,
+      "file_size": 1897,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/saveSumAvgCz_p.m"
+    },
+    {
+      "compress_size": 861,
+      "file_size": 2414,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/snr_da.m"
+    },
+    {
+      "compress_size": 3464,
+      "file_size": 3560,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/stim2resp.mat"
+    },
+    {
+      "compress_size": 8075,
+      "file_size": 8126,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/stim2resp_adjusted.mat"
+    },
+    {
+      "compress_size": 15280,
+      "file_size": 15390,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/11)EEG_da/stim2resp_adjusted_s.mat"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/"
+    },
+    {
+      "compress_size": 8720,
+      "file_size": 8734,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/dataMi3.mat"
+    },
+    {
+      "compress_size": 336,
+      "file_size": 644,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/loadEEG_mi3.m"
+    },
+    {
+      "compress_size": 368,
+      "file_size": 882,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/loadEEG_mi3_s.m"
+    },
+    {
+      "compress_size": 299777,
+      "file_size": 299777,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/mi3_SumAvg_p.mat"
+    },
+    {
+      "compress_size": 4202,
+      "file_size": 4227,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/mi3_dat.mat"
+    },
+    {
+      "compress_size": 8843,
+      "file_size": 8875,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/mi3_dat_s.mat"
+    },
+    {
+      "compress_size": 1240,
+      "file_size": 3019,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/mi3_f0_tracking.m"
+    },
+    {
+      "compress_size": 1372,
+      "file_size": 4096,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/mi3_f0_tracking_splitHalf.m"
+    },
+    {
+      "compress_size": 1760,
+      "file_size": 10643,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plotAllPartCorrs.m"
+    },
+    {
+      "compress_size": 599,
+      "file_size": 1205,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plotMi3FFRexample.m"
+    },
+    {
+      "compress_size": 1373,
+      "file_size": 3349,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plotMusAll.m"
+    },
+    {
+      "compress_size": 1440,
+      "file_size": 6932,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plotMusicalAbility.m"
+    },
+    {
+      "compress_size": 746,
+      "file_size": 2973,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plotWithinSubjFFRs_mi3.m"
+    },
+    {
+      "compress_size": 1469,
+      "file_size": 7007,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plot_daMi3_splitHalf.m"
+    },
+    {
+      "compress_size": 1260,
+      "file_size": 6232,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plot_mi3_da.m"
+    },
+    {
+      "compress_size": 1755,
+      "file_size": 5316,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/plot_mi3_violin.m"
+    },
+    {
+      "compress_size": 1479,
+      "file_size": 3736,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/preprocess_mi3.m"
+    },
+    {
+      "compress_size": 1492,
+      "file_size": 3762,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/preprocess_mi3_pilot.m"
+    },
+    {
+      "compress_size": 1506,
+      "file_size": 3814,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/preprocess_mi3_splitHalf.m"
+    },
+    {
+      "compress_size": 8211,
+      "file_size": 8253,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/rms_mi3.mat"
+    },
+    {
+      "compress_size": 2487,
+      "file_size": 6066,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/run_mi3.m"
+    },
+    {
+      "compress_size": 1221,
+      "file_size": 2382,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/run_mi3_splitHalf.m"
+    },
+    {
+      "compress_size": 987,
+      "file_size": 1866,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/run_withinPilot_mi3.m"
+    },
+    {
+      "compress_size": 898,
+      "file_size": 5555,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/saveMi3Data.m"
+    },
+    {
+      "compress_size": 717,
+      "file_size": 1926,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/saveSumAvgCz_mi3_p.m"
+    },
+    {
+      "compress_size": 863,
+      "file_size": 2396,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/12)EEG_mi3/snr_mi3.m"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/"
+    },
+    {
+      "compress_size": 8110,
+      "file_size": 8346,
+      "file_type": "wav",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/DAbase_resampled.wav"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/"
+    },
+    {
+      "compress_size": 749,
+      "file_size": 1461,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/LICENSE"
+    },
+    {
+      "compress_size": 1156,
+      "file_size": 2125,
+      "file_type": "md",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/README.md"
+    },
+    {
+      "compress_size": 5912,
+      "file_size": 33186,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/Violin.m"
+    },
+    {
+      "compress_size": 61294,
+      "file_size": 62814,
+      "file_type": "png",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/example.png"
+    },
+    {
+      "compress_size": 49382,
+      "file_size": 50917,
+      "file_type": "png",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/example2.png"
+    },
+    {
+      "compress_size": 711,
+      "file_size": 2385,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/readme_figures.m"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/test_cases/"
+    },
+    {
+      "compress_size": 1094,
+      "file_size": 2640,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/test_cases/testviolinplot.m"
+    },
+    {
+      "compress_size": 2372,
+      "file_size": 7647,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/Violinplot-Matlab-master/violinplot.m"
+    },
+    {
+      "compress_size": 227,
+      "file_size": 356,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/calcRegOnly.m"
+    },
+    {
+      "compress_size": 1175,
+      "file_size": 2559,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/dataFFT.m"
+    },
+    {
+      "compress_size": 1029,
+      "file_size": 2612,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/filtEEG.m"
+    },
+    {
+      "compress_size": 400,
+      "file_size": 894,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/grabOneField.m"
+    },
+    {
+      "compress_size": 388,
+      "file_size": 857,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/hann.m"
+    },
+    {
+      "compress_size": 1060,
+      "file_size": 4164,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/matchDataExps.m"
+    },
+    {
+      "compress_size": 710,
+      "file_size": 2137,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/matchDataNew.m"
+    },
+    {
+      "compress_size": 12946,
+      "file_size": 13644,
+      "file_type": "wav",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/mi3.wav"
+    },
+    {
+      "compress_size": 2829,
+      "file_size": 2829,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/origSeed.mat"
+    },
+    {
+      "compress_size": 519,
+      "file_size": 964,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/plotTime.m"
+    },
+    {
+      "compress_size": 477,
+      "file_size": 917,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/plotTimeWithBaseline.m"
+    },
+    {
+      "compress_size": 2536,
+      "file_size": 7938,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/preprocess_modified.m"
+    },
+    {
+      "compress_size": 2798,
+      "file_size": 9464,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/preprocess_modified_splitHalf.m"
+    },
+    {
+      "compress_size": 199,
+      "file_size": 312,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/rmvSubjs.m"
+    },
+    {
+      "compress_size": 302,
+      "file_size": 731,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/setFigureDefaults.m"
+    },
+    {
+      "compress_size": 149,
+      "file_size": 454,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/siteCode.m"
+    },
+    {
+      "compress_size": 237,
+      "file_size": 447,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/siteCounts.m"
+    },
+    {
+      "compress_size": 1998,
+      "file_size": 5893,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/slidingFFT_mi3.m"
+    },
+    {
+      "compress_size": 2058,
+      "file_size": 6009,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/slidingFFT_mi3_s.m"
+    },
+    {
+      "compress_size": 5495,
+      "file_size": 5522,
+      "file_type": "mat",
+      "filename": "MusicianshipEEG-main/code/AnalysisFunctions/subjInfo.mat"
+    },
+    {
+      "compress_size": 210,
+      "file_size": 455,
+      "file_type": "m",
+      "filename": "MusicianshipEEG-main/code/run_everything.m"
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_musicianship_eeg_2025",
+  "sample_kind": "zip_inventory",
+  "sampled_at": "2026-05-02T09:32:54",
+  "sha256": "bad85dc8f2c525dfea0b78f11877c9d6745ce7400f67768e3e3bb2d5f11647aa"
+}

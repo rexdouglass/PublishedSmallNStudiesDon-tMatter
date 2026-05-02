@@ -1,0 +1,176 @@
+{
+  "batch_id": "clustered004",
+  "cluster_decisions": [
+    {
+      "cluster_id": "cluster_emdr_and_misinformation_3fe9f9e46e27",
+      "confidence": "high",
+      "decision": "inventory_source_family_artifacts",
+      "lead_level_notes": [
+        {
+          "notes": "All EMDR/misinformation, lie-language, cleanliness/moral, and mindbody self-centrality local files are child artifacts under the curated GitHub source family, not root source families.",
+          "suggested_disposition": "child_artifact"
+        }
+      ],
+      "next_action": "Inventory these files under the existing GitHub source-family row; attach cleaned CSVs, processing scripts, download metadata, and repository manifests as child artifacts, without creating separate root rows for each pair dataset.",
+      "parent_corpus_database_id_or_key": "github:ying531/awesome-replicability-data",
+      "preferred_source_family_name": "ying531/awesome-replicability-data",
+      "reason": "Cluster aliases point to one reusable GitHub source family plus several dataset-level downloads. The checked repository is an explicit curated collection of publicly available original-replication datasets and cleaned data/code artifacts; the local EMDR, lie-language, cleanliness-moral, and mindbody self-centrality hits are child artifacts, not separate root source families.",
+      "sources_checked": [
+        "web:https://github.com/ying531/awesome-replicability-data",
+        "web:https://github.com/ying531/repDiagnosis",
+        "local:data/raw/replication_projects/lead_harvest/awesome_emdr_misinfo/",
+        "local:data/raw/replication_projects/lead_harvest/awesome_cleanliness_moral/",
+        "local:data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/"
+      ]
+    },
+    {
+      "cluster_id": "cluster_osf_03_rp_cb_final_analysis_paper_level_data_46a453806c4e",
+      "confidence": "high",
+      "decision": "inventory_source_family_artifacts",
+      "lead_level_notes": [
+        {
+          "notes": "OSF e5nvr paper-, experiment-, and effect-level final-analysis tables, dictionaries, and per-study R scripts are child artifacts under RP:CB.",
+          "suggested_disposition": "child_artifact"
+        }
+      ],
+      "next_action": "Attach the OSF e5nvr final-analysis tables, dictionaries, and per-study R scripts to raw_corpus:rpcb; deduplicate against the local rpcb corpus-candidate copies in the sibling RPCB cluster.",
+      "parent_corpus_database_id_or_key": "raw_corpus:rpcb",
+      "preferred_source_family_name": "Reproducibility Project: Cancer Biology (RP:CB) final analysis data",
+      "reason": "The cluster is a coherent OSF final-analysis package for RP:CB, with paper-, experiment-, and effect-level data plus dictionaries and study scripts. RP:CB is an existing reusable corpus/source family, so these are child artifacts of that parent rather than new source families.",
+      "sources_checked": [
+        "web:https://osf.io/e5nvr/",
+        "web:https://www.cos.io/rpcb",
+        "web:https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology",
+        "local:data/raw/replication_projects/lead_harvest/rpcb_e5nvr/"
+      ]
+    },
+    {
+      "cluster_id": "cluster_rpcb_elife_registered_report_replication_effects_e5397aaa137f",
+      "confidence": "high",
+      "decision": "inventory_source_family_artifacts",
+      "lead_level_notes": [
+        {
+          "notes": "Local raw-corpus RP:CB final-analysis tables and duplicate search-manifest hits should be inventoried once under raw_corpus:rpcb.",
+          "suggested_disposition": "child_artifact"
+        }
+      ],
+      "next_action": "Deduplicate duplicate root-table and search-manifest hits, then inventory the effect-, experiment-, and paper-level CSVs and dictionaries under raw_corpus:rpcb; do not create new root rows for individual CSV files.",
+      "parent_corpus_database_id_or_key": "raw_corpus:rpcb",
+      "preferred_source_family_name": "Reproducibility Project: Cancer Biology (RP:CB) final analysis data",
+      "reason": "The cluster is the local raw-corpus side of the same RP:CB source family. It contains reusable final-analysis tables and dictionaries for paper, experiment, and effect levels; the included/raw RPCB parent should own these duplicates and child artifacts.",
+      "sources_checked": [
+        "web:https://www.cos.io/rpcb",
+        "web:https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology",
+        "local:data/raw/corpus_candidates/rpcb/"
+      ]
+    },
+    {
+      "cluster_id": "cluster_original_effects_srull_9b8f8fe2c740",
+      "confidence": "high",
+      "decision": "route_cluster_to_result_table_worklist",
+      "lead_level_notes": [
+        {
+          "notes": "Route original_effects_srull.csv and the Srull/Wyer R Markdown to result-table review under RRR; reject generated RStudio notebook cache CSVs as source-family evidence.",
+          "suggested_disposition": "result_table_worklist"
+        }
+      ],
+      "next_action": "Route original_effects_srull.csv and the Srull/Wyer Rmd to the result-table worklist under the RRR/McCarthy 2018 parent; reject generated RStudio notebook cache CSVs as source-family evidence and split the Hagger metaanalysis hit if reviewed separately.",
+      "parent_corpus_database_id_or_key": "raw_replication_project:rrr",
+      "preferred_source_family_name": "Registered Replication Report on Srull and Wyer (1979)",
+      "reason": "This is an individual Registered Replication Report/meta-analysis cluster, not a corpus/database source family. It does contain apparent result-table artifacts for Srull/Wyer plus analysis code, so it belongs in result-table review under the RRR project rather than corpus-source intake.",
+      "sources_checked": [
+        "web:https://journals.sagepub.com/doi/10.1177/2515245918777487",
+        "web:https://research.lancaster-university.uk/en/publications/registered-replication-report-on-srull-and-wyer-1979/",
+        "local:data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/",
+        "local:data/raw/replication_projects/rrr/srull_all_labs/"
+      ]
+    },
+    {
+      "cluster_id": "cluster_osf_03_import_original_data_36bc7619dc58",
+      "confidence": "medium",
+      "decision": "route_cluster_to_individual_replication_paper_worklist",
+      "lead_level_notes": [
+        {
+          "notes": "OSF download metadata, import script, README, file list, and manifest describe one replication package; route away from corpus intake.",
+          "suggested_disposition": "individual_paper"
+        }
+      ],
+      "next_action": "Send to the individual replication-paper worklist; inspect README and OSF file inventory only if paper-level/result-table extraction is needed, but do not create a source-family root from these filenames alone.",
+      "parent_corpus_database_id_or_key": "lead_harvest:online_image_credibility",
+      "preferred_source_family_name": "online_image_credibility OSF replication package",
+      "reason": "The compact evidence shows a single OSF-harvested replication package with an import script, README, download metadata, and OSF file inventory. It does not yet show an explicit reusable multi-row source-family table or corpus/database page, so route away from corpus intake.",
+      "sources_checked": [
+        "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03_download.json",
+        "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03__import_original_data.r",
+        "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_04__README.Rmd",
+        "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_file_list.csv",
+        "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_manifest.json"
+      ]
+    },
+    {
+      "cluster_id": "cluster_meta_regression_to_explain_shrinkage_and_heterogeneity_in_large_scale_replicatio_40dfdd112362",
+      "confidence": "medium",
+      "decision": "keep_source_family_candidate",
+      "lead_level_notes": [
+        {
+          "notes": "Keep the Zenodo/GitLab repository as the preferred root candidate; article and preprint hits are context.",
+          "suggested_disposition": "root_source_family"
+        }
+      ],
+      "next_action": "Keep as a source-family candidate keyed to the Zenodo/GitLab repository; inspect the zip/file inventory for reusable study-pair or effect-size tables, then map any RPP/RPEE-derived child tables to their originating project parents where appropriate.",
+      "parent_corpus_database_id_or_key": "zenodo:15552808",
+      "preferred_source_family_name": "Heyard and Held heterogeneity_in_replication_projects code/data repository",
+      "reason": "The cluster is not just an isolated article hit: checked sources show an article/preprint plus a Zenodo/GitLab code-and-data repository for analyses of original-replication study-pairs in large-scale replication projects. The repository is a reusable source object, but its internal files still need inventory before any table-level integration.",
+      "sources_checked": [
+        "web:https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327799",
+        "web:https://zenodo.org/records/15552808",
+        "web:https://doi.org/10.31222/osf.io/e9nw2_v3",
+        "web:https://gitlab.uzh.ch/rachel.heyard/heterogeneity_in_replication_projects"
+      ]
+    },
+    {
+      "cluster_id": "cluster_replication_pair_source_catalog_0445b9a39ac0",
+      "confidence": "high",
+      "decision": "keep_cluster_as_context",
+      "lead_level_notes": [
+        {
+          "notes": "Internal derived catalog/report is provenance context only and must not enter corpus/database intake.",
+          "suggested_disposition": "context"
+        }
+      ],
+      "next_action": "Keep for mapping/provenance context only; do not add it to corpus/database intake and do not edit root tables from this review.",
+      "parent_corpus_database_id_or_key": "data/derived/replication_pairs/replication_pair_source_catalog.csv",
+      "preferred_source_family_name": "internal replication_pair_source_catalog",
+      "reason": "This cluster is an internal derived catalog/report, not an external dataset, database, repository, registry, or source-family landing page. It can support provenance decisions but should not be ingested as a source-family candidate.",
+      "sources_checked": [
+        "local:data/derived/replication_pairs/replication_pair_source_catalog.csv",
+        "local:reports/corpus_candidates/replication_pair_source_catalog.md"
+      ]
+    },
+    {
+      "cluster_id": "cluster_score_cos_preregistration_indicated_original_papers_2a2876c57850",
+      "confidence": "high",
+      "decision": "inventory_source_family_artifacts",
+      "lead_level_notes": [
+        {
+          "notes": "SCORE orig_outcomes, repli_outcomes, repro_prereg-check, OSF metadata, and the existing preregistration-indicated subset are child artifacts/views under SCORE.",
+          "suggested_disposition": "child_artifact"
+        }
+      ],
+      "next_action": "Inventory orig_outcomes, repli_outcomes, repro_prereg-check, and OSF manifest/meta files under the SCORE parent; preserve the existing score_cos_preregistration_indicated_original_papers subset row and avoid duplicate root creation.",
+      "parent_corpus_database_id_or_key": "score",
+      "preferred_source_family_name": "Systematizing Confidence in Open Research and Evidence (SCORE) data/code/materials",
+      "reason": "SCORE is an existing reusable source family with openly available data/code/materials. The cluster contains child data tables, an OSF manifest, and an included preregistration-indicated subset; these should be owned by the broader SCORE parent, with the subset kept as an included derived corpus view.",
+      "sources_checked": [
+        "web:https://www.cos.io/score",
+        "web:https://www.cos.io/score-evidence",
+        "web:https://osf.io/10.17605/OSF.IO/DTZX4",
+        "local:data/raw/corpus_candidates/score/",
+        "local:data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv"
+      ]
+    }
+  ],
+  "notes": "Normalized cluster-level routing from the pasted Codex/GPT review. Detailed per-node notes from the paste are collapsed here to stable cluster actions so downstream DAG steps can consume the decisions.",
+  "reviewer": "codex",
+  "source_prompt_batch": "reviewcue-clustered-codex-clustered004-figure1_search_leads.json"
+}

@@ -1,0 +1,967 @@
+{
+  "artifact_id": "source_artifact_b032dcd2a872ea3e",
+  "byte_size": 23000,
+  "file_name": "P04NKK.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/P04NKK.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 986,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "guestbookId": 80,
+      "id": 2829119,
+      "identifier": "DVN/P04NKK",
+      "latestVersion": {
+        "UNF": "UNF:6:FqKFNFxZYDV4feiL59dmjw==",
+        "citationDate": "2016-05-16",
+        "createTime": "2019-11-13T18:05:38Z",
+        "datasetFileUploadsAvailable": 986,
+        "datasetId": 2829119,
+        "datasetPersistentId": "doi:10.7910/DVN/P04NKK",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "87ede57daeb3844816be2a3ce481d110"
+              },
+              "contentType": "application/x-stata-13",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains mystery client survey responses.",
+              "fileAccessRequest": false,
+              "filename": "A1_Mystery_Client_Survey.dta",
+              "filesize": 1703221,
+              "friendlyType": "Stata 13 Binary",
+              "id": 2829122,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "87ede57daeb3844816be2a3ce481d110",
+              "persistentId": "doi:10.7910/DVN/P04NKK/C0YRGR",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/C0YRGR",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba3c280-80462e4b2298",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains mystery client survey responses.",
+            "label": "A1_Mystery_Client_Survey.dta",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:CgXFNvC+yLa1WIa6+MKhuA==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "e6effad8487fd125775c38437ae887e7"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains patient exit interviews.",
+              "fileAccessRequest": false,
+              "filename": "A2_A_Patient_Exit_Interviews.tab",
+              "filesize": 21375,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829131,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "e6effad8487fd125775c38437ae887e7",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "A2_A_Patient_Exit_Interviews.dta",
+              "originalFileSize": 45473,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/TIFDCD",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/TIFDCD",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba34a61-aa701480e5ab",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains patient exit interviews.",
+            "label": "A2_A_Patient_Exit_Interviews.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:ZetL9/SOfaAPd97dnC56Bw==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "d58b6a999f3a58a42d3ffc3f3abf8469"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains pregnant women interviews.",
+              "fileAccessRequest": false,
+              "filename": "A2_B_Pregnant_Women_Interviews.tab",
+              "filesize": 37129,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829124,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "d58b6a999f3a58a42d3ffc3f3abf8469",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "A2_B_Pregnant_Women_Interviews.dta",
+              "originalFileSize": 67230,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/WEVS9R",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/WEVS9R",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba35cdd-713464df42ba",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains pregnant women interviews.",
+            "label": "A2_B_Pregnant_Women_Interviews.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:u6xauWpQl2exOpCCywdPhg==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "63ab80c760cd340481ff637fde40c822"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains community survey responses.",
+              "fileAccessRequest": false,
+              "filename": "A3_Community_Survey.tab",
+              "filesize": 56471,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829128,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "63ab80c760cd340481ff637fde40c822",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "A3_Community_Survey.dta",
+              "originalFileSize": 122827,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/AGBRNK",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/AGBRNK",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba36adb-9618ad137757",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains community survey responses.",
+            "label": "A3_Community_Survey.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "All materials",
+              "Zip file"
+            ],
+            "dataFile": {
+              "categories": [
+                "All materials",
+                "Zip file"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "21d8f09ade0500d98fb6fb7ad97f1206"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2016-05-16",
+              "description": "Zip file containing all materials including data, surveys and documentation.",
+              "fileAccessRequest": false,
+              "filename": "Dizon-Ross et al - EDHEP Dataverse Files.zip",
+              "filesize": 5261434,
+              "friendlyType": "ZIP Archive",
+              "id": 2829126,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "21d8f09ade0500d98fb6fb7ad97f1206",
+              "persistentId": "doi:10.7910/DVN/P04NKK/VMVZEM",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/VMVZEM",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bb9c2707-3c6490e38f16",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Zip file containing all materials including data, surveys and documentation.",
+            "label": "Dizon-Ross et al - EDHEP Dataverse Files.zip",
+            "restricted": false,
+            "version": 2
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:r3TebJcmEkRYCT03yFlvlQ==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "ff7934b84247a55530c29c858a91ca0a"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains clinic level data.",
+              "fileAccessRequest": false,
+              "filename": "EDHEP_cliniclevelmerge1.tab",
+              "filesize": 164350,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829132,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "ff7934b84247a55530c29c858a91ca0a",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "EDHEP_cliniclevelmerge1.dta",
+              "originalFileSize": 494253,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/0677VO",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/0677VO",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba39184-36fe61e0f6a2",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains clinic level data.",
+            "label": "EDHEP_cliniclevelmerge1.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Documentation"
+            ],
+            "dataFile": {
+              "categories": [
+                "Documentation"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "2aeafbfb17a6738d3d4cd24bab4f71a0"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2016-05-16",
+              "description": "Contains all the codebooks that accompany each corresponding dataset. Each codebook contain variable names, labels, value labels, and variable types.",
+              "fileAccessRequest": false,
+              "filename": "EDHEP Codebooks.zip",
+              "filesize": 69419,
+              "friendlyType": "ZIP Archive",
+              "id": 2829121,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "2aeafbfb17a6738d3d4cd24bab4f71a0",
+              "persistentId": "doi:10.7910/DVN/P04NKK/QVHC0O",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/QVHC0O",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bb9d4e1e-664557995df4",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Contains all the codebooks that accompany each corresponding dataset. Each codebook contain variable names, labels, value labels, and variable types.",
+            "label": "EDHEP Codebooks.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "ad84bc749e7a7e8cecfdccb32af166e4"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2016-05-16",
+              "description": "Contains all survey instruments used in the Ghana study sites.",
+              "fileAccessRequest": false,
+              "filename": "EDHEP Survey instruments.zip",
+              "filesize": 4220083,
+              "friendlyType": "ZIP Archive",
+              "id": 2829123,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "ad84bc749e7a7e8cecfdccb32af166e4",
+              "persistentId": "doi:10.7910/DVN/P04NKK/AXDNPY",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/AXDNPY",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bb9d7988-a2da7dae7f06",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Contains all survey instruments used in the Ghana study sites.",
+            "label": "EDHEP Survey instruments.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "d72ff38c80ad39697ec7d776b8595512"
+              },
+              "contentType": "application/x-stata-13",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains health worker survey responses.",
+              "fileAccessRequest": false,
+              "filename": "R2_HealthWorkerSurvey.dta",
+              "filesize": 326756,
+              "friendlyType": "Stata 13 Binary",
+              "id": 2829120,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "d72ff38c80ad39697ec7d776b8595512",
+              "persistentId": "doi:10.7910/DVN/P04NKK/Q3MBMS",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/Q3MBMS",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba3829d-5aa5e8c27393",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains health worker survey responses.",
+            "label": "R2_HealthWorkerSurvey.dta",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "32c42ced66e72e81b7f1125b00d91953"
+              },
+              "contentType": "application/x-stata-13",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains ANC client survey responses.",
+              "fileAccessRequest": false,
+              "filename": "R4_ANC_Client_Survey.dta",
+              "filesize": 1281750,
+              "friendlyType": "Stata 13 Binary",
+              "id": 2829125,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "32c42ced66e72e81b7f1125b00d91953",
+              "persistentId": "doi:10.7910/DVN/P04NKK/5IN9U5",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/5IN9U5",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba3c1d6-157cc98c6b0c",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains ANC client survey responses.",
+            "label": "R4_ANC_Client_Survey.dta",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:ZcX/p6V5JYRU2d7utYy8tw==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "6080efe947470a6a505461eb5c90500f"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contain SALI client survey responses.",
+              "fileAccessRequest": false,
+              "filename": "R5_SALI_Client_Survey.tab",
+              "filesize": 1041644,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829133,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "6080efe947470a6a505461eb5c90500f",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "R5_SALI_Client_Survey.dta",
+              "originalFileSize": 1304888,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/UHIFHC",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/UHIFHC",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba3c12e-534e85a4a823",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contain SALI client survey responses.",
+            "label": "R5_SALI_Client_Survey.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:aijlVGwgOkOjC5TF5UMOcg==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "9ead32255ee6db1b6fade1713ba09bcc"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains tracking sheet information.",
+              "fileAccessRequest": false,
+              "filename": "R8_Track_Sheet_for_R4_and_R5.tab",
+              "filesize": 136707,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829127,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "9ead32255ee6db1b6fade1713ba09bcc",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "R8_Track_Sheet_for_R4_and_R5.dta",
+              "originalFileSize": 160252,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/5MMLLX",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/5MMLLX",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba37c0d-093b24925050",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains tracking sheet information.",
+            "label": "R8_Track_Sheet_for_R4_and_R5.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Documentation"
+            ],
+            "dataFile": {
+              "categories": [
+                "Documentation"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "d878d58199803edc547eb7fc82cc6a33"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2016-05-16",
+              "description": "Readme file containing basic information on the data and surveys.",
+              "fileAccessRequest": false,
+              "filename": "READ-ME for EDHEP Public Data Archive.pdf",
+              "filesize": 82904,
+              "friendlyType": "Adobe PDF",
+              "id": 2829129,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "d878d58199803edc547eb7fc82cc6a33",
+              "persistentId": "doi:10.7910/DVN/P04NKK/WHDTZL",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/WHDTZL",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bb9d85bc-733f4a8b147c",
+              "tabularData": false
+            },
+            "datasetVersionId": 177626,
+            "description": "Readme file containing basic information on the data and surveys.",
+            "label": "READ-ME for EDHEP Public Data Archive.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Data"
+            ],
+            "dataFile": {
+              "UNF": "UNF:6:xkuqiPtRy0nc9RBHWF+Whg==",
+              "categories": [
+                "Data"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "018293495d78c89a166772c6b8bc8747"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2016-05-16",
+              "description": "Dataset that contains clinic ledgers information.",
+              "fileAccessRequest": false,
+              "filename": "S10_clinicledgers_reshaped.tab",
+              "filesize": 1189095,
+              "friendlyType": "Tab-Delimited",
+              "id": 2829130,
+              "lastUpdateTime": "2019-11-13T18:05:59Z",
+              "md5": "018293495d78c89a166772c6b8bc8747",
+              "originalFileFormat": "application/x-stata-13",
+              "originalFileName": "S10_clinicledgers_reshaped.dta",
+              "originalFileSize": 1307301,
+              "originalFormatLabel": "Stata 13 Binary",
+              "persistentId": "doi:10.7910/DVN/P04NKK/BOAJWI",
+              "pidURL": "https://doi.org/10.7910/DVN/P04NKK/BOAJWI",
+              "publicationDate": "2016-05-16",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:154bba3e592-04505ae78a15",
+              "tabularData": true
+            },
+            "datasetVersionId": 177626,
+            "description": "Dataset that contains clinic ledgers information.",
+            "label": "S10_clinicledgers_reshaped.tab",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "guestbookId": 80,
+        "id": 177626,
+        "internalVersionNumber": 4,
+        "lastUpdateTime": "2019-11-13T18:05:59Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Governance and Effectiveness of Public Health Subsidies"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Chicago"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Dizon-Ross, Rebecca"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Stanford University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Dupas, Pascaline"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of California, Santa Cruz"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Robinson, Jonathan"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Innovations for Poverty Action"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "transparency@poverty-action.org"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Research Transparency, Data Ethics, and Governance"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Heavily subsidizing essential health products through existing health infrastructure could substantially improve health in sub-Saharan Africa. There is, however, widespread concern that poor governance – in particular, limited health worker accountability – seriously undermines the eﬀectiveness of subsidy programs. Using innovative audits of targeted bed net distribution programs in Ghana, Kenya and Uganda, we measure the extent of local agency problems. Overall, agency concerns are modest and do not undermine the cost-eﬀectiveness of free distribution. Around 80% of the eligible receive the subsidy as intended, and leakage to the ineligible appears limited, even when the ineligible have a high willingness to pay. The data currently included in this entry are from the Ghana study sites."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Medicine, Health and Life Sciences",
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Leakage"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Extortion"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Shirking"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Motivation"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Corruption"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Health"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Public health"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Bed nets"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Malaria"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "language",
+                "value": [
+                  "English"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "grantNumber",
+                "value": [
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "NICHD"
+                    },
+                    "grantNumberValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberValue",
+                      "value": "P01HD061315-01"
+                    }
+                  },
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "Hellman Fellows Fund"
+                    }
+                  },
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "University of California, Los Angeles"
+                    }
+                  },
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "Stanford University"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Research Support, Innovations for Poverty Action"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2016-05-16"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dateOfCollection",
+                "value": [
+                  {
+                    "dateOfCollectionEnd": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dateOfCollectionEnd",
+                      "value": "2012-04"
+                    },
+                    "dateOfCollectionStart": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dateOfCollectionStart",
+                      "value": "2011-10"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "kindOfData",
+                "value": [
+                  "Survey data",
+                  "Administrative data"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "software",
+                "value": [
+                  {
+                    "softwareName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "softwareName",
+                      "value": "Stata"
+                    },
+                    "softwareVersion": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "softwareVersion",
+                      "value": "13"
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "citation"
+          },
+          "geospatial": {
+            "displayName": "Geospatial Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "geographicCoverage",
+                "value": [
+                  {
+                    "country": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "country",
+                      "value": "Ghana"
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "geospatial"
+          },
+          "socialscience": {
+            "displayName": "Social Science and Humanities Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "unitOfAnalysis",
+                "value": [
+                  "Clinics"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "universe",
+                "value": [
+                  "Health centers that: (1) had an antenatal care clinic (ANC); and (2) being rural or semi-rural. For the Ghana sample, we had the following additional criteria; (3) having no other healthcare facilities within a 2 km radius, no hospitals within a 5 km radius, and not more than one other ANC within a 5 km radius; (4) having no free bed net distribution program currently in place (which very few had); (5) having at least two stores within a 2 km radius willing to participate in a voucher scheme (only 6% of clinics\r\nwere excluded by this criterion) ; and, (6) being accessible for net deliveries (less than 2% were inaccessible)."
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dataCollector",
+                "value": "SALI"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "samplingProcedure",
+                "value": "The full sample consists of 168 rural health facilities (72 in Ghana, 48 in Kenya and 48 in Uganda). In Ghana, the program was rolled out into the 72 clinics over a 7-week period, from mid-October to early December 2011. The 72 clinics were then grouped into 6 strata with comparable average characteristics (size, remoteness, and proximity to district borders). Within each stratum, we randomly assigned clinics into treatment groups, including 1) increasing existing health workers’ compensation, 2) performing a top-down audit on health workers, 3) increasing the (perceived) tightness of the clinic budget constraints and 4) A voucher scheme in which health workers give clients a voucher that they can redeem at a third party for a net, instead of having health workers distribute products directly."
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "collectionMode",
+                "value": [
+                  "In-person interviews, registration/ledger sheets"
+                ]
+              }
+            ],
+            "name": "socialscience"
+          }
+        },
+        "publicationDate": "2016-05-16",
+        "releaseTime": "2019-11-13T18:05:59Z",
+        "storageIdentifier": "s3://10.7910/DVN/P04NKK",
+        "versionMinorNumber": 1,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/P04NKK",
+      "protocol": "doi",
+      "publicationDate": "2016-05-16",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/P04NKK"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "d410ce7bfef8c2fb23b53b69f8a278aea42710b175cc7854ed52b686acf9ffa7"
+}

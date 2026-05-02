@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "osf:2qm8f",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:wp1_xp2a_book_of_n_white_replication_open_question",
+  "next_action": "do_not_add_to_figure1_pair_source_work",
+  "notes": "OSF API returned 404 during prior review.",
+  "promote_payload": {},
+  "reason": "Description concerns preregistered analysis of open-question responses in a specific study. It is not a replication-pair corpus and not a likely D/N source for Figure 1.",
+  "review_id": "review_figure1_search_leads_6f57ea519ab4",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/2qm8f/"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,438 @@
+{
+  "artifact_id": "source_artifact_1ab5458afc82cf8b",
+  "byte_size": 10803,
+  "file_name": "NSHT68.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/NSHT68.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 992,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 7270042,
+      "identifier": "DVN/NSHT68",
+      "latestVersion": {
+        "citationDate": "2023-08-03",
+        "createTime": "2023-09-01T18:42:13Z",
+        "datasetFileUploadsAvailable": 992,
+        "datasetId": 7270042,
+        "datasetPersistentId": "doi:10.7910/DVN/NSHT68",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": true,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "776f37e80f99e49e3450df4384331996"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2023-08-03",
+              "description": "Analysis code; uses data from P4P_Clean.rda",
+              "fileAccessRequest": true,
+              "filename": "P4P_analysis.R",
+              "filesize": 86107,
+              "friendlyType": "R Syntax",
+              "id": 7275607,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "776f37e80f99e49e3450df4384331996",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa3c4e6-5869109fa950",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Analysis code; uses data from P4P_Clean.rda",
+            "label": "P4P_analysis.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "d9cfaa7bb471bc4e96d25ec760bb6352"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2023-08-03",
+              "description": "Code used to anonymize data and create PFP.Anonymized.rda; code can no longer be run since it requires starting with non-anonymized data, which has been deleted",
+              "fileAccessRequest": true,
+              "filename": "P4P_anonymize_data.R",
+              "filesize": 1593,
+              "friendlyType": "R Syntax",
+              "id": 7275611,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "d9cfaa7bb471bc4e96d25ec760bb6352",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa3c58f-97e74de9f975",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Code used to anonymize data and create PFP.Anonymized.rda; code can no longer be run since it requires starting with non-anonymized data, which has been deleted",
+            "label": "P4P_anonymize_data.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a90b7da81888de2164d0b21ea591572e"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2023-08-03",
+              "description": "Data cleaning code; uses PFP.Anonymized.rda to create P4P_Clean.rda",
+              "fileAccessRequest": true,
+              "filename": "P4P_clean_data.R",
+              "filesize": 27702,
+              "friendlyType": "R Syntax",
+              "id": 7275609,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "a90b7da81888de2164d0b21ea591572e",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa3c21b-c37c57310bd2",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Data cleaning code; uses PFP.Anonymized.rda to create P4P_Clean.rda",
+            "label": "P4P_clean_data.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1e4e2aead6ff06bdab474ade553e9593"
+              },
+              "contentType": "application/gzip",
+              "creationDate": "2023-08-03",
+              "description": "Cleaned data file; ready for analysis (with P4P_analysis.R)",
+              "fileAccessRequest": true,
+              "filename": "P4P_Clean.rda",
+              "filesize": 326165,
+              "friendlyType": "Gzip Archive",
+              "id": 7275605,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "1e4e2aead6ff06bdab474ade553e9593",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa3c157-772ccff08197",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Cleaned data file; ready for analysis (with P4P_analysis.R)",
+            "label": "P4P_Clean.rda",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "543886e5cfdbc93fbeda00cced29e679"
+              },
+              "contentType": "application/gzip",
+              "creationDate": "2023-08-03",
+              "description": "Uncleaned data file; essentially what we downloaded from Qualtrics, except code has been anonymized and observations dropped for individuals who dropped out part way through the survey (we do not retain these partial responses for ethical reasons)",
+              "fileAccessRequest": true,
+              "filename": "PFP.Anonymized.rda",
+              "filesize": 215634,
+              "friendlyType": "Gzip Archive",
+              "id": 7275604,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "543886e5cfdbc93fbeda00cced29e679",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa3c3b5-27eb9936b43f",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Uncleaned data file; essentially what we downloaded from Qualtrics, except code has been anonymized and observations dropped for individuals who dropped out part way through the survey (we do not retain these partial responses for ethical reasons)",
+            "label": "PFP.Anonymized.rda",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b8ff6415543e95e5144e2d6d0e5ff004"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2023-08-03",
+              "description": "Qualtrics file that can be used to import our complete survey into Qualtrics",
+              "fileAccessRequest": true,
+              "filename": "PfP_Conjoint_Experiment.qsf",
+              "filesize": 88614,
+              "friendlyType": "Unknown",
+              "id": 7275608,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "b8ff6415543e95e5144e2d6d0e5ff004",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa42c67-d00394e41b8f",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Qualtrics file that can be used to import our complete survey into Qualtrics",
+            "label": "PfP_Conjoint_Experiment.qsf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "33d206859ee3c88d90974f47e95bc2dc"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2023-08-03",
+              "description": "File hosted at server to conduct randomization for conjoint profile attributes (necessary for Qualtrics survey to run properly)",
+              "fileAccessRequest": true,
+              "filename": "PFP v4.0_strong.php",
+              "filesize": 6063,
+              "friendlyType": "Unknown",
+              "id": 7275610,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "33d206859ee3c88d90974f47e95bc2dc",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa41d43-3d0074a354cf",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "File hosted at server to conduct randomization for conjoint profile attributes (necessary for Qualtrics survey to run properly)",
+            "label": "PFP v4.0_strong.php",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "29d53bc38ef2ca8aa8bf9af000f6dcb9"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2023-08-03",
+              "description": "Settings for recruiting respondents in Prolific and text of full survey",
+              "fileAccessRequest": true,
+              "filename": "Survey_Details.pdf",
+              "filesize": 296378,
+              "friendlyType": "Adobe PDF",
+              "id": 7275606,
+              "lastUpdateTime": "2023-10-06T14:51:24Z",
+              "md5": "29d53bc38ef2ca8aa8bf9af000f6dcb9",
+              "persistentId": "",
+              "publicationDate": "2023-08-03",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:189baa6ec7a-6d0260d012e3",
+              "tabularData": false
+            },
+            "datasetVersionId": 349783,
+            "description": "Settings for recruiting respondents in Prolific and text of full survey",
+            "label": "Survey_Details.pdf",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 349783,
+        "internalVersionNumber": 6,
+        "lastUpdateTime": "2023-10-06T14:51:24Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: Pay-for-Performance, Job Attraction, and the Prospects of Bureaucratic Representation in Public Organizations: Evidence from a Conjoint Experiment"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Copenhagen"
+                    },
+                    "authorIdentifier": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorIdentifier",
+                      "value": "0000-0001-9428-3395"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Pedersen, Mogens Jin"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "American University, Aarhus University"
+                    },
+                    "authorIdentifier": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorIdentifier",
+                      "value": "0000-0002-8816-088X"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Favero, Nathan"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "American University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Park, Joohyung"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "American University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "favero@american.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Favero, Nathan"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Replication files and open materials for: Pedersen, M. J., Favero, N., & Park, J. (2023). Pay-for-performance, job attraction, and the prospects of bureaucratic representation in public organizations: evidence from a conjoint experiment. Public Management Review. <a href=https://doi.org/10.1080/14719037.2023.2245841>https://doi.org/10.1080/14719037.2023.2245841</a>"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Favero, Nathan"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2023-07-31"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2023-08-03",
+        "releaseTime": "2023-10-06T14:51:24Z",
+        "storageIdentifier": "s3://10.7910/DVN/NSHT68",
+        "versionMinorNumber": 1,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/NSHT68",
+      "protocol": "doi",
+      "publicationDate": "2023-08-03",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/NSHT68"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "56c396422c3b0867289daff2916934e3b71969781d78df77a0ee90a30d580df6"
+}

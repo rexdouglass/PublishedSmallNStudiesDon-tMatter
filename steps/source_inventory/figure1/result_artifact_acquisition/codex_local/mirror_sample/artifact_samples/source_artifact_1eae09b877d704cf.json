@@ -1,0 +1,80 @@
+{
+  "artifact_id": "source_artifact_1eae09b877d704cf",
+  "byte_size": 21903,
+  "file_name": "community_precip_stats.xlsx",
+  "file_type": "xlsx",
+  "local_path": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_wscxp/community_precip_stats.xlsx",
+  "parent_corpus_database_id": "corpus_db_lead_metaketa_iii_2021",
+  "sample_kind": "excel_workbook",
+  "sampled_at": "2026-05-02T09:32:49",
+  "sha256": "47d2981f96544e1d869721bd6aa57e888ee7955784ba0d52abfb6a83186f3d84",
+  "sheet_count": 1,
+  "sheets": [
+    {
+      "columns": [
+        "geo_unit_ID",
+        "community_ID",
+        "avg_annual_p",
+        "std_dev_p",
+        "n_std_dev_2012",
+        "n_std_dev_2018",
+        "avg_SPI3_jan_jun_2012",
+        "avg_SPI3_jan_jun_2018"
+      ],
+      "preview_rows": [
+        {
+          "avg_SPI3_jan_jun_2012": -1.6502321099,
+          "avg_SPI3_jan_jun_2018": 0.0429045001,
+          "avg_annual_p": 1.5617231282,
+          "community_ID": "CATUNDA10",
+          "geo_unit_ID": "CATUNDA",
+          "n_std_dev_2012": -1.7746950353,
+          "n_std_dev_2018": 0.2158545256,
+          "std_dev_p": 0.6581452239
+        },
+        {
+          "avg_SPI3_jan_jun_2012": -1.7330681964,
+          "avg_SPI3_jan_jun_2018": 0.1117847853,
+          "avg_annual_p": 1.7081873434,
+          "community_ID": "CATUNDA12",
+          "geo_unit_ID": "CATUNDA",
+          "n_std_dev_2012": -1.8959564438,
+          "n_std_dev_2018": 0.2365518628,
+          "std_dev_p": 0.6496987194
+        },
+        {
+          "avg_SPI3_jan_jun_2012": -1.7274227633,
+          "avg_SPI3_jan_jun_2018": 0.1495569688,
+          "avg_annual_p": 1.7618854765,
+          "community_ID": "CATUNDA2",
+          "geo_unit_ID": "CATUNDA",
+          "n_std_dev_2012": -1.8120753799,
+          "n_std_dev_2018": 0.2575679754,
+          "std_dev_p": 0.7118750206
+        },
+        {
+          "avg_SPI3_jan_jun_2012": -1.4328494219,
+          "avg_SPI3_jan_jun_2018": -0.1174563612,
+          "avg_annual_p": 1.6786859869,
+          "community_ID": "CATUNDA21",
+          "geo_unit_ID": "CATUNDA",
+          "n_std_dev_2012": -1.5401883758,
+          "n_std_dev_2018": -0.2689176928,
+          "std_dev_p": 0.7482952648
+        },
+        {
+          "avg_SPI3_jan_jun_2012": -1.7651749464,
+          "avg_SPI3_jan_jun_2018": 0.0941681065,
+          "avg_annual_p": 1.593527854,
+          "community_ID": "CATUNDA6",
+          "geo_unit_ID": "CATUNDA",
+          "n_std_dev_2012": -1.650616624,
+          "n_std_dev_2018": 0.1068669912,
+          "std_dev_p": 0.7206414855
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "Sheet1"
+    }
+  ]
+}

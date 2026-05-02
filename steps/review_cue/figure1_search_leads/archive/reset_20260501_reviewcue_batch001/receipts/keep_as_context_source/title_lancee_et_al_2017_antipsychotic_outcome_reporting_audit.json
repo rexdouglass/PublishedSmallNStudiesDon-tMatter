@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "manual_tracker:lancee_2017_antipsychotic_outcome_reporting_audit",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:lancee_et_al_2017_antipsychotic_outcome_reporting_audit",
+  "next_action": "keep_as_reporting_bias_context_not_figure1_pair_parser",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "The tracker identifies this as a registry-vs-publication discrepancy audit, not a D/N source and not a Figure 1 replication-pair corpus.",
+  "review_id": "review_figure1_search_leads_2e6894681b56",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

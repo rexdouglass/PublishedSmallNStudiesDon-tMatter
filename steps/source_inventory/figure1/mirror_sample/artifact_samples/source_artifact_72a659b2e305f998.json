@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_72a659b2e305f998",
+  "byte_size": 30415,
+  "columns": [
+    "paper_id",
+    "collab_name",
+    "rr_type",
+    "is_hsr",
+    "is_bushel",
+    "is_te",
+    "rr_id",
+    "osf_guid",
+    "minted_in_phase"
+  ],
+  "estimated_data_rows": 446,
+  "file_name": "score_rr-project_types.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_72a659b2e305f998__score_rr-project_types.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "collab_name": "Wilbiks",
+      "is_bushel": "no",
+      "is_hsr": "HSR",
+      "is_te": "no",
+      "minted_in_phase": "phase_2",
+      "osf_guid": "p2st5",
+      "paper_id": "LmBx",
+      "rr_id": "y2gz6",
+      "rr_type": "Replication (DR/DAR)"
+    },
+    {
+      "collab_name": "Jolly",
+      "is_bushel": "yes",
+      "is_hsr": "HSR",
+      "is_te": "no",
+      "minted_in_phase": "phase_2",
+      "osf_guid": "3b49u",
+      "paper_id": "Q1dl",
+      "rr_id": "g6936",
+      "rr_type": "Generalizability"
+    },
+    {
+      "collab_name": "Edlund",
+      "is_bushel": "yes",
+      "is_hsr": "HSR",
+      "is_te": "no",
+      "minted_in_phase": "phase_2",
+      "osf_guid": "287vr",
+      "paper_id": "yypJ",
+      "rr_id": "42kg2",
+      "rr_type": "Generalizability"
+    },
+    {
+      "collab_name": "Edlund",
+      "is_bushel": "no",
+      "is_hsr": "HSR",
+      "is_te": "no",
+      "minted_in_phase": "phase_2",
+      "osf_guid": "2h3r4",
+      "paper_id": "KGGW",
+      "rr_id": "76o42",
+      "rr_type": "Generalizability"
+    },
+    {
+      "collab_name": "Edlund",
+      "is_bushel": "no",
+      "is_hsr": "HSR",
+      "is_te": "no",
+      "minted_in_phase": "phase_2",
+      "osf_guid": "q4sw8",
+      "paper_id": "XpVw",
+      "rr_id": "g6zo2",
+      "rr_type": "Generalizability"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:40:38",
+  "sha256": "965e083c0329c9c8143282eab1edf3df9bc7f79b0050731bf7ebf99f5cd926b1"
+}

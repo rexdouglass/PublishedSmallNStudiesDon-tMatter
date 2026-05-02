@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_fc14389266cdf11e",
+  "byte_size": 1144,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "self_control_fmri_2022__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/self_control_fmri_2022__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_self_control_fmri_2022",
+  "preview_rows": [
+    {
+      "default_action": "stage_only",
+      "downloaded_file_count": 15,
+      "expected_rows": 4,
+      "file_list_csv": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/self_control_fmri_2022/osf_file_list.csv",
+      "landing_url": "https://osf.io/qzyxm/",
+      "lead_id": "self_control_fmri_2022",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/self_control_fmri_2022/paper_mirrors/scholz_hbm_2022_eur.pdf",
+      "manifest_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/self_control_fmri_2022/osf_manifest.json",
+      "notes": "OSF contains scripts stimuli preregistration and pilot materials and a valid open paper mirror is local. OpenNeuro provides raw fMRI but no final machine-readable original-versus-replication D/N result table was located",
+      "priority": 37,
+      "project": "Self control neuroimaging replication",
+      "promotion_blocker": "missing_machine_readable_pair_results|metric_not_on_shared_d_axis",
+      "raw_url": "https://repository.ubn.ru.nl/bitstream/handle/2066/246750/246750.pdf",
+      "source_family": "neuroscience"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:55",
+  "sha256": "d3b35479da687e61866ee81acb3522b6b4140c8e5db67e828efb8e57ce492919"
+}

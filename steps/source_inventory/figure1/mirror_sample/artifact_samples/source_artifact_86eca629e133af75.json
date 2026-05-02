@@ -1,0 +1,90 @@
+{
+  "artifact_id": "source_artifact_86eca629e133af75",
+  "byte_size": 185728,
+  "file_name": "hp_welfare.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/hp_welfare.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "welfare_Y_n",
+        "welfare_Z",
+        "pid3",
+        "race",
+        "income",
+        "age",
+        "female",
+        "survey",
+        "year"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "age": 30.0,
+          "female": 1.0,
+          "income": 7.0,
+          "pid3": "Democrat",
+          "race": "White",
+          "survey": "Huber/Paris (MTurk, July '11)",
+          "welfare_Y_n": 0.0,
+          "welfare_Z": 0.0,
+          "year": 2011.0
+        },
+        {
+          "age": 30.0,
+          "female": 0.0,
+          "income": 11.0,
+          "pid3": "Democrat",
+          "race": "White",
+          "survey": "Huber/Paris (MTurk, July '11)",
+          "welfare_Y_n": 1.0,
+          "welfare_Z": 1.0,
+          "year": 2011.0
+        },
+        {
+          "age": 52.0,
+          "female": 1.0,
+          "income": 4.0,
+          "pid3": "Independent",
+          "race": "White",
+          "survey": "Huber/Paris (MTurk, July '11)",
+          "welfare_Y_n": -1.0,
+          "welfare_Z": 1.0,
+          "year": 2011.0
+        },
+        {
+          "age": 33.0,
+          "female": 0.0,
+          "income": 8.0,
+          "pid3": "Republican",
+          "race": "White",
+          "survey": "Huber/Paris (MTurk, July '11)",
+          "welfare_Y_n": 0.0,
+          "welfare_Z": 0.0,
+          "year": 2011.0
+        },
+        {
+          "age": 18.0,
+          "female": 0.0,
+          "income": 15.0,
+          "pid3": "Republican",
+          "race": "Black",
+          "survey": "Huber/Paris (MTurk, July '11)",
+          "welfare_Y_n": -1.0,
+          "welfare_Z": 0.0,
+          "year": 2011.0
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1598,
+        9
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "35c1580b606516597c6dedaa1187d667257fb8d405d87030c1fe19875acd5cc5"
+}

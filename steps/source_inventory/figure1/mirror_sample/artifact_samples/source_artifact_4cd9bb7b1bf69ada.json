@@ -1,0 +1,349 @@
+{
+  "artifact_id": "source_artifact_4cd9bb7b1bf69ada",
+  "byte_size": 6662,
+  "file_name": "OJQWO2.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/OJQWO2.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 999,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 4957212,
+      "identifier": "DVN/OJQWO2",
+      "latestVersion": {
+        "citationDate": "2021-08-05",
+        "createTime": "2021-10-12T11:18:41Z",
+        "datasetFileUploadsAvailable": 999,
+        "datasetId": 4957212,
+        "datasetPersistentId": "doi:10.7910/DVN/OJQWO2",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "dfbb9e31ab2ceb791af7d1de85d9a4db"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2021-08-05",
+              "fileAccessRequest": false,
+              "filename": "ReplicationPackage.zip",
+              "filesize": 71537658,
+              "friendlyType": "ZIP Archive",
+              "id": 4957216,
+              "lastUpdateTime": "2021-10-12T11:18:52Z",
+              "md5": "dfbb9e31ab2ceb791af7d1de85d9a4db",
+              "persistentId": "",
+              "publicationDate": "2021-08-05",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17b1912405e-10e4242a0585",
+              "tabularData": false
+            },
+            "datasetVersionId": 276486,
+            "label": "ReplicationPackage.zip",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 276486,
+        "internalVersionNumber": 4,
+        "lastUpdateTime": "2021-10-12T11:18:52Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: 'The Allocation of Authority in Organizations: A Field Experiment with Bureaucrats'"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "London School of Economics"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Bandiera, Oriana"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Columbia University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Best, Michael Carlos"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "London School of Economics"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Khan, Adnan Qadir"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Columbia University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Prat, Andrea"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Columbia University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "andrea.prat@columbia.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Prat, Andrea"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2021-08-05"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "The data and programs replicate tables and figures from \"The Allocation of Authority in Organizations: A Field Experiment with Bureaucrats\", by Bandiera, Best, Khan, and Prat."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Analysis of Collective Decision-Making: Bureaucracy; Administrative Processes in Public Organizations; Corruption"
+                    },
+                    "keywordVocabulary": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabulary",
+                      "value": "D73"
+                    },
+                    "keywordVocabularyURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabularyURI",
+                      "value": "https://www.aeaweb.org/jel/guide/jel.php"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "National Government Expenditures and Related Policies: Procurement"
+                    },
+                    "keywordVocabulary": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabulary",
+                      "value": "H57"
+                    },
+                    "keywordVocabularyURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabularyURI",
+                      "value": "https://www.aeaweb.org/jel/guide/jel.php"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Institutions: Design, Formation, Operations, and Impact"
+                    },
+                    "keywordVocabulary": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabulary",
+                      "value": "D02"
+                    },
+                    "keywordVocabularyURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabularyURI",
+                      "value": "https://www.aeaweb.org/jel/guide/jel.php"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "publication",
+                "value": [
+                  {
+                    "publicationCitation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationCitation",
+                      "value": "Bandiera, Oriana, Michael Carlos Best, Adnan Qadir Khan, and Andrea Prat, \"The Allocation of Authority in Organizations: A Field Experiment with Bureaucrats,\" Quarterly Journal of Economics, vol. 136 no. 4, (2021), 2195-2242."
+                    },
+                    "publicationURL": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationURL",
+                      "value": "https://doi.org/10.1093/qje/qjab029"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "language",
+                "value": [
+                  "English"
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Baranga, Thomas"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2021-08-05"
+              }
+            ],
+            "name": "citation"
+          },
+          "geospatial": {
+            "displayName": "Geospatial Metadata",
+            "fields": [],
+            "name": "geospatial"
+          },
+          "journal": {
+            "displayName": "Journal Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "typeName": "journalArticleType",
+                "value": "research article"
+              }
+            ],
+            "name": "journal"
+          }
+        },
+        "publicationDate": "2021-08-05",
+        "releaseTime": "2021-10-12T11:18:52Z",
+        "storageIdentifier": "s3://10.7910/DVN/OJQWO2",
+        "versionMinorNumber": 1,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/OJQWO2",
+      "protocol": "doi",
+      "publicationDate": "2021-08-05",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/OJQWO2"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "1dba0588464a65e95ab5c35c5c7754d642703764fa531699a255043dbc4a7b8e"
+}

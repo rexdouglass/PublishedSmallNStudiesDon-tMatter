@@ -1,0 +1,813 @@
+{
+  "artifact_id": "source_artifact_30a1674c038cac66",
+  "byte_size": 30336,
+  "file_name": "dataverse_manifest.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "status"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_manifest.json",
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 978,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 4639159,
+      "identifier": "DVN/38UTBF",
+      "latestVersion": {
+        "UNF": "UNF:6:Uih1WVWagkIuXw2HNAW20g==",
+        "citationDate": "2021-05-14",
+        "createTime": "2022-09-12T00:35:12Z",
+        "datasetFileUploadsAvailable": 978,
+        "datasetId": 4639159,
+        "datasetPersistentId": "doi:10.7910/DVN/38UTBF",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b712af83d6a97fd98ce333dba80d469d"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 8",
+              "fileAccessRequest": false,
+              "filename": "abp_replication.rds",
+              "filesize": 373029,
+              "friendlyType": "Unknown",
+              "id": 4641486,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "b712af83d6a97fd98ce333dba80d469d",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c74e6b-5e140c329938",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 8",
+            "label": "abp_replication.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b826280338d357bc006a61c359acaf01"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2021-05-13",
+              "description": "replication script for results in appendix section a (see readme.R first)",
+              "fileAccessRequest": false,
+              "filename": "appendix_section_a.R",
+              "filesize": 91615,
+              "friendlyType": "R Syntax",
+              "id": 4641496,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "b826280338d357bc006a61c359acaf01",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c74ba2-df2f6ef3a784",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "replication script for results in appendix section a (see readme.R first)",
+            "label": "appendix_section_a.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e947023f15ab15086b97642f4c89e344"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2021-05-13",
+              "description": "replication script for results in appendix section b (see readme.R first)",
+              "fileAccessRequest": false,
+              "filename": "appendix_section_b.R",
+              "filesize": 18286,
+              "friendlyType": "R Syntax",
+              "id": 4641483,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "e947023f15ab15086b97642f4c89e344",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c74a62-796ec9f6d7d4",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "replication script for results in appendix section b (see readme.R first)",
+            "label": "appendix_section_b.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "bb32766ee8b1a32f8518c31b7c4fd871"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 3",
+              "fileAccessRequest": false,
+              "filename": "cm_asian_disease.rds",
+              "filesize": 84130,
+              "friendlyType": "Unknown",
+              "id": 4641497,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "bb32766ee8b1a32f8518c31b7c4fd871",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c7495b-4e02c43509ed",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 3",
+            "label": "cm_asian_disease.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:dLHLviLXUmOsYTPgd1LQ0A==",
+              "checksum": {
+                "type": "MD5",
+                "value": "2848ba036c769c5a5816b6d13608b0dd"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 9",
+              "fileAccessRequest": false,
+              "filename": "conjoint_original.tab",
+              "filesize": 1984815,
+              "friendlyType": "Tab-Delimited",
+              "id": 4641495,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "2848ba036c769c5a5816b6d13608b0dd",
+              "originalFileFormat": "application/x-stata",
+              "originalFileName": "conjoint_original.dta",
+              "originalFileSize": 2845890,
+              "originalFormatLabel": "Stata Binary",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c74811-2ccbc9b957ad",
+              "tabularData": true
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 9",
+            "label": "conjoint_original.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:iwReTQYjW1MlCO9O3soHNg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "c1bbd0523292633a6719b098360fc8ea"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 5",
+              "fileAccessRequest": false,
+              "filename": "druckman_original.tab",
+              "filesize": 12794,
+              "friendlyType": "Tab-Delimited",
+              "id": 4641489,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "c1bbd0523292633a6719b098360fc8ea",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "druckman_original.csv",
+              "originalFileSize": 10938,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c737cf-257b6a13f566",
+              "tabularData": true
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 5",
+            "label": "druckman_original.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "ceef7adf5f03dd172ebfacd869a0d7a5"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 6",
+              "fileAccessRequest": false,
+              "filename": "gilens_original.rds",
+              "filesize": 42981,
+              "friendlyType": "Unknown",
+              "id": 4641481,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "ceef7adf5f03dd172ebfacd869a0d7a5",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c736d1-7d813aed97e6",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 6",
+            "label": "gilens_original.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "209f5da53ae8e81265c9e6085b48f080"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 4",
+              "fileAccessRequest": false,
+              "filename": "gss_welfare.rds",
+              "filesize": 2063771,
+              "friendlyType": "Unknown",
+              "id": 4641482,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "209f5da53ae8e81265c9e6085b48f080",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c735bd-8f7688849525",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 4",
+            "label": "gss_welfare.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "bd5226eb55edbbb8a0ccb941bb430810"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2021-05-13",
+              "description": "helper functions needed to run the replication scripts (see readme.R)",
+              "fileAccessRequest": false,
+              "filename": "helpers.R",
+              "filesize": 6584,
+              "friendlyType": "R Syntax",
+              "id": 4641484,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "bd5226eb55edbbb8a0ccb941bb430810",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c729c2-c7b51e329761",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "helper functions needed to run the replication scripts (see readme.R)",
+            "label": "helpers.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e26ed82afe72663b8c65204b33575e2f"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 4",
+              "fileAccessRequest": false,
+              "filename": "hp_welfare.rds",
+              "filesize": 185728,
+              "friendlyType": "Unknown",
+              "id": 4641485,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "e26ed82afe72663b8c65204b33575e2f",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c728c3-3eb07f9c8ddd",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 4",
+            "label": "hp_welfare.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "061543d6984fe2cb69037f35b5e4e292"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2022-09-11",
+              "description": "replication script for results in manuscript (see readme.R first)",
+              "fileAccessRequest": false,
+              "filename": "manuscript.R",
+              "filesize": 20799,
+              "friendlyType": "R Syntax",
+              "id": 6482425,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "061543d6984fe2cb69037f35b5e4e292",
+              "persistentId": "",
+              "previousDataFileId": 4641480,
+              "publicationDate": "2022-10-06",
+              "rootDataFileId": 4641480,
+              "storageIdentifier": "s3://dvn-cloud:1832f1f6e12-41e07e9fc7ef",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "replication script for results in manuscript (see readme.R first)",
+            "label": "manuscript.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:T5pIYx8DnLeGa7fVJWBpAQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "873e59693f97ccd4a307b30ddabcb395"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 3",
+              "fileAccessRequest": false,
+              "filename": "manylabs_asian_disease.tab",
+              "filesize": 41630176,
+              "friendlyType": "Tab-Delimited",
+              "id": 4641487,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "873e59693f97ccd4a307b30ddabcb395",
+              "originalFileFormat": "application/x-spss-sav",
+              "originalFileName": "manylabs_asian_disease.sav",
+              "originalFileSize": 54640299,
+              "originalFormatLabel": "SPSS Binary",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c724ad-0b1878c045fd",
+              "tabularData": true
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 3",
+            "label": "manylabs_asian_disease.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:SBdXHCchEaifno5NsU24Dw==",
+              "checksum": {
+                "type": "MD5",
+                "value": "f039db40cb7e5cd9fe7e17a81a672a27"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 12",
+              "fileAccessRequest": false,
+              "filename": "peyton_original.tab",
+              "filesize": 1071160,
+              "friendlyType": "Tab-Delimited",
+              "id": 4641494,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "f039db40cb7e5cd9fe7e17a81a672a27",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "peyton_original.csv",
+              "originalFileSize": 1111393,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c5f40c-0e637687237a",
+              "tabularData": true
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 12",
+            "label": "peyton_original.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a74eca6584ed5c7462b0fd153aa975d6"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "data for Fig. 1 in manuscript",
+              "fileAccessRequest": false,
+              "filename": "phc_lucid_completes.rds",
+              "filesize": 6006,
+              "friendlyType": "Unknown",
+              "id": 4641479,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "a74eca6584ed5c7462b0fd153aa975d6",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c5ed25-7c51c2379175",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "data for Fig. 1 in manuscript",
+            "label": "phc_lucid_completes.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "2218adac06d2fd7cfd96f144c03d4b74"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "data for Fig. 4 in manuscript",
+              "fileAccessRequest": false,
+              "filename": "phc_meta_trends.rds",
+              "filesize": 8292,
+              "friendlyType": "Unknown",
+              "id": 4641492,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "2218adac06d2fd7cfd96f144c03d4b74",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c5ec18-e6ad8b595c7b",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "data for Fig. 4 in manuscript",
+            "label": "phc_meta_trends.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "436ed9fcf201a16b28422feea432ce02"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "dataset for the covid-era replications",
+              "fileAccessRequest": false,
+              "filename": "phc_replications.rds",
+              "filesize": 35454684,
+              "friendlyType": "Unknown",
+              "id": 4641490,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "436ed9fcf201a16b28422feea432ce02",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c5ea6f-62c45f75e187",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "dataset for the covid-era replications",
+            "label": "phc_replications.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "71d997c25d3164a4ad5d6126b02020d5"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 8",
+              "fileAccessRequest": false,
+              "filename": "psv_original.rds",
+              "filesize": 103932,
+              "friendlyType": "Unknown",
+              "id": 4641493,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "71d997c25d3164a4ad5d6126b02020d5",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c5292e-01a9f9b55a6c",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 8",
+            "label": "psv_original.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "ef970ede99fd4da9c96d4625323b4937"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "pre-covid replication data for Study 10",
+              "fileAccessRequest": false,
+              "filename": "pwk_original.rds",
+              "filesize": 248473,
+              "friendlyType": "Unknown",
+              "id": 4641498,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "ef970ede99fd4da9c96d4625323b4937",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c52782-d747e828a2da",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "pre-covid replication data for Study 10",
+            "label": "pwk_original.rds",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "bb3a4f48429e2f620cce401d9c1c79d7"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2022-09-11",
+              "description": "Instructions for reproducing results in manuscript and online appendix, and description of additional files",
+              "fileAccessRequest": false,
+              "filename": "ReadMe.R",
+              "filesize": 2129,
+              "friendlyType": "R Syntax",
+              "id": 6482424,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "bb3a4f48429e2f620cce401d9c1c79d7",
+              "persistentId": "",
+              "previousDataFileId": 4641488,
+              "publicationDate": "2022-10-06",
+              "rootDataFileId": 4641488,
+              "storageIdentifier": "s3://dvn-cloud:1832f1f0fa5-7f6bc33ce9cd",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "Instructions for reproducing results in manuscript and online appendix, and description of additional files",
+            "label": "ReadMe.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "6d0aaa0589d3f69f9583a656c960627f"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2021-05-13",
+              "description": "Pre-covid replication data for Study 11",
+              "fileAccessRequest": false,
+              "filename": "tw_original.rds",
+              "filesize": 151231,
+              "friendlyType": "Unknown",
+              "id": 4641491,
+              "lastUpdateTime": "2022-10-06T13:45:55Z",
+              "md5": "6d0aaa0589d3f69f9583a656c960627f",
+              "persistentId": "",
+              "publicationDate": "2021-05-14",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:17967c5245b-5b31766dc906",
+              "tabularData": false
+            },
+            "datasetVersionId": 332393,
+            "description": "Pre-covid replication data for Study 11",
+            "label": "tw_original.rds",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 332393,
+        "internalVersionNumber": 6,
+        "lastUpdateTime": "2022-10-06T13:45:55Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: The Generalizability of Online Experiments Conducted During the COVID-19 Pandemic"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Australian Catholic University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Peyton, Kyle"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Yale University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Coppock, Alexander"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Yale University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Huber, Gregory"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Australian Catholic University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "kpeyto1@gmail.com"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Kyle Peyton"
+                    }
+                  },
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Yale University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "alex.coppock@yale.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Coppock, Alexander"
+                    }
+                  },
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Yale University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "gregory.huber@yale.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Huber, Gregory"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Replication materials (data and code) to reproduce results in manuscript and online appendix."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Peyton, Kyle"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2021-05-11"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2021-05-14",
+        "releaseTime": "2022-10-06T13:45:55Z",
+        "storageIdentifier": "s3://10.7910/DVN/38UTBF",
+        "versionMinorNumber": 0,
+        "versionNumber": 2,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/38UTBF",
+      "protocol": "doi",
+      "publicationDate": "2021-05-14",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/38UTBF"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "5950e1265f551ef5d02a9b969e533d5de18e549676531ff567c29117230407c4"
+}

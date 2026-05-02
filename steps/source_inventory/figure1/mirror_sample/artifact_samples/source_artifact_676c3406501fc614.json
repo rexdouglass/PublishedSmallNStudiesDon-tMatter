@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_676c3406501fc614",
+  "byte_size": 1038,
+  "file_name": "est_study_7.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_7.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "knobe_Z_type",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "estimate_type",
+        "study",
+        "type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.7738737876,
+          "conf.low": 0.4056133918,
+          "df": 76.0,
+          "estimate": 0.5897435897,
+          "estimate_type": "Unstandardized",
+          "knobe_Z_type": "Original",
+          "outcome": "knobe_intent_binary",
+          "p.value": 1.27e-08,
+          "statistic": 6.3790522566,
+          "std.error": 0.0924500327,
+          "study": "Pre-COVID",
+          "survey": "Knobe (2003)",
+          "term": "knobe_ZHarm",
+          "type": "Pre-COVID"
+        },
+        {
+          "conf.high": 0.6644948002,
+          "conf.low": 0.618144366,
+          "df": 4100.0,
+          "estimate": 0.6413195831,
+          "estimate_type": "Unstandardized",
+          "knobe_Z_type": "Original",
+          "outcome": "knobe_intent_binary",
+          "p.value": 0.0,
+          "statistic": 54.253405991,
+          "std.error": 0.011820817,
+          "study": "Pre-COVID",
+          "survey": "Many Labs (2018)",
+          "term": "knobe_ZHarm",
+          "type": "Pre-COVID"
+        },
+        {
+          "conf.high": 0.4626183486,
+          "conf.low": 0.3049932623,
+          "df": 530.0,
+          "estimate": 0.3838058055,
+          "estimate_type": "Unstandardized",
+          "knobe_Z_type": "Modified",
+          "outcome": "knobe_intent_binary",
+          "p.value": 4.154583759e-20,
+          "statistic": 9.5665905057,
+          "std.error": 0.0401193931,
+          "study": "Replication",
+          "survey": "Week 7",
+          "term": "knobe_ZHarm",
+          "type": "COVID-specific"
+        },
+        {
+          "conf.high": 0.4691066747,
+          "conf.low": 0.3102725808,
+          "df": 519.0,
+          "estimate": 0.3896896277,
+          "estimate_type": "Unstandardized",
+          "knobe_Z_type": "Original",
+          "outcome": "knobe_intent_binary",
+          "p.value": 2.435396138e-20,
+          "statistic": 9.63978098,
+          "std.error": 0.0404251537,
+          "study": "Replication",
+          "survey": "Week 7",
+          "term": "knobe_ZHarm",
+          "type": "Direct replication"
+        },
+        {
+          "conf.high": 1.8130607508,
+          "conf.low": 0.9502863807,
+          "df": 76.0,
+          "estimate": 1.3816735658,
+          "estimate_type": "Standardized",
+          "knobe_Z_type": "Original",
+          "outcome": "knobe_intent_binary_s",
+          "p.value": 1.27e-08,
+          "statistic": 6.3790522566,
+          "std.error": 0.2165954299,
+          "study": "Pre-COVID",
+          "survey": "Knobe (2003)",
+          "term": "knobe_ZHarm",
+          "type": "Pre-COVID"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        8,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "3e52150d8c2cb58e021dc4ddd52713204ad1db1cc407f2a9c1161c8e4d073baa"
+}

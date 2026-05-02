@@ -1,0 +1,108 @@
+{
+  "artifact_id": "source_artifact_6d4b3147226e4308",
+  "byte_size": 1053,
+  "file_name": "est_study_12.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_12.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "study",
+        "estimate_type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.903668049,
+          "conf.low": 0.4877481071,
+          "df": 618.0,
+          "estimate": 0.6957080781,
+          "estimate_type": "Standardized",
+          "outcome": "Trust in Government",
+          "p.value": 1e-10,
+          "statistic": 6.5697186,
+          "std.error": 0.1058961761,
+          "study": "Pre-COVID",
+          "survey": "MTurk sample, Jun 2014",
+          "term": "Z_trust_n"
+        },
+        {
+          "conf.high": 0.8360589392,
+          "conf.low": 0.6145130039,
+          "df": 1795.0,
+          "estimate": 0.7252859715,
+          "estimate_type": "Standardized",
+          "outcome": "Trust in Government",
+          "p.value": 3.562305881e-36,
+          "statistic": 12.8415224959,
+          "std.error": 0.0564797493,
+          "study": "Pre-COVID",
+          "survey": "MTurk sample, Mar 2017",
+          "term": "Z_trust_n"
+        },
+        {
+          "conf.high": 0.5639919264,
+          "conf.low": 0.2799905639,
+          "df": 1322.0,
+          "estimate": 0.4219912451,
+          "estimate_type": "Standardized",
+          "outcome": "Trust in Government",
+          "p.value": 7e-09,
+          "statistic": 5.8298704059,
+          "std.error": 0.0723843269,
+          "study": "Pre-COVID",
+          "survey": "Qualtrics sample, Sep 2014",
+          "term": "Z_trust_n"
+        },
+        {
+          "conf.high": 0.3061074698,
+          "conf.low": 0.0074459188,
+          "df": 1020.0,
+          "estimate": 0.1567766943,
+          "estimate_type": "Standardized",
+          "outcome": "Trust in Government",
+          "p.value": 0.0396387569,
+          "statistic": 2.0601361205,
+          "std.error": 0.0761001629,
+          "study": "Replication",
+          "survey": "Week 9 Replication",
+          "term": "Z_trust_n"
+        },
+        {
+          "conf.high": 0.1248354432,
+          "conf.low": -0.2612792779,
+          "df": 618.0,
+          "estimate": -0.0682219174,
+          "estimate_type": "Standardized",
+          "outcome": "Support for Redistribution",
+          "p.value": 0.4879654647,
+          "statistic": -0.6939641358,
+          "std.error": 0.0983075549,
+          "study": "Pre-COVID",
+          "survey": "MTurk sample, Jun 2014",
+          "term": "Z_trust_n"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        8,
+        12
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "3b1903efa46e1286ccc8aad9d5bc0eab9399cfd82a019388e11861a8aec9d91e"
+}

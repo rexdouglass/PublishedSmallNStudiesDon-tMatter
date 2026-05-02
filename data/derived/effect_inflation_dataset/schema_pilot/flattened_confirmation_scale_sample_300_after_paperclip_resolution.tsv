@@ -1,0 +1,301 @@
+source_result_id	flat_level	flat_label	flat_reason	old_evidence	plot_name	source_family
+sr_a2792b5f35b5	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_bc78312ff9c4	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	Ying 2023 manual partial reconstruction
+sr_5598a1474491	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	score_cos_claims
+sr_362d2e514afe	4	target_landing_or_abstract_obtained	paperclip_abstract_corpus: exact DOI match and abstract/detail text obtained; not source-object/full-paper/value verification	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_9800e39769a1	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_06354aed9477	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_a182ef5b0da7	7	final_paper_obtained	targeted_resolution_pass: Credible DOI in corpus row; fetched Frontiers full article HTML; OpenAlex/Unpaywall classify as gold OA publishedVersion/CC-BY. PDF endpoint timed out but HTML is enough for level 7.	target_source_independently_grounded	Plot 3	Schäfer/Schwarz 2019 preregistered psychology articles
+sr_f562e2645cdd	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_8486dcbc1804	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	FReD filtered pair table
+sr_3dcf8949d2f9	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	replication_pair_originals_bridge
+sr_c8398f907345	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_7a1e8bbfd877	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_60360366c47c	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	clinifact_published_primary_pairs
+sr_8d7eceba3893	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_266b83deab6b	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	Communication privacy SEM paths
+sr_32e8f46f1c24	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	Wood Hoy Pryke China-aid attitudes preregistered survey experiment
+sr_57e119b02525	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_ceddf70c38b1	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_acfd28ade498	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 4	gwas_catalog
+sr_995bd3c3900a	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_e567a2ed8bf8	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_147c4fd5d62f	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_a3c89d628df7	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_07eb16a91055	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	button_nord_neuroscience
+sr_418e6ec7b4d3	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_68030d0ead7f	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	forrt_fred
+sr_9e1a912c9b1d	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_df1f5890afec	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_f5b1fa84ce27	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	motyl_2017_critical_tests
+sr_17b0cfe42e6d	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_c1cbd6657a4e	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_6e06fcfca537	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_307943984453	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 4	schaefer_schwarz_2019_without_prereg
+sr_61bbdea80744	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	Motyl social/personality critical tests
+sr_1ed207224a85	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_fdf78d9e9f66	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_72511a245c94	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_c5752f09223e	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_9c4daeb580e8	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_c25aa56f24e3	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_4871288bad74	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_92b015f56f77	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_2c54a948cfe2	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_6884c920951c	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	MetaLab
+sr_333ef50a595e	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_03355505d651	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Motyl social/personality critical tests
+sr_e89d75ebfd8e	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 4	schaefer_schwarz_2019_without_prereg
+sr_61aeb1d7281e	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	kuhberger_2014_main_results
+sr_c6091d70fcc5	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_e786a4f0bdc3	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	metalab
+sr_81dcacb19b9f	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_e74bda715816	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_3ea41f299d78	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	RPCB
+sr_78c450606fc2	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Motyl social/personality critical tests
+sr_c32a10acbc15	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_68c0e5067d4b	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_f339c0254923	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_9078255a0573	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_b38402a7e48a	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 4	score_cos_claims
+sr_deff8d4a6913	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_b0fb1425aea4	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	Motyl social/personality critical tests
+sr_c15be1b60041	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	yun_llm_meta_analysis
+sr_b2348504f69b	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 4	linden_2024_random_effects
+sr_87ff7572edff	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_f31698e541dc	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_05a96a248d34	7	final_paper_obtained	targeted_resolution_pass: Same represented DOI as sr_a182ef5b0da7; fetched Frontiers full article HTML; OpenAlex/Unpaywall classify as gold OA publishedVersion/CC-BY.	target_source_independently_grounded	Plot 3	Schäfer/Schwarz 2019 preregistered psychology articles
+sr_6d53289e06ab	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	clinifact_published_primary_pairs
+sr_528e74f3ea09	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	forrt_fred
+sr_68b9aab77905	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_612caed0e0da	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_21fe810427f5	4	target_landing_or_abstract_obtained	paperclip_abstract_corpus: exact DOI match and abstract/detail text obtained; not source-object/full-paper/value verification	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_d77f8db1d1b7	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_31cedf25f0f0	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_553821bb35af	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_6ec02a020539	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_6b48885948a9	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_afedb8c87b93	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	SCORE analyst join
+sr_fbb29ff3b4c7	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_dc4eddf69c3c	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_01b8db23d742	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_0832a411bca2	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_47e74981aa68	8	supplement_or_replication_package_obtained	existing local corpus/supplement/data file mirrored	original_source_obtained	Plot 4	olsson_sundell_2023_social_interventions
+sr_6c3663410cb7	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	Many Labs 2 public join
+sr_0372d6c4f192	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_6c8fbd0ac45b	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_df148fcf0ce2	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	Kerschbaumer 2020 rheumatology phase II/III
+sr_d3539c7b3ccb	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_b60e3b988d3b	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_3fcd19c120b1	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_a9a7d2fcc0d6	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_be4fa916ebbe	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	LOOPR coding workbook
+sr_e2cb991d651a	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 1	Eyewitness ten-country paper table rescue
+sr_76a99a771018	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_4018aa63d523	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	RPP canonical OSF csv
+sr_1ffcb30d1c76	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	RPP canonical OSF csv
+sr_5b1a0fc622e3	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	Boyce student replication corpus
+sr_29a6bfd3a748	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_1c71871780ff	4	target_landing_or_abstract_obtained	paperclip_abstract_corpus: exact DOI match and abstract/detail text obtained; not source-object/full-paper/value verification	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_1ba37b2938cd	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	CliniFact published primary pairs
+sr_0a4728aa6abf	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	SCORE analyst join
+sr_3e576eaeee38	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 2	Schäfer/Schwarz psychology articles (without preregistration)
+sr_9ff92c0aba20	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_14d8f4c6d1d5	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_025e90b19395	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_efa55a2812ef	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_9d0246e3a748	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_6c3339adac2d	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_2ef5e9c7214d	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	SCORE analyst join
+sr_09224852e3e6	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	replication-pair original-side bridge
+sr_a556216508fd	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_fd9b4c04ec6f	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_ddfbf61c7617	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_4458f7fc086a	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_3a4c25fbf576	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_71af0798216e	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_09da2adb56e5	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	replication_pair_originals_bridge
+sr_17d687917962	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_ed726dff7f0e	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 1	FReD filtered pair table
+sr_2a81f3efc08e	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_ea908acbfb0c	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_dde25d3c0279	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_ddd3d7c5f433	8	supplement_or_replication_package_obtained	existing local corpus/supplement/data file mirrored	original_source_obtained	Plot 4	olsson_sundell_2023_social_interventions
+sr_3c91b76d15f8	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_b55639792416	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	gwas_catalog
+sr_b5e29f519aae	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_3741edf3cd08	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_5adb462eb079	3	target_independently_resolved	DOI/PMID/NCT/URL resolved independently; no source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_3f9b6a09599c	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_928de8f12480	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Kühberger psychology main results
+sr_827b0884ef5e	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_b7cb57c5cb78	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_581b0190b9f5	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	FORRT FReD
+sr_5c714fede5eb	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 1	Many Labs 2 public join
+sr_8144e362ed8b	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_936ecd0105d4	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	score_cos_claims
+sr_7902813ac3c1	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Motyl social/personality critical tests
+sr_e75bc376a0b1	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_9eeaae2c75a9	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_de9d02f3efe7	8	supplement_or_replication_package_obtained	existing local corpus/supplement/data file mirrored	original_source_obtained	Plot 4	olsson_sundell_2023_social_interventions
+sr_a1c0077f9cb0	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	FReD filtered pair table
+sr_72e0ac9be373	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	kuhberger_2014_main_results
+sr_f44201a1b8b4	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	havranek_armington
+sr_b6505d27d5ef	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_8b7d83b63310	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_2eb0fc250a2a	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_d5187cb33c19	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_2af4bf57e7ef	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_644891607462	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 2	Schäfer/Schwarz psychology articles (without preregistration)
+sr_9b47ec766005	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_ef6a224b8b86	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	button_nord_neuroscience
+sr_1eb547defd9c	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 2	Schäfer/Schwarz preregistered psychology articles
+sr_1c33e20c69a2	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 1	SCORE analyst join
+sr_0a95dbeefcd1	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	RPCB
+sr_0c20617bc06f	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_37178bbf2376	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_05cd86ffb475	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	replication_pair_originals_bridge
+sr_026ab716fdc2	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_b35dc7490583	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	esarey_wu_2016_political_science_main_findings
+sr_0c6d1c09a807	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	DARPA SCORE / COS claims
+sr_bb1471bd23d8	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_16dfaeed46ee	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	Kerschbaumer 2020 rheumatology phase II/III
+sr_89366ac7df1c	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_1166ca428215	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_d19dc790ebd7	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	forrt_fred
+sr_3f361d51253e	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	DARPA SCORE / COS claims
+sr_d69fb669841a	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_0ffe5117d055	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_143d87ef36aa	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_629af99106ba	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_2688beda5935	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Button/Nord neuroscience
+sr_44a8287fc7cc	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_8c10cb62280a	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_656af44d63ac	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	Boyce student replication corpus
+sr_5c5f468d0b79	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_b868072acfa7	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_bb35048cf955	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	Communication privacy SEM paths
+sr_160ac121ff32	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_8ef41f574c02	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_041065fd13e4	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_7e8fa5f6115f	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_e91cbb524953	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_f6d9c3a25190	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_3c4b03e17612	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	Boyce student replication corpus
+sr_0e779c0101ec	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	button_nord_neuroscience
+sr_7eef079beb19	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_74bb31b5d242	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_a2e527fb29d6	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 1	SCORE analyst join
+sr_5d73e18a9b1e	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 3	van den Akker matched preregistered-result paper medians
+sr_30b176b2d082	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	havranek_armington
+sr_eaab9016f715	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_abe518728e2c	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_505408ec5cfe	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	LOOPR coding workbook
+sr_de1c92df2ed9	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_459c73f90a3d	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	esarey_wu_2016_political_science_main_findings
+sr_69da0613a6c0	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_ec359e2c27e0	3	target_independently_resolved	DOI/PMID/NCT/URL resolved independently; no source object	target_source_independently_grounded	Plot 3	Schäfer/Schwarz 2019 preregistered psychology articles
+sr_4b879765bfd6	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_0d80ddf31d89	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Button/Nord neuroscience
+sr_0680b784ddd6	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 1	FReD filtered pair table
+sr_dc8fc4fdac47	8	supplement_or_replication_package_obtained	existing local corpus/supplement/data file mirrored	original_source_obtained	Plot 2	Havránek substitution meta-analysis
+sr_2ac5c37e5f0c	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_37218d335ce6	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_885a811e26fd	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	FReD filtered pair table
+sr_f2b05e0d75f6	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_28aebf7ac1f1	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_8d5804d7e7e8	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_2d2f63f07b2f	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	RPCB
+sr_649b913c7a05	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_2d3d0f11d546	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_50fdee6ef7a9	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_09896453a68e	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_3cda92191f17	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	metaBUS open Bosco subset
+sr_f2d67c41c94e	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_1da5d9472eaf	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_ba8e04437ef3	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_b900a0f99163	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_7432aa117bcb	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_0ef241dace7f	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 1	RPCB
+sr_616ebdabaa34	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_e1dd23091aff	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	score_cos_claims
+sr_8d7acd628883	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_a852da233b7d	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 3	Golden Gulzar Sonnet political-responsiveness preregistered field experiment
+sr_8bf8e026decd	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	DARPA SCORE / COS claims
+sr_706e5e6c7819	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 4	score_cos_claims
+sr_62eef8724f94	8	supplement_or_replication_package_obtained	existing local corpus/supplement/data file mirrored	original_source_obtained	Plot 2	Olsson/Sundell social interventions
+sr_8e53fec0db78	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_32884f9211fb	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_5d9a9531214b	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	Boyce student replication corpus
+sr_f322cf6db3fd	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_7ac68cdbbc03	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_431a5e1736e3	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_bf852f96d5ef	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_e9c214df8069	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_4420ad24a594	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_0cc5d4c7a6b9	4	target_landing_or_abstract_obtained	targeted_resolution_pass: Credible DOI in corpus row; DOI redirected to Cairn/Hermann page and HTML was mirrored. Page appears landing/limited text, not full value-bearing paper.	target_source_independently_grounded	Plot 3	Schäfer/Schwarz 2019 preregistered psychology articles
+sr_60c2a469e71e	3	target_independently_resolved	DOI/PMID/NCT/URL resolved independently; no source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_5cfe7da2c521	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_dfc5f98d8a4f	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_6db78c28c05a	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_8ad55815e5fc	4	target_landing_or_abstract_obtained	paperclip_abstract_corpus: exact DOI match and abstract/detail text obtained; not source-object/full-paper/value verification	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_a6f46bca45c2	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_368a7954cbb8	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_be6f969d81a7	4	target_landing_or_abstract_obtained	paperclip_abstract_corpus: exact DOI match and abstract/detail text obtained; not source-object/full-paper/value verification	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_46fcf0099591	4	target_landing_or_abstract_obtained	paperclip_abstract_corpus: exact DOI match and abstract/detail text obtained; not source-object/full-paper/value verification	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_1c6ef92fa050	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_f7d0e896cfc6	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_fee3ac01c606	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	gwas_catalog
+sr_14b1bfc72686	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	score_cos_claims
+sr_56a9f30f8d92	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_c4f5b565a745	3	target_independently_resolved	DOI/PMID/NCT/URL resolved independently; no source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_8dbf832c0aa0	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	DARPA SCORE / COS claims
+sr_d30c0407b24b	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 2	Schäfer/Schwarz psychology articles (without preregistration)
+sr_4c9b3024bcba	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_868dfc6da179	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_5ea3a9bf5dc8	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_2ead36cae8e2	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 4	schaefer_schwarz_2019_without_prereg
+sr_10e682ba553b	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 2	Schäfer/Schwarz psychology articles (without preregistration)
+sr_4f77703173f7	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_0e4bba88f02f	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_ee72592661db	7	final_paper_obtained	targeted_resolution_pass: Broad web search found a publicly hosted PDF copy on a university lab site. PDF text contains the target title/authors and the American Psychologist article; promoted to level 7 as actual paper bytes obtained. This is not value verification.	target_source_independently_grounded	Plot 4	forrt_fred
+sr_285363cf3974	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_d222165d0b25	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	motyl_2017_critical_tests
+sr_d3faea5526bc	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_1e8a07a9cd86	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 2	Schäfer/Schwarz psychology articles (without preregistration)
+sr_65a9f9c5f7bd	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	BRI primary t experiment table
+sr_562a7f6042a2	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	replication-pair original-side bridge
+sr_bf90b4be790a	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_6e5c68827050	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	esarey_wu_2016_political_science_main_findings
+sr_d225c4f2ad96	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_6593fff4c749	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	DARPA SCORE / COS claims
+sr_910cc9ea32e4	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Kühberger psychology main results
+sr_0b5cef0ad420	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 3	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_80c5ee34e5f4	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	forrt_fred
+sr_187e0ccced6f	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	FReD filtered pair table
+sr_af15cdb4aad8	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_148ffca3367c	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 1	Ying 2023 manual partial reconstruction
+sr_be6cbe0c6a2b	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_22f96d70c38a	2	corpus_assertion_with_citation	external corpus/source assertion has some target/source locator but not independently confirmed	external_source_assertion	Plot 4	linden_2024_random_effects
+sr_f9f06025395c	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	yun_llm_meta_analysis
+sr_d3c761e4e4ee	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_bbf5b92dab8e	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	havranek_armington
+sr_7271878ec034	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_4adf6fd2310b	8	supplement_or_replication_package_obtained	existing local corpus/supplement/data file mirrored	original_source_obtained	Plot 2	Brodeur economics corpus
+sr_af69b1b27c9f	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_78698f5ba037	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 4	FReD filtered pair table
+sr_8226dc61270c	6	preprint_or_author_manuscript_obtained	repository/preprint/manuscript candidate mirrored	original_source_obtained	Plot 1	SCORE analyst join
+sr_541412d5d4e8	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	metaBUS open Bosco subset
+sr_a929155b5e72	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	metabus_open_bosco
+sr_c1becaaf9056	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_3cef793ec7a4	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 1	LOOPR coding workbook
+sr_34e03261c24d	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	FORRT FReD
+sr_cf10c58438c7	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_4dbf0cd7b50e	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 2	DARPA SCORE / COS claims
+sr_09538e441d8b	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	economics_brodeur_2024
+sr_779e8dd2ff35	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_da95f9c21d25	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	FReD filtered pair table
+sr_62cc168cbf4c	4	target_landing_or_abstract_obtained	target abstract/landing/PubMed detail obtained but no full source object	target_source_independently_grounded	Plot 4	motyl_2017_critical_tests
+sr_8989ad9654f1	5	independent_nonpaper_result_record_obtained	ClinicalTrials.gov/registry record mirrored; not final paper	original_source_obtained	Plot 4	ctgov_finer_grained_kg
+sr_68c5ac5e9dd1	9	value_verified_in_source	D/N or native value extracted from source material	original_number_extracted	Plot 4	ClinicalTrials.gov phase-2+ primary randomized registry rows
+sr_7967f7ac70eb	7	final_paper_obtained	article full text mirrored as PDF/XML/HTML/PMC XML	original_source_obtained	Plot 2	Kühberger psychology main results

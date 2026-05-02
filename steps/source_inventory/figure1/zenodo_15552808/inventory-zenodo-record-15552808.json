@@ -1,0 +1,114 @@
+{
+  "conceptdoi": "10.5281/zenodo.10590041",
+  "conceptrecid": "10590041",
+  "created": "2025-05-30T10:17:47.499093+00:00",
+  "doi": "10.5281/zenodo.15552808",
+  "doi_url": "https://doi.org/10.5281/zenodo.15552808",
+  "files": [
+    {
+      "checksum": "md5:feb4b7bd04ebeaf3206cb1dfc56779d9",
+      "id": "a90257fe-c45b-4e68-8b15-6de5d5059349",
+      "key": "heterogeneity_in_replication_projects-3.0.0.zip",
+      "links": {
+        "self": "https://zenodo.org/api/records/15552808/files/heterogeneity_in_replication_projects-3.0.0.zip/content"
+      },
+      "size": 3795703
+    }
+  ],
+  "id": 15552808,
+  "links": {
+    "access": "https://zenodo.org/api/records/15552808/access",
+    "access_grants": "https://zenodo.org/api/records/15552808/access/grants",
+    "access_links": "https://zenodo.org/api/records/15552808/access/links",
+    "access_request": "https://zenodo.org/api/records/15552808/access/request",
+    "access_users": "https://zenodo.org/api/records/15552808/access/users",
+    "archive": "https://zenodo.org/api/records/15552808/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15552808/media-files-archive",
+    "communities": "https://zenodo.org/api/records/15552808/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15552808/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.15552808",
+    "draft": "https://zenodo.org/api/records/15552808/draft",
+    "file_modification": "https://zenodo.org/api/records/15552808/file-modification",
+    "files": "https://zenodo.org/api/records/15552808/files",
+    "latest": "https://zenodo.org/api/records/15552808/versions/latest",
+    "latest_html": "https://zenodo.org/records/15552808/latest",
+    "media_files": "https://zenodo.org/api/records/15552808/media-files",
+    "parent": "https://zenodo.org/api/records/10590041",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10590041",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10590041",
+    "parent_html": "https://zenodo.org/records/10590041",
+    "preview_html": "https://zenodo.org/records/15552808?preview=1",
+    "quota_increase": "https://zenodo.org/api/records/15552808/quota-increase",
+    "request_deletion": "https://zenodo.org/api/records/15552808/request-deletion",
+    "requests": "https://zenodo.org/api/records/15552808/requests",
+    "reserve_doi": "https://zenodo.org/api/records/15552808/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/15552808",
+    "self_doi": "https://doi.org/10.5281/zenodo.15552808",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15552808",
+    "self_html": "https://zenodo.org/records/15552808",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15552808/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15552808/sequence/default",
+    "versions": "https://zenodo.org/api/records/15552808/versions"
+  },
+  "metadata": {
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "University of Zurich",
+        "name": "Heyard, Rachel",
+        "orcid": "0000-0002-7531-4333"
+      }
+    ],
+    "description": "<p>Code and data to reproduce results from 'Heyard, R. and Held, L. (2025). Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects'. This is a snapshot of the git repository <a href=\"https://gitlab.uzh.ch/rachel.heyard/heterogeneity_in_replication_projects\">https://gitlab.uzh.ch/rachel.heyard/heterogeneity_in_replication_projects</a> commit f0ef27d6b4b5735d1bb9b5c0c8c7ad6016e8e282 from 30 May 2025.</p>",
+    "doi": "10.5281/zenodo.15552808",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "publication_date": "2025-05-30",
+    "references": [
+      "Heyard, R., & Held, L. (2024, January 29). Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects. https://doi.org/10.31222/osf.io/e9nw2"
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10590041"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "subtype": "computationalnotebook",
+      "title": "Computational notebook",
+      "type": "software"
+    },
+    "title": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects"
+  },
+  "modified": "2025-05-30T10:17:47.661765+00:00",
+  "owners": [
+    {
+      "id": "196036"
+    }
+  ],
+  "recid": "15552808",
+  "revision": 4,
+  "state": "done",
+  "stats": {
+    "downloads": 41,
+    "unique_downloads": 41,
+    "unique_views": 162,
+    "version_downloads": 15,
+    "version_unique_downloads": 15,
+    "version_unique_views": 64,
+    "version_views": 66,
+    "views": 168
+  },
+  "status": "published",
+  "submitted": true,
+  "swh": {},
+  "title": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects",
+  "updated": "2025-05-30T10:17:47.661765+00:00"
+}

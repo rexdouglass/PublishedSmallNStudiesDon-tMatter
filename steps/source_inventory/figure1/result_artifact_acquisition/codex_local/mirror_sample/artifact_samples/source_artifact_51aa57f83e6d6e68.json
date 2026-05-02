@@ -1,0 +1,63 @@
+{
+  "artifact_id": "source_artifact_51aa57f83e6d6e68",
+  "byte_size": 1688,
+  "columns": [
+    "Task",
+    "ERP",
+    "Event",
+    "GROrel",
+    "SSrel",
+    "SME"
+  ],
+  "estimated_data_rows": 41,
+  "file_name": "ReliabilityTable.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/ern_pe_rrr_openneuro/osf_8cbua_7ku9r/ReliabilityTable.csv",
+  "parent_corpus_database_id": "corpus_db_lead_ern_pe_rrr_openneuro",
+  "preview_rows": [
+    {
+      "ERP": null,
+      "Event": null,
+      "GROrel": "Mean 95% CrI",
+      "SME": "RMS",
+      "SSrel": "Range",
+      "Task": null
+    },
+    {
+      "ERP": "ERN",
+      "Event": "Correct",
+      "GROrel": ".97 (.96, .98)",
+      "SME": "0.53",
+      "SSrel": ".95 to .998",
+      "Task": "Flanker"
+    },
+    {
+      "ERP": null,
+      "Event": "Error",
+      "GROrel": ".86 (.83, .89)",
+      "SME": "1.33",
+      "SSrel": ".65 to .99",
+      "Task": null
+    },
+    {
+      "ERP": null,
+      "Event": "Difference",
+      "GROrel": ".79 (.73, .83)",
+      "SME": "-",
+      "SSrel": "-",
+      "Task": null
+    },
+    {
+      "ERP": "Pe",
+      "Event": "Correct",
+      "GROrel": ".93 (.92, .95)",
+      "SME": "0.5",
+      "SSrel": ".88 to .998",
+      "Task": null
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-02T09:32:45",
+  "sha256": "f026169ad45c6913fe97fe81a31ac847ccbbe70751cc3f61931ecdd1c2f6ad28"
+}

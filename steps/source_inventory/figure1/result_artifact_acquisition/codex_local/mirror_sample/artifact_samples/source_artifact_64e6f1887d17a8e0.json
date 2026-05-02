@@ -1,0 +1,205 @@
+{
+  "artifact_id": "source_artifact_64e6f1887d17a8e0",
+  "byte_size": 6566,
+  "file_name": "dataverse_manifest.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "status"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/media_priming_2017/dataverse_manifest.json",
+  "parent_corpus_database_id": "corpus_db_lead_media_priming_2017",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 999,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 2702636,
+      "identifier": "DVN/ECGADO",
+      "latestVersion": {
+        "citationDate": "2015-08-28",
+        "createTime": "2015-08-30T21:17:42Z",
+        "datasetFileUploadsAvailable": 999,
+        "datasetId": 2702636,
+        "datasetPersistentId": "doi:10.7910/DVN/ECGADO",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": true,
+        "files": [
+          {
+            "categories": [
+              "Data",
+              "Replication"
+            ],
+            "dataFile": {
+              "categories": [
+                "Data",
+                "Replication"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "8d31c79e53f8a1bd56ea15b34bd064e5"
+              },
+              "contentType": "application/vnd.ms-excel",
+              "creationDate": "2015-08-28",
+              "description": "Replication Data for: The Media Priming Effect: A Preregistered Replication Experiment",
+              "fileAccessRequest": true,
+              "filename": "media_priming.xls",
+              "filesize": 51200,
+              "friendlyType": "MS Excel Spreadsheet",
+              "id": 2702637,
+              "lastUpdateTime": "2015-08-30T23:04:32Z",
+              "md5": "8d31c79e53f8a1bd56ea15b34bd064e5",
+              "persistentId": "doi:10.7910/DVN/ECGADO/DSUNVR",
+              "pidURL": "https://doi.org/10.7910/DVN/ECGADO/DSUNVR",
+              "publicationDate": "2015-08-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:14f745322d0-4aa89b373370",
+              "tabularData": false
+            },
+            "datasetVersionId": 76649,
+            "description": "Replication Data for: The Media Priming Effect: A Preregistered Replication Experiment",
+            "label": "media_priming.xls",
+            "restricted": true,
+            "version": 1
+          }
+        ],
+        "id": 76649,
+        "internalVersionNumber": 8,
+        "lastUpdateTime": "2015-08-30T23:04:32Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: The Media Priming Effect: A Preregistered Replication Experiment"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "National Institute of Informatics"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Kobayashi, Tetsuro"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "National Institute of Informatics"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "k-tetsu@nii.ac.jp"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Kobayashi, Tetsuro"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2015-08-28"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Replication Data for: The Media Priming Effect: A Preregistered Replication Experiment"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Kobayashi, Tetsuro"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2015-08-28"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2015-08-28",
+        "releaseTime": "2015-08-30T23:04:32Z",
+        "storageIdentifier": "s3://10.7910/DVN/ECGADO",
+        "versionMinorNumber": 1,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/ECGADO",
+      "protocol": "doi",
+      "publicationDate": "2015-08-28",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/ECGADO"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-02T09:32:48",
+  "sha256": "77184d7aef96ea8c08fb892f376fd4637bafd0d2a4bbbdcc58d08bc7a863148a"
+}

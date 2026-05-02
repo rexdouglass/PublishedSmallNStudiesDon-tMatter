@@ -1,0 +1,69 @@
+{
+  "artifact_id": "source_artifact_7cd738be4ab41f26",
+  "byte_size": 3012,
+  "columns": [
+    "league_positive_t0",
+    "age",
+    "gender",
+    "walk",
+    "fam",
+    "games_watched",
+    "secular_t0"
+  ],
+  "estimated_data_rows": 150,
+  "file_name": "fans-during-intervention.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/zenodo/3942437/fans-during-intervention.csv",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview_rows": [
+    {
+      "age": 32,
+      "fam": 1,
+      "games_watched": 11,
+      "gender": "Male",
+      "league_positive_t0": 4,
+      "secular_t0": 4,
+      "walk": 1
+    },
+    {
+      "age": 20,
+      "fam": 1,
+      "games_watched": 32,
+      "gender": "Male",
+      "league_positive_t0": 4,
+      "secular_t0": 4,
+      "walk": 1
+    },
+    {
+      "age": 23,
+      "fam": 1,
+      "games_watched": 25,
+      "gender": "Male",
+      "league_positive_t0": 4,
+      "secular_t0": 4,
+      "walk": 0
+    },
+    {
+      "age": 20,
+      "fam": 1,
+      "games_watched": 20,
+      "gender": "Male",
+      "league_positive_t0": 4,
+      "secular_t0": 4,
+      "walk": 1
+    },
+    {
+      "age": 23,
+      "fam": 1,
+      "games_watched": 19,
+      "gender": "Male",
+      "league_positive_t0": 3,
+      "secular_t0": 4,
+      "walk": 0
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:44",
+  "sha256": "73830db09f94570a328712b95a4b70fa35197d8b48be92a4d475c9d81a026f82"
+}

@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "manual_tracker:leight_asri_imai_aea_publication_tracking_paper",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:leight_asri_imai_aea_publication_tracking_paper",
+  "next_action": "keep_for_publication_bias_context_or_author_request_not_figure1_pair_parser",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "Conceptually useful publication-tracking work, but the tracker says row-level output data were not found and this is not a Figure 1 original/replication pair source.",
+  "review_id": "review_figure1_search_leads_4dda2769be18",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

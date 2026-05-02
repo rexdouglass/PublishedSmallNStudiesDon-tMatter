@@ -1,0 +1,265 @@
+{
+  "artifact_id": "source_artifact_bfc9c3d67a81256d",
+  "byte_size": 9011,
+  "file_name": "aea_dataverse_metadata.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "status"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/aea_dataverse_metadata.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 996,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "guestbookId": 299,
+      "id": 12127194,
+      "identifier": "DVN/OHBI3I",
+      "latestVersion": {
+        "citationDate": "2025-10-05",
+        "createTime": "2025-10-02T05:59:29Z",
+        "datasetFileUploadsAvailable": 996,
+        "datasetId": 12127194,
+        "datasetPersistentId": "doi:10.7910/DVN/OHBI3I",
+        "datasetType": "dataset",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": true,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "ecdeab07778ee77b87253caa44529908"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2025-10-02",
+              "description": "Codebook for the registry fields",
+              "fileAccessRequest": true,
+              "filename": "AEA_RCT_Registry_Data_Elements_Definitions.pdf",
+              "filesize": 142729,
+              "friendlyType": "Adobe PDF",
+              "id": 12127198,
+              "lastUpdateTime": "2025-10-05T10:45:52Z",
+              "md5": "ecdeab07778ee77b87253caa44529908",
+              "persistentId": "",
+              "publicationDate": "2025-10-05",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:199a385d6c1-cf6b17cef9a5",
+              "tabularData": false
+            },
+            "datasetVersionId": 505117,
+            "description": "Codebook for the registry fields",
+            "label": "AEA_RCT_Registry_Data_Elements_Definitions.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1cfeaf5e54c998434db71d1345d4850d"
+              },
+              "contentType": "text/plain",
+              "creationDate": "2025-10-02",
+              "description": "Schema to map variables in 'trials.csv' to entries in 'AEA_RCT_Registry_Data_Elements_Definitions.pdf'",
+              "fileAccessRequest": true,
+              "filename": "schema.txt",
+              "filesize": 1470,
+              "friendlyType": "Plain Text",
+              "id": 12127201,
+              "lastUpdateTime": "2025-10-05T10:45:52Z",
+              "md5": "1cfeaf5e54c998434db71d1345d4850d",
+              "persistentId": "",
+              "publicationDate": "2025-10-05",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:199a388b820-03e4c7d3e0a8",
+              "tabularData": false
+            },
+            "datasetVersionId": 505117,
+            "description": "Schema to map variables in 'trials.csv' to entries in 'AEA_RCT_Registry_Data_Elements_Definitions.pdf'",
+            "label": "schema.txt",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "09dcdde4e0082782c5ad46338deec6bf"
+              },
+              "contentType": "text/comma-separated-values",
+              "creationDate": "2025-10-05",
+              "description": "CSV of metadata from the AEA registry",
+              "fileAccessRequest": true,
+              "filename": "trials.csv",
+              "filesize": 64023532,
+              "friendlyType": "Comma Separated Values",
+              "id": 12133028,
+              "lastUpdateTime": "2025-10-05T10:45:52Z",
+              "md5": "09dcdde4e0082782c5ad46338deec6bf",
+              "persistentId": "",
+              "publicationDate": "2025-10-05",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:199b3f5b174-b88d9bf9afc0",
+              "tabularData": false
+            },
+            "datasetVersionId": 505117,
+            "description": "CSV of metadata from the AEA registry",
+            "label": "trials.csv",
+            "restricted": false,
+            "version": 2
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "08adbe4064ac54d7bafd7dea0ba76f88"
+              },
+              "contentType": "application/json",
+              "creationDate": "2025-10-02",
+              "description": "JSON of metadata from the AEA registry",
+              "fileAccessRequest": true,
+              "filename": "trials.json",
+              "filesize": 83922630,
+              "friendlyType": "JSON",
+              "id": 12127202,
+              "lastUpdateTime": "2025-10-05T10:45:52Z",
+              "md5": "08adbe4064ac54d7bafd7dea0ba76f88",
+              "persistentId": "",
+              "publicationDate": "2025-10-05",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:199a38b0466-10baca2d2015",
+              "tabularData": false
+            },
+            "datasetVersionId": 505117,
+            "description": "JSON of metadata from the AEA registry",
+            "label": "trials.json",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "guestbookId": 299,
+        "id": 505117,
+        "internalVersionNumber": 10,
+        "lastUpdateTime": "2025-10-05T10:45:52Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/l/by/4.0/88x31.png",
+          "name": "CC BY 4.0",
+          "uri": "http://creativecommons.org/licenses/by/4.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Registrations in the AEA RCT Registry (2013-05-15 through 2025-10-01)"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "American Economic Association"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "AEA RCT Registry"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "American Economic Association"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "support@socialscienceregistry.org"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "AEA RCT Registry"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2025-10-01"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "This dataset contains publicly available data on the American Economic Association's RCT registry downloaded 2025-10-01"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2025-10-05",
+        "releaseTime": "2025-10-05T10:45:52Z",
+        "storageIdentifier": "s3://10.7910/DVN/OHBI3I",
+        "versionMinorNumber": 0,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/OHBI3I",
+      "protocol": "doi",
+      "publicationDate": "2025-10-05",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/OHBI3I"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:41",
+  "sha256": "f11c205bcc47b873b4952a6abf9f969a13d772ef67581c71a7137ffd4b122857"
+}

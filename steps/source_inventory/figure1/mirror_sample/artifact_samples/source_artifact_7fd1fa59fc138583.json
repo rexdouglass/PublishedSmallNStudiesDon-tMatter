@@ -1,0 +1,67 @@
+{
+  "artifact_id": "source_artifact_7fd1fa59fc138583",
+  "byte_size": 2063771,
+  "file_name": "gss_welfare.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/gss_welfare.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "year",
+        "welfare_Y",
+        "welfare_Y_n",
+        "welfare_Z",
+        "survey"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "survey": "GSS 1986",
+          "welfare_Y": 2,
+          "welfare_Y_n": 0,
+          "welfare_Z": 1,
+          "year": 1986
+        },
+        {
+          "survey": "GSS 1986",
+          "welfare_Y": 3,
+          "welfare_Y_n": -1,
+          "welfare_Z": 1,
+          "year": 1986
+        },
+        {
+          "survey": "GSS 1986",
+          "welfare_Y": 3,
+          "welfare_Y_n": -1,
+          "welfare_Z": 1,
+          "year": 1986
+        },
+        {
+          "survey": "GSS 1986",
+          "welfare_Y": 1,
+          "welfare_Y_n": 1,
+          "welfare_Z": 1,
+          "year": 1986
+        },
+        {
+          "survey": "GSS 1986",
+          "welfare_Y": 1,
+          "welfare_Y_n": 1,
+          "welfare_Z": 1,
+          "year": 1986
+        }
+      ],
+      "r_class": "tbl_df|tbl|data.frame",
+      "shape": [
+        42984,
+        5
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "reader": "Rscript",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "8ef3d1421c53b690fb496db2742cd280e17195aecd741c9748ce4b2cc9b4dae5"
+}

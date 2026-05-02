@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_d8274c1360960bf7",
+  "byte_size": 524,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "ibl_repro_ephys_2024__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/ibl_repro_ephys_2024__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_ibl_repro_ephys_2024",
+  "preview_rows": [
+    {
+      "default_action": "review_only",
+      "downloaded_file_count": 0,
+      "expected_rows": 0,
+      "file_list_csv": null,
+      "landing_url": "https://registry.opendata.aws/ibl-reproducible-ephys/",
+      "lead_id": "ibl_repro_ephys_2024",
+      "local_raw_file": null,
+      "manifest_file": null,
+      "notes": "AWS registry entry is a large neurophysiology reproducibility dataset rather than a compact paper-level original-versus-replication D/N pair source",
+      "priority": 7,
+      "project": "IBL reproducible electrophysiology",
+      "promotion_blocker": "metric_not_on_shared_d_axis|source_not_pair_buildable",
+      "raw_url": null,
+      "source_family": "neuroscience"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:46",
+  "sha256": "339ee03c881feb0b563f26abfdba4d11a5ed4d8ea7a33e3c03820127550e5aa5"
+}

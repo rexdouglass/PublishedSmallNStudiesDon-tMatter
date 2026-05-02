@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_2b3a306f63f5b6ab",
+  "byte_size": 3181,
+  "columns": [
+    "league_positive_t1",
+    "age",
+    "gender",
+    "walk",
+    "fam",
+    "games_watched",
+    "secular_t1",
+    "attend",
+    "prefer_group"
+  ],
+  "estimated_data_rows": 131,
+  "file_name": "fans-after-intervention.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/zenodo/3942437/fans-after-intervention.csv",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview_rows": [
+    {
+      "age": 32,
+      "attend": 1,
+      "fam": 1,
+      "games_watched": 11,
+      "gender": "Male",
+      "league_positive_t1": 4,
+      "prefer_group": 0,
+      "secular_t1": 4,
+      "walk": 1
+    },
+    {
+      "age": 20,
+      "attend": 1,
+      "fam": 1,
+      "games_watched": 32,
+      "gender": "Male",
+      "league_positive_t1": 4,
+      "prefer_group": 2,
+      "secular_t1": 4,
+      "walk": 1
+    },
+    {
+      "age": 23,
+      "attend": 1,
+      "fam": 1,
+      "games_watched": 25,
+      "gender": "Male",
+      "league_positive_t1": 4,
+      "prefer_group": 1,
+      "secular_t1": 3,
+      "walk": 0
+    },
+    {
+      "age": 20,
+      "attend": 1,
+      "fam": 1,
+      "games_watched": 20,
+      "gender": "Male",
+      "league_positive_t1": 4,
+      "prefer_group": 1,
+      "secular_t1": 4,
+      "walk": 1
+    },
+    {
+      "age": 23,
+      "attend": 1,
+      "fam": 1,
+      "games_watched": 19,
+      "gender": "Male",
+      "league_positive_t1": 4,
+      "prefer_group": 0,
+      "secular_t1": 4,
+      "walk": 0
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:44",
+  "sha256": "41448942920ee5e1992c9d4a5b88a35898e255c4ef5875f0c884e48669e05b0a"
+}

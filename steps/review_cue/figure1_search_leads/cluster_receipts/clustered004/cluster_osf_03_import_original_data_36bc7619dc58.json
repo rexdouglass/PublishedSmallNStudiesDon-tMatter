@@ -1,0 +1,26 @@
+{
+  "batch_id": "clustered004",
+  "cluster_id": "cluster_osf_03_import_original_data_36bc7619dc58",
+  "confidence": "medium",
+  "created_at": "2026-05-02T01:55:21+00:00",
+  "decision": "route_cluster_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered004.json",
+  "lead_level_note_count": 1,
+  "lead_level_notes": [
+    {
+      "notes": "OSF download metadata, import script, README, file list, and manifest describe one replication package; route away from corpus intake.",
+      "suggested_disposition": "individual_paper"
+    }
+  ],
+  "next_action": "Send to the individual replication-paper worklist; inspect README and OSF file inventory only if paper-level/result-table extraction is needed, but do not create a source-family root from these filenames alone.",
+  "parent_corpus_database_id_or_key": "lead_harvest:online_image_credibility",
+  "preferred_source_family_name": "online_image_credibility OSF replication package",
+  "reason": "The compact evidence shows a single OSF-harvested replication package with an import script, README, download metadata, and OSF file inventory. It does not yet show an explicit reusable multi-row source-family table or corpus/database page, so route away from corpus intake.",
+  "sources_checked": [
+    "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03_download.json",
+    "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03__import_original_data.r",
+    "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_04__README.Rmd",
+    "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_file_list.csv",
+    "local:data/raw/replication_projects/lead_harvest/online_image_credibility/osf_manifest.json"
+  ]
+}

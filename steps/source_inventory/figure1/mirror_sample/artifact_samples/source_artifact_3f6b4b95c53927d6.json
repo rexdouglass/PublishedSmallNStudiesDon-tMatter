@@ -1,0 +1,607 @@
+{
+  "artifact_id": "source_artifact_3f6b4b95c53927d6",
+  "byte_size": 15118,
+  "file_name": "5OPIYU.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/5OPIYU.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 971,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "guestbookId": 80,
+      "id": 3141299,
+      "identifier": "DVN/5OPIYU",
+      "latestVersion": {
+        "citationDate": "2018-04-10",
+        "createTime": "2020-01-07T16:04:09Z",
+        "datasetFileUploadsAvailable": 971,
+        "datasetId": 3141299,
+        "datasetPersistentId": "doi:10.7910/DVN/5OPIYU",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8df4ff26538dd6c72d258ecc03d9feba"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2018-04-10",
+              "description": "This folder contains all of the baseline survey instruments.",
+              "directoryLabel": "PSL Dataverse Files/Surveys",
+              "fileAccessRequest": false,
+              "filename": "Baseline Survey Tools.zip",
+              "filesize": 1355526,
+              "friendlyType": "ZIP Archive",
+              "id": 3141401,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "8df4ff26538dd6c72d258ecc03d9feba",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/ZRFOTX",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/ZRFOTX",
+              "publicationDate": "2018-04-10",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:162b16ee761-69c3d672c999",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This folder contains all of the baseline survey instruments.",
+            "directoryLabel": "PSL Dataverse Files/Surveys",
+            "label": "Baseline Survey Tools.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1b4bc1b019fe75903fa98c0c95ce7a7b"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2020-01-07",
+              "description": "This folder contains all of the endline survey instruments.",
+              "fileAccessRequest": false,
+              "filename": "Endline Survey Tools.zip",
+              "filesize": 6379837,
+              "friendlyType": "ZIP Archive",
+              "id": 3655375,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "1b4bc1b019fe75903fa98c0c95ce7a7b",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/ACA6UL",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/ACA6UL",
+              "publicationDate": "2020-01-07",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:16f80670197-c15d99ce127d",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This folder contains all of the endline survey instruments.",
+            "label": "Endline Survey Tools.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "ee25cd3c69c23693dde4573bcad899cb"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2018-04-10",
+              "description": "This folder contains all of the midline survey instruments.",
+              "directoryLabel": "PSL Dataverse Files/Surveys",
+              "fileAccessRequest": false,
+              "filename": "Midline Survey Tools.zip",
+              "filesize": 1802158,
+              "friendlyType": "ZIP Archive",
+              "id": 3141402,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "ee25cd3c69c23693dde4573bcad899cb",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/WTO6MM",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/WTO6MM",
+              "publicationDate": "2018-04-10",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:162b16ee7a2-ab72300bbe1c",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This folder contains all of the midline survey instruments.",
+            "directoryLabel": "PSL Dataverse Files/Surveys",
+            "label": "Midline Survey Tools.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4a0d9dff716d0fabbc5cf7584a3e64dd"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2019-08-26",
+              "description": "This folder contains all of the files necessary to replicate the baseline and midline results in the publication.",
+              "fileAccessRequest": false,
+              "filename": "PSL Baseline and Midline Dataverse Files.zip",
+              "filesize": 10119217,
+              "friendlyType": "ZIP Archive",
+              "id": 3550146,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "4a0d9dff716d0fabbc5cf7584a3e64dd",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/KDPUNY",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/KDPUNY",
+              "publicationDate": "2019-08-26",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:16cd09c844e-f3b505e38000",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This folder contains all of the files necessary to replicate the baseline and midline results in the publication.",
+            "label": "PSL Baseline and Midline Dataverse Files.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8dc14ceb2dda7380133598ccb2a8e091"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2020-01-02",
+              "description": "This folder contains all of the files necessary to replicate the endline results in the publication.",
+              "fileAccessRequest": false,
+              "filename": "PSL Endline Dataverse Files.zip",
+              "filesize": 15167120,
+              "friendlyType": "ZIP Archive",
+              "id": 3654210,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "8dc14ceb2dda7380133598ccb2a8e091",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/WNWKYX",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/WNWKYX",
+              "publicationDate": "2020-01-02",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:16f676fab24-38275ca53487",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This folder contains all of the files necessary to replicate the endline results in the publication.",
+            "label": "PSL Endline Dataverse Files.zip",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a9c1b6f85f093c8a338e7a63af63ad9a"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2019-08-26",
+              "description": "This ReadMe file contains baseline and midline information about the data, code, user-written commands, and software compatibility.",
+              "fileAccessRequest": false,
+              "filename": "ReadMe Baseline and Midline.pdf",
+              "filesize": 167762,
+              "friendlyType": "Adobe PDF",
+              "id": 3550145,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "a9c1b6f85f093c8a338e7a63af63ad9a",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/3CRBSF",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/3CRBSF",
+              "publicationDate": "2019-08-26",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:16cd09c1efc-7d418fdd8470",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This ReadMe file contains baseline and midline information about the data, code, user-written commands, and software compatibility.",
+            "label": "ReadMe Baseline and Midline.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8e3eea0a60720406fc5a3344f1eb1141"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2020-01-02",
+              "description": "This ReadMe file contains endline information about the data, code, user-written commands, and software compatibility.",
+              "fileAccessRequest": false,
+              "filename": "Readme Endline.pdf",
+              "filesize": 253801,
+              "friendlyType": "Adobe PDF",
+              "id": 3654211,
+              "lastUpdateTime": "2020-01-07T16:04:51Z",
+              "md5": "8e3eea0a60720406fc5a3344f1eb1141",
+              "persistentId": "doi:10.7910/DVN/5OPIYU/W4EPYM",
+              "pidURL": "https://doi.org/10.7910/DVN/5OPIYU/W4EPYM",
+              "publicationDate": "2020-01-02",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:16f6771a2e3-fd29970385b4",
+              "tabularData": false
+            },
+            "datasetVersionId": 179504,
+            "description": "This ReadMe file contains endline information about the data, code, user-written commands, and software compatibility.",
+            "label": "Readme Endline.pdf",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "guestbookId": 80,
+        "id": 179504,
+        "internalVersionNumber": 4,
+        "lastUpdateTime": "2020-01-07T16:04:51Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Partnership Schools for Liberia"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of California, San Diego"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Romero, Mauricio"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Center for Global Development"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Sandefur, Justin"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of California, San Diego"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Sandholtz, Wayne"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Innovations for Poverty Action"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "transparency@poverty-action.org"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Research Transparency, Data Ethics, and Governance"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "The Partnership Schools for Liberia (PSL) program will delegate and transfer administrative management of 92 randomly assigned public schools to a variety of private, for-profit companies and non-profit organizations to provide education free of charge to students. However, to understand the impacts of the pilot program and improve future processes from lessons learned, the Government of Liberia would like to engage external researchers to conduct an impact evaluation of the pilot, in order to assess its potential for expansion in the future.\r\n\r\nIPA was contracted by the Liberian Ministry of Education (MoE) to evaluate the PSL project. Our primary objective is to understand: \"What is the impact of attending a PSL public school rather than a traditional public school on student learning outcomes?\""
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Public Private Partnership"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Education"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Liberia"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Learning outcomes"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "language",
+                "value": [
+                  "English"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "grantNumber",
+                "value": [
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "UBS Optimus"
+                    }
+                  },
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "Aestus Foundation"
+                    }
+                  },
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "Center for Global Development"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Research Support, Innovations for Poverty Action"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2018-04-10"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dateOfCollection",
+                "value": [
+                  {
+                    "dateOfCollectionEnd": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dateOfCollectionEnd",
+                      "value": "2017-07"
+                    },
+                    "dateOfCollectionStart": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dateOfCollectionStart",
+                      "value": "2017-05"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "kindOfData",
+                "value": [
+                  "Student assessments (Math and Literacy)",
+                  "Teacher and Principal Surveys",
+                  "Observations",
+                  "Household surveys"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "software",
+                "value": [
+                  {
+                    "softwareName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "softwareName",
+                      "value": "Stata"
+                    },
+                    "softwareVersion": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "softwareVersion",
+                      "value": "15"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "relatedMaterial",
+                "value": [
+                  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3062941"
+                ]
+              }
+            ],
+            "name": "citation"
+          },
+          "geospatial": {
+            "displayName": "Geospatial Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "geographicCoverage",
+                "value": [
+                  {
+                    "country": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "country",
+                      "value": "Liberia"
+                    },
+                    "otherGeographicCoverage": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "otherGeographicCoverage",
+                      "value": "Bomi, Bong, Grand Bassa, Grand Cape Mount, Grand Kru, Lofa, Magribi, Maryland, Montserrado, Nimba, and Sinoe Counties, River Cess and Gbarpolu Counties"
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "geospatial"
+          },
+          "socialscience": {
+            "displayName": "Social Science and Humanities Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "unitOfAnalysis",
+                "value": [
+                  "Multiple types: Students, Principal & teachers, school and classroom observation, household head"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "universe",
+                "value": [
+                  "Public schools in Liberia. Schools must: 1) have six or more classrooms, 2) have six or more teachers, 3) Have less than 65 students per classroom 4) be within 15 miles of the main road, and 5) Have 2G access (Only applies to Omega Academies, Rising Academies, and Bridge International Academies)."
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dataCollector",
+                "value": "IPA field team in Liberia. Administrative data about different schools were provided by the principals or vice-principal from the sample schools."
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "samplingProcedure",
+                "value": "Based on criteria established by the evaluation team, MoE, and operators, 185  PSL-eligible schools were identified.  92 schools across 13 counties were randomly selected for treatment.  Each treated school will be administered by one of the eight private operators:  BRAC, Bridge, LIYONET, More than Me, Omega, Rising, Stella M, and Street Child. Since each operator has different criteria for the schools they are able to administer, each school submitted a set of criteria necessary for their schools. Based on these criteria, the universe of 185 experimental schools was split into 8 mutually exclusive groups corresponding to the 8 operators, with each operator’s group containing twice the number of schools that operator will manage. Within each of these groups, half of the schools were randomly chosen to be treated, with the rest serving as controls."
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "collectionMode",
+                "value": [
+                  "In-person interviews and assessments"
+                ]
+              }
+            ],
+            "name": "socialscience"
+          }
+        },
+        "publicationDate": "2018-04-10",
+        "releaseTime": "2020-01-07T16:04:51Z",
+        "storageIdentifier": "s3://10.7910/DVN/5OPIYU",
+        "versionMinorNumber": 0,
+        "versionNumber": 4,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/5OPIYU",
+      "protocol": "doi",
+      "publicationDate": "2018-04-10",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/5OPIYU"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "416c3c2af718ff5edf8c72ea6b02bc440fa5d5292f3f8222818835ec49ba6e97"
+}

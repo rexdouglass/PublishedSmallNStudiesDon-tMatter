@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "doi:10.7910/DVN/2KLNFX",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:2klnfx",
+  "next_action": "do_not_add_to_figure1_pair_source_work",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "Dataverse metadata shows a replication package for a single Journal of Politics paper. The word replication here means computational replication materials, not a direct original/replication pair source.",
+  "review_id": "review_figure1_search_leads_7019f9cdf939",
+  "route_payload": {},
+  "sources_checked": [
+    "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/2KLNFX.json"
+  ],
+  "user_gpt_prompt_request": ""
+}

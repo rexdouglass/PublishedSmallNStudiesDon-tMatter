@@ -1,0 +1,31 @@
+{
+  "artifact_id": "source_artifact_ac84e8e2ccbb9876",
+  "byte_size": 359,
+  "file_name": "raw_probe.json",
+  "file_type": "json",
+  "keys": [
+    "content_length",
+    "content_type",
+    "error",
+    "final_url",
+    "ok",
+    "saved_preview",
+    "status_code",
+    "url"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/raw_probe.json",
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "preview": {
+    "content_length": "",
+    "content_type": "",
+    "error": "ReadTimeout: HTTPSConnectionPool(host='dataverse.harvard.edu', port=443): Read timed out. (read timeout=60)",
+    "final_url": "",
+    "ok": false,
+    "saved_preview": "",
+    "status_code": "",
+    "url": "https://dataverse.harvard.edu/api/access/dataset/:persistentId?persistentId=doi:10.7910/DVN/38UTBF"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "3070f9a167a92c3c09c8bbe9b2a0a8cc5ff3a4cae6e817c20c36de5a7e4049e7"
+}

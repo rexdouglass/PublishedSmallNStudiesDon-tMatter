@@ -1,0 +1,110 @@
+CORPUS_RESULTS_SCHEMA:
+  purpose: >
+    Root-level schema for corpus-native result rows. This table sits between
+    source-family/artifact inventory and paper-level source_result extraction:
+    one row here means one corpus/database/result table asserted or exposed one
+    candidate result row. It preserves what the corpus said before any later
+    transformation to D, standardized N, canonical result, or original-paper
+    source_result rows.
+  table: CORPUS_RESULTS.tsv
+  grain: One row from one corpus/database/source-family artifact at the corpus-native result grain.
+  parent_tables:
+    - CORPORA_AND_DATABASES.tsv
+    - SOURCE_ARTIFACTS.tsv
+  rule: >
+    Add a CORPUS_RESULTS.tsv row when an accepted source-family artifact has a
+    row that may represent an original result, replication result, claim,
+    effect, experiment, paper, study, or other result-bearing unit. Preserve
+    source-native row text and JSON. Do not collapse duplicates, standardize
+    effect sizes, or chase original paper bytes in this table; those belong in
+    downstream mapping, transformation, source_result, and canonical_result
+    stages.
+  columns:
+    - name: corpus_result_id
+      definition: Stable ID for this corpus-native row assertion.
+    - name: corpus_result_table_id
+      definition: Stable ID for the parsed artifact/table that produced this row.
+    - name: primary_parent_corpus_database_id
+      definition: Primary parent source-family/corpus ID for this parsed artifact.
+    - name: parent_corpus_database_ids
+      definition: Pipe-delimited parent corpus/database IDs when duplicate artifact aliases point to the same bytes.
+    - name: source_artifact_ids
+      definition: Pipe-delimited SOURCE_ARTIFACTS artifact IDs whose local bytes produced this corpus result.
+    - name: source_artifact_file_names
+      definition: Pipe-delimited artifact file names or table labels.
+    - name: source_artifact_local_path
+      definition: Repo-relative local path to the parsed source artifact.
+    - name: source_artifact_sha256
+      definition: SHA-256 checksum for the parsed source artifact; pipe-delimited when duplicate artifact aliases have equivalent parsed table content but different byte encodings or local mirrors.
+    - name: source_artifact_sample_path
+      definition: Repo-relative sample JSON used to route/review this source artifact.
+    - name: parser_family
+      definition: Parser family used or expected for the artifact.
+    - name: parser_name
+      definition: Script/tool that emitted this corpus-result proposal.
+    - name: parser_version
+      definition: Version label for the parser logic.
+    - name: parser_status
+      definition: Status such as parsed_native_row, parser_failed, duplicate_alias_collapsed, needs_corpus_specific_parser, or excluded_context_only.
+    - name: parser_scope
+      definition: Scope used for extraction, such as strict_parse_table_result_candidates or inspect_sample_for_result_fields.
+    - name: corpus_native_row_number
+      definition: One-based row number within the source table/data frame, excluding header rows.
+    - name: corpus_native_row_key
+      definition: Best available source-native row key or synthetic row key.
+    - name: source_locator
+      definition: Re-findable file/table row locator.
+    - name: corpus_native_columns_json
+      definition: JSON array of source-native column names.
+    - name: corpus_native_row_json
+      definition: JSON object of the full source-native row, with source column names preserved.
+    - name: corpus_native_row_text
+      definition: TSV-safe one-line row text preserving source column/value pairs.
+    - name: corpus_original_source_text
+      definition: Conservative source-native fields that appear to identify the original paper/study/result.
+    - name: corpus_original_identifier_text
+      definition: Conservative source-native DOI/URL/ID fields that appear to identify the original source.
+    - name: corpus_replication_source_text
+      definition: Conservative source-native fields that appear to identify the replication/reproduction/follow-up source.
+    - name: corpus_replication_identifier_text
+      definition: Conservative source-native DOI/URL/ID fields that appear to identify the replication/reproduction/follow-up source.
+    - name: corpus_result_label_text
+      definition: Source-native row labels, study/effect IDs, title, experiment, claim, or table labels.
+    - name: corpus_outcome_text
+      definition: Source-native outcome, claim, hypothesis, figure, experiment, or effect-description fields.
+    - name: corpus_effect_text
+      definition: Source-native effect/statistic fields copied as text; no standardization implied.
+    - name: corpus_n_text
+      definition: Source-native N/sample-size fields copied as text; no standardized N choice implied.
+    - name: corpus_p_text
+      definition: Source-native p-value/test-statistic fields copied as text.
+    - name: corpus_ci_text
+      definition: Source-native confidence interval fields copied as text.
+    - name: corpus_se_text
+      definition: Source-native standard-error fields copied as text.
+    - name: corpus_context_text
+      definition: Other nearby source-native context fields useful for later mapping or review.
+    - name: candidate_original_result_id
+      definition: Optional downstream original/paper-result candidate ID, blank until mapping.
+    - name: candidate_replication_result_id
+      definition: Optional downstream replication/paper-result candidate ID, blank until mapping.
+    - name: candidate_pair_id
+      definition: Optional downstream original/replication pair ID, blank until mapping.
+    - name: transformation_status
+      definition: Status of later D/N transformation, initially not_started.
+    - name: source_result_promotion_status
+      definition: Status of later promotion into source_result/source_source_mapping rows.
+    - name: evidence_level
+      definition: Evidence level for the corpus assertion itself. Corpus rows normally start at level 3 unless independently grounded later.
+    - name: evidence_level_name
+      definition: Named evidence level for the corpus assertion.
+    - name: review_status
+      definition: Human/Codex review status for this corpus-native row.
+    - name: blocker_codes
+      definition: Pipe-delimited blockers for transformation or source-result promotion.
+    - name: next_action
+      definition: Next parser, mapping, transformation, or source acquisition action.
+    - name: notes
+      definition: Short audit notes.
+    - name: created_at
+      definition: ISO timestamp when this proposal row was emitted.

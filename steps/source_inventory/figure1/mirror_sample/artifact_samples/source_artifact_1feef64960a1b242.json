@@ -1,0 +1,69 @@
+{
+  "artifact_id": "source_artifact_1feef64960a1b242",
+  "byte_size": 12675700,
+  "columns": [
+    "class_id",
+    "doc_section",
+    "doc_position_start",
+    "text",
+    "annotator",
+    "file_name",
+    "paper_id"
+  ],
+  "estimated_data_rows": 117358,
+  "file_name": "corr_usc_hedging-humility.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_1feef64960a1b242__corr_usc_hedging-humility.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "annotator": "annotator0",
+      "class_id": "weak_boost",
+      "doc_position_start": 1171,
+      "doc_section": "s1v1",
+      "file_name": "Stautz_EurJournPersonality_2017_9R2m.pdf",
+      "paper_id": "9R2m",
+      "text": "Results showed that rash impulsivenesswas a robust predictor of typical and problematic substance use."
+    },
+    {
+      "annotator": "annotator0",
+      "class_id": "strong_hedge",
+      "doc_position_start": 1603,
+      "doc_section": "s1v1",
+      "file_name": "Stautz_EurJournPersonality_2017_9R2m.pdf",
+      "paper_id": "9R2m",
+      "text": "Results suggest that the three novel facets of the UPPS-P modeladd little over a two component model in explaining substance use, although may provide preliminary evidence forthe utility of a revised global urgency construct in explaining problematic substance use."
+    },
+    {
+      "annotator": "annotator0",
+      "class_id": "weak_boost",
+      "doc_position_start": 1749,
+      "doc_section": "s11v1",
+      "file_name": "Stautz_EurJournPersonality_2017_9R2m.pdf",
+      "paper_id": "9R2m",
+      "text": "Our results showed partial support for thesehypotheses"
+    },
+    {
+      "annotator": "annotator0",
+      "class_id": "strong_hedge",
+      "doc_position_start": 3817,
+      "doc_section": "s11v1",
+      "file_name": "Stautz_EurJournPersonality_2017_9R2m.pdf",
+      "paper_id": "9R2m",
+      "text": "While it may be tempt-ing to consider urgency as a precursor of risk for moreserious substance-related problems, it may be the case,particularly for negative urgency, that high urgency scoresreﬂect emotional dysregulation as a consequence of problem-atic levels of substance use ("
+    },
+    {
+      "annotator": "annotator0",
+      "class_id": "strong_hedge",
+      "doc_position_start": 1452,
+      "doc_section": "s12v1",
+      "file_name": "Stautz_EurJournPersonality_2017_9R2m.pdf",
+      "paper_id": "9R2m",
+      "text": "Researchers in this area may save testadministration time in future studies by not including thisscale."
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:38:25",
+  "sha256": "35e8dc4e314802d4dc6c495910d6d3a25e718d2d75b4674a7165de8bb5f9eaf0"
+}

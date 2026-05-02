@@ -1,0 +1,23 @@
+{
+  "canonical_source_key": "osf:un4cb",
+  "confidence": "medium",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:stroop_replication_study_dataset",
+  "next_action": "route_to_individual_pair_screening_with_low_priority",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "This is a single Stroop replication dataset from a course assignment, not a corpus/database. It may be usable only as an individual replication pair if original and replication D/N can be reconstructed.",
+  "review_id": "review_figure1_search_leads_6e23c48b1120",
+  "route_payload": {
+    "replication_relation_evidence": "The OSF title/metadata identifies this as a replication study dataset. It still needs screening to identify the original target and determine whether D/N can be reconstructed.",
+    "replication_relation_evidence_status": "explicit_self_described_replication"
+  },
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/un4cb/"
+  ],
+  "user_gpt_prompt_request": ""
+}

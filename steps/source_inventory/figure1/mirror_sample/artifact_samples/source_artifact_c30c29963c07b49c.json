@@ -1,0 +1,608 @@
+{
+  "artifact_id": "source_artifact_c30c29963c07b49c",
+  "byte_size": 1583944,
+  "file_name": "gulzarkhan20240105.zip",
+  "file_type": "zip",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/zenodo/10086096/gulzarkhan20240105.zip",
+  "member_count": 99,
+  "members_preview": [
+    {
+      "compress_size": 1694,
+      "file_size": 3941,
+      "file_type": "txt",
+      "filename": "replication/_ReadMe.txt"
+    },
+    {
+      "compress_size": 246358,
+      "file_size": 5043603,
+      "file_type": "dta",
+      "filename": "replication/cand_final.dta"
+    },
+    {
+      "compress_size": 64852,
+      "file_size": 404509,
+      "file_type": "dta",
+      "filename": "replication/cand_final_vil.dta"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "replication/data_prep/"
+    },
+    {
+      "compress_size": 2809,
+      "file_size": 10424,
+      "file_type": "txt",
+      "filename": "replication/data_prep/_codebook.txt"
+    },
+    {
+      "compress_size": 2489,
+      "file_size": 8926,
+      "file_type": "do",
+      "filename": "replication/data_prep/build_data.do"
+    },
+    {
+      "compress_size": 16374,
+      "file_size": 125182,
+      "file_type": "dta",
+      "filename": "replication/data_prep/citizen_survey.dta"
+    },
+    {
+      "compress_size": 173126,
+      "file_size": 4280243,
+      "file_type": "dta",
+      "filename": "replication/data_prep/data_raw.dta"
+    },
+    {
+      "compress_size": 29057,
+      "file_size": 234589,
+      "file_type": "dta",
+      "filename": "replication/data_prep/data_raw_village.dta"
+    },
+    {
+      "compress_size": 10305,
+      "file_size": 82437,
+      "file_type": "dta",
+      "filename": "replication/data_prep/project_rating.dta"
+    },
+    {
+      "compress_size": 713,
+      "file_size": 1700,
+      "file_type": "do",
+      "filename": "replication/Figure 6.do"
+    },
+    {
+      "compress_size": 739,
+      "file_size": 1652,
+      "file_type": "do",
+      "filename": "replication/Figure A1.do"
+    },
+    {
+      "compress_size": 1028,
+      "file_size": 5413,
+      "file_type": "do",
+      "filename": "replication/Figure A2.do"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "replication/figures/"
+    },
+    {
+      "compress_size": 15231,
+      "file_size": 16138,
+      "file_type": "pdf",
+      "filename": "replication/figures/fig6.pdf"
+    },
+    {
+      "compress_size": 15175,
+      "file_size": 16065,
+      "file_type": "pdf",
+      "filename": "replication/figures/figA1.pdf"
+    },
+    {
+      "compress_size": 17805,
+      "file_size": 18696,
+      "file_type": "pdf",
+      "filename": "replication/figures/figA2_panelA.pdf"
+    },
+    {
+      "compress_size": 17635,
+      "file_size": 18568,
+      "file_type": "pdf",
+      "filename": "replication/figures/figA2_panelB.pdf"
+    },
+    {
+      "compress_size": 17645,
+      "file_size": 18539,
+      "file_type": "pdf",
+      "filename": "replication/figures/figA2_panelC.pdf"
+    },
+    {
+      "compress_size": 877209,
+      "file_size": 7043115,
+      "file_type": "dta",
+      "filename": "replication/rinf.dta"
+    },
+    {
+      "compress_size": 428,
+      "file_size": 914,
+      "file_type": "do",
+      "filename": "replication/run_this_first.do"
+    },
+    {
+      "compress_size": 1215,
+      "file_size": 4585,
+      "file_type": "do",
+      "filename": "replication/Table 1.do"
+    },
+    {
+      "compress_size": 1220,
+      "file_size": 4593,
+      "file_type": "do",
+      "filename": "replication/Table 2.do"
+    },
+    {
+      "compress_size": 1815,
+      "file_size": 18688,
+      "file_type": "do",
+      "filename": "replication/Table 3.do"
+    },
+    {
+      "compress_size": 1223,
+      "file_size": 4594,
+      "file_type": "do",
+      "filename": "replication/Table 4.do"
+    },
+    {
+      "compress_size": 1119,
+      "file_size": 4272,
+      "file_type": "do",
+      "filename": "replication/Table A10.do"
+    },
+    {
+      "compress_size": 158,
+      "file_size": 236,
+      "file_type": "do",
+      "filename": "replication/Table A11.do"
+    },
+    {
+      "compress_size": 780,
+      "file_size": 2562,
+      "file_type": "do",
+      "filename": "replication/Table A12.do"
+    },
+    {
+      "compress_size": 1312,
+      "file_size": 5212,
+      "file_type": "do",
+      "filename": "replication/Table A13.do"
+    },
+    {
+      "compress_size": 1132,
+      "file_size": 4330,
+      "file_type": "do",
+      "filename": "replication/Table A14.do"
+    },
+    {
+      "compress_size": 1179,
+      "file_size": 4419,
+      "file_type": "do",
+      "filename": "replication/Table A15.do"
+    },
+    {
+      "compress_size": 1311,
+      "file_size": 8606,
+      "file_type": "do",
+      "filename": "replication/Table A16.do"
+    },
+    {
+      "compress_size": 1444,
+      "file_size": 7998,
+      "file_type": "do",
+      "filename": "replication/Table A17.do"
+    },
+    {
+      "compress_size": 1377,
+      "file_size": 6447,
+      "file_type": "do",
+      "filename": "replication/Table A18.do"
+    },
+    {
+      "compress_size": 1979,
+      "file_size": 9508,
+      "file_type": "do",
+      "filename": "replication/Table A19.do"
+    },
+    {
+      "compress_size": 188,
+      "file_size": 325,
+      "file_type": "do",
+      "filename": "replication/Table A2.do"
+    },
+    {
+      "compress_size": 1507,
+      "file_size": 6793,
+      "file_type": "do",
+      "filename": "replication/Table A20.do"
+    },
+    {
+      "compress_size": 1281,
+      "file_size": 4825,
+      "file_type": "do",
+      "filename": "replication/Table A21.do"
+    },
+    {
+      "compress_size": 1532,
+      "file_size": 7944,
+      "file_type": "do",
+      "filename": "replication/Table A22.do"
+    },
+    {
+      "compress_size": 1409,
+      "file_size": 7736,
+      "file_type": "do",
+      "filename": "replication/Table A23.do"
+    },
+    {
+      "compress_size": 2030,
+      "file_size": 21876,
+      "file_type": "do",
+      "filename": "replication/Table A24.do"
+    },
+    {
+      "compress_size": 847,
+      "file_size": 4026,
+      "file_type": "do",
+      "filename": "replication/Table A25.do"
+    },
+    {
+      "compress_size": 1985,
+      "file_size": 15117,
+      "file_type": "do",
+      "filename": "replication/Table A26.do"
+    },
+    {
+      "compress_size": 1120,
+      "file_size": 4250,
+      "file_type": "do",
+      "filename": "replication/Table A27.do"
+    },
+    {
+      "compress_size": 1625,
+      "file_size": 11635,
+      "file_type": "do",
+      "filename": "replication/Table A28.do"
+    },
+    {
+      "compress_size": 1660,
+      "file_size": 11692,
+      "file_type": "do",
+      "filename": "replication/Table A29.do"
+    },
+    {
+      "compress_size": 123,
+      "file_size": 177,
+      "file_type": "do",
+      "filename": "replication/Table A3.do"
+    },
+    {
+      "compress_size": 654,
+      "file_size": 1373,
+      "file_type": "do",
+      "filename": "replication/Table A30.do"
+    },
+    {
+      "compress_size": 1298,
+      "file_size": 8528,
+      "file_type": "do",
+      "filename": "replication/Table A31.do"
+    },
+    {
+      "compress_size": 1146,
+      "file_size": 4330,
+      "file_type": "do",
+      "filename": "replication/Table A32.do"
+    },
+    {
+      "compress_size": 1469,
+      "file_size": 7953,
+      "file_type": "do",
+      "filename": "replication/Table A33.do"
+    },
+    {
+      "compress_size": 746,
+      "file_size": 2392,
+      "file_type": "do",
+      "filename": "replication/Table A4.do"
+    },
+    {
+      "compress_size": 613,
+      "file_size": 1339,
+      "file_type": "do",
+      "filename": "replication/Table A5.do"
+    },
+    {
+      "compress_size": 686,
+      "file_size": 2279,
+      "file_type": "do",
+      "filename": "replication/Table A6.do"
+    },
+    {
+      "compress_size": 582,
+      "file_size": 1303,
+      "file_type": "do",
+      "filename": "replication/Table A7.do"
+    },
+    {
+      "compress_size": 1267,
+      "file_size": 4656,
+      "file_type": "do",
+      "filename": "replication/Table A8.do"
+    },
+    {
+      "compress_size": 1275,
+      "file_size": 4562,
+      "file_type": "do",
+      "filename": "replication/Table A9.do"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "replication/tables/"
+    },
+    {
+      "compress_size": 308,
+      "file_size": 1116,
+      "file_type": "tex",
+      "filename": "replication/tables/tab1.tex"
+    },
+    {
+      "compress_size": 470,
+      "file_size": 1504,
+      "file_type": "tex",
+      "filename": "replication/tables/tab2.tex"
+    },
+    {
+      "compress_size": 653,
+      "file_size": 2907,
+      "file_type": "tex",
+      "filename": "replication/tables/tab3.tex"
+    },
+    {
+      "compress_size": 305,
+      "file_size": 1117,
+      "file_type": "tex",
+      "filename": "replication/tables/tab4.tex"
+    },
+    {
+      "compress_size": 190,
+      "file_size": 538,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA10.tex"
+    },
+    {
+      "compress_size": 262,
+      "file_size": 871,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA12.tex"
+    },
+    {
+      "compress_size": 348,
+      "file_size": 1046,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA13.tex"
+    },
+    {
+      "compress_size": 311,
+      "file_size": 841,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA14.tex"
+    },
+    {
+      "compress_size": 507,
+      "file_size": 1504,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA15.tex"
+    },
+    {
+      "compress_size": 435,
+      "file_size": 1430,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA16_a.tex"
+    },
+    {
+      "compress_size": 474,
+      "file_size": 1504,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA16_b.tex"
+    },
+    {
+      "compress_size": 350,
+      "file_size": 1666,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA17.tex"
+    },
+    {
+      "compress_size": 391,
+      "file_size": 1494,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA18_a.tex"
+    },
+    {
+      "compress_size": 427,
+      "file_size": 1595,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA18_b.tex"
+    },
+    {
+      "compress_size": 443,
+      "file_size": 1751,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA19.tex"
+    },
+    {
+      "compress_size": 430,
+      "file_size": 1751,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA19_og.tex"
+    },
+    {
+      "compress_size": 371,
+      "file_size": 1231,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA20.tex"
+    },
+    {
+      "compress_size": 370,
+      "file_size": 1231,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA20_og.tex"
+    },
+    {
+      "compress_size": 311,
+      "file_size": 1116,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA21.tex"
+    },
+    {
+      "compress_size": 376,
+      "file_size": 1340,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA22.tex"
+    },
+    {
+      "compress_size": 417,
+      "file_size": 2096,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA23.tex"
+    },
+    {
+      "compress_size": 725,
+      "file_size": 4247,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA24.tex"
+    },
+    {
+      "compress_size": 271,
+      "file_size": 785,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA25.tex"
+    },
+    {
+      "compress_size": 705,
+      "file_size": 4201,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA26.tex"
+    },
+    {
+      "compress_size": 694,
+      "file_size": 4201,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA26_og.tex"
+    },
+    {
+      "compress_size": 217,
+      "file_size": 606,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA27.tex"
+    },
+    {
+      "compress_size": 369,
+      "file_size": 1658,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA28.tex"
+    },
+    {
+      "compress_size": 478,
+      "file_size": 2282,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA29.tex"
+    },
+    {
+      "compress_size": 352,
+      "file_size": 1240,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA30.tex"
+    },
+    {
+      "compress_size": 416,
+      "file_size": 1283,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA31_a.tex"
+    },
+    {
+      "compress_size": 407,
+      "file_size": 1283,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA31_b.tex"
+    },
+    {
+      "compress_size": 244,
+      "file_size": 606,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA32.tex"
+    },
+    {
+      "compress_size": 438,
+      "file_size": 1605,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA33.tex"
+    },
+    {
+      "compress_size": 914,
+      "file_size": 3174,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA4.tex"
+    },
+    {
+      "compress_size": 897,
+      "file_size": 3110,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA4_og.tex"
+    },
+    {
+      "compress_size": 507,
+      "file_size": 1573,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA5.tex"
+    },
+    {
+      "compress_size": 504,
+      "file_size": 1573,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA5_og.tex"
+    },
+    {
+      "compress_size": 514,
+      "file_size": 2034,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA6.tex"
+    },
+    {
+      "compress_size": 309,
+      "file_size": 1005,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA7.tex"
+    },
+    {
+      "compress_size": 356,
+      "file_size": 1116,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA8.tex"
+    },
+    {
+      "compress_size": 555,
+      "file_size": 2288,
+      "file_type": "tex",
+      "filename": "replication/tables/tabA9.tex"
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "sample_kind": "zip_inventory",
+  "sampled_at": "2026-05-01T20:34:44",
+  "sha256": "5567a1899be0bb95f3484c57c9def4dbaee9472da78d8f407abcc92ab4264d8e"
+}

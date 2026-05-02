@@ -1,0 +1,69 @@
+{
+  "artifact_id": "source_artifact_7b4c9ed559ea9b37",
+  "byte_size": 11692568,
+  "columns": [
+    "ResponseId",
+    "study",
+    "cont_val",
+    "val",
+    "com_surv",
+    "com_surv_val",
+    "type"
+  ],
+  "estimated_data_rows": 212400,
+  "file_name": "elusive-tab 12.tab",
+  "file_type": "tab",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_7b4c9ed559ea9b37__elusive-tab_12.tab",
+  "parent_corpus_database_id": "lead_wood_porter_2019",
+  "preview_rows": [
+    {
+      "ResponseId": 1,
+      "com_surv": "total_corr",
+      "com_surv_val": 1,
+      "cont_val": "age",
+      "study": 1,
+      "type": "Continuous",
+      "val": 59.5
+    },
+    {
+      "ResponseId": 1,
+      "com_surv": "max_seq_corr",
+      "com_surv_val": 6,
+      "cont_val": "age",
+      "study": 1,
+      "type": "Continuous",
+      "val": 59.5
+    },
+    {
+      "ResponseId": 1,
+      "com_surv": "corr_seq_three_plus",
+      "com_surv_val": 1,
+      "cont_val": "age",
+      "study": 1,
+      "type": "Continuous",
+      "val": 59.5
+    },
+    {
+      "ResponseId": 1,
+      "com_surv": "total_corr",
+      "com_surv_val": 1,
+      "cont_val": "education",
+      "study": 1,
+      "type": "Continuous",
+      "val": 2.0
+    },
+    {
+      "ResponseId": 1,
+      "com_surv": "max_seq_corr",
+      "com_surv_val": 6,
+      "cont_val": "education",
+      "study": 1,
+      "type": "Continuous",
+      "val": 2.0
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T22:21:11",
+  "sha256": "50f20c948d6931ee3c5ce37a666c1955e3266bd86e08a8d24a9494e52e9e4127"
+}

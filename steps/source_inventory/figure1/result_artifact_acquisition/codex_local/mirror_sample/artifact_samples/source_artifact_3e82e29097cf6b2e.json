@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_3e82e29097cf6b2e",
+  "byte_size": 4791,
+  "columns": [
+    "id",
+    "name",
+    "kind",
+    "size",
+    "materialized_path",
+    "download_url",
+    "html_url",
+    "iri",
+    "provider",
+    "api_url"
+  ],
+  "estimated_data_rows": 19,
+  "file_name": "osf_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/self_control_fmri_2022/osf_file_list.csv",
+  "parent_corpus_database_id": "corpus_db_lead_self_control_fmri_2022",
+  "preview_rows": [
+    {
+      "api_url": "https://api.osf.io/v2/files/62cc35d1779f170efa071df7/",
+      "download_url": null,
+      "html_url": null,
+      "id": "62cc35d1779f170efa071df7",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Stimuli/",
+      "name": "Stimuli",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/62cc361b1bb7a511361f4d78/",
+      "download_url": "https://osf.io/download/4n8k2/",
+      "html_url": "https://osf.io/qzyxm/files/osfstorage/62cc361b1bb7a511361f4d78",
+      "id": "62cc361b1bb7a511361f4d78",
+      "iri": "https://osf.io/4n8k2",
+      "kind": "file",
+      "materialized_path": "/Stimuli/412.jpg",
+      "name": "412.jpg",
+      "provider": "osfstorage",
+      "size": 372763
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/62cc361e588bb9106eb877f3/",
+      "download_url": "https://osf.io/download/tdjs3/",
+      "html_url": "https://osf.io/qzyxm/files/osfstorage/62cc361e588bb9106eb877f3",
+      "id": "62cc361e588bb9106eb877f3",
+      "iri": "https://osf.io/tdjs3",
+      "kind": "file",
+      "materialized_path": "/Stimuli/414.jpg",
+      "name": "414.jpg",
+      "provider": "osfstorage",
+      "size": 283805
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/62cc361a779f170f3e070bde/",
+      "download_url": "https://osf.io/download/tzqnk/",
+      "html_url": "https://osf.io/qzyxm/files/osfstorage/62cc361a779f170f3e070bde",
+      "id": "62cc361a779f170f3e070bde",
+      "iri": "https://osf.io/tzqnk",
+      "kind": "file",
+      "materialized_path": "/Stimuli/411.jpg",
+      "name": "411.jpg",
+      "provider": "osfstorage",
+      "size": 322328
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/62cc3611779f170f3e070bc3/",
+      "download_url": "https://osf.io/download/2a5rj/",
+      "html_url": "https://osf.io/qzyxm/files/osfstorage/62cc3611779f170f3e070bc3",
+      "id": "62cc3611779f170f3e070bc3",
+      "iri": "https://osf.io/2a5rj",
+      "kind": "file",
+      "materialized_path": "/Stimuli/402.jpg",
+      "name": "402.jpg",
+      "provider": "osfstorage",
+      "size": 299544
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-02T09:32:54",
+  "sha256": "c070e5e0ac2dad365de84b2b7cb6ca2e7923cb73b6e0745fb3568e84bfa47500"
+}

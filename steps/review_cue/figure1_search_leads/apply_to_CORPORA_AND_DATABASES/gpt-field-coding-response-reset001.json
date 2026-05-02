@@ -1,0 +1,62 @@
+{
+  "field_coding_decisions": [
+    {
+      "coding_task_id": "fieldcode_title_reproducibility_project_psychology_design",
+      "lead_key": "title:reproducibility_project_psychology_design",
+      "field_values": {
+        "source_family": "osf_project_component",
+        "domain_or_field": "psychology; reproducibility/metascience",
+        "description": "OSF public project/component titled \"Reproducibility Project - Psychology: Design\" associated with the broader Reproducibility Project: Psychology. Surface file-list metadata for this specific component shows a PPTX presentation file, not a verified data table. The broader RP:P project conducted replications of 100 experimental and correlational studies published in three psychology journals.",
+        "why_relevant": "Relevant as a root lead for the Reproducibility Project: Psychology source family because the broader project compares original and replication studies and reports reproducibility indicators. This specific i68pe Design component should be treated as a lead requiring OSF component/file inventory rather than as a directly parsed results dataset.",
+        "result_fields_available": "unknown",
+        "has_d_or_convertible_effect": "unknown",
+        "has_n": "unknown",
+        "has_replication_pair_mapping": "unknown",
+        "has_publication_links": "unknown",
+        "parser_family": "osf_project_inventory",
+        "blocker_codes": "needs_osf_file_inventory; needs_artifact_inspection; data_table_not_verified; surfaced_file_is_pptx",
+        "next_action": "Inventory OSF node i68pe and its parent/related RP:P nodes through OSF files/components; inspect the surfaced PPTX only if it is needed for provenance context; follow the main RP:P project/data artifacts to locate actual tabular files and verify whether they contain effect statistics, sample sizes, original-replication pair mappings, and publication identifiers.",
+        "notes": "Do not assert row counts, column names, or parser readiness from the landing page. Web-visible metadata indicates this component is real and public, but the only surfaced file-list item found for i68pe was a presentation file. Broader RP:P publication metadata supports relevance, not file-level extractability for this component."
+      },
+      "field_basis": {
+        "source_family": "Landing URL and source_key identify an OSF project; web-visible OSF metadata titles it as \"Reproducibility Project - Psychology: Design\" and describes it as a public project/component.",
+        "domain_or_field": "The title names psychology, and the related RP:P publication is about reproducibility of psychological science.",
+        "description": "OSF metadata identifies the i68pe project/component title; OSF file-list search metadata surfaces \"APS-presentation-RP-P-Design-LeBel.pptx\"; related RP:P publication metadata states the broader project conducted replications of 100 experimental and correlational studies in three psychology journals.",
+        "why_relevant": "The broader RP:P publication reports original/replication comparison metrics, effect sizes, P values, subjective assessments, and meta-analysis; this makes the source family relevant for original-replication provenance, while i68pe itself still needs file-level inspection.",
+        "result_fields_available": "Unknown because no i68pe data artifact/table was inspected. Surface file-list metadata showed a PPTX presentation, and related publication text does not establish exact downloadable fields for this component.",
+        "has_d_or_convertible_effect": "Unknown for i68pe. Related RP:P publication reports effect sizes, but no extractable effect-size/statistic field was verified in files from this component.",
+        "has_n": "Unknown for i68pe. OSF/search metadata mentions sample size and power concepts, and the broader RP:P publication discusses sample size, but no extractable sample-size field was verified in this component.",
+        "has_replication_pair_mapping": "Unknown for i68pe. The broader RP:P project performed replications of 100 studies, but no original-replication pair mapping table was verified in this component.",
+        "has_publication_links": "Unknown for i68pe. A related Science publication DOI exists for the broader RP:P project, but row-level publication links or original article identifiers were not verified in this component.",
+        "parser_family": "The landing URL is an OSF project/component, so OSF project/file inventory is the appropriate first parser family. A file-type-specific parser cannot be assigned until actual artifacts are inspected.",
+        "blocker_codes": "The blocker is file/artifact inspection: surface metadata is insufficient, and the only surfaced i68pe file-list item was a PPTX rather than a verified data table.",
+        "next_action": "Next inspection must enumerate OSF files/components, check parent/related RP:P nodes, and only then inspect/download artifacts to verify fields and parser requirements.",
+        "notes": "OSF page content was limited in web-open output; coding relies on web-visible OSF search/file-list metadata plus related RP:P publication metadata. Claims are limited to surface metadata and do not invent file contents."
+      },
+      "field_confidence": {
+        "source_family": "high",
+        "domain_or_field": "high",
+        "description": "medium",
+        "why_relevant": "high",
+        "result_fields_available": "high",
+        "has_d_or_convertible_effect": "high",
+        "has_n": "high",
+        "has_replication_pair_mapping": "high",
+        "has_publication_links": "high",
+        "parser_family": "medium",
+        "blocker_codes": "high",
+        "next_action": "high",
+        "notes": "high"
+      },
+      "sources_checked": [
+        "https://osf.io/i68pe/",
+        "https://osf.io/i68pe/files/",
+        "https://osf.io/4dwfz/",
+        "https://osf.io/ezcuj/overview",
+        "https://osf.io/7kqv5/overview",
+        "https://research.tilburguniversity.edu/en/publications/estimating-the-reproducibility-of-psychological-science/",
+        "https://doi.org/10.1126/science.aac4716"
+      ]
+    }
+  ]
+}

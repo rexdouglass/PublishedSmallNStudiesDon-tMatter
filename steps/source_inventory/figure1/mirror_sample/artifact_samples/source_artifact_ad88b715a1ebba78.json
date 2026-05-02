@@ -1,0 +1,742 @@
+{
+  "artifact_id": "source_artifact_ad88b715a1ebba78",
+  "byte_size": 14926,
+  "file_name": "osf_node_e5nvr_files.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "links",
+    "meta"
+  ],
+  "local_path": "data/raw/corpus_candidates/rpcb/osf_node_e5nvr_files.json",
+  "parent_corpus_database_id": "rpcb | doi:10.7554/eLife.71601",
+  "preview": {
+    "data": [
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 2,
+          "date_created": "2021-02-27T19:44:53.116453Z",
+          "date_modified": "2021-12-03T19:08:53.179907",
+          "extra": {
+            "downloads": 71,
+            "hashes": {
+              "md5": "3083e41731ed587c2dee143a57e1d3b5",
+              "sha256": "0a7936525dabb0a4b39210fbd4c755be96c457fbf49d2c076c7fd754e9aa4b9b"
+            }
+          },
+          "guid": "aydj2",
+          "kind": "file",
+          "last_touched": null,
+          "materialized_path": "/RP_CB Final Analysis - Paper level data.csv",
+          "name": "RP_CB Final Analysis - Paper level data.csv",
+          "path": "/603aa13544157501e25819b4",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": 18652,
+          "tags": []
+        },
+        "id": "603aa13544157501e25819b4",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13544157501e25819b4",
+          "download": "https://osf.io/download/aydj2/",
+          "html": "https://osf.io/e5nvr/files/osfstorage/603aa13544157501e25819b4",
+          "info": "https://api.osf.io/v2/files/603aa13544157501e25819b4/",
+          "iri": "https://osf.io/aydj2",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13544157501e25819b4",
+          "render": "https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Faydj2%2F%3Fdirect%26mode%3Drender",
+          "self": "https://api.osf.io/v2/files/603aa13544157501e25819b4/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13544157501e25819b4"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa13544157501e25819b4/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "comments": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/comments/?filter%5Btarget%5D=aydj2",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          },
+          "versions": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa13544157501e25819b4/versions/",
+                "meta": {}
+              }
+            }
+          }
+        },
+        "type": "files"
+      },
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 2,
+          "date_created": "2021-02-27T19:44:55.149180Z",
+          "date_modified": "2021-11-19T21:31:13.094779",
+          "extra": {
+            "downloads": 30,
+            "hashes": {
+              "md5": "da8377716eac39233ff7dbb447a2d254",
+              "sha256": "7432b12b5fc65fa6b8583746da45da94c7bafbd744ebecd9ee5cfa3ebccb2cc7"
+            }
+          },
+          "guid": "c2rfy",
+          "kind": "file",
+          "last_touched": null,
+          "materialized_path": "/RP_CB Final Analysis - Experiment level data dictionary.csv",
+          "name": "RP_CB Final Analysis - Experiment level data dictionary.csv",
+          "path": "/603aa13744157501dc5822a7",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": 15065,
+          "tags": []
+        },
+        "id": "603aa13744157501dc5822a7",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13744157501dc5822a7",
+          "download": "https://osf.io/download/c2rfy/",
+          "html": "https://osf.io/e5nvr/files/osfstorage/603aa13744157501dc5822a7",
+          "info": "https://api.osf.io/v2/files/603aa13744157501dc5822a7/",
+          "iri": "https://osf.io/c2rfy",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13744157501dc5822a7",
+          "render": "https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Fc2rfy%2F%3Fdirect%26mode%3Drender",
+          "self": "https://api.osf.io/v2/files/603aa13744157501dc5822a7/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13744157501dc5822a7"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa13744157501dc5822a7/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "comments": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/comments/?filter%5Btarget%5D=c2rfy",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          },
+          "versions": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa13744157501dc5822a7/versions/",
+                "meta": {}
+              }
+            }
+          }
+        },
+        "type": "files"
+      },
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 1,
+          "date_created": null,
+          "date_modified": null,
+          "extra": {
+            "hashes": {
+              "md5": null,
+              "sha256": null
+            }
+          },
+          "guid": null,
+          "kind": "folder",
+          "last_touched": null,
+          "materialized_path": "/Individual replication audits/",
+          "name": "Individual replication audits",
+          "path": "/61981aec07dcc50071e53918/",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": null,
+          "tags": []
+        },
+        "id": "61981aec07dcc50071e53918",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/61981aec07dcc50071e53918/",
+          "info": "https://api.osf.io/v2/files/61981aec07dcc50071e53918/",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/61981aec07dcc50071e53918/",
+          "new_folder": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/61981aec07dcc50071e53918/?kind=folder",
+          "self": "https://api.osf.io/v2/files/61981aec07dcc50071e53918/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/61981aec07dcc50071e53918/"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/61981aec07dcc50071e53918/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "files": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/files/osfstorage/61981aec07dcc50071e53918/",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          }
+        },
+        "type": "files"
+      },
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 2,
+          "date_created": "2021-02-27T19:44:55.205492Z",
+          "date_modified": "2021-12-03T19:08:53.175463",
+          "extra": {
+            "downloads": 29,
+            "hashes": {
+              "md5": "6ac57745e12d723ab1c2ba28e68d80a7",
+              "sha256": "96017508043e3203904da3144bb99273a37d02710b3833dc22cee71dc8753613"
+            }
+          },
+          "guid": "wx6be",
+          "kind": "file",
+          "last_touched": null,
+          "materialized_path": "/RP_CB Final Analysis - Paper level data dictionary.csv",
+          "name": "RP_CB Final Analysis - Paper level data dictionary.csv",
+          "path": "/603aa13744157501e25819bc",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": 4465,
+          "tags": []
+        },
+        "id": "603aa13744157501e25819bc",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13744157501e25819bc",
+          "download": "https://osf.io/download/wx6be/",
+          "html": "https://osf.io/e5nvr/files/osfstorage/603aa13744157501e25819bc",
+          "info": "https://api.osf.io/v2/files/603aa13744157501e25819bc/",
+          "iri": "https://osf.io/wx6be",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13744157501e25819bc",
+          "render": "https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Fwx6be%2F%3Fdirect%26mode%3Drender",
+          "self": "https://api.osf.io/v2/files/603aa13744157501e25819bc/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa13744157501e25819bc"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa13744157501e25819bc/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "comments": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/comments/?filter%5Btarget%5D=wx6be",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          },
+          "versions": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa13744157501e25819bc/versions/",
+                "meta": {}
+              }
+            }
+          }
+        },
+        "type": "files"
+      },
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 2,
+          "date_created": "2021-06-25T15:24:56.456152Z",
+          "date_modified": "2021-11-19T21:31:14.097331",
+          "extra": {
+            "downloads": 153,
+            "hashes": {
+              "md5": "0ae791eed229d0f8824f8aeade280862",
+              "sha256": "111a99b2fa5834161f48fc3038b96545dcc75dbdb8e5bff1736bd26bc40c9465"
+            }
+          },
+          "guid": "39s7j",
+          "kind": "file",
+          "last_touched": null,
+          "materialized_path": "/RP_CB Final Analysis - Effect level data.csv",
+          "name": "RP_CB Final Analysis - Effect level data.csv",
+          "path": "/60d5f548f97002000d1fcda5",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": 116726,
+          "tags": []
+        },
+        "id": "60d5f548f97002000d1fcda5",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/60d5f548f97002000d1fcda5",
+          "download": "https://osf.io/download/39s7j/",
+          "html": "https://osf.io/e5nvr/files/osfstorage/60d5f548f97002000d1fcda5",
+          "info": "https://api.osf.io/v2/files/60d5f548f97002000d1fcda5/",
+          "iri": "https://osf.io/39s7j",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/60d5f548f97002000d1fcda5",
+          "render": "https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2F39s7j%2F%3Fdirect%26mode%3Drender",
+          "self": "https://api.osf.io/v2/files/60d5f548f97002000d1fcda5/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/60d5f548f97002000d1fcda5"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/60d5f548f97002000d1fcda5/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "comments": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/comments/?filter%5Btarget%5D=39s7j",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          },
+          "versions": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/60d5f548f97002000d1fcda5/versions/",
+                "meta": {}
+              }
+            }
+          }
+        },
+        "type": "files"
+      },
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 2,
+          "date_created": "2021-02-27T19:44:53.706289Z",
+          "date_modified": "2021-11-19T21:31:14.074316",
+          "extra": {
+            "downloads": 43,
+            "hashes": {
+              "md5": "7c670e5d7b58e580c3469e4a847f5872",
+              "sha256": "278086ca2cf856062e996be66e939eff93c3cd9d7f946f983758e03433f173e9"
+            }
+          },
+          "guid": "fv6te",
+          "kind": "file",
+          "last_touched": null,
+          "materialized_path": "/RP_CB Final Analysis - Experiment level data.csv",
+          "name": "RP_CB Final Analysis - Experiment level data.csv",
+          "path": "/603aa135035cf701f5c85ce9",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": 71213,
+          "tags": []
+        },
+        "id": "603aa135035cf701f5c85ce9",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa135035cf701f5c85ce9",
+          "download": "https://osf.io/download/fv6te/",
+          "html": "https://osf.io/e5nvr/files/osfstorage/603aa135035cf701f5c85ce9",
+          "info": "https://api.osf.io/v2/files/603aa135035cf701f5c85ce9/",
+          "iri": "https://osf.io/fv6te",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa135035cf701f5c85ce9",
+          "render": "https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Ffv6te%2F%3Fdirect%26mode%3Drender",
+          "self": "https://api.osf.io/v2/files/603aa135035cf701f5c85ce9/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/603aa135035cf701f5c85ce9"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa135035cf701f5c85ce9/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "comments": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/comments/?filter%5Btarget%5D=fv6te",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          },
+          "versions": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603aa135035cf701f5c85ce9/versions/",
+                "meta": {}
+              }
+            }
+          }
+        },
+        "type": "files"
+      },
+      {
+        "attributes": {
+          "checkout": null,
+          "current_user_can_comment": false,
+          "current_version": 1,
+          "date_created": "2021-06-25T15:24:56.273519Z",
+          "date_modified": "2021-06-25T15:24:56.273519",
+          "extra": {
+            "downloads": 42,
+            "hashes": {
+              "md5": "343a095cf23ce25653ec3bbce809dfe2",
+              "sha256": "5c92bdba30780dbfb04e0f43f3c156664f879cab5b6620b75a3a9cd6713530f2"
+            }
+          },
+          "guid": "afexp",
+          "kind": "file",
+          "last_touched": null,
+          "materialized_path": "/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "name": "RP_CB Final Analysis - Effect level data dictionary.csv",
+          "path": "/60d5f5487eb4b4000bb7337a",
+          "provider": "osfstorage",
+          "show_as_unviewed": false,
+          "size": 19992,
+          "tags": []
+        },
+        "id": "60d5f5487eb4b4000bb7337a",
+        "links": {
+          "delete": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/60d5f5487eb4b4000bb7337a",
+          "download": "https://osf.io/download/afexp/",
+          "html": "https://osf.io/e5nvr/files/osfstorage/60d5f5487eb4b4000bb7337a",
+          "info": "https://api.osf.io/v2/files/60d5f5487eb4b4000bb7337a/",
+          "iri": "https://osf.io/afexp",
+          "move": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/60d5f5487eb4b4000bb7337a",
+          "render": "https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2Fafexp%2F%3Fdirect%26mode%3Drender",
+          "self": "https://api.osf.io/v2/files/60d5f5487eb4b4000bb7337a/",
+          "upload": "https://files.osf.io/v1/resources/e5nvr/providers/osfstorage/60d5f5487eb4b4000bb7337a"
+        },
+        "relationships": {
+          "cedar_metadata_records": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/60d5f5487eb4b4000bb7337a/cedar_metadata_records/",
+                "meta": {}
+              }
+            }
+          },
+          "comments": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/comments/?filter%5Btarget%5D=afexp",
+                "meta": {}
+              }
+            }
+          },
+          "node": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {}
+              }
+            }
+          },
+          "parent_folder": {
+            "data": {
+              "id": "603a9fdbf9e476011e1670dd",
+              "type": "files"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/603a9fdbf9e476011e1670dd/",
+                "meta": {}
+              }
+            }
+          },
+          "target": {
+            "data": {
+              "id": "e5nvr",
+              "type": "nodes"
+            },
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/nodes/e5nvr/",
+                "meta": {
+                  "type": "nodes"
+                }
+              }
+            }
+          },
+          "versions": {
+            "links": {
+              "related": {
+                "href": "https://api.osf.io/v2/files/60d5f5487eb4b4000bb7337a/versions/",
+                "meta": {}
+              }
+            }
+          }
+        },
+        "type": "files"
+      }
+    ],
+    "links": {
+      "first": null,
+      "last": null,
+      "meta": {
+        "per_page": 10,
+        "total": 7
+      },
+      "next": null,
+      "prev": null
+    },
+    "meta": {
+      "version": "2.0"
+    }
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:36:47",
+  "sha256": "e7d72a6e61a0ed6f520eaa24357f3e3a4b3c72964cc7a4677a083f1b1417f798"
+}

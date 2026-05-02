@@ -1,0 +1,85 @@
+{
+  "artifact_id": "source_artifact_84d4b19a63ca4c9c",
+  "byte_size": 248473,
+  "file_name": "dataverse_09__pwk_original.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_09__pwk_original.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "mturkID",
+        "treatment",
+        "fakenews_scaramucci_Y",
+        "fakenews_pizza_Y",
+        "fakenews_podesta_Y",
+        "fakenews_obama_Y",
+        "fakenews_pedo_Y",
+        "fakenews_vermont_Y"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "fakenews_obama_Y": null,
+          "fakenews_pedo_Y": null,
+          "fakenews_pizza_Y": null,
+          "fakenews_podesta_Y": null,
+          "fakenews_scaramucci_Y": 4,
+          "fakenews_vermont_Y": 3,
+          "mturkID": "35812",
+          "treatment": "no correction"
+        },
+        {
+          "fakenews_obama_Y": null,
+          "fakenews_pedo_Y": null,
+          "fakenews_pizza_Y": null,
+          "fakenews_podesta_Y": null,
+          "fakenews_scaramucci_Y": null,
+          "fakenews_vermont_Y": 1,
+          "mturkID": "A0017268R9SKD8U2Y3F",
+          "treatment": "green correction"
+        },
+        {
+          "fakenews_obama_Y": null,
+          "fakenews_pedo_Y": null,
+          "fakenews_pizza_Y": 1,
+          "fakenews_podesta_Y": null,
+          "fakenews_scaramucci_Y": null,
+          "fakenews_vermont_Y": null,
+          "mturkID": "A0017268R9SKD8U2Y3F",
+          "treatment": "correction"
+        },
+        {
+          "fakenews_obama_Y": null,
+          "fakenews_pedo_Y": null,
+          "fakenews_pizza_Y": 1,
+          "fakenews_podesta_Y": null,
+          "fakenews_scaramucci_Y": null,
+          "fakenews_vermont_Y": null,
+          "mturkID": "A09354962P34U7ILOPYKP",
+          "treatment": "correction"
+        },
+        {
+          "fakenews_obama_Y": null,
+          "fakenews_pedo_Y": null,
+          "fakenews_pizza_Y": null,
+          "fakenews_podesta_Y": null,
+          "fakenews_scaramucci_Y": null,
+          "fakenews_vermont_Y": 4,
+          "mturkID": "A09354962P34U7ILOPYKP",
+          "treatment": "no correction"
+        }
+      ],
+      "r_class": "data.frame",
+      "shape": [
+        3358,
+        8
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "reader": "Rscript",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "02c8f1251a23ada08e2aca5460f1e2951b832b0c0e388759268bdc6833f33c2b"
+}

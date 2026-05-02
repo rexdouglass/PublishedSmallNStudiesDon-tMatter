@@ -1,0 +1,270 @@
+{
+  "artifact_id": "source_artifact_58232f0f76a9a52a",
+  "byte_size": 67128,
+  "file_name": "data-dictionary_score.xlsx",
+  "file_type": "xlsx",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_58232f0f76a9a52a__data-dictionary_score.xlsx",
+  "parent_corpus_database_id": "score",
+  "sample_kind": "excel_workbook",
+  "sampled_at": "2026-05-01T20:38:26",
+  "sha256": "5da5a1423d4f51663924828276f807db5b0d77b33c607ad5e844d273ebffd9e3",
+  "sheet_count": 23,
+  "sheets": [
+    {
+      "columns": [
+        "dataset",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "dataset": "claims_bushel_ids",
+          "description": "Key IDs for bushel claims, where multiple inferential tests were evaluated within a single study."
+        },
+        {
+          "dataset": "claims_non_significant_bushels",
+          "description": "Which bushel claims use non-significant evidence."
+        },
+        {
+          "dataset": "claims_ser_power",
+          "description": "Set of sample sizes calculated via the SER method."
+        },
+        {
+          "dataset": "claims_traditional_power",
+          "description": "Set of sample sizes calculated via traditional methods."
+        },
+        {
+          "dataset": "extracted_claims",
+          "description": "Claims extracted from original studies."
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "Dataset Descriptions"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "The unique identifier for each paper in the project",
+          "variable": "paper_id"
+        },
+        {
+          "description": "The internal unique identifiers for bushel claims",
+          "variable": "claim4_id"
+        }
+      ],
+      "sample_row_count": 2,
+      "sheet_name": "claims_bushel_ids"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "The unique identifier for each paper in the project",
+          "variable": "paper_id"
+        },
+        {
+          "description": "Claim indicator variable drawn from stitched_claims.",
+          "variable": "claim4_id"
+        },
+        {
+          "description": "The human coded statistical evidence drawn from stitched_claims",
+          "variable": "coded_stat_evidence"
+        },
+        {
+          "description": "Indicates whether the evidence for the bushel claim is non-significant.",
+          "variable": "nonsig"
+        }
+      ],
+      "sample_row_count": 4,
+      "sheet_name": "claims_non_signigicant_bushels"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "Unique identifier for the specific claim that the replication attempt was testing.",
+          "variable": "claim_id"
+        },
+        {
+          "description": "Sample size needed to meet threshold power, defined as 50% power to detect 100% of the original effect.",
+          "variable": "rr_sample_size_50_for_100"
+        },
+        {
+          "description": "Sample size needed to meet the stage 1 power, defined as 90% power to detect 75% of the original effect.",
+          "variable": "rr_sample_size_90_for_75"
+        },
+        {
+          "description": "Sample size needed to meet the stage 2 power, defined as 90% power to detect 50% of the original effect.",
+          "variable": "rr_sample_size_90_for_50"
+        }
+      ],
+      "sample_row_count": 4,
+      "sheet_name": "claims_ser_power"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "Unique identifier for the specific claim that the replication attempt was testing.",
+          "variable": "claim_id"
+        },
+        {
+          "description": "Sample size needed to meet threshold power, defined as 50% power to detect 100% of the original effect.",
+          "variable": "rr_sample_size_50_for_100"
+        },
+        {
+          "description": "Sample size needed to meet the stage 1 power, defined as 90% power to detect 75% of the original effect.",
+          "variable": "rr_sample_size_90_for_75"
+        },
+        {
+          "description": "Sample size needed to meet the stage 2 power, defined as 90% power to detect 50% of the original effect.",
+          "variable": "rr_sample_size_90_for_50"
+        }
+      ],
+      "sample_row_count": 4,
+      "sheet_name": "claims_traditional_power"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "Unique identifier for the specific claim that the replication attempt was testing.",
+          "variable": "unique_claim_id"
+        },
+        {
+          "description": "Indicates if a bushel claim has a functionally equivalent single trace claim.",
+          "variable": "single_trace_equivalent"
+        }
+      ],
+      "sample_row_count": 2,
+      "sheet_name": "extracted_claims"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "Raw name of the methodology/analysis/technique (e.g. analysis_of_variance_anova)",
+          "variable": "llm_category"
+        },
+        {
+          "description": "Always ‘method’ in this data",
+          "variable": "llm_descriptive"
+        },
+        {
+          "description": "Score quantifying how commonly this method appears across abstracts (0 to 100).",
+          "variable": "llm_score"
+        },
+        {
+          "description": "Constant (173): Total abstracts sampled.",
+          "variable": "n_abstracts"
+        },
+        {
+          "description": "Standard error (SE) of the llm_score estimate",
+          "variable": "se"
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "llm_method_data"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "Unique identifier for each research question",
+          "variable": "llm_research_question_id"
+        },
+        {
+          "description": "Number of abstracts associated with each research question",
+          "variable": "N"
+        },
+        {
+          "description": "Text of the research question, describing its focus or thematic area",
+          "variable": "llm_research_question_label"
+        }
+      ],
+      "sample_row_count": 3,
+      "sheet_name": "llm_research_question_table"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "Raw name of the paradigm/theory (e.g., behavioral_economics_cognitive_decision_making)",
+          "variable": "llm_category"
+        },
+        {
+          "description": "Always “theory” in this dataset",
+          "variable": "llm_descriptive"
+        },
+        {
+          "description": "Score indicating how commonly this theory/theme appears in abstracts (0 to 100)",
+          "variable": "llm_score"
+        },
+        {
+          "description": "Total abstracts sampled (constant: 173)",
+          "variable": "n_abstracts"
+        },
+        {
+          "description": "Standard error of the llm_score estimate",
+          "variable": "se"
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "llm_theory_data"
+    },
+    {
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": [
+        {
+          "description": "The unique identifier for each paper in the project",
+          "variable": "paper_id"
+        },
+        {
+          "description": "Unique claim identifier, formed by combining paper_id with a claim id (since single-trace claims are not otherwise uniquely identified). Claims that include the phase 'single-trace' are single-trace, and otherwise are bushel claims.",
+          "variable": "claim_id"
+        },
+        {
+          "description": "The type of analysis used",
+          "variable": "orig_analysis_type"
+        },
+        {
+          "description": "The number of parameters in the model",
+          "variable": "orig_total_model_params"
+        },
+        {
+          "description": "A bare-minimum sample size value for a data-analytic replication attempt; its value is 50% power to detect 100% of the original effect size at the 5% significance level in a two-sided test. This value is used to classify data analytic replications when limited applicable novel data is available (e.g. waves of the same study not used in the original paper).",
+          "variable": "orig_sample_size_50_for_100"
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "orig_outcomes"
+    }
+  ]
+}

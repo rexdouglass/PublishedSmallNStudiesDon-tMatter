@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_bd5f35ebbbad8ab2",
+  "byte_size": 7319,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "rr_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "minted_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 69,
+  "file_name": "changes_score_rr_types.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_bd5f35ebbbad8ab2__changes_score_rr_types.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": null,
+      "change_to": "Non-HSR",
+      "col_name": "is_hsr",
+      "date_implemented": "2024-07-15T00:00:00Z",
+      "minted_version": 2,
+      "rationale": "HSR assignment missing from original dataset",
+      "reported_by": "Theresa Stankov",
+      "rr_id": "996g"
+    },
+    {
+      "change_from": null,
+      "change_to": "Non-HSR",
+      "col_name": "is_hsr",
+      "date_implemented": "2024-07-15T00:00:00Z",
+      "minted_version": 2,
+      "rationale": "HSR assignment missing from original dataset",
+      "reported_by": "Theresa Stankov",
+      "rr_id": "19y4"
+    },
+    {
+      "change_from": null,
+      "change_to": "Non-HSR",
+      "col_name": "is_hsr",
+      "date_implemented": "2024-07-15T00:00:00Z",
+      "minted_version": 2,
+      "rationale": "HSR assignment missing from original dataset",
+      "reported_by": "Theresa Stankov",
+      "rr_id": "8z81"
+    },
+    {
+      "change_from": null,
+      "change_to": "Non-HSR",
+      "col_name": "is_hsr",
+      "date_implemented": "2024-07-15T00:00:00Z",
+      "minted_version": 2,
+      "rationale": "HSR assignment missing from original dataset",
+      "reported_by": "Theresa Stankov",
+      "rr_id": "2y2g"
+    },
+    {
+      "change_from": null,
+      "change_to": "Non-HSR",
+      "col_name": "is_hsr",
+      "date_implemented": "2024-07-15T00:00:00Z",
+      "minted_version": 2,
+      "rationale": "HSR assignment missing from original dataset",
+      "reported_by": "Theresa Stankov",
+      "rr_id": "927"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:37:08",
+  "sha256": "87bf425f8f944555564b514c957bd7617dade164f5e203d0978bc5c2240257ad"
+}

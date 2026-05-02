@@ -1,0 +1,69 @@
+{
+  "artifact_id": "source_artifact_43e5cc62c3534f1e",
+  "byte_size": 24398,
+  "columns": [
+    "id",
+    "name",
+    "kind",
+    "size",
+    "path",
+    "download",
+    "api"
+  ],
+  "estimated_data_rows": 121,
+  "file_name": "osf_file_manifest.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/osf_file_manifest.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "api": "https://api.osf.io/v2/files/67be09187358130ed89fbe81/",
+      "download": null,
+      "id": "67be09187358130ed89fbe81",
+      "kind": "folder",
+      "name": "Raw Data",
+      "path": "/Raw Data/",
+      "size": null
+    },
+    {
+      "api": "https://api.osf.io/v2/files/67be09f22771681d11556568/",
+      "download": null,
+      "id": "67be09f22771681d11556568",
+      "kind": "folder",
+      "name": "Replication Studies",
+      "path": "/Raw Data/Replication Studies/",
+      "size": null
+    },
+    {
+      "api": "https://api.osf.io/v2/files/693c27c4650798c857404041/",
+      "download": "https://osf.io/download/cyr63/",
+      "id": "693c27c4650798c857404041",
+      "kind": "file",
+      "name": "repli_stats_p1.csv",
+      "path": "/Raw Data/Replication Studies/repli_stats_p1.csv",
+      "size": 427974.0
+    },
+    {
+      "api": "https://api.osf.io/v2/files/693c27c29bf30fdf231305bb/",
+      "download": "https://osf.io/download/7xfpq/",
+      "id": "693c27c29bf30fdf231305bb",
+      "kind": "file",
+      "name": "repli_stats_p2.csv",
+      "path": "/Raw Data/Replication Studies/repli_stats_p2.csv",
+      "size": 496823.0
+    },
+    {
+      "api": "https://api.osf.io/v2/files/69406b3d6e7a2e2fff4893a0/",
+      "download": "https://osf.io/download/yxw5t/",
+      "id": "69406b3d6e7a2e2fff4893a0",
+      "kind": "file",
+      "name": "repli_effect-size.csv",
+      "path": "/Raw Data/Replication Studies/repli_effect-size.csv",
+      "size": 5189.0
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:40:48",
+  "sha256": "7ed7f8158f997f6a09b7fbad5eaa33be19f906b2ad1e09b1c33ed07c8ba957e6"
+}

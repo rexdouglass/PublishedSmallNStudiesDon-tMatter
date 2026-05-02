@@ -1,0 +1,66 @@
+{
+  "artifact_id": "source_artifact_5c6264c130de5c4b",
+  "byte_size": 597,
+  "file_name": "est_study_6.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_6.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "study",
+        "estimate_type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.3370862284,
+          "conf.low": 0.0878010231,
+          "df": 1065.0,
+          "estimate": 0.2124436258,
+          "estimate_type": "Standardized",
+          "outcome": "gilens_Y_std",
+          "p.value": 0.0008533213,
+          "statistic": 3.3444070509,
+          "std.error": 0.0635220601,
+          "study": "Pre-COVID",
+          "survey": "Gilens (2001)",
+          "term": "gilens_Z"
+        },
+        {
+          "conf.high": 0.0687446768,
+          "conf.low": -0.1736547559,
+          "df": 1036.0,
+          "estimate": -0.0524550396,
+          "estimate_type": "Standardized",
+          "outcome": "gilens_Y_std",
+          "p.value": 0.395932057,
+          "statistic": -0.8492613925,
+          "std.error": 0.0617654824,
+          "study": "Replication",
+          "survey": "Week 3",
+          "term": "gilens_Z"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        2,
+        12
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "4384522d2db1f92a4bbd574ca195e3e1e4ddf5699abdca3fe75df6040ac88834"
+}

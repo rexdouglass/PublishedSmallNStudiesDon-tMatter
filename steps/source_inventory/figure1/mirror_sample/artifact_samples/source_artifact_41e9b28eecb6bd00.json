@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_41e9b28eecb6bd00",
+  "byte_size": 71987,
+  "columns": [
+    "paper_id",
+    "claim_id",
+    "coded_stat_evidence",
+    "complex"
+  ],
+  "estimated_data_rows": 523,
+  "file_name": "orig_claims_bushel-complex.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_41e9b28eecb6bd00__orig_claims_bushel-complex.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "claim_id": "bzyz9k",
+      "coded_stat_evidence": "Table 3, General Academic Skills, Curricular diversity slope Base (gamma_10): Coefficient (SE) = 0.17 (0.02), t Ratio = 10.40, p < .001",
+      "complex": "F",
+      "paper_id": "zb3Y"
+    },
+    {
+      "claim_id": "gl7j22",
+      "coded_stat_evidence": "Table 3, General Academic Skills, CRI slope Base (gamma_20): Coefficient (SE) = 0.16 (0.02), t Ratio = 9.74, p < .001",
+      "complex": "F",
+      "paper_id": "zb3Y"
+    },
+    {
+      "claim_id": "b66y26",
+      "coded_stat_evidence": "Table 3, General Academic Skills, AVG: Curricular diversity (gamma_05): Coefficient (SE) = 0.31 (0.08), t Ratio = 3.84, p < .001",
+      "complex": "F",
+      "paper_id": "zb3Y"
+    },
+    {
+      "claim_id": "m3dy4j",
+      "coded_stat_evidence": "Table 3, Racial/Cultural Engagement, Curricular diversity slope Base (gamma_10): Coefficient (SE) = 0.22 (0.01), t Ratio = 18.57, p < .001",
+      "complex": "F",
+      "paper_id": "zb3Y"
+    },
+    {
+      "claim_id": "mw9jx3",
+      "coded_stat_evidence": "Table 3, Racial/Cultural Engagement, CRI slope Base (gamma_20): Coefficient (SE) = 0.35 (0.01), t Ratio = 32.28, p < .001",
+      "complex": "F",
+      "paper_id": "zb3Y"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:38:44",
+  "sha256": "1a8f9bb220cf2fd7e8027004f00bd03cc03cb6f83a4d7fc01a3d3044b98a75d6"
+}

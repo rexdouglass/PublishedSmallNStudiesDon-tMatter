@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_b103ecad299103f0",
+  "byte_size": 8751,
+  "columns": [
+    "vswinner13",
+    "vsrunnerup13",
+    "party",
+    "complied_s1",
+    "complied_s2",
+    "tenure",
+    "pct_present",
+    "pti",
+    "age",
+    "pa_id"
+  ],
+  "estimated_data_rows": 99,
+  "file_name": "02_mpas_with_treatment.tab",
+  "file_type": "tab",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse/9PWQZT/02_mpas_with_treatment.tab",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview_rows": [
+    {
+      "age": 40.0,
+      "complied_s1": true,
+      "complied_s2": false,
+      "pa_id": 1,
+      "party": "PTI",
+      "pct_present": 0.5069124424,
+      "pti": true,
+      "tenure": 2.0,
+      "vsrunnerup13": 0.1287658513,
+      "vswinner13": 0.4275167882
+    },
+    {
+      "age": null,
+      "complied_s1": null,
+      "complied_s2": null,
+      "pa_id": 10,
+      "party": null,
+      "pct_present": 0.8064516129,
+      "pti": true,
+      "tenure": null,
+      "vsrunnerup13": 0.21745269,
+      "vswinner13": 0.2499894649
+    },
+    {
+      "age": null,
+      "complied_s1": null,
+      "complied_s2": null,
+      "pa_id": 11,
+      "party": "PTI",
+      "pct_present": 0.6543778802,
+      "pti": true,
+      "tenure": null,
+      "vsrunnerup13": 0.2286857218,
+      "vswinner13": 0.2670320272
+    },
+    {
+      "age": 58.0,
+      "complied_s1": null,
+      "complied_s2": null,
+      "pa_id": 12,
+      "party": "PTI",
+      "pct_present": 0.8110599078,
+      "pti": true,
+      "tenure": 1.0,
+      "vsrunnerup13": 0.2146236748,
+      "vswinner13": 0.470828563
+    },
+    {
+      "age": null,
+      "complied_s1": null,
+      "complied_s2": null,
+      "pa_id": 13,
+      "party": null,
+      "pct_present": 0.3870967742,
+      "pti": true,
+      "tenure": null,
+      "vsrunnerup13": 0.2128088176,
+      "vswinner13": 0.3859794438
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:42",
+  "sha256": "5e1339bd3d0dceba2d0637f43d594f010af16f5c45b2be51dd704205338d86c3"
+}

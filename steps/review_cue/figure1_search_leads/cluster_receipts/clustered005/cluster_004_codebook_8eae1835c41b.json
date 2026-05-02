@@ -1,0 +1,34 @@
+{
+  "batch_id": "clustered005",
+  "cluster_id": "cluster_004_codebook_8eae1835c41b",
+  "confidence": "medium",
+  "created_at": "2026-05-02T02:32:42+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered005.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_068a55aa5aa4",
+      "notes": "004_codebook.xlsx is supporting documentation/workbook for the PSA004 package.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_9b22ad70869a",
+      "notes": "pretest script.R is contextual code unless inspection shows table-generating output.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_b6dd284713b7",
+      "notes": "psa004_turri_article_table_reconstruction.csv is the candidate result table for this cluster.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Route psa004_turri_article_table_reconstruction.csv, with 004_codebook.xlsx as supporting documentation, to the result-table worklist under lead_harvest:psa_004_turri; keep the pretest script as contextual code unless inspection shows it generates a reusable table.",
+  "parent_corpus_database_id_or_key": "lead_harvest:psa_004_turri",
+  "preferred_source_family_name": "PSA004 Accelerated CREP Turri/Buckwalter/Blouw replication package",
+  "reason": "The OSF/PSA004 cluster contains a workbook codebook and an article-table reconstruction CSV with original_n/replication_n query evidence. That is enough to route the specific table/codebook artifacts for result-table review, but not enough to create a broader corpus/database row from file titles alone.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:psa_004_turri",
+    "OSF page for PSA004 Accelerated CREP Turri/Buckwalter/Blouw showing 004_codebook.xlsx"
+  ]
+}

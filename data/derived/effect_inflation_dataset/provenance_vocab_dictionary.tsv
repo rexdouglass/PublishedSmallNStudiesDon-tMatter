@@ -1,0 +1,522 @@
+field_name	allowed_value	definition	coding_notes
+source_type	paper	A journal article, working paper, preprint, book chapter, or report-like scholarly paper.	Use for the citeable work itself, not for a downloaded PDF file when the file is merely an access route.
+source_type	registry_record	A trial, preregistration, PAP, protocol, or registration record.	Use for ClinicalTrials.gov, AEA, EGAP, RIDIE, OSF registration, and similar records.
+source_type	corpus	A curated collection that indexes or codes many papers/results.	Use for SCORE, FReD, RPP, Metabus, or meta-research corpora.
+source_type	database	A structured source with rows of results or metadata.	Use when the source is a database/table rather than a scholarly corpus paper.
+source_type	repository_or_package	A repository, Dataverse, OSF, Zenodo, OpenICPSR, GitHub, zip, or replication package.	Use for source packages that contain files supporting papers/results.
+source_type	pdf	A standalone PDF file used as a source object.	Prefer paper/report when the PDF represents a citeable work; use pdf for file-level sources.
+source_type	report	A policy, technical, institutional, or project report.	Use when the source is not a journal/working paper but is still a citeable report.
+source_type	website	A web page used as an extraction or relationship source.	Use only when the page itself is the source object.
+source_type	raw_data_file	A raw or analytic data file.	Use for CSV, TSV, DTA, RDS, SAV, XLSX, or similar data objects.
+source_type	code_file	A code or script file.	Use for R, Stata, Python, shell, notebook, or script output sources.
+source_type	local_derived_table	A table produced inside this repository.	Use for internal audit/staging tables; this alone is not original-source evidence.
+source_type	other	A source object that does not fit another category.	Use sparingly and explain in source.notes.
+source_status	primary	Controlled value `primary` for `source_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+source_status	sidecar	Controlled value `sidecar` for `source_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+source_status	support_only	Controlled value `support_only` for `source_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+source_status	blocked	Controlled value `blocked` for `source_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+source_status	deprecated	Controlled value `deprecated` for `source_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	corpus_or_database	Controlled value `corpus_or_database` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	registry_record	Controlled value `registry_record` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	paper_or_article	Controlled value `paper_or_article` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	individual_replication_paper	Controlled value `individual_replication_paper` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	replication_project	Controlled value `replication_project` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	preregistration_or_pap	Controlled value `preregistration_or_pap` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	repository_package	Controlled value `repository_package` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	candidate_result_table	Controlled value `candidate_result_table` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	raw_data_or_code_package	Controlled value `raw_data_or_code_package` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_type	manual_source_suggestion	Controlled value `manual_source_suggestion` for `search_lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	not_started	Controlled value `not_started` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	seeded_from_existing_artifact	Controlled value `seeded_from_existing_artifact` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	candidate_found	Controlled value `candidate_found` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	candidate_rejected	Controlled value `candidate_rejected` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	staged_for_parser	Controlled value `staged_for_parser` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	promoted_to_result_target	Controlled value `promoted_to_result_target` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	blocked_access	Controlled value `blocked_access` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	blocked_no_result_fields	Controlled value `blocked_no_result_fields` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	blocked_scope_mismatch	Controlled value `blocked_scope_mismatch` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+search_lead_status	deprecated_duplicate	Controlled value `deprecated_duplicate` for `search_lead_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	not_triaged	Controlled value `not_triaged` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	promote_to_source	Controlled value `promote_to_source` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	promote_to_source_result	Controlled value `promote_to_source_result` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	stage_for_parser	Controlled value `stage_for_parser` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	catalog_only	Controlled value `catalog_only` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	reject_scope_mismatch	Controlled value `reject_scope_mismatch` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	reject_duplicate	Controlled value `reject_duplicate` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	blocked_access	Controlled value `blocked_access` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	blocked_missing_fields	Controlled value `blocked_missing_fields` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_decision	manual_review_required	Controlled value `manual_review_required` for `lead_decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+plot_scope_role	current_figure	Controlled value `current_figure` for `plot_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+plot_scope_role	current_diagnostic	Controlled value `current_diagnostic` for `plot_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+plot_scope_role	catalog_only_future_plot_seed	Controlled value `catalog_only_future_plot_seed` for `plot_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+plot_scope_role	future_plot_candidate	Controlled value `future_plot_candidate` for `plot_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+plot_scope_role	sensitivity_view	Controlled value `sensitivity_view` for `plot_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+plot_scope_role	deprecated	Controlled value `deprecated` for `plot_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	included	Controlled value `included` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	excluded	Controlled value `excluded` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	catalog_only	Controlled value `catalog_only` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	diagnostic_only	Controlled value `diagnostic_only` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	sensitivity_only	Controlled value `sensitivity_only` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	pending	Controlled value `pending` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+eligibility_status	blocked	Controlled value `blocked` for `eligibility_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision_context_type	current_plot	Controlled value `current_plot` for `decision_context_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision_context_type	diagnostic_view	Controlled value `diagnostic_view` for `decision_context_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision_context_type	sensitivity_view	Controlled value `sensitivity_view` for `decision_context_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision_context_type	future_plot_draft	Controlled value `future_plot_draft` for `decision_context_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision_context_type	manual_review	Controlled value `manual_review` for `decision_context_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision_context_type	automated_rule	Controlled value `automated_rule` for `decision_context_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+identifier_type	doi	Digital Object Identifier for an article, report, dataset, package, or other DOI object.	Normalize without https://doi.org/ in identifier_value; put full resolver URL in identifier_url.
+identifier_type	pmid	PubMed identifier.	Use numeric PMID only.
+identifier_type	pmcid	PubMed Central identifier.	Use PMC-prefixed identifier when available.
+identifier_type	nct	ClinicalTrials.gov NCT identifier.	Use NCT######## format.
+identifier_type	aea_trial	AEA RCT Registry trial identifier.	Use trials/#### or AEARCTR form if available.
+identifier_type	egap_registration	EGAP registration or PAP identifier.	Use the most stable EGAP/OSF registration identifier available.
+identifier_type	ridie	RIDIE registration identifier.	Use the source-native RIDIE ID.
+identifier_type	osf	OSF project, registration, preprint, or file identifier.	Use the OSF GUID or stable URL.
+identifier_type	dataverse_doi	Dataverse dataset or file DOI.	Use for Dataverse persistent IDs.
+identifier_type	zenodo_doi	Zenodo DOI or record DOI.	Use DOI value; record URL can go in identifier_url.
+identifier_type	openicpsr	OpenICPSR project or version identifier.	Use project/version ID or stable URL.
+identifier_type	openalex	OpenAlex work/source identifier.	Use OpenAlex ID or URL.
+identifier_type	semantic_scholar	Semantic Scholar paper identifier.	Use S2 paper ID or URL.
+identifier_type	arxiv	arXiv identifier.	Use arXiv ID without URL wrapper when possible.
+identifier_type	ssrn	SSRN identifier.	Use SSRN abstract/paper ID.
+identifier_type	url	Stable URL that is not better represented by a narrower identifier type.	Prefer DOI/registry/repository identifiers when available.
+identifier_type	other	Other external identifier.	Explain identifier system in notes.
+access_role	landing_page	Controlled value `landing_page` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	direct_download	Controlled value `direct_download` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	api	Controlled value `api` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	mirrored_file	Controlled value `mirrored_file` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	file_member	Controlled value `file_member` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	source_file_or_catalog	Controlled value `source_file_or_catalog` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	user_upload	Controlled value `user_upload` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_role	derived_table	Controlled value `derived_table` for `access_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	automated_download	Controlled value `automated_download` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	api_download	Controlled value `api_download` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	osf_clone	Controlled value `osf_clone` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	dataverse_api	Controlled value `dataverse_api` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	github_clone	Controlled value `github_clone` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	user_upload	Controlled value `user_upload` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	browser_manual_download	Controlled value `browser_manual_download` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	existing_local_file	Controlled value `existing_local_file` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	code_execution_output	Controlled value `code_execution_output` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+retrieval_method	not_retrieved	Controlled value `not_retrieved` for `retrieval_method`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	local_file_found	Controlled value `local_file_found` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	downloaded	Controlled value `downloaded` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	remote_url_not_cached	Controlled value `remote_url_not_cached` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	local_path_missing	Controlled value `local_path_missing` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	login_required	Controlled value `login_required` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	access_denied	Controlled value `access_denied` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	missing_locator	Controlled value `missing_locator` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	unresolved_locator	Controlled value `unresolved_locator` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	blocked	Controlled value `blocked` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+access_status	not_applicable	Controlled value `not_applicable` for `access_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+attempt_decision	source_object_mirrored	A value-bearing source object was mirrored or already exists locally.	Can support level 5 after identity and policy checks.
+attempt_decision	metadata_only	Only metadata was obtained.	Supports grounding/resolution, not original-number verification unless metadata contains the value.
+attempt_decision	abstract_or_landing_only	Only an abstract or publisher/detail landing page was obtained.	Use as proof of location; promote only if the value appears there.
+attempt_decision	paywall_or_login	The route reached a paywall, subscription, or login artifact.	Keep as blocker evidence and do not promote as value-bearing bytes.
+attempt_decision	captcha_or_bot_block	The route reached a CAPTCHA or bot-check artifact.	Stop automated retries for this route/host.
+attempt_decision	access_denied	The route returned access denied, 403, or equivalent.	Record as blocked unless another lawful route succeeds.
+attempt_decision	blocked	The attempt was blocked by policy, robots, missing permissions, missing key, or similar.	Needs manual review or different route.
+attempt_decision	not_retrieved	No network/file retrieval was attempted or completed.	Use for locator-only rows.
+attempt_decision	manual_review	Attempt outcome needs human judgment.	Use for ambiguous candidates or multiple possible targets.
+attempt_decision	candidate_rejected	Candidate route was checked and rejected.	Explain mismatch or rejection in decision_reason.
+access_strategy	registry_clinicaltrials	ClinicalTrials.gov API or registry route.	Use for NCT JSON/XML/HTML records and related registry result pulls.
+access_strategy	pubmed_bridge	PubMed metadata or ID-bridging route.	Use when PMID metadata is used to discover DOI/PMCID/full text; this is not full text by itself.
+access_strategy	pmc_fulltext	PubMed Central full-text route.	Use for PMC OA XML, BioC, OAI, PDF, or OA package retrieval.
+access_strategy	crossref_metadata	Crossref metadata route.	Use for DOI metadata, license, references, and TDM/full-text candidate links.
+access_strategy	datacite_metadata	DataCite metadata route.	Use for dataset/repository DOI metadata and file discovery.
+access_strategy	unpaywall_metadata	Unpaywall OA discovery route.	Use for OA location/PDF/manuscript candidate discovery.
+access_strategy	openalex_metadata	OpenAlex metadata/OA discovery route.	Use for DOI/PMID/PMCID resolution and OA location discovery.
+access_strategy	semantic_scholar_metadata	Semantic Scholar metadata/OA discovery route.	Use for external IDs, openAccessPdf, and candidate URLs.
+access_strategy	europepmc_metadata	Europe PMC metadata/OA discovery route.	Use for life-science metadata, PMCID bridging, and full-text candidate URLs.
+access_strategy	oa_candidate_url	A candidate open-access URL discovered by a resolver.	Use for the candidate route; classify the bytes separately with source_byte_class.
+access_strategy	preprint_repository_candidate	A preprint, author manuscript, institutional repository, or repository copy candidate.	Use when the candidate may be a lawful non-VOR source object.
+access_strategy	direct_journal_or_doi_landing	Direct request to DOI redirect or publisher landing page.	Use for final-host page attempts, including paywall/abstract/CAPTCHA outcomes.
+access_strategy	stable_url	A stable URL route not covered by a specialized resolver.	Use for official project pages, direct dataset URLs, or stable archive URLs.
+access_strategy	other	An access route not covered by the controlled list.	Explain the route in access_notes.
+source_byte_class	full_article_pdf	Full article PDF bytes for the target work.	Level 5 eligible if identity matches and access/mirroring is lawful.
+source_byte_class	full_article_xml	Full article XML/JATS/NLM-style bytes for the target work.	Level 5 eligible if identity matches and the value could plausibly appear there.
+source_byte_class	full_article_html	Full article HTML bytes, not just a landing page or abstract.	Level 5 eligible only when actual full text is present.
+source_byte_class	author_manuscript_fulltext	Author accepted manuscript, preprint, or repository manuscript full text.	Level 5 eligible but flag source_version as manuscript/preprint when available.
+source_byte_class	supplement_file	Supplementary material used to support extraction.	Level 5 eligible if it could contain the value, table, appendix, or methods.
+source_byte_class	dataset_file	Data or analytic table file.	Level 5 eligible if it can support the value or recomputation.
+source_byte_class	code_file	Script, notebook, log, or code output.	Level 5 eligible if it generates or contains the value.
+source_byte_class	registry_record_full	Full registry/API record.	Level 5 eligible when the registry record is the source for the value or selector.
+source_byte_class	pmc_fulltext_xml	PMC full-text XML/BioC/OAI record.	Level 5 eligible under PMC OA/usage constraints.
+source_byte_class	pubmed_record_or_abstract	PubMed citation/abstract metadata.	Usually level 4/metadata only; level 5 only if the plotted value is actually in the abstract/record.
+source_byte_class	metadata_record	Metadata-only API response.	Use for grounding and resolver provenance; not level 5 for D/N values.
+source_byte_class	publisher_landing_or_abstract	Publisher landing page, title page, or abstract page.	Not level 5 unless the exact plotted value appears on that page.
+source_byte_class	paywall_or_login_page	Paywall, subscription, sign-in, or institutional-access page.	Never promote as value-bearing evidence; keep as access evidence.
+source_byte_class	captcha_page	CAPTCHA, bot-check, or anti-automation page.	Never promote; stop automated retries for the route.
+source_byte_class	access_denied_page	403/access-denied page or equivalent.	Never promote; record blocker.
+source_byte_class	blocked_no_source_object	No usable object was obtained.	Use with extraction_problem/manual to-do.
+source_byte_class	source_object_unclassified	Bytes were obtained but not classified.	Manual review required before promotion.
+source_byte_class	not_retrieved	No bytes were retrieved for this access row.	Use when the row documents a locator or attempted route only.
+license_category	open	Open or public license/access appears to allow local mirroring for this use.	Still preserve license_url and policy notes when available.
+license_category	restricted	Access is public or obtained, but reuse/storage terms are restricted or unclear.	Use when manual/legal review may be needed.
+license_category	subscription	Access appears to require subscription/institutional entitlement.	Do not treat as open mirroring.
+license_category	unknown	License or storage policy has not been determined.	Default when no policy was captured.
+license_category	not_applicable	License category is not applicable to this access row.	Use for failed/nonretrieved routes or purely internal derived files.
+source_version	version_of_record	Publisher version of record.	Use for final published article/full text.
+source_version	accepted_manuscript	Accepted manuscript after peer review but before publisher formatting.	Flag as not VOR.
+source_version	author_manuscript	Author manuscript or institutional repository copy.	Flag as not VOR.
+source_version	preprint	Preprint or working-paper version.	Flag as pre-publication/non-VOR.
+source_version	supplement	Supplementary material associated with another source.	Use for appendices and supporting files.
+source_version	registry_record	Registry/API record version.	Use for NCT/AEA/EGAP/RIDIE/OSF registry records.
+source_version	dataset	Dataset or data table version.	Use for source data files.
+source_version	code	Code/script/output version.	Use for computational source objects.
+source_version	metadata	Metadata-only record.	Not value-bearing unless the value appears in metadata.
+source_version	unknown	Source version has not been determined.	Use until a narrower version can be coded.
+file_role	full_article	Full article object.	Use for VOR/AAM/preprint article files when narrower manuscript/preprint roles are not used.
+file_role	author_manuscript	Author manuscript or accepted manuscript artifact.	Flag version/source separately.
+file_role	preprint	Preprint artifact.	Record preprint version when available.
+file_role	registry_record	Registry/API record artifact.	Use for NCT/AEA/EGAP/RIDIE/OSF registry JSON/XML/pages.
+file_role	supplement	Supplementary material or appendix file.	Use for article supplements and supporting packages.
+file_role	dataset	Data or analysis table artifact.	Use for CSV/TSV/DTA/RDS/XLSX/SAV and similar files.
+file_role	code	Code, notebook, log, or generated output artifact.	Use for scripts and code execution outputs.
+file_role	metadata	Metadata-only artifact.	Grounding/resolution only unless values are present in metadata.
+file_role	screenshot	Screenshot artifact.	Use for manual visual capture of pages/tables/blockers.
+file_role	abstract_page	Abstract-only page artifact.	Do not promote unless exact value is present.
+file_role	landing_page	Landing page artifact.	Use for DOI/publisher/repository landing pages.
+file_role	derived_table	Internal derived table artifact.	Useful for corpus assertions but not original-source evidence.
+file_role	archive	Archive file such as zip/tar/tgz.	Inventory extracted members separately when used.
+file_role	archive_member	File member inside an archive.	Set parent_file_id to the archive file.
+file_role	other	Other artifact role.	Explain in notes.
+file_origin	automated_download	Automatically downloaded from a URL/API.	Record attempt/access route.
+file_origin	api_response	API response stored as an artifact.	Use for registry/metadata JSON/XML.
+file_origin	repository_file	Downloaded from a repository platform.	Examples: OSF, Dataverse, Zenodo, Figshare, openICPSR.
+file_origin	publisher_file	Downloaded from a publisher route.	Use only for lawful/allowed access.
+file_origin	existing_local_file	File already existed locally before this run.	Preserve checksum and path.
+file_origin	user_upload	Provided manually by the user.	Keep original path/source when known.
+file_origin	manual_browser	Manually obtained through a browser.	Record operator/access notes and rights decision.
+file_origin	code_execution_output	Generated by running analysis code.	Record command in extraction_event.
+file_origin	internal_derived	Produced by this repo's derived-data pipeline.	Not original-source evidence unless backed by support rows.
+file_origin	archive_member	Extracted from an archive artifact.	Link to parent_file_id.
+file_origin	unknown	Origin not yet determined.	Use until backfilled.
+rights_decision	open_allowed	Mirroring/text extraction appears allowed for this project use.	Keep license/terms evidence.
+rights_decision	internal_only	Local/internal use only; do not redistribute bytes.	Expose metadata/snippets only as allowed.
+rights_decision	restricted	Access/reuse is restricted or unclear.	Manual/legal review may be needed.
+rights_decision	subscription_required	Source appears to require subscription/institutional entitlement.	Do not treat as public OA.
+rights_decision	not_applicable	Rights decision is not applicable.	Use for failed attempts or internal derived artifacts.
+rights_decision	unknown	Rights have not been assessed.	Default for pilot backfills.
+rights_decision	needs_review	Rights need human review before promotion/use.	Use for publisher/repository/manual routes with unclear terms.
+target_acquisition_state	unanchored	No external target identity has been established.	Danger level: number cannot be tied to a real source.
+target_acquisition_state	external_assertion_only	An external corpus/database asserts the row, but target identity is weak or incomplete.	Needs source identification before acquisition.
+target_acquisition_state	target_identity_known	The represented source can be identified bibliographically or by registry/repository ID.	Identity exists but source object not yet located/mirrored.
+target_acquisition_state	target_located	A DOI, registry, repository, or landing page locates the target.	Located is not mirrored.
+target_acquisition_state	source_object_mirrorable	A lawful/plausible source object route appears available.	Next action is selective mirroring.
+target_acquisition_state	source_object_mirrored	A plausible source object has been mirrored with checksum/path.	Next action is extraction/verification.
+target_acquisition_state	text_or_data_extracted	Text/data were extracted from a mirrored object.	Next action is value-specific verification.
+value_verification_state	not_checked	Value has not been checked against source text/data.	Default for unanchored or unresolved rows.
+value_verification_state	corpus_assertion_only	Value is currently supported only by corpus/database assertion.	Do not count as original-source verification.
+value_verification_state	source_object_obtained_not_parsed	A source object was obtained but not yet parsed for the value.	Level 5 but not level 6.
+value_verification_state	text_or_data_extracted	Text/data were extracted but exact D/N support is not confirmed.	Needs value search and support rows.
+value_verification_state	value_bearing_source_text_found	Relevant text/table/data for the value was found.	Needs parsed transformation check.
+value_verification_state	d_n_verified_from_source	D/N or native values were verified from source text/data.	Strict level 6/7 depending on recomputation.
+manual_task_status	open	Controlled value `open` for `manual_task_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+manual_task_status	in_progress	Controlled value `in_progress` for `manual_task_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+manual_task_status	blocked	Controlled value `blocked` for `manual_task_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+manual_task_status	closed	Controlled value `closed` for `manual_task_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+manual_task_status	not_needed	Controlled value `not_needed` for `manual_task_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	original_source_object	Controlled value `original_source_object` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	full_article	Controlled value `full_article` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	registry_record	Controlled value `registry_record` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	supplement	Controlled value `supplement` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	dataset_or_code	Controlled value `dataset_or_code` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	prereg_artifact	Controlled value `prereg_artifact` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	replication_evidence	Controlled value `replication_evidence` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	effect_text	Controlled value `effect_text` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	n_text	Controlled value `n_text` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	license_review	Controlled value `license_review` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	identity_disambiguation	Controlled value `identity_disambiguation` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+needed_artifact_type	other	Controlled value `other` for `needed_artifact_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+relationship_type	extraction_source_reports_result_for_represented_source	The extraction source directly reports a result about the represented source/work.	Default direct assertion relationship when no narrower type applies.
+relationship_type	corpus_contains_paper	A corpus or collection includes a paper.	Use for paper membership independent of a specific result value.
+relationship_type	database_reports_paper_result	A database/registry row reports a result or metadata for a paper/study/trial.	Use when the database is the literal source of copied numbers/text.
+relationship_type	repository_supports_paper	A package/repository supplies data, code, outputs, or supplements for a paper.	Use for replication-package support links.
+relationship_type	registry_preregisters_study	A registry record preregisters or records the study/trial/protocol.	Use for actual registry/PAP artifacts, not vague corpus claims.
+relationship_type	registry_links_publication	A registry record links to a paper/report/results source.	Use for post-trial publication/data/program URLs.
+relationship_type	pre_analysis_plan_supports_study	A PAP/MPAP/protocol supports the study/result selector.	Use when a PAP artifact is available outside a registry row.
+relationship_type	registered_report_protocol_for_paper	A registered-report Stage 1/protocol source supports the final paper.	Use for registered-report protocol relationships.
+relationship_type	publication_reports_registered_study	A publication reports results for a registered study.	Use from article to registry when the article itself documents registration.
+relationship_type	replication_of	A source or result is a replication of another source/result.	Use when original and replication sources are known, not only corpus-level assertion.
+relationship_type	computational_reproduction_of	A source/result computationally reproduces another paper/result.	Use for same-data/code reproduction relationships.
+relationship_type	robustness_reanalysis_of	A source/result reanalyzes robustness of another result.	Use for alternative specifications/checks rather than new-sample replication.
+relationship_type	meta_analysis_includes_study	A meta-analysis or pooled round includes a component study/result.	Use for pooled/component hierarchies.
+relationship_type	corpus_asserts_result_for_paper	A corpus/database asserts that a represented paper/result has specific numbers.	Use when we are taking the corpus row as the immediate evidence source.
+relationship_type	corpus_asserts_preregistration_for_paper	A corpus asserts preregistration but no registry/PAP artifact has been obtained.	Keep confidence low unless the artifact is later resolved.
+relationship_type	paper_uses_dataset	A paper uses or analyzes a dataset/source.	Use for paper-data source relationships.
+relationship_type	source_derives_from_source	One source object is derived from another.	Use for extracted tables, converted files, and generated outputs.
+relationship_type	duplicate_of	Two sources/results represent the same object or claim.	Use for dedupe mapping; do not double-count both.
+relationship_type	parent_collection_contains_child	A parent collection contains a child source/result.	Use for corpus, database, or pooled-round parent-child membership.
+relationship_subtype	preregistration	General preregistration relationship.	Use when a more specific PAP/registered-report/trial subtype is unavailable.
+relationship_subtype	pre_analysis_plan	Pre-analysis plan artifact.	Use for PAP documents and PAP sections.
+relationship_subtype	meta_analysis_pre_analysis_plan	Meta-analysis pre-analysis plan artifact.	Use for MPAPs such as Metaketa pooled analysis plans.
+relationship_subtype	registered_report_stage1_protocol	Stage 1 registered-report protocol.	Use for accepted protocols before results.
+relationship_subtype	registered_report_stage2_results	Stage 2 registered-report results paper.	Use when mapping protocol to final registered-report paper.
+relationship_subtype	trial_registry_record	Trial or study registry record.	Use for NCT/AEA/RIDIE/EGAP/OSF-style registry records.
+relationship_subtype	data_or_code_package	Data/code/package support relationship.	Use for repository/package mappings.
+relationship_subtype	paper_supplement	Supplementary paper file relationship.	Use for appendices, supplements, and supplemental tables.
+relationship_subtype	direct_replication	Replication intended to repeat the same claim/design closely.	Use for same-claim original/replication pairs.
+relationship_subtype	conceptual_replication	Replication of a construct using different operationalization/design.	Use when source says conceptual replication or design differs materially.
+relationship_subtype	computational_reproduction	Same-data/code reproduction.	Use for computational reproducibility checks.
+relationship_subtype	robustness_reanalysis	Alternative analysis/specification check.	Use for robustness projects.
+relationship_subtype	extension_study	Replication plus extension or new conditions.	Use when extension is material.
+relationship_subtype	pilot_full_scale_pair	Pilot/smaller study paired with later full-scale/larger study.	Use for pilot-to-main-study pairs.
+relationship_subtype	pooled_round_component	Component study included in pooled round/meta-analysis.	Use for Metaketa and similar pooled designs.
+relationship_subtype	corpus_child_paper	Paper included as a child of a corpus.	Use for membership without result-level numbers.
+relationship_subtype	database_child_result	Result row included as child of a database/corpus.	Use for row-level source assertions.
+relationship_subtype	citation_or_link_only	Relationship inferred only from citation/link metadata.	Use when no value/selector evidence has been copied.
+relationship_subtype	unknown	Subtype is not yet known.	Use only while staged; add an extraction_problem if it matters for promotion.
+relationship_timing	pre_data_collection	Relationship/artifact predates data collection.	Use only when timing evidence supports this.
+relationship_timing	pre_analysis	Relationship/artifact predates analysis/results but data may already exist.	Use for PAPs, protocols, or registered reports when analysis timing is verified.
+relationship_timing	post_data_pre_results	Relationship/artifact was created after data collection but before results were known or reported.	Use when this distinction is documented.
+relationship_timing	post_results	Relationship/artifact was created after results were known or public.	Do not use as preregistered confirmatory evidence.
+relationship_timing	not_applicable	Timing is not meaningful for this relationship.	Use for corpus membership, duplicate, and many package-support relationships.
+relationship_timing	unknown	Timing has not been audited or cannot be determined.	Use honestly rather than guessing.
+mapping_evidence_type	verbatim_text	Relationship is supported by copied text.	Preferred when an article/registry/PAP explicitly states the relationship.
+mapping_evidence_type	metadata_field	Relationship is supported by a structured metadata field.	Use for corpus/database/API columns.
+mapping_evidence_type	doi_link	Relationship is supported by DOI matching/linking.	Use when DOI itself is the relationship evidence.
+mapping_evidence_type	registry_link	Relationship is supported by registry link/ID.	Use for NCT/AEA/EGAP/RIDIE/OSF registry relationships.
+mapping_evidence_type	citation_match	Relationship is supported by citation matching.	Use when title/author/year/citation identifies the target.
+mapping_evidence_type	title_author_year_match	Relationship is supported by title/author/year matching.	Use when no durable ID is available.
+mapping_evidence_type	code_or_package_manifest	Relationship is supported by package manifest, file path, or code metadata.	Use for replication packages and package-derived rows.
+mapping_evidence_type	manual_judgment	Relationship currently depends on manual coding judgment.	Use sparingly and keep confidence low/medium.
+mapping_evidence_type	unknown	Evidence type not yet known.	Use only while staged.
+replication_role	none	No replication/reproduction relationship is asserted for this result.	Default for ordinary result rows.
+replication_role	original_study	This result is the original/target side of a replication pair.	Use when paired to later replication/reproduction.
+replication_role	replication_study	This result is the replicating/follow-up side.	Use for new-sample/direct/conceptual replication rows.
+replication_role	computational_reproduction	This result is a computational reproduction of a prior result.	Use for same-data/code reproduction.
+replication_role	robustness_check	This result is a robustness reanalysis of a prior result.	Use for alternative specifications/checks.
+replication_role	corpus_replication_assertion	The row asserts a replication relationship, but side/source details are incomplete.	Stage until original/replication sides are resolved.
+replication_role	unknown	Role is not yet known.	Use only temporarily and add a problem if relevant.
+support_role	effect_text	Support object contains or asserts the effect/statistic text.	Use when this object is the literal source of verbatim_effect_text.
+support_role	n_text	Support object contains or asserts the N/sample-size text.	Use when this object is the literal source of verbatim_n_text.
+support_role	outcome_text	Support object contains or asserts the outcome label/text.	Use when outcome wording comes from a different source than the effect.
+support_role	selector_text	Support object contains prereg/PAP/focal-selector text.	Use for registry/PAP/MPAP selector support.
+support_role	conversion_input	Support object contains inputs needed for D/native conversion.	Use for SDs, control means, event counts, arm Ns, SEs, or formulas.
+support_role	raw_data	Support object is raw data for recomputation.	Use for row-level or participant-level data files.
+support_role	analytic_data	Support object is cleaned/analytic data.	Use when recomputation starts from prepared analysis data.
+support_role	code	Support object is code/script/notebook.	Use for scripts that produce or transform values.
+support_role	recomputed_output	Support object is generated output from rerunning code.	Use for logs, tables, or saved model outputs.
+support_role	bibliographic_identity	Support object grounds the identity of the represented work.	Use for DOI/Crossref/PubMed/OpenAlex records and title metadata.
+support_role	access_grounding	Support object proves route/access status but not the number.	Use for abstracts, landing pages, paywalls, and blocked attempts.
+support_role	relationship_evidence	Support object asserts a mapping between sources.	Use for prereg, replication, package, and corpus-membership relationships.
+support_role	other	Other support role.	Explain in notes.
+membership_role	preferred	Controlled value `preferred` for `membership_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+membership_role	child	Controlled value `child` for `membership_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+membership_role	excluded_child	Controlled value `excluded_child` for `membership_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+membership_role	duplicate	Controlled value `duplicate` for `membership_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+membership_role	sensitivity_only	Controlled value `sensitivity_only` for `membership_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	field	Controlled value `field` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	subfield	Controlled value `subfield` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	source_family	Controlled value `source_family` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	study_design	Controlled value `study_design` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	publication_type	Controlled value `publication_type` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	journal_or_venue	Controlled value `journal_or_venue` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_type	other	Controlled value `other` for `classification_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	mean_difference	Controlled value `mean_difference` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	standardized_mean_difference	Controlled value `standardized_mean_difference` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	odds_ratio	Controlled value `odds_ratio` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	log_odds_ratio	Controlled value `log_odds_ratio` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	risk_difference	Controlled value `risk_difference` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	correlation	Controlled value `correlation` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	regression_coefficient	Controlled value `regression_coefficient` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	t_statistic	Controlled value `t_statistic` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	z_statistic	Controlled value `z_statistic` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	f_statistic	Controlled value `f_statistic` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	p_value_only	Controlled value `p_value_only` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	hazard_ratio	Controlled value `hazard_ratio` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	rate_ratio	Controlled value `rate_ratio` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	count_difference	Controlled value `count_difference` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	native_ate	Controlled value `native_ate` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	elasticity	Controlled value `elasticity` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+native_effect_metric	unknown	Controlled value `unknown` for `native_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	d	Controlled value `d` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	hedges_g	Controlled value `hedges_g` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	smd	Controlled value `smd` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	chinn_log_or_to_d	Controlled value `chinn_log_or_to_d` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	r_to_d	Controlled value `r_to_d` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	fisher_z_to_d	Controlled value `fisher_z_to_d` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	t_to_d	Controlled value `t_to_d` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	z_to_d	Controlled value `z_to_d` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	d_proxy	Controlled value `d_proxy` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	native_only	Controlled value `native_only` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+standardized_effect_metric	not_promoted	Controlled value `not_promoted` for `standardized_effect_metric`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+d_conversion_method	reported_d	Source directly reports Cohen's d.	Use directly; document whether signed/absolute and any correction.
+d_conversion_method	reported_g	Source directly reports Hedges' g.	Use directly or store as g; document if converted to d-like axis.
+d_conversion_method	reported_smd	Source directly reports standardized mean difference.	Use when the standardization is source-defined.
+d_conversion_method	chinn_log_or_to_d	Log odds ratio converted to d by Chinn formula.	Require log OR and enough context to justify latent-scale conversion.
+d_conversion_method	event_counts_to_log_or_to_d	Arm event counts converted to log OR then d.	Require treatment/control event and non-event counts; record continuity correction if used.
+d_conversion_method	r_to_d	Correlation converted to d.	Use d = 2r/sqrt(1-r^2).
+d_conversion_method	fisher_z_to_r_to_d	Fisher z converted to r then d.	Use r = tanh(z), then r_to_d.
+d_conversion_method	standardized_outcome_coefficient	Regression coefficient on a documented standardized outcome.	Use only when outcome standardization source is documented.
+d_conversion_method	source_provided_d_proxy	A source/corpus provides a D-like proxy but original conversion is not fully verified.	Flag as proxy and avoid claiming original-source conversion.
+d_conversion_method	paper_median_of_child_d	Paper-level/canonical D is the median of eligible child result Ds.	Preserve child rows and aggregation rule.
+d_conversion_method	no_d_native_metric	No defensible D conversion; native metric only.	Use for native panel rows.
+d_conversion_method	blocked_missing_inputs	D/native conversion is blocked because inputs are missing.	Add extraction_problem and to-do.
+prereg_status	prereg_confirmed_pre_data	Preregistration/PAP confirmed before data collection.	Use only with date/timing evidence.
+prereg_status	prereg_confirmed_pre_analysis	Preregistration/PAP confirmed before analysis/results but not necessarily before data collection.	Use only with timing evidence.
+prereg_status	registered_report	Registered-report workflow evidence exists.	Use with protocol/stage mapping details.
+prereg_status	proposal_pre_fielding_not_full_prereg	A proposal/design was locked before fielding but lacks full preregistration/PAP elements.	Useful for TESS-like cases; do not overstate as PAP-confirmed.
+prereg_status	registry_metadata_only	A registry record exists but timing/selector/details are not fully audited.	Use until filing date and selector text are verified.
+prereg_status	registry_record_timing_not_audited	A registry record is identified and sourceable, but its preregistration timing has not been audited.	Use for registry-derived rows until dates/amendments are checked.
+prereg_status	prereg_asserted_by_corpus_no_artifact	A corpus or source label says preregistered, but no registry/PAP artifact URL has been obtained.	Low-confidence prereg evidence; must not become PAP-confirmed without artifact.
+prereg_status	not_preregistered	Evidence indicates no preregistration.	Use only when source/corpus explicitly classifies it as not preregistered.
+prereg_status	unknown	Preregistration status has not been determined.	Use as default outside prereg panels.
+selector_status	pap_primary	Controlled value `pap_primary` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	pap_secondary	Controlled value `pap_secondary` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	registry_primary	Controlled value `registry_primary` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	article_primary	Controlled value `article_primary` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	first_confirmatory_hypothesis	Controlled value `first_confirmatory_hypothesis` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	median_across_preregistered_primaries	Controlled value `median_across_preregistered_primaries` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	corpus_focal_claim	Controlled value `corpus_focal_claim` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	database_primary_outcome	Controlled value `database_primary_outcome` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	not_focal	Controlled value `not_focal` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+selector_status	no_focal_selector	Controlled value `no_focal_selector` for `selector_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+confidence	high	Evidence is direct, specific, and low ambiguity.	Use when source text/metadata clearly supports the coded value or relationship.
+confidence	medium	Evidence is plausible but has unresolved details or relies on structured corpus/database interpretation.	Use for most corpus assertions before original-source verification.
+confidence	low	Evidence is weak, indirect, incomplete, or needs manual confirmation.	Use for title-only/corpus-only assertions and ambiguous matches.
+confidence	blocked	Evidence cannot currently be checked because access or identifiers are blocked.	Use with extraction_problem and manual to-do.
+human_check_status	source_cells_recovered	Controlled value `source_cells_recovered` for `human_check_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+human_check_status	n_only_recovered	Controlled value `n_only_recovered` for `human_check_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+human_check_status	plot_summary_only	Controlled value `plot_summary_only` for `human_check_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+human_check_status	needs_pdf_check	Controlled value `needs_pdf_check` for `human_check_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+human_check_status	needs_code_execution	Controlled value `needs_code_execution` for `human_check_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+human_check_status	verified_by_human	Controlled value `verified_by_human` for `human_check_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+coding_status	fully_coded	All applicable promotion gates pass.	Only use when source identity, access, locator, verbatim text, parse, transformation, selector, and dedupe are complete.
+coding_status	coded_with_schema_gaps	Useful staged row with known provenance gaps.	Keep visible and non-promoted until gaps are resolved.
+coding_status	staged_native_metric	Native effect/SE/N are meaningful, but D conversion is not defensible.	Use for clustered/policy/administrative effects lacking D inputs.
+coding_status	blocked_missing_d_or_n	Source exists but effect, N, or conversion inputs are missing.	Add extraction_problem with exact missing field.
+coding_status	blocked_access	Access barrier prevents source acquisition or verification.	Record route, barrier, and manual action needed.
+coding_status	excluded	Row is intentionally excluded from plotting/analysis.	Explain why in notes/problem row.
+coding_status	duplicate_existing	Row duplicates another represented result.	Map duplicate and ensure canonical_result does not double-count it.
+evidence_level_name	unanchored_number	A number exists but cannot be tied to an external source or represented work.	Level 0; never public-promote.
+evidence_level_name	internal_trace_only	The row traces only to this repo's derived/intermediate files.	Level 1; useful for debugging, not public evidence.
+evidence_level_name	external_source_assertion	An external source asserts the number but does not identify the represented target robustly.	Level 2; corpus assertion without durable child grounding.
+evidence_level_name	external_assertion_with_target_source	An external source asserts the number and provides enough info to find the target source.	Level 3; current minimum floor for public diagnostic plotting.
+evidence_level_name	target_source_independently_grounded	The represented target source was resolved independently by DOI/PMID/PMCID/NCT/registry/URL/citation database.	Level 4; identity grounded, number not yet verified from original.
+evidence_level_name	original_source_obtained	Value-bearing source object bytes were obtained or mirrored.	Level 5; metadata/paywall/abstract-only pages do not count unless value is present.
+evidence_level_name	original_number_extracted	We copied/extracted the exact number/supporting text from original or authoritative source bytes.	Level 6; source-text verification achieved.
+evidence_level_name	recomputed_from_raw	We recomputed the number from raw data/code and preserved outputs.	Level 7; strongest computational provenance.
+citation_status	real_citation	Controlled value `real_citation` for `citation_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+citation_status	generated_internal	Controlled value `generated_internal` for `citation_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+citation_status	missing	Controlled value `missing` for `citation_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	missing_verbatim_effect_text	Controlled value `missing_verbatim_effect_text` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	missing_verbatim_n_text	Controlled value `missing_verbatim_n_text` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	missing_source_locator	Controlled value `missing_source_locator` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	source_is_derived_not_original_text	Controlled value `source_is_derived_not_original_text` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	access_blocked	Controlled value `access_blocked` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	needs_pdf_check	Controlled value `needs_pdf_check` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	needs_code_execution	Controlled value `needs_code_execution` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	conversion_not_defensible	Controlled value `conversion_not_defensible` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	duplicate_needs_resolution	Controlled value `duplicate_needs_resolution` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+problem_code	missing_bibliographic_key	Controlled value `missing_bibliographic_key` for `problem_code`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+severity	high	Controlled value `high` for `severity`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+severity	medium	Controlled value `medium` for `severity`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+severity	low	Controlled value `low` for `severity`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolution_status	single_source_result	Controlled value `single_source_result` for `resolution_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolution_status	preferred_source_selected	Controlled value `preferred_source_selected` for `resolution_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolution_status	multiple_source_results_need_resolution	Controlled value `multiple_source_results_need_resolution` for `resolution_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolution_status	duplicate_existing	Controlled value `duplicate_existing` for `resolution_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolution_status	blocked	Controlled value `blocked` for `resolution_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	registry_clinicaltrials	Controlled value `registry_clinicaltrials` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	pubmed_bridge	Controlled value `pubmed_bridge` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	pmc_fulltext	Controlled value `pmc_fulltext` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	crossref_metadata	Controlled value `crossref_metadata` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	datacite_metadata	Controlled value `datacite_metadata` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	unpaywall_metadata	Controlled value `unpaywall_metadata` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	openalex_metadata	Controlled value `openalex_metadata` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	semantic_scholar_metadata	Controlled value `semantic_scholar_metadata` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	europepmc_metadata	Controlled value `europepmc_metadata` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	oa_candidate_url	Controlled value `oa_candidate_url` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	preprint_repository_candidate	Controlled value `preprint_repository_candidate` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	direct_journal_or_doi_landing	Controlled value `direct_journal_or_doi_landing` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	stable_url	Controlled value `stable_url` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+resolver_strategy	other	Controlled value `other` for `resolver_strategy`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	source_object_mirrored	Controlled value `source_object_mirrored` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	metadata_only	Controlled value `metadata_only` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	abstract_or_landing_only	Controlled value `abstract_or_landing_only` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	paywall_or_login	Controlled value `paywall_or_login` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	captcha_or_bot_block	Controlled value `captcha_or_bot_block` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	access_denied	Controlled value `access_denied` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	blocked	Controlled value `blocked` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	not_retrieved	Controlled value `not_retrieved` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	manual_review	Controlled value `manual_review` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+decision	candidate_rejected	Controlled value `candidate_rejected` for `decision`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_confidence	high	Controlled value `high` for `classification_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_confidence	medium	Controlled value `medium` for `classification_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_confidence	low	Controlled value `low` for `classification_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+classification_confidence	blocked	Controlled value `blocked` for `classification_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	corpus_or_database	Controlled value `corpus_or_database` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	registry_record	Controlled value `registry_record` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	paper_or_article	Controlled value `paper_or_article` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	individual_replication_paper	Controlled value `individual_replication_paper` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	replication_project	Controlled value `replication_project` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	preregistration_or_pap	Controlled value `preregistration_or_pap` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	repository_package	Controlled value `repository_package` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	candidate_result_table	Controlled value `candidate_result_table` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	raw_data_or_code_package	Controlled value `raw_data_or_code_package` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+lead_type	manual_source_suggestion	Controlled value `manual_source_suggestion` for `lead_type`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	not_started	Controlled value `not_started` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	seeded_from_existing_artifact	Controlled value `seeded_from_existing_artifact` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	candidate_found	Controlled value `candidate_found` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	candidate_rejected	Controlled value `candidate_rejected` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	staged_for_parser	Controlled value `staged_for_parser` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	promoted_to_result_target	Controlled value `promoted_to_result_target` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	blocked_access	Controlled value `blocked_access` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	blocked_no_result_fields	Controlled value `blocked_no_result_fields` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	blocked_scope_mismatch	Controlled value `blocked_scope_mismatch` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+triage_status	deprecated_duplicate	Controlled value `deprecated_duplicate` for `triage_status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+transformation_confidence	high	Evidence is direct, specific, and low ambiguity.	Use when source text/metadata clearly supports the coded value or relationship.
+transformation_confidence	medium	Evidence is plausible but has unresolved details or relies on structured corpus/database interpretation.	Use for most corpus assertions before original-source verification.
+transformation_confidence	low	Evidence is weak, indirect, incomplete, or needs manual confirmation.	Use for title-only/corpus-only assertions and ambiguous matches.
+transformation_confidence	blocked	Evidence cannot currently be checked because access or identifiers are blocked.	Use with extraction_problem and manual to-do.
+prereg_timing	pre_data_collection	Relationship/artifact predates data collection.	Use only when timing evidence supports this.
+prereg_timing	pre_analysis	Relationship/artifact predates analysis/results but data may already exist.	Use for PAPs, protocols, or registered reports when analysis timing is verified.
+prereg_timing	post_data_pre_results	Relationship/artifact was created after data collection but before results were known or reported.	Use when this distinction is documented.
+prereg_timing	post_results	Relationship/artifact was created after results were known or public.	Do not use as preregistered confirmatory evidence.
+prereg_timing	not_applicable	Timing is not meaningful for this relationship.	Use for corpus membership, duplicate, and many package-support relationships.
+prereg_timing	unknown	Timing has not been audited or cannot be determined.	Use honestly rather than guessing.
+replication_kind	preregistration	General preregistration relationship.	Use when a more specific PAP/registered-report/trial subtype is unavailable.
+replication_kind	pre_analysis_plan	Pre-analysis plan artifact.	Use for PAP documents and PAP sections.
+replication_kind	meta_analysis_pre_analysis_plan	Meta-analysis pre-analysis plan artifact.	Use for MPAPs such as Metaketa pooled analysis plans.
+replication_kind	registered_report_stage1_protocol	Stage 1 registered-report protocol.	Use for accepted protocols before results.
+replication_kind	registered_report_stage2_results	Stage 2 registered-report results paper.	Use when mapping protocol to final registered-report paper.
+replication_kind	trial_registry_record	Trial or study registry record.	Use for NCT/AEA/RIDIE/EGAP/OSF-style registry records.
+replication_kind	data_or_code_package	Data/code/package support relationship.	Use for repository/package mappings.
+replication_kind	paper_supplement	Supplementary paper file relationship.	Use for appendices, supplements, and supplemental tables.
+replication_kind	direct_replication	Replication intended to repeat the same claim/design closely.	Use for same-claim original/replication pairs.
+replication_kind	conceptual_replication	Replication of a construct using different operationalization/design.	Use when source says conceptual replication or design differs materially.
+replication_kind	computational_reproduction	Same-data/code reproduction.	Use for computational reproducibility checks.
+replication_kind	robustness_reanalysis	Alternative analysis/specification check.	Use for robustness projects.
+replication_kind	extension_study	Replication plus extension or new conditions.	Use when extension is material.
+replication_kind	pilot_full_scale_pair	Pilot/smaller study paired with later full-scale/larger study.	Use for pilot-to-main-study pairs.
+replication_kind	pooled_round_component	Component study included in pooled round/meta-analysis.	Use for Metaketa and similar pooled designs.
+replication_kind	corpus_child_paper	Paper included as a child of a corpus.	Use for membership without result-level numbers.
+replication_kind	database_child_result	Result row included as child of a database/corpus.	Use for row-level source assertions.
+replication_kind	citation_or_link_only	Relationship inferred only from citation/link metadata.	Use when no value/selector evidence has been copied.
+replication_kind	unknown	Subtype is not yet known.	Use only while staged; add an extraction_problem if it matters for promotion.
+extraction_confidence	high	Evidence is direct, specific, and low ambiguity.	Use when source text/metadata clearly supports the coded value or relationship.
+extraction_confidence	medium	Evidence is plausible but has unresolved details or relies on structured corpus/database interpretation.	Use for most corpus assertions before original-source verification.
+extraction_confidence	low	Evidence is weak, indirect, incomplete, or needs manual confirmation.	Use for title-only/corpus-only assertions and ambiguous matches.
+extraction_confidence	blocked	Evidence cannot currently be checked because access or identifiers are blocked.	Use with extraction_problem and manual to-do.
+support_confidence	high	Controlled value `high` for `support_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+support_confidence	medium	Controlled value `medium` for `support_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+support_confidence	low	Controlled value `low` for `support_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+support_confidence	blocked	Controlled value `blocked` for `support_confidence`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+current_scope_role	current_figure	Controlled value `current_figure` for `current_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+current_scope_role	current_diagnostic	Controlled value `current_diagnostic` for `current_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+current_scope_role	catalog_only_future_plot_seed	Controlled value `catalog_only_future_plot_seed` for `current_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+current_scope_role	future_plot_candidate	Controlled value `future_plot_candidate` for `current_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+current_scope_role	sensitivity_view	Controlled value `sensitivity_view` for `current_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+current_scope_role	deprecated	Controlled value `deprecated` for `current_scope_role`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+relationship_confidence	high	Evidence is direct, specific, and low ambiguity.	Use when source text/metadata clearly supports the coded value or relationship.
+relationship_confidence	medium	Evidence is plausible but has unresolved details or relies on structured corpus/database interpretation.	Use for most corpus assertions before original-source verification.
+relationship_confidence	low	Evidence is weak, indirect, incomplete, or needs manual confirmation.	Use for title-only/corpus-only assertions and ambiguous matches.
+relationship_confidence	blocked	Evidence cannot currently be checked because access or identifiers are blocked.	Use with extraction_problem and manual to-do.
+status	open	Controlled value `open` for `status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+status	in_progress	Controlled value `in_progress` for `status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+status	blocked	Controlled value `blocked` for `status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+status	closed	Controlled value `closed` for `status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.
+status	not_needed	Controlled value `not_needed` for `status`.	Use only when this exact status/category applies; otherwise leave blank or use unknown/blocked as appropriate.

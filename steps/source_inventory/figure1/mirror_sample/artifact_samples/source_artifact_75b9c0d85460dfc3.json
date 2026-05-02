@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_75b9c0d85460dfc3",
+  "byte_size": 3808,
+  "columns": [
+    "id",
+    "name",
+    "label",
+    "size",
+    "download_url",
+    "description",
+    "restricted",
+    "content_type"
+  ],
+  "estimated_data_rows": 20,
+  "file_name": "dataverse_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_file_list.csv",
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "preview_rows": [
+    {
+      "content_type": "application/octet-stream",
+      "description": "pre-covid replication data for Study 8",
+      "download_url": "https://dataverse.harvard.edu/api/access/datafile/4641486",
+      "id": 4641486,
+      "label": "abp_replication.rds",
+      "name": "abp_replication.rds",
+      "restricted": false,
+      "size": 373029
+    },
+    {
+      "content_type": "type/x-r-syntax",
+      "description": "replication script for results in appendix section a (see readme.R first)",
+      "download_url": "https://dataverse.harvard.edu/api/access/datafile/4641496",
+      "id": 4641496,
+      "label": "appendix_section_a.R",
+      "name": "appendix_section_a.R",
+      "restricted": false,
+      "size": 91615
+    },
+    {
+      "content_type": "type/x-r-syntax",
+      "description": "replication script for results in appendix section b (see readme.R first)",
+      "download_url": "https://dataverse.harvard.edu/api/access/datafile/4641483",
+      "id": 4641483,
+      "label": "appendix_section_b.R",
+      "name": "appendix_section_b.R",
+      "restricted": false,
+      "size": 18286
+    },
+    {
+      "content_type": "application/octet-stream",
+      "description": "pre-covid replication data for Study 3",
+      "download_url": "https://dataverse.harvard.edu/api/access/datafile/4641497",
+      "id": 4641497,
+      "label": "cm_asian_disease.rds",
+      "name": "cm_asian_disease.rds",
+      "restricted": false,
+      "size": 84130
+    },
+    {
+      "content_type": "text/tab-separated-values",
+      "description": "pre-covid replication data for Study 9",
+      "download_url": "https://dataverse.harvard.edu/api/access/datafile/4641495",
+      "id": 4641495,
+      "label": "conjoint_original.tab",
+      "name": "conjoint_original.tab",
+      "restricted": false,
+      "size": 1984815
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "ed8ff63767d4e36d248433ed92d902d9bfad9fedaaf3e7e742c3fbea857617f1"
+}

@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_c9288e76d3e8fa5b",
+  "byte_size": 14807,
+  "columns": [
+    "paper_id",
+    "dr_plausible",
+    "dr_reason",
+    "dar_plausible",
+    "dar_reason"
+  ],
+  "estimated_data_rows": 380,
+  "file_name": "papers_not_sourced.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_c9288e76d3e8fa5b__papers_not_sourced.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "dar_plausible": "no",
+      "dar_reason": "panel",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "1zWE"
+    },
+    {
+      "dar_plausible": "no",
+      "dar_reason": "administrative data",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "G4DD"
+    },
+    {
+      "dar_plausible": "no",
+      "dar_reason": "administrative data",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "VNxX"
+    },
+    {
+      "dar_plausible": "no",
+      "dar_reason": "own data collection",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "OReL"
+    },
+    {
+      "dar_plausible": "no",
+      "dar_reason": "administrative data",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "gwrg"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:39:50",
+  "sha256": "9d9e074bc4eb06a2f96f879f6057711def613c0430d067d14302d4c8ff99b720"
+}

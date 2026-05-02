@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_5cd4ea0c4312075f",
+  "byte_size": 25383,
+  "columns": [
+    "id",
+    "name",
+    "kind",
+    "size",
+    "materialized_path",
+    "download_url",
+    "html_url",
+    "iri",
+    "provider",
+    "api_url"
+  ],
+  "estimated_data_rows": 93,
+  "file_name": "osf_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/manyclasses_2/osf_file_list.csv",
+  "parent_corpus_database_id": "corpus_db_lead_manyclasses_2",
+  "preview_rows": [
+    {
+      "api_url": "https://api.osf.io/v2/files/6331bf13408a2713ce7640c6/",
+      "download_url": null,
+      "html_url": null,
+      "id": "6331bf13408a2713ce7640c6",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Terracotta Resources/",
+      "name": "Terracotta Resources",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/6352d50e93d352112d91c293/",
+      "download_url": "https://osf.io/download/tg73z/",
+      "html_url": "https://osf.io/t5ma3/files/osfstorage/6352d50e93d352112d91c293",
+      "id": "6352d50e93d352112d91c293",
+      "iri": "https://osf.io/tg73z",
+      "kind": "file",
+      "materialized_path": "/Terracotta Resources/Beta Terracotta Experiment Setup Guide Beta.pdf",
+      "name": "Beta Terracotta Experiment Setup Guide Beta.pdf",
+      "provider": "osfstorage",
+      "size": 252792
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/658dc7750344614c9e68f586/",
+      "download_url": "https://osf.io/download/fpdcv/",
+      "html_url": "https://osf.io/t5ma3/files/osfstorage/658dc7750344614c9e68f586",
+      "id": "658dc7750344614c9e68f586",
+      "iri": "https://osf.io/fpdcv",
+      "kind": "file",
+      "materialized_path": "/Terracotta Resources/Terracotta Experiment Setup Demo.mp4",
+      "name": "Terracotta Experiment Setup Demo.mp4",
+      "provider": "osfstorage",
+      "size": 92929961
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/6331ca720b727212ea2b0221/",
+      "download_url": "https://osf.io/download/2b3ry/",
+      "html_url": "https://osf.io/t5ma3/files/osfstorage/6331ca720b727212ea2b0221",
+      "id": "6331ca720b727212ea2b0221",
+      "iri": "https://osf.io/2b3ry",
+      "kind": "file",
+      "materialized_path": "/Terracotta Resources/TC Question List (1).pdf",
+      "name": "TC Question List (1).pdf",
+      "provider": "osfstorage",
+      "size": 51763
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/6331ca5718f45812e5428ef3/",
+      "download_url": "https://osf.io/download/6br59/",
+      "html_url": "https://osf.io/t5ma3/files/osfstorage/6331ca5718f45812e5428ef3",
+      "id": "6331ca5718f45812e5428ef3",
+      "iri": "https://osf.io/6br59",
+      "kind": "file",
+      "materialized_path": "/Terracotta Resources/Data Science Intro.mov",
+      "name": "Data Science Intro.mov",
+      "provider": "osfstorage",
+      "size": 31101750
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-02T09:32:46",
+  "sha256": "c127da9fd1cf63c448e59172bdce7a457e90a06c993fc3732f967308e157adf4"
+}

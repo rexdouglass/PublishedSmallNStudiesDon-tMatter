@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_38ace3759580031f",
+  "byte_size": 2799,
+  "file_name": "est_study_4.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_4.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "mode",
+        "study",
+        "type",
+        "estimate_type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 1.0167034167,
+          "conf.low": 0.8238918323,
+          "df": 1415.0,
+          "estimate": 0.9202976245,
+          "estimate_type": "Standardized",
+          "mode": "Paper and pencil interviews",
+          "outcome": "welfare_Y_s",
+          "p.value": 4.458470529e-70,
+          "statistic": 18.7259950959,
+          "std.error": 0.049145459,
+          "study": "Pre-COVID",
+          "survey": "GSS 1986",
+          "term": "welfare_Z",
+          "type": "Experimental"
+        },
+        {
+          "conf.high": 1.0300774611,
+          "conf.low": 0.8435076178,
+          "df": 1745.0,
+          "estimate": 0.9367925394,
+          "estimate_type": "Standardized",
+          "mode": "Paper and pencil interviews",
+          "outcome": "welfare_Y_s",
+          "p.value": 3.827437142e-78,
+          "statistic": 19.6961525329,
+          "std.error": 0.0475622098,
+          "study": "Pre-COVID",
+          "survey": "GSS 1987",
+          "term": "welfare_Z",
+          "type": "Experimental"
+        },
+        {
+          "conf.high": 1.1261739175,
+          "conf.low": 0.9391693082,
+          "df": 1417.0,
+          "estimate": 1.0326716128,
+          "estimate_type": "Standardized",
+          "mode": "Paper and pencil interviews",
+          "outcome": "welfare_Y_s",
+          "p.value": 3.896643959e-90,
+          "statistic": 21.6650218105,
+          "std.error": 0.0476653853,
+          "study": "Pre-COVID",
+          "survey": "GSS 1988",
+          "term": "welfare_Z",
+          "type": "Experimental"
+        },
+        {
+          "conf.high": 1.0757242015,
+          "conf.low": 0.8887824797,
+          "df": 1459.0,
+          "estimate": 0.9822533406,
+          "estimate_type": "Standardized",
+          "mode": "Paper and pencil interviews",
+          "outcome": "welfare_Y_s",
+          "p.value": 4.589304126e-83,
+          "statistic": 20.6136924147,
+          "std.error": 0.0476505286,
+          "study": "Pre-COVID",
+          "survey": "GSS 1989",
+          "term": "welfare_Z",
+          "type": "Experimental"
+        },
+        {
+          "conf.high": 1.0895630446,
+          "conf.low": 0.8921416151,
+          "df": 1299.0,
+          "estimate": 0.9908523299,
+          "estimate_type": "Standardized",
+          "mode": "Paper and pencil interviews",
+          "outcome": "welfare_Y_s",
+          "p.value": 9.47118508e-76,
+          "statistic": 19.6923511974,
+          "std.error": 0.0503166087,
+          "study": "Pre-COVID",
+          "survey": "GSS 1990",
+          "term": "welfare_Z",
+          "type": "Experimental"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        34,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "c6bc31d8fdd223f05d84f76b0968969115427f2b123b4cd185d0422063481797"
+}

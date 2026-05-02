@@ -1,0 +1,51 @@
+{
+  "batch_id": "clustered005",
+  "cluster_id": "cluster_investigating_the_replicability_of_preclinical_cancer_biology_ca7b83bfae6f",
+  "confidence": "high",
+  "created_at": "2026-05-02T02:32:42+00:00",
+  "decision": "keep_source_family_candidate",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered005.json",
+  "lead_level_note_count": 6,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_811621af6cb4",
+      "notes": "Root-table lead for RPCB; retain as canonical source-family candidate.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_31e1fb8b7d64",
+      "notes": "Duplicate RPCB DOI/OpenAlex source-family hit from bibliographic search.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_03465f6cb8a6",
+      "notes": "Duplicate RPCB source-family hit from citation search.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_74ec80f56d40",
+      "notes": "Duplicate RPCB source-family hit reached through a related citation query.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_b84cea913272",
+      "notes": "Duplicate RPCB source-family hit from domain search.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_0fa048d165fd",
+      "notes": "Duplicate PMC lead for the same eLife/RPCB source family.",
+      "suggested_disposition": "root_source_family"
+    }
+  ],
+  "next_action": "Keep as the RPCB source-family candidate; inventory the OSF RPCB collection and Replication Data from the Reproducibility Project: Cancer Biology; route paper/experiment/effect-level data tables to result-table extraction.",
+  "parent_corpus_database_id_or_key": "rpcb | doi:10.7554/eLife.71601",
+  "preferred_source_family_name": "Reproducibility Project: Cancer Biology",
+  "reason": "This is a source-family/corpus candidate rather than an isolated paper. The eLife article is part of the Reproducibility Project: Cancer Biology collection, reports 50 completed experiments from 23 papers and 158 effects, and points to project-level underlying data, code, digital materials, and the OSF replication-data object.",
+  "sources_checked": [
+    "eLife article DOI 10.7554/eLife.71601",
+    "eLife Reproducibility Project: Cancer Biology collection",
+    "OSF collection rpcb and OSF object e5nvr / DOI 10.17605/osf.io/e5nvr",
+    "cluster compact nodes/OpenAlex W4200247206 and PMC8651293"
+  ]
+}

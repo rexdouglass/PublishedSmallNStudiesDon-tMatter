@@ -1,0 +1,267 @@
+{
+  "artifact_id": "source_artifact_fd58fb4bb148bf7e",
+  "byte_size": 4967,
+  "file_name": "PSO21N.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/PSO21N.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 999,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 6885456,
+      "identifier": "DVN/PSO21N",
+      "latestVersion": {
+        "citationDate": "2023-01-19",
+        "createTime": "2023-01-12T19:51:22Z",
+        "datasetFileUploadsAvailable": 999,
+        "datasetId": 6885456,
+        "datasetPersistentId": "doi:10.7910/DVN/PSO21N",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "5355244866f354fea71b00d679086a68"
+              },
+              "contentType": "application/gzip",
+              "creationDate": "2023-01-12",
+              "description": "Replication package for: Man vs. Machine: Technological Promise and Political Limits of Automated Regulation Enforcement",
+              "fileAccessRequest": false,
+              "filename": "Browne_Gazze_Greenstone_Rostapshova_Supplement.tgz",
+              "filesize": 13194106,
+              "friendlyType": "Gzip Archive",
+              "id": 6885457,
+              "lastUpdateTime": "2023-01-19T17:26:52Z",
+              "md5": "5355244866f354fea71b00d679086a68",
+              "persistentId": "",
+              "publicationDate": "2023-01-19",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:185a7859839-f3d1e9796a94",
+              "tabularData": false
+            },
+            "datasetVersionId": 339517,
+            "description": "Replication package for: Man vs. Machine: Technological Promise and Political Limits of Automated Regulation Enforcement",
+            "label": "Browne_Gazze_Greenstone_Rostapshova_Supplement.tgz",
+            "restricted": false,
+            "version": 2
+          }
+        ],
+        "id": 339517,
+        "internalVersionNumber": 8,
+        "lastUpdateTime": "2023-01-19T17:26:52Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication data for: Man vs. Machine: Technological Promise and Political Limits of Automated Regulation Enforcement"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Berkeley Research Group"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Oliver R. Browne"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Warwick"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Ludovica Gazze"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Chicago"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Michael Greenstone"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Chicago"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Olga Rostapshova"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "University of Warwick"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "ludovica.gazze@warwick.ac.uk"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Ludovica Gazze"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Review of Economics and Statistics: Forthcoming."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "publication",
+                "value": [
+                  {
+                    "publicationCitation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationCitation",
+                      "value": "Review of Economics and Statistics: Forthcoming."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Jain, Aditya"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2023-01-12"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "series",
+                "value": [
+                  {
+                    "seriesName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "seriesName",
+                      "value": "Volume XX, Issue X"
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "citation"
+          },
+          "journal": {
+            "displayName": "Journal Metadata",
+            "fields": [],
+            "name": "journal"
+          }
+        },
+        "publicationDate": "2023-01-19",
+        "releaseTime": "2023-01-19T17:26:52Z",
+        "storageIdentifier": "s3://10.7910/DVN/PSO21N",
+        "versionMinorNumber": 0,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/PSO21N",
+      "protocol": "doi",
+      "publicationDate": "2023-01-19",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/PSO21N"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "d4725f4be889315f233dc4d0163ae35f2aeecd41c16f3dcb3b0d05afff035f4a"
+}

@@ -1,0 +1,55 @@
+{
+  "artifact_id": "source_artifact_0f2b1154d432b154",
+  "byte_size": 1309,
+  "columns": [
+    "name",
+    "path",
+    "size",
+    "download_url",
+    "html_url",
+    "type"
+  ],
+  "estimated_data_rows": 4,
+  "file_name": "github_contents_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/awesome_time_honest/github_contents_file_list.csv",
+  "parent_corpus_database_id": "github:ying531/awesome-replicability-data",
+  "preview_rows": [
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/time_honest/original_cleaned.csv",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/time_honest/original_cleaned.csv",
+      "name": "original_cleaned.csv",
+      "path": "host_data_paired/time_honest/original_cleaned.csv",
+      "size": 10803,
+      "type": "file"
+    },
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/time_honest/process.R",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/time_honest/process.R",
+      "name": "process.R",
+      "path": "host_data_paired/time_honest/process.R",
+      "size": 5110,
+      "type": "file"
+    },
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/time_honest/replication1_cleaned.csv",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/time_honest/replication1_cleaned.csv",
+      "name": "replication1_cleaned.csv",
+      "path": "host_data_paired/time_honest/replication1_cleaned.csv",
+      "size": 67973,
+      "type": "file"
+    },
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/time_honest/replication2_cleaned.csv",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/time_honest/replication2_cleaned.csv",
+      "name": "replication2_cleaned.csv",
+      "path": "host_data_paired/time_honest/replication2_cleaned.csv",
+      "size": 52574,
+      "type": "file"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 4,
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "d699198a4892fe2a6ee8b909cecdccb6c7defae044c2bbf6ce7fc4f6676c8a77"
+}

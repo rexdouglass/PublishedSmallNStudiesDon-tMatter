@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_62b0be47915b5601",
+  "byte_size": 834,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "coppock_2019__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/coppock_2019__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_coppock_2019",
+  "preview_rows": [
+    {
+      "default_action": "stage_only",
+      "downloaded_file_count": 38,
+      "expected_rows": 40,
+      "file_list_csv": null,
+      "landing_url": "https://isps.yale.edu/research/publications/isps18-07",
+      "lead_id": "coppock_2019",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/coppock_2019/dataverse_dvn_f1cffm/dataverse_files.zip",
+      "manifest_file": null,
+      "notes": "Dataverse bundle downloaded and promoted from archived standardized analysis results plus stacked study data; coefficients are standardized dependent variable effects and model-specific Ns were reconstructed from the archive",
+      "priority": 2,
+      "project": "Coppock 2019 generalizability corpus",
+      "promotion_blocker": null,
+      "raw_url": "https://dataverse.harvard.edu/api/access/dataset/:persistentId/?persistentId=doi:10.7910/DVN/F1CFFM&format=original",
+      "source_family": "political_science"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:45",
+  "sha256": "8b329362940762c9b492a7fe04060529e6282cbd1a402c0ba3dc8e0d4c9f8366"
+}

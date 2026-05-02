@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_8b82e73be6c57855",
+  "byte_size": 2335,
+  "columns": [
+    "id",
+    "name",
+    "kind",
+    "size",
+    "materialized_path",
+    "download_url",
+    "html_url",
+    "iri",
+    "provider",
+    "api_url"
+  ],
+  "estimated_data_rows": 8,
+  "file_name": "osf_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/manybabies_3/osf_file_list.csv",
+  "parent_corpus_database_id": "corpus_db_family_manybabies_3",
+  "preview_rows": [
+    {
+      "api_url": "https://api.osf.io/v2/files/61ed62169f195e02982e2db5/",
+      "download_url": "https://osf.io/download/ednmq/",
+      "html_url": "https://osf.io/kqu9v/files/osfstorage/61ed62169f195e02982e2db5",
+      "id": "61ed62169f195e02982e2db5",
+      "iri": "https://osf.io/ednmq",
+      "kind": "file",
+      "materialized_path": "/MB3RuleLearningPreregistrationReport-Revision.pdf",
+      "name": "MB3RuleLearningPreregistrationReport-Revision.pdf",
+      "provider": "osfstorage",
+      "size": 326494
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/6861391136d1abebde7eabab/",
+      "download_url": "https://osf.io/download/uetf8/",
+      "html_url": "https://osf.io/kqu9v/files/osfstorage/6861391136d1abebde7eabab",
+      "id": "6861391136d1abebde7eabab",
+      "iri": "https://osf.io/uetf8",
+      "kind": "file",
+      "materialized_path": "/ManyBabies 3 Lab Manual.pdf",
+      "name": "ManyBabies 3 Lab Manual.pdf",
+      "provider": "osfstorage",
+      "size": 886625
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/60d64d5cf83de20019afee55/",
+      "download_url": null,
+      "html_url": null,
+      "id": "60d64d5cf83de20019afee55",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Registered Report Appendices/",
+      "name": "Registered Report Appendices",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/60dd7f90ef8b3f0233bdd428/",
+      "download_url": "https://osf.io/download/cn5zv/",
+      "html_url": "https://osf.io/kqu9v/files/osfstorage/60dd7f90ef8b3f0233bdd428",
+      "id": "60dd7f90ef8b3f0233bdd428",
+      "iri": "https://osf.io/cn5zv",
+      "kind": "file",
+      "materialized_path": "/Registered Report Appendices/MB3-Stimulus creation and norming.pdf",
+      "name": "MB3-Stimulus creation and norming.pdf",
+      "provider": "osfstorage",
+      "size": 160514
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/60e754ac600da501050a554e/",
+      "download_url": "https://osf.io/download/ye86p/",
+      "html_url": "https://osf.io/kqu9v/files/osfstorage/60e754ac600da501050a554e",
+      "id": "60e754ac600da501050a554e",
+      "iri": "https://osf.io/ye86p",
+      "kind": "file",
+      "materialized_path": "/Registered Report Appendices/MB3-supplemental.pdf",
+      "name": "MB3-supplemental.pdf",
+      "provider": "osfstorage",
+      "size": 596236
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-02T09:32:36",
+  "sha256": "8304cd4fe36dda7445f6112da1bfd4010cd65efcad59c60e6bb02a8fc94fac3a"
+}

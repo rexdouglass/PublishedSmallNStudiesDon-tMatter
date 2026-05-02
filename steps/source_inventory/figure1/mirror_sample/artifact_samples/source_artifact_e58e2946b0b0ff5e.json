@@ -1,0 +1,45 @@
+{
+  "artifact_id": "source_artifact_e58e2946b0b0ff5e",
+  "byte_size": 15065,
+  "columns": [
+    "Variable name",
+    "Description of variable",
+    "Type"
+  ],
+  "estimated_data_rows": 44,
+  "file_name": "RP_CB Final Analysis - Experiment level data dictionary.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/rpcb_doi_10_7554_elife_71601/source_artifact_e58e2946b0b0ff5e__RP_CB_Final_Analysis_-_Experiment_level_data_dictionary.csv",
+  "parent_corpus_database_id": "rpcb | doi:10.7554/eLife.71601",
+  "preview_rows": [
+    {
+      "Description of variable": "Abritary number starting at 1 for each original paper and increasing by 1 for each Paper. Same as Paper level and Experiment level.",
+      "Type": "numeric",
+      "Variable name": "Paper #"
+    },
+    {
+      "Description of variable": "Abritary number starting at 1 for each unique Study # and increasing by 1 for each Experiment. Same as Experiment level.",
+      "Type": "numeric",
+      "Variable name": "Experiment #"
+    },
+    {
+      "Description of variable": "Number(s) and/or letter(s) of figure(s) and/or table(s) from the original paper that report the original experimental results.",
+      "Type": "string",
+      "Variable name": "Original paper figure"
+    },
+    {
+      "Description of variable": "Indicates if the experiment from the original paper was included at the beginning of the replication design. This coincides with the first draft of the protocols shared with original author(s) for input.",
+      "Type": "categorical: Yes, No",
+      "Variable name": "Was experiment originally identified by RP:CB team"
+    },
+    {
+      "Description of variable": "Indicates if the experiment from the original paper was included after sharing the replication design with the replication lab(s) after receiving any initial feedback from original author(s).",
+      "Type": "categorical: Yes, No",
+      "Variable name": "Did experiment continue after sharing with labs (before submitting protocol to eLife)"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:36:41",
+  "sha256": "7432b12b5fc65fa6b8583746da45da94c7bafbd744ebecd9ee5cfa3ebccb2cc7"
+}

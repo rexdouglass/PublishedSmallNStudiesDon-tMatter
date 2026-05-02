@@ -1,0 +1,35 @@
+{
+  "batch_id": "clustered005",
+  "cluster_id": "cluster_create_studydetails_815faf854db4",
+  "confidence": "high",
+  "created_at": "2026-05-02T02:32:42+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered005.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_9c0a33f3b974",
+      "notes": "create_studydetails.do is a code source for EERP study-detail fields.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_09b11a326972",
+      "notes": "effectstandardization.py is EERP analysis/source code; inspect for effective sample-size/effect fields.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_385686ba8a5c",
+      "notes": "rpp_data.csv is a raw data artifact inside the EERP extraction tree.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Route create_studydetails.do, effectstandardization.py, and rpp_data.csv to the result-table/code-derived table worklist under raw_replication_project:eerp; extract only fields supported by inspected code/data, not by filenames alone.",
+  "parent_corpus_database_id_or_key": "raw_replication_project:eerp",
+  "preferred_source_family_name": "Experimental Economics Replication Project (EERP)",
+  "reason": "The cluster consists of EERP child artifacts used to derive study details/effect-standardization fields, not a separate corpus. These should be processed as result-table/source artifacts under EERP.",
+  "sources_checked": [
+    "cluster compact nodes for raw_replication_project:eerp",
+    "CRAN ReplicationSuccess RProjects documentation for EERP source files and OSF pnwuz",
+    "Pawel/Held supplement text describing EERP extraction from create_studydetails.do and effectstandardization/effectdata files"
+  ]
+}

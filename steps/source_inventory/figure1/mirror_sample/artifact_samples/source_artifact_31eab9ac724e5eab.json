@@ -1,0 +1,96 @@
+{
+  "artifact_id": "source_artifact_31eab9ac724e5eab",
+  "byte_size": 11492,
+  "file_name": "experimental-analyses.Rds",
+  "file_type": "rds",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse/4WNEE9/experimental-analyses.Rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "Result",
+        "N",
+        "k",
+        "SSR",
+        "Iteration.Analysis"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "Iteration.Analysis": 0,
+          "N": 324,
+          "Result": "fig4a",
+          "SSR": 77.8377313294,
+          "estimate": 0.4033149171,
+          "k": 2,
+          "p.value": 3.113536434e-24,
+          "statistic": 11.0361202474,
+          "std.error": 0.0365449912,
+          "term": "(Intercept)"
+        },
+        {
+          "Iteration.Analysis": 0,
+          "N": 324,
+          "Result": "fig4a",
+          "SSR": 77.8377313294,
+          "estimate": -0.0047135185,
+          "k": 2,
+          "p.value": 0.9317688146,
+          "statistic": -0.0856865921,
+          "std.error": 0.0550088224,
+          "term": "Citizen"
+        },
+        {
+          "Iteration.Analysis": 0,
+          "N": 327,
+          "Result": "fig4b",
+          "SSR": 75.4278740634,
+          "estimate": 0.4033149171,
+          "k": 2,
+          "p.value": 4.585185341e-25,
+          "statistic": 11.2631357762,
+          "std.error": 0.0358084041,
+          "term": "(Intercept)"
+        },
+        {
+          "Iteration.Analysis": 0,
+          "N": 327,
+          "Result": "fig4b",
+          "SSR": 75.4278740634,
+          "estimate": -0.0813971089,
+          "k": 2,
+          "p.value": 0.1297621458,
+          "statistic": -1.518890849,
+          "std.error": 0.0535898343,
+          "term": "Firm"
+        },
+        {
+          "Iteration.Analysis": 0,
+          "N": 293,
+          "Result": "tab2col1",
+          "SSR": 68.8773392843,
+          "estimate": 0.4814814815,
+          "k": 3,
+          "p.value": 2.681403597e-21,
+          "statistic": 10.2672061906,
+          "std.error": 0.0468950825,
+          "term": "(Intercept)"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        334,
+        10
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:42",
+  "sha256": "50ef1eecf173674f35028426fa6d12f155bc11ba95d5c292e7667ad2b1a7295d"
+}

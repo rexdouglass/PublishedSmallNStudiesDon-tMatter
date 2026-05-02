@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "local:data/raw/corpus_candidates/political_science_unlock/zenodo/10059860/3-replication-package_ufvur.zip",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:3_replication_package_ufvur",
+  "next_action": "map_to_existing_bangladesh_authoritarian_election_source_family_if_needed_for_file_level_provenance",
+  "notes": "Existing likely source family: bangladesh_authoritarian_election_replication_package.",
+  "promote_payload": {},
+  "reason": "This is a local Zenodo replication package already used by an existing political-science source-family row. It should not create a new root corpus row, but it is useful artifact-level support.",
+  "review_id": "review_figure1_search_leads_7d811dec6207",
+  "route_payload": {},
+  "sources_checked": [
+    "data/raw/corpus_candidates/political_science_unlock/zenodo/10059860/3-replication-package_ufvur.zip",
+    "CORPORA_AND_DATABASES.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

@@ -1,0 +1,364 @@
+{
+  "artifact_id": "source_artifact_8dfd8aab64b5050c",
+  "byte_size": 4835,
+  "file_name": "osf_node_dtzx4_meta.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "meta"
+  ],
+  "local_path": "data/raw/corpus_candidates/score/osf_node_dtzx4_meta.json",
+  "parent_corpus_database_id": "score",
+  "preview": {
+    "data": {
+      "attributes": {
+        "access_requests_enabled": true,
+        "analytics_key": "",
+        "category": "project",
+        "collection": false,
+        "current_user_can_comment": false,
+        "current_user_is_contributor": false,
+        "current_user_is_contributor_or_group_member": false,
+        "current_user_permissions": [
+          "read"
+        ],
+        "custom_citation": null,
+        "date_created": "2025-02-25T16:23:15.289434",
+        "date_modified": "2026-04-08T15:04:12.298236",
+        "description": "Data and code central repository for all COS-led SCORE papers",
+        "fork": false,
+        "node_license": {
+          "copyright_holders": [],
+          "year": null
+        },
+        "preprint": true,
+        "public": true,
+        "registration": false,
+        "subjects": [
+          [
+            {
+              "id": "584240d954be81056ceca84d",
+              "text": "Business"
+            }
+          ],
+          [
+            {
+              "id": "584240da54be81056cecaaaa",
+              "text": "Medicine and Health Sciences"
+            }
+          ],
+          [
+            {
+              "id": "584240da54be81056cecaae5",
+              "text": "Education"
+            }
+          ],
+          [
+            {
+              "id": "584240da54be81056cecac48",
+              "text": "Social and Behavioral Sciences"
+            }
+          ],
+          [
+            {
+              "id": "584240db54be81056cecacd3",
+              "text": "Law"
+            }
+          ]
+        ],
+        "tags": [
+          "replicability",
+          "replication",
+          "reproducibility",
+          "reproduction",
+          "score"
+        ],
+        "title": "SCORE Documentation",
+        "wiki_enabled": true
+      },
+      "id": "dtzx4",
+      "links": {
+        "html": "https://osf.io/dtzx4/",
+        "iri": "https://osf.io/dtzx4",
+        "self": "https://api.osf.io/v2/nodes/dtzx4/"
+      },
+      "relationships": {
+        "affiliated_institutions": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/institutions/",
+              "meta": {}
+            },
+            "self": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/relationships/institutions/",
+              "meta": {}
+            }
+          }
+        },
+        "bibliographic_contributors": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/bibliographic_contributors/",
+              "meta": {}
+            }
+          }
+        },
+        "cedar_metadata_records": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/cedar_metadata_records/",
+              "meta": {}
+            }
+          }
+        },
+        "children": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/children/",
+              "meta": {}
+            }
+          }
+        },
+        "citation": {
+          "data": {
+            "id": "dtzx4",
+            "type": "citation"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/citation/",
+              "meta": {}
+            }
+          }
+        },
+        "collected_in": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/collections/",
+              "meta": {}
+            }
+          }
+        },
+        "comments": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/comments/?filter%5Btarget%5D=dtzx4",
+              "meta": {}
+            }
+          }
+        },
+        "contributors": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/contributors/",
+              "meta": {}
+            }
+          }
+        },
+        "draft_registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/draft_registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "files": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/files/",
+              "meta": {}
+            }
+          }
+        },
+        "forks": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/forks/",
+              "meta": {}
+            }
+          }
+        },
+        "identifiers": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/identifiers/",
+              "meta": {}
+            }
+          }
+        },
+        "implicit_contributors": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/implicit_contributors/",
+              "meta": {}
+            }
+          }
+        },
+        "license": {
+          "data": {
+            "id": "563c1cf88c5e4a3877f9e96c",
+            "type": "licenses"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96c/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_by_nodes": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/linked_by_nodes/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_by_registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/linked_by_registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_nodes": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/linked_nodes/",
+              "meta": {}
+            },
+            "self": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/relationships/linked_nodes/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/linked_registrations/",
+              "meta": {}
+            },
+            "self": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/relationships/linked_registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "logs": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/logs/",
+              "meta": {}
+            }
+          }
+        },
+        "node_links": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/node_links/",
+              "meta": {}
+            }
+          }
+        },
+        "preprints": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/preprints/",
+              "meta": {}
+            }
+          }
+        },
+        "region": {
+          "data": {
+            "id": "us",
+            "type": "regions"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/regions/us/",
+              "meta": {}
+            }
+          }
+        },
+        "registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "root": {
+          "data": {
+            "id": "dtzx4",
+            "type": "nodes"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/",
+              "meta": {}
+            }
+          }
+        },
+        "settings": {
+          "data": {
+            "id": "dtzx4",
+            "type": "node-setting"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/settings/",
+              "meta": {}
+            }
+          }
+        },
+        "storage": {
+          "data": {
+            "id": "dtzx4",
+            "type": "node-storage"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/storage/",
+              "meta": {}
+            }
+          }
+        },
+        "subjects_acceptable": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/subjects/",
+              "meta": {}
+            }
+          }
+        },
+        "view_only_links": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/view_only_links/",
+              "meta": {}
+            }
+          }
+        },
+        "wikis": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/dtzx4/wikis/",
+              "meta": {}
+            }
+          }
+        }
+      },
+      "type": "nodes"
+    },
+    "meta": {
+      "version": "2.0"
+    }
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:40:48",
+  "sha256": "5a29dd06f68ef1dac5eb3167781156cc757e71b4f4e3745d0557add0b2211f60"
+}

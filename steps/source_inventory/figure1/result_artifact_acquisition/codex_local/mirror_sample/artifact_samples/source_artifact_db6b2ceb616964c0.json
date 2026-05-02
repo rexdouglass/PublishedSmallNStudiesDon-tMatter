@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_db6b2ceb616964c0",
+  "byte_size": 822,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "musicianship_eeg_2025__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/musicianship_eeg_2025__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_musicianship_eeg_2025",
+  "preview_rows": [
+    {
+      "default_action": "stage_only",
+      "downloaded_file_count": 1,
+      "expected_rows": 5,
+      "file_list_csv": null,
+      "landing_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SKOWNK",
+      "lead_id": "musicianship_eeg_2025",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/musicianship_eeg_2025/raw__MusicianshipEEG-main.zip",
+      "manifest_file": null,
+      "notes": "GitHub zip contains MATLAB analysis code and processed EEG summaries but no explicit smaller-original larger-replication D/N pair table is exposed",
+      "priority": 8,
+      "project": "Musicianship EEG multi site replication",
+      "promotion_blocker": "original_side_missing|metric_not_on_shared_d_axis|source_not_pair_buildable",
+      "raw_url": "https://github.com/kellywhiteford/MusicianshipEEG/archive/refs/heads/main.zip",
+      "source_family": "neuroscience"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:54",
+  "sha256": "cfce5d605c4f80616d605c8a1a87e4d93fa39fb98ff344050d13608f55e18312"
+}

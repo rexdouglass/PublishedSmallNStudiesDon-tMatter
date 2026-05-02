@@ -1,0 +1,63 @@
+{
+  "artifact_id": "source_artifact_79e83eb0630bdf24",
+  "byte_size": 81534,
+  "columns": [
+    "Unnamed: 0",
+    "polknowledge",
+    "gender",
+    "condition",
+    "Politics",
+    "polinterest"
+  ],
+  "estimated_data_rows": 1921,
+  "file_name": "combined_BF2.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse/ETUUOD/combined_BF2.csv",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview_rows": [
+    {
+      "Politics": "No",
+      "Unnamed: 0": 1,
+      "condition": "control",
+      "gender": "Male",
+      "polinterest": 3.2,
+      "polknowledge": 10
+    },
+    {
+      "Politics": "No",
+      "Unnamed: 0": 2,
+      "condition": "control",
+      "gender": "Male",
+      "polinterest": 5.6,
+      "polknowledge": 12
+    },
+    {
+      "Politics": "No",
+      "Unnamed: 0": 3,
+      "condition": "control",
+      "gender": "Male",
+      "polinterest": 5.0,
+      "polknowledge": 6
+    },
+    {
+      "Politics": "No",
+      "Unnamed: 0": 4,
+      "condition": "control",
+      "gender": "Male",
+      "polinterest": 4.0,
+      "polknowledge": 12
+    },
+    {
+      "Politics": "No",
+      "Unnamed: 0": 5,
+      "condition": "control",
+      "gender": "Male",
+      "polinterest": 4.0,
+      "polknowledge": 1
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:42",
+  "sha256": "689c1d9aadd89f8753ff080ce3059df85d04989f6ce13ded229a8f234639d112"
+}

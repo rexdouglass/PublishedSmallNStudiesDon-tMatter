@@ -1,0 +1,93 @@
+{
+  "artifact_id": "source_artifact_012494357d9c21ce",
+  "byte_size": 2355,
+  "columns": [
+    "Unnamed: 0",
+    "condition",
+    "age",
+    "gender",
+    "bdi",
+    "prevividness",
+    "postvividness",
+    "preemotionality",
+    "postemotionality",
+    "totalcorrect",
+    "totalmisinfo"
+  ],
+  "estimated_data_rows": 82,
+  "file_name": "github_01__original_clean.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/awesome_emdr_misinfo/github_01__original_clean.csv",
+  "parent_corpus_database_id": "github:ying531/awesome-replicability-data",
+  "preview_rows": [
+    {
+      "Unnamed: 0": 1,
+      "age": 20,
+      "bdi": 7,
+      "condition": 1,
+      "gender": 0,
+      "postemotionality": 1,
+      "postvividness": 6,
+      "preemotionality": 2,
+      "prevividness": 6,
+      "totalcorrect": 11,
+      "totalmisinfo": 3
+    },
+    {
+      "Unnamed: 0": 2,
+      "age": 19,
+      "bdi": 11,
+      "condition": 0,
+      "gender": 0,
+      "postemotionality": 1,
+      "postvividness": 8,
+      "preemotionality": 3,
+      "prevividness": 8,
+      "totalcorrect": 12,
+      "totalmisinfo": 2
+    },
+    {
+      "Unnamed: 0": 3,
+      "age": 20,
+      "bdi": 7,
+      "condition": 0,
+      "gender": 0,
+      "postemotionality": 2,
+      "postvividness": 8,
+      "preemotionality": 2,
+      "prevividness": 9,
+      "totalcorrect": 14,
+      "totalmisinfo": 1
+    },
+    {
+      "Unnamed: 0": 4,
+      "age": 20,
+      "bdi": 1,
+      "condition": 1,
+      "gender": 0,
+      "postemotionality": 3,
+      "postvividness": 7,
+      "preemotionality": 2,
+      "prevividness": 8,
+      "totalcorrect": 10,
+      "totalmisinfo": 5
+    },
+    {
+      "Unnamed: 0": 5,
+      "age": 21,
+      "bdi": 0,
+      "condition": 1,
+      "gender": 0,
+      "postemotionality": 2,
+      "postvividness": 8,
+      "preemotionality": 2,
+      "prevividness": 8,
+      "totalcorrect": 13,
+      "totalmisinfo": 1
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "8613015f74333052f2548d26f0f0fce2da2e5dfe18c5cce51a1abac397a3d384"
+}

@@ -1,0 +1,97 @@
+{
+  "candidate_count": 0,
+  "candidates": [],
+  "classified_lead_count": 0,
+  "created_at": "2026-05-01T22:12:58+00:00",
+  "decision_counts": {
+    "reject_low_relevance_search_hit": 3
+  },
+  "errors": [
+    "wayback::https://osf.io/3hjpf/::ReadTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=12)",
+    "wayback::https://doi.org/10.31234/osf.io/hmnrx::ReadTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=12)",
+    "wayback::https://doi.org/10.1080/1478601x.2015.1014037::ReadTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=12)",
+    "wayback::https://doi.org/10.1371/journal.pone.0175302::HTTPError: 503 Server Error: Service Unavailable for url: https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fdoi.org%2F10.1371%2Fjournal.pone.0175302&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest&filter=statuscode%3A200&collapse=digest&limit=3",
+    "wayback::https://doi.org/10.31234/osf.io/g3sne::ReadTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=12)",
+    "wayback::https://osf.io/wusvb/::ReadTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=12)",
+    "wayback::https://osf.io/xqv8b/::ReadTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=12)",
+    "wayback::https://osf.io/scayl/::HTTPError: 503 Server Error: Service Unavailable for url: https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fosf.io%2Fscayl%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest&filter=statuscode%3A200&collapse=digest&limit=3"
+  ],
+  "manifest_id": "corporasearch-archive-known-replication-project-urls",
+  "providers": [
+    "wayback"
+  ],
+  "queries": [
+    "dead links from known replication project papers",
+    "discontinued project pages naming replication data",
+    "old supplementary datasets referenced by replication corpus articles",
+    "archived OSF Dataverse GitHub OpenICPSR package URLs",
+    "https://osf.io/3hjpf/",
+    "https://doi.org/10.31234/osf.io/hmnrx",
+    "https://doi.org/10.1080/1478601x.2015.1014037",
+    "https://doi.org/10.1371/journal.pone.0175302",
+    "https://doi.org/10.31234/osf.io/g3sne",
+    "https://osf.io/bzm54/",
+    "https://osf.io/wusvb/",
+    "https://osf.io/xqv8b/",
+    "https://osf.io/scayl/"
+  ],
+  "raw_result_count": 3,
+  "raw_results": [
+    {
+      "decision": "reject_low_relevance_search_hit",
+      "description": "Archived repository/project URL found during Figure 1 archive recovery; status=200; mime_type=text/html; digest=HW6TZBLY752COG4JD5P6PJONOEH4CZQA",
+      "doi": "",
+      "external_id": "20190719103353:HW6TZBLY752COG4JD5P6PJONOEH4CZQA",
+      "landing_url": "https://web.archive.org/web/20190719103353/https://osf.io/bzm54/",
+      "provider": "wayback",
+      "query": "https://osf.io/bzm54/",
+      "raw_mime_type": "text/html",
+      "raw_status_code": "200",
+      "raw_timestamp": "20190719103353",
+      "raw_url": "https://osf.io/bzm54/",
+      "score": "2",
+      "score_reasons": "data_term:repository | data_term:osf | archive_repository_surface | no_replication_language_penalty | query_phrase_in_text",
+      "strategy": "archive",
+      "title": "Wayback snapshot for https://osf.io/bzm54/"
+    },
+    {
+      "decision": "reject_low_relevance_search_hit",
+      "description": "Archived repository/project URL found during Figure 1 archive recovery; status=200; mime_type=text/html; digest=XKXYRKDARJ7S5LN4ZONLTAJDAZDLB4FA",
+      "doi": "",
+      "external_id": "20191018042652:XKXYRKDARJ7S5LN4ZONLTAJDAZDLB4FA",
+      "landing_url": "https://web.archive.org/web/20191018042652/https://osf.io/bzm54/",
+      "provider": "wayback",
+      "query": "https://osf.io/bzm54/",
+      "raw_mime_type": "text/html",
+      "raw_status_code": "200",
+      "raw_timestamp": "20191018042652",
+      "raw_url": "https://osf.io/bzm54/",
+      "score": "2",
+      "score_reasons": "data_term:repository | data_term:osf | archive_repository_surface | no_replication_language_penalty | query_phrase_in_text",
+      "strategy": "archive",
+      "title": "Wayback snapshot for https://osf.io/bzm54/"
+    },
+    {
+      "decision": "reject_low_relevance_search_hit",
+      "description": "Archived repository/project URL found during Figure 1 archive recovery; status=200; mime_type=text/html; digest=C4SH67OVS5HGROQXVGLBB2WZJWM7M6UF",
+      "doi": "",
+      "external_id": "20191117160946:C4SH67OVS5HGROQXVGLBB2WZJWM7M6UF",
+      "landing_url": "https://web.archive.org/web/20191117160946/https://osf.io/bzm54/",
+      "provider": "wayback",
+      "query": "https://osf.io/bzm54/",
+      "raw_mime_type": "text/html",
+      "raw_status_code": "200",
+      "raw_timestamp": "20191117160946",
+      "raw_url": "https://osf.io/bzm54/",
+      "score": "2",
+      "score_reasons": "data_term:repository | data_term:osf | archive_repository_surface | no_replication_language_penalty | query_phrase_in_text",
+      "strategy": "archive",
+      "title": "Wayback snapshot for https://osf.io/bzm54/"
+    }
+  ],
+  "routed_or_rejected_count": 0,
+  "routed_or_rejected_leads": [],
+  "strategy": "archive",
+  "strategy_id": "plot1_corpusdb_dead_link_and_archive_recovery",
+  "user_agent": "PublishedSmallNStudiesDontMatter figure1 corpus search (mailto:rexdouglass@gmail.com; noncommercial provenance research)"
+}

@@ -1,0 +1,48 @@
+{
+  "artifact_id": "source_artifact_a32c97419ca54467",
+  "byte_size": 1552,
+  "file_name": "ps_loc_summary.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse/9PWQZT/ps_loc_summary.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "pa_id",
+        "new_pa_id"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "new_pa_id": "PK-76",
+          "pa_id": "PK-1"
+        },
+        {
+          "new_pa_id": "PK-63",
+          "pa_id": "PK-16"
+        },
+        {
+          "new_pa_id": "PK-60",
+          "pa_id": "PK-22"
+        },
+        {
+          "new_pa_id": "PK-52",
+          "pa_id": "PK-23"
+        },
+        {
+          "new_pa_id": "PK-54",
+          "pa_id": "PK-26"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        20,
+        2
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:42",
+  "sha256": "b83d248927bcd0fc780e6ce14aae53c9567ad576f9c40d5f207cce20025b7121"
+}

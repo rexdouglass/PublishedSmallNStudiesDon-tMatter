@@ -1,0 +1,39 @@
+{
+  "artifact_id": "source_artifact_ef9af6367babb68f",
+  "byte_size": 78803,
+  "file_name": "README.pdf",
+  "file_type": "pdf",
+  "local_path": "data/raw/replication_projects/lead_harvest/angrist_learning_curve_2023/openicpsr_189561_v1/README.pdf",
+  "page_count": 6,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "Overview The code in this replication package constructs the analyses of the results presented in the following paper: “Learning Curve: Progress in the Replication Curve” prepared for the AEA Papers & Proceedings. This paper uses descriptive monitoring data collected across five countries. This paper accompanies a major study reporting the main results from RCTs titled “Building Resilient Education Systems: Evidence from Large-Scale Randomized Trials in 5 Countries.” The research and implementing partners include Youth Impact, J-PAL, University of Oxford, Learning Collider, World Bank, Ministry of Education: Science and Technology of Nepal, Teach for Nepal, Street Child, Philippines Department of Education, IPA, Building Tomorrow, NewGlobe, and Alokit. The de-identified data can be accessed from the repository and all tables and figures can be generated from the provided dataset. The figures and tables are generated using Stata, and can be replicated using one .do file called main.do. Data Availability and Provenance Statements The code in this repository produces figures and tables using data sources accurate_targeting_country.dta, accurate_targeting_ week.dta and operation_taught_all.dta, which captures harmonized monitoring data collected as part of a larger study of randomized trials across 5 countries. All figures and tables can be replicated from this dataset. Individual or school-level identifiers if any have been dropped, and are not required for the purposes of any analysis, or replicating tables or figures in the paper. The dataset is created by harmonizing data across five countries detailed under the section “Details on each data source”. Statement about Rights ✓ I certify that the author(s) of the manuscript have legitimate access to and permission to use the data used in this manuscript. Summary of Availability ✓ All data are publicly available."
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Details on each Data Source The provided dataset is an original, harmonized dataset of raw primary data. The dataset contains data from Botswana, Nepal, Philippines, and Uganda. While India and Kenya were included in the main randomized trials, detailed monitoring data was not available for the analysis in this monitoring-focused paper. All data was collected in collaboration with the academic PIs of the study alongside NGO and government partners. Each row in each dataset is a child and household. To create the harmonized data, we first removed any identifying details, and retained only the variables essential for our analysis. Targeted instruction metrics were generated using the accuracy of checkpoint questions and learning level taught each week in Uganda and the Philippines. In Nepal and Botswana, midline leveling data was combined with the next available week’s set of monitoring data to determine accurate targeting of educational instruction, as described in detail in the paper. Data.Name Data.Files Location Provided Citation “Harmonized operation_taught_all.dta Program_Files/ TRUE - five country implementati on dataset: Operation taught current week”"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "- “Harmonized accurate_targeting_country.dt Program_Files/ TRUE five country a implementati on dataset: Instruction Accurately targeted” “Harmonized accurate_targeting_week.dta Program_Files/ TRUE five country implementati on dataset: Week by Week Targeting” The data (provided in .dta) contains value labels that are self descriptive and can be accessed by opening the dataset in a recent version of STATA. Dataset list Data file Source Notes Provided Program_Files/Operatio Primary data - Yes n_taught_all.dta collected by authors and implementation partners: Operation taught in week Program_Files/accurate Derived from - Yes _targeting_country.dta primary data collected by authors and implementation"
+    },
+    {
+      "page_number": 4,
+      "text_preview": "partners: Instruction accurately targeted - Yes Program_Files/accurate Derived from _targeting_week.dta primary data collected by authors and implementation partners: Week by week accurate targeting. Computational requirements All code was run in Stata (code was last run with version 17) – All packages are available within Stata SSC and no separate install of user–written packages are required. Software Requirements • Stata (code was last run with version 17) Additional packages that may need to be installed from SSC are as listed below – blindschemes (installed: 19-11-2022) – estout (installed: 19-11-2022) – unique (installed: 19-11-2022) – tabout (installed: 19-11-2022) Controlled Randomness Not applicable"
+    },
+    {
+      "page_number": 5,
+      "text_preview": "Memory and Runtime Requirements Approximate time required to run the provided code on a standard Macbook Air (2021) machine. 1- 10 minutes. Description of programs/code ● The program Program_Files/main.do will call both the input data files, and replicate all figures and tables in the paper. ● The program will output the relevant figures in Output/Figures and the relevant tables in Output/Tables. Instructions to Replicators ● Download the repository as a whole, with Program_Files containing both the code and data. ● Edit the working directory by setting `$main’ to point to the path to the downloaded repository containing the datafile and code. ● Run main.do to generate all tables and figures. Certain packages available on SSC may be required to be installed. List of tables and programs The provided code reproduces: ✓ All tables and figures in the paper"
+    },
+    {
+      "page_number": 6,
+      "text_preview": "Line Figure/Table # Program Number Output file Note Table 1 main.do Output/Table1.csv Figure 1 main.do Output/Figure1.png Figure 2 main.do Output/Figure2.png References Angrist, Noam, Michael Ainomugisha, Saipramod Bathena, Peter Bergman, Colin Crossley, Claire Cullen, Thato Letsomo, Moitshepi Matsheng, Rene Marlon Panti, and Shwetlena Sabarwal. “Building Resilient Education Systems: Evidence from Large-Scale Randomized Trials in Five Countries.'', forthcoming, 2023. Angrist, N., Cullen, C., Ainomugisha, M., Bathena, S.P., Bergman, P., Crossley, C., Letsomo, T., Matsheng, M., Panti, R.M., Sabarwal, S., Sullivan, T. “Learning Curve: Progress in the Replication Crisis.” AEA Papers and Proceedings, forthcoming, 2023"
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_angrist_learning_curve_2023",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T09:32:44",
+  "sampled_page_count": 6,
+  "sha256": "23747c057cdf02a4746f06a3936665a16ec6e9fb554a5159fc935fc66d76ee46"
+}

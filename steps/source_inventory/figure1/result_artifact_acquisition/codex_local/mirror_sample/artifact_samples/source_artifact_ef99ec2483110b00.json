@@ -1,0 +1,114 @@
+{
+  "artifact_id": "source_artifact_ef99ec2483110b00",
+  "byte_size": 2798,
+  "file_name": "meta-estimates-main-hypotheses-original.RDS",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/metaketa_iv_2021/osf_xqd3v_outputs/data/out/meta-estimates-main-hypotheses-original.RDS",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "hypothesis",
+        "label",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "tausq",
+        "tausq.std.error",
+        "qtest.p.value",
+        "N_studies",
+        "p.value.adj"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "N_studies": 5,
+          "conf.high": 0.0284325433,
+          "conf.low": -0.0725773445,
+          "estimate": -0.0220724006,
+          "hypothesis": "1a",
+          "label": "Crime victimization idx.",
+          "p.value": 0.3916815818,
+          "p.value.adj": 0.7176243375,
+          "qtest.p.value": 0.1583713729,
+          "statistic": -0.85657179,
+          "std.error": 0.025768302,
+          "tausq": 0.0010334045,
+          "tausq.std.error": 0.0021809943
+        },
+        {
+          "N_studies": 6,
+          "conf.high": 0.1319179278,
+          "conf.low": -0.1809126913,
+          "estimate": -0.0244973817,
+          "hypothesis": "1b",
+          "label": "Perceived future insecurity idx.",
+          "p.value": 0.7588702056,
+          "p.value.adj": 0.78613926,
+          "qtest.p.value": 2.71336e-05,
+          "statistic": -0.3069647467,
+          "std.error": 0.0798051958,
+          "tausq": 0.0252392936,
+          "tausq.std.error": 0.0222358964
+        },
+        {
+          "N_studies": 6,
+          "conf.high": 0.1072428055,
+          "conf.low": -0.0051810893,
+          "estimate": 0.0510308581,
+          "hypothesis": "2",
+          "label": "Overall perceptions of police idx.",
+          "p.value": 0.0751884745,
+          "p.value.adj": 0.300753898,
+          "qtest.p.value": 0.1783689647,
+          "statistic": 1.7793129165,
+          "std.error": 0.028680092,
+          "tausq": 0.0,
+          "tausq.std.error": 0.0026423262
+        },
+        {
+          "N_studies": 3,
+          "conf.high": 0.1418968144,
+          "conf.low": -0.4644661653,
+          "estimate": -0.1612846755,
+          "hypothesis": "3a",
+          "label": "Police perceptions of citizens idx.",
+          "p.value": 0.2971104615,
+          "p.value.adj": 0.7176243375,
+          "qtest.p.value": 0.0183618086,
+          "statistic": -1.0426499168,
+          "std.error": 0.154687276,
+          "tausq": 0.0520127204,
+          "tausq.std.error": 0.0722910938
+        },
+        {
+          "N_studies": 5,
+          "conf.high": 0.066948017,
+          "conf.low": -0.0884622125,
+          "estimate": -0.0107570977,
+          "hypothesis": "3b",
+          "label": "Police abuse idx.",
+          "p.value": 0.78613926,
+          "p.value.adj": 0.78613926,
+          "qtest.p.value": 0.0566721569,
+          "statistic": -0.2713273668,
+          "std.error": 0.0396461952,
+          "tausq": 0.004089615,
+          "tausq.std.error": 0.0053276044
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        16,
+        13
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_metaketa_iv_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:54",
+  "sha256": "5da0f041437459fb3d8de580b685c131060824a8ba26c255f73694ae8ce41369"
+}

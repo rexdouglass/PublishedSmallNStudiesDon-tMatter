@@ -1,0 +1,1216 @@
+{
+  "batch_id": "clustered002",
+  "batch_size": 8,
+  "cluster_count": 8,
+  "clusters": [
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_emdr_and_misinformation_3fe9f9e46e27",
+      "inventory_status_counts": {
+        "auto_integrate": 1,
+        "needs_triage_search_lead": 26
+      },
+      "manifest_paths": [
+        "data/raw/replication_projects/lead_registry.csv",
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json"
+      ],
+      "max_pair_evidence_score": 7,
+      "max_source_object_score": 15,
+      "node_count": 27,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_emdr_misinfo/github_01_download.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 01 download",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_ed6025a400b1",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_emdr_misinfo/github_01_download.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:code | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_emdr_misinfo/github_01__original_clean.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 01 original clean",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_531c0c2fcf2f",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_emdr_misinfo/github_01__original_clean.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_cleanliness_moral/github_01__original_exp1_clean.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 01 original exp1 clean",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_052713a0f458",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_cleanliness_moral/github_01__original_exp1_clean.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_02_download.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 02 download",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_d0e4f06b2341",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_02_download.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:code | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_cleanliness_moral/github_02__original_exp2_clean.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 02 original exp2 clean",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_8c5c792a9906",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_cleanliness_moral/github_02__original_exp2_clean.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_02__yoga_original_cleaned.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 02 yoga original cleaned",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_15999191e6eb",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_02__yoga_original_cleaned.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_03_download.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 03 download",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_d578f32d9c4f",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_03_download.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:code | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_03__meditation_original_cleaned.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 03 meditation original cleaned",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_47a983ad90c0",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_03__meditation_original_cleaned.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_05_download.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 05 download",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_3626d152eec3",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_05_download.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:code | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_05__original_process.r",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github 05 original process",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_49d76b4562a1",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_05__original_process.r",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=7; reasons=data_term:data | data_term:code | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_contents_file_list.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github contents file list",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_3f32c0fa3b76",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_contents_file_list.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_contents_manifest.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "github contents manifest",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_8367a4d14359",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/awesome_mindbody_selfcentrality/github_contents_manifest.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        }
+      ],
+      "omitted_node_count": 15,
+      "open_review_count": 12,
+      "preferred_family_hint": "",
+      "priority_band": "high",
+      "priority_score": 131,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_result_table": 26,
+        "replication_project": 1
+      },
+      "representative_name": "EMDR and misinformation",
+      "strict_keys": [
+        "github:ying531/awesome-replicability-data",
+        "lead_harvest:awesome_emdr_misinfo",
+        "lead_harvest:awesome_lie_language",
+        "lead_harvest:awesome_queue",
+        "lead_harvest:awesome_cleanliness_moral",
+        "lead_harvest:awesome_mindbody_selfcentrality"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_osf_03_rp_cb_final_analysis_paper_level_data_46a453806c4e",
+      "inventory_status_counts": {
+        "discovered_search_lead": 6,
+        "needs_triage_search_lead": 6
+      },
+      "manifest_paths": [
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json"
+      ],
+      "max_pair_evidence_score": 9,
+      "max_source_object_score": 10,
+      "node_count": 12,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_01__RP_CB_Final_Analysis_-_Paper_level_data_dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 01 RP CB Final Analysis - Paper level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_7d0f968ec4f9",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_01__RP_CB_Final_Analysis_-_Paper_level_data_dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_02__RP_CB_Final_Analysis_-_Experiment_level_data_dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 02 RP CB Final Analysis - Experiment level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_99af9344493b",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_02__RP_CB_Final_Analysis_-_Experiment_level_data_dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_03__RP_CB_Final_Analysis_-_Paper_level_data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 03 RP CB Final Analysis - Paper level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_4f0a96dc5008",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_03__RP_CB_Final_Analysis_-_Paper_level_data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_04__RP_CB_Final_Analysis_-_Effect_level_data_dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 04 RP CB Final Analysis - Effect level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_f71a4956c768",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_04__RP_CB_Final_Analysis_-_Effect_level_data_dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=18; reasons=pair_term:original effect | pair_term:replication effect | pair_term:sample size | data_term:data | data_term:osf | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_05__RP_CB_Final_Analysis_-_Experiment_level_data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 05 RP CB Final Analysis - Experiment level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_6f03f4dd60aa",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_05__RP_CB_Final_Analysis_-_Experiment_level_data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_06__RP_CB_Final_Analysis_-_Effect_level_data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 06 RP CB Final Analysis - Effect level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_1e1055ce31c1",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_06__RP_CB_Final_Analysis_-_Effect_level_data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=14; reasons=pair_term:sample size | data_term:data | data_term:osf | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_07__RPCB_Final_Analysis_Study_39.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 07 RPCB Final Analysis Study 39",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_2160e0a55fa3",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_07__RPCB_Final_Analysis_Study_39.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=8; reasons=data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_08__RPCB_Final_Analysis_Study_21.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 08 RPCB Final Analysis Study 21",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_2c552798605e",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_08__RPCB_Final_Analysis_Study_21.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=8; reasons=data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_09__RPCB_Final_Analysis_Study_12.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 09 RPCB Final Analysis Study 12",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_73294ca4bca4",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_09__RPCB_Final_Analysis_Study_12.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=pair_term:original study | data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_10__RPCB_Final_Analysis_Study_15.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 10 RPCB Final Analysis Study 15",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_2628e134009f",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_10__RPCB_Final_Analysis_Study_15.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=8; reasons=data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_11__RPCB_Final_Analysis_Study_28.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 11 RPCB Final Analysis Study 28",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_662528ce1d4f",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_11__RPCB_Final_Analysis_Study_28.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=pair_term:original study | data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_12__RPCB_Final_Analysis_Study_08.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 12 RPCB Final Analysis Study 08",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_2ea516178a8b",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_12__RPCB_Final_Analysis_Study_08.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=8; reasons=data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        }
+      ],
+      "omitted_node_count": 0,
+      "open_review_count": 12,
+      "preferred_family_hint": "rpcb",
+      "priority_band": "high",
+      "priority_score": 120,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_corpus_or_database": 6,
+        "candidate_result_table": 6
+      },
+      "representative_name": "osf 03 RP CB Final Analysis - Paper level data",
+      "strict_keys": [
+        "lead_harvest:rpcb_e5nvr"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_rpcb_elife_registered_report_replication_effects_e5397aaa137f",
+      "inventory_status_counts": {
+        "discovered_search_lead": 18,
+        "included": 1,
+        "needs_triage_search_lead": 24,
+        "raw_available": 1
+      },
+      "manifest_paths": [
+        "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv | data/raw/corpus_candidates/rpcb",
+        "data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv",
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+        "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json"
+      ],
+      "max_pair_evidence_score": 9,
+      "max_source_object_score": 9,
+      "node_count": 44,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Effect level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_54ba27257de5",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=13; reasons=pair_term:sample size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Effect level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_3987139cfbbf",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=17; reasons=pair_term:original effect | pair_term:replication effect | pair_term:sample size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Experiment level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_fb0899e1a002",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Experiment level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_7722bccd15e2",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Paper level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Paper level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_75f153ae4928",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Paper level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Paper level data dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Paper level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_e7f3810ed7bc",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Paper level data dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "RP CB Final Analysis - Effect level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_a7426f559545",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=13; reasons=pair_term:sample size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Effect level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_b5c9b5c0073b",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=13; reasons=pair_term:sample size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "RP CB Final Analysis - Effect level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_9001ebbc57ef",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=17; reasons=pair_term:original effect | pair_term:replication effect | pair_term:sample size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Effect level data dictionary",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_aa80e86c51cd",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Effect level data dictionary.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=17; reasons=pair_term:original effect | pair_term:replication effect | pair_term:sample size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "RP CB Final Analysis - Experiment level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_71eb5035751e",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=corpus_database_or_project_signal; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "RP CB Final Analysis - Experiment level data",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_d1184474a713",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "data/raw/corpus_candidates/rpcb/RP_CB Final Analysis - Experiment level data.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=corpus_database_or_project_signal; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        }
+      ],
+      "omitted_node_count": 32,
+      "open_review_count": 42,
+      "preferred_family_hint": "rpcb",
+      "priority_band": "high",
+      "priority_score": 119,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_corpus_or_database": 18,
+        "candidate_result_table": 24,
+        "corpus_or_database": 1,
+        "replication_project": 1
+      },
+      "representative_name": "RPCB eLife Registered Report replication effects",
+      "strict_keys": [
+        "raw_corpus:rpcb"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_original_effects_srull_9b8f8fe2c740",
+      "inventory_status_counts": {
+        "needs_triage_search_lead": 20
+      },
+      "manifest_paths": [
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json"
+      ],
+      "max_pair_evidence_score": 7,
+      "max_source_object_score": 11,
+      "node_count": 20,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c4vu8tppcoyuh/000002.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000002",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_f9cbf9cd0f0a",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c4vu8tppcoyuh/000002.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/ct6udg5a9c34t/000004.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000004",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_88ce78e56153",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/ct6udg5a9c34t/000004.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c6ab2vzhaot50/000006.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000006",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_294382b473ca",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c6ab2vzhaot50/000006.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c6ab2vzhaot50/000008.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000008",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_44a5aeece1dd",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c6ab2vzhaot50/000008.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull & Wyer (RRR)-meta-analysis.Rmd",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "Srull & Wyer (RRR)-meta-analysis",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_fb9f563b5755",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull & Wyer (RRR)-meta-analysis.Rmd",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=7; reasons=data_term:data | data_term:code | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/rrr/srull_all_labs/Srull & Wyer (RRR)-meta-analysis.Rmd",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "Srull & Wyer (RRR)-meta-analysis",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_ee28474555ac",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/rrr/srull_all_labs/Srull & Wyer (RRR)-meta-analysis.Rmd",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=7; reasons=data_term:data | data_term:code | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/rrr/hagger/metaanalysis.R",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "metaanalysis",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_cfa04783f873",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/rrr/hagger/metaanalysis.R",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=7; reasons=data_term:data | data_term:code | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/original_effects_srull.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "original effects srull",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_83794c376341",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/original_effects_srull.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=pair_term:original effect | data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/rrr/srull_all_labs/original_effects_srull.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "original effects srull",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_5b1b8ae999e6",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/rrr/srull_all_labs/original_effects_srull.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=pair_term:original effect | data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c16nfgg5s7nkp/000002.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000002",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_71c4f6c8a3f7",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c16nfgg5s7nkp/000002.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c27ntzbdeskgv/000002.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000002",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_27cb0e850616",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c27ntzbdeskgv/000002.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c3erkbgimcy15/000002.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "000002",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_fcf927588a7c",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "",
+          "source_key": "data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/unpacked_data/SW_Script_and_Data/Srull RRR forest plots/.Rproj.user/shared/notebooks/23427B29-Srull & Wyer (RRR)-meta-analysis/1/s/c3erkbgimcy15/000002.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        }
+      ],
+      "omitted_node_count": 8,
+      "open_review_count": 9,
+      "preferred_family_hint": "",
+      "priority_band": "high",
+      "priority_score": 114,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_result_table": 20
+      },
+      "representative_name": "original effects srull",
+      "strict_keys": [
+        "raw_replication_project:rrr",
+        "title:original_effects_srull",
+        "lead_harvest:rrr_mccarthy_2018",
+        "title:srull_wyer_rrr_meta_analysis"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_osf_03_import_original_data_36bc7619dc58",
+      "inventory_status_counts": {
+        "needs_triage_search_lead": 5
+      },
+      "manifest_paths": [
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json"
+      ],
+      "max_pair_evidence_score": 5,
+      "max_source_object_score": 15,
+      "node_count": 5,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03_download.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 03 download",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_5ae945e81d64",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03_download.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=data_term:data | data_term:code | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03__import_original_data.r",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 03 import original data",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_fc343fd126ba",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_03__import_original_data.r",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=pair_term:original study | data_term:data | data_term:code | data_term:osf | replication_word | original_word | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_04__README.Rmd",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf 04 README",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_90b190b83dd0",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_04__README.Rmd",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=data_term:data | data_term:code | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_file_list.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf file list",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_d0981e1e6740",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "",
+          "source_key": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_file_list.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_manifest.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf manifest",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_f450144b96fd",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "",
+          "source_key": "data/raw/replication_projects/lead_harvest/online_image_credibility/osf_manifest.json",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        }
+      ],
+      "omitted_node_count": 0,
+      "open_review_count": 3,
+      "preferred_family_hint": "",
+      "priority_band": "high",
+      "priority_score": 110,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_result_table": 5
+      },
+      "representative_name": "osf 03 import original data",
+      "strict_keys": [
+        "lead_harvest:online_image_credibility"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_meta_regression_to_explain_shrinkage_and_heterogeneity_in_large_scale_replicatio_40dfdd112362",
+      "inventory_status_counts": {
+        "discovered_search_lead": 7
+      },
+      "manifest_paths": [
+        "steps/searches/figure1/corporasearch-bibliographic-expanded-replication-corpus-database.json",
+        "steps/searches/figure1/corporasearch-bibliographic-openalex-crossref-replication-database-effect-size.json",
+        "steps/searches/figure1/corporasearch-bibliographic-openalex-crossref-replication-database-effect-size.json | steps/searches/figure1/corporasearch-domain-multifield-replication-database-effect-size.json",
+        "steps/searches/figure1/corporasearch-domain-expanded-crossfield-replication-datasets.json",
+        "steps/searches/figure1/corporasearch-domain-multifield-replication-database-effect-size.json",
+        "steps/searches/figure1/corporasearch-repository-provider-expanded-zenodo-figshare-dryad-replication-corpus-database-package.json"
+      ],
+      "max_pair_evidence_score": 9,
+      "max_source_object_score": 6,
+      "node_count": 7,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://doi.org/10.1371/journal.pone.0327799",
+          "manifest_path": "steps/searches/figure1/corporasearch-bibliographic-openalex-crossref-replication-database-effect-size.json | steps/searches/figure1/corporasearch-domain-multifield-replication-database-effect-size.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects.",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_root_table_b8b1fe89dd68",
+          "node_source": "root_table",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "PMC12316214",
+          "why_relevant": "Matched Figure 1 bibliographic search query '\"large-scale replication\" \"dataset\"'; lead_classification=corpus_database_or_project_signal; score=25; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | pair_term:original effect | pair_term:replication effect | pair_term:effect size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | metadata_corpus_signal"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://doi.org/10.31222/osf.io/e9nw2_v3",
+          "manifest_path": "steps/searches/figure1/corporasearch-domain-expanded-crossfield-replication-datasets.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_397ce9e32d5b",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "https://doi.org/10.31222/osf.io/e9nw2_v3",
+          "why_relevant": "Matched Figure 1 domain search query 'experimental economics replication project data'; lead_classification=corpus_database_or_project_signal; score=25; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | pair_term:original effect | pair_term:replication effect | pair_term:effect size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | metadata_corpus_signal"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://zenodo.org/records/15552808",
+          "manifest_path": "steps/searches/figure1/corporasearch-repository-provider-expanded-zenodo-figshare-dryad-replication-corpus-database-package.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_67b09571e89e",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "15552808",
+          "why_relevant": "Matched Figure 1 repository search query '\"large-scale replication\" \"data\"'; lead_classification=corpus_database_or_project_signal; score=16; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | data_term:data | data_term:code | data_term:repository | replication_word | dataset_metadata_surface"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://doi.org/10.1371/journal.pone.0327799",
+          "manifest_path": "steps/searches/figure1/corporasearch-bibliographic-expanded-replication-corpus-database.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects.",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_f7f7f03b5deb",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "PMC12316214",
+          "why_relevant": "Matched Figure 1 bibliographic search query '\"replication project\" \"original study\" \"effect size\"'; lead_classification=corpus_database_or_project_signal; score=25; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | pair_term:original effect | pair_term:replication effect | pair_term:effect size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | metadata_corpus_signal"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://doi.org/10.1371/journal.pone.0327799",
+          "manifest_path": "steps/searches/figure1/corporasearch-bibliographic-openalex-crossref-replication-database-effect-size.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects.",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_0bca0374c326",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "PMC12316214",
+          "why_relevant": "Matched Figure 1 bibliographic search query '\"large-scale replication\" \"dataset\"'; lead_classification=corpus_database_or_project_signal; score=25; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | pair_term:original effect | pair_term:replication effect | pair_term:effect size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | metadata_corpus_signal"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://doi.org/10.1371/journal.pone.0327799",
+          "manifest_path": "steps/searches/figure1/corporasearch-domain-expanded-crossfield-replication-datasets.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects.",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_e83325e82b30",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "PMC12316214",
+          "why_relevant": "Matched Figure 1 domain search query 'economics replication project data original study'; lead_classification=corpus_database_or_project_signal; score=25; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | pair_term:original effect | pair_term:replication effect | pair_term:effect size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | metadata_corpus_signal"
+        },
+        {
+          "inventory_status": "discovered_search_lead",
+          "landing_url": "https://doi.org/10.1371/journal.pone.0327799",
+          "manifest_path": "steps/searches/figure1/corporasearch-domain-multifield-replication-database-effect-size.json",
+          "name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects.",
+          "next_action": "triage_landing_page_or_package_for_pair_table",
+          "node_id": "node_search_manifest_b9f102539cbc",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_corpus_or_database",
+          "review_queue_status": "needs_root_candidate_review",
+          "source_key": "PMC12316214",
+          "why_relevant": "Matched Figure 1 domain search query 'economics replication project original estimates'; lead_classification=corpus_database_or_project_signal; score=25; reasons=strong_phrase:replication project | strong_phrase:large-scale replication | pair_term:original effect | pair_term:replication effect | pair_term:effect size | data_term:data | replication_word | original_word | effect_or_sample_size_phrase | metadata_corpus_signal"
+        }
+      ],
+      "omitted_node_count": 0,
+      "open_review_count": 7,
+      "preferred_family_hint": "eerp",
+      "priority_band": "high",
+      "priority_score": 105,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_corpus_or_database": 7
+      },
+      "representative_name": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects.",
+      "strict_keys": [
+        "doi:10.1371/journal.pone.0327799",
+        "url:https://doi.org/10.1371/journal.pone.0327799",
+        "title:meta_regression_to_explain_shrinkage_and_heterogeneity_in_large_scale_replication_projects"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_replication_pair_source_catalog_0445b9a39ac0",
+      "inventory_status_counts": {
+        "needs_triage_search_lead": 2
+      },
+      "manifest_paths": [
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json"
+      ],
+      "max_pair_evidence_score": 7,
+      "max_source_object_score": 14,
+      "node_count": 2,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/derived/replication_pairs/replication_pair_source_catalog.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "replication pair source catalog",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_3946e97b3257",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/derived/replication_pairs/replication_pair_source_catalog.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=pair_term:replication effect | data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "reports/corpus_candidates/replication_pair_source_catalog.md",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "replication pair source catalog",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_40b4bafb2aac",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "reports/corpus_candidates/replication_pair_source_catalog.md",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=12; reasons=pair_term:replication effect | data_term:data | data_term:code | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        }
+      ],
+      "omitted_node_count": 0,
+      "open_review_count": 2,
+      "preferred_family_hint": "fred",
+      "priority_band": "high",
+      "priority_score": 105,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_result_table": 2
+      },
+      "representative_name": "replication pair source catalog",
+      "strict_keys": [
+        "title:replication_pair_source_catalog"
+      ]
+    },
+    {
+      "cluster_confidence": "strict",
+      "cluster_id": "cluster_score_cos_preregistration_indicated_original_papers_2a2876c57850",
+      "inventory_status_counts": {
+        "included": 1,
+        "needs_triage_search_lead": 8,
+        "raw_available": 1
+      },
+      "manifest_paths": [
+        "data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv",
+        "data/raw/corpus_candidates/score",
+        "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+        "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json"
+      ],
+      "max_pair_evidence_score": 4,
+      "max_source_object_score": 12,
+      "node_count": 10,
+      "nodes_in_prompt": [
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/orig_outcomes.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "orig outcomes",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_ff90587e7784",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/orig_outcomes.csv",
+          "why_relevant": "Matched Figure 1 code search query 'claim_id replication_id effect_size'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=5; reasons=data_term:data | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/orig_outcomes.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "orig outcomes",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_b64fab561868",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/orig_outcomes.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=9; reasons=data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/osf_file_manifest.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "osf file manifest",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_8cc6168a7972",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/osf_file_manifest.csv",
+          "why_relevant": "Matched Figure 1 code search query 'study_pair_id original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/osf_file_manifest.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "osf file manifest",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_235db61ef00a",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/osf_file_manifest.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=10; reasons=data_term:data | data_term:osf | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/osf_node_dtzx4_meta.json",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "osf node dtzx4 meta",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_9e1f7e82f272",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/osf_node_dtzx4_meta.json",
+          "why_relevant": "Matched Figure 1 code search query 'paired replication table'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=8; reasons=data_term:data | data_term:osf | replication_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/repli_outcomes.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json",
+          "name": "repli outcomes",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_2b2ca0d95259",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/repli_outcomes.csv",
+          "why_relevant": "Matched Figure 1 code search query 'claim_id replication_id effect_size'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=pair_term:original study | data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/repli_outcomes.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "repli outcomes",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_11ccec03b8c7",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/repli_outcomes.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=11; reasons=pair_term:original study | data_term:data | replication_word | original_word | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "needs_triage_search_lead",
+          "landing_url": "data/raw/corpus_candidates/score/repro_prereg-check.csv",
+          "manifest_path": "steps/searches/figure1/corporasearch-code-local-original-replication-fields.json",
+          "name": "repro prereg-check",
+          "next_action": "triage_file_for_pair_table_or_source_family",
+          "node_id": "node_search_manifest_eecfc729a2c4",
+          "node_source": "search_manifest",
+          "record_kind": "candidate_result_table",
+          "review_queue_status": "needs_review",
+          "source_key": "data/raw/corpus_candidates/score/repro_prereg-check.csv",
+          "why_relevant": "Matched Figure 1 code search query 'effect_size sample_size original replication'; lead_classification=local_file_or_header_hit_without_corpus_confirmation; score=14; reasons=pair_term:sample size | data_term:data | data_term:osf | replication_word | original_word | effect_or_sample_size_phrase | local_table_or_code_surface | query_phrase_in_text"
+        },
+        {
+          "inventory_status": "included",
+          "landing_url": "",
+          "manifest_path": "data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv",
+          "name": "SCORE/COS preregistration-indicated original papers",
+          "next_action": "Included: 34 paper-level rows enter (31 from the existing paper-level join and 3 from parsed extracted-claim text). The remaining 211 preregistration-indicated SCORE paper IDs do not currently have a deduplicated positive D/N row that passes the local parser. Caveat: the public files are split across claim-level effect sizes, claim-level effective-N rows, and paper-level preregistration flags, so the table does not assert that every extracted claim was the exact preregistered primary hypothesis.",
+          "node_id": "node_root_table_2cb329473a06",
+          "node_source": "root_table",
+          "record_kind": "corpus_or_database",
+          "review_queue_status": "",
+          "source_key": "score_cos_preregistration_indicated_original_papers",
+          "why_relevant": "included as a paper-level preregistration-indicated SCORE subset; journal TOP-factor preregistration-policy scores are deliberately ignored"
+        },
+        {
+          "inventory_status": "raw_available",
+          "landing_url": "",
+          "manifest_path": "data/raw/corpus_candidates/score",
+          "name": "Score",
+          "next_action": "triage_for_plot_universe",
+          "node_id": "node_root_table_d6ebe90c3bae",
+          "node_source": "root_table",
+          "record_kind": "raw_inventory_dir",
+          "review_queue_status": "",
+          "source_key": "score",
+          "why_relevant": ""
+        }
+      ],
+      "omitted_node_count": 0,
+      "open_review_count": 8,
+      "preferred_family_hint": "",
+      "priority_band": "high",
+      "priority_score": 105,
+      "receipt_count": 0,
+      "recommended_next_action": "review_cluster_representative",
+      "record_kind_counts": {
+        "candidate_result_table": 8,
+        "corpus_or_database": 1,
+        "raw_inventory_dir": 1
+      },
+      "representative_name": "SCORE/COS preregistration-indicated original papers",
+      "strict_keys": [
+        "raw_corpus:score",
+        "title:repli_outcomes",
+        "title:orig_outcomes"
+      ]
+    }
+  ],
+  "decision_output": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered002.json",
+  "offset": 0,
+  "reviewer": "codex"
+}

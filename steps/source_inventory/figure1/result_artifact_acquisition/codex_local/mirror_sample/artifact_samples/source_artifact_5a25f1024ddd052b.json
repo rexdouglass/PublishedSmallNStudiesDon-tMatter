@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_5a25f1024ddd052b",
+  "byte_size": 361,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "strategy_fit_2025__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/strategy_fit_2025__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_strategy_fit_2025",
+  "preview_rows": [
+    {
+      "default_action": "stage_only",
+      "downloaded_file_count": 0,
+      "expected_rows": 3,
+      "file_list_csv": null,
+      "landing_url": "https://osf.io/ap2ws/",
+      "lead_id": "strategy_fit_2025",
+      "local_raw_file": null,
+      "manifest_file": null,
+      "notes": "Recent direct replication with public data",
+      "priority": 11,
+      "project": "Strategy situation fit replication",
+      "promotion_blocker": "effect_conversion_policy_missing",
+      "raw_url": null,
+      "source_family": "psychology"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:55",
+  "sha256": "9630fac42c44734978215c5c0a16ba1e70618fd51d194f435fec024756f71acb"
+}

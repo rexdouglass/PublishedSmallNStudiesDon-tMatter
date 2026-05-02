@@ -1,0 +1,248 @@
+FIGURE1_REPLICATION_SOURCE_FAMILY_SEEDS:
+  schema_version: 0.1.0
+  created_from: gpt_coverage_audit_2026_05_02
+  purpose: >
+    Human/LLM-editable seed list for Figure 1 replication, reproduction,
+    robustness, validation, and follow-up source-family discovery. These are
+    not accepted corpora/databases. They are named targets for bounded public
+    API searches, manual page checks, and source-family inventory.
+  admission_note: >
+    A named family advances only if it exposes a reusable source object:
+    dataset, database, registry, code/data repository, workbook, table, file
+    inventory, challenge/venue group, or source-family page. Ordinary
+    article-level "replication package" records route to individual-paper or
+    repository-package worklists unless they contain multi-row pair evidence.
+  source_families:
+    - key: replicationwiki
+      name: ReplicationWiki
+      priority: high
+      route: candidate_corpus_database
+      aliases:
+        - ReplicationWiki
+        - ReplicationWiki Transparency in the Social Sciences
+        - database of replications in economics
+      surfaces: [web, openalex, crossref, semantic_scholar]
+      queries:
+        - '"ReplicationWiki" "replications" "results"'
+        - '"ReplicationWiki" "data and code" "replications"'
+        - '"ReplicationWiki" "classified" "replication"'
+    - key: institute_for_replication
+      name: Institute for Replication
+      priority: high
+      route: candidate_repository_package
+      aliases: [I4R, Institute for Replication, Replication Games, Social Science Reproduction Platform]
+      surfaces: [web, openalex, crossref, semantic_scholar, dataverse, zenodo]
+      queries:
+        - '"Institute for Replication" "Discussion Paper" "robustness reproducibility"'
+        - '"Replication Games" "original" "robustness"'
+        - '"I4R" "replication" "data" "code"'
+    - key: computational_reproducibility_econ_polisci
+      name: Computational Reproducibility and Robustness of Empirical Economics and Political Science Research
+      priority: high
+      route: candidate_repository_package
+      aliases: [Brodeur Cook Mikola reproduction project, 110 articles reproducibility robustness]
+      surfaces: [web, openalex, crossref, semantic_scholar, zenodo]
+      queries:
+        - '"Computational Reproducibility and Robustness" "110 articles"'
+        - '"Brodeur" "Mikola" "Cook" "replication package"'
+        - '"economics and political science" "110 articles" "robustness"'
+    - key: brazilian_reproducibility_initiative
+      name: Brazilian Reproducibility Initiative
+      priority: high
+      route: candidate_corpus_database
+      aliases: [BRI, Brazilian Reproducibility Initiative, Rede Brasileira de Reprodutibilidade, reprodutibilidade]
+      surfaces: [web, osf, dataverse, zenodo, openalex, crossref, europepmc]
+      queries:
+        - '"Brazilian Reproducibility Initiative" "analysis data"'
+        - '"Brazilian Reproducibility Initiative" "OSF"'
+        - '"reprodutibilidade" "replicability" "MTT" "RT-PCR"'
+    - key: reprosci_fly_immunity
+      name: ReproSci Fly Immunity Workspace
+      priority: high
+      route: candidate_corpus_database
+      aliases: [ReproSci, EPFL ReproSci, Fly immunity workspace, Drosophila immunity reproducibility]
+      surfaces: [web, openalex, crossref, semantic_scholar, europepmc]
+      queries:
+        - '"ReproSci" "Fly immunity"'
+        - '"Drosophila immunity" "conceptual replicability"'
+        - '"ReproSci" "claims" "articles" "comments"'
+    - key: repeat_initiative
+      name: REPEAT Initiative
+      priority: high
+      route: manual_investigation
+      aliases: [REPEAT, Reporting to achieve transparent and replicable evidence, healthcare database reproducibility]
+      surfaces: [web, europepmc, openalex, crossref, semantic_scholar]
+      queries:
+        - '"REPEAT Initiative" "150 studies"'
+        - '"REPEAT" "healthcare database" "reproduce results"'
+        - '"real-world evidence" "robustness" "REPEAT Initiative"'
+    - key: ml_reproducibility_challenge
+      name: ML Reproducibility Challenge
+      priority: high
+      route: candidate_repository_package
+      aliases: [MLRC, Machine Learning Reproducibility Challenge, NeurIPS Reproducibility Challenge, ICLR Reproducibility Challenge]
+      surfaces: [openreview, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"ML Reproducibility Challenge" "original paper"'
+        - '"MLRC" "reproducibility report" "original paper"'
+        - '"OpenReview" "Reproducibility Challenge" "TL;DR"'
+    - key: rescience_c
+      name: ReScience C
+      priority: high
+      route: candidate_corpus_database
+      aliases: [ReScience, ReScience C, Reproducible Science is good Replicated Science is better]
+      surfaces: [web, github, openalex, crossref, semantic_scholar, zenodo]
+      queries:
+        - '"ReScience C" "type = {Replication}"'
+        - '"ReScience C" "code_doi" "review_url"'
+        - '"Replication in Machine Learning" "ReScience C"'
+    - key: pooled_market_replication
+      name: PooledMarketR and replication prediction market datasets
+      priority: high
+      route: candidate_repository_package
+      aliases: [PooledMarketR, pooledmaRket, Replication Markets, prediction markets replication outcomes]
+      surfaces: [github, osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"PooledMarketR" "replication outcomes"'
+        - '"pooledmaRket" "RPP" "EERP" "SSRP"'
+        - '"prediction market" "replication outcomes" "103"'
+    - key: score_components
+      name: SCORE component datasets
+      priority: high
+      route: manual_investigation
+      aliases: [SCORE, Systematizing Confidence in Open Research and Evidence, repliCATS-SCORE, Replication Markets SCORE]
+      surfaces: [osf, dataverse, zenodo, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"SCORE" "claim database" "replicability"'
+        - '"repliCATS-SCORE" dataset'
+        - '"Systematizing Confidence in Open Research and Evidence" "robustness" "replicability"'
+    - key: sports_science_replication_centre
+      name: Sports Science Replication Centre
+      priority: high
+      route: candidate_corpus_database
+      aliases: [Sports Science Replication Centre, Sports Sciences Replications]
+      surfaces: [osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"Sports Science Replication Centre" data'
+        - '"Estimating the Replicability of Sports and Exercise Science" "replication"'
+        - '"Sports Sciences Replications" "OSF"'
+    - key: xphi_replicability_project
+      name: X-Phi Replicability Project
+      priority: high
+      route: candidate_corpus_database
+      aliases: [Experimental Philosophy Replicability Project, X-Phi Replicability Project, XRP]
+      surfaces: [osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"X-Phi Replicability Project" "OSF"'
+        - '"Experimental Philosophy Replicability Project" "data"'
+        - '"Experimental Philosophy-Replications"'
+    - key: core_jdm
+      name: CORE Judgment and Decision Making
+      priority: high
+      route: candidate_corpus_database
+      aliases: [CORE JDM, Collaborative Open-science and meta REsearch, CORE Team]
+      surfaces: [osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"CORE" "Judgment and Decision Making" "replication"'
+        - '"Collaborative Open-science and meta REsearch" replication'
+        - '"CORE Team" "replication" "OSF"'
+    - key: data_replicada
+      name: Data Replicada
+      priority: medium
+      route: manual_investigation
+      aliases: [Data Replicada, Data Colada replication archives, consumer psychology replication series]
+      surfaces: [web, osf, openalex, crossref, semantic_scholar]
+      queries:
+        - '"Data Replicada" "attempt to replicate"'
+        - '"Data Colada" "replication" "consumer"'
+        - '"Data Replicada" "Journal of Consumer Research"'
+    - key: crep
+      name: Collaborative Replications and Education Project
+      priority: medium
+      route: candidate_corpus_database
+      aliases: [CREP, Collaborative Replications and Education Project]
+      surfaces: [osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"CREP" "replication" "OSF"'
+        - '"Collaborative Replications and Education Project" data'
+        - '"CREP" "completed replication"'
+    - key: hagen_cumulative_science_project
+      name: Hagen Cumulative Science Project
+      priority: medium
+      route: candidate_repository_package
+      aliases: [Hagen Cumulative Science Project, HCSP, student replication projects Hagen]
+      surfaces: [osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"Hagen Cumulative Science Project" "replication"'
+        - '"Hagen Cumulative Science Project" "OSF"'
+        - '"student thesis" "replication" "Hagen"'
+    - key: curate_science_legacy
+      name: CurateScience legacy replication records
+      priority: medium
+      route: candidate_corpus_database
+      aliases: [CurateScience, Curate Science, curate-science, LeBel replication framework]
+      surfaces: [wayback, web, osf, openalex, crossref, semantic_scholar]
+      queries:
+        - '"CurateScience" "replication"'
+        - '"Curate Science" "replication" "effect size"'
+        - '"CurateScience.org" "FReD"'
+    - key: nwo_replication_studies
+      name: NWO / Open Science NL Replication Studies Programme
+      priority: high
+      route: manual_investigation
+      aliases: [NWO Replication Studies, Open Science NL replication studies, 27 studies re-examined]
+      surfaces: [web, openalex, crossref, semantic_scholar]
+      queries:
+        - '"NWO" "Replication Studies" "project"'
+        - '"Open Science NL" "27 studies re-examined"'
+        - '"Replication Studies programme" "Netherlands" "results"'
+    - key: f1000_prr_gateway
+      name: F1000Research Preclinical Reproducibility and Robustness Gateway
+      priority: medium
+      route: individual_paper_worklist
+      aliases: [Preclinical Reproducibility and Robustness, F1000 PRR Gateway]
+      surfaces: [web, europepmc, openalex, crossref, semantic_scholar]
+      queries:
+        - '"Preclinical Reproducibility and Robustness" "replication"'
+        - '"F1000Research" "not confirmed" "preclinical"'
+        - '"F1000" "confirmatory" "replication"'
+    - key: manybabies_family
+      name: ManyBabies subprojects
+      priority: medium
+      route: candidate_repository_package
+      aliases: [ManyBabies, ManyBabies 2, ManyBabies 3, ManyBabies 4, ManyBabies 5, ManyBabies-AtHome]
+      surfaces: [osf, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"ManyBabies" "replication" "OSF"'
+        - '"ManyBabies 4" "social evaluations" "replication"'
+        - '"ManyBabies 5" "data" "OSF"'
+    - key: metaketa
+      name: EGAP Metaketa replication files and coordinated trials
+      priority: medium
+      route: candidate_repository_package
+      aliases: [Metaketa, Metaketa Initiative, EGAP Metaketa, coordinated trials]
+      surfaces: [github, dataverse, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"Metaketa" "replication files"'
+        - '"EGAP" "Metaketa" "GitHub"'
+        - '"Metaketa I" "replication files"'
+    - key: awesome_replicability_data
+      name: Awesome Replicability Data
+      priority: high
+      route: candidate_repository_package
+      aliases: [awesome-replicability-data, publicly available datasets for replicability analysis]
+      surfaces: [github, osf, dataverse, zenodo, web]
+      queries:
+        - '"awesome-replicability-data"'
+        - '"paired individual-level datasets" "replication"'
+        - '"multi-site individual-level replication studies"'
+    - key: ecology_in_silico_replication
+      name: Ecology and evolution in-silico replication dataset
+      priority: medium
+      route: manual_investigation
+      aliases: [large-scale in silico replication, ecological and evolutionary studies replication]
+      surfaces: [dryad, zenodo, figshare, openalex, crossref, semantic_scholar, web]
+      queries:
+        - '"large-scale in silico replication" "ecology" "data"'
+        - '"ecological and evolutionary studies" "replicability" "88,218 effects"'
+        - '"in silico replication" "meta-analysis" "effect"'

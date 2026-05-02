@@ -1,0 +1,330 @@
+{
+  "decisions": [
+    {
+      "review_id": "review_figure1_search_leads_8deda84acf73",
+      "lead_key": "title:reproducibility_project_psychology_design",
+      "canonical_source_key": "osf:i68pe",
+      "decision": "keep_in_corpora_and_databases",
+      "confidence": "high",
+      "reason": "This is a real Reproducibility Project: Psychology OSF project/source-family lead. It belongs in the root corpus/database inventory because it can expose multiple original/replication pair rows after file-level inventory.",
+      "next_action": "inventory_osf_project_files_for_pair_table_or_crosswalk",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/i68pe/",
+        "CORPORA_AND_DATABASES.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Root candidate cleanup: keep, not reject."
+    },
+    {
+      "review_id": "review_figure1_search_leads_457c03b64b91",
+      "lead_key": "title:aea_rct_registry",
+      "canonical_source_key": "manual_tracker:aea_rct_registry",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "AEA RCT Registry is a real registry/database and useful for preregistration and denominator work, but this lead does not itself expose Figure 1 original/replication pair rows.",
+      "next_action": "keep_for_figure3_or_denominator_context_not_figure1_pair_parser",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Not a rejection globally; stop for Figure 1 corpus-pair intake."
+    },
+    {
+      "review_id": "review_figure1_search_leads_24a6bf58d703",
+      "lead_key": "title:barnett_wren_biomedical_ci_scrape_through_bear",
+      "canonical_source_key": "manual_tracker:barnett_wren_biomedical_ci_scrape_through_bear",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "The tracker explicitly says this is a background comparator unless N can be recovered. It is not a Figure 1 original/replication pair corpus.",
+      "next_action": "do_not_send_to_figure1_pair_parser_unless_n_and_pair_mapping_are_recovered",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_4420e14a8722",
+      "lead_key": "title:bear_combined_database",
+      "canonical_source_key": "manual_tracker:bear_combined_database",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "BEAR is useful as a comparator/search index, but the tracker says most rows are registry, review, replication, scrape, or meta-analysis objects rather than direct Figure 1 original/replication pair rows.",
+      "next_action": "keep_as_comparator_or_search_index_not_main_figure1_source",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_df7ca3924545",
+      "lead_key": "title:brodeur_economics_through_bear",
+      "canonical_source_key": "manual_tracker:brodeur_economics_through_bear",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "The tracker already says the BEAR version lacks sample size and that a separate raw Brodeur Dataverse/OpenICPSR file is better. This specific BEAR-mediated lead should not advance.",
+      "next_action": "do_not_chase_bear_version_use_raw_brodeur_source_if_needed",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Rejected only as this BEAR-mediated route."
+    },
+    {
+      "review_id": "review_figure1_search_leads_7fff8e566a13",
+      "lead_key": "title:combining_specific_task_oriented_training_with_manual_therapy_to_improve_balance_and_mobility_in_patients_after_stroke_a",
+      "canonical_source_key": "doi:10.6084/m9.figshare.22598456",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "This is a single pilot randomized trial package and does not itself provide a replication corpus, database, or explicit original-to-replication mapping. Do not advance individual studies on speculation that a later trial might exist.",
+      "next_action": "stop_for_figure1_corpus_database_and_replication_pair_intake",
+      "sources_checked": [
+        "steps/review_cue/figure1_search_leads/reviewcue-codex-reset001-figure1_search_leads.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_e805304b48a0",
+      "lead_key": "title:direct_replications_in_the_era_of_open_sampling",
+      "canonical_source_key": "osf:x2gfc",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "OSF metadata describes a discussion/methods project about directness in open sampling, not a row-level replication-pair corpus.",
+      "next_action": "keep_as_context_only_unless_files_expose_a_pair_table",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/x2gfc/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_262bed40a6d0",
+      "lead_key": "title:headspace_for_parents_a_pilot_randomised_controlled_trial",
+      "canonical_source_key": "osf:63av8",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "This is a single pilot RCT lead with no affirmative evidence that it is itself a replication/reproduction/follow-up of an identifiable original. Do not route it forward because a later larger study might exist.",
+      "next_action": "stop_for_figure1_corpus_database_and_replication_pair_intake",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/63av8/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "OSF API returned 404 during prior review, but the available lead text is still enough to reject this as a speculative pilot-only route."
+    },
+    {
+      "review_id": "review_figure1_search_leads_2e6894681b56",
+      "lead_key": "title:lancee_et_al_2017_antipsychotic_outcome_reporting_audit",
+      "canonical_source_key": "manual_tracker:lancee_2017_antipsychotic_outcome_reporting_audit",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "The tracker identifies this as a registry-vs-publication discrepancy audit, not a D/N source and not a Figure 1 replication-pair corpus.",
+      "next_action": "keep_as_reporting_bias_context_not_figure1_pair_parser",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_4dda2769be18",
+      "lead_key": "title:leight_asri_imai_aea_publication_tracking_paper",
+      "canonical_source_key": "manual_tracker:leight_asri_imai_aea_publication_tracking_paper",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "Conceptually useful publication-tracking work, but the tracker says row-level output data were not found and this is not a Figure 1 original/replication pair source.",
+      "next_action": "keep_for_publication_bias_context_or_author_request_not_figure1_pair_parser",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_6feeae3f5e15",
+      "lead_key": "title:nordic_trial_reporting_dataset",
+      "canonical_source_key": "manual_tracker:nordic_trial_reporting_dataset",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "The tracker says this is an excellent publication-status scaffold but no effect sizes and no assessment of registered primary outcome reporting. It is not a Figure 1 pair corpus.",
+      "next_action": "keep_for_registry_publication_linkage_context",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_9fd64543e7b5",
+      "lead_key": "title:older_brodeur_methods_matter_openicpsr_file",
+      "canonical_source_key": "manual_tracker:older_brodeur_methods_matter_openicpsr_file",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "The tracker says this was the same recovered package and that no further OpenICPSR chase is needed unless a separate sample-size-bearing file exists.",
+      "next_action": "do_not_chase_this_duplicate_route",
+      "sources_checked": [
+        "reports/corpus_suggestion_tracker.md"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Rejected as duplicate/stale route, not as a statement about all Brodeur sources."
+    },
+    {
+      "review_id": "review_figure1_search_leads_f04f5a33efba",
+      "lead_key": "title:replication_document_term_and_feature_matrices",
+      "canonical_source_key": "doi:10.7910/DVN/KZW8R2",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "Dataverse metadata shows term and feature matrices with hundreds of text/tab files. This appears to be text-analysis replication data, not a source exposing original/replication D/N pair rows.",
+      "next_action": "do_not_add_to_figure1_pair_source_work",
+      "sources_checked": [
+        "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/KZW8R2"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_2b41fd68366e",
+      "lead_key": "title:sips_2017_sample_size_and_effect_size_workshop",
+      "canonical_source_key": "osf:ha4q8",
+      "decision": "keep_as_context_source",
+      "confidence": "high",
+      "reason": "OSF metadata describes workshop materials, slides, examples, and R code. It is not a replication-pair corpus or source table.",
+      "next_action": "keep_as_methods_context_only",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/ha4q8/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_12b2fb987656",
+      "lead_key": "title:stanford_data",
+      "canonical_source_key": "doi:10.7910/DVN/CNTKLY",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "Dataverse metadata links this to automated nonparametric content analysis for social science. It is a replication package in the computational reproducibility sense, not a Figure 1 original/replication pair source.",
+      "next_action": "do_not_add_to_figure1_pair_source_work",
+      "sources_checked": [
+        "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/CNTKLY"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_6e23c48b1120",
+      "lead_key": "title:stroop_replication_study_dataset",
+      "canonical_source_key": "osf:un4cb",
+      "decision": "route_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "reason": "This is a single Stroop replication dataset from a course assignment, not a corpus/database. It has affirmative self-described replication evidence and may be usable only as an individual replication pair if original and replication D/N can be reconstructed.",
+      "next_action": "route_to_individual_pair_screening_with_low_priority",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/un4cb/"
+      ],
+      "promote_payload": {},
+      "route_payload": {
+        "replication_relation_evidence": "The OSF title/metadata identifies this as a replication study dataset. It still needs screening to identify the original target and determine whether D/N can be reconstructed.",
+        "replication_relation_evidence_status": "explicit_self_described_replication"
+      },
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_6f57ea519ab4",
+      "lead_key": "title:wp1_xp2a_book_of_n_white_replication_open_question",
+      "canonical_source_key": "osf:2qm8f",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "Description concerns preregistered analysis of open-question responses in a specific study. It is not a replication-pair corpus and not a likely D/N source for Figure 1.",
+      "next_action": "do_not_add_to_figure1_pair_source_work",
+      "sources_checked": [
+        "https://api.osf.io/v2/nodes/2qm8f/"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "OSF API returned 404 during prior review."
+    },
+    {
+      "review_id": "review_figure1_search_leads_07969abf10b1",
+      "lead_key": "title:0_master",
+      "canonical_source_key": "local:data/raw/corpus_candidates/political_science_unlock/github/Direct-Aid-Replication-Materials/Replication Materials/Code/0_Master.do",
+      "decision": "route_to_result_table_worklist",
+      "confidence": "high",
+      "reason": "This is a local master Stata do-file that orchestrates table/figure scripts for an already cataloged political-science source family. It should not become a root corpus row, but it may be useful file-level support.",
+      "next_action": "map_to_existing_direct_aid_source_family_if_needed_for_file_level_provenance",
+      "sources_checked": [
+        "data/raw/corpus_candidates/political_science_unlock/github/Direct-Aid-Replication-Materials/Replication Materials/Code/0_Master.do",
+        "CORPORA_AND_DATABASES.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Existing likely source family: direct_aid_humanitarian_governance_preregistered_field_experiment."
+    },
+    {
+      "review_id": "review_figure1_search_leads_7019f9cdf939",
+      "lead_key": "title:2klnfx",
+      "canonical_source_key": "doi:10.7910/DVN/2KLNFX",
+      "decision": "reject_irrelevant",
+      "confidence": "high",
+      "reason": "Dataverse metadata shows a replication package for a single Journal of Politics paper. The word replication here means computational replication materials, not a direct original/replication pair source.",
+      "next_action": "do_not_add_to_figure1_pair_source_work",
+      "sources_checked": [
+        "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/2KLNFX.json"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": ""
+    },
+    {
+      "review_id": "review_figure1_search_leads_7d811dec6207",
+      "lead_key": "title:3_replication_package_ufvur",
+      "canonical_source_key": "local:data/raw/corpus_candidates/political_science_unlock/zenodo/10059860/3-replication-package_ufvur.zip",
+      "decision": "route_to_result_table_worklist",
+      "confidence": "high",
+      "reason": "This is a local Zenodo replication package already used by an existing political-science source-family row. It should not create a new root corpus row, but it is useful artifact-level support.",
+      "next_action": "map_to_existing_bangladesh_authoritarian_election_source_family_if_needed_for_file_level_provenance",
+      "sources_checked": [
+        "data/raw/corpus_candidates/political_science_unlock/zenodo/10059860/3-replication-package_ufvur.zip",
+        "CORPORA_AND_DATABASES.tsv"
+      ],
+      "promote_payload": {},
+      "route_payload": {},
+      "user_gpt_prompt_request": "",
+      "notes": "Existing likely source family: bangladesh_authoritarian_election_replication_package."
+    }
+  ]
+}

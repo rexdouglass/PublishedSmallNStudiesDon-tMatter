@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_0300f4d42d594b9e",
+  "byte_size": 5253,
+  "columns": [
+    "id",
+    "name",
+    "kind",
+    "size",
+    "materialized_path",
+    "download_url",
+    "html_url",
+    "iri",
+    "provider",
+    "api_url"
+  ],
+  "estimated_data_rows": 17,
+  "file_name": "osf_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_file_list.csv",
+  "parent_corpus_database_id": "rpcb | doi:10.7554/eLife.71601",
+  "preview_rows": [
+    {
+      "api_url": "https://api.osf.io/v2/files/603aa13544157501e25819b4/",
+      "download_url": "https://osf.io/download/aydj2/",
+      "html_url": "https://osf.io/e5nvr/files/osfstorage/603aa13544157501e25819b4",
+      "id": "603aa13544157501e25819b4",
+      "iri": "https://osf.io/aydj2",
+      "kind": "file",
+      "materialized_path": "/RP_CB Final Analysis - Paper level data.csv",
+      "name": "RP_CB Final Analysis - Paper level data.csv",
+      "provider": "osfstorage",
+      "size": 18652
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/603aa13744157501dc5822a7/",
+      "download_url": "https://osf.io/download/c2rfy/",
+      "html_url": "https://osf.io/e5nvr/files/osfstorage/603aa13744157501dc5822a7",
+      "id": "603aa13744157501dc5822a7",
+      "iri": "https://osf.io/c2rfy",
+      "kind": "file",
+      "materialized_path": "/RP_CB Final Analysis - Experiment level data dictionary.csv",
+      "name": "RP_CB Final Analysis - Experiment level data dictionary.csv",
+      "provider": "osfstorage",
+      "size": 15065
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/61981aec07dcc50071e53918/",
+      "download_url": null,
+      "html_url": null,
+      "id": "61981aec07dcc50071e53918",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Individual replication audits/",
+      "name": "Individual replication audits",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/61981b0a8dbcf80067eda62b/",
+      "download_url": "https://osf.io/download/rn5j3/",
+      "html_url": "https://osf.io/e5nvr/files/osfstorage/61981b0a8dbcf80067eda62b",
+      "id": "61981b0a8dbcf80067eda62b",
+      "iri": "https://osf.io/rn5j3",
+      "kind": "file",
+      "materialized_path": "/Individual replication audits/RPCB_Final_Analysis_Study_48.R",
+      "name": "RPCB_Final_Analysis_Study_48.R",
+      "provider": "osfstorage",
+      "size": 52157
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/61981b04ef62980073f5aefc/",
+      "download_url": "https://osf.io/download/qkjtm/",
+      "html_url": "https://osf.io/e5nvr/files/osfstorage/61981b04ef62980073f5aefc",
+      "id": "61981b04ef62980073f5aefc",
+      "iri": "https://osf.io/qkjtm",
+      "kind": "file",
+      "materialized_path": "/Individual replication audits/RPCB_Final_Analysis_Study_20.R",
+      "name": "RPCB_Final_Analysis_Study_20.R",
+      "provider": "osfstorage",
+      "size": 54260
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:36:47",
+  "sha256": "cde5086abac70f6db92b86a1cbe23c7eb88498b5ae765beca16c9ef7398c1ba5"
+}

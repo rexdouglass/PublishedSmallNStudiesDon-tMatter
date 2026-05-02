@@ -1,0 +1,24 @@
+metric	value	artifact_count
+parser_priority	low	67
+parser_priority	medium	6
+recommended_next_stage	deprioritize_for_figure1_parsing	19
+recommended_next_stage	inspect_code_or_text_for_generated_tables	15
+recommended_next_stage	inspect_sample_for_result_fields	2
+recommended_next_stage	inventory_metadata_and_links	1
+recommended_next_stage	repair_or_manual_inventory	36
+parent_corpus_database_id	lead_border_2019	2
+parent_corpus_database_id	lead_media_priming_2017	2
+parent_corpus_database_id	repo_search_dataverse_c2906b5dfd2b	8
+parent_corpus_database_id	repo_search_osf_3c6cdcbee4b9	1
+parent_corpus_database_id	repo_search_osf_92e639ac2dc7	53
+parent_corpus_database_id	repo_search_osf_ea08e3722d17	7
+sample_kind		33
+sample_kind	delimited_table	4
+sample_kind	excel_workbook	2
+sample_kind	html_text	1
+sample_kind	metadata_only	3
+sample_kind	pdf_text	26
+sample_kind	sample_failed	3
+sample_kind	zip_inventory	1
+total	parser_queue_artifacts	73
+total	high_priority_parse_table_result_candidates	0

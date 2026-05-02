@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "osf:63av8",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:headspace_for_parents_a_pilot_randomised_controlled_trial",
+  "next_action": "stop_for_figure1_corpus_database_and_replication_pair_intake",
+  "notes": "OSF API returned 404 during prior review, but the available lead text is still enough to reject this as a speculative pilot-only route.",
+  "promote_payload": {},
+  "reason": "This is a single pilot RCT lead with no affirmative evidence that it is itself a replication/reproduction/follow-up of an identifiable original. Do not route it forward because a later larger study might exist.",
+  "review_id": "review_figure1_search_leads_262bed40a6d0",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/63av8/"
+  ],
+  "user_gpt_prompt_request": ""
+}

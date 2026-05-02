@@ -1,0 +1,352 @@
+{
+  "artifact_id": "source_artifact_c0db8ef06b50094d",
+  "byte_size": 7412,
+  "file_name": "LBPSSV.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/LBPSSV.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 999,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 7417126,
+      "identifier": "DVN/LBPSSV",
+      "latestVersion": {
+        "citationDate": "2024-02-08",
+        "createTime": "2023-09-21T15:25:36Z",
+        "datasetFileUploadsAvailable": 999,
+        "datasetId": 7417126,
+        "datasetPersistentId": "doi:10.7910/DVN/LBPSSV",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": true,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "89f3999c6e49059d991ee990ffc1e080"
+              },
+              "contentType": "application/zip",
+              "creationDate": "2023-11-27",
+              "fileAccessRequest": true,
+              "filename": "replication_archive.zip",
+              "filesize": 269260296,
+              "friendlyType": "ZIP Archive",
+              "id": 7609590,
+              "lastUpdateTime": "2024-02-08T18:13:10Z",
+              "md5": "89f3999c6e49059d991ee990ffc1e080",
+              "persistentId": "",
+              "publicationDate": "2024-02-08",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:18c112d2a2a-2d698e85f92e",
+              "tabularData": false
+            },
+            "datasetVersionId": 350809,
+            "label": "replication_archive.zip",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 350809,
+        "internalVersionNumber": 19,
+        "lastUpdateTime": "2024-02-08T18:13:10Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: How Experiments Help Campaigns Persuade Voters: Evidence from a Large Archive of Campaigns' Own Experiments"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Stanford University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Hewitt, Luke"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of California, Berkeley"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Broockman, David"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Yale University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Coppock, Alexander"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Royal Holloway, University of London"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Tappin, Ben M."
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Swayable"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Slezak, James"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Swayable"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Coffman, Valerie"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Incite Studio"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Lubin, Nathaniel"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Swayable"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Hamidian, Mohammad"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Yale University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "alex.coppock@yale.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Coppock, Alexander"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2023-09-21"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Political campaigns increasingly conduct experiments to learn how to persuade voters. Little research has considered the implications of this trend for elections or democracy. To probe these implications, we analyze a unique archive of 146 advertising experiments conducted by US campaigns in 2018 and 2020 using the platform Swayable. This archive includes 617 advertisements produced by 51 campaigns and tested with over 500,000 respondents. Importantly, we analyze the complete archive, avoiding publication bias. We find small but meaningful variation in the persuasive effects of advertisements. In addition, we find that common theories about what makes advertising persuasive have limited and context-dependent power to predict persuasiveness. These findings indicate that experiments can compound money's influence in elections: it is difficult to predict ex ante which ads persuade, experiments help campaigns do so, but the gains from these findings principally accrue to campaigns well-financed enough to deploy these ads at scale."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "publication",
+                "value": [
+                  {
+                    "publicationCitation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationCitation",
+                      "value": "HEWITT, LUKE, DAVID BROOCKMAN, ALEXANDER COPPOCK, BEN M. TAPPIN, JAMES SLEZAK, VALERIE COFFMAN, NATHANIEL LUBIN, et al. 2024. “How Experiments Help Campaigns Persuade Voters: Evidence from a Large Archive of Campaigns’ Own Experiments.” American Political Science Review, 1–19."
+                    },
+                    "publicationIDNumber": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationIDNumber",
+                      "value": "10.1017/S0003055423001387"
+                    },
+                    "publicationIDType": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "publicationIDType",
+                      "value": "doi"
+                    },
+                    "publicationURL": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationURL",
+                      "value": "https://doi.org/10.1017/S0003055423001387"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Coppock, Alexander"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2023-09-21"
+              }
+            ],
+            "name": "citation"
+          },
+          "journal": {
+            "displayName": "Journal Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "journalVolumeIssue",
+                "value": [
+                  {
+                    "journalPubDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "journalPubDate",
+                      "value": "2024-02"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "controlledVocabulary",
+                "typeName": "journalArticleType",
+                "value": "research article"
+              }
+            ],
+            "name": "journal"
+          }
+        },
+        "publicationDate": "2024-02-08",
+        "releaseTime": "2024-02-08T18:13:10Z",
+        "storageIdentifier": "s3://10.7910/DVN/LBPSSV",
+        "versionMinorNumber": 0,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/LBPSSV",
+      "protocol": "doi",
+      "publicationDate": "2024-02-08",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/LBPSSV"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "5aadd88765a90a714f15c70db8728c659dba4a3ea04621c4564f251a9d7c1908"
+}

@@ -1,0 +1,25 @@
+{
+  "batch_id": "clustered004",
+  "cluster_id": "cluster_original_effects_srull_9b8f8fe2c740",
+  "confidence": "high",
+  "created_at": "2026-05-02T01:55:21+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered004.json",
+  "lead_level_note_count": 1,
+  "lead_level_notes": [
+    {
+      "notes": "Route original_effects_srull.csv and the Srull/Wyer R Markdown to result-table review under RRR; reject generated RStudio notebook cache CSVs as source-family evidence.",
+      "suggested_disposition": "result_table_worklist"
+    }
+  ],
+  "next_action": "Route original_effects_srull.csv and the Srull/Wyer Rmd to the result-table worklist under the RRR/McCarthy 2018 parent; reject generated RStudio notebook cache CSVs as source-family evidence and split the Hagger metaanalysis hit if reviewed separately.",
+  "parent_corpus_database_id_or_key": "raw_replication_project:rrr",
+  "preferred_source_family_name": "Registered Replication Report on Srull and Wyer (1979)",
+  "reason": "This is an individual Registered Replication Report/meta-analysis cluster, not a corpus/database source family. It does contain apparent result-table artifacts for Srull/Wyer plus analysis code, so it belongs in result-table review under the RRR project rather than corpus-source intake.",
+  "sources_checked": [
+    "web:https://journals.sagepub.com/doi/10.1177/2515245918777487",
+    "web:https://research.lancaster-university.uk/en/publications/registered-replication-report-on-srull-and-wyer-1979/",
+    "local:data/raw/replication_projects/lead_harvest/rrr_mccarthy_2018/",
+    "local:data/raw/replication_projects/rrr/srull_all_labs/"
+  ]
+}

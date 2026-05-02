@@ -1,0 +1,54 @@
+{
+  "artifact_id": "source_artifact_b7649dbb17668a1a",
+  "byte_size": 687,
+  "file_name": "wells_forqual.Rdata",
+  "file_type": "rdata",
+  "local_path": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_wscxp/wells_forqual.Rdata",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "community_ID",
+        "top_open_dum",
+        "top_openorcould_dum"
+      ],
+      "name": "wells_agg",
+      "preview_rows": [
+        {
+          "community_ID": "CATUNDA10",
+          "top_open_dum": 1.0,
+          "top_openorcould_dum": 1.0
+        },
+        {
+          "community_ID": "CATUNDA12",
+          "top_open_dum": 0.0,
+          "top_openorcould_dum": 0.0
+        },
+        {
+          "community_ID": "CATUNDA2",
+          "top_open_dum": 0.0,
+          "top_openorcould_dum": 0.0
+        },
+        {
+          "community_ID": "CATUNDA21",
+          "top_open_dum": 0.0,
+          "top_openorcould_dum": 1.0
+        },
+        {
+          "community_ID": "CATUNDA6",
+          "top_open_dum": 1.0,
+          "top_openorcould_dum": 1.0
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        120,
+        3
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_metaketa_iii_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:51",
+  "sha256": "a7c99ebb318a240e9d8db7b18d032d910fcf4d5c3c24d29d9d8b38c9a457bf40"
+}

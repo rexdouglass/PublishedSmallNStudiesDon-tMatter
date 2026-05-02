@@ -1,0 +1,49 @@
+{
+  "batch_id": "clustered005",
+  "cluster_id": "cluster_osf_01_original_dataset_63864d88187b",
+  "confidence": "medium",
+  "created_at": "2026-05-02T02:32:42+00:00",
+  "decision": "route_cluster_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered005.json",
+  "lead_level_note_count": 6,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_281ebaea6cc9",
+      "notes": "Original_Dataset.sav is a data file in a likely one-off OSF package.",
+      "suggested_disposition": "individual_paper"
+    },
+    {
+      "node_id": "node_search_manifest_fec7dd408b30",
+      "notes": "osf_01_download.json is a package download manifest.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_d7f6cde01cf8",
+      "notes": "FinalData.R looks like package-level analysis code.",
+      "suggested_disposition": "individual_paper"
+    },
+    {
+      "node_id": "node_search_manifest_0831ed595724",
+      "notes": "FinalData.R duplicate/second OSF file; keep with the individual package.",
+      "suggested_disposition": "individual_paper"
+    },
+    {
+      "node_id": "node_search_manifest_c81af09ab4ca",
+      "notes": "osf_manifest.json is a file-inventory artifact.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_cdebf5a3ff73",
+      "notes": "osf_file_list.csv is a file inventory for the individual package.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Route the package to the individual replication paper worklist; inspect osf_file_list.csv/osf_manifest.json only to determine whether a specific multi-row result table should later be split out to the result-table worklist.",
+  "parent_corpus_database_id_or_key": "lead_harvest:contextual_bias_2026",
+  "preferred_source_family_name": "Contextual Bias 2026 OSF package",
+  "reason": "The cluster shows an OSF-hosted dataset, scripts, manifest, and file list, but the compact evidence does not establish a reusable multi-row original/replication source family or pair/result table. Treat as a one-off replication package unless manifest inspection reveals a multi-study/effect table.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:contextual_bias_2026",
+    "web exact searches for contextual_bias_2026, Original_Dataset.sav, FinalData.R, and contextual bias OSF replication package"
+  ]
+}

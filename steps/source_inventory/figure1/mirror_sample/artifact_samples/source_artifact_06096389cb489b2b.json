@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_06096389cb489b2b",
+  "byte_size": 1662,
+  "columns": [
+    "claim_id",
+    "original_effective_df1_reference",
+    "original_effective_sample_size",
+    "lor_conversion"
+  ],
+  "estimated_data_rows": 55,
+  "file_name": "orig_stats_effective.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_06096389cb489b2b__orig_stats_effective.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "claim_id": "Vpgm_single-trace",
+      "lor_conversion": null,
+      "original_effective_df1_reference": 290.0,
+      "original_effective_sample_size": null
+    },
+    {
+      "claim_id": "0qar_single-trace",
+      "lor_conversion": null,
+      "original_effective_df1_reference": 42.0,
+      "original_effective_sample_size": null
+    },
+    {
+      "claim_id": "5Awm_single-trace",
+      "lor_conversion": null,
+      "original_effective_df1_reference": 133.0,
+      "original_effective_sample_size": null
+    },
+    {
+      "claim_id": "5Kgq_single-trace",
+      "lor_conversion": null,
+      "original_effective_df1_reference": 118.0,
+      "original_effective_sample_size": null
+    },
+    {
+      "claim_id": "5Q82_single-trace",
+      "lor_conversion": null,
+      "original_effective_df1_reference": 10.78657851,
+      "original_effective_sample_size": null
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:39:17",
+  "sha256": "d62acb041a318f7d759347d2d1a553fce53e4f8b4cad296458954f9e36d91e89"
+}

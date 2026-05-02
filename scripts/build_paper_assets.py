@@ -10,11 +10,15 @@ from __future__ import annotations
 
 import ast
 import csv
+import hashlib
+import io
 import math
 import os
 import re
 import shutil
 import subprocess
+import tempfile
+import zipfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
@@ -34,6 +38,7 @@ from scipy import stats
 ROOT = Path(__file__).resolve().parents[1]
 DRAFT_HTML = ROOT / "docs" / "nightmare-hellscape (3).html"
 DOCS = ROOT / "docs"
+REFERENCES_BIB = DOCS / "references.bib"
 GENERATED = DOCS / "_generated"
 FIG_DIR = GENERATED / "figures"
 TABLE_DIR = ROOT / "data" / "derived" / "paper_tables"
@@ -41,6 +46,54 @@ TABLE_FRAGMENT_DIR = GENERATED / "tables"
 DATASET_DERIVED_DIR = ROOT / "data" / "derived" / "effect_inflation_dataset"
 TESS_STUDY_INDEX = DATASET_DERIVED_DIR / "plot3_tess_study_index_candidates.csv"
 POLISCI_RESCUE_WORKLIST = DATASET_DERIVED_DIR / "plot3_political_science_rescue_worklist.csv"
+POLISCI_STRICT_RESCUE_ROWS = DATASET_DERIVED_DIR / "plot3_political_science_strict_rescue_rows.csv"
+POLISCI_PAPER_PROJECT_MEDIANS = DATASET_DERIVED_DIR / "plot3_political_science_paper_project_medians.csv"
+AEA_GOVERNANCE_CANDIDATES = DATASET_DERIVED_DIR / "plot3_aea_registry_governance_candidates.csv"
+POLISCI_UNLOCK_RAW = ROOT / "data" / "raw" / "corpus_candidates" / "political_science_unlock"
+GOOD_POLITICIANS_ZIP = POLISCI_UNLOCK_RAW / "zenodo" / "10086096" / "gulzarkhan20240105.zip"
+GHANA_DEBATES_TAB = POLISCI_UNLOCK_RAW / "dataverse" / "OJA7YS" / "BKO_debates_main.tab"
+VIETNAM_LEGISLATOR_OUTCOMES = POLISCI_UNLOCK_RAW / "dataverse" / "RXA4JB" / "pooled-outcomes.xlsx"
+VIETNAM_MAIN_SURVEY_OUTCOMES = POLISCI_UNLOCK_RAW / "dataverse" / "4WNEE9" / "survey-outcomes.xlsx"
+VIETNAM_MAIN_EXPERIMENTAL_ANALYSES = POLISCI_UNLOCK_RAW / "dataverse" / "4WNEE9" / "experimental-analyses.Rds"
+GOLDEN_PS_MASTER = POLISCI_UNLOCK_RAW / "dataverse" / "9PWQZT" / "99_ps_master.tab"
+KALLA_BROOCKMAN_MINIMAL_EFFECTS = POLISCI_UNLOCK_RAW / "dataverse" / "RAMHWP" / "master_sheet_output.tab"
+LOCAL_ELITES_OPENICPSR_ZIP = ROOT / "data" / "raw" / "147561-V3.zip"
+HEWITT_CAMPAIGN_ARCHIVE_ZIP = ROOT / "data" / "raw" / "replication_archive.zip"
+POLITICAL_ACTIVISTS_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "2KLNFX" / "2KLNFX.zip"
+CHINA_AID_ATTITUDES_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "3VVWPL" / "3VVWPL.zip"
+SENEGAL_ACCOUNTABILITY_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "QAJQXP" / "QAJQXP.zip"
+PUBLIC_SERVICE_JOB_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "P0XSAU" / "P0XSAU.zip"
+BANGLADESH_ELECTION_ZIP = POLISCI_UNLOCK_RAW / "zenodo" / "10059860" / "3-replication-package_ufvur.zip"
+POLITICAL_ACTIVISTS_FREERIDING_ZIP = (
+    POLISCI_UNLOCK_RAW / "zenodo" / "7663389" / "political_activists_zenodo.zip"
+)
+POLICING_PATRIARCHY_DIR = POLISCI_UNLOCK_RAW / "dataverse" / "R75XVZ"
+POLICING_PATRIARCHY_CCTV = POLICING_PATRIARCHY_DIR / "cctv_full_data.tab"
+POLICING_PATRIARCHY_TABLE2 = POLICING_PATRIARCHY_DIR / "Table2.tex"
+AZEVEDO_JEPS_ANALYSIS_HTML = POLISCI_UNLOCK_RAW / "dataverse" / "ETUUOD" / "analysis_manuscript.html"
+VOTE_BUYING_RADIO_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "VPGE7F" / "VPGE7F.zip"
+INTERETHNIC_CONTACT_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "NQKPGY" / "NQKPGY.zip"
+IMMIGRATION_BELIEFS_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "8DM8KG" / "8DM8KG.zip"
+COVID_TOGETHERNESS_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "1LIIDV" / "1LIIDV.zip"
+MEDICINE_THEFT_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "KRFPVU" / "KRFPVU.zip"
+REFUGEE_DESTINATION_ZIP = POLISCI_UNLOCK_RAW / "zenodo" / "15322600" / "PNAS_replication_package.zip"
+BARAZA_ANCOVA_RESULTS = (
+    POLISCI_UNLOCK_RAW / "github" / "baraza" / "report" / "results" / "final" / "df_ancova.Rd"
+)
+DIRECT_AID_SURVEYS = (
+    POLISCI_UNLOCK_RAW
+    / "github"
+    / "Direct-Aid-Replication-Materials"
+    / "Replication Materials"
+    / "Data"
+    / "surveysDataset.dta"
+)
+BANGLADESH_WASH_ZIP = POLISCI_UNLOCK_RAW / "dataverse" / "U9I4Z2" / "Replication_Folder_only.zip"
+COVID_EMPEROR_ZIP = POLISCI_UNLOCK_RAW / "osf" / "covid_emperor_tejmf" / "replication.zip"
+VACCINE_HESITANCY_ZIP = (
+    POLISCI_UNLOCK_RAW / "osf" / "vaccine_hesitancy_c8dvm" / "data__Reddinger_Levine_Charness_vaccination_rct.zip"
+)
+MOUSA_D_CANDIDATES = DATASET_DERIVED_DIR / "plot3_mousa2020_soccer_d_candidates.csv"
 BODY_QMD = GENERATED / "paper_body.qmd"
 DATA_APPENDICES_QMD = GENERATED / "data_appendices.qmd"
 DATASET_AUDIT_QMD = GENERATED / "dataset_audit_snapshot.qmd"
@@ -52,6 +105,7 @@ PLOT3_SOURCES_QMD = GENERATED / "plot3_preregistered_sources.qmd"
 PLOT3_CRITERIA_QMD = GENERATED / "plot3_preregistered_criteria.qmd"
 PLOT4_SOURCES_QMD = GENERATED / "plot4_all_source_dump_sources.qmd"
 PLOT_STATUS_QMD = GENERATED / "plot_catalog_status.qmd"
+PROVENANCE_SCHEMA_QMD = GENERATED / "provenance_schema_pilot.qmd"
 SOURCE_CITATION_GAPS_QMD = GENERATED / "source_citation_gaps.qmd"
 CITATION_AUDIT = GENERATED / "citation_audit.csv"
 TABLE_MANIFEST = TABLE_DIR / "table_manifest.csv"
@@ -85,6 +139,8 @@ COMPARE_OUTCOME_ROWS = ROOT / "data" / "derived" / "corpus_candidates" / "compar
 COMPARE_TRIALS = ROOT / "data" / "raw" / "corpus_candidates" / "compare_trials" / "compare_trials.csv"
 PROTZKO_PROMOTED = HARVEST_PROMOTED_DIR / "protzko_nhb_pairs__promoted_pairs.csv"
 PREREG_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_results.csv"
+PREREG_RESULTS_TSV = DATASET_DERIVED_DIR / "plot3_preregistered_results.tsv"
+PREREG_DISPLAY_TABLE_TSV = DATASET_DERIVED_DIR / "plot3_preregistered_display_table.tsv"
 PREREG_SENSITIVITY_RESULTS = DATASET_DERIVED_DIR / "plot3_preregistered_sensitivity_sidecar_rows.csv"
 BRODEUR_PREREG_PAPER_MEDIANS = DATASET_DERIVED_DIR / "plot3_brodeur_preregistered_pap_paper_medians.csv"
 PREREG_CTGOV_PRIMARY_RANDOMIZED_RESULTS = DATASET_DERIVED_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar_rows.csv"
@@ -98,6 +154,14 @@ SCORE_TEXT_CLAIM_CANDIDATES = DATASET_DERIVED_DIR / "plot3_score_text_claim_resc
 ALL_SOURCE_DN_ROWS = DATASET_DERIVED_DIR / "plot4_all_source_dn_rows.csv"
 PLOT1_PAIR_DETAILS = DATASET_DERIVED_DIR / "plot1_replication_pair_details.csv"
 PLOT2_PAPER_DETAILS = DATASET_DERIVED_DIR / "plot2_published_paper_details.csv"
+PLOT_DOT_MEMBERSHIP = DATASET_DERIVED_DIR / "plot_dot_membership.tsv"
+PLOT_DOT_REFERENCES_BIB = DATASET_DERIVED_DIR / "plot_dot_references.bib"
+PLOT_PAPER_MEMBERSHIP = DATASET_DERIVED_DIR / "plot_paper_membership.tsv"
+PLOT_PAPER_SUMMARY = DATASET_DERIVED_DIR / "plot_paper_summary.tsv"
+PLOT_PAPER_EXCLUSIVITY_AUDIT = DATASET_DERIVED_DIR / "plot_paper_exclusivity_audit.tsv"
+PLOT_RESULT_PARENT_CHILD = DATASET_DERIVED_DIR / "plot_result_parent_child.tsv"
+PLOT_SOURCE_FAMILY_MEMBERSHIP = DATASET_DERIVED_DIR / "plot_source_family_membership.tsv"
+PLOT_ASSIGNMENT_RULES = DATASET_DERIVED_DIR / "plot_assignment_rules.tsv"
 PREREG_FIG = FIG_DIR / "plot3_preregistered_d_vs_n.png"
 PREREG_SENSITIVITY_FIG = FIG_DIR / "plot3_preregistered_sensitivity_sidecar.png"
 PREREG_CTGOV_PRIMARY_RANDOMIZED_FIG = FIG_DIR / "plot3_ctgov_phase2plus_primary_randomized_sidecar.png"
@@ -371,6 +435,12 @@ PLOT1_CITATION_KEYS = {
     "lead::tpp_bem": "kekecs2023tpp",
     "lead::tyner_nosek_2026": "tyner2026",
     "lead::wood_porter_2019": "woodPorter2019Dataverse",
+    "Clinical phase II to phase III pairs": "internalKerschbaumerPhaseIiIiiRheumatology",
+    "Kerschbaumer 2020 rheumatology phase II/III": "internalKerschbaumerPhaseIiIiiRheumatology",
+    "Li 2024 PD-1/PD-L1 phase II/III oncology": "internalLiPd1Pdl1PhaseIiIiiOncology",
+    "Marcus Four Lab Replication Hcmv7": "internalMarcusFourLabReplicationLead",
+    "lead::marcus_four_lab_replication_hcmv7": "internalMarcusFourLabReplicationLead",
+    "Wils 2023 IBD phase II/III": "internalWilsIbdPhaseIiIii",
 }
 
 PLOT1_DISPLAY_LABELS = {
@@ -687,6 +757,10 @@ PLOT2_CITATION_KEYS = {
     "ctgov_finer_grained_kg": "du2024",
     "Linden random-effect comparator rows": "linden2024publicationBiasPsychology",
     "linden_2024_random_effects": "linden2024publicationBiasPsychology",
+    "replication-pair original-side bridge": "internalPlot2ReplicationPairOriginalsBridge",
+    "replication_pair_originals_bridge": "internalPlot2ReplicationPairOriginalsBridge",
+    "Aczel negative-claim t-test comparator": "internalAczelNegativeClaimComparator",
+    "aczel_2018_negative_claim_ttests": "internalAczelNegativeClaimComparator",
 }
 
 PLOT2_DISPLAY_LABELS = {
@@ -838,6 +912,36 @@ PLOT3_CITATION_KEYS = {
     "EGAP Metaketa III natural-resource monitoring pooled PAP row": "metaketaIIIProject",
     "EGAP Metaketa IV community-policing pooled PAP row": "metaketaIVProject",
     "Mousa 2020 Iraq soccer social-cohesion preregistered field experiment": "mousa2020soccerZenodo",
+    "Good Politicians preregistered political-candidacy field experiment": "goodPoliticiansZenodo",
+    "Ghana debates preregistered candidate-debates field experiment": "ghanaDebatesDataverse",
+    "Vietnam legislator-responsiveness preregistered field experiment": "vietnamLegislatorResponsivenessDataverse",
+    "Vietnam National Assembly main responsiveness preregistered field experiment": "vietnamMainResponsivenessDataverse",
+    "Golden Gulzar Sonnet political-responsiveness preregistered field experiment": "goldenGulzarSonnetDataverse",
+    "Kalla Broockman 2018 preregistered campaign-contact field-experiment archive": "kallaBroockman2018Dataverse",
+    "Local Elites state-capacity tax-compliance preregistered field experiment": "localElitesOpenicpsr",
+    "Hewitt et al. campaign-ad persuasion preregistered experiment archive": "hewittCampaignExperimentsDataverse",
+    "Hensel Rink political-activist motivation preregistered field experiment": "henselRinkPoliticalActivistsDataverse",
+    "Wood Hoy Pryke China-aid attitudes preregistered survey experiment": "woodHoyPrykeChinaAidDataverse",
+    "Senegal learning-accountability preregistered information field experiment": "senegalLearningAccountabilityDataverse",
+    "Public-service job-attributes preregistered conjoint experiment": "publicServiceJobAttributesDataverse",
+    "Bangladesh authoritarian-election information-campaign preregistered field experiment": "bangladeshElectionZenodo",
+    "Political Activists as Free-Riders preregistered canvassing field experiment": "politicalActivistsFreeridingZenodo",
+    "Policing in patriarchy Women Help Desks preregistered field experiment": "policingPatriarchyDataverse",
+    "India anti-vote-buying radio-campaign preregistered field experiment": "voteBuyingRadioDataverse",
+    "Kotsadam Keller Elwert interethnic-contact preregistered field experiment": "interethnicContactDataverse",
+    "Immigration message-or-messenger preregistered survey experiment": "immigrationBeliefsDataverse",
+    "Favero Pedersen COVID information-cue preregistered survey experiment": "covidTogethernessDataverse",
+    "Medicine-theft remote-tracking preregistered governance field experiment": "medicineTheftDataverse",
+    "Ukrainian-refugee destination-choice preregistered conjoint experiment": "refugeeDestinationZenodo",
+    "Baraza public-service delivery preregistered community-monitoring field experiment": "barazaGithub",
+    "Direct-aid humanitarian-governance preregistered field experiment": "directAidGithub",
+    "Bangladesh school-WASH transparency preregistered field experiment": "bangladeshWashDataverse",
+    "COVID Emperor social-norm preregistered survey experiment": "covidEmperorOsf",
+    "COVID vaccine-hesitancy targeted-message preregistered survey experiment": "vaccineHesitancyOsf",
+    "Liberia Partnership Schools preregistered education-governance field experiment": "liberiaPslAeaRegistry",
+    "Azevedo et al. JEPS preregistered political-knowledge replication": "azevedoJepsDataverse",
+    "TESS Graham 1155 explicit-PAP political-behavior survey experiment": "tessGraham1155",
+    "TESS Johnson 1389 explicit-PAP school-choice survey experiment": "tessJohnson1389",
     "EGAP Metaketa I information/accountability native ATE rows": "metaketaIRepo",
     "EGAP Metaketa III natural-resource monitoring native rows": "metaketaIIIProject",
     "EGAP Metaketa IV community-policing native rows": "metaketaIVProject",
@@ -845,6 +949,17 @@ PLOT3_CITATION_KEYS = {
     "RPCB eLife Registered Report replication effects": "errington2021",
     "Communication privacy preregistered replication corpus": "masur2025privacy",
     "Retrieval-extinction rats preregistered replication": "luyten2017retrievalExtinction",
+    "COMPare prespecified clinical-trial outcome audit": "internalCompareClinicalOutcomeAudit",
+    "FORRT FReD / Replication Database": "tosh2024",
+    "FReD archived workflow workbook / OSF Registries queue": "tosh2024",
+    "Many Labs 1-5 project-level replication rows": "internalManyLabsProjectLevelAudit",
+    "Nordic trial registration-publication linkage database": "internalNordicTrialPublicationLinkage",
+    "Political-science PAP Dataverse/DIME/SCORE rescue worklist": "internalPoliticalScienceRescueWorklist",
+    "Psychological Science Accelerator replication-pair rows": "internalPsaReplicationPairRows",
+    "Registered Replication Reports Plot 1 pair rows": "internalRrrPlot1PairRows",
+    "Registered Replication Reports per-lab rows": "internalRrrPerLabRows",
+    "Self-control fMRI preregistered replication materials": "selfControlFmriOsf",
+    "Twomey et al. 2021 kinesiology article audit": "internalTwomeyKinesiologyAudit",
 }
 
 PLOT3_DISPLAY_LABELS = {
@@ -888,6 +1003,27 @@ PLOT3_DISPLAY_LABELS = {
     "EGAP Metaketa III natural-resource monitoring pooled PAP row": "EGAP Metaketa III pooled PAP row",
     "EGAP Metaketa IV community-policing pooled PAP row": "EGAP Metaketa IV pooled PAP row",
     "Mousa 2020 Iraq soccer social-cohesion preregistered field experiment": "Mousa 2020 Iraq soccer field experiment",
+    "Good Politicians preregistered political-candidacy field experiment": "Good Politicians field experiment",
+    "Ghana debates preregistered candidate-debates field experiment": "Ghana debates field experiment",
+    "Vietnam legislator-responsiveness preregistered field experiment": "Vietnam legislator responsiveness",
+    "Vietnam National Assembly main responsiveness preregistered field experiment": "Vietnam National Assembly responsiveness",
+    "Golden Gulzar Sonnet political-responsiveness preregistered field experiment": "Golden/Gulzar/Sonnet responsiveness",
+    "Kalla Broockman 2018 preregistered campaign-contact field-experiment archive": "Kalla/Broockman campaign contact",
+    "Local Elites state-capacity tax-compliance preregistered field experiment": "Local Elites tax compliance",
+    "Hewitt et al. campaign-ad persuasion preregistered experiment archive": "Campaign-ad persuasion archive",
+    "Hensel Rink political-activist motivation preregistered field experiment": "Political activists field experiment",
+    "Wood Hoy Pryke China-aid attitudes preregistered survey experiment": "China-aid attitudes survey experiment",
+    "Senegal learning-accountability preregistered information field experiment": "Senegal accountability field experiment",
+    "Public-service job-attributes preregistered conjoint experiment": "Public-service job-attributes experiment",
+    "Bangladesh authoritarian-election information-campaign preregistered field experiment": "Bangladesh election information field experiment",
+    "Political Activists as Free-Riders preregistered canvassing field experiment": "Political activists free-riding experiment",
+    "Policing in patriarchy Women Help Desks preregistered field experiment": "Policing in patriarchy field experiment",
+    "Azevedo et al. JEPS preregistered political-knowledge replication": "JEPS political-knowledge replication",
+    "TESS Graham 1155 explicit-PAP political-behavior survey experiment": "TESS Graham 1155 survey experiment",
+    "TESS Johnson 1389 explicit-PAP school-choice survey experiment": "TESS Johnson 1389 survey experiment",
+    "COVID Emperor social-norm preregistered survey experiment": "COVID Emperor social-norm experiment",
+    "COVID vaccine-hesitancy targeted-message preregistered survey experiment": "COVID vaccine-hesitancy message experiment",
+    "Liberia Partnership Schools preregistered education-governance field experiment": "Liberia Partnership Schools",
     "EGAP Metaketa I information/accountability native ATE rows": "EGAP Metaketa I native ATE rows",
     "EGAP Metaketa III natural-resource monitoring native rows": "EGAP Metaketa III native rows",
     "EGAP Metaketa IV community-policing native rows": "EGAP Metaketa IV native rows",
@@ -919,6 +1055,14 @@ def safe_text(value: object) -> str:
     if pd.isna(value):
         return ""
     return str(value).strip()
+
+
+def first_nonempty(values: object) -> str:
+    for value in values:
+        text = safe_text(value)
+        if text:
+            return text
+    return ""
 
 
 def normalize_doi_value(value: object) -> str:
@@ -1695,6 +1839,7 @@ def rpcb_registered_report_median_rows() -> pd.DataFrame:
 def plot3_paper_group_key(row: pd.Series) -> str:
     """Stable paper/project key for Plot 3's one-dot-per-paper rule."""
     source_family = safe_text(row.get("source_family")).lower()
+    field = safe_text(row.get("field")).lower()
     point_id = safe_text(row.get("point_id"))
     if "psa-cr001" in source_family:
         return "psa-cr001:dorison2022"
@@ -1703,7 +1848,75 @@ def plot3_paper_group_key(row: pd.Series) -> str:
     if "scheel et al. 2021" in source_family:
         paper_stub = re.split(r"\s+[—-]\s+", safe_text(row.get("row_label")), maxsplit=1)[0]
         return f"scheel2021:{paper_stub.lower() or point_id}"
+    if field == "political science" or plot3_default_field(source_family) == "political science":
+        if source_family.startswith("brodeur et al. 2024"):
+            return point_id or f"brodeur:{row.name}"
+        if source_family.startswith("score/cos"):
+            return point_id or f"score:{row.name}"
+        return f"political-science:{source_family}"
     return point_id or f"row:{row.name}"
+
+
+def plot3_paper_project_type(row: pd.Series) -> str:
+    source_family = safe_text(row.get("source_family")).lower()
+    if source_family.startswith("brodeur et al. 2024"):
+        return "brodeur_extracted_paper"
+    if source_family.startswith("score/cos"):
+        return "score_original_paper"
+    if source_family.startswith("egap metaketa"):
+        return "pooled_metaketa_round_paper"
+    if "hewitt et al." in source_family or "kalla broockman" in source_family:
+        return "single_paper_campaign_archive"
+    return "single_paper_or_project"
+
+
+def write_political_science_paper_project_medians(precollapse: pd.DataFrame, collapsed: pd.DataFrame) -> None:
+    """Audit table for the political-science median-per-paper/project layer."""
+    if precollapse.empty:
+        pd.DataFrame().to_csv(POLISCI_PAPER_PROJECT_MEDIANS, index=False)
+        return
+    work = precollapse.copy()
+    if "field" not in work.columns:
+        work["field"] = ""
+    field_text = work["field"].fillna("").astype(str).str.strip()
+    inferred_field = work["source_family"].map(plot3_default_field)
+    work["_field_for_group"] = field_text.where(field_text.ne(""), inferred_field)
+    work = work.loc[work["_field_for_group"].eq("political science")].copy()
+    if work.empty:
+        pd.DataFrame().to_csv(POLISCI_PAPER_PROJECT_MEDIANS, index=False)
+        return
+    work["paper_project_key"] = work.apply(plot3_paper_group_key, axis=1)
+    rows: list[dict[str, object]] = []
+    for key, group in work.groupby("paper_project_key", sort=False):
+        first = group.iloc[0]
+        d_values = numeric_series(group["D"])
+        n_values = numeric_series(group["N"])
+        rows.append(
+            {
+                "paper_project_key": key,
+                "source_family": first.get("source_family"),
+                "source_label": first.get("source_label"),
+                "paper_project_label": first.get("row_label")
+                if key.startswith(("brodeur", "score"))
+                else first.get("source_label"),
+                "citation_key": first.get("citation_key"),
+                "paper_project_unit_type": plot3_paper_project_type(first),
+                "rows_collapsed": int(len(group)),
+                "median_D": float(d_values.median()),
+                "median_N": float(n_values.median()),
+                "min_N": float(n_values.min()),
+                "max_N": float(n_values.max()),
+                "row_units_collapsed": " | ".join(sorted(group["row_unit"].dropna().astype(str).unique())),
+                "example_result_labels": " || ".join(group["row_label"].dropna().astype(str).head(8).tolist()),
+                "source_files_collapsed": " || ".join(group["source_file"].dropna().astype(str).drop_duplicates().head(5).tolist()),
+            }
+        )
+    out = pd.DataFrame(rows).sort_values(
+        ["rows_collapsed", "source_family", "paper_project_label"],
+        ascending=[False, True, True],
+        kind="stable",
+    )
+    out.to_csv(POLISCI_PAPER_PROJECT_MEDIANS, index=False)
 
 
 def collapse_plot3_to_one_dot_per_paper(df: pd.DataFrame) -> pd.DataFrame:
@@ -1716,7 +1929,24 @@ def collapse_plot3_to_one_dot_per_paper(df: pd.DataFrame) -> pd.DataFrame:
     for _, group in work.groupby("_paper_group_key", sort=False):
         group = group.copy()
         first = group.iloc[0].copy()
+        field = safe_text(first.get("field")).lower()
+        source_family = safe_text(first.get("source_family")).lower()
+        is_political_science = (
+            field == "political science"
+            or plot3_default_field(source_family) == "political science"
+        )
         if len(group) == 1:
+            row_unit = safe_text(first.get("row_unit")).lower()
+            if is_political_science and ("component" in row_unit or "contrast" in row_unit):
+                first["row_unit"] = "paper_median_of_preregistered_results"
+                first["row_label"] = (
+                    f"{safe_text(first.get('source_label'))} - "
+                    "single preregistered paper/project result"
+                )
+                first["source_file"] = (
+                    f"{safe_text(first.get('source_file'))}; single-row "
+                    "paper/project collapse from political-science component audit"
+                )
             collapsed_rows.append(first)
             continue
         source_slug = slugify(safe_text(first.get("source_label")), "plot3_paper")
@@ -2253,6 +2483,2701 @@ MANUAL_PREREGISTERED_ADDITIONS: list[dict[str, object]] = [
 ]
 
 
+BRODEUR_POLITICAL_SCIENCE_TITLE_RE = re.compile(
+    r"("
+    r"accountability|\baid\b|bureaucrat|candidac|\bcampaign\b|clientel|compliance|corruption|"
+    r"debate|e-governance|\belections?\b|electoral|ethnically biased|foreign aid|"
+    r"food distribution|governance|government|immigration|information campaign|"
+    r"politic|protest|public|redistribution|service delivery|social programs|"
+    r"selection of talent|state capacity|subsidized|tax|vot"
+    r")",
+    flags=re.I,
+)
+
+
+def brodeur_preregistered_field_for_title(title: object) -> str:
+    """Route governance/political-economy Brodeur rows out of the generic economics bucket."""
+    text = safe_text(title)
+    if BRODEUR_POLITICAL_SCIENCE_TITLE_RE.search(text):
+        return "political science"
+    return "economics and finance"
+
+
+def chinn_d_from_event_counts(
+    treatment_events: float,
+    treatment_n: float,
+    control_events: float,
+    control_n: float,
+) -> float:
+    """Convert a binary two-arm contrast to d via Chinn's log-OR approximation."""
+    a = float(treatment_events)
+    b = float(treatment_n) - a
+    c = float(control_events)
+    d = float(control_n) - c
+    if min(a, b, c, d) <= 0:
+        a += 0.5
+        b += 0.5
+        c += 0.5
+        d += 0.5
+    log_or = math.log((a * d) / (b * c))
+    return log_or * math.sqrt(3) / math.pi
+
+
+def d_from_t_statistic(t_statistic: float, n: float) -> float:
+    return 2 * abs(float(t_statistic)) / math.sqrt(float(n))
+
+
+def d_from_chi_square_1df(chi_square: float, n: float) -> float:
+    r = math.sqrt(float(chi_square) / float(n))
+    if r >= 1:
+        return float("nan")
+    return abs(2 * r / math.sqrt(1 - r**2))
+
+
+def base_political_science_rescue_row(
+    *,
+    point_id: str,
+    source_family: str,
+    source_label: str,
+    citation_key: str,
+    row_unit: str,
+    row_label: str,
+    d_value: float,
+    n_value: float,
+    journal: str,
+    source_file: str,
+    source_row_number: int,
+) -> dict[str, object]:
+    return {
+        "point_id": point_id,
+        "source_family": source_family,
+        "source_label": source_label,
+        "field": "political science",
+        "citation_key": citation_key,
+        "row_unit": row_unit,
+        "row_label": row_label,
+        "D": float(d_value),
+        "N": float(n_value),
+        "supported": "not coded",
+        "journal": journal,
+        "source_file": source_file,
+        "source_row_number": source_row_number,
+    }
+
+
+def local_elites_state_capacity_components(zip_path: Path) -> tuple[pd.DataFrame, dict[str, object]]:
+    """Reconstruct the main central-vs-local tax compliance contrast from OpenICPSR 147561."""
+
+    admin_base = "Replication Materials - Updated October 2025/Data/01_base/admin_data/"
+    survey_base = "Replication Materials - Updated October 2025/Data/01_base/survey_data/"
+    pilot_a7 = {200, 201, 202, 203, 207, 208, 210}
+
+    def read_stata(archive: zipfile.ZipFile, member: str) -> pd.DataFrame:
+        return pd.read_stata(io.BytesIO(archive.read(member)), convert_categoricals=False)
+
+    with zipfile.ZipFile(zip_path) as archive:
+        fliers = read_stata(archive, admin_base + "fliers_campaign.dta")
+        fliers = fliers[~fliers["a7"].isin(pilot_a7)].copy()
+        fliers = fliers[["code", "treatment_fr", "rate"]].rename(
+            columns={
+                "code": "compound1",
+                "rate": "assign_flier_rate",
+                "treatment_fr": "assign_treatment_fr",
+            }
+        )
+        compound_text = fliers["compound1"].astype("Int64").astype(str)
+        fliers["a7"] = np.where(compound_text.str.len() == 6, compound_text.str[:3], compound_text.str[:4]).astype(float)
+        fliers["pilot"] = 0
+        fliers["compound1"] = fliers["compound1"].astype(float)
+
+        stratum = read_stata(archive, admin_base + "stratum.dta")[["a7", "stratum"]]
+
+        assignment = read_stata(archive, admin_base + "randomization_schedule.dta")[["a7", "treatment", "month"]].copy()
+        assignment.loc[assignment["a7"].eq(654), "treatment"] = 2
+        assignment = assignment.rename(columns={"treatment": "tmt"})
+
+        registration = read_stata(archive, admin_base + "registration_noPII.dta")
+        registration = registration[registration["tot_complete"].eq(1)].copy()
+        registration = registration.rename(columns={"today": "today_carto"})
+        registration = registration[["compound1", "house", "mm_rate", "exempt", "today_carto"]]
+        registration["compound1"] = registration["compound1"].astype(float)
+
+        taxroll = read_stata(archive, admin_base + "taxroll_noPII.dta")[["compound1"]].drop_duplicates()
+        taxroll["compound1"] = taxroll["compound1"].astype(float)
+
+        midline = read_stata(archive, survey_base + "midline_noPII.dta")
+        midline = midline.rename(
+            columns={
+                "compound": "compound1",
+                "today": "today_monitoring",
+                "exempt": "exempt_monitoring",
+            }
+        )
+        possible_compound = midline["possible_compound"]
+        midline.loc[possible_compound.isin([0, 999999, 9999999]) | possible_compound.isna(), "possible_compound"] = np.nan
+        guessed_compound = midline["compound1"].eq(999999) & midline["possible_compound"].notna()
+        midline.loc[guessed_compound, "compound1"] = midline.loc[guessed_compound, "possible_compound"]
+        midline = midline[midline["compound1"].notna() & ~midline["compound1"].eq(999999)].copy()
+        midline["max_tot_complete"] = midline.groupby("compound1")["tot_complete"].transform("max")
+        midline = midline[midline["tot_complete"].eq(midline["max_tot_complete"])].copy()
+        midline = midline.sort_values(["compound1", "start", "end"], kind="mergesort")
+        midline = midline.groupby("compound1", as_index=False, sort=False).tail(1)
+        midline = midline[["compound1", "code_same"]]
+        midline["compound1"] = midline["compound1"].astype(float)
+
+        payments = read_stata(archive, admin_base + "tax_payments_noPII.dta")
+        payments = payments.rename(columns={"date": "date_TDM", "colcode": "colcode_TDM"})
+        payments = payments[payments["unmatched_compound"].ne(1) & payments["compound1"].notna()].copy()
+        payments = payments[["compound1", "date_TDM", "amountCF"]]
+        payments["compound1"] = payments["compound1"].astype(float)
+
+    data = fliers.merge(stratum, on="a7", how="left")
+    data = data.merge(assignment, on="a7", how="left")
+    data = data.merge(registration, on="compound1", how="outer", indicator="_merge_flier_carto")
+    data["_merge_flier_carto_code"] = data["_merge_flier_carto"].map({"left_only": 1, "right_only": 2, "both": 3}).astype(int)
+    data = data.merge(taxroll, on="compound1", how="outer", indicator="_merge_flier_carto_rep")
+    data["_merge_flier_carto_rep_code"] = (
+        data["_merge_flier_carto_rep"].map({"left_only": 1, "right_only": 2, "both": 3}).astype(int)
+    )
+    data = data.merge(midline, on="compound1", how="outer", indicator="_merge_flier_carto_rep_monit")
+    data["_merge_flier_carto_rep_monit_code"] = (
+        data["_merge_flier_carto_rep_monit"].map({"left_only": 1, "right_only": 2, "both": 3}).astype(int)
+    )
+    data = data[data["_merge_flier_carto_rep_monit_code"].ne(2)].copy()
+    data = data.merge(payments, on="compound1", how="outer", indicator="_merge_payment")
+    data["_merge_payment_code"] = data["_merge_payment"].map({"left_only": 1, "right_only": 2, "both": 3}).astype(int)
+    unmatched_all = (
+        data["_merge_flier_carto_code"].eq(1)
+        & data["_merge_flier_carto_rep_code"].eq(1)
+        & data["_merge_flier_carto_rep_monit_code"].eq(1)
+    )
+    data = data[~unmatched_all].copy()
+
+    data["taxes_paid"] = 0
+    data.loc[data["_merge_payment_code"].eq(3), "taxes_paid"] = 1
+    data.loc[data["taxes_paid"].eq(0) & data["code_same"].eq(1), "taxes_paid"] = 1
+    data.loc[
+        data["house"].eq(1)
+        & data["_merge_payment_code"].eq(3)
+        & data["amountCF"].notna()
+        & data["assign_flier_rate"].notna()
+        & data["assign_flier_rate"].gt(data["amountCF"]),
+        "taxes_paid",
+    ] = 0
+    data.loc[
+        data["house"].eq(2)
+        & data["_merge_payment_code"].eq(3)
+        & data["amountCF"].notna()
+        & data["mm_rate"].notna()
+        & data["mm_rate"].gt(data["amountCF"]),
+        "taxes_paid",
+    ] = 0
+
+    data["rate"] = np.nan
+    data.loc[data["house"].eq(1), "rate"] = data.loc[data["house"].eq(1), "assign_flier_rate"]
+    data.loc[data["house"].eq(2), "rate"] = data.loc[data["house"].eq(2), "mm_rate"]
+    data = data[data["house"].ne(3)].copy()
+    data = data[data["pilot"].ne(1)].copy()
+    data = data[~data["a7"].isin(pilot_a7)].copy()
+    data = data[data["rate"].notna()].copy()
+    data["t_l"] = data["tmt"].eq(2).astype(int)
+
+    central_local = data[data["tmt"].isin([1, 2])].copy()
+    tab = central_local.groupby("tmt")["taxes_paid"].agg(["sum", "count", "mean"])
+    control_events = float(tab.loc[1, "sum"])
+    control_n = int(tab.loc[1, "count"])
+    treatment_events = float(tab.loc[2, "sum"])
+    treatment_n = int(tab.loc[2, "count"])
+    raw_d = chinn_d_from_event_counts(treatment_events, treatment_n, control_events, control_n)
+
+    components = pd.DataFrame(
+        [
+            {
+                "source": "local_elites_state_capacity",
+                "component": "local_vs_central_tax_compliance_raw_event_counts",
+                "D_signed": raw_d,
+                "D": abs(raw_d),
+                "N": treatment_n + control_n,
+                "treatment_events": treatment_events,
+                "treatment_n": treatment_n,
+                "treatment_mean": float(tab.loc[2, "mean"]),
+                "control_events": control_events,
+                "control_n": control_n,
+                "control_mean": float(tab.loc[1, "mean"]),
+                "raw_risk_difference": float(tab.loc[2, "mean"] - tab.loc[1, "mean"]),
+                "cluster_n": int(central_local["a7"].nunique()),
+                "append_to_plot": False,
+            }
+        ]
+    )
+
+    native: dict[str, object] = {}
+    try:
+        import statsmodels.formula.api as smf
+
+        analysis = data.copy()
+        analysis.loc[analysis["date_TDM"] < pd.Timestamp("2018-06-15"), "date_TDM"] = pd.NaT
+        analysis.loc[(analysis["tmt"].eq(3)) & (analysis["date_TDM"] < pd.Timestamp("2018-07-16")), "date_TDM"] = pd.NaT
+        carto_replacements = {
+            112: "2018-11-28",
+            219: "2018-11-28",
+            224: "2018-11-29",
+            238: "2018-12-03",
+            327: "2018-12-06",
+            343: "2018-11-30",
+            356: "2018-11-30",
+            510: "2018-12-03",
+            512: "2018-12-03",
+            514: "2018-11-26",
+            533: "2018-11-28",
+            538: "2018-11-29",
+            544: "2018-11-29",
+            588: "2018-11-27",
+            596: "2018-11-29",
+            658: "2018-11-27",
+            664: "2018-11-28",
+            669: "2018-12-01",
+            678: "2018-11-29",
+            204: "2018-08-09",
+            624: "2018-06-21",
+            6104: "2018-08-08",
+            231: "2018-06-18",
+            300: "2018-06-16",
+            312: "2018-09-17",
+            313: "2018-06-15",
+            502: "2018-07-18",
+            507: "2018-08-08",
+            557: "2018-08-08",
+            563: "2018-06-25",
+            571: "2018-08-18",
+            577: "2018-08-08",
+            595: "2018-12-11",
+            597: "2018-07-19",
+            619: "2018-08-08",
+            635: "2018-08-08",
+            647: "2018-11-07",
+            701: "2018-09-07",
+            6103: "2018-11-06",
+        }
+        for a7, date_text in carto_replacements.items():
+            analysis.loc[analysis["a7"].eq(a7) & analysis["today_carto"].isna(), "today_carto"] = pd.Timestamp(date_text)
+        analysis.loc[
+            analysis["a7"].eq(694)
+            & analysis["compound1"].isin([694001, 694002, 694003, 694004])
+            & analysis["today_carto"].isna(),
+            "today_carto",
+        ] = pd.Timestamp("2018-11-05")
+        analysis.loc[analysis["a7"].eq(694) & analysis["today_carto"].isna(), "today_carto"] = pd.Timestamp("2018-11-06")
+
+        analysis = analysis.sort_values(["a7", "compound1"], kind="mergesort").copy()
+        previous_carto = analysis.groupby("a7")["today_carto"].shift(1)
+        next_carto = analysis.groupby("a7")["today_carto"].shift(-1)
+        rank = analysis.groupby("a7").cumcount() + 1
+        max_rank = analysis.groupby("a7")["compound1"].transform("size")
+        missing_between = analysis["today_carto"].isna() & previous_carto.notna() & next_carto.notna()
+        same_neighbors = missing_between & previous_carto.eq(next_carto)
+        analysis.loc[same_neighbors, "today_carto"] = previous_carto[same_neighbors]
+        different_neighbors = missing_between & previous_carto.ne(next_carto)
+        analysis.loc[different_neighbors & rank.eq(max_rank), "today_carto"] = previous_carto[different_neighbors & rank.eq(max_rank)]
+        analysis.loc[different_neighbors & rank.ne(max_rank), "today_carto"] = next_carto[different_neighbors & rank.ne(max_rank)]
+
+        min_tdm = analysis.groupby("a7")["date_TDM"].transform("min")
+        max_carto = analysis.groupby("a7")["today_carto"].transform("max")
+        analysis["today_alt"] = min_tdm
+        analysis.loc[analysis["today_alt"].isna() & max_carto.notna(), "today_alt"] = max_carto
+        origin = pd.Timestamp("1960-01-01")
+        cut_bounds = [origin + pd.Timedelta(days=day) for day in [21355, 21415, 21475, 21532]]
+        model_sample = analysis[analysis["tmt"].isin([1, 2])].copy()
+        model_sample["time_FE_tdm_2mo_CvL"] = pd.cut(
+            model_sample["today_alt"],
+            bins=cut_bounds,
+            right=False,
+            labels=False,
+            include_lowest=True,
+        )
+        model_sample = model_sample.dropna(
+            subset=["taxes_paid", "t_l", "stratum", "house", "time_FE_tdm_2mo_CvL", "a7"]
+        ).copy()
+        model = smf.ols(
+            "taxes_paid ~ t_l + C(stratum) + C(house) + C(time_FE_tdm_2mo_CvL)",
+            data=model_sample,
+        ).fit(cov_type="cluster", cov_kwds={"groups": model_sample["a7"]})
+        native = {
+            "table4_adjusted_ate": float(model.params["t_l"]),
+            "table4_adjusted_se": float(model.bse["t_l"]),
+            "table4_adjusted_p": float(model.pvalues["t_l"]),
+            "table4_adjusted_n": int(model.nobs),
+            "table4_adjusted_cluster_n": int(model_sample["a7"].nunique()),
+        }
+    except Exception as exc:
+        native = {"table4_adjusted_blocker": safe_text(exc)}
+
+    return components, native
+
+
+def hewitt_campaign_experiments_components(zip_path: Path) -> tuple[pd.DataFrame, dict[str, object]]:
+    """Build D-ready treatment-arm contrasts from the Hewitt et al. campaign-experiment archive."""
+
+    import pyreadr
+
+    members = [
+        "replication_archive/output/processed_data/responses.RDS",
+        "replication_archive/output/processed_data/regression_ates.RDS",
+        "replication_archive/output/processed_data/studies.RDS",
+    ]
+    with tempfile.TemporaryDirectory() as tmpdir:
+        with zipfile.ZipFile(zip_path) as archive:
+            for member in members:
+                archive.extract(member, tmpdir)
+        processed = Path(tmpdir) / "replication_archive" / "output" / "processed_data"
+        responses = pyreadr.read_r(str(processed / "responses.RDS"))[None]
+        ates = pyreadr.read_r(str(processed / "regression_ates.RDS"))[None]
+        studies = pyreadr.read_r(str(processed / "studies.RDS"))[None]
+
+    rows: list[dict[str, object]] = []
+    for outcome in ["favorability", "votechoice"]:
+        values = responses[["study_id", "content_id", "treat", outcome]].copy()
+        values["study_id"] = values["study_id"].astype(str)
+        values["content_id"] = values["content_id"].astype(str)
+        values["treat"] = pd.to_numeric(values["treat"], errors="coerce")
+        values[outcome] = pd.to_numeric(values[outcome], errors="coerce")
+        values = values.dropna(subset=[outcome])
+
+        controls = (
+            values[values["treat"].eq(0)]
+            .groupby("study_id")[outcome]
+            .agg(control_n="count", control_mean="mean", control_sd=lambda x: x.std(ddof=1))
+            .reset_index()
+        )
+        treatments = (
+            values[values["treat"].eq(1)]
+            .groupby(["study_id", "content_id"])[outcome]
+            .agg(treatment_n="count", treatment_mean="mean")
+            .reset_index()
+        )
+        outcome_ates = ates[ates["outcome"].astype(str).eq(outcome)].copy()
+        outcome_ates["study_id"] = outcome_ates["study_id"].astype(str)
+        outcome_ates["content_id"] = outcome_ates["content_id"].astype(str)
+        merged = outcome_ates.merge(treatments, on=["study_id", "content_id"], how="inner")
+        merged = merged.merge(controls, on="study_id", how="inner")
+        merged = merged[merged["control_sd"].gt(0) & merged["treatment_n"].gt(1) & merged["control_n"].gt(1)].copy()
+        merged["D_signed"] = (merged["treatment_mean"] - merged["control_mean"]) / merged["control_sd"]
+        merged["D"] = merged["D_signed"].abs()
+        merged["N"] = merged["treatment_n"] + merged["control_n"]
+
+        for _, component in merged.iterrows():
+            rows.append(
+                {
+                    "source": "hewitt_campaign_experiments",
+                    "component": f"{component['study_id']}:{component['content_id']}:{outcome}",
+                    "study_id": component["study_id"],
+                    "content_id": component["content_id"],
+                    "outcome": outcome,
+                    "D_signed": float(component["D_signed"]),
+                    "D": float(component["D"]),
+                    "N": int(component["N"]),
+                    "treatment_n": int(component["treatment_n"]),
+                    "control_n": int(component["control_n"]),
+                    "treatment_mean": float(component["treatment_mean"]),
+                    "control_mean": float(component["control_mean"]),
+                    "control_sd": float(component["control_sd"]),
+                    "native_estimate_pp": float(component["estimate"]),
+                    "native_se_pp": float(component["std.error"]),
+                    "native_p": float(component["p.value"]),
+                    "append_to_plot": False,
+                }
+            )
+
+    components = pd.DataFrame(rows)
+    summary = {
+        "studies_n": int(studies["study_id"].nunique()),
+        "study_total_respondents": int(pd.to_numeric(studies["n_responses_study"], errors="coerce").sum()),
+        "component_contrasts_n": int(len(components)),
+    }
+    return components, summary
+
+
+def political_science_strict_rescue_rows() -> pd.DataFrame:
+    """Extraction-backed strict Plot 3 rows unlocked from the political-science queue."""
+    plot_rows: list[dict[str, object]] = []
+    audit_rows: list[dict[str, object]] = []
+
+    def ols_coefficients(y: pd.Series, design: pd.DataFrame) -> pd.Series:
+        beta = np.linalg.lstsq(design.to_numpy(dtype=float), y.to_numpy(dtype=float), rcond=None)[0]
+        return pd.Series(beta, index=design.columns)
+
+    if GOOD_POLITICIANS_ZIP.exists():
+        try:
+            with zipfile.ZipFile(GOOD_POLITICIANS_ZIP) as archive:
+                with archive.open("replication/cand_final.dta") as handle:
+                    good = pd.read_stata(io.BytesIO(handle.read()))
+            components: list[dict[str, object]] = []
+            for outcome in ["filer", "elect"]:
+                outcome_values = numeric_series(good[outcome])
+                for treatment_arm in ["tv_social", "tv_personal"]:
+                    control_mask = numeric_series(good["tv_neutral"]).eq(1) & outcome_values.notna()
+                    treatment_mask = numeric_series(good[treatment_arm]).eq(1) & outcome_values.notna()
+                    control_n = int(control_mask.sum())
+                    treatment_n = int(treatment_mask.sum())
+                    control_events = float(outcome_values.loc[control_mask].sum())
+                    treatment_events = float(outcome_values.loc[treatment_mask].sum())
+                    component_d = chinn_d_from_event_counts(
+                        treatment_events,
+                        treatment_n,
+                        control_events,
+                        control_n,
+                    )
+                    components.append(
+                        {
+                            "source": "good_politicians",
+                            "component": f"{outcome}:{treatment_arm}_vs_neutral",
+                            "D_signed": component_d,
+                            "D": abs(component_d),
+                            "N": treatment_n + control_n,
+                            "treatment_events": treatment_events,
+                            "treatment_n": treatment_n,
+                            "control_events": control_events,
+                            "control_n": control_n,
+                            "append_to_plot": False,
+                        }
+                    )
+            if components:
+                component_df = pd.DataFrame(components)
+                row = base_political_science_rescue_row(
+                    point_id="good_politicians_candidacy_election_chinn_median",
+                    source_family="Good Politicians preregistered political-candidacy field experiment",
+                    source_label="Good Politicians field experiment",
+                    citation_key="goodPoliticiansZenodo",
+                    row_unit="paper_median_of_preregistered_binary_primary_outcomes",
+                    row_label="Political candidacy and election median raw arm-count effect",
+                    d_value=float(component_df["D"].median()),
+                    n_value=float(component_df["N"].median()),
+                    journal="Review of Economic Studies",
+                    source_file=(
+                        f"{GOOD_POLITICIANS_ZIP.relative_to(ROOT)}; replication/cand_final.dta; "
+                        "Chinn conversion from raw arm event counts for preregistered candidacy/election outcomes"
+                    ),
+                    source_row_number=1,
+                )
+                plot_rows.append(row)
+                audit_rows.extend(components)
+                audit_rows.append({**row, "source": "good_politicians", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "good_politicians",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {GOOD_POLITICIANS_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if GHANA_DEBATES_TAB.exists():
+        try:
+            ghana = pd.read_csv(GHANA_DEBATES_TAB, sep="\t", low_memory=False)
+            treatment = numeric_series(ghana["T"]).eq(1)
+            control = numeric_series(ghana["T"]).eq(0)
+            outcome_values = numeric_series(ghana["overall_"])
+            overall_t = treatment & outcome_values.notna()
+            overall_c = control & outcome_values.notna()
+            overall_d = (
+                float(outcome_values.loc[overall_t].mean() - outcome_values.loc[overall_c].mean())
+                / float(outcome_values.loc[overall_c].std(ddof=1))
+            )
+            support_values = numeric_series(ghana["support"])
+            support_t = treatment & support_values.notna()
+            support_c = control & support_values.notna()
+            support_d = chinn_d_from_event_counts(
+                float(support_values.loc[support_t].sum()),
+                int(support_t.sum()),
+                float(support_values.loc[support_c].sum()),
+                int(support_c.sum()),
+            )
+            components = [
+                {
+                    "source": "ghana_debates",
+                    "component": "overall_candidate_evaluation_mean_diff_control_sd",
+                    "D_signed": overall_d,
+                    "D": abs(overall_d),
+                    "N": int(overall_t.sum() + overall_c.sum()),
+                    "append_to_plot": False,
+                },
+                {
+                    "source": "ghana_debates",
+                    "component": "support_binary_chinn_log_or",
+                    "D_signed": support_d,
+                    "D": abs(support_d),
+                    "N": int(support_t.sum() + support_c.sum()),
+                    "append_to_plot": False,
+                },
+            ]
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="ghana_debates_candidate_evaluation_support_median",
+                source_family="Ghana debates preregistered candidate-debates field experiment",
+                source_label="Ghana debates field experiment",
+                citation_key="ghanaDebatesDataverse",
+                row_unit="paper_median_of_table3_primary_outcomes",
+                row_label="Candidate debates median effect on candidate evaluation and support",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="American Journal of Political Science",
+                source_file=(
+                    f"{GHANA_DEBATES_TAB.relative_to(ROOT)}; BKO_Debates_Replication_Code.do Table 3; "
+                    "overall_ as mean difference/control SD and support via Chinn from raw arm event counts"
+                ),
+                source_row_number=2,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "ghana_debates", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "ghana_debates",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {GHANA_DEBATES_TAB.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if VIETNAM_LEGISLATOR_OUTCOMES.exists():
+        try:
+            vietnam = pd.read_excel(VIETNAM_LEGISLATOR_OUTCOMES)
+            components: list[dict[str, object]] = []
+            for outcome in ["Spoke", "said_citizen_related", "said_firm_related"]:
+                outcome_values = numeric_series(vietnam[outcome])
+                treatment_values = vietnam["Treatment"].fillna("").astype(str)
+                for treatment_arm in ["Citizen", "Firm"]:
+                    treatment_mask = treatment_values.eq(treatment_arm) & outcome_values.notna()
+                    control_mask = treatment_values.eq("Control") & outcome_values.notna()
+                    component_d = chinn_d_from_event_counts(
+                        float(outcome_values.loc[treatment_mask].sum()),
+                        int(treatment_mask.sum()),
+                        float(outcome_values.loc[control_mask].sum()),
+                        int(control_mask.sum()),
+                    )
+                    components.append(
+                        {
+                            "source": "vietnam_legislator_responsiveness",
+                            "component": f"{outcome}:{treatment_arm}_vs_control",
+                            "D_signed": component_d,
+                            "D": abs(component_d),
+                            "N": int(treatment_mask.sum() + control_mask.sum()),
+                            "append_to_plot": False,
+                        }
+                    )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="vietnam_legislator_responsiveness_speech_content_chinn_median",
+                source_family="Vietnam legislator-responsiveness preregistered field experiment",
+                source_label="Vietnam legislator responsiveness",
+                citation_key="vietnamLegislatorResponsivenessDataverse",
+                row_unit="paper_median_of_preregistered_binary_speech_outcomes",
+                row_label="Legislator responsiveness median speaking/content effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Journal of Politics",
+                source_file=(
+                    f"{VIETNAM_LEGISLATOR_OUTCOMES.relative_to(ROOT)}; AEA RCT Registry trial 1608; "
+                    "Chinn conversion from raw Citizen/Firm versus Control event counts for speech and content outcomes"
+                ),
+                source_row_number=3,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "vietnam_legislator_responsiveness", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "vietnam_legislator_responsiveness",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {VIETNAM_LEGISLATOR_OUTCOMES.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if VIETNAM_MAIN_SURVEY_OUTCOMES.exists():
+        try:
+            vietnam_main = pd.read_excel(VIETNAM_MAIN_SURVEY_OUTCOMES)
+            components = []
+            outcome_values = numeric_series(vietnam_main["Q1"])
+            treatment_values = vietnam_main["Treatment"].fillna("").astype(str)
+            for treatment_arm in ["Citizen", "Firm"]:
+                treatment_mask = treatment_values.eq(treatment_arm) & outcome_values.notna()
+                control_mask = treatment_values.eq("Control") & outcome_values.notna()
+                component_d = chinn_d_from_event_counts(
+                    float(outcome_values.loc[treatment_mask].sum()),
+                    int(treatment_mask.sum()),
+                    float(outcome_values.loc[control_mask].sum()),
+                    int(control_mask.sum()),
+                )
+                components.append(
+                    {
+                        "source": "vietnam_main_responsiveness",
+                        "component": f"Q1_prepared_for_debate:{treatment_arm}_vs_control",
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_events": float(outcome_values.loc[treatment_mask].sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_events": float(outcome_values.loc[control_mask].sum()),
+                        "control_n": int(control_mask.sum()),
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="vietnam_main_responsiveness_prepared_debate_chinn_median",
+                source_family="Vietnam National Assembly main responsiveness preregistered field experiment",
+                source_label="Vietnam National Assembly responsiveness",
+                citation_key="vietnamMainResponsivenessDataverse",
+                row_unit="paper_median_of_preregistered_binary_delegate_survey_outcome",
+                row_label="Vietnam National Assembly delegate preparedness median Citizen/Firm treatment effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Journal of Politics",
+                source_file=(
+                    f"{VIETNAM_MAIN_SURVEY_OUTCOMES.relative_to(ROOT)}; "
+                    f"{VIETNAM_MAIN_EXPERIMENTAL_ANALYSES.relative_to(ROOT)}; AEA RCT Registry trial 1608; "
+                    "Q1 delegate-survey preparedness outcome converted with Chinn from raw Citizen/Firm versus Control event counts"
+                ),
+                source_row_number=4,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "vietnam_main_responsiveness", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "vietnam_main_responsiveness",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {VIETNAM_MAIN_SURVEY_OUTCOMES.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if GOLDEN_PS_MASTER.exists():
+        try:
+            golden = pd.read_csv(GOLDEN_PS_MASTER, sep="\t", low_memory=False).copy()
+            ki_cols = [
+                "ki_improve_schools_any_sum_endline",
+                "ki_improve_roads_any_sum_endline",
+                "ki_improve_healthfacilities_any_sum_endline",
+                "ki_improve_employment_any_sum_endline",
+                "ki_improve_electricityinfrastructure_any_sum_endline",
+                "ki_improve_gasinfrastructure_any_sum_endline",
+                "ki_improve_drinkingwater_any_sum_endline",
+                "ki_improve_rubbish_any_sum_endline",
+                "ki_improve_security_any_sum_endline",
+            ]
+            ki_effort_sum = golden[ki_cols].apply(pd.to_numeric, errors="coerce").sum(axis=1)
+            golden = golden.assign(
+                ki_effort_sum=ki_effort_sum,
+                ki_any_effort=(ki_effort_sum > 0).astype(float),
+            )
+            components = []
+            continuous_outcomes = [
+                ("mpa_share_mamoor_2018", "top_20_treated"),
+                ("turnout_2018", "top_20_treated"),
+                ("ki_effort_sum", "treated_ps"),
+                ("ki_mpa_visit_june_avg_endline", "treated_ps"),
+            ]
+            for outcome, treatment_col in continuous_outcomes:
+                outcome_values = numeric_series(golden[outcome])
+                treatment_values = numeric_series(golden[treatment_col])
+                treatment_mask = treatment_values.eq(1) & outcome_values.notna()
+                control_mask = treatment_values.eq(0) & outcome_values.notna()
+                control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                component_d = (
+                    float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                    / control_sd
+                    if control_sd > 0
+                    else float("nan")
+                )
+                components.append(
+                    {
+                        "source": "golden_gulzar_sonnet",
+                        "component": outcome,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "append_to_plot": False,
+                    }
+                )
+            any_effort = numeric_series(golden["ki_any_effort"])
+            treatment_values = numeric_series(golden["treated_ps"])
+            treatment_mask = treatment_values.eq(1) & any_effort.notna()
+            control_mask = treatment_values.eq(0) & any_effort.notna()
+            any_effort_d = chinn_d_from_event_counts(
+                float(any_effort.loc[treatment_mask].sum()),
+                int(treatment_mask.sum()),
+                float(any_effort.loc[control_mask].sum()),
+                int(control_mask.sum()),
+            )
+            components.append(
+                {
+                    "source": "golden_gulzar_sonnet",
+                    "component": "ki_any_effort",
+                    "D_signed": any_effort_d,
+                    "D": abs(any_effort_d),
+                    "N": int(treatment_mask.sum() + control_mask.sum()),
+                    "append_to_plot": False,
+                }
+            )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="golden_gulzar_sonnet_responsiveness_primary_median",
+                source_family="Golden Gulzar Sonnet political-responsiveness preregistered field experiment",
+                source_label="Golden/Gulzar/Sonnet responsiveness",
+                citation_key="goldenGulzarSonnetDataverse",
+                row_unit="paper_median_of_preregistered_polling_station_outcomes",
+                row_label="Political responsiveness and information provision median primary effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Comparative Political Studies",
+                source_file=(
+                    f"{GOLDEN_PS_MASTER.relative_to(ROOT)}; EGAP registration 2476 and OSF PAP vadwn; "
+                    "vote-share/turnout/effort outcomes as mean difference over control SD, binary any-effort via Chinn"
+                ),
+                source_row_number=4,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "golden_gulzar_sonnet", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "golden_gulzar_sonnet",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {GOLDEN_PS_MASTER.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if KALLA_BROOCKMAN_MINIMAL_EFFECTS.exists():
+        try:
+            kb = pd.read_csv(KALLA_BROOCKMAN_MINIMAL_EFFECTS, sep="\t", low_memory=False)
+            coef = numeric_series(kb["Candidate.Effect.with.Covars"])
+            se = numeric_series(kb["Candidate.Effect.SE.with.Covars"])
+            n_values = numeric_series(kb["t1.N"])
+            valid = coef.notna() & se.gt(0) & n_values.gt(0)
+            component_d = 2 * (coef.loc[valid] / se.loc[valid]).abs() / np.sqrt(n_values.loc[valid])
+            components = []
+            for idx in component_d.index:
+                components.append(
+                    {
+                        "source": "kalla_broockman_2018",
+                        "component": safe_text(kb.loc[idx, "ExperimentName"]) or safe_text(kb.loc[idx, "Experiment"]),
+                        "D": float(component_d.loc[idx]),
+                        "N": float(n_values.loc[idx]),
+                        "append_to_plot": False,
+                    }
+                )
+            audit_rows.extend(components)
+            for component_idx, component in enumerate(components, start=1):
+                experiment_label = safe_text(component.get("component")) or f"experiment {component_idx}"
+                row = base_political_science_rescue_row(
+                    point_id=f"kalla_broockman_2018_campaign_contact_experiment_{component_idx:03d}",
+                    source_family="Kalla Broockman 2018 preregistered campaign-contact field-experiment archive",
+                    source_label="Kalla/Broockman campaign contact",
+                    citation_key="kallaBroockman2018Dataverse",
+                    row_unit="component_campaign_experiment_candidate_effect",
+                    row_label=f"Minimal persuasive effects campaign experiment: {experiment_label}",
+                    d_value=float(component["D"]),
+                    n_value=float(component["N"]),
+                    journal="American Political Science Review",
+                    source_file=(
+                        f"{KALLA_BROOCKMAN_MINIMAL_EFFECTS.relative_to(ROOT)}; Harvard Dataverse doi:10.7910/DVN/RAMHWP; "
+                        "experiment-level candidate-effect t-statistic converted as 2|t|/sqrt(N)"
+                    ),
+                    source_row_number=5000 + component_idx,
+                )
+                plot_rows.append(row)
+                audit_rows.append(
+                    {
+                        **row,
+                        "source": "kalla_broockman_2018",
+                        "component": experiment_label,
+                        "append_to_plot": True,
+                    }
+                )
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "kalla_broockman_2018",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {KALLA_BROOCKMAN_MINIMAL_EFFECTS.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if LOCAL_ELITES_OPENICPSR_ZIP.exists():
+        try:
+            component_df, native_stats = local_elites_state_capacity_components(LOCAL_ELITES_OPENICPSR_ZIP)
+            if not component_df.empty:
+                row = base_political_science_rescue_row(
+                    point_id="local_elites_state_capacity_tax_compliance_chinn",
+                    source_family="Local Elites state-capacity tax-compliance preregistered field experiment",
+                    source_label="Local Elites tax compliance",
+                    citation_key="localElitesOpenicpsr",
+                    row_unit="paper_primary_binary_tax_compliance_outcome",
+                    row_label="Local chiefs versus central collectors tax-compliance effect",
+                    d_value=float(component_df["D"].median()),
+                    n_value=float(component_df["N"].median()),
+                    journal="OpenICPSR replication package",
+                    source_file=(
+                        f"{LOCAL_ELITES_OPENICPSR_ZIP.relative_to(ROOT)}; Dofiles/2_Data_Construction.do "
+                        "and Dofiles/Tables_Figures/Table4.do; Chinn conversion from reconstructed raw "
+                        "central/local tax-compliance event counts; adjusted native Table 4 ATE retained in audit"
+                    ),
+                    source_row_number=6,
+                )
+                plot_rows.append(row)
+                audit_rows.extend({**dict(component), **native_stats} for component in component_df.to_dict("records"))
+                audit_rows.append(
+                    {
+                        **row,
+                        **native_stats,
+                        "source": "local_elites_state_capacity",
+                        "append_to_plot": True,
+                    }
+                )
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "local_elites_state_capacity",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {LOCAL_ELITES_OPENICPSR_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if HEWITT_CAMPAIGN_ARCHIVE_ZIP.exists():
+        try:
+            component_df, summary = hewitt_campaign_experiments_components(HEWITT_CAMPAIGN_ARCHIVE_ZIP)
+            if not component_df.empty:
+                audit_rows.extend({**dict(component), **summary} for component in component_df.to_dict("records"))
+                study_rows = (
+                    component_df.groupby(["study_id", "content_id"], sort=True)
+                    .agg(
+                        D=("D", "median"),
+                        N=("N", "median"),
+                        component_contrasts_n=("D", "size"),
+                    )
+                    .reset_index()
+                )
+                for study_idx, study in study_rows.iterrows():
+                    study_number = int(study_idx) + 1
+                    row = base_political_science_rescue_row(
+                        point_id=f"hewitt_campaign_experiments_study_content_{study_number:03d}",
+                        source_family="Hewitt et al. campaign-ad persuasion preregistered experiment archive",
+                        source_label="Campaign-ad persuasion archive",
+                        citation_key="hewittCampaignExperimentsDataverse",
+                        row_unit="component_campaign_study_content_median_of_votechoice_favorability_outcomes",
+                        row_label=(
+                            "Campaign-ad persuasion archive study-content contrast "
+                            f"{safe_text(study['study_id'])}/{safe_text(study['content_id'])}"
+                        ),
+                        d_value=float(study["D"]),
+                        n_value=float(study["N"]),
+                        journal="American Political Science Review",
+                        source_file=(
+                            f"{HEWITT_CAMPAIGN_ARCHIVE_ZIP.relative_to(ROOT)}; "
+                            "output/processed_data/responses.RDS and regression_ates.RDS; "
+                            "study-content-level median of preregistered vote-choice/favorability outcomes; "
+                            "D computed as treatment-control mean difference over within-study control SD"
+                        ),
+                        source_row_number=7000 + study_number,
+                    )
+                    plot_rows.append(row)
+                    audit_rows.append(
+                        {
+                            **row,
+                            **summary,
+                            "source": "hewitt_campaign_experiments",
+                            "study_id": safe_text(study["study_id"]),
+                            "content_id": safe_text(study["content_id"]),
+                            "component_outcomes_in_study_content": int(study["component_contrasts_n"]),
+                            "append_to_plot": True,
+                        }
+                    )
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "hewitt_campaign_experiments",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {HEWITT_CAMPAIGN_ARCHIVE_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if POLITICAL_ACTIVISTS_ZIP.exists():
+        try:
+            with zipfile.ZipFile(POLITICAL_ACTIVISTS_ZIP) as archive:
+                with archive.open("Replication_JOP_final/data/clean/clean_all.dta") as handle:
+                    activists = pd.read_stata(io.BytesIO(handle.read()))
+            components = []
+            treatment_values = activists["treatment"].astype(str)
+            primary_outcomes = [
+                ("canvass_any_main_unres", "binary_any_canvassing"),
+                ("days_unres_main", "days_canvassed"),
+                ("doors_unres_main_wins", "doors_knocked_winsorized"),
+            ]
+            for outcome, label in primary_outcomes:
+                outcome_values = numeric_series(activists[outcome])
+                treatment_mask = treatment_values.eq("treatment") & outcome_values.notna()
+                control_mask = treatment_values.eq("control") & outcome_values.notna()
+                if set(pd.unique(outcome_values.dropna())).issubset({0, 1, 0.0, 1.0}):
+                    component_d = chinn_d_from_event_counts(
+                        float(outcome_values.loc[treatment_mask].sum()),
+                        int(treatment_mask.sum()),
+                        float(outcome_values.loc[control_mask].sum()),
+                        int(control_mask.sum()),
+                    )
+                    conversion = "chinn_binary_event_counts"
+                else:
+                    control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                    component_d = (
+                        float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                        / control_sd
+                    )
+                    conversion = "mean_difference_over_control_sd"
+                components.append(
+                    {
+                        "source": "political_activists",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "conversion": conversion,
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="hensel_rink_political_activists_canvassing_median",
+                source_family="Hensel Rink political-activist motivation preregistered field experiment",
+                source_label="Political activists field experiment",
+                citation_key="henselRinkPoliticalActivistsDataverse",
+                row_unit="paper_median_of_preregistered_canvassing_effort_outcomes",
+                row_label="Political activists median treatment effect on canvassing effort",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Journal of Politics",
+                source_file=(
+                    f"{POLITICAL_ACTIVISTS_ZIP.relative_to(ROOT)}; Replication_JOP_final/data/clean/clean_all.dta; "
+                    "Table 1 primary canvassing outcomes reconstructed from raw treatment/control groups"
+                ),
+                source_row_number=10,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "political_activists", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "political_activists",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {POLITICAL_ACTIVISTS_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if CHINA_AID_ATTITUDES_ZIP.exists():
+        try:
+            with zipfile.ZipFile(CHINA_AID_ATTITUDES_ZIP) as archive:
+                with archive.open("2 NZ data JEPS FINAL.dta") as handle:
+                    china_aid = pd.read_stata(io.BytesIO(handle.read()), convert_categoricals=False)
+            components = []
+            for outcome, label in [
+                ("toomuchaid", "too_much_aid"),
+                ("morepac", "more_aid_to_pacific"),
+                ("favournz", "aid_should_favour_national_interest"),
+            ]:
+                outcome_values = numeric_series(china_aid[outcome])
+                treatment_values = numeric_series(china_aid["treatment"])
+                treatment_mask = treatment_values.eq(1) & outcome_values.notna()
+                control_mask = treatment_values.eq(0) & outcome_values.notna()
+                component_d = chinn_d_from_event_counts(
+                    float(outcome_values.loc[treatment_mask].sum()),
+                    int(treatment_mask.sum()),
+                    float(outcome_values.loc[control_mask].sum()),
+                    int(control_mask.sum()),
+                )
+                components.append(
+                    {
+                        "source": "china_aid_attitudes",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="wood_hoy_pryke_china_aid_attitudes_nz_median",
+                source_family="Wood Hoy Pryke China-aid attitudes preregistered survey experiment",
+                source_label="China-aid attitudes survey experiment",
+                citation_key="woodHoyPrykeChinaAidDataverse",
+                row_unit="paper_median_of_preregistered_binary_aid_attitude_outcomes",
+                row_label="China aid vignette median effect on New Zealand aid-policy attitudes",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Journal of Experimental Political Science",
+                source_file=(
+                    f"{CHINA_AID_ATTITUDES_ZIP.relative_to(ROOT)}; 2 NZ data JEPS FINAL.dta; "
+                    "AEA RCT Registry trial 5055 primary outcomes; Chinn conversion from raw vignette/control event counts"
+                ),
+                source_row_number=11,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "china_aid_attitudes", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "china_aid_attitudes",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {CHINA_AID_ATTITUDES_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if SENEGAL_ACCOUNTABILITY_ZIP.exists():
+        try:
+            with zipfile.ZipFile(SENEGAL_ACCOUNTABILITY_ZIP) as archive:
+                with archive.open("Panel_Survey.dta") as handle:
+                    senegal = pd.read_stata(io.BytesIO(handle.read()))
+            treatment_values = numeric_series(senegal["T_any_perf"])
+            control_values = senegal["treatment_group"].astype(str)
+            components = []
+            primary_outcomes = [
+                ("mp_good_post", "incumbent_performance_rating"),
+                ("mp_good_compare_post", "incumbent_performance_comparison"),
+                ("fut_perf_inc_post", "future_incumbent_performance_expectation"),
+                ("vote_inc_post", "would_vote_for_incumbent"),
+                ("ICW_incumbent_support_post", "incumbent_support_index"),
+                ("want_inc_visit_post", "wants_incumbent_visit"),
+                ("want_inc_express_post", "wants_to_express_view_to_incumbent"),
+                ("ICW_behavior_post", "behavior_index"),
+            ]
+            for outcome, label in primary_outcomes:
+                outcome_values = numeric_series(senegal[outcome])
+                treatment_mask = treatment_values.eq(1) & outcome_values.notna()
+                control_mask = control_values.eq("Control") & outcome_values.notna()
+                unique_values = set(pd.unique(outcome_values.dropna()))
+                if unique_values.issubset({0, 1, 0.0, 1.0}):
+                    component_d = chinn_d_from_event_counts(
+                        float(outcome_values.loc[treatment_mask].sum()),
+                        int(treatment_mask.sum()),
+                        float(outcome_values.loc[control_mask].sum()),
+                        int(control_mask.sum()),
+                    )
+                    conversion = "chinn_binary_event_counts"
+                else:
+                    control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                    component_d = (
+                        float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                        / control_sd
+                    )
+                    conversion = "mean_difference_over_control_sd"
+                components.append(
+                    {
+                        "source": "senegal_learning_accountability",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "conversion": conversion,
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="senegal_learning_accountability_performance_info_median",
+                source_family="Senegal learning-accountability preregistered information field experiment",
+                source_label="Senegal accountability field experiment",
+                citation_key="senegalLearningAccountabilityDataverse",
+                row_unit="paper_median_of_table3_performance_information_outcomes",
+                row_label="Senegal learning accountability median performance-information effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="American Journal of Political Science",
+                source_file=(
+                    f"{SENEGAL_ACCOUNTABILITY_ZIP.relative_to(ROOT)}; Panel_Survey.dta; Analysis code.do Table 3; "
+                    "AEA RCT Registry trial 2324; any-performance-information treatment versus control raw reconstruction"
+                ),
+                source_row_number=13,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "senegal_learning_accountability", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "senegal_learning_accountability",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {SENEGAL_ACCOUNTABILITY_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if PUBLIC_SERVICE_JOB_ZIP.exists():
+        try:
+            import pyreadr
+
+            with tempfile.TemporaryDirectory() as tmpdir:
+                with zipfile.ZipFile(PUBLIC_SERVICE_JOB_ZIP) as archive:
+                    archive.extract("P4P_Clean.rda", tmpdir)
+                conjoint = pyreadr.read_r(str(Path(tmpdir) / "P4P_Clean.rda"))["P4P_Clean"]
+            conjoint = conjoint.copy()
+            binary_recodes = {
+                "Total pay binary": (
+                    "Total pay",
+                    "Slightly below average",
+                    "About average and Slightly above average",
+                ),
+                "Current community involvement binary": (
+                    "Current community involvement",
+                    "Rare participation",
+                    "Moderate and Frequent participation",
+                ),
+                "Community income binary": ("Community income", "Low income", "Average and High income"),
+                "Community demographics binary": ("Community demographics", "Mostly white", "Non-White"),
+                "Overtime work binary": ("Overtime work", "Never required", "Occasionally and Frequently required"),
+                "Key job task binary": (
+                    "Key job task",
+                    "Analysis identifying community needs",
+                    "Interaction with community and organizational members",
+                ),
+            }
+            for new_col, (source_col, reference, non_reference) in binary_recodes.items():
+                if new_col not in conjoint.columns:
+                    conjoint[new_col] = np.where(
+                        conjoint[source_col].astype(str).eq(reference), reference, non_reference
+                    )
+            attributes = [
+                ("Total pay binary", "About average and Slightly above average", "Slightly below average"),
+                ("Performance bonuses binary", "Yes (bonuses)", "No (fixed salary)"),
+                ("Goal based evaluation", "Yes (goal based)", "No (supervisor based)"),
+                (
+                    "Current community involvement binary",
+                    "Moderate and Frequent participation",
+                    "Rare participation",
+                ),
+                ("Community income binary", "Average and High income", "Low income"),
+                ("Community demographics binary", "Non-White", "Mostly white"),
+                ("Overtime work binary", "Occasionally and Frequently required", "Never required"),
+                (
+                    "Key job task binary",
+                    "Interaction with community and organizational members",
+                    "Analysis identifying community needs",
+                ),
+            ]
+            choice_values = numeric_series(conjoint["Chosen_Job"])
+            respondent_n = int(pd.Series(conjoint["ID"]).nunique())
+            components = []
+            for attribute, treatment_level, reference_level in attributes:
+                attribute_values = conjoint[attribute].astype(str)
+                treatment_mask = attribute_values.eq(treatment_level) & choice_values.notna()
+                control_mask = attribute_values.eq(reference_level) & choice_values.notna()
+                component_d = chinn_d_from_event_counts(
+                    float(choice_values.loc[treatment_mask].sum()),
+                    int(treatment_mask.sum()),
+                    float(choice_values.loc[control_mask].sum()),
+                    int(control_mask.sum()),
+                )
+                components.append(
+                    {
+                        "source": "public_service_job_attributes",
+                        "component": attribute,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": respondent_n,
+                        "profile_rows": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_profile_n": int(treatment_mask.sum()),
+                        "control_profile_n": int(control_mask.sum()),
+                        "treatment_mean": float(choice_values.loc[treatment_mask].mean()),
+                        "control_mean": float(choice_values.loc[control_mask].mean()),
+                        "conversion": "chinn_profile_event_counts_with_respondent_n",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="public_service_job_attributes_choice_median",
+                source_family="Public-service job-attributes preregistered conjoint experiment",
+                source_label="Public-service job-attributes experiment",
+                citation_key="publicServiceJobAttributesDataverse",
+                row_unit="paper_median_of_preregistered_binary_job_choice_attribute_effects",
+                row_label="Public-service job-attribute median effect on job choice",
+                d_value=float(component_df["D"].median()),
+                n_value=float(respondent_n),
+                journal="Public Administration",
+                source_file=(
+                    f"{PUBLIC_SERVICE_JOB_ZIP.relative_to(ROOT)}; P4P_Clean.rda; P4P_Analysis2.R baseline AMCE; "
+                    "AEA RCT Registry trial 7666; Chinn conversion from randomized profile-level choice event counts with respondent N"
+                ),
+                source_row_number=17,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "public_service_job_attributes", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "public_service_job_attributes",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {PUBLIC_SERVICE_JOB_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if BANGLADESH_ELECTION_ZIP.exists():
+        try:
+            with zipfile.ZipFile(BANGLADESH_ELECTION_ZIP) as archive:
+                with archive.open("Data/Election_project_data_full_sample.dta") as handle:
+                    bangladesh = pd.read_stata(io.BytesIO(handle.read()), convert_categoricals=False)
+            bangladesh = bangladesh.copy()
+            bangladesh["dummy_al"] = numeric_series(bangladesh["Status_code"]).eq(1)
+            bangladesh["dummy_bnp"] = numeric_series(bangladesh["Status_code"]).eq(2)
+            bangladesh["legit"] = (
+                numeric_series(bangladesh["treatAL"]).eq(1) | numeric_series(bangladesh["treatBNP"]).eq(1)
+            )
+            bangladesh["policy"] = (
+                numeric_series(bangladesh["treatAL"]).eq(2) | numeric_series(bangladesh["treatBNP"]).eq(2)
+            )
+            bangladesh["control"] = ~(bangladesh["legit"] | bangladesh["policy"])
+            panel_mask = numeric_series(bangladesh["Pre_survey1"]).eq(1) & numeric_series(
+                bangladesh["Post_survey1"]
+            ).eq(1)
+            bangladesh = bangladesh.loc[panel_mask].copy()
+            bangladesh["vote1"] = numeric_series(bangladesh["r5_01"])
+            bangladesh["vote2"] = numeric_series(bangladesh["r5_02"])
+            bangladesh["ink1"] = numeric_series(bangladesh["r6_01"])
+            bangladesh["ink2"] = numeric_series(bangladesh["r6_02"])
+            components = []
+            for village_type, village_mask_col in [
+                ("AL_government_villages", "dummy_al"),
+                ("BNP_opposition_villages", "dummy_bnp"),
+            ]:
+                for treatment_arm in ["policy", "legit"]:
+                    for outcome, label in [
+                        ("ink1", "respondent_ink_mark"),
+                        ("ink2", "spouse_ink_mark"),
+                        ("vote1", "respondent_self_reported_voting"),
+                        ("vote2", "spouse_self_reported_voting"),
+                    ]:
+                        outcome_values = numeric_series(bangladesh[outcome])
+                        base_mask = bangladesh[village_mask_col].eq(True) & outcome_values.notna()
+                        treatment_mask = base_mask & bangladesh[treatment_arm].eq(True)
+                        control_mask = base_mask & bangladesh["control"].eq(True)
+                        component_d = chinn_d_from_event_counts(
+                            float(outcome_values.loc[treatment_mask].sum()),
+                            int(treatment_mask.sum()),
+                            float(outcome_values.loc[control_mask].sum()),
+                            int(control_mask.sum()),
+                        )
+                        components.append(
+                            {
+                                "source": "bangladesh_election_information",
+                                "component": f"{village_type}:{treatment_arm}:{label}",
+                                "D_signed": component_d,
+                                "D": abs(component_d),
+                                "N": int(treatment_mask.sum() + control_mask.sum()),
+                                "treatment_n": int(treatment_mask.sum()),
+                                "control_n": int(control_mask.sum()),
+                                "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                                "control_mean": float(outcome_values.loc[control_mask].mean()),
+                                "conversion": "chinn_binary_event_counts",
+                                "append_to_plot": False,
+                            }
+                        )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="bangladesh_election_information_turnout_vote_median",
+                source_family="Bangladesh authoritarian-election information-campaign preregistered field experiment",
+                source_label="Bangladesh election information field experiment",
+                citation_key="bangladeshElectionZenodo",
+                row_unit="paper_median_of_table2_turnout_vote_outcomes",
+                row_label="Bangladesh information campaign median turnout/vote effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Economic Journal",
+                source_file=(
+                    f"{BANGLADESH_ELECTION_ZIP.relative_to(ROOT)}; Data/Election_project_data_full_sample.dta; "
+                    "Main_figures_and_tables.do Table 2; AEA RCT Registry trial 3509; raw Policy/Legitimacy versus control "
+                    "event-count reconstruction for ink-mark and self-reported voting outcomes"
+                ),
+                source_row_number=14,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "bangladesh_election_information", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "bangladesh_election_information",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {BANGLADESH_ELECTION_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if POLITICAL_ACTIVISTS_FREERIDING_ZIP.exists():
+        try:
+            with zipfile.ZipFile(POLITICAL_ACTIVISTS_FREERIDING_ZIP) as archive:
+                with archive.open("3 replication package/Data/peers_freeriding_final.dta") as handle:
+                    freeriding = pd.read_stata(io.BytesIO(handle.read()))
+            treatment_values = freeriding["treatment"].astype(str)
+            components = []
+            primary_outcomes = [
+                ("canvassing_yes", "self_reported_intends_any_canvassing"),
+                ("days", "self_reported_intended_canvassing_days"),
+                ("canvass_any_main_unres", "app_any_canvassing"),
+                ("days_unres_main", "app_canvassing_days"),
+                ("doors_unres_main_wins", "app_doors_knocked_winsorized"),
+            ]
+            for outcome, label in primary_outcomes:
+                outcome_values = numeric_series(freeriding[outcome])
+                treatment_mask = treatment_values.eq("Treatment group") & outcome_values.notna()
+                control_mask = treatment_values.eq("Control group") & outcome_values.notna()
+                unique_values = set(pd.unique(outcome_values.dropna()))
+                if unique_values.issubset({0, 1, 0.0, 1.0}):
+                    component_d = chinn_d_from_event_counts(
+                        float(outcome_values.loc[treatment_mask].sum()),
+                        int(treatment_mask.sum()),
+                        float(outcome_values.loc[control_mask].sum()),
+                        int(control_mask.sum()),
+                    )
+                    conversion = "chinn_binary_event_counts"
+                else:
+                    control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                    component_d = (
+                        float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                        / control_sd
+                    )
+                    conversion = "mean_difference_over_control_sd"
+                components.append(
+                    {
+                        "source": "political_activists_freeriding",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "conversion": conversion,
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="political_activists_freeriding_canvassing_median",
+                source_family="Political Activists as Free-Riders preregistered canvassing field experiment",
+                source_label="Political activists free-riding experiment",
+                citation_key="politicalActivistsFreeridingZenodo",
+                row_unit="paper_median_of_preregistered_canvassing_intention_and_behavior_outcomes",
+                row_label="Political activists free-riding median canvassing effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Economic Journal",
+                source_file=(
+                    f"{POLITICAL_ACTIVISTS_FREERIDING_ZIP.relative_to(ROOT)}; "
+                    "3 replication package/Data/peers_freeriding_final.dta; Experimental_design.pdf; "
+                    "Tab1_main_result.do; preregistered canvassing-intention and app-observed behavior outcomes"
+                ),
+                source_row_number=15,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "political_activists_freeriding", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "political_activists_freeriding",
+                    "append_to_plot": False,
+                    "blocker": (
+                        f"failed to parse {POLITICAL_ACTIVISTS_FREERIDING_ZIP.relative_to(ROOT)}: {exc}"
+                    ),
+                }
+            )
+
+    if POLICING_PATRIARCHY_CCTV.exists() and POLICING_PATRIARCHY_TABLE2.exists():
+        try:
+            policing = pd.read_csv(POLICING_PATRIARCHY_CCTV, sep="\t", low_memory=False)
+            control_mask = numeric_series(policing["treatment"]).eq(0)
+            outcome_sds = {
+                "eavg_women": float(numeric_series(policing.loc[control_mask, "eavg_women"]).std(ddof=1)),
+                "eavg_wprop": float(numeric_series(policing.loc[control_mask, "eavg_wprop"]).std(ddof=1)),
+            }
+            table2_components = [
+                ("combined_whd_female_visitors_count", "eavg_women", -0.590, 1832),
+                ("combined_whd_female_visitors_share", "eavg_wprop", 0.005, 1831),
+                ("regular_whd_female_visitors_count", "eavg_women", -0.811, 1832),
+                ("regular_whd_female_visitors_share", "eavg_wprop", 0.009, 1831),
+                ("woman_run_whd_female_visitors_count", "eavg_women", -0.402, 1832),
+                ("woman_run_whd_female_visitors_share", "eavg_wprop", 0.001, 1831),
+            ]
+            components = []
+            for label, outcome, coefficient, n_value in table2_components:
+                component_d = coefficient / outcome_sds[outcome]
+                components.append(
+                    {
+                        "source": "policing_patriarchy",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": n_value,
+                        "native_coefficient": coefficient,
+                        "control_sd": outcome_sds[outcome],
+                        "conversion": "table2_adjusted_coefficient_over_control_sd",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="policing_patriarchy_women_help_desks_cctv_median",
+                source_family="Policing in patriarchy Women Help Desks preregistered field experiment",
+                source_label="Policing in patriarchy field experiment",
+                citation_key="policingPatriarchyDataverse",
+                row_unit="paper_median_of_table2_primary_cctv_outcomes",
+                row_label="Women Help Desks median effect on female police-station visitors",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Harvard Dataverse replication package",
+                source_file=(
+                    f"{POLICING_PATRIARCHY_TABLE2.relative_to(ROOT)}; "
+                    f"{POLICING_PATRIARCHY_CCTV.relative_to(ROOT)}; AEA RCT Registry trial 3357; "
+                    "Table 2 adjusted CCTV coefficients divided by control-group outcome SDs from the downloaded analysis data"
+                ),
+                source_row_number=16,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "policing_patriarchy", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "policing_patriarchy",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {POLICING_PATRIARCHY_DIR.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if VOTE_BUYING_RADIO_ZIP.exists():
+        try:
+            with zipfile.ZipFile(VOTE_BUYING_RADIO_ZIP) as archive:
+                with archive.open("ReplicationZip/Table 2/table2_data.csv") as handle:
+                    vote_buying = pd.read_csv(handle)
+            treatment_values = numeric_series(vote_buying["treat"])
+            components = []
+            for outcome, label in [
+                ("voteshare_crime_2014", "vote_share_candidates_accused_of_crimes"),
+                ("voteshare_rich_2014", "vote_share_wealthiest_candidates"),
+                ("voteshare_events_2014", "vote_share_candidates_with_campaign_events"),
+                ("voteshare_volunteers_2014", "vote_share_candidates_using_volunteers"),
+                ("voteshare_spend_2014", "vote_share_high_spending_candidates"),
+                ("voteshare_win_2014", "vote_share_winning_candidates"),
+            ]:
+                outcome_values = numeric_series(vote_buying[outcome])
+                treatment_mask = treatment_values.eq(1) & outcome_values.notna()
+                control_mask = treatment_values.eq(0) & outcome_values.notna()
+                control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                component_d = (
+                    float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                    / control_sd
+                )
+                components.append(
+                    {
+                        "source": "vote_buying_radio",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "control_sd": control_sd,
+                        "conversion": "assembly-constituency_vote_share_mean_difference_over_control_sd",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="india_vote_buying_radio_candidate_vote_share_median",
+                source_family="India anti-vote-buying radio-campaign preregistered field experiment",
+                source_label="India vote-buying radio campaign",
+                citation_key="voteBuyingRadioDataverse",
+                row_unit="paper_median_of_table2_candidate_vote_share_outcomes",
+                row_label="India anti-vote-buying radio campaign median candidate-vote-share effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="American Economic Review",
+                source_file=(
+                    f"{VOTE_BUYING_RADIO_ZIP.relative_to(ROOT)}; ReplicationZip/Table 2/table2_data.csv; "
+                    "AEA RCT Registry trial 377; Table 2 candidate-characteristic vote-share outcomes reconstructed "
+                    "as treatment-control mean differences over control-group SDs"
+                ),
+                source_row_number=18,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "vote_buying_radio", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "vote_buying_radio",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {VOTE_BUYING_RADIO_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if INTERETHNIC_CONTACT_ZIP.exists():
+        try:
+            with zipfile.ZipFile(INTERETHNIC_CONTACT_ZIP) as archive:
+                with archive.open("Replication_ajs.dta") as handle:
+                    interethnic = pd.read_stata(io.BytesIO(handle.read()), convert_categoricals=False)
+            components = []
+            for outcome, label in [
+                ("roma_friend", "has_roma_friend"),
+                ("lend", "would_lend_to_classmate"),
+            ]:
+                outcome_values = numeric_series(interethnic[outcome])
+                base_mask = numeric_series(interethnic["roma"]).eq(0) & outcome_values.notna()
+                treatment_mask = base_mask & numeric_series(interethnic["dm_roma"]).eq(1)
+                control_mask = base_mask & numeric_series(interethnic["dm_roma"]).eq(0)
+                component_d = chinn_d_from_event_counts(
+                    float(outcome_values.loc[treatment_mask].sum()),
+                    int(treatment_mask.sum()),
+                    float(outcome_values.loc[control_mask].sum()),
+                    int(control_mask.sum()),
+                )
+                components.append(
+                    {
+                        "source": "interethnic_contact",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "conversion": "chinn_binary_event_counts_non_roma_students",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="interethnic_contact_roma_deskmate_friend_lend_median",
+                source_family="Kotsadam Keller Elwert interethnic-contact preregistered field experiment",
+                source_label="Roma deskmate interethnic contact",
+                citation_key="interethnicContactDataverse",
+                row_unit="paper_median_of_main_binary_interethnic_relation_outcomes",
+                row_label="Roma deskmate median effect on friendship/lending outcomes",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="American Journal of Sociology",
+                source_file=(
+                    f"{INTERETHNIC_CONTACT_ZIP.relative_to(ROOT)}; Replication_ajs.dta; AEA RCT Registry trial 2795; "
+                    "Table 3 main outcomes for non-Roma students reconstructed from raw Roma-deskmate/control event counts"
+                ),
+                source_row_number=19,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "interethnic_contact", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "interethnic_contact",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {INTERETHNIC_CONTACT_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if IMMIGRATION_BELIEFS_ZIP.exists():
+        try:
+            with zipfile.ZipFile(IMMIGRATION_BELIEFS_ZIP) as archive:
+                with archive.open("1_clean_data.dta") as handle:
+                    immigration = pd.read_stata(io.BytesIO(handle.read()), convert_categoricals=False)
+            sample_mask = numeric_series(immigration["sample"]).eq(1)
+            components = []
+            for arm, outcome, label in [
+                (5, "ln1_prob_index_anti", "anti_immigration_message_trump_source"),
+                (6, "ln1_prob_index_anti", "anti_immigration_message_obama_source"),
+                (7, "ln1_prob_index_anti", "anti_immigration_message_actor_trump_source"),
+                (8, "ln1_prob_index_anti", "anti_immigration_message_actor_obama_source"),
+                (1, "ln1_prob_index_pro", "pro_immigration_message_trump_source"),
+                (2, "ln1_prob_index_pro", "pro_immigration_message_obama_source"),
+                (3, "ln1_prob_index_pro", "pro_immigration_message_actor_trump_source"),
+                (4, "ln1_prob_index_pro", "pro_immigration_message_actor_obama_source"),
+            ]:
+                outcome_values = numeric_series(immigration[outcome])
+                treatment_mask = sample_mask & numeric_series(immigration["treatment"]).eq(arm) & outcome_values.notna()
+                control_mask = sample_mask & numeric_series(immigration["treatment"]).eq(0) & outcome_values.notna()
+                control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                component_d = (
+                    float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                    / control_sd
+                )
+                components.append(
+                    {
+                        "source": "immigration_beliefs",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "control_sd": control_sd,
+                        "conversion": "message_arm_mean_difference_over_control_sd",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="immigration_message_messenger_belief_index_median",
+                source_family="Immigration message-or-messenger preregistered survey experiment",
+                source_label="Immigration message/messenger experiment",
+                citation_key="immigrationBeliefsDataverse",
+                row_unit="paper_median_of_preregistered_message_source_belief_index_outcomes",
+                row_label="Immigration message/messenger median effect on belief indices",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Harvard Dataverse replication package",
+                source_file=(
+                    f"{IMMIGRATION_BELIEFS_ZIP.relative_to(ROOT)}; 1_clean_data.dta; AEA RCT Registry trial 6552; "
+                    "message-source arms versus control on logged immigration-belief indices, divided by control SD"
+                ),
+                source_row_number=20,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "immigration_beliefs", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "immigration_beliefs",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {IMMIGRATION_BELIEFS_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if COVID_TOGETHERNESS_ZIP.exists():
+        try:
+            with zipfile.ZipFile(COVID_TOGETHERNESS_ZIP) as archive:
+                with archive.open("covid19perceptions.dta") as handle:
+                    covid = pd.read_stata(io.BytesIO(handle.read()), convert_categoricals=False)
+            if "ResponseId" in covid.columns:
+                covid = covid[covid["ResponseId"].astype(str).ne("R_1FJTuRyeH7msWDG")].copy()
+            maxweeks_cols = [c for c in covid.columns if c.startswith("maxweeks") and c != "maxweeks"]
+            covid["maxweeks_constructed"] = covid[maxweeks_cols].apply(pd.to_numeric, errors="coerce").mean(axis=1)
+            covid.loc[covid["maxweeks_constructed"].gt(104), "maxweeks_constructed"] = 104
+            covid["socdist_constructed"] = (
+                (10 - numeric_series(covid["socdist1_1"]))
+                + numeric_series(covid["socdist2_1"])
+                + (10 - numeric_series(covid["socdist3_1"]))
+                + numeric_series(covid["socdist4_1"])
+                + numeric_series(covid["socdist5_1"])
+            )
+            arm_values = covid["arm"].astype(str)
+            components = []
+            for outcome, label_prefix in [
+                ("maxweeks_constructed", "weeks_willing_to_isolate"),
+                ("socdist_constructed", "intended_social_distancing_index"),
+            ]:
+                outcome_values = numeric_series(covid[outcome])
+                control_mask = arm_values.eq("control") & outcome_values.notna()
+                control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                for arm in ["treatment1", "treatment2", "treatment3", "treatment4"]:
+                    treatment_mask = arm_values.eq(arm) & outcome_values.notna()
+                    component_d = (
+                        float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                        / control_sd
+                    )
+                    components.append(
+                        {
+                            "source": "covid_togetherness",
+                            "component": f"{label_prefix}:{arm}",
+                            "D_signed": component_d,
+                            "D": abs(component_d),
+                            "N": int(treatment_mask.sum() + control_mask.sum()),
+                            "treatment_n": int(treatment_mask.sum()),
+                            "control_n": int(control_mask.sum()),
+                            "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                            "control_mean": float(outcome_values.loc[control_mask].mean()),
+                            "control_sd": control_sd,
+                            "conversion": "survey_treatment_arm_mean_difference_over_control_sd",
+                            "append_to_plot": False,
+                        }
+                    )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="covid_togetherness_social_distancing_cue_median",
+                source_family="Favero Pedersen COVID information-cue preregistered survey experiment",
+                source_label="COVID togetherness information-cue experiment",
+                citation_key="covidTogethernessDataverse",
+                row_unit="paper_median_of_social_distancing_primary_outcomes",
+                row_label="COVID togetherness cue median effect on distancing outcomes",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Journal of Behavioral Public Administration",
+                source_file=(
+                    f"{COVID_TOGETHERNESS_ZIP.relative_to(ROOT)}; covid19perceptions.dta; AEA RCT Registry trial 5611; "
+                    "analysis.do primary social-distancing outcomes reconstructed as each treatment arm versus control"
+                ),
+                source_row_number=21,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "covid_togetherness", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "covid_togetherness",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {COVID_TOGETHERNESS_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if MEDICINE_THEFT_ZIP.exists():
+        try:
+            with zipfile.ZipFile(MEDICINE_THEFT_ZIP) as archive:
+                with archive.open("sentinel_file_anonymized.csv") as handle:
+                    medicine = pd.read_csv(handle)
+            treatment_values = numeric_series(medicine["treatment"])
+            components = []
+            for outcome, label in [
+                ("missed_delivery", "missed_delivery"),
+                ("nottrace_any_sighting", "not_traced_at_any_sighting"),
+            ]:
+                outcome_values = numeric_series(medicine[outcome])
+                treatment_mask = treatment_values.eq(1) & outcome_values.notna()
+                control_mask = treatment_values.eq(0) & outcome_values.notna()
+                component_d = chinn_d_from_event_counts(
+                    float(outcome_values.loc[treatment_mask].sum()),
+                    int(treatment_mask.sum()),
+                    float(outcome_values.loc[control_mask].sum()),
+                    int(control_mask.sum()),
+                )
+                components.append(
+                    {
+                        "source": "medicine_theft",
+                        "component": label,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "conversion": "chinn_binary_event_counts",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="medicine_theft_remote_tracking_detection_median",
+                source_family="Medicine-theft remote-tracking preregistered governance field experiment",
+                source_label="Medicine theft remote-tracking field experiment",
+                citation_key="medicineTheftDataverse",
+                row_unit="paper_median_of_delivery_trace_binary_outcomes",
+                row_label="Medicine remote-tracking median effect on delivery trace outcomes",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Harvard Dataverse replication package",
+                source_file=(
+                    f"{MEDICINE_THEFT_ZIP.relative_to(ROOT)}; sentinel_file_anonymized.csv; "
+                    "AEA RCT Registry trial 8989; binary delivery-trace outcomes reconstructed from raw event counts"
+                ),
+                source_row_number=22,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "medicine_theft", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "medicine_theft",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {MEDICINE_THEFT_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if REFUGEE_DESTINATION_ZIP.exists():
+        try:
+            import pyreadr
+
+            with tempfile.TemporaryDirectory() as tmpdir:
+                with zipfile.ZipFile(REFUGEE_DESTINATION_ZIP) as archive:
+                    archive.extract("PNAS_replication_package/Data/cj_clean.rds", tmpdir)
+                conjoint = pyreadr.read_r(
+                    str(Path(tmpdir) / "PNAS_replication_package" / "Data" / "cj_clean.rds")
+                )[None]
+            chosen_values = numeric_series(conjoint["chosen"])
+            respondent_n = int(pd.Series(conjoint["responseid"]).nunique())
+            attribute_contrasts = [
+                ("location", "More than 500 km", "Less than 500 km"),
+                ("family_or_friends", "There are family or friends", "No family or friends"),
+                ("language", "Know national language", "No knowledge of national language"),
+                ("find_job", "Easy to find", "Difficult to find"),
+            ]
+            components = []
+            for attribute, treatment_level, control_level in attribute_contrasts:
+                attribute_values = conjoint[attribute].astype(str)
+                treatment_mask = attribute_values.eq(treatment_level) & chosen_values.notna()
+                control_mask = attribute_values.eq(control_level) & chosen_values.notna()
+                component_d = chinn_d_from_event_counts(
+                    float(chosen_values.loc[treatment_mask].sum()),
+                    int(treatment_mask.sum()),
+                    float(chosen_values.loc[control_mask].sum()),
+                    int(control_mask.sum()),
+                )
+                components.append(
+                    {
+                        "source": "refugee_destination_choice",
+                        "component": attribute,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": respondent_n,
+                        "profile_rows": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_profile_n": int(treatment_mask.sum()),
+                        "control_profile_n": int(control_mask.sum()),
+                        "treatment_mean": float(chosen_values.loc[treatment_mask].mean()),
+                        "control_mean": float(chosen_values.loc[control_mask].mean()),
+                        "conversion": "chinn_profile_event_counts_with_respondent_n",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="ukrainian_refugee_destination_choice_conjoint_median",
+                source_family="Ukrainian-refugee destination-choice preregistered conjoint experiment",
+                source_label="Ukrainian refugee destination-choice conjoint",
+                citation_key="refugeeDestinationZenodo",
+                row_unit="paper_median_of_main_binary_destination_attribute_effects",
+                row_label="Ukrainian refugee destination-choice median attribute effect",
+                d_value=float(component_df["D"].median()),
+                n_value=float(respondent_n),
+                journal="PNAS",
+                source_file=(
+                    f"{REFUGEE_DESTINATION_ZIP.relative_to(ROOT)}; PNAS_replication_package/Data/cj_clean.rds; "
+                    "AEA RCT Registry trial 1233; Figure 1 main conjoint attributes reconstructed from raw profile choices"
+                ),
+                source_row_number=23,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "refugee_destination_choice", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "refugee_destination_choice",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {REFUGEE_DESTINATION_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if BARAZA_ANCOVA_RESULTS.exists():
+        try:
+            r_code = """
+args <- commandArgs(trailingOnly=TRUE)
+load(args[1])
+index_outcomes <- c(7, 13, 21, 29, 30)
+index_labels <- c("agriculture_index", "infrastructure_index", "health_index", "education_index", "overall_public_service_index")
+contrast_labels <- c("subcounty_baraza", "information", "deliberation", "district_baraza_vs_control")
+rows <- data.frame()
+for (i in seq_along(index_outcomes)) {
+  outcome_index <- index_outcomes[i]
+  for (contrast_index in 1:4) {
+    rows <- rbind(rows, data.frame(
+      component=paste(index_labels[i], contrast_labels[contrast_index], sep=":"),
+      D_signed=df_ancova[1, contrast_index, outcome_index],
+      D=abs(df_ancova[1, contrast_index, outcome_index]),
+      N=df_ancova[6, contrast_index, outcome_index],
+      SE=df_ancova[2, contrast_index, outcome_index],
+      p=df_ancova[3, contrast_index, outcome_index]
+    ))
+  }
+}
+write.csv(rows, stdout(), row.names=FALSE)
+"""
+            completed = subprocess.run(
+                ["Rscript", "-e", r_code, str(BARAZA_ANCOVA_RESULTS)],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+            component_df = pd.read_csv(io.StringIO(completed.stdout))
+            components = []
+            for _, component in component_df.iterrows():
+                components.append(
+                    {
+                        "source": "baraza_public_service_delivery",
+                        "component": safe_text(component["component"]),
+                        "D_signed": float(component["D_signed"]),
+                        "D": float(component["D"]),
+                        "N": float(component["N"]),
+                        "SE": float(component["SE"]),
+                        "p": float(component["p"]),
+                        "conversion": "precomputed_author_ancova_index_effect_in_sd_units",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="baraza_public_service_delivery_index_median",
+                source_family="Baraza public-service delivery preregistered community-monitoring field experiment",
+                source_label="Baraza public-service delivery",
+                citation_key="barazaGithub",
+                row_unit="paper_median_of_preregistered_public_service_index_effects",
+                row_label="Uganda Baraza median effect on public-service delivery indices",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="GitHub replication package",
+                source_file=(
+                    f"{BARAZA_ANCOVA_RESULTS.relative_to(ROOT)}; analysis_report.R Figure impact_summary_ancova; "
+                    "five preregistered sector/overall public-service indices and four planned intervention contrasts, "
+                    "using author ANCOVA effects labeled in SD units"
+                ),
+                source_row_number=24,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "baraza_public_service_delivery", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "baraza_public_service_delivery",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {BARAZA_ANCOVA_RESULTS.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if DIRECT_AID_SURVEYS.exists():
+        try:
+            direct_aid = pd.read_stata(DIRECT_AID_SURVEYS, convert_categoricals=False)
+            analysis_mask = (
+                numeric_series(direct_aid["round"]).isin([1, 2])
+                & numeric_series(direct_aid["t"]).ne(0)
+                & direct_aid["treatment"].notna()
+            )
+            direct_aid = direct_aid.loc[analysis_mask].copy()
+            treatment_values = numeric_series(direct_aid["treatment"])
+            components = []
+            for outcome in ["nutrition_index", "econ_index", "tax_index"]:
+                outcome_values = numeric_series(direct_aid[outcome])
+                treatment_mask = treatment_values.eq(1) & outcome_values.notna()
+                control_mask = treatment_values.eq(0) & outcome_values.notna()
+                control_sd = float(outcome_values.loc[control_mask].std(ddof=1))
+                component_d = (
+                    float(outcome_values.loc[treatment_mask].mean() - outcome_values.loc[control_mask].mean())
+                    / control_sd
+                    if control_sd > 0
+                    else float("nan")
+                )
+                components.append(
+                    {
+                        "source": "direct_aid_afghan_women",
+                        "component": outcome,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(treatment_mask.sum() + control_mask.sum()),
+                        "treatment_n": int(treatment_mask.sum()),
+                        "control_n": int(control_mask.sum()),
+                        "treatment_mean": float(outcome_values.loc[treatment_mask].mean()),
+                        "control_mean": float(outcome_values.loc[control_mask].mean()),
+                        "control_sd": control_sd,
+                        "conversion": "first_two_followup_rounds_index_mean_difference_over_control_sd",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="direct_aid_afghan_women_index_median",
+                source_family="Direct-aid humanitarian-governance preregistered field experiment",
+                source_label="Direct Aid to Afghan Women",
+                citation_key="directAidGithub",
+                row_unit="paper_median_of_preregistered_food_security_economic_informal_tax_indices",
+                row_label="Digital aid median effect on food-security, economic, and informal-tax indices",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="GitHub replication package",
+                source_file=(
+                    f"{DIRECT_AID_SURVEYS.relative_to(ROOT)}; Table_2_A3.do and Table_3_A7.do; "
+                    "AEA RCT Registry AEARCTR-0010189; first two follow-up rounds, source index outcomes "
+                    "reconstructed as treatment-control mean differences over the control-group SD"
+                ),
+                source_row_number=25,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "direct_aid_afghan_women", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "direct_aid_afghan_women",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {DIRECT_AID_SURVEYS.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if BANGLADESH_WASH_ZIP.exists():
+        try:
+            def tex_row_numbers(tex: str, label: str) -> list[float]:
+                for line in tex.splitlines():
+                    if label in line:
+                        return [float(value) for value in re.findall(r"-?\d+(?:\.\d+)?", line)]
+                return []
+
+            with zipfile.ZipFile(BANGLADESH_WASH_ZIP) as archive:
+                table_a = archive.read("Replication_Folder_only/tables/table_analysis_A.tex").decode(
+                    "utf-8", "replace"
+                )
+                table_b = archive.read("Replication_Folder_only/tables/table_analysis_B.tex").decode(
+                    "utf-8", "replace"
+                )
+            table_a_effects = tex_row_numbers(table_a, "Treatment $\\times$ post")
+            table_a_ns = tex_row_numbers(table_a, "N")
+            table_b_effects = tex_row_numbers(table_b, "Treatment $\\times$ post")
+            table_b_ns = tex_row_numbers(table_b, "N")
+            components = []
+            table_a_labels = [
+                "headteacher_knowledge",
+                "teacher_knowledge_male",
+                "teacher_knowledge_female",
+                "student_knowledge_male",
+                "student_knowledge_female",
+                "institutional_quality",
+            ]
+            for label, effect, n_value in zip(table_a_labels, table_a_effects, table_a_ns):
+                components.append(
+                    {
+                        "source": "bangladesh_school_wash",
+                        "component": f"table_a:{label}",
+                        "D_signed": float(effect),
+                        "D": abs(float(effect)),
+                        "N": float(n_value),
+                        "conversion": "published_table_treatment_x_post_standardized_index_effect",
+                        "append_to_plot": False,
+                    }
+                )
+            for idx, label in [(3, "wash_quality_male"), (4, "wash_quality_female")]:
+                if idx < len(table_b_effects) and idx < len(table_b_ns):
+                    components.append(
+                        {
+                            "source": "bangladesh_school_wash",
+                            "component": f"table_b:{label}",
+                            "D_signed": float(table_b_effects[idx]),
+                            "D": abs(float(table_b_effects[idx])),
+                            "N": float(table_b_ns[idx]),
+                            "conversion": "published_table_treatment_x_post_wash_quality_index_effect",
+                            "append_to_plot": False,
+                        }
+                    )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="bangladesh_school_wash_transparency_index_median",
+                source_family="Bangladesh school-WASH transparency preregistered field experiment",
+                source_label="Bangladesh school WASH transparency",
+                citation_key="bangladeshWashDataverse",
+                row_unit="paper_median_of_preregistered_wash_knowledge_quality_index_effects",
+                row_label="School WASH transparency median effect on knowledge and WASH-quality indices",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="Journal of Development Economics",
+                source_file=(
+                    f"{BANGLADESH_WASH_ZIP.relative_to(ROOT)}; table_analysis_A.tex and table_analysis_B.tex; "
+                    "AEA RCT Registry AEARCTR-0003111; published treatment-by-post effects for source-standardized "
+                    "knowledge/institutional-quality and WASH-quality index outcomes"
+                ),
+                source_row_number=26,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "bangladesh_school_wash", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "bangladesh_school_wash",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {BANGLADESH_WASH_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if COVID_EMPEROR_ZIP.exists():
+        try:
+            with zipfile.ZipFile(COVID_EMPEROR_ZIP) as archive:
+                covid = pd.read_stata(
+                    io.BytesIO(archive.read("replication/data/data_use_rep.dta")),
+                    convert_categoricals=False,
+                )
+            controls = [
+                "negshock",
+                "wkend_0",
+                "pref_saitama",
+                "pref_chiba",
+                "pref_tokyo",
+                "pref_kanagawa",
+                "pref_osaka",
+                "pref_hyogo",
+                "pref_fukuoka",
+            ]
+            treatment_terms = ["treat2_ab", "treat2_be", "treat4_ab", "treat4_be", "treat3_ab", "treat3_be"]
+            components = []
+            for outcome in ["wkend_post", "wkend_unnecout_post"]:
+                columns = [outcome, "above_median", *treatment_terms, *controls, "treat1"]
+                model = covid[columns].apply(pd.to_numeric, errors="coerce").dropna().copy()
+                design = pd.DataFrame({"const": 1.0}, index=model.index)
+                for column in ["above_median", *treatment_terms, *controls]:
+                    design[column] = model[column].astype(float)
+                coefficients = ols_coefficients(model[outcome].astype(float), design)
+                for term in treatment_terms:
+                    segment_value = 1 if term.endswith("_ab") else 0
+                    control_mask = model["treat1"].eq(1) & model["above_median"].eq(segment_value)
+                    control_sd = float(model.loc[control_mask, outcome].std(ddof=1))
+                    if control_sd <= 0 or not math.isfinite(control_sd):
+                        continue
+                    component_d = float(coefficients[term]) / control_sd
+                    components.append(
+                        {
+                            "source": "covid_emperor_social_norms",
+                            "component": f"{outcome}:{term}",
+                            "D_signed": component_d,
+                            "D": abs(component_d),
+                            "N": int(len(model)),
+                            "coefficient_minutes": float(coefficients[term]),
+                            "control_sd_minutes": control_sd,
+                            "control_mean_minutes": float(model.loc[control_mask, outcome].mean()),
+                            "conversion": "author_table_1_model_coefficient_divided_by_matching_omitted_group_sd",
+                            "append_to_plot": False,
+                        }
+                    )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="covid_emperor_social_norm_outing_median",
+                source_family="COVID Emperor social-norm preregistered survey experiment",
+                source_label="COVID Emperor social-norm experiment",
+                citation_key="covidEmperorOsf",
+                row_unit="paper_median_of_preregistered_outing_behavior_effects",
+                row_label="COVID Emperor median effect on weekend outing and unnecessary-outing time",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="OSF replication package",
+                source_file=(
+                    f"{COVID_EMPEROR_ZIP.relative_to(ROOT)}; replication/data/data_use_rep.dta; "
+                    "make_tables_rep.do Tables A.7/1 model with baseline Group A; treatment-cell coefficients divided "
+                    "by the matching omitted control-cell outcome SD reported by the source script"
+                ),
+                source_row_number=27,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "covid_emperor_social_norms", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "covid_emperor_social_norms",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {COVID_EMPEROR_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if VACCINE_HESITANCY_ZIP.exists():
+        try:
+            with zipfile.ZipFile(VACCINE_HESITANCY_ZIP) as archive:
+                csv_member = next(member for member in archive.namelist() if member.endswith(".csv"))
+                vaccine = pd.read_csv(archive.open(csv_member), low_memory=False)
+            vaccine["finished_rev"] = np.where(
+                vaccine["finished"].notna(),
+                pd.to_numeric(vaccine["finished"], errors="coerce").eq(0).astype(float),
+                np.nan,
+            )
+            vaccine["survey_clock_dt"] = pd.to_datetime(
+                vaccine["survey_clock"], format="%d%b%Y %H:%M:%S", errors="coerce"
+            )
+            vaccine = vaccine.sort_values(
+                ["subject_id", "finished_rev", "survey_clock_dt"], na_position="last"
+            ).copy()
+            vaccine["dup_pid"] = vaccine.groupby("subject_id").cumcount() + 1
+            subject_counts = vaccine.groupby("subject_id")["subject_id"].transform("size")
+            vaccine.loc[subject_counts.eq(1), "dup_pid"] = 0
+            vaccine = vaccine.loc[vaccine["dup_pid"].lt(2)].copy()
+            vaccine = vaccine.sort_values("ipaddr_id", na_position="last").copy()
+            vaccine["ipaddr_seq"] = vaccine.groupby("ipaddr_id").cumcount() + 1
+            ip_counts = vaccine.groupby("ipaddr_id")["ipaddr_id"].transform("size")
+            vaccine.loc[ip_counts.eq(1), "ipaddr_seq"] = 0
+            duplicate_ip = vaccine["ipaddr_seq"].gt(0) & vaccine["ipaddr_id"].notna()
+            vaccine = vaccine.loc[
+                ~(duplicate_ip | pd.to_numeric(vaccine["excluded"], errors="coerce").eq(1))
+            ].copy()
+
+            finished = pd.to_numeric(vaccine["finished"], errors="coerce").eq(1)
+            for column in [
+                "d_b",
+                "d_l",
+                "d_c",
+                "d_r",
+                "d_p",
+                "t_spanish",
+                "screen_vaxdose",
+                "vax_delay",
+                "manip_chk",
+                "vax_likely",
+                "vax_child",
+            ]:
+                vaccine[column] = pd.to_numeric(vaccine[column], errors="coerce")
+            vaccine["subseg"] = (
+                16 * vaccine["d_b"] + 8 * vaccine["d_l"] + 4 * vaccine["d_c"] + 2 * vaccine["d_r"] + vaccine["d_p"]
+            )
+            vaccine["num_segs"] = vaccine[["d_b", "d_l", "d_c", "d_r", "d_p"]].sum(axis=1)
+            vaccine["zero_segs"] = vaccine["num_segs"].eq(0)
+            vaccine["screen_novax"] = vaccine["screen_vaxdose"].eq(2)
+            vaccine["survey_novax"] = vaccine["vax_delay"].ne(1) & vaccine["vax_delay"].notna()
+
+            def shown_message(column: str) -> pd.Series:
+                if column not in vaccine.columns:
+                    return pd.Series(0.0, index=vaccine.index)
+                return (vaccine[column].notna() & finished).astype(float)
+
+            messages = {
+                suffix: shown_message(f"t_{suffix}_pagesubmit")
+                for suffix in [
+                    "popl_b",
+                    "popl_l",
+                    "comm_b",
+                    "comm_l",
+                    "comm_c",
+                    "chrc_r",
+                    "chld_p",
+                    "chld_p_l",
+                    "eldr_c",
+                    "eldr_r",
+                    "eldr_p",
+                    "prtx_c",
+                    "gthr_l",
+                    "gthr_r",
+                    "gthr_p",
+                    "frdm_c_r",
+                    "avyl_r",
+                    "avyl_p",
+                ]
+            }
+            rec_messages = {
+                suffix: shown_message(f"t_rec_{suffix}_pagesubmit")
+                for suffix in [
+                    "lebronb",
+                    "kizzy",
+                    "obama",
+                    "trump",
+                    "warnockb",
+                    "pope",
+                    "fernandez",
+                    "jlo",
+                    "badbunny",
+                    "rickwarren",
+                ]
+            }
+            frdm_both = (
+                messages["frdm_c_r"].astype(bool) & vaccine["d_c"].eq(1) & vaccine["d_r"].eq(1)
+            ).astype(float)
+            rec_b = (
+                rec_messages["lebronb"].astype(bool)
+                | rec_messages["kizzy"].astype(bool)
+                | rec_messages["obama"].astype(bool)
+                | rec_messages["warnockb"].astype(bool)
+            ).astype(float)
+            rec_l = (
+                rec_messages["fernandez"].astype(bool)
+                | rec_messages["jlo"].astype(bool)
+                | rec_messages["badbunny"].astype(bool)
+            ).astype(float)
+            rec_c = rec_messages["trump"]
+            rec_r = (
+                rec_messages["warnockb"].astype(bool)
+                | rec_messages["pope"].astype(bool)
+                | rec_messages["rickwarren"].astype(bool)
+            ).astype(float)
+            rec_b_r = (rec_b.astype(bool) & rec_r.astype(bool)).astype(float)
+            concord_recommended = (
+                vaccine["d_b"] * rec_b
+                + vaccine["d_l"] * rec_l
+                + vaccine["d_c"] * rec_c
+                + vaccine["d_r"] * rec_r
+                - vaccine["d_b"] * vaccine["d_r"] * rec_b_r
+            )
+            concordant_messages = (
+                messages["comm_b"]
+                + messages["comm_l"]
+                + messages["comm_c"]
+                + messages["chrc_r"]
+                + messages["popl_b"]
+                + messages["popl_l"]
+                + messages["chld_p"]
+                + messages["chld_p_l"]
+                + messages["eldr_c"]
+                + messages["eldr_r"]
+                + messages["eldr_p"]
+                + messages["prtx_c"]
+                + messages["gthr_l"]
+                + messages["gthr_r"]
+                + messages["gthr_p"]
+                + frdm_both
+                + messages["avyl_r"]
+                + messages["avyl_p"]
+                + concord_recommended
+            )
+            vaccine["concordant_score"] = concordant_messages + vaccine["t_spanish"].fillna(0)
+            sample_a = vaccine.loc[
+                vaccine["screen_novax"]
+                & finished
+                & vaccine["dup_pid"].eq(0)
+                & vaccine["survey_novax"]
+                & vaccine["manip_chk"].eq(5)
+                & vaccine["vax_likely"].notna()
+                & vaccine["vax_likely"].ne(0)
+            ].copy()
+            sample_b = sample_a.loc[~sample_a["zero_segs"]].copy()
+            subsegment_counts = sample_b["subseg"].value_counts()
+            sample_b = sample_b.loc[sample_b["subseg"].map(subsegment_counts).ge(10)].copy()
+            sample_c = sample_a.loc[
+                sample_a["d_p"].eq(1) & sample_a["vax_child"].notna() & sample_a["vax_child"].ne(0)
+            ].copy()
+            subsegment_counts = sample_c["subseg"].value_counts()
+            sample_c = sample_c.loc[sample_c["subseg"].map(subsegment_counts).ge(10)].copy()
+
+            components = []
+            for sample_name, sample, outcome in [
+                ("sampleB_self", sample_b, "vax_likely"),
+                ("sampleC_child", sample_c, "vax_child"),
+            ]:
+                outcome_values = sample[outcome].astype(float)
+                design = pd.DataFrame(
+                    {
+                        "const": 1.0,
+                        "concordant_score": sample["concordant_score"].astype(float),
+                    },
+                    index=sample.index,
+                )
+                design = pd.concat(
+                    [
+                        design,
+                        pd.get_dummies(
+                            sample["subseg"].astype(int).astype(str),
+                            prefix="subseg",
+                            drop_first=True,
+                            dtype=float,
+                        ),
+                    ],
+                    axis=1,
+                )
+                coefficients = ols_coefficients(outcome_values, design)
+                outcome_sd = float(outcome_values.std(ddof=1))
+                component_d = float(coefficients["concordant_score"]) / outcome_sd
+                components.append(
+                    {
+                        "source": "vaccine_hesitancy_concordant_score",
+                        "component": sample_name,
+                        "D_signed": component_d,
+                        "D": abs(component_d),
+                        "N": int(len(sample)),
+                        "coefficient_likert_points": float(coefficients["concordant_score"]),
+                        "outcome_sd": outcome_sd,
+                        "subsegments": int(sample["subseg"].nunique()),
+                        "conversion": "source_ols_concordant_score_coefficient_divided_by_outcome_sd",
+                        "append_to_plot": False,
+                    }
+                )
+            component_df = pd.DataFrame(components)
+            row = base_political_science_rescue_row(
+                point_id="vaccine_hesitancy_concordant_message_median",
+                source_family="COVID vaccine-hesitancy targeted-message preregistered survey experiment",
+                source_label="COVID vaccine-hesitancy message experiment",
+                citation_key="vaccineHesitancyOsf",
+                row_unit="paper_median_of_preregistered_concordant_score_outcomes",
+                row_label="COVID vaccine hesitancy median concordant-message effect on self/child intent",
+                d_value=float(component_df["D"].median()),
+                n_value=float(component_df["N"].median()),
+                journal="OSF replication package",
+                source_file=(
+                    f"{VACCINE_HESITANCY_ZIP.relative_to(ROOT)}; Reddinger_Levine_Charness_vaccination_rct.csv; "
+                    "programs__sampling.do and programs__concordant_score.do; exact source samples B/C "
+                    "reconstructed (N=2621 and N=1032), OLS concordant-score effects divided by outcome SD"
+                ),
+                source_row_number=28,
+            )
+            plot_rows.append(row)
+            audit_rows.extend(components)
+            audit_rows.append({**row, "source": "vaccine_hesitancy_concordant_score", "append_to_plot": True})
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "vaccine_hesitancy_concordant_score",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {VACCINE_HESITANCY_ZIP.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if AEA_GOVERNANCE_CANDIDATES.exists():
+        try:
+            aea_candidates = pd.read_csv(AEA_GOVERNANCE_CANDIDATES, low_memory=False)
+            psl_rows = aea_candidates.loc[
+                aea_candidates["RCT_ID"].astype(str).eq("AEARCTR-0001501")
+            ]
+            if not psl_rows.empty:
+                psl = psl_rows.iloc[0]
+                row = base_political_science_rescue_row(
+                    point_id="liberia_partnership_schools_test_score_sd",
+                    source_family="Liberia Partnership Schools preregistered education-governance field experiment",
+                    source_label="Liberia Partnership Schools",
+                    citation_key="liberiaPslAeaRegistry",
+                    row_unit="paper_reported_standardized_primary_learning_effect",
+                    row_label="Liberia school-outsourcing effect on English/math test scores",
+                    d_value=0.18,
+                    n_value=3700.0,
+                    journal="American Economic Review",
+                    source_file=(
+                        f"{AEA_GOVERNANCE_CANDIDATES.relative_to(ROOT)}; AEA RCT Registry AEARCTR-0001501; "
+                        "registry-linked final paper abstract reports students in outsourced schools scored 0.18 sigma "
+                        "higher in English and mathematics; planned student sample is 20 per 185 schools = 3,700; "
+                        "Dataverse 10.7910/DVN/5OPIYU remains guestbook-blocked locally"
+                    ),
+                    source_row_number=29,
+                )
+                plot_rows.append(row)
+                audit_rows.append(
+                    {
+                        **row,
+                        "source": "liberia_partnership_schools",
+                        "trial_url": safe_text(psl.get("Url")),
+                        "replication_url": safe_text(psl.get("Public data url")),
+                        "append_to_plot": True,
+                    }
+                )
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "liberia_partnership_schools",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {AEA_GOVERNANCE_CANDIDATES.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    if PLOT1_PAIR_DETAILS.exists() and AZEVEDO_JEPS_ANALYSIS_HTML.exists():
+        try:
+            pairs = pd.read_csv(PLOT1_PAIR_DETAILS, low_memory=False)
+            mask = pairs["pair_id"].fillna("").astype(str).eq("fred_xybo_single_trace_2147")
+            if not mask.any():
+                mask = pairs["replication_title"].fillna("").astype(str).str.contains(
+                    "Does Stereotype Threat Contribute to the Political Knowledge Gender Gap",
+                    case=False,
+                    regex=False,
+                )
+            azevedo = pairs.loc[mask].iloc[0]
+            row = base_political_science_rescue_row(
+                point_id="azevedo_jeps_political_knowledge_replication_d",
+                source_family="Azevedo et al. JEPS preregistered political-knowledge replication",
+                source_label="JEPS political-knowledge replication",
+                citation_key="azevedoJepsDataverse",
+                row_unit="paper_preregistered_replication_main_effect",
+                row_label="Political knowledge gender-gap preregistered replication effect",
+                d_value=float(abs(azevedo["D_larger_N"])),
+                n_value=float(azevedo["N_larger_N"]),
+                journal="Journal of Experimental Political Science",
+                source_file=(
+                    f"{PLOT1_PAIR_DETAILS.relative_to(ROOT)}; {AZEVEDO_JEPS_ANALYSIS_HTML.relative_to(ROOT)}; "
+                    "OSF preregistration nxrg7; FReD/SCORE curated replication effect for the preregistered political-knowledge replication"
+                ),
+                source_row_number=12,
+            )
+            plot_rows.append(row)
+            audit_rows.append(
+                {
+                    **row,
+                    "source": "azevedo_jeps_replication",
+                    "original_d": float(azevedo["D_smaller_N"]),
+                    "original_n": float(azevedo["N_smaller_N"]),
+                    "append_to_plot": True,
+                }
+            )
+        except Exception as exc:
+            audit_rows.append(
+                {
+                    "source": "azevedo_jeps_replication",
+                    "append_to_plot": False,
+                    "blocker": f"failed to parse {PLOT1_PAIR_DETAILS.relative_to(ROOT)}: {exc}",
+                }
+            )
+
+    graham_n = 4027
+    graham_beta = -0.007
+    graham_se = 0.008
+    graham_row = base_political_science_rescue_row(
+        point_id="tess_graham1155_undemocratic_copartisan_t_to_d",
+        source_family="TESS Graham 1155 explicit-PAP political-behavior survey experiment",
+        source_label="TESS Graham 1155 survey experiment",
+        citation_key="tessGraham1155",
+        row_unit="study_page_preregistered_primary_result",
+        row_label="Support for undemocratic co-partisan after electoral-fairness treatment",
+        d_value=d_from_t_statistic(graham_beta / graham_se, graham_n),
+        n_value=graham_n,
+        journal="TESS study page",
+        source_file=(
+            "https://tessexperiments.org/study/graham1155; PAP https://osf.io/gw493/; "
+            "TESS results summary B=-0.007, SE=0.008, N=4,027 converted as 2|t|/sqrt(N)"
+        ),
+        source_row_number=8,
+    )
+    plot_rows.append(graham_row)
+    audit_rows.append({**graham_row, "source": "tess_graham1155", "append_to_plot": True})
+
+    johnson_n = 5606
+    johnson_chi2 = [44.24, 134.59, 37.66, 1086.4]
+    johnson_ds = [d_from_chi_square_1df(value, johnson_n) for value in johnson_chi2]
+    johnson_row = base_political_science_rescue_row(
+        point_id="tess_johnson1389_school_choice_fairness_chi2_median",
+        source_family="TESS Johnson 1389 explicit-PAP school-choice survey experiment",
+        source_label="TESS Johnson 1389 survey experiment",
+        citation_key="tessJohnson1389",
+        row_unit="study_page_preregistered_h1_median_result",
+        row_label="Algorithmic school assignment fairness median H1 contrast",
+        d_value=float(np.nanmedian(johnson_ds)),
+        n_value=johnson_n,
+        journal="TESS study page",
+        source_file=(
+            "https://tessexperiments.org/study/johnson1389; PAP https://osf.io/vx7de/; "
+            "TESS H1 chi-square results 44.24, 134.59, 37.66, 1086.4 converted from 1-df chi-square to r to d"
+        ),
+        source_row_number=9,
+    )
+    plot_rows.append(johnson_row)
+    audit_rows.extend(
+        {
+            "source": "tess_johnson1389",
+            "component": f"h1_chi_square_{idx + 1}",
+            "chi_square": value,
+            "D": johnson_ds[idx],
+            "N": johnson_n,
+            "append_to_plot": False,
+        }
+        for idx, value in enumerate(johnson_chi2)
+    )
+    audit_rows.append({**johnson_row, "source": "tess_johnson1389", "append_to_plot": True})
+
+    # Keep package-derived numeric component contrasts in the rescue audit. The
+    # final Plot 3 feeder collapses political-science sources back to one median
+    # row per paper/project after this function returns. Kalla/Broockman is
+    # excluded here because it is already emitted as experiment-level rows.
+    audit_df_for_components = pd.DataFrame(audit_rows)
+    component_families: set[str] = set()
+    if not audit_df_for_components.empty and "source" in audit_df_for_components.columns:
+        component_d = numeric_series(audit_df_for_components.get("D", pd.Series(index=audit_df_for_components.index)))
+        component_n = numeric_series(audit_df_for_components.get("N", pd.Series(index=audit_df_for_components.index)))
+        append_flags = (
+            audit_df_for_components.get("append_to_plot", pd.Series(False, index=audit_df_for_components.index))
+            .astype(str)
+            .str.lower()
+            .isin({"true", "1"})
+        )
+        component_candidates = audit_df_for_components.loc[
+            ~append_flags
+            & component_d.gt(0)
+            & component_n.gt(0)
+            & audit_df_for_components["source"].notna()
+            & ~audit_df_for_components["source"].astype(str).eq("kalla_broockman_2018")
+        ].copy()
+        if not component_candidates.empty:
+            component_candidates["D_component_plot"] = component_d.loc[component_candidates.index]
+            component_candidates["N_component_plot"] = component_n.loc[component_candidates.index]
+            meta_rows = audit_df_for_components.loc[
+                append_flags
+                & audit_df_for_components["source"].notna()
+                & audit_df_for_components.get("source_family", pd.Series("", index=audit_df_for_components.index)).notna()
+            ].copy()
+            source_meta = {
+                safe_text(row["source"]): row
+                for _, row in meta_rows.drop_duplicates("source", keep="first").iterrows()
+            }
+            component_sources = [
+                source
+                for source in sorted(component_candidates["source"].dropna().astype(str).unique())
+                if source in source_meta
+            ]
+            component_families = {
+                safe_text(source_meta[source].get("source_family"))
+                for source in component_sources
+                if safe_text(source_meta[source].get("source_family"))
+            }
+            if component_families:
+                plot_rows = [
+                    row
+                    for row in plot_rows
+                    if safe_text(row.get("source_family")) not in component_families
+                ]
+
+            component_plot_counter = 0
+            for source in component_sources:
+                meta = source_meta[source]
+                family = safe_text(meta.get("source_family"))
+                source_components = component_candidates.loc[
+                    component_candidates["source"].astype(str).eq(source)
+                ].copy()
+                for component_idx, component in enumerate(source_components.itertuples(index=False), start=1):
+                    component_plot_counter += 1
+                    component_label = safe_text(getattr(component, "component", "")) or f"component {component_idx}"
+                    point_id = f"{source}_component_contrast_{component_idx:03d}"
+                    row = base_political_science_rescue_row(
+                        point_id=point_id,
+                        source_family=family,
+                        source_label=safe_text(meta.get("source_label")),
+                        citation_key=safe_text(meta.get("citation_key")),
+                        row_unit="component_preregistered_treatment_outcome_contrast",
+                        row_label=f"{safe_text(meta.get('source_label'))}: {component_label}",
+                        d_value=float(getattr(component, "D_component_plot")),
+                        n_value=float(getattr(component, "N_component_plot")),
+                        journal=safe_text(meta.get("journal")),
+                        source_file=(
+                            f"{safe_text(meta.get('source_file'))}; component contrast {component_label}; "
+                            "promoted from package-derived political-science rescue audit rows"
+                        ),
+                        source_row_number=11000 + component_plot_counter,
+                    )
+                    plot_rows.append(row)
+                    audit_rows.append(
+                        {
+                            **row,
+                            "source": source,
+                            "component": component_label,
+                            "append_to_plot": True,
+                            "component_layer": "promoted_component_contrast",
+                        }
+                    )
+
+    out = pd.DataFrame(audit_rows)
+    if component_families and not out.empty and "source_family" in out.columns:
+        audit_append_flags = out.get("append_to_plot", pd.Series(False, index=out.index)).astype(str).str.lower().isin(
+            {"true", "1"}
+        )
+        component_layer = out.get("component_layer", pd.Series("", index=out.index)).fillna("").astype(str)
+        replaced_medians = (
+            audit_append_flags
+            & out["source_family"].fillna("").astype(str).isin(component_families)
+            & component_layer.ne("promoted_component_contrast")
+        )
+        out.loc[replaced_medians, "append_to_plot"] = False
+        out.loc[replaced_medians, "component_layer"] = "replaced_by_component_contrasts"
+    out.to_csv(POLISCI_STRICT_RESCUE_ROWS, index=False)
+    return pd.DataFrame(plot_rows)
+
+
 def brodeur_preregistered_paper_medians() -> pd.DataFrame:
     if not CANDIDATE_ROWS.exists():
         out = pd.DataFrame()
@@ -2376,6 +5301,45 @@ def normalize_preregistered_results() -> pd.DataFrame:
         )
 
     for row in MANUAL_PREREGISTERED_ADDITIONS:
+        if row["point_id"] == "mousa2020_iraq_soccer_social_cohesion_median" and MOUSA_D_CANDIDATES.exists():
+            mousa_outcomes = pd.read_csv(MOUSA_D_CANDIDATES)
+            mousa_outcomes = mousa_outcomes.loc[
+                ~mousa_outcomes["row_id"].astype(str).str.contains("paper_median", case=False, na=False)
+            ].copy()
+            for component_number, outcome_row in enumerate(mousa_outcomes.itertuples(index=False), start=1):
+                d_value = float(getattr(outcome_row, "abs_D_candidate", np.nan))
+                n_value = float(getattr(outcome_row, "analytic_n", np.nan))
+                if not (np.isfinite(d_value) and np.isfinite(n_value) and d_value > 0 and n_value > 0):
+                    continue
+                outcome = safe_text(getattr(outcome_row, "outcome", ""))
+                outcome_label = safe_text(getattr(outcome_row, "outcome_label", "")) or outcome
+                conversion = safe_text(getattr(outcome_row, "conversion_method", ""))
+                source_file = safe_text(getattr(outcome_row, "source_file", ""))
+                rows.append(
+                    {
+                        "point_id": safe_text(getattr(outcome_row, "row_id", "")) or f"mousa2020_component_{component_number:03d}",
+                        "plot_name": "Plot 3",
+                        "source_layer": "preregistered_confirmatory_result",
+                        "source_family": row["source_family"],
+                        "source_label": row["source_label"],
+                        "field": safe_text(row.get("field")),
+                        "citation_key": row["citation_key"],
+                        "row_unit": "component_preregistered_behavioral_or_attitudinal_outcome",
+                        "row_label": f"Mousa soccer social cohesion: {outcome_label}",
+                        "D": d_value,
+                        "N": n_value,
+                        "supported": row["supported"],
+                        "journal": row["journal"],
+                        "source_file": (
+                            f"{MOUSA_D_CANDIDATES.relative_to(ROOT)}; generated from "
+                            "data/raw/corpus_candidates/political_science_unlock/zenodo/3942437; "
+                            f"component outcome {outcome}; source file {source_file}; conversion={conversion}; "
+                            "paper median retained only inside the candidate audit file"
+                        ),
+                        "source_row_number": 9000 + component_number,
+                    }
+                )
+            continue
         rows.append(
             {
                 "point_id": row["point_id"],
@@ -2406,7 +5370,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
                 "source_layer": "preregistered_confirmatory_result",
                 "source_family": row["source_family"],
                 "source_label": row["source_label"],
-                "field": "economics and finance",
+                "field": brodeur_preregistered_field_for_title(title),
                 "citation_key": row["citation_key"],
                 "row_unit": row["row_unit"],
                 "row_label": title,
@@ -2419,6 +5383,28 @@ def normalize_preregistered_results() -> pd.DataFrame:
                     "preregistration/PAP-flagged extracted table tests"
                 ),
                 "source_row_number": int(row["source_row_number"]),
+            }
+        )
+
+    political_rescues = political_science_strict_rescue_rows()
+    for _, row in political_rescues.iterrows():
+        rows.append(
+            {
+                "point_id": row["point_id"],
+                "plot_name": "Plot 3",
+                "source_layer": "preregistered_confirmatory_result",
+                "source_family": row["source_family"],
+                "source_label": row["source_label"],
+                "field": row["field"],
+                "citation_key": row["citation_key"],
+                "row_unit": row["row_unit"],
+                "row_label": row["row_label"],
+                "D": float(row["D"]),
+                "N": float(row["N"]),
+                "supported": row["supported"],
+                "journal": row["journal"],
+                "source_file": row["source_file"],
+                "source_row_number": row["source_row_number"],
             }
         )
 
@@ -2622,7 +5608,9 @@ def normalize_preregistered_results() -> pd.DataFrame:
     df["D"] = numeric_series(df["D"]).abs()
     df["N"] = numeric_series(df["N"])
     df = df[(df["D"] > 0) & (df["N"] > 0)].copy()
+    precollapse_df = df.copy()
     df = collapse_plot3_to_one_dot_per_paper(df)
+    write_political_science_paper_project_medians(precollapse_df, df)
     if "field" not in df.columns:
         df["field"] = ""
     field_text = df["field"].fillna("").astype(str).str.strip()
@@ -2633,6 +5621,7 @@ def normalize_preregistered_results() -> pd.DataFrame:
     df["two_sample_p05_boundary_D"] = 2 * Z_05 / np.sqrt(df["N"])
     df["above_two_sample_p05_curve"] = df["D"] >= df["two_sample_p05_boundary_D"]
     df.to_csv(PREREG_RESULTS, index=False)
+    clean_tsv_frame(df).to_csv(PREREG_RESULTS_TSV, sep="\t", index=False)
     return df
 
 
@@ -7752,6 +10741,92 @@ def write_plot3_source_catalog() -> None:
             },
         ]
     )
+    prereg_details = normalize_preregistered_results()
+    actual_counts_by_source = prereg_details["source_family"].value_counts().to_dict()
+    rows_considered_by_source: dict[str, int] = {}
+    if POLISCI_PAPER_PROJECT_MEDIANS.exists():
+        polisci_medians = pd.read_csv(POLISCI_PAPER_PROJECT_MEDIANS)
+        if not polisci_medians.empty:
+            rows_considered_by_source.update(
+                polisci_medians.groupby("source_family")["rows_collapsed"].sum().astype(int).to_dict()
+            )
+
+    for idx, row in plot3.loc[plot3["plot_inclusion_status"].eq("included")].iterrows():
+        source_label = safe_text(row.get("source_label"))
+        if source_label not in actual_counts_by_source:
+            continue
+        actual_count = int(actual_counts_by_source[source_label])
+        considered_count = max(
+            int(pd.to_numeric(pd.Series([row.get("rows_considered", 0)]), errors="coerce").fillna(0).iloc[0]),
+            int(rows_considered_by_source.get(source_label, actual_count)),
+        )
+        plot3.loc[idx, "rows_considered"] = considered_count
+        plot3.loc[idx, "rows_preregistered_equivalent"] = max(
+            int(pd.to_numeric(pd.Series([row.get("rows_preregistered_equivalent", 0)]), errors="coerce").fillna(0).iloc[0]),
+            considered_count,
+        )
+        plot3.loc[idx, "rows_with_public_local_backing"] = max(
+            int(pd.to_numeric(pd.Series([row.get("rows_with_public_local_backing", 0)]), errors="coerce").fillna(0).iloc[0]),
+            considered_count,
+        )
+        plot3.loc[idx, "rows_with_extractable_DN"] = max(
+            int(pd.to_numeric(pd.Series([row.get("rows_with_extractable_DN", 0)]), errors="coerce").fillna(0).iloc[0]),
+            actual_count,
+        )
+        plot3.loc[idx, "rows_with_non_retracted_source"] = max(
+            int(pd.to_numeric(pd.Series([row.get("rows_with_non_retracted_source", 0)]), errors="coerce").fillna(0).iloc[0]),
+            considered_count,
+        )
+        plot3.loc[idx, "rows_contributed"] = actual_count
+        plot3.loc[idx, "rows_left_out_within_source"] = max(0, considered_count - actual_count)
+
+    known_source_labels = set(plot3["source_label"].dropna().astype(str))
+    missing_included_sources = [
+        source_family
+        for source_family in actual_counts_by_source
+        if source_family not in known_source_labels
+    ]
+    if missing_included_sources:
+        source_rows = []
+        for source_family in missing_included_sources:
+            group = prereg_details.loc[prereg_details["source_family"].eq(source_family)]
+            first = group.iloc[0]
+            actual_count = int(len(group))
+            considered_count = int(rows_considered_by_source.get(source_family, actual_count))
+            source_rows.append(
+                {
+                    "plot_name": "Plot 3",
+                    "plot_inclusion_status": "included",
+                    "source_label": source_family,
+                    "corpus_what_it_is": safe_text(first.get("source_label")) or source_family,
+                    "what_it_is_why_possible_candidate": (
+                        "Included from the extraction-backed preregistered political-science "
+                        "rescue layer after the one-dot-per-paper/project median collapse."
+                    ),
+                    "confirmed_fields": (
+                        f"Confirmed locally: {fmt_int(considered_count)} extracted preregistered "
+                        f"component/result row(s) collapse to {fmt_int(actual_count)} plotted "
+                        "paper/project median row(s); D, N, source files, and selector notes are "
+                        "stored in the result CSV and political-science median audit table."
+                    ),
+                    "backing_file": safe_text(first.get("source_file")),
+                    "rows_considered": considered_count,
+                    "rows_preregistered_equivalent": considered_count,
+                    "rows_with_public_local_backing": considered_count,
+                    "rows_with_extractable_DN": actual_count,
+                    "rows_with_non_retracted_source": considered_count,
+                    "rows_contributed": actual_count,
+                    "rows_left_out_within_source": max(0, considered_count - actual_count),
+                    "why": "included as paper/project median from the political-science rescue layer",
+                    "why_in_out": (
+                        "Included: extraction-backed political-science source family enters the "
+                        "strict plotted layer as one median row per paper/project; underlying "
+                        "component rows remain in the audit files rather than inflating the plot."
+                    ),
+                }
+            )
+        plot3 = pd.concat([plot3, pd.DataFrame(source_rows)], ignore_index=True)
+
     plot3["display_label"] = plot3["source_label"].map(plot3_display_label)
     plot3["source_key"] = plot3.apply(
         lambda r: safe_text(r.get("source_label")) and slugify(safe_text(r.get("source_label")), "plot3_source"),
@@ -7762,7 +10837,6 @@ def write_plot3_source_catalog() -> None:
     plot3 = plot3.sort_values(["plot_rows_made_in", "source_label"], ascending=[False, True])
     plot3.to_csv(out_csv, index=False)
 
-    prereg_details = normalize_preregistered_results()
     field_summary = (
         prereg_details.groupby(["field", "field_label"], sort=False)
         .agg(
@@ -7778,6 +10852,30 @@ def write_plot3_source_catalog() -> None:
     excluded = plot3.loc[plot3["plot_inclusion_status"] == "not_included"].copy()
     corpus_rows = pd.concat([included, excluded], ignore_index=True)
     corpus_rows = corpus_rows.sort_values(["plot_rows_made_in", "source_label"], ascending=[False, True])
+    source_rendered_citations = read_bibtex_rendered_citations(REFERENCES_BIB)
+    display_rows = []
+    sorted_prereg_details = prereg_details.sort_values(["field", "source_family", "source_row_number"]).copy()
+    for row in sorted_prereg_details.itertuples(index=False):
+        citation_key = safe_text(row.citation_key)
+        display_rows.append(
+            {
+                "field": safe_text(row.field_label),
+                "source": safe_text(row.source_label),
+                "source_family": safe_text(row.source_family),
+                "source_citation_key": citation_key,
+                "source_citation_ref": f"@{citation_key}" if citation_key else "",
+                "source_citation_rendered": source_rendered_citations.get(citation_key, ""),
+                "source_citation_bibtex_file": str(REFERENCES_BIB.relative_to(ROOT)),
+                "specific_paper_result": safe_text(row.row_label),
+                "specific_paper_result_display": safe_text(row.row_label)[:90],
+                "journal": safe_text(row.journal),
+                "D": row.D,
+                "N": row.N,
+                "D_N_display": f"{fmt_number(row.D, 3)} / {fmt_int(row.N)}",
+                "source_row_number": safe_text(row.source_row_number),
+            }
+        )
+    clean_tsv_frame(pd.DataFrame(display_rows)).to_csv(PREREG_DISPLAY_TABLE_TSV, sep="\t", index=False)
 
     lines = [
         "## Corpora Considered",
@@ -7805,9 +10903,12 @@ def write_plot3_source_catalog() -> None:
         "",
         "## Specific Observations Included",
         "",
-        f"Machine-readable result-level file: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/{PREREG_RESULTS.name})",
+        f"Machine-readable result-level file: [plot3_preregistered_results.tsv](../data/derived/effect_inflation_dataset/{PREREG_RESULTS_TSV.name}) "
+        f"(CSV mirror: [plot3_preregistered_results.csv](../data/derived/effect_inflation_dataset/{PREREG_RESULTS.name})).",
         "",
-        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered paper/project dots. Admission now uses the relaxed planned-result rule plus the one-dot-per-paper rule: a source can contribute more than one preregistered hypothesis/result internally, but papers or projects with multiple planned results are represented by a median row where the local source exposes a match-filtered result set. For plotting, rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
+        f"Machine-readable display-table file: [plot3_preregistered_display_table.tsv](../data/derived/effect_inflation_dataset/{PREREG_DISPLAY_TABLE_TSV.name})",
+        "",
+        f"The specific-observation layer has `{len(prereg_details):,}` plotted preregistered result/project dots. Admission now uses the relaxed planned-result rule plus one-dot-per-paper/project median collapse where a source exposes multiple planned outcomes, treatment arms, sites, or archive components. Political-science extraction packages retain their component contrasts in the audit files, but the plotted political-science layer is collapsed to paper/project medians. For plotting, rows are collapsed by broad field rather than raw source family. The result-level CSV still records source citation, result label, journal, `D`, `N`, and the source row number for auditability. Support calls are retained in the CSV as metadata but are not used for admission or visual encoding, because they mostly track the preregistered decision rule rather than a distinct effect-size concept.",
         "",
         markdown_table_block(
             [["Field", "Rows", "Source families", "Median D", "Median N"]]
@@ -7834,7 +10935,7 @@ def write_plot3_source_catalog() -> None:
                     safe_text(row.journal),
                     f"{fmt_number(row.D, 3)} / {fmt_int(row.N)}",
                 ]
-                for row in prereg_details.sort_values(["field", "source_family", "source_row_number"]).itertuples(index=False)
+                for row in sorted_prereg_details.itertuples(index=False)
             ],
             "dataset-table specific-observation-table preregistered-observation-table",
         ),
@@ -7940,6 +11041,7 @@ def write_plot4_source_catalog() -> None:
                 "plot_name": "Plot 4",
                 "plot_inclusion_status": "included",
                 "source_label": "Replication-pairs live corpus",
+                "citation_key": "internalPlot4AllSourceDump",
                 "corpus_what_it_is": "Original and follow-up sides from the live replication-pair corpus.",
                 "backing_path": str(REPLICATION_ALL.relative_to(ROOT)),
                 "rows_available": 2 * len(rep),
@@ -7951,6 +11053,7 @@ def write_plot4_source_catalog() -> None:
                 "plot_name": "Plot 4",
                 "plot_inclusion_status": "included",
                 "source_label": "Published-paper endpoint candidate corpus",
+                "citation_key": "internalPlot4AllSourceDump",
                 "corpus_what_it_is": "Paper/unit-level published endpoint candidates with recoverable D and N.",
                 "backing_path": str(PUBLISHED_PAPERS.relative_to(ROOT)),
                 "rows_available": len(pub),
@@ -7962,6 +11065,7 @@ def write_plot4_source_catalog() -> None:
                 "plot_name": "Plot 4",
                 "plot_inclusion_status": "included",
                 "source_label": "Preregistered-results tables",
+                "citation_key": "internalPlot4AllSourceDump",
                 "corpus_what_it_is": "Normalized preregistered confirmatory result rows from Plot 3.",
                 "backing_path": f"{PREREG_TABLE_40.relative_to(ROOT)} | {PREREG_TABLE_41.relative_to(ROOT)}",
                 "rows_available": int(layer_counts.get("preregistered_confirmatory_result", 0)),
@@ -7973,6 +11077,7 @@ def write_plot4_source_catalog() -> None:
                 "plot_name": "Plot 4",
                 "plot_inclusion_status": "included_sidecar",
                 "source_label": "Staged replication harvest artifacts",
+                "citation_key": "internalPlot4AllSourceDump",
                 "corpus_what_it_is": "Non-promoted staged harvest rows that already expose positive D and N for a side.",
                 "backing_path": str(HARVEST_STAGED_DIR.relative_to(ROOT)),
                 "rows_available": staged_count,
@@ -7984,6 +11089,7 @@ def write_plot4_source_catalog() -> None:
                 "plot_name": "Plot 4",
                 "plot_inclusion_status": "not_included",
                 "source_label": "Promoted harvest pair tables",
+                "citation_key": "internalPlot4AllSourceDump",
                 "corpus_what_it_is": "Source-specific promoted harvest outputs already folded into the live replication-pair table.",
                 "backing_path": str(HARVEST_PROMOTED_DIR.relative_to(ROOT)),
                 "rows_available": promoted_count,
@@ -8094,6 +11200,951 @@ def write_plot4_source_catalog() -> None:
     write_qmd_with_table(PLOT4_SOURCES_QMD, lines)
 
 
+def normalize_identifier_text(value: object) -> str:
+    text = safe_text(value).strip()
+    text = re.sub(r"^https?://(dx\.)?doi\.org/", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"^doi:\s*", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s+", " ", text).strip().lower()
+    return text
+
+
+def paper_membership_key(
+    *,
+    plot_prefix: str,
+    doi: object = "",
+    title: object = "",
+    fallback: object = "",
+    nct: object = "",
+) -> tuple[str, str]:
+    doi_text = normalize_identifier_text(doi)
+    if doi_text and doi_text not in {"nan", "none"}:
+        return f"doi:{doi_text}", "doi"
+    nct_text = safe_text(nct).strip().upper()
+    if re.fullmatch(r"NCT\d{8}", nct_text):
+        return f"nct:{nct_text.lower()}", "registry_id"
+    title_text = normalize_identifier_text(title)
+    if title_text and title_text not in {"nan", "none", "not coded"}:
+        return f"title:{slugify(title_text, 'untitled')}", "title"
+    fallback_text = safe_text(fallback).strip()
+    return f"{plot_prefix}:{slugify(fallback_text, 'unit')}", "source_row_fallback"
+
+
+def count_rows_represented(row: pd.Series, default: int = 1) -> int:
+    for column in ["rows_collapsed", "n_tests_used", "table_test_rows", "matched_result_rows"]:
+        if column in row.index:
+            value = pd.to_numeric(pd.Series([row.get(column)]), errors="coerce").fillna(np.nan).iloc[0]
+            if pd.notna(value) and int(value) > 0:
+                return int(value)
+    text = " ".join(
+        safe_text(row.get(column))
+        for column in ["row_label", "source_file", "confirmed_fields"]
+        if column in row.index
+    )
+    for pattern in [
+        r"paper median of\s+([0-9,]+)\s+preregistered result rows",
+        r"([0-9,]+)\s+matched prereg result",
+        r"([0-9,]+)\s+extracted preregistered component/result row",
+        r"median collapse of\s+([0-9,]+)\s+preregistered result rows",
+    ]:
+        match = re.search(pattern, text, flags=re.IGNORECASE)
+        if match:
+            return int(match.group(1).replace(",", ""))
+    source_row_number = safe_text(row.get("source_row_number"))
+    if ";" in source_row_number:
+        return len([part for part in source_row_number.split(";") if part.strip()])
+    return default
+
+
+def clean_tsv_frame(df: pd.DataFrame) -> pd.DataFrame:
+    """Keep TSV outputs one physical line per row."""
+    if df.empty:
+        return df
+    out = df.copy()
+    object_cols = [
+        column
+        for column in out.columns
+        if pd.api.types.is_object_dtype(out[column]) or pd.api.types.is_string_dtype(out[column])
+    ]
+    for column in object_cols:
+        out[column] = (
+            out[column]
+            .fillna("")
+            .astype(str)
+            .str.replace(r"[\r\n\t]+", " ", regex=True)
+            .str.replace(r"\s{2,}", " ", regex=True)
+            .str.strip()
+        )
+    return out
+
+
+def read_bibtex_keys(path: Path = REFERENCES_BIB) -> set[str]:
+    if not path.exists():
+        return set()
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    return set(re.findall(r"@\w+\{\s*([^,\s]+)", text))
+
+
+def clean_bibtex_value(value: str) -> str:
+    text = safe_text(value)
+    for old, new in [
+        ("\\&", "&"),
+        ("\\%", "%"),
+        ("\\_", "_"),
+        ("\\{", "{"),
+        ("\\}", "}"),
+        ("\\textbackslash{}", "\\"),
+    ]:
+        text = text.replace(old, new)
+    text = text.strip("{} ")
+    return re.sub(r"\s{2,}", " ", text).strip()
+
+
+def read_bibtex_rendered_citations(path: Path = REFERENCES_BIB) -> dict[str, str]:
+    """Render a compact plain-text citation from local one-line BibTeX fields."""
+    if not path.exists():
+        return {}
+    rendered: dict[str, str] = {}
+    current_key = ""
+    fields: dict[str, str] = {}
+
+    def flush() -> None:
+        if not current_key:
+            return
+        author = clean_bibtex_value(fields.get("author") or fields.get("authors") or "")
+        title = clean_bibtex_value(fields.get("title", ""))
+        year = clean_bibtex_value(fields.get("year", ""))
+        venue = clean_bibtex_value(fields.get("journal") or fields.get("booktitle") or fields.get("publisher") or "")
+        doi = clean_bibtex_value(fields.get("doi", ""))
+        url = clean_bibtex_value(fields.get("url", ""))
+        pieces: list[str] = []
+        if author and year:
+            pieces.append(f"{author} ({year}).")
+        elif author:
+            pieces.append(f"{author}.")
+        elif year:
+            pieces.append(f"({year}).")
+        if title:
+            pieces.append(f"{title}.")
+        if venue:
+            pieces.append(f"{venue}.")
+        if doi:
+            pieces.append(f"doi:{doi}.")
+        elif url:
+            pieces.append(url)
+        rendered[current_key] = " ".join(pieces).strip() or current_key
+
+    field_re = re.compile(r"^\s*([A-Za-z][A-Za-z0-9_-]*)\s*=\s*\{(.*)\},?\s*$")
+    for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        entry = re.match(r"@\w+\{\s*([^,\s]+)", line)
+        if entry:
+            flush()
+            current_key = entry.group(1)
+            fields = {}
+            continue
+        match = field_re.match(line)
+        if current_key and match:
+            fields[match.group(1).lower()] = match.group(2).rstrip(",")
+    flush()
+    return rendered
+
+
+def add_bibtex_mapping_columns(
+    df: pd.DataFrame,
+    bibtex_keys: set[str],
+    bibtex_file: Path = REFERENCES_BIB,
+    rendered_citations: dict[str, str] | None = None,
+) -> pd.DataFrame:
+    """Add explicit citation-to-BibTeX mapping columns to an audit TSV frame."""
+    out = df.copy()
+    if "citation_key" not in out.columns:
+        out["citation_key"] = ""
+    out["citation_key"] = out["citation_key"].fillna("").astype(str).str.strip()
+    out["citation_ref"] = out["citation_key"].map(lambda key: f"@{key}" if key else "")
+    rendered_citations = rendered_citations or {}
+    out["citation_rendered"] = out["citation_key"].map(lambda key: rendered_citations.get(key, ""))
+    out["citation_bibtex_file"] = str(bibtex_file.relative_to(ROOT))
+    out["citation_in_bibtex"] = out["citation_key"].map(lambda key: bool(key and key in bibtex_keys))
+    out["citation_bibtex_status"] = np.where(
+        out["citation_key"].eq(""),
+        "missing_citation_key",
+        np.where(out["citation_in_bibtex"], "present_in_bibtex_file", "missing_from_bibtex_file"),
+    )
+    return out
+
+
+def resolve_any_plot_citation(*labels: object, fallback: str = "") -> str:
+    """Resolve a source label against all plot citation maps."""
+    return (
+        citation_key_from(PLOT3_CITATION_KEYS, *labels)
+        or citation_key_from(PLOT2_CITATION_KEYS, *labels)
+        or plot1_citation_key(*labels)
+        or fallback
+    )
+
+
+DOT_BIB_BEGIN = "% BEGIN GENERATED DOT-LEVEL REFERENCES"
+DOT_BIB_END = "% END GENERATED DOT-LEVEL REFERENCES"
+
+
+def dot_level_citation_key(row: pd.Series) -> str:
+    """Stable unique citation key for one rendered dot."""
+    plot_slug = slugify(safe_text(row.get("plot_name")).lower(), "plot")
+    source_slug = slugify(safe_text(row.get("source_family")).lower(), "source")[:32]
+    identity = "|".join(
+        safe_text(row.get(column))
+        for column in [
+            "plot_name",
+            "dot_record_id",
+            "source_layer",
+            "source_family",
+            "paper_key",
+            "paper_title",
+            "side",
+            "D",
+            "N",
+        ]
+    )
+    digest = hashlib.sha1(identity.encode("utf-8", errors="ignore")).hexdigest()[:12]
+    return f"dot_{plot_slug}_{source_slug}_{digest}"
+
+
+def bibtex_escape_local(value: object) -> str:
+    text = safe_text(value)
+    text = re.sub(r"[\r\n\t]+", " ", text)
+    text = re.sub(r"\s{2,}", " ", text).strip()
+    replacements = {
+        "\\": "\\textbackslash{}",
+        "{": "\\{",
+        "}": "\\}",
+        "&": "\\&",
+        "%": "\\%",
+        "_": "\\_",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
+
+
+def doi_from_dot_row(row: pd.Series) -> str:
+    for column in ["paper_doi", "paper_title", "dot_record_id", "paper_key"]:
+        doi = normalize_doi_value(row.get(column))
+        if doi.startswith("10."):
+            return doi
+    match = re.search(r"(?i)\b(10\.\d{4,9}/[-._;()/:A-Z0-9]+)", " ".join(safe_text(row.get(c)) for c in ["paper_title", "dot_record_id", "paper_key"]))
+    return normalize_doi_value(match.group(1)) if match else ""
+
+
+def replace_dot_level_bibtex_entries(dot_membership: pd.DataFrame) -> None:
+    """Write one child-result BibTeX record per rendered dot outside the manuscript bibliography."""
+    existing = REFERENCES_BIB.read_text(encoding="utf-8", errors="ignore") if REFERENCES_BIB.exists() else ""
+    pattern = re.compile(
+        rf"\n?{re.escape(DOT_BIB_BEGIN)}.*?{re.escape(DOT_BIB_END)}\n?",
+        flags=re.DOTALL,
+    )
+    stripped = pattern.sub("\n", existing).rstrip()
+    if stripped != existing.rstrip():
+        REFERENCES_BIB.write_text(stripped + "\n", encoding="utf-8")
+
+    entries: list[str] = []
+    for _, row in dot_membership.iterrows():
+        key = safe_text(row.get("citation_key"))
+        title = safe_text(row.get("paper_title")) or safe_text(row.get("dot_record_id")) or "Rendered D/N dot"
+        title = title[:800]
+        doi = doi_from_dot_row(row)
+        url = doi_url(doi)
+        note_parts = [
+            f"Rendered D/N dot in {safe_text(row.get('plot_name'))}",
+            f"source_family={safe_text(row.get('source_family'))}",
+            f"source_layer={safe_text(row.get('source_layer'))}",
+            f"dot_record_id={safe_text(row.get('dot_record_id'))}",
+            f"D={safe_text(row.get('D'))}",
+            f"N={safe_text(row.get('N'))}",
+        ]
+        source_citation_key = safe_text(row.get("source_citation_key"))
+        if source_citation_key:
+            note_parts.append(f"source_citation=@{source_citation_key}")
+        fields = [
+            f"  title = {{{bibtex_escape_local(title)}}}",
+            "  author = {{PublishedSmallNStudiesDon-tMatter dot-level extraction}}",
+            "  year = {2026}",
+            f"  note = {{{bibtex_escape_local('; '.join(note_parts))}}}",
+        ]
+        if doi:
+            fields.append(f"  doi = {{{bibtex_escape_local(doi)}}}")
+        if url:
+            fields.append(f"  url = {{{bibtex_escape_local(url)}}}")
+        entries.append(f"@misc{{{key},\n" + ",\n".join(fields) + "\n}")
+
+    block = DOT_BIB_BEGIN + "\n" + "\n\n".join(entries) + "\n" + DOT_BIB_END
+    PLOT_DOT_REFERENCES_BIB.write_text(block + "\n", encoding="utf-8")
+
+
+def add_source_citation_mapping_columns(df: pd.DataFrame, bibtex_keys: set[str]) -> pd.DataFrame:
+    out = df.copy()
+    rendered_citations = read_bibtex_rendered_citations(REFERENCES_BIB)
+    if "source_citation_key" not in out.columns:
+        out["source_citation_key"] = ""
+    out["source_citation_key"] = out["source_citation_key"].fillna("").astype(str).str.strip()
+    out["source_citation_ref"] = out["source_citation_key"].map(lambda key: f"@{key}" if key else "")
+    out["source_citation_rendered"] = out["source_citation_key"].map(lambda key: rendered_citations.get(key, ""))
+    out["source_citation_bibtex_file"] = str(REFERENCES_BIB.relative_to(ROOT))
+    out["source_citation_in_bibtex"] = out["source_citation_key"].map(lambda key: bool(key and key in bibtex_keys))
+    out["source_citation_bibtex_status"] = np.where(
+        out["source_citation_key"].eq(""),
+        "missing_source_citation_key",
+        np.where(out["source_citation_in_bibtex"], "present_in_bibtex_file", "missing_from_bibtex_file"),
+    )
+    return out
+
+
+def write_plot_dot_membership_tsv() -> None:
+    """Write one TSV row per plotted D/N dot across the rendered plot data files."""
+    dot_rows: list[dict[str, object]] = []
+
+    def add_dot(
+        *,
+        plot_name: str,
+        dot_record_id: object,
+        source_layer: object,
+        source_family: object,
+        source_label: object,
+        source_citation_key: object,
+        paper_key: object,
+        paper_key_quality: object,
+        paper_title: object,
+        paper_doi: object = "",
+        row_unit: object = "",
+        side: object = "",
+        D: object = "",
+        N: object = "",
+        source_file_or_catalog: object = "",
+        source_row_number: object = "",
+        paper_level_unit: object = "",
+        paper_level_note: object = "",
+    ) -> None:
+        dot_rows.append(
+            {
+                "plot_name": plot_name,
+                "dot_record_id": dot_record_id,
+                "source_layer": source_layer,
+                "source_family": source_family,
+                "source_label": source_label,
+                "source_citation_key": source_citation_key,
+                "paper_key": paper_key,
+                "paper_key_quality": paper_key_quality,
+                "paper_title": paper_title,
+                "paper_doi": paper_doi,
+                "row_unit": row_unit,
+                "side": side,
+                "D": D,
+                "N": N,
+                "source_file_or_catalog": source_file_or_catalog,
+                "source_row_number": source_row_number,
+                "paper_level_unit": paper_level_unit,
+                "paper_level_note": paper_level_note,
+            }
+        )
+
+    if PLOT1_PAIR_DETAILS.exists():
+        plot1 = pd.read_csv(PLOT1_PAIR_DETAILS)
+        side_specs = [
+            ("original", "original_title", "original_doi", "D_original", "N_original"),
+            ("replication", "replication_title", "replication_doi", "D_replication", "N_replication"),
+        ]
+        for _, row in plot1.iterrows():
+            source_family = safe_text(row.get("source_dataset"))
+            source_label = safe_text(row.get("project"))
+            citation_key = resolve_any_plot_citation(source_family, source_label, fallback="internalPlot4AllSourceDump")
+            for side, title_col, doi_col, d_col, n_col in side_specs:
+                paper_key, key_quality = paper_membership_key(
+                    plot_prefix=f"plot1_{side}",
+                    doi=row.get(doi_col),
+                    title=row.get(title_col),
+                    fallback=f"{source_family} {source_label} {row.get('pair_id')} {side}",
+                )
+                add_dot(
+                    plot_name="Plot 1",
+                    dot_record_id=f"{safe_text(row.get('pair_id'))}::{side}",
+                    source_layer="replication_pair",
+                    source_family=source_family,
+                    source_label=source_label,
+                    source_citation_key=citation_key,
+                    paper_key=paper_key,
+                    paper_key_quality=key_quality,
+                    paper_title=row.get(title_col),
+                    paper_doi=row.get(doi_col),
+                    row_unit=f"replication_pair_{side}_paper_side",
+                    side=side,
+                    D=row.get(d_col),
+                    N=row.get(n_col),
+                    source_file_or_catalog=str(PLOT1_PAIR_DETAILS.relative_to(ROOT)),
+                    paper_level_unit=True,
+                    paper_level_note="Plot 1 dot is a paper side of a replication pair; repeated papers can appear in multiple pair/outcome dots and are collapsed in plot_paper_membership.tsv.",
+                )
+
+    if PLOT2_PAPER_DETAILS.exists():
+        plot2 = pd.read_csv(PLOT2_PAPER_DETAILS)
+        for idx, row in plot2.iterrows():
+            source_family = row.get("source_label") or row.get("corpus")
+            citation_key = safe_text(row.get("citation_key")) or resolve_any_plot_citation(
+                source_family,
+                row.get("source_key"),
+                row.get("corpus"),
+                fallback="internalPlot4AllSourceDump",
+            )
+            paper_key, key_quality = paper_membership_key(
+                plot_prefix="plot2",
+                title=row.get("title"),
+                fallback=f"{row.get('corpus')} {row.get('paper_id')} {idx}",
+            )
+            add_dot(
+                plot_name="Plot 2",
+                dot_record_id=f"plot2::{safe_text(row.get('paper_id')) or idx}",
+                source_layer="published_paper_endpoint",
+                source_family=source_family,
+                source_label=source_family,
+                source_citation_key=citation_key,
+                paper_key=paper_key,
+                paper_key_quality=key_quality,
+                paper_title=row.get("title"),
+                row_unit=row.get("source_kind"),
+                D=row.get("D_paper"),
+                N=row.get("N_paper"),
+                source_file_or_catalog=str(PLOT2_PAPER_DETAILS.relative_to(ROOT)),
+                paper_level_unit=True,
+                paper_level_note="Plot 2 dot is the paper-level published endpoint row after the source-specific collapse rule.",
+            )
+
+    if PREREG_RESULTS.exists():
+        plot3 = pd.read_csv(PREREG_RESULTS)
+        for idx, row in plot3.iterrows():
+            nct_match = re.search(r"(NCT\d{8}|nct\d{8})", safe_text(row.get("point_id")))
+            nct = nct_match.group(1).upper() if nct_match else ""
+            paper_key, key_quality = paper_membership_key(
+                plot_prefix="plot3",
+                nct=nct,
+                title=row.get("row_label"),
+                fallback=row.get("point_id") or f"{row.get('source_family')} {idx}",
+            )
+            add_dot(
+                plot_name="Plot 3",
+                dot_record_id=row.get("point_id") or f"plot3::{idx}",
+                source_layer=row.get("source_layer"),
+                source_family=row.get("source_family"),
+                source_label=row.get("source_label"),
+                source_citation_key=safe_text(row.get("citation_key")) or resolve_any_plot_citation(
+                    row.get("source_family"),
+                    row.get("source_label"),
+                    fallback="internalPlot4AllSourceDump",
+                ),
+                paper_key=paper_key,
+                paper_key_quality=key_quality,
+                paper_title=row.get("row_label"),
+                row_unit=row.get("row_unit"),
+                D=row.get("D"),
+                N=row.get("N"),
+                source_file_or_catalog=row.get("source_file"),
+                source_row_number=row.get("source_row_number"),
+                paper_level_unit=True,
+                paper_level_note="Plot 3 dot is the admitted preregistered paper/project/trial row after source-specific median collapse where required.",
+            )
+
+    if ALL_SOURCE_DN_ROWS.exists():
+        plot4 = pd.read_csv(ALL_SOURCE_DN_ROWS)
+        for idx, row in plot4.iterrows():
+            source_family = row.get("source_family")
+            citation_key = resolve_any_plot_citation(
+                source_family,
+                row.get("source_file"),
+                row.get("source_layer"),
+                fallback="internalPlot4AllSourceDump",
+            )
+            paper_key, key_quality = paper_membership_key(
+                plot_prefix="plot4",
+                title=row.get("row_label"),
+                fallback=row.get("point_id") or f"{source_family} {idx}",
+            )
+            row_unit = safe_text(row.get("row_unit"))
+            source_layer = safe_text(row.get("source_layer"))
+            add_dot(
+                plot_name="Plot 4",
+                dot_record_id=row.get("point_id") or f"plot4::{idx}",
+                source_layer=source_layer,
+                source_family=source_family,
+                source_label=source_family,
+                source_citation_key=citation_key,
+                paper_key=paper_key,
+                paper_key_quality=key_quality,
+                paper_title=row.get("row_label"),
+                row_unit=row_unit,
+                side=row.get("side"),
+                D=row.get("D"),
+                N=row.get("N"),
+                source_file_or_catalog=row.get("source_file"),
+                source_row_number=idx + 2,
+                paper_level_unit=row_unit == "paper_id" or source_layer == "published_candidate_paper",
+                paper_level_note=(
+                    "Plot 4 is a descriptive all-source D/N dump. This row records the plotted dot, "
+                    "but Plot 4 is not part of the mutually exclusive paper-ownership contract."
+                ),
+            )
+
+    dot_membership = pd.DataFrame(dot_rows)
+    if dot_membership.empty:
+        dot_membership = add_bibtex_mapping_columns(
+            dot_membership,
+            read_bibtex_keys(PLOT_DOT_REFERENCES_BIB),
+            PLOT_DOT_REFERENCES_BIB,
+            read_bibtex_rendered_citations(PLOT_DOT_REFERENCES_BIB),
+        )
+        clean_tsv_frame(dot_membership).to_csv(PLOT_DOT_MEMBERSHIP, sep="\t", index=False)
+        pd.DataFrame().to_csv(PLOT_RESULT_PARENT_CHILD, sep="\t", index=False)
+        return
+
+    dot_membership.insert(1, "dot_index", np.arange(1, len(dot_membership) + 1))
+    dot_membership["citation_key"] = dot_membership.apply(dot_level_citation_key, axis=1)
+    duplicated = dot_membership["citation_key"].duplicated(keep=False)
+    if duplicated.any():
+        dot_membership.loc[duplicated, "citation_key"] = dot_membership.loc[duplicated].apply(
+            lambda row: f"{row['citation_key']}_{int(row['dot_index'])}",
+            axis=1,
+        )
+    replace_dot_level_bibtex_entries(dot_membership)
+    manuscript_bibtex_keys = read_bibtex_keys()
+    dot_bibtex_keys = read_bibtex_keys(PLOT_DOT_REFERENCES_BIB)
+    dot_rendered_citations = read_bibtex_rendered_citations(PLOT_DOT_REFERENCES_BIB)
+    dot_membership = add_source_citation_mapping_columns(dot_membership, manuscript_bibtex_keys)
+    dot_membership = add_bibtex_mapping_columns(dot_membership, dot_bibtex_keys, PLOT_DOT_REFERENCES_BIB, dot_rendered_citations)
+    dot_membership["result_level_unit"] = True
+    clean_tsv_frame(dot_membership).to_csv(PLOT_DOT_MEMBERSHIP, sep="\t", index=False)
+
+    parent_child = pd.DataFrame(
+        {
+            "plot_name": dot_membership["plot_name"],
+            "parent_collection_key": dot_membership["source_citation_key"].where(
+                dot_membership["source_citation_key"].astype(str).str.len() > 0,
+                dot_membership["source_family"].map(lambda value: slugify(value, "source_collection")),
+            ),
+            "parent_collection_label": dot_membership["source_family"],
+            "parent_source_label": dot_membership["source_label"],
+            "parent_citation_key": dot_membership["source_citation_key"],
+            "parent_citation_ref": dot_membership["source_citation_ref"],
+            "parent_citation_rendered": dot_membership["source_citation_rendered"],
+            "parent_citation_bibtex_status": dot_membership["source_citation_bibtex_status"],
+            "child_result_key": dot_membership["citation_key"],
+            "child_result_ref": dot_membership["citation_ref"],
+            "child_result_rendered": dot_membership["citation_rendered"],
+            "child_result_bibtex_status": dot_membership["citation_bibtex_status"],
+            "child_paper_key": dot_membership["paper_key"],
+            "child_paper_key_quality": dot_membership["paper_key_quality"],
+            "child_title": dot_membership["paper_title"],
+            "dot_record_id": dot_membership["dot_record_id"],
+            "source_layer": dot_membership["source_layer"],
+            "row_unit": dot_membership["row_unit"],
+            "relationship_type": "parent_collection_contains_child_result_dot",
+            "source_file_or_catalog": dot_membership["source_file_or_catalog"],
+        }
+    )
+    clean_tsv_frame(parent_child).to_csv(PLOT_RESULT_PARENT_CHILD, sep="\t", index=False)
+
+    summary_rows: list[dict[str, object]] = []
+    numeric = dot_membership.copy()
+    numeric["_D_numeric"] = pd.to_numeric(numeric["D"], errors="coerce")
+    numeric["_N_numeric"] = pd.to_numeric(numeric["N"], errors="coerce")
+    for paper_key, group in numeric.groupby("paper_key", sort=False):
+        d_values = group["_D_numeric"].dropna()
+        n_values = group["_N_numeric"].dropna()
+        child_keys = list(dict.fromkeys(group["citation_key"].dropna().astype(str)))
+        parent_keys = list(dict.fromkeys(group["source_citation_key"].dropna().astype(str)))
+        summary_rows.append(
+            {
+                "paper_key": paper_key,
+                "paper_key_quality": " | ".join(sorted(set(group["paper_key_quality"].dropna().astype(str)))),
+                "paper_title": first_nonempty(group["paper_title"]),
+                "paper_doi": first_nonempty(group["paper_doi"]) if "paper_doi" in group.columns else "",
+                "plots_present": " | ".join(sorted(set(group["plot_name"].dropna().astype(str)))),
+                "plot_count": int(group["plot_name"].nunique()),
+                "result_dot_count": int(len(group)),
+                "paper_level_dot_count": int(group["paper_level_unit"].astype(str).str.lower().eq("true").sum()),
+                "parent_collection_count": int(group["source_citation_key"].nunique()),
+                "parent_collection_labels": " | ".join(list(dict.fromkeys(group["source_family"].dropna().astype(str)))[:30]),
+                "parent_citation_keys": " | ".join(parent_keys[:60]),
+                "parent_citation_key_count": len(parent_keys),
+                "child_result_keys": " | ".join(child_keys[:120]),
+                "child_result_key_count": len(child_keys),
+                "representative_child_result_key": child_keys[0] if child_keys else "",
+                "representative_child_result_ref": f"@{child_keys[0]}" if child_keys else "",
+                "representative_child_result_rendered": first_nonempty(group["citation_rendered"]) if "citation_rendered" in group.columns else "",
+                "D_min": float(d_values.min()) if not d_values.empty else "",
+                "D_median": float(d_values.median()) if not d_values.empty else "",
+                "D_max": float(d_values.max()) if not d_values.empty else "",
+                "N_min": float(n_values.min()) if not n_values.empty else "",
+                "N_median": float(n_values.median()) if not n_values.empty else "",
+                "N_max": float(n_values.max()) if not n_values.empty else "",
+                "row_units": " | ".join(sorted(set(group["row_unit"].dropna().astype(str)))[:20]),
+                "source_layers": " | ".join(sorted(set(group["source_layer"].dropna().astype(str)))[:20]),
+                "collapse_rule": "Collapsed over all rendered child result dots sharing this normalized paper key; D and N columns report min, median, and max over those child results.",
+            }
+        )
+    paper_summary = pd.DataFrame(summary_rows)
+    clean_tsv_frame(paper_summary).to_csv(PLOT_PAPER_SUMMARY, sep="\t", index=False)
+
+
+def write_plot_membership_audits() -> None:
+    """Write explicit cross-plot paper/unit ownership and source-family membership TSVs."""
+    rows: list[dict[str, object]] = []
+    bibtex_keys = read_bibtex_keys()
+    manuscript_rendered_citations = read_bibtex_rendered_citations()
+    write_plot_dot_membership_tsv()
+
+    if PLOT1_PAIR_DETAILS.exists():
+        plot1 = pd.read_csv(PLOT1_PAIR_DETAILS)
+        plot1_catalog_path = DATASET_DERIVED_DIR / "plot1_replication_source_catalog.csv"
+        plot1_citation_by_source: dict[tuple[str, str], str] = {}
+        plot1_citation_by_label: dict[str, str] = {}
+        if plot1_catalog_path.exists():
+            plot1_catalog = pd.read_csv(plot1_catalog_path)
+            for _, cat_row in plot1_catalog.iterrows():
+                citation_key = safe_text(cat_row.get("citation_key"))
+                if not citation_key:
+                    citation_key = plot1_citation_key(
+                        cat_row.get("source_dataset"),
+                        cat_row.get("project"),
+                        cat_row.get("display_label"),
+                        cat_row.get("canonical_source_label"),
+                    )
+                if not citation_key:
+                    continue
+                source_dataset = safe_text(cat_row.get("source_dataset"))
+                project = safe_text(cat_row.get("project"))
+                if source_dataset or project:
+                    plot1_citation_by_source[(source_dataset, project)] = citation_key
+                for label in [
+                    cat_row.get("source_dataset"),
+                    cat_row.get("project"),
+                    cat_row.get("display_label"),
+                    cat_row.get("canonical_source_label"),
+                    cat_row.get("canonical_source_id"),
+                    cat_row.get("source_key"),
+                ]:
+                    label_text = safe_text(label)
+                    if label_text:
+                        plot1_citation_by_label[label_text] = citation_key
+
+        def resolve_plot1_membership_citation(row: pd.Series) -> str:
+            source_dataset = safe_text(row.get("source_dataset"))
+            project = safe_text(row.get("project"))
+            return (
+                plot1_citation_by_source.get((source_dataset, project))
+                or plot1_citation_by_label.get(source_dataset)
+                or plot1_citation_by_label.get(project)
+                or plot1_citation_key(source_dataset, project)
+            )
+
+        side_specs = [
+            ("original", "replicated_original_or_target", "original_title", "original_doi", "D_original", "N_original"),
+            ("replication", "replication_attempt", "replication_title", "replication_doi", "D_replication", "N_replication"),
+        ]
+        for side, role, title_col, doi_col, d_col, n_col in side_specs:
+            work = plot1.copy()
+            work["_paper_title"] = work.get(title_col, pd.Series("", index=work.index)).fillna("")
+            work["_paper_doi"] = work.get(doi_col, pd.Series("", index=work.index)).fillna("")
+            key_values = work.apply(
+                lambda r: paper_membership_key(
+                    plot_prefix=f"plot1_{side}",
+                    doi=r.get("_paper_doi"),
+                    title=r.get("_paper_title"),
+                    fallback=f"{r.get('source_dataset')} {r.get('project')} {r.get('pair_id')} {side}",
+                ),
+                axis=1,
+            )
+            work["_paper_key"] = [item[0] for item in key_values]
+            work["_key_quality"] = [item[1] for item in key_values]
+            group_cols = ["_paper_key", "_key_quality", "source_dataset", "project", "_paper_title", "_paper_doi"]
+            for group_key, group in work.groupby(group_cols, dropna=False, sort=False):
+                paper_key, key_quality, source_dataset, project, paper_title, paper_doi = group_key
+                citation_key = resolve_plot1_membership_citation(group.iloc[0])
+                rows.append(
+                    {
+                        "paper_key": paper_key,
+                        "paper_key_quality": key_quality,
+                        "plot_owner": "Plot 1",
+                        "plot_owner_label": "Replication pairs",
+                        "assignment_role": role,
+                        "exclusive_primary_plot": True,
+                        "source_family": source_dataset,
+                        "source_label": project,
+                        "citation_key": citation_key,
+                        "paper_title": paper_title,
+                        "paper_doi": paper_doi,
+                        "unit_id": ";".join(group["pair_id"].dropna().astype(str).head(8)),
+                        "row_unit": f"replication_pair_{side}_paper_side",
+                        "rows_represented": int(len(group)),
+                        "D_median": float(pd.to_numeric(group[d_col], errors="coerce").median()),
+                        "N_median": float(pd.to_numeric(group[n_col], errors="coerce").median()),
+                        "collapse_or_selection_rule": (
+                            "Paper-side membership from Plot 1 replication-pair rows; multiple "
+                            "outcome/pair rows for the same paper side are summarized here by median D/N."
+                        ),
+                        "source_file_or_catalog": str(PLOT1_PAIR_DETAILS.relative_to(ROOT)),
+                        "example_row_labels": " || ".join(group["outcome"].dropna().astype(str).head(5)),
+                    }
+                )
+
+    if PLOT2_PAPER_DETAILS.exists():
+        plot2 = pd.read_csv(PLOT2_PAPER_DETAILS)
+        for row in plot2.itertuples(index=False):
+            row_s = pd.Series(row._asdict())
+            paper_key, key_quality = paper_membership_key(
+                plot_prefix="plot2",
+                title=row_s.get("title"),
+                fallback=f"{row_s.get('corpus')} {row_s.get('paper_id')}",
+            )
+            rows.append(
+                {
+                    "paper_key": paper_key,
+                    "paper_key_quality": key_quality,
+                    "plot_owner": "Plot 2",
+                    "plot_owner_label": "Published non-preregistered endpoints",
+                    "assignment_role": "published_journal_article_not_preregistered_layer",
+                    "exclusive_primary_plot": True,
+                    "source_family": row_s.get("source_label") or row_s.get("corpus"),
+                    "source_label": row_s.get("source_label") or row_s.get("corpus"),
+                    "citation_key": row_s.get("citation_key"),
+                    "paper_title": row_s.get("title"),
+                    "paper_doi": "",
+                    "unit_id": row_s.get("paper_id"),
+                    "row_unit": row_s.get("source_kind"),
+                    "rows_represented": count_rows_represented(row_s),
+                    "D_median": row_s.get("D_paper"),
+                    "N_median": row_s.get("N_paper"),
+                    "collapse_or_selection_rule": (
+                        "Plot 2 owns published journal/article endpoints that are not treated as "
+                        "analytic preregistered confirmatory rows or replication-pair rows."
+                    ),
+                    "source_file_or_catalog": str(PLOT2_PAPER_DETAILS.relative_to(ROOT)),
+                    "example_row_labels": row_s.get("title"),
+                }
+            )
+
+    if PREREG_RESULTS.exists():
+        plot3 = pd.read_csv(PREREG_RESULTS)
+        for row in plot3.itertuples(index=False):
+            row_s = pd.Series(row._asdict())
+            nct_match = re.search(r"(NCT\d{8}|nct\d{8})", safe_text(row_s.get("point_id")))
+            nct = nct_match.group(1).upper() if nct_match else ""
+            paper_key, key_quality = paper_membership_key(
+                plot_prefix="plot3",
+                nct=nct,
+                title=row_s.get("row_label"),
+                fallback=row_s.get("point_id") or row_s.get("source_family"),
+            )
+            rows.append(
+                {
+                    "paper_key": paper_key,
+                    "paper_key_quality": key_quality,
+                    "plot_owner": "Plot 3",
+                    "plot_owner_label": "Preregistered confirmatory results",
+                    "assignment_role": "preregistered_confirmatory_paper_project_or_trial",
+                    "exclusive_primary_plot": True,
+                    "source_family": row_s.get("source_family"),
+                    "source_label": row_s.get("source_label"),
+                    "citation_key": row_s.get("citation_key"),
+                    "paper_title": row_s.get("row_label"),
+                    "paper_doi": "",
+                    "unit_id": row_s.get("point_id"),
+                    "row_unit": row_s.get("row_unit"),
+                    "rows_represented": count_rows_represented(row_s),
+                    "D_median": row_s.get("D"),
+                    "N_median": row_s.get("N"),
+                    "collapse_or_selection_rule": (
+                        "Plot 3 owns preregistered confirmatory papers/projects/trials. "
+                        "When a source exposes multiple planned outcomes, arms, sites, or "
+                        "archive components for one paper/project, the plotted row is a median "
+                        "paper/project dot and the component rows stay in source-specific audits."
+                    ),
+                    "source_file_or_catalog": row_s.get("source_file"),
+                    "example_row_labels": row_s.get("row_label"),
+                }
+            )
+
+    membership = pd.DataFrame(rows)
+    if membership.empty:
+        membership = add_bibtex_mapping_columns(membership, bibtex_keys, REFERENCES_BIB, manuscript_rendered_citations)
+        clean_tsv_frame(membership).to_csv(PLOT_PAPER_MEMBERSHIP, sep="\t", index=False)
+        pd.DataFrame().to_csv(PLOT_PAPER_EXCLUSIVITY_AUDIT, sep="\t", index=False)
+    else:
+        membership = membership.sort_values(
+            ["plot_owner", "source_family", "paper_key", "assignment_role"],
+            kind="stable",
+        ).reset_index(drop=True)
+        membership = add_bibtex_mapping_columns(membership, bibtex_keys, REFERENCES_BIB, manuscript_rendered_citations)
+        clean_tsv_frame(membership).to_csv(PLOT_PAPER_MEMBERSHIP, sep="\t", index=False)
+
+        audit_rows: list[dict[str, object]] = []
+        for paper_key, group in membership.groupby("paper_key", sort=False):
+            plots = sorted(group["plot_owner"].dropna().astype(str).unique())
+            key_quality = " | ".join(sorted(group["paper_key_quality"].dropna().astype(str).unique()))
+            citation_keys = sorted(set(group["citation_key"].dropna().astype(str).str.strip()) - {""})
+            citation_refs = [f"@{key}" for key in citation_keys]
+            citation_statuses = sorted(set(group["citation_bibtex_status"].dropna().astype(str)))
+            audit_rows.append(
+                {
+                    "paper_key": paper_key,
+                    "paper_key_quality": key_quality,
+                    "exclusive_status": "exclusive_to_one_plot"
+                    if len(plots) == 1
+                    else "cross_plot_overlap_needs_manual_review",
+                    "needs_manual_review": bool(len(plots) > 1 or "source_row_fallback" in key_quality),
+                    "plots_present": " | ".join(plots),
+                    "plot_count": len(plots),
+                    "membership_rows": int(len(group)),
+                    "total_rows_represented": int(pd.to_numeric(group["rows_represented"], errors="coerce").fillna(0).sum()),
+                    "source_families": " | ".join(sorted(group["source_family"].dropna().astype(str).unique())[:12]),
+                    "citation_keys": " | ".join(citation_keys),
+                    "citation_refs": " | ".join(citation_refs),
+                    "citation_bibtex_statuses": " | ".join(citation_statuses),
+                    "paper_titles": " | ".join(group["paper_title"].dropna().astype(str).drop_duplicates().head(8)),
+                    "paper_dois": " | ".join(group["paper_doi"].dropna().astype(str).drop_duplicates().head(8)),
+                    "rule_note": (
+                        "Primary paper/unit owner should be exactly one of Plot 1, Plot 2, or Plot 3. "
+                        "Corpora may appear in several source catalogs, but this audit checks plotted "
+                        "paper/unit ownership where identifiers are available."
+                    ),
+                }
+            )
+        exclusivity = pd.DataFrame(audit_rows).sort_values(
+            ["exclusive_status", "plot_count", "paper_key"],
+            ascending=[True, False, True],
+            kind="stable",
+        )
+        clean_tsv_frame(exclusivity).to_csv(PLOT_PAPER_EXCLUSIVITY_AUDIT, sep="\t", index=False)
+
+    source_rows: list[dict[str, object]] = []
+
+    def add_source_membership(
+        path: Path,
+        plot_name: str,
+        label_col: str,
+        status_col: str,
+        rows_col: str,
+        considered_col: str | None = None,
+    ) -> None:
+        if not path.exists():
+            return
+        df = pd.read_csv(path)
+        for row in df.itertuples(index=False):
+            row_s = pd.Series(row._asdict())
+            source_label = safe_text(row_s.get(label_col))
+            source_rows.append(
+                {
+                    "source_key": safe_text(row_s.get("source_key")) or slugify(source_label, "source"),
+                    "source_label": source_label,
+                    "plot_name": plot_name,
+                    "plot_inclusion_status": row_s.get(status_col),
+                    "rows_contributed_to_plot": row_s.get(rows_col, 0),
+                    "rows_considered_or_available": row_s.get(considered_col, row_s.get(rows_col, 0)) if considered_col else row_s.get(rows_col, 0),
+                    "citation_key": row_s.get("citation_key"),
+                    "why_or_status": row_s.get("why_in_out") or row_s.get("status_explanation") or row_s.get("why_detail") or row_s.get("inclusion_rule"),
+                    "catalog_file": str(path.relative_to(ROOT)),
+                }
+            )
+
+    add_source_membership(
+        DATASET_DERIVED_DIR / "plot1_replication_source_catalog.csv",
+        "Plot 1",
+        "display_label",
+        "plot_inclusion_status",
+        "plot_rows_made_in",
+        "catalog_file_rows",
+    )
+    add_source_membership(
+        DATASET_DERIVED_DIR / "plot2_published_source_catalog.csv",
+        "Plot 2",
+        "source_label",
+        "plot_inclusion_status",
+        "plot_rows_made_in",
+        "known_paper_units",
+    )
+    add_source_membership(
+        DATASET_DERIVED_DIR / "plot3_preregistered_source_catalog.csv",
+        "Plot 3",
+        "source_label",
+        "plot_inclusion_status",
+        "plot_rows_made_in",
+        "rows_considered",
+    )
+    add_source_membership(
+        DATASET_DERIVED_DIR / "plot4_all_source_dump_catalog.csv",
+        "Plot 4",
+        "source_label",
+        "plot_inclusion_status",
+        "rows_in_dump",
+        "rows_available",
+    )
+    source_membership = pd.DataFrame(source_rows).sort_values(
+        ["source_label", "plot_name"],
+        kind="stable",
+    )
+    source_membership = add_bibtex_mapping_columns(source_membership, bibtex_keys, REFERENCES_BIB, manuscript_rendered_citations)
+    clean_tsv_frame(source_membership).to_csv(PLOT_SOURCE_FAMILY_MEMBERSHIP, sep="\t", index=False)
+
+    rules = pd.DataFrame(
+        [
+            {
+                "rule_id": "plot1_owns_replication_pairs",
+                "applies_to": "Plot 1",
+                "unit_owned": "original and replication paper sides in a replication-pair row",
+                "rule": "If a paper appears as an original target or replication attempt in the replication-pair dataset, that paper/unit is owned by Plot 1 for the mutually exclusive main plots.",
+                "audit_file": str(PLOT1_PAIR_DETAILS.relative_to(ROOT)),
+            },
+            {
+                "rule_id": "plot2_owns_nonprereg_published_endpoints",
+                "applies_to": "Plot 2",
+                "unit_owned": "published article/paper endpoint",
+                "rule": "If a paper contributes a published journal/article endpoint and is not being treated as a replication-pair side or analytic preregistered confirmatory result, it is owned by Plot 2.",
+                "audit_file": str(PLOT2_PAPER_DETAILS.relative_to(ROOT)),
+            },
+            {
+                "rule_id": "plot3_owns_preregistered_confirmatory_units",
+                "applies_to": "Plot 3",
+                "unit_owned": "preregistered paper, project, trial, or registered-report confirmatory row",
+                "rule": "If a paper/project/trial is admitted as a preregistered confirmatory result, it is owned by Plot 3 and should not also appear as a Plot 2 non-preregistered endpoint.",
+                "audit_file": str(PREREG_RESULTS.relative_to(ROOT)),
+            },
+            {
+                "rule_id": "within_paper_median_collapse",
+                "applies_to": "paper summary tables and Plot 2/3 source collapses",
+                "unit_owned": "paper/project with multiple eligible effects",
+                "rule": "When a source exposes multiple planned outcomes, treatment arms, sites, claims, or archive components for one paper/project, retain the result-dot children and separately publish a paper-level summary with D/N min, median, and max.",
+                "audit_file": str(PLOT_PAPER_SUMMARY.relative_to(ROOT)),
+            },
+            {
+                "rule_id": "parent_child_mapping",
+                "applies_to": "all plots",
+                "unit_owned": "relationship between collection/corpus source and child result dot",
+                "rule": "A parent collection, corpus, or source table can contain many child result dots; the same normalized child paper/result key can appear under more than one parent collection and must be represented by explicit parent-child rows.",
+                "audit_file": str(PLOT_RESULT_PARENT_CHILD.relative_to(ROOT)),
+            },
+            {
+                "rule_id": "corpora_can_be_considered_multiple_times",
+                "applies_to": "source catalogs",
+                "unit_owned": "source family/corpus",
+                "rule": "A corpus can appear in more than one source catalog if it was considered for more than one plot. That does not imply the same individual paper/unit is plotted more than once in Plots 1-3.",
+                "audit_file": str(PLOT_SOURCE_FAMILY_MEMBERSHIP.relative_to(ROOT)),
+            },
+            {
+                "rule_id": "plot4_is_not_mutually_exclusive",
+                "applies_to": "Plot 4",
+                "unit_owned": "descriptive all-source D/N point",
+                "rule": "Plot 4 is a descriptive all-source dump and is not part of the mutually exclusive Plot 1/2/3 ownership contract.",
+                "audit_file": str(ALL_SOURCE_DN_ROWS.relative_to(ROOT)),
+            },
+        ]
+    )
+    clean_tsv_frame(rules).to_csv(PLOT_ASSIGNMENT_RULES, sep="\t", index=False)
+
+
 def write_plot_catalog_status() -> None:
     plot1 = pd.read_csv(DATASET_DERIVED_DIR / "plot1_replication_source_display_table.csv")
     plot2 = pd.read_csv(DATASET_DERIVED_DIR / "plot2_published_source_catalog.csv")
@@ -8150,6 +12201,16 @@ def write_plot_catalog_status() -> None:
         "",
         f"Machine-readable summary: [plot_catalog_status.csv](../data/derived/effect_inflation_dataset/{out_csv.name})",
         "",
+        "Cross-plot ownership ledgers:",
+        "",
+        f"- [plot_dot_membership.tsv](../data/derived/effect_inflation_dataset/{PLOT_DOT_MEMBERSHIP.name}) records every rendered D/N result dot across Plots 1-4, with its own result-level citation key and rendered citation string in [plot_dot_references.bib](../data/derived/effect_inflation_dataset/{PLOT_DOT_REFERENCES_BIB.name}), plus the parent source citation key/rendered citation in `docs/references.bib`.",
+        f"- [plot_result_parent_child.tsv](../data/derived/effect_inflation_dataset/{PLOT_RESULT_PARENT_CHILD.name}) records the parent collection / corpus / plot source to child result-dot mapping, allowing the same child result or paper to appear in more than one parent collection.",
+        f"- [plot_paper_summary.tsv](../data/derived/effect_inflation_dataset/{PLOT_PAPER_SUMMARY.name}) collapses child result dots to normalized paper/unit keys and reports result counts plus D/N min, median, and max.",
+        f"- [plot_paper_membership.tsv](../data/derived/effect_inflation_dataset/{PLOT_PAPER_MEMBERSHIP.name}) records the paper/unit-level owner for Plots 1-3, including source, citation key, `@key` citation ref, BibTeX presence in `docs/references.bib`, row unit, D/N median, rows represented, and the collapse or selection rule.",
+        f"- [plot_paper_exclusivity_audit.tsv](../data/derived/effect_inflation_dataset/{PLOT_PAPER_EXCLUSIVITY_AUDIT.name}) groups the membership ledger by normalized paper/unit key and flags any cross-plot overlaps or weak fallback keys for review; citation keys are carried through for each grouped unit.",
+        f"- [plot_source_family_membership.tsv](../data/derived/effect_inflation_dataset/{PLOT_SOURCE_FAMILY_MEMBERSHIP.name}) records which source families/corpora were considered by which plot catalogs, with BibTeX mapping status.",
+        f"- [plot_assignment_rules.tsv](../data/derived/effect_inflation_dataset/{PLOT_ASSIGNMENT_RULES.name}) states the current mutually exclusive plot-assignment rules.",
+        "",
         markdown_table_block(
             [["Plot", "Catalog maturity", "Included", "Support-only", "Considered out", "Main missing piece"]]
             + [
@@ -8167,6 +12228,106 @@ def write_plot_catalog_status() -> None:
         ),
     ]
     write_qmd_with_table(PLOT_STATUS_QMD, lines)
+
+
+def write_provenance_schema_pilot_status() -> None:
+    """Document the source/result provenance standard and current retrace test."""
+    pilot_dir = DATASET_DERIVED_DIR / "schema_pilot"
+    pilot_sample = "sample_300"
+    summary_path = pilot_dir / f"retrace_summary_{pilot_sample}.tsv"
+    initial_summary_path = pilot_dir / f"coding_summary_{pilot_sample}.tsv"
+    retrace_path = pilot_dir / f"retrace_source_result_{pilot_sample}.tsv"
+    human_check_path = pilot_dir / f"human_check_source_result_{pilot_sample}.tsv"
+    events_path = pilot_dir / f"retrace_events_{pilot_sample}.tsv"
+    problems_path = pilot_dir / f"retrace_problems_{pilot_sample}.tsv"
+    source_result_path = pilot_dir / f"source_result_{pilot_sample}.tsv"
+    source_path = pilot_dir / f"source_{pilot_sample}.tsv"
+    access_path = pilot_dir / f"source_access_{pilot_sample}.tsv"
+    canonical_path = pilot_dir / f"canonical_result_{pilot_sample}.tsv"
+    mapping_path = pilot_dir / f"source_source_mapping_{pilot_sample}.tsv"
+    codebook_path = DATASET_DERIVED_DIR / "provenance_codebook.tsv"
+    data_dictionary_path = DATASET_DERIVED_DIR / "provenance_data_dictionary.tsv"
+    template_dir = DATASET_DERIVED_DIR / "schema_templates"
+
+    metric_rows: list[list[str]] = []
+    if summary_path.exists():
+        summary = pd.read_csv(summary_path, sep="\t")
+        wanted = [
+            "sample_n",
+            "plot_rows_recovered",
+            "ultimate_source_paths_existing",
+            "rows_with_recovered_effect_text",
+            "rows_with_recovered_n_text",
+            "rows_with_second_hop_raw_file",
+            "rows_with_existing_second_hop_raw_file",
+            "source_directness::candidate_child_numeric_row",
+            "source_directness::raw_ctgov_registry_row",
+            "source_directness::replication_pair_source_row",
+            "source_directness::political_science_component_rows",
+            "source_directness::plot_row_only",
+            "problem::missing_verbatim_effect_text",
+            "problem::source_is_derived_not_original_text",
+            "source_text_extraction_status::source_cells_recovered",
+            "source_text_extraction_status::n_only_recovered",
+            "source_text_extraction_status::plot_summary_only",
+        ]
+        by_metric = {safe_text(row.metric): row.value for row in summary.itertuples(index=False)}
+        metric_rows = [[metric, fmt_int(by_metric.get(metric, ""))] for metric in wanted if metric in by_metric]
+
+    lines = [
+        "## Provenance Schema And 300-Row Retrace Pilot",
+        "",
+        "The dataset is moving toward a source-result provenance model. The lowest-level row should be a result asserted by a specific extraction source, not merely a plotted dot. That row must preserve original text, parsed native values, standardized `D`/`N`, source access details, and the transformation explanation.",
+        "",
+        "The current target tables are:",
+        "",
+        "- `source.tsv`: citeable or computational source objects such as papers, registries, corpora, repositories, databases, PDFs, and reports.",
+        "- `source_access.tsv`: exact retrieval route and local mirror, including direct URL/API URL, repo-relative local path, content type, file size, checksum, retrieval method, and access barrier.",
+        "- `source_result.tsv`: one extraction-source assertion of one result, including verbatim effect/N/p/CI/outcome text, parsed native values, standardized values, and transformation notes.",
+        "- `canonical_result.tsv`: deduplicated result selected or summarized from one or more source-result rows.",
+        "- `source_source_mapping.tsv`: relationships such as corpus contains paper, database reports paper, package supports paper, or registry preregisters trial.",
+        "- `extraction_event.tsv`: download, user upload, unzip, PDF/table extraction, code execution, failure, and other work needed to obtain the bytes.",
+        "",
+        "Synthetic `dot_plot_...` citations are internal audit records for rendered dots. They are kept as `generated_result_citation_*` fields and should not be treated as bibliographic citations for the represented paper, trial, registry record, or dataset.",
+        "",
+        "The 300-row pilot is a reproducibility stress test: start from sampled plotted rows, retrace them through the plot files, then try to recover the upstream local source rows and literal numeric inputs. Inspect the human-check table first; the initial source-result table is a structural mapping and intentionally keeps labels separate from unrecovered verbatim text.",
+        "",
+        "Machine-readable pilot files:",
+        "",
+        f"- Formal table codebook: [provenance_codebook.tsv](../data/derived/effect_inflation_dataset/{codebook_path.name})",
+        f"- Field data dictionary: [provenance_data_dictionary.tsv](../data/derived/effect_inflation_dataset/{data_dictionary_path.name})",
+        f"- Empty TSV templates: [schema_templates/](../data/derived/effect_inflation_dataset/{template_dir.name}/)",
+        f"- Human-check extraction rows: [{human_check_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{human_check_path.name})",
+        f"- Initial source-result coding: [{source_result_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{source_result_path.name})",
+        f"- Source objects: [{source_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{source_path.name})",
+        f"- Access objects: [{access_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{access_path.name})",
+        f"- Canonical results: [{canonical_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{canonical_path.name})",
+        f"- Source mappings: [{mapping_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{mapping_path.name})",
+        f"- Retraced source-result rows: [{retrace_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{retrace_path.name})",
+        f"- Retrace events: [{events_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{events_path.name})",
+        f"- Retrace problems: [{problems_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{problems_path.name})",
+        f"- Initial coding summary: [{initial_summary_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{initial_summary_path.name})",
+        f"- Retrace summary: [{summary_path.name}](../data/derived/effect_inflation_dataset/schema_pilot/{summary_path.name})",
+        "",
+    ]
+    if metric_rows:
+        lines.extend(
+            [
+                markdown_table_block(
+                    [["Pilot metric", "Value"]] + metric_rows,
+                    "dataset-table provenance-pilot-summary-table",
+                ),
+                "",
+                "The pilot result is mixed in exactly the useful way: the plotted rows are reproducible, but the current pipeline still often reaches a derived numeric row rather than the original human-readable table/API text. Future extractors should write source-result rows at extraction time so the verbatim cells are preserved before collapsing, cleaning, or converting to `D`.",
+            ]
+        )
+    else:
+        lines.extend(
+            [
+                "The pilot output files have not been generated yet. Run `make schema-pilot` to create them.",
+            ]
+        )
+    write_qmd_with_table(PROVENANCE_SCHEMA_QMD, lines)
 
 
 def write_source_citation_gaps() -> None:
@@ -8310,7 +12471,9 @@ def build_body(soup: BeautifulSoup, table_tokens: dict[str, str], figure_specs: 
     write_plot3_source_catalog()
     write_plot3_criteria_matrix()
     write_plot4_source_catalog()
+    write_plot_membership_audits()
     write_plot_catalog_status()
+    write_provenance_schema_pilot_status()
     write_source_citation_gaps()
 
 

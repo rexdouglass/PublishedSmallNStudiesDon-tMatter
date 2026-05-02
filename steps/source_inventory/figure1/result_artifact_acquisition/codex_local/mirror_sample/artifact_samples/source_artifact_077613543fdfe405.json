@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_077613543fdfe405",
+  "byte_size": 1049,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "news_discernment_replication__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/news_discernment_replication__stage.csv",
+  "parent_corpus_database_id": "corpus_db_family_news_discernment_replication",
+  "preview_rows": [
+    {
+      "default_action": "review_only",
+      "downloaded_file_count": 9,
+      "expected_rows": 0,
+      "file_list_csv": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/news_discernment_replication/osf_file_list.csv",
+      "landing_url": "https://osf.io/mw4gu/?view_only=e57bea7b74d94eaaac94e5eafcda581a",
+      "lead_id": "news_discernment_replication",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/news_discernment_replication/osf_01__Germany_Clean.xlsx",
+      "manifest_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/news_discernment_replication/osf_manifest.json",
+      "notes": "Downloaded Germany and France clean workbooks plus R scripts are intervention datasets and do not expose a smaller-original larger-replication D/N pair table for Plot 1",
+      "priority": 35,
+      "project": "News discernment replication",
+      "promotion_blocker": "not_original_replication_pair_table",
+      "raw_url": null,
+      "source_family": "misinformation_news"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:37",
+  "sha256": "39b4dcc3c2a1bef91b1d2b487369b192861a6bfd8a0c9d26c8d32801bdd48ee6"
+}

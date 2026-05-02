@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "manual_tracker:aea_rct_registry",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:aea_rct_registry",
+  "next_action": "keep_for_figure3_or_denominator_context_not_figure1_pair_parser",
+  "notes": "Not a rejection globally; stop for Figure 1 corpus-pair intake.",
+  "promote_payload": {},
+  "reason": "AEA RCT Registry is a real registry/database and useful for preregistration and denominator work, but this lead does not itself expose Figure 1 original/replication pair rows.",
+  "review_id": "review_figure1_search_leads_457c03b64b91",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

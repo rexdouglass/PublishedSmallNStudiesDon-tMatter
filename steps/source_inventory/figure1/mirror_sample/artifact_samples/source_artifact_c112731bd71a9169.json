@@ -1,0 +1,114 @@
+{
+  "artifact_id": "source_artifact_c112731bd71a9169",
+  "byte_size": 5941,
+  "file_name": "est_study_9.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_9.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "attribute",
+        "level",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "attribute_ref",
+        "study"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "attribute": "gender",
+          "attribute_ref": "Gender (reference: Female applicant)",
+          "conf.high": -0.0016814631,
+          "conf.low": -0.0423582159,
+          "df": 385.380722441,
+          "estimate": -0.0220198395,
+          "level": "Male",
+          "outcome": "Chosen_Immigrant",
+          "p.value": 0.033913791,
+          "statistic": -2.1286880325,
+          "std.error": 0.0103443244,
+          "study": "Pre-COVID",
+          "survey": "Hainmueller & Hopkins (2015)"
+        },
+        {
+          "attribute": "education",
+          "attribute_ref": "Education (reference: No formal education)",
+          "conf.high": 0.0857365479,
+          "conf.low": 0.0120892072,
+          "df": 330.6910217624,
+          "estimate": 0.0489128775,
+          "level": "4th grade",
+          "outcome": "Chosen_Immigrant",
+          "p.value": 0.0093855009,
+          "statistic": 2.6129831316,
+          "std.error": 0.0187191708,
+          "study": "Pre-COVID",
+          "survey": "Hainmueller & Hopkins (2015)"
+        },
+        {
+          "attribute": "education",
+          "attribute_ref": "Education (reference: No formal education)",
+          "conf.high": 0.094846575,
+          "conf.low": 0.0210429111,
+          "df": 322.726844506,
+          "estimate": 0.057944743,
+          "level": "8th grade",
+          "outcome": "Chosen_Immigrant",
+          "p.value": 0.0021814208,
+          "statistic": 3.0891994562,
+          "std.error": 0.0187572036,
+          "study": "Pre-COVID",
+          "survey": "Hainmueller & Hopkins (2015)"
+        },
+        {
+          "attribute": "education",
+          "attribute_ref": "Education (reference: No formal education)",
+          "conf.high": 0.1521415237,
+          "conf.low": 0.0797548115,
+          "df": 313.9651617453,
+          "estimate": 0.1159481676,
+          "level": "High school",
+          "outcome": "Chosen_Immigrant",
+          "p.value": 1e-09,
+          "statistic": 6.3031913223,
+          "std.error": 0.0183951528,
+          "study": "Pre-COVID",
+          "survey": "Hainmueller & Hopkins (2015)"
+        },
+        {
+          "attribute": "education",
+          "attribute_ref": "Education (reference: No formal education)",
+          "conf.high": 0.1869710384,
+          "conf.low": 0.1119720524,
+          "df": 316.9737459438,
+          "estimate": 0.1494715454,
+          "level": "Two-year college",
+          "outcome": "Chosen_Immigrant",
+          "p.value": 0.0,
+          "statistic": 7.842285238,
+          "std.error": 0.0190596925,
+          "study": "Pre-COVID",
+          "survey": "Hainmueller & Hopkins (2015)"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        82,
+        13
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "85ede745386b2c81fc3da297fcff0c2b4e4522ece2eec8ec9703f0d72827b83e"
+}

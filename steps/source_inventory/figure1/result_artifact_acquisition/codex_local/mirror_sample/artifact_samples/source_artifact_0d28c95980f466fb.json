@@ -1,0 +1,846 @@
+{
+  "artifact_id": "source_artifact_0d28c95980f466fb",
+  "byte_size": 925171,
+  "file_name": "processed_data_w34.Rdata",
+  "file_type": "rdata",
+  "local_path": "data/raw/replication_projects/lead_harvest/manyclasses_2/analysis/processed_data_w34.Rdata",
+  "object_count": 10,
+  "objects": [
+    {
+      "columns": [
+        "course_id",
+        "export_link",
+        "experiment_created_at",
+        "consent_open_date",
+        "outcome_assessment_date",
+        "exposure1_open_date",
+        "exposure1_due_date",
+        "exposure2_open_date",
+        "exposure2_due_date",
+        "affiliation"
+      ],
+      "name": "classes",
+      "preview_rows": [
+        {
+          "affiliation": "IUB",
+          "consent_open_date": "2022-09-15",
+          "course_id": 95.0,
+          "experiment_created_at": "2022-09-01",
+          "export_link": "https://osf.io/vs7ca",
+          "exposure1_due_date": "2022-09-23",
+          "exposure1_open_date": "2022-09-19",
+          "exposure2_due_date": "2022-09-28",
+          "exposure2_open_date": "2022-09-23",
+          "outcome_assessment_date": "2022-09-30"
+        },
+        {
+          "affiliation": "UFL",
+          "consent_open_date": "2022-10-21",
+          "course_id": 60.0,
+          "experiment_created_at": "2022-10-17",
+          "export_link": "https://osf.io/78mvk",
+          "exposure1_due_date": "2022-11-05",
+          "exposure1_open_date": "2022-10-28",
+          "exposure2_due_date": "2022-11-19",
+          "exposure2_open_date": "2022-11-10",
+          "outcome_assessment_date": "2022-12-08"
+        },
+        {
+          "affiliation": "UFL",
+          "consent_open_date": "2022-10-21",
+          "course_id": 62.0,
+          "experiment_created_at": "2022-10-17",
+          "export_link": "https://osf.io/pjk87",
+          "exposure1_due_date": "2022-11-05",
+          "exposure1_open_date": "2022-10-28",
+          "exposure2_due_date": "2022-11-19",
+          "exposure2_open_date": "2022-11-10",
+          "outcome_assessment_date": "2022-12-08"
+        },
+        {
+          "affiliation": "UFL",
+          "consent_open_date": "2022-10-25",
+          "course_id": 69.0,
+          "experiment_created_at": "2022-10-17",
+          "export_link": "https://osf.io/6kxpd",
+          "exposure1_due_date": "2022-11-14",
+          "exposure1_open_date": "2022-11-07",
+          "exposure2_due_date": "2022-11-22",
+          "exposure2_open_date": "2022-11-15",
+          "outcome_assessment_date": "2022-12-04"
+        },
+        {
+          "affiliation": "IUB",
+          "consent_open_date": "2022-10-25",
+          "course_id": 98.0,
+          "experiment_created_at": "2022-10-25",
+          "export_link": "https://osf.io/xnufp",
+          "exposure1_due_date": "2022-11-02",
+          "exposure1_open_date": "2022-10-31",
+          "exposure2_due_date": "2022-11-06",
+          "exposure2_open_date": "2022-11-03",
+          "outcome_assessment_date": "2022-12-04"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        26,
+        10
+      ]
+    },
+    {
+      "columns": [
+        "video_id",
+        "item_id",
+        "submission_id",
+        "course_id",
+        "participant_id",
+        "type",
+        "action",
+        "timestamp",
+        "generated_id",
+        "target_id",
+        "target_time",
+        "condition_name",
+        "event_secs",
+        "maxplaytime",
+        "event_pct"
+      ],
+      "name": "events",
+      "preview_rows": [
+        {
+          "action": "ChangedSpeed",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0222667319,
+          "event_secs": 5.414,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1867,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "PT5.414S",
+          "timestamp": 1663834521000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "Paused",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.008949466,
+          "event_secs": 2.176,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1850,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?t=2&v=_BrFVtvkKBU",
+          "target_time": "PT2.176S",
+          "timestamp": 1663789699000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "ChangedResolution",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0,
+          "event_secs": 0.0,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1880,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "P0D",
+          "timestamp": 1663999895000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "ChangedResolution",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0,
+          "event_secs": 0.0,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1869,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "P0D",
+          "timestamp": 1663809740000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "ChangedResolution",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0,
+          "event_secs": 0.0,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1853,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "P0D",
+          "timestamp": 1663636998000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        40313,
+        15
+      ]
+    },
+    {
+      "columns": [
+        "experiment_id",
+        "course_id",
+        "experiment_title",
+        "experiment_description",
+        "exposure_type",
+        "participation_type",
+        "distribution_type",
+        "export_at",
+        "enrollment_cnt",
+        "participant_cnt",
+        "condition_cnt"
+      ],
+      "name": "experiment",
+      "preview_rows": [
+        {
+          "condition_cnt": 2,
+          "course_id": 95.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 62,
+          "experiment_description": "Do pre-questions improve retention? Terracotta demo experiment for XPRIZE",
+          "experiment_id": 569,
+          "experiment_title": "Data Science Video Experiment",
+          "export_at": "2023-01-11 13:59:16.395371377",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 48,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 2,
+          "course_id": 60.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 44,
+          "experiment_description": "The Digital Learning Challenge experiment",
+          "experiment_id": 600,
+          "experiment_title": "Dog Class-Genetic testing in Dogs and Cats",
+          "export_at": "2022-12-13 19:10:13.098",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 14,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 2,
+          "course_id": 62.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 40,
+          "experiment_description": "The Digital Learning Challenge experiment",
+          "experiment_id": 601,
+          "experiment_title": "Cat Class-Genetic testing in Dogs and Cats",
+          "export_at": "2022-12-31 18:18:19.503653062",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 16,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 2,
+          "course_id": 69.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 916,
+          "experiment_description": "This experiment aims to test the effect of pre-questions.",
+          "experiment_id": 603,
+          "experiment_title": "Comparing Multiple Groups 10/17",
+          "export_at": "2022-12-19 20:37:25.917",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 312,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 2,
+          "course_id": 98.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 324,
+          "experiment_description": "Testing pre-questions",
+          "experiment_id": 628,
+          "experiment_title": "10-28-2022 Skills in Action Part 2",
+          "export_at": "2023-01-30 22:05:32.183011138",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 130,
+          "participation_type": "CONSENT"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        26,
+        11
+      ]
+    },
+    {
+      "columns": [
+        "item_response_id",
+        "submission_id",
+        "assignment_id",
+        "condition_id",
+        "treatment_id",
+        "participant_id",
+        "item_id",
+        "response_type",
+        "response",
+        "response_id",
+        "response_position",
+        "correctness",
+        "responded_at",
+        "points_possible",
+        "calculated_score",
+        "override_score",
+        "course_id"
+      ],
+      "name": "item_responses",
+      "preview_rows": [
+        {
+          "assignment_id": 391,
+          "calculated_score": "0.0",
+          "condition_id": 1053,
+          "correctness": "TRUE",
+          "course_id": 95.0,
+          "item_id": 1135,
+          "item_response_id": 6692,
+          "override_score": "N/A",
+          "participant_id": 1870,
+          "points_possible": 0.0,
+          "responded_at": "2022-09-26 00:42:14.0",
+          "response": "It can be difficult to understand why they work",
+          "response_id": 2531.0,
+          "response_position": "C",
+          "response_type": "MC",
+          "submission_id": 1356,
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 391,
+          "calculated_score": "0.0",
+          "condition_id": 1053,
+          "correctness": "FALSE",
+          "course_id": 95.0,
+          "item_id": 1136,
+          "item_response_id": 6693,
+          "override_score": "N/A",
+          "participant_id": 1870,
+          "points_possible": 0.0,
+          "responded_at": "2022-09-26 00:42:14.0",
+          "response": "Having too many variables in a data set to be able to analyze them all efficiently",
+          "response_id": 2533.0,
+          "response_position": "C",
+          "response_type": "MC",
+          "submission_id": 1356,
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 391,
+          "calculated_score": "0.0",
+          "condition_id": 1053,
+          "correctness": "FALSE",
+          "course_id": 95.0,
+          "item_id": 1137,
+          "item_response_id": 6694,
+          "override_score": "N/A",
+          "participant_id": 1870,
+          "points_possible": 0.0,
+          "responded_at": "2022-09-26 00:42:14.0",
+          "response": "They are less prone to bias than hypothesis-driven models",
+          "response_id": 2540.0,
+          "response_position": "C",
+          "response_type": "MC",
+          "submission_id": 1356,
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 391,
+          "calculated_score": "0.0",
+          "condition_id": 1053,
+          "correctness": "FALSE",
+          "course_id": 95.0,
+          "item_id": 1138,
+          "item_response_id": 6695,
+          "override_score": "N/A",
+          "participant_id": 1870,
+          "points_possible": 0.0,
+          "responded_at": "2022-09-26 00:42:14.0",
+          "response": "The data is so noisy that it can be difficult to find any useful patterns",
+          "response_id": 2544.0,
+          "response_position": "D",
+          "response_type": "MC",
+          "submission_id": 1356,
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 391,
+          "calculated_score": "1.0",
+          "condition_id": 1053,
+          "correctness": "TRUE",
+          "course_id": 95.0,
+          "item_id": 1140,
+          "item_response_id": 6696,
+          "override_score": "N/A",
+          "participant_id": 1870,
+          "points_possible": 1.0,
+          "responded_at": "2022-09-26 00:42:14.0",
+          "response": "I confirm that I have watched the video",
+          "response_id": 2545.0,
+          "response_position": "A",
+          "response_type": "MC",
+          "submission_id": 1356,
+          "treatment_id": 568
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        9989,
+        17
+      ]
+    },
+    {
+      "columns": [
+        "item_id",
+        "assignment_id",
+        "treatment_id",
+        "condition_id",
+        "item_text",
+        "item_format",
+        "course_id"
+      ],
+      "name": "items",
+      "preview_rows": [
+        {
+          "assignment_id": 389,
+          "condition_id": 1053,
+          "course_id": 95.0,
+          "item_format": "MC",
+          "item_id": 1127,
+          "item_text": "<p>The goal of data science is to:</p>",
+          "treatment_id": 566
+        },
+        {
+          "assignment_id": 389,
+          "condition_id": 1053,
+          "course_id": 95.0,
+          "item_format": "MC",
+          "item_id": 1128,
+          "item_text": "<p>What is a key characteristic of a hypothesis?</p>",
+          "treatment_id": 566
+        },
+        {
+          "assignment_id": 389,
+          "condition_id": 1053,
+          "course_id": 95.0,
+          "item_format": "MC",
+          "item_id": 1129,
+          "item_text": "<p>Which of the following fields would be likely to benefit from the efforts of data science?</p>",
+          "treatment_id": 566
+        },
+        {
+          "assignment_id": 389,
+          "condition_id": 1053,
+          "course_id": 95.0,
+          "item_format": "MC",
+          "item_id": 1130,
+          "item_text": "<p>The outcome of a data scientist’s query into a data set is often:</p>",
+          "treatment_id": 566
+        },
+        {
+          "assignment_id": 389,
+          "condition_id": 1053,
+          "course_id": 95.0,
+          "item_format": "PAGE_BREAK",
+          "item_id": 1131,
+          "item_text": "N/A",
+          "treatment_id": 566
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        392,
+        7
+      ]
+    },
+    {
+      "columns": [
+        "outcome_id",
+        "participant_id",
+        "exposure_id",
+        "source",
+        "outcome_name",
+        "points_possible",
+        "outcome_score",
+        "condition_name",
+        "condition_id",
+        "course_id"
+      ],
+      "name": "outcomes",
+      "preview_rows": [
+        {
+          "condition_id": 1053,
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "outcome_id": 182,
+          "outcome_name": "Exposure 1",
+          "outcome_score": 1.0,
+          "participant_id": 1882,
+          "points_possible": 4.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1054,
+          "condition_name": "Control",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "outcome_id": 182,
+          "outcome_name": "Exposure 1",
+          "outcome_score": 1.0,
+          "participant_id": 1835,
+          "points_possible": 4.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1054,
+          "condition_name": "Control",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "outcome_id": 182,
+          "outcome_name": "Exposure 1",
+          "outcome_score": 1.0,
+          "participant_id": 1884,
+          "points_possible": 4.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1054,
+          "condition_name": "Control",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "outcome_id": 182,
+          "outcome_name": "Exposure 1",
+          "outcome_score": 3.0,
+          "participant_id": 1843,
+          "points_possible": 4.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1053,
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "outcome_id": 182,
+          "outcome_name": "Exposure 1",
+          "outcome_score": 1.0,
+          "participant_id": 1867,
+          "points_possible": 4.0,
+          "source": "none"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        8354,
+        10
+      ]
+    },
+    {
+      "columns": [
+        "participant_id",
+        "exposure_id",
+        "condition_id",
+        "condition_name",
+        "assignment_id",
+        "assignment_name",
+        "treatment_id",
+        "grade_type",
+        "attempts_allowed",
+        "time_required_between_attempts",
+        "final_score",
+        "course_id"
+      ],
+      "name": "participant_treatment",
+      "preview_rows": [
+        {
+          "assignment_id": 391,
+          "assignment_name": "Data Science Pitfalls Video Experiment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 1053,
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "exposure_id": 840,
+          "final_score": "1.0",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1870,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 389,
+          "assignment_name": "Data Science Videos Experiment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 1054,
+          "condition_name": "Control",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "final_score": "N/A",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1870,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 567
+        },
+        {
+          "assignment_id": 391,
+          "assignment_name": "Data Science Pitfalls Video Experiment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 1053,
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "exposure_id": 840,
+          "final_score": "1.0",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1860,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 389,
+          "assignment_name": "Data Science Videos Experiment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 1054,
+          "condition_name": "Control",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "final_score": "1.0",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1860,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 567
+        },
+        {
+          "assignment_id": 389,
+          "assignment_name": "Data Science Videos Experiment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 1053,
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "exposure_id": 839,
+          "final_score": "1.0",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1829,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 566
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        3152,
+        12
+      ]
+    },
+    {
+      "columns": [
+        "participant_id",
+        "consented_at",
+        "consent_source",
+        "course_id"
+      ],
+      "name": "participants",
+      "preview_rows": [
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-09-18 23:03:51.0",
+          "course_id": 95.0,
+          "participant_id": 1870
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-09-19 22:00:26.0",
+          "course_id": 95.0,
+          "participant_id": 1860
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-09-16 14:23:56.0",
+          "course_id": 95.0,
+          "participant_id": 1829
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-09-15 19:19:40.0",
+          "course_id": 95.0,
+          "participant_id": 1830
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-09-15 21:05:56.0",
+          "course_id": 95.0,
+          "participant_id": 1831
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1627,
+        4
+      ]
+    },
+    {
+      "columns": [
+        "response_id",
+        "item_id",
+        "response",
+        "response_position",
+        "correct",
+        "randomized",
+        "course_id"
+      ],
+      "name": "response_options",
+      "preview_rows": [
+        {
+          "correct": false,
+          "course_id": 95.0,
+          "item_id": 1127,
+          "randomized": true,
+          "response": "Store and organize massive data sets more efficiently",
+          "response_id": 2507,
+          "response_position": "A"
+        },
+        {
+          "correct": false,
+          "course_id": 95.0,
+          "item_id": 1127,
+          "randomized": true,
+          "response": "Understand how researchers typically use experimental data",
+          "response_id": 2508,
+          "response_position": "B"
+        },
+        {
+          "correct": true,
+          "course_id": 95.0,
+          "item_id": 1127,
+          "randomized": true,
+          "response": "Predict outcomes from existing data sets",
+          "response_id": 2509,
+          "response_position": "C"
+        },
+        {
+          "correct": false,
+          "course_id": 95.0,
+          "item_id": 1127,
+          "randomized": true,
+          "response": "Improve the public’s understanding of data and scientific results",
+          "response_id": 2510,
+          "response_position": "D"
+        },
+        {
+          "correct": false,
+          "course_id": 95.0,
+          "item_id": 1127,
+          "randomized": true,
+          "response": "Automate and simplify data collection processes",
+          "response_id": 2511,
+          "response_position": "E"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1006,
+        7
+      ]
+    },
+    {
+      "columns": [
+        "submission_id",
+        "participant_id",
+        "assignment_id",
+        "treatment_id",
+        "submitted_at",
+        "calculated_score",
+        "override_score",
+        "final_score",
+        "course_id"
+      ],
+      "name": "submissions",
+      "preview_rows": [
+        {
+          "assignment_id": 391,
+          "calculated_score": 1.0,
+          "course_id": 95.0,
+          "final_score": 1.0,
+          "override_score": 1.0,
+          "participant_id": 1870,
+          "submission_id": 1356,
+          "submitted_at": "2022-09-26 00:42:14.0",
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 389,
+          "calculated_score": 1.0,
+          "course_id": 95.0,
+          "final_score": 1.0,
+          "override_score": 1.0,
+          "participant_id": 1860,
+          "submission_id": 1341,
+          "submitted_at": "2022-09-24 03:34:38.0",
+          "treatment_id": 567
+        },
+        {
+          "assignment_id": 389,
+          "calculated_score": 1.0,
+          "course_id": 95.0,
+          "final_score": 1.0,
+          "override_score": 1.0,
+          "participant_id": 1860,
+          "submission_id": 1342,
+          "submitted_at": "2022-09-24 03:35:53.0",
+          "treatment_id": 567
+        },
+        {
+          "assignment_id": 391,
+          "calculated_score": 1.0,
+          "course_id": 95.0,
+          "final_score": 1.0,
+          "override_score": 1.0,
+          "participant_id": 1860,
+          "submission_id": 1415,
+          "submitted_at": "2022-09-28 23:59:26.0",
+          "treatment_id": 568
+        },
+        {
+          "assignment_id": 389,
+          "calculated_score": 1.0,
+          "course_id": 95.0,
+          "final_score": 1.0,
+          "override_score": 1.0,
+          "participant_id": 1829,
+          "submission_id": 1245,
+          "submitted_at": "2022-09-22 20:02:19.0",
+          "treatment_id": 566
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        2892,
+        9
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_manyclasses_2",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:46",
+  "sha256": "1d6f8908c770f55d1efee8ad5eff9d7eadf0665a33022973ab14541ffef48d0c"
+}

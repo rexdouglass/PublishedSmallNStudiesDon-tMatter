@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "local:data/raw/corpus_candidates/political_science_unlock/github/Direct-Aid-Replication-Materials/Replication Materials/Code/0_Master.do",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "route_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:0_master",
+  "next_action": "map_to_existing_direct_aid_source_family_if_needed_for_file_level_provenance",
+  "notes": "Existing likely source family: direct_aid_humanitarian_governance_preregistered_field_experiment.",
+  "promote_payload": {},
+  "reason": "This is a local master Stata do-file that orchestrates table/figure scripts for an already cataloged political-science source family. It should not become a root corpus row, but it may be useful file-level support.",
+  "review_id": "review_figure1_search_leads_07969abf10b1",
+  "route_payload": {},
+  "sources_checked": [
+    "data/raw/corpus_candidates/political_science_unlock/github/Direct-Aid-Replication-Materials/Replication Materials/Code/0_Master.do",
+    "CORPORA_AND_DATABASES.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

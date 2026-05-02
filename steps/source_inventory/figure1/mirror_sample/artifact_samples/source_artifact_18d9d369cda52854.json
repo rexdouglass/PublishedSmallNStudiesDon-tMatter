@@ -1,0 +1,55 @@
+{
+  "artifact_id": "source_artifact_18d9d369cda52854",
+  "byte_size": 1260,
+  "columns": [
+    "name",
+    "path",
+    "size",
+    "download_url",
+    "html_url",
+    "type"
+  ],
+  "estimated_data_rows": 4,
+  "file_name": "github_contents_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/awesome_pain_coop/github_contents_file_list.csv",
+  "parent_corpus_database_id": "github:ying531/awesome-replicability-data",
+  "preview_rows": [
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/pain_coop/original_clean.csv",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/pain_coop/original_clean.csv",
+      "name": "original_clean.csv",
+      "path": "host_data_paired/pain_coop/original_clean.csv",
+      "size": 9419,
+      "type": "file"
+    },
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/pain_coop/process.R",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/pain_coop/process.R",
+      "name": "process.R",
+      "path": "host_data_paired/pain_coop/process.R",
+      "size": 1580,
+      "type": "file"
+    },
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/pain_coop/replication1_clean.csv",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/pain_coop/replication1_clean.csv",
+      "name": "replication1_clean.csv",
+      "path": "host_data_paired/pain_coop/replication1_clean.csv",
+      "size": 19080,
+      "type": "file"
+    },
+    {
+      "download_url": "https://raw.githubusercontent.com/ying531/awesome-replicability-data/main/host_data_paired/pain_coop/replication2_clean.csv",
+      "html_url": "https://github.com/ying531/awesome-replicability-data/blob/main/host_data_paired/pain_coop/replication2_clean.csv",
+      "name": "replication2_clean.csv",
+      "path": "host_data_paired/pain_coop/replication2_clean.csv",
+      "size": 19563,
+      "type": "file"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 4,
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "04955ecf6acefab6b10840f236084a93a2e0f490072689a18ecf0f32dca21855"
+}

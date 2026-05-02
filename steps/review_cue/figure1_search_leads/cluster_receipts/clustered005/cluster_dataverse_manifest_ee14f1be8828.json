@@ -1,0 +1,80 @@
+{
+  "batch_id": "clustered005",
+  "cluster_id": "cluster_dataverse_manifest_ee14f1be8828",
+  "confidence": "medium",
+  "created_at": "2026-05-02T02:32:42+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered005.json",
+  "lead_level_note_count": 12,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_eef116d0abcd",
+      "notes": "ReadMe.R is package-level context for the covid_online_2021 Dataverse/replication package.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_b3912b8bbcd5",
+      "notes": "appendix_section_a.R should be inventoried as analysis/documentation code under the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_966c422388ab",
+      "notes": "conjoint_original.dta is an original-study data artifact; inspect contents before treating it as a pair/result table.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_39bc0b83828e",
+      "notes": "dataverse_03_download.json is a download/manifest artifact owned by the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_eaba2b0dcd60",
+      "notes": "dataverse_04_download.json is a download/manifest artifact owned by the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_e6c8b3be4253",
+      "notes": "dataverse_04__gilens_original.rds is an original-study data artifact; do not infer pair-table contents from the name alone.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_9e9cd74f6ea9",
+      "notes": "dataverse_06_download.json is a download/manifest artifact owned by the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_9d4908a346a6",
+      "notes": "dataverse_06__psv_original.rds is an original-study data artifact; inspect before routing as a result table.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_486db6ebe344",
+      "notes": "dataverse_07_download.json is a download/manifest artifact owned by the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_e055474e7a92",
+      "notes": "dataverse_07__tw_original.rds is an original-study data artifact; inspect before routing as a result table.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_86982301af30",
+      "notes": "dataverse_09_download.json is a download/manifest artifact owned by the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_4c019452646e",
+      "notes": "dataverse_09__pwk_original.rds is an original-study data artifact; inspect before routing as a result table.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Attach the Dataverse download JSONs, ReadMe/appendix scripts, and original-study data files as child artifacts under lead_harvest:covid_online_2021; inspect the manifest/file list for reusable multi-row original/replication result tables and route those specific tables to result-table extraction.",
+  "parent_corpus_database_id_or_key": "lead_harvest:covid_online_2021",
+  "preferred_source_family_name": "The Generalizability of Online Experiments Conducted During the COVID-19 Pandemic",
+  "reason": "The cluster is not Many Labs 2 despite the hint. The artifact names align with the Peyton, Huber, and Coppock COVID-era online-experiment replication package, which has open data/materials and a Harvard Dataverse replication-data DOI. This is a reusable multi-study replication package, but the listed nodes are child files/manifests rather than a new root source-family row.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:covid_online_2021",
+    "Cambridge Core article DOI 10.1017/XPS.2021.17; Dataverse DOI 10.7910/DVN/38UTBF",
+    "web exact searches for gilens_original/psv_original/tw_original/pwk_original and COVID online replication package"
+  ]
+}

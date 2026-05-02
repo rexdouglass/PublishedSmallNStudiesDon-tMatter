@@ -1,0 +1,26 @@
+{
+  "artifact_id": "source_artifact_6d0e905ad2ccbd22",
+  "byte_size": 614,
+  "file_name": "getClassicIndex.R",
+  "file_type": "r",
+  "line_preview": [
+    "getClassicIndex <- function (database)",
+    "{ # this function compute the pre-post index",
+    "  ",
+    "  DATABASE.means <- aggregate(database$pressFreq, by = list(database$ID, database$prepost, database$cue, database$group, database$averagePress), FUN='mean') # extract means",
+    "  colnames(DATABASE.means) <- c('ID','prepost','cue','group', 'averagePress','pressFreq')",
+    "  DATABASE.post <- subset(DATABASE.means, prepost == 'post')",
+    "  DATABASE.index <- ddply(DATABASE.post, .(ID), transform, pressFreq  = pressFreq-pressFreq[cue==\"Devalued\"])",
+    "  DATABASE.index <- subset(DATABASE.index, cue!='Devalued')",
+    "  ",
+    "  return (DATABASE.index)",
+    "  ",
+    "}"
+  ],
+  "line_preview_count": 12,
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_6d0e905ad2ccbd22__getClassicIndex.R",
+  "parent_corpus_database_id": "repo_search_osf_2b928c9c5eb3",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-01T22:32:52",
+  "sha256": "370d336ab83e825fd89f53fec3603d1fdae5b8b3dd4881837abe6957efbdfa8f"
+}

@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_67ae58e6568feb32",
+  "byte_size": 207997,
+  "columns": [
+    "age",
+    "education",
+    "race",
+    "gender",
+    "income",
+    "region",
+    "employment",
+    "ideology",
+    "sample",
+    "resp"
+  ],
+  "estimated_data_rows": 2019,
+  "file_name": "elusive-tab 7.tab",
+  "file_type": "tab",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/lead_wood_porter_2019/source_artifact_67ae58e6568feb32__elusive-tab_7.tab",
+  "parent_corpus_database_id": "lead_wood_porter_2019",
+  "preview_rows": [
+    {
+      "age": "25-44",
+      "education": "BA Degree",
+      "employment": "Employed",
+      "gender": "Male",
+      "ideology": "Moderate",
+      "income": "Less than $45k",
+      "race": "White",
+      "region": "South",
+      "resp": 1,
+      "sample": "Turk"
+    },
+    {
+      "age": "25-44",
+      "education": "HSD or Less",
+      "employment": null,
+      "gender": "Male",
+      "ideology": "Moderate",
+      "income": "Less than $45k",
+      "race": "White",
+      "region": "Northeast",
+      "resp": 2,
+      "sample": "Turk"
+    },
+    {
+      "age": "25-44",
+      "education": "HSD or Less",
+      "employment": "Employed",
+      "gender": "Female",
+      "ideology": "Moderate",
+      "income": "Less than $45k",
+      "race": "White",
+      "region": "South",
+      "resp": 3,
+      "sample": "Turk"
+    },
+    {
+      "age": "25-44",
+      "education": "BA Degree",
+      "employment": "Employed",
+      "gender": "Male",
+      "ideology": "Moderate",
+      "income": "$75-120k",
+      "race": "White",
+      "region": "North Central",
+      "resp": 4,
+      "sample": "Turk"
+    },
+    {
+      "age": "25-44",
+      "education": "BA Degree",
+      "employment": "Employed",
+      "gender": "Male",
+      "ideology": "Conservative",
+      "income": "$75-120k",
+      "race": "White",
+      "region": "South",
+      "resp": 5,
+      "sample": "Turk"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T22:21:20",
+  "sha256": "930cb1911b127d0cecf2068d6b387c4adca96febbde9840d4c8add4731758796"
+}

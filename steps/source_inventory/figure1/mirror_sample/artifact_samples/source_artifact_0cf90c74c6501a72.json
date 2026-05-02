@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_0cf90c74c6501a72",
+  "byte_size": 1314,
+  "file_name": "est_study_11.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_11.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "study",
+        "outcome_group",
+        "outcome_factor",
+        "estimate_type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.3025232257,
+          "conf.low": 0.1553616055,
+          "df": 684.0,
+          "estimate": 0.2289424156,
+          "estimate_type": "Unstandardized",
+          "outcome": "tw_manip_1",
+          "outcome_factor": "Inequality increased",
+          "outcome_group": "Manipulation Checks (binary)",
+          "p.value": 1.7e-09,
+          "statistic": 6.1091240627,
+          "std.error": 0.0374754897,
+          "study": "Replication",
+          "survey": "Week 2",
+          "term": "tw_Ztreatment"
+        },
+        {
+          "conf.high": 0.2272847884,
+          "conf.low": 0.0836171444,
+          "df": 684.0,
+          "estimate": 0.1554509664,
+          "estimate_type": "Unstandardized",
+          "outcome": "tw_manip_2",
+          "outcome_factor": "Richs' share of income changed",
+          "outcome_group": "Manipulation Checks (binary)",
+          "p.value": 2.44553e-05,
+          "statistic": 4.2489507877,
+          "std.error": 0.03658573,
+          "study": "Replication",
+          "survey": "Week 2",
+          "term": "tw_Ztreatment"
+        },
+        {
+          "conf.high": 0.6076265583,
+          "conf.low": 0.3120482317,
+          "df": 684.0,
+          "estimate": 0.459837395,
+          "estimate_type": "Standardized",
+          "outcome": "tw_manip_1_s",
+          "outcome_factor": "Inequality increased",
+          "outcome_group": "Manipulation Checks (standard units)",
+          "p.value": 1.7e-09,
+          "statistic": 6.1091240627,
+          "std.error": 0.0752705937,
+          "study": "Replication",
+          "survey": "Week 2",
+          "term": "tw_Ztreatment"
+        },
+        {
+          "conf.high": 0.4987661287,
+          "conf.low": 0.1834940195,
+          "df": 684.0,
+          "estimate": 0.3411300741,
+          "estimate_type": "Standardized",
+          "outcome": "tw_manip_2_s",
+          "outcome_factor": "Richs' share of income changed",
+          "outcome_group": "Manipulation Checks (standard units)",
+          "p.value": 2.44553e-05,
+          "statistic": 4.2489507877,
+          "std.error": 0.0802857202,
+          "study": "Replication",
+          "survey": "Week 2",
+          "term": "tw_Ztreatment"
+        },
+        {
+          "conf.high": 0.0733975341,
+          "conf.low": -0.2198650146,
+          "df": 680.0,
+          "estimate": -0.0732337403,
+          "estimate_type": "Standardized",
+          "outcome": "tw_scale_1_s",
+          "outcome_factor": "System Justification",
+          "outcome_group": "Outcome Scales (standard units)",
+          "p.value": 0.3271226445,
+          "statistic": -0.980632729,
+          "std.error": 0.0746800898,
+          "study": "Replication",
+          "survey": "Week 2",
+          "term": "tw_Ztreatment"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        14,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "d8aa738c7e81c7602f79086cf6f16f91e124a01e336d9e1cb1b5c671fe5f3079"
+}

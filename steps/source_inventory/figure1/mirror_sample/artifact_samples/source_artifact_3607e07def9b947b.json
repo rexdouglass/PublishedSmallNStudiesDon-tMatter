@@ -1,0 +1,45 @@
+{
+  "artifact_id": "source_artifact_3607e07def9b947b",
+  "byte_size": 324,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "ISSN",
+    "col_name",
+    "change_to",
+    "change_from",
+    "pub_stat_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 2,
+  "file_name": "changes_journal_metadata.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_3607e07def9b947b__changes_journal_metadata.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "ISSN": "1047-7039",
+      "change_from": "management",
+      "change_to": "marketing/org behavior",
+      "col_name": "COS_pub_category",
+      "date_implemented": "2025-01-28T00:00:00Z",
+      "pub_stat_version": 2,
+      "rationale": "Change for better fit",
+      "reported_by": "Andrew Tyner"
+    },
+    {
+      "ISSN": "0305-750X",
+      "change_from": "political science",
+      "change_to": "economics",
+      "col_name": "COS_pub_category",
+      "date_implemented": "2025-01-28T00:00:00Z",
+      "pub_stat_version": 2,
+      "rationale": "Change for better fit",
+      "reported_by": "Andrew Tyner"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 2,
+  "sampled_at": "2026-05-01T20:36:50",
+  "sha256": "aae3b90a8a365dfddf796164a08a39e52bb951956f0f0aed7c4e05313f0f619d"
+}

@@ -1,0 +1,21 @@
+{
+  "canonical_source_key": "osf:i68pe",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_in_corpora_and_databases",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:reproducibility_project_psychology_design",
+  "next_action": "inventory_osf_project_files_for_pair_table_or_crosswalk",
+  "notes": "Root candidate cleanup: keep, not reject.",
+  "promote_payload": {},
+  "reason": "This is a real Reproducibility Project: Psychology OSF project/source-family lead. It should stay in the root corpus/database inventory, though it still needs file-level triage before pair extraction.",
+  "review_id": "review_figure1_search_leads_8deda84acf73",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/i68pe/",
+    "CORPORA_AND_DATABASES.tsv"
+  ],
+  "user_gpt_prompt_request": ""
+}

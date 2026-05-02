@@ -1,0 +1,188 @@
+{
+  "batch_id": "clustered005",
+  "cluster_decisions": [
+    {
+      "cluster_id": "cluster_dataverse_manifest_ee14f1be8828",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "medium",
+      "preferred_source_family_name": "The Generalizability of Online Experiments Conducted During the COVID-19 Pandemic",
+      "parent_corpus_database_id_or_key": "lead_harvest:covid_online_2021",
+      "reason": "The cluster is not Many Labs 2 despite the hint. The artifact names align with the Peyton, Huber, and Coppock COVID-era online-experiment replication package, which has open data/materials and a Harvard Dataverse replication-data DOI. This is a reusable multi-study replication package, but the listed nodes are child files/manifests rather than a new root source-family row.",
+      "next_action": "Attach the Dataverse download JSONs, ReadMe/appendix scripts, and original-study data files as child artifacts under lead_harvest:covid_online_2021; inspect the manifest/file list for reusable multi-row original/replication result tables and route those specific tables to result-table extraction.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:covid_online_2021",
+        "Cambridge Core article DOI 10.1017/XPS.2021.17; Dataverse DOI 10.7910/DVN/38UTBF",
+        "web exact searches for gilens_original/psv_original/tw_original/pwk_original and COVID online replication package"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_search_manifest_eef116d0abcd", "suggested_disposition": "context", "notes": "ReadMe.R is package-level context for the covid_online_2021 Dataverse/replication package."},
+        {"node_id": "node_search_manifest_b3912b8bbcd5", "suggested_disposition": "child_artifact", "notes": "appendix_section_a.R should be inventoried as analysis/documentation code under the covid_online_2021 parent."},
+        {"node_id": "node_search_manifest_966c422388ab", "suggested_disposition": "child_artifact", "notes": "conjoint_original.dta is an original-study data artifact; inspect contents before treating it as a pair/result table."},
+        {"node_id": "node_search_manifest_39bc0b83828e", "suggested_disposition": "child_artifact", "notes": "dataverse_03_download.json is a download/manifest artifact owned by the covid_online_2021 parent."},
+        {"node_id": "node_search_manifest_eaba2b0dcd60", "suggested_disposition": "child_artifact", "notes": "dataverse_04_download.json is a download/manifest artifact owned by the covid_online_2021 parent."},
+        {"node_id": "node_search_manifest_e6c8b3be4253", "suggested_disposition": "child_artifact", "notes": "dataverse_04__gilens_original.rds is an original-study data artifact; do not infer pair-table contents from the name alone."},
+        {"node_id": "node_search_manifest_9e9cd74f6ea9", "suggested_disposition": "child_artifact", "notes": "dataverse_06_download.json is a download/manifest artifact owned by the covid_online_2021 parent."},
+        {"node_id": "node_search_manifest_9d4908a346a6", "suggested_disposition": "child_artifact", "notes": "dataverse_06__psv_original.rds is an original-study data artifact; inspect before routing as a result table."},
+        {"node_id": "node_search_manifest_486db6ebe344", "suggested_disposition": "child_artifact", "notes": "dataverse_07_download.json is a download/manifest artifact owned by the covid_online_2021 parent."},
+        {"node_id": "node_search_manifest_e055474e7a92", "suggested_disposition": "child_artifact", "notes": "dataverse_07__tw_original.rds is an original-study data artifact; inspect before routing as a result table."},
+        {"node_id": "node_search_manifest_86982301af30", "suggested_disposition": "child_artifact", "notes": "dataverse_09_download.json is a download/manifest artifact owned by the covid_online_2021 parent."},
+        {"node_id": "node_search_manifest_4c019452646e", "suggested_disposition": "child_artifact", "notes": "dataverse_09__pwk_original.rds is an original-study data artifact; inspect before routing as a result table."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_osf_01_original_dataset_63864d88187b",
+      "decision": "route_cluster_to_individual_replication_paper_worklist",
+      "confidence": "medium",
+      "preferred_source_family_name": "Contextual Bias 2026 OSF package",
+      "parent_corpus_database_id_or_key": "lead_harvest:contextual_bias_2026",
+      "reason": "The cluster shows an OSF-hosted dataset, scripts, manifest, and file list, but the compact evidence does not establish a reusable multi-row original/replication source family or pair/result table. Treat as a one-off replication package unless manifest inspection reveals a multi-study/effect table.",
+      "next_action": "Route the package to the individual replication paper worklist; inspect osf_file_list.csv/osf_manifest.json only to determine whether a specific multi-row result table should later be split out to the result-table worklist.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:contextual_bias_2026",
+        "web exact searches for contextual_bias_2026, Original_Dataset.sav, FinalData.R, and contextual bias OSF replication package"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_search_manifest_281ebaea6cc9", "suggested_disposition": "individual_paper", "notes": "Original_Dataset.sav is a data file in a likely one-off OSF package."},
+        {"node_id": "node_search_manifest_fec7dd408b30", "suggested_disposition": "context", "notes": "osf_01_download.json is a package download manifest."},
+        {"node_id": "node_search_manifest_d7f6cde01cf8", "suggested_disposition": "individual_paper", "notes": "FinalData.R looks like package-level analysis code."},
+        {"node_id": "node_search_manifest_0831ed595724", "suggested_disposition": "individual_paper", "notes": "FinalData.R duplicate/second OSF file; keep with the individual package."},
+        {"node_id": "node_search_manifest_c81af09ab4ca", "suggested_disposition": "context", "notes": "osf_manifest.json is a file-inventory artifact."},
+        {"node_id": "node_search_manifest_cdebf5a3ff73", "suggested_disposition": "context", "notes": "osf_file_list.csv is a file inventory for the individual package."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_many_labs_2_investigating_variation_in_replicability_across_samples_and_settings_9638ac62afe8",
+      "decision": "keep_source_family_candidate",
+      "confidence": "high",
+      "preferred_source_family_name": "Many Labs 2: Investigating Variation in Replicability Across Samples and Settings",
+      "parent_corpus_database_id_or_key": "many_labs_2 | doi:10.1177/2515245918810225",
+      "reason": "This is a large-scale replication source family: the article reports preregistered replications of 28 published findings across 125 samples and provides comprehensive data, materials, supplementary information, and code resources via OSF/open-science pages.",
+      "next_action": "Reconcile the duplicate OpenAlex/DOI/root-table leads into one Many Labs 2 source-family candidate; inventory OSF 8cd4r and the ManyLabsOpenScience code guide; route any summary effect-size/original-replication tables to result-table extraction.",
+      "sources_checked": [
+        "Sage DOI article 10.1177/2515245918810225",
+        "OSF project 8cd4r for Many Labs 2",
+        "ManyLabsOpenScience code guide referenced by the article",
+        "cluster compact nodes/OpenAlex W2776961836"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_root_table_d6e9f7e1cdef", "suggested_disposition": "root_source_family", "notes": "Root-table lead for Many Labs 2; retain as canonical source-family candidate."},
+        {"node_id": "node_search_manifest_de773ac17cfd", "suggested_disposition": "root_source_family", "notes": "Duplicate Many Labs 2 source-family hit; merge with canonical DOI/root row."},
+        {"node_id": "node_search_manifest_61672c3be056", "suggested_disposition": "root_source_family", "notes": "Duplicate Many Labs 2 source-family hit from bibliographic search."},
+        {"node_id": "node_search_manifest_edf033939b41", "suggested_disposition": "root_source_family", "notes": "Duplicate Many Labs 2 source-family hit from citation search."},
+        {"node_id": "node_search_manifest_171530c954fe", "suggested_disposition": "root_source_family", "notes": "Duplicate Many Labs 2 source-family hit from citation snowball search."},
+        {"node_id": "node_search_manifest_b2319319c25c", "suggested_disposition": "root_source_family", "notes": "Duplicate Many Labs 2 source-family hit reached through related known-corpus citation graph."},
+        {"node_id": "node_search_manifest_eaa4d8720ff5", "suggested_disposition": "root_source_family", "notes": "Duplicate DOI/link-graph hit; collapse under the same Many Labs 2 source family."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_investigating_the_replicability_of_preclinical_cancer_biology_ca7b83bfae6f",
+      "decision": "keep_source_family_candidate",
+      "confidence": "high",
+      "preferred_source_family_name": "Reproducibility Project: Cancer Biology",
+      "parent_corpus_database_id_or_key": "rpcb | doi:10.7554/eLife.71601",
+      "reason": "This is a source-family/corpus candidate rather than an isolated paper. The eLife article is part of the Reproducibility Project: Cancer Biology collection, reports 50 completed experiments from 23 papers and 158 effects, and points to project-level underlying data, code, digital materials, and the OSF replication-data object.",
+      "next_action": "Keep as the RPCB source-family candidate; inventory the OSF RPCB collection and Replication Data from the Reproducibility Project: Cancer Biology; route paper/experiment/effect-level data tables to result-table extraction.",
+      "sources_checked": [
+        "eLife article DOI 10.7554/eLife.71601",
+        "eLife Reproducibility Project: Cancer Biology collection",
+        "OSF collection rpcb and OSF object e5nvr / DOI 10.17605/osf.io/e5nvr",
+        "cluster compact nodes/OpenAlex W4200247206 and PMC8651293"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_root_table_811621af6cb4", "suggested_disposition": "root_source_family", "notes": "Root-table lead for RPCB; retain as canonical source-family candidate."},
+        {"node_id": "node_search_manifest_31e1fb8b7d64", "suggested_disposition": "root_source_family", "notes": "Duplicate RPCB DOI/OpenAlex source-family hit from bibliographic search."},
+        {"node_id": "node_search_manifest_03465f6cb8a6", "suggested_disposition": "root_source_family", "notes": "Duplicate RPCB source-family hit from citation search."},
+        {"node_id": "node_search_manifest_74ec80f56d40", "suggested_disposition": "root_source_family", "notes": "Duplicate RPCB source-family hit reached through a related citation query."},
+        {"node_id": "node_search_manifest_b84cea913272", "suggested_disposition": "root_source_family", "notes": "Duplicate RPCB source-family hit from domain search."},
+        {"node_id": "node_search_manifest_0fa048d165fd", "suggested_disposition": "root_source_family", "notes": "Duplicate PMC lead for the same eLife/RPCB source family."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_original_results_6f97d3e8008c",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Decision Markets / Online Experiments Selected by Decision Market",
+      "parent_corpus_database_id_or_key": "raw_replication_project:decision_market",
+      "reason": "The cluster consists of table/codebook artifacts for the decision-market replication project, not a new source family. original_results.csv and original_planned_samples.csv are reusable table artifacts owned by the decision_market parent.",
+      "next_action": "Route original_results.csv and original_planned_samples.csv to result-table review/extraction, using _codebook.md for field interpretation; keep all three artifacts under raw_replication_project:decision_market.",
+      "sources_checked": [
+        "cluster compact nodes for raw_replication_project:decision_market",
+        "Nature Human Behaviour article DOI 10.1038/s41562-024-02062-9",
+        "OSF project sk82q referenced by the Nature article",
+        "Center for Open Science summary of Decision Markets Predict Replicability of Online Experiments"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_search_manifest_83d5a32ea989", "suggested_disposition": "child_artifact", "notes": "_codebook.md is field documentation for decision_market result/planning tables."},
+        {"node_id": "node_search_manifest_2bfefeee2bf7", "suggested_disposition": "child_artifact", "notes": "original_planned_samples.csv is a reusable planning/sample table owned by decision_market."},
+        {"node_id": "node_search_manifest_2b84fa6f9225", "suggested_disposition": "child_artifact", "notes": "original_results.csv is the main candidate result table for the decision_market parent."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_create_studydetails_815faf854db4",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Experimental Economics Replication Project (EERP)",
+      "parent_corpus_database_id_or_key": "raw_replication_project:eerp",
+      "reason": "The cluster consists of EERP child artifacts used to derive study details/effect-standardization fields, not a separate corpus. These should be processed as result-table/source artifacts under EERP.",
+      "next_action": "Route create_studydetails.do, effectstandardization.py, and rpp_data.csv to the result-table/code-derived table worklist under raw_replication_project:eerp; extract only fields supported by inspected code/data, not by filenames alone.",
+      "sources_checked": [
+        "cluster compact nodes for raw_replication_project:eerp",
+        "CRAN ReplicationSuccess RProjects documentation for EERP source files and OSF pnwuz",
+        "Pawel/Held supplement text describing EERP extraction from create_studydetails.do and effectstandardization/effectdata files"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_search_manifest_9c0a33f3b974", "suggested_disposition": "child_artifact", "notes": "create_studydetails.do is a code source for EERP study-detail fields."},
+        {"node_id": "node_search_manifest_09b11a326972", "suggested_disposition": "child_artifact", "notes": "effectstandardization.py is EERP analysis/source code; inspect for effective sample-size/effect fields."},
+        {"node_id": "node_search_manifest_385686ba8a5c", "suggested_disposition": "child_artifact", "notes": "rpp_data.csv is a raw data artifact inside the EERP extraction tree."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_political_science_unlock_51f64b60725b",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Political Science Unlock",
+      "parent_corpus_database_id_or_key": "raw_corpus:political_science_unlock",
+      "reason": "This cluster already sits under an included raw corpus/source-family key and contains many Dataverse/GitHub metadata, code, workbook, and appendix artifacts. Child artifacts should be owned by raw_corpus:political_science_unlock; individual one-off replication code should be routed away.",
+      "next_action": "Inventory Dataverse metadata JSONs, Dataverse package folders, GitHub workbooks/code, and raw inventory directories under raw_corpus:political_science_unlock. Route only confirmed multi-row result/effect tables to the result-table worklist, and route single-paper packages such as BKO Debates to the individual replication paper worklist.",
+      "sources_checked": [
+        "cluster compact nodes and strict key raw_corpus:political_science_unlock",
+        "Political Science Replication Data by Journal directory listing journal Dataverses and replication data collections",
+        "FORRT FReD pages describing a replication database and replication-result coding context"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_search_manifest_0f7fd49caed3", "suggested_disposition": "child_artifact", "notes": "Dataverse metadata 3VVWPL.json is a child metadata artifact under political_science_unlock."},
+        {"node_id": "node_search_manifest_a5f12ec58c71", "suggested_disposition": "child_artifact", "notes": "Duplicate 3VVWPL.json hit; keep as child metadata artifact under the same parent."},
+        {"node_id": "node_search_manifest_d9abe2ad72a8", "suggested_disposition": "child_artifact", "notes": "4_an_ps.R is analysis code inside a Dataverse package; inspect before result-table routing."},
+        {"node_id": "node_search_manifest_52ee7cd58dc6", "suggested_disposition": "child_artifact", "notes": "4_meta_analysis_code.R may compute a meta-analysis table; confirm output fields first."},
+        {"node_id": "node_search_manifest_206085cb85a0", "suggested_disposition": "child_artifact", "notes": "Dataverse metadata 5OPIYU.json is a child metadata artifact."},
+        {"node_id": "node_search_manifest_8f6399028a15", "suggested_disposition": "individual_paper", "notes": "BKO_Debates_Replication_Code.do appears to be a one-off replication code file."},
+        {"node_id": "node_search_manifest_b4f301a5707b", "suggested_disposition": "child_artifact", "notes": "CostEffCalculations.xlsx is a workbook artifact inside a GitHub replication-materials package."},
+        {"node_id": "node_search_manifest_726b0a8b6928", "suggested_disposition": "child_artifact", "notes": "Figure_3.do is figure/analysis code; keep as child code artifact."},
+        {"node_id": "node_search_manifest_49b65f46c605", "suggested_disposition": "child_artifact", "notes": "Duplicate Figure_3.do hit from a second query."},
+        {"node_id": "node_search_manifest_324acf815000", "suggested_disposition": "child_artifact", "notes": "Master.do is package orchestration code in a Dataverse package."},
+        {"node_id": "node_search_manifest_f5dd95254e79", "suggested_disposition": "child_artifact", "notes": "Minimal_Effects_Online_Appendix.Rmd is an appendix/analysis artifact."},
+        {"node_id": "node_search_manifest_111365ff0d12", "suggested_disposition": "child_artifact", "notes": "Duplicate Minimal_Effects_Online_Appendix.Rmd hit."}
+      ]
+    },
+    {
+      "cluster_id": "cluster_004_codebook_8eae1835c41b",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "medium",
+      "preferred_source_family_name": "PSA004 Accelerated CREP Turri/Buckwalter/Blouw replication package",
+      "parent_corpus_database_id_or_key": "lead_harvest:psa_004_turri",
+      "reason": "The OSF/PSA004 cluster contains a workbook codebook and an article-table reconstruction CSV with original_n/replication_n query evidence. That is enough to route the specific table/codebook artifacts for result-table review, but not enough to create a broader corpus/database row from file titles alone.",
+      "next_action": "Route psa004_turri_article_table_reconstruction.csv, with 004_codebook.xlsx as supporting documentation, to the result-table worklist under lead_harvest:psa_004_turri; keep the pretest script as contextual code unless inspection shows it generates a reusable table.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:psa_004_turri",
+        "OSF page for PSA004 Accelerated CREP Turri/Buckwalter/Blouw showing 004_codebook.xlsx"
+      ],
+      "lead_level_notes": [
+        {"node_id": "node_search_manifest_068a55aa5aa4", "suggested_disposition": "child_artifact", "notes": "004_codebook.xlsx is supporting documentation/workbook for the PSA004 package."},
+        {"node_id": "node_search_manifest_9b22ad70869a", "suggested_disposition": "context", "notes": "pretest script.R is contextual code unless inspection shows table-generating output."},
+        {"node_id": "node_search_manifest_b6dd284713b7", "suggested_disposition": "child_artifact", "notes": "psa004_turri_article_table_reconstruction.csv is the candidate result table for this cluster."}
+      ]
+    }
+  ],
+  "reviewer": "codex",
+  "source_prompt_batch": "reviewcue-clustered-codex-clustered005-figure1_search_leads.json"
+}

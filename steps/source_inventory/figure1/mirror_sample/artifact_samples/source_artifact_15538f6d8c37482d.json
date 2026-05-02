@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_15538f6d8c37482d",
+  "byte_size": 398413,
+  "columns": [
+    "paper_id",
+    "claim4_id",
+    "coded_stat_evidence",
+    "nonsig"
+  ],
+  "estimated_data_rows": 3066,
+  "file_name": "claims_non_significant_bushels.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_15538f6d8c37482d__claims_non_significant_bushels.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "claim4_id": "m75zng",
+      "coded_stat_evidence": "F(1,38) = 3.73, p = .033, partial eta-squared = .16; F(1,39) = 7.28, p = .010, partial eta-squared = .16; F<1",
+      "nonsig": "F",
+      "paper_id": "Wre"
+    },
+    {
+      "claim4_id": "bzr68m",
+      "coded_stat_evidence": "F(1,38)=5.40, p=.026, partial eta-squared = .12",
+      "nonsig": "F",
+      "paper_id": "Wre"
+    },
+    {
+      "claim4_id": "glpd9b",
+      "coded_stat_evidence": "F(1,34)=5.76, p=.022, partial eta-squared = .15",
+      "nonsig": "F",
+      "paper_id": "Wre"
+    },
+    {
+      "claim4_id": "b64v8m",
+      "coded_stat_evidence": "F(1,39)=5.867, p=.020, partial eta-squared = .13",
+      "nonsig": "F",
+      "paper_id": "Wre"
+    },
+    {
+      "claim4_id": "g8r4od",
+      "coded_stat_evidence": "M_excl = 2.59 vs. M_neg.mood = 2.89; F(1, 164) = 2.51, p > .11",
+      "nonsig": "T",
+      "paper_id": "BaDx"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:37:13",
+  "sha256": "ebc214715048ef7282b4ed29ec3a490ced0df45d664bbcd00611e7d10557c4ea"
+}

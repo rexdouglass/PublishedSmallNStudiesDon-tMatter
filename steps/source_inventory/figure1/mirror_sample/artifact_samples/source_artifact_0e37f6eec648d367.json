@@ -1,0 +1,90 @@
+{
+  "artifact_id": "source_artifact_0e37f6eec648d367",
+  "byte_size": 8292,
+  "file_name": "dataverse_02__phc_meta_trends.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_02__phc_meta_trends.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "time",
+        "pre_covid",
+        "name",
+        "n",
+        "size_group",
+        "est",
+        "std.error",
+        "conf.low",
+        "conf.high"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.1988251853,
+          "conf.low": 0.1611748147,
+          "est": 0.18,
+          "n": 1600.0,
+          "name": "Respondents from web applications",
+          "pre_covid": "Yes",
+          "size_group": "1,000-2,000",
+          "std.error": 0.0096046864,
+          "time": 1527811200000
+        },
+        {
+          "conf.high": 0.4542587118,
+          "conf.low": 0.4057412882,
+          "est": 0.43,
+          "n": 1600.0,
+          "name": "Respondents from mobile phones",
+          "pre_covid": "Yes",
+          "size_group": "1,000-2,000",
+          "std.error": 0.0123768938,
+          "time": 1527811200000
+        },
+        {
+          "conf.high": 0.0787734764,
+          "conf.low": 0.0612265236,
+          "est": 0.07,
+          "n": 3249.0,
+          "name": "Respondents from web applications",
+          "pre_covid": "Yes",
+          "size_group": "3,000+",
+          "std.error": 0.0044762634,
+          "time": 1530403200000
+        },
+        {
+          "conf.high": 0.1932106563,
+          "conf.low": 0.1667893437,
+          "est": 0.18,
+          "n": 3249.0,
+          "name": "Respondents from mobile phones",
+          "pre_covid": "Yes",
+          "size_group": "3,000+",
+          "std.error": 0.0067401308,
+          "time": 1530403200000
+        },
+        {
+          "conf.high": 0.1702938204,
+          "conf.low": 0.1097061796,
+          "est": 0.14,
+          "n": 504.0,
+          "name": "Respondents from web applications",
+          "pre_covid": "Yes",
+          "size_group": "< 1,000",
+          "std.error": 0.0154560308,
+          "time": 1533081600000
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        76,
+        9
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "8000bf29d830bcfd6b020d075e59a0092c85a295b81c21b5b6fd6324cac42770"
+}

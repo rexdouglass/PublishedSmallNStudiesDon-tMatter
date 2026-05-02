@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "osf:ha4q8",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:sips_2017_sample_size_and_effect_size_workshop",
+  "next_action": "keep_as_methods_context_only",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "OSF metadata describes workshop materials, slides, examples, and R code. It is not a replication-pair corpus or source table.",
+  "review_id": "review_figure1_search_leads_2b41fd68366e",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/ha4q8/"
+  ],
+  "user_gpt_prompt_request": ""
+}

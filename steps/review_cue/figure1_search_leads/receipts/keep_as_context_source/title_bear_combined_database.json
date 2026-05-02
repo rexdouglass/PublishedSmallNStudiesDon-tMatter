@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "manual_tracker:bear_combined_database",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:59:05+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-reset001.json",
+  "duplicate_of": "",
+  "lead_key": "title:bear_combined_database",
+  "next_action": "keep_as_comparator_or_search_index_not_main_figure1_source",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "BEAR is useful as a comparator/search index, but the tracker says most rows are registry, review, replication, scrape, or meta-analysis objects rather than direct Figure 1 original/replication pair rows.",
+  "review_id": "review_figure1_search_leads_4420e14a8722",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

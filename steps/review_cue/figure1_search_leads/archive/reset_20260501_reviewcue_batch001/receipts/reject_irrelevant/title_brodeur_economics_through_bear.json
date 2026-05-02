@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "manual_tracker:brodeur_economics_through_bear",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:brodeur_economics_through_bear",
+  "next_action": "do_not_chase_bear_version_use_raw_brodeur_source_if_needed",
+  "notes": "Rejected only as this BEAR-mediated route.",
+  "promote_payload": {},
+  "reason": "The tracker already says the BEAR version lacks sample size and that a separate raw Brodeur Dataverse/OpenICPSR file is better. This specific lead should not advance.",
+  "review_id": "review_figure1_search_leads_df7ca3924545",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

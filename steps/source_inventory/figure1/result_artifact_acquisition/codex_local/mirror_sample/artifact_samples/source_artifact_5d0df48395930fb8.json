@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_5d0df48395930fb8",
+  "byte_size": 818,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "ern_pe_rrr_openneuro__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/ern_pe_rrr_openneuro__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_ern_pe_rrr_openneuro",
+  "preview_rows": [
+    {
+      "default_action": "review_only",
+      "downloaded_file_count": 7,
+      "expected_rows": 0,
+      "file_list_csv": null,
+      "landing_url": "https://openneuro.org/datasets/ds004602/versions/1.0.1",
+      "lead_id": "ern_pe_rrr_openneuro",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/ern_pe_rrr_openneuro/osf_8cbua_7ku9r/ReliabilityTable.csv",
+      "manifest_file": null,
+      "notes": "OpenNeuro provides raw EEG and OSF 8cbua has local summary and analysis artifacts including ReliabilityTable and rrr_ern_alldata. These are replication-side ERP materials in native metrics and do not provide a compact original-versus-replication D/N result table",
+      "priority": 7,
+      "project": "ERN Pe RRR OpenNeuro",
+      "promotion_blocker": "metric_not_on_shared_d_axis|original_side_missing",
+      "raw_url": "https://osf.io/8cbua/",
+      "source_family": "neuroscience"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:45",
+  "sha256": "7927e5364985162136672c0fe067e3b4273cf9c7f18cd513e2dce52466e96927"
+}

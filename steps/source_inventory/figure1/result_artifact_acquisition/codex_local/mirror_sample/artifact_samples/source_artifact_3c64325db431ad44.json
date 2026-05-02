@@ -1,0 +1,864 @@
+{
+  "artifact_id": "source_artifact_3c64325db431ad44",
+  "byte_size": 1005254,
+  "file_name": "processed_data_top.Rdata",
+  "file_type": "rdata",
+  "local_path": "data/raw/replication_projects/lead_harvest/manyclasses_2/analysis/processed_data_top.Rdata",
+  "object_count": 10,
+  "objects": [
+    {
+      "columns": [
+        "course_id",
+        "wave",
+        "export_link",
+        "experiment_created_at",
+        "consent_open_date",
+        "outcome_assessment_date",
+        "exposure1_open_date",
+        "exposure1_due_date",
+        "exposure2_open_date",
+        "exposure2_due_date",
+        "affiliation",
+        "nbr_other_assessments"
+      ],
+      "name": "classes",
+      "preview_rows": [
+        {
+          "affiliation": "IUB",
+          "consent_open_date": "2022-03-16",
+          "course_id": 38.0,
+          "experiment_created_at": "2022-03-15",
+          "export_link": "https://osf.io/ecpg7",
+          "exposure1_due_date": "2022-03-28",
+          "exposure1_open_date": "2022-03-23",
+          "exposure2_due_date": "2022-04-15",
+          "exposure2_open_date": "2022-04-04",
+          "nbr_other_assessments": 12.0,
+          "outcome_assessment_date": "2022-04-15",
+          "wave": 1.0
+        },
+        {
+          "affiliation": "IUS",
+          "consent_open_date": "2022-04-06",
+          "course_id": 47.0,
+          "experiment_created_at": "2022-03-23",
+          "export_link": "https://osf.io/kp846",
+          "exposure1_due_date": "2022-04-19",
+          "exposure1_open_date": "2022-04-12",
+          "exposure2_due_date": "2022-04-25",
+          "exposure2_open_date": "2022-04-19",
+          "nbr_other_assessments": 4.0,
+          "outcome_assessment_date": "2022-05-02",
+          "wave": 2.0
+        },
+        {
+          "affiliation": "IUS",
+          "consent_open_date": "2022-04-06",
+          "course_id": 48.0,
+          "experiment_created_at": "2022-03-28",
+          "export_link": "https://osf.io/ec6js",
+          "exposure1_due_date": "2022-04-20",
+          "exposure1_open_date": "2022-04-13",
+          "exposure2_due_date": "2022-04-27",
+          "exposure2_open_date": "2022-04-20",
+          "nbr_other_assessments": 3.0,
+          "outcome_assessment_date": "2022-05-04",
+          "wave": 2.0
+        },
+        {
+          "affiliation": "IUE",
+          "consent_open_date": "2022-03-29",
+          "course_id": 49.0,
+          "experiment_created_at": "2022-03-29",
+          "export_link": "https://osf.io/93q75",
+          "exposure1_due_date": "2022-04-11",
+          "exposure1_open_date": "2022-04-04",
+          "exposure2_due_date": "2022-04-18",
+          "exposure2_open_date": "2022-04-11",
+          "nbr_other_assessments": 86.0,
+          "outcome_assessment_date": "2022-05-01",
+          "wave": 2.0
+        },
+        {
+          "affiliation": "IUB",
+          "consent_open_date": "2022-09-15",
+          "course_id": 95.0,
+          "experiment_created_at": "2022-09-01",
+          "export_link": "https://osf.io/vs7ca",
+          "exposure1_due_date": "2022-09-24",
+          "exposure1_open_date": "2022-09-19",
+          "exposure2_due_date": "2022-09-29",
+          "exposure2_open_date": "2022-09-24",
+          "nbr_other_assessments": 29.0,
+          "outcome_assessment_date": "2022-09-30",
+          "wave": 3.0
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        30,
+        12
+      ]
+    },
+    {
+      "columns": [
+        "video_id",
+        "item_id",
+        "submission_id",
+        "course_id",
+        "participant_id",
+        "type",
+        "action",
+        "timestamp",
+        "generated_id",
+        "target_id",
+        "target_time",
+        "condition_name",
+        "event_secs",
+        "maxplaytime",
+        "event_pct"
+      ],
+      "name": "events",
+      "preview_rows": [
+        {
+          "action": "Paused",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.5537605442,
+          "event_secs": 134.643,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1853,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?t=134&v=_BrFVtvkKBU",
+          "target_time": "PT2M14.643S",
+          "timestamp": 1663638643000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "ChangedResolution",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0019412445,
+          "event_secs": 0.472,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1873,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "PT0.472S",
+          "timestamp": 1663813045000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "ChangedResolution",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0,
+          "event_secs": 0.0,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1829,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "P0D",
+          "timestamp": 1663891044000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "Ended",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.9999917744,
+          "event_secs": 243.141,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1882,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?t=243&v=_BrFVtvkKBU",
+          "target_time": "PT4M3.141S",
+          "timestamp": 1663957786000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        },
+        {
+          "action": "ChangedResolution",
+          "condition_name": "Pre-Questions",
+          "course_id": 95.0,
+          "event_pct": 0.0,
+          "event_secs": 0.0,
+          "generated_id": "",
+          "item_id": "1132",
+          "maxplaytime": 243.143,
+          "participant_id": 1874,
+          "submission_id": "",
+          "target_id": "https://www.youtube.com/watch?v=_BrFVtvkKBU",
+          "target_time": "P0D",
+          "timestamp": 1663719116000,
+          "type": "MediaEvent",
+          "video_id": "_BrFVtvkKBU"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        43637,
+        15
+      ]
+    },
+    {
+      "columns": [
+        "experiment_id",
+        "course_id",
+        "experiment_title",
+        "experiment_description",
+        "exposure_type",
+        "participation_type",
+        "distribution_type",
+        "export_at",
+        "enrollment_cnt",
+        "participant_cnt",
+        "condition_cnt"
+      ],
+      "name": "experiment",
+      "preview_rows": [
+        {
+          "condition_cnt": 2,
+          "course_id": 38.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 105,
+          "experiment_description": "Do pre-questions work?",
+          "experiment_id": 521,
+          "experiment_title": "Pre Question Experiment",
+          "export_at": "2022-04-29 19:27:58.185",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 89,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 3,
+          "course_id": 47.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 33,
+          "experiment_description": "Prequestion experiment for SP22.",
+          "experiment_id": 522,
+          "experiment_title": "Prequestion Experiment",
+          "export_at": "2022-06-13 17:25:06.122",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 17,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 3,
+          "course_id": 48.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 32,
+          "experiment_description": "The Pre-Question Experiment in March 2022",
+          "experiment_id": 523,
+          "experiment_title": "Pre-Question Experiment",
+          "export_at": "2022-06-13 17:26:19.936",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 13,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 3,
+          "course_id": 49.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 31,
+          "experiment_description": "Experiment on pre-questions for the X-prize",
+          "experiment_id": 525,
+          "experiment_title": "Terracotta - Ben and Harmony Experiment ",
+          "export_at": "2022-06-13 17:24:17.975",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 11,
+          "participation_type": "CONSENT"
+        },
+        {
+          "condition_cnt": 2,
+          "course_id": 95.0,
+          "distribution_type": "EVEN",
+          "enrollment_cnt": 62,
+          "experiment_description": "Do pre-questions improve retention? Terracotta demo experiment for XPRIZE",
+          "experiment_id": 569,
+          "experiment_title": "Data Science Video Experiment",
+          "export_at": "2023-01-11 13:59:16.395371377",
+          "exposure_type": "WITHIN",
+          "participant_cnt": 48,
+          "participation_type": "CONSENT"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        30,
+        11
+      ]
+    },
+    {
+      "columns": [
+        "item_response_id",
+        "submission_id",
+        "assignment_id",
+        "condition_id",
+        "treatment_id",
+        "participant_id",
+        "item_id",
+        "response_type",
+        "response",
+        "response_id",
+        "response_position",
+        "correctness",
+        "responded_at",
+        "points_possible",
+        "calculated_score",
+        "override_score",
+        "course_id"
+      ],
+      "name": "item_responses",
+      "preview_rows": [
+        {
+          "assignment_id": 292,
+          "calculated_score": "25",
+          "condition_id": 950,
+          "correctness": "TRUE",
+          "course_id": 38.0,
+          "item_id": 645,
+          "item_response_id": 3323,
+          "override_score": "N/A",
+          "participant_id": 1185,
+          "points_possible": 25.0,
+          "responded_at": "2022-03-26 01:57:11.0",
+          "response": "I confirm that I have watched the video.",
+          "response_id": 1298.0,
+          "response_position": "A",
+          "response_type": "MC",
+          "submission_id": 579,
+          "treatment_id": 431
+        },
+        {
+          "assignment_id": 293,
+          "calculated_score": "0",
+          "condition_id": 951,
+          "correctness": "TRUE",
+          "course_id": 38.0,
+          "item_id": 654,
+          "item_response_id": 3546,
+          "override_score": "N/A",
+          "participant_id": 1185,
+          "points_possible": 0.0,
+          "responded_at": "2022-04-01 16:20:03.0",
+          "response": "Gestures are hand movements used to convey meaning and they are extremely common and pervasive across communication contexts",
+          "response_id": 1319.0,
+          "response_position": "B",
+          "response_type": "MC",
+          "submission_id": 664,
+          "treatment_id": 434
+        },
+        {
+          "assignment_id": 293,
+          "calculated_score": "0",
+          "condition_id": 951,
+          "correctness": "FALSE",
+          "course_id": 38.0,
+          "item_id": 655,
+          "item_response_id": 3547,
+          "override_score": "N/A",
+          "participant_id": 1185,
+          "points_possible": 0.0,
+          "responded_at": "2022-04-01 16:20:03.0",
+          "response": "Participants attended to the video children’s gestures, but only if those gestures were completely redundant with the child’s words",
+          "response_id": 1325.0,
+          "response_position": "D",
+          "response_type": "MC",
+          "submission_id": 664,
+          "treatment_id": 434
+        },
+        {
+          "assignment_id": 293,
+          "calculated_score": "0",
+          "condition_id": 951,
+          "correctness": "TRUE",
+          "course_id": 38.0,
+          "item_id": 656,
+          "item_response_id": 3548,
+          "override_score": "N/A",
+          "participant_id": 1185,
+          "points_possible": 0.0,
+          "responded_at": "2022-04-01 16:20:03.0",
+          "response": "Children learned more from the lesson with speech and gesture.",
+          "response_id": 1327.0,
+          "response_position": "B",
+          "response_type": "MC",
+          "submission_id": 664,
+          "treatment_id": 434
+        },
+        {
+          "assignment_id": 293,
+          "calculated_score": "0",
+          "condition_id": 951,
+          "correctness": "TRUE",
+          "course_id": 38.0,
+          "item_id": 657,
+          "item_response_id": 3549,
+          "override_score": "N/A",
+          "participant_id": 1185,
+          "points_possible": 0.0,
+          "responded_at": "2022-04-01 16:20:03.0",
+          "response": "A child talking about the height of the containers, but gesturing about the width of the containers.",
+          "response_id": 1331.0,
+          "response_position": "B",
+          "response_type": "MC",
+          "submission_id": 664,
+          "treatment_id": 434
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        10722,
+        17
+      ]
+    },
+    {
+      "columns": [
+        "item_id",
+        "assignment_id",
+        "treatment_id",
+        "condition_id",
+        "item_text",
+        "item_format",
+        "course_id"
+      ],
+      "name": "items",
+      "preview_rows": [
+        {
+          "assignment_id": 292,
+          "condition_id": 950,
+          "course_id": 38.0,
+          "item_format": "MC",
+          "item_id": 645,
+          "item_text": "<iframe src=\"https://www.youtube.com/embed/AunjHffklZI?enablejsapi=1\" data-youtube-id=\"AunjHffklZI\" height=\"315\" width=\"560\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>",
+          "treatment_id": 431
+        },
+        {
+          "assignment_id": 293,
+          "condition_id": 950,
+          "course_id": 38.0,
+          "item_format": "MC",
+          "item_id": 653,
+          "item_text": "<iframe src=\"https://www.youtube.com/embed/n7LC_AZEVz4?enablejsapi=1\" data-youtube-id=\"n7LC_AZEVz4\" height=\"315\" width=\"560\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>",
+          "treatment_id": 433
+        },
+        {
+          "assignment_id": 292,
+          "condition_id": 951,
+          "course_id": 38.0,
+          "item_format": "MC",
+          "item_id": 646,
+          "item_text": "<p>When elementary school students in the U.S. are asked to define the equal sign, which of the following is one of the most common responses?</p>",
+          "treatment_id": 432
+        },
+        {
+          "assignment_id": 292,
+          "condition_id": 951,
+          "course_id": 38.0,
+          "item_format": "MC",
+          "item_id": 648,
+          "item_text": "<p>Which strategy is most typical for elementary school students in the U.S. to use when asked to solve an equation like this one: 3 + 4 = 2 + __?</p>",
+          "treatment_id": 432
+        },
+        {
+          "assignment_id": 292,
+          "condition_id": 951,
+          "course_id": 38.0,
+          "item_format": "MC",
+          "item_id": 649,
+          "item_text": "<p>Children’s misconceptions and errors with the equal sign are most likely a result of what?</p>",
+          "treatment_id": 432
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        448,
+        7
+      ]
+    },
+    {
+      "columns": [
+        "outcome_id",
+        "participant_id",
+        "exposure_id",
+        "source",
+        "outcome_name",
+        "points_possible",
+        "outcome_score",
+        "course_id",
+        "condition_id",
+        "condition_name"
+      ],
+      "name": "outcomes",
+      "preview_rows": [
+        {
+          "condition_id": 1116.0,
+          "condition_name": "Pre-Questions",
+          "course_id": 62.0,
+          "exposure_id": 889,
+          "outcome_id": 280,
+          "outcome_name": "Pretest",
+          "outcome_score": 91.0,
+          "participant_id": 4070,
+          "points_possible": 100.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1116.0,
+          "condition_name": "Pre-Questions",
+          "course_id": 62.0,
+          "exposure_id": 889,
+          "outcome_id": 280,
+          "outcome_name": "Pretest",
+          "outcome_score": 88.0,
+          "participant_id": 4087,
+          "points_possible": 100.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1115.0,
+          "condition_name": "Control",
+          "course_id": 62.0,
+          "exposure_id": 889,
+          "outcome_id": 280,
+          "outcome_name": "Pretest",
+          "outcome_score": 91.0,
+          "participant_id": 4069,
+          "points_possible": 100.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1116.0,
+          "condition_name": "Pre-Questions",
+          "course_id": 62.0,
+          "exposure_id": 889,
+          "outcome_id": 280,
+          "outcome_name": "Pretest",
+          "outcome_score": 87.0,
+          "participant_id": 4078,
+          "points_possible": 100.0,
+          "source": "none"
+        },
+        {
+          "condition_id": 1116.0,
+          "condition_name": "Pre-Questions",
+          "course_id": 62.0,
+          "exposure_id": 889,
+          "outcome_id": 280,
+          "outcome_name": "Pretest",
+          "outcome_score": 94.0,
+          "participant_id": 4088,
+          "points_possible": 100.0,
+          "source": "none"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        8959,
+        10
+      ]
+    },
+    {
+      "columns": [
+        "participant_id",
+        "exposure_id",
+        "condition_id",
+        "condition_name",
+        "assignment_id",
+        "assignment_name",
+        "treatment_id",
+        "course_id",
+        "grade_type",
+        "attempts_allowed",
+        "time_required_between_attempts",
+        "final_score",
+        "consent_error"
+      ],
+      "name": "participant_treatment",
+      "preview_rows": [
+        {
+          "assignment_id": 292,
+          "assignment_name": "Week 11 Assignment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 950,
+          "condition_name": "Control",
+          "consent_error": false,
+          "course_id": 38.0,
+          "exposure_id": 747,
+          "final_score": "",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1185,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 431
+        },
+        {
+          "assignment_id": 293,
+          "assignment_name": "Week 12 Assignment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 951,
+          "condition_name": "Pre-Questions",
+          "consent_error": false,
+          "course_id": 38.0,
+          "exposure_id": 748,
+          "final_score": "",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1185,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 434
+        },
+        {
+          "assignment_id": 292,
+          "assignment_name": "Week 11 Assignment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 951,
+          "condition_name": "Pre-Questions",
+          "consent_error": false,
+          "course_id": 38.0,
+          "exposure_id": 747,
+          "final_score": "",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1132,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 432
+        },
+        {
+          "assignment_id": 293,
+          "assignment_name": "Week 12 Assignment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 950,
+          "condition_name": "Control",
+          "consent_error": false,
+          "course_id": 38.0,
+          "exposure_id": 748,
+          "final_score": "",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1132,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 433
+        },
+        {
+          "assignment_id": 292,
+          "assignment_name": "Week 11 Assignment",
+          "attempts_allowed": "unlimited",
+          "condition_id": 950,
+          "condition_name": "Control",
+          "consent_error": false,
+          "course_id": 38.0,
+          "exposure_id": 747,
+          "final_score": "",
+          "grade_type": "MOST_RECENT",
+          "participant_id": 1108,
+          "time_required_between_attempts": "N/A",
+          "treatment_id": 431
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        3406,
+        13
+      ]
+    },
+    {
+      "columns": [
+        "participant_id",
+        "consented_at",
+        "consent_source",
+        "course_id"
+      ],
+      "name": "participants",
+      "preview_rows": [
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-03-22 19:01:37.0",
+          "course_id": 38.0,
+          "participant_id": 1185
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-03-21 15:18:58.0",
+          "course_id": 38.0,
+          "participant_id": 1132
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-03-21 17:08:00.0",
+          "course_id": 38.0,
+          "participant_id": 1108
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-03-21 22:00:41.0",
+          "course_id": 38.0,
+          "participant_id": 1133
+        },
+        {
+          "consent_source": "CONSENT",
+          "consented_at": "2022-03-22 23:25:13.0",
+          "course_id": 38.0,
+          "participant_id": 1105
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1757,
+        4
+      ]
+    },
+    {
+      "columns": [
+        "response_id",
+        "item_id",
+        "response",
+        "response_position",
+        "correct",
+        "course_id",
+        "randomized"
+      ],
+      "name": "response_options",
+      "preview_rows": [
+        {
+          "correct": true,
+          "course_id": 38.0,
+          "item_id": 645,
+          "randomized": false,
+          "response": "I confirm that I have watched the video.",
+          "response_id": 1298,
+          "response_position": "A"
+        },
+        {
+          "correct": true,
+          "course_id": 38.0,
+          "item_id": 653,
+          "randomized": false,
+          "response": "I confirm that I have watched the video.",
+          "response_id": 1317,
+          "response_position": "A"
+        },
+        {
+          "correct": false,
+          "course_id": 38.0,
+          "item_id": 646,
+          "randomized": false,
+          "response": "One side is the same amount as the other.",
+          "response_id": 1299,
+          "response_position": "A"
+        },
+        {
+          "correct": false,
+          "course_id": 38.0,
+          "item_id": 646,
+          "randomized": false,
+          "response": "It means equal.",
+          "response_id": 1300,
+          "response_position": "B"
+        },
+        {
+          "correct": true,
+          "course_id": 38.0,
+          "item_id": 646,
+          "randomized": false,
+          "response": "It means the answer to the problem.",
+          "response_id": 1301,
+          "response_position": "C"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1150,
+        7
+      ]
+    },
+    {
+      "columns": [
+        "submission_id",
+        "participant_id",
+        "assignment_id",
+        "treatment_id",
+        "submitted_at",
+        "calculated_score",
+        "override_score",
+        "final_score",
+        "course_id"
+      ],
+      "name": "submissions",
+      "preview_rows": [
+        {
+          "assignment_id": 292,
+          "calculated_score": 25.0,
+          "course_id": 38.0,
+          "final_score": 25.0,
+          "override_score": 25.0,
+          "participant_id": 1185,
+          "submission_id": 579,
+          "submitted_at": "2022-03-26 01:57:11.0",
+          "treatment_id": 431
+        },
+        {
+          "assignment_id": 293,
+          "calculated_score": 25.0,
+          "course_id": 38.0,
+          "final_score": 25.0,
+          "override_score": 25.0,
+          "participant_id": 1185,
+          "submission_id": 664,
+          "submitted_at": "2022-04-01 16:20:03.0",
+          "treatment_id": 434
+        },
+        {
+          "assignment_id": 292,
+          "calculated_score": 25.0,
+          "course_id": 38.0,
+          "final_score": 25.0,
+          "override_score": 25.0,
+          "participant_id": 1132,
+          "submission_id": 606,
+          "submitted_at": "2022-03-27 23:41:00.0",
+          "treatment_id": 432
+        },
+        {
+          "assignment_id": 293,
+          "calculated_score": 25.0,
+          "course_id": 38.0,
+          "final_score": 25.0,
+          "override_score": 25.0,
+          "participant_id": 1132,
+          "submission_id": 688,
+          "submitted_at": "2022-04-02 20:07:45.0",
+          "treatment_id": 433
+        },
+        {
+          "assignment_id": 292,
+          "calculated_score": 25.0,
+          "course_id": 38.0,
+          "final_score": 25.0,
+          "override_score": 25.0,
+          "participant_id": 1108,
+          "submission_id": 608,
+          "submitted_at": "2022-03-27 22:39:43.0",
+          "treatment_id": 431
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        3141,
+        9
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_manyclasses_2",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:46",
+  "sha256": "e27c3290107db8381041f0a2c30873218a47c6c51ab158bed44c87c0f5649a3d"
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_id": "source_artifact_cd4fd62470f60543",
+  "byte_size": 325,
+  "file_name": "normalizeVariablesBehavior.R",
+  "file_type": "r",
+  "line_preview": [
+    "normalizeVariablesBehavior <- function (database)",
+    "{ # this function just normalize the different variables in so that we can apply fo ",
+    "# different datasets",
+    "",
+    "  # measure of interest",
+    "  database$normPressFreq   <- scale(database$pressFreq)",
+    "  database$normLiking      <- scale(database$outcomeliking)",
+    "  ",
+    "  ",
+    "  return(database)",
+    "}",
+    ""
+  ],
+  "line_preview_count": 12,
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/repo_search_osf_2b928c9c5eb3/source_artifact_cd4fd62470f60543__normalizeVariablesBehavior.R",
+  "parent_corpus_database_id": "repo_search_osf_2b928c9c5eb3",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-01T22:33:03",
+  "sha256": "bd5debbe24f92ab407ed8f8404f4e7cf7e639021e6417725721fb15b6ee1bead"
+}

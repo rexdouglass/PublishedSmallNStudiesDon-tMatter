@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_535667e08e170299",
+  "byte_size": 1256,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "wood_porter_2019__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/wood_porter_2019__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_wood_porter_2019",
+  "preview_rows": [
+    {
+      "default_action": "stage_only",
+      "downloaded_file_count": 31,
+      "expected_rows": 52,
+      "file_list_csv": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/wood_porter_2019/dataverse_file_list.csv",
+      "landing_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/AGRX5U",
+      "lead_id": "wood_porter_2019",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/wood_porter_2019/dataverse_bundle/dataverse_files.zip",
+      "manifest_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/wood_porter_2019/dataverse_manifest.json",
+      "notes": "Full Dataverse bundle downloaded with survey and correction files plus R scripts. The suggested OSF pes2y mirror was checked and is a different fake-news memory project. Strict target pairing and shared-D conversion still require a native-metric lane or hand extraction",
+      "priority": 44,
+      "project": "Wood and Porter elusive backfire effect",
+      "promotion_blocker": "metric_not_on_shared_d_axis",
+      "raw_url": "https://dataverse.harvard.edu/api/access/dataset/:persistentId/?persistentId=doi:10.7910/DVN/AGRX5U&format=original",
+      "source_family": "political_science"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:55",
+  "sha256": "15f5fe92e22e53504b1fa87b17f4fd3a3eb9ef73e6512a69886e35cb45083b90"
+}

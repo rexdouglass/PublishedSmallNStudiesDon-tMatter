@@ -1,0 +1,69 @@
+{
+  "artifact_id": "source_artifact_130d02d5ba71ac87",
+  "byte_size": 19609,
+  "columns": [
+    "Unnamed: 0",
+    "Veracity",
+    "Language",
+    "Emotionality",
+    "ID",
+    "meanRT",
+    "meanJudgment"
+  ],
+  "estimated_data_rows": 304,
+  "file_name": "github_01__original_clean.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/awesome_lie_language/github_01__original_clean.csv",
+  "parent_corpus_database_id": "github:ying531/awesome-replicability-data",
+  "preview_rows": [
+    {
+      "Emotionality": "Emotional",
+      "ID": 3,
+      "Language": "German",
+      "Unnamed: 0": 1,
+      "Veracity": "Lie",
+      "meanJudgment": 0.5869565217,
+      "meanRT": 735.4166666667
+    },
+    {
+      "Emotionality": "Emotional",
+      "ID": 3,
+      "Language": "German",
+      "Unnamed: 0": 2,
+      "Veracity": "Truth",
+      "meanJudgment": 0.5869565217,
+      "meanRT": 631.8181818182
+    },
+    {
+      "Emotionality": "Emotional",
+      "ID": 3,
+      "Language": "English",
+      "Unnamed: 0": 3,
+      "Veracity": "Lie",
+      "meanJudgment": 0.6304347826,
+      "meanRT": 823.3333333333
+    },
+    {
+      "Emotionality": "Emotional",
+      "ID": 3,
+      "Language": "English",
+      "Unnamed: 0": 4,
+      "Veracity": "Truth",
+      "meanJudgment": 0.6304347826,
+      "meanRT": 940.4545454545
+    },
+    {
+      "Emotionality": "Neutral",
+      "ID": 3,
+      "Language": "German",
+      "Unnamed: 0": 5,
+      "Veracity": "Lie",
+      "meanJudgment": 0.2765957447,
+      "meanRT": 705.4210526316
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "2ab76d8d421c1cc1b3a885f476ac73c90854768c85a3491e8976aaf3b9885c8f"
+}

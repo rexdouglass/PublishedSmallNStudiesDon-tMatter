@@ -19,6 +19,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+.local/
 
 # Local/raw data
 data/raw/cochrane_packages/*
@@ -27,12 +28,52 @@ data/raw/osf/*
 !data/raw/osf/README.md
 data/raw/bear/*
 !data/raw/bear/README.md
+data/raw/corpus_candidates/*
+data/raw/processed_user_uploads/*
+data/raw/publication_bias_direct/*
+data/raw/published_papers/*
+data/raw/replication_projects/*
+data/raw/source_artifacts/*
+data/raw/147561-V3.zip
+data/raw/YING-DISSERTATION-2023.pdf
+data/raw/replication_archive.zip
 data/cache/*
 !data/cache/README.md
 data/derived/*
 !data/derived/README.md
+!data/derived/effect_inflation_dataset/
+data/derived/effect_inflation_dataset/*
+!data/derived/effect_inflation_dataset/provenance_codebook.tsv
+!data/derived/effect_inflation_dataset/provenance_data_dictionary.tsv
+!data/derived/effect_inflation_dataset/provenance_vocab_dictionary.tsv
+!data/derived/effect_inflation_dataset/schema_templates/
+!data/derived/effect_inflation_dataset/schema_templates/*.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/
+data/derived/effect_inflation_dataset/schema_pilot/*
+!data/derived/effect_inflation_dataset/schema_pilot/codebook_validation_summary.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/codebook_validation_issues.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/codebook_validation_report.md
+!data/derived/effect_inflation_dataset/schema_pilot/*sample_*.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/codebook_pilot_learning_summary.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/codebook_pilot_learning_report.md
+!data/derived/effect_inflation_dataset/schema_pilot/source_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/source_access_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/source_result_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/canonical_result_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/source_source_mapping_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/extraction_event_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/extraction_problem_codebook_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/real_world_grounding_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/real_world_grounding_todos_sample_100.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/real_world_grounding_summary.tsv
+!data/derived/effect_inflation_dataset/schema_pilot/real_world_grounding_report.md
+!data/derived/effect_inflation_dataset/schema_pilot/real_world_grounding_below_level3_sample_100.tsv
 data/interim/*
 !data/interim/README.md
+data/handoff/zotero_bridge/
+tmp/
+*.sqlite
+*.sqlite-journal
 
 # OS/editor noise
 .DS_Store

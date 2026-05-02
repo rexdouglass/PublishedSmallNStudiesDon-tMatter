@@ -1,0 +1,3179 @@
+{
+  "artifact_id": "source_artifact_28a94c9b3988b160",
+  "byte_size": 81022,
+  "file_name": "R75XVZ.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/R75XVZ.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 906,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "guestbookId": 269,
+      "id": 6297056,
+      "identifier": "DVN/R75XVZ",
+      "latestVersion": {
+        "UNF": "UNF:6:+k/8kgxL7NswfRwoPRVB3g==",
+        "citationDate": "2022-05-17",
+        "createTime": "2025-02-28T19:51:51Z",
+        "datasetFileUploadsAvailable": 906,
+        "datasetId": 6297056,
+        "datasetPersistentId": "doi:10.7910/DVN/R75XVZ",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "UNF": "UNF:6:Q6ePM1KK5ARfVWAS0zIuRA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "8a7a363d5a25a81dcbfb89324e0f6f77"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Admin",
+              "fileAccessRequest": false,
+              "filename": "admin_long data.tab",
+              "filesize": 499665,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300195,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "8a7a363d5a25a81dcbfb89324e0f6f77",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "admin_long data.dta",
+              "originalFileSize": 365259,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696db2-3a4070145bc3",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Admin",
+            "label": "admin_long data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:i6xHVOq9weVPv4jv7lWK2Q==",
+              "checksum": {
+                "type": "MD5",
+                "value": "4c6e8a1fb3fb6218c69e537047f9e0a6"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Admin",
+              "fileAccessRequest": false,
+              "filename": "admin_wide data.tab",
+              "filesize": 220391,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300191,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "4c6e8a1fb3fb6218c69e537047f9e0a6",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "admin_wide data.dta",
+              "originalFileSize": 175737,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696db5-aee9d3923bdf",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Admin",
+            "label": "admin_wide data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:klxq6qhvCdEdPX0o+rFfQQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "99634a17c185fe027b8ab3fb6407b06b"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/CCTV",
+              "fileAccessRequest": false,
+              "filename": "cctv_baseline data.tab",
+              "filesize": 493639,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300220,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "99634a17c185fe027b8ab3fb6407b06b",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "cctv_baseline data.dta",
+              "originalFileSize": 340116,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696da3-44903f39b966",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/CCTV",
+            "label": "cctv_baseline data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:fu88vmKYpn/URDhtAX7yKQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "54613f175ec1938d232e3f63c84c7cb5"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/CCTV",
+              "fileAccessRequest": false,
+              "filename": "cctv_full data.tab",
+              "filesize": 749796,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300242,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "54613f175ec1938d232e3f63c84c7cb5",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "cctv_full data.dta",
+              "originalFileSize": 568835,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696da9-8ddbb0786508",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/CCTV",
+            "label": "cctv_full data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:cRfdLwBSXdVnpzSfoz31MQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "8bcad238a7a3bf57c71e6d612f3238d0"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Citizen survey",
+              "fileAccessRequest": false,
+              "filename": "citizen_caw rates.tab",
+              "filesize": 17393,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300245,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "8bcad238a7a3bf57c71e6d612f3238d0",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "citizen_caw rates.dta",
+              "originalFileSize": 29583,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dbf-4a77e0ed0403",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Citizen survey",
+            "label": "citizen_caw rates.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:OCv8errzR/ahAmcefFCEAA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "3032515f66e94fc42e12ac4bfc8a7b8d"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Citizen survey",
+              "fileAccessRequest": false,
+              "filename": "citizen_full data.tab",
+              "filesize": 981831,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300263,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "3032515f66e94fc42e12ac4bfc8a7b8d",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "citizen_full data.dta",
+              "originalFileSize": 712864,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dbb-c5e178672519",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Citizen survey",
+            "label": "citizen_full data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "804af792c423d45811fe92373f2d76fa"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+              "fileAccessRequest": false,
+              "filename": "Citizen survey.docx",
+              "filesize": 96302,
+              "friendlyType": "MS Word",
+              "id": 6300214,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "804af792c423d45811fe92373f2d76fa",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c79-ea2d2112b473",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+            "label": "Citizen survey.docx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "03d09540eb1ccc7adf360243363c7484"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "Citizen survey (long).docx",
+              "filesize": 66735,
+              "friendlyType": "MS Word",
+              "id": 6300278,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "03d09540eb1ccc7adf360243363c7484",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696ccc-fa6c58d24daa",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "Citizen survey (long).docx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "3babc986e82dd1d21b6e8f5df98cbff9"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "Citizen survey (long).pdf",
+              "filesize": 750059,
+              "friendlyType": "Adobe PDF",
+              "id": 6300266,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "3babc986e82dd1d21b6e8f5df98cbff9",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696ca4-fbc813ee8468",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "Citizen survey (long).pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "5d3f17a3731519a999cb24f8b7f7e368"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+              "fileAccessRequest": false,
+              "filename": "Citizen survey.pdf",
+              "filesize": 1087049,
+              "friendlyType": "Adobe PDF",
+              "id": 6300203,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "5d3f17a3731519a999cb24f8b7f7e368",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c8d-aed131072447",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+            "label": "Citizen survey.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "056888d5a22afa80c022a21b81082642"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "Citizen survey (short).docx",
+              "filesize": 68772,
+              "friendlyType": "MS Word",
+              "id": 6300198,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "056888d5a22afa80c022a21b81082642",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cc7-7c9c129ca360",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "Citizen survey (short).docx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "b13141212c67579734778af16c220c08"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "Citizen survey (short).pdf",
+              "filesize": 788350,
+              "friendlyType": "Adobe PDF",
+              "id": 6300228,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "b13141212c67579734778af16c220c08",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cea-5b2d350c247c",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "Citizen survey (short).pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Codebook"
+            ],
+            "dataFile": {
+              "categories": [
+                "Codebook"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "4f7b0e89dd921fc5845c85dd3d30a0d3"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package",
+              "fileAccessRequest": false,
+              "filename": "codebook.xlsx",
+              "filesize": 18066,
+              "friendlyType": "MS Excel Spreadsheet",
+              "id": 6300322,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "4f7b0e89dd921fc5845c85dd3d30a0d3",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180de3c5d90-c5de2037f1e6",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package",
+            "label": "codebook.xlsx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "5217c575468f2123c2b7b3e02b8f7bed"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+              "fileAccessRequest": false,
+              "filename": "Figure1.do",
+              "filesize": 1234,
+              "friendlyType": "Stata Syntax",
+              "id": 6300254,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "5217c575468f2123c2b7b3e02b8f7bed",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d8c-9520e5f6ed5b",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+            "label": "Figure1.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "42358433b73914be5316a129645de17f"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+              "fileAccessRequest": false,
+              "filename": "Figure1.pdf",
+              "filesize": 33736,
+              "friendlyType": "Adobe PDF",
+              "id": 6300194,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "42358433b73914be5316a129645de17f",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e64-d2a58037610b",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+            "label": "Figure1.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7b7198ca8bfaede29ffbf25f9c261854"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+              "fileAccessRequest": false,
+              "filename": "Figure2.do",
+              "filesize": 1542,
+              "friendlyType": "Stata Syntax",
+              "id": 6300229,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "7b7198ca8bfaede29ffbf25f9c261854",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d97-c1a66569a675",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+            "label": "Figure2.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "19ff5875afb80680350fc3608332439c"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+              "fileAccessRequest": false,
+              "filename": "Figure2.pdf",
+              "filesize": 38899,
+              "friendlyType": "Adobe PDF",
+              "id": 6300225,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "19ff5875afb80680350fc3608332439c",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e67-06b45511d8ad",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+            "label": "Figure2.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "16abd0a0297d56de93ff3ef46f8fbc6a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+              "fileAccessRequest": false,
+              "filename": "Figure3.do",
+              "filesize": 2064,
+              "friendlyType": "Stata Syntax",
+              "id": 6300264,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "16abd0a0297d56de93ff3ef46f8fbc6a",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d9c-7a03ab66fe9b",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+            "label": "Figure3.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "df8c04c6e1fc6cfa9d367d1039669c20"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+              "fileAccessRequest": false,
+              "filename": "Figure3.pdf",
+              "filesize": 45380,
+              "friendlyType": "Adobe PDF",
+              "id": 6300279,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "df8c04c6e1fc6cfa9d367d1039669c20",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e6b-bf39ca692a9b",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+            "label": "Figure3.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "290a590fb45bb1593a0dd5c1cf5a7842"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+              "fileAccessRequest": false,
+              "filename": "Figure4.do",
+              "filesize": 4155,
+              "friendlyType": "Stata Syntax",
+              "id": 6300271,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "290a590fb45bb1593a0dd5c1cf5a7842",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d81-16b27c7240c1",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+            "label": "Figure4.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "d6ec0da7d269b442ff47ddee6639b55f"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+              "fileAccessRequest": false,
+              "filename": "Figure4.pdf",
+              "filesize": 46165,
+              "friendlyType": "Adobe PDF",
+              "id": 6300252,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "d6ec0da7d269b442ff47ddee6639b55f",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e6e-653216aa361c",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Figures",
+            "label": "Figure4.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "3071c7a27939bd7a5ab3cd78d431a607"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts",
+              "fileAccessRequest": false,
+              "filename": "Heterogeneity interactions.do",
+              "filesize": 459,
+              "friendlyType": "Stata Syntax",
+              "id": 6300201,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "3071c7a27939bd7a5ab3cd78d431a607",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c57-ef57b661ad46",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts",
+            "label": "Heterogeneity interactions.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4a6f74aabe0b99ef67d580bd229cf6ad"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package",
+              "fileAccessRequest": false,
+              "filename": "Master.do",
+              "filesize": 1758,
+              "friendlyType": "Stata Syntax",
+              "id": 6300231,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "4a6f74aabe0b99ef67d580bd229cf6ad",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c45-5a281bd605dd",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package",
+            "label": "Master.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:kCOhuQEFeVAWfRor/x/hIg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "f18deeabcc589a662330af9087132bee"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Police survey",
+              "fileAccessRequest": false,
+              "filename": "police_baseline data.tab",
+              "filesize": 242363,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300210,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f18deeabcc589a662330af9087132bee",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "police_baseline data.dta",
+              "originalFileSize": 198864,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dc5-4441880a005c",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Police survey",
+            "label": "police_baseline data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:+26a7F/eZTyzAbrh1zXfBQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "6c76f60047160f3a7f2f07c41cb53840"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Police survey",
+              "fileAccessRequest": false,
+              "filename": "police_full data.tab",
+              "filesize": 351803,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300211,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "6c76f60047160f3a7f2f07c41cb53840",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "police_full data.dta",
+              "originalFileSize": 289219,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dc2-a60cd48ed02a",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Police survey",
+            "label": "police_full data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "532b9b04bde7ec30c8c46250d5f594a9"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+              "fileAccessRequest": false,
+              "filename": "Police officer survey.docx",
+              "filesize": 79485,
+              "friendlyType": "MS Word",
+              "id": 6300207,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "532b9b04bde7ec30c8c46250d5f594a9",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c73-cc4689c57233",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+            "label": "Police officer survey.docx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "f7cf71d33fb502e756e69f8a0b9db31a"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "Police officer survey.docx",
+              "filesize": 87391,
+              "friendlyType": "MS Word",
+              "id": 6300209,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f7cf71d33fb502e756e69f8a0b9db31a",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cc1-81d5135493c5",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "Police officer survey.docx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "5044fd840ea8bfc44b9f9f83f9704793"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+              "fileAccessRequest": false,
+              "filename": "Police officer survey.pdf",
+              "filesize": 989866,
+              "friendlyType": "Adobe PDF",
+              "id": 6300257,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "5044fd840ea8bfc44b9f9f83f9704793",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c6a-bb21d181c18a",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Baseline",
+            "label": "Police officer survey.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "0eaa70b75a697c76d515b5f940f2be2e"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "Police officer survey.pdf",
+              "filesize": 1013867,
+              "friendlyType": "Adobe PDF",
+              "id": 6300258,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "0eaa70b75a697c76d515b5f940f2be2e",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cb8-25cb54ed2d5a",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "Police officer survey.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:VHZ/Vh+Ptl6vHWOe+fqZyw==",
+              "checksum": {
+                "type": "MD5",
+                "value": "514e37c2138e56beab022ad85675914b"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/Police survey",
+              "fileAccessRequest": false,
+              "filename": "police_station personnel data.tab",
+              "filesize": 39692,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300217,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "514e37c2138e56beab022ad85675914b",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "police_station personnel data.dta",
+              "originalFileSize": 60667,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dc7-c6f4419a8da8",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/Police survey",
+            "label": "police_station personnel data.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:lvra0Th5i/SfFCT1i4zYZQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "a06029f326d3d4a10b5eb74452c38334"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2025-02-28",
+              "directoryLabel": "MPP Science Replication Package/Data",
+              "fileAccessRequest": false,
+              "filename": "Randomization and heterogeneity.tab",
+              "filesize": 16262,
+              "friendlyType": "Tab-Delimited",
+              "id": 10921699,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "a06029f326d3d4a10b5eb74452c38334",
+              "originalFileFormat": "text/tsv",
+              "originalFileName": "Randomization and heterogeneity.tab",
+              "originalFileSize": 15363,
+              "originalFormatLabel": "Tab-Separated Values",
+              "persistentId": "",
+              "previousDataFileId": 6300323,
+              "publicationDate": "2025-02-28",
+              "rootDataFileId": 6300323,
+              "storageIdentifier": "s3://dvn-cloud:1954e1e2908-23297a4cbe7a",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data",
+            "label": "Randomization and heterogeneity.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Documentation"
+            ],
+            "dataFile": {
+              "categories": [
+                "Documentation"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "125e2343ee36744c5a579798cc3d2b3d"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package",
+              "fileAccessRequest": false,
+              "filename": "ReadMe.pdf",
+              "filesize": 178482,
+              "friendlyType": "Adobe PDF",
+              "id": 6300213,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "125e2343ee36744c5a579798cc3d2b3d",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c4f-0302581b7ed0",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package",
+            "label": "ReadMe.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7e52056188e5603e46dd3cb467a4633f"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "supplement analysis_job satisfaction.do",
+              "filesize": 6965,
+              "friendlyType": "Stata Syntax",
+              "id": 6300234,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "7e52056188e5603e46dd3cb467a4633f",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d71-c33af752f6d4",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "supplement analysis_job satisfaction.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "09a5988f973da8a5dacf9a79250a179d"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "supplement analysis_SHO gender.do",
+              "filesize": 2649,
+              "friendlyType": "Stata Syntax",
+              "id": 6300256,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "09a5988f973da8a5dacf9a79250a179d",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d2c-b7bdd0197b5e",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "supplement analysis_SHO gender.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7b62f89ee576a5814154b23718c0fbac"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+              "fileAccessRequest": false,
+              "filename": "Table1.do",
+              "filesize": 2326,
+              "friendlyType": "Stata Syntax",
+              "id": 6300246,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "7b62f89ee576a5814154b23718c0fbac",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d87-b5a88c34bb42",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+            "label": "Table1.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7ef14dd636431a941517c67b2e3fa5a1"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Tables",
+              "fileAccessRequest": false,
+              "filename": "Table1.tex",
+              "filesize": 3397,
+              "friendlyType": "LaTeX",
+              "id": 6300239,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "7ef14dd636431a941517c67b2e3fa5a1",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e59-24f9200fd2a2",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Tables",
+            "label": "Table1.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4059906e744a8aa93d5a11d6b9eaf585"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+              "fileAccessRequest": false,
+              "filename": "Table2.do",
+              "filesize": 2410,
+              "friendlyType": "Stata Syntax",
+              "id": 6300237,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "4059906e744a8aa93d5a11d6b9eaf585",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d91-aa7578d79af6",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Main_paper",
+            "label": "Table2.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f4e8eb27e2120f076c99041f506cd44c"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Tables",
+              "fileAccessRequest": false,
+              "filename": "Table2.tex",
+              "filesize": 1999,
+              "friendlyType": "LaTeX",
+              "id": 6300268,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f4e8eb27e2120f076c99041f506cd44c",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e5e-346da35eec6b",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Main_paper/Tables",
+            "label": "Table2.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a4bdf7afdde3613ba7de03542c763645"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS10.do",
+              "filesize": 2668,
+              "friendlyType": "Stata Syntax",
+              "id": 6300261,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "a4bdf7afdde3613ba7de03542c763645",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d36-1de23209c7a4",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS10.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "d4d2e3b1f3552e2e1766c9b94bdd5666"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS10_panelA.tex",
+              "filesize": 1392,
+              "friendlyType": "LaTeX",
+              "id": 6300212,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "d4d2e3b1f3552e2e1766c9b94bdd5666",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e14-f4b5dadea219",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS10_panelA.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8d616e25ece1837199bdae17b67a4e72"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS10_panelB.tex",
+              "filesize": 1806,
+              "friendlyType": "LaTeX",
+              "id": 6300227,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "8d616e25ece1837199bdae17b67a4e72",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e09-71fcb0324425",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS10_panelB.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "6e231c4948d86ad6db2d2f95ee3b561d"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS11.do",
+              "filesize": 2167,
+              "friendlyType": "Stata Syntax",
+              "id": 6300206,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "6e231c4948d86ad6db2d2f95ee3b561d",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d66-fe1f80493e2e",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS11.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4ef59efe9617cf119d8c8d54e1433f72"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS11.tex",
+              "filesize": 1267,
+              "friendlyType": "LaTeX",
+              "id": 6300273,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "4ef59efe9617cf119d8c8d54e1433f72",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e29-86b4bc677952",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS11.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "c1f1e81daaba8bb3de02aa69121123be"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS12.do",
+              "filesize": 2600,
+              "friendlyType": "Stata Syntax",
+              "id": 6300244,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "c1f1e81daaba8bb3de02aa69121123be",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d0c-431163910a78",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS12.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "2b645a20933fb4ae9f869cd80afc7a4d"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS12.tex",
+              "filesize": 2565,
+              "friendlyType": "LaTeX",
+              "id": 6300269,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "2b645a20933fb4ae9f869cd80afc7a4d",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e39-4fb5b4707922",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS12.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f7868919c6a68d1b6f2547f10b9d51e5"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS13.do",
+              "filesize": 3461,
+              "friendlyType": "Stata Syntax",
+              "id": 6300204,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f7868919c6a68d1b6f2547f10b9d51e5",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d16-7b61da3ea5b4",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS13.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "62c4c87ad9614df9957580c4b00dc348"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS13.tex",
+              "filesize": 2601,
+              "friendlyType": "LaTeX",
+              "id": 6300190,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "62c4c87ad9614df9957580c4b00dc348",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e33-0ba58df67831",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS13.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "fa436fe93437169043939056689a4d13"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS14.do",
+              "filesize": 3017,
+              "friendlyType": "Stata Syntax",
+              "id": 6300272,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "fa436fe93437169043939056689a4d13",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d41-f1d4336f2adf",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS14.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b6a53489dade2bf90159d3903348da3c"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS14.tex",
+              "filesize": 3445,
+              "friendlyType": "LaTeX",
+              "id": 6300193,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "b6a53489dade2bf90159d3903348da3c",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e54-e3bf1fecb619",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS14.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "72801c30b296777810789b11d900e83a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS15.do",
+              "filesize": 3491,
+              "friendlyType": "Stata Syntax",
+              "id": 6300255,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "72801c30b296777810789b11d900e83a",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d51-e2186d3d832a",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS15.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e142fcbff3f8895ef2ba5c94b94ca6f2"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS15.tex",
+              "filesize": 3628,
+              "friendlyType": "LaTeX",
+              "id": 6300223,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "e142fcbff3f8895ef2ba5c94b94ca6f2",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e4e-5c84e949e4fe",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS15.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "3af5b5ed85b9f7946d9ff497a2b39d93"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS16.do",
+              "filesize": 2707,
+              "friendlyType": "Stata Syntax",
+              "id": 6300224,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "3af5b5ed85b9f7946d9ff497a2b39d93",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cfb-1d3d5f2c0400",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS16.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e7403289cd2cff45e37e30cc36addbd6"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS16.tex",
+              "filesize": 1488,
+              "friendlyType": "LaTeX",
+              "id": 6300226,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "e7403289cd2cff45e37e30cc36addbd6",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e43-e8576b7fc52e",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS16.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a3f9d52f4faca5dc09b467afcc3b2f0a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS17.do",
+              "filesize": 3314,
+              "friendlyType": "Stata Syntax",
+              "id": 6300251,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "a3f9d52f4faca5dc09b467afcc3b2f0a",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d21-f00184a85626",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS17.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f92fd9473abbc3419dd78d273d40ce76"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS17.tex",
+              "filesize": 2709,
+              "friendlyType": "LaTeX",
+              "id": 6300197,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f92fd9473abbc3419dd78d273d40ce76",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e49-82e4776358b6",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS17.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "9ad00c9c3f685affb2f160c1fd90ef7c"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS18.do",
+              "filesize": 2678,
+              "friendlyType": "Stata Syntax",
+              "id": 6300222,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "9ad00c9c3f685affb2f160c1fd90ef7c",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cf1-382ce0924b16",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS18.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "348e84621a8e3bdae3bdcc27160a2a35"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS18.tex",
+              "filesize": 803,
+              "friendlyType": "LaTeX",
+              "id": 6300260,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "348e84621a8e3bdae3bdcc27160a2a35",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dd3-f16449740aea",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS18.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "65ea365a26d5a9401dddfe4f6bf4d9cb"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS19.do",
+              "filesize": 4556,
+              "friendlyType": "Stata Syntax",
+              "id": 6300265,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "65ea365a26d5a9401dddfe4f6bf4d9cb",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cf6-3a6f487bbfc6",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS19.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "c688186b749810e88d7fffb0e25fd494"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS19.tex",
+              "filesize": 2289,
+              "friendlyType": "LaTeX",
+              "id": 6300219,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "c688186b749810e88d7fffb0e25fd494",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dc8-da30cba9ce20",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS19.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8c26c04de94b4af41ae422c2df1cf2fc"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS1_panelA.tex",
+              "filesize": 3037,
+              "friendlyType": "LaTeX",
+              "id": 6300249,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "8c26c04de94b4af41ae422c2df1cf2fc",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e24-7ed3864e5e8c",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS1_panelA.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b2c221f5927a8759660173c0bdc6a851"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS1_panelB.tex",
+              "filesize": 3037,
+              "friendlyType": "LaTeX",
+              "id": 6300221,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "b2c221f5927a8759660173c0bdc6a851",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e1e-02b507400975",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS1_panelB.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4cddf408c788c59466eb98d23764305a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS20.do",
+              "filesize": 2009,
+              "friendlyType": "Stata Syntax",
+              "id": 6300276,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "4cddf408c788c59466eb98d23764305a",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d46-bd367eb37363",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS20.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e999a41941baee1ea803329fc064b806"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS20.tex",
+              "filesize": 1135,
+              "friendlyType": "LaTeX",
+              "id": 6300280,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "e999a41941baee1ea803329fc064b806",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696df9-03c37c362104",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS20.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "195603527185adc9bf5ffb52d01ed2d9"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS21.do",
+              "filesize": 3320,
+              "friendlyType": "Stata Syntax",
+              "id": 6300262,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "195603527185adc9bf5ffb52d01ed2d9",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d56-c1f0d577a00a",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS21.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "c14e4043005a270cdb38e8aee8a01d68"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS21.tex",
+              "filesize": 2904,
+              "friendlyType": "LaTeX",
+              "id": 6300243,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "c14e4043005a270cdb38e8aee8a01d68",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dfe-fcec2d6b3afb",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS21.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "c478f10df4b3f419fa5bd065e20666a8"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS22.do",
+              "filesize": 3230,
+              "friendlyType": "Stata Syntax",
+              "id": 6300267,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "c478f10df4b3f419fa5bd065e20666a8",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d01-4457b5007145",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS22.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f3c5d4163fe87b46cefb1d45dabd5ac0"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS22.tex",
+              "filesize": 1525,
+              "friendlyType": "LaTeX",
+              "id": 6300232,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f3c5d4163fe87b46cefb1d45dabd5ac0",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696de9-7959ab39a4f1",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS22.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1502d784f221fe018adec73f5a783bcf"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS23.do",
+              "filesize": 1823,
+              "friendlyType": "Stata Syntax",
+              "id": 6300235,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "1502d784f221fe018adec73f5a783bcf",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d26-f29d74426316",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS23.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "3dc7e5ddca09492da5787c20e51e1b9d"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS23.tex",
+              "filesize": 1213,
+              "friendlyType": "LaTeX",
+              "id": 6300233,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "3dc7e5ddca09492da5787c20e51e1b9d",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696de3-dc75057edef1",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS23.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "633997e1fa14125e6356ba4049c1a83a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS24.do",
+              "filesize": 7786,
+              "friendlyType": "Stata Syntax",
+              "id": 6300205,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "633997e1fa14125e6356ba4049c1a83a",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d31-35aebec5cff4",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS24.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "de906ab9cb1ddd7a90ecaf64abdf4148"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS24.tex",
+              "filesize": 4089,
+              "friendlyType": "LaTeX",
+              "id": 6300240,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "de906ab9cb1ddd7a90ecaf64abdf4148",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dce-89f75dd0f10d",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS24.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "bdd715d9e503bf56e864fed4b928c566"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS2.do",
+              "filesize": 3777,
+              "friendlyType": "Stata Syntax",
+              "id": 6300230,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "bdd715d9e503bf56e864fed4b928c566",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d4c-77790e2fec1a",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS2.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "754beb49b9761cf97a9ee065108334ff"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS2_panelA.do",
+              "filesize": 2660,
+              "friendlyType": "Stata Syntax",
+              "id": 6300277,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "754beb49b9761cf97a9ee065108334ff",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d61-0a9a246918a3",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS2_panelA.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "05d0ddc30f3e4f9f741050aa64ae8421"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS2_panelA.tex",
+              "filesize": 1787,
+              "friendlyType": "LaTeX",
+              "id": 6300282,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "05d0ddc30f3e4f9f741050aa64ae8421",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e19-74169c2120d3",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS2_panelA.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "64576dc7b8b228ce0966d1ed09c2bf6f"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS2_panelB.do",
+              "filesize": 1803,
+              "friendlyType": "Stata Syntax",
+              "id": 6300200,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "64576dc7b8b228ce0966d1ed09c2bf6f",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d06-acbccb9a6d95",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS2_panelB.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "d0d5a5133b82b55452f49a976a6a3da1"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS2_panelB.tex",
+              "filesize": 3033,
+              "friendlyType": "LaTeX",
+              "id": 6300274,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "d0d5a5133b82b55452f49a976a6a3da1",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e0e-923bdce549da",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS2_panelB.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "fe6312e89bcf067a727d475354a44aae"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS3.do",
+              "filesize": 2026,
+              "friendlyType": "Stata Syntax",
+              "id": 6300259,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "fe6312e89bcf067a727d475354a44aae",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d5c-7a294d0fa5c7",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS3.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "9f786512cf267146e9fc853a6d9bb2e4"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS3.tex",
+              "filesize": 1767,
+              "friendlyType": "LaTeX",
+              "id": 6300248,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "9f786512cf267146e9fc853a6d9bb2e4",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dd8-c46c5b010fb8",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS3.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "994837c0ce7fbc2b1ca49a9c0f66e5c2"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS4.do",
+              "filesize": 2843,
+              "friendlyType": "Stata Syntax",
+              "id": 6300281,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "994837c0ce7fbc2b1ca49a9c0f66e5c2",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d11-49a6e18565cd",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS4.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "dc973b358c2f916bce4a81218186b5fd"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS4.tex",
+              "filesize": 4826,
+              "friendlyType": "LaTeX",
+              "id": 6300199,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "dc973b358c2f916bce4a81218186b5fd",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dde-270c6ca44891",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS4.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "efc4112218248de038b81e5de116a29e"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS5.do",
+              "filesize": 2160,
+              "friendlyType": "Stata Syntax",
+              "id": 6300241,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "efc4112218248de038b81e5de116a29e",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d1c-b1a766044b97",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS5.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b9a85f12ffb93ae448e0d61d819ae4e0"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS5.tex",
+              "filesize": 2581,
+              "friendlyType": "LaTeX",
+              "id": 6300208,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "b9a85f12ffb93ae448e0d61d819ae4e0",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dee-0b3a366fe385",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS5.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7a333000b032a1e8a60f787e89f26c70"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS6.do",
+              "filesize": 2291,
+              "friendlyType": "Stata Syntax",
+              "id": 6300270,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "7a333000b032a1e8a60f787e89f26c70",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d3c-9106be425fdb",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS6.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "3b12fbb9c35cd537715a6c98c83662d3"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS6.tex",
+              "filesize": 2225,
+              "friendlyType": "LaTeX",
+              "id": 6300218,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "3b12fbb9c35cd537715a6c98c83662d3",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e04-e784ed2b3c1f",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS6.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "0a9f2aeb4ee1943bad3b693990cf852b"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS7.do",
+              "filesize": 1961,
+              "friendlyType": "Stata Syntax",
+              "id": 6300202,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "0a9f2aeb4ee1943bad3b693990cf852b",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d6c-5c092db7abbd",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS7.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "2c1fdb9f7e6543d2b505614756022fad"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS7.tex",
+              "filesize": 2397,
+              "friendlyType": "LaTeX",
+              "id": 6300238,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "2c1fdb9f7e6543d2b505614756022fad",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696df3-3b9275418f9b",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS7.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "6867777b22b76f7ece2817d2c9fc7b87"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS8.do",
+              "filesize": 2221,
+              "friendlyType": "Stata Syntax",
+              "id": 6300196,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "6867777b22b76f7ece2817d2c9fc7b87",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d77-3a57ea004491",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS8.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "bf398851a78de954e5e9436c0324e235"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS8.tex",
+              "filesize": 3350,
+              "friendlyType": "LaTeX",
+              "id": 6300253,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "bf398851a78de954e5e9436c0324e235",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e2e-a97890a7e42e",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS8.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "6fb4710d36740b774cf69e77141e49c2"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+              "fileAccessRequest": false,
+              "filename": "TableS9.do",
+              "filesize": 2693,
+              "friendlyType": "Stata Syntax",
+              "id": 6300215,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "6fb4710d36740b774cf69e77141e49c2",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696d7c-7b1c2697094e",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Scripts/Supplement",
+            "label": "TableS9.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "5bf31e5b6e5b980ae99502803fb6211b"
+              },
+              "contentType": "application/x-tex",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+              "fileAccessRequest": false,
+              "filename": "TableS9.tex",
+              "filesize": 4203,
+              "friendlyType": "LaTeX",
+              "id": 6300192,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "5bf31e5b6e5b980ae99502803fb6211b",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696e3e-fe4b2cab5f04",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Output/Supplement/Tables",
+            "label": "TableS9.tex",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "f7bc94584e4d7929a8657c8f69ac7216"
+              },
+              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "User satisfaction survey.docx",
+              "filesize": 23464,
+              "friendlyType": "MS Word",
+              "id": 6300250,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "f7bc94584e4d7929a8657c8f69ac7216",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696c95-b801180778f1",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "User satisfaction survey.docx",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "categories": [
+              "Surveys"
+            ],
+            "dataFile": {
+              "categories": [
+                "Surveys"
+              ],
+              "checksum": {
+                "type": "MD5",
+                "value": "d16dfb3e37f4861c9d8370f9676c0117"
+              },
+              "contentType": "application/pdf",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+              "fileAccessRequest": false,
+              "filename": "User satisfaction survey.pdf",
+              "filesize": 604423,
+              "friendlyType": "Adobe PDF",
+              "id": 6300275,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "d16dfb3e37f4861c9d8370f9676c0117",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696cda-8d3f069e8008",
+              "tabularData": false
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Survey questionnaires/Endline",
+            "label": "User satisfaction survey.pdf",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:aKokQQKu1sJ3SMiBsDjKaA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "2af38f14bc1a5b42d6e417580952710b"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2022-05-19",
+              "directoryLabel": "MPP Science Replication Package/Data/User survey",
+              "fileAccessRequest": false,
+              "filename": "user survey_endline data.tab",
+              "filesize": 340869,
+              "friendlyType": "Tab-Delimited",
+              "id": 6300236,
+              "lastUpdateTime": "2025-02-28T19:54:07Z",
+              "md5": "2af38f14bc1a5b42d6e417580952710b",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "user survey_endline data.dta",
+              "originalFileSize": 258168,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "",
+              "publicationDate": "2022-05-20",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:180dd696dae-829b2a29f0ed",
+              "tabularData": true
+            },
+            "datasetVersionId": 438282,
+            "directoryLabel": "MPP Science Replication Package/Data/User survey",
+            "label": "user survey_endline data.tab",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "guestbookId": 269,
+        "id": 438282,
+        "internalVersionNumber": 9,
+        "lastUpdateTime": "2025-02-28T19:54:07Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: 'Policing in patriarchy: An experimental evaluation of reforms to improve police responsiveness to women in India'"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Virginia"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Sukhtankar, Sandip"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Virginia"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Kruks-Wisner, Gabrielle"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "University of Oxford"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Mangla, Akshay"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "J-PAL"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "jcavanagh@povertyactionlab.org"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Cavanagh, Jack"
+                    }
+                  },
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "University of Virginia"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "srs8yk@virginia.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Sukhtankar, Sandip"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2022-05-17"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "This package contains replication data for: \"Policing in patriarchy: An experimental evaluation of reforms to improve police responsiveness to women in India\" It contains analysis data from an RCT evaluating the impacts of a police reform, Women’s Help Desks (WHDs), in Madhya Pradesh, India. Specifically, it contains data from five sources, collected between November 2018 and December 2020: i) administrative data on crimes registered by the police; ii) CCTV data from the video feeds of cameras, present in all police stations, focused on the station entrance; iii) A user survey of members of the public who had visited study police stations, asking\nabout their satisfaction with their visit; iv) A police survey, carried out at baseline and endline, of personnel in different roles and ranks in study stations; and v) A survey of citizens, carried out at baseline and endline on perceptions of safety, opinions of and contact with the police, and experiences of crimes. Also included in the package are the survey instruments used in the police, user, and citizen surveys, as well as the Stata code necessary to replicate the tables and figures from the paper and its supplement. For further details on the data or how to run the code, please see the readme file. \n\nThe abstract of the associated paper is as follows: \nGender-targeted police reforms are frequently proposed to tackle the global problem\nof rising yet under-reported gender-based violence (GBV) – but with mixed and often disappointing results. We explore this issue in India, a country with alarming rates of GBV and limited police capacity, by studying the impact of Women’s Help Desks (WHDs): dedicated spaces for women in local police stations, staffed by trained officers. Drawing on the largest randomized controlled trial of a police reform to date (180 police stations serving 23.4 million people), we find that officers in stations with WHDs are more likely to register cases of GBV, particularly where female officers run the desks. This suggests that, even in resource constrained and patriarchal environments, police responsiveness can be improved by focusing and mainstreaming attention to women’s cases and by greater gender representation within the police."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Law",
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Crime and law enforcement"
+                    },
+                    "keywordVocabulary": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabulary",
+                      "value": "CESSDA"
+                    },
+                    "keywordVocabularyURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabularyURI",
+                      "value": "https://vocabularies.cessda.eu/vocabulary/TopicClassification"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Gender and gender roles"
+                    },
+                    "keywordVocabulary": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabulary",
+                      "value": "CESSDA"
+                    },
+                    "keywordVocabularyURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordVocabularyURI",
+                      "value": "https://vocabularies.cessda.eu/vocabulary/TopicClassification"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "topicClassification",
+                "value": [
+                  {
+                    "topicClassValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "topicClassValue",
+                      "value": "Crime and law enforcement"
+                    },
+                    "topicClassVocab": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "topicClassVocab",
+                      "value": "CESSDA"
+                    },
+                    "topicClassVocabURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "topicClassVocabURI",
+                      "value": "https://vocabularies.cessda.eu/vocabulary/TopicClassification"
+                    }
+                  },
+                  {
+                    "topicClassValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "topicClassValue",
+                      "value": "Gender and gender roles"
+                    },
+                    "topicClassVocab": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "topicClassVocab",
+                      "value": "CESSDA"
+                    },
+                    "topicClassVocabURI": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "topicClassVocabURI",
+                      "value": "https://vocabularies.cessda.eu/vocabulary/TopicClassification"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "grantNumber",
+                "value": [
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "Crime and Violence Initiative (CVI) of the Jameel Poverty Action Lab (JPAL)"
+                    }
+                  },
+                  {
+                    "grantNumberAgency": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "grantNumberAgency",
+                      "value": "The World Bank’s Sexual Violence Research Initiative (SVRI)"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Cavanagh, Jack"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2022-05-17"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "timePeriodCovered",
+                "value": [
+                  {
+                    "timePeriodCoveredEnd": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "timePeriodCoveredEnd",
+                      "value": "2020-12-31"
+                    },
+                    "timePeriodCoveredStart": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "timePeriodCoveredStart",
+                      "value": "2018-11-01"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "kindOfData",
+                "value": [
+                  "Sample survey data",
+                  "Administrative records data",
+                  "Observation data/ratings"
+                ]
+              }
+            ],
+            "name": "citation"
+          },
+          "geospatial": {
+            "displayName": "Geospatial Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "geographicCoverage",
+                "value": [
+                  {
+                    "country": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "country",
+                      "value": "India"
+                    },
+                    "state": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "state",
+                      "value": "Madhya Pradesh"
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "geospatial"
+          },
+          "socialscience": {
+            "displayName": "Social Science and Humanities Metadata",
+            "fields": [
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "unitOfAnalysis",
+                "value": [
+                  "Individual",
+                  "Individual: Public servant",
+                  "Event/process"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "universe",
+                "value": [
+                  "Twelve districts across the state were purposively selected, automatically including those home to the state’s four largest cities and remainder being selected to be representative of geography, demographics, and socioeconomic conditions across the state. We excluded specialized police stations (state or district headquarters, cyber cells, or all women stations), as well as outposts (smaller than a station). We also excluded stations that are remote, servicing entirely rural populations, since the partner did not consider traffic to those stations high enough to justify a continuously staffed desk. The resulting sample of 180 police stations should thus be viewed as being representative of primarily (although not exclusively) urban and large police stations."
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "timeMethod",
+                "value": "Panel"
+              },
+              {
+                "multiple": true,
+                "typeClass": "primitive",
+                "typeName": "collectionMode",
+                "value": [
+                  "Observation, Field: Non-participant",
+                  "Interview: Face-to-face: CAPI/CAMI",
+                  "Interview: Telephone: CATI"
+                ]
+              }
+            ],
+            "name": "socialscience"
+          }
+        },
+        "publicationDate": "2022-05-17",
+        "releaseTime": "2025-02-28T19:54:07Z",
+        "storageIdentifier": "s3://10.7910/DVN/R75XVZ",
+        "versionMinorNumber": 0,
+        "versionNumber": 3,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/R75XVZ",
+      "protocol": "doi",
+      "publicationDate": "2022-05-17",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/R75XVZ"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "50a5fd440ee9940f53b407ea0022d313d504e87c26a89bda0364a3d06e1079fc"
+}

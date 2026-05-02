@@ -1,0 +1,45 @@
+{
+  "artifact_id": "source_artifact_4006eab1406fbd70",
+  "byte_size": 4465,
+  "columns": [
+    "Variable name",
+    "Description of variable",
+    "Type"
+  ],
+  "estimated_data_rows": 27,
+  "file_name": "RP_CB Final Analysis - Paper level data dictionary.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/raw_corpus_rpcb/source_artifact_4006eab1406fbd70__RP_CB_Final_Analysis_-_Paper_level_data_dictionary.csv",
+  "parent_corpus_database_id": "raw_corpus:rpcb",
+  "preview_rows": [
+    {
+      "Description of variable": "Abritary number starting at 1 for each original paper and increasing by 1 for each Paper. Same as Paper level and Experiment level.",
+      "Type": "numeric",
+      "Variable name": "Paper #"
+    },
+    {
+      "Description of variable": "Title of original paper.",
+      "Type": "string",
+      "Variable name": "Original paper title"
+    },
+    {
+      "Description of variable": "Year original paper was published.",
+      "Type": "categorical: 2010, 2011, 2012",
+      "Variable name": "Year"
+    },
+    {
+      "Description of variable": "Name of journal that published original paper.",
+      "Type": "categorical: Nature, Nature Cell Biology, Nature Medicine, Nature Genetics, Cell, Cancer Cell, Science, Science Translational Medicine, PNAS, Genome Research",
+      "Variable name": "Original paper journal"
+    },
+    {
+      "Description of variable": "Number of bibliographic authors on the original paper.",
+      "Type": "numeric",
+      "Variable name": "Number of original authors"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:35:39",
+  "sha256": "96017508043e3203904da3144bb99273a37d02710b3833dc22cee71dc8753613"
+}

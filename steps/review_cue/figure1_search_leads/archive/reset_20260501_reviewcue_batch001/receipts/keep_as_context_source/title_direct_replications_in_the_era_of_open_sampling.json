@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "osf:x2gfc",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:direct_replications_in_the_era_of_open_sampling",
+  "next_action": "keep_as_context_only_unless_files_expose_a_pair_table",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "OSF metadata describes a discussion/methods project about directness in open sampling, not a row-level replication-pair corpus.",
+  "review_id": "review_figure1_search_leads_e805304b48a0",
+  "route_payload": {},
+  "sources_checked": [
+    "https://api.osf.io/v2/nodes/x2gfc/"
+  ],
+  "user_gpt_prompt_request": ""
+}

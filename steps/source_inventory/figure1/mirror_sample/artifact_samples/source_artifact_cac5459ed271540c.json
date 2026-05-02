@@ -1,0 +1,286 @@
+{
+  "artifact_id": "source_artifact_cac5459ed271540c",
+  "byte_size": 8588,
+  "file_name": "metadata.json",
+  "file_type": "json",
+  "keys": [
+    "created",
+    "modified",
+    "id",
+    "conceptrecid",
+    "doi",
+    "conceptdoi",
+    "doi_url",
+    "metadata",
+    "title",
+    "links",
+    "updated",
+    "recid",
+    "revision",
+    "files",
+    "swh",
+    "owners",
+    "status",
+    "stats",
+    "state",
+    "submitted"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/zenodo/3942437/metadata.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "conceptdoi": "10.5281/zenodo.3942436",
+    "conceptrecid": "3942436",
+    "created": "2020-08-19T21:05:40.575220+00:00",
+    "doi": "10.5281/zenodo.3942437",
+    "doi_url": "https://doi.org/10.5281/zenodo.3942437",
+    "files": [
+      {
+        "checksum": "md5:57940e53beacbeafb891591d313c3d2e",
+        "id": "82b0a578-0ff1-4a2b-a3e0-5580c741212e",
+        "key": "muslim-attitudes.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/muslim-attitudes.csv/content"
+        },
+        "size": 2352
+      },
+      {
+        "checksum": "md5:05260f280c3463022e919280827853e8",
+        "id": "491599f7-47fd-4dc8-b26e-d7765ba8bc65",
+        "key": "main-analyses.R",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/main-analyses.R/content"
+        },
+        "size": 37028
+      },
+      {
+        "checksum": "md5:5e8c96aa1de7a26b0906319b38c7cb0d",
+        "id": "b693cdb5-69da-4b1a-ac8c-b7a4eb0fb016",
+        "key": "match-analysis.R",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/match-analysis.R/content"
+        },
+        "size": 1677
+      },
+      {
+        "checksum": "md5:cd0ba8db4e2fad9ef590afc275c4a88b",
+        "id": "d38a4bc4-1be7-48a9-ad92-85496e2b12dd",
+        "key": "fans-attitudes.R",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/fans-attitudes.R/content"
+        },
+        "size": 2161
+      },
+      {
+        "checksum": "md5:00862df3465217b1498d9d8792a187cf",
+        "id": "16d5d516-8820-4a85-8c10-fb609a3401a7",
+        "key": "waves-1-and-2-comparison.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/waves-1-and-2-comparison.csv/content"
+        },
+        "size": 38168
+      },
+      {
+        "checksum": "md5:ab3d1a736866ad02df9d1d11e5cb2c33",
+        "id": "5534d4fc-211e-4277-b6c9-b1ff63878c8f",
+        "key": "waves-1-and-2.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/waves-1-and-2.csv/content"
+        },
+        "size": 29955
+      },
+      {
+        "checksum": "md5:ee34f2d2dea6f302ea32b9d05442c696",
+        "id": "bcf8badf-037d-4640-a3b2-dfa1917d8c96",
+        "key": "match-data.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/match-data.csv/content"
+        },
+        "size": 10930
+      },
+      {
+        "checksum": "md5:0c4e7bb3ee7777565bafdc039e407f59",
+        "id": "d19e6161-77b1-4c86-91b7-f9f10227ac63",
+        "key": "mosul-outcome-wave-2-comparison.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/mosul-outcome-wave-2-comparison.csv/content"
+        },
+        "size": 10435
+      },
+      {
+        "checksum": "md5:74fb8da0cce10456546629ebbda464a5",
+        "id": "72147c0f-9ee7-4827-9dc3-850953e6951f",
+        "key": "mosul-outcome-wave-2.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/mosul-outcome-wave-2.csv/content"
+        },
+        "size": 4493
+      },
+      {
+        "checksum": "md5:fae806bd89779eec6bdb80e9e2915835",
+        "id": "ed279807-4076-4657-8a08-7f57f08f86c5",
+        "key": "wave-2.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/wave-2.csv/content"
+        },
+        "size": 56764
+      },
+      {
+        "checksum": "md5:0be983f1397ef92a387693ee2e935631",
+        "id": "fc3d1c7b-820d-4bd0-9a67-eb787c08b334",
+        "key": "fans-after-intervention.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/fans-after-intervention.csv/content"
+        },
+        "size": 3181
+      },
+      {
+        "checksum": "md5:616100bb602ba4fe70c577306796f3ac",
+        "id": "a199d75a-b2ee-47a5-a656-6c281a429c68",
+        "key": "mousa-science-codebook.pdf",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/mousa-science-codebook.pdf/content"
+        },
+        "size": 121303
+      },
+      {
+        "checksum": "md5:4c7cbe28c61c2196f2469e8e03a49f92",
+        "id": "aa266891-8f08-4809-8fd1-faa0727c4433",
+        "key": "fans-during-intervention.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/fans-during-intervention.csv/content"
+        },
+        "size": 3012
+      },
+      {
+        "checksum": "md5:f2a55f4e612c1e7f573da1ef3410929b",
+        "id": "67470477-c7dc-4f66-b3c5-43e1795433ea",
+        "key": "muslim-attitudes.R",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/muslim-attitudes.R/content"
+        },
+        "size": 3088
+      },
+      {
+        "checksum": "md5:c8dab78fb8035294f8694b754b0ec4fd",
+        "id": "40c37182-18a0-4a28-9a7a-2401b6ab7923",
+        "key": "wave-2-comparison.csv",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/wave-2-comparison.csv/content"
+        },
+        "size": 62948
+      },
+      {
+        "checksum": "md5:e761b964df091399373e79eaf76d7aee",
+        "id": "dd9b6f9a-ccab-49ac-aedf-43fc515c2ba1",
+        "key": "comparison-group-analysis.R",
+        "links": {
+          "self": "https://zenodo.org/api/records/3942437/files/comparison-group-analysis.R/content"
+        },
+        "size": 13354
+      }
+    ],
+    "id": 3942437,
+    "links": {
+      "access": "https://zenodo.org/api/records/3942437/access",
+      "access_grants": "https://zenodo.org/api/records/3942437/access/grants",
+      "access_links": "https://zenodo.org/api/records/3942437/access/links",
+      "access_request": "https://zenodo.org/api/records/3942437/access/request",
+      "access_users": "https://zenodo.org/api/records/3942437/access/users",
+      "archive": "https://zenodo.org/api/records/3942437/files-archive",
+      "archive_media": "https://zenodo.org/api/records/3942437/media-files-archive",
+      "communities": "https://zenodo.org/api/records/3942437/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/3942437/communities-suggestions",
+      "doi": "https://doi.org/10.5281/zenodo.3942437",
+      "draft": "https://zenodo.org/api/records/3942437/draft",
+      "file_modification": "https://zenodo.org/api/records/3942437/file-modification",
+      "files": "https://zenodo.org/api/records/3942437/files",
+      "latest": "https://zenodo.org/api/records/3942437/versions/latest",
+      "latest_html": "https://zenodo.org/records/3942437/latest",
+      "media_files": "https://zenodo.org/api/records/3942437/media-files",
+      "parent": "https://zenodo.org/api/records/3942436",
+      "parent_doi": "https://doi.org/10.5281/zenodo.3942436",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3942436",
+      "parent_html": "https://zenodo.org/records/3942436",
+      "preview_html": "https://zenodo.org/records/3942437?preview=1",
+      "quota_increase": "https://zenodo.org/api/records/3942437/quota-increase",
+      "request_deletion": "https://zenodo.org/api/records/3942437/request-deletion",
+      "requests": "https://zenodo.org/api/records/3942437/requests",
+      "reserve_doi": "https://zenodo.org/api/records/3942437/draft/pids/doi",
+      "self": "https://zenodo.org/api/records/3942437",
+      "self_doi": "https://doi.org/10.5281/zenodo.3942437",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3942437",
+      "self_html": "https://zenodo.org/records/3942437",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3942437/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3942437/sequence/default",
+      "thumbnails": {
+        "10": "https://zenodo.org/api/iiif/record:3942437:mousa-science-codebook.pdf/full/%5E10,/0/default.jpg",
+        "100": "https://zenodo.org/api/iiif/record:3942437:mousa-science-codebook.pdf/full/%5E100,/0/default.jpg",
+        "1200": "https://zenodo.org/api/iiif/record:3942437:mousa-science-codebook.pdf/full/%5E1200,/0/default.jpg",
+        "250": "https://zenodo.org/api/iiif/record:3942437:mousa-science-codebook.pdf/full/%5E250,/0/default.jpg",
+        "50": "https://zenodo.org/api/iiif/record:3942437:mousa-science-codebook.pdf/full/%5E50,/0/default.jpg",
+        "750": "https://zenodo.org/api/iiif/record:3942437:mousa-science-codebook.pdf/full/%5E750,/0/default.jpg"
+      },
+      "versions": "https://zenodo.org/api/records/3942437/versions"
+    },
+    "metadata": {
+      "access_right": "open",
+      "creators": [
+        {
+          "affiliation": null,
+          "name": "Salma Mousa",
+          "orcid": "0000-0002-1482-4276"
+        }
+      ],
+      "description": "<p>Replication files for main analyses, and supplementary analyses (comparison group, Muslim player attitudes, fan attitudes, match-level data) for:</p>\n\n<p><strong>Mousa, Salma. </strong>&quot;<a href=\"https://science.sciencemag.org/content/369/6505/866\">Building social cohesion between Christians and Muslims through soccer in Post-ISIS Iraq</a>.<strong>&quot; <em>Science</em>. </strong>Vol. 369, Issue 6505, pp. 866-870. DOI: 10.1126/science.abb3153</p>\n\n<p>Each R file describes the needed datasets at the top of the script.&nbsp;</p>",
+      "doi": "10.5281/zenodo.3942437",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "publication_date": "2020-08-19",
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "3942436"
+            }
+          }
+        ]
+      },
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "title": "Replication files for \"Building social cohesion between Christians and Muslims through soccer in post-ISIS Iraq\""
+    },
+    "modified": "2024-07-19T18:14:33.684744+00:00",
+    "owners": [
+      {
+        "id": "112500"
+      }
+    ],
+    "recid": "3942437",
+    "revision": 6,
+    "state": "done",
+    "stats": {
+      "downloads": 3683,
+      "unique_downloads": 1881,
+      "unique_views": 1017,
+      "version_downloads": 3642,
+      "version_unique_downloads": 1873,
+      "version_unique_views": 1011,
+      "version_views": 1267,
+      "views": 1274
+    },
+    "status": "published",
+    "submitted": true,
+    "swh": {},
+    "title": "Replication files for \"Building social cohesion between Christians and Muslims through soccer in post-ISIS Iraq\"",
+    "updated": "2024-07-19T18:14:33.684744+00:00"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:44",
+  "sha256": "919b969d385fefb833f06c0252746821d31c9ae717738527603f75a371725e15"
+}

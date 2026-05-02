@@ -1,0 +1,69 @@
+{
+  "artifact_id": "source_artifact_2484a8e13eafc140",
+  "byte_size": 4417,
+  "columns": [
+    "LLM",
+    "Category",
+    "Group",
+    "Rate",
+    "N",
+    "CI_Lower",
+    "CI_Upper"
+  ],
+  "estimated_data_rows": 86,
+  "file_name": "43588_2025_840_MOESM4_ESM.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition/biblio_search_crossref_480bdd504b25/source_artifact_2484a8e13eafc140__43588_2025_840_MOESM4_ESM.csv",
+  "parent_corpus_database_id": "biblio_search_crossref_480bdd504b25",
+  "preview_rows": [
+    {
+      "CI_Lower": 68.411,
+      "CI_Upper": 76.583,
+      "Category": "Overall",
+      "Group": "Overall",
+      "LLM": "GPT",
+      "N": 454,
+      "Rate": 72.687
+    },
+    {
+      "CI_Lower": 28.883,
+      "CI_Upper": 60.546,
+      "Category": "Journal",
+      "Group": "AMJ",
+      "LLM": "GPT",
+      "N": 34,
+      "Rate": 44.118
+    },
+    {
+      "CI_Lower": 56.458,
+      "CI_Upper": 76.941,
+      "Category": "Journal",
+      "Group": "JAP",
+      "LLM": "GPT",
+      "N": 77,
+      "Rate": 67.532
+    },
+    {
+      "CI_Lower": 70.287,
+      "CI_Upper": 86.237,
+      "Category": "Journal",
+      "Group": "JEP",
+      "LLM": "GPT",
+      "N": 97,
+      "Rate": 79.381
+    },
+    {
+      "CI_Lower": 71.942,
+      "CI_Upper": 84.476,
+      "Category": "Journal",
+      "Group": "JPSP",
+      "LLM": "GPT",
+      "N": 161,
+      "Rate": 78.882
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T22:12:16",
+  "sha256": "5006fe3dee5e08a35c6baba646924151bb397c3cda5246549dc547454d9bc5df"
+}

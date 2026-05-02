@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-05-01T19:34:37",
+  "records": [
+    {
+      "candidate_artifact_or_paper_notes_json": "[]",
+      "cluster_id": "cluster_original_effects_srull_9b8f8fe2c740",
+      "confidence": "high",
+      "created_at": "2026-05-01T19:34:37",
+      "decision": "route_cluster_to_result_table_worklist",
+      "lead_level_note_count": "1",
+      "next_action": "Route original_effects_srull.csv and the Srull/Wyer Rmd to the result-table worklist under the RRR/McCarthy 2018 parent; reject generated RStudio notebook cache CSVs as source-family evidence and split the Hagger metaanalysis hit if reviewed separately.",
+      "parent_corpus_database_id_or_key": "raw_replication_project:rrr",
+      "preferred_source_family_name": "Registered Replication Report on Srull and Wyer (1979)",
+      "reason": "This is an individual Registered Replication Report/meta-analysis cluster, not a corpus/database source family. It does contain apparent result-table artifacts for Srull/Wyer plus analysis code, so it belongs in result-table review under the RRR project rather than corpus-source intake.",
+      "receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered004/cluster_original_effects_srull_9b8f8fe2c740.json",
+      "route_type": "result_table",
+      "source_count": "4",
+      "worklist_task_id": "worklist_task_ce4fd63cb5effd44"
+    },
+    {
+      "candidate_artifact_or_paper_notes_json": "[{\"node_id\": \"node_search_manifest_068a55aa5aa4\", \"notes\": \"004_codebook.xlsx is supporting documentation/workbook for the PSA004 package.\", \"suggested_disposition\": \"child_artifact\"}, {\"node_id\": \"node_search_manifest_9b22ad70869a\", \"notes\": \"pretest script.R is contextual code unless inspection shows table-generating output.\", \"suggested_disposition\": \"context\"}, {\"node_id\": \"node_search_manifest_b6dd284713b7\", \"notes\": \"psa004_turri_article_table_reconstruction.csv is the candidate result table for this cluster.\", \"suggested_disposition\": \"child_artifact\"}]",
+      "cluster_id": "cluster_004_codebook_8eae1835c41b",
+      "confidence": "medium",
+      "created_at": "2026-05-01T19:34:37",
+      "decision": "route_cluster_to_result_table_worklist",
+      "lead_level_note_count": "3",
+      "next_action": "Route psa004_turri_article_table_reconstruction.csv, with 004_codebook.xlsx as supporting documentation, to the result-table worklist under lead_harvest:psa_004_turri; keep the pretest script as contextual code unless inspection shows it generates a reusable table.",
+      "parent_corpus_database_id_or_key": "lead_harvest:psa_004_turri",
+      "preferred_source_family_name": "PSA004 Accelerated CREP Turri/Buckwalter/Blouw replication package",
+      "reason": "The OSF/PSA004 cluster contains a workbook codebook and an article-table reconstruction CSV with original_n/replication_n query evidence. That is enough to route the specific table/codebook artifacts for result-table review, but not enough to create a broader corpus/database row from file titles alone.",
+      "receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered005/cluster_004_codebook_8eae1835c41b.json",
+      "route_type": "result_table",
+      "source_count": "2",
+      "worklist_task_id": "worklist_task_d1f3c07fccd26224"
+    },
+    {
+      "candidate_artifact_or_paper_notes_json": "[{\"node_id\": \"node_search_manifest_9c0a33f3b974\", \"notes\": \"create_studydetails.do is a code source for EERP study-detail fields.\", \"suggested_disposition\": \"child_artifact\"}, {\"node_id\": \"node_search_manifest_09b11a326972\", \"notes\": \"effectstandardization.py is EERP analysis/source code; inspect for effective sample-size/effect fields.\", \"suggested_disposition\": \"child_artifact\"}, {\"node_id\": \"node_search_manifest_385686ba8a5c\", \"notes\": \"rpp_data.csv is a raw data artifact inside the EERP extraction tree.\", \"suggested_disposition\": \"child_artifact\"}]",
+      "cluster_id": "cluster_create_studydetails_815faf854db4",
+      "confidence": "high",
+      "created_at": "2026-05-01T19:34:37",
+      "decision": "route_cluster_to_result_table_worklist",
+      "lead_level_note_count": "3",
+      "next_action": "Route create_studydetails.do, effectstandardization.py, and rpp_data.csv to the result-table/code-derived table worklist under raw_replication_project:eerp; extract only fields supported by inspected code/data, not by filenames alone.",
+      "parent_corpus_database_id_or_key": "raw_replication_project:eerp",
+      "preferred_source_family_name": "Experimental Economics Replication Project (EERP)",
+      "reason": "The cluster consists of EERP child artifacts used to derive study details/effect-standardization fields, not a separate corpus. These should be processed as result-table/source artifacts under EERP.",
+      "receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered005/cluster_create_studydetails_815faf854db4.json",
+      "route_type": "result_table",
+      "source_count": "3",
+      "worklist_task_id": "worklist_task_1bd28e1e422b5c34"
+    },
+    {
+      "candidate_artifact_or_paper_notes_json": "[{\"node_id\": \"node_search_manifest_83d5a32ea989\", \"notes\": \"_codebook.md is field documentation for decision_market result/planning tables.\", \"suggested_disposition\": \"child_artifact\"}, {\"node_id\": \"node_search_manifest_2bfefeee2bf7\", \"notes\": \"original_planned_samples.csv is a reusable planning/sample table owned by decision_market.\", \"suggested_disposition\": \"child_artifact\"}, {\"node_id\": \"node_search_manifest_2b84fa6f9225\", \"notes\": \"original_results.csv is the main candidate result table for the decision_market parent.\", \"suggested_disposition\": \"child_artifact\"}]",
+      "cluster_id": "cluster_original_results_6f97d3e8008c",
+      "confidence": "high",
+      "created_at": "2026-05-01T19:34:37",
+      "decision": "route_cluster_to_result_table_worklist",
+      "lead_level_note_count": "3",
+      "next_action": "Route original_results.csv and original_planned_samples.csv to result-table review/extraction, using _codebook.md for field interpretation; keep all three artifacts under raw_replication_project:decision_market.",
+      "parent_corpus_database_id_or_key": "raw_replication_project:decision_market",
+      "preferred_source_family_name": "Decision Markets / Online Experiments Selected by Decision Market",
+      "reason": "The cluster consists of table/codebook artifacts for the decision-market replication project, not a new source family. original_results.csv and original_planned_samples.csv are reusable table artifacts owned by the decision_market parent.",
+      "receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered005/cluster_original_results_6f97d3e8008c.json",
+      "route_type": "result_table",
+      "source_count": "4",
+      "worklist_task_id": "worklist_task_8c4a3fcb682112d8"
+    }
+  ],
+  "route_type": "result_table",
+  "routing_table": "steps/review_cue/figure1_search_leads/reviewcue-clustered-routing-table-figure1_search_leads.tsv",
+  "task_count": 4
+}

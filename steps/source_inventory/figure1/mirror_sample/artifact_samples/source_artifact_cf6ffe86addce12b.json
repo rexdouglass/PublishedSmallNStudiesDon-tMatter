@@ -1,0 +1,188 @@
+{
+  "artifact_id": "source_artifact_cf6ffe86addce12b",
+  "byte_size": 159232,
+  "file_name": "Sub_county_endline.xls",
+  "file_type": "xls",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/github/baraza/questionnaire/Sub_county_endline.xls",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "sample_kind": "excel_workbook",
+  "sampled_at": "2026-05-01T20:34:44",
+  "sha256": "68568ca09d45fd3bd82776ba8407c0d832102bf21bcef2a6d8b661938babc0f8",
+  "sheet_count": 2,
+  "sheets": [
+    {
+      "columns": [
+        "type",
+        "name",
+        "label",
+        "required",
+        "required_message",
+        "relevant",
+        "constraint",
+        "constraint_message",
+        "image",
+        "hint",
+        "repeat_count",
+        "parameters",
+        "calculation",
+        "choice_filter",
+        "appearance"
+      ],
+      "preview_rows": [
+        {
+          "appearance ": null,
+          "calculation": null,
+          "choice_filter": null,
+          "constraint": null,
+          "constraint_message": null,
+          "hint": null,
+          "image": null,
+          "label ": "Start Time",
+          "name": "start",
+          "parameters": null,
+          "relevant": null,
+          "repeat_count": null,
+          "required": null,
+          "required_message": null,
+          "type": "start"
+        },
+        {
+          "appearance ": null,
+          "calculation": null,
+          "choice_filter": null,
+          "constraint": null,
+          "constraint_message": null,
+          "hint": null,
+          "image": null,
+          "label ": "End Time",
+          "name": "end",
+          "parameters": null,
+          "relevant": null,
+          "repeat_count": null,
+          "required": null,
+          "required_message": null,
+          "type": "end"
+        },
+        {
+          "appearance ": null,
+          "calculation": null,
+          "choice_filter": null,
+          "constraint": null,
+          "constraint_message": null,
+          "hint": null,
+          "image": null,
+          "label ": "Date of Survey",
+          "name": "today",
+          "parameters": null,
+          "relevant": null,
+          "repeat_count": null,
+          "required": null,
+          "required_message": null,
+          "type": "today"
+        },
+        {
+          "appearance ": null,
+          "calculation": null,
+          "choice_filter": null,
+          "constraint": null,
+          "constraint_message": null,
+          "hint": null,
+          "image": null,
+          "label ": "Phone Serial Number",
+          "name": "deviceid",
+          "parameters": null,
+          "relevant": null,
+          "repeat_count": null,
+          "required": null,
+          "required_message": null,
+          "type": "deviceid"
+        },
+        {
+          "appearance ": null,
+          "calculation": null,
+          "choice_filter": null,
+          "constraint": null,
+          "constraint_message": null,
+          "hint": null,
+          "image": null,
+          "label ": "Subscriber Identifier",
+          "name": "subscriberid",
+          "parameters": null,
+          "relevant": null,
+          "repeat_count": null,
+          "required": null,
+          "required_message": null,
+          "type": "subscriberid"
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "survey"
+    },
+    {
+      "columns": [
+        "list name",
+        "name",
+        "label",
+        "reg",
+        "dis",
+        "VL",
+        "ID",
+        "HH"
+      ],
+      "preview_rows": [
+        {
+          "HH": null,
+          "ID": null,
+          "VL": null,
+          "dis": null,
+          "label": "Male",
+          "list name": "gender",
+          "name": "Male",
+          "reg": null
+        },
+        {
+          "HH": null,
+          "ID": null,
+          "VL": null,
+          "dis": null,
+          "label": "Female",
+          "list name": "gender",
+          "name": "Female",
+          "reg": null
+        },
+        {
+          "HH": null,
+          "ID": null,
+          "VL": null,
+          "dis": null,
+          "label": "Never",
+          "list name": "fet",
+          "name": "a",
+          "reg": null
+        },
+        {
+          "HH": null,
+          "ID": null,
+          "VL": null,
+          "dis": null,
+          "label": "Only once",
+          "list name": "fet",
+          "name": "b",
+          "reg": null
+        },
+        {
+          "HH": null,
+          "ID": null,
+          "VL": null,
+          "dis": null,
+          "label": "A few times",
+          "list name": "fet",
+          "name": "c",
+          "reg": null
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "choices"
+    }
+  ]
+}

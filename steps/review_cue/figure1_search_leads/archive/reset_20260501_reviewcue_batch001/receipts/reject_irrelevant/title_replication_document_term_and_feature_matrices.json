@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "doi:10.7910/DVN/KZW8R2",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "reject_irrelevant",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:replication_document_term_and_feature_matrices",
+  "next_action": "do_not_add_to_figure1_pair_source_work",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "Dataverse metadata shows term and feature matrices with 436 text/tab files. This appears to be text-analysis replication data, not a source exposing original/replication D/N pair rows.",
+  "review_id": "review_figure1_search_leads_f04f5a33efba",
+  "route_payload": {},
+  "sources_checked": [
+    "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/KZW8R2"
+  ],
+  "user_gpt_prompt_request": ""
+}

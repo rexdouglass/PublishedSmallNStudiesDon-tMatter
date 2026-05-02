@@ -1,0 +1,45 @@
+{
+  "artifact_id": "source_artifact_0be75163d21bdda3",
+  "byte_size": 19992,
+  "columns": [
+    "Variable name",
+    "Description of variable",
+    "Type"
+  ],
+  "estimated_data_rows": 77,
+  "file_name": "osf_04__RP_CB_Final_Analysis_-_Effect_level_data_dictionary.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/rpcb_e5nvr/osf_04__RP_CB_Final_Analysis_-_Effect_level_data_dictionary.csv",
+  "parent_corpus_database_id": "raw_corpus:rpcb",
+  "preview_rows": [
+    {
+      "Description of variable": "Abritary number starting at 1 for each original paper and increasing by 1 for each Paper. Same as Paper level and Experiment level.",
+      "Type": "numeric",
+      "Variable name": "Paper #"
+    },
+    {
+      "Description of variable": "Abritary number starting at 1 for each unique Study # and increasing by 1 for each Experiment. Same as Experiment level.",
+      "Type": "numeric",
+      "Variable name": "Experiment #"
+    },
+    {
+      "Description of variable": "Abritary number starting at 1 for each unique Experiment # and increasing by 1 for each Effect.",
+      "Type": "numeric",
+      "Variable name": "Effect #"
+    },
+    {
+      "Description of variable": "Abritary number starting at 1 for each unique Effect # and increasing by 1 for each Effect where more than one replication was conducted (e.g., same experiment in more than one cell line).",
+      "Type": "numeric",
+      "Variable name": "Internal replication #"
+    },
+    {
+      "Description of variable": "Description explaining the effect (e.g., which two conditions are being compared).",
+      "Type": "string",
+      "Variable name": "Effect description"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:35:41",
+  "sha256": "5c92bdba30780dbfb04e0f43f3c156664f879cab5b6620b75a3a9cd6713530f2"
+}

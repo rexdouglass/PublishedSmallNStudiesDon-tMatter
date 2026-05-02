@@ -1,0 +1,46 @@
+metric	value	artifact_count
+parent_corpus_database_id	lead_border_2019	2
+parent_corpus_database_id	lead_media_priming_2017	2
+parent_corpus_database_id	repo_search_dataverse_c2906b5dfd2b	8
+parent_corpus_database_id	repo_search_osf_3c6cdcbee4b9	1
+parent_corpus_database_id	repo_search_osf_92e639ac2dc7	53
+parent_corpus_database_id	repo_search_osf_ea08e3722d17	7
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693080?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693081?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693082?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693083?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693084?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693085?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693086?format=original	1
+mirror_status	download_failed:400 Client Error: Bad Request for url: https://dataverse.harvard.edu/api/access/datafile/2693087?format=original	1
+mirror_status	download_failed:403 Client Error: Forbidden for url: https://dataverse.harvard.edu/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/ECGADO/DSUNVR	1
+mirror_status	downloaded	40
+mirror_status	metadata_or_component_role	1
+mirror_status	unsupported_file_type:18070881	1
+mirror_status	unsupported_file_type:docx	11
+mirror_status	unsupported_file_type:jasp	6
+mirror_status	unsupported_file_type:png	2
+mirror_status	unsupported_file_type:pptx	2
+mirror_status	unsupported_file_type:xhtml	1
+sample_status	metadata_only	3
+sample_status	not_sampled	33
+sample_status	sample_failed	3
+sample_status	sampled	34
+sample_kind		33
+sample_kind	delimited_table	4
+sample_kind	excel_workbook	2
+sample_kind	html_text	1
+sample_kind	metadata_only	3
+sample_kind	pdf_text	26
+sample_kind	sample_failed	3
+sample_kind	zip_inventory	1
+candidate_parser_family	analysis_code_inventory	8
+candidate_parser_family	csv_table_parser	7
+candidate_parser_family	document_context_or_source_object_review	28
+candidate_parser_family	statistical_package_parser	3
+candidate_parser_family	unknown	24
+candidate_parser_family	xlsx_workbook_parser	2
+candidate_parser_family	zip_member_inventory	1
+total	artifacts	73
+total	mirrored_or_local	40
+total	sampled	34

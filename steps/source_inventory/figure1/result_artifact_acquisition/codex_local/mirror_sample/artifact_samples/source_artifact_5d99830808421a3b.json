@@ -1,0 +1,48 @@
+{
+  "artifact_id": "source_artifact_5d99830808421a3b",
+  "byte_size": 629,
+  "file_name": "sisar_forqual.Rdata",
+  "file_type": "rdata",
+  "local_path": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_wscxp/sisar_forqual.Rdata",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "locality",
+        "comm_sisar"
+      ],
+      "name": "sisar",
+      "preview_rows": [
+        {
+          "comm_sisar": 1.0,
+          "locality": "CATUNDA6"
+        },
+        {
+          "comm_sisar": 0.0,
+          "locality": "CATUNDA12"
+        },
+        {
+          "comm_sisar": 0.0,
+          "locality": "CATUNDA7"
+        },
+        {
+          "comm_sisar": 1.0,
+          "locality": "CATUNDA2"
+        },
+        {
+          "comm_sisar": 0.0,
+          "locality": "CATUNDA21"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        120,
+        2
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_metaketa_iii_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:51",
+  "sha256": "33e70e566983c3b9cc7a3eb0ab05c5e20191e0347298d6e9415c1fcc0fc5542e"
+}

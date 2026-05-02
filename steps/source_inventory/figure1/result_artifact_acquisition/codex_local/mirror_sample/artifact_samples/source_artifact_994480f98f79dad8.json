@@ -1,0 +1,54 @@
+{
+  "artifact_id": "source_artifact_994480f98f79dad8",
+  "byte_size": 718,
+  "file_name": "workshopstatus_forqual_rev.Rdata",
+  "file_type": "rdata",
+  "local_path": "data/raw/replication_projects/lead_harvest/metaketa_iii_2021/osf_wscxp/workshopstatus_forqual_rev.Rdata",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "community_ID",
+        "workshop_tookplace",
+        "committee_formed"
+      ],
+      "name": "workshop",
+      "preview_rows": [
+        {
+          "committee_formed": null,
+          "community_ID": "CATUNDA6",
+          "workshop_tookplace": null
+        },
+        {
+          "committee_formed": 1.0,
+          "community_ID": "CATUNDA12",
+          "workshop_tookplace": 1.0
+        },
+        {
+          "committee_formed": 1.0,
+          "community_ID": "CATUNDA7",
+          "workshop_tookplace": 1.0
+        },
+        {
+          "committee_formed": 1.0,
+          "community_ID": "CATUNDA2",
+          "workshop_tookplace": 1.0
+        },
+        {
+          "committee_formed": 1.0,
+          "community_ID": "CATUNDA21",
+          "workshop_tookplace": 1.0
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        120,
+        3
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_lead_metaketa_iii_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-02T09:32:51",
+  "sha256": "c32b8ac7079ceb20a2962cdb7836ac3b58742882103bc09a37d7d6d4e907838e"
+}

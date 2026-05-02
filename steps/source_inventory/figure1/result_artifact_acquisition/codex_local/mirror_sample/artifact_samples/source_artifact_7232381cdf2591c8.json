@@ -1,0 +1,27 @@
+{
+  "artifact_id": "source_artifact_7232381cdf2591c8",
+  "byte_size": 134594,
+  "file_name": "osf_01__pilot-analysis.pdf",
+  "file_type": "pdf",
+  "local_path": "data/raw/replication_projects/lead_harvest/manybabies_3/osf_01__pilot-analysis.pdf",
+  "page_count": 3,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "Appendix: Pilot Experiment 2021-06-19 A pilot study was conducted by one laboratory in March, 2021 to verify the feasibility of the experiment’s design, to test the planned procedures, and to test-run the planned analysis. Given the small size of the pilot, we do not expect to find significant effects, but we nonetheless also carried out and report the full planned analysis. Participants Participantswere19children8-12monthsofage(10females)recruitedfrom(BLINDEDFORSUBMISSION) (7 8-month-olds, 2 9-month-olds, 2 10-month-olds, 4 11-month-olds, and 4 12-month-olds). Materials and Design The piloting phase adopted the same material and design as planned for the main study (see full description in the main text). Procedure The piloting phase adopted the same procedure as planned for the main study (see full description in the main text). Results We carried out the preregistered regression, leaving out the variables that had no variation in our sample: the per-lab random effects and experimental procedure fixed effects. Thus, the mixed-effects linear regression predicted infants’ log(looking time) by the following fixed effects: 1. familiarized rule (ABB vs. ABA). 2. test trial type (same or different as familiarized rule). 3. age (in months) and trial number (1-12). 4. the 2-way interaction of trial type and familiarized rule. 5. the 2-way interaction of trial type and age. 6. the 2-way interaction of trial type and trial number. The model’s random effects structure included per-subject intercepts with slopes by test trial number and type. The R syntax for the complete model was thus: log(looking time) ~ 1 + familiarization order * trial_type + age * trial_type + trial_num * trial_type + (trial_num*trial_type | subject)). This model’s fit was singular (even when trial and age were centered and scaled), indicating that the random effects structure is too complex for the dataset. Thus, we pruned the random effects structure following standard procedures: removing either random slopes by trial number or by trial type allowed the model to converge. The model with slopes varying by trial number achieved better fit (AIC=409.6 vs. AIC=413.9 with slopes by trial type). Table 1 shows the regression coefficients from the preferred model, and Figure 1 shows these coefficients plotted with 95% confidence intervals. Only the effect of trial was significant (β =−0.04, 1"
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Table 1: Regression coefficients. Estimate Std. Error df t value Pr(>|t|) (Intercept) 8.26 0.57 24.66 14.40 0.00 fam_conditionABB 0.32 0.18 22.24 1.76 0.09 trial_typesame -0.36 0.45 189.04 -0.82 0.42 age_months 0.00 0.06 22.39 0.07 0.94 trial -0.04 0.02 45.56 -2.54 0.01 fam_conditionABB:trial_typesame -0.10 0.14 187.87 -0.72 0.48 trial_typesame:age_months 0.03 0.04 188.64 0.70 0.48 trial_typesame:trial 0.04 0.02 195.52 1.95 0.05 p=.01), showing that looking time declined across trials. There was a marginal interaction of trial type and trial number (β =0.04, p=.05), suggesting that participants’ looking time may not decline across trials on trials exemplifying the same rule they were familiarized with during training. Although age and trial type did not show any significant effects or interaction in this small pilot, Figure 2 shows the log(looking time) as a function of these factors, as we may expect some effects in the full sample. fam_condition [ABB] trial_type [same] * trial trial_type [same] * age_months age_months trial fam_condition [ABB] * trial_type [same] trial_type [same] −2 −1.5 −1 −0.5 0 0.5 1 Estimates Figure 1: Regression coefficients with 95% confidence intervals. 2"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "9.0 8.5 8.0 7.5 8 9 10 11 12 Age (months) )emit gnikool(gol Trial Type different same Figure 2: Log(looking time) by trial type and age, and bootstrapped 95% confidence intervals. 3"
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_family_manybabies_3",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T09:32:32",
+  "sampled_page_count": 3,
+  "sha256": "2c6bdac5d944e84a38a25aa06b6e3c0019efc40fc6eca2b8f0fc9c4fbf4fba15"
+}

@@ -1,0 +1,63 @@
+{
+  "artifact_id": "source_artifact_52fad5e41ca59d40",
+  "byte_size": 7830,
+  "columns": [
+    "Unnamed: 0",
+    "district",
+    "subcounty",
+    "information",
+    "deliberation",
+    "district_baraza"
+  ],
+  "estimated_data_rows": 248,
+  "file_name": "treats.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/github/baraza/data/public/treats.csv",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview_rows": [
+    {
+      "Unnamed: 0": 1,
+      "deliberation": 1,
+      "district": "APAC",
+      "district_baraza": 0,
+      "information": 0,
+      "subcounty": "ABONGOMOLA"
+    },
+    {
+      "Unnamed: 0": 2,
+      "deliberation": 1,
+      "district": "PADER",
+      "district_baraza": 0,
+      "information": 0,
+      "subcounty": "ACHOLIBUR"
+    },
+    {
+      "Unnamed: 0": 3,
+      "deliberation": 0,
+      "district": "APAC",
+      "district_baraza": 0,
+      "information": 0,
+      "subcounty": "ADUKU"
+    },
+    {
+      "Unnamed: 0": 4,
+      "deliberation": 0,
+      "district": "LAMWO",
+      "district_baraza": 0,
+      "information": 1,
+      "subcounty": "AGORO"
+    },
+    {
+      "Unnamed: 0": 5,
+      "deliberation": 1,
+      "district": "APAC",
+      "district_baraza": 0,
+      "information": 0,
+      "subcounty": "AKOKORO"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:34:44",
+  "sha256": "7ec19113e63e98ebfdfad736ea7aebcca8be3a7b6e2576ea7a98adfd51102503"
+}

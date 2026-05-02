@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_6103f8bd2dfba2f1",
+  "byte_size": 499,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "ies_systematic_replication__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/ies_systematic_replication__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_ies_systematic_replication",
+  "preview_rows": [
+    {
+      "default_action": "review_only",
+      "downloaded_file_count": 0,
+      "expected_rows": 0,
+      "file_list_csv": null,
+      "landing_url": "https://ies.ed.gov/funding/research/programs/research-grants-focused-on-systematic-replication",
+      "lead_id": "ies_systematic_replication",
+      "local_raw_file": null,
+      "manifest_file": null,
+      "notes": "IES page is a funding program page for replication grants rather than a downloadable row-level result table",
+      "priority": 7,
+      "project": "IES systematic replication awards",
+      "promotion_blocker": "source_not_pair_buildable",
+      "raw_url": null,
+      "source_family": "education"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:46",
+  "sha256": "f2db8d36fc0399770e9e0eae3e05e02f98293ddee2ed67e97daefb13bbd467c0"
+}

@@ -1,0 +1,26 @@
+{
+  "batch_id": "clustered004",
+  "cluster_id": "cluster_score_cos_preregistration_indicated_original_papers_2a2876c57850",
+  "confidence": "high",
+  "created_at": "2026-05-02T01:55:21+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered004.json",
+  "lead_level_note_count": 1,
+  "lead_level_notes": [
+    {
+      "notes": "SCORE orig_outcomes, repli_outcomes, repro_prereg-check, OSF metadata, and the existing preregistration-indicated subset are child artifacts/views under SCORE.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Inventory orig_outcomes, repli_outcomes, repro_prereg-check, and OSF manifest/meta files under the SCORE parent; preserve the existing score_cos_preregistration_indicated_original_papers subset row and avoid duplicate root creation.",
+  "parent_corpus_database_id_or_key": "score",
+  "preferred_source_family_name": "Systematizing Confidence in Open Research and Evidence (SCORE) data/code/materials",
+  "reason": "SCORE is an existing reusable source family with openly available data/code/materials. The cluster contains child data tables, an OSF manifest, and an included preregistration-indicated subset; these should be owned by the broader SCORE parent, with the subset kept as an included derived corpus view.",
+  "sources_checked": [
+    "web:https://www.cos.io/score",
+    "web:https://www.cos.io/score-evidence",
+    "web:https://osf.io/10.17605/OSF.IO/DTZX4",
+    "local:data/raw/corpus_candidates/score/",
+    "local:data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv"
+  ]
+}

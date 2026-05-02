@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_2e1392ce0c112490",
+  "byte_size": 1049,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "angrist_learning_curve_2023__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/angrist_learning_curve_2023__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_angrist_learning_curve_2023",
+  "preview_rows": [
+    {
+      "default_action": "review_only",
+      "downloaded_file_count": 13,
+      "expected_rows": 0,
+      "file_list_csv": null,
+      "landing_url": "https://www.openicpsr.org/openicpsr/project/189561/view",
+      "lead_id": "angrist_learning_curve_2023",
+      "local_raw_file": "/media/skynet3/8tb_a1/rwd_github_private/PublishedSmallNStudiesDon-tMatter/data/raw/replication_projects/lead_harvest/angrist_learning_curve_2023/openicpsr_189561_v1/accurate_targeting_country.dta",
+      "manifest_file": null,
+      "notes": "OpenICPSR package 189561-V1 is now local with README.pdf main.do three Stata monitoring datasets and output Table_1.csv. It supports the Learning Curve implementation-monitoring figures and tables but the payload is not an original-versus-replication D/N treatment-effect pair table. It reports accurate targeting and operation-taught progression metrics across implementation trials.",
+      "priority": 7,
+      "project": "Angrist learning-curve replication corpus",
+      "promotion_blocker": "metric_not_on_shared_d_axis|source_not_pair_buildable",
+      "raw_url": "https://www.openicpsr.org/openicpsr/project/189561/version/V1/download/project",
+      "source_family": "education"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:44",
+  "sha256": "56100ade179ac58135c9dd356bd673db7dbc5769142f91766e802d71cc49e5f0"
+}

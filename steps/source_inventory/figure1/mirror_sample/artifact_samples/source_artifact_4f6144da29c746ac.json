@@ -1,0 +1,114 @@
+{
+  "artifact_id": "source_artifact_4f6144da29c746ac",
+  "byte_size": 1710,
+  "file_name": "est_study_3.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_3.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "estimate_type",
+        "study",
+        "type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.2838019404,
+          "conf.low": 0.1942980715,
+          "df": 1811.0,
+          "estimate": 0.239050006,
+          "estimate_type": "Unstandardized",
+          "outcome": "AD_Y_pfp",
+          "p.value": 5.643215404e-25,
+          "statistic": 10.4764799833,
+          "std.error": 0.0228177791,
+          "study": "Pre-COVID",
+          "survey": "Coppock & McClellan (2016) - Lucid",
+          "term": "AD_Z_loss",
+          "type": "COVID-specific"
+        },
+        {
+          "conf.high": 0.4487761144,
+          "conf.low": 0.260274165,
+          "df": 377.0,
+          "estimate": 0.3545251397,
+          "estimate_type": "Unstandardized",
+          "outcome": "AD_Y_pfp",
+          "p.value": 0.0,
+          "statistic": 7.3961506833,
+          "std.error": 0.0479337367,
+          "study": "Pre-COVID",
+          "survey": "Coppock & McClellan (2016) - MTurk",
+          "term": "AD_Z_loss",
+          "type": "COVID-specific"
+        },
+        {
+          "conf.high": 0.5952577801,
+          "conf.low": 0.4002430688,
+          "df": 305.0,
+          "estimate": 0.4977504244,
+          "estimate_type": "Unstandardized",
+          "outcome": "AD_Y_pfp",
+          "p.value": 1.069230879e-20,
+          "statistic": 10.0449808965,
+          "std.error": 0.0495521524,
+          "study": "Pre-COVID",
+          "survey": "Kahneman & Tversky (1981)",
+          "term": "AD_Z_loss",
+          "type": "COVID-specific"
+        },
+        {
+          "conf.high": 0.3551898303,
+          "conf.low": 0.2360079918,
+          "df": 994.0,
+          "estimate": 0.2955989111,
+          "estimate_type": "Unstandardized",
+          "outcome": "AD_Y_pfp",
+          "p.value": 1.886599519e-21,
+          "statistic": 9.7341934935,
+          "std.error": 0.0303670675,
+          "study": "Pre-COVID",
+          "survey": "Many Labs (2013) - MTurk",
+          "term": "AD_Z_loss",
+          "type": "COVID-specific"
+        },
+        {
+          "conf.high": 0.3218088116,
+          "conf.low": 0.2185485971,
+          "df": 1310.0,
+          "estimate": 0.2701787044,
+          "estimate_type": "Unstandardized",
+          "outcome": "AD_Y_pfp",
+          "p.value": 7.803356241e-24,
+          "statistic": 10.2659139784,
+          "std.error": 0.026318037,
+          "study": "Pre-COVID",
+          "survey": "Many Labs (2013) - Project Implicit",
+          "term": "AD_Z_loss",
+          "type": "COVID-specific"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        20,
+        13
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "94ddb0cb268bedc478c6ff264445f54117009929b0aafb8d665584002bce50e3"
+}

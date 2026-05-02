@@ -1,0 +1,20 @@
+{
+  "canonical_source_key": "manual_tracker:barnett_wren_biomedical_ci_scrape_through_bear",
+  "confidence": "high",
+  "created_at": "2026-05-01T22:52:31+00:00",
+  "cue_id": "figure1_search_leads",
+  "decision": "keep_as_context_source",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-decisions-figure1_search_leads-codex-batch001.json",
+  "duplicate_of": "",
+  "lead_key": "title:barnett_wren_biomedical_ci_scrape_through_bear",
+  "next_action": "do_not_send_to_figure1_pair_parser_unless_n_and_pair_mapping_are_recovered",
+  "notes": "",
+  "promote_payload": {},
+  "reason": "The tracker explicitly says this is a background comparator unless N can be recovered. It is not a Figure 1 original/replication pair corpus.",
+  "review_id": "review_figure1_search_leads_24a6bf58d703",
+  "route_payload": {},
+  "sources_checked": [
+    "reports/corpus_suggestion_tracker.md"
+  ],
+  "user_gpt_prompt_request": ""
+}

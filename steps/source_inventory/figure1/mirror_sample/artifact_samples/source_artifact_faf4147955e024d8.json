@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_faf4147955e024d8",
+  "byte_size": 1059,
+  "file_name": "est_study_2.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_2.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "framing_Z_type",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "estimate_type",
+        "study",
+        "type"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.1932851842,
+          "conf.low": 0.1332410673,
+          "df": 3690.0,
+          "estimate": 0.1632631258,
+          "estimate_type": "Unstandardized",
+          "framing_Z_type": "Original",
+          "outcome": "framing_travel_Y",
+          "p.value": 3.669951609e-26,
+          "statistic": 10.6619884614,
+          "std.error": 0.0153126339,
+          "study": "Pre-COVID",
+          "survey": "Many Labs (2018)",
+          "term": "framing_ZCheap",
+          "type": "Pre-COVID"
+        },
+        {
+          "conf.high": 0.528798154,
+          "conf.low": 0.2578587375,
+          "df": 179.0,
+          "estimate": 0.3933284457,
+          "estimate_type": "Unstandardized",
+          "framing_Z_type": "Original",
+          "outcome": "framing_travel_Y",
+          "p.value": 4.2e-08,
+          "statistic": 5.7293779495,
+          "std.error": 0.0686511606,
+          "study": "Pre-COVID",
+          "survey": "Tversky and Kahneman (1981)",
+          "term": "framing_ZCheap",
+          "type": "Pre-COVID"
+        },
+        {
+          "conf.high": 0.1555834632,
+          "conf.low": -0.0137518519,
+          "df": 536.0,
+          "estimate": 0.0709158056,
+          "estimate_type": "Unstandardized",
+          "framing_Z_type": "Modified",
+          "outcome": "framing_travel_Y",
+          "p.value": 0.1004862024,
+          "statistic": 1.6453388657,
+          "std.error": 0.0431010335,
+          "study": "Replication",
+          "survey": "Week 7",
+          "term": "framing_ZCheap",
+          "type": "COVID-specific"
+        },
+        {
+          "conf.high": 0.239297216,
+          "conf.low": 0.066513658,
+          "df": 505.0,
+          "estimate": 0.152905437,
+          "estimate_type": "Unstandardized",
+          "framing_Z_type": "Original",
+          "outcome": "framing_travel_Y",
+          "p.value": 0.0005502278,
+          "statistic": 3.4772883709,
+          "std.error": 0.0439726076,
+          "study": "Replication",
+          "survey": "Week 7",
+          "term": "framing_ZCheap",
+          "type": "Direct replication"
+        },
+        {
+          "conf.high": 0.3920451063,
+          "conf.low": 0.270256143,
+          "df": 3690.0,
+          "estimate": 0.3311506246,
+          "estimate_type": "Standardized",
+          "framing_Z_type": "Original",
+          "outcome": "framing_travel_Y_s",
+          "p.value": 3.669951609e-26,
+          "statistic": 10.6619884614,
+          "std.error": 0.031058993,
+          "study": "Pre-COVID",
+          "survey": "Many Labs (2018)",
+          "term": "framing_ZCheap",
+          "type": "Pre-COVID"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        8,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "dc0124abf8acbfc8c0fffc9a1283302fda282597d118f64d060d85f6dddfd916"
+}

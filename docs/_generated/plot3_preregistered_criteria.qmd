@@ -2,7 +2,7 @@ Machine-readable matrix: [plot3_preregistered_criteria_matrix.csv](../data/deriv
 
 These counts separate discovery from admission. `Extractable D/N rows` means the project has local numeric D/N rows somewhere for that source; `Currently included` means those rows also survive the analytic-preregistration, non-retraction, independence/deduplication, and current-layer policy gates. Under the relaxed rule, a source may expose multiple planned preregistered results per paper/project, but the plotted layer uses a median collapse when that within-paper result set is explicit.
 
-Across the currently named Plot 3 source families, `200,945` / `220,987` considered rows already have local D/N encoding somewhere in the project, and `3,516` rows enter the preregistered-results plot after the gates are applied.
+Across the currently named Plot 3 source families, `200,975` / `222,175` considered rows already have local D/N encoding somewhere in the project, and `3,546` rows enter the preregistered-results plot after the gates are applied.
 
 Source-table column criteria:
 
@@ -25,48 +25,78 @@ Source-table column criteria:
 | CT.gov phase-2+ primary randomized rows [@du2024] | 3,149 | 3,149 | 3,149 | 3,149 | 3,149 | 3,149 |
 | van den Akker matched-result medians [@vanDenAkkerSelectiveHypothesis2023] | 193 | 193 | 193 | 126 | 193 | 125 |
 | Schäfer/Schwarz preregistered psychology articles [@schaefer2019meaningfulness] | 93 | 93 | 93 | 89 | 93 | 89 |
-| Brodeur preregistered/PAP table tests [@brodeur2020] | 10,071 | 3,724 | 10,071 | 3,724 | 10,071 | 70 |
+| Brodeur preregistered/PAP table tests [@brodeur2020] | 10,071 | 10,071 | 10,071 | 3,724 | 10,071 | 70 |
 | SCORE/COS preregistration-indicated papers [@tyner2026] | 245 | 245 | 245 | 34 | 245 | 34 |
 | RPCB Registered Report replication effects [@errington2021] | 188 | 188 | 188 | 159 | 188 | 23 |
 | Registered Reports preregistered-hypotheses corpus [@scheel2021] | 71 | 71 | 71 | 32 | 71 | 16 |
 | PSA-CR002 cognitive reappraisal hypotheses [@wang2021psacr002] | 12 | 12 | 12 | 12 | 12 | 1 |
 | PSA-CR001 pooled preregistered rows [@dorison2022] | 4 | 4 | 4 | 4 | 4 | 1 |
+| Campaign-ad persuasion archive [@hewittCampaignExperimentsDataverse] | 1,008 | 1,008 | 1,008 | 1 | 1,008 | 1 |
+| Kalla/Broockman campaign contact [@kallaBroockman2018Dataverse] | 21 | 21 | 21 | 1 | 21 | 1 |
+| Baraza public-service delivery preregistered community-monitoring field experiment [@barazaGithub] | 20 | 20 | 20 | 1 | 20 | 1 |
+| Bangladesh election information field experiment [@bangladeshElectionZenodo] | 16 | 16 | 16 | 1 | 16 | 1 |
+| COVID Emperor social-norm experiment [@covidEmperorOsf] | 12 | 12 | 12 | 1 | 12 | 1 |
+| Mousa 2020 Iraq soccer field experiment [@mousa2020soccerZenodo] | 9 | 9 | 9 | 1 | 9 | 1 |
+| Bangladesh school-WASH transparency preregistered field experiment [@bangladeshWashDataverse] | 8 | 8 | 8 | 1 | 8 | 1 |
+| Favero Pedersen COVID information-cue preregistered survey experiment [@covidTogethernessDataverse] | 8 | 8 | 8 | 1 | 8 | 1 |
+| Immigration message-or-messenger preregistered survey experiment [@immigrationBeliefsDataverse] | 8 | 8 | 8 | 1 | 8 | 1 |
+| Public-service job-attributes experiment [@publicServiceJobAttributesDataverse] | 8 | 8 | 8 | 1 | 8 | 1 |
+| Senegal accountability field experiment [@senegalLearningAccountabilityDataverse] | 8 | 8 | 8 | 1 | 8 | 1 |
+| India anti-vote-buying radio-campaign preregistered field experiment [@voteBuyingRadioDataverse] | 6 | 6 | 6 | 1 | 6 | 1 |
+| Policing in patriarchy field experiment [@policingPatriarchyDataverse] | 6 | 6 | 6 | 1 | 6 | 1 |
+| Vietnam legislator responsiveness [@vietnamLegislatorResponsivenessDataverse] | 6 | 6 | 6 | 1 | 6 | 1 |
+| Golden/Gulzar/Sonnet responsiveness [@goldenGulzarSonnetDataverse] | 5 | 5 | 5 | 1 | 5 | 1 |
+| Political activists free-riding experiment [@politicalActivistsFreeridingZenodo] | 5 | 5 | 5 | 1 | 5 | 1 |
+| Good Politicians field experiment [@goodPoliticiansZenodo] | 4 | 4 | 4 | 1 | 4 | 1 |
+| TESS Johnson 1389 survey experiment [@tessJohnson1389] | 4 | 4 | 4 | 1 | 4 | 1 |
+| Ukrainian-refugee destination-choice preregistered conjoint experiment [@refugeeDestinationZenodo] | 4 | 4 | 4 | 1 | 4 | 1 |
+| Direct-aid humanitarian-governance preregistered field experiment [@directAidGithub] | 3 | 3 | 3 | 1 | 3 | 1 |
+| Political activists field experiment [@henselRinkPoliticalActivistsDataverse] | 3 | 3 | 3 | 1 | 3 | 1 |
+| China-aid attitudes survey experiment [@woodHoyPrykeChinaAidDataverse] | 3 | 3 | 3 | 1 | 3 | 1 |
+| COVID vaccine-hesitancy message experiment [@vaccineHesitancyOsf] | 2 | 2 | 2 | 1 | 2 | 1 |
+| Ghana debates field experiment [@ghanaDebatesDataverse] | 2 | 2 | 2 | 1 | 2 | 1 |
+| Kotsadam Keller Elwert interethnic-contact preregistered field experiment [@interethnicContactDataverse] | 2 | 2 | 2 | 1 | 2 | 1 |
+| Medicine-theft remote-tracking preregistered governance field experiment [@medicineTheftDataverse] | 2 | 2 | 2 | 1 | 2 | 1 |
+| Vietnam National Assembly responsiveness [@vietnamMainResponsivenessDataverse] | 2 | 2 | 2 | 1 | 2 | 1 |
+| JEPS political-knowledge replication [@azevedoJepsDataverse] | 1 | 1 | 1 | 1 | 1 | 1 |
 | EGAP Metaketa I pooled PAP row [@metaketaIRepo] | 1 | 1 | 1 | 1 | 1 | 1 |
 | EGAP Metaketa III pooled PAP row [@metaketaIIIProject] | 1 | 1 | 1 | 1 | 1 | 1 |
 | EGAP Metaketa IV pooled PAP row [@metaketaIVProject] | 1 | 1 | 1 | 1 | 1 | 1 |
+| Liberia Partnership Schools [@liberiaPslAeaRegistry] | 1 | 1 | 1 | 1 | 1 | 1 |
+| Local Elites tax compliance [@localElitesOpenicpsr] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyBabies 1 bilingual IDS pooled row [@byersHeinlein2021manybabiesBilingual] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyBabies 1 IDS pooled row [@manyBabies2020Ids] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ManyClasses 1 feedback pooled row [@fyfe2021manyclasses1] | 1 | 1 | 1 | 1 | 1 | 1 |
-| Mousa 2020 Iraq soccer field experiment [@mousa2020soccerZenodo] | 1 | 1 | 1 | 1 | 1 | 1 |
 | PSA004 true-belief/Gettier pooled row [@hall2024psa004Turri] | 1 | 1 | 1 | 1 | 1 | 1 |
+| TESS Graham 1155 survey experiment [@tessGraham1155] | 1 | 1 | 1 | 1 | 1 | 1 |
 | ClinicalTrials.gov API registered outcome-result universe [@du2024] | 190,836 | 17,726 | 190,836 | 190,836 | 190,836 | 0 |
-| FORRT FReD / Replication Database | 843 | 0 | 843 | 843 | 843 | 0 |
+| FORRT FReD / Replication Database [@tosh2024] | 843 | 0 | 843 | 843 | 843 | 0 |
 | Schäfer/Schwarz non-preregistered comparator [@schaefer2019meaningfulness] | 900 | 0 | 900 | 682 | 900 | 0 |
-| FReD archived workflow rescue queue | 343 | 0 | 343 | 343 | 343 | 0 |
+| FReD archived workflow rescue queue [@tosh2024] | 343 | 0 | 343 | 343 | 343 | 0 |
 | CliniFact published trial primary-outcome rows [@zhang2025clinifact] | 339 | 0 | 339 | 339 | 339 | 0 |
 | Linden focal/random psychology sample [@linden2024publicationBiasPsychology] | 316 | 0 | 316 | 316 | 316 | 0 |
-| PSA replication-pair rows | 93 | 93 | 93 | 93 | 93 | 0 |
-| Many Labs 1-5 project-level replication rows | 69 | 69 | 69 | 69 | 69 | 0 |
-| Registered Replication Reports Plot 1 pair rows | 49 | 49 | 49 | 49 | 49 | 0 |
+| PSA replication-pair rows [@internalPsaReplicationPairRows] | 93 | 93 | 93 | 93 | 93 | 0 |
+| Many Labs 1-5 project-level replication rows [@internalManyLabsProjectLevelAudit] | 69 | 69 | 69 | 69 | 69 | 0 |
+| Registered Replication Reports Plot 1 pair rows [@internalRrrPlot1PairRows] | 49 | 49 | 49 | 49 | 49 | 0 |
 | Communication privacy preregistered corpus [@masur2025privacy] | 31 | 31 | 31 | 31 | 31 | 0 |
 | High-Replicability Research project [@protzko2024highrep] | 48 | 48 | 3 | 3 | 0 | 0 |
 | Retrieval-extinction rats preregistered replication [@luyten2017retrievalExtinction] | 3 | 3 | 3 | 3 | 3 | 0 |
 | Transparent Psi Project / Bem row [@kekecs2023tpp] | 1 | 1 | 1 | 1 | 1 | 0 |
-| Nordic trial registration-publication linkage | 7,461 | 0 | 7,461 | 0 | 7,461 | 0 |
+| Nordic trial registration-publication linkage [@internalNordicTrialPublicationLinkage] | 7,461 | 0 | 7,461 | 0 | 7,461 | 0 |
 | AACT x PubMed registered primary outcomes [@du2024] | 2,720 | 0 | 0 | 0 | 2,720 | 0 |
-| COMPare prespecified outcome audit | 1,171 | 749 | 1,171 | 0 | 1,171 | 0 |
+| COMPare prespecified outcome audit [@internalCompareClinicalOutcomeAudit] | 1,171 | 749 | 1,171 | 0 | 1,171 | 0 |
 | TESS survey-experiment archive [@tessPastStudiesArchive] | 517 | 517 | 517 | 0 | 517 | 0 |
 | van den Akker selective-hypothesis-reporting corpus [@vanDenAkkerSelectiveHypothesis2023] | 459 | 459 | 446 | 0 | 459 | 0 |
-| Twomey kinesiology article audit | 300 | 27 | 300 | 0 | 300 | 0 |
-| Registered Replication Reports per-lab rows | 205 | 205 | 0 | 0 | 205 | 0 |
+| Twomey kinesiology article audit [@internalTwomeyKinesiologyAudit] | 300 | 27 | 300 | 0 | 300 | 0 |
+| Registered Replication Reports per-lab rows [@internalRrrPerLabRows] | 205 | 205 | 0 | 0 | 205 | 0 |
 | Allen/Mehler RR support-rate review [@allenMehler2019OpenScience] | 113 | 113 | 113 | 0 | 113 | 0 |
 | EGAP Metaketa IV native rows [@metaketaIVProject] | 36 | 36 | 36 | 0 | 36 | 0 |
 | EGAP Metaketa III native rows [@metaketaIIIProject] | 30 | 30 | 30 | 0 | 30 | 0 |
 | ManyClasses 2 classroom materials [@manyClasses2Osf] | 30 | 30 | 30 | 0 | 30 | 0 |
 | ManyBabies 3 registered-report materials [@manyBabies3Osf] | 15 | 15 | 0 | 0 | 15 | 0 |
-| Political-science rescue worklist | 14 | 14 | 14 | 0 | 14 | 0 |
+| Political-science rescue worklist [@internalPoliticalScienceRescueWorklist] | 14 | 14 | 14 | 0 | 14 | 0 |
 | ManyBabies 2 native model-coefficient materials [@manyBabies2AnalysisRepo] | 4 | 4 | 4 | 0 | 4 | 0 |
-| Self-control fMRI preregistered materials | 4 | 4 | 0 | 0 | 4 | 0 |
+| Self-control fMRI preregistered materials [@selfControlFmriOsf] | 4 | 4 | 0 | 0 | 4 | 0 |
 | EGAP Metaketa I native ATE rows [@metaketaIRepo] | 1 | 1 | 1 | 0 | 1 | 0 |
 | ERN/Pe RRR OpenNeuro/OSF hubs [@ernPeRrrOpenNeuro] | 1 | 1 | 0 | 0 | 1 | 0 |
 | ManyBabies 4 helpers/hinderers RR materials [@manyBabies4Project] | 1 | 1 | 1 | 0 | 1 | 0 |

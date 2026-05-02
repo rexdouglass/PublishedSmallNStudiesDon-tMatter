@@ -1,0 +1,1135 @@
+{
+  "artifact_id": "source_artifact_7f7ab631f8edd5de",
+  "byte_size": 42482,
+  "file_name": "dataverse_manifest.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "status"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/wood_porter_2019/dataverse_manifest.json",
+  "parent_corpus_database_id": "corpus_db_lead_wood_porter_2019",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 969,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 3093006,
+      "identifier": "DVN/AGRX5U",
+      "latestVersion": {
+        "UNF": "UNF:6:6916NL+X1GTxXVO/RVsfiw==",
+        "citationDate": "2017-12-28",
+        "createTime": "2017-12-28T20:46:00Z",
+        "datasetFileUploadsAvailable": 969,
+        "datasetId": 3093006,
+        "datasetPersistentId": "doi:10.7910/DVN/AGRX5U",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "250004d119fb5a59c560eeca3817446e"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "10-appendix table 5.R",
+              "filesize": 422,
+              "friendlyType": "R Syntax",
+              "id": 3093023,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "250004d119fb5a59c560eeca3817446e",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/2H2YJX",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/2H2YJX",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c1a87-a979249c03fb",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "10-appendix table 5.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1be22f69cc9751281cab987536efad6b"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "11-appendix table 6.R",
+              "filesize": 529,
+              "friendlyType": "R Syntax",
+              "id": 3093024,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "1be22f69cc9751281cab987536efad6b",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/3GNOON",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/3GNOON",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c1c39-28d3fba360c9",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "11-appendix table 6.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1f1511ebbeac67a55837a961641ec923"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "12-appendix table 8.R",
+              "filesize": 517,
+              "friendlyType": "R Syntax",
+              "id": 3093025,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "1f1511ebbeac67a55837a961641ec923",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/ZJAZT3",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/ZJAZT3",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c1dfa-6437e96d2f7d",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "12-appendix table 8.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "3771d4ba3cb008dd92dc02b029f27930"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "13-appendix table 9.R",
+              "filesize": 554,
+              "friendlyType": "R Syntax",
+              "id": 3093026,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "3771d4ba3cb008dd92dc02b029f27930",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/SWBXQ2",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/SWBXQ2",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c1f96-a81c5d61e143",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "13-appendix table 9.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "41c1363c2a95f831e74886f4566c20ec"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "14-appendix table 10.R",
+              "filesize": 345,
+              "friendlyType": "R Syntax",
+              "id": 3093027,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "41c1363c2a95f831e74886f4566c20ec",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/5FXPRS",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/5FXPRS",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c2150-fb80ed985b0e",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "14-appendix table 10.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "072e8ebd20394d5901697e8fa8d526c9"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "15-appendix table 13.R",
+              "filesize": 537,
+              "friendlyType": "R Syntax",
+              "id": 3093028,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "072e8ebd20394d5901697e8fa8d526c9",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/ZRZNNG",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/ZRZNNG",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c22e9-fe5d554452b3",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "15-appendix table 13.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "d3e7312469da03b43aea7d0d0c05b844"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "16-appendix figure 10.R",
+              "filesize": 4574,
+              "friendlyType": "R Syntax",
+              "id": 3093029,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "d3e7312469da03b43aea7d0d0c05b844",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/B2DCWD",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/B2DCWD",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c26ed-55e35fb3f82a",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "16-appendix figure 10.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "25f44ec1d0be897d2bf7ea9e5c802ef1"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "17-appendix table 14.R",
+              "filesize": 1764,
+              "friendlyType": "R Syntax",
+              "id": 3093030,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "25f44ec1d0be897d2bf7ea9e5c802ef1",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/9G5TGU",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/9G5TGU",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c288f-c523b8a879b7",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "17-appendix table 14.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "c6ac614c94d3c3af21eed0f69518895f"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "18-appendix figure 9.R",
+              "filesize": 4240,
+              "friendlyType": "R Syntax",
+              "id": 3093031,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "c6ac614c94d3c3af21eed0f69518895f",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/Q2GBUT",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/Q2GBUT",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c2a42-cea49a3d7ae6",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "18-appendix figure 9.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f13d0c832b1a6fa84afb12deea3a7126"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "1-figure 1.R",
+              "filesize": 4183,
+              "friendlyType": "R Syntax",
+              "id": 3093014,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "f13d0c832b1a6fa84afb12deea3a7126",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/70AR85",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/70AR85",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c086f-96935cabbe74",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "1-figure 1.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "b211610c619f688f8e86963fc1cd991d"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "2-figure  2.R",
+              "filesize": 3265,
+              "friendlyType": "R Syntax",
+              "id": 3093015,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "b211610c619f688f8e86963fc1cd991d",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/UXHO7Y",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/UXHO7Y",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c0a4a-1d14a59bacb9",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "2-figure  2.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "87510f67cf076eb3bd5bb438b66476a8"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "3-figure 3.R",
+              "filesize": 4862,
+              "friendlyType": "R Syntax",
+              "id": 3093016,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "87510f67cf076eb3bd5bb438b66476a8",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/QMOQRF",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/QMOQRF",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c0be0-a073d8f125c4",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "3-figure 3.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "29a00b52c5dd13c9c3e9a3bb51dbaa46"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "4-figure 4.R",
+              "filesize": 3188,
+              "friendlyType": "R Syntax",
+              "id": 3093017,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "29a00b52c5dd13c9c3e9a3bb51dbaa46",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/OEABGH",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/OEABGH",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c0d92-d9064238e9dc",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "4-figure 4.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "42db3ca928b915deadbba96503951447"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "5-figure 5.R",
+              "filesize": 5895,
+              "friendlyType": "R Syntax",
+              "id": 3093018,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "42db3ca928b915deadbba96503951447",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/R65HO8",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/R65HO8",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c0f56-32d814f1ff5a",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "5-figure 5.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "08ccfbf3b11c3f774e7b64b99859f937"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "6-figure 6.R",
+              "filesize": 2116,
+              "friendlyType": "R Syntax",
+              "id": 3093019,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "08ccfbf3b11c3f774e7b64b99859f937",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/FV309H",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/FV309H",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c10ef-a923a6485295",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "6-figure 6.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "804b554b39c922a807ff958403a2b3ff"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "7-table 2.R",
+              "filesize": 1784,
+              "friendlyType": "R Syntax",
+              "id": 3093020,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "804b554b39c922a807ff958403a2b3ff",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/ZRNN6K",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/ZRNN6K",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c14f1-5b0f352f387d",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "7-table 2.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4b8ccb2a8ef1d4d495f4674a6ee8bf4c"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "8-figure 7.R",
+              "filesize": 4399,
+              "friendlyType": "R Syntax",
+              "id": 3093021,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "4b8ccb2a8ef1d4d495f4674a6ee8bf4c",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/WQA9CD",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/WQA9CD",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c16c4-517db1131e9e",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "8-figure 7.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "617c23ee5c80ee59eecf15c0744f1368"
+              },
+              "contentType": "type/x-r-syntax",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "9-figure 8.R",
+              "filesize": 6838,
+              "friendlyType": "R Syntax",
+              "id": 3093022,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "617c23ee5c80ee59eecf15c0744f1368",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/NNLDFW",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/NNLDFW",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c18a2-0b4ebef5cbee",
+              "tabularData": false
+            },
+            "datasetVersionId": 131761,
+            "label": "9-figure 8.R",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:0LWkugErPwt/oGLjmTgBsQ==",
+              "checksum": {
+                "type": "MD5",
+                "value": "1a2ee193ae73f28256c8d6875a0721fa"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 10.tab",
+              "filesize": 10243520,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093041,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "1a2ee193ae73f28256c8d6875a0721fa",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 10.csv",
+              "originalFileSize": 9405320,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/OIKL9Q",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/OIKL9Q",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c4975-ea65ce69e1e8",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 10.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:Co3vMa5AUCTDfXp0u/1vLg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "9016f0738297cdb68c8c99c7e860eab1"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 11.tab",
+              "filesize": 6100841,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093042,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "9016f0738297cdb68c8c99c7e860eab1",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 11.csv",
+              "originalFileSize": 5615309,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/ACWYUP",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/ACWYUP",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c4dbf-337ec6a5fafb",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 11.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:kWvCYmKMUp/wrZj7k4roTA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "f7271534e615fdc0f77b4f617905307d"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 12.tab",
+              "filesize": 11692568,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093043,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "f7271534e615fdc0f77b4f617905307d",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 12.csv",
+              "originalFileSize": 10025672,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/KMU6LG",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/KMU6LG",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c5156-dcf5dbf9c9d0",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 12.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:wlHyGp5Z7b+m7jk3HRaz4g==",
+              "checksum": {
+                "type": "MD5",
+                "value": "6436c8d50ebbd398f199dd06645936f6"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 13.tab",
+              "filesize": 6221799,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093044,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "6436c8d50ebbd398f199dd06645936f6",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 13.csv",
+              "originalFileSize": 5737131,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/0LXFIZ",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/0LXFIZ",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c5563-4bf6a70cd71e",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 13.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:n6iSdMKVvijYOOayVc7QHA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "f2bd86cf62f0ec1c02d90e7b6cdc8c1b"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 1.tab",
+              "filesize": 6607460,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093032,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "f2bd86cf62f0ec1c02d90e7b6cdc8c1b",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 1.csv",
+              "originalFileSize": 5957390,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/A7ED8B",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/A7ED8B",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c2f52-2745b52a2c90",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 1.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:+M1l8k4szQ/oRTdIhEZebg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "734355c8f4fed09cdd42db3f63104680"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 2.tab",
+              "filesize": 2573540,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093033,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "734355c8f4fed09cdd42db3f63104680",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 2.csv",
+              "originalFileSize": 2389083,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/BO9N1E",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/BO9N1E",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c320d-a0a7ebf16ccc",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 2.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:DHZgjRatntmyRBjcW7z3tw==",
+              "checksum": {
+                "type": "MD5",
+                "value": "ac0543da2b3d7c947926c396e717d2af"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 3.tab",
+              "filesize": 1582895,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093034,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "ac0543da2b3d7c947926c396e717d2af",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 3.csv",
+              "originalFileSize": 1448447,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/1HRMOD",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/1HRMOD",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c3738-5e68585802e8",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 3.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:Vx9BN+CeEj//R7PAs+dHUw==",
+              "checksum": {
+                "type": "MD5",
+                "value": "b57e53921be54ff1c226a755073ba9a5"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 4.tab",
+              "filesize": 520013,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093035,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "b57e53921be54ff1c226a755073ba9a5",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 4.csv",
+              "originalFileSize": 471163,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/R3HUUW",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/R3HUUW",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c3971-c4ee30832f9c",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 4.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:+/SGJKz4ImOBQ5GzOow5+g==",
+              "checksum": {
+                "type": "MD5",
+                "value": "abc4eebd409c2adf9f074aeba4f50bf0"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 5.tab",
+              "filesize": 45951,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093036,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "abc4eebd409c2adf9f074aeba4f50bf0",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 5.csv",
+              "originalFileSize": 38135,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/NUKD6A",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/NUKD6A",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c3b4f-2e461cad28f2",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 5.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:0QdynfdkXbXmk9u4AxSDJA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "a26dd234ef1735633b6431ac6030e788"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 6.tab",
+              "filesize": 579485,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093037,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "a26dd234ef1735633b6431ac6030e788",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 6.csv",
+              "originalFileSize": 499565,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/FGRFON",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/FGRFON",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c3d3a-e671abb9150d",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 6.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:vxchXM2mkhsnK7XCPanUKg==",
+              "checksum": {
+                "type": "MD5",
+                "value": "a782edd5f36b72884822fede0e5ca359"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 7.tab",
+              "filesize": 207997,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093038,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "a782edd5f36b72884822fede0e5ca359",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 7.csv",
+              "originalFileSize": 171655,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/LTBR1D",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/LTBR1D",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c40fa-acd77bfd1b22",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 7.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:YmUiHG4HxvXF5sZmM2068A==",
+              "checksum": {
+                "type": "MD5",
+                "value": "43b6e532ee5b3322ee715a61869acf57"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 8.tab",
+              "filesize": 1485204,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093039,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "43b6e532ee5b3322ee715a61869acf57",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 8.csv",
+              "originalFileSize": 1304348,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/ISPVRE",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/ISPVRE",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c431a-f53bcb2d1a8c",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 8.tab",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:AdPltc/dimVLqEpjIhPvQA==",
+              "checksum": {
+                "type": "MD5",
+                "value": "2ab4646325d10ea1119f6f9da9c62218"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2017-12-26",
+              "fileAccessRequest": false,
+              "filename": "elusive-tab 9.tab",
+              "filesize": 391369,
+              "friendlyType": "Tab-Delimited",
+              "id": 3093040,
+              "lastUpdateTime": "2017-12-29T08:39:09Z",
+              "md5": "2ab4646325d10ea1119f6f9da9c62218",
+              "originalFileFormat": "text/csv",
+              "originalFileName": "elusive-tab 9.csv",
+              "originalFileSize": 360061,
+              "originalFormatLabel": "Comma Separated Values",
+              "persistentId": "doi:10.7910/DVN/AGRX5U/VX2ESS",
+              "pidURL": "https://doi.org/10.7910/DVN/AGRX5U/VX2ESS",
+              "publicationDate": "2017-12-28",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:160913c4584-2fc926bc0a5c",
+              "tabularData": true
+            },
+            "datasetVersionId": 131761,
+            "label": "elusive-tab 9.tab",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 131761,
+        "internalVersionNumber": 4,
+        "lastUpdateTime": "2017-12-29T08:39:09Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: The Elusive Backfire Effect--Mass Attitudes' Steadfast Factual Adherence"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Ohio State University"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Wood, Thomas"
+                    }
+                  },
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "George Washington University"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Porter, Ethan"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Ohio State University"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "wood.1080@osu.edu"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Wood, Thomas"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2017-12-25"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Replication data for--\"The Elusive Backfire Effect\" by Thomas Wood and Ethan Porter"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Backfire Effect"
+                    }
+                  },
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Factual Corrections"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "publication",
+                "value": [
+                  {
+                    "publicationCitation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationCitation",
+                      "value": "Wood, Thomas, and Ethan Porter. \"The elusive backfire effect: Mass attitudes' steadfast factual adherence.\" (2016).\r\n"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "notesText",
+                "value": "Each R script relates to a separate figure or table in the manuscript or appendix. Before executing any *.R file, ensure all *.csv files are extracted in a working directory."
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Wood, Thomas"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2017-12-25"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2017-12-28",
+        "releaseTime": "2017-12-29T08:39:09Z",
+        "storageIdentifier": "s3://10.7910/DVN/AGRX5U",
+        "versionMinorNumber": 1,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/AGRX5U",
+      "protocol": "doi",
+      "publicationDate": "2017-12-28",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/AGRX5U"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-02T09:32:55",
+  "sha256": "2123b3d75129b13ad59f55507f04eca7e77fa67f8e024c4e58d03b7f6e23df48"
+}

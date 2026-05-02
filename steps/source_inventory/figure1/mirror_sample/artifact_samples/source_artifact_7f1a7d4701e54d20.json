@@ -1,0 +1,120 @@
+{
+  "artifact_id": "source_artifact_7f1a7d4701e54d20",
+  "byte_size": 103932,
+  "file_name": "dataverse_06__psv_original.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_06__psv_original.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "psv_approve_nuke",
+        "psv_approve_nuke_binary",
+        "psv_approve_convent",
+        "psv_approve_convent_binary",
+        "psv_prefer",
+        "psv_prefer_binary",
+        "psv_retrospective_approve",
+        "psv_retrospective_ethical",
+        "psv_retrospective_approve_binary",
+        "psv_retrospective_ethical_binary",
+        "psv_prospective_acq",
+        "psv_Z_prospective",
+        "psv_Z_retrospective",
+        "weight"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 6.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 4.0,
+          "psv_approve_nuke_binary": 1.0,
+          "psv_prefer": 1.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null,
+          "weight": 0.6492947936
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 5.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 6.0,
+          "psv_approve_nuke_binary": 1.0,
+          "psv_prefer": 4.0,
+          "psv_prefer_binary": 1.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null,
+          "weight": 0.9778139591
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 6.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 4.0,
+          "psv_approve_nuke_binary": 1.0,
+          "psv_prefer": 2.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null,
+          "weight": 0.8827240467
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 6.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 4.0,
+          "psv_approve_nuke_binary": 1.0,
+          "psv_prefer": 1.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null,
+          "weight": 1.0704988241
+        },
+        {
+          "psv_Z_prospective": "Nukes 90%; Conventional 90%",
+          "psv_Z_retrospective": null,
+          "psv_approve_convent": 5.0,
+          "psv_approve_convent_binary": 1.0,
+          "psv_approve_nuke": 1.0,
+          "psv_approve_nuke_binary": 0.0,
+          "psv_prefer": 1.0,
+          "psv_prefer_binary": 0.0,
+          "psv_prospective_acq": 1.0,
+          "psv_retrospective_approve": null,
+          "psv_retrospective_approve_binary": null,
+          "psv_retrospective_ethical": null,
+          "psv_retrospective_ethical_binary": null,
+          "weight": 0.7204726934
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        766,
+        14
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "ba5ee0a5ba27c3c520dae0a599f0f6885c7f9d70d71898ac3780310225e82f3c"
+}

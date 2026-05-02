@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_c2756e0a34d210cc",
+  "byte_size": 503,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "eef_regrants__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/eef_regrants__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_eef_regrants",
+  "preview_rows": [
+    {
+      "default_action": "review_only",
+      "downloaded_file_count": 0,
+      "expected_rows": 0,
+      "file_list_csv": null,
+      "landing_url": "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects",
+      "lead_id": "eef_regrants",
+      "local_raw_file": null,
+      "manifest_file": null,
+      "notes": "EEF page is a project index and funding/evaluation catalog rather than a machine-readable original-versus-replication result table",
+      "priority": 7,
+      "project": "EEF regrants systematic replication candidates",
+      "promotion_blocker": "source_not_pair_buildable",
+      "raw_url": null,
+      "source_family": "education"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:45",
+  "sha256": "c24b8180ed9572b0a93743155cda55a368da9df0da5218fdb5c7fb67d683994f"
+}

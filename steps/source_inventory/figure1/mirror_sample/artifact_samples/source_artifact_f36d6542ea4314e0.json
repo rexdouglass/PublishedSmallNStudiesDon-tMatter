@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_f36d6542ea4314e0",
+  "byte_size": 370535,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "unique_claim_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "orig_stat_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 2222,
+  "file_name": "changes_orig_merged.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1/score/source_artifact_f36d6542ea4314e0__changes_orig_merged.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": null,
+      "change_to": 2,
+      "col_name": "original_total_model_parameters",
+      "date_implemented": "2021-11-17T00:00:00Z",
+      "orig_stat_version": 2,
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "unique_claim_id": "VB9K_single-trace"
+    },
+    {
+      "change_from": null,
+      "change_to": 133,
+      "col_name": "original_analytic_subsample_n1",
+      "date_implemented": "2021-11-18T00:00:00Z",
+      "orig_stat_version": 2,
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "unique_claim_id": "7ybJ_single-trace"
+    },
+    {
+      "change_from": null,
+      "change_to": 87,
+      "col_name": "original_analytic_subsample_n2",
+      "date_implemented": "2021-11-18T00:00:00Z",
+      "orig_stat_version": 2,
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "unique_claim_id": "7ybJ_single-trace"
+    },
+    {
+      "change_from": null,
+      "change_to": 30,
+      "col_name": "original_analytic_subsample_a_00",
+      "date_implemented": "2021-11-18T00:00:00Z",
+      "orig_stat_version": 2,
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "unique_claim_id": "7ybJ_single-trace"
+    },
+    {
+      "change_from": null,
+      "change_to": 103,
+      "col_name": "original_analytic_subsample_b_01",
+      "date_implemented": "2021-11-18T00:00:00Z",
+      "orig_stat_version": 2,
+      "rationale": null,
+      "reported_by": "Zach Loomas",
+      "unique_claim_id": "7ybJ_single-trace"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T20:36:52",
+  "sha256": "6bd33b6f2e95ee71cc5213bf4ae55a68ff4e652c18c1024e6c455abb7bb7d77b"
+}

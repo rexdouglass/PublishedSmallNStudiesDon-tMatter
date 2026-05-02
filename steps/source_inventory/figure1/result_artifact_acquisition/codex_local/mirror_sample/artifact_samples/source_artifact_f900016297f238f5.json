@@ -1,0 +1,35 @@
+{
+  "artifact_id": "source_artifact_f900016297f238f5",
+  "byte_size": 160514,
+  "file_name": "osf_02__MB3-Stimulus_creation_and_norming.pdf",
+  "file_type": "pdf",
+  "local_path": "data/raw/replication_projects/lead_harvest/manybabies_3/osf_02__MB3-Stimulus_creation_and_norming.pdf",
+  "page_count": 5,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "NB: These are copied from GitHub, starting at the folder level: https://github.com/manybabies/mb3-rules/tree/master/Stimuli Stimulus creation Stimuli were recorded in a quiet space using a Behringer Ultravoice Xm8500 Dynamic Vocal Cardioid Microphone with a pop shield, onto a Marantz solid state recorder in battery mode. Syllables were produced in as even a rate and as flat a prosody as possible. All subsequent handling and analyses were in Praat. Individual syllables were segmented out, and clipped to nearest zero-crossings. All syllables were then concatenated with 250ms silence between each. The entire concatenated sound file was pitch flattened by setting the pitch to a constant value of 132Hz (the mean pitch across the recorded syllables). Individual syllables were then segmented out and adjusted to have a duration of 250ms (actual average 248ms±6.4ms), intensity of 70dB (actual average 69.83dB±0.3dB), and mean pitch of 132 Hz (actual average 132.38Hz±0.55Hz) each. Training and test material See the justification for selection of the material here. Syllables used for norming are on GitHub here. The final set of syllables is on GitHub here. A syllables Possible B syllables ke fa fu pu ku me fa pe pa me fu Training set fe ka pe pu ma fu pe pu mu ka fa pe ti so si to Test no li lo ni Table 1. Syllable combinations used for this study."
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Details of the stimuli for MB3 1.1. Training • 250ms pause between words of a sentence • 1000ms pause between sentences • Random order • Single, continuous presentation 1.1.1. Exp 1 training materials A = ku, ke, mu, ma, fe, pa B = ka, me, fa, fu, pe, pu Combinations (17): ku - me, fa, pe (3) ke - fa, fu, pu (3) mu - ka, fa, pe (3) ma - fu, pe, pu (3) fe - ka, pe, pu (3) pa - me, fu (2) 1.2. Test • 250ms pause between words of a sentence • 1000ms pause between sentences • Random order • 3x of each of the 4 test sentences (=12 trials) • In each trial, a single sentence repeated with 1.2 - 1.5s pauses between sentences until 15s or 2s lookaway 1.2.1. Exp 1 test materials A = ti, si, no, lo B = to, so, ni, li Combinations (4): ti - so, si - to no - li lo - ni Comparison with Marcus et al 2.1. Training • 250ms pause between words of a sentence • 1000ms pause between sentences • Random order • Single, continuous presentation 2.1.1. Exp 1 training materials A = ga, li, ni, ta B = gi, la, na, ti ABA = 4xA * 4xB = 16 sentences ABB = 4xA * 4xB = 16 sentences 2.1.2. Exp 2 training materials A = le, wi, ji, de B = li, we, je, di"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "ABA = 4xA * 4xB = 16 sentences ABB = 4xA * 4xB = 16 sentences 2.2. Test • 250ms pause between words of a sentence • 1000ms pause between sentences • Random order • 3x of each of the 4 test sentences (=12 trials) • In each trial, a single sentence repeated with 1.2 - 1.5s pauses between sentences until 15s or 2s lookaway 2.2.1. Exp 1 test materials A = wo, de B = fe, ko ABA = 2xA * 2xB = 4 sentences ABB = 2xA * 2xB = 4 sentences 2.2.2. Exp 2 test materials A = ba, ko B = po, ga ABA = 2xA * 2xB = 4 sentences ABB = 2xA * 2xB = 4 sentences Syllable norming study NB: The experiment details are available on GitHub here. The experiment was instantiated using jspsych with additional js modules for Amazon MTurk, hosted on Stanford servers and deployed via MTurk. Unfortunately IP capture only captured server IP instead of remote user IP, but analysis of responses indicated sufficient heterogeneity of responses to include the final set. Experiment programming: Mo MTurk modules, deployment, data collection & standardization: George Kachergis $$: Mike Frank. Experiment (final version) summary ● participants with the same HIT as an earlier one were rejected (single participation per subject) ● participants heard a single syllable /yu/ and were required to respond by typing what they heard. Failure to respond led to immediate termination of the study ● otherwise participants were informed as follows: In each of the following trials, you will hear one syllable. After you have heard the syllable, please"
+    },
+    {
+      "page_number": 4,
+      "text_preview": "indicate the identity of the perceived syllable, i.e., which syllable you think you heard. You will then hear the syllable again once. Then, please indicate how prototypical is the syllable of the pereived identity on a scale from 1 to 7 Press any key to begin. ● participants then heard a series of 22 trials with a random order of the syllables: fa, fe, fu, ka, ke, ku, la, li, lo, ma, me, mu, ni, no, pa, pe, pu, si, so, ta, ti, to ● in each trial, Ss first hear the syllable. They could press the 'r' key to repeat the syllable as often as they pleased. Pressing any other key took them to the next screen where they could type the perceived identity of the syllable into a text box. When they hit Enter or clicked Next, they were shown a scale from 1...7, with 1 labeled (Poor example) and 7 labeled (Great example). Typing a number between 1 and 7 recorded their response and moved them to the next trial. ● At the end of the 22 trials, data was saved to a json file and data was subsequently retrieved for analysis to a csv file. Norming study analysis and results NB: The study raw data is available on GitHub here, and the analyses are available on GitHub here, and the stimuli are taken from here. Participant data was examined for inconsistencies. CulledSs contains Ss who were removed from analysis primarily because their responses to writing down the perceived syllables were meaningless (\"Vector Math\") or seemed highly unlikely (responding \"ba\" to syllables as diverse as \"ka\" and \"ni\"). For all the syllables used, the most common (typed) response and the mean prototypicality rating was computed. For each presented syllable, the most common response matched the expected response – i.e., the identity of the presented syllable. NB: this data is available in the JuptyerLab notebook, and visible on GitHub here."
+    },
+    {
+      "page_number": 5,
+      "text_preview": "Mean syllable prototypicality ratings: Mean consonant prototypicality ratings: Mean vowel prototypicality ratings:"
+    }
+  ],
+  "parent_corpus_database_id": "corpus_db_family_manybabies_3",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-02T09:32:33",
+  "sampled_page_count": 5,
+  "sha256": "a87930adb0f918e5351c4a972d63a4ef08b0d2ffa97d4fbe17d1b425eda03924"
+}

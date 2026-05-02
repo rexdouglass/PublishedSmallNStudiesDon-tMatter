@@ -1,0 +1,74 @@
+SOURCE_ARTIFACTS_SCHEMA:
+  purpose: >
+    Placeholder schema for child artifacts under source-family rows in
+    CORPORA_AND_DATABASES.tsv. This keeps root corpus/database rows at the
+    source-family grain while OSF components, repository files, workbooks,
+    supplements, local mirrors, and parser candidates remain auditable child
+    objects.
+  table: SOURCE_ARTIFACTS.tsv
+  grain: One retrievable or locally mirrored artifact, component, file, folder, package member, or inventory object under one source family.
+  status: schema_placeholder_not_yet_populated
+  parent_table: CORPORA_AND_DATABASES.tsv
+  rule: >
+    Add a SOURCE_ARTIFACTS.tsv row when a source-family lead exposes a concrete
+    component/file/object that may support inventory, parsing, source access,
+    or pair-row extraction. Do not create a new CORPORA_AND_DATABASES.tsv row
+    for every component unless it is independently citable, independently
+    parseable as a multi-row source, or governed by a different inclusion rule.
+  columns:
+    - name: artifact_id
+      definition: Stable ID for this artifact row.
+    - name: parent_corpus_database_id
+      definition: Parent source-family row in CORPORA_AND_DATABASES.tsv.
+    - name: artifact_role
+      definition: Role such as source_family_page, repository_component, file_inventory, result_bearing_artifact, data_file, code_file, generated_code_output_table, workbook, supplement, article_or_supplement_pdf, api_snapshot, mirrored_website_result_catalog, archive_member, local_mirror, parser_candidate, context_file, or rejected_artifact.
+    - name: provider
+      definition: Provider/platform such as osf, dataverse, zenodo, figshare, dryad, icpsr, github, local_file, publisher, pmc, or unknown.
+    - name: provider_id
+      definition: Provider-native identifier such as OSF GUID, Dataverse persistent ID, Zenodo record ID, Figshare article ID, GitHub owner/repo, local path, or DOI.
+    - name: parent_provider_id
+      definition: Provider-native parent component/project/dataset identifier when applicable.
+    - name: title
+      definition: Artifact title or file/component name.
+    - name: url
+      definition: Stable landing URL or API URL for the artifact.
+    - name: raw_url
+      definition: Direct download/raw URL when known and lawful to use.
+    - name: doi
+      definition: DOI for the artifact when it has one.
+    - name: component_path
+      definition: Provider-specific component/folder path, for example OSF project/component/folder hierarchy.
+    - name: file_name
+      definition: File name when the artifact is a file or archive member.
+    - name: file_type
+      definition: Extension or coarse type such as csv, tsv, xlsx, rds, sav, dta, json, zip, pdf, html, xml, r, py, readme, or unknown.
+    - name: mime_type
+      definition: MIME type when known.
+    - name: byte_size
+      definition: Byte size when known.
+    - name: local_path
+      definition: Repo-relative local mirror path when downloaded or already present.
+    - name: sha256
+      definition: SHA-256 checksum for local mirrored bytes when practical.
+    - name: inventory_status
+      definition: Status such as discovered, inventoried_metadata_only, result_artifact_needed, result_artifact_local_candidate, mirrorable, mirrored, parser_candidate, parsed, rejected, blocked_access, duplicate_artifact, or context_only.
+    - name: access_status
+      definition: Access status such as public_metadata, public_download_seen, downloaded, login_required, paywalled, missing, broken_link, unknown.
+    - name: candidate_parser_family
+      definition: Parser/inventory family likely needed, such as osf_project_inventory, dataverse_dataset_inventory, csv_table_parser, xlsx_workbook_parser, rds_parser, zip_member_inventory, pdf_context_only, or unknown.
+    - name: pair_field_evidence
+      definition: Verbatim or compact evidence that artifact may contain original/replication pair mapping fields.
+    - name: n_field_evidence
+      definition: Verbatim or compact evidence that artifact may contain N/sample-size fields.
+    - name: effect_field_evidence
+      definition: Verbatim or compact evidence that artifact may contain D/effect-size/native-statistic fields.
+    - name: publication_link_evidence
+      definition: Evidence for DOI, PMID, PMCID, original paper ID, replication paper ID, citation, or publication links.
+    - name: blocker_codes
+      definition: Pipe-delimited blockers such as metadata_only, needs_file_inventory, needs_download, login_required, no_table_seen, duplicate_of_parent, context_only, or parser_not_written.
+    - name: next_action
+      definition: Next inventory, mirroring, parser, review, or rejection action.
+    - name: notes
+      definition: Short audit notes.
+    - name: last_seen
+      definition: Date this artifact row was generated or refreshed.

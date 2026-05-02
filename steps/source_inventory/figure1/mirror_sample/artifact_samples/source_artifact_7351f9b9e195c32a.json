@@ -1,0 +1,114 @@
+{
+  "artifact_id": "source_artifact_7351f9b9e195c32a",
+  "byte_size": 1625,
+  "file_name": "est_study_8b.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/unpacked_work/est_study_8b.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "survey",
+        "term",
+        "estimate",
+        "std.error",
+        "statistic",
+        "p.value",
+        "conf.low",
+        "conf.high",
+        "df",
+        "outcome",
+        "estimate_type",
+        "outcome_group",
+        "study"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "conf.high": 0.0227641618,
+          "conf.low": -0.1288866108,
+          "df": 468.0,
+          "estimate": -0.0530612245,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_retrospective_approve_binary",
+          "outcome_group": "Approve Strike",
+          "p.value": 0.1697573332,
+          "statistic": -1.3751033019,
+          "std.error": 0.0385870825,
+          "study": "Replication",
+          "survey": "Week 13",
+          "term": "Nuclear"
+        },
+        {
+          "conf.high": 0.01335241,
+          "conf.low": -0.2499115498,
+          "df": 184.0,
+          "estimate": -0.1182795699,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_retrospective_approve_binary",
+          "outcome_group": "Approve Strike",
+          "p.value": 0.0779146502,
+          "statistic": -1.7728105209,
+          "std.error": 0.0667186755,
+          "study": "Replication",
+          "survey": "Week 6",
+          "term": "Nuclear"
+        },
+        {
+          "conf.high": 0.0903343054,
+          "conf.low": -0.160301408,
+          "df": 222.0,
+          "estimate": -0.0349835513,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_retrospective_approve_binary",
+          "outcome_group": "Approve Strike",
+          "p.value": 0.5827765586,
+          "statistic": -0.5501398212,
+          "std.error": 0.063590291,
+          "study": "Replication",
+          "survey": "Week 5",
+          "term": "Nuclear"
+        },
+        {
+          "conf.high": -0.0592609683,
+          "conf.low": -0.1748948223,
+          "df": 1113.0,
+          "estimate": -0.1170778953,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_retrospective_approve_binary",
+          "outcome_group": "Approve Strike",
+          "p.value": 7.54752e-05,
+          "statistic": -3.9732009181,
+          "std.error": 0.0294668953,
+          "study": "Pre-COVID",
+          "survey": "Aronow et al. (2019)",
+          "term": "Nuclear"
+        },
+        {
+          "conf.high": 0.0344415782,
+          "conf.low": -0.1647811182,
+          "df": 318.0,
+          "estimate": -0.06516977,
+          "estimate_type": "Unstandardized",
+          "outcome": "psv_retrospective_approve_binary",
+          "outcome_group": "Approve Strike",
+          "p.value": 0.1989653573,
+          "statistic": -1.2871865831,
+          "std.error": 0.0506296219,
+          "study": "Pre-COVID",
+          "survey": "Press et al. (2013)",
+          "term": "Nuclear"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        20,
+        13
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:34",
+  "sha256": "b658f7e8277e2610e894e68dedbdd050631ec876999edc4be49404c218c48da6"
+}

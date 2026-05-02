@@ -1,0 +1,47 @@
+{
+  "artifact_id": "source_artifact_506964a6567e44e0",
+  "byte_size": 413,
+  "columns": [
+    "lead_id",
+    "project",
+    "source_family",
+    "priority",
+    "default_action",
+    "expected_rows",
+    "landing_url",
+    "raw_url",
+    "local_raw_file",
+    "manifest_file",
+    "file_list_csv",
+    "downloaded_file_count",
+    "promotion_blocker",
+    "notes"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "jaljuli_kafkafi_2023__stage.csv",
+  "file_type": "csv",
+  "local_path": "data/derived/replication_pairs/harvest/staged/jaljuli_kafkafi_2023__stage.csv",
+  "parent_corpus_database_id": "corpus_db_lead_jaljuli_kafkafi_2023",
+  "preview_rows": [
+    {
+      "default_action": "stage_only",
+      "downloaded_file_count": 0,
+      "expected_rows": 152,
+      "file_list_csv": null,
+      "landing_url": "https://phenome.jax.org/",
+      "lead_id": "jaljuli_kafkafi_2023",
+      "local_raw_file": null,
+      "manifest_file": null,
+      "notes": "Best preclinical rodent replication corpus but extraction policy is pending",
+      "priority": 41,
+      "project": "Jaljuli Kafkafi multi lab rodent replication",
+      "promotion_blocker": "effect_conversion_policy_missing",
+      "raw_url": null,
+      "source_family": "preclinical"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-02T09:32:46",
+  "sha256": "ec83ce8ebdcbe169330d4fc4cf78e9b313dfd33fa4846a2f6fd59100e442dc82"
+}

@@ -1,0 +1,54 @@
+{
+  "artifact_id": "source_artifact_e63d31397e18b024",
+  "byte_size": 84130,
+  "file_name": "dataverse_05__cm_asian_disease.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_05__cm_asian_disease.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "mortality_frame",
+        "pfp",
+        "survey"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "mortality_frame": 0.0,
+          "pfp": null,
+          "survey": "lucid"
+        },
+        {
+          "mortality_frame": 1.0,
+          "pfp": null,
+          "survey": "lucid"
+        },
+        {
+          "mortality_frame": 1.0,
+          "pfp": null,
+          "survey": "lucid"
+        },
+        {
+          "mortality_frame": 1.0,
+          "pfp": 0.0,
+          "survey": "lucid"
+        },
+        {
+          "mortality_frame": 0.0,
+          "pfp": null,
+          "survey": "lucid"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        4190,
+        3
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "78de2e5653ee62239eea2406dd88908878ff941d8dcb29c5061bcf1ef465f3f2"
+}

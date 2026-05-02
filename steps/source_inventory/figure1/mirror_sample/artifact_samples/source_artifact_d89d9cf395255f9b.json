@@ -1,0 +1,1463 @@
+{
+  "artifact_id": "source_artifact_d89d9cf395255f9b",
+  "byte_size": 37121,
+  "file_name": "2KLNFX.json",
+  "file_type": "json",
+  "keys": [
+    "status",
+    "data"
+  ],
+  "local_path": "data/raw/corpus_candidates/political_science_unlock/dataverse_metadata/2KLNFX.json",
+  "parent_corpus_database_id": "raw_corpus:political_science_unlock",
+  "preview": {
+    "data": {
+      "authority": "10.7910",
+      "datasetFileUploadsAvailable": 957,
+      "datasetType": "dataset",
+      "effectiveDatasetFileCountLimit": 1000,
+      "id": 3893662,
+      "identifier": "DVN/2KLNFX",
+      "latestVersion": {
+        "UNF": "UNF:6:AQ2hOM7i1vWlbzGTxiYGjw==",
+        "citationDate": "2020-06-24",
+        "createTime": "2020-06-24T08:05:19Z",
+        "datasetFileUploadsAvailable": 957,
+        "datasetId": 3893662,
+        "datasetPersistentId": "doi:10.7910/DVN/2KLNFX",
+        "datasetType": "dataset",
+        "deaccessionLink": "",
+        "effectiveDatasetFileCountLimit": 1000,
+        "fileAccessRequest": false,
+        "files": [
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "0839ec6ca41ef8af1bbebf381e20b315"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files",
+              "fileAccessRequest": false,
+              "filename": "01_masterdofile.do",
+              "filesize": 3432,
+              "friendlyType": "Stata Syntax",
+              "id": 3893681,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "0839ec6ca41ef8af1bbebf381e20b315",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/ZHFT0K",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/ZHFT0K",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b76b4-3379b779c4f4",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files",
+            "label": "01_masterdofile.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "0134e4061d2aa72988763f4df9942ceb"
+              },
+              "contentType": "text/plain",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final",
+              "fileAccessRequest": false,
+              "filename": "0_readme.txt",
+              "filesize": 577,
+              "friendlyType": "Plain Text",
+              "id": 3893676,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "0134e4061d2aa72988763f4df9942ceb",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/PLHB1O",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/PLHB1O",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b759d-e7e6840cf39b",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final",
+            "label": "0_readme.txt",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "UNF": "UNF:6:AQ2hOM7i1vWlbzGTxiYGjw==",
+              "checksum": {
+                "type": "MD5",
+                "value": "d62b90e0e296988fce85410bd13a21dd"
+              },
+              "contentType": "text/tab-separated-values",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/data/clean",
+              "fileAccessRequest": false,
+              "filename": "clean_all.tab",
+              "filesize": 280925,
+              "friendlyType": "Tab-Delimited",
+              "id": 3893685,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "d62b90e0e296988fce85410bd13a21dd",
+              "originalFileFormat": "application/x-stata-14",
+              "originalFileName": "clean_all.dta",
+              "originalFileSize": 397055,
+              "originalFormatLabel": "Stata 14 Binary",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/ZSCU30",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/ZSCU30",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75ab-75433d697417",
+              "tabularData": true
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/data/clean",
+            "label": "clean_all.tab",
+            "restricted": false,
+            "version": 3
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "8ee6c443b313d4b988248b69cfc49f53"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "estadd.ado",
+              "filesize": 78029,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893669,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "8ee6c443b313d4b988248b69cfc49f53",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/QRB8CZ",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/QRB8CZ",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75af-8263d418f070",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "estadd.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "629e16240dfeace2677c48a3d994b6ab"
+              },
+              "contentType": "application/winhlp",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "estadd.hlp",
+              "filesize": 36261,
+              "friendlyType": "application/winhlp",
+              "id": 3893663,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "629e16240dfeace2677c48a3d994b6ab",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/NMDL1N",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/NMDL1N",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75bc-e674ad0feead",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "estadd.hlp",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f85de8011272f3860752f524cb9e078e"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "estout.ado",
+              "filesize": 163723,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893697,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "f85de8011272f3860752f524cb9e078e",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/RWNEW0",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/RWNEW0",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75ca-3acb69feb14f",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "estout.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "334de5717a735016c7d0c9515b587243"
+              },
+              "contentType": "application/winhlp",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "estout.hlp",
+              "filesize": 104491,
+              "friendlyType": "application/winhlp",
+              "id": 3893703,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "334de5717a735016c7d0c9515b587243",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/NA7SWO",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/NA7SWO",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75e0-a1fd1578293f",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "estout.hlp",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a71fb8da820b978a8ebc028e13cf2e24"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "eststo.ado",
+              "filesize": 9880,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893667,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "a71fb8da820b978a8ebc028e13cf2e24",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/GNLRGY",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/GNLRGY",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75f5-10bb272ad42b",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "eststo.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "4cd1a3d3f36462ba3fa4ca0bbc946d2d"
+              },
+              "contentType": "application/winhlp",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "eststo.hlp",
+              "filesize": 11590,
+              "friendlyType": "application/winhlp",
+              "id": 3893704,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "4cd1a3d3f36462ba3fa4ca0bbc946d2d",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/WFTWMP",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/WFTWMP",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75ee-d5ccc6f9e8be",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "eststo.hlp",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "fac4f260fc0b2b4a7f9e72cfe9339e68"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "esttab.ado",
+              "filesize": 49088,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893668,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "fac4f260fc0b2b4a7f9e72cfe9339e68",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/TEVEQQ",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/TEVEQQ",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75d2-c0ae3d3be7f3",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "esttab.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "9df05f377426c3e4b76813e3e61fa4e5"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/figures",
+              "fileAccessRequest": false,
+              "filename": "Figure_1.do",
+              "filesize": 2448,
+              "friendlyType": "Stata Syntax",
+              "id": 3893699,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "9df05f377426c3e4b76813e3e61fa4e5",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/DECGW0",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/DECGW0",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b769a-6caf5f4030e1",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/figures",
+            "label": "Figure_1.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a1f36044cf982b657a4ecd179826e020"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/figures",
+              "fileAccessRequest": false,
+              "filename": "Figure_A3.do",
+              "filesize": 443,
+              "friendlyType": "Stata Syntax",
+              "id": 3893680,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "a1f36044cf982b657a4ecd179826e020",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/L3HDTZ",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/L3HDTZ",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7694-2fd4419b4164",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/figures",
+            "label": "Figure_A3.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "5bfa6b805aa565b27e190ac4cdf691df"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/figures",
+              "fileAccessRequest": false,
+              "filename": "Figure_A4.do",
+              "filesize": 1582,
+              "friendlyType": "Stata Syntax",
+              "id": 3893665,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "5bfa6b805aa565b27e190ac4cdf691df",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/5LRR9N",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/5LRR9N",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b76a8-94796d8cbca9",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/figures",
+            "label": "Figure_A4.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e4b0f82507c4865423d343a6f460c110"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/figures",
+              "fileAccessRequest": false,
+              "filename": "Figure_A5.do",
+              "filesize": 1801,
+              "friendlyType": "Stata Syntax",
+              "id": 3893670,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "e4b0f82507c4865423d343a6f460c110",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/HCXD9O",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/HCXD9O",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b76a0-ae7488b17c30",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/figures",
+            "label": "Figure_A5.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "7767fba74d063b6a1db129609ee754cc"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "_gxtile.ado",
+              "filesize": 2337,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893695,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "7767fba74d063b6a1db129609ee754cc",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/FUJMSF",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/FUJMSF",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75e7-3e72e9e621ce",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "_gxtile.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "d686d4600c98ac47523d74220e2e4b3b"
+              },
+              "contentType": "application/x-stata-smcl",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final",
+              "fileAccessRequest": false,
+              "filename": "master_logfile.smcl",
+              "filesize": 8761,
+              "friendlyType": "Stata Markup and Control Language",
+              "id": 3893683,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "d686d4600c98ac47523d74220e2e4b3b",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/VZINKV",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/VZINKV",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75a3-e1bc09777053",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final",
+            "label": "master_logfile.smcl",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "c6820a694dd93daf94bc6a3c4198e75e"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "randcmd.ado",
+              "filesize": 13779,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893672,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "c6820a694dd93daf94bc6a3c4198e75e",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/BI755N",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/BI755N",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75fb-95b9a7511565",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "randcmd.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "9c669e8f5c61c14dd0b7499f3a9dbd10"
+              },
+              "contentType": "application/octet-stream",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "randcmd.sthlp",
+              "filesize": 10061,
+              "friendlyType": "Unknown",
+              "id": 3893701,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "9c669e8f5c61c14dd0b7499f3a9dbd10",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/UW8VGG",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/UW8VGG",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75d9-0e08680c6678",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "randcmd.sthlp",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "dd5819f6f9d16f9eb0336ee4b2e7c272"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "sigstar.ado",
+              "filesize": 1042,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893666,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "dd5819f6f9d16f9eb0336ee4b2e7c272",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/8KUBOU",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/8KUBOU",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75c3-dc8ff5403e4b",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "sigstar.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "be87efc184e6bb77648c2b6ec791bd95"
+              },
+              "contentType": "application/x-stata-ado",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/ado",
+              "fileAccessRequest": false,
+              "filename": "sigstar_lincom.ado",
+              "filesize": 1032,
+              "friendlyType": "Stata Ado Script",
+              "id": 3893692,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "be87efc184e6bb77648c2b6ec791bd95",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/9RXMOV",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/9RXMOV",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b75b6-f65e59d2b7b5",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/ado",
+            "label": "sigstar_lincom.ado",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "548af3d8ff17b79ff068b383f589c964"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_1.do",
+              "filesize": 2490,
+              "friendlyType": "Stata Syntax",
+              "id": 3893698,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "548af3d8ff17b79ff068b383f589c964",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/2IIQOH",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/2IIQOH",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7673-fec472089130",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_1.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "3504a21d626ed16d42b35e1367a1a6b3"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_2.do",
+              "filesize": 3133,
+              "friendlyType": "Stata Syntax",
+              "id": 3893679,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "3504a21d626ed16d42b35e1367a1a6b3",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/8PGGW9",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/8PGGW9",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b761b-5f9c307cf547",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_2.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "98814ac7c9a32375cbc23e22c391a12f"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A10.do",
+              "filesize": 2031,
+              "friendlyType": "Stata Syntax",
+              "id": 3893688,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "98814ac7c9a32375cbc23e22c391a12f",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/IQQOXD",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/IQQOXD",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b765a-ded68ac37002",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A10.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1bf75cb3029f0fcff74287aeda8888b0"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A11.do",
+              "filesize": 2363,
+              "friendlyType": "Stata Syntax",
+              "id": 3893690,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "1bf75cb3029f0fcff74287aeda8888b0",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/I6SYNE",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/I6SYNE",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7686-00123f130f40",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A11.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "335237cc69a4a4042ff616e0b44420a8"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A12.do",
+              "filesize": 2389,
+              "friendlyType": "Stata Syntax",
+              "id": 3893673,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "335237cc69a4a4042ff616e0b44420a8",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/SYC4LY",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/SYC4LY",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7608-c4449957c6bb",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A12.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "923c31511f67d020f768963c5484b228"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A13.do",
+              "filesize": 1983,
+              "friendlyType": "Stata Syntax",
+              "id": 3893664,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "923c31511f67d020f768963c5484b228",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/0YEIRK",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/0YEIRK",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b760e-7f4f6ac83bf5",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A13.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a40003f7005c3e7576d21fc9b11759c0"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A14.do",
+              "filesize": 1556,
+              "friendlyType": "Stata Syntax",
+              "id": 3893686,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "a40003f7005c3e7576d21fc9b11759c0",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/ZCXBFX",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/ZCXBFX",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7667-cf2175724124",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A14.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "290b2c8494f22d5ca4b52fd9be6c4fd3"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A15.do",
+              "filesize": 1582,
+              "friendlyType": "Stata Syntax",
+              "id": 3893678,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "290b2c8494f22d5ca4b52fd9be6c4fd3",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/OWM1IA",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/OWM1IA",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b767a-349112820ba9",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A15.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "1a4822204c6354fb0823a9964917938e"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A16.do",
+              "filesize": 2065,
+              "friendlyType": "Stata Syntax",
+              "id": 3893671,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "1a4822204c6354fb0823a9964917938e",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/EHBFII",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/EHBFII",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7601-4381158c5865",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A16.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "dfebfb985a7b3bf928f68867931f76af"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A17.do",
+              "filesize": 2062,
+              "friendlyType": "Stata Syntax",
+              "id": 3893682,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "dfebfb985a7b3bf928f68867931f76af",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/CJWNTJ",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/CJWNTJ",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7615-e0478c3ac287",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A17.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "46ad145eef0b06532f39693e60316790"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A18.do",
+              "filesize": 2021,
+              "friendlyType": "Stata Syntax",
+              "id": 3893675,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "46ad145eef0b06532f39693e60316790",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/89QGJA",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/89QGJA",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7628-2bdc8a665c00",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A18.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "e866d6f5b5e038baa2f0ef058ce5feb2"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A19.do",
+              "filesize": 2164,
+              "friendlyType": "Stata Syntax",
+              "id": 3893677,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "e866d6f5b5e038baa2f0ef058ce5feb2",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/AY9YU9",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/AY9YU9",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b762e-7fb1c52d5b25",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A19.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "031b66f86f9fe7d187c7688958c7b02f"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A1.do",
+              "filesize": 2486,
+              "friendlyType": "Stata Syntax",
+              "id": 3893689,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "031b66f86f9fe7d187c7688958c7b02f",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/68VIWY",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/68VIWY",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7634-bc78c8962a39",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A1.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "85c0f146645b3569711001f0844b8407"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A20.do",
+              "filesize": 2830,
+              "friendlyType": "Stata Syntax",
+              "id": 3893696,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "85c0f146645b3569711001f0844b8407",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/NMME74",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/NMME74",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b766d-9802d60fa0a3",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A20.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "f1689defb5c3424573912baa2f8f656e"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A21.do",
+              "filesize": 2004,
+              "friendlyType": "Stata Syntax",
+              "id": 3893691,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "f1689defb5c3424573912baa2f8f656e",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/VXICTA",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/VXICTA",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7680-55cb953e1571",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A21.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "5827d9113813960385832802252d238a"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A2.do",
+              "filesize": 2344,
+              "friendlyType": "Stata Syntax",
+              "id": 3893705,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "5827d9113813960385832802252d238a",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/ME5LGE",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/ME5LGE",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7641-251249f308a5",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A2.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "33d36911ed443791b9ea9fa0b0be0f81"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A3.do",
+              "filesize": 1483,
+              "friendlyType": "Stata Syntax",
+              "id": 3893702,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "33d36911ed443791b9ea9fa0b0be0f81",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/WVAWAG",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/WVAWAG",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7654-cb47d9266e05",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A3.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "dd081df89a0cc4342e25769d0c6703d0"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A4.do",
+              "filesize": 1890,
+              "friendlyType": "Stata Syntax",
+              "id": 3893694,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "dd081df89a0cc4342e25769d0c6703d0",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/BKXJ6R",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/BKXJ6R",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7621-cbec7d84ed75",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A4.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "a1c30d70a994c280b597b20e150e175f"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A5.do",
+              "filesize": 2107,
+              "friendlyType": "Stata Syntax",
+              "id": 3893693,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "a1c30d70a994c280b597b20e150e175f",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/ORZBNM",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/ORZBNM",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b763a-8304b989e23f",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A5.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "18e213b77fbcf212554bc8712300bec3"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A6.do",
+              "filesize": 2092,
+              "friendlyType": "Stata Syntax",
+              "id": 3893700,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "18e213b77fbcf212554bc8712300bec3",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/QIRINI",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/QIRINI",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7647-5f49953b9f26",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A6.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "40a0f389ecac454cb41cd93098c8c8cf"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A7.do",
+              "filesize": 4040,
+              "friendlyType": "Stata Syntax",
+              "id": 3893674,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "40a0f389ecac454cb41cd93098c8c8cf",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/ADUZHU",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/ADUZHU",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b764e-a2d5202736df",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A7.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "441fc5636628d904abf07f4651a63012"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A8.do",
+              "filesize": 3236,
+              "friendlyType": "Stata Syntax",
+              "id": 3893684,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "441fc5636628d904abf07f4651a63012",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/TFBYIC",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/TFBYIC",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b7661-9791fd71b708",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A8.do",
+            "restricted": false,
+            "version": 1
+          },
+          {
+            "dataFile": {
+              "checksum": {
+                "type": "MD5",
+                "value": "6b2e9f06a48c4bec8003fb2b8b7b292c"
+              },
+              "contentType": "application/x-stata-syntax",
+              "creationDate": "2020-06-24",
+              "directoryLabel": "Replication_JOP_final/do-files/tables",
+              "fileAccessRequest": false,
+              "filename": "Table_A9.do",
+              "filesize": 2019,
+              "friendlyType": "Stata Syntax",
+              "id": 3893687,
+              "lastUpdateTime": "2020-06-24T19:43:20Z",
+              "md5": "6b2e9f06a48c4bec8003fb2b8b7b292c",
+              "persistentId": "doi:10.7910/DVN/2KLNFX/PQUPF5",
+              "pidURL": "https://doi.org/10.7910/DVN/2KLNFX/PQUPF5",
+              "publicationDate": "2020-06-24",
+              "rootDataFileId": -1,
+              "storageIdentifier": "s3://dvn-cloud:172e55b768d-8952a7580405",
+              "tabularData": false
+            },
+            "datasetVersionId": 199937,
+            "directoryLabel": "Replication_JOP_final/do-files/tables",
+            "label": "Table_A9.do",
+            "restricted": false,
+            "version": 1
+          }
+        ],
+        "id": 199937,
+        "internalVersionNumber": 7,
+        "lastUpdateTime": "2020-06-24T19:43:20Z",
+        "latestVersionPublishingState": "RELEASED",
+        "license": {
+          "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+          "languageCode": "en",
+          "name": "CC0 1.0",
+          "rightsIdentifier": "CC0-1.0",
+          "rightsIdentifierScheme": "SPDX",
+          "schemeUri": "https://spdx.org/licenses/",
+          "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+        },
+        "metadataBlocks": {
+          "citation": {
+            "displayName": "Citation Metadata",
+            "fields": [
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "title",
+                "value": "Replication Data for: Does Party Competition Affect Political Activism?"
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "author",
+                "value": [
+                  {
+                    "authorAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorAffiliation",
+                      "value": "Humboldt-Universität zu Berlin"
+                    },
+                    "authorIdentifier": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorIdentifier",
+                      "value": "0000-0003-4268-1759"
+                    },
+                    "authorIdentifierScheme": {
+                      "multiple": false,
+                      "typeClass": "controlledVocabulary",
+                      "typeName": "authorIdentifierScheme",
+                      "value": "ORCID"
+                    },
+                    "authorName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "authorName",
+                      "value": "Anselm Hager"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "datasetContact",
+                "value": [
+                  {
+                    "datasetContactAffiliation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactAffiliation",
+                      "value": "Humboldt-Universität zu Berlin"
+                    },
+                    "datasetContactEmail": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactEmail",
+                      "value": "anselm.hager@gmail.com"
+                    },
+                    "datasetContactName": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "datasetContactName",
+                      "value": "Hager, Anselm"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "dsDescription",
+                "value": [
+                  {
+                    "dsDescriptionDate": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionDate",
+                      "value": "2020-06-24"
+                    },
+                    "dsDescriptionValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "dsDescriptionValue",
+                      "value": "Replication Data for \"Does Party Competition Affect Political Activism?\""
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "typeName": "subject",
+                "value": [
+                  "Social Sciences"
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "keyword",
+                "value": [
+                  {
+                    "keywordValue": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "keywordValue",
+                      "value": "Party Activism, Electoral Competition, Field Experiment, Campaigns"
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": true,
+                "typeClass": "compound",
+                "typeName": "publication",
+                "value": [
+                  {
+                    "publicationCitation": {
+                      "multiple": false,
+                      "typeClass": "primitive",
+                      "typeName": "publicationCitation",
+                      "value": "Hager, Anselm, Johannes Hermle, Lukas Hensel and Christopher Roth. \"Does Party Competition Affect Political Activism?\" Journal of Politics. Forthcoming."
+                    }
+                  }
+                ]
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "depositor",
+                "value": "Hager, Anselm"
+              },
+              {
+                "multiple": false,
+                "typeClass": "primitive",
+                "typeName": "dateOfDeposit",
+                "value": "2020-06-24"
+              }
+            ],
+            "name": "citation"
+          }
+        },
+        "publicationDate": "2020-06-24",
+        "releaseTime": "2020-06-24T19:43:20Z",
+        "storageIdentifier": "s3://10.7910/DVN/2KLNFX",
+        "versionMinorNumber": 0,
+        "versionNumber": 1,
+        "versionState": "RELEASED"
+      },
+      "locks": [],
+      "persistentUrl": "https://doi.org/10.7910/DVN/2KLNFX",
+      "protocol": "doi",
+      "publicationDate": "2020-06-24",
+      "publisher": "Harvard Dataverse",
+      "separator": "/",
+      "storageIdentifier": "s3://10.7910/DVN/2KLNFX"
+    },
+    "status": "OK"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-01T20:34:43",
+  "sha256": "6fe57321da775357509d14db03c18c0fdda3e9399f0de18ef43ca76e915b4da3"
+}

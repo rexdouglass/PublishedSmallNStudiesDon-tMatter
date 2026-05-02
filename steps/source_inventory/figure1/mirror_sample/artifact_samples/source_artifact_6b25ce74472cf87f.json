@@ -1,0 +1,66 @@
+{
+  "artifact_id": "source_artifact_6b25ce74472cf87f",
+  "byte_size": 6006,
+  "file_name": "dataverse_01__phc_lucid_completes.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/replication_projects/lead_harvest/covid_online_2021/dataverse_01__phc_lucid_completes.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "date",
+        "year",
+        "week",
+        "month",
+        "completes"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "completes": 5267.0,
+          "date": 1546473600000,
+          "month": "Jan",
+          "week": 1.0,
+          "year": "2019"
+        },
+        {
+          "completes": 5045.0,
+          "date": 1547078400000,
+          "month": "Jan",
+          "week": 2.0,
+          "year": "2019"
+        },
+        {
+          "completes": 255.0,
+          "date": 1547683200000,
+          "month": "Jan",
+          "week": 3.0,
+          "year": "2019"
+        },
+        {
+          "completes": 498.0,
+          "date": 1548288000000,
+          "month": "Jan",
+          "week": 4.0,
+          "year": "2019"
+        },
+        {
+          "completes": 12667.0,
+          "date": 1548892800000,
+          "month": "Jan",
+          "week": 5.0,
+          "year": "2019"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        116,
+        5
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:covid_online_2021",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-01T20:34:33",
+  "sha256": "14a6689fdfb837200022688bc350086e1fc762d3ce982c940d7a2975e98dbc69"
+}

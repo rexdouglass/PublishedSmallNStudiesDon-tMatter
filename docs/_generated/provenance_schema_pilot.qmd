@@ -1,0 +1,58 @@
+## Provenance Schema And 300-Row Retrace Pilot
+
+The dataset is moving toward a source-result provenance model. The lowest-level row should be a result asserted by a specific extraction source, not merely a plotted dot. That row must preserve original text, parsed native values, standardized `D`/`N`, source access details, and the transformation explanation.
+
+The current target tables are:
+
+- `source.tsv`: citeable or computational source objects such as papers, registries, corpora, repositories, databases, PDFs, and reports.
+- `source_access.tsv`: exact retrieval route and local mirror, including direct URL/API URL, repo-relative local path, content type, file size, checksum, retrieval method, and access barrier.
+- `source_result.tsv`: one extraction-source assertion of one result, including verbatim effect/N/p/CI/outcome text, parsed native values, standardized values, and transformation notes.
+- `canonical_result.tsv`: deduplicated result selected or summarized from one or more source-result rows.
+- `source_source_mapping.tsv`: relationships such as corpus contains paper, database reports paper, package supports paper, or registry preregisters trial.
+- `extraction_event.tsv`: download, user upload, unzip, PDF/table extraction, code execution, failure, and other work needed to obtain the bytes.
+
+Synthetic `dot_plot_...` citations are internal audit records for rendered dots. They are kept as `generated_result_citation_*` fields and should not be treated as bibliographic citations for the represented paper, trial, registry record, or dataset.
+
+The 300-row pilot is a reproducibility stress test: start from sampled plotted rows, retrace them through the plot files, then try to recover the upstream local source rows and literal numeric inputs. Inspect the human-check table first; the initial source-result table is a structural mapping and intentionally keeps labels separate from unrecovered verbatim text.
+
+Machine-readable pilot files:
+
+- Formal table codebook: [provenance_codebook.tsv](../data/derived/effect_inflation_dataset/provenance_codebook.tsv)
+- Field data dictionary: [provenance_data_dictionary.tsv](../data/derived/effect_inflation_dataset/provenance_data_dictionary.tsv)
+- Empty TSV templates: [schema_templates/](../data/derived/effect_inflation_dataset/schema_templates/)
+- Human-check extraction rows: [human_check_source_result_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/human_check_source_result_sample_300.tsv)
+- Initial source-result coding: [source_result_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/source_result_sample_300.tsv)
+- Source objects: [source_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/source_sample_300.tsv)
+- Access objects: [source_access_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/source_access_sample_300.tsv)
+- Canonical results: [canonical_result_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/canonical_result_sample_300.tsv)
+- Source mappings: [source_source_mapping_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/source_source_mapping_sample_300.tsv)
+- Retraced source-result rows: [retrace_source_result_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/retrace_source_result_sample_300.tsv)
+- Retrace events: [retrace_events_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/retrace_events_sample_300.tsv)
+- Retrace problems: [retrace_problems_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/retrace_problems_sample_300.tsv)
+- Initial coding summary: [coding_summary_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/coding_summary_sample_300.tsv)
+- Retrace summary: [retrace_summary_sample_300.tsv](../data/derived/effect_inflation_dataset/schema_pilot/retrace_summary_sample_300.tsv)
+
+::: {.dataset-table .provenance-pilot-summary-table}
+
+| Pilot metric | Value |
+| --- | --- |
+| sample_n | 300 |
+| plot_rows_recovered | 300 |
+| ultimate_source_paths_existing | 300 |
+| rows_with_recovered_effect_text | 298 |
+| rows_with_recovered_n_text | 300 |
+| rows_with_second_hop_raw_file | 298 |
+| rows_with_existing_second_hop_raw_file | 295 |
+| source_directness::candidate_child_numeric_row | 211 |
+| source_directness::raw_ctgov_registry_row | 37 |
+| source_directness::replication_pair_source_row | 48 |
+| source_directness::political_science_component_rows | 1 |
+| source_directness::plot_row_only | 2 |
+| problem::missing_verbatim_effect_text | 2 |
+| problem::source_is_derived_not_original_text | 262 |
+| source_text_extraction_status::source_cells_recovered | 298 |
+| source_text_extraction_status::n_only_recovered | 2 |
+
+:::
+
+The pilot result is mixed in exactly the useful way: the plotted rows are reproducible, but the current pipeline still often reaches a derived numeric row rather than the original human-readable table/API text. Future extractors should write source-result rows at extraction time so the verbatim cells are preserved before collapsing, cleaning, or converting to `D`.

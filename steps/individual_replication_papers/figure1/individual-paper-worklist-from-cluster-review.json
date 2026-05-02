@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-05-01T19:34:37",
+  "records": [
+    {
+      "candidate_artifact_or_paper_notes_json": "[{\"notes\": \"OSF download metadata, import script, README, file list, and manifest describe one replication package; route away from corpus intake.\", \"suggested_disposition\": \"individual_paper\"}]",
+      "cluster_id": "cluster_osf_03_import_original_data_36bc7619dc58",
+      "confidence": "medium",
+      "created_at": "2026-05-01T19:34:37",
+      "decision": "route_cluster_to_individual_replication_paper_worklist",
+      "lead_level_note_count": "1",
+      "next_action": "Send to the individual replication-paper worklist; inspect README and OSF file inventory only if paper-level/result-table extraction is needed, but do not create a source-family root from these filenames alone.",
+      "parent_corpus_database_id_or_key": "lead_harvest:online_image_credibility",
+      "preferred_source_family_name": "online_image_credibility OSF replication package",
+      "reason": "The compact evidence shows a single OSF-harvested replication package with an import script, README, download metadata, and OSF file inventory. It does not yet show an explicit reusable multi-row source-family table or corpus/database page, so route away from corpus intake.",
+      "receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered004/cluster_osf_03_import_original_data_36bc7619dc58.json",
+      "route_type": "individual_paper",
+      "source_count": "5",
+      "worklist_task_id": "worklist_task_3ead0180d0078b86"
+    },
+    {
+      "candidate_artifact_or_paper_notes_json": "[{\"node_id\": \"node_search_manifest_281ebaea6cc9\", \"notes\": \"Original_Dataset.sav is a data file in a likely one-off OSF package.\", \"suggested_disposition\": \"individual_paper\"}, {\"node_id\": \"node_search_manifest_fec7dd408b30\", \"notes\": \"osf_01_download.json is a package download manifest.\", \"suggested_disposition\": \"context\"}, {\"node_id\": \"node_search_manifest_d7f6cde01cf8\", \"notes\": \"FinalData.R looks like package-level analysis code.\", \"suggested_disposition\": \"individual_paper\"}, {\"node_id\": \"node_search_manifest_0831ed595724\", \"notes\": \"FinalData.R duplicate/second OSF file; keep with the individual package.\", \"suggested_disposition\": \"individual_paper\"}, {\"node_id\": \"node_search_manifest_c81af09ab4ca\", \"notes\": \"osf_manifest.json is a file-inventory artifact.\", \"suggested_disposition\": \"context\"}, {\"node_id\": \"node_search_manifest_cdebf5a3ff73\", \"notes\": \"osf_file_list.csv is a file inventory for the individual package.\", \"suggested_disposition\": \"context\"}]",
+      "cluster_id": "cluster_osf_01_original_dataset_63864d88187b",
+      "confidence": "medium",
+      "created_at": "2026-05-01T19:34:37",
+      "decision": "route_cluster_to_individual_replication_paper_worklist",
+      "lead_level_note_count": "6",
+      "next_action": "Route the package to the individual replication paper worklist; inspect osf_file_list.csv/osf_manifest.json only to determine whether a specific multi-row result table should later be split out to the result-table worklist.",
+      "parent_corpus_database_id_or_key": "lead_harvest:contextual_bias_2026",
+      "preferred_source_family_name": "Contextual Bias 2026 OSF package",
+      "reason": "The cluster shows an OSF-hosted dataset, scripts, manifest, and file list, but the compact evidence does not establish a reusable multi-row original/replication source family or pair/result table. Treat as a one-off replication package unless manifest inspection reveals a multi-study/effect table.",
+      "receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered005/cluster_osf_01_original_dataset_63864d88187b.json",
+      "route_type": "individual_paper",
+      "source_count": "2",
+      "worklist_task_id": "worklist_task_e7d2c940800616a5"
+    }
+  ],
+  "route_type": "individual_paper",
+  "routing_table": "steps/review_cue/figure1_search_leads/reviewcue-clustered-routing-table-figure1_search_leads.tsv",
+  "task_count": 2
+}

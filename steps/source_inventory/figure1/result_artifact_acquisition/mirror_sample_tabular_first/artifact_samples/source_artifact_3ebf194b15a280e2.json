@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_3ebf194b15a280e2",
+  "byte_size": 659356,
+  "columns": [
+    "Gene",
+    "Accession",
+    "Measure",
+    "final.mean",
+    "Time",
+    "Lot",
+    "ID",
+    "Status"
+  ],
+  "estimated_data_rows": 8214,
+  "file_name": "elife-30274-fig2-data1-v2.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/source_artifacts/figure1_acquisition_tabular_first/citation_search_openalex_bb828bb93d4f/source_artifact_3ebf194b15a280e2__elife-30274-fig2-data1-v2.csv",
+  "parent_corpus_database_id": "citation_search_openalex_bb828bb93d4f",
+  "preview_rows": [
+    {
+      "Accession": "NM_002688",
+      "Gene": "SEPT5",
+      "ID": "NM_002688.C1",
+      "Lot": "C1",
+      "Measure": "Mean_0HR_C1",
+      "Status": "Silent",
+      "Time": "0HR",
+      "final.mean": 0.020085825
+    },
+    {
+      "Accession": "NM_006640",
+      "Gene": "SEPT9",
+      "ID": "NM_006640.C1",
+      "Lot": "C1",
+      "Measure": "Mean_0HR_C1",
+      "Status": "Active",
+      "Time": "0HR",
+      "final.mean": 31.896175
+    },
+    {
+      "Accession": "NM_001080395",
+      "Gene": "AATK",
+      "ID": "NM_001080395.C1",
+      "Lot": "C1",
+      "Measure": "Mean_0HR_C1",
+      "Status": "Silent",
+      "Time": "0HR",
+      "final.mean": 0.011992574
+    },
+    {
+      "Accession": "NM_001040876",
+      "Gene": "ABCE1",
+      "ID": "NM_001040876.C1",
+      "Lot": "C1",
+      "Measure": "Mean_0HR_C1",
+      "Status": "Active",
+      "Time": "0HR",
+      "final.mean": 5.52781
+    },
+    {
+      "Accession": "NM_005157",
+      "Gene": "ABL1",
+      "ID": "NM_005157.C1",
+      "Lot": "C1",
+      "Measure": "Mean_0HR_C1",
+      "Status": "Active",
+      "Time": "0HR",
+      "final.mean": 5.3109625
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-01T22:20:32",
+  "sha256": "2d9a997b25bc2b7d2b3c9f99bb71d1e2b40d903d10f5f5a8b14d7613fb3a0863"
+}
