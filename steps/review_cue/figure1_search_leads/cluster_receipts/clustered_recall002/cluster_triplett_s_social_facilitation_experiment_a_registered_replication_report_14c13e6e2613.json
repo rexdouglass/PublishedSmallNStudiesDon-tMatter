@@ -1,0 +1,29 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_triplett_s_social_facilitation_experiment_a_registered_replication_report_14c13e6e2613",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "route_cluster_to_individual_replication_paper_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 2,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_7f49a7574fd4",
+      "notes": "Registered replication report article; route away from source-family intake.",
+      "suggested_disposition": "individual_paper"
+    },
+    {
+      "node_id": "node_search_manifest_2c44aca0e415",
+      "notes": "OSF package/source link for the individual Triplett replication.",
+      "suggested_disposition": "individual_paper"
+    }
+  ],
+  "next_action": "Route the DOI/OSF package to the individual replication-paper worklist; inspect OSF pages for value-bearing files only if extracting this one paper/package separately.",
+  "parent_corpus_database_id_or_key": "doi:10.31234/osf.io/bqzj9_v1",
+  "preferred_source_family_name": "Triplett social facilitation Registered Replication Report",
+  "reason": "This is an individual registered replication report of Triplett's social facilitation experiment, with OSF/source links. It has affirmative replication-relation evidence, but the cluster does not establish a reusable multi-row source-family table.",
+  "sources_checked": [
+    "cluster compact nodes for DOI 10.31234/osf.io/bqzj9_v1",
+    "cluster compact OSF nodes 6brq9 and vsgpq"
+  ]
+}

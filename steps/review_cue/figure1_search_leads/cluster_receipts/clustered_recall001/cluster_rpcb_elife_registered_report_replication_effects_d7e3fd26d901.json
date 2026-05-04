@@ -1,0 +1,42 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_rpcb_elife_registered_report_replication_effects_d7e3fd26d901",
+  "confidence": "high",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 4,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_54ba27257de5",
+      "notes": "Effect-level final-analysis table; own under raw_corpus:rpcb.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_root_table_3987139cfbbf",
+      "notes": "Effect-level data dictionary; own under raw_corpus:rpcb.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_root_table_fb0899e1a002",
+      "notes": "Experiment-level final-analysis table; inventory once under raw_corpus:rpcb.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_root_table_75f153ae4928",
+      "notes": "Paper-level final-analysis table; inventory once under raw_corpus:rpcb.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Deduplicate duplicate root-table and search-manifest hits, then inventory the effect-, experiment-, and paper-level CSVs and dictionaries under raw_corpus:rpcb; do not create new root rows for individual CSV files.",
+  "parent_corpus_database_id_or_key": "raw_corpus:rpcb",
+  "preferred_source_family_name": "Reproducibility Project: Cancer Biology (RP:CB) final analysis data",
+  "reason": "The cluster is the local raw-corpus side of the same RP:CB source family. It contains reusable paper-, experiment-, and effect-level final-analysis tables and dictionaries; the existing included/raw RPCB parent should own these duplicates and child artifacts.",
+  "sources_checked": [
+    "cluster compact nodes for raw_corpus:rpcb",
+    "prior clustered004 RP:CB local raw-corpus decision receipt",
+    "local:data/raw/corpus_candidates/rpcb/",
+    "web:https://www.cos.io/rpcb",
+    "web:https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology"
+  ]
+}

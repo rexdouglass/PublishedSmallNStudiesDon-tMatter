@@ -1,0 +1,25 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_sports_sfbva_node_c21ed8767a97",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 1,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_1efc9da88b86",
+      "notes": "OSF sfbva project metadata for a source family already integrated via the sports supplemental outcomes table.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Attach OSF node sfbva and related project OSF 3VUFG as source-family access routes under corpus_db_sports_science_supplemental_outcomes_table; mirror or verify file-level effect-size/code artifacts if not already represented by the local sports supplement table and sample-size workbook.",
+  "parent_corpus_database_id_or_key": "corpus_db_sports_science_supplemental_outcomes_table",
+  "preferred_source_family_name": "Estimating the Replicability of Sport Science Research",
+  "reason": "The OSF node metadata explicitly describes an analysis repository containing effect sizes from original and replication studies plus analysis code and markdown summaries. The sports-science corpus is already integrated locally from public supplemental outcome/sample-size artifacts, so this node is a child/source-family artifact to inventory rather than a new root row.",
+  "sources_checked": [
+    "local:data/raw/replication_projects/osf_probe/sports_sfbva_node.json",
+    "CORPORA_AND_DATABASES.tsv corpus_db_sports_science_supplemental_outcomes_table",
+    "steps/searches/figure1/searchrecall-figure1-known-sources.tsv sports science row"
+  ]
+}

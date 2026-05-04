@@ -1,0 +1,36 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_ying_2023_770ed6292b41",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_06da31304170",
+      "notes": "EuropePMC full-scale abstract JSON; provenance child artifact.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_1c3e440aa228",
+      "notes": "EuropePMC pilot abstract JSON; provenance child artifact.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_0c0386c6d3cf",
+      "notes": "Additional pilot/full-scale abstract JSONs are inventory artifacts, not source-family roots.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Inventory the EPMC abstract JSONs, abstract scan CSV, staged pair roster, and promoted reconstruction under family::ying_2023_pilot_full_scale_trials; route only confirmed pair/result tables to extraction.",
+  "parent_corpus_database_id_or_key": "family::ying_2023_pilot_full_scale_trials",
+  "preferred_source_family_name": "Ying 2023 pilot-full-scale trials",
+  "reason": "Ying 2023 is already an integrated live source family with a promoted partial reconstruction and unresolved staged artifacts. The cluster contains local EuropePMC abstract JSONs and scan outputs used to tighten pilot/full-scale evidence; these are child/provenance artifacts rather than a new root source family.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:ying_2023",
+    "CORPORA_AND_DATABASES.tsv Ying 2023 rows",
+    "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv Ying 2023 row",
+    "local:data/raw/replication_projects/lead_harvest/ying_2023/"
+  ]
+}

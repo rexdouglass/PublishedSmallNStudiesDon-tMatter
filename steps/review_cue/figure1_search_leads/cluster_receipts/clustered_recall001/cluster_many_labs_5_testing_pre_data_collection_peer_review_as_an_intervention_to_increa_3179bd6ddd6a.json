@@ -1,0 +1,36 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_many_labs_5_testing_pre_data_collection_peer_review_as_an_intervention_to_increa_3179bd6ddd6a",
+  "confidence": "high",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_79f84270000c",
+      "notes": "Bibliographic/root lead for Many Labs 5; merge under the existing ML5 parent.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_3f7f8145ef7a",
+      "notes": "Duplicate DOI/search hit; inventory as provenance/alias under Many Labs 5.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_e43abaab1fe6",
+      "notes": "OSF preprint/alternate-version hit; retain as version/provenance context.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Inventory DOI, OSF, preprint, and search-hit aliases under corpus_db_many_labs_5_overarching_analyses; keep local ML5FigureData.csv and single-effects files as the result-bearing artifacts for extraction/provenance work.",
+  "parent_corpus_database_id_or_key": "corpus_db_many_labs_5_overarching_analyses",
+  "preferred_source_family_name": "Many Labs 5: Testing Pre-Data-Collection Peer Review as an Intervention to Increase Replicability",
+  "reason": "Many Labs 5 is already represented as an integrated Figure 1 source family using local public figure data. The DOI/OSF/OpenAlex hits in this cluster are aliases or bibliographic/source-family artifacts for that existing parent, not a new root source family.",
+  "sources_checked": [
+    "cluster compact nodes for DOI 10.1177/2515245920958687",
+    "CORPORA_AND_DATABASES.tsv corpus_db_many_labs_5_overarching_analyses",
+    "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv Many Labs 5 row",
+    "local:data/raw/replication_projects/ml5/"
+  ]
+}

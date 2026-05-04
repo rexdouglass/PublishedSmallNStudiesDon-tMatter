@@ -1,0 +1,28 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_current_peer_reviewed_main_result_status_8b41fc59c0fa",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "keep_cluster_as_context",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 2,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_403899ba32c5",
+      "notes": "Internal derived status row table; not an external source object.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_dece844cf495",
+      "notes": "Duplicate hit for the same internal derived status table.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Keep as pipeline context only; do not add to source-family intake and do not route as a result table.",
+  "parent_corpus_database_id_or_key": "data/derived/corpus_candidates/current_peer_reviewed_main_result_status.csv",
+  "preferred_source_family_name": "internal current peer-reviewed main-result status table",
+  "reason": "This is an internal derived status table summarizing whether candidate corpora have peer-reviewed D/N and main-result flags. It is useful routing context, but it is not an external source family, dataset, repository, or result table for Figure 1 extraction.",
+  "sources_checked": [
+    "local:data/derived/corpus_candidates/current_peer_reviewed_main_result_status.csv"
+  ]
+}

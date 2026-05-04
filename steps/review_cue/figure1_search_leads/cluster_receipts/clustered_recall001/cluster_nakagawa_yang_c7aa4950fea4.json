@@ -1,0 +1,35 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_nakagawa_yang_c7aa4950fea4",
+  "confidence": "medium",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_2675c1c63f1f",
+      "notes": "Model CSV with sample-size multiplier confidence intervals; inspect before treating as a result table.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_d35b9edf22b7",
+      "notes": "SMD-specific model output; candidate child artifact under raw_corpus:nakagawa_yang.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_9bd79d082813",
+      "notes": "Analysis helper code; context for parsing/model provenance, not a root source family.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Inventory the local Nakagawa/Yang repository files under raw_corpus:nakagawa_yang; inspect model CSVs, preprocessing code, and sensitivity analyses for source-result tables, D/N extractability, and whether the rows satisfy Figure 1's replication/follow-up relation.",
+  "parent_corpus_database_id_or_key": "raw_corpus:nakagawa_yang",
+  "preferred_source_family_name": "Nakagawa/Yang ecology and evolution in-silico replication corpus",
+  "reason": "The cluster is a local raw corpus candidate with model CSVs and analysis scripts from an ecology/evolution in-silico replication package. It appears reusable, but the compact evidence does not prove a direct independent original-replication pair table; it needs file-level inventory before any Figure 1 promotion.",
+  "sources_checked": [
+    "cluster compact nodes for raw_corpus:nakagawa_yang",
+    "local:data/raw/corpus_candidates/nakagawa_yang/",
+    "coverage notes describing the ecology/evolution in-silico replication source family"
+  ]
+}

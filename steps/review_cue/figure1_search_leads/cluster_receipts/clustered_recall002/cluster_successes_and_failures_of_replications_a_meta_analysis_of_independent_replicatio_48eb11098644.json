@@ -1,0 +1,31 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_successes_and_failures_of_replications_a_meta_analysis_of_independent_replicatio_48eb11098644",
+  "confidence": "medium",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "keep_source_family_candidate",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 2,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_45e0a1e29152",
+      "notes": "Preprint/source-family lead; keep for OSF data/code inventory.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_b0deb188cfe7",
+      "notes": "Duplicate DOI/preprint hit for the same source-family candidate.",
+      "suggested_disposition": "root_source_family"
+    }
+  ],
+  "next_action": "Keep as a source-family candidate and inventory OSF project 9r62x plus dataset sfdq4/code scripts; route only confirmed original/replication effect-size rows to result-table extraction.",
+  "parent_corpus_database_id_or_key": "doi:10.31222/osf.io/8psw2",
+  "preferred_source_family_name": "Successes and Failures of Replications based on OSF Registries",
+  "reason": "The article/preprint describes a meta-analysis of independent replication studies registered on OSF and points to open data/code, including an OSF project and dataset. It may be a reusable source object, but its rows need inventory because only a subset appear to contain comparable original and replication effect sizes.",
+  "sources_checked": [
+    "cluster compact nodes for DOI 10.31222/osf.io/8psw2",
+    "web:https://ideas.repec.org/p/osf/metaar/8psw2.html",
+    "web:https://osf.io/9r62x/",
+    "web:https://osf.io/sfdq4"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_egap_metaketa_iv_community_policing_pooled_pap_row_34af9874e0a1",
+  "confidence": "high",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 4,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_947608930c70",
+      "notes": "meta-estimates-main-hypotheses-original.RDS is a candidate result-bearing table for the pooled PAP row.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_3843db3bfa91",
+      "notes": "1-prep-estimates.R is supporting transformation code for the Metaketa IV result outputs.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_d32919848809",
+      "notes": "2-meta-analysis.R is supporting analysis code for the pooled estimates.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_461d143a8d5d",
+      "notes": "SM-tables.R is supporting article/table generation code.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Route meta-estimates-main-hypotheses-original.RDS, study-estimate RDS outputs, and supporting R scripts to the result-table worklist under corpus_db_egap_metaketa_iv_community_policing_pooled_pap_row; keep native/site rows separate from the pooled project dot.",
+  "parent_corpus_database_id_or_key": "corpus_db_egap_metaketa_iv_community_policing_pooled_pap_row",
+  "preferred_source_family_name": "EGAP Metaketa IV community-policing pooled PAP row",
+  "reason": "The cluster contains local Metaketa IV code and RDS output artifacts for the community-policing pooled PAP row already represented in the Figure 3 source catalog. These are result-bearing child artifacts and parsing targets, not a new corpus root.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:metaketa_iv_2021",
+    "CORPORA_AND_DATABASES.tsv EGAP Metaketa IV pooled PAP row",
+    "data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv Metaketa IV rows",
+    "local:data/raw/replication_projects/lead_harvest/metaketa_iv_2021/"
+  ]
+}

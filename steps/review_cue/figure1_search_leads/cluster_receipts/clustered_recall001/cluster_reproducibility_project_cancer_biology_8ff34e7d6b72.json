@@ -1,0 +1,37 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_reproducibility_project_cancer_biology_8ff34e7d6b72",
+  "confidence": "high",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "keep_source_family_candidate",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_556a59a77579",
+      "notes": "Root-table lead for RPCB; retain as canonical source-family candidate.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_f2a0ceb0f21c",
+      "notes": "OSF e81xl duplicate/source-family hit for RPCB.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_b468cb5d70dd",
+      "notes": "OpenAlex duplicate/source-family hit for RPCB.",
+      "suggested_disposition": "root_source_family"
+    }
+  ],
+  "next_action": "Keep as the RPCB source-family candidate; inventory the OSF RPCB collection and Replication Data from the Reproducibility Project: Cancer Biology; route paper/experiment/effect-level data tables to result-table extraction.",
+  "parent_corpus_database_id_or_key": "rpcb | doi:10.7554/eLife.71601",
+  "preferred_source_family_name": "Reproducibility Project: Cancer Biology",
+  "reason": "This is a source-family/corpus candidate rather than an isolated paper. The eLife/RP:CB project reports many completed replication experiments and points to project-level data, code, digital materials, and OSF replication-data objects.",
+  "sources_checked": [
+    "cluster compact nodes for OSF e81xl and OpenAlex RPCB hits",
+    "prior clustered005 RP:CB source-family decision receipt",
+    "web:https://osf.io/e81xl/",
+    "web:https://www.cos.io/rpcb",
+    "web:https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology"
+  ]
+}

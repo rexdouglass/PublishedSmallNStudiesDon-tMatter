@@ -1,0 +1,35 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_combined_data_67882494fffd",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_6b7bba9ceefe",
+      "notes": "combined_data.csv is the main candidate result table for RESCUE/Psych 251 rows.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_290c1f536675",
+      "notes": "combined_data.md is a rendered/documentation view of the same table.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_7e9136e7e65f",
+      "notes": "parsed_data.csv is supporting parsed table output.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Route combined_data.csv, combined_data.md, and parsed_data.csv to result-table extraction under raw_replication_project:rescue_251; preserve raw_stat and N text before any D/N conversion or row collapsing.",
+  "parent_corpus_database_id_or_key": "raw_replication_project:rescue_251",
+  "preferred_source_family_name": "Psych 251 / RESCUE replication combined data",
+  "reason": "The local combined_data.csv table enumerates original, replication, additional, and rescue rows with N, raw statistical text, original article links, preregistration links, and replication-score fields. This is a reusable result table, not a new source-family root.",
+  "sources_checked": [
+    "local:data/raw/replication_projects/rescue_251/combined_data.csv",
+    "local:data/raw/replication_projects/rescue_251/combined_data.md",
+    "local:data/raw/replication_projects/rescue_251/parsed_data.csv"
+  ]
+}

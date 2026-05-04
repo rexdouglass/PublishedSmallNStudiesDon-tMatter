@@ -1,0 +1,409 @@
+{
+  "cluster_decisions": [
+    {
+      "cluster_id": "cluster_osf_03_rp_cb_final_analysis_paper_level_data_e82d9617efa7",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Reproducibility Project: Cancer Biology (RP:CB) final analysis data",
+      "parent_corpus_database_id_or_key": "raw_corpus:rpcb",
+      "reason": "The cluster is a coherent OSF final-analysis package for RP:CB, with paper-, experiment-, and effect-level data plus dictionaries and per-study analysis scripts. RP:CB is an existing reusable corpus/source family, so these files are child artifacts of that parent rather than separate root source families.",
+      "next_action": "Attach the OSF e5nvr final-analysis tables, dictionaries, and per-study R scripts to raw_corpus:rpcb; deduplicate against the local rpcb corpus-candidate copies in the sibling RPCB cluster.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:rpcb_e5nvr",
+        "prior clustered004 RP:CB e5nvr decision receipt",
+        "local:data/raw/replication_projects/lead_harvest/rpcb_e5nvr/",
+        "web:https://osf.io/e5nvr/",
+        "web:https://www.cos.io/rpcb"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_52e21249fde7",
+          "suggested_disposition": "child_artifact",
+          "notes": "Paper-level final-analysis data table; own under raw_corpus:rpcb."
+        },
+        {
+          "node_id": "node_search_manifest_da07f7e2b9a0",
+          "suggested_disposition": "child_artifact",
+          "notes": "Effect-level final-analysis data table; likely primary result-table artifact for RP:CB."
+        },
+        {
+          "node_id": "node_search_manifest_b256e25fe534",
+          "suggested_disposition": "child_artifact",
+          "notes": "Per-study RP:CB final-analysis script; code child artifact, not a root source family."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_rpcb_elife_registered_report_replication_effects_d7e3fd26d901",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Reproducibility Project: Cancer Biology (RP:CB) final analysis data",
+      "parent_corpus_database_id_or_key": "raw_corpus:rpcb",
+      "reason": "The cluster is the local raw-corpus side of the same RP:CB source family. It contains reusable paper-, experiment-, and effect-level final-analysis tables and dictionaries; the existing included/raw RPCB parent should own these duplicates and child artifacts.",
+      "next_action": "Deduplicate duplicate root-table and search-manifest hits, then inventory the effect-, experiment-, and paper-level CSVs and dictionaries under raw_corpus:rpcb; do not create new root rows for individual CSV files.",
+      "sources_checked": [
+        "cluster compact nodes for raw_corpus:rpcb",
+        "prior clustered004 RP:CB local raw-corpus decision receipt",
+        "local:data/raw/corpus_candidates/rpcb/",
+        "web:https://www.cos.io/rpcb",
+        "web:https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_54ba27257de5",
+          "suggested_disposition": "child_artifact",
+          "notes": "Effect-level final-analysis table; own under raw_corpus:rpcb."
+        },
+        {
+          "node_id": "node_root_table_3987139cfbbf",
+          "suggested_disposition": "child_artifact",
+          "notes": "Effect-level data dictionary; own under raw_corpus:rpcb."
+        },
+        {
+          "node_id": "node_root_table_fb0899e1a002",
+          "suggested_disposition": "child_artifact",
+          "notes": "Experiment-level final-analysis table; inventory once under raw_corpus:rpcb."
+        },
+        {
+          "node_id": "node_root_table_75f153ae4928",
+          "suggested_disposition": "child_artifact",
+          "notes": "Paper-level final-analysis table; inventory once under raw_corpus:rpcb."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_score_cos_preregistration_indicated_original_papers_dcacb6718443",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Systematizing Confidence in Open Research and Evidence (SCORE) data/code/materials",
+      "parent_corpus_database_id_or_key": "score",
+      "reason": "SCORE is an existing reusable source family with openly available data/code/materials. This cluster contains child data tables, outcome/check tables, raw inventory files, and the existing preregistration-indicated subset view; these should be owned by the broader SCORE parent.",
+      "next_action": "Inventory SCORE claim/outcome/check tables and OSF manifest/meta files under the SCORE parent; preserve the existing score_cos_preregistration_indicated_original_papers subset row and avoid duplicate root creation.",
+      "sources_checked": [
+        "cluster compact nodes for raw_corpus:score",
+        "prior clustered004 SCORE decision receipt",
+        "local:data/raw/corpus_candidates/score/",
+        "local:data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv",
+        "web:https://www.cos.io/score"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_ad65bf2c5e61",
+          "suggested_disposition": "child_artifact",
+          "notes": "SCORE pr_outcomes table; child artifact under SCORE."
+        },
+        {
+          "node_id": "node_search_manifest_615f0087fea6",
+          "suggested_disposition": "child_artifact",
+          "notes": "SCORE claim-level analysis-ready table; child artifact under SCORE."
+        },
+        {
+          "node_id": "node_search_manifest_c1c5709519ba",
+          "suggested_disposition": "child_artifact",
+          "notes": "SCORE LLM/research-question table; inventory as a supporting child artifact, not a root source family."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_create_studydetails_079f652b2951",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Experimental Economics Replication Project (EERP)",
+      "parent_corpus_database_id_or_key": "raw_replication_project:eerp",
+      "reason": "The cluster consists of EERP child artifacts used to derive study details and effect-standardization fields, not a separate corpus. These code/data files should be processed as result-table or code-derived table evidence under EERP.",
+      "next_action": "Route create_studydetails.do, effectstandardization.py, and rpp_data.csv to the result-table/code-derived table worklist under raw_replication_project:eerp; extract only fields supported by inspected code/data, not by filenames alone.",
+      "sources_checked": [
+        "cluster compact nodes for raw_replication_project:eerp",
+        "prior clustered005 EERP create_studydetails decision receipt",
+        "local:data/raw/replication_projects/eerp/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_bceb77be2e38",
+          "suggested_disposition": "child_artifact",
+          "notes": "create_studydetails.do is a code source for EERP study-detail fields."
+        },
+        {
+          "node_id": "node_search_manifest_25c2dd449cba",
+          "suggested_disposition": "child_artifact",
+          "notes": "effectstandardization.py is EERP analysis/source code; inspect for effect and effective sample-size fields."
+        },
+        {
+          "node_id": "node_search_manifest_7f7ec3712394",
+          "suggested_disposition": "child_artifact",
+          "notes": "rpp_data.csv is a raw data artifact inside the EERP extraction tree; verify exact contribution before extraction."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_nakagawa_yang_c7aa4950fea4",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "medium",
+      "preferred_source_family_name": "Nakagawa/Yang ecology and evolution in-silico replication corpus",
+      "parent_corpus_database_id_or_key": "raw_corpus:nakagawa_yang",
+      "reason": "The cluster is a local raw corpus candidate with model CSVs and analysis scripts from an ecology/evolution in-silico replication package. It appears reusable, but the compact evidence does not prove a direct independent original-replication pair table; it needs file-level inventory before any Figure 1 promotion.",
+      "next_action": "Inventory the local Nakagawa/Yang repository files under raw_corpus:nakagawa_yang; inspect model CSVs, preprocessing code, and sensitivity analyses for source-result tables, D/N extractability, and whether the rows satisfy Figure 1's replication/follow-up relation.",
+      "sources_checked": [
+        "cluster compact nodes for raw_corpus:nakagawa_yang",
+        "local:data/raw/corpus_candidates/nakagawa_yang/",
+        "coverage notes describing the ecology/evolution in-silico replication source family"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_2675c1c63f1f",
+          "suggested_disposition": "child_artifact",
+          "notes": "Model CSV with sample-size multiplier confidence intervals; inspect before treating as a result table."
+        },
+        {
+          "node_id": "node_search_manifest_d35b9edf22b7",
+          "suggested_disposition": "child_artifact",
+          "notes": "SMD-specific model output; candidate child artifact under raw_corpus:nakagawa_yang."
+        },
+        {
+          "node_id": "node_search_manifest_9bd79d082813",
+          "suggested_disposition": "context",
+          "notes": "Analysis helper code; context for parsing/model provenance, not a root source family."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_altmejd_8532e4303f0b",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Altmejd harmonized Many Labs 1 and Many Labs 3 tables",
+      "parent_corpus_database_id_or_key": "raw_replication_project:altmejd",
+      "reason": "The local Altmejd data.csv/variables/get_data artifacts are already known as harmonized pair-buildable result tables supporting Many Labs 1 and Many Labs 3 integrated rows. They are child result-table artifacts, not a new corpus root.",
+      "next_action": "Route data.csv, variables.tsv, and get_data.R to the result-table worklist for provenance extraction and mapping to corpus_db_altmejd_harmonized_many_labs_1 and corpus_db_altmejd_harmonized_many_labs_3.",
+      "sources_checked": [
+        "cluster compact nodes for raw_replication_project:altmejd",
+        "CORPORA_AND_DATABASES.tsv Altmejd integrated_live rows",
+        "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv Altmejd rows",
+        "local:data/raw/replication_projects/altmejd/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_67b3a353a3bc",
+          "suggested_disposition": "child_artifact",
+          "notes": "Altmejd data.csv is the candidate harmonized result table for Many Labs 1/3."
+        },
+        {
+          "node_id": "node_search_manifest_dcb34395fd54",
+          "suggested_disposition": "child_artifact",
+          "notes": "variables.tsv is supporting schema/codebook material for the Altmejd table."
+        },
+        {
+          "node_id": "node_search_manifest_71b06329b6eb",
+          "suggested_disposition": "context",
+          "notes": "get_data.R is acquisition/parsing context for the harmonized table."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_dataverse_manifest_62094fa0aad2",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "medium",
+      "preferred_source_family_name": "The Generalizability of Online Experiments Conducted During the COVID-19 Pandemic",
+      "parent_corpus_database_id_or_key": "lead_harvest:covid_online_2021",
+      "reason": "The cluster is not Many Labs despite the hint. The artifact names align with the Peyton, Huber, and Coppock COVID-era online-experiment replication package, which has open data/materials and a Harvard Dataverse replication-data DOI. The listed nodes are child files/manifests rather than a new root source-family row.",
+      "next_action": "Attach the Dataverse download JSONs, ReadMe/appendix scripts, and original-study data files as child artifacts under lead_harvest:covid_online_2021; inspect the manifest/file list for reusable multi-row original/replication result tables and route those specific tables to result-table extraction.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:covid_online_2021",
+        "prior clustered005 covid_online_2021 Dataverse manifest decision receipt",
+        "local:data/raw/replication_projects/lead_harvest/covid_online_2021/",
+        "Cambridge Core article DOI 10.1017/XPS.2021.17; Dataverse DOI 10.7910/DVN/38UTBF"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_95bc91d78d52",
+          "suggested_disposition": "context",
+          "notes": "ReadMe.R is package-level context for the covid_online_2021 Dataverse package."
+        },
+        {
+          "node_id": "node_search_manifest_01af4fd815f4",
+          "suggested_disposition": "child_artifact",
+          "notes": "appendix_section_a.R should be inventoried as analysis/documentation code under the parent."
+        },
+        {
+          "node_id": "node_search_manifest_40dcd7bc78c1",
+          "suggested_disposition": "child_artifact",
+          "notes": "conjoint_original.dta is an original-study data artifact; inspect contents before result-table routing."
+        },
+        {
+          "node_id": "node_search_manifest_c0b4b8cca939",
+          "suggested_disposition": "child_artifact",
+          "notes": "Dataverse download JSON is acquisition/inventory metadata owned by the covid_online_2021 parent."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_reproducibility_project_cancer_biology_8ff34e7d6b72",
+      "decision": "keep_source_family_candidate",
+      "confidence": "high",
+      "preferred_source_family_name": "Reproducibility Project: Cancer Biology",
+      "parent_corpus_database_id_or_key": "rpcb | doi:10.7554/eLife.71601",
+      "reason": "This is a source-family/corpus candidate rather than an isolated paper. The eLife/RP:CB project reports many completed replication experiments and points to project-level data, code, digital materials, and OSF replication-data objects.",
+      "next_action": "Keep as the RPCB source-family candidate; inventory the OSF RPCB collection and Replication Data from the Reproducibility Project: Cancer Biology; route paper/experiment/effect-level data tables to result-table extraction.",
+      "sources_checked": [
+        "cluster compact nodes for OSF e81xl and OpenAlex RPCB hits",
+        "prior clustered005 RP:CB source-family decision receipt",
+        "web:https://osf.io/e81xl/",
+        "web:https://www.cos.io/rpcb",
+        "web:https://elifesciences.org/collections/9b1e83d1/reproducibility-project-cancer-biology"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_556a59a77579",
+          "suggested_disposition": "root_source_family",
+          "notes": "Root-table lead for RPCB; retain as canonical source-family candidate."
+        },
+        {
+          "node_id": "node_search_manifest_f2a0ceb0f21c",
+          "suggested_disposition": "root_source_family",
+          "notes": "OSF e81xl duplicate/source-family hit for RPCB."
+        },
+        {
+          "node_id": "node_search_manifest_b468cb5d70dd",
+          "suggested_disposition": "root_source_family",
+          "notes": "OpenAlex duplicate/source-family hit for RPCB."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_many_labs_5_testing_pre_data_collection_peer_review_as_an_intervention_to_increa_3179bd6ddd6a",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Many Labs 5: Testing Pre-Data-Collection Peer Review as an Intervention to Increase Replicability",
+      "parent_corpus_database_id_or_key": "corpus_db_many_labs_5_overarching_analyses",
+      "reason": "Many Labs 5 is already represented as an integrated Figure 1 source family using local public figure data. The DOI/OSF/OpenAlex hits in this cluster are aliases or bibliographic/source-family artifacts for that existing parent, not a new root source family.",
+      "next_action": "Inventory DOI, OSF, preprint, and search-hit aliases under corpus_db_many_labs_5_overarching_analyses; keep local ML5FigureData.csv and single-effects files as the result-bearing artifacts for extraction/provenance work.",
+      "sources_checked": [
+        "cluster compact nodes for DOI 10.1177/2515245920958687",
+        "CORPORA_AND_DATABASES.tsv corpus_db_many_labs_5_overarching_analyses",
+        "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv Many Labs 5 row",
+        "local:data/raw/replication_projects/ml5/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_79f84270000c",
+          "suggested_disposition": "root_source_family",
+          "notes": "Bibliographic/root lead for Many Labs 5; merge under the existing ML5 parent."
+        },
+        {
+          "node_id": "node_search_manifest_3f7f8145ef7a",
+          "suggested_disposition": "child_artifact",
+          "notes": "Duplicate DOI/search hit; inventory as provenance/alias under Many Labs 5."
+        },
+        {
+          "node_id": "node_search_manifest_e43abaab1fe6",
+          "suggested_disposition": "context",
+          "notes": "OSF preprint/alternate-version hit; retain as version/provenance context."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_political_science_unlock_f7f85210dec5",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Political Science Unlock",
+      "parent_corpus_database_id_or_key": "raw_corpus:political_science_unlock",
+      "reason": "This cluster already sits under an included raw corpus/source-family key and contains Dataverse metadata, code, workbook, and appendix artifacts. Child artifacts should be owned by raw_corpus:political_science_unlock; individual one-off replication code should be routed away after inspection.",
+      "next_action": "Inventory Dataverse metadata JSONs, Dataverse package folders, GitHub workbooks/code, and raw inventory directories under raw_corpus:political_science_unlock. Route only confirmed multi-row result/effect tables to the result-table worklist, and route single-paper packages such as BKO Debates to the individual replication paper worklist.",
+      "sources_checked": [
+        "cluster compact nodes for raw_corpus:political_science_unlock",
+        "prior clustered005 Political Science Unlock decision receipt",
+        "local:data/raw/corpus_candidates/political_science_unlock/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_5d76d65b2a3f",
+          "suggested_disposition": "child_artifact",
+          "notes": "Dataverse metadata JSON is a child metadata artifact under political_science_unlock."
+        },
+        {
+          "node_id": "node_search_manifest_be3cac142514",
+          "suggested_disposition": "individual_paper",
+          "notes": "BKO Debates replication code appears to be a one-off package; route away unless inspection shows a multi-row source."
+        },
+        {
+          "node_id": "node_search_manifest_c8f0a7c3d34d",
+          "suggested_disposition": "child_artifact",
+          "notes": "Figure_3.do is figure/analysis code; keep as child code artifact."
+        },
+        {
+          "node_id": "node_search_manifest_66000460de2a",
+          "suggested_disposition": "child_artifact",
+          "notes": "Minimal_Effects_Online_Appendix.Rmd is an appendix/analysis artifact; inspect before result-table routing."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_brodeur_star_wars_openicpsr_9a38abb2140a",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "medium",
+      "preferred_source_family_name": "Brodeur Star Wars OpenICPSR replication package",
+      "parent_corpus_database_id_or_key": "raw_corpus:brodeur_star_wars_openicpsr",
+      "reason": "The full OpenICPSR package is mirrored locally and is a reusable raw corpus candidate, but prior acquisition notes say it is currently a published-economics p/t/statistics comparator rather than a verified D/N source. It should be inventoried before any Figure 1 promotion.",
+      "next_action": "Inventory the OpenICPSR package under raw_corpus:brodeur_star_wars_openicpsr; inspect cleaned DTA files, raw extraction CSVs, and Stata/R programs for study-level sample-size or original/replication mapping fields. Keep as a candidate/context source unless D/N and Figure 1 relation criteria are confirmed.",
+      "sources_checked": [
+        "cluster compact nodes for raw_corpus:brodeur_star_wars_openicpsr",
+        "CORPORA_AND_DATABASES.tsv raw_corpus rows for brodeur_star_wars_openicpsr",
+        "reports/acquisition/corpus_acquisition_log.md Brodeur Star Wars note",
+        "local:data/raw/corpus_candidates/brodeur_star_wars_openicpsr/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_2d9094916349",
+          "suggested_disposition": "context",
+          "notes": "1_import_stats.do is package analysis/import code; not a root source family."
+        },
+        {
+          "node_id": "node_search_manifest_15cd6a2d17d6",
+          "suggested_disposition": "context",
+          "notes": "Simulation cleaning code; inventory as package code context."
+        },
+        {
+          "node_id": "node_search_manifest_5e79fcc1eeb4",
+          "suggested_disposition": "context",
+          "notes": "Raw/cleaning code hit; inspect only as part of the OpenICPSR package inventory."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_egap_metaketa_iv_community_policing_pooled_pap_row_34af9874e0a1",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "EGAP Metaketa IV community-policing pooled PAP row",
+      "parent_corpus_database_id_or_key": "corpus_db_egap_metaketa_iv_community_policing_pooled_pap_row",
+      "reason": "The cluster contains local Metaketa IV code and RDS output artifacts for the community-policing pooled PAP row already represented in the Figure 3 source catalog. These are result-bearing child artifacts and parsing targets, not a new corpus root.",
+      "next_action": "Route meta-estimates-main-hypotheses-original.RDS, study-estimate RDS outputs, and supporting R scripts to the result-table worklist under corpus_db_egap_metaketa_iv_community_policing_pooled_pap_row; keep native/site rows separate from the pooled project dot.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:metaketa_iv_2021",
+        "CORPORA_AND_DATABASES.tsv EGAP Metaketa IV pooled PAP row",
+        "data/derived/effect_inflation_dataset/plot3_preregistered_source_catalog.csv Metaketa IV rows",
+        "local:data/raw/replication_projects/lead_harvest/metaketa_iv_2021/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_947608930c70",
+          "suggested_disposition": "child_artifact",
+          "notes": "meta-estimates-main-hypotheses-original.RDS is a candidate result-bearing table for the pooled PAP row."
+        },
+        {
+          "node_id": "node_search_manifest_3843db3bfa91",
+          "suggested_disposition": "context",
+          "notes": "1-prep-estimates.R is supporting transformation code for the Metaketa IV result outputs."
+        },
+        {
+          "node_id": "node_search_manifest_d32919848809",
+          "suggested_disposition": "context",
+          "notes": "2-meta-analysis.R is supporting analysis code for the pooled estimates."
+        },
+        {
+          "node_id": "node_search_manifest_461d143a8d5d",
+          "suggested_disposition": "context",
+          "notes": "SM-tables.R is supporting article/table generation code."
+        }
+      ]
+    }
+  ]
+}

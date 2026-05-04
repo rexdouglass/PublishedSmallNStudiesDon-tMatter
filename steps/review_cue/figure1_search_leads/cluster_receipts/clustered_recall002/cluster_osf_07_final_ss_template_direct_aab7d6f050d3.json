@@ -1,0 +1,35 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_osf_07_final_ss_template_direct_aab7d6f050d3",
+  "confidence": "medium",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_e3ca717ba802",
+      "notes": "README for SCORE power/sample-size methods package.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_afe294bbc1ef",
+      "notes": "Sample-size template R Markdown; context/method artifact.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_7c25858a1054",
+      "notes": "Manual power-analysis template; context/method artifact.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Inventory README, OSF file list, power/sample-size templates, and analysis data/code archive under SCORE; route only any confirmed result-bearing data tables from the archive to extraction.",
+  "parent_corpus_database_id_or_key": "score",
+  "preferred_source_family_name": "SCORE power and sample-size methods package",
+  "reason": "The local Tyner/Nosek OSF package is a SCORE-related methods/materials package containing sample-size templates, power scripts, manuals, and an analysis/code archive. These are useful source-family artifacts under SCORE, but the compact nodes are not themselves result tables.",
+  "sources_checked": [
+    "local:data/raw/replication_projects/lead_harvest/tyner_nosek_2026/osf_01__README.md",
+    "local:data/raw/replication_projects/lead_harvest/tyner_nosek_2026/osf_file_list.csv",
+    "local:data/raw/replication_projects/lead_harvest/tyner_nosek_2026/"
+  ]
+}

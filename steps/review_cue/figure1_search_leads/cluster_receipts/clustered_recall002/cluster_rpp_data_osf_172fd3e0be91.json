@@ -1,0 +1,31 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_rpp_data_osf_172fd3e0be91",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "route_cluster_to_result_table_worklist",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 2,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_5388b8e45017",
+      "notes": "Canonical RPP OSF CSV mirror; primary result-table artifact.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_1118a19f94a9",
+      "notes": "jtLeek archival mirror of RPP data; cross-check artifact under RPP.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Route rpp_data_osf.csv and rpp_data_jtleek.csv to the result-table worklist for provenance extraction and mirror/cross-check mapping under corpus_db_rpp_canonical_osf_csv.",
+  "parent_corpus_database_id_or_key": "corpus_db_rpp_canonical_osf_csv",
+  "preferred_source_family_name": "Reproducibility Project: Psychology canonical OSF data",
+  "reason": "The cluster contains local RPP CSV mirrors. The canonical OSF CSV is already integrated live, and the jtLeek file is an archival mirror/cross-check. These are result-table artifacts under RPP, not a new source family.",
+  "sources_checked": [
+    "cluster compact nodes for raw_replication_project:rpp",
+    "CORPORA_AND_DATABASES.tsv RPP canonical OSF CSV and jtLeek mirror rows",
+    "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv RPP rows",
+    "local:data/raw/replication_projects/rpp/"
+  ]
+}

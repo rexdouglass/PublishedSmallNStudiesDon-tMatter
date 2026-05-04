@@ -1,0 +1,41 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_dataverse_manifest_62094fa0aad2",
+  "confidence": "medium",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 4,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_95bc91d78d52",
+      "notes": "ReadMe.R is package-level context for the covid_online_2021 Dataverse package.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_01af4fd815f4",
+      "notes": "appendix_section_a.R should be inventoried as analysis/documentation code under the parent.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_40dcd7bc78c1",
+      "notes": "conjoint_original.dta is an original-study data artifact; inspect contents before result-table routing.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_c0b4b8cca939",
+      "notes": "Dataverse download JSON is acquisition/inventory metadata owned by the covid_online_2021 parent.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Attach the Dataverse download JSONs, ReadMe/appendix scripts, and original-study data files as child artifacts under lead_harvest:covid_online_2021; inspect the manifest/file list for reusable multi-row original/replication result tables and route those specific tables to result-table extraction.",
+  "parent_corpus_database_id_or_key": "lead_harvest:covid_online_2021",
+  "preferred_source_family_name": "The Generalizability of Online Experiments Conducted During the COVID-19 Pandemic",
+  "reason": "The cluster is not Many Labs despite the hint. The artifact names align with the Peyton, Huber, and Coppock COVID-era online-experiment replication package, which has open data/materials and a Harvard Dataverse replication-data DOI. The listed nodes are child files/manifests rather than a new root source-family row.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:covid_online_2021",
+    "prior clustered005 covid_online_2021 Dataverse manifest decision receipt",
+    "local:data/raw/replication_projects/lead_harvest/covid_online_2021/",
+    "Cambridge Core article DOI 10.1017/XPS.2021.17; Dataverse DOI 10.7910/DVN/38UTBF"
+  ]
+}

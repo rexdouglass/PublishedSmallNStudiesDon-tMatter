@@ -1,0 +1,31 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_how_replicable_are_links_between_personality_traits_and_consequential_life_outco_f308cd171b71",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 2,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_86c759f0ebd1",
+      "notes": "Bibliographic/root lead for LOOPR; merge under the existing integrated LOOPR parent.",
+      "suggested_disposition": "root_source_family"
+    },
+    {
+      "node_id": "node_search_manifest_25265adb0931",
+      "notes": "OSF/source-family hit; inventory as access/provenance under LOOPR.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Inventory DOI, OSF, and publication-version aliases under corpus_db_loopr_coding_workbook; keep the local Replication coding and results.xlsx workbook as the result-bearing artifact for extraction/provenance work.",
+  "parent_corpus_database_id_or_key": "corpus_db_loopr_coding_workbook",
+  "preferred_source_family_name": "Life Outcomes of Personality Replication Project (LOOPR)",
+  "reason": "LOOPR is already an integrated live source family with a local coding workbook containing original and replication effects for personality-outcome associations. The DOI/OSF hits in this cluster are source-family aliases and bibliographic/version artifacts for that existing parent.",
+  "sources_checked": [
+    "cluster compact nodes for DOI 10.1177/0956797619831612",
+    "CORPORA_AND_DATABASES.tsv corpus_db_loopr_coding_workbook",
+    "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv LOOPR row",
+    "local:data/raw/replication_projects/loopr/Replication coding and results.xlsx"
+  ]
+}

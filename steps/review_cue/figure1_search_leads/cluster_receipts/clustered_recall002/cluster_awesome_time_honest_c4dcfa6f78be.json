@@ -1,0 +1,35 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_awesome_time_honest_c4dcfa6f78be",
+  "confidence": "high",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_b74331c6462c",
+      "notes": "Cleaned original-study CSV for the time_honest pair; child dataset artifact.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_2fa2d647b18d",
+      "notes": "Processing script for the time_honest package; code child artifact.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_0e9b229e3961",
+      "notes": "Repository file list; inventory artifact under the GitHub parent.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Inventory original_cleaned.csv, replication1_cleaned.csv, replication2_cleaned.csv, process.R, and repository manifests under github:ying531/awesome-replicability-data; route derived result fields only after inspecting the processing script/table outputs.",
+  "parent_corpus_database_id_or_key": "github:ying531/awesome-replicability-data",
+  "preferred_source_family_name": "ying531/awesome-replicability-data time_honest package",
+  "reason": "The cluster is a dataset-level package from the curated awesome-replicability-data repository. It contains original and replication cleaned CSVs plus processing code and download manifests. These are child artifacts under the GitHub source family, not separate root source families.",
+  "sources_checked": [
+    "local:data/raw/replication_projects/lead_harvest/awesome_time_honest/",
+    "local:data/raw/replication_projects/lead_harvest/awesome_time_honest/github_contents_file_list.csv",
+    "prior clustered004 awesome-replicability-data decision receipt"
+  ]
+}

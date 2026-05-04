@@ -1,0 +1,30 @@
+{
+  "batch_id": "clustered_recall002",
+  "cluster_id": "cluster_replication_of_null_results_absence_of_evidence_or_evidence_of_absence_97f07921e023",
+  "confidence": "medium",
+  "created_at": "2026-05-04T07:03:04+00:00",
+  "decision": "keep_cluster_as_context",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall002.json",
+  "lead_level_note_count": 2,
+  "lead_level_notes": [
+    {
+      "node_id": "node_root_table_226fbf3deb15",
+      "notes": "Secondary analysis article over existing source families; retain as context.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_11fcec4e1403",
+      "notes": "Versioned DOI hit for the same eLife article.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Keep as context for null-result interpretation and possible transformation code; use canonical RP:CB, EPRP, and RPP source-family artifacts for extraction rather than promoting this article as a new corpus.",
+  "parent_corpus_database_id_or_key": "doi:10.7554/eLife.92311",
+  "preferred_source_family_name": "Replication of null results secondary analysis",
+  "reason": "This eLife article is a secondary methods/analysis paper illustrating equivalence testing and Bayes factors using already-known data from RP:CB, EPRP, and RPP. Its linked code repository may be useful provenance context, but the cluster is not a new reusable original-replication source family for Figure 1.",
+  "sources_checked": [
+    "cluster compact nodes for DOI 10.7554/eLife.92311",
+    "web:https://elifesciences.org/articles/92311",
+    "web:https://gitlab.uzh.ch/samuel.pawel/rsAbsence"
+  ]
+}

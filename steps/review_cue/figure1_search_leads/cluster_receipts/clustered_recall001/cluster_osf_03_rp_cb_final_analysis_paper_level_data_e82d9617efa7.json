@@ -1,0 +1,37 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_osf_03_rp_cb_final_analysis_paper_level_data_e82d9617efa7",
+  "confidence": "high",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_52e21249fde7",
+      "notes": "Paper-level final-analysis data table; own under raw_corpus:rpcb.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_da07f7e2b9a0",
+      "notes": "Effect-level final-analysis data table; likely primary result-table artifact for RP:CB.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_b256e25fe534",
+      "notes": "Per-study RP:CB final-analysis script; code child artifact, not a root source family.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Attach the OSF e5nvr final-analysis tables, dictionaries, and per-study R scripts to raw_corpus:rpcb; deduplicate against the local rpcb corpus-candidate copies in the sibling RPCB cluster.",
+  "parent_corpus_database_id_or_key": "raw_corpus:rpcb",
+  "preferred_source_family_name": "Reproducibility Project: Cancer Biology (RP:CB) final analysis data",
+  "reason": "The cluster is a coherent OSF final-analysis package for RP:CB, with paper-, experiment-, and effect-level data plus dictionaries and per-study analysis scripts. RP:CB is an existing reusable corpus/source family, so these files are child artifacts of that parent rather than separate root source families.",
+  "sources_checked": [
+    "cluster compact nodes for lead_harvest:rpcb_e5nvr",
+    "prior clustered004 RP:CB e5nvr decision receipt",
+    "local:data/raw/replication_projects/lead_harvest/rpcb_e5nvr/",
+    "web:https://osf.io/e5nvr/",
+    "web:https://www.cos.io/rpcb"
+  ]
+}

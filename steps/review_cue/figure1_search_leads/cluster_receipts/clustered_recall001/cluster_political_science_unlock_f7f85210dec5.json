@@ -1,0 +1,40 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_political_science_unlock_f7f85210dec5",
+  "confidence": "high",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 4,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_5d76d65b2a3f",
+      "notes": "Dataverse metadata JSON is a child metadata artifact under political_science_unlock.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_be3cac142514",
+      "notes": "BKO Debates replication code appears to be a one-off package; route away unless inspection shows a multi-row source.",
+      "suggested_disposition": "individual_paper"
+    },
+    {
+      "node_id": "node_search_manifest_c8f0a7c3d34d",
+      "notes": "Figure_3.do is figure/analysis code; keep as child code artifact.",
+      "suggested_disposition": "child_artifact"
+    },
+    {
+      "node_id": "node_search_manifest_66000460de2a",
+      "notes": "Minimal_Effects_Online_Appendix.Rmd is an appendix/analysis artifact; inspect before result-table routing.",
+      "suggested_disposition": "child_artifact"
+    }
+  ],
+  "next_action": "Inventory Dataverse metadata JSONs, Dataverse package folders, GitHub workbooks/code, and raw inventory directories under raw_corpus:political_science_unlock. Route only confirmed multi-row result/effect tables to the result-table worklist, and route single-paper packages such as BKO Debates to the individual replication paper worklist.",
+  "parent_corpus_database_id_or_key": "raw_corpus:political_science_unlock",
+  "preferred_source_family_name": "Political Science Unlock",
+  "reason": "This cluster already sits under an included raw corpus/source-family key and contains Dataverse metadata, code, workbook, and appendix artifacts. Child artifacts should be owned by raw_corpus:political_science_unlock; individual one-off replication code should be routed away after inspection.",
+  "sources_checked": [
+    "cluster compact nodes for raw_corpus:political_science_unlock",
+    "prior clustered005 Political Science Unlock decision receipt",
+    "local:data/raw/corpus_candidates/political_science_unlock/"
+  ]
+}

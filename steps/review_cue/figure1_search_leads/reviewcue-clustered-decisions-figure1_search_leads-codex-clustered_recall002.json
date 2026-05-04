@@ -1,0 +1,336 @@
+{
+  "cluster_decisions": [
+    {
+      "cluster_id": "cluster_sports_sfbva_node_c21ed8767a97",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Estimating the Replicability of Sport Science Research",
+      "parent_corpus_database_id_or_key": "corpus_db_sports_science_supplemental_outcomes_table",
+      "reason": "The OSF node metadata explicitly describes an analysis repository containing effect sizes from original and replication studies plus analysis code and markdown summaries. The sports-science corpus is already integrated locally from public supplemental outcome/sample-size artifacts, so this node is a child/source-family artifact to inventory rather than a new root row.",
+      "next_action": "Attach OSF node sfbva and related project OSF 3VUFG as source-family access routes under corpus_db_sports_science_supplemental_outcomes_table; mirror or verify file-level effect-size/code artifacts if not already represented by the local sports supplement table and sample-size workbook.",
+      "sources_checked": [
+        "local:data/raw/replication_projects/osf_probe/sports_sfbva_node.json",
+        "CORPORA_AND_DATABASES.tsv corpus_db_sports_science_supplemental_outcomes_table",
+        "steps/searches/figure1/searchrecall-figure1-known-sources.tsv sports science row"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_1efc9da88b86",
+          "suggested_disposition": "child_artifact",
+          "notes": "OSF sfbva project metadata for a source family already integrated via the sports supplemental outcomes table."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_current_peer_reviewed_main_result_status_8b41fc59c0fa",
+      "decision": "keep_cluster_as_context",
+      "confidence": "high",
+      "preferred_source_family_name": "internal current peer-reviewed main-result status table",
+      "parent_corpus_database_id_or_key": "data/derived/corpus_candidates/current_peer_reviewed_main_result_status.csv",
+      "reason": "This is an internal derived status table summarizing whether candidate corpora have peer-reviewed D/N and main-result flags. It is useful routing context, but it is not an external source family, dataset, repository, or result table for Figure 1 extraction.",
+      "next_action": "Keep as pipeline context only; do not add to source-family intake and do not route as a result table.",
+      "sources_checked": [
+        "local:data/derived/corpus_candidates/current_peer_reviewed_main_result_status.csv"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_403899ba32c5",
+          "suggested_disposition": "context",
+          "notes": "Internal derived status row table; not an external source object."
+        },
+        {
+          "node_id": "node_search_manifest_dece844cf495",
+          "suggested_disposition": "context",
+          "notes": "Duplicate hit for the same internal derived status table."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_replication_of_null_results_absence_of_evidence_or_evidence_of_absence_97f07921e023",
+      "decision": "keep_cluster_as_context",
+      "confidence": "medium",
+      "preferred_source_family_name": "Replication of null results secondary analysis",
+      "parent_corpus_database_id_or_key": "doi:10.7554/eLife.92311",
+      "reason": "This eLife article is a secondary methods/analysis paper illustrating equivalence testing and Bayes factors using already-known data from RP:CB, EPRP, and RPP. Its linked code repository may be useful provenance context, but the cluster is not a new reusable original-replication source family for Figure 1.",
+      "next_action": "Keep as context for null-result interpretation and possible transformation code; use canonical RP:CB, EPRP, and RPP source-family artifacts for extraction rather than promoting this article as a new corpus.",
+      "sources_checked": [
+        "cluster compact nodes for DOI 10.7554/eLife.92311",
+        "web:https://elifesciences.org/articles/92311",
+        "web:https://gitlab.uzh.ch/samuel.pawel/rsAbsence"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_226fbf3deb15",
+          "suggested_disposition": "context",
+          "notes": "Secondary analysis article over existing source families; retain as context."
+        },
+        {
+          "node_id": "node_search_manifest_11fcec4e1403",
+          "suggested_disposition": "context",
+          "notes": "Versioned DOI hit for the same eLife article."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_how_replicable_are_links_between_personality_traits_and_consequential_life_outco_f308cd171b71",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Life Outcomes of Personality Replication Project (LOOPR)",
+      "parent_corpus_database_id_or_key": "corpus_db_loopr_coding_workbook",
+      "reason": "LOOPR is already an integrated live source family with a local coding workbook containing original and replication effects for personality-outcome associations. The DOI/OSF hits in this cluster are source-family aliases and bibliographic/version artifacts for that existing parent.",
+      "next_action": "Inventory DOI, OSF, and publication-version aliases under corpus_db_loopr_coding_workbook; keep the local Replication coding and results.xlsx workbook as the result-bearing artifact for extraction/provenance work.",
+      "sources_checked": [
+        "cluster compact nodes for DOI 10.1177/0956797619831612",
+        "CORPORA_AND_DATABASES.tsv corpus_db_loopr_coding_workbook",
+        "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv LOOPR row",
+        "local:data/raw/replication_projects/loopr/Replication coding and results.xlsx"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_86c759f0ebd1",
+          "suggested_disposition": "root_source_family",
+          "notes": "Bibliographic/root lead for LOOPR; merge under the existing integrated LOOPR parent."
+        },
+        {
+          "node_id": "node_search_manifest_25265adb0931",
+          "suggested_disposition": "child_artifact",
+          "notes": "OSF/source-family hit; inventory as access/provenance under LOOPR."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_rpp_data_osf_172fd3e0be91",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Reproducibility Project: Psychology canonical OSF data",
+      "parent_corpus_database_id_or_key": "corpus_db_rpp_canonical_osf_csv",
+      "reason": "The cluster contains local RPP CSV mirrors. The canonical OSF CSV is already integrated live, and the jtLeek file is an archival mirror/cross-check. These are result-table artifacts under RPP, not a new source family.",
+      "next_action": "Route rpp_data_osf.csv and rpp_data_jtleek.csv to the result-table worklist for provenance extraction and mirror/cross-check mapping under corpus_db_rpp_canonical_osf_csv.",
+      "sources_checked": [
+        "cluster compact nodes for raw_replication_project:rpp",
+        "CORPORA_AND_DATABASES.tsv RPP canonical OSF CSV and jtLeek mirror rows",
+        "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv RPP rows",
+        "local:data/raw/replication_projects/rpp/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_5388b8e45017",
+          "suggested_disposition": "child_artifact",
+          "notes": "Canonical RPP OSF CSV mirror; primary result-table artifact."
+        },
+        {
+          "node_id": "node_search_manifest_1118a19f94a9",
+          "suggested_disposition": "child_artifact",
+          "notes": "jtLeek archival mirror of RPP data; cross-check artifact under RPP."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_awesome_time_honest_c4dcfa6f78be",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "ying531/awesome-replicability-data time_honest package",
+      "parent_corpus_database_id_or_key": "github:ying531/awesome-replicability-data",
+      "reason": "The cluster is a dataset-level package from the curated awesome-replicability-data repository. It contains original and replication cleaned CSVs plus processing code and download manifests. These are child artifacts under the GitHub source family, not separate root source families.",
+      "next_action": "Inventory original_cleaned.csv, replication1_cleaned.csv, replication2_cleaned.csv, process.R, and repository manifests under github:ying531/awesome-replicability-data; route derived result fields only after inspecting the processing script/table outputs.",
+      "sources_checked": [
+        "local:data/raw/replication_projects/lead_harvest/awesome_time_honest/",
+        "local:data/raw/replication_projects/lead_harvest/awesome_time_honest/github_contents_file_list.csv",
+        "prior clustered004 awesome-replicability-data decision receipt"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_b74331c6462c",
+          "suggested_disposition": "child_artifact",
+          "notes": "Cleaned original-study CSV for the time_honest pair; child dataset artifact."
+        },
+        {
+          "node_id": "node_search_manifest_2fa2d647b18d",
+          "suggested_disposition": "child_artifact",
+          "notes": "Processing script for the time_honest package; code child artifact."
+        },
+        {
+          "node_id": "node_search_manifest_0e9b229e3961",
+          "suggested_disposition": "child_artifact",
+          "notes": "Repository file list; inventory artifact under the GitHub parent."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_combined_data_67882494fffd",
+      "decision": "route_cluster_to_result_table_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Psych 251 / RESCUE replication combined data",
+      "parent_corpus_database_id_or_key": "raw_replication_project:rescue_251",
+      "reason": "The local combined_data.csv table enumerates original, replication, additional, and rescue rows with N, raw statistical text, original article links, preregistration links, and replication-score fields. This is a reusable result table, not a new source-family root.",
+      "next_action": "Route combined_data.csv, combined_data.md, and parsed_data.csv to result-table extraction under raw_replication_project:rescue_251; preserve raw_stat and N text before any D/N conversion or row collapsing.",
+      "sources_checked": [
+        "local:data/raw/replication_projects/rescue_251/combined_data.csv",
+        "local:data/raw/replication_projects/rescue_251/combined_data.md",
+        "local:data/raw/replication_projects/rescue_251/parsed_data.csv"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_6b7bba9ceefe",
+          "suggested_disposition": "child_artifact",
+          "notes": "combined_data.csv is the main candidate result table for RESCUE/Psych 251 rows."
+        },
+        {
+          "node_id": "node_search_manifest_290c1f536675",
+          "suggested_disposition": "child_artifact",
+          "notes": "combined_data.md is a rendered/documentation view of the same table."
+        },
+        {
+          "node_id": "node_search_manifest_7e9136e7e65f",
+          "suggested_disposition": "child_artifact",
+          "notes": "parsed_data.csv is supporting parsed table output."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_cultural_distance_2fde510433cc",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "medium",
+      "preferred_source_family_name": "PSA006 trolley multi-lab replication package",
+      "parent_corpus_database_id_or_key": "lead_harvest:psa_006_trolley",
+      "reason": "The cluster contains local code/data files from a PSA006 trolley multi-lab package. It appears to be a reusable project package, but the compact evidence is mostly analysis/helper code, so the package needs inventory before any result-table extraction or corpus promotion.",
+      "next_action": "Inventory PSA006 trolley files under lead_harvest:psa_006_trolley; inspect aggregate_inferences, additional-table, plotting scripts, and data outputs for original/replication effect rows and sample sizes before routing specific tables to extraction.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:psa_006_trolley",
+        "local:data/raw/replication_projects/lead_harvest/psa_006_trolley/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_3a56002263ac",
+          "suggested_disposition": "context",
+          "notes": "aggregate_inferences.R is analysis code; inspect outputs before result-table routing."
+        },
+        {
+          "node_id": "node_search_manifest_2cc3dd8e216e",
+          "suggested_disposition": "context",
+          "notes": "calculate_additional_table.R may generate a candidate table; keep as code context until outputs are confirmed."
+        },
+        {
+          "node_id": "node_search_manifest_986ef7a9d2ca",
+          "suggested_disposition": "context",
+          "notes": "cultural_distance.R is covariate/data-prep code, not a result table by itself."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_ying_2023_770ed6292b41",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "high",
+      "preferred_source_family_name": "Ying 2023 pilot-full-scale trials",
+      "parent_corpus_database_id_or_key": "family::ying_2023_pilot_full_scale_trials",
+      "reason": "Ying 2023 is already an integrated live source family with a promoted partial reconstruction and unresolved staged artifacts. The cluster contains local EuropePMC abstract JSONs and scan outputs used to tighten pilot/full-scale evidence; these are child/provenance artifacts rather than a new root source family.",
+      "next_action": "Inventory the EPMC abstract JSONs, abstract scan CSV, staged pair roster, and promoted reconstruction under family::ying_2023_pilot_full_scale_trials; route only confirmed pair/result tables to extraction.",
+      "sources_checked": [
+        "cluster compact nodes for lead_harvest:ying_2023",
+        "CORPORA_AND_DATABASES.tsv Ying 2023 rows",
+        "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv Ying 2023 row",
+        "local:data/raw/replication_projects/lead_harvest/ying_2023/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_06da31304170",
+          "suggested_disposition": "child_artifact",
+          "notes": "EuropePMC full-scale abstract JSON; provenance child artifact."
+        },
+        {
+          "node_id": "node_search_manifest_1c3e440aa228",
+          "suggested_disposition": "child_artifact",
+          "notes": "EuropePMC pilot abstract JSON; provenance child artifact."
+        },
+        {
+          "node_id": "node_search_manifest_0c0386c6d3cf",
+          "suggested_disposition": "child_artifact",
+          "notes": "Additional pilot/full-scale abstract JSONs are inventory artifacts, not source-family roots."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_successes_and_failures_of_replications_a_meta_analysis_of_independent_replicatio_48eb11098644",
+      "decision": "keep_source_family_candidate",
+      "confidence": "medium",
+      "preferred_source_family_name": "Successes and Failures of Replications based on OSF Registries",
+      "parent_corpus_database_id_or_key": "doi:10.31222/osf.io/8psw2",
+      "reason": "The article/preprint describes a meta-analysis of independent replication studies registered on OSF and points to open data/code, including an OSF project and dataset. It may be a reusable source object, but its rows need inventory because only a subset appear to contain comparable original and replication effect sizes.",
+      "next_action": "Keep as a source-family candidate and inventory OSF project 9r62x plus dataset sfdq4/code scripts; route only confirmed original/replication effect-size rows to result-table extraction.",
+      "sources_checked": [
+        "cluster compact nodes for DOI 10.31222/osf.io/8psw2",
+        "web:https://ideas.repec.org/p/osf/metaar/8psw2.html",
+        "web:https://osf.io/9r62x/",
+        "web:https://osf.io/sfdq4"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_45e0a1e29152",
+          "suggested_disposition": "root_source_family",
+          "notes": "Preprint/source-family lead; keep for OSF data/code inventory."
+        },
+        {
+          "node_id": "node_search_manifest_b0deb188cfe7",
+          "suggested_disposition": "root_source_family",
+          "notes": "Duplicate DOI/preprint hit for the same source-family candidate."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_osf_07_final_ss_template_direct_aab7d6f050d3",
+      "decision": "inventory_source_family_artifacts",
+      "confidence": "medium",
+      "preferred_source_family_name": "SCORE power and sample-size methods package",
+      "parent_corpus_database_id_or_key": "score",
+      "reason": "The local Tyner/Nosek OSF package is a SCORE-related methods/materials package containing sample-size templates, power scripts, manuals, and an analysis/code archive. These are useful source-family artifacts under SCORE, but the compact nodes are not themselves result tables.",
+      "next_action": "Inventory README, OSF file list, power/sample-size templates, and analysis data/code archive under SCORE; route only any confirmed result-bearing data tables from the archive to extraction.",
+      "sources_checked": [
+        "local:data/raw/replication_projects/lead_harvest/tyner_nosek_2026/osf_01__README.md",
+        "local:data/raw/replication_projects/lead_harvest/tyner_nosek_2026/osf_file_list.csv",
+        "local:data/raw/replication_projects/lead_harvest/tyner_nosek_2026/"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_search_manifest_e3ca717ba802",
+          "suggested_disposition": "context",
+          "notes": "README for SCORE power/sample-size methods package."
+        },
+        {
+          "node_id": "node_search_manifest_afe294bbc1ef",
+          "suggested_disposition": "context",
+          "notes": "Sample-size template R Markdown; context/method artifact."
+        },
+        {
+          "node_id": "node_search_manifest_7c25858a1054",
+          "suggested_disposition": "context",
+          "notes": "Manual power-analysis template; context/method artifact."
+        }
+      ]
+    },
+    {
+      "cluster_id": "cluster_triplett_s_social_facilitation_experiment_a_registered_replication_report_14c13e6e2613",
+      "decision": "route_cluster_to_individual_replication_paper_worklist",
+      "confidence": "high",
+      "preferred_source_family_name": "Triplett social facilitation Registered Replication Report",
+      "parent_corpus_database_id_or_key": "doi:10.31234/osf.io/bqzj9_v1",
+      "reason": "This is an individual registered replication report of Triplett's social facilitation experiment, with OSF/source links. It has affirmative replication-relation evidence, but the cluster does not establish a reusable multi-row source-family table.",
+      "next_action": "Route the DOI/OSF package to the individual replication-paper worklist; inspect OSF pages for value-bearing files only if extracting this one paper/package separately.",
+      "sources_checked": [
+        "cluster compact nodes for DOI 10.31234/osf.io/bqzj9_v1",
+        "cluster compact OSF nodes 6brq9 and vsgpq"
+      ],
+      "lead_level_notes": [
+        {
+          "node_id": "node_root_table_7f49a7574fd4",
+          "suggested_disposition": "individual_paper",
+          "notes": "Registered replication report article; route away from source-family intake."
+        },
+        {
+          "node_id": "node_search_manifest_2c44aca0e415",
+          "suggested_disposition": "individual_paper",
+          "notes": "OSF package/source link for the individual Triplett replication."
+        }
+      ]
+    }
+  ]
+}

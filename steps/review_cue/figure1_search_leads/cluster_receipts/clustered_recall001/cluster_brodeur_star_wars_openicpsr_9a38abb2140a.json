@@ -1,0 +1,36 @@
+{
+  "batch_id": "clustered_recall001",
+  "cluster_id": "cluster_brodeur_star_wars_openicpsr_9a38abb2140a",
+  "confidence": "medium",
+  "created_at": "2026-05-04T06:58:33+00:00",
+  "decision": "inventory_source_family_artifacts",
+  "decision_source": "steps/review_cue/figure1_search_leads/reviewcue-clustered-decisions-figure1_search_leads-codex-clustered_recall001.json",
+  "lead_level_note_count": 3,
+  "lead_level_notes": [
+    {
+      "node_id": "node_search_manifest_2d9094916349",
+      "notes": "1_import_stats.do is package analysis/import code; not a root source family.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_15cd6a2d17d6",
+      "notes": "Simulation cleaning code; inventory as package code context.",
+      "suggested_disposition": "context"
+    },
+    {
+      "node_id": "node_search_manifest_5e79fcc1eeb4",
+      "notes": "Raw/cleaning code hit; inspect only as part of the OpenICPSR package inventory.",
+      "suggested_disposition": "context"
+    }
+  ],
+  "next_action": "Inventory the OpenICPSR package under raw_corpus:brodeur_star_wars_openicpsr; inspect cleaned DTA files, raw extraction CSVs, and Stata/R programs for study-level sample-size or original/replication mapping fields. Keep as a candidate/context source unless D/N and Figure 1 relation criteria are confirmed.",
+  "parent_corpus_database_id_or_key": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preferred_source_family_name": "Brodeur Star Wars OpenICPSR replication package",
+  "reason": "The full OpenICPSR package is mirrored locally and is a reusable raw corpus candidate, but prior acquisition notes say it is currently a published-economics p/t/statistics comparator rather than a verified D/N source. It should be inventoried before any Figure 1 promotion.",
+  "sources_checked": [
+    "cluster compact nodes for raw_corpus:brodeur_star_wars_openicpsr",
+    "CORPORA_AND_DATABASES.tsv raw_corpus rows for brodeur_star_wars_openicpsr",
+    "reports/acquisition/corpus_acquisition_log.md Brodeur Star Wars note",
+    "local:data/raw/corpus_candidates/brodeur_star_wars_openicpsr/"
+  ]
+}
