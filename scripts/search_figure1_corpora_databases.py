@@ -55,7 +55,9 @@ SOURCE_FAMILY_EXPANDED_TARGET = OUT_DIR / "corporasearch-sourcefamily-expanded-k
 ALTERNATE_VOCAB_EXPANDED_TARGET = OUT_DIR / "corporasearch-alternate-vocab-expanded-reproduction-reanalysis-validation-followup.json"
 LINK_GRAPH_TARGET = OUT_DIR / "corporasearch-linkgraph-expanded-known-corpus-paper-dois-to-datasets.json"
 GPT_COVERAGE_TARGET = OUT_DIR / "corporasearch-gptcoverage-expanded-missing-source-family-targets.json"
+KNOWN_GOOD_RECALL_TARGET = OUT_DIR / "corporasearch-knowngood-recall-probe-existing-figure1-sources.json"
 GPT_COVERAGE_SEED_FILE = ROOT / "FIGURE1_REPLICATION_SOURCE_FAMILY_SEEDS.yml"
+PLOT1_SOURCE_CATALOG = ROOT / "data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv"
 
 PIPELINE_YML = ROOT / "PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml"
 
@@ -78,6 +80,7 @@ TRACK_IDS = {
     "alternate_vocab_expanded": "plot1_corpusdb_alternate_vocabulary_expanded_search",
     "link_graph": "plot1_corpusdb_publication_data_link_graph_search",
     "gpt_coverage_expanded": "plot1_corpusdb_gpt_coverage_source_family_search",
+    "known_good_recall": "plot1_corpusdb_known_good_recall_probe",
 }
 
 REPOSITORY_QUERIES = [
@@ -345,6 +348,7 @@ QUERY_FALLBACKS = {
     "alternate_vocab_expanded": ALTERNATE_VOCAB_EXPANDED_QUERIES,
     "link_graph": LINK_GRAPH_SEED_DOIS,
     "gpt_coverage_expanded": [],
+    "known_good_recall": [],
 }
 
 LOCAL_SCAN_ROOTS = [
@@ -679,6 +683,95 @@ def gpt_coverage_queries() -> list[str]:
                     queries.append(query)
     max_queries = int(os.environ.get("FIGURE1_GPT_COVERAGE_MAX_QUERIES", "80"))
     return queries[:max_queries]
+
+
+def split_catalog_multi(value: object) -> list[str]:
+    text = safe_text(value, 3000)
+    if not text:
+        return []
+    return [part.strip() for part in re.split(r"\s*\|\s*|\s*;\s*", text) if part.strip()]
+
+
+def recall_probe_phrase(value: object) -> str:
+    text = safe_text(value, 220)
+    text = re.sub(r"\([^)]*\)", " ", text)
+    text = re.sub(r"\b(?:manual|parsed|prepared|local|public|canonical|source|dataset|data|csv|xlsx|xls|rda|rds|pdf|workbook|table|supplemental|supplement)\b", " ", text, flags=re.I)
+    text = re.sub(r"[_/\\.-]+", " ", text)
+    text = re.sub(r"[^A-Za-z0-9: &+,'-]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip(" -_")
+    tokens = [token for token in re.split(r"\s+", text) if len(token) > 1]
+    if len(tokens) < 2:
+        return ""
+    return " ".join(tokens[:12])
+
+
+def known_good_recall_queries() -> list[str]:
+    """Build exact positive-control queries from included Figure 1 sources."""
+    if not PLOT1_SOURCE_CATALOG.exists():
+        return []
+    primary_queries: list[str] = []
+    extra_queries: list[str] = []
+
+    def add(target: list[str], query: str) -> None:
+        query = safe_text(query, 220)
+        if query and query not in primary_queries and query not in extra_queries:
+            target.append(query)
+
+    with PLOT1_SOURCE_CATALOG.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            try:
+                kept = float(row.get("kept_for_figure") or 0)
+            except ValueError:
+                kept = 0.0
+            if row.get("plot_inclusion_status") != "included" or kept <= 0:
+                continue
+
+            source_queries: list[str] = []
+            source_extra_queries: list[str] = []
+
+            def add_source(query: str) -> None:
+                query = safe_text(query, 220)
+                if query and query not in source_queries and query not in source_extra_queries:
+                    source_queries.append(query)
+
+            def add_source_extra(query: str) -> None:
+                query = safe_text(query, 220)
+                if query and query not in source_queries and query not in source_extra_queries:
+                    source_extra_queries.append(query)
+
+            for field in ["landing_final_urls", "raw_file", "raw_dirs", "notes"]:
+                for value in split_catalog_multi(row.get(field)):
+                    doi = normalize_doi(value)
+                    if doi:
+                        add_source(doi)
+
+            for field in ["display_family_label", "canonical_source_label", "display_label", "source_key"]:
+                phrase = recall_probe_phrase(row.get(field))
+                if phrase:
+                    add_source(f'"{phrase}"')
+
+            raw_file = safe_text(row.get("raw_file"))
+            if raw_file:
+                phrase = recall_probe_phrase(Path(raw_file).stem)
+                if phrase:
+                    add_source_extra(f'"{phrase}"')
+
+            description = safe_text(row.get("source_family_description"), 240)
+            if description and any(term in description.lower() for term in ["registered replication", "replication project", "reproducibility project", "many labs"]):
+                phrase = recall_probe_phrase(description.split(".")[0])
+                if phrase:
+                    add_source_extra(f'"{phrase}"')
+
+            if source_queries:
+                add(primary_queries, source_queries[0])
+                for query in source_queries[1:]:
+                    add(extra_queries, query)
+            for query in source_extra_queries:
+                add(extra_queries, query)
+
+    max_queries = int(os.environ.get("FIGURE1_KNOWN_GOOD_RECALL_MAX_QUERIES", "160"))
+    return (primary_queries + extra_queries)[:max_queries]
 
 
 def get_json(session: requests.Session, url: str, params: dict[str, object]) -> dict[str, Any]:
@@ -2797,6 +2890,53 @@ def run_gpt_coverage_expanded(
     )
 
 
+def run_known_good_recall_probe(
+    session: requests.Session,
+    per_query: int,
+    replace: bool,
+    tracks: dict[str, dict[str, Any]],
+) -> None:
+    del tracks
+    if should_skip(KNOWN_GOOD_RECALL_TARGET, replace):
+        return
+    announce("Running known-good Figure 1 recall probe...")
+    queries = known_good_recall_queries()
+    raw_rows: list[dict[str, str]] = []
+    errors: list[str] = []
+    provider_per_query = max(1, min(per_query, 2))
+    providers: list[tuple[Any, str]] = [
+        (search_openalex, "openalex"),
+        (search_crossref, "crossref"),
+        (search_europepmc, "europepmc"),
+        (search_osf, "osf"),
+        (search_dataverse, "dataverse"),
+        (search_datacite, "datacite"),
+        (search_figshare, "figshare"),
+    ]
+    if os.environ.get("FIGURE1_KNOWN_GOOD_RECALL_INCLUDE_SLOW_REPOSITORIES") == "1":
+        providers.extend([(search_zenodo, "zenodo"), (search_dryad, "dryad")])
+    for search_fn, provider_name in providers:
+        provider_queries = queries
+        if provider_name == "osf":
+            # OSF search rejects raw DOI queries containing slashes; DOI hits
+            # are still covered by bibliographic/DataCite-style providers.
+            provider_queries = [query for query in queries if not DOI_RE.search(query)]
+        rows, errs = search_fn(session, provider_queries, provider_per_query, strategy="citation")
+        raw_rows.extend(rows)
+        errors.extend(errs)
+        announce(f"  known-good recall provider complete: {provider_name}")
+    write_manifest(
+        KNOWN_GOOD_RECALL_TARGET,
+        strategy_id="plot1_corpusdb_known_good_recall_probe",
+        strategy="citation",
+        providers=[provider_name for _, provider_name in providers],
+        queries=queries,
+        raw_rows=raw_rows,
+        errors=errors,
+        replace=replace,
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -2821,6 +2961,7 @@ def main() -> None:
             "alternate_vocab_expanded",
             "link_graph",
             "gpt_coverage_expanded",
+            "known_good_recall",
             "expanded",
             "all",
         ],
@@ -2843,6 +2984,7 @@ def main() -> None:
         "alternate_vocab_expanded",
         "link_graph",
         "gpt_coverage_expanded",
+        "known_good_recall",
     ]
     strategies: list[str] = []
     if "all" in requested:
@@ -2890,6 +3032,8 @@ def main() -> None:
         run_link_graph(session, args.per_query, replace, tracks)
     if "gpt_coverage_expanded" in strategies:
         run_gpt_coverage_expanded(session, args.per_query, replace, tracks)
+    if "known_good_recall" in strategies:
+        run_known_good_recall_probe(session, args.per_query, replace, tracks)
 
 
 if __name__ == "__main__":

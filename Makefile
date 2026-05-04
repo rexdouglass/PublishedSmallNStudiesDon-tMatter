@@ -12,13 +12,14 @@ REVIEW_CUE_CODEX_OFFSET ?= 0
 REVIEW_CUE_GPT_OFFSET ?= 0
 REVIEW_CUE_DECISION_FILE ?=
 FIGURE1_SEARCH_PER_QUERY ?= 8
+FIGURE1_SEARCH_EXTRA_ARGS ?=
 CLUSTER_REVIEW_BATCH ?= clustered001
 CLUSTER_REVIEW_OFFSET ?= 0
 CLUSTER_REVIEW_BATCH_SIZE ?= 8
 CLUSTER_REVIEW_DECISION_FILE ?=
 RESULT_ARTIFACT_PLOT ?= figure1
 
-.PHONY: setup render preview clean check-quarto check-venv bibliography paper-assets provenance-codebook provenance-pipeline-graph provenance-search-plan figure1-corpora-search-expanded figure1-corpora-search-provider-expanded figure1-corpora-search-sourcefamily-expanded figure1-corpora-search-alternate-vocab figure1-corpora-search-link-graph figure1-corpora-search-gpt-coverage figure1-special-source-surfaces figure1-repository-directory-search figure1-corpora-search-yield figure1-cluster-search-leads figure1-cluster-review-cue apply-cluster-review-cue result-artifact-acquisition-queue figure1-result-artifact-acquisition-queue figure2-result-artifact-acquisition-queue figure3-result-artifact-acquisition-queue figure1-result-artifact-acquisition-strategies figure1-result-artifact-acquisition-filter-tabular figure1-result-artifact-acquisition-filter-documents figure1-result-artifact-acquisition-filter-remaining-downloadable figure1-result-artifact-acquisition-mirror-sample figure1-result-artifact-acquisition-mirror-tabular-first figure1-result-artifact-acquisition-mirror-documents figure1-result-artifact-acquisition-mirror-remaining-downloadable figure1-result-artifact-acquisition-parser-queue figure1-result-artifact-acquisition-parser-queue-documents figure1-result-artifact-acquisition-parser-queue-remaining-downloadable figure1-result-artifact-followup-cues figure1-result-artifact-codex-repair-queue figure1-result-artifact-codex-repair-strategies figure1-result-artifact-codex-repair-mirror-sample figure1-result-artifact-codex-repair-parser-queue figure1-result-artifact-codex-decisions figure1-result-artifact-codex-local-proposals figure1-result-artifact-codex-local-mirror-sample figure1-result-artifact-codex-local-parser-queue figure1-codex-local-corpus-results-extract figure1-codex-local-high-inspect-extract source-family-artifact-inventory source-artifact-mirror-sample source-artifact-parser-queue figure1-corpus-results-extract cluster-review-worklists review-cue apply-review-cue review-cue-routing-table corpora-table-update-proposal schema-pilot validate-schema-pilot ground-schema-pilot level5-schema-pilot level6-schema-pilot ctgov-version-drift-pilot level6-extraction-worklist-pilot level6-text-candidates-pilot artifact-snapshot-audit-pilot wayback-manual-tasks-pilot original-pdf-acquisition-pilot original-pdf-identity-pilot original-pdf-promote-pilot source-object-candidates-pilot full-article-text-pilot
+.PHONY: setup render preview clean check-quarto check-venv bibliography paper-assets provenance-codebook provenance-pipeline-graph provenance-search-plan figure1-corpora-search-all figure1-corpora-search-expanded figure1-corpora-search-provider-expanded figure1-corpora-search-sourcefamily-expanded figure1-corpora-search-alternate-vocab figure1-corpora-search-link-graph figure1-corpora-search-gpt-coverage figure1-corpora-search-known-good-recall figure1-special-source-surfaces figure1-repository-directory-search figure1-corpora-search-yield figure1-corpora-search-recall figure1-cluster-search-leads figure1-cluster-review-cue apply-cluster-review-cue result-artifact-acquisition-queue figure1-result-artifact-acquisition-queue figure2-result-artifact-acquisition-queue figure3-result-artifact-acquisition-queue figure1-result-artifact-acquisition-strategies figure1-result-artifact-acquisition-filter-tabular figure1-result-artifact-acquisition-filter-documents figure1-result-artifact-acquisition-filter-remaining-downloadable figure1-result-artifact-acquisition-mirror-sample figure1-result-artifact-acquisition-mirror-tabular-first figure1-result-artifact-acquisition-mirror-documents figure1-result-artifact-acquisition-mirror-remaining-downloadable figure1-result-artifact-acquisition-parser-queue figure1-result-artifact-acquisition-parser-queue-documents figure1-result-artifact-acquisition-parser-queue-remaining-downloadable figure1-result-artifact-followup-cues figure1-result-artifact-codex-repair-queue figure1-result-artifact-codex-repair-strategies figure1-result-artifact-codex-repair-mirror-sample figure1-result-artifact-codex-repair-parser-queue figure1-result-artifact-codex-decisions figure1-result-artifact-codex-local-proposals figure1-result-artifact-codex-local-mirror-sample figure1-result-artifact-codex-local-parser-queue figure1-codex-local-corpus-results-extract figure1-codex-local-high-inspect-extract source-family-artifact-inventory source-artifact-mirror-sample source-artifact-parser-queue figure1-corpus-results-extract cluster-review-worklists review-cue apply-review-cue review-cue-routing-table corpora-table-update-proposal schema-pilot validate-schema-pilot ground-schema-pilot level5-schema-pilot level6-schema-pilot ctgov-version-drift-pilot level6-extraction-worklist-pilot level6-text-candidates-pilot artifact-snapshot-audit-pilot wayback-manual-tasks-pilot original-pdf-acquisition-pilot original-pdf-identity-pilot original-pdf-promote-pilot source-object-candidates-pilot full-article-text-pilot
 
 setup:
 	$(PYTHON) -m venv $(VENV)
@@ -43,23 +44,29 @@ provenance-pipeline-graph: check-venv
 provenance-search-plan: check-venv
 	$(QUARTO_PYTHON) scripts/render_provenance_search_plan.py
 
+figure1-corpora-search-all: check-venv
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy all --strategy expanded --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
+
 figure1-corpora-search-expanded: check-venv
-	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy expanded --per-query $(FIGURE1_SEARCH_PER_QUERY)
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy expanded --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
 
 figure1-corpora-search-provider-expanded: check-venv
-	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy repository_provider_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY)
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy repository_provider_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
 
 figure1-corpora-search-sourcefamily-expanded: check-venv
-	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy source_family_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY)
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy source_family_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
 
 figure1-corpora-search-alternate-vocab: check-venv
-	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy alternate_vocab_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY)
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy alternate_vocab_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
 
 figure1-corpora-search-link-graph: check-venv
-	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy link_graph --per-query $(FIGURE1_SEARCH_PER_QUERY)
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy link_graph --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
 
 figure1-corpora-search-gpt-coverage: check-venv
-	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy gpt_coverage_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY)
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy gpt_coverage_expanded --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
+
+figure1-corpora-search-known-good-recall: check-venv
+	$(QUARTO_PYTHON) scripts/search_figure1_corpora_databases.py --strategy known_good_recall --per-query $(FIGURE1_SEARCH_PER_QUERY) $(FIGURE1_SEARCH_EXTRA_ARGS)
 
 figure1-special-source-surfaces: check-venv
 	$(QUARTO_PYTHON) scripts/search_figure1_special_source_surfaces.py
@@ -69,6 +76,9 @@ figure1-repository-directory-search: check-venv
 
 figure1-corpora-search-yield: check-venv
 	$(QUARTO_PYTHON) scripts/summarize_figure1_search_yield.py --replace
+
+figure1-corpora-search-recall: check-venv
+	$(QUARTO_PYTHON) scripts/audit_figure1_search_recall.py --replace
 
 figure1-cluster-search-leads: check-venv
 	$(QUARTO_PYTHON) scripts/cluster_figure1_search_leads.py --replace

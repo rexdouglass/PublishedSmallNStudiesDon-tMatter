@@ -6,31 +6,32 @@ This diagnostic summarizes saved `corporasearch-*.json` manifests. It is not an 
 
 | Group | Raw results | Classified leads | Candidate leads | Candidates new to root table | Candidates new to baseline manifests | Routed/rejected | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| baseline | 1267 | 428 | 166 | 0 | 0 | 262 | 8 |
-| expanded | 2537 | 1121 | 222 | 114 | 116 | 899 | 45 |
+| baseline | 1903 | 689 | 170 | 24 | 0 | 519 | 18 |
+| expanded | 3287 | 1335 | 278 | 132 | 141 | 1057 | 103 |
 
 ## Manifest Detail
 
 | Manifest | Group | Raw | Candidates | New to root | New to baseline | Routed/rejected | Errors |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `steps/searches/figure1/corporasearch-alternate-vocab-expanded-reproduction-reanalysis-validation-followup.json` | expanded | 255 | 6 | 2 | 2 | 50 | 0 |
-| `steps/searches/figure1/corporasearch-archive-known-replication-project-urls.json` | baseline | 3 | 0 | 0 | 0 | 0 | 8 |
-| `steps/searches/figure1/corporasearch-bibliographic-expanded-replication-corpus-database.json` | expanded | 271 | 37 | 10 | 10 | 91 | 0 |
-| `steps/searches/figure1/corporasearch-bibliographic-openalex-crossref-replication-database-effect-size.json` | baseline | 183 | 40 | 0 | 0 | 49 | 0 |
-| `steps/searches/figure1/corporasearch-citation-expanded-known-replication-databases.json` | expanded | 269 | 28 | 9 | 9 | 58 | 0 |
-| `steps/searches/figure1/corporasearch-citation-snowball-known-replication-corpora.json` | baseline | 278 | 44 | 0 | 0 | 19 | 0 |
-| `steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json` | expanded | 384 | 23 | 16 | 16 | 361 | 0 |
-| `steps/searches/figure1/corporasearch-code-local-original-replication-fields.json` | baseline | 120 | 6 | 0 | 0 | 114 | 0 |
-| `steps/searches/figure1/corporasearch-domain-expanded-crossfield-replication-datasets.json` | expanded | 496 | 20 | 2 | 3 | 89 | 0 |
-| `steps/searches/figure1/corporasearch-domain-multifield-replication-database-effect-size.json` | baseline | 288 | 13 | 0 | 0 | 53 | 0 |
-| `steps/searches/figure1/corporasearch-gptcoverage-expanded-missing-source-family-targets.json` | expanded | 318 | 7 | 5 | 5 | 42 | 40 |
-| `steps/searches/figure1/corporasearch-linkgraph-expanded-known-corpus-paper-dois-to-datasets.json` | expanded | 173 | 32 | 25 | 25 | 141 | 4 |
-| `steps/searches/figure1/corporasearch-manual-expert-suggestion-tracker.json` | baseline | 150 | 19 | 0 | 0 | 0 | 0 |
-| `steps/searches/figure1/corporasearch-registry-pilot-fullscale-followup.json` | baseline | 96 | 1 | 0 | 0 | 14 | 0 |
-| `steps/searches/figure1/corporasearch-repository-expanded-replication-corpus-database-package.json` | expanded | 152 | 34 | 30 | 29 | 24 | 0 |
-| `steps/searches/figure1/corporasearch-repository-osf-dataverse-replication-project-effect-size.json` | baseline | 149 | 43 | 0 | 0 | 13 | 0 |
-| `steps/searches/figure1/corporasearch-repository-provider-expanded-zenodo-figshare-dryad-replication-corpus-database-package.json` | expanded | 44 | 7 | 6 | 6 | 14 | 0 |
-| `steps/searches/figure1/corporasearch-sourcefamily-expanded-known-replication-project-aliases.json` | expanded | 156 | 26 | 7 | 9 | 29 | 0 |
+| `steps/searches/figure1/corporasearch-alternate-vocab-expanded-reproduction-reanalysis-validation-followup.json` | expanded | 501 | 10 | 4 | 4 | 79 | 0 |
+| `steps/searches/figure1/corporasearch-archive-known-replication-project-urls.json` | baseline | 9 | 0 | 0 | 0 | 0 | 18 |
+| `steps/searches/figure1/corporasearch-bibliographic-expanded-replication-corpus-database.json` | expanded | 273 | 37 | 10 | 9 | 92 | 0 |
+| `steps/searches/figure1/corporasearch-bibliographic-openalex-crossref-replication-database-effect-size.json` | baseline | 183 | 39 | 0 | 0 | 50 | 0 |
+| `steps/searches/figure1/corporasearch-citation-expanded-known-replication-databases.json` | expanded | 269 | 28 | 9 | 10 | 58 | 0 |
+| `steps/searches/figure1/corporasearch-citation-snowball-known-replication-corpora.json` | baseline | 279 | 24 | 0 | 0 | 37 | 0 |
+| `steps/searches/figure1/corporasearch-code-expanded-local-pair-field-signatures.json` | expanded | 384 | 29 | 16 | 28 | 355 | 0 |
+| `steps/searches/figure1/corporasearch-code-local-original-replication-fields.json` | baseline | 288 | 1 | 0 | 0 | 287 | 0 |
+| `steps/searches/figure1/corporasearch-domain-expanded-crossfield-replication-datasets.json` | expanded | 495 | 20 | 2 | 3 | 89 | 0 |
+| `steps/searches/figure1/corporasearch-domain-multifield-replication-database-effect-size.json` | baseline | 287 | 12 | 0 | 0 | 54 | 0 |
+| `steps/searches/figure1/corporasearch-gptcoverage-expanded-missing-source-family-targets.json` | expanded | 610 | 37 | 13 | 11 | 79 | 98 |
+| `steps/searches/figure1/corporasearch-knowngood-recall-probe-existing-figure1-sources.json` | baseline | 462 | 54 | 24 | 0 | 43 | 0 |
+| `steps/searches/figure1/corporasearch-linkgraph-expanded-known-corpus-paper-dois-to-datasets.json` | expanded | 234 | 46 | 38 | 37 | 188 | 4 |
+| `steps/searches/figure1/corporasearch-manual-expert-suggestion-tracker.json` | baseline | 150 | 18 | 0 | 0 | 1 | 0 |
+| `steps/searches/figure1/corporasearch-registry-pilot-fullscale-followup.json` | baseline | 96 | 1 | 0 | 0 | 13 | 0 |
+| `steps/searches/figure1/corporasearch-repository-expanded-replication-corpus-database-package.json` | expanded | 152 | 11 | 10 | 10 | 47 | 0 |
+| `steps/searches/figure1/corporasearch-repository-osf-dataverse-replication-project-effect-size.json` | baseline | 149 | 21 | 0 | 0 | 34 | 0 |
+| `steps/searches/figure1/corporasearch-repository-provider-expanded-zenodo-figshare-dryad-replication-corpus-database-package.json` | expanded | 81 | 16 | 15 | 15 | 26 | 0 |
+| `steps/searches/figure1/corporasearch-sourcefamily-expanded-known-replication-project-aliases.json` | expanded | 269 | 42 | 13 | 12 | 44 | 0 |
 | `steps/searches/figure1/corporasearch-specialsurfaces-expanded-openreview-rescience-gpt-source-family-pages.json` | expanded | 19 | 2 | 2 | 2 | 0 | 1 |
 
 ## Expanded Candidates New To Root
@@ -39,7 +40,9 @@ This diagnostic summarizes saved `corporasearch-*.json` manifests. It is not an 
 | --- | --- | --- | --- |
 | Compilation of Diener et al. (2010) OSF Multi-Site Replication Projects | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | Social Exclusion Multi-Site Replication Study | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Probabilistic forecasting of replication studies | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Social Exclusion Multi-Site Replication Study | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Investigating the reproducibility of the social and behavioural sciences | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Probabilistic forecasting of replication studies | no | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | Challenges and suggestions for defining replication “success” when effects may be heterogeneous: Comment on Hedges and Schauer (2019). | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | Linguistic Compression Predicts Replication Failure | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | Variation and Covariation in Large-Scale Replication Projects: An Evaluation of Replicability | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
@@ -76,16 +79,14 @@ This diagnostic summarizes saved `corporasearch-*.json` manifests. It is not an 
 | osf 05 RP CB Final Analysis - Experiment level data | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | Replication Data from the Reproducibility Project: Cancer Biology | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | Raising teachers’ awareness about corrective feedback through research replication | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Probabilistic forecasting of replication studies. | no | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Replication of Palmer et al (2016) 'Enhanced expectancies facilitate golf putting' | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | ECLS-K Replication Project | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 | ECLS-K Replication Project | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Reproducibility of Scientific Claims in <i>Drosophila</i> Immunity: A Retrospective Analysis of 400 Publications | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Reproducibility of Scientific Claims in <i>Drosophila</i> Immunity: A Retrospective Analysis of 400 Publications | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Reviewer #1 (Public review): Reproducibility of Scientific Claims in Drosophila Immunity: A Retrospective Analysis of 400 Publications | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Variation and Covariation in Large-scale Replication Projects: An Evaluation of Replicability | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Can Large Language Models Replace Human Subjects? A Large-Scale Replication of Scenario-Based Experiments in Psychology and Management | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Can Large Language Models Replace Human Subjects? A Large-Scale Replication of Scenario-Based Experiments in Psychology and Management | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
-| Publication bias impacts on effect size, statistical power, and magnitude (Type M) and sign (Type S) errors in ecology and evolutionary biology | yes | candidate_repository_package | triage_linked_dataset_or_software_for_pair_table |
-| Additional file 1 of Overlooked poor-quality patient samples in sequencing data impair reproducibility of published clinically relevant datasets | yes | candidate_repository_package | triage_linked_dataset_or_software_for_pair_table |
-| Additional file 1 of Overlooked poor-quality patient samples in sequencing data impair reproducibility of published clinically relevant datasets | yes | candidate_repository_package | triage_linked_dataset_or_software_for_pair_table |
+| Replication of De Britto et al (2017) | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Replication of Roxborough and Cumby (2009), "Folk Psychological Concepts: Causation", Philosophical Psychology | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Replication of MacMahon et al (2019) | no | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Replication of Nahmias et al (2005), "Surveying Freedom", Philosophical Psychology | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
+| Replication of Roxborough and Cumby (2009), "Folk Psychological Concepts: Causation", Philosophical Psychology | yes | candidate_corpus_or_database | triage_landing_page_or_package_for_pair_table |
 
 Additional rows omitted from markdown; see `steps/searches/figure1/searchyield-figure1-corpusdb-expanded-new-leads.tsv`.
