@@ -217,7 +217,7 @@ figure1-rejected-alternate-route-recheck: check-venv
 figure1-corpus-alternate-route-audit: check-venv
 	$(QUARTO_PYTHON) scripts/audit_figure1_corpus_alternate_routes.py --replace
 
-figure1-coverage-loss-accounting: check-venv
+figure1-coverage-loss-accounting: check-venv figure1-universe-coverage-diagnostics figure1-rejected-alternate-route-recheck
 	$(QUARTO_PYTHON) scripts/build_figure1_coverage_loss_accounting.py --replace
 
 figure1-corpus-dataset-closure: check-venv
@@ -316,7 +316,7 @@ paper-assets: check-venv bibliography provenance-codebook figure1-arrow-plot-cur
 figure1-arrow-plot-current: check-venv
 	$(QUARTO_PYTHON) scripts/build_current_figure1_arrow_plot.py
 
-figure1-html-review-assets: check-venv
+figure1-html-review-assets: check-venv figure1-coverage-loss-accounting
 	$(QUARTO_PYTHON) scripts/build_figure1_html_review_assets.py
 
 schema-pilot: check-venv provenance-codebook

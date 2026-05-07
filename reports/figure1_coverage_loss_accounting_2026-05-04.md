@@ -13,7 +13,7 @@ Date: 2026-05-04
 
 ## Headline Accounting
 
-The current local accounted row-grain universe is **3,316** objects. Of those, **1,684** rows (**50.8%**) pass the strict Figure 1A D/N gate. The root table already contains D/N values for **2,436** rows (**73.5%**) when current-rule blocked D/N rows are counted as audited value-bearing material. Across strict Figure 1A, Figure 1B D-equivalent, and native-scale retention, **1,863** rows (**56.2%**) can be shown in some x/y quantitative panel without using currently blocked D/N rows. If currently blocked D/N rows are counted as value-bearing but not main-panel eligible, **2,615** rows (**78.9%**) have values and N in hand. The remaining **701** rows (**21.1%**) are retained only as denominator, duplicate-risk, parser-repair, or missing-value evidence.
+The current local accounted row-grain universe is **3,368** objects. Of those, **1,736** rows (**51.5%**) pass the strict Figure 1A D/N gate. The root table already contains D/N values for **2,488** rows (**73.9%**) when current-rule blocked D/N rows are counted as audited value-bearing material. Across strict Figure 1A, Figure 1B D-equivalent, and native-scale retention, **1,915** rows (**56.9%**) can be shown in some x/y quantitative panel without using currently blocked D/N rows. If currently blocked D/N rows are counted as value-bearing but not main-panel eligible, **2,667** rows (**79.2%**) have values and N in hand. The remaining **701** rows (**20.8%**) are retained only as denominator, duplicate-risk, parser-repair, or missing-value evidence.
 
 At the source/corpus level, the intake table contains **448** source/corpus records, including **261** marked Figure 1 relevant. The alternate-route recheck covered **79** rejected or blocked records: **33** gained an alternate route and **46** remained context-only or rejected with no supported subplot route.
 
@@ -23,25 +23,25 @@ This supports a coverage claim about the public, locally discovered, and mirrora
 
 | disposition_label | row_count | percent_of_accounted_row_grain_universe | usable_for | definition |
 | --- | --- | --- | --- | --- |
-| Strict Figure 1A direct D/N rows | 1684 | 50.8 | main Figure 1A | Rows included by the current strict Figure 1 D/N plot rule. |
-| D/N rows blocked by current Figure 1A rule | 752 | 22.7 | denominator, rule audit, robustness checks | Root rows have D_original, D_replication, N_original, and N_replication but fail a current plot gate. |
-| Comparative binary rows with D-equivalent conversion | 88 | 2.7 | Figure 1B diagnostic | Active/control count rows can be converted by log(OR) * sqrt(3) / pi. |
+| Strict Figure 1A direct D/N rows | 1736 | 51.5 | main Figure 1A | Rows included by the current strict Figure 1 D/N plot rule. |
+| D/N rows blocked by current Figure 1A rule | 752 | 22.3 | denominator, rule audit, robustness checks | Root rows have D_original, D_replication, N_original, and N_replication but fail a current plot gate. |
+| Comparative binary rows with D-equivalent conversion | 88 | 2.6 | Figure 1B diagnostic | Active/control count rows can be converted by log(OR) * sqrt(3) / pi. |
 | Native-effect rows not on D axis | 91 | 2.7 | native-scale diagnostic, not common-D plot | Response-rate or similar rows with original/follow-up values and N but no defensible D conversion. |
-| Pair roster only, public values unavailable | 248 | 7.5 | coverage denominator only | Rows identify original/follow-up linkage but public/local bytes do not expose effect and N values. |
-| Effect present, N missing | 172 | 5.2 | repair queue and denominator | Public result rows expose effect-like values but no original/follow-up sample-size columns. |
-| Parsed row grain, no copied effect/N evidence | 271 | 8.2 | denominator with parser caveat | A parser found row-grain records, but current extraction did not copy effect or N evidence. |
+| Pair roster only, public values unavailable | 248 | 7.4 | coverage denominator only | Rows identify original/follow-up linkage but public/local bytes do not expose effect and N values. |
+| Effect present, N missing | 172 | 5.1 | repair queue and denominator | Public result rows expose effect-like values but no original/follow-up sample-size columns. |
+| Parsed row grain, no copied effect/N evidence | 271 | 8.0 | denominator with parser caveat | A parser found row-grain records, but current extraction did not copy effect or N evidence. |
 | D/N-looking rows with duplicate risk | 10 | 0.3 | coverage denominator until deduped | Candidate D/N-looking rows exist, but they overlap heavily with already harvested sources. |
 
 ## Stage Summary
 
 | stage_id | count | count_type | percent_of_accounted_row_grain_universe | meaning |
 | --- | --- | --- | --- | --- |
-| accounted_row_grain_universe | 3316 | row-grain objects | 100.0 | Working local denominator after adding alternate routes and explicit failure buckets. |
-| strict_figure1a_current | 1684 | rows | 50.8 | Rows that hit the current strict direct-D/N Figure 1A gate. |
-| root_dn_any_current_status | 2436 | rows | 73.5 | Rows with D/N in the root table, whether current-rule included or blocked. |
-| value_bearing_any_axis_or_blocked | 2615 | rows | 78.9 | Rows with D, D-equivalent, or native values and N, including strict-rule blocked D/N rows. |
-| quantitative_or_native_xy_not_counting_blocked_dn | 1863 | rows | 56.2 | Rows that can appear in Figure 1A, Figure 1B, or a native-scale panel without using currently blocked D/N rows. |
-| denominator_or_repair_only | 701 | rows | 21.1 | Rows retained only as denominator, duplicate-risk, parser-repair, or missing-value evidence. |
+| accounted_row_grain_universe | 3368 | row-grain objects | 100.0 | Working local denominator after adding alternate routes and explicit failure buckets. |
+| strict_figure1a_current | 1736 | rows | 51.5 | Rows that hit the current strict direct-D/N Figure 1A gate. |
+| root_dn_any_current_status | 2488 | rows | 73.9 | Rows with D/N in the root table, whether current-rule included or blocked. |
+| value_bearing_any_axis_or_blocked | 2667 | rows | 79.2 | Rows with D, D-equivalent, or native values and N, including strict-rule blocked D/N rows. |
+| quantitative_or_native_xy_not_counting_blocked_dn | 1915 | rows | 56.9 | Rows that can appear in Figure 1A, Figure 1B, or a native-scale panel without using currently blocked D/N rows. |
+| denominator_or_repair_only | 701 | rows | 20.8 | Rows retained only as denominator, duplicate-risk, parser-repair, or missing-value evidence. |
 | root_source_records_all | 448 | source/corpus records |  | All consolidated source/corpus/database records in CORPORA_AND_DATABASES.tsv. |
 | root_source_records_figure1_relevant_yes | 261 | source/corpus records |  | Records explicitly marked relevant to the Figure 1 replication-pair universe. |
 | rechecked_records_with_alternate_route | 33 | source/corpus records |  | Previously rejected/blocked records that now have a non-Figure-1A route. |

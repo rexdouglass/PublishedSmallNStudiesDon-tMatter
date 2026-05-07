@@ -1,10 +1,10 @@
 stage_id	count	count_type	percent_of_accounted_row_grain_universe	meaning
-accounted_row_grain_universe	3316	row-grain objects	100.0	Working local denominator after adding alternate routes and explicit failure buckets.
-strict_figure1a_current	1684	rows	50.8	Rows that hit the current strict direct-D/N Figure 1A gate.
-root_dn_any_current_status	2436	rows	73.5	Rows with D/N in the root table, whether current-rule included or blocked.
-value_bearing_any_axis_or_blocked	2615	rows	78.9	Rows with D, D-equivalent, or native values and N, including strict-rule blocked D/N rows.
-quantitative_or_native_xy_not_counting_blocked_dn	1863	rows	56.2	Rows that can appear in Figure 1A, Figure 1B, or a native-scale panel without using currently blocked D/N rows.
-denominator_or_repair_only	701	rows	21.1	Rows retained only as denominator, duplicate-risk, parser-repair, or missing-value evidence.
+accounted_row_grain_universe	3368	row-grain objects	100.0	Working local denominator after adding alternate routes and explicit failure buckets.
+strict_figure1a_current	1736	rows	51.5	Rows that hit the current strict direct-D/N Figure 1A gate.
+root_dn_any_current_status	2488	rows	73.9	Rows with D/N in the root table, whether current-rule included or blocked.
+value_bearing_any_axis_or_blocked	2667	rows	79.2	Rows with D, D-equivalent, or native values and N, including strict-rule blocked D/N rows.
+quantitative_or_native_xy_not_counting_blocked_dn	1915	rows	56.9	Rows that can appear in Figure 1A, Figure 1B, or a native-scale panel without using currently blocked D/N rows.
+denominator_or_repair_only	701	rows	20.8	Rows retained only as denominator, duplicate-risk, parser-repair, or missing-value evidence.
 root_source_records_all	448	source/corpus records		All consolidated source/corpus/database records in CORPORA_AND_DATABASES.tsv.
 root_source_records_figure1_relevant_yes	261	source/corpus records		Records explicitly marked relevant to the Figure 1 replication-pair universe.
 rechecked_records_with_alternate_route	33	source/corpus records		Previously rejected/blocked records that now have a non-Figure-1A route.

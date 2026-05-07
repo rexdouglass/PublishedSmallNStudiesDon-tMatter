@@ -9,6 +9,7 @@ materializes a small Quarto fragment included by docs/index.qmd.
 from __future__ import annotations
 
 import math
+import re
 import shutil
 from pathlib import Path
 
@@ -802,9 +803,10 @@ def patch_data_paper_plot1_fragments(strict: pd.DataFrame) -> None:
 
     if DATASET_AUDIT_QMD.exists():
         text = DATASET_AUDIT_QMD.read_text(encoding="utf-8")
-        text = text.replace(
-            "- Figure 2 rule-qualified rows: `1,548` in [replication_pairs_figure2_rule_subset.csv](../data/derived/replication_pairs/replication_pairs_figure2_rule_subset.csv)",
+        text = re.sub(
+            r"- Figure 2 rule-qualified rows: `[\d,]+` in \[replication_pairs_figure2_rule_subset\.csv\]\(\.\./data/derived/replication_pairs/replication_pairs_figure2_rule_subset\.csv\)",
             f"- Current strict Figure 1A / Plot 1 rows: `{len(strict):,}` in [FIGURE1_REPLICATION_PAIRS.tsv](../FIGURE1_REPLICATION_PAIRS.tsv)",
+            text,
         )
         DATASET_AUDIT_QMD.write_text(text, encoding="utf-8")
 
@@ -814,9 +816,10 @@ def patch_data_paper_plot1_fragments(strict: pd.DataFrame) -> None:
             "Machine-readable pair-level file: [plot1_replication_pair_details.csv](../data/derived/effect_inflation_dataset/plot1_replication_pair_details.csv)",
             "Machine-readable current pair-level file: [FIGURE1_REPLICATION_PAIRS.tsv](../FIGURE1_REPLICATION_PAIRS.tsv)",
         )
-        text = text.replace(
-            "The specific-observation layer has `1,548` Figure 2 rows.",
+        text = re.sub(
+            r"The specific-observation layer has `[\d,]+` Figure 2 rows\.",
             f"The current strict Plot 1 / Figure 1A layer has `{len(strict):,}` rows.",
+            text,
         )
         PLOT1_SOURCES_QMD.write_text(text, encoding="utf-8")
 

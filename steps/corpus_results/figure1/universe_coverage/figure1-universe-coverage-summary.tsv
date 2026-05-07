@@ -1,10 +1,10 @@
 bucket	rows	percent_of_local_observable_row_universe	definition	use_in_main
-strict_current_figure1_included	1684	55.5	Rows included by the current strict Figure 1 D/N rule.	Figure 1A
-strict_dn_available_but_blocked	752	24.8	Root rows with D/N values that fail the current plot rule, usually because the larger-N side is not the replication/follow-up side or another gate blocks inclusion.	No; audit/robustness only
+strict_current_figure1_included	1736	56.3	Rows included by the current strict Figure 1 D/N rule.	Figure 1A
+strict_dn_available_but_blocked	752	24.4	Root rows with D/N values that fail the current plot rule, usually because the larger-N side is not the replication/follow-up side or another gate blocks inclusion.	No; audit/robustness only
 additional_comparative_binary_d_equivalent_rows	88	2.9	Extra locally staged comparative binary rows that can be mapped to D* by active-vs-placebo odds ratio conversion but are not already represented by current root-table clinical phase II/III rows.	Candidate Figure 1B diagnostic, not Figure 1A
 native_response_rate_rows_not_d_axis	88	2.9	Local rows with native response-rate/logit signal and N on both sides, but no defensible treatment-effect D conversion.	Supplement/native-scale diagnostic only
-roster_only_pairs_no_public_effect_table	248	8.2	Local pilot/full-scale pair roster rows where public bytes identify linked pairs but do not expose effect and N values.	No; denominator/context only
-effect_values_present_no_public_n_columns	172	5.7	Public result rows with effect estimates but no N columns, counted once by the largest public result table to avoid duplicate corrected-file inflation.	No; needs N acquisition
-local_observable_row_universe	3032	100.0	Working denominator for rows already mirrored/staged locally at some meaningful grain; not a science-wide estimate.	Denominator diagnostic
-strict_dn_any_root_status	2436	80.3	All current root rows with D/N values, whether included or excluded by the current Figure 1 rule.	Main plus excluded audit
-diagnostic_xy_rows_strict_plus_extra_plus_native	1860	61.3	Rows that can be shown in an x/y panel using either D, D*, or native logit response units.	Figure plus diagnostic panels
+roster_only_pairs_no_public_effect_table	248	8.0	Local pilot/full-scale pair roster rows where public bytes identify linked pairs but do not expose effect and N values.	No; denominator/context only
+effect_values_present_no_public_n_columns	172	5.6	Public result rows with effect estimates but no N columns, counted once by the largest public result table to avoid duplicate corrected-file inflation.	No; needs N acquisition
+local_observable_row_universe	3084	100.0	Working denominator for rows already mirrored/staged locally at some meaningful grain; not a science-wide estimate.	Denominator diagnostic
+strict_dn_any_root_status	2488	80.7	All current root rows with D/N values, whether included or excluded by the current Figure 1 rule.	Main plus excluded audit
+diagnostic_xy_rows_strict_plus_extra_plus_native	1912	62.0	Rows that can be shown in an x/y panel using either D, D*, or native logit response units.	Figure plus diagnostic panels

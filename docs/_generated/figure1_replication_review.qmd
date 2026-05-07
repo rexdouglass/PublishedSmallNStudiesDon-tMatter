@@ -6,8 +6,8 @@ This temporary review block is generated from local TSV/PNG artifacts so the plo
 - Additional binary clinical D-equivalent diagnostic rows: **88**.
 - Native response/logit rows retained off the D axis: **88**.
 - D/N rows currently blocked from Figure 1A by a rule gate: **752**.
-- Local row universe shown in the subplot buckets: **3,032**.
-- Full accounting denominator including parser-repair and duplicate-risk rows: **3,316**.
+- Local row universe shown in the subplot buckets: **3,084**.
+- Full accounting denominator including parser-repair and duplicate-risk rows: **3,368**.
 
 <figure class="working-figure-review">
 <img src="_generated/figures/figure1a_strict_current_d_pairs.png" alt="Working strict Figure 1A direct D panel" style="width:100%; max-width:980px; display:block; margin:auto;">
@@ -33,7 +33,7 @@ This temporary review block is generated from local TSV/PNG artifacts so the plo
 
 | disposition_label | row_count | usable_for | has_effect | has_n | has_common_axis |
 | --- | --- | --- | --- | --- | --- |
-| Strict Figure 1A direct D/N rows | 1684 | main Figure 1A | yes | yes | yes |
+| Strict Figure 1A direct D/N rows | 1736 | main Figure 1A | yes | yes | yes |
 | D/N rows blocked by current Figure 1A rule | 752 | denominator, rule audit, robustness checks | yes | yes | yes, but not current-rule eligible |
 | Comparative binary rows with D-equivalent conversion | 88 | Figure 1B diagnostic | yes | yes | D-equivalent tier, not direct D |
 | Native-effect rows not on D axis | 91 | native-scale diagnostic, not common-D plot | yes | yes | no |
