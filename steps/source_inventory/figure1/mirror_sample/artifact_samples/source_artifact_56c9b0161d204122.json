@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_56c9b0161d204122",
+  "byte_size": 2025,
+  "columns": [
+    "Study",
+    "Version",
+    "ES",
+    "lower bound",
+    "upper bound",
+    "p",
+    "Significant",
+    "Direction"
+  ],
+  "estimated_data_rows": 30,
+  "file_name": "PredictionMarketSummary.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/PredictionMarketSummary.csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "Direction": "same",
+      "ES": 0.04,
+      "Significant": "no",
+      "Study": "Albarracin S5",
+      "Version": "RP:P",
+      "lower bound": -0.04154908,
+      "p": 0.3364,
+      "upper bound": 0.1210197
+    },
+    {
+      "Direction": "same",
+      "ES": 0.08751799,
+      "Significant": "yes",
+      "Study": "Albarracin S5",
+      "Version": "Revised",
+      "lower bound": 0.0304958,
+      "p": 0.0085,
+      "upper bound": 0.1439723
+    },
+    {
+      "Direction": "same",
+      "ES": 0.06847364,
+      "Significant": "yes",
+      "Study": "Albarracin S5",
+      "Version": "Combined",
+      "lower bound": 0.02390746,
+      "p": 0.0076,
+      "upper bound": 0.1127682
+    },
+    {
+      "Direction": "same",
+      "ES": 0.01289734,
+      "Significant": "no",
+      "Study": "Albarracin S7",
+      "Version": "RP:P",
+      "lower bound": -0.1881832,
+      "p": 0.8818,
+      "upper bound": 0.2129401
+    },
+    {
+      "Direction": "opposite",
+      "ES": -0.07152576,
+      "Significant": "no",
+      "Study": "Albarracin S7",
+      "Version": "Revised",
+      "lower bound": -0.1702104,
+      "p": 0.1309,
+      "upper bound": 0.02857936
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "e7ff3f54bc6a179e9059a8049338aa89938ca6d0559886b901c54fa67a1c6106"
+}

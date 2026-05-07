@@ -1,0 +1,8 @@
+metric	value	definition
+local_project_labels_with_numeric_dn_pairs	40	Distinct project labels from existing local project-specific builders with finite original and replication D/N.
+numeric_dn_pair_rows	2488	Original/replication pair rows with numeric D_original, N_original, D_replication, and N_replication.
+numeric_dn_pairs_passing_min10_and_larger_n	1736	Numeric D/N pair rows where original N and replication N are at least 10 and replication N is larger.
+strict_verbatim_project_labels	2	Project labels with D/N rows backed by copied native row text in this stage.
+strict_verbatim_pair_rows	160	Pairs with original and replication D/N both ready and backed by copied native row text in this stage.
+strict_verbatim_pairs_passing_min10_and_larger_n	60	Strict verbatim-backed pairs also passing the current Figure 1 N rule check.
+strict_verbatim_result_side_rows	432	Original-side plus replication-side rows with copied effect/N text where currently available.

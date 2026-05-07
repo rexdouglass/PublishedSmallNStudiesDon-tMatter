@@ -19,7 +19,7 @@ CLUSTER_REVIEW_BATCH_SIZE ?= 8
 CLUSTER_REVIEW_DECISION_FILE ?=
 RESULT_ARTIFACT_PLOT ?= figure1
 
-.PHONY: setup render preview clean check-quarto check-venv bibliography paper-assets provenance-codebook provenance-pipeline-graph provenance-search-plan figure1-corpora-search-all figure1-corpora-search-expanded figure1-corpora-search-provider-expanded figure1-corpora-search-sourcefamily-expanded figure1-corpora-search-alternate-vocab figure1-corpora-search-link-graph figure1-corpora-search-gpt-coverage figure1-corpora-search-known-good-recall figure1-special-source-surfaces figure1-repository-directory-search figure1-corpora-search-yield figure1-corpora-search-recall figure1-cluster-search-leads figure1-cluster-review-cue apply-cluster-review-cue result-artifact-acquisition-queue figure1-result-artifact-acquisition-queue figure2-result-artifact-acquisition-queue figure3-result-artifact-acquisition-queue figure1-result-artifact-acquisition-strategies figure1-result-artifact-acquisition-filter-tabular figure1-result-artifact-acquisition-filter-documents figure1-result-artifact-acquisition-filter-remaining-downloadable figure1-result-artifact-acquisition-mirror-sample figure1-result-artifact-acquisition-mirror-tabular-first figure1-result-artifact-acquisition-mirror-documents figure1-result-artifact-acquisition-mirror-remaining-downloadable figure1-result-artifact-acquisition-parser-queue figure1-result-artifact-acquisition-parser-queue-documents figure1-result-artifact-acquisition-parser-queue-remaining-downloadable figure1-result-artifact-followup-cues figure1-result-artifact-codex-repair-queue figure1-result-artifact-codex-repair-strategies figure1-result-artifact-codex-repair-mirror-sample figure1-result-artifact-codex-repair-parser-queue figure1-result-artifact-codex-decisions figure1-result-artifact-codex-local-proposals figure1-result-artifact-codex-local-mirror-sample figure1-result-artifact-codex-local-parser-queue figure1-codex-local-corpus-results-extract figure1-codex-local-high-inspect-extract source-family-artifact-inventory source-artifact-mirror-sample source-artifact-parser-queue figure1-corpus-results-extract cluster-review-worklists review-cue apply-review-cue review-cue-routing-table corpora-table-update-proposal schema-pilot validate-schema-pilot ground-schema-pilot level5-schema-pilot level6-schema-pilot ctgov-version-drift-pilot level6-extraction-worklist-pilot level6-text-candidates-pilot artifact-snapshot-audit-pilot wayback-manual-tasks-pilot original-pdf-acquisition-pilot original-pdf-identity-pilot original-pdf-promote-pilot source-object-candidates-pilot full-article-text-pilot
+.PHONY: setup render preview clean check-quarto check-venv bibliography paper-assets figure1-arrow-plot-current figure1-html-review-assets provenance-codebook provenance-pipeline-graph provenance-search-plan figure1-corpora-search-all figure1-corpora-search-expanded figure1-corpora-search-provider-expanded figure1-corpora-search-sourcefamily-expanded figure1-corpora-search-alternate-vocab figure1-corpora-search-link-graph figure1-corpora-search-gpt-coverage figure1-corpora-search-known-good-recall figure1-special-source-surfaces figure1-repository-directory-search figure1-corpora-search-yield figure1-corpora-search-recall figure1-cluster-search-leads figure1-cluster-review-cue apply-cluster-review-cue result-artifact-acquisition-queue figure1-result-artifact-acquisition-queue figure2-result-artifact-acquisition-queue figure3-result-artifact-acquisition-queue figure1-result-artifact-acquisition-strategies figure1-result-artifact-acquisition-filter-tabular figure1-result-artifact-acquisition-filter-documents figure1-result-artifact-acquisition-filter-remaining-downloadable figure1-result-artifact-acquisition-mirror-sample figure1-result-artifact-acquisition-mirror-tabular-first figure1-result-artifact-acquisition-mirror-documents figure1-result-artifact-acquisition-mirror-remaining-downloadable figure1-result-artifact-acquisition-parser-queue figure1-result-artifact-acquisition-parser-queue-documents figure1-result-artifact-acquisition-parser-queue-remaining-downloadable figure1-result-artifact-followup-cues figure1-result-artifact-codex-repair-queue figure1-result-artifact-codex-repair-strategies figure1-result-artifact-codex-repair-mirror-sample figure1-result-artifact-codex-repair-parser-queue figure1-result-artifact-codex-decisions figure1-result-artifact-codex-local-proposals figure1-result-artifact-codex-local-mirror-sample figure1-result-artifact-codex-local-parser-queue figure1-codex-local-corpus-results-extract figure1-codex-local-high-inspect-extract source-family-artifact-inventory source-artifact-mirror-sample source-artifact-parser-queue figure1-corpus-results-extract figure1-raw-viability-summary figure1-gpt-candidate-batch2-mine figure1-remaining-local-mine figure1-research-followup-mirror figure1-research-followup-triage figure1-corpus-dn-check figure1-replication-pairs-table figure1-universe-coverage-diagnostics figure1-rejected-alternate-route-recheck figure1-coverage-loss-accounting figure1-corpus-dataset-closure figure1-individual-replication-search-batch001 figure1-individual-replication-mirror-batch001 figure1-individual-replication-value-scan-batch001 cluster-review-worklists review-cue apply-review-cue review-cue-routing-table corpora-table-update-proposal schema-pilot validate-schema-pilot ground-schema-pilot level5-schema-pilot level6-schema-pilot ctgov-version-drift-pilot level6-extraction-worklist-pilot level6-text-candidates-pilot artifact-snapshot-audit-pilot wayback-manual-tasks-pilot original-pdf-acquisition-pilot original-pdf-identity-pilot original-pdf-promote-pilot source-object-candidates-pilot full-article-text-pilot
 
 setup:
 	$(PYTHON) -m venv $(VENV)
@@ -179,6 +179,27 @@ source-artifact-parser-queue: check-venv
 figure1-corpus-results-extract: check-venv
 	$(QUARTO_PYTHON) scripts/extract_corpus_results_from_artifacts.py --parser-queue steps/source_inventory/figure1/parser_queue/source-artifact-parser-candidate-queue.tsv --status steps/source_inventory/figure1/mirror_sample/source-artifact-mirror-sample-status.tsv --replace
 
+figure1-raw-viability-summary: check-venv
+	$(QUARTO_PYTHON) scripts/summarize_figure1_raw_viability.py --replace
+
+figure1-gpt-candidate-batch2-mine: check-venv
+	$(QUARTO_PYTHON) scripts/promote_gpt_candidate_batch2_pairs.py
+
+figure1-remaining-local-mine: check-venv
+	$(QUARTO_PYTHON) scripts/promote_remaining_local_figure1_mining.py
+
+figure1-research-followup-mirror: check-venv
+	$(QUARTO_PYTHON) scripts/mirror_figure1_research_followup_candidates.py
+
+figure1-research-followup-triage: check-venv
+	$(QUARTO_PYTHON) scripts/triage_figure1_research_followup_candidates.py
+
+figure1-corpus-dn-check: check-venv
+	$(QUARTO_PYTHON) scripts/check_figure1_corpus_dn.py --replace
+
+figure1-replication-pairs-table: check-venv
+	$(QUARTO_PYTHON) scripts/build_figure1_replication_pairs_table.py --replace
+
 .PHONY: figure1-rehydration-manifest figure1-rehydrate-source-artifacts
 
 figure1-rehydration-manifest: check-venv
@@ -186,6 +207,93 @@ figure1-rehydration-manifest: check-venv
 
 figure1-rehydrate-source-artifacts: check-venv
 	$(QUARTO_PYTHON) scripts/rehydrate_figure1_source_artifacts.py --manifest steps/source_inventory/figure1/rehydration/figure1-rehydration-manifest.tsv
+
+figure1-universe-coverage-diagnostics: check-venv
+	$(QUARTO_PYTHON) scripts/build_figure1_universe_coverage_diagnostics.py --replace
+
+figure1-rejected-alternate-route-recheck: check-venv
+	$(QUARTO_PYTHON) scripts/recheck_figure1_rejected_for_alternative_routes.py --replace
+
+figure1-corpus-alternate-route-audit: check-venv
+	$(QUARTO_PYTHON) scripts/audit_figure1_corpus_alternate_routes.py --replace
+
+figure1-coverage-loss-accounting: check-venv
+	$(QUARTO_PYTHON) scripts/build_figure1_coverage_loss_accounting.py --replace
+
+figure1-corpus-dataset-closure: check-venv
+	$(QUARTO_PYTHON) scripts/close_figure1_corpus_dataset_pass.py --replace
+
+.PHONY: figure1-individual-replication-search-strategy figure1-individual-replication-vast-search-batch001 figure1-individual-replication-vast-search-batch002 figure1-individual-replication-search-intake figure1-individual-replication-search-intake-batch002 figure1-individual-replication-promote-ready figure1-individual-replication-row-disposition-batch001 figure1-individual-replication-close-batch001 figure1-individual-replication-mirror-batch002 figure1-individual-replication-value-scan-current
+
+figure1-individual-replication-search-strategy: check-venv
+	$(QUARTO_PYTHON) scripts/build_individual_replication_search_strategy.py --replace
+
+figure1-individual-replication-vast-search-batch001: check-venv figure1-individual-replication-search-strategy
+	$(QUARTO_PYTHON) scripts/execute_individual_replication_vast_search.py --replace
+
+figure1-individual-replication-vast-search-batch002: check-venv figure1-individual-replication-search-strategy
+	$(QUARTO_PYTHON) scripts/execute_individual_replication_vast_search.py --batch-id batch002 --rows-per-query 12 --max-query-priority 3 --replace
+
+figure1-individual-replication-search-intake: check-venv figure1-bibtex-dedupe-map figure1-individual-replication-search-strategy
+	$(QUARTO_PYTHON) scripts/triage_individual_replication_search_manifests.py --replace
+
+figure1-individual-replication-search-intake-batch002: check-venv figure1-bibtex-dedupe-map figure1-individual-replication-vast-search-batch002
+	$(QUARTO_PYTHON) scripts/triage_individual_replication_search_manifests.py --batch-id batch002 --manifest-glob individualrepsearch-api-batch002.json --prior-seed steps/individual_replication_papers/figure1/individual-paper-batch002-dedupe-seed.tsv --replace
+
+figure1-individual-replication-search-batch001: figure1-individual-replication-search-intake
+
+figure1-individual-replication-mirror-batch001: check-venv figure1-individual-replication-search-intake
+	$(QUARTO_PYTHON) scripts/mirror_individual_replication_batch001_sources.py --replace
+
+figure1-individual-replication-mirror-batch002: check-venv figure1-individual-replication-search-intake-batch002
+	$(QUARTO_PYTHON) scripts/mirror_individual_replication_batch001_sources.py --batch-id batch002 --replace
+
+figure1-individual-replication-value-scan-batch001: check-venv figure1-individual-replication-mirror-batch001
+	$(QUARTO_PYTHON) scripts/scan_individual_replication_batch001_values.py --replace
+
+figure1-individual-replication-value-scan-current: check-venv
+	$(QUARTO_PYTHON) scripts/scan_individual_replication_batch001_values.py --replace
+
+figure1-individual-replication-promote-ready: check-venv figure1-individual-replication-value-scan-current
+	$(QUARTO_PYTHON) scripts/promote_individual_replication_value_scan.py --replace
+
+figure1-individual-replication-row-disposition-batch001: check-venv
+	$(MAKE) figure1-individual-replication-promote-ready
+	$(MAKE) figure1-corpus-dn-check figure1-replication-pairs-table
+	$(QUARTO_PYTHON) scripts/finalize_individual_replication_row_dispositions.py --replace
+
+figure1-individual-replication-close-batch001: check-venv figure1-individual-replication-row-disposition-batch001
+	$(QUARTO_PYTHON) scripts/close_individual_replication_batch001.py --replace
+
+.PHONY: figure1-pair-chase-worklist
+
+figure1-pair-chase-worklist: check-venv
+	$(QUARTO_PYTHON) scripts/build_figure1_pair_chase_worklist.py --replace
+
+.PHONY: figure1-individual-study-map
+
+figure1-individual-study-map: check-venv figure1-pair-chase-worklist
+	$(QUARTO_PYTHON) scripts/build_figure1_individual_study_map.py --replace
+
+.PHONY: figure1-bibtex-dedupe-map
+
+figure1-bibtex-dedupe-map: check-venv figure1-individual-study-map bibliography
+	$(QUARTO_PYTHON) scripts/build_figure1_bibtex_dedupe_map.py --replace
+
+.PHONY: figure1-identity-disambiguation-worklist
+
+figure1-identity-disambiguation-worklist: check-venv figure1-bibtex-dedupe-map
+	$(QUARTO_PYTHON) scripts/build_figure1_identity_disambiguation_worklist.py --replace
+
+.PHONY: figure1-identity-disambiguation-resolve
+
+figure1-identity-disambiguation-resolve: check-venv figure1-identity-disambiguation-worklist
+	$(QUARTO_PYTHON) scripts/resolve_figure1_identity_disambiguation.py --replace
+
+.PHONY: figure1-prior-pair-work-audit
+
+figure1-prior-pair-work-audit: check-venv figure1-identity-disambiguation-resolve
+	$(QUARTO_PYTHON) scripts/audit_figure1_prior_pair_work.py --replace
 
 cluster-review-worklists: check-venv
 	$(QUARTO_PYTHON) scripts/build_cluster_review_worklists.py --replace
@@ -202,8 +310,14 @@ review-cue-routing-table: check-venv
 corpora-table-update-proposal: check-venv
 	$(QUARTO_PYTHON) scripts/build_corpora_table_update_proposal.py --cue-id $(REVIEW_CUE_ID) --batch-id $(REVIEW_CUE_BATCH) --replace
 
-paper-assets: check-venv bibliography provenance-codebook
+paper-assets: check-venv bibliography provenance-codebook figure1-arrow-plot-current
 	$(QUARTO_PYTHON) scripts/build_paper_assets.py
+
+figure1-arrow-plot-current: check-venv
+	$(QUARTO_PYTHON) scripts/build_current_figure1_arrow_plot.py
+
+figure1-html-review-assets: check-venv
+	$(QUARTO_PYTHON) scripts/build_figure1_html_review_assets.py
 
 schema-pilot: check-venv provenance-codebook
 	SCHEMA_PILOT_N=$(SCHEMA_PILOT_N) SCHEMA_PILOT_SEED=$(SCHEMA_PILOT_SEED) $(QUARTO_PYTHON) scripts/pilot_source_result_schema.py
@@ -256,7 +370,7 @@ source-object-candidates-pilot: check-venv
 full-article-text-pilot: check-venv
 	SCHEMA_PILOT_N=$(SCHEMA_PILOT_N) SCHEMA_PILOT_SEED=$(SCHEMA_PILOT_SEED) $(QUARTO_PYTHON) scripts/resolve_full_article_text_candidates_pilot.py
 
-render: check-quarto check-venv paper-assets
+render: check-quarto check-venv paper-assets figure1-html-review-assets
 	QUARTO_PYTHON="$(QUARTO_PYTHON)" $(QUARTO) render $(DOC)
 
 preview: check-quarto check-venv

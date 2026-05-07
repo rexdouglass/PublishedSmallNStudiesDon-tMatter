@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_b6fd99a36f084acf",
+  "byte_size": 4642,
+  "columns": [
+    "llm_category",
+    "llm_descriptive",
+    "llm_score",
+    "n_abstracts",
+    "se",
+    "llm_score_lb",
+    "llm_score_ub",
+    "llm_category2"
+  ],
+  "estimated_data_rows": 31,
+  "file_name": "Analysis-ready Data__Replication and Reproduction Papers__llm_theory_data.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Analysis-ready Data__Replication and Reproduction Papers__llm_theory_data.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "llm_category": "behavioral_cognitive_economics_decision_making",
+      "llm_category2": "Behav/cog econ & decision-making",
+      "llm_descriptive": "theory",
+      "llm_score": 41.6184971098,
+      "llm_score_lb": 34.2731241522,
+      "llm_score_ub": 48.9638700674,
+      "n_abstracts": 173,
+      "se": 3.7476392641
+    },
+    {
+      "llm_category": "behavioral_economics_consumer_behavior",
+      "llm_category2": "Behav economics: consumer behavior",
+      "llm_descriptive": "theory",
+      "llm_score": 14.450867052,
+      "llm_score_lb": 9.211391977,
+      "llm_score_ub": 19.6903421271,
+      "n_abstracts": 173,
+      "se": 2.6732015689
+    },
+    {
+      "llm_category": "creativity_innovation_paradigms",
+      "llm_category2": "Creativity & innovation paradigms",
+      "llm_descriptive": "theory",
+      "llm_score": 2.8901734104,
+      "llm_score_lb": 0.3937022137,
+      "llm_score_ub": 5.3866446071,
+      "n_abstracts": 173,
+      "se": 1.2737097942
+    },
+    {
+      "llm_category": "cultural_psychology_acculturation",
+      "llm_category2": "Cultural psych & acculturation",
+      "llm_descriptive": "theory",
+      "llm_score": 12.1387283237,
+      "llm_score_lb": 7.2722100554,
+      "llm_score_ub": 17.005246592,
+      "n_abstracts": 173,
+      "se": 2.4829174838
+    },
+    {
+      "llm_category": "economics_macroeconomics_finance",
+      "llm_category2": "Macroecon & finance",
+      "llm_descriptive": "theory",
+      "llm_score": 8.0924855491,
+      "llm_score_lb": 4.0285248758,
+      "llm_score_ub": 12.1564462225,
+      "n_abstracts": 173,
+      "se": 2.0734493231
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "7121c97ea3c27c31ad4c553c87db7a15e4049f938cd1abe2ffe533c3a99857ac"
+}

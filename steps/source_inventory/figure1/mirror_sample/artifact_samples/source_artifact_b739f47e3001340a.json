@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_b739f47e3001340a",
+  "byte_size": 658,
+  "columns": [
+    "claim_id",
+    "rr_threshold_analytic_sample_size",
+    "rr_stage1_analytic_sample_size",
+    "rr_stage2_analytic_sample_size"
+  ],
+  "estimated_data_rows": 19,
+  "file_name": "Raw Data__Original Studies__orig_n_traditional.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Raw Data__Original Studies__orig_n_traditional.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "claim_id": "5KrD_single-trace",
+      "rr_stage1_analytic_sample_size": 1159,
+      "rr_stage2_analytic_sample_size": 2609,
+      "rr_threshold_analytic_sample_size": 238
+    },
+    {
+      "claim_id": "DEqr_single-trace",
+      "rr_stage1_analytic_sample_size": 555,
+      "rr_stage2_analytic_sample_size": 1248,
+      "rr_threshold_analytic_sample_size": 114
+    },
+    {
+      "claim_id": "VvlD_single-trace",
+      "rr_stage1_analytic_sample_size": 978,
+      "rr_stage2_analytic_sample_size": 2203,
+      "rr_threshold_analytic_sample_size": 201
+    },
+    {
+      "claim_id": "e3G7_single-trace",
+      "rr_stage1_analytic_sample_size": 442,
+      "rr_stage2_analytic_sample_size": 991,
+      "rr_threshold_analytic_sample_size": 91
+    },
+    {
+      "claim_id": "mJDj_single-trace",
+      "rr_stage1_analytic_sample_size": 10849,
+      "rr_stage2_analytic_sample_size": 24394,
+      "rr_threshold_analytic_sample_size": 2229
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "fb39b2ad0b4324edc7cbf8d80781e16a8ac1ee511c32af58f84dc70099182108"
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_id": "source_artifact_92ab511a8eee4406",
+  "byte_size": 207,
+  "file_name": "3_2_simu_qog.do",
+  "file_type": "do",
+  "line_preview": [
+    "clear",
+    "set more off",
+    "",
+    "use \"$temp/tmp_qog\", clear",
+    "",
+    "des, varlist",
+    "loc lastvar: word `c(k)' of `r(varlist)'",
+    "local m = subinstr(\"`lastvar'\",\"v\",\"\",1)  ",
+    "",
+    "set seed 51",
+    "simu `m' 2000000 \"$temp/simu_qog.txt\""
+  ],
+  "line_preview_count": 11,
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Programs/simulations/3_2_simu_qog.do",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "79b0dda2c4043782627f00807abf5eb8a7cb66ec4e40c6dcde89775254965033"
+}

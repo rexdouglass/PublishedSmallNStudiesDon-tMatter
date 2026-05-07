@@ -1,0 +1,860 @@
+{
+  "artifact_id": "source_artifact_b8d8da539e6b509a",
+  "byte_size": 29079,
+  "file_name": "052_full_10_1016_S0140_6736_19_31270_X.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/052_full_10_1016_S0140_6736_19_31270_X.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/S0140-6736(19)31270-X\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Intrahepatic cholestasis of pregnancy, characterised by maternal pruritus and increased serum bile acid concentrations, is associated with increased rates of stillbirth, preterm birth, and neonatal unit admission. Ursodeoxycholic acid is widely used as a treatment without an adequate evidence base. We aimed to evaluate whether ursodeoxycholic acid reduces adverse perinatal outcomes in women with intrahepatic cholestasis of pregnancy.<h4>Methods</h4>We did a double-blind, multicentre, randomised placebo-controlled trial at 33 hospital maternity units in England and Wales. We recruited women with intrahepatic cholestasis of pregnancy, who were aged 18 years or older and with a gestational age between 20 weeks and 40 weeks and 6 days, with a singleton or twin pregnancy and no known lethal fetal anomaly. Participants were randomly assigned 1:1 to ursodeoxycholic acid or placebo, given as two oral tablets a day at an equivalent dose of 500 mg twice a day. The dose could be increased or decreased at the clinician's discretion, to a maximum of four tablets and a minimum of one tablet a day. We recommended that treatment should be continued from enrolment until the infant's birth. The primary outcome was a composite of perinatal death (in-utero fetal death after randomisation or known neonatal death up to 7 days after birth), preterm delivery (<37 weeks' gestation), or neonatal unit admission for at least 4 h (from birth until hospital discharge). Each infant was counted once within this composite. All analyses were done according to the intention-to-treat principle. The trial was prospectively registered with the ISRCTN registry, number 91918806.<h4>Findings</h4>Between Dec 23, 2015, and Aug 7, 2018, 605 women were enrolled and randomly allocated to receive ursodeoxycholic acid (n=305) or placebo (n=300). The primary outcome analysis included 304 women and 322 infants in the ursodeoxycholic acid group, and 300 women and 318 infants in the placebo group (consent to use data was withdrawn for 1 woman and 2 infants). The primary composite outcome occurred in 74 (23%) of 322 infants in the ursodeoxycholic acid group and 85 (27%) of 318 infants in the placebo group (adjusted risk ratio 0·85 [95% CI 0·62-1·15]). Two serious adverse events were reported in the ursodeoxycholic acid group and six serious adverse events were reported in the placebo group; no serious adverse events were regarded as being related to treatment.<h4>Interpretation</h4>Treatment with ursodeoxycholic acid does not reduce adverse perinatal outcomes in women with intrahepatic cholestasis of pregnancy. Therefore, its routine use for this condition should be reconsidered.<h4>Funding</h4>National Institute for Health Research Efficacy and Mechanism Evaluation Programme.",
+          "affiliation": "Department of Women and Children's Health, School of Life Course Sciences, King's College London, London, UK. Electronic address: lucy.chappell@kcl.ac.uk.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5500-2247"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6219-3379"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0197-2632"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1691-3221"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6226-7611"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7447-8934"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Women and Children's Health, School of Life Course Sciences, King's College London, London, UK. Electronic address: lucy.chappell@kcl.ac.uk."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6219-3379"
+                },
+                "firstName": "Lucy C",
+                "fullName": "Chappell LC",
+                "initials": "LC",
+                "lastName": "Chappell"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "National Perinatal Epidemiology Unit Clinical Trials Unit, Nuffield Department of Population Health, University of Oxford, Oxford, UK."
+                    }
+                  ]
+                },
+                "firstName": "Jennifer L",
+                "fullName": "Bell JL",
+                "initials": "JL",
+                "lastName": "Bell"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "National Perinatal Epidemiology Unit Clinical Trials Unit, Nuffield Department of Population Health, University of Oxford, Oxford, UK."
+                    }
+                  ]
+                },
+                "firstName": "Anne",
+                "fullName": "Smith A",
+                "initials": "A",
+                "lastName": "Smith"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "National Perinatal Epidemiology Unit Clinical Trials Unit, Nuffield Department of Population Health, University of Oxford, Oxford, UK."
+                    }
+                  ]
+                },
+                "firstName": "Louise",
+                "fullName": "Linsell L",
+                "initials": "L",
+                "lastName": "Linsell"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "National Perinatal Epidemiology Unit Clinical Trials Unit, Nuffield Department of Population Health, University of Oxford, Oxford, UK."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5500-2247"
+                },
+                "firstName": "Edmund",
+                "fullName": "Juszczak E",
+                "initials": "E",
+                "lastName": "Juszczak"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Women and Children's Health, School of Life Course Sciences, King's College London, London, UK."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0197-2632"
+                },
+                "firstName": "Peter H",
+                "fullName": "Dixon PH",
+                "initials": "PH",
+                "lastName": "Dixon"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "ICP Support, Sutton Coldfield, UK."
+                    }
+                  ]
+                },
+                "firstName": "Jenny",
+                "fullName": "Chambers J",
+                "initials": "J",
+                "lastName": "Chambers"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Research Department of Primary Care and Population Health, University College London, London, UK."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7447-8934"
+                },
+                "firstName": "Rachael",
+                "fullName": "Hunter R",
+                "initials": "R",
+                "lastName": "Hunter"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Neonatal-Perinatal Medicine, IWK Health Centre, Halifax, NS, Canada."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1691-3221"
+                },
+                "firstName": "Jon",
+                "fullName": "Dorling J",
+                "initials": "J",
+                "lastName": "Dorling"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Women and Children's Health, School of Life Course Sciences, King's College London, London, UK."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6226-7611"
+                },
+                "firstName": "Catherine",
+                "fullName": "Williamson C",
+                "initials": "C",
+                "lastName": "Williamson"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Child Health, Obstetrics and Gynaecology, University of Nottingham, Nottingham, UK."
+                    }
+                  ]
+                },
+                "firstName": "Jim G",
+                "fullName": "Thornton JG",
+                "initials": "JG",
+                "lastName": "Thornton"
+              },
+              {
+                "collectiveName": "PITCHES study group"
+              }
+            ]
+          },
+          "authorString": "Chappell LC, Bell JL, Smith A, Linsell L, Juszczak E, Dixon PH, Chambers J, Hunter R, Dorling J, Williamson C, Thornton JG, PITCHES study group.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Bile Acids and Salts",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Alanine Transaminase",
+                "registryNumber": "EC 2.6.1.2"
+              },
+              {
+                "name": "Cholagogues and Choleretics",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Ursodeoxycholic Acid",
+                "registryNumber": "724L30Y2QR"
+              },
+              {
+                "name": "Biomarkers",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 176,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "31378393",
+                "orderIn": 1,
+                "reference": "Lancet. 2019 Sep 7;394(10201):810-812. doi: 10.1016/S0140-6736(19)31607-1.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "31736061",
+                "orderIn": 2,
+                "reference": "Int J Gynaecol Obstet. 2020 Jan;148(1):3-5. doi: 10.1002/ijgo.13026.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "32145787",
+                "orderIn": 3,
+                "reference": "Lancet. 2020 Mar 7;395(10226):780. doi: 10.1016/S0140-6736(19)32988-5.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "wikipedia"
+            ]
+          },
+          "dateOfCompletion": "2019-10-14",
+          "dateOfCreation": "2019-08-06",
+          "dateOfRevision": "2025-05-30",
+          "doi": "10.1016/s0140-6736(19)31270-x",
+          "electronicPublicationDate": "2019-08-01",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2019-08-06",
+          "firstPublicationDate": "2019-08-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC6739598"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-03",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://kclpure.kcl.ac.uk/ws/files/116912767/Ursodeoxycholic_acid_versus_placebo_Chappell_publishedonline_01august2019_GOLD_VoR.pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/S0140-6736(19)31270-X"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC6739598"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "RP-2014-05-019",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DH_",
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "PB-PG-0107-12037",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "12/164/16",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institute for Health Research (NIHR) Professorship",
+                "grantId": "RP-2014-05-019",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "NIHR200254",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "31378395",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "investigatorList": {
+            "investigator": [
+              {
+                "firstName": "Irshad",
+                "fullName": "Ahmed I",
+                "initials": "I",
+                "lastName": "Ahmed"
+              },
+              {
+                "firstName": "Rita",
+                "fullName": "Arya R",
+                "initials": "R",
+                "lastName": "Arya"
+              },
+              {
+                "firstName": "Virginia",
+                "fullName": "Beckett V",
+                "initials": "V",
+                "lastName": "Beckett"
+              },
+              {
+                "firstName": "Amarnath",
+                "fullName": "Bhide A",
+                "initials": "A",
+                "lastName": "Bhide"
+              },
+              {
+                "firstName": "Heather",
+                "fullName": "Brown H",
+                "initials": "H",
+                "lastName": "Brown"
+              },
+              {
+                "firstName": "George",
+                "fullName": "Bugg G",
+                "initials": "G",
+                "lastName": "Bugg"
+              },
+              {
+                "firstName": "Helen",
+                "fullName": "Cameron H",
+                "initials": "H",
+                "lastName": "Cameron"
+              },
+              {
+                "firstName": "Nishigandh",
+                "fullName": "Deole N",
+                "initials": "N",
+                "lastName": "Deole"
+              },
+              {
+                "firstName": "Madhuchanda",
+                "fullName": "Dey M",
+                "initials": "M",
+                "lastName": "Dey"
+              },
+              {
+                "firstName": "James",
+                "fullName": "Dwyer J",
+                "initials": "J",
+                "lastName": "Dwyer"
+              },
+              {
+                "firstName": "Leila",
+                "fullName": "Fahel L",
+                "initials": "L",
+                "lastName": "Fahel"
+              },
+              {
+                "firstName": "Ruta",
+                "fullName": "Gada R",
+                "initials": "R",
+                "lastName": "Gada"
+              },
+              {
+                "firstName": "Joanna",
+                "fullName": "Girling J",
+                "initials": "J",
+                "lastName": "Girling"
+              },
+              {
+                "firstName": "Anna",
+                "fullName": "Haestier A",
+                "initials": "A",
+                "lastName": "Haestier"
+              },
+              {
+                "firstName": "Sean",
+                "fullName": "Hughes S",
+                "initials": "S",
+                "lastName": "Hughes"
+              },
+              {
+                "firstName": "Radha",
+                "fullName": "Indusekhar R",
+                "initials": "R",
+                "lastName": "Indusekhar"
+              },
+              {
+                "firstName": "Bryony",
+                "fullName": "Jones B",
+                "initials": "B",
+                "lastName": "Jones"
+              },
+              {
+                "firstName": "Rahila",
+                "fullName": "Khan R",
+                "initials": "R",
+                "lastName": "Khan"
+              },
+              {
+                "firstName": "Alison",
+                "fullName": "Kirkpatrick A",
+                "initials": "A",
+                "lastName": "Kirkpatrick"
+              },
+              {
+                "firstName": "Ellen",
+                "fullName": "Knox E",
+                "initials": "E",
+                "lastName": "Knox"
+              },
+              {
+                "firstName": "Karen",
+                "fullName": "Lincoln K",
+                "initials": "K",
+                "lastName": "Lincoln"
+              },
+              {
+                "firstName": "Malcolm",
+                "fullName": "MacDougall M",
+                "initials": "M",
+                "lastName": "MacDougall"
+              },
+              {
+                "firstName": "Franz",
+                "fullName": "Majoko F",
+                "initials": "F",
+                "lastName": "Majoko"
+              },
+              {
+                "firstName": "Karen",
+                "fullName": "McIntyre K",
+                "initials": "K",
+                "lastName": "McIntyre"
+              },
+              {
+                "firstName": "Muna",
+                "fullName": "Noori M",
+                "initials": "M",
+                "lastName": "Noori"
+              },
+              {
+                "firstName": "Wendy",
+                "fullName": "Oakley W",
+                "initials": "W",
+                "lastName": "Oakley"
+              },
+              {
+                "firstName": "Jane",
+                "fullName": "Preston J",
+                "initials": "J",
+                "lastName": "Preston"
+              },
+              {
+                "firstName": "Poornima",
+                "fullName": "Ranka P",
+                "initials": "P",
+                "lastName": "Ranka"
+              },
+              {
+                "firstName": "Mumtaz",
+                "fullName": "Rashid M",
+                "initials": "M",
+                "lastName": "Rashid"
+              },
+              {
+                "firstName": "Marwan",
+                "fullName": "Salloum M",
+                "initials": "M",
+                "lastName": "Salloum"
+              },
+              {
+                "firstName": "Manjula",
+                "fullName": "Samyraju M",
+                "initials": "M",
+                "lastName": "Samyraju"
+              },
+              {
+                "firstName": "Catharina",
+                "fullName": "Schram C",
+                "initials": "C",
+                "lastName": "Schram"
+              },
+              {
+                "firstName": "Seema",
+                "fullName": "Sen S",
+                "initials": "S",
+                "lastName": "Sen"
+              },
+              {
+                "firstName": "Sophia",
+                "fullName": "Stone S",
+                "initials": "S",
+                "lastName": "Stone"
+              },
+              {
+                "firstName": "Bee",
+                "fullName": "Tan B",
+                "initials": "B",
+                "lastName": "Tan"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2019 Sep",
+            "issue": "10201",
+            "journal": {
+              "essn": "1474-547X",
+              "isoabbreviation": "Lancet",
+              "issn": "0140-6736",
+              "medlineAbbreviation": "Lancet",
+              "nlmid": "2985213R",
+              "title": "Lancet (London, England)"
+            },
+            "journalIssueId": 2857130,
+            "monthOfPublication": 9,
+            "printPublicationDate": "2019-09-01",
+            "volume": "394",
+            "yearOfPublication": 2019
+          },
+          "language": "eng",
+          "license": "cc by",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cholestasis, Intrahepatic",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    },
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pregnancy Complications",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    },
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Premature Birth",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    },
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pruritus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Bile Acids and Salts",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Ursodeoxycholic Acid",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Alanine Transaminase",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cholagogues and Choleretics",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Administration, Oral",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Double-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Gestational Age",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pregnancy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Infant, Newborn",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Intensive Care Units, Neonatal",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "statistics & numerical data"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Stillbirth",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Live Birth",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Perinatal Death",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Biomarkers",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "849-860",
+          "pmcid": "PMC6739598",
+          "pmid": "31378395",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2019",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Ursodeoxycholic acid versus placebo in women with intrahepatic cholestasis of pregnancy (PITCHES): a randomised controlled trial."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "65502d2ac45f45558e3611e2b68835c9aa9e5d71d59e425e168ecf4d458d6644"
+}

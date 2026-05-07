@@ -1,0 +1,30 @@
+{
+  "artifact_id": "source_artifact_7fc78e0dc9891d83",
+  "byte_size": 258,
+  "file_name": "2_2_clean_qog.do",
+  "file_type": "do",
+  "line_preview": [
+    "clear",
+    "set more off",
+    "",
+    "* Transform the original dataset into something useful",
+    "",
+    "use \"$inputs/qog_std_ts_20dec13\", clear",
+    "",
+    "local i = 1",
+    "foreach var of varlist ajr_settmort-wvs_vol{",
+    "ren `var' v`i'",
+    "local i = `i' + 1",
+    "}",
+    "*",
+    "",
+    "compress",
+    "save \"$temp/tmp_qog\""
+  ],
+  "line_preview_count": 16,
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Programs/simulations/2_2_clean_qog.do",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "9051d12ae21aac0d42faa4cc956aaf262cce23209e4f3803c5eb18789782c5e5"
+}

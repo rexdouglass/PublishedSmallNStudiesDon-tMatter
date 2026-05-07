@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_23d7660583d19245",
+  "byte_size": 5534,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "T_mean",
+    "C_mean",
+    "T_n",
+    "C_n",
+    "T_sd",
+    "C_sd"
+  ],
+  "estimated_data_rows": 93,
+  "file_name": "ft092.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/des_stat/ft092.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "C_mean": 641.1,
+      "C_n": 24,
+      "C_sd": 44.4,
+      "T_mean": 1546.0,
+      "T_n": 24,
+      "T_sd": 836.6,
+      "obs_ID": "obs001",
+      "study_ID": "Abdallah et al (2008)",
+      "year_pub": 2008
+    },
+    {
+      "C_mean": 213.6,
+      "C_n": 12,
+      "C_sd": 358.9,
+      "T_mean": 1297.6,
+      "T_n": 72,
+      "T_sd": 5414.2,
+      "obs_ID": "obs002",
+      "study_ID": "Abdallah & Chieb (2010)",
+      "year_pub": 2010
+    },
+    {
+      "C_mean": 142.4,
+      "C_n": 12,
+      "C_sd": 269.2,
+      "T_mean": 1535.5,
+      "T_n": 72,
+      "T_sd": 6224.6,
+      "obs_ID": "obs003",
+      "study_ID": "Abdallah & Chieb (2010)",
+      "year_pub": 2010
+    },
+    {
+      "C_mean": 45.3,
+      "C_n": 12,
+      "C_sd": 0.0,
+      "T_mean": 1347.1,
+      "T_n": 72,
+      "T_sd": 5669.0,
+      "obs_ID": "obs004",
+      "study_ID": "Abdallah & Chieb (2010)",
+      "year_pub": 2010
+    },
+    {
+      "C_mean": 84.1,
+      "C_n": 12,
+      "C_sd": 560.5,
+      "T_mean": 1511.9,
+      "T_n": 72,
+      "T_sd": 6079.3,
+      "obs_ID": "obs005",
+      "study_ID": "Abdallah & Chieb (2010)",
+      "year_pub": 2010
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "0bb2085623c6bb85f57bab336fa09e2201bcd30b33af4a81ce7f0172edf2a1df"
+}

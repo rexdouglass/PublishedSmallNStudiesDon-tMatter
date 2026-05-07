@@ -1,0 +1,77 @@
+{
+  "task_id": "agent_file_acquisition_007",
+  "received_at": "2026-05-04",
+  "source_agent": "user_supplied_gpt_or_gemini_response_third_pass",
+  "verdict": "conversion_not_supported",
+  "confidence": "high",
+  "method_sources": [
+    {
+      "url": "https://www.stata.com/manuals/meta.pdf",
+      "citation": "agent_report_blank_citation_stata_meta_manual",
+      "relevant_method": "Freeman-Tukey double-arcsine or logit transformation for single-proportion meta-analysis",
+      "formula_or_rule": "Freeman-Tukey double-arcsine and logit transformations operate on p = e/n as a single proportion, with back-transformation required for interpretation.",
+      "quoted_or_paraphrased_support": "The agent report states that Stata's one-sample meta-analysis of proportions uses Freeman-Tukey or logit transforms of the single proportion and that these produce stabilized single-proportion scales rather than treatment contrasts comparable to standardized mean differences.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://training.cochrane.org/handbook/current/chapter-10",
+      "citation": "agent_report_blank_citation_cochrane_handbook_chapter_10",
+      "relevant_method": "Chinn's two-arm odds-ratio to standardized-mean-difference conversion",
+      "formula_or_rule": "d = ln(OR) * sqrt(3) / pi; conversely ln(OR) = d * pi / sqrt(3).",
+      "quoted_or_paraphrased_support": "The agent report states that Cochrane describes approximating a log odds ratio from a two-group comparison as an SMD, but that this requires an odds-ratio contrast and cannot be applied to a single-arm proportion.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32299712",
+      "citation": "agent_report_blank_citation_pubmed_32299712",
+      "relevant_method": "Freeman-Tukey double-arcsine transformation caution",
+      "formula_or_rule": "Arcsine and double-arcsine transformations are variance-stabilizing transformations for proportions; variance depends mainly on sample size.",
+      "quoted_or_paraphrased_support": "The agent report states that Schwarzer et al. caution that arcsine-based transformations can produce misleading results and do not represent a treatment contrast.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://arxiv.org/abs/2206.11805",
+      "citation": "agent_report_blank_citation_arxiv_2206_11805",
+      "relevant_method": "Critique of double-arcsine transformation",
+      "formula_or_rule": "Freeman-Tukey transform is designed for single-proportion inference and back-transformation depends on a chosen sample size.",
+      "quoted_or_paraphrased_support": "The agent report states that Roever and Friede argue the double-arcsine transform can create ordering/back-transformation problems and depends on arbitrary choices.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://www.metricguru.org/statistics/cohens-h-effect-size/",
+      "citation": "agent_report_blank_citation_metricguru_cohens_h",
+      "relevant_method": "Cohen's h for two proportions or one sample versus a hypothesized baseline",
+      "formula_or_rule": "h = 2 * arcsin(sqrt(p1)) - 2 * arcsin(sqrt(p2)); in one-sample cases p2 is a hypothesized/reference proportion.",
+      "quoted_or_paraphrased_support": "The agent report states that Cohen's h still requires choosing a comparator/reference proportion, making one-arm use benchmark-dependent and not naturally comparable to SMD.",
+      "citation_verification_state": "needs_formal_verification"
+    }
+  ],
+  "minimum_required_fields": [
+    "Responders or event count e",
+    "Total sample size n",
+    "Comparator, control, hypothesized, or benchmark proportion for any contrast-based conversion",
+    "Responders and sample sizes for both treatment and comparator groups if using odds-ratio conversion",
+    "Endpoint definition and follow-up timing"
+  ],
+  "risks_or_cautions": [
+    "Single-arm ORR measures a proportion, not a treatment contrast.",
+    "Variance-stabilizing transforms such as logit or Freeman-Tukey normalize a single proportion and are not standardized mean differences.",
+    "Freeman-Tukey back-transformation can depend on arbitrary sample-size choices and may yield paradoxical or misleading results.",
+    "Cohen's h requires a hypothesized/reference baseline, so values are unstable across disease contexts if the baseline is arbitrary.",
+    "Chinn's log-OR-to-SMD conversion applies only to two-arm comparisons.",
+    "Mixing single-arm transformed proportions with SMDs or odds-ratio-derived D values would conflate fundamentally different estimands."
+  ],
+  "recommendation_for_current_project": "Maintain the rule that single-arm ORR/proportion rows are not converted to the main D-like Figure 1 scale. If single-arm ORR data are useful, stage them separately in native single-proportion form or in a separate clinical proportion lane, not as D/SMD rows.",
+  "would_change_existing_rows": {
+    "clinical_highly_cited_orr_rows": "keep_excluded",
+    "other_single_arm_orr_or_proportion_rows": "stage_native_only",
+    "notes": "The three highly cited ORR rows remain excluded from the D axis. They could be staged separately with responders, total N, endpoint, and follow-up window if a native-proportion lane is later created."
+  },
+  "codex_local_followup": {
+    "rows_promotable_now": 0,
+    "policy_effect": "Confirms agent-response-007b: no one-arm ORR/proportion rows should be promoted into the main D-like Figure 1 lane.",
+    "citation_quality_note": "The response contains blank citations and should not be used as citation-ready prose until source verification is performed."
+  },
+  "recommended_next_action": "Close task 007 for row-mining purposes. Leave ORR rows excluded from the main D/N gate."
+}
+

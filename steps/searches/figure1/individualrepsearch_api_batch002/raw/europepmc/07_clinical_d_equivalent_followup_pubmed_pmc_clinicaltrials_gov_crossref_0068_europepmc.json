@@ -1,0 +1,3397 @@
+{
+  "hitCount": 1123,
+  "nextCursorMark": "AoIIQC4uFig1MzgwNjI0OQ==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"larger trial\" \"no benefit\" \"mortality\" \"original\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIQC4uFig1MzgwNjI0OQ==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"larger trial\" \"no benefit\" \"mortality\" \"original\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "<h4>Objective</h4>Oxygen is a cornerstone treatment for pneumonia with hypoxaemia. WHO guidelines recommend oxygen therapy for children with a peripheral arterial haemoglobin oxygen saturation (SpO<sub>2</sub>) <90%. Children in low- and middle-income countries with an SpO<sub>2</sub> of 90-93% are at increased risk of mortality and may benefit from oxygen therapy. We aimed to determine the feasibility of a randomised controlled trial comparing standard of care (no oxygen), low-flow nasal cannula (LFNC) and high-flow nasal cannula (HFNC) among children with pneumonia and an SpO<sub>2</sub> of 90-93%.<h4>Design</h4>Pilot, open-label, three-armed randomised control trial (NCT06176664).<h4>Setting</h4>Salima District Hospital, Malawi.<h4>Patients</h4>Children 1-59 months old with WHO-defined pneumonia and an SpO<sub>2</sub> of 90-93%.<h4>Interventions</h4>Standard care (no oxygen), LFNC or HFNC.<h4>Main outcome measures</h4>The primary outcome was feasibility defined as an average of \u22642 protocol deviations per participant. Secondary outcomes included consent refusal, participant attrition and treatment failure within 14 days. Treatment failure was defined as an SpO<sub>2</sub> <90% for standard care participants or <94% in the LFNC and HFNC arms despite maximum therapy as described, any new severe respiratory distress (grunting, very severe chest indrawing) or any new WHO-defined emergency sign.<h4>Results</h4>Of the 29 eligible patients, 21 (72%) were enrolled and randomised. There was an average of 0.8 (16/21) deviations per participant. Seven (43.8%) protocol violations were related to study intervention protocols and nine (56.3%) to medication availability and routine care. No participants withdrew from the study. Three of 21 participants (14.3%) had treatment failure. All participants were successfully followed to obtain the 14-day outcome.<h4>Conclusions</h4>A three-armed, open-label randomised control trial is feasible to compare standard of care, LFNC and HFNC oxygen for children with pneumonia and an SpO<sub>2</sub> of 90-93% in Malawi.<h4>Trial registration number</h4>NCT06176664.",
+        "affiliation": "Department of Anesthesia and Critical Care Medicine, The Johns Hopkins University School of Medicine, Baltimore, Maryland, USA kjosep24@jh.edu.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1872-5566"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6885-6716"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6917-6552"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7901-4477"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8787-9139"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0000-0871"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2062-8746"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia and Critical Care Medicine, The Johns Hopkins University School of Medicine, Baltimore, Maryland, USA kjosep24@jh.edu."
+                  },
+                  {
+                    "affiliation": "Global Program in Pediatric Respiratory Sciences, The Johns Hopkins University School of Medicine, Baltimore, Maryland, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2062-8746"
+              },
+              "firstName": "Kristen S",
+              "fullName": "Joseph KS",
+              "initials": "KS",
+              "lastName": "Joseph"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of North Carolina Project Malawi, Lilongwe, Malawi."
+                  },
+                  {
+                    "affiliation": "Department of Pediatrics, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina, USA."
+                  }
+                ]
+              },
+              "firstName": "Tisungane",
+              "fullName": "Mvalo T",
+              "initials": "T",
+              "lastName": "Mvalo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia and Critical Care Medicine, The Johns Hopkins University School of Medicine, Baltimore, Maryland, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0000-0871"
+              },
+              "firstName": "Nicole",
+              "fullName": "Shilkofski N",
+              "initials": "N",
+              "lastName": "Shilkofski"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Global Health, University College London, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6917-6552"
+              },
+              "firstName": "Tim",
+              "fullName": "Colbourn T",
+              "initials": "T",
+              "lastName": "Colbourn"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health, Baltimore, Maryland, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7901-4477"
+              },
+              "firstName": "Holly",
+              "fullName": "Schuh H",
+              "initials": "H",
+              "lastName": "Schuh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Paediatrics and Child Health, Desmond Tutu TB Centre, Stellenbosch University, Cape Town, South Africa."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8787-9139"
+              },
+              "firstName": "Marieke M",
+              "fullName": "van der Zalm MM",
+              "initials": "MM",
+              "lastName": "van der Zalm"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pediatrics, Child & Youth Health, The University of Auckland, Auckland, New Zealand."
+                  },
+                  {
+                    "affiliation": "College of Medicine, Nursing and Health Sciences, Fiji National University, Suva, Fiji."
+                  }
+                ]
+              },
+              "firstName": "Stephen",
+              "fullName": "Howie S",
+              "initials": "S",
+              "lastName": "Howie"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Global Public Health, Karolinska Institutet, Solna, Sweden."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6885-6716"
+              },
+              "firstName": "Carina",
+              "fullName": "King C",
+              "initials": "C",
+              "lastName": "King"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Global Program in Pediatric Respiratory Sciences, The Johns Hopkins University School of Medicine, Baltimore, Maryland, USA."
+                  },
+                  {
+                    "affiliation": "Johns Hopkins Bloomberg School of Public Health, Baltimore, Maryland, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1872-5566"
+              },
+              "firstName": "Eric D",
+              "fullName": "McCollum ED",
+              "initials": "ED",
+              "lastName": "McCollum"
+            }
+          ]
+        },
+        "authorString": "Joseph KS, Mvalo T, Shilkofski N, Colbourn T, Schuh H, van der Zalm MM, Howie S, King C, McCollum ED.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Oxygen",
+              "registryNumber": "S88TT14065"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2026-04-03",
+        "dateOfCreation": "2026-04-03",
+        "dateOfRevision": "2026-04-08",
+        "doi": "10.1136/bmjpo-2025-004256",
+        "electronicPublicationDate": "2026-04-03",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-05",
+        "firstPublicationDate": "2026-04-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13052553"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-07",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1136/bmjpo-2025-004256"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13052553"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13052553?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41932695",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "1",
+          "journal": {
+            "essn": "2399-9772",
+            "isoabbreviation": "BMJ Paediatr Open",
+            "issn": "2399-9772",
+            "medlineAbbreviation": "BMJ Paediatr Open",
+            "nlmid": "101715309",
+            "title": "BMJ paediatrics open"
+          },
+          "journalIssueId": 4168256,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "10",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Child",
+            "Hypoxia",
+            "Oxygen saturation",
+            "Low And Middle Income Countries"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pneumonia",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Oxygen",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Oxygen Inhalation Therapy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Feasibility Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pilot Projects",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Child, Preschool",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Infant",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Malawi",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Hypoxia",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Oxygen Saturation",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e004256",
+        "pmcid": "PMC13052553",
+        "pmid": "41932695",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Oxygen therapy for children with an oxygen saturation of 90-93% in Malawi: the NoGoLO&lt;sub&gt;2&lt;/sub&gt; pilot randomised controlled trial.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "In contrast with other major disease groups, mortality from liver disease in the UK has been increasing in recent decades. Patients with liver disease have a symptom burden comparable to those with other life-limiting conditions but, due to a range of factors including uncertain disease trajectory and perceived complexity, provision of high-quality palliative care is sometimes limited for this patient group. There has been growing recognition of this, with work to improve prognostication and advance care planning for patients with chronic liver disease.",
+        "affiliation": "Amy Watret, Consultant in Palliative Medicine, Royal Surrey County Hospital, Guildford, UK. Electronic address: chriscussen@nhs.net.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Amy Watret, Consultant in Palliative Medicine, Royal Surrey County Hospital, Guildford, UK. Electronic address: chriscussen@nhs.net."
+                  }
+                ]
+              },
+              "firstName": "Christopher",
+              "fullName": "Cussen C",
+              "initials": "C",
+              "lastName": "Cussen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Amy Watret, Consultant in Palliative Medicine, Royal Surrey County Hospital, Guildford, UK."
+                  }
+                ]
+              },
+              "firstName": "Amy",
+              "fullName": "Watret A",
+              "initials": "A",
+              "lastName": "Watret"
+            }
+          ]
+        },
+        "authorString": "Cussen C, Watret A.",
+        "citedByCount": 1,
+        "dateOfCompletion": "2025-12-19",
+        "dateOfCreation": "2025-11-23",
+        "dateOfRevision": "2025-12-25",
+        "doi": "10.1016/j.clinme.2025.100529",
+        "electronicPublicationDate": "2025-11-21",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-24",
+        "firstPublicationDate": "2025-11-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12721250"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-24",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.clinme.2025.100529"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12721250"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12721250?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41275973",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Nov",
+          "issue": "6",
+          "journal": {
+            "essn": "1473-4893",
+            "isoabbreviation": "Clin Med (Lond)",
+            "issn": "1470-2118",
+            "medlineAbbreviation": "Clin Med (Lond)",
+            "nlmid": "101092853",
+            "title": "Clinical medicine (London, England)"
+          },
+          "journalIssueId": 4052479,
+          "monthOfPublication": 11,
+          "printPublicationDate": "2025-11-01",
+          "volume": "25",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "hepatic encephalopathy",
+            "Palliative care",
+            "ascites",
+            "Hepatology",
+            "Chronic Liver Disease"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Liver Diseases",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Palliative Care",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Advance Care Planning",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "United Kingdom",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "100529",
+        "pmcid": "PMC12721250",
+        "pmid": "41275973",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Palliative care in advanced liver disease."
+      },
+      {
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Research Center for Emergency Medicine, Aarhus University Hospital, Aarhus, Denmark"
+                  }
+                ]
+              },
+              "firstName": "Johannes",
+              "fullName": "Wittig J",
+              "initials": "J",
+              "lastName": "Wittig"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Emergency and Critical Care Medicine, Graduate School of Biomedical and Health Sciences, Hiroshima University, Hiroshima, Japan"
+                  }
+                ]
+              },
+              "firstName": "Shinichiro",
+              "fullName": "Ohshimo S",
+              "initials": "S",
+              "lastName": "Ohshimo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Intensive Care Unit, Liverpool Hospital, South Western Sydney Local Health District, South Western Clinical School, University of New South Wales, Sydney, Australia"
+                  }
+                ]
+              },
+              "firstName": "Anders",
+              "fullName": "Aneman A",
+              "initials": "A",
+              "lastName": "Aneman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Respiratory and Critical Care Medicine, Singapore General Hospital, Singapore"
+                  }
+                ]
+              },
+              "firstName": "Carrie Kah-Lai",
+              "fullName": "Leong C",
+              "initials": "C",
+              "lastName": "Leong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Emergency Medicine, Wayne State University, School of Medicine, Detroit, MI, USA"
+                  }
+                ]
+              },
+              "firstName": "Brian J.",
+              "fullName": "O\u2019Neil B",
+              "initials": "B",
+              "lastName": "O\u2019Neil"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiology, Tan Tock Seng Hospital, Singapore"
+                  }
+                ]
+              },
+              "firstName": "Yew Woon",
+              "fullName": "Chia Y",
+              "initials": "Y",
+              "lastName": "Chia"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Mater Dei Hospital, Msida, Malta"
+                  }
+                ]
+              },
+              "firstName": "Jacqueline Eleonora",
+              "fullName": "Ek J",
+              "initials": "J",
+              "lastName": "Ek"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anaesthesiology and Intensive Care Medicine, St. John of God Hospital, Paracelsus Medical University, Salzburg, Austria"
+                  }
+                ]
+              },
+              "firstName": "Peter",
+              "fullName": "Paal P",
+              "initials": "P",
+              "lastName": "Paal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark"
+                  }
+                ]
+              },
+              "firstName": "Lars W.",
+              "fullName": "Andersen L",
+              "initials": "L",
+              "lastName": "Andersen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark"
+                  }
+                ]
+              },
+              "firstName": "Marie K.",
+              "fullName": "Jessen M",
+              "initials": "M",
+              "lastName": "Jessen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark"
+                  }
+                ]
+              },
+              "firstName": "Asger",
+              "fullName": "Granfeldt A",
+              "initials": "A",
+              "lastName": "Granfeldt"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark"
+                  }
+                ]
+              },
+              "firstName": "Mathias J.",
+              "fullName": "Holmberg M",
+              "initials": "M",
+              "lastName": "Holmberg"
+            }
+          ]
+        },
+        "authorString": "Wittig J, Ohshimo S, Aneman A, Leong C, O\u2019Neil B, Chia Y, Ek J, Paal P, Andersen L, Jessen M, Granfeldt A, Holmberg M.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-04-20",
+        "dateOfRevision": "2026-04-20",
+        "electronicPublicationDate": "2026-03-25",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-20",
+        "firstPublicationDate": "2026-03-25",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13084413"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13084413/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13084413/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13084413"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13084413?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "PMC13084413",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "journal": {
+            "essn": "2666-5204",
+            "isoabbreviation": "Resusc Plus",
+            "issn": "2666-5204",
+            "medlineAbbreviation": "Resusc Plus",
+            "nlmid": "101774410",
+            "title": "Resuscitation plus"
+          },
+          "journalIssueId": 4162130,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "29",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Blood transfusion",
+            "colloids",
+            "Heart Arrest",
+            "Fluid Therapy",
+            "Cardiopulmonary Resuscitation",
+            "Crystalloid Solutions"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pmcid": "PMC13084413",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "source": "PMC",
+        "title": "Volume therapy for cardiac arrest: a systematic review and meta-analysis"
+      },
+      {
+        "abstractText": "<h4>Aims</h4>Catheter ablation (CA) of ventricular tachycardia (VT) in patients with structural heart disease is usually reserved for those with recurrent implantable cardioverter defibrillator (ICD) shocks or intolerant to anti-arrhythmic drugs. This meta-analysis synthesizes available trial evidence on CA for VT to clarify the role of this approach.<h4>Methods and results</h4>MEDLINE, PubMed, EMBASE and Cochrane were searched for randomized controlled trials (RCTs) of patients with structural heart disease allocated to receive either CA or standard treatment. Outcomes of interest were: all-cause and cardiovascular (CV) mortality, VT recurrence, incidence of appropriate ICD therapy, CV hospitalizations and VT storm. Evidence was appraised using the risk of bias tool and the grading of recommendations assessment, development and evaluation (GRADE) approach. Trial-level pairwise meta-analyses were conducted for all outcomes. Reconstructed time-to-event data meta-analysis was also performed for all-cause mortality 13 RCTs (<i>n</i> = 1735 patients) were included in the meta-analysis with a follow-up duration of 6-52 months. No significant reduction in all-cause mortality was observed at trial level meta-analysis (risk ratio [RR] 0.87, 95% confidence interval [CI] 0.70-1.08, heterogeneity [I<sup>2</sup>] = 0%), or reconstructed individual patient data meta-analysis [hazard ratio (HR) 0.79, 95%CI 0.57-1.11 at 3 years]. However, our pooled estimates, observed effect size and GRADE assessments suggest a potential mortality reduction in the ablation group. Patients who underwent CA experienced a significant reduction in CV hospitalizations (RR 0.78, 95%CI 0.65-0.94, I<sup>2</sup> = 41%), VT storm (RR 0.78, 95%CI 0.63-0.97; <i>I<sup>2</sup></i> = 5%), VT recurrence (RR 0.83, 95%CI 0.72-0.95, I<sup>2</sup> = 21%), and appropriate ICD therapy (RR 0.74, 95%CI 0.61-0.89, I<sup>2</sup> = 32.5%) compared to control groups.<h4>Conclusion</h4>A potential all-cause mortality reduction by catheter ablation requires further confirmation in a properly powered RCT. No reduction in cardiovascular mortality was found. VT recurrence, CV hospitalizations, VT storm and ICD therapy were all significantly reduced by catheter ablation in patients with structural heart disease.<h4>Lay summary</h4>We examined the effectiveness of catheter ablation (CA) for treating ventricular tachycardia (VT) in patients with structural heart disease, particularly those facing recurrent implantable cardioverter defibrillator shocks or unable to tolerate medications by analysing several randomized controlled trials. The findings suggest that while CA may not significantly reduce overall mortality, it can lead to fewer recurrences of VT and hospitalizations related to cardiovascular problems.",
+        "affiliation": "UCL Institute of Cardiovascular Science, University College London, Gower Street, London WC1E 6BT, UK.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9141-9883"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0621-8241"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5662-0642"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9055-9267"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1057-3155"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCL Institute of Cardiovascular Science, University College London, Gower Street, London WC1E 6BT, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1057-3155"
+              },
+              "firstName": "Debbie",
+              "fullName": "Falconer D",
+              "initials": "D",
+              "lastName": "Falconer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Medicine, Imperial College London, The Faculty Building, Imperial College London, Exhibition Road, South Kensington, London SW7 2AZ, UK."
+                  }
+                ]
+              },
+              "firstName": "Ahmed",
+              "fullName": "Salih A",
+              "initials": "A",
+              "lastName": "Salih"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCL Institute of Cardiovascular Science, University College London, Gower Street, London WC1E 6BT, UK."
+                  },
+                  {
+                    "affiliation": "Royal Free Hospital, Pond Street, London NW3 2QG, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5662-0642"
+              },
+              "firstName": "Gabriella",
+              "fullName": "Captur G",
+              "initials": "G",
+              "lastName": "Captur"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bart's Heart Centre, St Bartholomew's Hospital, West Smithfield, London EC1A 7BE, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0621-8241"
+              },
+              "firstName": "Richard J",
+              "fullName": "Schilling RJ",
+              "initials": "RJ",
+              "lastName": "Schilling"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCL Institute of Cardiovascular Science, University College London, Gower Street, London WC1E 6BT, UK."
+                  },
+                  {
+                    "affiliation": "Bart's Heart Centre, St Bartholomew's Hospital, West Smithfield, London EC1A 7BE, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9055-9267"
+              },
+              "firstName": "Pier D",
+              "fullName": "Lambiase PD",
+              "initials": "PD",
+              "lastName": "Lambiase"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCL Institute of Cardiovascular Science, University College London, Gower Street, London WC1E 6BT, UK."
+                  },
+                  {
+                    "affiliation": "Bart's Heart Centre, St Bartholomew's Hospital, West Smithfield, London EC1A 7BE, UK."
+                  }
+                ]
+              },
+              "firstName": "Nikos",
+              "fullName": "Papageorgiou N",
+              "initials": "N",
+              "lastName": "Papageorgiou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Bart's Heart Centre, St Bartholomew's Hospital, West Smithfield, London EC1A 7BE, UK."
+                  },
+                  {
+                    "affiliation": "Institute of Health Informatics Research, University College London, 222 Euston Road, London NW1 2DA, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9141-9883"
+              },
+              "firstName": "Rui",
+              "fullName": "Providencia R",
+              "initials": "R",
+              "lastName": "Providencia"
+            }
+          ]
+        },
+        "authorString": "Falconer D, Salih A, Captur G, Schilling RJ, Lambiase PD, Papageorgiou N, Providencia R.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-01-15",
+        "dateOfCreation": "2026-01-15",
+        "dateOfRevision": "2026-01-17",
+        "doi": "10.1093/ehjopen/oeaf171",
+        "electronicPublicationDate": "2025-12-11",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-15",
+        "firstPublicationDate": "2025-12-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12798810"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-19",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/ehjopen/oeaf171"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12798810"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12798810?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "British Heart Foundation",
+              "grantId": "AA/18/6/34223",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41536959",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "2752-4191",
+            "isoabbreviation": "Eur Heart J Open",
+            "issn": "2752-4191",
+            "medlineAbbreviation": "Eur Heart J Open",
+            "nlmid": "9918282081406676",
+            "title": "European heart journal open"
+          },
+          "journalIssueId": 4088134,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "6",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Arrhythmia",
+            "Catheter ablation",
+            "ventricular arrhythmia",
+            "Evidence Synthesis",
+            "Sudden Cardiac Death"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "oeaf171",
+        "pmcid": "PMC12798810",
+        "pmid": "41536959",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Outcomes of catheter ablation for ventr tachycardia in structural heart disease: a meta-analysis and quality appraisal of trials."
+      },
+      {
+        "abstractText": "Patients with psoriasis are less physically active than age-matched controls, due to psoriasis-specific barriers; significantly limiting their ability to benefit from health-promoting levels of physical activity. We co-designed an exercise intervention, with patients, which in proof-of-concept studies, led to significantly improved psoriasis; reduced cardiovascular disease/metabolic syndrome risk and enhanced wellbeing/psychosocial functioning. This suggested increased physical activity may improve health outcomes for those with psoriasis. However, individuals remained sedentary for prolonged periods, which also has a detrimental effect on health. We therefore developed a new intervention - MOVE SMART - to increase light-intensity physical activity and interrupt sedentary behaviour. This randomised controlled clinical trial (RCT) will assess the feasibility and acceptability of MOVE SMART. Utilising a decentralised, two-arm, trial design, people with Type 1 psoriasis with/without stable psoriatic arthritis, (n\u2009=\u200960) will be recruited from across the UK, and randomised to intervention (MOVE SMART with \"Standard Care\", n\u2009=\u200930) or control (\"Standard Care\", n\u2009=\u200930). The intervention group will follow MOVE SMART for 12-weeks, followed by activities of their own choice during weeks 13-24. MOVE SMART will prompt 2-minutes of light-intensity physical activity, following 30-minutes of continuous sedentary behaviour, during daytime waking hours. The study comprises of three Workstreams. In Workstream-1 participants will use wearable devices to allow monitoring of physical behaviour and adherence to MOVE SMART. A blood pressure monitor and body weight scales will be posted to participants for use throughout the study and functional capacity will be measured by video-link. At baseline, week-12 and -24 all participants will complete self-assessment of the extent/impact of psoriasis and wellbeing. Capillary blood will be collected using home-sampling kits. In Workstream-2 acceptability of the intervention will be evaluated and the trial design will be finalised in Workstream-3. The study is registered at www.isrctn.com (ISRCTN 17400289).",
+        "affiliation": "Department of Sport and Exercise Sciences, Institute of Sport, Faculty of Science & Engineering, Manchester Metropolitan University, Manchester, United Kingdom.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7262-0693"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1538-445X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Sport and Exercise Sciences, Institute of Sport, Faculty of Science & Engineering, Manchester Metropolitan University, Manchester, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Gladys",
+              "fullName": "Onambele-Pearson G",
+              "initials": "G",
+              "lastName": "Onambele-Pearson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Sport and Exercise Sciences, Institute of Sport, Faculty of Science & Engineering, Manchester Metropolitan University, Manchester, United Kingdom."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7262-0693"
+              },
+              "firstName": "Ben",
+              "fullName": "Ives B",
+              "initials": "B",
+              "lastName": "Ives"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Foundation Trainee, Royal Derby Hospital, University Hospitals of Derby and Burton NHS Foundation Trust, Derby, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Ishani",
+              "fullName": "Khosla I",
+              "initials": "I",
+              "lastName": "Khosla"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Musculoskeletal and Dermatological Sciences, School of Biological Sciences, The University of Manchester, Manchester, United Kingdom."
+                  },
+                  {
+                    "affiliation": "The Dermatology Centre, Salford Royal Hospital, Manchester Academic Health Science Centre, The University of Manchester, Manchester, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Rozemarijn",
+              "fullName": "Witkam R",
+              "initials": "R",
+              "lastName": "Witkam"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Musculoskeletal and Dermatological Sciences, School of Biological Sciences, The University of Manchester, Manchester, United Kingdom."
+                  },
+                  {
+                    "affiliation": "The Dermatology Centre, Salford Royal Hospital, Manchester Academic Health Science Centre, The University of Manchester, Manchester, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Matthew",
+              "fullName": "Roberts M",
+              "initials": "M",
+              "lastName": "Roberts"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Liverpool Clinical Trials Centre, The University of Liverpool, Liverpool, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Lucy",
+              "fullName": "Moorhead L",
+              "initials": "L",
+              "lastName": "Moorhead"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "St John's Institute of Dermatology, Guy's and St Thomas' NHS Foundation Trust, King's College London, London, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Emma",
+              "fullName": "Bedson E",
+              "initials": "E",
+              "lastName": "Bedson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Musculoskeletal and Dermatological Sciences, School of Biological Sciences, The University of Manchester, Manchester, United Kingdom."
+                  },
+                  {
+                    "affiliation": "The Dermatology Centre, Salford Royal Hospital, Manchester Academic Health Science Centre, The University of Manchester, Manchester, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Russ",
+              "fullName": "Cowper R",
+              "initials": "R",
+              "lastName": "Cowper"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "St John's Institute of Dermatology, Guy's and St Thomas' NHS Foundation Trust, King's College London, London, United Kingdom."
+                  },
+                  {
+                    "affiliation": "Department of Health Data Science, Institute of Population Health, University of Liverpool, Liverpool, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Girvan",
+              "fullName": "Burnside G",
+              "initials": "G",
+              "lastName": "Burnside"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Musculoskeletal and Dermatological Sciences, School of Biological Sciences, The University of Manchester, Manchester, United Kingdom."
+                  },
+                  {
+                    "affiliation": "The Dermatology Centre, Salford Royal Hospital, Manchester Academic Health Science Centre, The University of Manchester, Manchester, United Kingdom."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1538-445X"
+              },
+              "firstName": "Helen S",
+              "fullName": "Young HS",
+              "initials": "HS",
+              "lastName": "Young"
+            }
+          ]
+        },
+        "authorString": "Onambele-Pearson G, Ives B, Khosla I, Witkam R, Roberts M, Moorhead L, Bedson E, Cowper R, Burnside G, Young HS.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-16",
+        "dateOfCreation": "2026-03-16",
+        "dateOfRevision": "2026-03-18",
+        "doi": "10.1371/journal.pone.0343922",
+        "electronicPublicationDate": "2026-03-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-17",
+        "firstPublicationDate": "2026-03-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12991228"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-17",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0343922"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12991228"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12991228?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41838662",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "issue": "3",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 4137044,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "21",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Psoriasis",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiopathology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Exercise Therapy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Feasibility Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sedentary Behavior",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0343922",
+        "pmcid": "PMC12991228",
+        "pmid": "41838662",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "Clinical Trial Protocol",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Study protocol for a feasibility randomised controlled trial of MOVE SMART-An intervention to increase physical activity, reduce sedentary behaviour and improve health outcomes in patients with psoriasis."
+      },
+      {
+        "abstractText": "<b>Background/Objectives</b>: This study aimed to assess the feasibility and acceptability of a 3-month health coaching intervention to promote PNF and healthy diet for men on ADT for PCa. <b>Methods</b>: The study was carried out via a two-armed randomized controlled trial including 40 patients with PCa at a medical center in Philadelphia. During the 3-month period, the intervention group (PNF+) received health coaching utilizing an interactive text message system, and the control group received healthy eating text messages for the same duration. The outcome variables were feasibility and acceptability. <b>Results</b>: The PNF+ group (<i>n</i> = 27) had high adherence to health coaching (82%), picture response (85%) and moderate adherence to the PNF window (69%). The intervention was rated highly acceptable with no reported A/E associated with the intervention, and most participants planning to continue in some capacity. At 3 months, the PNF+ group had numerically lower BMI (29.1) and body weight (195.2 lbs) compared to the control group (<i>n</i> = 13; BMI 31.6, weight 223.3 lbs). Improvements in patient-reported outcomes were observed in both groups. FACIT-F scores (higher scores indicate less fatigue) increased in the PNF+ group (43.6 to 45.2) and in the control group (42.5 to 45.5). FACT-P scores (higher scores indicate better quality of life) increased in the PNF+ group (121.3 to 125.5) but decreased slightly in the control group (121.1 to 119.8). Between-group comparisons of change from baseline showed no statistically significant differences across outcomes (all <i>p</i> > 0.05). <b>Conclusions</b>: The intervention demonstrated partial feasibility and high acceptability. It was associated with numerically lower BMI and body weight and favorable changes in patient-reported outcomes, particularly quality of life; however, no statistically significant differences were observed between groups. These findings should be interpreted cautiously given the small sample size and require confirmation in larger, adequately powered trials.",
+        "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4133-1178"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5766-0195"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2629-672X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0002-6712-7180"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-2922-0989"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-7452-971X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-7628-7064"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4133-1178"
+              },
+              "firstName": "Kuang-Yi",
+              "fullName": "Wen KY",
+              "initials": "KY",
+              "lastName": "Wen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-2922-0989"
+              },
+              "firstName": "Julianne",
+              "fullName": "Freedman J",
+              "initials": "J",
+              "lastName": "Freedman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "firstName": "Kevin Kayvan",
+              "fullName": "Zarrabi KK",
+              "initials": "KK",
+              "lastName": "Zarrabi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "firstName": "Rachel",
+              "fullName": "Slamon R",
+              "initials": "R",
+              "lastName": "Slamon"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-7452-971X"
+              },
+              "firstName": "Rita",
+              "fullName": "Smith R",
+              "initials": "R",
+              "lastName": "Smith"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-7628-7064"
+              },
+              "firstName": "Jessica",
+              "fullName": "Liang J",
+              "initials": "J",
+              "lastName": "Liang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0002-6712-7180"
+              },
+              "firstName": "Patrick",
+              "fullName": "Mille P",
+              "initials": "P",
+              "lastName": "Mille"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5766-0195"
+              },
+              "firstName": "William J",
+              "fullName": "Tester WJ",
+              "initials": "WJ",
+              "lastName": "Tester"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Thomas Jefferson University, Philadelphia, PA 19143, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2629-672X"
+              },
+              "firstName": "William",
+              "fullName": "Kelly W",
+              "initials": "W",
+              "lastName": "Kelly"
+            }
+          ]
+        },
+        "authorString": "Wen KY, Freedman J, Zarrabi KK, Slamon R, Smith R, Liang J, Mille P, Tester WJ, Kelly W.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Androgen Antagonists",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-04-14",
+        "dateOfCreation": "2026-04-14",
+        "dateOfRevision": "2026-04-16",
+        "doi": "10.3390/nu18071166",
+        "electronicPublicationDate": "2026-04-07",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-14",
+        "firstPublicationDate": "2026-04-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13074618"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/nu18071166"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13074618"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13074618?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Pennsylvania Department of Health",
+              "grantId": "#P30",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41978216",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "7",
+          "journal": {
+            "essn": "2072-6643",
+            "isoabbreviation": "Nutrients",
+            "issn": "2072-6643",
+            "medlineAbbreviation": "Nutrients",
+            "nlmid": "101521595",
+            "title": "Nutrients"
+          },
+          "journalIssueId": 4179677,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "18",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Cancer Care",
+            "Dietary Patterns",
+            "M-health",
+            "Dietary Monitoring",
+            "Prolonged Nightly Fasting"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Prostatic Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Androgen Antagonists",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Body Mass Index",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Fasting",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Feasibility Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pilot Projects",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Telemedicine",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Quality of Life",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Text Messaging",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mentoring",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Diet, Healthy",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1166",
+        "pmcid": "PMC13074618",
+        "pmid": "41978216",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "A Prolonged Nightly Fasting Plus Telehealth Coaching Intervention (PNF+) for Men on Androgen Deprivation Therapy for PCa: A Pilot Feasibility Randomized Controlled Trial."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Intracerebral hemorrhage (ICH) accounts for 15% of strokes with high mortality and limited treatment options. Cerebrolysin, a neuropeptide preparation with multimodal neuroprotective properties, has shown promise in acute ischemic stroke but remains inadequately studied in ICH.<h4>Methods</h4>CLINCH is an investigator led, academic driven multicenter, prospective, randomized, open-label, blinded endpoint (PROBE) phase IV pilot study evaluating cerebrolysin in primary lobar ICH. We will randomize 88 patients with lobar ICH (30-80\u202fmL; GCS 8-15; National Institutes of Health Stroke Scale, NIHSS \u22658) within 6\u202fh of onset in a 1:1 ratio to receive either intravenous cerebrolysin (50\u202fmL daily for 14\u202fdays) plus standard care including intensive rehabilitation, or standard care alone. Randomization will be stratified by ICH volume (30-50 vs. 51-80\u202fmL) and GCS (8-12 vs. 13-15). Primary endpoints include 90-day mortality (safety) and functional independence (modified Rankin Scale score, mRS 0-2) at 90\u202fdays (efficacy). Secondary endpoints include neurological improvement on NIHSS, ordinal mRS shift, Barthel Index, hematoma expansion, and serious adverse events. Blinded assessors will evaluate clinical outcomes, with central adjudication of neuroimaging.<h4>Discussion</h4>This trial addresses critical limitations of previous ICH neuroprotection studies by focusing on lobar hemorrhages, implementing an ultra-early treatment window (\u22646\u202fh), and combining neuroprotection with intensive rehabilitation. The restrictive eligibility criteria may limit generalizability but enhance the likelihood of detecting treatment effects. If positive, results would support a larger confirmatory trial and inform the sample size.",
+        "affiliation": "Institute of Medical Sciences, Faculty of Medicine - Collegium Medicum, Cardinal Wyszynski University, Warsaw, Poland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6728-2020"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0312-6173"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-2022-5790"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Medical Sciences, Faculty of Medicine - Collegium Medicum, Cardinal Wyszynski University, Warsaw, Poland."
+                  },
+                  {
+                    "affiliation": "Institute of Psychiatry and Neurology, Warsaw, Poland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0312-6173"
+              },
+              "firstName": "Adam",
+              "fullName": "Kobayashi A",
+              "initials": "A",
+              "lastName": "Kobayashi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Medical Sciences, Faculty of Medicine - Collegium Medicum, Cardinal Wyszynski University, Warsaw, Poland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-2022-5790"
+              },
+              "firstName": "Kinga",
+              "fullName": "Rutkowska K",
+              "initials": "K",
+              "lastName": "Rutkowska"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Medical Sciences, Faculty of Medicine - Collegium Medicum, Cardinal Wyszynski University, Warsaw, Poland."
+                  },
+                  {
+                    "affiliation": "Institute of Psychiatry and Neurology, Warsaw, Poland."
+                  }
+                ]
+              },
+              "firstName": "Katarzyna",
+              "fullName": "Gocyla-Dudar K",
+              "initials": "K",
+              "lastName": "Gocyla-Dudar"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Medical Sciences, Faculty of Medicine - Collegium Medicum, Cardinal Wyszynski University, Warsaw, Poland."
+                  }
+                ]
+              },
+              "firstName": "Beata",
+              "fullName": "Chelstowska B",
+              "initials": "B",
+              "lastName": "Chelstowska"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Psychiatry and Neurology, Warsaw, Poland."
+                  }
+                ]
+              },
+              "firstName": "Natalia",
+              "fullName": "Pozarowszczyk N",
+              "initials": "N",
+              "lastName": "Pozarowszczyk"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Psychiatry and Neurology, Warsaw, Poland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6728-2020"
+              },
+              "firstName": "Michal",
+              "fullName": "Karlinski M",
+              "initials": "M",
+              "lastName": "Karlinski"
+            }
+          ]
+        },
+        "authorString": "Kobayashi A, Rutkowska K, Gocyla-Dudar K, Chelstowska B, Pozarowszczyk N, Karlinski M.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-11-03",
+        "dateOfCreation": "2025-11-03",
+        "dateOfRevision": "2025-11-05",
+        "doi": "10.3389/fneur.2025.1602956",
+        "electronicPublicationDate": "2025-10-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-03",
+        "firstPublicationDate": "2025-10-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12576854"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-03",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fneur.2025.1602956"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12576854"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12576854?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41180520",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "journal": {
+            "essn": "1664-2295",
+            "isoabbreviation": "Front Neurol",
+            "issn": "1664-2295",
+            "medlineAbbreviation": "Front Neurol",
+            "nlmid": "101546899",
+            "title": "Frontiers in neurology"
+          },
+          "journalIssueId": 3895108,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "16",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Mortality",
+            "Stroke",
+            "Intracerebral hemorrhage",
+            "Cerebrolysin",
+            "neuroprotection",
+            "Outcome"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1602956",
+        "pmcid": "PMC12576854",
+        "pmid": "41180520",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "methods-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Safety and feasibility of cerebrolysin in treatment of primary intracerebral hemorrhage (CLINCH)-a prospective, randomized, open-label, blinded endpoint pilot trial."
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Long COVID (LC) is an infection-associated chronic condition and illness (IACCI) with no currently approved treatments. In order to address SARS-CoV-2 persistence and herpesvirus reactivation, which have been implicated as drivers of LC, sustained use of antiviral combinations may be useful in treating patients with the illness.<h4>Methods</h4>A convenience sample of patients undergoing an extended course of antiviral therapy was studied. Patients received either 120 days of IMC-2 only (IO) or 120 days of IMC-2 with the addition of 15 days of Paxlovid (IP), prescribed off-label at an outpatient clinic for people with LC. The Patient Global Impression of Change (PGIC) was used to measure therapy response over time, with primary focus on fatigue and secondary focus on brain fog and dysautonomia. Visual analog scales (VAS) were also used to track perceived symptom improvements.<h4>Results</h4>A total of 27 people with LC were approached for treatment, of whom 24 completed one or both protocols. Twelve received the IO protocol, and 12 received the continuous IP combination. Both groups reported reductions in fatigue on the PGIC, but participants receiving IP experienced a statistically significant improvement compared with those receiving IO (<i>p</i> < 0.0001). Similarly, using a VAS, patients in the IP group reported an average 55.3% (<i>p</i> < 0.0001) greater reduction in fatigue than the IO group. Participants who completed the IP intervention demonstrated durable clinical benefit, with symptom improvements remaining consistent at 120-, 305-, and 731-day follow-ups.<h4>Discussion</h4>This small, open-label case series provides pilot evidence supporting the need for a larger trial of combination antivirals for people living with LC. Based on these results, a larger, controlled trial of IMC-2 paired with Paxlovid is recommended.",
+        "affiliation": "Tuscaloosa Surgical Associates, Tuscaloosa, AL,\u00a0United States.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Tuscaloosa Surgical Associates, Tuscaloosa, AL,\u00a0United States."
+                  }
+                ]
+              },
+              "firstName": "William L",
+              "fullName": "Pridgen WL",
+              "initials": "WL",
+              "lastName": "Pridgen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Cohen Center for Recovery from Complex Chronic Illness, Icahn School of Medicine at Mount Sinai, New York, NY,\u00a0United States."
+                  }
+                ]
+              },
+              "firstName": "David",
+              "fullName": "Putrino D",
+              "initials": "D",
+              "lastName": "Putrino"
+            }
+          ]
+        },
+        "authorString": "Pridgen WL, Putrino D.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Antiviral Agents",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-01-21",
+        "dateOfCreation": "2026-01-21",
+        "dateOfRevision": "2026-01-23",
+        "doi": "10.3389/fimmu.2025.1698271",
+        "electronicPublicationDate": "2026-01-05",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-22",
+        "firstPublicationDate": "2026-01-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12812670"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fimmu.2025.1698271"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12812670"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12812670?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41562079",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "journal": {
+            "essn": "1664-3224",
+            "isoabbreviation": "Front Immunol",
+            "issn": "1664-3224",
+            "medlineAbbreviation": "Front Immunol",
+            "nlmid": "101560960",
+            "title": "Frontiers in immunology"
+          },
+          "journalIssueId": 3892856,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "16",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Antiviral",
+            "Fatigue",
+            "Dysautonomia",
+            "Cognitive",
+            "Long Covid",
+            "Paxlovid",
+            "Infection-associated Chronic Conditions And Illnesses (Iacci)",
+            "Post-acute Sequelae Of Covid (Pasc)"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Antiviral Agents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AD",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "administration & dosage"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Drug Therapy, Combination",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Patient Reported Outcome Measures",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "COVID-19",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "VI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "virology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "SARS-CoV-2",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "COVID-19 Drug Treatment",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1698271",
+        "pmcid": "PMC12812670",
+        "pmid": "41562079",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "Clinical Trial",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Patient-reported improvements from use of IMC-2 alone and IMC-2 and Paxlovid&lt;sup&gt;\u00ae&lt;/sup&gt; in a Long COVID cohort: a case series."
+      },
+      {
+        "abstractText": "<h4>Objectives</h4>Given increasing interest in admission avoidance, we evaluated the evidence to support virtual wards (VW) and hospital at home (HaH) models of care during exacerbations of chronic obstructive pulmonary disease (ECOPD).<h4>Design</h4>A systematic review and meta-analysis. A comprehensive search of MEDLINE (1946 to March 2024), Embase (1974 to March 2024) and CENTRAL (searched 22 March 2024) was conducted. Risk of bias and a random effects meta-analysis were performed.<h4>Population</h4>Adults with an ECOPD presenting to the hospital or who require hospital-led care.<h4>Interventions</h4>VW: defined as assessments and interventions delivered remotely or HaH (defined as assessments and interventions delivered by healthcare professionals in patient's homes) care pathways, compared with hospital admission.<h4>Primary and secondary objectives</h4>Safety (mortality rate of all causes, in-patient, 7\u2009days and 30 days) and readmission rate in 7 and 30 days. Length of stay in hospital and changes in pulmonary function tests.<h4>Results</h4>One study assessed VWs (reported in two publications) and 10 assessed HaH. There were no changes in survival or short-term readmission rates attributable to the interventions and no evidence that VW or HaH care pathways reduced the total time a patient spent under hospital-led care, whether at home or in the hospital.<h4>Conclusions</h4>More evidence is needed to support the widespread roll-out of HaH and especially VW pathways for ECOPD. PROSPERO REGISTRATION NUMBER: https://www.crd.york.ac.uk/PROSPERO/view/CRD42024517565.",
+        "affiliation": "Respiratory Care-College of Applied Medical Sciences, Imam Abdulrahman Bin Faisal University, Jubail, Saudi Arabia bushra.alenazi@gmail.com.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3454-5482"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0004-2996-6711"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0008-5177-4889"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Respiratory Care-College of Applied Medical Sciences, Imam Abdulrahman Bin Faisal University, Jubail, Saudi Arabia bushra.alenazi@gmail.com."
+                  },
+                  {
+                    "affiliation": "NIHR Midlands Patient Safety Research Collaboration, Department of Inflammation & Ageing, College of Medicine and Health, University of Birmingham College of Medical and Dental Sciences, Birmingham, UK."
+                  },
+                  {
+                    "affiliation": "Institute of Inflammation and Ageing, University of Birmingham College of Medical and Dental Sciences, Birmingham, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0008-5177-4889"
+              },
+              "firstName": "Bushra",
+              "fullName": "Alenazi B",
+              "initials": "B",
+              "lastName": "Alenazi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NIHR Midlands Patient Safety Research Collaboration, Department of Inflammation & Ageing, College of Medicine and Health, University of Birmingham College of Medical and Dental Sciences, Birmingham, UK."
+                  },
+                  {
+                    "affiliation": "Institute of Inflammation and Ageing, University of Birmingham College of Medical and Dental Sciences, Birmingham, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0004-2996-6711"
+              },
+              "firstName": "Christopher",
+              "fullName": "Hatton C",
+              "initials": "C",
+              "lastName": "Hatton"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NIHR Midlands Patient Safety Research Collaboration, Department of Inflammation & Ageing, College of Medicine and Health, University of Birmingham College of Medical and Dental Sciences, Birmingham, UK."
+                  },
+                  {
+                    "affiliation": "Institute of Inflammation and Ageing, University of Birmingham College of Medical and Dental Sciences, Birmingham, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3454-5482"
+              },
+              "firstName": "Elizabeth",
+              "fullName": "Sapey E",
+              "initials": "E",
+              "lastName": "Sapey"
+            }
+          ]
+        },
+        "authorString": "Alenazi B, Hatton C, Sapey E.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-10",
+        "dateOfCreation": "2026-04-10",
+        "dateOfRevision": "2026-04-18",
+        "doi": "10.1136/bmjresp-2025-003611",
+        "electronicPublicationDate": "2026-04-10",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-11",
+        "firstPublicationDate": "2026-04-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13084816"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1136/bmjresp-2025-003611"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13084816"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13084816?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41963074",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "1",
+          "journal": {
+            "essn": "2052-4439",
+            "isoabbreviation": "BMJ Open Respir Res",
+            "issn": "2052-4439",
+            "medlineAbbreviation": "BMJ Open Respir Res",
+            "nlmid": "101638061",
+            "title": "BMJ open respiratory research"
+          },
+          "journalIssueId": 4168252,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "13",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Copd Exacerbations"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pulmonary Disease, Chronic Obstructive",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "mortality"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Disease Progression",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Hospitalization",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Patient Readmission",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Telemedicine",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Home Care Services",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Home Care Services, Hospital-Based",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e003611",
+        "pmcid": "PMC13084816",
+        "pmid": "41963074",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Meta-Analysis",
+            "research-article",
+            "Systematic Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "What is the evidence for virtual wards or hospital-at-home care pathways for exacerbations of chronic obstructive pulmonary disease? A systematic review and meta-analysis."
+      },
+      {
+        "abstractText": "<h4>Objective</h4>The aim was to compare outcomes in high-risk localized RCC (HRL-RCC) patients treated with adjuvant (AT) and neoadjuvant therapy (NT) utilizing a propensity score-matched model (PSM).<h4>Methods</h4>We conducted a multicenter analysis (USA and Japan) for patients who underwent AT or NT. AT was defined as systemic therapy given postoperatively in the absence of metastases; NT was presurgical therapy in the setting of localized disease. AT and NT utilized included target molecular therapy (TMT) or immunotherapy (IO). The PSM model was generated using a nearest neighbor matching algorithm in a 1:2 ratio. The primary outcome was All-Cause Mortality (ACM); the secondary outcomes were Cancer-Specific Mortality (CSM) and recurrence. Cox regression multivariable analysis (MVA) was utilized to elucidate predictors of outcomes.<h4>Results</h4>After PSM modeling, 311 patients were analyzed [adjuvant <i>n</i> = 221, 127 TMT vs. 94 IO; neoadjuvant <i>n</i> = 90, 61 TMT vs. 29 IO]; the median follow-up was 44 (IQR 20-74) months. MVA revealed AT as associated with increased ACM (HR = 1.97, <i>p</i> = 0.007), CSM (HR = 2.37, <i>p</i> = 0.007) and recurrence (HR 1.64, <i>p</i> = 0.02). Sub-analysis of the AT cohort revealed IO to be associated with decreased ACM (HR 0.59, <i>p</i> = 0.015). In the neoadjuvant cohort, TMT and IO were associated with decreased ACM (HR 0.49; <i>p</i> = 0.016; HR 0.32, <i>p</i> = 0.016, respectively) and CSM risk (HR 0.47, <i>p</i> = 0.036; HR 0.18, <i>p</i> = 0.017).<h4>Conclusions</h4>Our findings suggest a potential advantage of NT in HRL-RCC. Adjuvant immunotherapy was associated with decreased risk of ACM, while in the neoadjuvant group, TMT and IO therapy had similar outcomes. Our findings call for the consideration of a clinical trial to compare the outcomes of AT vs. NT.",
+        "affiliation": "Department of Urology, UC San Diego Health System, San Diego, CA 92121, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8673-0711"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3632-2901"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3939-4521"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-1947-084X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, UC San Diego Health System, San Diego, CA 92121, USA."
+                  },
+                  {
+                    "affiliation": "Department of Urology, IRCCS Humanitas Clinical and Research Hospital, 20089 Rozzano, Italy."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Humanitas University, Pieve Emanuele, 20072 Milan, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-1947-084X"
+              },
+              "firstName": "Cesare",
+              "fullName": "Saitta C",
+              "initials": "C",
+              "lastName": "Saitta"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, UC San Diego Health System, San Diego, CA 92121, USA."
+                  }
+                ]
+              },
+              "firstName": "Giacomo",
+              "fullName": "Musso G",
+              "initials": "G",
+              "lastName": "Musso"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, UC San Diego Health System, San Diego, CA 92121, USA."
+                  },
+                  {
+                    "affiliation": "Department of Urology, IRCCS Humanitas Clinical and Research Hospital, 20089 Rozzano, Italy."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Humanitas University, Pieve Emanuele, 20072 Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Giuseppe",
+              "fullName": "Garofano G",
+              "initials": "G",
+              "lastName": "Garofano"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Tokyo Medical and Dental University, Tokyo 113-8510, Japan."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3632-2901"
+              },
+              "firstName": "Hajime",
+              "fullName": "Tanaka H",
+              "initials": "H",
+              "lastName": "Tanaka"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Emory Medical Center, Atlanta, GA 30322, USA."
+                  }
+                ]
+              },
+              "firstName": "Dattatraya",
+              "fullName": "Patil D",
+              "initials": "D",
+              "lastName": "Patil"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, UC San Diego Health System, San Diego, CA 92121, USA."
+                  }
+                ]
+              },
+              "firstName": "Margaret F",
+              "fullName": "Meagher MF",
+              "initials": "MF",
+              "lastName": "Meagher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Rush University Medical Center, Chicago, IL 60612, USA."
+                  }
+                ]
+              },
+              "firstName": "Srinivas",
+              "fullName": "Vourganti S",
+              "initials": "S",
+              "lastName": "Vourganti"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Rush University Medical Center, Chicago, IL 60612, USA."
+                  }
+                ]
+              },
+              "firstName": "Edward",
+              "fullName": "Cherullo E",
+              "initials": "E",
+              "lastName": "Cherullo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, UC San Diego Health System, San Diego, CA 92121, USA."
+                  }
+                ]
+              },
+              "firstName": "Michael",
+              "fullName": "Liss M",
+              "initials": "M",
+              "lastName": "Liss"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, IRCCS Humanitas Clinical and Research Hospital, 20089 Rozzano, Italy."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Humanitas University, Pieve Emanuele, 20072 Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Marco",
+              "fullName": "Paciotti M",
+              "initials": "M",
+              "lastName": "Paciotti"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, IRCCS Humanitas Clinical and Research Hospital, 20089 Rozzano, Italy."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Humanitas University, Pieve Emanuele, 20072 Milan, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3939-4521"
+              },
+              "firstName": "Giovanni",
+              "fullName": "Lughezzani G",
+              "initials": "G",
+              "lastName": "Lughezzani"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, IRCCS Humanitas Clinical and Research Hospital, 20089 Rozzano, Italy."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Sciences, Humanitas University, Pieve Emanuele, 20072 Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Nicol\u00f2 M",
+              "fullName": "Buffi NM",
+              "initials": "NM",
+              "lastName": "Buffi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Emory Medical Center, Atlanta, GA 30322, USA."
+                  }
+                ]
+              },
+              "firstName": "Viraj",
+              "fullName": "Master V",
+              "initials": "V",
+              "lastName": "Master"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Tokyo Medical and Dental University, Tokyo 113-8510, Japan."
+                  }
+                ]
+              },
+              "firstName": "Yasuhisa",
+              "fullName": "Fujii Y",
+              "initials": "Y",
+              "lastName": "Fujii"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Division of Hematology and Medical Oncology, UC San Diego School of Medicine, San Diego, CA 92093, USA."
+                  }
+                ]
+              },
+              "firstName": "Rana R",
+              "fullName": "McKay RR",
+              "initials": "RR",
+              "lastName": "McKay"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Rush University Medical Center, Chicago, IL 60612, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8673-0711"
+              },
+              "firstName": "Ithaar H",
+              "fullName": "Derweesh IH",
+              "initials": "IH",
+              "lastName": "Derweesh"
+            }
+          ]
+        },
+        "authorString": "Saitta C, Musso G, Garofano G, Tanaka H, Patil D, Meagher MF, Vourganti S, Cherullo E, Liss M, Paciotti M, Lughezzani G, Buffi NM, Master V, Fujii Y, McKay RR, Derweesh IH.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2025-11-13",
+        "dateOfCreation": "2025-11-13",
+        "dateOfRevision": "2025-11-16",
+        "doi": "10.3390/cancers17213481",
+        "electronicPublicationDate": "2025-10-29",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-14",
+        "firstPublicationDate": "2025-10-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12607376"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-15",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/cancers17213481"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12607376"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12607376?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41228274",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "21",
+          "journal": {
+            "essn": "2072-6694",
+            "isoabbreviation": "Cancers (Basel)",
+            "issn": "2072-6694",
+            "medlineAbbreviation": "Cancers (Basel)",
+            "nlmid": "101526829",
+            "title": "Cancers"
+          },
+          "journalIssueId": 4048110,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "17",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Carcinoma",
+            "Renal cell",
+            "Nephrectomy",
+            "Adjuvant Therapy",
+            "Neoadjuvant",
+            "Propensity Score Match",
+            "Survival Outcomes"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "3481",
+        "pmcid": "PMC12607376",
+        "pmid": "41228274",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Propensity Score-Matched Analysis of Neoadjuvant vs. Adjuvant Therapy in Renal Cell Carcinoma."
+      },
+      {
+        "abstractText": "This systematic review evaluates the prognostic role of high-sensitivity CRP (hs-CRP) in predicting cardiovascular outcomes among individuals with type 2 diabetes. Across prospective cohorts spanning varied populations and risk strata, elevated hs-CRP levels consistently signaled heightened susceptibility to major adverse cardiovascular events, vascular mortality, and, in some cases, microvascular complications. Importantly, hs-CRP retained predictive relevance even after controlling for traditional risk indicators such as glycemic status, lipid profiles, and blood pressure, underscoring inflammation as an independent driver of cardiovascular risk in diabetes. Divergent findings in a subset of studies, where hs-CRP more strongly predicted mortality than nonfatal ischemic events, suggest that the biomarker may reflect systemic inflammatory vulnerability and impaired recovery capacity rather than solely plaque burden. The collective evidence supports hs-CRP as a clinically meaningful, biologically plausible indicator of residual risk not captured by conventional models. Incorporating hs-CRP into cardiovascular risk stratification frameworks for diabetic patients may enhance individualized prevention strategies and justify future research on targeted anti-inflammatory interventions. Overall, this review highlights inflammation as a measurable and potentially modifiable determinant of cardiovascular outcomes in diabetes, reinforcing the clinical value of hs-CRP beyond its observational association.",
+        "affiliation": "Internal Medicine, Islamabad Medical & Dental College, Islamabad, PAK.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0008-6584-3590"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, Islamabad Medical & Dental College, Islamabad, PAK."
+                  }
+                ]
+              },
+              "firstName": "Syeda Umm E Abeeha",
+              "fullName": "Zaidi SUEA",
+              "initials": "SUEA",
+              "lastName": "Zaidi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, Hurley Medical Center, Flint, USA."
+                  }
+                ]
+              },
+              "firstName": "Ahmad",
+              "fullName": "Mohammad A",
+              "initials": "A",
+              "lastName": "Mohammad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, University of Iowa Hospitals and Clinics, Iowa City, USA."
+                  }
+                ]
+              },
+              "firstName": "Ishtiaq",
+              "fullName": "Ahmad I",
+              "initials": "I",
+              "lastName": "Ahmad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, TidalHealth Peninsula Regional, Salisbury, USA."
+                  }
+                ]
+              },
+              "firstName": "Shivam",
+              "fullName": "Singla S",
+              "initials": "S",
+              "lastName": "Singla"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, Erie County Medical Center, Buffalo, USA."
+                  }
+                ]
+              },
+              "firstName": "Bhavna",
+              "fullName": "Singla B",
+              "initials": "B",
+              "lastName": "Singla"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, St. Francis Medical Center, Lynwood, USA."
+                  }
+                ]
+              },
+              "firstName": "Sunita",
+              "fullName": "Kumawat S",
+              "initials": "S",
+              "lastName": "Kumawat"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Internal Medicine, Holy Family Hospital, Rawalpindi, Rawalpindi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Sajid",
+              "fullName": "Abbas S",
+              "initials": "S",
+              "lastName": "Abbas"
+            }
+          ]
+        },
+        "authorString": "Zaidi SUEA, Mohammad A, Ahmad I, Singla S, Singla B, Kumawat S, Abbas S.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-16",
+        "dateOfCreation": "2026-03-16",
+        "dateOfRevision": "2026-03-16",
+        "doi": "10.7759/cureus.103348",
+        "electronicPublicationDate": "2026-02-10",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-16",
+        "firstPublicationDate": "2026-02-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12981200"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7759/cureus.103348"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12981200"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12981200?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41835631",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "2",
+          "journal": {
+            "essn": "2168-8184",
+            "isoabbreviation": "Cureus",
+            "issn": "2168-8184",
+            "medlineAbbreviation": "Cureus",
+            "nlmid": "101596737",
+            "title": "Cureus"
+          },
+          "journalIssueId": 4110283,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "18",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Inflammation",
+            "Type 2 diabetes",
+            "Risk stratification",
+            "Cardiovascular Risk",
+            "Systemic Inflammation",
+            "hs-CRP",
+            "Prognostic Biomarker",
+            "Major Adverse Cardiovascular Events",
+            "Residual Risk",
+            "Vascular Mortality"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "e103348",
+        "pmcid": "PMC12981200",
+        "pmid": "41835631",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Inflammation and Cardiovascular Risk: A Systematic Review of High-Sensitivity CRP as a Prognostic Indicator."
+      },
+      {
+        "abstractText": "<i>De novo</i> acute hypoxemic respiratory failure (AHRF) remains one of the leading causes of intensive care unit (ICU) admission and is still associated with high rates of intubation and mortality. Developing effective strategies to prevent intubation and its associated complications remains a critical objective in this population. Noninvasive ventilation (NIV) has been proposed as a potential alternative to invasive ventilation in AHRF. However, no clear clinical benefit has been consistently demonstrated to date. The lack of definitive evidence has left experts unable to provide recommendations for the use of NIV in AHRF. Several factors may account for the inconsistencies in the literature and merit further investigation. Identifying early predictive criteria for NIV failure could be essential in determining which patients are most likely to benefit from this intervention. In addition, the approach to NIV settings may require reconsideration, particularly regarding the level of assistance. Efforts to reduce tidal volume, while aiming to minimize ventilator-induced lung injury, may have inadvertently resulted in insufficient support, amplifying the harmful effects of excessive inspiratory effort. The choice of interface may also significantly influence the physiological effects and outcomes and warrants further exploration. Finally, the frugal nature of noninvasive techniques makes them well-suited for the universal management of AHRF, regardless of constraints. This highlights the need for future developments aimed at optimizing oxygen and energy efficiency, enhancing the ease of use and robustness of NIV devices, and evaluating the effectiveness of NIV under high-constraint conditions, such as in low- and middle-income countries. This review addresses these critical questions.",
+        "affiliation": "AP-HP, H\u00f4pitaux Universitaires Henri-Mondor, Service de M\u00e9decine Intensive R\u00e9animation, 94010, Cr\u00e9teil, France.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "AP-HP, H\u00f4pitaux Universitaires Henri-Mondor, Service de M\u00e9decine Intensive R\u00e9animation, 94010, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Facult\u00e9 de Sant\u00e9, Groupe de Recherche Clinique CARMAS, Universit\u00e9 Paris Est-Cr\u00e9teil, Cr\u00e9teil 94010, France."
+                  },
+                  {
+                    "affiliation": "INSERM U955, Institut Mondor de Recherche Biom\u00e9dicale, Cr\u00e9teil 94010 France."
+                  }
+                ]
+              },
+              "firstName": "Guillaume",
+              "fullName": "Carteaux G",
+              "initials": "G",
+              "lastName": "Carteaux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "AP-HP, H\u00f4pitaux Universitaires Henri-Mondor, Service de M\u00e9decine Intensive R\u00e9animation, 94010, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Facult\u00e9 de Sant\u00e9, Groupe de Recherche Clinique CARMAS, Universit\u00e9 Paris Est-Cr\u00e9teil, Cr\u00e9teil 94010, France."
+                  },
+                  {
+                    "affiliation": "INSERM U955, Institut Mondor de Recherche Biom\u00e9dicale, Cr\u00e9teil 94010 France."
+                  }
+                ]
+              },
+              "firstName": "Anne-Fleur",
+              "fullName": "Haudebourg AF",
+              "initials": "AF",
+              "lastName": "Haudebourg"
+            }
+          ]
+        },
+        "authorString": "Carteaux G, Haudebourg AF.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-09-15",
+        "dateOfCreation": "2025-09-11",
+        "dateOfRevision": "2025-09-15",
+        "doi": "10.1016/j.jointm.2025.01.001",
+        "electronicPublicationDate": "2025-03-04",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-09-12",
+        "firstPublicationDate": "2025-03-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12417382"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-29",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.jointm.2025.01.001"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12417382"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12417382?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "40933746",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Jul",
+          "issue": "3",
+          "journal": {
+            "essn": "2667-100X",
+            "isoabbreviation": "J Intensive Med",
+            "issn": "2097-0250",
+            "medlineAbbreviation": "J Intensive Med",
+            "nlmid": "9918539389006676",
+            "title": "Journal of intensive medicine"
+          },
+          "journalIssueId": 4014933,
+          "monthOfPublication": 7,
+          "printPublicationDate": "2025-07-01",
+          "volume": "5",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Noninvasive Ventilation",
+            "Acute Hypoxemic Respiratory Failure",
+            "Positive-Pressure Respiration, High-Flow Nasal Cannula, Continuous Positive Airway Pressure (Cpap), Intensive Care Units (Icus)"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "237-245",
+        "pmcid": "PMC12417382",
+        "pmid": "40933746",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Noninvasive ventilation in acute hypoxemic respiratory failure: What is the future?",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

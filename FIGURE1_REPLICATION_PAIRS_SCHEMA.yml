@@ -1,0 +1,115 @@
+purpose: Root-level Figure 1 replication-pair result table. This is the obvious flat
+  staging table after corpus D/N checks and before promotion into source_result/source_result_support/canonical_result
+  rows.
+table: FIGURE1_REPLICATION_PAIRS.tsv
+grain: One original/replication result pair exposed by a local corpus, database, source-family
+  table, or project-specific extractor.
+rule: Keep every pair that has finite original D, original N, replication D, and replication
+  N. Current plot inclusion/exclusion is recorded in status columns rather than deleting
+  rows.
+columns:
+- name: figure1_replication_pair_id
+  definition: Stable ID for this root pair row.
+- name: dn_pair_check_id
+  definition: Upstream D/N check pair ID from steps/corpus_results/figure1/dn_check.
+- name: plot_universe_id
+  definition: Plot universe this pair table currently supports; fixed to plot1_replication_pairs.
+- name: source_family_key
+  definition: Normalized key for the source family/project label.
+- name: source_family_label
+  definition: Human-readable source family/project label.
+- name: project
+  definition: Project label emitted by the local pair extractor.
+- name: source_dataset
+  definition: Dataset/table/package label emitted by the local pair extractor.
+- name: native_pair_id
+  definition: Pair ID in the upstream local extractor.
+- name: pair_result_status
+  definition: Whether the row has numeric D/N for both original and replication sides.
+- name: current_plot_rule_status
+  definition: Current Figure 1 D/N inclusion status using the active N gates.
+- name: current_plot_rule_blockers
+  definition: Pipe-delimited current rule blockers, such as blocked_N_lt_10 or blocked_replication_N_le_original_N.
+- name: strict_verbatim_status
+  definition: Whether this exact pair is aligned to verbatim result-side rows, has
+    only project-level strict coverage, or remains numeric-only.
+- name: source_result_promotion_status
+  definition: Next provenance action before this row can become source_result/source_result_support
+    rows.
+- name: original_title
+  definition: Original/earlier or smaller-sample result title or label.
+- name: replication_title
+  definition: Replication/follow-up or larger-sample result title or label.
+- name: original_doi
+  definition: Original result DOI when known.
+- name: replication_doi
+  definition: Replication/follow-up result DOI when known.
+- name: outcome_label
+  definition: Outcome, test, claim, or contrast label.
+- name: D_original
+  definition: Standardized effect-size magnitude for the original side.
+- name: N_original
+  definition: Sample size for the original side.
+- name: D_replication
+  definition: Standardized effect-size magnitude for the replication/follow-up side.
+- name: N_replication
+  definition: Sample size for the replication/follow-up side.
+- name: D_smaller_N
+  definition: D value on the smaller-N side after comparing original and replication
+    N.
+- name: N_smaller_N
+  definition: Smaller of original and replication N.
+- name: D_larger_N
+  definition: D value on the larger-N side after comparing original and replication
+    N.
+- name: N_larger_N
+  definition: Larger of original and replication N.
+- name: smaller_N_role
+  definition: 'Which side supplied D_smaller_N/N_smaller_N: original or replication.'
+- name: larger_N_role
+  definition: 'Which side supplied D_larger_N/N_larger_N: original or replication.'
+- name: D_larger_N_minus_smaller_N
+  definition: D_larger_N minus D_smaller_N.
+- name: original_sig_05
+  definition: Whether the original side exceeds the approximate p<.05 D/N boundary
+    used by the legacy builder.
+- name: replication_sig_05
+  definition: Whether the replication side exceeds the approximate p<.05 D/N boundary
+    used by the legacy builder.
+- name: larger_n_replication
+  definition: True when replication N is larger than original N.
+- name: d_grew
+  definition: True when D_replication is greater than D_original.
+- name: d_ratio
+  definition: D_replication divided by D_original when defined.
+- name: n_ratio
+  definition: N_replication divided by N_original when defined.
+- name: category
+  definition: Legacy shrink/grow/significance category.
+- name: source_artifact_local_path
+  definition: Repo-relative local file path used by the numeric extractor.
+- name: source_artifact_sha256
+  definition: Checksum of the local source artifact when available.
+- name: source_artifact_access_status
+  definition: Whether the local source artifact currently exists in the checkout.
+- name: dn_check_pairs_path
+  definition: Repo-relative upstream D/N check pair table path.
+- name: dn_check_strict_sides_path
+  definition: Repo-relative upstream strict result-side table path.
+- name: strict_original_result_check_id
+  definition: Strict verbatim original-side check row ID when exact pair alignment
+    exists.
+- name: strict_replication_result_check_id
+  definition: Strict verbatim replication-side check row ID when exact pair alignment
+    exists.
+- name: value_verification_state
+  definition: Current value-verification state using the repo evidence ladder vocabulary.
+- name: target_acquisition_state
+  definition: Current source-object acquisition state using the repo evidence ladder
+    vocabulary.
+- name: notes
+  definition: Short notes about provenance or promotion state.
+- name: created_by
+  definition: Script that generated the row.
+- name: created_at
+  definition: UTC timestamp for this generated table refresh.

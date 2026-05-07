@@ -1,0 +1,31 @@
+{
+  "artifact_id": "source_artifact_a3db71cce973b308",
+  "byte_size": 864,
+  "file_name": "calculate_additional_table.R",
+  "file_type": "r",
+  "line_preview": [
+    "#' Calculate the table stats for the additional analysis",
+    "#'",
+    "#' This is a super lazy function that needs to be generalized.",
+    "#'",
+    "#' @param data the piped reformatted data for the additional analysis",
+    "#' @export",
+    "calculate_additional_table <- function(data) {",
+    "  data %>%",
+    "    tidyr::drop_na(rate, comparison) %>%",
+    "    tidyr::nest(data = c(survey_id, task, rate)) %>%",
+    "    dplyr::mutate(bf_res = purrr::map(data, ~ BayesFactor::ttestBF(formula = rate ~ task, data = .x, rscale = 0.26)),",
+    "           bf = purrr::map_dbl(bf_res, ~ round(my_bf_extractor(.x)$bf, 2)),",
+    "           freq_res = purrr::map(data, ~ t.test(rate ~ task, data = .x,  paired = FALSE) %>% broom::tidy()),",
+    "           t = purrr::map_dbl(freq_res, ~ round(.x$statistic, 2)),",
+    "           p = purrr::map_dbl(freq_res, ~ round(.x$p.value, 2)),",
+    "           df = purrr::map_dbl(freq_res, ~ round(.x$parameter, 2)))",
+    "}"
+  ],
+  "line_preview_count": 17,
+  "local_path": "data/raw/replication_projects/lead_harvest/psa_006_trolley/unzipped/trolleyMultilabReplication-master/R/calculate_additional_table.R",
+  "parent_corpus_database_id": "lead_harvest:psa_006_trolley",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:17:59",
+  "sha256": "715c27095051c1910fff019bada8c322e95dcd009e0bfb2fa30012209d8c855f"
+}

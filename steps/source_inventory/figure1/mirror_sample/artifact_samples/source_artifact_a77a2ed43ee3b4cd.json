@@ -1,0 +1,334 @@
+{
+  "artifact_id": "source_artifact_a77a2ed43ee3b4cd",
+  "byte_size": 11163,
+  "file_name": "021_pilot_10_1176_ps_2007_58_8_1065.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/021_pilot_10_1176_ps_2007_58_8_1065.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1176/ps.2007.58.8.1065\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>The authors developed, implemented, and pilot-tested intervention programs to provide effective care for chronic or recurrent depression.<h4>Methods</h4>A total of 104 patients with chronic or recurrent depression were randomly assigned to one of four groups: continued usual behavioral health care, usual care plus telephone monitoring and care management by a care manager, usual care plus care management plus a peer-led chronic-disease self-management group program, or usual care plus care management plus a professionally led depression psychotherapy group. Outcomes in intent-to-treat analyses were assessed at three, six, nine, and 12 months and included treatment participation rates, Hopkins Symptom Checklist depression scale scores, major depression (Structured Clinical Interview for DSM-IV), Patient-Rated Global Improvement ratings, treatment satisfaction, and adequacy of medication.<h4>Results</h4>Participation in care management was high in the three intervention groups. Close to 60% of participants invited to both group interventions attended at least an initial meeting, but a greater number assigned to the care management plus the professionally led group continued participation through the 12-month period. The sample was too small to reliably detect small or moderate differences in clinical outcomes, but various measures consistently favored the care management plus professionally led group.<h4>Conclusions</h4>It is feasible to direct additional intervention services to patients with persistent or recurring depression. A larger trial of organized self-management support for chronic depression will be necessary for a definitive evaluation of program effectiveness.",
+          "affiliation": "Group Health Center for Health Studies, 1730 Minor Avenue, Seattle, WA 98101, USA. ludman.e@ghc.org",
+          "authMan": "N",
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Group Health Center for Health Studies, 1730 Minor Avenue, Seattle, WA 98101, USA. ludman.e@ghc.org"
+                    }
+                  ]
+                },
+                "firstName": "Evette J",
+                "fullName": "Ludman EJ",
+                "initials": "EJ",
+                "lastName": "Ludman"
+              },
+              {
+                "firstName": "Gregory E",
+                "fullName": "Simon GE",
+                "initials": "GE",
+                "lastName": "Simon"
+              },
+              {
+                "firstName": "Louis C",
+                "fullName": "Grothaus LC",
+                "initials": "LC",
+                "lastName": "Grothaus"
+              },
+              {
+                "firstName": "Casey",
+                "fullName": "Luce C",
+                "initials": "C",
+                "lastName": "Luce"
+              },
+              {
+                "firstName": "David K",
+                "fullName": "Markley DK",
+                "initials": "DK",
+                "lastName": "Markley"
+              },
+              {
+                "firstName": "Judith",
+                "fullName": "Schaefer J",
+                "initials": "J",
+                "lastName": "Schaefer"
+              }
+            ]
+          },
+          "authorString": "Ludman EJ, Simon GE, Grothaus LC, Luce C, Markley DK, Schaefer J.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Antidepressive Agents",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 32,
+          "dateOfCompletion": "2007-10-29",
+          "dateOfCreation": "2007-08-01",
+          "dateOfRevision": "2026-01-28",
+          "doi": "10.1176/ps.2007.58.8.1065",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2007-08-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "www.psychiatryonline.org",
+                "url": "https://doi.org/10.1176/appi.ps.58.8.1065"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1176/ps.2007.58.8.1065"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "MH 065530",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "17664517",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2007 Aug",
+            "issue": "8",
+            "journal": {
+              "essn": "1557-9700",
+              "isoabbreviation": "Psychiatr Serv",
+              "issn": "1075-2730",
+              "medlineAbbreviation": "Psychiatr Serv",
+              "nlmid": "9502838",
+              "title": "Psychiatric services (Washington, D.C.)"
+            },
+            "journalIssueId": 1453667,
+            "monthOfPublication": 8,
+            "printPublicationDate": "2007-08-01",
+            "volume": "58",
+            "yearOfPublication": 2007
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Chronic Disease",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Recurrence",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Antidepressive Agents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Combined Modality Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Motivation",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Dysthymic Disorder",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diagnosis"
+                    },
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Psychotherapy, Group",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Health Education",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Telephone",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Maintenance Organizations",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Self-Help Groups",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Patient Satisfaction",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Patient Care Management",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Washington",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Major Depressive Disorder",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diagnosis"
+                    },
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "1065-1072",
+          "pmid": "17664517",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2007",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "A pilot study of telephone care management and structured disease self-management groups for chronic depression."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "8f4b3a19f995152680d023de45c03ecf22b9d52ac69467c160ca78221bc8750e"
+}

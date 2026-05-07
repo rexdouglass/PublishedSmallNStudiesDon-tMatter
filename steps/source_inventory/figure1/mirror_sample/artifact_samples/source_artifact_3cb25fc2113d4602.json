@@ -1,0 +1,329 @@
+{
+  "artifact_id": "source_artifact_3cb25fc2113d4602",
+  "byte_size": 4756,
+  "file_name": "sports_sfbva_node.json",
+  "file_type": "json",
+  "keys": [
+    "data",
+    "meta"
+  ],
+  "local_path": "data/raw/replication_projects/osf_probe/sports_sfbva_node.json",
+  "parent_corpus_database_id": "corpus_db_sports_science_supplemental_outcomes_table",
+  "preview": {
+    "data": {
+      "attributes": {
+        "access_requests_enabled": true,
+        "analytics_key": "",
+        "category": "project",
+        "collection": false,
+        "current_user_can_comment": false,
+        "current_user_is_contributor": false,
+        "current_user_is_contributor_or_group_member": false,
+        "current_user_permissions": [
+          "read"
+        ],
+        "custom_citation": null,
+        "date_created": "2022-07-01T15:52:41.526582",
+        "date_modified": "2024-12-14T16:46:29.596537",
+        "description": "Analysis for the sport science replication studies. This repository contains the effect sizes from the original and replication studies. Additionally, the analysis (code and markdown summaries) documents are within this repository. The general project repository can be found here: https://doi.org/10.17605/OSF.IO/3VUFG",
+        "fork": false,
+        "node_license": {
+          "copyright_holders": [
+            ""
+          ],
+          "year": "2022"
+        },
+        "preprint": false,
+        "public": true,
+        "registration": false,
+        "subjects": [],
+        "tags": [],
+        "title": "Estimating the Replicability of Sport Science Research",
+        "wiki_enabled": true
+      },
+      "id": "sfbva",
+      "links": {
+        "html": "https://osf.io/sfbva/",
+        "iri": "https://osf.io/sfbva",
+        "self": "https://api.osf.io/v2/nodes/sfbva/"
+      },
+      "relationships": {
+        "affiliated_institutions": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/institutions/",
+              "meta": {}
+            },
+            "self": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/relationships/institutions/",
+              "meta": {}
+            }
+          }
+        },
+        "bibliographic_contributors": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/bibliographic_contributors/",
+              "meta": {}
+            }
+          }
+        },
+        "cedar_metadata_records": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/cedar_metadata_records/",
+              "meta": {}
+            }
+          }
+        },
+        "children": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/children/",
+              "meta": {}
+            }
+          }
+        },
+        "citation": {
+          "data": {
+            "id": "sfbva",
+            "type": "citation"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/citation/",
+              "meta": {}
+            }
+          }
+        },
+        "collected_in": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/collections/",
+              "meta": {}
+            }
+          }
+        },
+        "comments": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/comments/?filter%5Btarget%5D=sfbva",
+              "meta": {}
+            }
+          }
+        },
+        "contributors": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/contributors/",
+              "meta": {}
+            }
+          }
+        },
+        "draft_registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/draft_registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "files": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/files/",
+              "meta": {}
+            }
+          }
+        },
+        "forks": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/forks/",
+              "meta": {}
+            }
+          }
+        },
+        "identifiers": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/identifiers/",
+              "meta": {}
+            }
+          }
+        },
+        "implicit_contributors": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/implicit_contributors/",
+              "meta": {}
+            }
+          }
+        },
+        "license": {
+          "data": {
+            "id": "563c1cf88c5e4a3877f9e96a",
+            "type": "licenses"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96a/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_by_nodes": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/linked_by_nodes/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_by_registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/linked_by_registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_nodes": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/linked_nodes/",
+              "meta": {}
+            },
+            "self": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/relationships/linked_nodes/",
+              "meta": {}
+            }
+          }
+        },
+        "linked_registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/linked_registrations/",
+              "meta": {}
+            },
+            "self": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/relationships/linked_registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "logs": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/logs/",
+              "meta": {}
+            }
+          }
+        },
+        "node_links": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/node_links/",
+              "meta": {}
+            }
+          }
+        },
+        "preprints": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/preprints/",
+              "meta": {}
+            }
+          }
+        },
+        "region": {
+          "data": {
+            "id": "us",
+            "type": "regions"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/regions/us/",
+              "meta": {}
+            }
+          }
+        },
+        "registrations": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/registrations/",
+              "meta": {}
+            }
+          }
+        },
+        "root": {
+          "data": {
+            "id": "sfbva",
+            "type": "nodes"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/",
+              "meta": {}
+            }
+          }
+        },
+        "settings": {
+          "data": {
+            "id": "sfbva",
+            "type": "node-setting"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/settings/",
+              "meta": {}
+            }
+          }
+        },
+        "storage": {
+          "data": {
+            "id": "sfbva",
+            "type": "node-storage"
+          },
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/storage/",
+              "meta": {}
+            }
+          }
+        },
+        "subjects_acceptable": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/subjects/",
+              "meta": {}
+            }
+          }
+        },
+        "view_only_links": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/view_only_links/",
+              "meta": {}
+            }
+          }
+        },
+        "wikis": {
+          "links": {
+            "related": {
+              "href": "https://api.osf.io/v2/nodes/sfbva/wikis/",
+              "meta": {}
+            }
+          }
+        }
+      },
+      "type": "nodes"
+    },
+    "meta": {
+      "version": "2.0"
+    }
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "d34b43410ad0092042a3364fad96dd0dea57f9990d0c2f4c713fd10ad13cf999"
+}

@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_4c6a9cd495ba54e8",
+  "byte_size": 537,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 11,
+  "file_name": "ft112.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/ft112.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.146,
+      "obs_ID": "obs001",
+      "study_ID": "Reist (1980a)",
+      "var": 0.024453938,
+      "year_pub": 1980
+    },
+    {
+      "es": -0.177,
+      "obs_ID": "obs002",
+      "study_ID": "Reist (1980a)",
+      "var": 0.029213088,
+      "year_pub": 1980
+    },
+    {
+      "es": 0.267,
+      "obs_ID": "obs003",
+      "study_ID": "Reist (1980a)",
+      "var": 0.02843353,
+      "year_pub": 1980
+    },
+    {
+      "es": 0.165,
+      "obs_ID": "obs004",
+      "study_ID": "Reist (1980a)",
+      "var": 0.040923639,
+      "year_pub": 1980
+    },
+    {
+      "es": -0.029,
+      "obs_ID": "obs005",
+      "study_ID": "Reist (1980a)",
+      "var": 0.032070231,
+      "year_pub": 1980
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "413a2e9953797b4ab473f8d9bbbc5fce1e5890ddf49b3613cbb1e746537b60ca"
+}

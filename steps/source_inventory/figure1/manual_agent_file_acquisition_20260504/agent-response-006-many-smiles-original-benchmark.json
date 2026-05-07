@@ -1,0 +1,65 @@
+{
+  "task_id": "agent_file_acquisition_006",
+  "verdict": "found_public_file",
+  "confidence": "medium",
+  "found_files": [
+    {
+      "url": "https://www.nature.com/articles/s41562-022-01458-9",
+      "direct_download_url": "local existing mirror",
+      "file_name": "data.zip",
+      "file_format": "zip",
+      "source_page_url": "https://www.nature.com/articles/s41562-022-01458-9",
+      "access_status": "public_direct_download",
+      "local_path": "data/raw/replication_projects/lead_harvest/gpt_many_replication_candidates_20260504/many_smiles/data.zip",
+      "sha256": "44efe9c7d1a21a4daa29271363dfd6c97f83f2747caf3b5519502d5137f93bf8",
+      "fields_or_columns_seen": [
+        "data/source/Fig1_Source.csv: country,n",
+        "data/source/Fig2_Source.csv: ResponseId,trial,happiness,image,condition",
+        "data/source/Fig3_Source.csv: condition,awareness,qulty_rate_var,qulty_feel_var,qulty_smlr_var,indiv_body,happ.diff",
+        "data/raw/MSC_data_raw.csv",
+        "data/processed/*.rds",
+        "data/codebooks/*.xlsx"
+      ],
+      "evidence_text": "The local data archive contains replication-side data and country-level replication N values. The source CSVs and codebooks do not expose original benchmark effect estimates or original benchmark sample sizes at the task/lab-task grain needed for Figure 1.",
+      "why_relevant": "This is the authoritative local data archive for Many Smiles, but it does not solve the original-side benchmark blocker."
+    },
+    {
+      "url": "https://osf.io/qd2s3/",
+      "direct_download_url": "local existing mirror",
+      "file_name": "f3c2cd6f83b8__qd2s3.bin",
+      "file_format": "other",
+      "source_page_url": "https://osf.io/qd2s3/",
+      "access_status": "public_direct_download",
+      "local_path": "data/raw/replication_projects/lead_harvest/gpt_many_replication_candidates_20260504/many_smiles/f3c2cd6f83b8__qd2s3.bin",
+      "fields_or_columns_seen": [
+        "OSF mirrored object"
+      ],
+      "evidence_text": "The local OSF object is part of the Many Smiles mirror, but the useful checked data archive remains replication-side only for the Figure 1 D/N gate.",
+      "why_relevant": "It records the OSF acquisition route checked during the benchmark search."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41562-022-01458-9",
+      "direct_download_url": "local existing mirror",
+      "file_name": "8f4464df0b3d__s41562-022-01458-9.html",
+      "file_format": "html",
+      "source_page_url": "https://www.nature.com/articles/s41562-022-01458-9",
+      "access_status": "public_direct_download",
+      "local_path": "data/raw/replication_projects/lead_harvest/gpt_many_replication_candidates_20260504/many_smiles/8f4464df0b3d__s41562-022-01458-9.html",
+      "fields_or_columns_seen": [
+        "article HTML"
+      ],
+      "evidence_text": "The mirrored article HTML supports project identity and data-source routing, but the local check did not find a row-level original benchmark D and original N table in the mirrored public bytes.",
+      "why_relevant": "The article route was checked as the likely place where supplementary benchmark files would be referenced."
+    }
+  ],
+  "dn_assessment": {
+    "has_original_effect": "no",
+    "has_replication_or_followup_effect": "yes",
+    "has_original_n": "no",
+    "has_replication_or_followup_n": "yes",
+    "effect_metric": "unclear for original benchmark; replication raw outcomes are present",
+    "row_grain": "task or lab-task would need to be defined externally",
+    "notes": "The local archive has replication-side raw and source data, including country-level N and participant-level happiness outcomes. Searches of the source CSVs, codebook inventory, and archive text did not find original effect, original sample size, Strack benchmark, Coles meta-analytic benchmark, or a joinable original benchmark table. Under the strict Figure 1 D/N rule, this remains non-promotable."
+  },
+  "recommended_next_action": "Do not add Many Smiles rows to the current Figure 1 D-like lane unless a separate original benchmark table is acquired. If revisited, target Coles 2019 facial-feedback meta-analysis data and Strack 1988 source extraction as a separate provenance task."
+}

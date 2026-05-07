@@ -1,6 +1,6 @@
 {
   "artifact_id": "source_artifact_633901ea901d901c",
-  "byte_size": 1377,
+  "byte_size": 1623,
   "file_name": "Journal Metadata",
   "file_type": "json",
   "keys": [
@@ -25,12 +25,12 @@
       "file_name": "Journal Metadata",
       "file_type": "unknown",
       "inventory_status": "inventoried_metadata_only",
-      "last_seen": "2026-05-02",
+      "last_seen": "2026-05-04",
       "local_path": "",
       "mime_type": "",
       "n_field_evidence": "",
       "next_action": "match_provider_item_to_local_mirror_or_download_if_needed",
-      "notes": "provider_manifest=data/raw/corpus_candidates/score/osf_file_manifest.csv; inventory_task=inventory_task_496d19ef8219a7ce",
+      "notes": "provider_manifest=data/raw/corpus_candidates/score/osf_file_manifest.csv; inventory_task=inventory_task_496d19ef8219a7ce | provider_manifest=data/raw/corpus_candidates/score/osf_file_manifest.csv; inventory_task=inventory_task_da46fa7405b09e8e | provider_manifest=data/raw/corpus_candidates/score/osf_file_manifest.csv; inventory_task=inventory_task_9223f2c7eb854945",
       "pair_field_evidence": "",
       "parent_corpus_database_id": "score",
       "parent_provider_id": "score",
@@ -44,9 +44,9 @@
     },
     "note": "Component/container row has no direct source bytes. Child files should be represented by separate source artifact rows.",
     "record_type": "repository_component_metadata",
-    "recorded_at": "2026-05-02T13:10:03"
+    "recorded_at": "2026-05-04T00:22:36"
   },
   "sample_kind": "json_object",
-  "sampled_at": "2026-05-02T13:10:03",
-  "sha256": "32cd76f1ccdbf505de59ed3e221466e8b4c665a17ed646a8f78b9627ed7298f6"
+  "sampled_at": "2026-05-04T00:22:36",
+  "sha256": "90509b798fb82008cdb7d115ba3991064c982ac698f7209cb06403be6f0daf8d"
 }

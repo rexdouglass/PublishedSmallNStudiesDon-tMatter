@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_69058e454e3ee9e1",
+  "byte_size": 170883,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value;notes"
+  ],
+  "estimated_data_rows": 1625,
+  "file_name": "aer_101_7.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/aer_101_7.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value;notes": "American Economic Review;101.7;2011;2899;Caplin;3;D03. D12. D83;no;expe;0_1;kolmogorov-smirnov;2906;1;no;yes;;;;;;<0.0001;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value;notes": "American Economic Review;101.7;2011;2899;Caplin;3;D03. D12. D83;no;expe;2;reg;1;1;no;yes;9.54;0.20;;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value;notes": "American Economic Review;101.7;2011;2899;Caplin;3;D03. D12. D83;no;expe;2;reg;1;2;no;yes;6.36;0.13;;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value;notes": "American Economic Review;101.7;2011;2899;Caplin;3;D03. D12. D83;no;expe;2;reg;2;1;no;yes;10.31;0.23;;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value;notes": "American Economic Review;101.7;2011;2899;Caplin;3;D03. D12. D83;no;expe;2;reg;2;2;no;yes;6.39;0.13;;;;;"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "e48cc8e6a4b25e7f6942cbfafd26ec959d88b1d05c2e723ed4db6d81c60ab921"
+}

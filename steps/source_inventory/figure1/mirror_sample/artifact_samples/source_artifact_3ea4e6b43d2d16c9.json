@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_3ea4e6b43d2d16c9",
+  "byte_size": 151364,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 1776,
+  "file_name": "ft101.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/ft101.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.337310245,
+      "obs_ID": "obs001",
+      "study_ID": "Wu L.: Bradshaw A.D.",
+      "var": 0.000121864,
+      "year_pub": 1972
+    },
+    {
+      "es": 0.119600643,
+      "obs_ID": "obs002",
+      "study_ID": "Wu L.: Bradshaw A.D.",
+      "var": 1.0908e-05,
+      "year_pub": 1972
+    },
+    {
+      "es": 0.429078444,
+      "obs_ID": "obs003",
+      "study_ID": "Lin Wu: Bradshaw A.D.: Thurman D.A.",
+      "var": 0.005795849,
+      "year_pub": 1975
+    },
+    {
+      "es": 0.328243516,
+      "obs_ID": "obs004",
+      "study_ID": "Lin Wu: Bradshaw A.D.: Thurman D.A.",
+      "var": 0.002030233,
+      "year_pub": 1975
+    },
+    {
+      "es": 0.240831239,
+      "obs_ID": "obs005",
+      "study_ID": "Lin Wu: Bradshaw A.D.: Thurman D.A.",
+      "var": 0.000868489,
+      "year_pub": 1975
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "91742ee015c87486c4a998df544a78e250454409f28a5b0a78b398329f9d052a"
+}

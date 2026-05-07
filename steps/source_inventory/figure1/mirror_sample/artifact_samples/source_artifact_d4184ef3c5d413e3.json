@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_d4184ef3c5d413e3",
+  "byte_size": 28439,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;Num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value"
+  ],
+  "estimated_data_rows": 262,
+  "file_name": "jpe_119_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/jpe_119_1.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;Num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "Journal of Political Economy;119.1;2011;153;Colacito;2;;yes;other;4;F-stat;1;1;no;yes;;;;0.00"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;Num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "Journal of Political Economy;119.1;2011;153;Colacito;2;;yes;other;4;F-stat;1;2;no;yes;;;;0.03"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;Num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "Journal of Political Economy;119.1;2011;153;Colacito;2;;yes;other;4;AR;1;5;no;yes;0.768;0.76;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;Num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "Journal of Political Economy;119.1;2011;153;Colacito;2;;yes;other;4;AR;1;6;no;yes;0.787;0.074;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;Num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "Journal of Political Economy;119.1;2011;153;Colacito;2;;yes;other;4;F-stat;2;1;no;yes;;;;0"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "32d647a2158fbbe30435c3639ee74c597c0cd03e550431816d505782e260f83a"
+}

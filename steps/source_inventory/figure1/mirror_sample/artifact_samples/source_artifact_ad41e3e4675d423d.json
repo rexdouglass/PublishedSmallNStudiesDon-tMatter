@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_ad41e3e4675d423d",
+  "byte_size": 2211,
+  "columns": [
+    "Study",
+    "Version",
+    "ES",
+    "lwr",
+    "upr"
+  ],
+  "estimated_data_rows": 50,
+  "file_name": "ML5FigureData.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/ML5FigureData.csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "ES": 0.38,
+      "Study": "Albarracin et al., Study 5",
+      "Version": "Original",
+      "lwr": 0.05,
+      "upr": 0.64
+    },
+    {
+      "ES": 0.21,
+      "Study": "Albarracin et al., Study 7",
+      "Version": "Original",
+      "lwr": 0.01,
+      "upr": 0.39
+    },
+    {
+      "ES": 0.25,
+      "Study": "Crosby et al.",
+      "Version": "Original",
+      "lwr": 0.02,
+      "upr": 0.46
+    },
+    {
+      "ES": 0.43,
+      "Study": "Forster et al.",
+      "Version": "Original",
+      "lwr": 0.23,
+      "upr": 0.59
+    },
+    {
+      "ES": 0.48,
+      "Study": "LoBue & DeLoache",
+      "Version": "Original",
+      "lwr": 0.22,
+      "upr": 0.68
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "a7bc4b87963c0b269c47ff18f1e6c057fcf29f88e6b5cc1fc3386002225442a4"
+}

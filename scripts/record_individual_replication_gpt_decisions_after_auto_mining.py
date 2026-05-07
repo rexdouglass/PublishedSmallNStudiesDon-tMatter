@@ -1,0 +1,151 @@
+#!/usr/bin/env python3
+"""Materialize the GPT review receipt for the post-auto-mining batch.
+
+The user returned a JSON review payload in chat on 2026-05-06. This script
+records the machine-readable candidate-level decisions and the local verifier
+action taken before promotion. Row-level source text for promoted rows lives in
+`individual-paper-value-scan-batch001.tsv`.
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Any
+
+import pandas as pd
+
+
+ROOT = Path(__file__).resolve().parents[1]
+AUTO_DIR = ROOT / "steps" / "individual_replication_papers" / "figure1" / "auto_mining"
+OUT_JSON = AUTO_DIR / "individual-paper-gpt-decisions-after-auto-mining-2026-05-06.json"
+OUT_TSV = AUTO_DIR / "individual-paper-gpt-decisions-after-auto-mining-2026-05-06.tsv"
+OUT_REPORT = ROOT / "reports" / "figure1_individual_replication_gpt_decisions_after_auto_mining_2026-05-06.md"
+
+
+DECISIONS: list[dict[str, Any]] = [
+    {
+        "candidate_id": "api_candidate_006071e798115bf1",
+        "gpt_decision": "needs_more_evidence",
+        "row_policy": "coverage_only",
+        "replication_kind": "direct_replication",
+        "local_verifier_action": "held",
+        "reason": "Original four-condition crossover interaction does not match replication two-condition pro-intuition/pro-reflection contrast.",
+    },
+    {
+        "candidate_id": "api_candidate_0eb40892da116803",
+        "gpt_decision": "ready_for_row",
+        "row_policy": "strict_figure1a",
+        "replication_kind": "direct_replication",
+        "local_verifier_action": "promoted",
+        "reason": "Mirrored PMC original and replication full text verify N/effect support; original d computed from t and group Ns.",
+    },
+    {
+        "candidate_id": "api_candidate_64a39a53876c51c1",
+        "gpt_decision": "needs_more_evidence",
+        "row_policy": "strict_figure1a",
+        "replication_kind": "direct_replication",
+        "local_verifier_action": "held",
+        "reason": "Weapon-focus original focal cell Ns and final replication value table still need source-mapped extraction.",
+    },
+    {
+        "candidate_id": "api_candidate_710fd7eb55fc9d77",
+        "gpt_decision": "needs_more_evidence",
+        "row_policy": "coverage_only",
+        "replication_kind": "clinical_followup",
+        "local_verifier_action": "held",
+        "reason": "Original scopolamine value-bearing article remains blocked; matched crossover effect definition unresolved.",
+    },
+    {
+        "candidate_id": "api_candidate_821f217890822e88",
+        "gpt_decision": "native_only",
+        "row_policy": "native_only",
+        "replication_kind": "direct_replication",
+        "local_verifier_action": "held_native_only",
+        "reason": "Color-priming target is interaction/native ANOVA without a matched strict SMD contrast.",
+    },
+    {
+        "candidate_id": "api_candidate_a939357d526cdfa3",
+        "gpt_decision": "ready_for_row",
+        "row_policy": "strict_figure1a",
+        "replication_kind": "direct_replication",
+        "local_verifier_action": "promoted",
+        "reason": "Mirrored original PDF and OSF manuscript verify the composite green-score original d and replication internal-meta-analysis d.",
+    },
+    {
+        "candidate_id": "api_candidate_c49eb133d5977b06",
+        "gpt_decision": "needs_more_evidence",
+        "row_policy": "strict_figure1a",
+        "replication_kind": "direct_replication",
+        "local_verifier_action": "held",
+        "reason": "Rabbitt original analyzed N is missing and replication d values need scoring reconciliation.",
+    },
+    {"candidate_id": "IND-015", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Red-romance exact target and value-bearing replication source unresolved."},
+    {"candidate_id": "IND-017", "gpt_decision": "needs_more_evidence", "row_policy": "d_equivalent_figure1b", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Signing-at-the-beginning endpoint type and values unresolved."},
+    {"candidate_id": "IND-019", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Mating-motive target mappings and values unresolved."},
+    {"candidate_id": "IND-022", "gpt_decision": "needs_more_evidence", "row_policy": "d_equivalent_figure1b", "replication_kind": "clinical_followup", "local_verifier_action": "held", "reason": "EGDT trial event counts not mirrored in this batch."},
+    {"candidate_id": "IND-023", "gpt_decision": "needs_more_evidence", "row_policy": "d_equivalent_figure1b", "replication_kind": "clinical_followup", "local_verifier_action": "held", "reason": "Activated protein C event counts not mirrored in this batch."},
+    {"candidate_id": "IND-024", "gpt_decision": "needs_more_evidence", "row_policy": "d_equivalent_figure1b", "replication_kind": "clinical_followup", "local_verifier_action": "held", "reason": "Intensive-insulin mortality event counts not mirrored in this batch."},
+    {"candidate_id": "api_candidate_025c30471725eba5", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Religious-priming source does not resolve a single original paper/outcome/effect."},
+    {"candidate_id": "api_candidate_0367fa32a3d09f7b", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Loftus registered-report value-bearing texts unresolved."},
+    {"candidate_id": "api_candidate_112b3ad59e12752d", "gpt_decision": "needs_more_evidence", "row_policy": "strict_figure1a", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Prosocial-spending original exposes p only locally; no matched D/conversion inputs."},
+    {"candidate_id": "api_candidate_44137bf63c3bbdfa", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Schiller OSF registration lacks completed value-bearing replication results."},
+    {"candidate_id": "api_candidate_49040530056b1fbf", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Education/conspiracy values and metric route unresolved."},
+    {"candidate_id": "api_candidate_4dc2cff8320f0b0e", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Sex-difference reaction original D/N and single focal outcome unresolved."},
+    {"candidate_id": "api_candidate_53e20f8627a320c7", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Positive-affirmation target is plural/ambiguous and values not mirrored."},
+    {"candidate_id": "api_candidate_5d432a85cc83bb79", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Self-construal spatial-memory exact original/replication values unresolved."},
+    {"candidate_id": "api_candidate_705797b93ca7def0", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Money-priming SES target is moderation/native unless exact values are extracted."},
+    {"candidate_id": "api_candidate_74f56abca426fbc9", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Letter-priming original and replication N/effects missing."},
+    {"candidate_id": "api_candidate_7c25e95e83db7d9a", "gpt_decision": "native_only", "row_policy": "native_only", "replication_kind": "independent_validation", "local_verifier_action": "held_native_only", "reason": "Carotid real-world validation is not a single resolved RCT-to-follow-up event-count pair."},
+    {"candidate_id": "api_candidate_96a758378eb37b0e", "gpt_decision": "reject", "row_policy": "reject", "replication_kind": "close_replication", "local_verifier_action": "rejected", "reason": "Rapid-naming task does not establish a matched original task/outcome pair."},
+    {"candidate_id": "api_candidate_9db26ff9b8058473", "gpt_decision": "reject", "row_policy": "reject", "replication_kind": "close_replication", "local_verifier_action": "rejected", "reason": "Social-distance focal replication N is smaller than original under current larger-N rule."},
+    {"candidate_id": "api_candidate_b3869535651b5f0e", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Character morality source values unresolved."},
+    {"candidate_id": "api_candidate_bb6c827070cfa1f7", "gpt_decision": "native_only", "row_policy": "native_only", "replication_kind": "direct_replication", "local_verifier_action": "held_native_only", "reason": "Cockroach social-facilitation claim is an interaction with no current strict SMD route."},
+    {"candidate_id": "api_candidate_ccd98d70dd2472bf", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Name-priming conceptual replication needs exact outcome mapping and values."},
+    {"candidate_id": "api_candidate_ccea3138ba9e9efa", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Resource-scarcity conceptual replication values and target mapping unresolved."},
+    {"candidate_id": "api_candidate_d51bbeeeb3386937", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "CBCA contextual-bias original and replication values unresolved."},
+    {"candidate_id": "api_candidate_d98523e0ce3e5e0d", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "direct_replication", "local_verifier_action": "held", "reason": "Online-image credibility exact Shen target and values unresolved."},
+    {"candidate_id": "api_candidate_f5027ea48e83c6e2", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "close_replication", "local_verifier_action": "held", "reason": "Darkness/dishonesty changed task and lacks matched original D/N."},
+    {"candidate_id": "api_candidate_f998e9bbe8b93e3b", "gpt_decision": "needs_more_evidence", "row_policy": "coverage_only", "replication_kind": "independent_validation", "local_verifier_action": "held", "reason": "Cognitive-interview original target and matched replication outcome unresolved."},
+    {"candidate_id": "api_candidate_fcdbe8ce78bf22a0", "gpt_decision": "reject", "row_policy": "reject", "replication_kind": "direct_replication", "local_verifier_action": "rejected", "reason": "Duplicate Schiller OSF registration hit with no value-bearing results."},
+]
+
+
+def main() -> None:
+    AUTO_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "receipt_id": "individual_replication_gpt_decisions_after_auto_mining_2026_05_06",
+        "source": "user_pasted_gpt_json_in_chat",
+        "decision_count": len(DECISIONS),
+        "local_promotion_policy": "Promote only GPT-ready rows after local value-bearing source verification.",
+        "decisions": DECISIONS,
+    }
+    OUT_JSON.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    df = pd.DataFrame(DECISIONS).fillna("")
+    df.to_csv(OUT_TSV, sep="\t", index=False)
+
+    counts = df.groupby(["gpt_decision", "local_verifier_action"]).size().reset_index(name="n")
+    lines = [
+        "# GPT Decisions After Auto Mining",
+        "",
+        "This is the machine-readable receipt for the GPT review payload returned in chat on 2026-05-06.",
+        "Detailed row-level value support for promoted rows is stored in the value-scan TSV.",
+        "",
+        f"- Candidate decisions recorded: {len(df):,}",
+        f"- Locally promoted after source verification: {(df['local_verifier_action'] == 'promoted').sum():,}",
+        f"- Held/rejected/native-only: {(df['local_verifier_action'] != 'promoted').sum():,}",
+        "",
+        "## Counts",
+        "",
+        counts.to_markdown(index=False),
+        "",
+    ]
+    OUT_REPORT.write_text("\n".join(lines), encoding="utf-8")
+    print(f"Wrote {OUT_JSON.relative_to(ROOT)}")
+    print(f"Wrote {OUT_TSV.relative_to(ROOT)}")
+    print(f"Wrote {OUT_REPORT.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

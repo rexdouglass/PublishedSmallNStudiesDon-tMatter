@@ -1,0 +1,16 @@
+status_bucket	source_record_count	row_count_if_applicable	definition	accounting_use
+root_source_records_all	448		All consolidated source/corpus/database records in CORPORA_AND_DATABASES.tsv.	source-level universe only; not a row denominator
+root_source_records_figure1_relevant_yes	261		Records explicitly marked relevant to the Figure 1 replication-pair universe.	source-level coverage scope
+metadata_only_search_hits	137		Search hits retained for recall accounting but not value-bearing source objects.	loss reason: no local/public value object
+parser_not_implemented	12		Records with known or suspected data but no implemented parser path.	technical repair queue
+conversion_policy_missing	6		Records whose native metrics need a conversion decision before any shared-axis plot use.	methodology gate
+raw_viability_parent_families_checked	16		Parent source families run through local raw/mirrored viability checks.	mirror/local-byte coverage
+raw_viability_candidate_for_mapping	2	421	Raw/mirrored parent families whose parsed native rows already contain effect, N, and pair context.	future source_result mapping
+rechecked_records_with_alternate_route	33	1632	Previously rejected/blocked records that now have a non-Figure-1A route.	alternative subplot or denominator
+rechecked_records_no_supported_subplot_route	46	0	Previously rejected/blocked records still lacking any supported alternate subplot route.	context/exclusion evidence
+alternate_route::remain_context_or_rejected_no_alternate_subplot::no_worklist	46	0	Alternate-route recheck summary for remain_context_or_rejected_no_alternate_subplot / no_worklist.	no alternate plot universe
+alternate_route::route_to_coverage_denominator_catalog::missing_n_or_value_repair_worklist	14	271	Alternate-route recheck summary for route_to_coverage_denominator_catalog / missing_n_or_value_repair_worklist.	plot1d_source_object_coverage_denominator
+alternate_route::route_to_coverage_denominator_catalog::no_worklist	5	1010	Alternate-route recheck summary for route_to_coverage_denominator_catalog / no_worklist.	plot1d_source_object_coverage_denominator
+alternate_route::route_to_d_equivalent_diagnostic_worklist::no_worklist	1	88	Alternate-route recheck summary for route_to_d_equivalent_diagnostic_worklist / no_worklist.	plot1b_clinical_binary_d_equivalent
+alternate_route::route_to_missing_value_repair_worklist::missing_n_or_value_repair_worklist	7	172	Alternate-route recheck summary for route_to_missing_value_repair_worklist / missing_n_or_value_repair_worklist.	plot1d_source_object_coverage_denominator
+alternate_route::route_to_native_effect_diagnostic_worklist::no_worklist	6	91	Alternate-route recheck summary for route_to_native_effect_diagnostic_worklist / no_worklist.	plot1c_native_effect_retention

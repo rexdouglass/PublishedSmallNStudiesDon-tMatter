@@ -1,0 +1,25 @@
+{
+  "artifact_id": "source_artifact_e780a6cea6e96b2d",
+  "byte_size": 257,
+  "file_name": "4_final_files.do",
+  "file_type": "do",
+  "line_preview": [
+    "clear",
+    "set more off",
+    "",
+    "infile t using \"$temp\\simu_qog.txt\", clear",
+    "save \"$temp\\simu_qog\", replace",
+    "",
+    "infile t using \"$temp\\simu_wdi.txt\", clear",
+    "save \"$temp\\simu_wdi\", replace",
+    "",
+    "infile t using \"$temp\\simu_psid.txt\", clear",
+    "save \"$temp\\simu_psid\", replace"
+  ],
+  "line_preview_count": 11,
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Programs/simulations/4_final_files.do",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "7c7a2221627d9810232ea9f4221215d561eedc8bb0255a665b7e2e64d0a8519e"
+}

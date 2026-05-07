@@ -1,0 +1,464 @@
+{
+  "artifact_id": "source_artifact_ddf97cea80c8d68f",
+  "byte_size": 14613,
+  "file_name": "003_pilot_10_1016_j_lungcan_2004_06_007.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/003_pilot_10_1016_j_lungcan_2004_06_007.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/j.lungcan.2004.06.007\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "The Lung Screening Study (LSS) was a pilot study designed to assess the feasibility of conducting a large scale randomized controlled trial (RCT) of low radiation dose spiral computed tomography (LDCT) versus chest X-ray (CXR) for lung cancer screening. Baseline results of LSS have been previously reported. Here, we report on the findings at the year one screen and on the final results of the LSS study. A total of 1660 subjects were randomized to the LDCT arm and 1658 to the CXR arm. Compliance with screening declined from 96% at baseline to 86% at year one in the LDCT arm and declined from 93% at baseline to 80% at year one in the CXR arm. Positivity rates for the year one screen were 25.8% for LDCT and 8.7% for CXR. Cancer yield was significantly less at year one for LDCT, 0.57%, than at baseline, 1.9%; cancer yield for CXR increased from 0.45% at baseline to 0.68% at year one. Forty lung cancers in the LDCT arm and 20 in the CXR arm were diagnosed over the study period. Stage I cancers comprised 48% of cases in the LDCT arm and 40% in the CXR arm. A total of 16 stage III-IV cancers were observed in the LDCT arm versus nine in the CXR arm. The LSS has established the feasibility of a RCT comparing annual spiral CT to chest X-ray for lung cancer screening.",
+          "affiliation": "Division of Cancer Prevention, National Cancer Institute, 6130 Executive Blvd., EPN 3064, Bethesda, MD 20892, USA.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0632-0983"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0690-3759"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6864-6604"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3292-5035"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Cancer Prevention, National Cancer Institute, 6130 Executive Blvd., EPN 3064, Bethesda, MD 20892, USA."
+                    }
+                  ]
+                },
+                "firstName": "John K",
+                "fullName": "Gohagan JK",
+                "initials": "JK",
+                "lastName": "Gohagan"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0632-0983"
+                },
+                "firstName": "Pamela M",
+                "fullName": "Marcus PM",
+                "initials": "PM",
+                "lastName": "Marcus"
+              },
+              {
+                "firstName": "Richard M",
+                "fullName": "Fagerstrom RM",
+                "initials": "RM",
+                "lastName": "Fagerstrom"
+              },
+              {
+                "firstName": "Paul F",
+                "fullName": "Pinsky PF",
+                "initials": "PF",
+                "lastName": "Pinsky"
+              },
+              {
+                "firstName": "Barnett S",
+                "fullName": "Kramer BS",
+                "initials": "BS",
+                "lastName": "Kramer"
+              },
+              {
+                "firstName": "Philip C",
+                "fullName": "Prorok PC",
+                "initials": "PC",
+                "lastName": "Prorok"
+              },
+              {
+                "firstName": "Susan",
+                "fullName": "Ascher S",
+                "initials": "S",
+                "lastName": "Ascher"
+              },
+              {
+                "firstName": "William",
+                "fullName": "Bailey W",
+                "initials": "W",
+                "lastName": "Bailey"
+              },
+              {
+                "firstName": "Brenda",
+                "fullName": "Brewer B",
+                "initials": "B",
+                "lastName": "Brewer"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3292-5035"
+                },
+                "firstName": "Timothy",
+                "fullName": "Church T",
+                "initials": "T",
+                "lastName": "Church"
+              },
+              {
+                "firstName": "Deborah",
+                "fullName": "Engelhard D",
+                "initials": "D",
+                "lastName": "Engelhard"
+              },
+              {
+                "firstName": "Melissa",
+                "fullName": "Ford M",
+                "initials": "M",
+                "lastName": "Ford"
+              },
+              {
+                "firstName": "Mona",
+                "fullName": "Fouad M",
+                "initials": "M",
+                "lastName": "Fouad"
+              },
+              {
+                "firstName": "Matthew",
+                "fullName": "Freedman M",
+                "initials": "M",
+                "lastName": "Freedman"
+              },
+              {
+                "firstName": "Edward",
+                "fullName": "Gelmann E",
+                "initials": "E",
+                "lastName": "Gelmann"
+              },
+              {
+                "firstName": "David",
+                "fullName": "Gierada D",
+                "initials": "D",
+                "lastName": "Gierada"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0690-3759"
+                },
+                "firstName": "William",
+                "fullName": "Hocking W",
+                "initials": "W",
+                "lastName": "Hocking"
+              },
+              {
+                "firstName": "Subbarao",
+                "fullName": "Inampudi S",
+                "initials": "S",
+                "lastName": "Inampudi"
+              },
+              {
+                "firstName": "Brian",
+                "fullName": "Irons B",
+                "initials": "B",
+                "lastName": "Irons"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6864-6604"
+                },
+                "firstName": "Christine Cole",
+                "fullName": "Johnson CC",
+                "initials": "CC",
+                "lastName": "Johnson"
+              },
+              {
+                "firstName": "Arthur",
+                "fullName": "Jones A",
+                "initials": "A",
+                "lastName": "Jones"
+              },
+              {
+                "firstName": "Gena",
+                "fullName": "Kucera G",
+                "initials": "G",
+                "lastName": "Kucera"
+              },
+              {
+                "firstName": "Paul",
+                "fullName": "Kvale P",
+                "initials": "P",
+                "lastName": "Kvale"
+              },
+              {
+                "firstName": "Karen",
+                "fullName": "Lappe K",
+                "initials": "K",
+                "lastName": "Lappe"
+              },
+              {
+                "firstName": "William",
+                "fullName": "Manor W",
+                "initials": "W",
+                "lastName": "Manor"
+              },
+              {
+                "firstName": "Alisha",
+                "fullName": "Moore A",
+                "initials": "A",
+                "lastName": "Moore"
+              },
+              {
+                "firstName": "Hrudaya",
+                "fullName": "Nath H",
+                "initials": "H",
+                "lastName": "Nath"
+              },
+              {
+                "firstName": "Sarah",
+                "fullName": "Neff S",
+                "initials": "S",
+                "lastName": "Neff"
+              },
+              {
+                "firstName": "Martin",
+                "fullName": "Oken M",
+                "initials": "M",
+                "lastName": "Oken"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Plunkett M",
+                "initials": "M",
+                "lastName": "Plunkett"
+              },
+              {
+                "firstName": "Helen",
+                "fullName": "Price H",
+                "initials": "H",
+                "lastName": "Price"
+              },
+              {
+                "firstName": "Douglas",
+                "fullName": "Reding D",
+                "initials": "D",
+                "lastName": "Reding"
+              },
+              {
+                "firstName": "Thomas",
+                "fullName": "Riley T",
+                "initials": "T",
+                "lastName": "Riley"
+              },
+              {
+                "firstName": "Martin",
+                "fullName": "Schwartz M",
+                "initials": "M",
+                "lastName": "Schwartz"
+              },
+              {
+                "firstName": "David",
+                "fullName": "Spizarny D",
+                "initials": "D",
+                "lastName": "Spizarny"
+              },
+              {
+                "firstName": "Roberta",
+                "fullName": "Yoffie R",
+                "initials": "R",
+                "lastName": "Yoffie"
+              },
+              {
+                "firstName": "Carl",
+                "fullName": "Zylak C",
+                "initials": "C",
+                "lastName": "Zylak"
+              },
+              {
+                "collectiveName": "LUNG SCREENING STUDY RESEARCH GROUP"
+              }
+            ]
+          },
+          "authorString": "Gohagan JK, Marcus PM, Fagerstrom RM, Pinsky PF, Kramer BS, Prorok PC, Ascher S, Bailey W, Brewer B, Church T, Engelhard D, Ford M, Fouad M, Freedman M, Gelmann E, Gierada D, Hocking W, Inampudi S, Irons B, Johnson CC, Jones A, Kucera G, Kvale P, Lappe K, Manor W, Moore A, Nath H, Neff S, Oken M, Plunkett M, Price H, Reding D, Riley T, Schwartz M, Spizarny D, Yoffie R, Zylak C, LUNG SCREENING STUDY RESEARCH GROUP.",
+          "citedByCount": 214,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "20713784",
+                "orderIn": 1,
+                "reference": "Ann Intern Med. 2010 Aug 17;153(4):JC2-5. doi: 10.7326/0003-4819-153-4-201008170-02005",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2005-05-11",
+          "dateOfCreation": "2004-12-18",
+          "dateOfRevision": "2022-03-21",
+          "doi": "10.1016/j.lungcan.2004.06.007",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2010-09-01",
+          "firstPublicationDate": "2005-01-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.lungcan.2004.06.007"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "15603850",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2005 Jan",
+            "issue": "1",
+            "journal": {
+              "essn": "1872-8332",
+              "isoabbreviation": "Lung Cancer",
+              "issn": "0169-5002",
+              "medlineAbbreviation": "Lung Cancer",
+              "nlmid": "8800805",
+              "title": "Lung cancer (Amsterdam, Netherlands)"
+            },
+            "journalIssueId": 1212181,
+            "monthOfPublication": 1,
+            "printPublicationDate": "2005-01-01",
+            "volume": "47",
+            "yearOfPublication": 2005
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Lung Neoplasms",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DG",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "diagnostic imaging"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Tomography, Spiral Computed",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Radiography, Thoracic",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Mass Screening",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Neoplasm Staging",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Sensitivity and Specificity",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "9-15",
+          "pmid": "15603850",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Clinical Trial",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2005",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Final results of the Lung Screening Study, a randomized feasibility study of spiral CT versus chest X-ray screening for lung cancer."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "f5891c4e0f85a7beb1a56bfc083ae264ad19fed0f57ed6cfb8209ece0395a2b7"
+}

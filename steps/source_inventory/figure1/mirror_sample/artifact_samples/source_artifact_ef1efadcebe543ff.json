@@ -1,0 +1,394 @@
+{
+  "artifact_id": "source_artifact_ef1efadcebe543ff",
+  "byte_size": 13537,
+  "file_name": "032_pilot_10_1001_archpedi_162_12_1119.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/032_pilot_10_1001_archpedi_162_12_1119.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1001/archpedi.162.12.1119\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>To assess the effectiveness of parent-only vs family-based interventions for pediatric weight management in underserved rural settings.<h4>Design</h4>A 3-arm randomized controlled clinical trial.<h4>Setting</h4>All sessions were conducted at Cooperative Extension Service offices in underserved rural counties.<h4>Participants</h4>Ninety-three overweight or obese children (8-14 years old) and their parent(s).<h4>Intervention</h4>Families were randomized to (1) a behavioral family-based intervention, (2) a behavioral parent-only intervention, or (3) a wait-list control group.<h4>Outcome measure</h4>The primary outcome measure was change in children's standardized body mass index (BMI).<h4>Results</h4>Seventy-one children completed posttreatment (month 4) and follow-up (month 10) assessments. At the month 4 assessment, children in the parent-only intervention demonstrated a greater decrease in BMI z score (mean difference [MD], 0.127; 95% confidence interval [CI], 0.027 to 0.226) than children in the control condition. No significant difference was found between the family-based intervention and the control condition (MD, 0.065; 95% CI, -0.027 to 0.158). At month 10 follow-up, children in the parent-only and family-based intervention groups demonstrated greater decreases in BMI z score from before treatment compared with those in the control group (MD, 0.115; 95% CI, 0.003 to 0.220; and MD, 0.136; 95% CI, 0.018 to 0.254, respectively). No difference was found in weight status change between the parent-only and family-based interventions at either assessment.<h4>Conclusions</h4>A parent-only intervention may be a viable and effective alternative to family-based treatment of childhood overweight. Cooperative Extension Service offices have the potential to serve as effective venues for the dissemination of obesity-related health promotion programs.",
+          "affiliation": "Department of Clinical and Health Psychology, University of Florida, 101 S Newell Dr, Room 3151, Gainesville, FL 32611, USA. djanicke@phhp.ufl.edu",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8493-610X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3651-1542"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Clinical and Health Psychology, University of Florida, 101 S Newell Dr, Room 3151, Gainesville, FL 32611, USA. djanicke@phhp.ufl.edu"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8493-610X"
+                },
+                "firstName": "David M",
+                "fullName": "Janicke DM",
+                "initials": "DM",
+                "lastName": "Janicke"
+              },
+              {
+                "firstName": "Bethany J",
+                "fullName": "Sallinen BJ",
+                "initials": "BJ",
+                "lastName": "Sallinen"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3651-1542"
+                },
+                "firstName": "Michael G",
+                "fullName": "Perri MG",
+                "initials": "MG",
+                "lastName": "Perri"
+              },
+              {
+                "firstName": "Lesley D",
+                "fullName": "Lutes LD",
+                "initials": "LD",
+                "lastName": "Lutes"
+              },
+              {
+                "firstName": "Milagros",
+                "fullName": "Huerta M",
+                "initials": "M",
+                "lastName": "Huerta"
+              },
+              {
+                "firstName": "Janet H",
+                "fullName": "Silverstein JH",
+                "initials": "JH",
+                "lastName": "Silverstein"
+              },
+              {
+                "firstName": "Babette",
+                "fullName": "Brumback B",
+                "initials": "B",
+                "lastName": "Brumback"
+              }
+            ]
+          },
+          "authorString": "Janicke DM, Sallinen BJ, Perri MG, Lutes LD, Huerta M, Silverstein JH, Brumback B.",
+          "citedByCount": 153,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "19047549",
+                "orderIn": 1,
+                "reference": "Arch Pediatr Adolesc Med. 2008 Dec;162(12):1191-2. doi: 10.1001/archpedi.162.12.1191",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "19364569",
+                "orderIn": 2,
+                "reference": "J Pediatr. 2009 May;154(5):776. doi: 10.1016/j.jpeds.2009.02.046",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2008-12-18",
+          "dateOfCreation": "2008-12-03",
+          "dateOfRevision": "2024-03-23",
+          "doi": "10.1001/archpedi.162.12.1119",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-04-17",
+          "firstPublicationDate": "2008-12-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3782102"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://europepmc.org/articles/pmc3782102?pdf=render"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "html",
+                "site": "archpedi.ama-assn.org",
+                "url": "http://archpedi.ama-assn.org/cgi/content/full/162/12/1119"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "abs",
+                "site": "archpedi.ama-assn.org",
+                "url": "http://archpedi.ama-assn.org/cgi/content/abstract/162/12/1119"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "pdf",
+                "site": "archpedi.ama-assn.org",
+                "url": "http://archpedi.ama-assn.org/cgi/reprint/162/12/1119.pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/archpedi.162.12.1119"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3782102"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3782102?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/archpedi.162.12.1119"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DK",
+                "agency": "NIDDK NIH HHS",
+                "grantId": "R34 DK071555-01",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DK",
+                "agency": "NIDDK NIH HHS",
+                "grantId": "R34 DK071555",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "19047538",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2008 Dec",
+            "issue": "12",
+            "journal": {
+              "essn": "1538-3628",
+              "isoabbreviation": "Arch Pediatr Adolesc Med",
+              "issn": "1072-4710",
+              "medlineAbbreviation": "Arch Pediatr Adolesc Med",
+              "nlmid": "9422751",
+              "title": "Archives of pediatrics & adolescent medicine"
+            },
+            "journalIssueId": 1582040,
+            "monthOfPublication": 12,
+            "printPublicationDate": "2008-12-01",
+            "volume": "162",
+            "yearOfPublication": 2008
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS512413",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Weight Loss",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Body Mass Index",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Prevalence",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Follow-Up Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Parent-Child Relations",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Behavior Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Family Health",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Rural Population",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "United States",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Overweight",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "1119-1125",
+          "pmcid": "PMC3782102",
+          "pmid": "19047538",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2008",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Comparison of parent-only vs family-based interventions for overweight children in underserved rural settings: outcomes from project STORY."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "2cf1b230d5b6db905d0d347e678acca21a2f52f481b9ec0fe20d86d110eb6fc9"
+}

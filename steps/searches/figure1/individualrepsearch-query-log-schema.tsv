@@ -1,0 +1,17 @@
+field	description
+query_id	stable query identifier from the generated query bank
+run_id	date/versioned run identifier
+surface	OpenAlex, Crossref, PubMed, PMC, PLOS, OSF, Figshare, Dataverse, Zenodo, GitHub, web, or other surface
+endpoint_or_engine	API endpoint, CLI command, or search engine used
+query_family	campaign phase/query type from the query bank
+query_string	exact query string sent to the surface
+params_json	surface-specific parameters, filters, fields, page size, cursor, sort, and date filters
+date_run	ISO date/time for the query
+cursor_or_page	cursor, offset, page, or rank window requested
+rank_start	first result rank screened
+rank_end	last result rank screened
+n_returned	number of raw records returned by the surface
+n_new_work_ids	number of normalized works not already seen
+n_new_candidate_pairs	number of candidate original/replication pairs emitted
+raw_output_path	repo-relative path to raw JSON/XML/HTML/TSV response
+notes	blockers, API limits, high-noise terms, or recall-probe misses

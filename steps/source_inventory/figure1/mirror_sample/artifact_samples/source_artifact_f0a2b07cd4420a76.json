@@ -1,0 +1,25 @@
+{
+  "artifact_id": "source_artifact_f0a2b07cd4420a76",
+  "byte_size": 213,
+  "file_name": "3_4_4_simu_vhlss.do",
+  "file_type": "do",
+  "line_preview": [
+    "clear",
+    "set more off",
+    "",
+    "use \"$temp/tmp_vhlss\", clear",
+    "",
+    "des, varlist",
+    "loc lastvar: word `c(k)' of `r(varlist)'",
+    "local m = subinstr(\"`lastvar'\",\"v\",\"\",1)  ",
+    "",
+    "set seed 941",
+    "simu `m' 100000 \"$temp/simu_vhlss_4.txt\""
+  ],
+  "line_preview_count": 11,
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Programs/simulations/3_4_4_simu_vhlss.do",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "1c32d1afd87ed13b14a17e33cccb56dc651b32bf757530e10ed08beb3bc7ac1a"
+}

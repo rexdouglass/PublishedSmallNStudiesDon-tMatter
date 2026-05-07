@@ -1,0 +1,25 @@
+{
+  "artifact_id": "source_artifact_8c4b2247f35e6d50",
+  "byte_size": 209,
+  "file_name": "3_1_simu_psid.do",
+  "file_type": "do",
+  "line_preview": [
+    "clear",
+    "set more off",
+    "",
+    "use \"$temp/tmp_psid\", clear",
+    "",
+    "des, varlist",
+    "loc lastvar: word `c(k)' of `r(varlist)'",
+    "local m = subinstr(\"`lastvar'\",\"v\",\"\",1)  ",
+    "",
+    "set seed 51",
+    "simu `m' 2000000 \"$temp/simu_psid.txt\""
+  ],
+  "line_preview_count": 11,
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Programs/simulations/3_1_simu_psid.do",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "ebffb8c7bc151bd8472f306f65f67bbbb85f974a3dfb252df4b51ef2bb5c6c0e"
+}

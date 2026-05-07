@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_10a1a5f617db8267",
+  "byte_size": 12186,
+  "columns": [
+    "id",
+    "name",
+    "kind",
+    "size",
+    "materialized_path",
+    "download_url",
+    "html_url",
+    "iri",
+    "provider",
+    "api_url"
+  ],
+  "estimated_data_rows": 43,
+  "file_name": "osf_file_list.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/lead_harvest/tyner_nosek_2026/osf_file_list.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "api_url": "https://api.osf.io/v2/files/69c2bb6b657a037f13928160/",
+      "download_url": null,
+      "html_url": null,
+      "id": "69c2bb6b657a037f13928160",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Archive/",
+      "name": "Archive",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/67bf48a7d575b815dc55637e/",
+      "download_url": null,
+      "html_url": null,
+      "id": "67bf48a7d575b815dc55637e",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Supplementary Materials/",
+      "name": "Supplementary Materials",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/67c23dcbadc3d6fe9ce2f880/",
+      "download_url": null,
+      "html_url": null,
+      "id": "67c23dcbadc3d6fe9ce2f880",
+      "iri": null,
+      "kind": "folder",
+      "materialized_path": "/Supplementary Materials/Ethical Review/",
+      "name": "Ethical Review",
+      "provider": "osfstorage",
+      "size": 0
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/67c4c1f67de608c60122c6c6/",
+      "download_url": "https://osf.io/download/scruw/",
+      "html_url": "https://osf.io/g5sny/files/osfstorage/67c4c1f67de608c60122c6c6",
+      "id": "67c4c1f67de608c60122c6c6",
+      "iri": "https://osf.io/scruw",
+      "kind": "file",
+      "materialized_path": "/Supplementary Materials/Ethical Review/IRB Instructions.pdf",
+      "name": "IRB Instructions.pdf",
+      "provider": "osfstorage",
+      "size": 222574
+    },
+    {
+      "api_url": "https://api.osf.io/v2/files/67c4c1f6a3e68771a6e2f081/",
+      "download_url": "https://osf.io/download/2t36k/",
+      "html_url": "https://osf.io/g5sny/files/osfstorage/67c4c1f6a3e68771a6e2f081",
+      "id": "67c4c1f6a3e68771a6e2f081",
+      "iri": "https://osf.io/2t36k",
+      "kind": "file",
+      "materialized_path": "/Supplementary Materials/Ethical Review/HRPO Checklist.pdf",
+      "name": "HRPO Checklist.pdf",
+      "provider": "osfstorage",
+      "size": 93512
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:49",
+  "sha256": "ab8804a4e42ff875eb894301cd799da7311c6c53118c97238b35b37973b469d6"
+}

@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_ed7f8e0470c83ea1",
+  "byte_size": 617,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 13,
+  "file_name": "ft061_6.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/Zr/ft061_6.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": -0.026,
+      "obs_ID": "obs001",
+      "study_ID": "Boulton et al. 2015",
+      "var": 0.013,
+      "year_pub": 2015
+    },
+    {
+      "es": -0.052,
+      "obs_ID": "obs002",
+      "study_ID": "Boulton et al. 2015",
+      "var": 0.013,
+      "year_pub": 2015
+    },
+    {
+      "es": -0.065,
+      "obs_ID": "obs003",
+      "study_ID": "Dosmann et al. 2015",
+      "var": 0.004,
+      "year_pub": 2015
+    },
+    {
+      "es": -0.035,
+      "obs_ID": "obs004",
+      "study_ID": "Dosmann et al. 2015",
+      "var": 0.006,
+      "year_pub": 2015
+    },
+    {
+      "es": 0.046,
+      "obs_ID": "obs005",
+      "study_ID": "Dosmann et al. 2015",
+      "var": 0.006,
+      "year_pub": 2015
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "280643b92f010c2b3885c8b043619fb413f333d95ca1e3ebb32cc894fa5e13f6"
+}

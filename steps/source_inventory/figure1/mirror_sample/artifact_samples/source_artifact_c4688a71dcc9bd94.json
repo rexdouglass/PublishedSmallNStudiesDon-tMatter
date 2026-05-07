@@ -1,0 +1,270 @@
+{
+  "artifact_id": "source_artifact_c4688a71dcc9bd94",
+  "byte_size": 8632,
+  "file_name": "013_full_10_1093_jpepsy_jsn099.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/013_full_10_1093_jpepsy_jsn099.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1093/jpepsy/jsn099\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>To evaluate the efficacy of an Internet-based cognitive-behavioral therapy (CBT) approach to the treatment of child anxiety disorders.<h4>Methods</h4>Seventy-three children with anxiety disorders, aged 7-12 years, and their parents were randomly assigned to either an Internet-based CBT (NET) or wait-list (WL) condition. Clinical diagnostic assessment and parent and child questionnaires were completed before and after treatment. The NET condition was reassessed at 6-month follow-up.<h4>Results</h4>At posttreatment assessment, children in the NET condition showed small but significantly greater reductions in anxiety symptoms and increases in functioning than WL participants. These improvements were enhanced during the 6-month follow-up period, with 75% of NET children free of their primary diagnosis.<h4>Conclusions</h4>Internet delivery of CBT for child anxiety offers promise as a way of increasing access to treatment for this population. Future research is needed to examine ways to increase treatment compliance and further enhance the impact of treatment.",
+          "affiliation": "School of Psychology, University of Queensland, QLD 4072, Australia. s.march@psy.uq.edu.au",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6380-635X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8425-7126"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7022-6676"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Psychology, University of Queensland, QLD 4072, Australia. s.march@psy.uq.edu.au"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8425-7126"
+                },
+                "firstName": "Sonja",
+                "fullName": "March S",
+                "initials": "S",
+                "lastName": "March"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7022-6676"
+                },
+                "firstName": "Susan H",
+                "fullName": "Spence SH",
+                "initials": "SH",
+                "lastName": "Spence"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6380-635X"
+                },
+                "firstName": "Caroline L",
+                "fullName": "Donovan CL",
+                "initials": "CL",
+                "lastName": "Donovan"
+              }
+            ]
+          },
+          "authorString": "March S, Spence SH, Donovan CL.",
+          "citedByCount": 160,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2009-08-31",
+          "dateOfCreation": "2008-09-17",
+          "dateOfRevision": "2022-03-31",
+          "doi": "10.1093/jpepsy/jsn099",
+          "electronicPublicationDate": "2008-09-15",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-09-01",
+          "firstPublicationDate": "2008-09-15",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free after 12 months",
+                "availabilityCode": "F12",
+                "documentStyle": "html",
+                "site": "jpepsy.oxfordjournals.org",
+                "url": "http://jpepsy.oxfordjournals.org/cgi/content/full/34/5/474"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "abs",
+                "site": "jpepsy.oxfordjournals.org",
+                "url": "http://jpepsy.oxfordjournals.org/cgi/content/abstract/34/5/474"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1093/jpepsy/jsn099"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "18794187",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2009 Jun",
+            "issue": "5",
+            "journal": {
+              "essn": "1465-735X",
+              "isoabbreviation": "J Pediatr Psychol",
+              "issn": "0146-8693",
+              "medlineAbbreviation": "J Pediatr Psychol",
+              "nlmid": "7801773",
+              "title": "Journal of pediatric psychology"
+            },
+            "journalIssueId": 1623807,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2009-06-01",
+            "volume": "34",
+            "yearOfPublication": 2009
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Follow-Up Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Parents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ED",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "education"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Anxiety Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Internet",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Surveys and Questionnaires",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "474-487",
+          "pmid": "18794187",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2009",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "The efficacy of an internet-based cognitive-behavioral therapy intervention for child anxiety disorders."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "d99ed8b03913e3b900de6fc031749ed15be24f5b1bf039a525892e8b984d61c7"
+}

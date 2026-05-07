@@ -1,0 +1,5 @@
+candidate_key	candidate_name	decision	rows_promoted	notes
+transparent_replications_clearer_thinking	Transparent Replications by Clearer Thinking	promoted_report_table_rows	18	Promoted mirrored HTML table rows with parseable original and replication/follow-up D/N.
+clinical_highly_cited_workbook	Clinical highly cited replication workbook	no_extra_rows_without_relaxing_conversion_rule	0	Existing builder already promotes the 7 OR/RR/HR rows. Remaining ORR rows=3; one-arm response rates are not converted to D under the current Figure 1 mining rule. Risk measure counts: {'ORR': 3, 'RR': 3, 'HR': 2, 'OR': 2}.
+hagen_hcsp	Hagen Cumulative Science Project I	blocked_access_route	0	Still blocked: mirrored Shiny app's Google Sheet data route is gone/410.
+many_smiles	Many Smiles Collaboration	not_promoted_requires_original_benchmark_choice	0	Mirrored replication data do not expose a clean original benchmark effect plus original N table.

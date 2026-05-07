@@ -1,0 +1,3524 @@
+{
+  "hitCount": 479,
+  "nextCursorMark": "AoIIQFha8Sg1NTIwMzUwMw==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"phase II\" \"phase III\" \"failed to confirm\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIQFha8Sg1NTIwMzUwMw==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"phase II\" \"phase III\" \"failed to confirm\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "Schizophrenia is a complex psychiatric disorder, with cognitive impairment representing a critical unmet medical need. Current treatments primarily address positive symptoms, failing to effectively improve cognitive function and negative symptoms. This narrative review examines the current landscape of novel schizophrenia therapeutics following the discontinuation of iclepertin development, critically evaluates the most promising current candidates, and identifies priority research areas for future drug development. A comprehensive literature review was conducted covering developments from 2020 to 2025, with emphasis on Phase II and Phase III clinical data for novel mechanisms beyond traditional dopamine D<sub>2</sub> receptor antagonism. The landscape has been dramatically reshaped by two pivotal developments: the U.S. Food and Drug Administration (FDA) approval of xanomeline/trospium (KarXT, Cobenfy<sup>\u00ae</sup>) in September 2024 as the first nondopaminergic antipsychotic, and the failure of iclepertin in Phase III trials in January 2025. The most compelling therapeutic approaches continue to be serotonin-dopamine activity modulators (brilaroxazine) and emerging M<sub>4</sub> selective agonists (NBI-1117568). Moreover, recent evidence suggests a more cautious outlook for TAAR1 agonists, with systematic analyses revealing significant placebo response challenges in recent trials. While iclepertin's discontinuation represents a significant setback for GlyT1 inhibition strategies, the approval of KarXT and advancing pipeline candidates offer potential for therapeutic advances. Critical challenges include escalating placebo responses that compromise trial assay sensitivity, underscoring the need for improved patient stratification, refined trial methodology, and outcome measures that accurately capture real-world benefit.",
+        "affiliation": "Dept. of Psychiatry and Psychotherapy, University Medical Center Mainz, Untere Zahlbacher Str. 8, 55131, Mainz, Germany. susanne.englisch@unimedizin-mainz.de.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5604-2504"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dept. of Psychiatry and Psychotherapy, University Medical Center Mainz, Untere Zahlbacher Str. 8, 55131, Mainz, Germany. susanne.englisch@unimedizin-mainz.de."
+                  },
+                  {
+                    "affiliation": "Central Institute of Mental Health, Mannheim, Germany. susanne.englisch@unimedizin-mainz.de."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5604-2504"
+              },
+              "firstName": "Susanne",
+              "fullName": "Englisch S",
+              "initials": "S",
+              "lastName": "Englisch"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Central Institute of Mental Health, Mannheim, Germany."
+                  },
+                  {
+                    "affiliation": "District Hospital Mittelfranken, Ansbach, Germany."
+                  }
+                ]
+              },
+              "firstName": "Mathias",
+              "fullName": "Zink M",
+              "initials": "M",
+              "lastName": "Zink"
+            }
+          ]
+        },
+        "authorString": "Englisch S, Zink M.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Antipsychotic Agents",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-02-16",
+        "dateOfCreation": "2026-01-29",
+        "dateOfRevision": "2026-02-19",
+        "doi": "10.1007/s40263-025-01259-4",
+        "electronicPublicationDate": "2026-01-29",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-06",
+        "firstPublicationDate": "2026-01-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12909381"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-18",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s40263-025-01259-4"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12909381"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12909381?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Universit\u00e4tsmedizin der Johannes Gutenberg-Universit\u00e4t Mainz",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41609993",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "3",
+          "journal": {
+            "essn": "1179-1934",
+            "isoabbreviation": "CNS Drugs",
+            "issn": "1172-7047",
+            "medlineAbbreviation": "CNS Drugs",
+            "nlmid": "9431220",
+            "title": "CNS drugs"
+          },
+          "journalIssueId": 4123130,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "40",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Animals",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Antipsychotic Agents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PD",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pharmacology"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Schizophrenia",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "PP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiopathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Drug Development",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "333-357",
+        "pmcid": "PMC12909381",
+        "pmid": "41609993",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "New Pharmacological Treatment Approaches for Schizophrenia: Navigating the Post-iclepertin Landscape."
+      },
+      {
+        "abstractText": "Triple-negative breast cancer (TNBC) is associated with a high risk of brain metastases (BMs). Although systemic therapies have improved extracranial disease control, the central nervous system (CNS) remains less accessible to numerous agents. As a result, this limited drug penetration makes brain metastases (BMs) remain common in TNBC, which are a leading cause of serious symptoms. This review summarizes recent key advances in triple-negative breast cancer brain metastases (TNBC-BMs), including epidemiology, prognostic stratification, biological mechanisms of CNS tropism and treatment resistance, and evolving management strategies. We discuss potential mechanisms of brain colonization, including the FOXC1-CXCR4 axis, ST6GALNAC5-related interactions with the blood-brain barrier (BBB), and the bidirectional crosstalk between metastatic cells and the brain microenvironment, particularly astrocytes and microglia. Furthermore, we evaluate the evolving clinical management, emphasizing the transition from whole-brain radiotherapy (WBRT) toward more selective local approaches such as stereotactic radiotherapy (SRS) and hippocampal sparing techniques. Concurrently, we examine the integration of CNS active systemic therapy across specific molecular subsets. This review systematically distinguishes standard-of-care interventions from investigational strategies, ultimately underscoring critical evidence gaps within the TNBC-BM landscape.",
+        "affiliation": "Department of Radiation Oncology, Shenzhen People's Hospital (The Second Clinical Medical College, Jinan University, The First Affiliated Hospital, Southern University of Science and Technology), Shenzhen 518000, China.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4369-8811"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-1335-8983"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Shenzhen People's Hospital (The Second Clinical Medical College, Jinan University, The First Affiliated Hospital, Southern University of Science and Technology), Shenzhen 518000, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-1335-8983"
+              },
+              "firstName": "Hongli",
+              "fullName": "Yang H",
+              "initials": "H",
+              "lastName": "Yang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "China Unicom Digital Intelligence Medical Technology Co., Ltd., Guangzhou 510320, China."
+                  }
+                ]
+              },
+              "firstName": "Yang",
+              "fullName": "Zhao Y",
+              "initials": "Y",
+              "lastName": "Zhao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "China Unicom Digital Intelligence Medical Technology Co., Ltd., Guangzhou 510320, China."
+                  }
+                ]
+              },
+              "firstName": "Yue",
+              "fullName": "Wang Y",
+              "initials": "Y",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "China Unicom Digital Intelligence Medical Technology Co., Ltd., Guangzhou 510320, China."
+                  }
+                ]
+              },
+              "firstName": "Xiaoyuan",
+              "fullName": "Ma X",
+              "initials": "X",
+              "lastName": "Ma"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Shenzhen People's Hospital (The Second Clinical Medical College, Jinan University, The First Affiliated Hospital, Southern University of Science and Technology), Shenzhen 518000, China."
+                  }
+                ]
+              },
+              "firstName": "Jinmei",
+              "fullName": "Ling J",
+              "initials": "J",
+              "lastName": "Ling"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "China Unicom Digital Intelligence Medical Technology Co., Ltd., Guangzhou 510320, China."
+                  }
+                ]
+              },
+              "firstName": "Xianyi",
+              "fullName": "Zeng X",
+              "initials": "X",
+              "lastName": "Zeng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Shenzhen People's Hospital (The Second Clinical Medical College, Jinan University, The First Affiliated Hospital, Southern University of Science and Technology), Shenzhen 518000, China."
+                  }
+                ]
+              },
+              "firstName": "Zihuang",
+              "fullName": "Li Z",
+              "initials": "Z",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Shenzhen People's Hospital (The Second Clinical Medical College, Jinan University, The First Affiliated Hospital, Southern University of Science and Technology), Shenzhen 518000, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4369-8811"
+              },
+              "firstName": "Guixiang",
+              "fullName": "Liao G",
+              "initials": "G",
+              "lastName": "Liao"
+            }
+          ]
+        },
+        "authorString": "Yang H, Zhao Y, Wang Y, Ma X, Ling J, Zeng X, Li Z, Liao G.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2026-04-14",
+        "dateOfCreation": "2026-04-14",
+        "dateOfRevision": "2026-04-16",
+        "doi": "10.3390/cancers18071179",
+        "electronicPublicationDate": "2026-04-07",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-14",
+        "firstPublicationDate": "2026-04-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13072398"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/cancers18071179"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13072398"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13072398?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Shenzhen Natural Science Foundation",
+              "grantId": "JCYJ20220530152001002",
+              "orderIn": 0
+            },
+            {
+              "agency": "Shenzhen People's Hospital Physician Scientist Training \"Five Three\" Program",
+              "grantId": "No.SYWGSLCYJ202403",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41976401",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "7",
+          "journal": {
+            "essn": "2072-6694",
+            "isoabbreviation": "Cancers (Basel)",
+            "issn": "2072-6694",
+            "medlineAbbreviation": "Cancers (Basel)",
+            "nlmid": "101526829",
+            "title": "Cancers"
+          },
+          "journalIssueId": 4179662,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "18",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Immunotherapy",
+            "Prognosis",
+            "Treatment",
+            "Radiotherapy",
+            "Brain metastases",
+            "Triple-negative Breast Cancer"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1179",
+        "pmcid": "PMC13072398",
+        "pmid": "41976401",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Triple-Negative Breast Cancer Brain Metastasis: A Comprehensive Review of Epidemiology, Molecular Pathobiology, and Therapeutic Frontiers.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "Most patients diagnosed with biliary tract cancer (BTC) present with advanced, often unresectable disease. Additionally, a significant proportion of those who undergo curative intent resection experience disease recurrence. The aggressive nature and poor prognosis of BTC underscore the urgent need for effective and safe systemic therapies. For many years, progress in the therapy of BTC was limited. However, advances in our understanding of the molecular biology of BTC created a paradigm shift in its treatment. Novel therapies, particularly personalized approaches based on genomic profiling and use of targeted treatments, have significantly transformed the management algorithm for advanced BTC. These advances represented a major step forward in improving outcomes for patients with this very challenging malignancy.",
+        "affiliation": "Barbara Ann Karmanos Cancer Institute, Wayne State University School of Medicine, Detroit, MI,\u00a0United States.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Barbara Ann Karmanos Cancer Institute, Wayne State University School of Medicine, Detroit, MI,\u00a0United States."
+                  }
+                ]
+              },
+              "firstName": "Khalil",
+              "fullName": "Choucair K",
+              "initials": "K",
+              "lastName": "Choucair"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Wayne State University, Detroit, MI,\u00a0United States."
+                  }
+                ]
+              },
+              "firstName": "Shadi",
+              "fullName": "Chamseddine S",
+              "initials": "S",
+              "lastName": "Chamseddine"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Barbara Ann Karmanos Cancer Institute, Wayne State University School of Medicine, Detroit, MI,\u00a0United States."
+                  }
+                ]
+              },
+              "firstName": "Asfar",
+              "fullName": "Azmi A",
+              "initials": "A",
+              "lastName": "Azmi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Henry Ford Hospital, Detroit, MI,\u00a0United States."
+                  },
+                  {
+                    "affiliation": "Department of Oncology, Wayne State University School of Medicine, Detroit, MI,\u00a0United States."
+                  },
+                  {
+                    "affiliation": "Department of Pharmacology, Wayne State University School of Medicine, Detroit, MI,\u00a0United States."
+                  }
+                ]
+              },
+              "firstName": "Philip A",
+              "fullName": "Philip PA",
+              "initials": "PA",
+              "lastName": "Philip"
+            }
+          ]
+        },
+        "authorString": "Choucair K, Chamseddine S, Azmi A, Philip PA.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2026-02-27",
+        "dateOfCreation": "2026-02-27",
+        "dateOfRevision": "2026-02-27",
+        "doi": "10.3389/fonc.2026.1769447",
+        "electronicPublicationDate": "2026-02-11",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-27",
+        "firstPublicationDate": "2026-02-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12932168"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-26",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fonc.2026.1769447"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12932168"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12932168?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41756323",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "2234-943X",
+            "isoabbreviation": "Front Oncol",
+            "issn": "2234-943X",
+            "medlineAbbreviation": "Front Oncol",
+            "nlmid": "101568867",
+            "title": "Frontiers in oncology"
+          },
+          "journalIssueId": 4110619,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "16",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Immunotherapy",
+            "Targeted Therapy",
+            "Biliary Tract Cancer",
+            "Molecular Profiling",
+            "Systemic Chemotherapy"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1769447",
+        "pmcid": "PMC12932168",
+        "pmid": "41756323",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Advancing systemic therapy for biliary tract cancer: current strategies and emerging paradigms.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "Pancreatic ductal adenocarcinoma (PDAC) remains one of the most lethal forms of cancer, with a dismal survival rate. Therapeutic options are restricted in surgery for patients with resectable disease and in chemotherapy for those with unresectable disease. The potential benefits of radiotherapy (RT) or chemoradiotherapy (CRT) have been extensively investigated in both neoadjuvant and adjuvant settings in the management of patients with PDAC. Nevertheless, a substantial number of clinical trials have yielded conflicting findings, thereby rendering the impact of RT on patient survival and margin-negative (R0) resection inconclusive. A comprehensive examination of the historical evolution of RT in PDAC, encompassing the identification of both constraints and opportunities for advancement, is essential to establish RT as a promising therapeutic avenue for patients with PDAC. The aim of this review is to provide a synthesis of past clinical trials and future studies to elucidate the evolving role of RT in the management of PDAC as adjuvant and neoadjuvant CRT across different stages of the disease.",
+        "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France. Electronic address: j.dardare@nancy.unicancer.fr.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1131-5193"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-8986-698X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France. Electronic address: j.dardare@nancy.unicancer.fr."
+                  }
+                ]
+              },
+              "firstName": "Julie",
+              "fullName": "Dardare J",
+              "initials": "J",
+              "lastName": "Dardare"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Academic Department of Radiation Therapy & Brachytherapy, Institut de Canc\u00e9rologie de Lorraine, Vandoeuvre Les Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Nicolas",
+              "fullName": "Martz N",
+              "initials": "N",
+              "lastName": "Martz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1131-5193"
+              },
+              "firstName": "Andr\u00e9a",
+              "fullName": "Witz A",
+              "initials": "A",
+              "lastName": "Witz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Margaux",
+              "fullName": "Betz M",
+              "initials": "M",
+              "lastName": "Betz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-8986-698X"
+              },
+              "firstName": "Cassandra",
+              "fullName": "Michel C",
+              "initials": "C",
+              "lastName": "Michel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Pauline",
+              "fullName": "Gilson P",
+              "initials": "P",
+              "lastName": "Gilson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Jean-Louis",
+              "fullName": "Merlin JL",
+              "initials": "JL",
+              "lastName": "Merlin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Aur\u00e9lien",
+              "fullName": "Lambert A",
+              "initials": "A",
+              "lastName": "Lambert"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Alexandre",
+              "fullName": "Harle A",
+              "initials": "A",
+              "lastName": "Harle"
+            }
+          ]
+        },
+        "authorString": "Dardare J, Martz N, Witz A, Betz M, Michel C, Gilson P, Merlin JL, Lambert A, Harle A.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-12-15",
+        "dateOfCreation": "2025-12-09",
+        "dateOfRevision": "2025-12-29",
+        "doi": "10.1016/j.tranon.2025.102632",
+        "electronicPublicationDate": "2025-12-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-10",
+        "firstPublicationDate": "2025-12-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12741417"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.tranon.2025.102632"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12741417"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12741417?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41365129",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "journal": {
+            "essn": "1936-5233",
+            "isoabbreviation": "Transl Oncol",
+            "issn": "1936-5233",
+            "medlineAbbreviation": "Transl Oncol",
+            "nlmid": "101472619",
+            "title": "Translational oncology"
+          },
+          "journalIssueId": 4073245,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "63",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Radiotherapy",
+            "Pancreatic Ductal Adenocarcinoma",
+            "Clinical Trials",
+            "Chemoradiotherapy"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "102632",
+        "pmcid": "PMC12741417",
+        "pmid": "41365129",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "title": "Radiotherapy in the management of PDAC, from past to present.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Background</h4>Glenzocimab, a platelet glycoprotein VI antagonist, is a novel agent that inhibits platelet activation and aggregation. Its safety was demonstrated in the ACTIMIS trial (Acute Ischemic Stroke Interventional Study; URL: https://www.clinicaltrials.gov; Unique identifier: NCT03803007) for patients with stroke receiving thrombolysis, with or without mechanical thrombectomy, and results suggested a reduction in intracranial hemorrhages and mortality. The ACTISAVE trial was designed as a confirmatory study to evaluate the efficacy and safety of glenzocimab in acute ischemic stroke.<h4>Methods</h4>ACTISAVE (Acute Ischemic Stroke Study Evaluating Glenzocimab Used as Add-On Therapy Versus Placebo) was an international, randomized, double-blind, placebo-controlled phase 2/3 study in patients with stroke, treated by thrombolysis within 4.5 hours of symptoms onset with or without mechanical thrombectomy. The study was conducted at 54 primary and comprehensive stroke centers located in 10 countries. Patients were randomized 1:1 to glenzocimab (1000 mg-IV) or placebo. The primary outcome was the modified Rankin Scale (mRS) score of 4 to 6 at day 90. Key secondary outcome was the mRS score of 0 to 2 at day 90. Mortality, mRS shift, National Institutes of Health Stroke Scale score, quality of life, and safety outcomes were assessed.<h4>Results</h4>Between September 2021 and October 2023, 438 patients were randomized, 421 treated, and included as randomized in the primary analysis set. Median age was 73 (63-80) years, and 43% were female. Thrombolysis was performed 2.3 hours (median) after symptom onset and followed by mechanical thrombectomy in 36% of patients. The assigned treatment began a median of 1.2 (interquartile range, 0.8-1.6) hours after thrombolysis initiation. Prethrombolysis National Institutes of Health Stroke Scale score median was 9 (6-15). At day 90, there was no statistically significant difference in the primary outcome between the treatment groups: the incidence of poor outcome (mRS score 4-6 versus 0-3) was 21.6% in the glenzocimab group compared with 15.3% placebo group (odds ratio, 1.51 [95% CI, 0.90-2.54]; <i>P</i>=0.120). No statistically significant difference in secondary outcomes was observed. There were no major safety signals with any intracerebral hemorrhage occurring respectively in 60 (28.6%) and 63 (29.9%) patients in glenzocimab and placebo arms.<h4>Conclusions</h4>ACTISAVE failed to confirm a beneficial effect of glenzocimab on mRS in patients with acute ischemic stroke treated by thrombolysis.<h4>Registration</h4>URL: https://www.clinicaltrials.gov; Unique identifier: NCT05070260.",
+        "affiliation": "Department of Neurology, Universit\u00e4tsklinikum Essen (A\u00f6R), Klinik f\u00fcr Neurologie, Germany (M.K.).",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6058-6259"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8583-3228"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9989-4283"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0484-1494"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0701-9535"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0945-5656"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1171-4215"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2904-3317"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3667-4248"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4442-8637"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4478-7744"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4536-9018"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5880-6352"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6297-3153"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9151-6015"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0953-2284"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1329-0943"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0002-2636-4876"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0002-9263-1557"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0003-1182-4822"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Universit\u00e4tsklinikum Essen (A\u00f6R), Klinik f\u00fcr Neurologie, Germany (M.K.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0701-9535"
+              },
+              "firstName": "Martin",
+              "fullName": "K\u00f6hrmann M",
+              "initials": "M",
+              "lastName": "K\u00f6hrmann"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Klinikum Altenburger Land, Altenburg, Germany (J.B.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6297-3153"
+              },
+              "firstName": "J\u00f6rg",
+              "fullName": "Berrouschot J",
+              "initials": "J",
+              "lastName": "Berrouschot"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurology Service, Stroke Unit, Hospital Universitari de Girona Doctor Josep Trueta, Spain (J.S.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4478-7744"
+              },
+              "firstName": "Joaqu\u00edn",
+              "fullName": "Serena J",
+              "initials": "J",
+              "lastName": "Serena"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Brain Division, Shaare Zedek Medical Center, Jerusalem, Israel (N.M.B.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4442-8637"
+              },
+              "firstName": "Natan M",
+              "fullName": "Bornstein NM",
+              "initials": "NM",
+              "lastName": "Bornstein"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Stroke Research Unit, Department of Neurology, University Hospital -Rigshospitalet (H.K.I.), University of Copenhagen, Denmark."
+                  },
+                  {
+                    "affiliation": "Department of Clinical Medicine Faculty of Health and Medical Sciences (H.K.I.), University of Copenhagen, Denmark."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5880-6352"
+              },
+              "firstName": "Helle K",
+              "fullName": "Iversen HK",
+              "initials": "HK",
+              "lastName": "Iversen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Brain Sciences, Imperial College London, United Kingdom (D.K.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0484-1494"
+              },
+              "firstName": "Dheeraj",
+              "fullName": "Kalladka D",
+              "initials": "D",
+              "lastName": "Kalladka"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Slovak Medical University, Bratislava and faculty Hospital Trnava (G.K.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2904-3317"
+              },
+              "firstName": "Georgi",
+              "fullName": "Krastev G",
+              "initials": "G",
+              "lastName": "Krastev"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Stroke Unit, Hospital Vall d'Hebron, Barcelona, Spain (C.A.M.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6058-6259"
+              },
+              "firstName": "Carlos A",
+              "fullName": "Molina CA",
+              "initials": "CA",
+              "lastName": "Molina"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Cliniques Universitaires Saint-Luc, Brussels, Belgium (A.P.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9989-4283"
+              },
+              "firstName": "Andr\u00e9",
+              "fullName": "Peeters A",
+              "initials": "A",
+              "lastName": "Peeters"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Comprehensive Stroke Center, University Hospital Olomouc, Czech Republic (D.S.)."
+                  }
+                ]
+              },
+              "firstName": "Daniel",
+              "fullName": "\u0160a\u0148\u00e1k D",
+              "initials": "D",
+              "lastName": "\u0160a\u0148\u00e1k"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Stroke Unit, CHU Bordeaux Hospital Pellegrin, France (I.P.S.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1171-4215"
+              },
+              "firstName": "Igor P",
+              "fullName": "Sibon IP",
+              "initials": "IP",
+              "lastName": "Sibon"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de Neurologie Vasculaire, H\u00f4pital Roger Salengro, CHRU de Lille, France (L.D.S.)."
+                  }
+                ]
+              },
+              "firstName": "Lucie",
+              "fullName": "Della Schiava L",
+              "initials": "L",
+              "lastName": "Della Schiava"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Servicio Neurolog\u00eda/ Neurology, Hospital Universitari i Polit\u00e8cnic La Fe/La Fe University and Polytechnic Hospital of Valenciaa/ Neurology, Hospital Universitari i Politcnic La Fe/La Fe University and Polytechnic Hospital of Valencia, Spain (J.I.T.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8583-3228"
+              },
+              "firstName": "Jos\u00e9 I",
+              "fullName": "Tembl JI",
+              "initials": "JI",
+              "lastName": "Tembl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Servicio de Neurolog\u00eda, Departamento de Medicina, Hospital Universitario Ram\u00f3n y Cajal. Facultad de Medicina, Universidad de Alcal\u00e1. IRYCISn y Cajal. Facultad de Medicina, Universidad de Alcal. IRYCIS, Madrid, Spain (J.M.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1329-0943"
+              },
+              "firstName": "Jaime",
+              "fullName": "Masjuan J",
+              "initials": "J",
+              "lastName": "Masjuan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "AKlinik f\u00fcr Akutneurologie mit \u00dcberregionaler Stroke Unit, Klinischer Neurophysiologie und Intensivmedizin, Rh\u00f6n-Klinikum Campus Bad Neustadtr Akutneurologie mit berregionaler Stroke Unit, Klinischer Neurophysiologie und Intensivmedizin, Rh\u00f6n-Klinikum Campus Bad Neustadt, Germany (H.S.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0953-2284"
+              },
+              "firstName": "Hassan",
+              "fullName": "Soda H",
+              "initials": "H",
+              "lastName": "Soda"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neurology Stroke Unit, University Hospital Centre Nancy, France (S.R.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0945-5656"
+              },
+              "firstName": "S\u00e9bastien",
+              "fullName": "Richard S",
+              "initials": "S",
+              "lastName": "Richard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, Regional Hospital Liberec, Czech Republic (Z.E.)."
+                  }
+                ]
+              },
+              "firstName": "Zuzana",
+              "fullName": "Eichlova Z",
+              "initials": "Z",
+              "lastName": "Eichlova"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Memorial Hermann Hospital-Texas Medical Center, Clinical Innovation and Research Institute, Houston (A.L.C., J.C.G.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9151-6015"
+              },
+              "firstName": "Alexandra L",
+              "fullName": "Czap AL",
+              "initials": "AL",
+              "lastName": "Czap"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0003-1182-4822"
+              },
+              "firstName": "Gilles",
+              "fullName": "Avenard G",
+              "initials": "G",
+              "lastName": "Avenard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "firstName": "Sophie",
+              "fullName": "Binay S",
+              "initials": "S",
+              "lastName": "Binay"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0002-9263-1557"
+              },
+              "firstName": "Sirine",
+              "fullName": "Bougamra S",
+              "initials": "S",
+              "lastName": "Bougamra"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "firstName": "Andrea",
+              "fullName": "Comenducci A",
+              "initials": "A",
+              "lastName": "Comenducci"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Aixial, Boulogne-Billancourt, France (E.D.)."
+                  }
+                ]
+              },
+              "firstName": "Elodie",
+              "fullName": "Drumez E",
+              "initials": "E",
+              "lastName": "Drumez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "firstName": "Adeline",
+              "fullName": "Meilhoc A",
+              "initials": "A",
+              "lastName": "Meilhoc"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "firstName": "Yannick",
+              "fullName": "Pletan Y",
+              "initials": "Y",
+              "lastName": "Pletan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0002-2636-4876"
+              },
+              "firstName": "Anouar",
+              "fullName": "Sari A",
+              "initials": "A",
+              "lastName": "Sari"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Acticor Biotech, Paris, France (G.A., S. Binay, S. Bougamra, A.C., A.M., Y.P., A.S., E.T.)."
+                  }
+                ]
+              },
+              "firstName": "Elie",
+              "fullName": "Toledano E",
+              "initials": "E",
+              "lastName": "Toledano"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "D\u00e9partement de Psychologie, University of Rouen, France (J.-M.G.)."
+                  }
+                ]
+              },
+              "firstName": "Jean-Marie",
+              "fullName": "Grouin JM",
+              "initials": "JM",
+              "lastName": "Grouin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Memorial Hermann Hospital-Texas Medical Center, Clinical Innovation and Research Institute, Houston (A.L.C., J.C.G.)."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3667-4248"
+              },
+              "firstName": "James C",
+              "fullName": "Grotta JC",
+              "initials": "JC",
+              "lastName": "Grotta"
+            },
+            {
+              "collectiveName": "ACTISAVE Study Group"
+            }
+          ]
+        },
+        "authorString": "K\u00f6hrmann M, Berrouschot J, Serena J, Bornstein NM, Iversen HK, Kalladka D, Krastev G, Molina CA, Peeters A, \u0160a\u0148\u00e1k D, Sibon IP, Della Schiava L, Tembl JI, Masjuan J, Soda H, Richard S, Eichlova Z, Czap AL, Avenard G, Binay S, Bougamra S, Comenducci A, Drumez E, Meilhoc A, Pletan Y, Sari A, Toledano E, Grouin JM, Grotta JC, ACTISAVE Study Group.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Fibrinolytic Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Platelet Aggregation Inhibitors",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antibodies, Monoclonal, Humanized",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2026-04-27",
+        "dateOfCreation": "2026-04-27",
+        "dateOfRevision": "2026-04-29",
+        "doi": "10.1161/strokeaha.125.052935",
+        "electronicPublicationDate": "2026-03-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-27",
+        "firstPublicationDate": "2026-03-16",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1161/STROKEAHA.125.052935"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42044230",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2026 May",
+          "issue": "5",
+          "journal": {
+            "essn": "1524-4628",
+            "isoabbreviation": "Stroke",
+            "issn": "0039-2499",
+            "medlineAbbreviation": "Stroke",
+            "nlmid": "0235266",
+            "title": "Stroke"
+          },
+          "journalIssueId": 4186118,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2026-05-01",
+          "volume": "57",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Ischemic stroke",
+            "Randomized Clinical Trial",
+            "Alteplase",
+            "Glycoprotein Vi",
+            "Glenzocimab"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Fibrinolytic Agents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Platelet Aggregation Inhibitors",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Combined Modality Therapy",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Thrombolytic Therapy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Thrombectomy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Prospective Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Double-Blind Method",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged, 80 and over",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Antibodies, Monoclonal, Humanized",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Ischemic Stroke",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1116-1125",
+        "pmid": "42044230",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Clinical Trial, Phase III",
+            "Clinical Trial, Phase II",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Glenzocimab Efficacy and Safety Added to Intravenous Thrombolysis With or Without Mechanical Thrombectomy in Patients With Acute Ischemic Stroke-ACTISAVE: A Prospective, Randomized, Double-Blind Study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "Bladder cancer kills nearly 170,000 people worldwide each year. Over the past 4 decades, the systematic treatment of metastatic and locally advanced bladder cancer has mainly consisted of platinum-based chemotherapy. In the last 10 years, the development of next-generation sequencing have led to rapid characterization of whole-genome sequencing of bladder cancer, which gives us a better understanding of the pathogenesis of bladder cancer. Based on indications of high mutation burden, and microsatellite instability-high/deficient mismatch repair, immune checkpoint inhibitors have been studied in metastatic and locally advanced bladder cancer as well as bladder-sparing, and shows a good response in these specific indications. Besides, clinically significant expressed molecular targets are used to develop cancer targeted drugs, such as fibroblast growth factor receptor inhibitors and antibody-drug coupling agents. The exploration of molecular characteristics and subtypes of bladder cancer and the development of new drugs and treatment strategy have also stimulated more clinical studies of bladder cancer. Here, we review advances in the treatment of bladder cancer and clinical practice of next-generation sequencing, highlight important advances in immunotherapy for bladder cancer, preliminarily summarize molecular features of bladder cancer for clinical practice, and came up with direction for future treatment development.",
+        "affiliation": "Department of Urology, Urologic Surgery Center, Xinqiao Hospital, Third Military Medical University (Army Medical University), Chongqing, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Urologic Surgery Center, Xinqiao Hospital, Third Military Medical University (Army Medical University), Chongqing, China."
+                  }
+                ]
+              },
+              "firstName": "Wei",
+              "fullName": "Ning W",
+              "initials": "W",
+              "lastName": "Ning"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Urologic Surgery Center, Xinqiao Hospital, Third Military Medical University (Army Medical University), Chongqing, China."
+                  }
+                ]
+              },
+              "firstName": "Pengkang",
+              "fullName": "Chang P",
+              "initials": "P",
+              "lastName": "Chang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Urologic Surgery Center, Xinqiao Hospital, Third Military Medical University (Army Medical University), Chongqing, China."
+                  }
+                ]
+              },
+              "firstName": "Ji",
+              "fullName": "Zheng J",
+              "initials": "J",
+              "lastName": "Zheng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Urologic Surgery Center, Xinqiao Hospital, Third Military Medical University (Army Medical University), Chongqing, China."
+                  },
+                  {
+                    "affiliation": "Department of Urology of Jiangbei Campus, The First Affiliated Hospital of Army Medical University (The 958th Hospital of Chinese People's Liberation Army), Chongqing, China."
+                  }
+                ]
+              },
+              "firstName": "Wei",
+              "fullName": "Chen W",
+              "initials": "W",
+              "lastName": "Chen"
+            }
+          ]
+        },
+        "authorString": "Ning W, Chang P, Zheng J, Chen W.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Biomarkers, Tumor",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Immune Checkpoint Inhibitors",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-02-06",
+        "dateOfCreation": "2026-02-06",
+        "dateOfRevision": "2026-02-08",
+        "doi": "10.3389/fimmu.2025.1684597",
+        "electronicPublicationDate": "2026-01-21",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-10",
+        "firstPublicationDate": "2026-01-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12867928"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fimmu.2025.1684597"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12867928"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12867928?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41646982",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "journal": {
+            "essn": "1664-3224",
+            "isoabbreviation": "Front Immunol",
+            "issn": "1664-3224",
+            "medlineAbbreviation": "Front Immunol",
+            "nlmid": "101560960",
+            "title": "Frontiers in immunology"
+          },
+          "journalIssueId": 3892856,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "16",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Bladder cancer",
+            "Next-generation Sequencing",
+            "Trimodality Therapy",
+            "Immune Checkpoint Inhibitors",
+            "Fibroblast Growth Factor Receptor Inhibitors",
+            "Antibody-Drug Coupling Agent"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Immunotherapy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Mutation",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Urinary Bladder Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "High-Throughput Nucleotide Sequencing",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Biomarkers, Tumor",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Immune Checkpoint Inhibitors",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1684597",
+        "pmcid": "PMC12867928",
+        "pmid": "41646982",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Advances in immunotherapy for bladder cancer and clinical practice of next-generation sequencing."
+      },
+      {
+        "abstractText": "Hormone receptor-positive (HR\u2009+) and HER2-positive (HER2+) breast cancers represent a biologically unique subset of breast malignancies characterized by the co-expression of estrogen receptors (ER), progesterone receptors (PR), and human epidermal growth factor receptor 2 (HER2). These cancers exhibit distinct molecular features, often leading to aggressive growth and higher recurrence rates. HR+/HER2+\u2009breast cancer cells can utilize estrogen and HER2-driven signaling pathways to promote proliferation, survival, and metastatic potential, presenting unique challenges and opportunities for treatment. The current therapeutic strategies focus on a combination of endocrine therapies, such as selective estrogen receptor modulators (e.g., tamoxifen) or aromatase inhibitors, with HER2-targeted therapies like trastuzumab, pertuzumab, or tyrosine kinase inhibitors, to concurrently inhibit both hormone and HER2-driven pathways. Despite initial treatment efficacy, resistance often develops through various mechanisms, including mutations in the PIK3CA gene, cross-talk between ER and HER2 signaling, and activation of alternative growth pathways. Ongoing research aims to improve patient outcomes by exploring novel combination therapies, including CDK4/6 inhibitors and PI3K/AKT/mTOR pathway inhibitors, and by targeting resistance pathways. This review highlights the molecular basis, treatment approaches, and emerging therapeutic strategies in HR+/HER2+\u2009breast cancer, emphasizing the need for personalized and adaptive treatment strategies in managing this complex disease subtype.",
+        "affiliation": "Department of Breast and Thyroid Surgery, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, 1277 Jiefang Rd., Wuhan, 430022, People's Republic of China.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2130-8621"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Breast and Thyroid Surgery, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, 1277 Jiefang Rd., Wuhan, 430022, People's Republic of China."
+                  }
+                ]
+              },
+              "firstName": "Xinyu",
+              "fullName": "Li X",
+              "initials": "X",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Breast and Thyroid Surgery, Union Hospital, Tongji Medical College, Huazhong University of Science and Technology, 1277 Jiefang Rd., Wuhan, 430022, People's Republic of China. huangtaowh@163.com."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2130-8621"
+              },
+              "firstName": "Tao",
+              "fullName": "Huang T",
+              "initials": "T",
+              "lastName": "Huang"
+            }
+          ]
+        },
+        "authorString": "Li X, Huang T.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Receptors, Estrogen",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Receptors, Progesterone",
+              "registryNumber": "0"
+            },
+            {
+              "name": "ERBB2 protein, human",
+              "registryNumber": "EC 2.7.10.1"
+            },
+            {
+              "name": "Erb-b2 Receptor Tyrosine Kinases",
+              "registryNumber": "EC 2.7.10.1"
+            }
+          ]
+        },
+        "citedByCount": 1,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "41252042",
+              "orderIn": 1,
+              "reference": "Breast Cancer. 2026 Jan;33(1):314. doi: 10.1007/s12282-025-01801-8.",
+              "source": "MED",
+              "type": "Comment in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-10-25",
+        "dateOfCreation": "2025-09-22",
+        "dateOfRevision": "2026-01-27",
+        "doi": "10.1007/s12282-025-01779-3",
+        "electronicPublicationDate": "2025-09-22",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-09-25",
+        "firstPublicationDate": "2025-09-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12552382"
+          ]
+        },
+        "fullTextReceivedDate": "2025-10-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s12282-025-01779-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12552382"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12552382?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "40983817",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Nov",
+          "issue": "6",
+          "journal": {
+            "essn": "1880-4233",
+            "isoabbreviation": "Breast Cancer",
+            "issn": "1340-6868",
+            "medlineAbbreviation": "Breast Cancer",
+            "nlmid": "100888201",
+            "title": "Breast cancer (Tokyo, Japan)"
+          },
+          "journalIssueId": 4037200,
+          "monthOfPublication": 11,
+          "printPublicationDate": "2025-11-01",
+          "volume": "32",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Estrogen receptor",
+            "Breast cancer",
+            "target therapy",
+            "crosstalk",
+            "Endocrine Therapy",
+            "Her2"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Breast Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Receptors, Estrogen",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Receptors, Progesterone",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Antineoplastic Combined Chemotherapy Protocols",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Signal Transduction",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Drug Resistance, Neoplasm",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Molecular Targeted Therapy",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Erb-b2 Receptor Tyrosine Kinases",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1216-1243",
+        "pmcid": "PMC12552382",
+        "pmid": "40983817",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Advances in the intrinsic signaling pathway interactions and clinical translation of HR+/HER2+\u2009breast cancer.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "affiliation": "Physiological Plant Ecology, Department of Environmental Sciences, University of Basel, Sch\u00f6nbeinstrasse 6, CH-4056, Basel, Switzerland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0930-5658"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7441-1297"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7823-5163"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0985-9746"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4514-0667"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiological Plant Ecology, Department of Environmental Sciences, University of Basel, Sch\u00f6nbeinstrasse 6, CH-4056, Basel, Switzerland."
+                  },
+                  {
+                    "affiliation": "Plant Ecology, Department of Environmental Sciences, University Trier, Behringstra\u00dfe 21, Trier, 54296, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4514-0667"
+              },
+              "firstName": "Matthias",
+              "fullName": "Arend M",
+              "initials": "M",
+              "lastName": "Arend"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiological Plant Ecology, Department of Environmental Sciences, University of Basel, Sch\u00f6nbeinstrasse 6, CH-4056, Basel, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7441-1297"
+              },
+              "firstName": "Richard L",
+              "fullName": "Peters RL",
+              "initials": "RL",
+              "lastName": "Peters"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiological Plant Ecology, Department of Environmental Sciences, University of Basel, Sch\u00f6nbeinstrasse 6, CH-4056, Basel, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0930-5658"
+              },
+              "firstName": "Cedric",
+              "fullName": "Zahnd C",
+              "initials": "C",
+              "lastName": "Zahnd"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Plant Ecology, Department of Environmental Sciences, University Trier, Behringstra\u00dfe 21, Trier, 54296, Germany."
+                  }
+                ]
+              },
+              "firstName": "Mladen",
+              "fullName": "Ognjenovic M",
+              "initials": "M",
+              "lastName": "Ognjenovic"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiological Plant Ecology, Department of Environmental Sciences, University of Basel, Sch\u00f6nbeinstrasse 6, CH-4056, Basel, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0985-9746"
+              },
+              "firstName": "G\u00fcnter",
+              "fullName": "Hoch G",
+              "initials": "G",
+              "lastName": "Hoch"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiological Plant Ecology, Department of Environmental Sciences, University of Basel, Sch\u00f6nbeinstrasse 6, CH-4056, Basel, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7823-5163"
+              },
+              "firstName": "Ansgar",
+              "fullName": "Kahmen A",
+              "initials": "A",
+              "lastName": "Kahmen"
+            }
+          ]
+        },
+        "authorString": "Arend M, Peters RL, Zahnd C, Ognjenovic M, Hoch G, Kahmen A.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCreation": "2025-12-30",
+        "dateOfRevision": "2026-02-21",
+        "doi": "10.1111/nph.70847",
+        "electronicPublicationDate": "2025-12-30",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-02",
+        "firstPublicationDate": "2025-12-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12917450"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/nph.70847"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12917450"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12917450?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Swiss Federal Office for the Environment FOEN",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41467881",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "6",
+          "journal": {
+            "essn": "1469-8137",
+            "isoabbreviation": "New Phytol",
+            "issn": "1469-8137",
+            "medlineAbbreviation": "New Phytol",
+            "nlmid": "9882884",
+            "title": "The New phytologist"
+          },
+          "journalIssueId": 4126216,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "249",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Water potential",
+            "Stomatal Regulation",
+            "Hydroscape Area",
+            "Drought Response Strategy",
+            "Iso\u2010/anisohydry"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "2616-2622",
+        "pmcid": "PMC12917450",
+        "pmid": "41467881",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "letter",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Early onset of stomatal closure confounds current interpretations and applications of iso-/anisohydry theory."
+      },
+      {
+        "abstractText": "<h4>Background/objectives</h4>The standard surgical treatment of muscle-invasive bladder cancer (MIBC) comprises neoadjuvant systemic therapy followed by radical cystectomy (RC). However, a notable number of patients achieve a favorable response to neoadjuvant systemic therapy, a finding associated with improved outcomes, and questioning the necessity of RC in this subset of patients. The objective of this review is to summarize the available evidence regarding the feasibility, efficacy and toxicity of bladder-preserving chemoradiotherapy (CRT) following clinical response (CR) to neoadjuvant systemic therapy in patients with MIBC.<h4>Methods</h4>A literature search was performed using the PubMed database to identify studies evaluating the use of CRT for bladder preservation in MIBC patients with CR following neoadjuvant therapy.<h4>Results</h4>Clinical complete response (cCR) rates to neoadjuvant systemic treatment ranged from 31% to 87.5%, with subsequent CRT enabling 50-97% of responders to retain their bladder. Long-term outcomes were favorable for cCR patients, with 3- to 5-year overall survival (OS) ranging from 65% to 89%, disease-free survival (DFS) of 64-86%, and bladder-intact survival up to 80%. Achievement of cCR, T2 tumor stage, absence of concomitant carcinoma in situ or hydronephrosis, and complete transurethral resection of the bladder tumor (TURBT) were prognostic factors for improved oncologic outcomes. Treatment-related toxicity was generally acceptable, concerning mainly hematological and gastrointestinal events, while severe late toxicity was uncommon.<h4>Conclusions</h4>Bladder-preserving CRT is a promising, effective, and well-tolerated option for MIBC patients achieving CR to neoadjuvant systemic therapy. While further prospective validation and longer follow-up are required before it can universally replace radical cystectomy in this subset of patients, advances in neoadjuvant treatments, imaging and molecular biomarkers may improve response assessment and patient selection for bladder preservation.",
+        "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6354-9805"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8770-7142"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9074-2395"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2082-7323"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8770-7142"
+              },
+              "firstName": "Georgios Nikiforos",
+              "fullName": "Ntoumas GN",
+              "initials": "GN",
+              "lastName": "Ntoumas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Andromachi",
+              "fullName": "Kougioumtzopoulou A",
+              "initials": "A",
+              "lastName": "Kougioumtzopoulou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9074-2395"
+              },
+              "firstName": "Dimitra",
+              "fullName": "Desse D",
+              "initials": "D",
+              "lastName": "Desse"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, General Hospital of Athens \"G. Gennimatas\", 115 27 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Charalambos",
+              "fullName": "Fragkoulis C",
+              "initials": "C",
+              "lastName": "Fragkoulis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, General Hospital of Athens \"G. Gennimatas\", 115 27 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Georgios",
+              "fullName": "Papadopoulos G",
+              "initials": "G",
+              "lastName": "Papadopoulos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "3rd Department of Internal Medicine, General Hospital of Athens \"G. Gennimatas\", 115 27 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Efthymios",
+              "fullName": "Kostouros E",
+              "initials": "E",
+              "lastName": "Kostouros"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Dimitra",
+              "fullName": "Michaletou D",
+              "initials": "D",
+              "lastName": "Michaletou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2082-7323"
+              },
+              "firstName": "Vassileios",
+              "fullName": "Kouloulias V",
+              "initials": "V",
+              "lastName": "Kouloulias"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Radiation Oncology, Medical School, ATTIKON University Hospital, National and Kapodistrian University of Athens, 124 62 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Anna",
+              "fullName": "Zygogianni A",
+              "initials": "A",
+              "lastName": "Zygogianni"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Radiotherapy Unit, 1st Department of Radiology, Medical School, Aretaieion University Hospital, National and Kapodistrian University of Athens, 115 28 Athens, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6354-9805"
+              },
+              "firstName": "Ioannis",
+              "fullName": "Georgakopoulos I",
+              "initials": "I",
+              "lastName": "Georgakopoulos"
+            }
+          ]
+        },
+        "authorString": "Ntoumas GN, Kougioumtzopoulou A, Desse D, Fragkoulis C, Papadopoulos G, Kostouros E, Michaletou D, Kouloulias V, Zygogianni A, Georgakopoulos I.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-28",
+        "dateOfCreation": "2026-03-28",
+        "dateOfRevision": "2026-03-30",
+        "doi": "10.3390/cancers18060961",
+        "electronicPublicationDate": "2026-03-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-29",
+        "firstPublicationDate": "2026-03-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13025384"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/cancers18060961"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13025384"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13025384?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41899563",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "6",
+          "journal": {
+            "essn": "2072-6694",
+            "isoabbreviation": "Cancers (Basel)",
+            "issn": "2072-6694",
+            "medlineAbbreviation": "Cancers (Basel)",
+            "nlmid": "101526829",
+            "title": "Cancers"
+          },
+          "journalIssueId": 4146644,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "18",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Chemoradiotherapy",
+            "Complete Response",
+            "Bladder Preservation",
+            "Muscle-invasive Bladder Cancer"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "961",
+        "pmcid": "PMC13025384",
+        "pmid": "41899563",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Bladder Preservation with Concurrent Chemoradiotherapy Following Complete Response to Induction Systemic Therapy in Patients with Muscle-Invasive Bladder Cancer: A Review of the Existing Literature."
+      },
+      {
+        "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2230-3550"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7782-1232"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4075-7676"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK."
+                  }
+                ]
+              },
+              "firstName": "Jacqui",
+              "fullName": "Nimmo J",
+              "initials": "J",
+              "lastName": "Nimmo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK."
+                  }
+                ]
+              },
+              "firstName": "Matthew",
+              "fullName": "Bright M",
+              "initials": "M",
+              "lastName": "Bright"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK."
+                  }
+                ]
+              },
+              "firstName": "Zhizhong",
+              "fullName": "Yang Z",
+              "initials": "Z",
+              "lastName": "Yang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK."
+                  }
+                ]
+              },
+              "firstName": "Laura Elisabeth",
+              "fullName": "Nicholls LE",
+              "initials": "LE",
+              "lastName": "Nicholls"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK."
+                  }
+                ]
+              },
+              "firstName": "Bryan Paul",
+              "fullName": "Morgan BP",
+              "initials": "BP",
+              "lastName": "Morgan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK. DaskoulidouN1@cardiff.ac.uk."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7782-1232"
+              },
+              "firstName": "Nikoleta",
+              "fullName": "Daskoulidou N",
+              "initials": "N",
+              "lastName": "Daskoulidou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK. DaskoulidouN1@cardiff.ac.uk."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4075-7676"
+              },
+              "firstName": "Nikoleta",
+              "fullName": "Daskoulidou N",
+              "initials": "N",
+              "lastName": "Daskoulidou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UK Dementia Research Institute Cardiff, School of Medicine, Cardiff University, Cardiff, CF235NQ, UK. zelekw@cardiff.ac.uk."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2230-3550"
+              },
+              "firstName": "Wioleta Milena",
+              "fullName": "Zelek WM",
+              "initials": "WM",
+              "lastName": "Zelek"
+            }
+          ]
+        },
+        "authorString": "Nimmo J, Bright M, Yang Z, Nicholls LE, Morgan BP, Daskoulidou N, Daskoulidou N, Zelek WM.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCreation": "2026-02-03",
+        "dateOfRevision": "2026-03-11",
+        "doi": "10.1007/s00335-026-10199-3",
+        "electronicPublicationDate": "2026-02-03",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-09",
+        "firstPublicationDate": "2026-02-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12868058"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s00335-026-10199-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12868058"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12868058?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41632207",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "1",
+          "journal": {
+            "essn": "1432-1777",
+            "isoabbreviation": "Mamm Genome",
+            "issn": "0938-8990",
+            "medlineAbbreviation": "Mamm Genome",
+            "nlmid": "9100916",
+            "title": "Mammalian genome : official journal of the International Mammalian Genome Society"
+          },
+          "journalIssueId": 4112780,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "37",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "33",
+        "pmcid": "PMC12868058",
+        "pmid": "41632207",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Complement in brain and eye disease: shared mechanisms, convergent pathologies, and common therapeutic opportunities."
+      },
+      {
+        "abstractText": "Childhood constipation is a prevalent yet frequently underestimated global health concern, affecting approximately 10% of children across diverse populations. Its impact extends well beyond bowel-related symptoms, with affected children often experiencing extraintestinal manifestations such as pain in multiple sites, behavioral disturbances, and a markedly diminished quality of life. The burden is further compounded in low- and middle-income countries, where financial and logistical constraints limit access to effective treatment. The impact is intensified in developing countries due to limited healthcare resources and the unavailability of pharmacological agents. When left untreated or poorly managed, functional constipation (FC) can lead to significant long-term consequences, including persistent bowel dysfunction, psychological disorders, and progression to chronic constipation and other disorders of gut-brain interaction later in life. Pathophysiology of FC is multifactorial, involving factors such as stool withholding behavior, dietary habits, anorectal dysfunction, and psychological factors. Hence, management of FC is multifaceted, including both pharmacological and non-pharmacological interventions. Pharmacological management remains central to treatment, aimed at relieving symptoms and preventing adverse outcomes. However, current therapeutic strategies rely predominantly on a narrow range of osmotic and stimulant laxatives. Introducing new drugs that have often been shown to be effective in adults, have been found to have limited efficacy in children, with some performing no more effectively than a placebo in clinical trials. This highlights a substantial gap in pediatric pharmacotherapy and emphasizes the pressing need for new, evidence-based interventions tailored to the unique physiological and developmental characteristics of children. In this review, we critically examine the current pharmacologic options for managing childhood constipation, assess their limitations, and explore future directions of these drugs and other novel interventions for the development of more effective, accessible, and child-appropriate treatments for this common yet impactful condition.",
+        "affiliation": "Department of Paediatrics, Faculty of Medicine, University of Colombo, Colombo 00800, Sri Lanka.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Paediatrics, Faculty of Medicine, University of Colombo, Colombo 00800, Sri Lanka."
+                  },
+                  {
+                    "affiliation": "University Paediatric Unit, Lady Ridgeway Hospital for Children, Colombo 00800, Sri Lanka."
+                  }
+                ]
+              },
+              "firstName": "Shaman",
+              "fullName": "Rajindrajith S",
+              "initials": "S",
+              "lastName": "Rajindrajith"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Paediatrics, Faculty of Medicine, University of Colombo, Colombo 00800, Sri Lanka."
+                  },
+                  {
+                    "affiliation": "University Paediatric Unit, Lady Ridgeway Hospital for Children, Colombo 00800, Sri Lanka."
+                  }
+                ]
+              },
+              "firstName": "Wathsala",
+              "fullName": "Hathagoda W",
+              "initials": "W",
+              "lastName": "Hathagoda"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Pediatric Gastroenterology, Texas Children's Hospital, Houston, TX 77030, United States."
+                  }
+                ]
+              },
+              "firstName": "Keshawadhana",
+              "fullName": "Balakrishnan K",
+              "initials": "K",
+              "lastName": "Balakrishnan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physiology, Faculty of Medicine, University of Kelaniya, Ragama 11010, Sri Lanka. niranga@kln.ac.lk."
+                  }
+                ]
+              },
+              "firstName": "Niranga Manjuri",
+              "fullName": "Devanarayana NM",
+              "initials": "NM",
+              "lastName": "Devanarayana"
+            }
+          ]
+        },
+        "authorString": "Rajindrajith S, Hathagoda W, Balakrishnan K, Devanarayana NM.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-26",
+        "dateOfCreation": "2026-03-26",
+        "dateOfRevision": "2026-03-26",
+        "doi": "10.5409/wjcp.v15.i1.113925",
+        "electronicPublicationDate": "2026-03-09",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13010849"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-25",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.5409/wjcp.v15.i1.113925"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13010849"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13010849?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41884051",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "1",
+          "journal": {
+            "essn": "2219-2808",
+            "isoabbreviation": "World J Clin Pediatr",
+            "issn": "2219-2808",
+            "medlineAbbreviation": "World J Clin Pediatr",
+            "nlmid": "101627548",
+            "title": "World journal of clinical pediatrics"
+          },
+          "journalIssueId": 4159152,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "15",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Drugs",
+            "Child",
+            "Management",
+            "Pediatric",
+            "Constipation",
+            "Pharmacological Management",
+            "Therapies"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "113925",
+        "pmcid": "PMC13010849",
+        "pmid": "41884051",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Pharmacological management of childhood constipation: Bridging today's gaps with tomorrow's therapies."
+      },
+      {
+        "abstractText": "Small cell lung cancer (SCLC) remains one of the most aggressive malignancies, characterized by limited therapeutic options and persistently poor survival outcomes. This review summarizes recent advances in understanding the immunosuppressive tumor microenvironment, emerging therapeutic strategies, and biomarker-driven approaches that may enable more precise treatment. The SCLC microenvironment is dominated by suppressive immune cell populations-including regulatory T cells, tumor-associated macrophages, and myeloid-derived suppressor cells-that collectively inhibit antitumor immune responses. Integrative molecular and immunologic profiling has defined four transcription factor-driven subtypes, each exhibiting distinct immune phenotypes and differential responses to therapy. Although current immunotherapies have conferred meaningful yet modest clinical gains, combining PD-1/PD-L1 blockade with chemotherapy has improved survival in extensive-stage disease, and CTLA-4 inhibition demonstrates potential within combination regimens. Beyond immune checkpoint blockade, novel therapeutic modalities such as DLL3-targeted antibody-drug conjugates, bispecific T-cell engagers, and emerging B7-H3-directed strategies have shown encouraging activity in treatment-refractory settings. However, conventional biomarkers-including PD-L1 expression and tumor mutational burden-remain unreliable in SCLC, and the mechanisms underlying therapeutic resistance are still insufficiently understood. Future efforts should prioritize the refinement of molecular subtyping frameworks, the establishment of robust biomarker-guided patient stratification, the elucidation of resistance pathways, and the development of precision immunotherapies tailored to SCLC heterogeneity.",
+        "affiliation": "Department of Medical Oncology, the Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, Zhejiang,\u00a0China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, the Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, Zhejiang,\u00a0China."
+                  },
+                  {
+                    "affiliation": "Cancer Institute (Key Laboratory of Cancer Prevention and Intervention, Chinese National Ministry of Education), the Second Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, Zhejiang,\u00a0China."
+                  }
+                ]
+              },
+              "firstName": "Xian",
+              "fullName": "Zhong X",
+              "initials": "X",
+              "lastName": "Zhong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Linhai First Hospital, Taizhou, Zhejiang,\u00a0China."
+                  }
+                ]
+              },
+              "firstName": "Pingping",
+              "fullName": "Ji P",
+              "initials": "P",
+              "lastName": "Ji"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical Oncology, Ninghai First Hospital, Ningbo, Zhejiang,\u00a0China."
+                  }
+                ]
+              },
+              "firstName": "Lulu",
+              "fullName": "Yang L",
+              "initials": "L",
+              "lastName": "Yang"
+            }
+          ]
+        },
+        "authorString": "Zhong X, Ji P, Yang L.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Biomarkers, Tumor",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Immune Checkpoint Inhibitors",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-27",
+        "dateOfCreation": "2026-03-27",
+        "dateOfRevision": "2026-03-27",
+        "doi": "10.3389/fimmu.2026.1765497",
+        "electronicPublicationDate": "2026-03-11",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13013288"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-26",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fimmu.2026.1765497"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13013288"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13013288?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41890737",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "1664-3224",
+            "isoabbreviation": "Front Immunol",
+            "issn": "1664-3224",
+            "medlineAbbreviation": "Front Immunol",
+            "nlmid": "101560960",
+            "title": "Frontiers in immunology"
+          },
+          "journalIssueId": 4103356,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "17",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Immunotherapy",
+            "Biomarker",
+            "small cell lung cancer",
+            "Molecular subtyping",
+            "Immunosuppressive Tumormicroenvironment"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Animals",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Lung Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Immunotherapy",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Small Cell Lung Carcinoma",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Tumor Microenvironment",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Biomarkers, Tumor",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Immune Checkpoint Inhibitors",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1765497",
+        "pmcid": "PMC13013288",
+        "pmid": "41890737",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Small cell lung cancer: from immunobiological mechanisms to clinical advances."
+      }
+    ]
+  },
+  "version": "6.9"
+}

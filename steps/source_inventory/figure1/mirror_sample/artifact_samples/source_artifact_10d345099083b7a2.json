@@ -1,0 +1,263 @@
+{
+  "artifact_id": "source_artifact_10d345099083b7a2",
+  "byte_size": 8262,
+  "file_name": "007_pilot_10_1176_appi_ajp_162_1_184.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/007_pilot_10_1176_appi_ajp_162_1_184.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1176/appi.ajp.162.1.184\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>This pilot study tests the usefulness of the Treatment Initiation Program (TIP) to improve depression in older adults. The TIP is an individualized, early intervention to address older adults' attitudes (e.g., perceived need for care and stigma) about depression and treatment.<h4>Method</h4>Older adults with major depression seeking mental health treatment were randomly assigned to either pharmacotherapy alone or with the TIP. Severity was assessed with the Hamilton Depression Rating Scale at admission and at 6, 12, and 24 weeks. Mixed-effects models were calculated to evaluate the effects of the TIP.<h4>Results</h4>In mixed-effects models, TIP patients had a greater decrease in depression severity and reported less hopelessness than the patients receiving usual care. TIP patients were more likely to remain in treatment 12 and 24 weeks after seeking care.<h4>Conclusions</h4>These data support the usefulness of the TIP to improve depression outcomes and treatment participation among older adults.",
+          "affiliation": "Geriatric Outpatient Clinic, Westchester Division, Weill Medical College of Cornell University, White Plains, NY 10605, USA. jsirey@med.cornell.edu",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5677-7001"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8587-8933"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Geriatric Outpatient Clinic, Westchester Division, Weill Medical College of Cornell University, White Plains, NY 10605, USA. jsirey@med.cornell.edu"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8587-8933"
+                },
+                "firstName": "Jo Anne",
+                "fullName": "Sirey JA",
+                "initials": "JA",
+                "lastName": "Sirey"
+              },
+              {
+                "firstName": "Martha L",
+                "fullName": "Bruce ML",
+                "initials": "ML",
+                "lastName": "Bruce"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5677-7001"
+                },
+                "firstName": "George S",
+                "fullName": "Alexopoulos GS",
+                "initials": "GS",
+                "lastName": "Alexopoulos"
+              }
+            ]
+          },
+          "authorString": "Sirey JA, Bruce ML, Alexopoulos GS.",
+          "citedByCount": 49,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2005-02-18",
+          "dateOfCreation": "2004-12-31",
+          "dateOfRevision": "2026-01-28",
+          "doi": "10.1176/appi.ajp.162.1.184",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2005-01-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1176/appi.ajp.162.1.184"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "K23 MH-66381",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "15625220",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2005 Jan",
+            "issue": "1",
+            "journal": {
+              "essn": "1535-7228",
+              "isoabbreviation": "Am J Psychiatry",
+              "issn": "0002-953X",
+              "medlineAbbreviation": "Am J Psychiatry",
+              "nlmid": "0370512",
+              "title": "The American journal of psychiatry"
+            },
+            "journalIssueId": 1213529,
+            "monthOfPublication": 1,
+            "printPublicationDate": "2005-01-01",
+            "volume": "162",
+            "yearOfPublication": 2005
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Ambulatory Care",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Attitude to Health",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Psychotherapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Age Factors",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Status",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged, 80 and over",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Patient Acceptance of Health Care",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Major Depressive Disorder",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "184-186",
+          "pmid": "15625220",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Clinical Trial",
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2005",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "The Treatment Initiation Program: an intervention to improve depression outcomes in older adults."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "5986dbb744a42e3e74175361ddab8d0842719c67b96230580ce436b823959745"
+}

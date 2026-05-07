@@ -1,0 +1,253 @@
+{
+  "artifact_id": "source_artifact_47f0cd0abd2d5a6e",
+  "byte_size": 8605,
+  "file_name": "001_full_10_1080_14622200601078525.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/001_full_10_1080_14622200601078525.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1080/14622200601078525\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "This investigation evaluated the efficacy of expressive writing as a treatment adjunct to a brief office smoking cessation intervention plus nicotine patch therapy in young adults. Participants aged 18-24 years were randomized to a brief office intervention (n=99) or to an expressive writing plus brief office intervention (n=97). Both conditions received four individual visits plus 6 weeks of nicotine patch therapy, which began on the quit date following the week 2 visit. Participants in the expressive writing plus brief intervention condition wrote for 2 consecutive days before and 3 consecutive days after the quit date. The brief office intervention group completed a control writing assignment. At end of treatment (week 8), biochemically confirmed 7-day point-prevalence abstinence for the expressive writing plus brief office intervention condition was significantly greater than for the brief office condition (33% vs. 20%, p=.043, OR=2.0, 95% CI=1.0-3.7, from a logistic regression adjusting for gender). At 24 and 52 weeks, abstinence rates were similar for the brief office intervention versus expressive writing plus brief office intervention (12% vs. 11% at 24 weeks; 11% vs. 11% at 52 weeks). The results suggest that expressive writing has promise as a smoking cessation treatment adjunct for young adults. Lengthier interventions or the use of boosters should be tested to extend treatment effects. However, participants reported a low level of enthusiasm for the expressive writing, which may be a barrier to implementing it over a longer time frame. Therefore, other modes of delivering expressive writing to young adult cigarette smokers should be explored.",
+          "affiliation": "Mayo Clinic Cancer Center, Jacksonville, FL 32224, USA. ames.steven@mayo.edu",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9091-214X"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Mayo Clinic Cancer Center, Jacksonville, FL 32224, USA. ames.steven@mayo.edu"
+                    }
+                  ]
+                },
+                "firstName": "Steven C",
+                "fullName": "Ames SC",
+                "initials": "SC",
+                "lastName": "Ames"
+              },
+              {
+                "firstName": "Christi A",
+                "fullName": "Patten CA",
+                "initials": "CA",
+                "lastName": "Patten"
+              },
+              {
+                "firstName": "Chudley E",
+                "fullName": "Werch CE",
+                "initials": "CE",
+                "lastName": "Werch"
+              },
+              {
+                "firstName": "Darrell R",
+                "fullName": "Schroeder DR",
+                "initials": "DR",
+                "lastName": "Schroeder"
+              },
+              {
+                "firstName": "Susanna R",
+                "fullName": "Stevens SR",
+                "initials": "SR",
+                "lastName": "Stevens"
+              },
+              {
+                "firstName": "Paul A",
+                "fullName": "Fredrickson PA",
+                "initials": "PA",
+                "lastName": "Fredrickson"
+              },
+              {
+                "firstName": "J Dan",
+                "fullName": "Echols JD",
+                "initials": "JD",
+                "lastName": "Echols"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9091-214X"
+                },
+                "firstName": "James W",
+                "fullName": "Pennebaker JW",
+                "initials": "JW",
+                "lastName": "Pennebaker"
+              },
+              {
+                "firstName": "Richard D",
+                "fullName": "Hurt RD",
+                "initials": "RD",
+                "lastName": "Hurt"
+              }
+            ]
+          },
+          "authorString": "Ames SC, Patten CA, Werch CE, Schroeder DR, Stevens SR, Fredrickson PA, Echols JD, Pennebaker JW, Hurt RD.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Nicotine",
+                "registryNumber": "6M3C89ZY6R"
+              }
+            ]
+          },
+          "citedByCount": 16,
+          "dateOfCompletion": "2007-04-05",
+          "dateOfCreation": "2007-03-17",
+          "dateOfRevision": "2022-03-30",
+          "doi": "10.1080/14622200601078525",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2007-02-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1080/14622200601078525"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "N",
+          "hasReferences": "N",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "17365749",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2007 Feb",
+            "issue": "2",
+            "journal": {
+              "essn": "1469-994X",
+              "isoabbreviation": "Nicotine Tob Res",
+              "issn": "1462-2203",
+              "medlineAbbreviation": "Nicotine Tob Res",
+              "nlmid": "9815751",
+              "title": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco"
+            },
+            "journalIssueId": 1383978,
+            "monthOfPublication": 2,
+            "printPublicationDate": "2007-02-01",
+            "volume": "9",
+            "yearOfPublication": 2007
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Nicotine",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Smoking",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Smoking Cessation",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Writing",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "185-194",
+          "pmid": "17365749",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2007",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Expressive writing as a smoking cessation treatment adjunct for young adult smokers."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "e9287f8f07c93fc9ca1678edd54b290f879d4ab626cceec294ef18ffdd77281c"
+}

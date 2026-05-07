@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_5863ceb660c91b8e",
+  "byte_size": 394,
+  "columns": [
+    "Study",
+    "ES.Metric",
+    "Value",
+    "N",
+    "Reverse"
+  ],
+  "estimated_data_rows": 10,
+  "file_name": "Summary Effect Sizes - Interaction Effects.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/Summary Effect Sizes - Interaction Effects.csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "ES.Metric": "pseudo R2",
+      "N": 1103,
+      "Reverse": "yes",
+      "Study": "Payne",
+      "Value": 0.008
+    },
+    {
+      "ES.Metric": "g",
+      "N": 3512,
+      "Reverse": "no",
+      "Study": "Risen",
+      "Value": 0.076614
+    },
+    {
+      "ES.Metric": "pseudo R2",
+      "N": 621,
+      "Reverse": "no",
+      "Study": "Vohs",
+      "Value": 0.000680393
+    },
+    {
+      "ES.Metric": "pseudo R2",
+      "N": 276,
+      "Reverse": "yes",
+      "Study": "Crosby",
+      "Value": 0.0001
+    },
+    {
+      "ES.Metric": "partial eta2",
+      "N": 1460,
+      "Reverse": "no",
+      "Study": "Forster",
+      "Value": 0.001
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "d9b66b9120c132d395b55b7d5c0d0376ca2cf3a9fa4256f3d53f76711264ce34"
+}

@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_fd4725ad16ebaefb",
+  "byte_size": 5021,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 89,
+  "file_name": "ft047.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/Zr/ft047.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": -1.417136333,
+      "obs_ID": "obs001",
+      "study_ID": "Lode & Le Jacques, 2003",
+      "var": 0.012820513,
+      "year_pub": 2003
+    },
+    {
+      "es": 0.123625981,
+      "obs_ID": "obs002",
+      "study_ID": "Cherry, 1992",
+      "var": 0.032258065,
+      "year_pub": 1992
+    },
+    {
+      "es": 0.237359351,
+      "obs_ID": "obs003",
+      "study_ID": "Cherry, 1992",
+      "var": 0.013513514,
+      "year_pub": 1992
+    },
+    {
+      "es": 0.068105102,
+      "obs_ID": "obs004",
+      "study_ID": "Cherry, 1992",
+      "var": 0.018867925,
+      "year_pub": 1992
+    },
+    {
+      "es": -0.162413138,
+      "obs_ID": "obs005",
+      "study_ID": "Cherry, 1993",
+      "var": 0.012820513,
+      "year_pub": 1993
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "b33fa84e1a8a68f626c29f69cdfdc66d5c198f61c29aa9230a233eab738995b7"
+}

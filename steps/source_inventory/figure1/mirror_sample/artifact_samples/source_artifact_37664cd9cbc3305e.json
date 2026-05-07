@@ -1,0 +1,359 @@
+{
+  "artifact_id": "source_artifact_37664cd9cbc3305e",
+  "byte_size": 11391,
+  "file_name": "026_full_10_1542_peds_2013_2373.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/026_full_10_1542_peds_2013_2373.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1542/peds.2013-2373\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Acute otitis media (AOM) is a common childhood illness and the leading indication for antibiotic prescriptions for US children. Xylitol, a naturally occurring sugar alcohol, can reduce AOM when given 5 times per day as a gum or syrup, but a more convenient dosing regimen is needed for widespread adoption.<h4>Methods</h4>We designed a pragmatic practice-based randomized controlled trial to determine if viscous xylitol solution at a dose of 5 g 3 times per day could reduce the occurrence of clinically diagnosed AOM among otitis-prone children 6 months through 5 years of age.<h4>Results</h4>A total of 326 subjects were enrolled, with 160 allocated to xylitol and 166 to placebo. In the primary analysis of time to first clinically diagnosed AOM episode, the hazard ratio for xylitol versus placebo recipients was 0.88 (95% confidence interval [CI] 0.61 to 1.3). In secondary analyses, the incidence of AOM was 0.53 episodes per 90 days in the xylitol group versus 0.59 in the placebo group (difference 0.06; 95% CI -0.25 to 0.13); total antibiotic use was 6.8 days per 90 days in the xylitol group versus 6.4 in the placebo group (difference 0.4; 95% CI -1.8 to 2.7). The lack of effectiveness was not explained by nonadherence to treatment, as the hazard ratio for those taking nearly all assigned xylitol compared with those taking none was 0.93 (95% CI 0.56 to 1.57).<h4>Conclusions</h4>Viscous xylitol solution in a dose of 5 g 3 times per day was ineffective in reducing clinically diagnosed AOM among otitis-prone children.",
+          "affiliation": "Pediatric Physician's Organization at Children's, Brookline, Massachusetts;",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2012-5404"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6591-209X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0950-6799"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Pediatric Physician's Organization at Children's, Brookline, Massachusetts;"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2012-5404"
+                },
+                "firstName": "Louis",
+                "fullName": "Vernacchio L",
+                "initials": "L",
+                "lastName": "Vernacchio"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6591-209X"
+                },
+                "firstName": "Michael J",
+                "fullName": "Corwin MJ",
+                "initials": "MJ",
+                "lastName": "Corwin"
+              },
+              {
+                "firstName": "Richard M",
+                "fullName": "Vezina RM",
+                "initials": "RM",
+                "lastName": "Vezina"
+              },
+              {
+                "firstName": "Steven I",
+                "fullName": "Pelton SI",
+                "initials": "SI",
+                "lastName": "Pelton"
+              },
+              {
+                "firstName": "Henry A",
+                "fullName": "Feldman HA",
+                "initials": "HA",
+                "lastName": "Feldman"
+              },
+              {
+                "firstName": "Tamera",
+                "fullName": "Coyne-Beasley T",
+                "initials": "T",
+                "lastName": "Coyne-Beasley"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0950-6799"
+                },
+                "firstName": "Allen A",
+                "fullName": "Mitchell AA",
+                "initials": "AA",
+                "lastName": "Mitchell"
+              }
+            ]
+          },
+          "authorString": "Vernacchio L, Corwin MJ, Vezina RM, Pelton SI, Feldman HA, Coyne-Beasley T, Mitchell AA.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Sweetening Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Xylitol",
+                "registryNumber": "VCQ006KQ1E"
+              }
+            ]
+          },
+          "citedByCount": 15,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2014-04-01",
+          "dateOfCreation": "2014-01-08",
+          "dateOfRevision": "2026-01-08",
+          "doi": "10.1542/peds.2013-2373",
+          "electronicPublicationDate": "2014-01-06",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2014-01-11",
+          "firstPublicationDate": "2014-01-06",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3904279"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-10",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1542/peds.2013-2373"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3904279"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3904279?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1542/peds.2013-2373"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DC",
+                "agency": "NIDCD NIH HHS",
+                "grantId": "RC1 DC010668",
+                "orderIn": 0
+              },
+              {
+                "acronym": "RR",
+                "agency": "NCRR NIH HHS",
+                "grantId": "UL1 RR025758",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DC",
+                "agency": "NIDCD NIH HHS",
+                "grantId": "RC1DC010668",
+                "orderIn": 0
+              },
+              {
+                "acronym": "TR",
+                "agency": "NCATS NIH HHS",
+                "grantId": "UL1 TR001111",
+                "orderIn": 0
+              },
+              {
+                "acronym": "RR",
+                "agency": "NCRR NIH HHS",
+                "grantId": "UL1 RR-025758",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "24394686",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2014 Feb",
+            "issue": "2",
+            "journal": {
+              "essn": "1098-4275",
+              "isoabbreviation": "Pediatrics",
+              "issn": "0031-4005",
+              "medlineAbbreviation": "Pediatrics",
+              "nlmid": "0376422",
+              "title": "Pediatrics"
+            },
+            "journalIssueId": 2121779,
+            "monthOfPublication": 2,
+            "printPublicationDate": "2014-02-01",
+            "volume": "133",
+            "yearOfPublication": 2014
+          },
+          "keywordList": {
+            "keyword": [
+              "Otitis media"
+            ]
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Otitis Media",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Acute Disease",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Xylitol",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Sweetening Agents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Administration, Oral",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Single-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Infant",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "289-295",
+          "pmcid": "PMC3904279",
+          "pmid": "24394686",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Randomized Controlled Trial",
+              "Pragmatic Clinical Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2014",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Xylitol syrup for the prevention of acute otitis media.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "77f22711f373d2c4613769d681b2dc85c24f6d39f27bd84973f7300cb2ccd27d"
+}

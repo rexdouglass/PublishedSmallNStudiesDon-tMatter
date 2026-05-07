@@ -1,0 +1,928 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "citationCount": 0,
+        "container": {},
+        "contentUrl": null,
+        "contributors": [
+          {
+            "affiliation": [
+              "Sociology of Law Department , Lund University"
+            ],
+            "contributorType": "Other",
+            "familyName": "Bergwall",
+            "givenName": "Peter",
+            "name": "Bergwall, Peter",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0001-7300-0501",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "created": "2022-09-14T12:27:24Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Sociology of Law Department , Lund University"
+            ],
+            "familyName": "Dahlstrand",
+            "givenName": "Karl",
+            "name": "Dahlstrand, Karl",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0001-8875-3231",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2022-09-14",
+            "dateType": "Issued"
+          },
+          {
+            "date": "2018/2019",
+            "dateType": "Collected"
+          },
+          {
+            "date": "2019/2020",
+            "dateType": "Collected"
+          },
+          {
+            "date": "2018/2020",
+            "dateType": "Coverage"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This study is a replication of an original study that was published about 10 years ago in 2012 in the doctoral dissertation \"Violation and Satisfaction: A Sociology of Law Study of Non-Pecuniary Damages to Victims of Crime\" by Karl Dahlstrand. The replication study was conducted to investigate similarities and changes in the \"general legal consciousness\" in relation to compensation for violations of crime victims and has been carried out in collaboration with the Swedish Crime Victim Authority, funded by \u201cUlla V Bondeson's Foundation for socio-legal and criminological research\" and with Peter Bergwall as research assistant.\n\nThe project collected data through two surveys: one web survey with repondents from the general public, and one postal survey mailed to crime victims who received criminal injury compensation from the Swedish Crime Victim Authority.\n\nFor more information on the original study, refer to the catalogue entry for \"Violation and Satisfaction. A Sociology of Law Study of Non-Pecuniary Damages to Victims of Crime\": https://doi.org/10.5878/002817\n\nFor more information on the replication study and its methods, refer to the (Swedish only) report: \"Kr\u00e4nkning och uppr\u00e4ttelse. En replikation av en r\u00e4ttssociologisk enk\u00e4tstudie\" https://lup.lub.lu.se/record/40517edf-4477-4192-ba91-a872f20a9da0\n\n2021 Allm\u00e4nheten reversed.sav: SPSS file with survey responses from the online survey targeting the general public.\n2021 Brottsoffer reversed.sav: SPSS file with survey responses from individuals who have received criminal injury compensation from the Swedish Crime Victim Authority.\nThe data is also available in .csv format (UTF-8).\n\nRefer to the attached surveys (Swedish) as well as the published report for the survey structure. Refer to the attached code books for variable descriptions.\nThe survey text answers (single comment field) are not included in this dataset.",
+            "descriptionType": "Abstract",
+            "lang": "en"
+          },
+          {
+            "description": "Studien \u00e4r en replikation p\u00e5 en ursprunglig studie som publicerades 2012 i avhandlingen \"Kr\u00e4nkning och uppr\u00e4ttelse. En r\u00e4ttssociologisk studie av kr\u00e4nkningsers\u00e4ttning till brottsoffer\" av Karl Dahlstrand. Replikationen gjordes f\u00f6r att unders\u00f6ka likheter och f\u00f6r\u00e4ndringar i det \"allm\u00e4nna r\u00e4ttsmedvetandet\" i relation till kr\u00e4nkningsers\u00e4ttning till brottsoffer och har genomf\u00f6rts i samarbete med Brottsoffermyndigheten, finansierats av \u201dUlla V Bondesons Stiftelse f\u00f6r r\u00e4ttssociologisk och kriminologisk forskning\u201d och med Peter Bergwall som forskningsassistent.\n\nProjektet best\u00e5r av empiriinsamling i form av tv\u00e5 enk\u00e4tunders\u00f6kningar; en webbenk\u00e4t som v\u00e4nder sig till urval av allm\u00e4nheten och en traditionell postenk\u00e4t som v\u00e4nder sig till ett urval brottsoffer som erh\u00e5llit kr\u00e4nkningsers\u00e4ttning fr\u00e5n Brottsoffermyndigheten.\n\nF\u00f6r mer information om den ursprungliga studien, se katalogpost f\u00f6r \u201dKr\u00e4nkning och uppr\u00e4ttelse. En r\u00e4ttssociologisk studie av kr\u00e4nkningsers\u00e4ttning till brottsoffer\u201d: https://doi.org/10.5878/002817\n\nF\u00f6r mer information om replikationsstudien och dess metod, se rapporten \"Kr\u00e4nkning och uppr\u00e4ttelse. En replikation av en r\u00e4ttssociologisk enk\u00e4tstudie\" https://lup.lub.lu.se/record/40517edf-4477-4192-ba91-a872f20a9da0\n\n2021 Allm\u00e4nheten reversed.sav: SPSS-fil med besvarade webbenk\u00e4ter av respondentgruppen \"allm\u00e4nheten\".\n2021 Brottsoffer reversed.sav: SPSS-fil med besvarade enk\u00e4ter av respondentgruppen \"brottsoffer som f\u00e5tt kompensation\".\nDatafiler i .csv-format (UTF-8) finns ocks\u00e5 tillg\u00e4ngliga.\n\nSe medf\u00f6ljande enk\u00e4ter samt den publicerade rapporten f\u00f6r struktur. Se medf\u00f6ljande kodb\u00f6cker f\u00f6r variabelbeskrivningar.\nEnk\u00e4ternas fritextf\u00e4lt f\u00f6r kommentarer finns inte publicerat i detta dataset.",
+            "descriptionType": "Abstract",
+            "lang": "sv"
+          }
+        ],
+        "doi": "10.5878/9xbq-4g43",
+        "downloadCount": 0,
+        "formats": [],
+        "fundingReferences": [
+          {
+            "awardTitle": "Kr\u00e4nkning och uppr\u00e4ttelse. En replikation av en r\u00e4ttssociologisk enk\u00e4tstudie",
+            "funderName": "Ulla V. Bondesons stiftelse for retssociologisk og kriminologisk forskning"
+          }
+        ],
+        "geoLocations": [
+          {
+            "geoLocationPlace": "Sweden"
+          }
+        ],
+        "identifiers": [],
+        "isActive": true,
+        "language": "sv",
+        "metadataVersion": 14,
+        "partCount": 0,
+        "partOfCount": 0,
+        "publicationYear": 2022,
+        "published": null,
+        "publisher": "Lund University",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2022-09-14T12:27:25Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.5878/e0kk-dn20",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsVersionOf",
+            "resourceTypeGeneral": "Dataset"
+          },
+          {
+            "relatedIdentifier": "9789178959143",
+            "relatedIdentifierType": "ISBN",
+            "relationType": "IsReferencedBy",
+            "resourceTypeGeneral": "Text"
+          },
+          {
+            "relatedIdentifier": "9172673427",
+            "relatedIdentifierType": "ISBN",
+            "relationType": "IsReferencedBy",
+            "resourceTypeGeneral": "Text"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rightsUri": "info:eu-repo/semantics/openAccess"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [
+          "1.49 MiB"
+        ],
+        "source": "api",
+        "state": "findable",
+        "subjects": [
+          {
+            "classificationCode": "36c14a72-ed70-4146-9898-7b98d6f35764",
+            "lang": "en",
+            "subject": "LAW ENFORCEMENT",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/36c14a72-ed70-4146-9898-7b98d6f35764"
+          },
+          {
+            "classificationCode": "36c14a72-ed70-4146-9898-7b98d6f35764",
+            "lang": "sv",
+            "subject": "UPPR\u00c4TTH\u00c5LLANDE AV LAG OCH ORDNING",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/36c14a72-ed70-4146-9898-7b98d6f35764"
+          },
+          {
+            "classificationCode": "a3ebad20-f4d2-4940-99d1-68e61c7716c8",
+            "lang": "en",
+            "subject": "CRIME VICTIMS",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/a3ebad20-f4d2-4940-99d1-68e61c7716c8"
+          },
+          {
+            "classificationCode": "a3ebad20-f4d2-4940-99d1-68e61c7716c8",
+            "lang": "sv",
+            "subject": "BROTTSOFFER",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/a3ebad20-f4d2-4940-99d1-68e61c7716c8"
+          },
+          {
+            "classificationCode": "613bf87c-f01f-4ac6-bb3d-edf71213a54b",
+            "lang": "en",
+            "subject": "LEGAL DAMAGES",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/613bf87c-f01f-4ac6-bb3d-edf71213a54b"
+          },
+          {
+            "classificationCode": "613bf87c-f01f-4ac6-bb3d-edf71213a54b",
+            "lang": "sv",
+            "subject": "SKADEST\u00c5ND",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/613bf87c-f01f-4ac6-bb3d-edf71213a54b"
+          },
+          {
+            "classificationCode": "d02cf9bc-139a-4464-ab45-f52facd698a0",
+            "lang": "en",
+            "subject": "RESTORATIVE JUSTICE",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/d02cf9bc-139a-4464-ab45-f52facd698a0"
+          },
+          {
+            "classificationCode": "d02cf9bc-139a-4464-ab45-f52facd698a0",
+            "lang": "sv",
+            "subject": "REPARATIV R\u00c4TTVISA",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/d02cf9bc-139a-4464-ab45-f52facd698a0"
+          },
+          {
+            "lang": "en",
+            "subject": "sociology of law"
+          },
+          {
+            "lang": "sv",
+            "subject": "r\u00e4ttssociologi"
+          },
+          {
+            "lang": "en",
+            "subject": "violation"
+          },
+          {
+            "lang": "sv",
+            "subject": "kr\u00e4nkning"
+          },
+          {
+            "classificationCode": "LawCrimeAndLegalSystems",
+            "lang": "en",
+            "subject": "LAW, CRIME AND LEGAL SYSTEMS",
+            "subjectScheme": "CESSDA Topic Classification",
+            "valueUri": "https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=LawCrimeAndLegalSystems"
+          },
+          {
+            "classificationCode": "LawCrimeAndLegalSystems",
+            "lang": "sv",
+            "subject": "LAG, BROTTSLIGHET OCH R\u00c4TTSSYSTEM",
+            "subjectScheme": "CESSDA Topic Classification",
+            "valueUri": "https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=LawCrimeAndLegalSystems"
+          },
+          {
+            "classificationCode": "50503",
+            "lang": "en",
+            "subject": "Other Legal Research",
+            "subjectScheme": "Standard f\u00f6r svensk indelning av forsknings\u00e4mnen 2025"
+          },
+          {
+            "classificationCode": "50503",
+            "lang": "sv",
+            "subject": "Annan r\u00e4ttsvetenskaplig forskning",
+            "subjectScheme": "Standard f\u00f6r svensk indelning av forsknings\u00e4mnen 2025"
+          }
+        ],
+        "titles": [
+          {
+            "lang": "en",
+            "title": "Violation and Satisfaction. A Sociology of Law Study of Non-Pecuniary Damages to Victims of Crime. Replication."
+          },
+          {
+            "lang": "sv",
+            "title": "Kr\u00e4nkning och uppr\u00e4ttelse. En r\u00e4ttssociologisk studie av kr\u00e4nkningsers\u00e4ttning till brottsoffer. Replika."
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-03-23T10:17:07Z",
+        "url": "https://researchdata.se/catalogue/dataset/2022-97-1/1",
+        "version": "1",
+        "versionCount": 0,
+        "versionOfCount": 1,
+        "viewCount": 0
+      },
+      "id": "10.5878/9xbq-4g43",
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "snd.snd",
+            "type": "clients"
+          }
+        }
+      },
+      "type": "dois"
+    },
+    {
+      "attributes": {
+        "citationCount": 0,
+        "container": {},
+        "contentUrl": null,
+        "contributors": [
+          {
+            "affiliation": [
+              "Sociology of Law Department , Lund University"
+            ],
+            "contributorType": "Other",
+            "familyName": "Bergwall",
+            "givenName": "Peter",
+            "name": "Bergwall, Peter",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0001-7300-0501",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "created": "2022-09-14T12:27:24Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Sociology of Law Department , Lund University"
+            ],
+            "familyName": "Dahlstrand",
+            "givenName": "Karl",
+            "name": "Dahlstrand, Karl",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0001-8875-3231",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2022-09-14",
+            "dateType": "Issued"
+          },
+          {
+            "date": "2018/2019",
+            "dateType": "Collected"
+          },
+          {
+            "date": "2019/2020",
+            "dateType": "Collected"
+          },
+          {
+            "date": "2018/2020",
+            "dateType": "Coverage"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This study is a replication of an original study that was published about 10 years ago in 2012 in the doctoral dissertation \"Violation and Satisfaction: A Sociology of Law Study of Non-Pecuniary Damages to Victims of Crime\" by Karl Dahlstrand. The replication study was conducted to investigate similarities and changes in the \"general legal consciousness\" in relation to compensation for violations of crime victims and has been carried out in collaboration with the Swedish Crime Victim Authority, funded by \u201cUlla V Bondeson's Foundation for socio-legal and criminological research\" and with Peter Bergwall as research assistant.\n\nThe project collected data through two surveys: one web survey with repondents from the general public, and one postal survey mailed to crime victims who received criminal injury compensation from the Swedish Crime Victim Authority.\n\nFor more information on the original study, refer to the catalogue entry for \"Violation and Satisfaction. A Sociology of Law Study of Non-Pecuniary Damages to Victims of Crime\": https://doi.org/10.5878/002817\n\nFor more information on the replication study and its methods, refer to the (Swedish only) report: \"Kr\u00e4nkning och uppr\u00e4ttelse. En replikation av en r\u00e4ttssociologisk enk\u00e4tstudie\" https://lup.lub.lu.se/record/40517edf-4477-4192-ba91-a872f20a9da0\n\n2021 Allm\u00e4nheten reversed.sav: SPSS file with survey responses from the online survey targeting the general public.\n2021 Brottsoffer reversed.sav: SPSS file with survey responses from individuals who have received criminal injury compensation from the Swedish Crime Victim Authority.\nThe data is also available in .csv format (UTF-8).\n\nRefer to the attached surveys (Swedish) as well as the published report for the survey structure. Refer to the attached code books for variable descriptions.\nThe survey text answers (single comment field) are not included in this dataset.",
+            "descriptionType": "Abstract",
+            "lang": "en"
+          },
+          {
+            "description": "Studien \u00e4r en replikation p\u00e5 en ursprunglig studie som publicerades 2012 i avhandlingen \"Kr\u00e4nkning och uppr\u00e4ttelse. En r\u00e4ttssociologisk studie av kr\u00e4nkningsers\u00e4ttning till brottsoffer\" av Karl Dahlstrand. Replikationen gjordes f\u00f6r att unders\u00f6ka likheter och f\u00f6r\u00e4ndringar i det \"allm\u00e4nna r\u00e4ttsmedvetandet\" i relation till kr\u00e4nkningsers\u00e4ttning till brottsoffer och har genomf\u00f6rts i samarbete med Brottsoffermyndigheten, finansierats av \u201dUlla V Bondesons Stiftelse f\u00f6r r\u00e4ttssociologisk och kriminologisk forskning\u201d och med Peter Bergwall som forskningsassistent.\n\nProjektet best\u00e5r av empiriinsamling i form av tv\u00e5 enk\u00e4tunders\u00f6kningar; en webbenk\u00e4t som v\u00e4nder sig till urval av allm\u00e4nheten och en traditionell postenk\u00e4t som v\u00e4nder sig till ett urval brottsoffer som erh\u00e5llit kr\u00e4nkningsers\u00e4ttning fr\u00e5n Brottsoffermyndigheten.\n\nF\u00f6r mer information om den ursprungliga studien, se katalogpost f\u00f6r \u201dKr\u00e4nkning och uppr\u00e4ttelse. En r\u00e4ttssociologisk studie av kr\u00e4nkningsers\u00e4ttning till brottsoffer\u201d: https://doi.org/10.5878/002817\n\nF\u00f6r mer information om replikationsstudien och dess metod, se rapporten \"Kr\u00e4nkning och uppr\u00e4ttelse. En replikation av en r\u00e4ttssociologisk enk\u00e4tstudie\" https://lup.lub.lu.se/record/40517edf-4477-4192-ba91-a872f20a9da0\n\n2021 Allm\u00e4nheten reversed.sav: SPSS-fil med besvarade webbenk\u00e4ter av respondentgruppen \"allm\u00e4nheten\".\n2021 Brottsoffer reversed.sav: SPSS-fil med besvarade enk\u00e4ter av respondentgruppen \"brottsoffer som f\u00e5tt kompensation\".\nDatafiler i .csv-format (UTF-8) finns ocks\u00e5 tillg\u00e4ngliga.\n\nSe medf\u00f6ljande enk\u00e4ter samt den publicerade rapporten f\u00f6r struktur. Se medf\u00f6ljande kodb\u00f6cker f\u00f6r variabelbeskrivningar.\nEnk\u00e4ternas fritextf\u00e4lt f\u00f6r kommentarer finns inte publicerat i detta dataset.",
+            "descriptionType": "Abstract",
+            "lang": "sv"
+          }
+        ],
+        "doi": "10.5878/e0kk-dn20",
+        "downloadCount": 0,
+        "formats": [],
+        "fundingReferences": [
+          {
+            "awardTitle": "Kr\u00e4nkning och uppr\u00e4ttelse. En replikation av en r\u00e4ttssociologisk enk\u00e4tstudie",
+            "funderName": "Ulla V. Bondesons stiftelse for retssociologisk og kriminologisk forskning"
+          }
+        ],
+        "geoLocations": [
+          {
+            "geoLocationPlace": "Sweden"
+          }
+        ],
+        "identifiers": [],
+        "isActive": true,
+        "language": "sv",
+        "metadataVersion": 16,
+        "partCount": 0,
+        "partOfCount": 0,
+        "publicationYear": 2022,
+        "published": null,
+        "publisher": "Lund University",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2022-09-14T12:27:24Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.5878/9xbq-4g43",
+            "relatedIdentifierType": "DOI",
+            "relationType": "HasVersion",
+            "resourceTypeGeneral": "Dataset"
+          },
+          {
+            "relatedIdentifier": "9789178959143",
+            "relatedIdentifierType": "ISBN",
+            "relationType": "IsReferencedBy",
+            "resourceTypeGeneral": "Text"
+          },
+          {
+            "relatedIdentifier": "9172673427",
+            "relatedIdentifierType": "ISBN",
+            "relationType": "IsReferencedBy",
+            "resourceTypeGeneral": "Text"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rightsUri": "info:eu-repo/semantics/openAccess"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [
+          "1.49 MiB"
+        ],
+        "source": "api",
+        "state": "findable",
+        "subjects": [
+          {
+            "classificationCode": "36c14a72-ed70-4146-9898-7b98d6f35764",
+            "lang": "en",
+            "subject": "LAW ENFORCEMENT",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/36c14a72-ed70-4146-9898-7b98d6f35764"
+          },
+          {
+            "classificationCode": "36c14a72-ed70-4146-9898-7b98d6f35764",
+            "lang": "sv",
+            "subject": "UPPR\u00c4TTH\u00c5LLANDE AV LAG OCH ORDNING",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/36c14a72-ed70-4146-9898-7b98d6f35764"
+          },
+          {
+            "classificationCode": "a3ebad20-f4d2-4940-99d1-68e61c7716c8",
+            "lang": "en",
+            "subject": "CRIME VICTIMS",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/a3ebad20-f4d2-4940-99d1-68e61c7716c8"
+          },
+          {
+            "classificationCode": "a3ebad20-f4d2-4940-99d1-68e61c7716c8",
+            "lang": "sv",
+            "subject": "BROTTSOFFER",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/a3ebad20-f4d2-4940-99d1-68e61c7716c8"
+          },
+          {
+            "classificationCode": "613bf87c-f01f-4ac6-bb3d-edf71213a54b",
+            "lang": "en",
+            "subject": "LEGAL DAMAGES",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/613bf87c-f01f-4ac6-bb3d-edf71213a54b"
+          },
+          {
+            "classificationCode": "613bf87c-f01f-4ac6-bb3d-edf71213a54b",
+            "lang": "sv",
+            "subject": "SKADEST\u00c5ND",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/613bf87c-f01f-4ac6-bb3d-edf71213a54b"
+          },
+          {
+            "classificationCode": "d02cf9bc-139a-4464-ab45-f52facd698a0",
+            "lang": "en",
+            "subject": "RESTORATIVE JUSTICE",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/d02cf9bc-139a-4464-ab45-f52facd698a0"
+          },
+          {
+            "classificationCode": "d02cf9bc-139a-4464-ab45-f52facd698a0",
+            "lang": "sv",
+            "subject": "REPARATIV R\u00c4TTVISA",
+            "subjectScheme": "ELSST",
+            "valueUri": "https://elsst.cessda.eu/id/6/d02cf9bc-139a-4464-ab45-f52facd698a0"
+          },
+          {
+            "lang": "en",
+            "subject": "sociology of law"
+          },
+          {
+            "lang": "sv",
+            "subject": "r\u00e4ttssociologi"
+          },
+          {
+            "lang": "en",
+            "subject": "violation"
+          },
+          {
+            "lang": "sv",
+            "subject": "kr\u00e4nkning"
+          },
+          {
+            "classificationCode": "LawCrimeAndLegalSystems",
+            "lang": "en",
+            "subject": "LAW, CRIME AND LEGAL SYSTEMS",
+            "subjectScheme": "CESSDA Topic Classification",
+            "valueUri": "https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=LawCrimeAndLegalSystems"
+          },
+          {
+            "classificationCode": "LawCrimeAndLegalSystems",
+            "lang": "sv",
+            "subject": "LAG, BROTTSLIGHET OCH R\u00c4TTSSYSTEM",
+            "subjectScheme": "CESSDA Topic Classification",
+            "valueUri": "https://vocabularies.cessda.eu/vocabulary/TopicClassification?code=LawCrimeAndLegalSystems"
+          },
+          {
+            "classificationCode": "50503",
+            "lang": "en",
+            "subject": "Other Legal Research",
+            "subjectScheme": "Standard f\u00f6r svensk indelning av forsknings\u00e4mnen 2025"
+          },
+          {
+            "classificationCode": "50503",
+            "lang": "sv",
+            "subject": "Annan r\u00e4ttsvetenskaplig forskning",
+            "subjectScheme": "Standard f\u00f6r svensk indelning av forsknings\u00e4mnen 2025"
+          }
+        ],
+        "titles": [
+          {
+            "lang": "en",
+            "title": "Violation and Satisfaction. A Sociology of Law Study of Non-Pecuniary Damages to Victims of Crime. Replication."
+          },
+          {
+            "lang": "sv",
+            "title": "Kr\u00e4nkning och uppr\u00e4ttelse. En r\u00e4ttssociologisk studie av kr\u00e4nkningsers\u00e4ttning till brottsoffer. Replika."
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2026-03-23T10:47:40Z",
+        "url": "https://researchdata.se/catalogue/dataset/2022-97-1",
+        "version": "1",
+        "versionCount": 1,
+        "versionOfCount": 0,
+        "viewCount": 0
+      },
+      "id": "10.5878/e0kk-dn20",
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "snd.snd",
+            "type": "clients"
+          }
+        }
+      },
+      "type": "dois"
+    },
+    {
+      "attributes": {
+        "citationCount": 0,
+        "container": {},
+        "contentUrl": null,
+        "contributors": [
+          {
+            "affiliation": [],
+            "contributorType": "Other",
+            "name": "Universidade Federal de Campina Grande",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://ror.org/00eftnx64",
+                "nameIdentifierScheme": "ROR",
+                "schemeUri": "https://ror.org"
+              }
+            ],
+            "nameType": "Organizational"
+          }
+        ],
+        "created": "2025-11-06T13:45:15Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Oliveira",
+            "givenName": "Wendell",
+            "name": "Oliveira, Wendell",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0009-0005-8356-9335",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Paiva",
+            "givenName": "Filipe",
+            "name": "Paiva, Filipe",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0009-0003-9363-3754",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Brunet",
+            "givenName": "Jo\u00e3o",
+            "name": "Brunet, Jo\u00e3o",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0002-5233-1085",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Pereira",
+            "givenName": "Thiago Emmanuel",
+            "name": "Pereira, Thiago Emmanuel",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0003-2702-6019",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2025-11-06T13:45:15Z",
+            "dateType": "Issued"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This dataset was produced as part of a replication study that explored whether a defect taxonomy originally developed for Infrastructure-as-Code (IaC) scripts would also apply to Programming-Language-based Infrastructure-as-Code (PL-IaC) projects. The research aimed to investigate which defect categories would appear in PL-IaC code written in general-purpose languages such as TypeScript, Python, and Go.\n\nTo conduct this investigation, we used the PIPr dataset, the first systematically curated dataset that gathers open-source repositories employing Pulumi, AWS CDK, or Terraform CDK. For our purpose, repositories were selected using four inclusion criteria: (i) at least 11% PL-IaC files, (ii) non-fork status, (iii) at least two commits per month, and (iv) at least ten contributors. From these repositories, we extracted commit histories and applied a set of defect-related keywords to identify potentially relevant commits. This keyword filtering step produced 5,465 candidate commits.\n\nEach commit was then manually inspected in a structured three-phase process. First, we verified whether each commit was genuinely defect-related, which yielded 2,220 confirmed defect-related commits. The remaining 3,245 commits, despite matching defect-related keywords, were determined not to represent defect fixes or introductions and were labeled as No Defect. Second, both authors independently performed descriptive coding of defect-related commits to identify the nature and cause of each defect. Third, we reconciled our individual codings and found that the same eight defect categories identified in the original IaC study\u2014Conditional, Configuration Data, Dependency, Documentation, Idempotency, Security, Service, and Syntax\u2014also appeared in the PL-IaC context. These categories are not mutually exclusive, and some commits exhibit multiple defect types separated by semicolon.\n\nThe resulting dataset consists of two UTF-8 encoded CSV files:\n* categorized-pl-iac-commits.csv \u2014 all 5,465 filtered commits, including their GitHub links, full commit text (metadata and diff), and one or more defect category labels.\n* repositories.csv \u2014 metadata describing the 67 source repositories, including URLs, license information, timestamps, and repository characteristics.\n\nThe findings show that the defect taxonomy originally defined for IaC scripts is also valid for PL-IaC projects, indicating that both types of infrastructure code share similar defect patterns despite being implemented in different language paradigms. \n\nResearchers can use this dataset to replicate or extend taxonomy validation studies, train and evaluate machine learning models for defect detection, develop static analyzers and linters for PL-IaC, or conduct cross-language analyses of defect characteristics and automated repair techniques.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "doi": "10.17632/r53r882ygt",
+        "downloadCount": 0,
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [],
+        "isActive": true,
+        "language": null,
+        "metadataVersion": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "publicationYear": 2025,
+        "published": null,
+        "publisher": "Mendeley Data",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2025-11-06T13:45:16Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.17632/r53r882ygt.1",
+            "relatedIdentifierType": "DOI",
+            "relationType": "HasVersion",
+            "resourceTypeGeneral": "Dataset"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rightsUri": "info:eu-repo/semantics/openAccess"
+          },
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [],
+        "source": "api",
+        "state": "findable",
+        "subjects": [
+          {
+            "subject": "Programming Language"
+          },
+          {
+            "subject": "Software Engineering"
+          },
+          {
+            "subject": "Taxonomy"
+          },
+          {
+            "subject": "Annotation"
+          },
+          {
+            "subject": "Infrastructure"
+          },
+          {
+            "subject": "Cloud Infrastructure"
+          }
+        ],
+        "titles": [
+          {
+            "title": "Manually categorized defect-related commits in Programming-Language Infrastructure-as-Code (PL-IaC) repositories"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "Dataset",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2025-11-06T13:45:16Z",
+        "url": "https://data.mendeley.com/datasets/r53r882ygt",
+        "version": null,
+        "versionCount": 1,
+        "versionOfCount": 0,
+        "viewCount": 8
+      },
+      "id": "10.17632/r53r882ygt",
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "bl.mendeley",
+            "type": "clients"
+          }
+        }
+      },
+      "type": "dois"
+    },
+    {
+      "attributes": {
+        "citationCount": 0,
+        "container": {},
+        "contentUrl": null,
+        "contributors": [
+          {
+            "affiliation": [],
+            "contributorType": "Other",
+            "name": "Universidade Federal de Campina Grande",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://ror.org/00eftnx64",
+                "nameIdentifierScheme": "ROR",
+                "schemeUri": "https://ror.org"
+              }
+            ],
+            "nameType": "Organizational"
+          }
+        ],
+        "created": "2025-11-06T13:45:17Z",
+        "creators": [
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Oliveira",
+            "givenName": "Wendell",
+            "name": "Oliveira, Wendell",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0009-0005-8356-9335",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Paiva",
+            "givenName": "Filipe",
+            "name": "Paiva, Filipe",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0009-0003-9363-3754",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Brunet",
+            "givenName": "Jo\u00e3o",
+            "name": "Brunet, Jo\u00e3o",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0002-5233-1085",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          },
+          {
+            "affiliation": [
+              "Universidade Federal de Campina Grande"
+            ],
+            "familyName": "Pereira",
+            "givenName": "Thiago Emmanuel",
+            "name": "Pereira, Thiago Emmanuel",
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "https://orcid.org/0000-0003-2702-6019",
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org"
+              }
+            ],
+            "nameType": "Personal"
+          }
+        ],
+        "dates": [
+          {
+            "date": "2025-11-06T13:45:15Z",
+            "dateType": "Issued"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "This dataset was produced as part of a replication study that explored whether a defect taxonomy originally developed for Infrastructure-as-Code (IaC) scripts would also apply to Programming-Language-based Infrastructure-as-Code (PL-IaC) projects. The research aimed to investigate which defect categories would appear in PL-IaC code written in general-purpose languages such as TypeScript, Python, and Go.\n\nTo conduct this investigation, we used the PIPr dataset, the first systematically curated dataset that gathers open-source repositories employing Pulumi, AWS CDK, or Terraform CDK. For our purpose, repositories were selected using four inclusion criteria: (i) at least 11% PL-IaC files, (ii) non-fork status, (iii) at least two commits per month, and (iv) at least ten contributors. From these repositories, we extracted commit histories and applied a set of defect-related keywords to identify potentially relevant commits. This keyword filtering step produced 5,465 candidate commits.\n\nEach commit was then manually inspected in a structured three-phase process. First, we verified whether each commit was genuinely defect-related, which yielded 2,220 confirmed defect-related commits. The remaining 3,245 commits, despite matching defect-related keywords, were determined not to represent defect fixes or introductions and were labeled as No Defect. Second, both authors independently performed descriptive coding of defect-related commits to identify the nature and cause of each defect. Third, we reconciled our individual codings and found that the same eight defect categories identified in the original IaC study\u2014Conditional, Configuration Data, Dependency, Documentation, Idempotency, Security, Service, and Syntax\u2014also appeared in the PL-IaC context. These categories are not mutually exclusive, and some commits exhibit multiple defect types separated by semicolon.\n\nThe resulting dataset consists of two UTF-8 encoded CSV files:\n* categorized-pl-iac-commits.csv \u2014 all 5,465 filtered commits, including their GitHub links, full commit text (metadata and diff), and one or more defect category labels.\n* repositories.csv \u2014 metadata describing the 67 source repositories, including URLs, license information, timestamps, and repository characteristics.\n\nThe findings show that the defect taxonomy originally defined for IaC scripts is also valid for PL-IaC projects, indicating that both types of infrastructure code share similar defect patterns despite being implemented in different language paradigms. \n\nResearchers can use this dataset to replicate or extend taxonomy validation studies, train and evaluate machine learning models for defect detection, develop static analyzers and linters for PL-IaC, or conduct cross-language analyses of defect characteristics and automated repair techniques.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "doi": "10.17632/r53r882ygt.1",
+        "downloadCount": 0,
+        "formats": [],
+        "fundingReferences": [],
+        "geoLocations": [],
+        "identifiers": [],
+        "isActive": true,
+        "language": null,
+        "metadataVersion": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "publicationYear": 2025,
+        "published": null,
+        "publisher": "Mendeley Data",
+        "reason": null,
+        "referenceCount": 0,
+        "registered": "2025-11-06T13:45:17Z",
+        "relatedIdentifiers": [
+          {
+            "relatedIdentifier": "10.17632/r53r882ygt",
+            "relatedIdentifierType": "DOI",
+            "relationType": "IsVersionOf",
+            "resourceTypeGeneral": "Dataset"
+          }
+        ],
+        "relatedItems": [],
+        "rightsList": [
+          {
+            "rightsUri": "info:eu-repo/semantics/openAccess"
+          },
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/"
+          }
+        ],
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "sizes": [],
+        "source": "api",
+        "state": "findable",
+        "subjects": [
+          {
+            "subject": "Programming Language"
+          },
+          {
+            "subject": "Software Engineering"
+          },
+          {
+            "subject": "Taxonomy"
+          },
+          {
+            "subject": "Annotation"
+          },
+          {
+            "subject": "Infrastructure"
+          },
+          {
+            "subject": "Cloud Infrastructure"
+          }
+        ],
+        "titles": [
+          {
+            "title": "Manually categorized defect-related commits in Programming-Language Infrastructure-as-Code (PL-IaC) repositories"
+          }
+        ],
+        "types": {
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "resourceType": "Dataset",
+          "resourceTypeGeneral": "Dataset",
+          "ris": "DATA",
+          "schemaOrg": "Dataset"
+        },
+        "updated": "2025-11-06T13:45:17Z",
+        "url": "https://data.mendeley.com/datasets/r53r882ygt/1",
+        "version": null,
+        "versionCount": 0,
+        "versionOfCount": 1,
+        "viewCount": 0
+      },
+      "id": "10.17632/r53r882ygt.1",
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "bl.mendeley",
+            "type": "clients"
+          }
+        }
+      },
+      "type": "dois"
+    }
+  ],
+  "links": {
+    "self": "https://api.datacite.org/dois?query=%22original+study%22+%22replication+study%22+%22csv%22&page%5Bsize%5D=30&sort=relevance"
+  },
+  "meta": {
+    "page": 1,
+    "total": 4,
+    "totalPages": 1
+  }
+}

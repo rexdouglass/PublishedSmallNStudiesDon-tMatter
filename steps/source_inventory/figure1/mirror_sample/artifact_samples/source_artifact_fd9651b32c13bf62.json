@@ -1,0 +1,86 @@
+{
+  "artifact_id": "source_artifact_fd9651b32c13bf62",
+  "byte_size": 46606,
+  "columns": [
+    "journal_id",
+    "issue",
+    "data_availability",
+    "codes_availability",
+    "ras",
+    "thanks",
+    "article_page",
+    "field",
+    "field_2",
+    "negative_result"
+  ],
+  "file_name": "supp_data_article.dta",
+  "file_type": "dta",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Temp/supp_data_article.dta",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "article_page": "66",
+      "codes_availability": "Yes",
+      "data_availability": "Yes",
+      "field": "Macro",
+      "field_2": "Finance",
+      "issue": "95.1",
+      "journal_id": "American Economic Review",
+      "negative_result": "No",
+      "ras": "0",
+      "thanks": "14"
+    },
+    {
+      "article_page": "138",
+      "codes_availability": "Yes",
+      "data_availability": "Yes",
+      "field": "Macro",
+      "field_2": "Finance",
+      "issue": "95.1",
+      "journal_id": "American Economic Review",
+      "negative_result": "No",
+      "ras": "0",
+      "thanks": "9"
+    },
+    {
+      "article_page": "255",
+      "codes_availability": "No",
+      "data_availability": "Yes",
+      "field": "Macro",
+      "field_2": "International",
+      "issue": "95.1",
+      "journal_id": "American Economic Review",
+      "negative_result": "No",
+      "ras": "0",
+      "thanks": "13"
+    },
+    {
+      "article_page": "292",
+      "codes_availability": "Yes",
+      "data_availability": "Yes",
+      "field": "Macro",
+      "field_2": "International",
+      "issue": "95.1",
+      "journal_id": "American Economic Review",
+      "negative_result": "No",
+      "ras": "0",
+      "thanks": "5"
+    },
+    {
+      "article_page": "347",
+      "codes_availability": "Yes",
+      "data_availability": "Yes",
+      "field": "Micro",
+      "field_2": "Labor",
+      "issue": "95.1",
+      "journal_id": "American Economic Review",
+      "negative_result": "No",
+      "ras": "13",
+      "thanks": "6"
+    }
+  ],
+  "sample_kind": "stata",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:17",
+  "sha256": "1fd1ec7302a24199dd118e1095edf046461985359a091ad81c650081bf92f627"
+}

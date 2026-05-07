@@ -1,0 +1,866 @@
+{
+  "task_id": "individual_replication_search",
+  "batch_id": "gpt-batch002",
+  "candidate_count": 25,
+  "candidates": [
+    {
+      "candidate_id": "IND-001",
+      "candidate_name": "Power posing hormones/risk tolerance",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["power posing", "ranehill", "carney cuddy yap", "10.1177/0956797614553946"],
+      "domain": "social psychology / embodied cognition",
+      "original_title": "Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance",
+      "original_doi": "10.1177/0956797610383437",
+      "replication_title": "Assessing the Robustness of Power Posing: No Effect on Hormones and Risk Tolerance in a Large Sample of Men and Women",
+      "replication_doi": "10.1177/0956797614553946",
+      "source_object_urls": [
+        "https://faculty.haas.berkeley.edu/dana_carney/power.poses.PS.2010.pdf",
+        "https://doi.org/10.1177/0956797614553946",
+        "https://osf.io/6akvt/files/"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "close_replication",
+        "verbatim_or_paraphrased_basis": "Replication article directly cites and retests Carney, Cuddy & Yap's power-posing claims with a larger sample and OSF materials.",
+        "where_seen": "user-returned research evidence register E01"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "means/standardized differences for hormones, risk tolerance, self-reported power",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-002",
+      "candidate_name": "Oxytocin trust: Envelope Task",
+      "candidate_route": "coverage_only",
+      "confidence": "medium",
+      "conversion_route": "direct_d_after_original_resolution",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["oxytocin envelope task", "Lane", "10.1371/journal.pone.0137000"],
+      "domain": "social neuroscience / behavioral endocrinology",
+      "original_title": "Original Envelope Task oxytocin trust study",
+      "original_doi": "",
+      "replication_title": "Failed Replication of Oxytocin Effects on Trust: The Envelope Task Case",
+      "replication_doi": "10.1371/journal.pone.0137000",
+      "source_object_urls": [
+        "https://doi.org/10.1371/journal.pone.0137000",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0137000"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "PLOS article is explicitly a failed replication of oxytocin effects on trust using the Envelope Task.",
+        "where_seen": "user-returned research evidence register E02"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "unclear",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / ordinal-regression-derived d",
+        "conversion_route": "direct_d_after_original_resolution",
+        "replication_n_larger_than_original_n": "unclear"
+      }
+    },
+    {
+      "candidate_id": "IND-003",
+      "candidate_name": "Professor/intelligence priming",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["priming intelligent behavior", "dijksterhuis", "shanks", "10.1371/journal.pone.0056515"],
+      "domain": "cognitive psychology / social cognition",
+      "original_title": "The Relation Between Perception and Behavior, or How to Win a Game of Trivial Pursuit",
+      "original_doi": "10.1037/0022-3514.74.4.865",
+      "replication_title": "Priming Intelligent Behavior: An Elusive Phenomenon",
+      "replication_doi": "10.1371/journal.pone.0056515",
+      "source_object_urls": [
+        "https://doi.org/10.1037/0022-3514.74.4.865",
+        "https://doi.org/10.1371/journal.pone.0056515",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0056515"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article states it attempted to replicate the intelligence-priming effect from Dijksterhuis & van Knippenberg, including an experiment described as identical to the original procedure.",
+        "where_seen": "user-returned research evidence register E03"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / means and SDs",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-004",
+      "candidate_name": "Elderly walking stereotype priming",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["elderly walking priming", "doyen", "bargh chen burrows", "10.1371/journal.pone.0029081"],
+      "domain": "social psychology / social cognition",
+      "original_title": "Automaticity of Social Behavior: Direct Effects of Trait Construct and Stereotype Activation on Action",
+      "original_doi": "10.1037/0022-3514.71.2.230",
+      "replication_title": "Behavioral Priming: It's All in the Mind, but Whose Mind?",
+      "replication_doi": "10.1371/journal.pone.0029081",
+      "source_object_urls": [
+        "https://doi.org/10.1037/0022-3514.71.2.230",
+        "https://doi.org/10.1371/journal.pone.0029081",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029081"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "PLOS article explicitly retests the Bargh, Chen & Burrows elderly-prime walking-speed effect.",
+        "where_seen": "user-returned research evidence register E03"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "walking-speed mean differences / SMD",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-005",
+      "candidate_name": "Bem retroactive facilitation of recall: Ritchie/Wiseman/French",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d_or_statistic_to_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["failing the future", "bem", "ritchie wiseman french", "10.1371/journal.pone.0033423"],
+      "domain": "parapsychology / cognitive psychology",
+      "original_title": "Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect",
+      "original_doi": "10.1037/a0021524",
+      "replication_title": "Failing the Future: Three Unsuccessful Attempts to Replicate Bem's 'Retroactive Facilitation of Recall' Effect",
+      "replication_doi": "10.1371/journal.pone.0033423",
+      "source_object_urls": [
+        "https://doi.org/10.1037/a0021524",
+        "https://doi.org/10.1371/journal.pone.0033423",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0033423"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "PLOS article describes three preregistered independent exact replications of Bem's Experiment 9.",
+        "where_seen": "user-returned research evidence register E04"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / test statistics",
+        "conversion_route": "direct_d_or_statistic_to_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-006",
+      "candidate_name": "Bem retroactive recall: Galak et al.",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "statistic_to_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["correcting the past", "galak", "bem", "psi"],
+      "domain": "parapsychology / cognitive psychology",
+      "original_title": "Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect",
+      "original_doi": "10.1037/a0021524",
+      "replication_title": "Correcting the Past: Failures to Replicate Psi",
+      "replication_doi": "",
+      "source_object_urls": [
+        "https://doi.org/10.1037/a0021524"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "re_replication",
+        "verbatim_or_paraphrased_basis": "Article/table maps Bem target experiments to several failed replication attempts with Ns and test statistics.",
+        "where_seen": "user-returned research evidence register E04"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "t statistics / D-equivalent SMD",
+        "conversion_route": "statistic_to_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-007",
+      "candidate_name": "Analytic thinking and religious disbelief",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["analytic thinking promotes religious disbelief", "sanchez", "gervais norenzayan", "10.1371/journal.pone.0172636"],
+      "domain": "psychology of religion / judgment and decision-making",
+      "original_title": "Analytic Thinking Promotes Religious Disbelief",
+      "original_doi": "10.1126/science.1215647",
+      "replication_title": "Direct Replication of Gervais & Norenzayan (2012): No Evidence That Analytic Thinking Decreases Religious Belief",
+      "replication_doi": "10.1371/journal.pone.0172636",
+      "source_object_urls": [
+        "https://doi.org/10.1126/science.1215647",
+        "https://doi.org/10.1371/journal.pone.0172636",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172636",
+        "https://figshare.com/articles/dataset/S1_Supplemental_Details_and_Results/4643884"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article title and article state direct replication of Gervais & Norenzayan, with no evidence that analytic thinking decreases belief.",
+        "where_seen": "user-returned research evidence register E05"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-008",
+      "candidate_name": "Power improves motor performance",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["power may have little to no effect on motor performance", "burgmer englich", "cusack", "10.1371/journal.pone.0140806"],
+      "domain": "social psychology / motor performance",
+      "original_title": "Bullseye! How Power Improves Motor Performance",
+      "original_doi": "",
+      "replication_title": "Power May Have Little to No Effect on Motor Performance: A Direct Replication of Burgmer & Englich (2013)",
+      "replication_doi": "10.1371/journal.pone.0140806",
+      "source_object_urls": [
+        "https://doi.org/10.1371/journal.pone.0140806",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140806",
+        "https://osf.io/d28kv/"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "PLOS article explicitly reports direct and conceptual replications of Burgmer & Englich.",
+        "where_seen": "user-returned research evidence register E06"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / means",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-009",
+      "candidate_name": "Organic food exposure and moral judgments/prosocial behavior",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["organic food exposure moral judgments", "eskine", "moery calin-jageman", "10.1177/1948550616639649"],
+      "domain": "social psychology / consumer behavior",
+      "original_title": "Wholesome Foods and Wholesome Morals? Organic Foods Reduce Prosocial Behavior and Harshen Moral Judgments",
+      "original_doi": "10.1177/1948550612447114",
+      "replication_title": "Direct and Conceptual Replications of Eskine (2013): Organic Food Exposure Has Little to No Effect on Moral Judgments and Prosocial Behavior",
+      "replication_doi": "10.1177/1948550616639649",
+      "source_object_urls": [
+        "https://doi.org/10.1177/1948550612447114",
+        "https://doi.org/10.1177/1948550616639649"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article title and abstract state direct and conceptual replications of Eskine with little-to-no effect.",
+        "where_seen": "user-returned research evidence register E06"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / mean differences",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-010",
+      "candidate_name": "Goal priming and remoteness of goals",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["goal priming remoteness of goals", "bargh", "harris", "10.1371/journal.pone.0072467"],
+      "domain": "social psychology / goal priming",
+      "original_title": "The Automated Will: Nonconscious Activation and Pursuit of Behavioral Goals",
+      "original_doi": "10.1037/0022-3514.81.6.1014",
+      "replication_title": "Goal Priming and the Remoteness of Goals: Failure to Replicate Bargh et al. (2001)",
+      "replication_doi": "10.1371/journal.pone.0072467",
+      "source_object_urls": [
+        "https://doi.org/10.1037/0022-3514.81.6.1014",
+        "https://doi.org/10.1371/journal.pone.0072467",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0072467"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article reports failure to replicate Bargh et al.'s goal-priming effect, with direct and delayed variants.",
+        "where_seen": "user-returned research evidence register E07"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / means and SDs",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-011",
+      "candidate_name": "Social-distance priming and food/social judgments",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["priming of social distance", "pashler coburn harris", "williams bargh", "10.1371/journal.pone.0042510"],
+      "domain": "social psychology / embodied cognition",
+      "original_title": "Keeping One's Distance: The Influence of Spatial Distance Cues on Affect and Evaluation",
+      "original_doi": "",
+      "replication_title": "Priming of Social Distance? Failure to Replicate Effects on Social and Food Judgments",
+      "replication_doi": "10.1371/journal.pone.0042510",
+      "source_object_urls": [
+        "https://doi.org/10.1371/journal.pone.0042510",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0042510",
+        "https://figshare.com/articles/dataset/Data_from_Priming_of_social_distance_failure_to_replicate_effects_on_social_and_food_judgments_/96057"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "PLOS article explicitly reports failure to replicate Williams & Bargh social-distance priming effects and provides data.",
+        "where_seen": "user-returned research evidence register E07"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "mean differences / SMD",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-012",
+      "candidate_name": "Physical warmth and interpersonal warmth",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "r_to_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["physical warmth promotes interpersonal warmth", "chabris", "williams bargh", "10.1027/1864-9335/a000361"],
+      "domain": "social psychology / embodied cognition",
+      "original_title": "Experiencing Physical Warmth Promotes Interpersonal Warmth",
+      "original_doi": "10.1126/science.1162548",
+      "replication_title": "No Evidence That Experiencing Physical Warmth Promotes Interpersonal Warmth: Two Failures to Replicate",
+      "replication_doi": "10.1027/1864-9335/a000361",
+      "source_object_urls": [
+        "https://doi.org/10.1126/science.1162548",
+        "https://doi.org/10.1027/1864-9335/a000361"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article reports two failures to replicate Williams & Bargh's physical-warmth effect with original and replication r/N values.",
+        "where_seen": "user-returned research evidence register E08"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "correlation r, convertible to d",
+        "conversion_route": "r_to_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-013",
+      "candidate_name": "Physical warmth/coldness and loneliness",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d_or_r_to_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["physical warmth coldness trait loneliness", "wortman", "bargh shalev", "10.1037/arc0000007"],
+      "domain": "social psychology / embodied cognition",
+      "original_title": "The Substitutability of Physical and Social Warmth in Daily Life",
+      "original_doi": "10.1037/a0023527",
+      "replication_title": "Can Physical Warmth (or Coldness) Predict Trait Loneliness? A Replication of Bargh and Shalev (2012)",
+      "replication_doi": "10.1037/arc0000007",
+      "source_object_urls": [
+        "https://doi.org/10.1037/a0023527",
+        "https://doi.org/10.1037/arc0000007",
+        "https://doi.org/10.3886/ICPSR35220.v1"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article explicitly describes itself as a replication of Bargh & Shalev and reports a much larger sample.",
+        "where_seen": "user-returned research evidence register E08"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / correlations/regression",
+        "conversion_route": "direct_d_or_r_to_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-014",
+      "candidate_name": "Macbeth effect / moral cleansing",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["macbeth effect", "washing away your sins", "earp", "10.1080/01973533.2013.856792"],
+      "domain": "social psychology / moral cognition",
+      "original_title": "Washing Away Your Sins: Threatened Morality and Physical Cleansing",
+      "original_doi": "10.1126/science.1130726",
+      "replication_title": "Out, Damned Spot: Can the Macbeth Effect Be Replicated?",
+      "replication_doi": "10.1080/01973533.2013.856792",
+      "source_object_urls": [
+        "https://doi.org/10.1126/science.1130726",
+        "https://doi.org/10.1080/01973533.2013.856792"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article states three direct attempts to replicate the Macbeth effect using the original materials and methods.",
+        "where_seen": "user-returned research evidence register E09"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / mean differences",
+        "conversion_route": "direct_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-015",
+      "candidate_name": "Red-romance hypothesis",
+      "candidate_route": "coverage_only",
+      "confidence": "medium",
+      "conversion_route": "likely_direct_d_after_pdf_extraction",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["red romance", "lehmann calin-jageman", "10.1027/1864-9335/a000296"],
+      "domain": "social psychology / attraction",
+      "original_title": "Romantic Red: Red Enhances Men's Attraction to Women; plus related red-romance women-rating-men study",
+      "original_doi": "",
+      "replication_title": "Is Red Really Romantic? Two Pre-Registered Replications of the Red-Romance Hypothesis",
+      "replication_doi": "10.1027/1864-9335/a000296",
+      "source_object_urls": [
+        "https://doi.org/10.1027/1864-9335/a000296"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Article reports two preregistered replications of red-romance effects attributed to Elliot/Niesta and Elliot et al.",
+        "where_seen": "user-returned research evidence register E09"
+      },
+      "value_availability": {
+        "has_original_effect": "unclear",
+        "has_replication_or_followup_effect": "unclear",
+        "has_original_n": "unclear",
+        "has_replication_or_followup_n": "unclear",
+        "effect_metric": "likely Cohen's d / mean attraction ratings",
+        "conversion_route": "likely_direct_d_after_pdf_extraction",
+        "replication_n_larger_than_original_n": "unclear"
+      }
+    },
+    {
+      "candidate_id": "IND-016",
+      "candidate_name": "Marshmallow test / delay of gratification",
+      "candidate_route": "native_only",
+      "confidence": "high",
+      "conversion_route": "native_correlation_regression",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["revisiting the marshmallow test", "watts duncan quan", "10.1177/0956797618761661"],
+      "domain": "developmental psychology / education",
+      "original_title": "Predicting Adolescent Cognitive and Self-Regulatory Competencies from Preschool Delay of Gratification",
+      "original_doi": "10.1037/0012-1649.26.6.978",
+      "replication_title": "Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes",
+      "replication_doi": "10.1177/0956797618761661",
+      "source_object_urls": [
+        "https://doi.org/10.1037/0012-1649.26.6.978",
+        "https://doi.org/10.1177/0956797618761661"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "close_replication",
+        "verbatim_or_paraphrased_basis": "Article states it replicates and extends Shoda, Mischel & Peake with a larger, more diverse sample and controls.",
+        "where_seen": "user-returned research evidence register E09"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "correlations/regression coefficients/native scale",
+        "conversion_route": "native_correlation_regression",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-017",
+      "candidate_name": "Signing at the beginning and dishonesty",
+      "candidate_route": "d_equivalent_figure1b",
+      "confidence": "high",
+      "conversion_route": "binary_or_continuous_d_equivalent_after_outcome_choice",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["signing at the beginning", "kristal", "shu mazar gino ariely bazerman", "10.1073/pnas.1911695117"],
+      "domain": "behavioral economics / management / public policy",
+      "original_title": "Signing at the Beginning Makes Ethics Salient and Decreases Dishonest Self-Reports in Comparison to Signing at the End",
+      "original_doi": "10.1073/pnas.1209746109",
+      "replication_title": "Signing at the Beginning Versus at the End Does Not Decrease Dishonesty",
+      "replication_doi": "10.1073/pnas.1911695117",
+      "source_object_urls": [
+        "https://doi.org/10.1073/pnas.1209746109",
+        "https://doi.org/10.1073/pnas.1911695117"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Follow-up includes five related experiments and a preregistered high-powered direct replication of the original signing manipulation.",
+        "where_seen": "user-returned research evidence register E10"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "dishonesty amount/proportion; possible binary or continuous outcome",
+        "conversion_route": "binary_or_continuous_d_equivalent_after_outcome_choice",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-018",
+      "candidate_name": "Verbal credibility assessment of deceptive intentions",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "direct_d_or_f_to_d",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["verbal credibility deceptive intentions", "kleinberg", "10.1002/acp.3439"],
+      "domain": "applied cognitive psychology / legal psychology",
+      "original_title": "Automated Verbal Credibility Assessment of Intentions",
+      "original_doi": "10.1002/acp.3407",
+      "replication_title": "The First Direct Replication on Using Verbal Credibility Assessment for the Detection of Deceptive Intentions",
+      "replication_doi": "10.1002/acp.3439",
+      "source_object_urls": [
+        "https://doi.org/10.1002/acp.3407",
+        "https://doi.org/10.1002/acp.3439"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Replication paper says it closely mimicked the original setting, procedure, materials, coding, and analyses.",
+        "where_seen": "user-returned research evidence register E10"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "unclear",
+        "has_replication_or_followup_n": "unclear",
+        "effect_metric": "Cohen's d / f",
+        "conversion_route": "direct_d_or_f_to_d",
+        "replication_n_larger_than_original_n": "unclear"
+      }
+    },
+    {
+      "candidate_id": "IND-019",
+      "candidate_name": "Romance, risk, and mating-motive priming in consumer choice",
+      "candidate_route": "coverage_only",
+      "confidence": "high",
+      "conversion_route": "direct_d_after_target_mapping",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["romance risk and replication", "mating motives", "shanks", "10.1037/xge0000116"],
+      "domain": "marketing / consumer behavior / evolutionary psychology",
+      "original_title": "Multiple mating-motive consumer/risk studies, including Griskevicius and related original targets",
+      "original_doi": "",
+      "replication_title": "Romance, Risk, and Replication: Can Consumer Choices and Risk-Taking Be Primed by Mating Motives?",
+      "replication_doi": "10.1037/xge0000116",
+      "source_object_urls": [
+        "https://doi.org/10.1037/xge0000116"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "close_replication",
+        "verbatim_or_paraphrased_basis": "Article retests consumer-choice and risk-taking effects primed by mating motives and maps to original target studies.",
+        "where_seen": "user-returned research evidence register E10"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "Cohen's d / mean differences",
+        "conversion_route": "direct_d_after_target_mapping",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-020",
+      "candidate_name": "Growth mindset / praise and educational outcomes",
+      "candidate_route": "native_only",
+      "confidence": "medium",
+      "conversion_route": "native_education_outcome",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["growth mindset", "li bates", "10.31235/osf.io/tsdwy"],
+      "domain": "education / developmental psychology",
+      "original_title": "Praise for Intelligence Can Undermine Children's Motivation and Performance; plus growth-mindset intervention targets",
+      "original_doi": "",
+      "replication_title": "Does Growth Mindset Improve Children's IQ, Educational Attainment or Response to Setbacks? Active-Control Interventions and Data on Children's Own Mindsets",
+      "replication_doi": "10.31235/osf.io/tsdwy",
+      "source_object_urls": [
+        "https://doi.org/10.31235/osf.io/tsdwy"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "close_replication",
+        "verbatim_or_paraphrased_basis": "Paper/preprint is framed as failures to replicate mindset/praise-style findings using active-control interventions and child outcomes.",
+        "where_seen": "user-returned research evidence register E11"
+      },
+      "value_availability": {
+        "has_original_effect": "unclear",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "unclear",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "native educational/IQ/performance outcomes; possible SMD for intervention contrasts",
+        "conversion_route": "native_education_outcome",
+        "replication_n_larger_than_original_n": "unclear"
+      }
+    },
+    {
+      "candidate_id": "IND-021",
+      "candidate_name": "Mental fatigue and exercise time-to-exhaustion",
+      "candidate_route": "strict_figure1a",
+      "confidence": "high",
+      "conversion_route": "paired_d",
+      "dedupe_risk": "low",
+      "dedupe_terms": ["mental fatigue impairs physical performance", "marcora", "holgado", "10.1080/17461391.2020.1781265"],
+      "domain": "sports / exercise science",
+      "original_title": "Mental Fatigue Impairs Physical Performance in Humans",
+      "original_doi": "10.1152/japplphysiol.91324.2008",
+      "replication_title": "Does Mental Fatigue Impair Physical Performance? A Replication Study",
+      "replication_doi": "10.1080/17461391.2020.1781265",
+      "source_object_urls": [
+        "https://doi.org/10.1152/japplphysiol.91324.2008",
+        "https://doi.org/10.1080/17461391.2020.1781265"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "direct_replication",
+        "verbatim_or_paraphrased_basis": "Pre-registered larger-N study attempted to replicate Marcora et al.'s mental-fatigue impairment result.",
+        "where_seen": "user-returned research evidence register E11"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "within-subject time-to-exhaustion mean difference / standardized mean difference",
+        "conversion_route": "paired_d",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-022",
+      "candidate_name": "Early goal-directed therapy for severe sepsis/septic shock",
+      "candidate_route": "d_equivalent_figure1b",
+      "confidence": "high",
+      "conversion_route": "event_counts_to_or_to_d_equivalent",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["early goal-directed therapy", "rivers", "ProCESS", "ARISE", "ProMISe", "10.1056/NEJMoa010307"],
+      "domain": "clinical medicine / critical care",
+      "original_title": "Early Goal-Directed Therapy in the Treatment of Severe Sepsis and Septic Shock",
+      "original_doi": "10.1056/NEJMoa010307",
+      "replication_title": "ProCESS, ARISE, and ProMISe multicenter trials of early goal-directed resuscitation",
+      "replication_doi": "10.1056/NEJMoa1500896",
+      "source_object_urls": [
+        "https://doi.org/10.1056/NEJMoa010307",
+        "https://doi.org/10.1056/NEJMoa1401602",
+        "https://doi.org/10.1056/NEJMoa1404380",
+        "https://doi.org/10.1056/NEJMoa1500896",
+        "https://figshare.com/articles/dataset/ProMISe_trial_data/1359853"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "larger_followup",
+        "verbatim_or_paraphrased_basis": "Large multicenter trials tested protocolized early goal-directed therapy after the Rivers single-center trial and found no mortality benefit.",
+        "where_seen": "user-returned research evidence register E12"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "mortality RR/OR/RD",
+        "conversion_route": "event_counts_to_or_to_d_equivalent",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-023",
+      "candidate_name": "Activated protein C for severe sepsis",
+      "candidate_route": "d_equivalent_figure1b",
+      "confidence": "high",
+      "conversion_route": "event_counts_to_or_to_d_equivalent",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["activated protein C", "drotrecogin alfa", "PROWESS-SHOCK", "10.1056/NEJM200103083441001"],
+      "domain": "clinical medicine / critical care",
+      "original_title": "Efficacy and Safety of Recombinant Human Activated Protein C for Severe Sepsis",
+      "original_doi": "10.1056/NEJM200103083441001",
+      "replication_title": "Drotrecogin Alfa (Activated) in Adults with Septic Shock",
+      "replication_doi": "10.1056/NEJMoa1202290",
+      "source_object_urls": [
+        "https://doi.org/10.1056/NEJM200103083441001",
+        "https://doi.org/10.1056/NEJMoa1202290"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "larger_followup",
+        "verbatim_or_paraphrased_basis": "PROWESS-SHOCK tested the same activated protein C intervention in septic shock after PROWESS and failed to confirm benefit.",
+        "where_seen": "user-returned research evidence register E12"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "mortality OR/RR/RD",
+        "conversion_route": "event_counts_to_or_to_d_equivalent",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-024",
+      "candidate_name": "Intensive insulin therapy / tight glucose control in ICU",
+      "candidate_route": "d_equivalent_figure1b",
+      "confidence": "high",
+      "conversion_route": "event_counts_to_or_to_d_equivalent",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["intensive insulin therapy critically ill patients", "NICE-SUGAR", "10.1056/NEJMoa0810625"],
+      "domain": "clinical medicine / critical care",
+      "original_title": "Intensive Insulin Therapy in Critically Ill Patients",
+      "original_doi": "10.1056/NEJMoa011300",
+      "replication_title": "Intensive versus Conventional Glucose Control in Critically Ill Patients",
+      "replication_doi": "10.1056/NEJMoa0810625",
+      "source_object_urls": [
+        "https://doi.org/10.1056/NEJMoa011300",
+        "https://doi.org/10.1056/NEJMoa0810625"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "larger_followup",
+        "verbatim_or_paraphrased_basis": "Large multicenter NICE-SUGAR trial retested intensive glucose control after earlier single-center benefit reports and found higher mortality.",
+        "where_seen": "user-returned research evidence register E12"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "mortality OR/RR/RD",
+        "conversion_route": "event_counts_to_or_to_d_equivalent",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    },
+    {
+      "candidate_id": "IND-025",
+      "candidate_name": "5-HTTLPR stress-depression gene-by-environment effect",
+      "candidate_route": "native_only",
+      "confidence": "high",
+      "conversion_route": "native_gene_environment_interaction",
+      "dedupe_risk": "medium",
+      "dedupe_terms": ["5-HTTLPR stress depression", "caspi", "culverhouse", "10.1038/mp.2017.44"],
+      "domain": "genetics / psychiatric epidemiology",
+      "original_title": "Influence of Life Stress on Depression: Moderation by a Polymorphism in the 5-HTT Gene",
+      "original_doi": "10.1126/science.1083968",
+      "replication_title": "Collaborative Meta-Analysis Finds No Evidence of a Strong Interaction Between Stress and 5-HTTLPR Genotype Contributing to Depression",
+      "replication_doi": "10.1038/mp.2017.44",
+      "source_object_urls": [
+        "https://doi.org/10.1126/science.1083968",
+        "https://doi.org/10.1038/mp.2017.44"
+      ],
+      "relationship_evidence": {
+        "replication_kind": "independent_validation",
+        "verbatim_or_paraphrased_basis": "Large collaborative meta-analysis directly addresses whether the Caspi 5-HTTLPR stress-depression interaction replicates.",
+        "where_seen": "user-returned research evidence register E13"
+      },
+      "value_availability": {
+        "has_original_effect": "yes",
+        "has_replication_or_followup_effect": "yes",
+        "has_original_n": "yes",
+        "has_replication_or_followup_n": "yes",
+        "effect_metric": "gene-by-environment interaction OR/beta/native model effect",
+        "conversion_route": "native_gene_environment_interaction",
+        "replication_n_larger_than_original_n": "yes"
+      }
+    }
+  ],
+  "high_confidence_rejections": [
+    {
+      "item": "Credé & Phillips / related power-pose multiverse or reanalysis papers",
+      "why_reject_or_flag": "Same-data reanalysis/multiverse specifications do not add new replication N.",
+      "candidate_route": "reject"
+    },
+    {
+      "item": "Known Registered Replication Report family rows",
+      "why_reject_or_flag": "Real direct replications but high overlap with already routed RRR source families; use for dedupe/search recall unless locally absent.",
+      "candidate_route": "reject_or_dedupe_only"
+    },
+    {
+      "item": "Clinical meta-analyses/IPD meta-analyses of EGDT, activated protein C, or tight glucose control",
+      "why_reject_or_flag": "Useful for discovery and event-count checking, but rows should come from individual original and follow-up trials.",
+      "candidate_route": "keep_as_context_source"
+    },
+    {
+      "item": "Karg/Risch/Culverhouse-style 5-HTTLPR aggregate meta-analyses",
+      "why_reject_or_flag": "Good discovery/provenance objects, but not clean one-paper new-data replications unless native meta-follow-up route or dataset-level validations are explicitly used.",
+      "candidate_route": "native_only_or_context"
+    }
+  ],
+  "suggested_yaml_search_patterns": {
+    "direct_language": [
+      "\"direct replication of\" \"{original_author}\" \"{year}\" \"{construct}\"",
+      "\"failed to replicate\" \"{original_title}\"",
+      "\"failure to replicate\" \"{original_author}\" \"{construct}\"",
+      "\"first direct replication\" \"{method_or_task}\" \"{construct}\"",
+      "\"two failures to replicate\" \"{original_author}\"",
+      "\"three unsuccessful attempts to replicate\" \"{original_author}\"",
+      "\"pre-registered replication\" \"{original_author}\" \"{construct}\"",
+      "\"high-powered direct replication\" \"{construct}\" \"Cohen's d\"",
+      "\"using the original materials and methods\" \"failed to replicate\"",
+      "\"same procedure\" \"larger sample\" \"failed to replicate\""
+    ],
+    "outcome_extraction_terms": [
+      "\"Cohen's d\" \"original study\" \"replication study\" \"N =\"",
+      "\"effect size\" \"replication\" \"original\" \"sample size\"",
+      "\"means and standard deviations\" \"direct replication\" \"original\"",
+      "\"Table 1\" \"original\" \"replication\" \"Cohen's d\"",
+      "\"forest plot\" \"original study\" \"replication\" \"Cohen's d\""
+    ],
+    "clinical_followup": [
+      "\"single-center\" \"multicenter\" \"{intervention}\" mortality \"trial\"",
+      "\"landmark trial\" \"{intervention}\" \"subsequent trial\"",
+      "\"failed to confirm\" \"{intervention}\" \"randomized trial\"",
+      "\"larger trial\" \"{intervention}\" \"no benefit\" \"mortality\"",
+      "\"trial reversal\" \"{intervention}\" \"original trial\""
+    ]
+  }
+}

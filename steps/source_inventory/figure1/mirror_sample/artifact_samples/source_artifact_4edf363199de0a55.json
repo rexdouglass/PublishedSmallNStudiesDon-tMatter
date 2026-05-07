@@ -1,0 +1,224 @@
+{
+  "artifact_id": "source_artifact_4edf363199de0a55",
+  "byte_size": 498176,
+  "file_name": "additional_data_list_full.xls",
+  "file_type": "xls",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/additional_data_list_full.xls",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "excel_workbook",
+  "sampled_at": "2026-05-04T00:20:12",
+  "sha256": "9215723f0b843b891641f0fc8c8b9c5a30993c6c713d0367ac9665b0ddd64869",
+  "sheet_count": 3,
+  "sheets": [
+    {
+      "columns": [
+        "journal_id",
+        "issue",
+        "data_availability",
+        "codes_availability",
+        "ras",
+        "thanks",
+        "article_page",
+        "field",
+        "field_2",
+        "negative_result"
+      ],
+      "preview_rows": [
+        {
+          "article_page": 66,
+          "codes_availability": "Yes",
+          "data_availability": "Yes",
+          "field": "Macro",
+          "field_2": "Finance",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "negative_result": "No",
+          "ras": 0,
+          "thanks": 14
+        },
+        {
+          "article_page": 138,
+          "codes_availability": "Yes",
+          "data_availability": "Yes",
+          "field": "Macro",
+          "field_2": "Finance",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "negative_result": "No",
+          "ras": 0,
+          "thanks": 9
+        },
+        {
+          "article_page": 255,
+          "codes_availability": "No",
+          "data_availability": "Yes",
+          "field": "Macro",
+          "field_2": "International",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "negative_result": "No",
+          "ras": 0,
+          "thanks": 13
+        },
+        {
+          "article_page": 292,
+          "codes_availability": "Yes",
+          "data_availability": "Yes",
+          "field": "Macro",
+          "field_2": "International",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "negative_result": "No",
+          "ras": 0,
+          "thanks": 5
+        },
+        {
+          "article_page": 347,
+          "codes_availability": "Yes",
+          "data_availability": "Yes",
+          "field": "Micro",
+          "field_2": "Labor",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "negative_result": "No",
+          "ras": 13,
+          "thanks": 6
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "Article variables"
+    },
+    {
+      "columns": [
+        "journal_id",
+        "issue",
+        "article_page",
+        "year",
+        "author",
+        "status",
+        "status_1y",
+        "status_2y",
+        "status_3y",
+        "editor",
+        "editor_before",
+        "affiliation_1",
+        "affiliation_2"
+      ],
+      "preview_rows": [
+        {
+          "affiliation_1": "International Monetary Fund",
+          "affiliation_2": null,
+          "article_page": 66,
+          "author": "Abdul Abiad",
+          "editor": "No",
+          "editor_before": "No",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "status": "Economist",
+          "status_1y": "Economist",
+          "status_2y": "Economist",
+          "status_3y": "Economist",
+          "year": 2005
+        },
+        {
+          "affiliation_1": "International Monetary Fund",
+          "affiliation_2": null,
+          "article_page": 66,
+          "author": "Ashoka Mody",
+          "editor": "No",
+          "editor_before": "No",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "status": "Economist",
+          "status_1y": "Economist",
+          "status_2y": "Economist",
+          "status_3y": "Economist",
+          "year": 2005
+        },
+        {
+          "affiliation_1": "University of\nChicago",
+          "affiliation_2": "NBER",
+          "article_page": 138,
+          "author": "John H. Cochrane",
+          "editor": "No",
+          "editor_before": "Yes",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "status": "Professor",
+          "status_1y": "Professor",
+          "status_2y": "Professor",
+          "status_3y": "Professor",
+          "year": 2005
+        },
+        {
+          "affiliation_1": "University of Chicago",
+          "affiliation_2": "NBER",
+          "article_page": 138,
+          "author": "Monika Piazzesi",
+          "editor": "No",
+          "editor_before": "No",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "status": "Assistant Professor",
+          "status_1y": "Assistant Professor",
+          "status_2y": "Assistant Professor",
+          "status_3y": "Assistant Professor",
+          "year": 2005
+        },
+        {
+          "affiliation_1": "UCLA",
+          "affiliation_2": null,
+          "article_page": 255,
+          "author": "Bhagwan Chowdhry",
+          "editor": "Yes",
+          "editor_before": "Yes",
+          "issue": 95.1,
+          "journal_id": "American Economic Review",
+          "status": "Professor",
+          "status_1y": "Professor",
+          "status_2y": "Professor",
+          "status_3y": "Professor",
+          "year": 2005
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "Author x Article variables"
+    },
+    {
+      "columns": [
+        "author",
+        "phd",
+        "phd_date"
+      ],
+      "preview_rows": [
+        {
+          "author": "A. Joshua Strickland",
+          "phd": "Unknown",
+          "phd_date": "Unknown"
+        },
+        {
+          "author": "Aaron S. Edlin",
+          "phd": "Princeton",
+          "phd_date": 1993
+        },
+        {
+          "author": "Aaron Tornell",
+          "phd": "MIT",
+          "phd_date": 1987
+        },
+        {
+          "author": "Abdul Abiad",
+          "phd": "University of Pennsylvania",
+          "phd_date": 2002
+        },
+        {
+          "author": "Abhijit Banerjee",
+          "phd": "Harvard University",
+          "phd_date": 1988
+        }
+      ],
+      "sample_row_count": 5,
+      "sheet_name": "Author variables"
+    }
+  ]
+}

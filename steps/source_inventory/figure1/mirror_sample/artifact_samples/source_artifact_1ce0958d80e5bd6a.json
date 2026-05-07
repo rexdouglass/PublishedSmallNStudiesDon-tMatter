@@ -1,0 +1,284 @@
+{
+  "artifact_id": "source_artifact_1ce0958d80e5bd6a",
+  "byte_size": 9344,
+  "file_name": "010_pilot_10_1097_01_mph_0000210412_33630_fb.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/010_pilot_10_1097_01_mph_0000210412_33630_fb.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1097/01.mph.0000210412.33630.fb\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "The neutropenic diet is an intervention that excludes certain foods, especially fresh fruits and vegetables, from the diets of pediatric oncology patients to reduce infection rate. The purpose of this study was to demonstrate a safe and feasible methodology to evaluate the infection rate in pediatric cancer patients randomized to the neutropenic diet or to Food and Drug Administration (FDA)-approved food safety guidelines. Pediatric oncology patients receiving myelosuppressive chemotherapy were randomized to the neutropenic diet or to FDA food safety guidelines and followed through one chemotherapy cycle. The primary outcome was febrile neutropenia. Secondary outcomes were adherence and diet tolerability. Nineteen patients were enrolled. Four patients on each diet arm developed febrile neutropenia. The adherence rate was 94% for the neutropenic diet and 100% for the food safety guidelines. Although patients were able to tolerate both diets, there was more reported difficulty adhering to the neutropenic diet. Infection rates for children with cancer on the neutropenic diet were similar to those for patients following food safety guidelines. The results of this study suggest that a larger randomized trial to determine the effectiveness of food safety guidelines in minimizing the risk of food borne infection is safe and feasible in children with cancer.",
+          "affiliation": "Children's Hospital at Montefiore, Albert Einstein College of Medicine, Bronx, NY 10467, USA. Kmoody@Montefiore.org",
+          "authMan": "N",
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Children's Hospital at Montefiore, Albert Einstein College of Medicine, Bronx, NY 10467, USA. Kmoody@Montefiore.org"
+                    }
+                  ]
+                },
+                "firstName": "Karen",
+                "fullName": "Moody K",
+                "initials": "K",
+                "lastName": "Moody"
+              },
+              {
+                "firstName": "Jonathan",
+                "fullName": "Finlay J",
+                "initials": "J",
+                "lastName": "Finlay"
+              },
+              {
+                "firstName": "Carol",
+                "fullName": "Mancuso C",
+                "initials": "C",
+                "lastName": "Mancuso"
+              },
+              {
+                "firstName": "Mary",
+                "fullName": "Charlson M",
+                "initials": "M",
+                "lastName": "Charlson"
+              }
+            ]
+          },
+          "authorString": "Moody K, Finlay J, Mancuso C, Charlson M.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Antineoplastic Agents",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 58,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2006-06-02",
+          "dateOfCreation": "2006-05-09",
+          "dateOfRevision": "2019-12-10",
+          "doi": "10.1097/01.mph.0000210412.33630.fb",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2006-03-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1097/01.mph.0000210412.33630.fb"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "16679934",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2006 Mar",
+            "issue": "3",
+            "journal": {
+              "essn": "1536-3678",
+              "isoabbreviation": "J Pediatr Hematol Oncol",
+              "issn": "1077-4114",
+              "medlineAbbreviation": "J Pediatr Hematol Oncol",
+              "nlmid": "9505928",
+              "title": "Journal of pediatric hematology/oncology"
+            },
+            "journalIssueId": 1321611,
+            "monthOfPublication": 3,
+            "printPublicationDate": "2006-03-01",
+            "volume": "28",
+            "yearOfPublication": 2006
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Neoplasms",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Neutropenia",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "chemically induced"
+                    },
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "DH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "diet therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Antineoplastic Agents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Patient Compliance",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "United States Food and Drug Administration",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Quality of Life",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child, Preschool",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "United States",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Guidelines as Topic",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Infections",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "diet therapy"
+                    },
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "126-133",
+          "pmid": "16679934",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2006",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Feasibility and safety of a pilot randomized trial of infection rate: neutropenic diet versus standard food safety guidelines."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "909da05e20fa59d46c58e527122881015f9ec589694e7ae2a6f9f419ecd49ac2"
+}

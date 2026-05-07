@@ -1,0 +1,435 @@
+{
+  "artifact_id": "source_artifact_57d2b1f347e9f1fd",
+  "byte_size": 14899,
+  "file_name": "029_full_10_7326_0003_4819_151_7_200910060_00142.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/029_full_10_7326_0003_4819_151_7_200910060_00142.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.7326/0003-4819-151-7-200910060-00142\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Few data are available about the effectiveness of nonpharmaceutical interventions for preventing influenza virus transmission.<h4>Objective</h4>To investigate whether hand hygiene and use of facemasks prevents household transmission of influenza.<h4>Design</h4>Cluster randomized, controlled trial. Randomization was computer generated; allocation was concealed from treating physicians and clinics and implemented by study nurses at the time of the initial household visit. Participants and personnel administering the interventions were not blinded to group assignment. (ClinicalTrials.gov registration number: NCT00425893)<h4>Setting</h4>Households in Hong Kong.<h4>Patients</h4>407 people presenting to outpatient clinics with influenza-like illness who were positive for influenza A or B virus by rapid testing (index patients) and 794 household members (contacts) in 259 households.<h4>Intervention</h4>Lifestyle education (control) (134 households), hand hygiene (136 households), or surgical facemasks plus hand hygiene (137 households) for all household members.<h4>Measurements</h4>Influenza virus infection in contacts, as confirmed by reverse-transcription polymerase chain reaction (RT-PCR) or diagnosed clinically after 7 days.<h4>Results</h4>Sixty (8%) contacts in the 259 households had RT-PCR-confirmed influenza virus infection in the 7 days after intervention. Hand hygiene with or without facemasks seemed to reduce influenza transmission, but the differences compared with the control group were not significant. In 154 households in which interventions were implemented within 36 hours of symptom onset in the index patient, transmission of RT-PCR-confirmed infection seemed reduced, an effect attributable to fewer infections among participants using facemasks plus hand hygiene (adjusted odds ratio, 0.33 [95% CI, 0.13 to 0.87]). Adherence to interventions varied.<h4>Limitation</h4>The delay from index patient symptom onset to intervention and variable adherence may have mitigated intervention effectiveness.<h4>Conclusion</h4>Hand hygiene and facemasks seemed to prevent household transmission of influenza virus when implemented within 36 hours of index patient symptom onset. These findings suggest that nonpharmaceutical interventions are important for mitigation of pandemic and interpandemic influenza.<h4>Primary funding source</h4>Centers for Disease Control and Prevention.",
+          "affiliation": "School of Public Health and University of Hong Kong, Cyberport 3, Pokfulam, Hong Kong SAR. bcowling@hku.hk",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8217-5995"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1139-9200"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Public Health and University of Hong Kong, Cyberport 3, Pokfulam, Hong Kong SAR. bcowling@hku.hk"
+                    }
+                  ]
+                },
+                "firstName": "Benjamin J",
+                "fullName": "Cowling BJ",
+                "initials": "BJ",
+                "lastName": "Cowling"
+              },
+              {
+                "firstName": "Kwok-Hung",
+                "fullName": "Chan KH",
+                "initials": "KH",
+                "lastName": "Chan"
+              },
+              {
+                "firstName": "Vicky J",
+                "fullName": "Fang VJ",
+                "initials": "VJ",
+                "lastName": "Fang"
+              },
+              {
+                "firstName": "Calvin K Y",
+                "fullName": "Cheng CK",
+                "initials": "CK",
+                "lastName": "Cheng"
+              },
+              {
+                "firstName": "Rita O P",
+                "fullName": "Fung RO",
+                "initials": "RO",
+                "lastName": "Fung"
+              },
+              {
+                "firstName": "Winnie",
+                "fullName": "Wai W",
+                "initials": "W",
+                "lastName": "Wai"
+              },
+              {
+                "firstName": "Joey",
+                "fullName": "Sin J",
+                "initials": "J",
+                "lastName": "Sin"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1139-9200"
+                },
+                "firstName": "Wing Hong",
+                "fullName": "Seto WH",
+                "initials": "WH",
+                "lastName": "Seto"
+              },
+              {
+                "firstName": "Raymond",
+                "fullName": "Yung R",
+                "initials": "R",
+                "lastName": "Yung"
+              },
+              {
+                "firstName": "Daniel W S",
+                "fullName": "Chu DW",
+                "initials": "DW",
+                "lastName": "Chu"
+              },
+              {
+                "firstName": "Billy C F",
+                "fullName": "Chiu BC",
+                "initials": "BC",
+                "lastName": "Chiu"
+              },
+              {
+                "firstName": "Paco W Y",
+                "fullName": "Lee PW",
+                "initials": "PW",
+                "lastName": "Lee"
+              },
+              {
+                "firstName": "Ming Chi",
+                "fullName": "Chiu MC",
+                "initials": "MC",
+                "lastName": "Chiu"
+              },
+              {
+                "firstName": "Hoi Che",
+                "fullName": "Lee HC",
+                "initials": "HC",
+                "lastName": "Lee"
+              },
+              {
+                "firstName": "Timothy M",
+                "fullName": "Uyeki TM",
+                "initials": "TM",
+                "lastName": "Uyeki"
+              },
+              {
+                "firstName": "Peter M",
+                "fullName": "Houck PM",
+                "initials": "PM",
+                "lastName": "Houck"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8217-5995"
+                },
+                "firstName": "J S Malik",
+                "fullName": "Peiris JS",
+                "initials": "JS",
+                "lastName": "Peiris"
+              },
+              {
+                "firstName": "Gabriel M",
+                "fullName": "Leung GM",
+                "initials": "GM",
+                "lastName": "Leung"
+              }
+            ]
+          },
+          "authorString": "Cowling BJ, Chan KH, Fang VJ, Cheng CK, Fung RO, Wai W, Sin J, Seto WH, Yung R, Chu DW, Chiu BC, Lee PW, Chiu MC, Lee HC, Uyeki TM, Houck PM, Peiris JS, Leung GM.",
+          "citedByCount": 376,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "19805764",
+                "orderIn": 1,
+                "reference": "Ann Intern Med. 2009 Oct 6;151(7):I-18. doi: 10.7326/0003-4819-151-7-200910060-00001",
+                "source": "MED",
+                "type": "Summary for patients in"
+              },
+              {
+                "id": "20436121",
+                "orderIn": 2,
+                "reference": "Evid Based Med. 2010 Apr;15(2):48-9. doi: 10.1136/ebm1043",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "20436144",
+                "orderIn": 3,
+                "reference": "Evid Based Nurs. 2010 Apr;13(2):44. doi: 10.1136/ebn1038",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "wikipedia",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2009-10-21",
+          "dateOfCreation": "2009-08-05",
+          "dateOfRevision": "2022-04-08",
+          "doi": "10.7326/0003-4819-151-7-200910060-00142",
+          "electronicPublicationDate": "2009-08-03",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2010-05-05",
+          "firstPublicationDate": "2009-08-03",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.7326/0003-4819-151-7-200910060-00142"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "CI",
+                "agency": "NCPDCID CDC HHS",
+                "grantId": "1 U01 CI000439-02",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "19652172",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2009 Oct",
+            "issue": "7",
+            "journal": {
+              "essn": "1539-3704",
+              "isoabbreviation": "Ann Intern Med",
+              "issn": "0003-4819",
+              "medlineAbbreviation": "Ann Intern Med",
+              "nlmid": "0372351",
+              "title": "Annals of internal medicine"
+            },
+            "journalIssueId": 1655581,
+            "monthOfPublication": 10,
+            "printPublicationDate": "2009-10-01",
+            "volume": "151",
+            "yearOfPublication": 2009
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Influenza A virus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "IP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "isolation & purification"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Influenza B virus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "IP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "isolation & purification"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Risk Factors",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Prospective Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Reverse Transcriptase Polymerase Chain Reaction",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Masks",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Patient Compliance",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Family Characteristics",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Time Factors",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child, Preschool",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Hong Kong",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Influenza, Human",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diagnosis"
+                    },
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    },
+                    {
+                      "abbreviation": "TM",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "transmission"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Patient Education as Topic",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Young Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Hand Disinfection",
+                "majorTopic_YN": "Y"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "437-446",
+          "pmid": "19652172",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2009",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Facemasks and hand hygiene to prevent influenza transmission in households: a cluster randomized trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "adf1ae2699bf244b98164befa444ef46e640b38327a0d414b7181f0e13247921"
+}

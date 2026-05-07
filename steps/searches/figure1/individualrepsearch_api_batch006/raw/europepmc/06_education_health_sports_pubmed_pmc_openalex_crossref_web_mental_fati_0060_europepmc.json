@@ -1,0 +1,581 @@
+{
+  "hitCount": 2,
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 30,
+    "queryString": "(\"mental fatigue\" \"replication study\" \"time-to-exhaustion\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "It has often been reported that mental exertion, presumably leading to mental fatigue, can negatively affect exercise performance; however, recent findings have questioned the strength of the effect. To further complicate this issue, an overlooked problem might be the presence of publication bias in studies using underpowered designs, which is known to inflate false positive report probability and effect size estimates. Altogether, the presence of bias is likely to reduce the evidential value of the published literature on this topic, although it is unknown to what extent. The purpose of the current work was to assess the evidential value of studies published to date on the effect of mental exertion on exercise performance by assessing the presence of publication bias and the observed statistical power achieved by these studies. A traditional meta-analysis revealed a Cohen's d<sub>z</sub> effect size of -\u20090.54, 95% CI [-\u20090.68, -\u20090.40], p\u2009<\u2009.001. However, when we applied methods for estimating and correcting for publication bias (based on funnel plot asymmetry and observed p-values), we found that the bias-corrected effect size became negligible with most of publication-bias methods and decreased to -\u20090.36 in the more optimistic of all the scenarios. A robust Bayesian meta-analysis found strong evidence in favor of publication bias, BF<sub>pb</sub>\u2009>\u20091000, and inconclusive evidence in favor of the effect, adjusted d<sub>z</sub>\u2009=\u20090.01, 95% CrI [-\u20090.46, 0.37], BF<sub>10</sub>\u2009=\u20090.90. Furthermore, the median observed statistical power assuming the unadjusted meta-analytic effect size (i.e., -\u20090.54) as the true effect size was 39% (min\u2009=\u200919%, max\u2009=\u200996%), indicating that, on average, these studies only had a 39% chance of observing a significant result if the true effect was Cohen's d<sub>z</sub>\u2009=\u2009-\u20090.54. If the more optimistic adjusted effect size (-\u20090.36) was assumed as the true effect, the median statistical power was just 20%. We conclude that the current literature is a useful case study for illustrating the dangers of conducting underpowered studies to detect the effect size of interest.",
+        "affiliation": "Department of Experimental Psychology, and Mind, Brain and Behavior Research Center, University of Granada, Granada, Spain. darias.holgado@unil.ch.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3211-8006"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental Psychology, and Mind, Brain and Behavior Research Center, University of Granada, Granada, Spain. darias.holgado@unil.ch."
+                  },
+                  {
+                    "affiliation": "Institute of Sport Sciences, University of Lausanne, Quartier UNIL-Centre, B\u00e2timent Synathlon, Lausanne, Switzerland. darias.holgado@unil.ch."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3211-8006"
+              },
+              "firstName": "Dar\u00edas",
+              "fullName": "Holgado D",
+              "initials": "D",
+              "lastName": "Holgado"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre of Applied Science for Health, Technological University Dublin, Tallaght, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Cristian",
+              "fullName": "Mesquida C",
+              "initials": "C",
+              "lastName": "Mesquida"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental Psychology, and Mind, Brain and Behavior Research Center, University of Granada, Granada, Spain."
+                  }
+                ]
+              },
+              "firstName": "Rafael",
+              "fullName": "Rom\u00e1n-Caballero R",
+              "initials": "R",
+              "lastName": "Rom\u00e1n-Caballero"
+            }
+          ]
+        },
+        "authorString": "Holgado D, Mesquida C, Rom\u00e1n-Caballero R.",
+        "citedByCount": 11,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2023-11-30",
+        "dateOfCreation": "2023-09-08",
+        "dateOfRevision": "2025-07-03",
+        "doi": "10.1007/s40279-023-01926-w",
+        "electronicPublicationDate": "2023-09-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-09-09",
+        "firstPublicationDate": "2023-09-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10687172"
+          ]
+        },
+        "fullTextReceivedDate": "2023-12-04",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://link.springer.com/content/pdf/10.1007/s40279-023-01926-w.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s40279-023-01926-w"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10687172"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10687172?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Ministerio de Ciencia e Innovaci\u00f3n",
+              "orderIn": 0
+            },
+            {
+              "agency": "Technological University Dublin",
+              "grantId": "PTUD2002",
+              "orderIn": 0
+            },
+            {
+              "agency": "University of Lausanne",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37682411",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2023 Dec",
+          "issue": "12",
+          "journal": {
+            "essn": "1179-2035",
+            "isoabbreviation": "Sports Med",
+            "issn": "0112-1642",
+            "medlineAbbreviation": "Sports Med",
+            "nlmid": "8412297",
+            "title": "Sports medicine (Auckland, N.Z.)"
+          },
+          "journalIssueId": 3670320,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2023-12-01",
+          "volume": "53",
+          "yearOfPublication": 2023
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Bayes Theorem",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mental Fatigue",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Publication Bias",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2293-2307",
+        "pmcid": "PMC10687172",
+        "pmid": "37682411",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Meta-Analysis",
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2023",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Assessing the Evidential Value of Mental Fatigue and Exercise Research."
+      },
+      {
+        "abstractText": "The aim of this study is to replicate the hypothesis that mental fatigue impairs physical performance in a pre-registered (https://osf.io/wqkap/) within-subjects experiment. 30 recreationally active adults completed a time-to-exhaustion test (TTE) at 80% VO<sub>2</sub>max in two separate sessions, after completing a mental fatigue task or watching a documentary for 90 min. We measured power output, heart rate, (session) rating of perceived exertion (RPE) and subjective mental fatigue. Bayes factor analyses revealed extreme evidence supporting the alternative hypothesis that the mental fatigue task was more mentally fatiguing than the control task, BF<sub>01</sub> = 0.009. However, we found moderate-to-strong evidence for the null hypothesis (i.e., no evidence of reduced performance) for average time in TTE (BF<sub>01</sub> = 9.762) and anecdotal evidence for the null hypothesis in (session) RPE (BF<sub>01</sub> = 2.902) and heart rate (BF<sub>01</sub> = 2.587). Our data seem to challenge the idea that mental fatigue has a negative influence on exercise performance. Although we did succeed at manipulating subjective mental fatigue, this did not impair physical performance. However, we cannot discard the possibility that mental fatigue may have a negative influence under conditions not explored here, e.g., individualizing mentally fatiguing tasks. In sum, further research is warranted to determine the role of mental fatigue on exercise and sport performance.",
+        "affiliation": "Centro de Investigaci\u00f3n, Mente, Cerebro y Comportamiento, Departamento de Psicolog\u00eda Experimental (CIMCYC), Universidad de Granada, Granada, Espa\u00f1a.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5163-8811"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8421-816X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4164-7607"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3211-8006"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3708-7405"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centro de Investigaci\u00f3n, Mente, Cerebro y Comportamiento, Departamento de Psicolog\u00eda Experimental (CIMCYC), Universidad de Granada, Granada, Espa\u00f1a."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3211-8006"
+              },
+              "firstName": "Dar\u00edas",
+              "fullName": "Holgado D",
+              "initials": "D",
+              "lastName": "Holgado"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centro de Investigaci\u00f3n, Mente, Cerebro y Comportamiento, Departamento de Psicolog\u00eda Experimental (CIMCYC), Universidad de Granada, Granada, Espa\u00f1a."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3708-7405"
+              },
+              "firstName": "Esther",
+              "fullName": "Troya E",
+              "initials": "E",
+              "lastName": "Troya"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centro de Investigaci\u00f3n, Mente, Cerebro y Comportamiento, Departamento de Psicolog\u00eda Experimental (CIMCYC), Universidad de Granada, Granada, Espa\u00f1a."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5163-8811"
+              },
+              "firstName": "Jos\u00e9 C",
+              "fullName": "Perales JC",
+              "initials": "JC",
+              "lastName": "Perales"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departamento de Psicolog\u00eda B\u00e1sica, Universidad Aut\u00f3noma de Madrid, Madrid, Espa\u00f1a."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8421-816X"
+              },
+              "firstName": "Miguel A",
+              "fullName": "Vadillo MA",
+              "initials": "MA",
+              "lastName": "Vadillo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centro de Investigaci\u00f3n, Mente, Cerebro y Comportamiento, Departamento de Psicolog\u00eda Experimental (CIMCYC), Universidad de Granada, Granada, Espa\u00f1a."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4164-7607"
+              },
+              "firstName": "Daniel",
+              "fullName": "Sanabria D",
+              "initials": "D",
+              "lastName": "Sanabria"
+            }
+          ]
+        },
+        "authorString": "Holgado D, Troya E, Perales JC, Vadillo MA, Sanabria D.",
+        "citedByCount": 29,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2021-07-26",
+        "dateOfCreation": "2020-06-11",
+        "dateOfRevision": "2021-07-26",
+        "doi": "10.1080/17461391.2020.1781265",
+        "electronicPublicationDate": "2020-06-30",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2020-06-10",
+        "firstPublicationDate": "2020-06-30",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1080/17461391.2020.1781265"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Ministerio de Econom\u00eda, Industria y Competitividad, Gobierno de Espa\u00f1a",
+              "grantId": "2016-T1/SOC-1395",
+              "orderIn": 0
+            },
+            {
+              "agency": "Consejer\u00eda de Educaci\u00f3n e Investigaci\u00f3n",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministerio de Econom\u00eda y Competitividad",
+              "orderIn": 0
+            },
+            {
+              "agency": "Comunidad de Madrid",
+              "grantId": "PSI2017-85159-P",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Commission",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministerio de Econom\u00eda y Competitividad",
+              "grantId": "PSI2017\u201085488\u2010P",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades",
+              "grantId": "PSI2017-85488-P",
+              "orderIn": 0
+            },
+            {
+              "agency": "Fondo Europeo de Desarrollo Regional",
+              "orderIn": 0
+            },
+            {
+              "agency": "FEDER",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "N",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "32519588",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2021 May",
+          "issue": "5",
+          "journal": {
+            "essn": "1536-7290",
+            "isoabbreviation": "Eur J Sport Sci",
+            "issn": "1746-1391",
+            "medlineAbbreviation": "Eur J Sport Sci",
+            "nlmid": "101146739",
+            "title": "European journal of sport science"
+          },
+          "journalIssueId": 3179726,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2021-05-01",
+          "volume": "21",
+          "yearOfPublication": 2021
+        },
+        "keywordList": {
+          "keyword": [
+            "Cognition",
+            "Endurance",
+            "Neuroscience",
+            "Fatigue",
+            "Psychology"
+          ]
+        },
+        "language": "eng",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Exercise Test",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Bayes Theorem",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mental Fatigue",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiopathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Motivation",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Perception",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Heart Rate",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Time Factors",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Athletic Performance",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Physical Exertion",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Physical Functional Performance",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "762-770",
+        "pmid": "32519588",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2021",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Does mental fatigue impair physical performance? A replication study."
+      }
+    ]
+  },
+  "version": "6.9"
+}

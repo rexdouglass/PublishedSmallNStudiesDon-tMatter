@@ -1,0 +1,867 @@
+{
+  "hitCount": 4,
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 30,
+    "queryString": "(\"growth mindset\" \"failed to replicate\" \"effect size\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "Mindset (beliefs about the malleability of intelligence) has been studied in a variety of contexts for decades. Recent research highlights the importance of contextual factors in moderating mindset's impact on student outcomes. The commonly-used original mindset measure is context-general. Recently, a mindset measure that is specific to science and math undergraduates was developed: the Undergraduate Lay Theories of Abilities (ULTrA) Survey. I hypothesized that a context-specific measure of mindset would associate more strongly with undergraduates' outcomes than a context-general measure. I surveyed 1537 undergraduates with Dweck's 3-item original mindset measure, ULTrA, and measures of outcomes (sense of belonging, goal orientation, self-handicapping, evaluative concern and intent to persist in science) and collected course grades. Structural equation modeling indicated that the fixed factor of the ULTrA exhibited stronger and more consistent relationships with outcomes than the 3-item original mindset measure and predicted unique variance in outcomes above and beyond what the original mindset measure accounted for. The academic outcomes (intent to persist and course grade) were significantly related to ULTrA, but not the original mindset measure. Our results provide evidence that the context-specific ULTrA survey can detect relationships with undergraduate outcomes that the context-general original mindset measure can fail to detect.",
+        "affiliation": "Department of Biological Sciences, Texas Tech University, Lubbock, TX 79409.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7054-7509"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biological Sciences, Texas Tech University, Lubbock, TX 79409."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7054-7509"
+              },
+              "firstName": "Lisa B",
+              "fullName": "Limeri LB",
+              "initials": "LB",
+              "lastName": "Limeri"
+            }
+          ]
+        },
+        "authorString": "Limeri LB.",
+        "citedByCount": 1,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR973320",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-05-12",
+        "dateOfCreation": "2025-03-07",
+        "dateOfRevision": "2025-05-12",
+        "doi": "10.1187/cbe.24-09-0229",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-03-08",
+        "firstPublicationDate": "2025-03-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11974520"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-02",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1187/cbe.24-09-0229"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11974520"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11974520?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40053668",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Mar",
+          "issue": "1",
+          "journal": {
+            "essn": "1931-7913",
+            "isoabbreviation": "CBE Life Sci Educ",
+            "issn": "1931-7913",
+            "medlineAbbreviation": "CBE Life Sci Educ",
+            "nlmid": "101269039",
+            "title": "CBE life sciences education"
+          },
+          "journalIssueId": 3873547,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2025-03-01",
+          "volume": "24",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Intelligence",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Mathematics",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ED",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "education"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Science",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ED",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "education"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Students",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Educational Measurement",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Universities",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Surveys and Questionnaires",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "ar19",
+        "pmcid": "PMC11974520",
+        "pmid": "40053668",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Intelligence in Context: A Context-specific Mindset Measure Better Predicts Outcomes for Science and Math Undergraduates."
+      },
+      {
+        "abstractText": "This article reports a preregistered study in which we attempted to replicate the results of an influential study on the ego-depletion effect reported by Job, Dweck, and Walton in 2010. The original Job et al. study (Study 1, N = 60) provided evidence that the ego-depletion effect-a performance decrease on a self-control task after performing another self-control task-occurs only for individuals who hold a belief that their willpower is limited. This moderation of the ego-depletion effect by one's willpower mindset (limited vs. nonlimited) has been interpreted as evidence against a prevalent limited-resource account of self-control. Although this alternative account of the ego-depletion effect has become well-known, the statistical evidence of the original study was on shaky ground. We therefore conducted a preregistered replication of the original study with some methodological improvements. As in the original study, participants (N = 187) performed a self-control task (Stroop color-word interference task) after performing the control or depletion version of a letter cancelation task. Despite extensive analyses, we failed to replicate the original results: There was neither a significant main effect of ego depletion nor a significant moderation of this ego-depletion effect by individual differences in willpower mindset. Together with other recent failures to replicate the original moderation effect, our results cast doubts on the claim that an individual's view of whether willpower is limited or not affects one's susceptibility to the ego-depletion effect.",
+        "affiliation": "Department of Psychology, DePaul University, Chicago, IL, United States of America.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6277-2215"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4671-7843"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, DePaul University, Chicago, IL, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6277-2215"
+              },
+              "firstName": "Nicholas P",
+              "fullName": "Carruth NP",
+              "initials": "NP",
+              "lastName": "Carruth"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology and Neuroscience, University of Colorado Boulder, Boulder, CO, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Jairo A",
+              "fullName": "Ramos JA",
+              "initials": "JA",
+              "lastName": "Ramos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology and Neuroscience, University of Colorado Boulder, Boulder, CO, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4671-7843"
+              },
+              "firstName": "Akira",
+              "fullName": "Miyake A",
+              "initials": "A",
+              "lastName": "Miyake"
+            }
+          ]
+        },
+        "authorString": "Carruth NP, Ramos JA, Miyake A.",
+        "citedByCount": 4,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR334203",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2023-10-18",
+        "dateOfCreation": "2023-06-29",
+        "dateOfRevision": "2024-09-21",
+        "doi": "10.1371/journal.pone.0287911",
+        "electronicPublicationDate": "2023-06-29",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-06-30",
+        "firstPublicationDate": "2023-06-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10310002"
+          ]
+        },
+        "fullTextReceivedDate": "2023-07-03",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0287911"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10310002"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10310002?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37384732",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2023 ",
+          "issue": "6",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 3580506,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2023-01-01",
+          "volume": "18",
+          "yearOfPublication": 2023
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Emotions",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Individuality",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Ego",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Self-Control",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0287911",
+        "pmcid": "PMC10310002",
+        "pmid": "37384732",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2023",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Does willpower mindset really moderate the ego-depletion effect? A preregistered replication of Job, Dweck, and Walton (2010)."
+      },
+      {
+        "abstractText": "Neuroscience has identified brain structures and functions that correlate with psychopathic tendencies. Since psychopathic traits can be traced back to physical neural attributes, it has been argued that psychopaths are not truly responsible for their actions and therefore should not be blamed for their psychopathic behaviors. This experimental research aims to evaluate what effect communicating this theory of psychopathy has on the moral behavior of lay people. If psychopathy is blamed on the brain, people may feel less morally responsible for their own psychopathic tendencies and therefore may be more likely to display those tendencies. An online study will provide participants with false feedback about their psychopathic traits supposedly based on their digital footprint (i.e., Facebook likes), thus classifying them as having either above-average or below-average psychopathic traits and describing psychopathy in cognitive or neurobiological terms. This particular study will assess the extent to which lay people are influenced by feedback regarding their psychopathic traits, and how this might affect their moral behavior in online tasks. Public recognition of these potential negative consequences of neuroscience communication will also be assessed. A field study using the lost letter technique will be conducted to examine lay people's endorsement of neurobiological, as compared to cognitive, explanations of criminal behavior. This field and online experimental research could inform the future communication of neuroscience to the public in a way that is sensitive to the potential negative consequences of communicating such science. In particular, this research may have implications for the future means by which neurobiological predictors of offending can be safely communicated to offenders.",
+        "affiliation": "Centre for Criminology, University of Oxford Oxford, UK.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9936-4039"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Criminology, University of Oxford Oxford, UK."
+                  }
+                ]
+              },
+              "firstName": "Robert",
+              "fullName": "Blakey R",
+              "initials": "R",
+              "lastName": "Blakey"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Oslo Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Adrian D",
+              "fullName": "Askelund AD",
+              "initials": "AD",
+              "lastName": "Askelund"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, King's College London London, UK."
+                  }
+                ]
+              },
+              "firstName": "Matilde",
+              "fullName": "Boccanera M",
+              "initials": "M",
+              "lastName": "Boccanera"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Psychology Unit, University of Helsinki Helsinki, Finland."
+                  }
+                ]
+              },
+              "firstName": "Johanna",
+              "fullName": "Immonen J",
+              "initials": "J",
+              "lastName": "Immonen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Maribor Maribor, Slovenia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9936-4039"
+              },
+              "firstName": "Nejc",
+              "fullName": "Plohl N",
+              "initials": "N",
+              "lastName": "Plohl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental Psychology, University of Oxford Oxford, UK."
+                  }
+                ]
+              },
+              "firstName": "Cassandra",
+              "fullName": "Popham C",
+              "initials": "C",
+              "lastName": "Popham"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Psychology and Language Sciences, University College London London, UK."
+                  }
+                ]
+              },
+              "firstName": "Clarissa",
+              "fullName": "Sorger C",
+              "initials": "C",
+              "lastName": "Sorger"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Leiden University Leiden, Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Julia",
+              "fullName": "Stuhlreyer J",
+              "initials": "J",
+              "lastName": "Stuhlreyer"
+            }
+          ]
+        },
+        "authorString": "Blakey R, Askelund AD, Boccanera M, Immonen J, Plohl N, Popham C, Sorger C, Stuhlreyer J.",
+        "citedByCount": 2,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2017-03-30",
+        "dateOfRevision": "2024-05-24",
+        "doi": "10.3389/fpsyg.2017.00294",
+        "electronicPublicationDate": "2017-03-14",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2017-03-30",
+        "firstPublicationDate": "2017-03-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5348490"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-10",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fpsyg.2017.00294"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC5348490"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC5348490?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Economic and Social Research Council",
+              "grantId": "1500766",
+              "orderIn": 0
+            },
+            {
+              "agency": "Economic and Social Research Council",
+              "grantId": "ES/J500112/1",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "28352238",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2017 ",
+          "journal": {
+            "essn": "1664-1078",
+            "isoabbreviation": "Front Psychol",
+            "issn": "1664-1078",
+            "medlineAbbreviation": "Front Psychol",
+            "nlmid": "101550902",
+            "title": "Frontiers in psychology"
+          },
+          "journalIssueId": 2550596,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2017-01-01",
+          "volume": "8",
+          "yearOfPublication": 2017
+        },
+        "keywordList": {
+          "keyword": [
+            "Self-control",
+            "Attributions",
+            "Psychopathy",
+            "Dishonesty",
+            "Belief In Free Will",
+            "Belief In Determinism",
+            "Neuroscience Communication",
+            "Utilitarian Moral Judgment"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "294",
+        "pmcid": "PMC5348490",
+        "pmid": "28352238",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2017",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Communicating the Neuroscience of Psychopathy and Its Influence on Moral Behavior: Protocol of Two Experimental Studies."
+      },
+      {
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7533-6260"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8957-6425"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0313-3277"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1795-4367"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2996-5135"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3853-7597"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4223-2614"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4581-4898"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4796-8268"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5003-8088"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0743-0364"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2580-3523"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2748-8547"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4540-8416"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4999-5902"
+            }
+          ]
+        },
+        "citedByCount": 5,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCreation": "2018-11-28",
+        "dateOfRevision": "2020-09-30",
+        "doi": "10.1093/geroni/igx009",
+        "electronicPublicationDate": "2017-07-12",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2018-11-28",
+        "firstPublicationDate": "2017-07-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6183407"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-10",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://academic.oup.com/innovateage/article-pdf/1/suppl_1/1/26113400/igx009.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/geroni/igx009"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6183407"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6183407?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/geroni/igx009"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "30480124",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2017 Jul",
+          "issue": "Suppl 1",
+          "journal": {
+            "essn": "2399-5300",
+            "isoabbreviation": "Innov Aging",
+            "issn": "2399-5300",
+            "medlineAbbreviation": "Innov Aging",
+            "nlmid": "101703706",
+            "title": "Innovation in aging"
+          },
+          "journalIssueId": 2753547,
+          "monthOfPublication": 7,
+          "printPublicationDate": "2017-07-01",
+          "volume": "1",
+          "yearOfPublication": 2017
+        },
+        "language": "eng",
+        "nihAuthMan": "N",
+        "pageInfo": "1-1452",
+        "pmcid": "PMC6183407",
+        "pmid": "30480124",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "other",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2017",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Program Abstracts from the 21st International Association of Gerontology and Geriatrics (IAGG) World Congress."
+      }
+    ]
+  },
+  "version": "6.9"
+}

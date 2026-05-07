@@ -1,0 +1,195 @@
+{
+  "response": {
+    "docs": [
+      {
+        "abstract": [
+          "\nLarge sample size (N) is seen as a key criterion in judging the replicability of psychological research, a phenomenon we refer to as the N-Heuristic. This heuristic has led to the incentivization of fast, online, non-behavioral studies\u2014to the potential detriment of psychological science. While large N should in principle increase statistical power and thus the replicability of effects, in practice it may not. Large-N studies may have other attributes that undercut their power or validity. Consolidating data from all systematic, large-scale attempts at replication (N = 307 original-replication study pairs), we find that the original study\u2019s sample size did not predict its likelihood of being replicated (rs = -0.02, p = 0.741), even with study design and research area controlled. By contrast, effect size emerged as a substantial predictor (rs = 0.21, p < 0.001), which held regardless of the study\u2019s sample size. N may be a poor predictor of replicability because studies with larger N investigated smaller effects (rs = -0.49, p < 0.001). Contrary to these results, a survey of 215 professional psychologists, presenting them with a comprehensive list of methodological criteria, found sample size to be rated as the most important criterion in judging a study\u2019s replicability. Our findings strike a cautionary note with respect to the prioritization of large N in judging the replicability of psychological science.\n"
+        ],
+        "author_display": [
+          "Xingyu Li",
+          "Jiting Liu",
+          "Weijia Gao",
+          "Geoffrey L. Cohen"
+        ],
+        "id": "10.1371/journal.pone.0306911",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-08-23T00:00:00Z",
+        "title": "Challenging the N-Heuristic: Effect size, not sample size, predicts the replicability of psychological science"
+      },
+      {
+        "abstract": [
+          "\nThe vast majority of published results in the literature is statistically significant, which raises concerns about their reliability. The Reproducibility Project Psychology (RPP) and Experimental Economics Replication Project (EE-RP) both replicated a large number of published studies in psychology and economics. The original study and replication were statistically significant in 36.1% in RPP and 68.8% in EE-RP suggesting many null effects among the replicated studies. However, evidence in favor of the null hypothesis cannot be examined with null hypothesis significance testing. We developed a Bayesian meta-analysis method called snapshot hybrid that is easy to use and understand and quantifies the amount of evidence in favor of a zero, small, medium and large effect. The method computes posterior model probabilities for a zero, small, medium, and large effect and adjusts for publication bias by taking into account that the original study is statistically significant. We first analytically approximate the methods performance, and demonstrate the necessity to control for the original study\u2019s significance to enable the accumulation of evidence for a true zero effect. Then we applied the method to the data of RPP and EE-RP, showing that the underlying effect sizes of the included studies in EE-RP are generally larger than in RPP, but that the sample sizes of especially the included studies in RPP are often too small to draw definite conclusions about the true effect size. We also illustrate how snapshot hybrid can be used to determine the required sample size of the replication akin to power analysis in null hypothesis significance testing and present an easy to use web application (https://rvanaert.shinyapps.io/snapshot/) and R code for applying the method.\n"
+        ],
+        "author_display": [
+          "Robbie C. M. van Aert",
+          "Marcel A. L. M. van Assen"
+        ],
+        "id": "10.1371/journal.pone.0175302",
+        "journal": "PLOS ONE",
+        "publication_date": "2017-04-07T00:00:00Z",
+        "title": "Bayesian evaluation of effect size after replicating an original study"
+      },
+      {
+        "abstract": [
+          "Background: The importance of replication in the social and behavioural sciences has been emphasized for decades. Various frequentist and Bayesian approaches have been proposed to qualify a replication study as successful or unsuccessful. One of them is meta-analysis. The focus of the present study is on the way meta-analysis functions as a replication success metric. To investigate this, original and replication studies that are part of two large-scale replication projects were used. For each original study, the probability of replication success was calculated using meta-analysis under different assumptions of the underlying population effect when replication results were unknown. The accuracy of the predicted overall replication success was evaluated once replication results became available using adjusted Brier scores. Results: Our results showed that meta-analysis performed poorly when used as a replication success metric. In many cases, quantifying replication success using meta-analysis resulted in the conclusion where the replication was deemed a success regardless of the results of the replication study. Discussion: We conclude that when using meta-analysis as a replication success metric, it has a relatively high probability of finding evidence in favour of a non-zero population effect even when it is zero. This behaviour largely results from the significance of the original study. Furthermore, we argue that there are fundamental reasons against using meta-analysis as a metric for replication success. "
+        ],
+        "author_display": [
+          "Jasmine Muradchanian",
+          "Rink Hoekstra",
+          "Henk Kiers",
+          "Don van Ravenzwaaij"
+        ],
+        "id": "10.1371/journal.pone.0308495",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-12-11T00:00:00Z",
+        "title": "Evaluating meta-analysis as a replication success measure"
+      },
+      {
+        "abstract": [
+          "\nThe need for replication of initial results has been rediscovered only recently in many fields of research. In preclinical biomedical research, it is common practice to conduct exact replications with the same sample sizes as those used in the initial experiments. Such replication attempts, however, have lower probability of replication than is generally appreciated. Indeed, in the common scenario of an effect just reaching statistical significance, the statistical power of the replication experiment assuming the same effect size is approximately 50%\u2014in essence, a coin toss. Accordingly, we use the provocative analogy of \u201creplicating\u201d a neuroprotective drug animal study with a coin flip to highlight the need for larger sample sizes in replication experiments. Additionally, we provide detailed background for the probability of obtaining a significant p value in a replication experiment and discuss the variability of p values as well as pitfalls of simple binary significance testing in both initial preclinical experiments and replication studies with small sample sizes. We conclude that power analysis for determining the sample size for a replication study is obligatory within the currently dominant hypothesis testing framework. Moreover, publications should include effect size point estimates and corresponding measures of precision, e.g., confidence intervals, to allow readers to assess the magnitude and direction of reported effects and to potentially combine the results of initial and replication study later through Bayesian or meta-analytic approaches.\n\nUsing a coin toss to \u2018replicate\u2019 a neuroprotective effect of valproic acid, this study highlights the fact that exact replications of biomedical experiments are usually underpowered, often with power of approximately 50%.\n"
+        ],
+        "author_display": [
+          "Sophie K. Piper",
+          "Ulrike Grittner",
+          "Andre Rex",
+          "Nico Riedel",
+          "Felix Fischer",
+          "Robert Nadon",
+          "Bob Siegerink",
+          "Ulrich Dirnagl"
+        ],
+        "id": "10.1371/journal.pbio.3000188",
+        "journal": "PLOS Biology",
+        "publication_date": "2019-04-09T00:00:00Z",
+        "title": "Exact replication: Foundation of science or game of chance?"
+      },
+      {
+        "abstract": [
+          "\nPreviously observed negative correlations between sample size and effect size (n-ES correlation) in psychological research have been interpreted as evidence for publication bias and related undesirable biases. Here, we present two studies aimed at better understanding to what extent negative n-ES correlations reflect such biases or might be explained by unproblematic adjustments of sample size to expected effect sizes. In Study 1, we analysed n-ES correlations in 150 meta-analyses from cognitive, organizational, and social psychology and in 57 multiple replications, which are free from relevant biases. In Study 2, we used a random sample of 160 psychology papers to compare the n-ES correlation for effects that are central to these papers and effects selected at random from these papers. n-ES correlations proved inconspicuous in meta-analyses. In line with previous research, they do not suggest that publication bias and related biases have a strong impact on meta-analyses in psychology. A much higher n-ES correlation emerged for publications\u2019 focal effects. To what extent this should be attributed to publication bias and related biases remains unclear.\n"
+        ],
+        "author_display": [
+          "Audrey Helen Linden",
+          "Thomas V. Pollet",
+          "Johannes H\u00f6nekopp"
+        ],
+        "id": "10.1371/journal.pone.0297075",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-02-15T00:00:00Z",
+        "title": "Publication bias in psychology: A closer look at the correlation between sample size and effect size"
+      },
+      {
+        "abstract": [
+          "\nCharacterizing the distribution of effects from genome-wide genotyping data is crucial for understanding important aspects of the genetic architecture of complex traits, such as number or proportion of non-null loci, average proportion of phenotypic variance explained per non-null effect, power for discovery, and polygenic risk prediction. To this end, previous work has used effect-size models based on various distributions, including the normal and normal mixture distributions, among others. In this paper we propose a scale mixture of two normals model for effect size distributions of genome-wide association study (GWAS) test statistics. Test statistics corresponding to null associations are modeled as random draws from a normal distribution with zero mean; test statistics corresponding to non-null associations are also modeled as normal with zero mean, but with larger variance. The model is fit via minimizing discrepancies between the parametric mixture model and resampling-based nonparametric estimates of replication effect sizes and variances. We describe in detail the implications of this model for estimation of the non-null proportion, the probability of replication in de novo samples, the local false discovery rate, and power for discovery of a specified proportion of phenotypic variance explained from additive effects of loci surpassing a given significance threshold. We also examine the crucial issue of the impact of linkage disequilibrium (LD) on effect sizes and parameter estimates, both analytically and in simulations. We apply this approach to meta-analysis test statistics from two large GWAS, one for Crohn\u2019s disease (CD) and the other for schizophrenia (SZ). A scale mixture of two normals distribution provides an excellent fit to the SZ nonparametric replication effect size estimates. While capturing the general behavior of the data, this mixture model underestimates the tails of the CD effect size distribution. We discuss the implications of pervasive small but replicating effects in CD and SZ on genomic control and power. Finally, we conclude that, despite having very similar estimates of variance explained by genotyped SNPs, CD and SZ have a broadly dissimilar genetic architecture, due to differing mean effect size and proportion of non-null loci.\nAuthor Summary: We describe in detail the implications of a particular mixture model (a scale mixture of two normals) for effect size distributions from genome-wide genotyping data. Parameters from this model can be used for estimation of the non-null proportion, the probability of replication in de novo samples, the local false discovery rate, power for detecting non-null loci, and proportion of variance explained from additive effects. Here, we fit this model by minimizing discrepancies with nonparametric estimates from a resampling-based algorithm. We examine the effects of linkage disequilibrium (LD) on effect sizes and parameter estimates, both analytically and in simulations. We validate this approach using meta-analysis test statistics (\u201cz-scores\u201d) from two large GWAS, one for Crohn\u2019s disease and the other for schizophrenia. We demonstrate that for these studies a scale mixture of two normal distributions generally fits empirical replication effect sizes well, providing an excellent fit for the schizophrenia effect sizes but underestimating the tails of the distribution for Crohn\u2019s disease. "
+        ],
+        "author_display": [
+          "Wesley K. Thompson",
+          "Yunpeng Wang",
+          "Andrew J. Schork",
+          "Aree Witoelar",
+          "Verena Zuber",
+          "Shujing Xu",
+          "Thomas Werge",
+          "Dominic Holland",
+          "Schizophrenia Working Group of the Psychiatric Genomics Consortium ",
+          "Ole A. Andreassen",
+          "Anders M. Dale"
+        ],
+        "id": "10.1371/journal.pgen.1005717",
+        "journal": "PLOS Genetics",
+        "publication_date": "2015-12-29T00:00:00Z",
+        "title": "An Empirical Bayes Mixture Model for Effect Size Distributions in Genome-Wide Association Studies"
+      },
+      {
+        "abstract": [
+          "Introduction: Previous studies about the replicability of clinical research based on the published literature have suggested that highly cited articles are often contradicted or found to have inflated effects. Nevertheless, there are no recent updates of such efforts, and this situation may have changed over time. Methods: We searched the Web of Science database for articles studying medical interventions with more than 2000 citations, published between 2004 and 2018 in high-impact medical journals. We then searched for replications of these studies in PubMed using the PICO (Population, Intervention, Comparator and Outcome) framework. Replication success was evaluated by the presence of a statistically significant effect in the same direction and by overlap of the replication\u2019s effect size confidence interval (CIs) with that of the original study. Evidence of effect size inflation and potential predictors of replicability were also analyzed. Results: A total of 89 eligible studies, of which 24 had valid replications (17 meta-analyses and 7 primary studies) were found. Of these, 21 (88%) had effect sizes with overlapping CIs. Of 15 highly cited studies with a statistically significant difference in the primary outcome, 13 (87%) had a significant effect in the replication as well. When both criteria were considered together, the replicability rate in our sample was of 20 out of 24 (83%). There was no evidence of systematic inflation in these highly cited studies, with a mean effect size ratio of 1.03 [95% CI (0.88, 1.21)] between initial and subsequent effects. Due to the small number of contradicted results, our analysis had low statistical power to detect predictors of replicability. Conclusion: Although most studies did not have eligible replications, the replicability rate of highly cited clinical studies in our sample was higher than in previous estimates, with little evidence of systematic effect size inflation. This estimate is based on a very select sample of studies and may not be generalizable to clinical research in general. "
+        ],
+        "author_display": [
+          "Gabriel Gon\u00e7alves da Costa",
+          "Kleber Neves",
+          "Olavo Amaral"
+        ],
+        "id": "10.1371/journal.pone.0307145",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-08-07T00:00:00Z",
+        "title": "Estimating the replicability of highly cited clinical research (2004\u20132018)"
+      },
+      {
+        "abstract": [
+          "\nWe revisit the results of the recent Reproducibility Project: Psychology by the Open Science Collaboration. We compute Bayes factors\u2014a quantity that can be used to express comparative evidence for an hypothesis but also for the null hypothesis\u2014for a large subset (N = 72) of the original papers and their corresponding replication attempts. In our computation, we take into account the likely scenario that publication bias had distorted the originally published results. Overall, 75% of studies gave qualitatively similar results in terms of the amount of evidence provided. However, the evidence was often weak (i.e., Bayes factor < 10). The majority of the studies (64%) did not provide strong evidence for either the null or the alternative hypothesis in either the original or the replication, and no replication attempts provided strong evidence in favor of the null. In all cases where the original paper provided strong evidence but the replication did not (15%), the sample size in the replication was smaller than the original. Where the replication provided strong evidence but the original did not (10%), the replication sample size was larger. We conclude that the apparent failure of the Reproducibility Project to replicate many target effects can be adequately explained by overestimation of effect sizes (or overestimation of evidence against the null hypothesis) due to small sample sizes and publication bias in the psychological literature. We further conclude that traditional sample sizes are insufficient and that a more widespread adoption of Bayesian methods is desirable.\n"
+        ],
+        "author_display": [
+          "Alexander Etz",
+          "Joachim Vandekerckhove"
+        ],
+        "id": "10.1371/journal.pone.0149794",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-02-26T00:00:00Z",
+        "title": "A Bayesian Perspective on the Reproducibility Project: Psychology"
+      },
+      {
+        "abstract": [
+          "\nA challenge when interpreting replications is determining whether the results of a replication \u201csuccessfully\u201d replicate the original study. Looking for consistency between two studies is challenging because individual studies are susceptible to many sources of error that can cause study results to deviate from each other and the population effect in unpredictable directions and magnitudes. In the current paper, we derive methods to compute a prediction interval, a range of results that can be expected in a replication due to chance (i.e., sampling error), for means and commonly used indexes of effect size: correlations and d-values. The prediction interval is calculable based on objective study characteristics (i.e., effect size of the original study and sample sizes of the original study and planned replication) even when sample sizes across studies are unequal. The prediction interval provides an a priori method for assessing if the difference between an original and replication result is consistent with what can be expected due to sample error alone. We provide open-source software tools that allow researchers, reviewers, replicators, and editors to easily calculate prediction intervals.\n"
+        ],
+        "author_display": [
+          "Jeffrey R. Spence",
+          "David J. Stanley"
+        ],
+        "id": "10.1371/journal.pone.0162874",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-09-19T00:00:00Z",
+        "title": "Prediction Interval: What to Expect When You\u2019re Expecting \u2026 A Replication"
+      },
+      {
+        "abstract": [
+          "\nWe measure how accurately replication of experimental results can be predicted by black-box statistical models. With data from four large-scale replication projects in experimental psychology and economics, and techniques from machine learning, we train predictive models and study which variables drive predictable replication. The models predicts binary replication with a cross-validated accuracy rate of 70% (AUC of 0.77) and estimates of relative effect sizes with a Spearman \u03c1 of 0.38. The accuracy level is similar to market-aggregated beliefs of peer scientists [1, 2]. The predictive power is validated in a pre-registered out of sample test of the outcome of [3], where 71% (AUC of 0.73) of replications are predicted correctly and effect size correlations amount to \u03c1 = 0.25. Basic features such as the sample and effect sizes in original papers, and whether reported effects are single-variable main effects or two-variable interactions, are predictive of successful replication. The models presented in this paper are simple tools to produce cheap, prognostic replicability metrics. These models could be useful in institutionalizing the process of evaluation of new findings and guiding resources to those direct replications that are likely to be most informative.\n"
+        ],
+        "author_display": [
+          "Adam Altmejd",
+          "Anna Dreber",
+          "Eskil Forsell",
+          "Juergen Huber",
+          "Taisuke Imai",
+          "Magnus Johannesson",
+          "Michael Kirchler",
+          "Gideon Nave",
+          "Colin Camerer"
+        ],
+        "id": "10.1371/journal.pone.0225826",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-12-05T00:00:00Z",
+        "title": "Predicting the replicability of social science lab experiments"
+      },
+      {
+        "abstract": [
+          "\nThe authors evaluate the quality of research reported in major journals in social-personality psychology by ranking those journals with respect to their N-pact Factors (NF)\u2014the statistical power of the empirical studies they publish to detect typical effect sizes. Power is a particularly important attribute for evaluating research quality because, relative to studies that have low power, studies that have high power are more likely to (a) to provide accurate estimates of effects, (b) to produce literatures with low false positive rates, and (c) to lead to replicable findings. The authors show that the average sample size in social-personality research is 104 and that the power to detect the typical effect size in the field is approximately 50%. Moreover, they show that there is considerable variation among journals in sample sizes and power of the studies they publish, with some journals consistently publishing higher power studies than others. The authors hope that these rankings will be of use to authors who are choosing where to submit their best work, provide hiring and promotion committees with a superior way of quantifying journal quality, and encourage competition among journals to improve their NF rankings.\n"
+        ],
+        "author_display": [
+          "R. Chris Fraley",
+          "Simine Vazire"
+        ],
+        "id": "10.1371/journal.pone.0109019",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-10-08T00:00:00Z",
+        "title": "The N-Pact Factor: Evaluating the Quality of Empirical Journals with Respect to Sample Size and Statistical Power"
+      },
+      {
+        "abstract": [
+          "Context: There are growing concerns about effect size inflation and replication validity of association studies, but few observational investigations have explored the extent of these problems. Objective: Using meta-analyses to measure the reliability of initial studies and explore whether this varies across biomedical domains and study types (cognitive/behavioral, brain imaging, genetic and \u201cothers\u201d). Methods: We analyzed 663 meta-analyses describing associations between markers or risk factors and 12 pathologies within three biomedical domains (psychiatry, neurology and four somatic diseases). We collected the effect size, sample size, publication year and Impact Factor of initial studies, largest studies (i.e., with the largest sample size) and the corresponding meta-analyses. Initial studies were considered as replicated if they were in nominal agreement with meta-analyses and if their effect size inflation was below 100%. Results: Nominal agreement between initial studies and meta-analyses regarding the presence of a significant effect was not better than chance in psychiatry, whereas it was somewhat better in neurology and somatic diseases. Whereas effect sizes reported by largest studies and meta-analyses were similar, most of those reported by initial studies were inflated. Among the 256 initial studies reporting a significant effect (p<0.05) and paired with significant meta-analyses, 97 effect sizes were inflated by more than 100%. Nominal agreement and effect size inflation varied with the biomedical domain and study type. Indeed, the replication rate of initial studies reporting a significant effect ranged from 6.3% for genetic studies in psychiatry to 86.4% for cognitive/behavioral studies. Comparison between eight subgroups shows that replication rate decreases with sample size and \u201ctrue\u201d effect size. We observed no evidence of association between replication rate and publication year or Impact Factor. Conclusion: The differences in reliability between biological psychiatry, neurology and somatic diseases suggest that there is room for improvement, at least in some subdomains. "
+        ],
+        "author_display": [
+          "Estelle Dumas-Mallet",
+          "Katherine Button",
+          "Thomas Boraud",
+          "Marcus Munafo",
+          "Fran\u00e7ois Gonon"
+        ],
+        "id": "10.1371/journal.pone.0158064",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-06-23T00:00:00Z",
+        "title": "Replication Validity of Initial Association Studies: A Comparison between Psychiatry, Neurology and Four Somatic Diseases"
+      }
+    ],
+    "numFound": 7459,
+    "start": 0
+  }
+}

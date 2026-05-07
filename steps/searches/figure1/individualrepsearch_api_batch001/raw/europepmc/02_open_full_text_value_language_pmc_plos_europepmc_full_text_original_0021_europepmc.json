@@ -1,0 +1,2724 @@
+{
+  "hitCount": 930,
+  "nextCursorMark": "AoIIQChD9yg1Mjc2NTk2NA==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"original study\" \"replication study\" \"d =\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIQChD9yg1Mjc2NTk2NA==&resultType=core&pageSize=8&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 8,
+    "queryString": "(\"original study\" \"replication study\" \"d =\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "In the past decade, there has been considerable concern about the reproducibility of psychological research. We suggest that in-class replications are a feasible setting for the replication of psychophysiological findings and present our conceptual in-class replication of a finding by Sussman, Ritter, and Vaughan Jr. (1998). In the original study, infrequent pitch deviants (proportion: 20%) were presented either at fixed (i.e., predictable) positions or at random positions (i.e., as classic oddballs) in the auditory sequence. The authors found that deviants presented in the predictable condition did not elicit the mismatch negativity (MMN) in the event-related potential (ERP) when the tone sequence was presented at sufficiently fast stimulus onset asynchronies (SOAs) but deviants presented in the random condition elicited an MMN. We replicated a subset of the original conditions in a sample of 25 participants. Although we had changed some aspects of the original design we found frequentist and Bayesian statistical evidence in favor of ERP-differences in the predictable vs. the random condition in the MMN time window. In line with the original results deviants presented in the predictable condition did not elicit an MMN suggesting that the auditory system extracts regularly occurring patterns within fast-paced task-irrelevant acoustic input. However, sequential Bayes factor analysis showed a substantial between-participant variability in the random condition obscuring the presence of a reliable MMN. We discuss potential inter-individual differences in segregating fast-paced sound sequences into separate streams as an explanation for this phenomenon. We further discuss advantages and disadvantages of in-class replications in psychophysiological research.",
+        "affiliation": "Institut f\u00fcr Psychologie, Universit\u00e4t Kassel, Kassel, Germany.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institut f\u00fcr Psychologie, Universit\u00e4t Kassel, Kassel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Florian",
+              "fullName": "Scharf F",
+              "initials": "F",
+              "lastName": "Scharf"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Wilhelm-Wundt-Institut f\u00fcr Psychologie, Universit\u00e4t Leipzig, Leipzig, Germany. Electronic address: dagmar_mueller@uni-leipzig.de."
+                  }
+                ]
+              },
+              "firstName": "Dagmar",
+              "fullName": "M\u00fcller D",
+              "initials": "D",
+              "lastName": "M\u00fcller"
+            }
+          ]
+        },
+        "authorString": "Scharf F, M\u00fcller D.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-05",
+        "dateOfCreation": "2026-01-20",
+        "dateOfRevision": "2026-03-05",
+        "doi": "10.1016/j.ijpsycho.2026.113330",
+        "electronicPublicationDate": "2026-01-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-22",
+        "firstPublicationDate": "2026-01-18",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.ijpsycho.2026.113330"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41558583",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "journal": {
+            "essn": "1872-7697",
+            "isoabbreviation": "Int J Psychophysiol",
+            "issn": "0167-8760",
+            "medlineAbbreviation": "Int J Psychophysiol",
+            "nlmid": "8406214",
+            "title": "International journal of psychophysiology : official journal of the International Organization of Psychophysiology"
+          },
+          "journalIssueId": 4132523,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "221",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Prediction",
+            "Mismatch Negativity (Mmn)",
+            "Auditory Event-related Potential",
+            "In-class Replication",
+            "Sound Pattern Extraction"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Electroencephalography",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Acoustic Stimulation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Auditory Perception",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Reaction Time",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Contingent Negative Variation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Evoked Potentials, Auditory",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "113330",
+        "pmid": "41558583",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Predictable changes within fast-paced sound sequences do not elicit the mismatch negativity: A conceptual in-class replication study."
+      },
+      {
+        "abstractText": "Reproducibility is recognized as essential to scientific progress and integrity. Replication studies and large-scale replication projects, aiming to quantify different aspects of reproducibility, have become more common. Since no standardized approach to measuring reproducibility exists, a diverse set of metrics has emerged and a comprehensive overview is needed. We conducted a scoping review to identify large-scale replication projects that used metrics and methodological papers that proposed or discussed metrics. The project list was compiled by the authors. For the methodological papers, we searched Scopus, MedLine, PsycINFO and EconLit. Records were screened in duplicate against pre-defined inclusion criteria. Demographic information on included records and information on reproducibility metrics used, suggested or discussed was extracted. We identified 49 large-scale projects and 97 methodological papers and extracted 50 metrics. The metrics were characterized based on type (formulas and/or statistical models, frameworks, graphical representations, studies and questionnaires, algorithms), input required and appropriate application scenarios. Each metric addresses a distinct question. Our review provides a comprehensive resource in the form of a 'live', interactive table for future replication teams and meta-researchers, offering support in how to select the most appropriate metrics that are aligned with research questions and project goals.",
+        "affiliation": "Center for Reproducible Science, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5454-2508"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8927-3483"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1331-6683"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2212-1626"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2934-3010"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5871-997X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7531-4333"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8686-5325"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2779-320X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3635-3660"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4737-2349"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7531-4333"
+              },
+              "firstName": "Rachel",
+              "fullName": "Heyard R",
+              "initials": "R",
+              "lastName": "Heyard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2779-320X"
+              },
+              "firstName": "Samuel",
+              "fullName": "Pawel S",
+              "initials": "S",
+              "lastName": "Pawel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Political and Social Sciences, European University Institute, Fiesole, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5871-997X"
+              },
+              "firstName": "Joris",
+              "fullName": "Frese J",
+              "initials": "J",
+              "lastName": "Frese"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Bern, Bern, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5454-2508"
+              },
+              "firstName": "Bernhard",
+              "fullName": "Voelkl B",
+              "initials": "B",
+              "lastName": "Voelkl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Bern, Bern, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2934-3010"
+              },
+              "firstName": "Hanno",
+              "fullName": "W\u00fcrbel H",
+              "initials": "H",
+              "lastName": "W\u00fcrbel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Berlin Institute of Health at Charit\u00e9 QUEST Center for Responsible Research, Berlin, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4737-2349"
+              },
+              "firstName": "Sarah",
+              "fullName": "McCann S",
+              "initials": "S",
+              "lastName": "McCann"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8686-5325"
+              },
+              "firstName": "Leonhard",
+              "fullName": "Held L",
+              "initials": "L",
+              "lastName": "Held"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departmentof Anesthesiology, Pain and Palliative Care, Radboud University Medical Center, Nijmegen, Gelderland, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3635-3660"
+              },
+              "firstName": "Kimberley E",
+              "fullName": "Wever KE",
+              "initials": "KE",
+              "lastName": "Wever"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology and Center for Translational, Neuro- and Behavioral Sciences, University Hospital Essen, Essen, Nordrhein-Westfalen, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1331-6683"
+              },
+              "firstName": "Helena",
+              "fullName": "Hartmann H",
+              "initials": "H",
+              "lastName": "Hartmann"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Research and Innovation Office, Torrens University Australia, Adelaide, South Australia, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2212-1626"
+              },
+              "firstName": "Louise",
+              "fullName": "Townsin L",
+              "initials": "L",
+              "lastName": "Townsin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Molecular Medicine Finland, University of Helsinki, Helsinki, Uusimaa, Finland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8927-3483"
+              },
+              "firstName": "Stephanie",
+              "fullName": "Zellers S",
+              "initials": "S",
+              "lastName": "Zellers"
+            }
+          ]
+        },
+        "authorString": "Heyard R, Pawel S, Frese J, Voelkl B, W\u00fcrbel H, McCann S, Held L, Wever KE, Hartmann H, Townsin L, Zellers S.",
+        "citedByCount": 1,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR946340",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-09-15",
+        "dateOfCreation": "2025-09-02",
+        "dateOfRevision": "2025-09-15",
+        "doi": "10.1098/rsos.242076",
+        "electronicPublicationDate": "2025-07-15",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-09-04",
+        "firstPublicationDate": "2025-07-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12395386"
+          ]
+        },
+        "fullTextReceivedDate": "2025-09-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1098/rsos.242076"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsos.242076"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12395386"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12395386?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "HORIZON EUROPE Framework Programme",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40894102",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Jul",
+          "issue": "7",
+          "journal": {
+            "essn": "2054-5703",
+            "isoabbreviation": "R Soc Open Sci",
+            "issn": "2054-5703",
+            "medlineAbbreviation": "R Soc Open Sci",
+            "nlmid": "101647528",
+            "title": "Royal Society open science"
+          },
+          "journalIssueId": 3970515,
+          "monthOfPublication": 7,
+          "printPublicationDate": "2025-07-01",
+          "volume": "12",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Reproducibility",
+            "Generalizability",
+            "Replicability",
+            "Metrics",
+            "Translatability",
+            "Meta-research"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "242076",
+        "pmcid": "PMC12395386",
+        "pmid": "40894102",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "A scoping review on metrics to quantify reproducibility: a multitude of questions leads to a multitude of metrics."
+      },
+      {
+        "abstractText": "<p>Childhood maltreatment (CM) has long-lasting effects on physical and mental health with CM type specific effects being reported. Epigenetic processes, like deoxyribonucleic acid methylation (DNAm), might mediate this link, and CM types might be linked to differential alterations in DNAm. While a study by Cecil et al. (2016) suggests that different forms of CM share common but also exhibit distinct epigenetic signatures, it is unclear whether these results are generalizable to other high-risk samples. The aim of this preregistered study was to replicate the study of Cecil and colleagues (2016) in a sample of N = 116 previously out-of-home placed young adults (32% women, age mean = 26.38, SD = 3.49). Participants completed the Childhood Trauma Questionnaire - Short Form (CTQ-SF), DNA was extracted from whole blood and DNAm was assayed using the Illumina Infinium MethylationEPIC BeadChip Microarray. Using state-of the-art processing pipelines, we failed to replicate the original finding of common and shared epigenetic signatures by CM type. When using a pipeline that was closely matched to the original study, we could replicate that DNAm of cg07032930 was linked to emotional neglect, but in the reverse direction as in the original report. Overall, replication rates per CM subtype were only modest. These findings highlight challenges in independently replicating reported epigenetic associations in high-risk samples and underscore the importance of replication attempts in the field of behavioral epigenetics. Further research is needed to clarify the robustness and specificity of DNAm signatures linked to distinct CM types.</p>",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0856-1342"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1655-5479"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3507-1883"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7343-880X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1655-5479"
+              },
+              "firstName": "Maria",
+              "fullName": "Meier M",
+              "initials": "M",
+              "lastName": "Meier"
+            },
+            {
+              "firstName": "Laura",
+              "fullName": "Gurri L",
+              "initials": "L",
+              "lastName": "Gurri"
+            },
+            {
+              "firstName": "Katharina",
+              "fullName": "Beck K",
+              "initials": "K",
+              "lastName": "Beck"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7343-880X"
+              },
+              "firstName": "Delfine",
+              "fullName": "d'Huart D",
+              "initials": "D",
+              "lastName": "d'Huart"
+            },
+            {
+              "firstName": "Philippe",
+              "fullName": "Jawinski P",
+              "initials": "P",
+              "lastName": "Jawinski"
+            },
+            {
+              "firstName": "Cyril",
+              "fullName": "Boonmann C",
+              "initials": "C",
+              "lastName": "Boonmann"
+            },
+            {
+              "firstName": "Christina",
+              "fullName": "Stadler C",
+              "initials": "C",
+              "lastName": "Stadler"
+            },
+            {
+              "firstName": "Marc",
+              "fullName": "Schmid M",
+              "initials": "M",
+              "lastName": "Schmid"
+            },
+            {
+              "firstName": "David",
+              "fullName": "B\u00fcrgin D",
+              "initials": "D",
+              "lastName": "B\u00fcrgin"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3507-1883"
+              },
+              "firstName": "Eva",
+              "fullName": "Unternaehrer E",
+              "initials": "E",
+              "lastName": "Unternaehrer"
+            }
+          ]
+        },
+        "authorString": "Meier M, Gurri L, Beck K, d'Huart D, Jawinski P, Boonmann C, Stadler C, Schmid M, B\u00fcrgin D, Unternaehrer E.",
+        "bookOrReportDetails": {
+          "publisher": "PsyArXiv",
+          "yearOfPublication": 2025
+        },
+        "citedByCount": 0,
+        "dateOfCreation": "2025-08-18",
+        "doi": "10.31234/osf.io/9j2v7_v1",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-08-21",
+        "firstPublicationDate": "2025-08-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.31234/osf.io/9j2v7_v1"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.31234/osf.io/9j2v7_v1"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1067631",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pubTypeList": {
+          "pubType": [
+            "Preprint"
+          ]
+        },
+        "pubYear": "2025",
+        "source": "PPR",
+        "title": "Epigenetic signatures of different types of childhood maltreatment in a high-risk sample: a preregistered replication study"
+      },
+      {
+        "abstractText": "This review reflects on the lessons and limitations of the first large, collaborative replication project in sports and exercise science. We discuss the challenges and barriers faced, while also exploring the broader contribution of replication to the field. This project faced many practical challenges when preparing studies for replication, specifically the poor reporting of statistical information, the availability of original raw data and the prioritisation of feasibility at the risk of some bias. However, we believe these issues reflect the larger sports and exercise science field. Therefore, our research culture needs to change to minimise the active engagement in behaviours that reduce reproducibility and replicability, and enable collective evaluation of research in line with the foundations of scientific rigour. In addition, discourse with the original study authors was a challenging process as many were unwilling to engage and this indicates a problematic perception of replication. We also reflect on the contribution of replication to theory development in sports and exercise science so that this review can serve as a valuable resource for understanding replication and can aid future replication efforts.",
+        "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Road, Dublin 9, Ireland. jennymurphy1@outlook.ie.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8624-3828"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4359-8132"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4541-6283"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Road, Dublin 9, Ireland. jennymurphy1@outlook.ie."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8624-3828"
+              },
+              "firstName": "Jennifer",
+              "fullName": "Murphy J",
+              "initials": "J",
+              "lastName": "Murphy"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Community Health Innovation, University of Arkansas for Medical Sciences Northwest, Springdale, AR, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4541-6283"
+              },
+              "firstName": "Aaron R",
+              "fullName": "Caldwell AR",
+              "initials": "AR",
+              "lastName": "Caldwell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Road, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4359-8132"
+              },
+              "firstName": "Joe P",
+              "fullName": "Warne JP",
+              "initials": "JP",
+              "lastName": "Warne"
+            }
+          ]
+        },
+        "authorString": "Murphy J, Caldwell AR, Warne JP.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-10-10",
+        "dateOfCreation": "2025-06-16",
+        "dateOfRevision": "2026-04-07",
+        "doi": "10.1007/s40279-025-02200-x",
+        "electronicPublicationDate": "2025-06-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-06-16",
+        "firstPublicationDate": "2025-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12513977"
+          ]
+        },
+        "fullTextReceivedDate": "2025-10-13",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s40279-025-02200-x"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12513977"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12513977?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Irish Research Council",
+              "grantId": "GOIPG/2020/1155",
+              "orderIn": 0
+            },
+            {
+              "agency": "Technological University Dublin",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40522611",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "10",
+          "journal": {
+            "essn": "1179-2035",
+            "isoabbreviation": "Sports Med",
+            "issn": "0112-1642",
+            "medlineAbbreviation": "Sports Med",
+            "nlmid": "8412297",
+            "title": "Sports medicine (Auckland, N.Z.)"
+          },
+          "journalIssueId": 4030888,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "55",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sports Medicine",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Biomedical Research",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Research Design",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Sports",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2365-2374",
+        "pmcid": "PMC12513977",
+        "pmid": "40522611",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Reflections on Conducting a Large Replication Project in Sports and Exercise Science."
+      },
+      {
+        "abstractText": "Recent large-scale replication projects (RPs) have estimated concerningly low reproducibility rates. Further, they reported substantial degrees of shrinkage of effect size, where the replication effect size was found to be, on average, much smaller than the original effect size. Within these RPs, the included original-replication study-pairs can vary with respect to aspects of study design, outcome measures, and descriptive features of both original and replication study population and study team. This often results in between-study-pair heterogeneity, i.e., variation in effect size differences across study-pairs that goes beyond expected statistical variation. When broader claims about the reproducibility of an entire field are based on such heterogeneous data, it becomes imperative to conduct a rigorous analysis of the amount and sources of shrinkage and heterogeneity within and between included study-pairs. Methodology from the meta-analysis literature provides an approach for quantifying the heterogeneity present in RPs with an additive or multiplicative parameter. Meta-regression methodology further allows for an investigation into the sources of shrinkage and heterogeneity. We propose the use of location-scale meta-regressions as a means to directly relate the identified characteristics with shrinkage (represented by the location) and heterogeneity (represented by the scale). This provides valuable insights into drivers and factors associated with high or low reproducibility rates and therefore contextualises results of RPs. The proposed methodology is illustrated using publicly available data from the Replication Project Psychology and the Replication Project Experimental Economics. All analysis scripts and data are available online.",
+        "affiliation": "Center for Reproducible Science, Epidemiology, Biostatistic and Prevention Institute, University of Zurich, Zurich, Switzerland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7531-4333"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, Epidemiology, Biostatistic and Prevention Institute, University of Zurich, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7531-4333"
+              },
+              "firstName": "Rachel",
+              "fullName": "Heyard R",
+              "initials": "R",
+              "lastName": "Heyard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, Epidemiology, Biostatistic and Prevention Institute, University of Zurich, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Leonhard",
+              "fullName": "Held L",
+              "initials": "L",
+              "lastName": "Held"
+            }
+          ]
+        },
+        "authorString": "Heyard R, Held L.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR982959",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-08-01",
+        "dateOfCreation": "2025-08-01",
+        "dateOfRevision": "2025-08-06",
+        "doi": "10.1371/journal.pone.0327799",
+        "electronicPublicationDate": "2025-08-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-08-04",
+        "firstPublicationDate": "2025-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12316214"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-02",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0327799"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12316214"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12316214?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40748992",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "issue": "8",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 3987016,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "20",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Regression Analysis",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Research Design",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Meta-Analysis as Topic",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0327799",
+        "pmcid": "PMC12316214",
+        "pmid": "40748992",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects."
+      },
+      {
+        "abstractText": "Studies examining the effect of mania on cognition in Bipolar Disorders (BD) have yielded contradictory results. Koenders and collaborators showed in 2014 that, among 189 adults with BD, adults with subclinical manic symptoms perform a task measuring divided attention significantly better than adults with less or more severe manic symptoms. We aimed to replicate this finding in a larger sample. We included adults from the FACE-BD cohort with a BD diagnosis based on the DSM-IV-R criteria. We excluded adults with a current characterized depressive or manic episode or with other possible sources of cognitive impairment. We assessed the associations between the YMRS score and cognitive functions involved in divided attention using linear regression models, adjusting for the same covariates as the original study. We found no significant linear or quadratic associations between the YMRS total score and attention, working memory, and executive performance in the bivariable models nor after adjusting for covariates in 2,739 adults with BD. We were unable to replicate the findings reported by Koenders and collaborators. The low variance and mean severity of manic symptoms in our sample may partly explain the absence of significant associations. Our results suggest that subclinical hypomanic symptoms neither enhance nor impair cognitive performance in adults with BD, calling into question the benefit of residual hypomanic symptoms on patients' cognitive functioning.",
+        "affiliation": "Fondation FondaMental, Cr\u00e9teil, France. nathan.vidal@ens-paris-saclay.fr.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5473-3697"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7438-8990"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8983-0315"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3784-7817"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4091-518X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5377-1488"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6519-8586"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9678-5062"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0321-4189"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0890-6715"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-1396-470X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France. nathan.vidal@ens-paris-saclay.fr."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France. nathan.vidal@ens-paris-saclay.fr."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France. nathan.vidal@ens-paris-saclay.fr."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-1396-470X"
+              },
+              "firstName": "Nathan",
+              "fullName": "Vidal N",
+              "initials": "N",
+              "lastName": "Vidal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3784-7817"
+              },
+              "firstName": "Eric",
+              "fullName": "Brunet-Gouet E",
+              "initials": "E",
+              "lastName": "Brunet-Gouet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0890-6715"
+              },
+              "firstName": "Sol\u00e8ne",
+              "fullName": "Frileux S",
+              "initials": "S",
+              "lastName": "Frileux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "CHU Montpellier, Montpellier, France."
+                  },
+                  {
+                    "affiliation": "IGF, University of Montpellier, CNRS, INSERM, Montpellier, France."
+                  }
+                ]
+              },
+              "firstName": "Raoul",
+              "fullName": "Belzeaux R",
+              "initials": "R",
+              "lastName": "Belzeaux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "IGF, University of Montpellier, CNRS, INSERM, Montpellier, France."
+                  },
+                  {
+                    "affiliation": "Department of Emergency Psychiatry and Acute Care, Lapeyronie Hospital, CHU Montpellier, Montpellier, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6519-8586"
+              },
+              "firstName": "Philippe",
+              "fullName": "Courtet P",
+              "initials": "P",
+              "lastName": "Courtet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "INSERM U1028, CNRS UMR5292, University Lyon 1, Villeurbanne, France."
+                  },
+                  {
+                    "affiliation": "Lyon Neuroscience Research Center, Psychiatric Disorders: From Resistance to Response Team, Lyon, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8983-0315"
+              },
+              "firstName": "Thierry",
+              "fullName": "D'Amato T",
+              "initials": "T",
+              "lastName": "D'Amato"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Facult\u00e9 de M\u00e9decine, Universit\u00e9 de Paris Inserm UMR1266, Sorbonne Paris Cit\u00e9, Paris, France."
+                  },
+                  {
+                    "affiliation": "AP-HP, Groupe Hospitalo-Universitaire AP-HP Nord, DMU ESPRIT, Service de Psychiatrie et Addictologie, H\u00f4pital Louis Mourier, Colombes, France."
+                  }
+                ]
+              },
+              "firstName": "Caroline",
+              "fullName": "Dubertret C",
+              "initials": "C",
+              "lastName": "Dubertret"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Paris Cit\u00e9, INSERM, Optimisation Th\u00e9rapeutique en Neuropharmacologie, OPTEN U1144, 75006, Paris, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement de Psychiatrie et de M\u00e9decine Addictologique, H\u00f4pitaux Lariboisi\u00e8re-Fernand Widal, GHU APHP.Nord - Universit\u00e9 Paris Cit\u00e9, F-75010, Paris, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5377-1488"
+              },
+              "firstName": "Bruno",
+              "fullName": "Etain B",
+              "initials": "B",
+              "lastName": "Etain"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Marie et Louis Pasteur, UMR INSERM 1322 LINC, Besan\u00e7on, France."
+                  },
+                  {
+                    "affiliation": "Service de Psychiatrie de l'adulte, CIC-1431 INSERM, CHU de Besan\u00e7on, F-25000, Besan\u00e7on, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4091-518X"
+              },
+              "firstName": "Emmanuel",
+              "fullName": "Haffen E",
+              "initials": "E",
+              "lastName": "Haffen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Sorbonne Paris Nord, 93017, Bobigny Cedex, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement de Recherche Clinique, P\u00f4le Universitaire 03 G03, EPS Ville Evrard, Neuilly sur Marne, France."
+                  }
+                ]
+              },
+              "firstName": "Dominique",
+              "fullName": "Januel D",
+              "initials": "D",
+              "lastName": "Januel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Paris Est Cr\u00e9teil (UPEC), Inserm U 955, Neuropsychiatrie Translationnelle, DMU IMPACT (AP-HP), D\u00e9partement de Psychiatrie, Fondation FondaMental, Cr\u00e9teil, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5473-3697"
+              },
+              "firstName": "Marion",
+              "fullName": "Leboyer M",
+              "initials": "M",
+              "lastName": "Leboyer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "P\u00f4le de Psychiatrie, Assistance Publique H\u00f4pitaux de Marseille, Marseille, France."
+                  },
+                  {
+                    "affiliation": "NT-UMR7289, CNRS Aix-Marseille Universit\u00e9, Marseille, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9678-5062"
+              },
+              "firstName": "Antoine",
+              "fullName": "Lefrere A",
+              "initials": "A",
+              "lastName": "Lefrere"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier et Universitaire, D\u00e9partement de Psychiatrie, Universit\u00e9 d'Auvergne, EA 7280, Clermont-Ferrand, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7438-8990"
+              },
+              "firstName": "Pierre-Michel",
+              "fullName": "Llorca PM",
+              "initials": "PM",
+              "lastName": "Llorca"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Paris Cit\u00e9, INSERM, Optimisation Th\u00e9rapeutique en Neuropharmacologie, OPTEN U1144, 75006, Paris, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement de Psychiatrie et de M\u00e9decine Addictologique, H\u00f4pitaux Lariboisi\u00e8re-Fernand Widal, GHU APHP.Nord - Universit\u00e9 Paris Cit\u00e9, F-75010, Paris, France."
+                  }
+                ]
+              },
+              "firstName": "Emeline",
+              "fullName": "Marlinge E",
+              "initials": "E",
+              "lastName": "Marlinge"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "P\u00f4le de Psychiatrie, Centre Hospitalier Princesse Grace, Monaco, Monaco."
+                  }
+                ]
+              },
+              "firstName": "Paula",
+              "fullName": "Martinez P",
+              "initials": "P",
+              "lastName": "Martinez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier Charles Perrens, P\u00f4le de Psychiatrie G\u00e9n\u00e9rale et Universitaire, Bordeaux, France."
+                  },
+                  {
+                    "affiliation": "Univ. Bordeaux, LabPsy, UR 4139, F-33000, Bordeaux, France."
+                  }
+                ]
+              },
+              "firstName": "Katia",
+              "fullName": "M'Bailara K",
+              "initials": "K",
+              "lastName": "M'Bailara"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "IGF, University of Montpellier, CNRS, INSERM, Montpellier, France."
+                  },
+                  {
+                    "affiliation": "Department of Emergency Psychiatry and Acute Care, Lapeyronie Hospital, CHU Montpellier, Montpellier, France."
+                  }
+                ]
+              },
+              "firstName": "Emilie",
+              "fullName": "Oli\u00e9 E",
+              "initials": "E",
+              "lastName": "Oli\u00e9"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Univ. Grenoble Alpes, Inserm, U1216, CHU Grenoble Alpes, Grenoble Institut Neurosciences, Grenoble, France."
+                  }
+                ]
+              },
+              "firstName": "Mircea",
+              "fullName": "Polosan M",
+              "initials": "M",
+              "lastName": "Polosan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 de Lorraine, Centre Psychoth\u00e9rapique de Nancy, Inserm U1254, Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Raymund",
+              "fullName": "Schwan R",
+              "initials": "R",
+              "lastName": "Schwan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Service Hospitalo-Universitaire de Psychiatrie G\u00e9n\u00e9rale et de R\u00e9habilitation Psycho Sociale 29G01 et 29G02, CHRU de Brest, H\u00f4pital de Bohars, Brest, France."
+                  }
+                ]
+              },
+              "firstName": "Michel",
+              "fullName": "Walter M",
+              "initials": "M",
+              "lastName": "Walter"
+            },
+            {
+              "collectiveName": "FACE-BD (FondaMental Academic Centers of Expertise for Bipolar Disorders) group*"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  }
+                ]
+              },
+              "firstName": "Christine",
+              "fullName": "Passerieux C",
+              "initials": "C",
+              "lastName": "Passerieux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Service de Psychiatrie du Secteur 78G18, Centre Hospitalier de Plaisir, Plaisir, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0321-4189"
+              },
+              "firstName": "Paul",
+              "fullName": "Roux P",
+              "initials": "P",
+              "lastName": "Roux"
+            }
+          ]
+        },
+        "authorString": "Vidal N, Brunet-Gouet E, Frileux S, Belzeaux R, Courtet P, D'Amato T, Dubertret C, Etain B, Haffen E, Januel D, Leboyer M, Lefrere A, Llorca PM, Marlinge E, Martinez P, M'Bailara K, Oli\u00e9 E, Polosan M, Schwan R, Walter M, FACE-BD (FondaMental Academic Centers of Expertise for Bipolar Disorders) group*, Passerieux C, Roux P.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-15",
+        "dateOfCreation": "2026-04-15",
+        "dateOfRevision": "2026-04-18",
+        "doi": "10.1186/s40345-026-00420-2",
+        "electronicPublicationDate": "2026-04-15",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-16",
+        "firstPublicationDate": "2026-04-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13083468"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s40345-026-00420-2"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13083468"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13083468?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41984351",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "investigatorList": {
+          "investigator": [
+            {
+              "firstName": "E",
+              "fullName": "Oli\u00e9 E",
+              "initials": "E",
+              "lastName": "Oli\u00e9"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Leboyer M",
+              "initials": "M",
+              "lastName": "Leboyer"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Haffen E",
+              "initials": "E",
+              "lastName": "Haffen"
+            },
+            {
+              "firstName": "P M",
+              "fullName": "Llorca PM",
+              "initials": "PM",
+              "lastName": "Llorca"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Barteau V",
+              "initials": "V",
+              "lastName": "Barteau"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Bensalem S",
+              "initials": "S",
+              "lastName": "Bensalem"
+            },
+            {
+              "firstName": "O",
+              "fullName": "Godin O",
+              "initials": "O",
+              "lastName": "Godin"
+            },
+            {
+              "firstName": "H",
+              "fullName": "Laouamri H",
+              "initials": "H",
+              "lastName": "Laouamri"
+            },
+            {
+              "firstName": "K",
+              "fullName": "Souryis K",
+              "initials": "K",
+              "lastName": "Souryis"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Hotier S",
+              "initials": "S",
+              "lastName": "Hotier"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Pelletier A",
+              "initials": "A",
+              "lastName": "Pelletier"
+            },
+            {
+              "firstName": "N",
+              "fullName": "Drancourt N",
+              "initials": "N",
+              "lastName": "Drancourt"
+            },
+            {
+              "firstName": "J P",
+              "fullName": "Sanchez JP",
+              "initials": "JP",
+              "lastName": "Sanchez"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Saliou E",
+              "initials": "E",
+              "lastName": "Saliou"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Hebbache C",
+              "initials": "C",
+              "lastName": "Hebbache"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Petrucci J",
+              "initials": "J",
+              "lastName": "Petrucci"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Willaume L",
+              "initials": "L",
+              "lastName": "Willaume"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Bourdin E",
+              "initials": "E",
+              "lastName": "Bourdin"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Bellivier F",
+              "initials": "F",
+              "lastName": "Bellivier"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Carminati M",
+              "initials": "M",
+              "lastName": "Carminati"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Marlinge E",
+              "initials": "E",
+              "lastName": "Marlinge"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Meheust J",
+              "initials": "J",
+              "lastName": "Meheust"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Hennion V",
+              "initials": "V",
+              "lastName": "Hennion"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Richard A",
+              "initials": "A",
+              "lastName": "Richard"
+            },
+            {
+              "firstName": "B",
+              "fullName": "Aouizerate B",
+              "initials": "B",
+              "lastName": "Aouizerate"
+            },
+            {
+              "firstName": "N",
+              "fullName": "Da Ros N",
+              "initials": "N",
+              "lastName": "Da Ros"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Desage A",
+              "initials": "A",
+              "lastName": "Desage"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Elkael C",
+              "initials": "C",
+              "lastName": "Elkael"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Gard S",
+              "initials": "S",
+              "lastName": "Gard"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Hoorelbeke F",
+              "initials": "F",
+              "lastName": "Hoorelbeke"
+            },
+            {
+              "firstName": "K",
+              "fullName": "M'bailara K",
+              "initials": "K",
+              "lastName": "M'bailara"
+            },
+            {
+              "firstName": "I",
+              "fullName": "Minois I",
+              "initials": "I",
+              "lastName": "Minois"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Sportich J",
+              "initials": "J",
+              "lastName": "Sportich"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Boukhobza L",
+              "initials": "L",
+              "lastName": "Boukhobza"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Benramdane M",
+              "initials": "M",
+              "lastName": "Benramdane"
+            },
+            {
+              "firstName": "P",
+              "fullName": "Courtet P",
+              "initials": "P",
+              "lastName": "Courtet"
+            },
+            {
+              "firstName": "B",
+              "fullName": "Deffinis B",
+              "initials": "B",
+              "lastName": "Deffinis"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Denat S",
+              "initials": "S",
+              "lastName": "Denat"
+            },
+            {
+              "firstName": "D",
+              "fullName": "Ducasse D",
+              "initials": "D",
+              "lastName": "Ducasse"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Gachet M",
+              "initials": "M",
+              "lastName": "Gachet"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Moli\u00e8re F",
+              "initials": "F",
+              "lastName": "Moli\u00e8re"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Nass L",
+              "initials": "L",
+              "lastName": "Nass"
+            },
+            {
+              "firstName": "G",
+              "fullName": "Tarquini G",
+              "initials": "G",
+              "lastName": "Tarquini"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Lefrere A",
+              "initials": "A",
+              "lastName": "Lefrere"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Cermolacce M",
+              "initials": "M",
+              "lastName": "Cermolacce"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Moreau E",
+              "initials": "E",
+              "lastName": "Moreau"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Groppi F",
+              "initials": "F",
+              "lastName": "Groppi"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Lescalier L",
+              "initials": "L",
+              "lastName": "Lescalier"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Pastol J",
+              "initials": "J",
+              "lastName": "Pastol"
+            },
+            {
+              "firstName": "H",
+              "fullName": "Polomeni H",
+              "initials": "H",
+              "lastName": "Polomeni"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Baurberg J",
+              "initials": "J",
+              "lastName": "Baurberg"
+            },
+            {
+              "firstName": "R",
+              "fullName": "Cohen R",
+              "initials": "R",
+              "lastName": "Cohen"
+            },
+            {
+              "firstName": "G",
+              "fullName": "Gross G",
+              "initials": "G",
+              "lastName": "Gross"
+            },
+            {
+              "firstName": "R",
+              "fullName": "Schwan R",
+              "initials": "R",
+              "lastName": "Schwan"
+            },
+            {
+              "firstName": "T",
+              "fullName": "Schwitzer T",
+              "initials": "T",
+              "lastName": "Schwitzer"
+            },
+            {
+              "firstName": "O",
+              "fullName": "Wajsbrot-Elgrabli O",
+              "initials": "O",
+              "lastName": "Wajsbrot-Elgrabli"
+            },
+            {
+              "firstName": "T",
+              "fullName": "Bougerol T",
+              "initials": "T",
+              "lastName": "Bougerol"
+            },
+            {
+              "firstName": "B",
+              "fullName": "Fredembach B",
+              "initials": "B",
+              "lastName": "Fredembach"
+            },
+            {
+              "firstName": "Q",
+              "fullName": "Denoual Q",
+              "initials": "Q",
+              "lastName": "Denoual"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Bertrand A",
+              "initials": "A",
+              "lastName": "Bertrand"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Pouchon A",
+              "initials": "A",
+              "lastName": "Pouchon"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Polosan M",
+              "initials": "M",
+              "lastName": "Polosan"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Brehon L",
+              "initials": "L",
+              "lastName": "Brehon"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Durand L",
+              "initials": "L",
+              "lastName": "Durand"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Feuga V",
+              "initials": "V",
+              "lastName": "Feuga"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Frileux S",
+              "initials": "S",
+              "lastName": "Frileux"
+            },
+            {
+              "firstName": "P",
+              "fullName": "Roux P",
+              "initials": "P",
+              "lastName": "Roux"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Vaux E",
+              "initials": "E",
+              "lastName": "Vaux"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Aubin V",
+              "initials": "V",
+              "lastName": "Aubin"
+            },
+            {
+              "firstName": "I",
+              "fullName": "Cussac I",
+              "initials": "I",
+              "lastName": "Cussac"
+            },
+            {
+              "firstName": "M A",
+              "fullName": "Dupont MA",
+              "initials": "MA",
+              "lastName": "Dupont"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Loftus J",
+              "initials": "J",
+              "lastName": "Loftus"
+            },
+            {
+              "firstName": "I",
+              "fullName": "Medecin I",
+              "initials": "I",
+              "lastName": "Medecin"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Dubertret C",
+              "initials": "C",
+              "lastName": "Dubertret"
+            },
+            {
+              "firstName": "N",
+              "fullName": "Mazer N",
+              "initials": "N",
+              "lastName": "Mazer"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Portalier C",
+              "initials": "C",
+              "lastName": "Portalier"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Scognamiglio C",
+              "initials": "C",
+              "lastName": "Scognamiglio"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Bing A",
+              "initials": "A",
+              "lastName": "Bing"
+            },
+            {
+              "firstName": "P",
+              "fullName": "Laurent P",
+              "initials": "P",
+              "lastName": "Laurent"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Samalin L",
+              "initials": "L",
+              "lastName": "Samalin"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Foures L",
+              "initials": "L",
+              "lastName": "Foures"
+            },
+            {
+              "firstName": "D",
+              "fullName": "Lacelle D",
+              "initials": "D",
+              "lastName": "Lacelle"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Pires S",
+              "initials": "S",
+              "lastName": "Pires"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Doriat C",
+              "initials": "C",
+              "lastName": "Doriat"
+            },
+            {
+              "firstName": "O",
+              "fullName": "Blanc O",
+              "initials": "O",
+              "lastName": "Blanc"
+            },
+            {
+              "firstName": "D",
+              "fullName": "Bennabi D",
+              "initials": "D",
+              "lastName": "Bennabi"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Nicolier M",
+              "initials": "M",
+              "lastName": "Nicolier"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "1",
+          "journal": {
+            "essn": "2194-7511",
+            "isoabbreviation": "Int J Bipolar Disord",
+            "issn": "2194-7511",
+            "medlineAbbreviation": "Int J Bipolar Disord",
+            "nlmid": "101622983",
+            "title": "International journal of bipolar disorders"
+          },
+          "journalIssueId": 4180005,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "14",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "14",
+        "pmcid": "PMC13083468",
+        "pmid": "41984351",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Letter"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Examining the associations between manic symptoms and cognitive performance in bipolar disorders: evidence from a cross-sectional replication study in the FACE-BD cohort."
+      },
+      {
+        "abstractText": "Although motor imagery activates higher-order motor-related areas, the role of the primary motor cortex (M1) in motor imagery remains unclear. This study aimed to investigate whether motor imagery recruits a neural representation of fingers similar to that of motor execution in the hand M1. Ten healthy right-handed adults executed and kinesthetically imagined tapping using one of four fingers. Using functional magnetic resonance imaging with multi-voxel pattern analysis, we trained the decoder to classify which finger the participants were moving using brain activation during motor execution and tested whether it could predict which finger the participants were imaging to move during motor imagery (cross-classification). We also performed the classification in the reverse direction. The average accuracy of these cross-classifications (mean = 32.71%, SD = 8.31) was significantly higher than chance in the left hemisphere hand M1 (hand-M1). Analysis of the representational geometry showed that the distance of neural representations for the same fingers was statistically shorter than that for different fingers between motor execution and imagery. Furthermore, we conducted a replication study with 14 participants and found results similar to those of the original study (mean cross-classification accuracy = 37.5%, SD = 7.18). Our results suggest that the neural representation of kinesthetic motor imagery is partially similar, but not equivalent, to that of motor execution in the contralateral hand M1.",
+        "affiliation": "Department of Psychology, Graduate School of Humanities and Human Sciences, Hokkaido University, Sapporo, Japan.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1521-2351"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-6297-6775"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Graduate School of Humanities and Human Sciences, Hokkaido University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-6297-6775"
+              },
+              "firstName": "Fumihito",
+              "fullName": "Imai F",
+              "initials": "F",
+              "lastName": "Imai"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Neuroscience, Department of Physiology, School of Medicine, Sapporo Medical University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1521-2351"
+              },
+              "firstName": "Jun",
+              "fullName": "Shinozaki J",
+              "initials": "J",
+              "lastName": "Shinozaki"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Neuroscience, Department of Physiology, School of Medicine, Sapporo Medical University, Sapporo, Japan."
+                  },
+                  {
+                    "affiliation": "Department of Occupational Therapy, School of Health Sciences, Sapporo Medical University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hidekazu",
+              "fullName": "Saito H",
+              "initials": "H",
+              "lastName": "Saito"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Radioisotope Research, Biomedical Research, Education and Instrumentation Center, School of Medicine, Sapporo Medical University, Sapporo, Japan."
+                  },
+                  {
+                    "affiliation": "Division of Radiology and Nuclear Medicine, Sapporo Medical University Hospital, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hiroshi",
+              "fullName": "Nagahama H",
+              "initials": "H",
+              "lastName": "Nagahama"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Radiology and Nuclear Medicine, Sapporo Medical University Hospital, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Yuki",
+              "fullName": "Sakurai Y",
+              "initials": "Y",
+              "lastName": "Sakurai"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Graduate School of Humanities and Human Sciences, Hokkaido University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Kenji",
+              "fullName": "Ogawa K",
+              "initials": "K",
+              "lastName": "Ogawa"
+            }
+          ]
+        },
+        "authorString": "Imai F, Shinozaki J, Saito H, Nagahama H, Sakurai Y, Ogawa K.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-02-20",
+        "dateOfCreation": "2026-02-20",
+        "dateOfRevision": "2026-02-20",
+        "doi": "10.1162/imag.a.1141",
+        "electronicPublicationDate": "2026-02-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-21",
+        "firstPublicationDate": "2026-02-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12915000"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-19",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1162/IMAG.a.1141"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12915000"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12915000?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41717384",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "2837-6056",
+            "isoabbreviation": "Imaging Neurosci (Camb)",
+            "issn": "2837-6056",
+            "medlineAbbreviation": "Imaging Neurosci (Camb)",
+            "nlmid": "9918663686606676",
+            "title": "Imaging neuroscience (Cambridge, Mass.)"
+          },
+          "journalIssueId": 4088095,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "4",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Functional magnetic resonance imaging (fMRI)",
+            "Primary Motor Cortex (M1)",
+            "Kinesthetic Motor Imagery",
+            "Multi-voxel Pattern Analysis (Mvpa)"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "IMAG.a.1141",
+        "pmcid": "PMC12915000",
+        "pmid": "41717384",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Shared neural representation between motor execution and kinesthetic imagery in the primary motor cortex."
+      },
+      {
+        "abstractText": "Thomas and colleagues found in 2022 that the observation of saliva-sharing between individuals serves as an indicator of relationship thickness for children, toddlers and infants. Our study sought to replicate their crucial experiment (2B), which was conducted online and reported that 8.5- to 10-month-old infants anticipated that a crying individual would be more likely to be comforted by a person who had been observed to share saliva with her than another person who simply had played with her. With the exception of changing the testing environment from online to laboratory, and using an eye-tracker supplemented by manual video coding, we closely followed the methodology of the original study. Our replication resulted in partial success: we replicated looking-time preference for the saliva-sharer but did not replicate the tendency to look first to the saliva-sharer upon observing the puppet's distress. These findings confirm that infants rely on certain behavioural cues for mapping social relationships among third-party individuals.",
+        "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3236-4787"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7044-3056"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-2761-6222"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria."
+                  },
+                  {
+                    "affiliation": "Maastricht University, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-2761-6222"
+              },
+              "firstName": "Beyza Gokcen",
+              "fullName": "Ciftci BG",
+              "initials": "BG",
+              "lastName": "Ciftci"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3236-4787"
+              },
+              "firstName": "Jonathan Frank",
+              "fullName": "Kominsky JF",
+              "initials": "JF",
+              "lastName": "Kominsky"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria."
+                  },
+                  {
+                    "affiliation": "School of Psychological Sciences, Birkbeck University of London, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7044-3056"
+              },
+              "firstName": "Gergely",
+              "fullName": "Csibra G",
+              "initials": "G",
+              "lastName": "Csibra"
+            }
+          ]
+        },
+        "authorString": "Ciftci BG, Kominsky JF, Csibra G.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "recommended_reviews"
+          ]
+        },
+        "dateOfCreation": "2025-04-10",
+        "dateOfRevision": "2025-04-11",
+        "doi": "10.1098/rsos.240229",
+        "electronicPublicationDate": "2025-04-09",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-04-10",
+        "firstPublicationDate": "2025-04-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11978455"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-27",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1098/rsos.240229"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsos.240229"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11978455"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11978455?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Central European University",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40206854",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Apr",
+          "issue": "4",
+          "journal": {
+            "essn": "2054-5703",
+            "isoabbreviation": "R Soc Open Sci",
+            "issn": "2054-5703",
+            "medlineAbbreviation": "R Soc Open Sci",
+            "nlmid": "101647528",
+            "title": "Royal Society open science"
+          },
+          "journalIssueId": 3923650,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2025-04-01",
+          "volume": "12",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Replication",
+            "Social Evaluation",
+            "Infant Cognition",
+            "Saliva-sharing"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "240229",
+        "pmcid": "PMC11978455",
+        "pmid": "40206854",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Do infants use cues of saliva-sharing to infer close relationships? A replication of Thomas &lt;i&gt;et al&lt;/i&gt;. (2022)."
+      }
+    ]
+  },
+  "version": "6.9"
+}

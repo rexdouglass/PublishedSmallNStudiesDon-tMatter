@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_2f7c6c4e53670104",
+  "byte_size": 5955,
+  "columns": [
+    "z",
+    "point_estimate",
+    "lower_ci",
+    "upper_ci"
+  ],
+  "estimated_data_rows": 96,
+  "file_name": "confidence_intervals_rob.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/data/model/confidence_intervals_rob.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "lower_ci": 0.041430679,
+      "point_estimate": 0.0595856874,
+      "upper_ci": 0.0748352619,
+      "z": 0.0
+    },
+    {
+      "lower_ci": 0.0446346507,
+      "point_estimate": 0.0660317194,
+      "upper_ci": 0.0840777038,
+      "z": 0.1
+    },
+    {
+      "lower_ci": 0.0483067651,
+      "point_estimate": 0.0731887236,
+      "upper_ci": 0.0941518537,
+      "z": 0.2
+    },
+    {
+      "lower_ci": 0.0525371184,
+      "point_estimate": 0.0811361188,
+      "upper_ci": 0.1050897114,
+      "z": 0.3
+    },
+    {
+      "lower_ci": 0.0574301482,
+      "point_estimate": 0.0899568985,
+      "upper_ci": 0.116918992,
+      "z": 0.4
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "0ba95ee207f0b3a6b56c1ed13c8b26b811a1c0a981d68264337851598a21d50e"
+}

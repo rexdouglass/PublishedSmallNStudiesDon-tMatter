@@ -1,0 +1,516 @@
+{
+  "artifact_id": "source_artifact_18936d0aa1c72997",
+  "byte_size": 17100,
+  "file_name": "027_full_10_1016_S1473_3099_12_70242_6.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/027_full_10_1016_S1473_3099_12_70242_6.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/S1473-3099(12)70242-6\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>The optimum time to start antiretroviral therapy for children diagnosed with HIV infection after 1 year of age is unknown. We assessed whether antiretroviral therapy could be deferred until CD4 percentages declined to less than 15% without affecting AIDS-free survival.<h4>Methods</h4>In our multicentre, randomised, open-label trial at nine research sites in Thailand and Cambodia, we enrolled children aged 1-12 years who were infected with HIV and had CD4 percentages of 15-24%. Participants were randomly assigned (1:1) by a minimisation scheme to start antiretroviral therapy at study entry (early treatment group) or antiretroviral therapy to start when CD4 percentages declined to less than 15% (deferred treatment group). The primary endpoint was AIDS-free survival (based on US Centers for Disease Control and Prevention category C events) at week 144, assessed with the Kaplan-Meier analysis and the log-rank approach. This study is registered with ClinicalTrials.gov, number NCT00234091.<h4>Findings</h4>Between March 28, 2006, and Sept 10, 2008, we enrolled 300 Thai and Cambodian children infected with HIV, with a median age of 6·4 years (IQR 3·9-8·4). 150 children were randomly allocated early antiretroviral therapy (one participant was excluded from analyses after withdrawing before week 0) and 150 children were randomly allocated deferred antiretroviral therapy. Median baseline CD4 percentage was 19% (16-22%). 69 children (46%) in the deferred treatment group started antiretroviral therapy during the study. AIDS-free survival at week 144 in the deferred treatment group was 98·7% (95% CI 94·7-99·7; 148 of 150 patients) compared with 97·9% (93·7-99·3; 146 of 149 patients) in the early treatment group (p=0·6).<h4>Interpretation</h4>AIDS-free survival in both treatment groups was high. This low event rate meant that our study was underpowered to detect differences between treatment start times and thus additional follow-up of study participants or future studies are needed to answer this clinical question.",
+          "affiliation": "HIV Netherlands Australia Thailand Research Collaboration, Bangkok, Thailand.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7348-2352"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8950-3234"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1919-4525"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2483-2130"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2818-9808"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3540-8837"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1873-1867"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "HIV Netherlands Australia Thailand Research Collaboration, Bangkok, Thailand."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1873-1867"
+                },
+                "firstName": "Thanyawee",
+                "fullName": "Puthanakit T",
+                "initials": "T",
+                "lastName": "Puthanakit"
+              },
+              {
+                "firstName": "Vonthanak",
+                "fullName": "Saphonn V",
+                "initials": "V",
+                "lastName": "Saphonn"
+              },
+              {
+                "firstName": "Jintanat",
+                "fullName": "Ananworanich J",
+                "initials": "J",
+                "lastName": "Ananworanich"
+              },
+              {
+                "firstName": "Pope",
+                "fullName": "Kosalaraksa P",
+                "initials": "P",
+                "lastName": "Kosalaraksa"
+              },
+              {
+                "firstName": "Rawiwan",
+                "fullName": "Hansudewechakul R",
+                "initials": "R",
+                "lastName": "Hansudewechakul"
+              },
+              {
+                "firstName": "Ung",
+                "fullName": "Vibol U",
+                "initials": "U",
+                "lastName": "Vibol"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1919-4525"
+                },
+                "firstName": "Stephen J",
+                "fullName": "Kerr SJ",
+                "initials": "SJ",
+                "lastName": "Kerr"
+              },
+              {
+                "firstName": "Suparat",
+                "fullName": "Kanjanavanit S",
+                "initials": "S",
+                "lastName": "Kanjanavanit"
+              },
+              {
+                "firstName": "Chaiwat",
+                "fullName": "Ngampiyaskul C",
+                "initials": "C",
+                "lastName": "Ngampiyaskul"
+              },
+              {
+                "firstName": "Jurai",
+                "fullName": "Wongsawat J",
+                "initials": "J",
+                "lastName": "Wongsawat"
+              },
+              {
+                "firstName": "Wicharn",
+                "fullName": "Luesomboon W",
+                "initials": "W",
+                "lastName": "Luesomboon"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8950-3234"
+                },
+                "firstName": "Nicole",
+                "fullName": "Ngo-Giang-Huong N",
+                "initials": "N",
+                "lastName": "Ngo-Giang-Huong"
+              },
+              {
+                "firstName": "Kea",
+                "fullName": "Chettra K",
+                "initials": "K",
+                "lastName": "Chettra"
+              },
+              {
+                "firstName": "Theshinee",
+                "fullName": "Cheunyam T",
+                "initials": "T",
+                "lastName": "Cheunyam"
+              },
+              {
+                "firstName": "Tulathip",
+                "fullName": "Suwarnlerk T",
+                "initials": "T",
+                "lastName": "Suwarnlerk"
+              },
+              {
+                "firstName": "Sasiwimol",
+                "fullName": "Ubolyam S",
+                "initials": "S",
+                "lastName": "Ubolyam"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2483-2130"
+                },
+                "firstName": "William T",
+                "fullName": "Shearer WT",
+                "initials": "WT",
+                "lastName": "Shearer"
+              },
+              {
+                "firstName": "Robert",
+                "fullName": "Paul R",
+                "initials": "R",
+                "lastName": "Paul"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2818-9808"
+                },
+                "firstName": "Lynne M",
+                "fullName": "Mofenson LM",
+                "initials": "LM",
+                "lastName": "Mofenson"
+              },
+              {
+                "firstName": "Lawrence",
+                "fullName": "Fox L",
+                "initials": "L",
+                "lastName": "Fox"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3540-8837"
+                },
+                "firstName": "Matthew G",
+                "fullName": "Law MG",
+                "initials": "MG",
+                "lastName": "Law"
+              },
+              {
+                "firstName": "David A",
+                "fullName": "Cooper DA",
+                "initials": "DA",
+                "lastName": "Cooper"
+              },
+              {
+                "firstName": "Praphan",
+                "fullName": "Phanuphak P",
+                "initials": "P",
+                "lastName": "Phanuphak"
+              },
+              {
+                "firstName": "Mean Chhi",
+                "fullName": "Vun MC",
+                "initials": "MC",
+                "lastName": "Vun"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7348-2352"
+                },
+                "firstName": "Kiat",
+                "fullName": "Ruxrungtham K",
+                "initials": "K",
+                "lastName": "Ruxrungtham"
+              },
+              {
+                "collectiveName": "PREDICT Study Group"
+              }
+            ]
+          },
+          "authorString": "Puthanakit T, Saphonn V, Ananworanich J, Kosalaraksa P, Hansudewechakul R, Vibol U, Kerr SJ, Kanjanavanit S, Ngampiyaskul C, Wongsawat J, Luesomboon W, Ngo-Giang-Huong N, Chettra K, Cheunyam T, Suwarnlerk T, Ubolyam S, Shearer WT, Paul R, Mofenson LM, Fox L, Law MG, Cooper DA, Phanuphak P, Vun MC, Ruxrungtham K, PREDICT Study Group.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Anti-HIV Agents",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 70,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "23059200",
+                "orderIn": 1,
+                "reference": "Lancet Infect Dis. 2012 Dec;12(12):900-2. doi: 10.1016/S1473-3099(12)70266-9",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "recommended_reviews"
+            ]
+          },
+          "dateOfCompletion": "2013-04-02",
+          "dateOfCreation": "2012-10-13",
+          "dateOfRevision": "2022-03-16",
+          "doi": "10.1016/s1473-3099(12)70242-6",
+          "electronicPublicationDate": "2012-10-09",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2012-10-13",
+          "firstPublicationDate": "2012-10-09",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3541427"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://europepmc.org/articles/pmc3541427?pdf=render"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/S1473-3099(12)70242-6"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3541427"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3541427?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/s1473-3099(12)70242-6"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AI",
+                "agency": "NIAID NIH HHS",
+                "grantId": "U19 AI053741",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AI",
+                "agency": "NIAID NIH HHS",
+                "grantId": "U19 AI53741",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "23059199",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2012 Dec",
+            "issue": "12",
+            "journal": {
+              "essn": "1474-4457",
+              "isoabbreviation": "Lancet Infect Dis",
+              "issn": "1473-3099",
+              "medlineAbbreviation": "Lancet Infect Dis",
+              "nlmid": "101130150",
+              "title": "The Lancet. Infectious diseases"
+            },
+            "journalIssueId": 1985641,
+            "monthOfPublication": 12,
+            "printPublicationDate": "2012-12-01",
+            "volume": "12",
+            "yearOfPublication": 2012
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS425897",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "HIV",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "IP",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "isolation & purification"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "HIV Infections",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    },
+                    {
+                      "abbreviation": "VI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "virology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Anti-HIV Agents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "CD4 Lymphocyte Count",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Drug Administration Schedule",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child, Preschool",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Infant",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cambodia",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Thailand",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Kaplan-Meier Estimate",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "933-941",
+          "pmcid": "PMC3541427",
+          "pmid": "23059199",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2012",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Early versus deferred antiretroviral therapy for children older than 1 year infected with HIV (PREDICT): a multicentre, randomised, open-label trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "196bba68b9bb1da53c1a3f5cf0e971e5ac35ea264d6302af32bd355c925845f8"
+}

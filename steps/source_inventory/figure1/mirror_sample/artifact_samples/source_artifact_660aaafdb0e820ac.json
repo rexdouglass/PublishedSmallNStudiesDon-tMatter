@@ -1,0 +1,27 @@
+{
+  "artifact_id": "source_artifact_660aaafdb0e820ac",
+  "byte_size": 406,
+  "file_name": "my_bf_extractor.R",
+  "file_type": "r",
+  "line_preview": [
+    "#' Function to exract BF values",
+    "#'",
+    "#' This is the description",
+    "#'",
+    "#' @param bf_obj the output object of a BayesFactor function",
+    "#'",
+    "#' @return A tibble containing the Bayes factor information.",
+    "#' @export",
+    "my_bf_extractor <- function(bf_obj) {",
+    "  BayesFactor::extractBF(bf_obj) %>%",
+    "    tibble::rownames_to_column(var = \"scale\") %>%",
+    "    dplyr::mutate(scale = stringr::str_extract(scale, \"(?<=\\\\s)(.*)(?=\\\\s)\"))",
+    "}"
+  ],
+  "line_preview_count": 13,
+  "local_path": "data/raw/replication_projects/lead_harvest/psa_006_trolley/unzipped/trolleyMultilabReplication-master/R/my_bf_extractor.R",
+  "parent_corpus_database_id": "lead_harvest:psa_006_trolley",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:17:59",
+  "sha256": "895e62a9d27002e342c785d3f004264198413e68cb7db295ee37d7e0fafa7f96"
+}

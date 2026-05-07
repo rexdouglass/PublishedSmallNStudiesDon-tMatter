@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_bcf9f59badb5a9f5",
+  "byte_size": 5907,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "C_mean",
+    "C_sd",
+    "C_n",
+    "T_mean",
+    "T_sd",
+    "T_n",
+    "original_es_in_MA"
+  ],
+  "estimated_data_rows": 77,
+  "file_name": "ft095_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/lnRR/des_stat/ft095_1.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "C_mean": 471.6,
+      "C_n": 5,
+      "C_sd": 53.66563146,
+      "T_mean": 266.6,
+      "T_n": 5,
+      "T_sd": 102.859127,
+      "obs_ID": "obs001",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Béraud et al 2013",
+      "year_pub": 2013
+    },
+    {
+      "C_mean": 1.93,
+      "C_n": 54,
+      "C_sd": 1.274734458,
+      "T_mean": 0.88,
+      "T_n": 54,
+      "T_sd": 1.199750078,
+      "obs_ID": "obs002",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Castillo et al 2014",
+      "year_pub": 2014
+    },
+    {
+      "C_mean": 2.75,
+      "C_n": 54,
+      "C_sd": 1.312226648,
+      "T_mean": 0.35,
+      "T_n": 54,
+      "T_sd": 1.312226648,
+      "obs_ID": "obs003",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Castillo et al 2014",
+      "year_pub": 2014
+    },
+    {
+      "C_mean": 2.75,
+      "C_n": 54,
+      "C_sd": 1.312226648,
+      "T_mean": 0.28,
+      "T_n": 54,
+      "T_sd": 1.312226648,
+      "obs_ID": "obs004",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Castillo et al 2014",
+      "year_pub": 2014
+    },
+    {
+      "C_mean": 1.02,
+      "C_n": 10,
+      "C_sd": 0.158113883,
+      "T_mean": 0.84,
+      "T_n": 10,
+      "T_sd": 0.221359436,
+      "obs_ID": "obs005",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Comeau et al 2014c",
+      "year_pub": 2014
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "6b1ad28cd37124f1ce07b73eb4e160eb8128339b8e9d2d5fe0cb195884404d73"
+}

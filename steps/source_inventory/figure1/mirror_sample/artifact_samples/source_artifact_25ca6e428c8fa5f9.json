@@ -1,0 +1,442 @@
+{
+  "artifact_id": "source_artifact_25ca6e428c8fa5f9",
+  "byte_size": 15042,
+  "file_name": "040_pilot_10_1089_acm_2007_0738.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/040_pilot_10_1089_acm_2007_0738.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1089/acm.2007.0738\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objectives</h4>To assess the feasibility and acceptability of studying whole systems of Traditional Chinese Medicine (TCM) and Naturopathic medicine (NM) in the treatment of temporomandibular disorders (TMD), and to determine whether there is indication to support further research.<h4>Design</h4>A pilot study using a randomized controlled clinical trial design of whole system TCM and NM versus state-of-the-art specialty care (SC).<h4>Setting/location</h4>Kaiser Permanente Northwest (KPNW), and practitioner offices in Portland, Oregon.<h4>Subjects</h4>One hundred and sixty (160) women 25-55 years of age attending a KPNW TMD specialty clinic.<h4>Interventions</h4>Whole system TCM and NM, and KPNW TMD clinic SC; the intervention protocols were designed to model the individually tailored type of community care offered in alternative medicine practices in Portland and in the KPNW TMD clinic, using protocols that enhanced similarities among practitioners within each system and permitted full descriptions of the treatments provided.<h4>Outcome measures</h4>TMD was ascertained using the Research Diagnostic Criteria/TMD; outcomes were self-reported worst and average facial pain and interference with activities (scaled 0-10 where 10 is worst).<h4>Results</h4>Of 948 consecutive eligible patients, 160 were randomized to one of three arms; 128 provided endpoint data. TCM and NM demonstrated significantly greater in-treatment reductions for worst facial pain compared to SC (adjusted regression analysis; higher negative values indicate greater improvement, = -1.11 +/- 0.43, p = 0.010 and -1.02 +/- 0.45, p = 0.025 for TCM and NM, respectively, compared to SC) and at 3 months post-treatment (-1.07 +/- 0.51, p = 0.037 and -1.27 +/- 0.54, p = 0.019 for TCM and NM versus SC, respectively). Additionally, TCM provided significantly greater decreases in average pain than SC; NM provided significantly greater decreases than SC or TCM in TMD-related psychosocial interference.<h4>Conclusions</h4>These alternative medicine approaches each resulted in significantly greater reduction of pain and psychosocial interference than SC. Further research on the potential benefits of traditional whole systems of medicine for TMD appears warranted.",
+          "affiliation": "Department of Family and Community Medicine, The University of Arizona, Tucson, AZ 85719, USA. ritenbau@email.arizona.edu",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7992-5345"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3307-2727"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3657-4463"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Family and Community Medicine, The University of Arizona, Tucson, AZ 85719, USA. ritenbau@email.arizona.edu"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3307-2727"
+                },
+                "firstName": "Cheryl",
+                "fullName": "Ritenbaugh C",
+                "initials": "C",
+                "lastName": "Ritenbaugh"
+              },
+              {
+                "firstName": "Richard",
+                "fullName": "Hammerschlag R",
+                "initials": "R",
+                "lastName": "Hammerschlag"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3657-4463"
+                },
+                "firstName": "Carlo",
+                "fullName": "Calabrese C",
+                "initials": "C",
+                "lastName": "Calabrese"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7992-5345"
+                },
+                "firstName": "Scott",
+                "fullName": "Mist S",
+                "initials": "S",
+                "lastName": "Mist"
+              },
+              {
+                "firstName": "Mikel",
+                "fullName": "Aickin M",
+                "initials": "M",
+                "lastName": "Aickin"
+              },
+              {
+                "firstName": "Elizabeth",
+                "fullName": "Sutherland E",
+                "initials": "E",
+                "lastName": "Sutherland"
+              },
+              {
+                "firstName": "Joseph",
+                "fullName": "Leben J",
+                "initials": "J",
+                "lastName": "Leben"
+              },
+              {
+                "firstName": "Lynn",
+                "fullName": "Debar L",
+                "initials": "L",
+                "lastName": "Debar"
+              },
+              {
+                "firstName": "Charles",
+                "fullName": "Elder C",
+                "initials": "C",
+                "lastName": "Elder"
+              },
+              {
+                "firstName": "Samuel F",
+                "fullName": "Dworkin SF",
+                "initials": "SF",
+                "lastName": "Dworkin"
+              }
+            ]
+          },
+          "authorString": "Ritenbaugh C, Hammerschlag R, Calabrese C, Mist S, Aickin M, Sutherland E, Leben J, Debar L, Elder C, Dworkin SF.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Drugs, Chinese Herbal",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 44,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "19269610",
+                "orderIn": 1,
+                "reference": "J Evid Based Dent Pract. 2009 Mar;9(1):18-20. doi: 10.1016/j.jebdp.2008.12.011.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2008-08-07",
+          "dateOfCreation": "2008-06-21",
+          "dateOfRevision": "2025-05-29",
+          "doi": "10.1089/acm.2007.0738",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-12-24",
+          "firstPublicationDate": "2008-06-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC2756304"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Unpaywall",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2756304"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1089/acm.2007.0738"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2756304"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2756304?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1089/acm.2007.0738"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AT",
+                "agency": "NCCIH NIH HHS",
+                "grantId": "P50 AT000076",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AT",
+                "agency": "NCCIH NIH HHS",
+                "grantId": "P50AT00076",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "18564953",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2008 Jun",
+            "issue": "5",
+            "journal": {
+              "essn": "1557-7708",
+              "isoabbreviation": "J Altern Complement Med",
+              "issn": "1075-5535",
+              "medlineAbbreviation": "J Altern Complement Med",
+              "nlmid": "9508124",
+              "title": "Journal of alternative and complementary medicine (New York, N.Y.)"
+            },
+            "journalIssueId": 1536954,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2008-06-01",
+            "volume": "14",
+            "yearOfPublication": 2008
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS129138",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Temporomandibular Joint Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Facial Pain",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Drugs, Chinese Herbal",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pain Measurement",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Acupuncture Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Medicine, Chinese Traditional",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Naturopathy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Activities of Daily Living",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Linear Models",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Research Design",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Oregon",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Surveys and Questionnaires",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "475-487",
+          "pmcid": "PMC2756304",
+          "pmid": "18564953",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2008",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "A pilot whole systems clinical trial of traditional Chinese medicine and naturopathic medicine for the treatment of temporomandibular disorders."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "9f9c8ef872048a680daac0575c043d90520247f70a078635ec02d234dc5fffa7"
+}

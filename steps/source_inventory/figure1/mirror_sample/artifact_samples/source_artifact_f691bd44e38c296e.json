@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_f691bd44e38c296e",
+  "byte_size": 11951,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;t_stat;p_value"
+  ],
+  "estimated_data_rows": 122,
+  "file_name": "jpe_118_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/jpe_118_1.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;t_stat;p_value": "Journal of Political Economy;118.1;2010;1;Li;3;;yes;other;3;reg;1;1;yes;yes;0.005;0.010;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;t_stat;p_value": "Journal of Political Economy;118.1;2010;1;Li;3;;yes;other;3;reg;1;2;yes;yes;0.017;0.009;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;t_stat;p_value": "Journal of Political Economy;118.1;2010;1;Li;3;;yes;other;3;reg;1;3;yes;yes;0.0025;0.010;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;t_stat;p_value": "Journal of Political Economy;118.1;2010;1;Li;3;;yes;other;3;reg;1;4;yes;yes;0.0032;0.013;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;t_stat;p_value": "Journal of Political Economy;118.1;2010;1;Li;3;;yes;other;3;reg;1;5;yes;yes;0.0034;0.012;;;;"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "8266f39508597673771a991fc6f5d91c1dbb750215ada374086b30b4a7ad2aae"
+}

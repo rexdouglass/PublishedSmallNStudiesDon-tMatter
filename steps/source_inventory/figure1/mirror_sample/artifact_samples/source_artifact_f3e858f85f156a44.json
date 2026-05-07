@@ -1,0 +1,398 @@
+{
+  "artifact_id": "source_artifact_f3e858f85f156a44",
+  "byte_size": 13040,
+  "file_name": "004_pilot_10_1093_gerona_61_11_1157.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/004_pilot_10_1093_gerona_61_11_1157.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1093/gerona/61.11.1157\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>The Short Physical Performance Battery (SPPB), which includes walking, balance, and chair stands tests, independently predicts mobility disability and activities of daily living disability. To date, however, there is no definitive evidence from randomized controlled trials that SPPB scores can be improved. Our objective was to assess the effect of a comprehensive physical activity (PA) intervention on the SPPB and other physical performance measures.<h4>Methods</h4>A total of 424 sedentary persons at risk for disability (ages 70-89 years) were randomized to a moderate-intensity PA intervention or a successful aging (SA) health education intervention and were followed for an average of 1.2 years.<h4>Results</h4>The mean baseline SPPB score on a scale of 0-12, with 12 corresponding to highest performance, was 7.5. At 6 and 12 months, the PA versus SA group adjusted SPPB (+/- standard error) scores were 8.7 +/- 0.1 versus 8.0 +/- 0.1, and 8.5 +/- 0.1 versus 7.9 +/- 0.2, respectively (p < .001). The 400-meter walking speed was also significantly improved in the PA group. The PA group had a lower incidence of major mobility disability defined as incapacity to complete a 400-meter walk (hazard ratio = 0.71, 95% confidence interval = 0.44-1.20).<h4>Conclusions</h4>A structured PA intervention improved the SPPB score and other measures of physical performance. An intervention that improves the SPPB performance may also offer benefit on more distal health outcomes, such as mobility disability.",
+          "affiliation": "Department of Aging and Geriatric Research, College of Medicine, University of Florida, 1329 SW 16th St., Rm. 5161, Gainesville, FL 32608, USA. mpahor@ufl.edu",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6450-0368"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7949-8811"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2009-2443"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3336-6781"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Aging and Geriatric Research, College of Medicine, University of Florida, 1329 SW 16th St., Rm. 5161, Gainesville, FL 32608, USA. mpahor@ufl.edu"
+                    }
+                  ]
+                },
+                "collectiveName": "LIFE Study Investigators"
+              },
+              {
+                "firstName": "Marco",
+                "fullName": "Pahor M",
+                "initials": "M",
+                "lastName": "Pahor"
+              },
+              {
+                "firstName": "Steven N",
+                "fullName": "Blair SN",
+                "initials": "SN",
+                "lastName": "Blair"
+              },
+              {
+                "firstName": "Mark",
+                "fullName": "Espeland M",
+                "initials": "M",
+                "lastName": "Espeland"
+              },
+              {
+                "firstName": "Roger",
+                "fullName": "Fielding R",
+                "initials": "R",
+                "lastName": "Fielding"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6450-0368"
+                },
+                "firstName": "Thomas M",
+                "fullName": "Gill TM",
+                "initials": "TM",
+                "lastName": "Gill"
+              },
+              {
+                "firstName": "Jack M",
+                "fullName": "Guralnik JM",
+                "initials": "JM",
+                "lastName": "Guralnik"
+              },
+              {
+                "firstName": "Evan C",
+                "fullName": "Hadley EC",
+                "initials": "EC",
+                "lastName": "Hadley"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7949-8811"
+                },
+                "firstName": "Abby C",
+                "fullName": "King AC",
+                "initials": "AC",
+                "lastName": "King"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3336-6781"
+                },
+                "firstName": "Stephen B",
+                "fullName": "Kritchevsky SB",
+                "initials": "SB",
+                "lastName": "Kritchevsky"
+              },
+              {
+                "firstName": "Cinzia",
+                "fullName": "Maraldi C",
+                "initials": "C",
+                "lastName": "Maraldi"
+              },
+              {
+                "firstName": "Michael E",
+                "fullName": "Miller ME",
+                "initials": "ME",
+                "lastName": "Miller"
+              },
+              {
+                "firstName": "Anne B",
+                "fullName": "Newman AB",
+                "initials": "AB",
+                "lastName": "Newman"
+              },
+              {
+                "firstName": "Walter J",
+                "fullName": "Rejeski WJ",
+                "initials": "WJ",
+                "lastName": "Rejeski"
+              },
+              {
+                "firstName": "Sergei",
+                "fullName": "Romashkan S",
+                "initials": "S",
+                "lastName": "Romashkan"
+              },
+              {
+                "firstName": "Stephanie",
+                "fullName": "Studenski S",
+                "initials": "S",
+                "lastName": "Studenski"
+              }
+            ]
+          },
+          "authorString": "LIFE Study Investigators, Pahor M, Blair SN, Espeland M, Fielding R, Gill TM, Guralnik JM, Hadley EC, King AC, Kritchevsky SB, Maraldi C, Miller ME, Newman AB, Rejeski WJ, Romashkan S, Studenski S.",
+          "citedByCount": 442,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "orderIn": 1,
+                "reference": "J Gerontol A Biol Sci Med Sci. 2007 Mar;62(3):337",
+                "source": "MED",
+                "type": "Erratum in"
+              },
+              {
+                "id": "17167155",
+                "orderIn": 2,
+                "reference": "J Gerontol A Biol Sci Med Sci. 2006 Nov;61(11):1154-6. doi: 10.1093/gerona/61.11.1154",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2007-03-05",
+          "dateOfCreation": "2006-12-15",
+          "dateOfRevision": "2022-04-08",
+          "doi": "10.1093/gerona/61.11.1157",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2006-11-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://academic.oup.com/biomedgerontology/article-pdf/61/11/1157/1756537/1157.pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1093/gerona/61.11.1157"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "K24AG021507",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "U01 AG022376",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG024827",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "U01 AG22376",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "1 P30 AG21332",
+                "orderIn": 0
+              },
+              {
+                "acronym": "ImNIH",
+                "agency": "Intramural NIH HHS",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG028740",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "17167156",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2006 Nov",
+            "issue": "11",
+            "journal": {
+              "essn": "1758-535X",
+              "isoabbreviation": "J Gerontol A Biol Sci Med Sci",
+              "issn": "1079-5006",
+              "medlineAbbreviation": "J Gerontol A Biol Sci Med Sci",
+              "nlmid": "9502837",
+              "title": "The journals of gerontology. Series A, Biological sciences and medical sciences"
+            },
+            "journalIssueId": 1367219,
+            "monthOfPublication": 11,
+            "printPublicationDate": "2006-11-01",
+            "volume": "61",
+            "yearOfPublication": 2006
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Disability Evaluation",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Exercise",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Walking",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Activities of Daily Living",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Geriatric Assessment",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Follow-Up Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Single-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Behavior",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Life Style",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Health Education",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged, 80 and over",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Promotion",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "1157-1165",
+          "pmid": "17167156",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, N.I.H., Intramural",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Research Support, U.S. Gov't, Non-P.H.S.",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2006",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Effects of a physical activity intervention on measures of physical performance: Results of the lifestyle interventions and independence for Elders Pilot (LIFE-P) study."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "0f3873aae18693e41f6c0a1cf0439efe06fe31b4761da3f0ffb2cc5b0aae482a"
+}

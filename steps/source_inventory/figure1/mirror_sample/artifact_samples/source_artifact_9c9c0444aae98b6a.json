@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_9c9c0444aae98b6a",
+  "byte_size": 2497,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 54,
+  "file_name": "ft127.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/lnRR/ft127.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.0,
+      "obs_ID": "obs001",
+      "study_ID": "RJ Miller & RJ Etter",
+      "var": 0.40824829,
+      "year_pub": 2008
+    },
+    {
+      "es": 0.69,
+      "obs_ID": "obs002",
+      "study_ID": "RW Thacker et al.",
+      "var": 0.816496581,
+      "year_pub": 2001
+    },
+    {
+      "es": 1.03,
+      "obs_ID": "obs004",
+      "study_ID": "P Jernakoff",
+      "var": 0.816496581,
+      "year_pub": 1983
+    },
+    {
+      "es": 0.1,
+      "obs_ID": "obs005",
+      "study_ID": "HF Jara & CA Moreno",
+      "var": 1.414213562,
+      "year_pub": 1984
+    },
+    {
+      "es": 0.61,
+      "obs_ID": "obs006",
+      "study_ID": "J Lubchenco & J Cubit",
+      "var": 1.224744871,
+      "year_pub": 1980
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "841ca7041d8ed1cf74f1984b7d74dbe0e8a81b25e6f706f5074d84f64aab0945"
+}

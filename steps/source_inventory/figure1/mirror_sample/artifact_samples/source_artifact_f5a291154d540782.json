@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_f5a291154d540782",
+  "byte_size": 638,
+  "columns": [
+    "claim_id",
+    "rr_sample_size_50_for_100",
+    "rr_sample_size_90_for_75",
+    "rr_sample_size_90_for_50"
+  ],
+  "estimated_data_rows": 19,
+  "file_name": "Analysis-ready Data__Replication and Reproduction Papers__claims_traditional_power.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Analysis-ready Data__Replication and Reproduction Papers__claims_traditional_power.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "claim_id": "5KrD_single-trace",
+      "rr_sample_size_50_for_100": 238,
+      "rr_sample_size_90_for_50": 2609,
+      "rr_sample_size_90_for_75": 1159
+    },
+    {
+      "claim_id": "DEqr_single-trace",
+      "rr_sample_size_50_for_100": 114,
+      "rr_sample_size_90_for_50": 1248,
+      "rr_sample_size_90_for_75": 555
+    },
+    {
+      "claim_id": "VvlD_single-trace",
+      "rr_sample_size_50_for_100": 201,
+      "rr_sample_size_90_for_50": 2203,
+      "rr_sample_size_90_for_75": 978
+    },
+    {
+      "claim_id": "e3G7_single-trace",
+      "rr_sample_size_50_for_100": 91,
+      "rr_sample_size_90_for_50": 991,
+      "rr_sample_size_90_for_75": 442
+    },
+    {
+      "claim_id": "mJDj_single-trace",
+      "rr_sample_size_50_for_100": 2229,
+      "rr_sample_size_90_for_50": 24394,
+      "rr_sample_size_90_for_75": 10849
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "490f4ac502d1ba56e1963da9f143c46273dd5af1343841e1c2ebc13f7ee53b5f"
+}

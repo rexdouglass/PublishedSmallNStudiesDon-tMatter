@@ -1,0 +1,54 @@
+{
+  "task_id": "agent_file_acquisition_002",
+  "received_at": "2026-05-04",
+  "source_agent": "user_supplied_gpt_or_gemini_response",
+  "verdict": "found_metadata_only",
+  "confidence": "medium",
+  "found_files": [],
+  "nonworking_or_blocked_routes": [
+    {
+      "url": "https://link.springer.com/article/10.1186/s12966-020-0918-y",
+      "status_or_blocker": "no_supplement",
+      "notes": "The external agent reported that the childhood obesity meta-analysis page and PDF include only article text and figures, with no supplementary Excel/CSV datasets or data tables."
+    },
+    {
+      "url": "https://www.repository.cam.ac.uk/handle/1810/330818",
+      "status_or_blocker": "metadata_only",
+      "notes": "The external agent reported that Cambridge's repository page for the adult obesity meta-analysis lists the published PDF and bibliographic metadata, with no extraction workbook or data file."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10671274",
+      "status_or_blocker": "metadata_only",
+      "notes": "The external agent reported that the 2024 preprint 'Are the Risk of Generalizability Biases Generalizable?' lists supplementary DOCX files with narrative appendices/search strategies only, and that the data availability statement says data are available on reasonable request to the corresponding author."
+    },
+    {
+      "url": "https://scholarcommons.sc.edu/etd/7542",
+      "status_or_blocker": "metadata_only",
+      "notes": "The external agent reported that the dissertation 'Causes and Consequences of the Risk of Generalizability Biases in Health Behavioral Interventions' is downloadable as a PDF, but has no accompanying data files or extraction tables."
+    }
+  ],
+  "dn_assessment": {
+    "has_original_effect": "unclear",
+    "has_replication_or_followup_effect": "unclear",
+    "has_original_n": "unclear",
+    "has_replication_or_followup_n": "unclear",
+    "effect_metric": "SMD",
+    "row_grain": "unknown",
+    "notes": "Across the examined article, preprint, repository, and dissertation routes, no publicly downloadable row-level dataset comparing pilot/preliminary studies with larger efficacy/effectiveness trials was found. Published materials appear to provide narrative summaries and meta-analysis results, not the underlying extraction workbook."
+  },
+  "codex_local_followup": {
+    "rows_promotable_now": 0,
+    "existing_local_mirrors": [
+      "data/raw/replication_projects/lead_harvest/figure1_research_followup_20260504/beets_childhood_rgb/04_article_landing_https_doi_org_10_1186_s12966_020_0918_y.bin",
+      "data/raw/replication_projects/lead_harvest/figure1_research_followup_20260504/adult_obesity_rgb/05_repository_landing_https_www_repository_cam_ac_uk_handle_1810_330818.bin",
+      "data/raw/replication_projects/lead_harvest/figure1_research_followup_20260504/health_behavior_rgb_pubmed/06_article_metadata_https_pubmed_ncbi_nlm_nih_gov_38464006.bin",
+      "data/raw/replication_projects/lead_harvest/figure1_research_followup_20260504/health_behavior_rgb_researchsquare/07_preprint_landing_https_doi_org_10_21203_rs_3_rs_3897976_v1.bin"
+    ],
+    "paperclip_lookup": {
+      "pmc": "PMC10671274",
+      "result": "No documents found"
+    },
+    "status": "No local D/N workbook to mine."
+  },
+  "recommended_next_action": "Contact the corresponding authors of the childhood obesity, adult obesity, and broader health-behavior RGB studies, or the dissertation author, and request the row-level extraction dataset with preliminary/pilot SMDs, larger-trial SMDs, original/preliminary N, larger-trial N, construct/outcome labels, and source-study identifiers."
+}

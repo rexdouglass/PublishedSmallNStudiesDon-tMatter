@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_e5d9f88eedac6275",
+  "byte_size": 5945,
+  "columns": [
+    "z",
+    "point_estimate",
+    "lower_ci",
+    "upper_ci"
+  ],
+  "estimated_data_rows": 96,
+  "file_name": "CI_censored_dat.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/data/model/CI_censored_dat.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "lower_ci": 0.0468354668,
+      "point_estimate": 0.055557293,
+      "upper_ci": 0.0739941986,
+      "z": 0.0
+    },
+    {
+      "lower_ci": 0.0510499267,
+      "point_estimate": 0.0613033541,
+      "upper_ci": 0.0830283525,
+      "z": 0.1
+    },
+    {
+      "lower_ci": 0.0558394386,
+      "point_estimate": 0.0677271646,
+      "upper_ci": 0.0928686945,
+      "z": 0.2
+    },
+    {
+      "lower_ci": 0.0613027876,
+      "point_estimate": 0.0749177623,
+      "upper_ci": 0.1035466516,
+      "z": 0.3
+    },
+    {
+      "lower_ci": 0.0675514823,
+      "point_estimate": 0.0829706847,
+      "upper_ci": 0.1150897283,
+      "z": 0.4
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "84345873c805841c28b39a15c29e9b124141780db6c8cb4278a0aecdb74686c1"
+}

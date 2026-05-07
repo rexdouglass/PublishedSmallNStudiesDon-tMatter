@@ -1,14 +1,14 @@
 # Provenance Universe Search Plan
 
-- Generated: 2026-05-02T01:57:28.830674+00:00
+- Generated: 2026-05-05T15:21:58.423944+00:00
 - Spec: `PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH.yml`
 - Spec root: `PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH`
 - TSV: `data/derived/effect_inflation_dataset/provenance_search_plan.tsv`
-- Search tracks: 29
-- Present seed artifacts: 57
+- Search tracks: 34
+- Present seed artifacts: 63
 - Missing seed artifacts: 0
 - Present target files: 25
-- Target tracks with no files yet: 0
+- Target tracks with no files yet: 5
 
 This report is the top of the pipeline: plot universe, search space, search query family, search lead, then later result target. It makes the old hand-built search surface explicit before locating, obtaining, or verification strategies run.
 
@@ -16,7 +16,7 @@ This report is the top of the pipeline: plot universe, search space, search quer
 
 | Universe | Search Tracks |
 | --- | --- |
-| plot1_replication_pairs | 23 |
+| plot1_replication_pairs | 28 |
 | plot2_published_paper_d_vs_n | 2 |
 | plot3_preregistered_results | 2 |
 | plot4_all_source_dn_dump | 2 |
@@ -25,7 +25,7 @@ This report is the top of the pipeline: plot universe, search space, search quer
 | --- | --- |
 | not_started | 4 |
 | seeded_from_existing_artifact | 5 |
-| target_manifest_present | 20 |
+| target_manifest_present | 25 |
 
 ## plot1_replication_pairs
 
@@ -69,7 +69,7 @@ Reject if: individual replication paper only; route to individual replication-pa
 
 Stop conditions: every local candidate has a row in CORPORA_AND_DATABASES.tsv with status, source path, and next action | duplicate source families have a single preferred corpus_database_id and alias notes
 
-Seed artifacts: present_file:data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv | present_file:data/raw/replication_projects/lead_registry.csv | present_file:data/derived/replication_pairs/replication_source_worklist.csv | present_dir(42):data/raw/corpus_candidates | present_dir(29):data/raw/replication_projects | present_file:reports/corpus_suggestion_tracker.md | present_file:reports/corpus_candidates/replication_lead_queue.md
+Seed artifacts: present_file:data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv | present_file:data/raw/replication_projects/lead_registry.csv | present_file:data/derived/replication_pairs/replication_source_worklist.csv | present_dir(43):data/raw/corpus_candidates | present_dir(30):data/raw/replication_projects | present_file:reports/corpus_suggestion_tracker.md | present_file:reports/corpus_candidates/replication_lead_queue.md
 
 Outputs: CORPORA_AND_DATABASES.tsv
 
@@ -155,7 +155,7 @@ Reject if: keyword match is only in prose with no table-like artifact | artifact
 
 Stop conditions: local and GitHub/file-name hits are deduped against CORPORA_AND_DATABASES.tsv | accepted hits record candidate artifact path or URL
 
-Seed artifacts: present_dir(42):data/raw/corpus_candidates | present_dir(29):data/raw/replication_projects
+Seed artifacts: present_dir(43):data/raw/corpus_candidates | present_dir(30):data/raw/replication_projects
 
 Target glob: `steps/searches/figure1/corporasearch-code-*.*` (present_files(2); skip_if_exists_unless_replace)
 
@@ -191,7 +191,7 @@ Reject if: archive has only a landing page and no dataset/source table indicatio
 
 Stop conditions: every dead-link candidate has archive status and next_action
 
-Seed artifacts: present_file:CORPORA_AND_DATABASES.tsv | present_dir(29):data/raw/replication_projects
+Seed artifacts: present_file:CORPORA_AND_DATABASES.tsv | present_dir(30):data/raw/replication_projects
 
 Target glob: `steps/searches/figure1/corporasearch-archive-*.*` (present_files(1); skip_if_exists_unless_replace)
 
@@ -445,6 +445,11 @@ Minimum lead fields: lead_id | lead_title | source_family | replication_or_follo
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | plot1_local_replication_harvest_inventory | seeded_from_existing_artifact | replication_project | replication_first_then_resolve_original | local_derived_inventory \| local_raw_inventory \| rg_local_repo |  | 8 | 0 |
 | 2 | plot1_public_replication_project_search | not_started | repository_package | replication_first_then_resolve_original | osf_api \| dataverse_api \| openicpsr_api_or_browser \| github_code_search_or_clone \| crossref_api \| openalex_api |  | 2 | 0 |
+| 3 | plot1_individual_gpt_assisted_pair_search | target_manifest_present | individual_replication_paper | replication_first_then_resolve_original | manual_literature_review \| crossref_api \| openalex_api \| pubmed_europepmc \| osf_api \| dataverse_api \| github_code_search_or_clone | missing | 3 | 0 |
+| 4 | plot1_individual_bibliographic_phrase_search | target_manifest_present | individual_replication_paper | replication_first_then_resolve_original | crossref_api \| openalex_api \| pubmed_europepmc \| paperclip_hosted_index | missing | 0 | 0 |
+| 5 | plot1_individual_repository_package_search | target_manifest_present | repository_package | replication_first_then_resolve_original | osf_api \| dataverse_api \| zenodo_api \| figshare_api \| dryad_api \| github_code_search_or_clone | missing | 0 | 0 |
+| 6 | plot1_individual_known_original_citation_forward_search | target_manifest_present | individual_replication_paper | replication_first_then_resolve_original | openalex_api \| semantic_scholar_api \| crossref_api \| manual_literature_review | missing | 3 | 0 |
+| 7 | plot1_individual_clinical_pair_rescue_search | target_manifest_present | individual_replication_paper | replication_first_then_resolve_original | pubmed_europepmc \| paperclip_hosted_index \| clinicaltrials_api_v2 \| crossref_api \| openalex_api | missing | 0 | 0 |
 
 ### plot1_local_replication_harvest_inventory
 
@@ -456,7 +461,7 @@ Reject if: aggregate_only_without_pair_rows | replication_label_without_original
 
 Stop conditions: every existing lead is promoted, rejected, or assigned parser/blocker status
 
-Seed artifacts: present_file:reports/corpus_candidates/replication_lead_queue.md | present_file:reports/corpus_candidates/replication_pair_source_catalog.md | present_file:data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv | present_file:data/derived/replication_pairs/harvest/lead_queue_status.csv | present_dir(65):data/derived/replication_pairs/harvest/staged | present_dir(29):data/derived/replication_pairs/harvest/promoted | present_file:data/derived/replication_pairs/replication_source_worklist.csv | present_file:data/raw/replication_projects/lead_registry.csv
+Seed artifacts: present_file:reports/corpus_candidates/replication_lead_queue.md | present_file:reports/corpus_candidates/replication_pair_source_catalog.md | present_file:data/derived/effect_inflation_dataset/plot1_replication_source_catalog.csv | present_file:data/derived/replication_pairs/harvest/lead_queue_status.csv | present_dir(65):data/derived/replication_pairs/harvest/staged | present_dir(33):data/derived/replication_pairs/harvest/promoted | present_file:data/derived/replication_pairs/replication_source_worklist.csv | present_file:data/raw/replication_projects/lead_registry.csv
 
 Outputs: data/derived/effect_inflation_dataset/provenance_search_plan.tsv | future data/derived/effect_inflation_dataset/search_leads/plot1_replication_pairs.tsv
 
@@ -470,9 +475,99 @@ Reject if: discussion_or_review_without_row_data | aggregate_meta_result_only
 
 Stop conditions: repository search queries have saved result manifests and triage decisions
 
-Seed artifacts: present_dir(64):data/raw/replication_projects/lead_harvest | present_dir(9):data/raw/replication_projects/manual_papers
+Seed artifacts: present_dir(69):data/raw/replication_projects/lead_harvest | present_dir(9):data/raw/replication_projects/manual_papers
 
 Outputs: future data/derived/effect_inflation_dataset/search_leads/plot1_public_replication_project_search.tsv
+
+### plot1_individual_gpt_assisted_pair_search
+
+Seed queries: reports/figure1_individual_replication_search_help_prompt_2026-05-05.md | "failed to replicate" "effect size" "sample size" | "direct replication" "Cohen" "original study" | "we replicated" "sample size" "effect size" | "high-powered replication" "original effect" | "replication of" "original study" "sample size" | "larger sample" "replication" "original" | "follow-up study" "original effect" "sample size" | "definitive trial" "pilot trial" "effect size"
+
+Accept if: candidate is a specific original/replication or original/follow-up pair | replication/follow-up relation is explicit in title, abstract, methods, report text, registry, or source package | source-object URLs exist for both represented sources or for a package/table that names both | candidate records effect/N availability or the exact source objects needed to check it
+
+Reject if: answer only names another corpus/database without a concrete pair | later paper is merely related, citing, or conceptually adjacent with no replication/follow-up assertion | one-arm outcome lacks comparator and no native-only route is justified | same-data robustness/reanalysis is not labeled as reproduction or native/coverage-only
+
+Stop conditions: GPT/Gemini output is saved as JSON with candidate-level source-object URLs and route decisions | every high-confidence candidate has a mirror-first object list or a documented access blocker | candidate pairs are deduped against FIGURE1_REPLICATION_PAIRS.tsv and known source families before extraction
+
+Seed artifacts: present_file:reports/figure1_individual_replication_search_help_prompt_2026-05-05.md | present_file:steps/individual_replication_papers/figure1/individual-paper-worklist-from-cluster-review.tsv | present_file:steps/corpus_results/figure1/corpus_closure/figure1-corpus-dataset-closure-actions.tsv
+
+Target glob: `steps/searches/figure1/individualrepsearch-gpt-*.json` (missing; skip_if_exists_unless_replace)
+
+Example target files: steps/searches/figure1/individualrepsearch-gpt-batch001.json
+
+Outputs: steps/searches/figure1/individualrepsearch-gpt-batch001.json | steps/individual_replication_papers/figure1/individual-paper-worklist-from-search.tsv
+
+### plot1_individual_bibliographic_phrase_search
+
+Seed queries: "failed to replicate" "original study" | "could not replicate" "original" "sample" | "direct replication" "original" "participants" | "registered replication report" "original study" | "replication attempt" "effect size" "N" | "high-powered" "direct replication" | "conceptual replication" "original effect" | "external validation" "original study" "effect size" | "pilot" "full-scale" "same outcome" "effect size"
+
+Accept if: bibliographic record is an individual replication/follow-up paper or report | abstract or linked full text names the original study, target paper, phenomenon, or trial | DOI/PMID/PMCID/open-location route can ground at least the replication/follow-up source
+
+Reject if: record is a review, editorial, meta-analysis-only source, or corpus/database already covered | no original target can be identified from metadata or full text
+
+Stop conditions: phrase-search manifests record accepted, rejected, and duplicate candidates | accepted candidates route to individual-paper source-object acquisition rather than corpus intake
+
+Seed artifacts: 
+
+Target glob: `steps/searches/figure1/individualrepsearch-bibliographic-*.json` (missing; skip_if_exists_unless_replace)
+
+Example target files: steps/searches/figure1/individualrepsearch-bibliographic-failed-to-replicate-effect-size.json | steps/searches/figure1/individualrepsearch-bibliographic-registered-replication-report-individual.json
+
+Outputs: steps/searches/figure1/individualrepsearch-bibliographic-failed-to-replicate-effect-size.json
+
+### plot1_individual_repository_package_search
+
+Seed queries: "direct replication" "original study" data | "failed replication" data "original" | "registered replication report" "data" | "replication package" "original study" "sample size" | "replication" "original_n" "replication_n" | "original effect" "replication effect" | "replication" "supplementary data" "original effect"
+
+Accept if: package is one paper's replication/follow-up package with source objects, data, code, or tables | file inventory suggests original/replication mapping, effect/statistic fields, N fields, or conversion inputs | package can be mirrored or sampled enough to decide Figure 1A/B/native/coverage route
+
+Reject if: package is a corpus/database already routed through CORPORA_AND_DATABASES.tsv | package contains only preregistration, manuscript PDF, or materials with no result or source-object route
+
+Stop conditions: accepted one-paper packages are queued for source-object acquisition and parsing | rejected repository hits include blocker_codes and relationship evidence status
+
+Seed artifacts: 
+
+Target glob: `steps/searches/figure1/individualrepsearch-repository-*.json` (missing; skip_if_exists_unless_replace)
+
+Example target files: steps/searches/figure1/individualrepsearch-repository-osf-dataverse-single-replication-packages.json | steps/searches/figure1/individualrepsearch-repository-github-original-replication-fields.json
+
+Outputs: steps/searches/figure1/individualrepsearch-repository-osf-dataverse-single-replication-packages.json
+
+### plot1_individual_known_original_citation_forward_search
+
+Seed queries: cited-by search around famous original effects not already covered by current source families | citing papers whose title or abstract contains replicate, replication, reproduce, robustness, follow-up, validation, re-test, or high-powered | citing papers of original effects in staged-unpromoted individual leads | citation neighborhoods around request-only corpus rosters where individual public source objects may rescue rows
+
+Accept if: citing/follow-on paper self-describes a replication, validation, follow-up, or reproduction of the original | original and follow-up source objects can be grounded by DOI/PMID/PMCID/URL | candidate looks outside already-covered corpus rows or records its likely overlap for dedupe
+
+Reject if: citing paper merely discusses, cites, extends theory, or includes the original in a literature review | no result-level source-object route is visible
+
+Stop conditions: known-original forward-search batches have explicit yield and duplicate/noise notes | accepted pairs are queued with both source identities and mirror-first URLs
+
+Seed artifacts: present_file:FIGURE1_REPLICATION_PAIRS.tsv | present_file:steps/corpus_results/figure1/corpus_closure/figure1-corpus-dataset-closure-actions.tsv | present_file:steps/individual_replication_papers/figure1/individual-paper-worklist-from-cluster-review.tsv
+
+Target glob: `steps/searches/figure1/individualrepsearch-citation-*.json` (missing; skip_if_exists_unless_replace)
+
+Example target files: steps/searches/figure1/individualrepsearch-citation-known-originals-forward-replication.json
+
+Outputs: steps/searches/figure1/individualrepsearch-citation-known-originals-forward-replication.json
+
+### plot1_individual_clinical_pair_rescue_search
+
+Seed queries: "pilot trial" "full-scale trial" "same outcome" | "feasibility trial" "definitive trial" "effect size" | "phase II" "phase III" "same endpoint" | "follow-up randomized trial" "pilot" | "replication" "randomized trial" "original trial" | "external validation" clinical trial original study effect
+
+Accept if: paper pair has same or close-enough clinical endpoint and intervention/comparator relationship | original and follow-up Ns are available from trial reports, registry records, or full text | effect measure is direct D/SMD, comparative binary D-equivalent, HR/RR/OR with conversion policy, or native-only with explicit route
+
+Reject if: one-arm ORR lacks a comparator | trial relationship is ordinary development sequence with no affirmative replication/follow-up linkage | result values are request-only and no public source object exists
+
+Stop conditions: clinical individual-pair candidates are separated into strict, D-equivalent, native, coverage-only, and rejected ledgers
+
+Seed artifacts: 
+
+Target glob: `steps/searches/figure1/individualrepsearch-clinical-*.json` (missing; skip_if_exists_unless_replace)
+
+Example target files: steps/searches/figure1/individualrepsearch-clinical-pilot-definitive-public-source-objects.json
+
+Outputs: steps/searches/figure1/individualrepsearch-clinical-pilot-definitive-public-source-objects.json
 
 ## plot2_published_paper_d_vs_n
 
@@ -511,7 +606,7 @@ Reject if: metadata_only_corpus | no_public_or_mirrorable_row_level_artifact | e
 
 Stop conditions: query manifests and candidate rejections are saved for each search surface
 
-Seed artifacts: present_dir(42):data/raw/corpus_candidates | present_dir(10):reports/corpus_candidates
+Seed artifacts: present_dir(43):data/raw/corpus_candidates | present_dir(10):reports/corpus_candidates
 
 Outputs: future data/derived/effect_inflation_dataset/search_leads/plot2_article_corpus_discovery.tsv
 
@@ -552,7 +647,7 @@ Reject if: registry_entry_without_results | preregistered_design_without_publish
 
 Stop conditions: registry/repository result manifests and rejected reasons are saved
 
-Seed artifacts: present_dir(42):data/raw/publication_bias_direct | present_dir(9):data/raw/corpus_candidates/political_science_unlock | present_file:reports/plot3_more_preregistered_results_search_prompt_2026-04-27.md
+Seed artifacts: present_dir(42):data/raw/publication_bias_direct | present_dir(13):data/raw/corpus_candidates/political_science_unlock | present_file:reports/plot3_more_preregistered_results_search_prompt_2026-04-27.md
 
 Outputs: future data/derived/effect_inflation_dataset/search_leads/plot3_public_registry_search.tsv
 

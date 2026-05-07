@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_2d238346740a51ab",
+  "byte_size": 15028,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "C_mean",
+    "C_sd",
+    "T_mean",
+    "T_sd",
+    "C_n",
+    "T_n"
+  ],
+  "estimated_data_rows": 214,
+  "file_name": "ft120.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/des_stat/ft120.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "C_mean": 13.12,
+      "C_n": 8,
+      "C_sd": 4.497199128,
+      "T_mean": 14.0,
+      "T_n": 8,
+      "T_sd": 4.5254834,
+      "obs_ID": "obs001",
+      "study_ID": "Castro_Wise_2009",
+      "year_pub": 2009
+    },
+    {
+      "C_mean": 11.62,
+      "C_n": 8,
+      "C_sd": 2.432447327,
+      "T_mean": 12.25,
+      "T_n": 8,
+      "T_sd": 3.761808076,
+      "obs_ID": "obs002",
+      "study_ID": "Castro_Wise_2009",
+      "year_pub": 2009
+    },
+    {
+      "C_mean": 3.5,
+      "C_n": 3,
+      "C_sd": 1.2,
+      "T_mean": 6.8,
+      "T_n": 3,
+      "T_sd": 1.6,
+      "obs_ID": "obs003",
+      "study_ID": "Caine&Marion_1991",
+      "year_pub": 1991
+    },
+    {
+      "C_mean": 26.0,
+      "C_n": 3,
+      "C_sd": 7.0,
+      "T_mean": 95.66667,
+      "T_n": 3,
+      "T_sd": 13.868429,
+      "obs_ID": "obs004",
+      "study_ID": "Hekkala_etal_2014",
+      "year_pub": 2014
+    },
+    {
+      "C_mean": 26.0,
+      "C_n": 3,
+      "C_sd": 7.0,
+      "T_mean": 90.33333,
+      "T_n": 3,
+      "T_sd": 10.692677,
+      "obs_ID": "obs005",
+      "study_ID": "Hekkala_etal_2014",
+      "year_pub": 2014
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "00f2beec67bd14114739bdae2e594eb5fded341981b05a21f47601149da91c05"
+}

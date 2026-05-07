@@ -1,0 +1,204 @@
+# Figure 1 Individual Replication Batch 001 Value Scan
+
+This scan records what the mirrored source objects support. It does not edit root Figure 1 tables.
+
+## Summary
+
+- Ready for source-result build now: 57 result options.
+- Needs policy or exact-N reconciliation first: 127 result options.
+- This scan now covers the initially mirrored non-root individual candidates plus the open-text batch-002 candidates with value evidence or clear blockers.
+
+## Ready Now
+
+- `moral_forecasting_teper_bo` / Experiment 1 close replication, original math-cheating task: original d = 0.98 (N=39); replication d = 0.69 (N=907).
+- `spacing_induction_kornell_verkoeijen` / Experiment 2 spacing-vs-massing recognition hit-rate effect: original d = 0.41 (N=80); replication d = 0.37 (N=123).
+- `rubber_hand_disgust_jalal_nitta` / Disgust during synchronous versus asynchronous rubber-hand illusion: original d = 2.80; source Z = 2.7; r = 2.7/sqrt(11) (N=11); replication d = 1.39; source z = 4.09; r = 0.57 (N=52).
+- `medusa_effect_will_han` / Experiment 5 / Study 2 dictator-game allocation L1 versus L2: original d = 0.36 (N=199); replication d = 0.09 (N=785).
+- `medusa_effect_will_han` / Experiment 2 / Study 1 mind-perception realness dimension: original d = 0.83 (N=107); replication d = 0.98 (N=219).
+- `medusa_effect_will_han` / Experiment 2 / Study 1 mind-perception experience dimension: original d = 0.34 (N=109); replication d = 0.50 (N=198).
+- `medusa_effect_will_han` / Experiment 2 / Study 1 mind-perception agency dimension: original d = 0.39 (N=104); replication d = 0.88 (N=185).
+- `IND-010` / Experiment 1 immediate high-performance-goal priming word-search: original d = 0.70 (N=78); replication d = 0.24; source signed d = -0.24 (N=98).
+- `IND-012` / Hot-cup manipulation and interpersonal personality warmth judgment: original d = 0.58; source r = .28 (N=41); replication d = 0.06; source r = -.03 (N=128).
+- `IND-012` / Therapeutic heat-pad manipulation and prosocial reward choice: original d = 0.65; source r = .31 (N=53); replication d = 0.04; source r = .02 (N=177).
+- `IND-005` / Retroactive facilitation of recall, three exact replications: original d = 0.42 (N=50); replication d = 0.08; combined t = -0.97 (N=150).
+- `IND-008` / Power manipulation and golf-putting motor performance: original d = 0.71 (N=36); replication d = 0.11; source t(71) = .49 (N=73).
+- `IND-009` / Organic-food exposure and moral judgments: original d = 0.81 (N=63); replication d = 0.06 (N=377).
+- `IND-009` / Organic-food exposure and prosocial behavior: original d = 0.64; signed source d = -0.64 (N=63); replication d = 0.03 (N=377).
+- `IND-002` / Oxytocin Envelope Task pooled direct replications: original d = 2.29; ordinal-regression d = 3.07 also reported (N=60); replication d = 0.12; source signed pooled d = -0.12 (N=156).
+- `api_candidate_6567045e2123a4f9` / Infants' saliva-sharing cue and proportion of looking time: original d = 0.95 (N=20); replication d = 0.46 (N=50).
+- `api_candidate_49114652db6026d3` / Study 2 objective-coherence tree-photo sequence and meaning in life: original d = 0.37 (N=137); replication d = 0.06; recomputed signed d = 0.0596 (N=478).
+- `api_candidate_49114652db6026d3` / Study 4 linguistic triads coherence manipulation and meaning in life: original d = 0.44 (N=169); replication d = 0.10; recomputed signed d = -0.0973 (N=291).
+- `api_candidate_710fd7eb55fc9d77` / Scopolamine antidepressant efficacy, first randomized treatment block MADRS contrast: original d = 2.7 (N=18); replication d = 1.38 (N=22).
+- `api_candidate_87bcf07e36a43a1c` / Kim and Markus Study 3 uncommon-pen choice by culture: original d = 1.22; source r/V = .52 (N=56); replication d = 0.24; source r/V = .12 (N=729).
+- `api_candidate_4a9bce8aeff2f1ff` / Partner-specific memory associations and picture naming, Experiment 2a: original d = 0.68 (N=16); replication d = 0.12; source t(48) = 0.85 (N=49).
+- `IND-017` / Signing-at-the-beginning matrix overreporting, Study 1 direct replication: original d = 1.05; source signed d = -1.05 (N=68; original Study 1 top-vs-bottom cells were 35 and 33; replication table reports total Study 1 N = 101); replication d = 0.04; source signed d = -0.04 (N=1235).
+- `IND-019` / Mating-motive prime effect on male sexual risk-taking, Greitemeyer Experiment 1 / Shanks Study 7a: original d = 0.7799 (N=31; source groups n1 = 16 and n2 = 15); replication d = 0.0111 (N=120; prime n = 61 and control n = 59).
+- `IND-019` / Mating-motive prime effect on male gambling risk-taking, Greitemeyer Experiment 2 / Shanks Study 7b: original d = 0.8064 (N=42; source groups n1 = 22 and n2 = 20); replication d = 0.0636 (N=106; prime n = 53 and control n = 53).
+- `IND-019` / Mating-motive prime effect on male risky driving, Greitemeyer Experiment 3 / Shanks Study 5: original d = 1.6112 (N=59; source groups n1 = 17 + 18 mating-prime males and n2 = 24 control males); replication d = 0.1904 (N=79; prime n = 39 and control n = 40).
+- `IND-019` / Mating-motive prime effect on male sexual risk-taking, Greitemeyer Experiment 1 / Shanks Study 6: original d = 0.7799 (N=31; source groups n1 = 16 and n2 = 15); replication d = 0.3308 (N=56; male prime n = 25 and male control n = 31).
+- `IND-019` / Mating-motive prime effect on male gambling risk-taking, Greitemeyer Experiment 2 / Shanks Study 6: original d = 0.8064 (N=42; source groups n1 = 22 and n2 = 20); replication d = 0.2204 (N=56; male prime n = 25 and male control n = 31).
+- `IND-019` / Mating-motive prime effect on male loss aversion, Li et al. Study 1 / Shanks Study 8: original d = 0.3985 (N=97; source groups n1 = 49 and n2 = 48); replication d = 0.0033 (N=218; male prime n = 109 and male control n = 109).
+- `api_candidate_1e92a78ddf5bf933` / Gaze-liking effect, eyes-toward versus eyes-away object ratings: original dz = 0.94 (N=24); replication dz = 0.02 (N=98).
+- `api_candidate_f990ad92aaa05972` / Fischhoff Experiment 2 hindsight versus foresight probability judgments: original d = 1.13 (N=80); replication d = 0.22 (N=431).
+- `api_candidate_33a7b799901f4853` / Probability matching under n-back cognitive load versus single-task control: original d = 1.09 (N=20); replication d = 0.107; source signed d = -0.107 (N=111).
+- `IND-022` / Early goal-directed therapy mortality, Rivers trial versus ProCESS EGDT usual-care contrast: original d = 0.3768 (N=263); replication d = 0.0726 (N=895; EGDT n = 439 and usual care n = 456).
+- `IND-022` / Early goal-directed therapy mortality, Rivers trial versus ARISE usual-care contrast: original d = 0.3768 (N=263); replication d = 0.0069 (N=1600; EGDT n = 796 and usual care n = 804).
+- `IND-022` / Early goal-directed therapy mortality, Rivers trial versus ProMISe usual-care contrast: original d = 0.3768 (N=263); replication d = 0.0091 (N=1243; EGDT n = 623 and usual care n = 620 with primary outcome data).
+- `IND-024` / Intensive insulin/tight glucose control ICU mortality follow-up: original d = 0.3251 (N=1548); replication d = 0.0743 (N=6022; intensive-control outcome n = 3010 and conventional-control outcome n = 3012).
+- `api_candidate_ac518393f5f3ba70` / CASA desktop-computer positivity index, same-computer versus different-computer evaluation: original d = 1.565248; source t(17) = 3.5 (N=20; source reports 10 per condition for the focal same-computer versus different-computer contrast); replication d = 0.03; source signed d = -0.03 (N=132).
+- `api_candidate_e4c1bdfad6bc2704` / Target state anger for armed kitchen-knife versus unarmed adjacent-knife condition: original d = 0.38 (N=264); replication d = 0.335 (N=476).
+- `api_candidate_0921978f51da17da` / Social exclusion effect on real-versus-fake smile discrimination d-prime omnibus ANOVA: original d = 1.25 (N=32); replication d = 0.33 (N=201).
+- `api_candidate_2eda47acdf45e76c` / Crowd-within immediate condition: average of two guesses versus first guess MSE: original d = 0.28 (N=255); replication d = 0.40 (N=471).
+- `api_candidate_2eda47acdf45e76c` / Crowd-within immediate condition: average of two guesses versus second guess MSE: original d = 0.62 (N=255); replication d = 0.47 (N=471).
+- `api_candidate_de98537749100357` / Race-erased effect H1: reduced race encoding with visual coalitional cue: original d = 0.37 (N=107; source table reports 55 no-visual-cue plus 52 visual-cue participants); replication d = 0.185 (N=463; source table reports 225 no-visual-cue plus 238 visual-cue participants).
+- `api_candidate_de98537749100357` / Race-erased effect H2: increased coalition encoding with visual coalitional cue: original d = 1.22 (N=107; source table reports 55 no-visual-cue plus 52 visual-cue participants); replication d = 0.852 (N=463; source table reports 225 no-visual-cue plus 238 visual-cue participants).
+- `api_candidate_6babb48338f16a8a` / Preferred versus nonpreferred music effect on bench press repetitions to failure: original d = 0.84 (N=12); replication d = 0.12; source signed dz = -0.12 (N=28).
+- `api_candidate_6babb48338f16a8a` / Preferred versus nonpreferred music effect on bench press motivation: original d = 5.90 (N=12); replication d = 0.34 (N=28).
+- `api_candidate_410ff1685532db83` / Trafimow and Hughes Study 3 mortality-salience no-delay word-generation contrast: original d = 0.38 (N=120); replication d = 0.327486 (N=1672).
+- `api_candidate_5d432a85cc83bb79` / Kuhnen and Oyserman Study 2 self-construal priming on object-location memory / Grossmann and Jowhari full-compliance close replication: original d = 0.69 (N=34); replication d = 0.47 (N=87).
+- `api_candidate_f8493430bc5f8a6b` / Kelley and Schmeichel mortality-salience delay-discounting effect / Tunney and Raybould Experiment 2: original d = 0.5767 (N=118; source t(116) implies two-group analyzed N = 118); replication d = 0.2494; source t(187) = -1.714 (N=189; mortality salience n = 92 and dental pain n = 97).
+- `api_candidate_57a84c07c9be2d2e` / Kouchaki and Gino Study 5 ethical versus unethical vignette recognition accuracy / Stanley direct replication Study 1: original d = 0.43 (N=88); replication d = 0.26; source pattern opposite original (N=228).
+- `api_candidate_a47c1c6c1b15cac4` / Omega-3 PUFA prevention of transition to psychosis, original Vienna trial versus NEURAPRO: original d = 1.1032 (N=81; omega-3 n = 41 and placebo n = 40); replication d = 0.0164 (N=304; omega-3 n = 153 and placebo n = 151).
+- `api_candidate_359168184573cff4` / Parbery-Clark enhanced upper-harmonics encoding to /da/ in babble / large-scale multisite direct replication: original d = 1.04 (N=31; musicians n = 16 and non-musicians n = 15); replication d = 0.023 (N=162; musicians n = 74 and non-musicians n = 88).
+- `api_candidate_359168184573cff4` / Parbery-Clark reduced babble degradation in /da/ encoding / large-scale multisite direct replication: original d = 1.05 (N=31; musicians n = 16 and non-musicians n = 15); replication d = 0.012 (N=162; musicians n = 74 and non-musicians n = 88).
+- `api_candidate_359168184573cff4` / Wong enhanced F0 encoding for linguistic pitch in quiet / large-scale multisite direct replication: original d = 1.11 (N=20; musicians n = 10 and non-musicians n = 10); replication d = 0.22 (N=145; musicians n = 68 and non-musicians n = 77).
+- `review_figure1_search_leads_2822063673be` / Combined false-belief score, original 3-year-olds versus replication 36-month-olds: original d = 0.3636; source M = 0.54, SD = 0.11 versus chance = 0.50 (N=26); replication d = 0.0042; source t(140) = -0.05 (N=141; source reports t(140) for the 36-month combined FB score).
+- `review_figure1_search_leads_2822063673be` / Combined false-belief score, original 4-year-olds versus replication 52-month-olds: original d = 0.3636; source M = 0.54, SD = 0.11 versus chance = 0.50 (N=31); replication d = 0.0071; source t(70) = -0.06 (N=71; source reports t(70) for the 52-month combined FB score).
+- `api_candidate_0eb40892da116803` / Park and Brannon Experiment 2 approximate-arithmetic versus numeral-ordering symbolic arithmetic gain: original d = 0.846 (N=30); replication d = 0.19 (N=89).
+- `api_candidate_c90e8b5ff29bcd78` / Azar restaurant dishonesty high-change versus low-change return of excess change: original d = 0.806 (N=192); replication d = 0.408677 (N=219).
+- `api_candidate_a939357d526cdfa3` / Griskevicius Experiment 1 status versus pooled controls composite green score: original d = 0.47 (N=168); replication d = 0.03 (N=3774).
+
+## Needs Decision Or Reconciliation
+
+- `api_candidate_7a25e1fb88a57d3c` / Mere presence of mobile phone and relationship quality/closeness: not_row_native_clustered_multilevel_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_38f85ce298c4da7a` / Novelty recognition-memory expectancy effect: not_row_native_paired_interaction_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_3e8c9568db2bcd63` / BMAP-28 antimicrobial peptide MIC experiment: not_row_biological_replicates_below_current_n_and_design_floor. Next: retain_as_bench_replication_context_not_current_figure1_row.
+- `api_candidate_b6908a974331b8bf` / Vocal fold immobility after cardiovascular surgery case-series replication: not_row_native_only_no_comparative_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_6260c1eb06960347` / Body inversion paradigm and sexualized-body recognition: not_row_native_only_no_defensible_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_3d80e7706cd46536` / Watching-eyes effect on generosity/reputation behavior: not_row_unresolved_original_target_and_outcome_policy. Next: retain_as_context_source_until_exact_original_target_is_resolved.
+- `api_candidate_c482b68e388efb4c` / Porcine circovirus origin-of-replication sequence recognition: not_row_reject_molecular_sequence_mechanism_not_effect_pair. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_fbc648c4fc928c00` / Bilingual lexicon convergence conceptual replication: not_row_native_conceptual_multiple_previous_studies_no_single_pair. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_a6531c0216f61f31` / GWAS fasting glucose loci in African-Americans: not_row_native_genetic_association_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_a848f855bce57e2b` / Over 180 self-reported medical-data genetic associations: not_row_native_many_genetic_associations_no_single_pair. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_099c6eb209be07e5` / Replication of influential HIV prevention/treatment studies: not_row_reject_review_or_source_family_not_single_pair. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_9db26ff9b8058473` / Social-distance priming Study 1 near-versus-far food-judgment replication: not_row_replication_n_not_larger_or_original_effect_missing. Next: do_not_promote_unless_policy_allows_smaller_focal_replication_or_original_study3_effect_is_extracted.
+- `api_candidate_a2cc98ea84de7e9f` / Giessner and Schubert Study 3a leader power and vertical placement: not_row_replication_n_not_larger. Next: retain_as_context_source_not_current_figure1_row.
+- `api_candidate_be86ec9a8c504504` / Irrelevant-speech visual-spatial working-memory sound-type effect: not_row_native_repeated_measures_eta_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_3c0735598afbf79a` / Infant helper preference manual choice: not_row_binary_one_arm_preference_no_comparator. Next: retain_as_context_source_not_current_figure1_row.
+- `api_candidate_bb6c827070cfa1f7` / Cockroach audience by task-difficulty social-facilitation interaction: not_row_original_effect_not_statistically_mapped. Next: manual_acquisition_if_interaction_effects_become_in_scope.
+- `api_candidate_112b3ad59e12752d` / Prosocial spending and post-windfall happiness original specification: not_row_original_effect_not_sufficiently_exposed. Next: manual_acquisition_of_original_dunn_aknin_norton_value_inputs_if_prioritized.
+- `api_candidate_4047d23b0380c97b` / Kovacs and Mehler infant anticipatory-looking switch task: not_row_native_eye_tracking_mixed_models_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_3a85115b6a4aad63` / Sexual over- and underperception repeated-measures replication: not_row_native_repeated_measures_profile_no_matched_original_d. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_d98523e0ce3e5e0d` / Online image credibility contextual direct/conceptual replication: not_row_direct_replication_n_not_larger_and_multi_claim_native. Next: retain_as_context_or_native_multi_claim_replication_source.
+- `api_candidate_7c25e95e83db7d9a` / Real-world replication of carotid endarterectomy randomized trial results: source_blocked_clinical_observational_validation_not_current_pair. Next: manual_acquisition_if_clinical_real_world_validation_rows_are_in_scope.
+- `api_candidate_d1eefaf8893a8a31` / Cash transfers and HIV/HSV-2 cluster randomized trial replication: not_row_same_trial_reanalysis_cluster_model_native. Next: reject_same_data_reanalysis_for_current_figure1.
+- `api_candidate_2528b3da1b30e174` / Eimer N2pc EEGManyLabs registered replication report: not_row_native_eeg_erp_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_4c7df68bfa95fc50` / Eimer N2pc Cortex multilab direct replication: not_row_native_eeg_erp_duplicate_target. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_e93d5e20d7b766a7` / Plasmid pIJ101 molecular replication sequence: not_row_reject_molecular_replication_mechanism. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_2537eb141b71e9b2` / Broad-host-range plasmid RK2 TrfA replication proteins: not_row_reject_molecular_replication_mechanism. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_7130a003da58b46c` / Original Code Mangler software-engineering replication: not_row_reject_software_engineering_not_figure1_effect_pair. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_c9556197558f1594` / Non-replication of association studies pseudo-failures: not_row_reject_commentary_or_methodological_context. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_946c9540a38d0ea1` / Large-scale in silico replication of ecological and evolutionary studies: not_row_computational_reproduction_source_family. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_82f4a34ce6636a71` / Failure to replicate a genetic association: not_row_native_genetic_association_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_608fb620bd3f49af` / GRIN2A-by-coffee interaction in Parkinson disease: not_row_native_genetic_interaction_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_4333d130d009ceae` / Identification and replication of myopia susceptibility loci: not_row_native_many_genetic_loci_no_single_pair. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_c392991176e2020d` / Failure to replicate temporal-lobe epilepsy genetic associations: not_row_native_genetic_association_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_d69512d607ea08f3` / Authentic pedagogy multilevel achievement replication: not_row_native_only_no_defensible_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_b9cdb8cc6a76d362` / Passive priming verb-semantics replication: not_row_native_binary_mixed_model_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_9a6b74a967e69dba` / Congruency sequence effect registered replication: not_row_native_only_no_defensible_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_810171915e0f8ccd` / Representativeness heuristic registered report: not_row_registered_report_stage1_no_results. Next: recheck_after_stage2_results_are_published.
+- `api_candidate_6287214392755e51` / Social context and lexical knowledge learning replication: not_row_native_only_no_defensible_d_route. Next: manual_acquisition_if_native_learning_effects_are_in_scope.
+- `api_candidate_786cc2f5ecc3de84` / Animacy and structural priming replication: not_row_native_binary_structural_priming_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_c49eb133d5977b06` / Rabbitt Experiment 2 speech masking direct replication: manual_acquisition_needed_original_n. Next: manual_acquisition_of_rabbitt_1968_original_or_authoritative_table_with_original_n.
+- `api_candidate_fbe05a26e9edabb8` / Bem Study 8 procedure replication: not_row_duplicate_represented_by_existing_galak2012_aggregate. Next: already_represented_by_manual_bem_precognition_galak_2012_root_row.
+- `api_candidate_5b9f95d4c0a9b686` / Panero methods-caused-failure commentary/dispute: not_row_reject_commentary_or_method_dispute. Next: reject_irrelevant_or_keep_as_context_source.
+- `IND-015` / Red-romance preregistered replications: source_blocked_original_value_bearing_text_missing. Next: manual_acquisition_of_hogrefe_article_or_author_manuscript_or_original_red_romance_value_tables.
+- `IND-016` / Marshmallow test conceptual replication and longitudinal outcomes: not_row_native_only_no_defensible_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `IND-019` / Mating-motive consumer/risk replication studies, remaining targets: not_row_remaining_targets_need_study_level_mapping. Next: review_remaining_shanks_mating_motives_targets_individually_if_prioritized.
+- `IND-020` / Growth-mindset/praise educational outcomes: not_row_native_only_no_defensible_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `IND-025` / 5-HTTLPR stress-depression gene-by-environment validation: not_row_native_only_no_defensible_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_dfaca8efbd8c31d7` / Suicide-IAT predictive-validity direct replication: not_row_native_prognostic_validity_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_9706339e8a624a3e` / Rolling-circle replication of tandem genes in Drosophila: not_row_reject_molecular_replication_mechanism. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_feea00e7428dcc37` / Gateway belief model representative German replication: not_row_native_mediation_or_correlation_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_87df252a834b5bb9` / Introduction to ego-depletion registered replication report: not_row_reject_context_or_duplicate_rrr_intro. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_6039855128a09623` / Maier Experiment 4 retroactive avoidance multi-lab replication: not_row_native_bayesian_one_sample_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_65f624eddc68d50b` / Duplicate Maier Experiment 4 retroactive avoidance metadata record: not_row_duplicate_candidate_same_replication_work. Next: reject_duplicate_candidate_same_source_family.
+- `api_candidate_cf244abb2bbf6be7` / Willpower mindset moderation of ego depletion: not_row_native_moderation_interaction_no_original_d. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_025c30471725eba5` / Auditory religious cues and dishonest behavior: not_row_conceptual_extension_no_single_original_effect. Next: retain_as_context_source_until_exact_original_target_is_resolved.
+- `api_candidate_a1ba220497e966a5` / Oxytocinergic polymorphisms and face-inversion N170: not_row_native_genetic_eeg_association_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_f5027ea48e83c6e2` / Darkness and dishonesty conceptual replication using coin toss task: not_row_conceptual_changed_task_original_effect_missing. Next: retain_as_context_source_until_original_effect_inputs_are_mirrored.
+- `api_candidate_767774874f909c0c` / Replication of reported linkages for dyslexia and spelling: not_row_native_linkage_genetics_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_4e90967ad6579d28` / 5HTTLPR and response to psychological therapy for child anxiety: not_row_native_pharmacogenetic_or_moderation_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_4d7c60f8ed7fd665` / rs678849 pharmacogenetic effect on buprenorphine efficacy: not_row_native_pharmacogenetic_interaction_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `IND-023` / Activated protein C 28-day mortality, PROWESS versus PROWESS-SHOCK: not_row_replication_analyzed_n_not_larger. Next: retain_as_context_until_policy_allows_same_order_or_randomized_n_larger_than_analyzed_n.
+- `api_candidate_2eda47acdf45e76c` / Crowd-within delayed condition: average of two guesses versus individual guesses: not_row_replication_n_not_larger. Next: retain_as_context_source_not_current_figure1_row.
+- `api_candidate_9d6d2e540669c110` / Creative-destruction implicit work and sex morality cross-cultural replication: not_row_unresolved_original_target_and_outcome_policy. Next: retain_as_context_source_until_single_original_target_and_value_text_are_resolved.
+- `api_candidate_44137bf63c3bbdfa` / Schiller et al. Nature 2010 registered replication OSF record: source_blocked_protocol_or_repository_only. Next: resolve_completed_replication_article_or_results_package_before_value_extraction.
+- `api_candidate_fcdbe8ce78bf22a0` / Schiller et al. Nature 2010 registered replication duplicate OSF record: source_blocked_protocol_or_repository_only. Next: resolve_completed_replication_article_or_results_package_before_value_extraction.
+- `api_candidate_96a758378eb37b0e` / Phonological priming rapid-naming failure: not_row_native_anova_original_effect_missing. Next: retain_as_native_or_context_source_until_original_effect_and_current_d_route_are_resolved.
+- `api_candidate_821f217890822e88` / Mehta and Zhu color-priming anagram solution times: not_row_native_interaction_original_effect_range_no_exact_d_route. Next: retain_as_native_or_context_source_until_original_article_or_data_supports_a_single_matched_d_contrast.
+- `api_candidate_03e239b5107526a4` / Mager et al. intermodal cognitive-conflict priming: not_row_native_repeated_measures_interaction_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_53e20f8627a320c7` / Positive affirmations and self-esteem: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_74f56abca426fbc9` / Ciani and Sheldon letter priming and intelligence: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_ccd98d70dd2472bf` / Name priming effects as implicit self-esteem: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_af2810096cc74997` / Newman and Cain tainted altruism charity-advertising contrast / larger replications: source_blocked_original_value_text_missing. Next: mirror_or_extract_original_newman_cain_value_bearing_figure_or_table_before_promotion.
+- `api_candidate_bb80324826df747b` / Hare self-control fMRI replication and valuation ROI/regression results: not_row_native_neuroimaging_or_regression_metric. Next: retain_as_native_only_context_unless_a_specific_behavioral_d_contrast_is_resolved.
+- `api_candidate_2226a54d3fa3a914` / Pepper mortality-cue social-class risk and delay-discounting replications: not_row_native_continuous_moderation_metric. Next: retain_as_native_only_context_unless_policy_adds_continuous_moderation_conversion.
+- `api_candidate_44ddc70d6c094df4` / Horizontal eye movements and free recall preregistered adversarial collaboration: not_row_reject_literature_body_target_not_single_original_pair. Next: keep_as_context_source_or_resolve_single_original_claim_before_reconsidering.
+- `api_candidate_9b24b3097426c83d` / Repeated finger flexion reward activation direct replication: source_blocked_original_effect_missing_and_multioutcome. Next: resolve_original_haeffel_2011_focal_effect_and_outcome_before_reconsidering.
+- `api_candidate_ddd51f6a6a2663b8` / Female hormone levels and visuospatial working memory across two menstrual cycles: not_row_native_within_paper_cycle_replication. Next: retain_as_context_or_native_only_not_figure1_pair.
+- `api_candidate_dcf90d656a661e24` / Motivated numeracy policy-data pre-registered replication: not_row_native_logistic_interaction_metric. Next: retain_as_native_only_context_unless_single_binary_contrast_policy_is_added.
+- `api_candidate_1558aa984b33c59b` / Physiological threat responses and social conservatism direct replication: not_row_native_regression_no_current_d_route. Next: retain_as_native_only_context_unless_regression_to_d_policy_is_added.
+- `api_candidate_6609346be8040f27` / Verbal credibility assessment specific-times truth-lie direct replication: not_row_replication_n_not_larger. Next: retain_as_context_unless_same_size_or_not_larger_policy_changes.
+- `api_candidate_8beb7be699093e2e` / Deferred feedback in rule-based and information-integration category learning: not_row_native_interaction_multiple_targets_no_single_d. Next: retain_as_native_or_resolve_single_original_contrast_before_reconsidering.
+- `api_candidate_215dace53b55d3a7` / Negative calorie illusion healthy-side calorie-estimate replications: source_blocked_replication_effect_not_mapped_to_d. Next: extract_or_compute_single_focal_replication_smd_before_reconsidering.
+- `api_candidate_9805fce4fff87c56` / Adults' backlash against stereotype-violating preschool children: not_row_internal_replication_multioutcome. Next: retain_as_context_source_not_figure1_pair.
+- `api_candidate_cb9a052960492641` / Bem Experiment 9 retroactive facilitation of recall / Ritchie three preregistered exact replications combined: not_row_duplicate_existing_bem_ind005. Next: retain_as_duplicate_support_context_for_existing_ind005_row.
+- `api_candidate_359168184573cff4` / Musical-training FFR direct-replication correlation rows: not_row_native_correlation_metric_after_smd_rows. Next: retain_as_native_only_context_unless_correlation_conversion_policy_is_added.
+- `api_candidate_dd966219198c26d2` / Cortical-hippocampal stimulation episodic-memory replication and extension: not_row_repeated_measures_crossover_and_n_not_larger. Next: retain_as_context_unless_repeated_measures_same_n_policy_changes.
+- `api_candidate_099abcecc23369b1` / Attentional-blink tDCS exploratory correlation replication: not_row_native_correlation_no_current_d_route. Next: retain_as_native_only_context_unless_correlation_conversion_policy_is_added.
+- `api_candidate_35c434b56bea3ba8` / Darwinian grandparenting redux replication studies: not_row_native_multi_study_interaction_no_single_d. Next: retain_as_context_or_resolve_single_smd_contrast_before_reconsidering.
+- `api_candidate_f6fe02e8fc6a4794` / Tracheotomy and aspiration status direct replication: source_blocked_native_clinical_paired_status. Next: mirror_full_value_bearing_article_and_resolve_binary_design_before_reconsidering.
+- `api_candidate_9234baa629e398b2` / Tetris-effect perceptual-cohesion replication in autistic and non-autistic adults: not_row_native_logistic_or_sdt_metric. Next: retain_as_native_only_context_unless_single_replication_d_is_extracted_or_computed.
+- `api_candidate_2f744caa59ab9cd0` / 2D:4D and self-employment preregistered large-sample replication: not_row_native_regression_no_current_d_route. Next: retain_as_native_only_context_unless_regression_to_d_policy_is_added.
+- `api_candidate_7529248cc277118d` / False-belief curse-of-knowledge social-distance experiments: not_row_multi_experiment_extension_no_single_matched_d. Next: retain_as_context_or_resolve_single_target_contrast_before_reconsidering.
+- `api_candidate_581f643314530591` / Self-prioritization in working-memory gating Study 1 / Study 2: not_row_internal_same_article_replication. Next: retain_as_context_source_not_figure1_pair.
+- `api_candidate_01263e49549d07d1` / Birch and Billman preschool food-sharing direct replication: source_blocked_original_d_missing_multioutcome. Next: resolve_original_birch_billman_effect_and_single_matched_outcome_before_reconsidering.
+- `api_candidate_ec1bd04cfda813e6` / Irrelevant insight misattribution direct-replication component: not_row_internal_or_unresolved_original_effect. Next: resolve_external_original_target_and_matched_d_values_before_reconsidering.
+- `api_candidate_65131b7d7b541cd5` / HD-tDCS mind-wandering preregistered direct replication: not_row_native_regression_no_current_d_route. Next: retain_as_native_only_context_unless_regression_to_d_policy_is_added.
+- `api_candidate_f43c0a346030c8c1` / Exact replication coin-flip/power-analysis methodology article: not_row_methodological_context_not_replication_pair. Next: retain_as_context_source_not_figure1_pair.
+- `api_candidate_5228fb29e5f302a1` / Rare disaster information registered replication report: source_blocked_effect_not_mapped_to_d. Next: extract_original_and_replication_effect_sizes_from_figures_or_data_before_reconsidering.
+- `api_candidate_3b7b2c1f21d0c6fc` / Young and Saxe Experiment 1B moral-domain intent interaction replication: source_blocked_native_interaction_eta_or_figure_only_d. Next: retain_as_native_only_context_or_extract_figure_or_osf_d_values_before_reconsidering.
+- `cluster_triplett_s_social_facilitation_experiment_a_registered_replication_report_14c13e6e2613` / Triplett social facilitation registered replication: source_obtained_original_standardized_effect_missing. Next: mirror_original_triplett_or_strube_value_bearing_data_before_promotion.
+- `review_figure1_search_leads_7207a6e0789b` / DeSteno emotion and automatic intergroup attitudes replication: source_obtained_original_effect_missing_native_iat_anova. Next: mirror_desteno_2004_value_bearing_article_before_reconsidering.
+- `review_figure1_search_leads_e2c9f63ac70c` / High-variability non-native phoneme training registered report: not_row_original_cross_experiment_native_logit_no_single_d. Next: do_not_promote_without_policy_for_cross_paper_percent_difference_or_original_raw_data.
+- `review_figure1_search_leads_115f5ee33aea` / Oxytocin trust registered report pooled equivalence test: source_blocked_sciencedirect_metadata_only_exact_values_missing. Next: mirror_value_bearing_sciencedirect_article_or_open_data_before_reconsidering.
+- `review_figure1_search_leads_46613d3e6bc2` / Bena conspiracy/trivia illusory-truth registered replication: not_row_native_repeated_measures_interaction_no_current_d_route. Next: retain_as_native_only_context_unless_policy_adds_repeated_measures_interaction_d_conversion.
+- `review_figure1_search_leads_3c4dddb6790c` / Infant-directed speech preference meta-analysis versus ManyBabies multi-lab replication: not_row_aggregate_meta_analysis_and_mlr_not_single_pair. Next: retain_as_context_source_or_route_to_source_family_workstream_if_aggregate_policy_is_added.
+- `api_candidate_ccea3138ba9e9efa` / Resource scarcity priming and face perception: source_blocked_conceptual_replication_needs_values. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_705797b93ca7def0` / Money priming and socioeconomic system support: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_ff3e2677820a4fca` / Duck hepatitis B virus direct-repeat sequence mechanism: not_row_reject_molecular_sequence_mechanism_not_effect_pair. Next: reject_irrelevant_or_keep_as_context_source.
+- `api_candidate_d51bbeeeb3386937` / Contextual bias in Criteria-Based Content Analysis: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_f998e9bbe8b93e3b` / Cognitive interview effectiveness independent replication: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_49040530056b1fbf` / Education and conspiracy beliefs replication: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_6c82de233d0d6376` / Recovered memories survey replication: not_row_native_survey_replication_no_current_d_route. Next: retain_as_native_or_context_source_not_current_figure1_row.
+- `api_candidate_4dc2cff8320f0b0e` / Reactions to female- versus male-favoring sex differences: not_row_replication_n_not_larger. Next: retain_as_context_source_not_current_figure1_row.
+- `api_candidate_5f49de82f6ecf01a` / Eimer N2pc PCI decision/review artifact: not_row_reject_review_or_recommendation_artifact. Next: reject_review_artifact_keep_under_eimer_native_context_if_needed.
+- `api_candidate_9d9c8a6d88ce0e24` / Eimer N2pc PCI reviewer artifact: not_row_reject_review_or_recommendation_artifact. Next: reject_review_artifact_keep_under_eimer_native_context_if_needed.
+- `api_candidate_765478f6b84f2712` / Eimer N2pc PCI recommendation artifact: not_row_reject_review_or_recommendation_artifact. Next: reject_review_artifact_keep_under_eimer_native_context_if_needed.
+- `api_candidate_3bd91c9eb99033f2` / Eimer N2pc PCI reviewer artifact: not_row_reject_review_or_recommendation_artifact. Next: reject_review_artifact_keep_under_eimer_native_context_if_needed.
+- `api_candidate_a84a2bcb4c4ddffa` / Ego-depletion RRR extension to research program: not_row_reject_duplicate_or_research_program_context. Next: retain_as_context_not_current_individual_row.
+- `api_candidate_879a9de1b31ac6eb` / Five Cs model supplemental material: not_row_reject_supplement_without_primary_value_mapping. Next: resolve_primary_article_if_this_conceptual_replication_is_prioritized.
+- `api_candidate_006071e798115bf1` / Shenhav/Rand/Greene intuitive mindset and belief in God: not_row_original_effect_not_sufficiently_exposed. Next: extract_original_shenhav_study3_two_condition_effect_before_promotion.
+- `api_candidate_6e800d9ae94a3691` / Measurement of Religious Orientations Polish replication: not_row_native_measurement_replication_no_current_d_route. Next: retain_as_native_measurement_context_not_current_figure1_row.
+- `api_candidate_b3869535651b5f0e` / Character morality, enjoyment, and appreciation media replication: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_33813e7fcb6a8243` / A Rhumba of Rs replication commentary: not_row_reject_commentary_or_context_item. Next: reject_context_article.
+- `api_candidate_0367fa32a3d09f7b` / Loftus misinformation effect registered-report replication: source_blocked_needs_value_bearing_article. Next: manual_acquisition_or_repository_parse_if_prioritized.
+- `api_candidate_65818e4f091ba388` / Prosocial simulation supplemental material: not_row_reject_supplement_without_primary_value_mapping. Next: resolve_primary_article_if_this_cross_national_replication_is_prioritized.
+- `api_candidate_976ad212f2c9e0d5` / Retracted heart-rate-variability cordless-phone provocation replication: not_row_reject_retracted_or_no_current_policy. Next: reject_retracted_source_for_current_figure1_batch.
+- `api_candidate_64a39a53876c51c1` / Weapon focus effect online preregistered failures: source_blocked_original_n_or_target_effect_missing. Next: resolve_pickel_sneyd_2018_experiment2_original_n_and_decide_target_description_or_lineup_route.
+
+## Artifacts
+
+- Value scan TSV: `steps/individual_replication_papers/figure1/individual-paper-value-scan-batch001.tsv`
+- Mirror status TSVs: `steps/individual_replication_papers/figure1/individual-paper-source-mirror-batch001.tsv`, `steps/individual_replication_papers/figure1/individual-paper-source-mirror-batch002.tsv`, `steps/individual_replication_papers/figure1/individual-paper-source-mirror-batch003.tsv`, `steps/individual_replication_papers/figure1/individual-paper-source-mirror-batch004.tsv`, `steps/individual_replication_papers/figure1/individual-paper-source-mirror-batch006.tsv`

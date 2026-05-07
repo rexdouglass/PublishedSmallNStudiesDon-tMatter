@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_8eb495f7ea934a15",
+  "byte_size": 601,
+  "columns": [
+    "Study",
+    "ES",
+    "lwr",
+    "upr",
+    "p"
+  ],
+  "estimated_data_rows": 10,
+  "file_name": "ML5 Combined MetaAnalyses.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/ML5 Combined MetaAnalyses.csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "ES": 0.06992401,
+      "Study": "Albarracin et al., S5",
+      "lwr": 0.02442321,
+      "p": 0.0076,
+      "upr": 0.1151357
+    },
+    {
+      "ES": -0.01206866,
+      "Study": "Albarracin et al., S7",
+      "lwr": -0.1151681,
+      "p": 0.8052,
+      "upr": 0.09128801
+    },
+    {
+      "ES": 0.1442655,
+      "Study": "Crosby et al.",
+      "lwr": 0.07475672,
+      "p": 0.0032,
+      "upr": 0.2123792
+    },
+    {
+      "ES": 0.09151849,
+      "Study": "Forster et al.",
+      "lwr": 0.06401531,
+      "p": 3.82e-06,
+      "upr": 0.1188828
+    },
+    {
+      "ES": 0.02447975,
+      "Study": "LoBue & DeLoache",
+      "lwr": -0.05146242,
+      "p": 0.471,
+      "upr": 0.1001404
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "065c70ca0959a1d2e96f0160c98640e5f853b064b6539a5b4cb67b273d0de801"
+}

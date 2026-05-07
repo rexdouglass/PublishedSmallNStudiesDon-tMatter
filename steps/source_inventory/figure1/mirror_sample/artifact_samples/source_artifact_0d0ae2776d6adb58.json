@@ -1,0 +1,56 @@
+{
+  "artifact_id": "source_artifact_0d0ae2776d6adb58",
+  "byte_size": 901491,
+  "columns": [
+    "t_stat_sm",
+    "coeff",
+    "std",
+    "dec_coeff",
+    "dec_std"
+  ],
+  "file_name": "simu_ben.dta",
+  "file_type": "dta",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Temp/simu_ben.dta",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "coeff": "0.17187837",
+      "dec_coeff": "1.0",
+      "dec_std": "1.0",
+      "std": "0.018090447",
+      "t_stat_sm": "9.501058"
+    },
+    {
+      "coeff": "-9.789855e-14",
+      "dec_coeff": "9.0",
+      "dec_std": "3.0",
+      "std": "3.6087339e-13",
+      "t_stat_sm": "0.27128226"
+    },
+    {
+      "coeff": "3.6402503e-11",
+      "dec_coeff": "3.0",
+      "dec_std": "7.0",
+      "std": "7.653768e-12",
+      "t_stat_sm": "4.756154"
+    },
+    {
+      "coeff": "-0.062226992",
+      "dec_coeff": "6.0",
+      "dec_std": "3.0",
+      "std": "0.03803156",
+      "t_stat_sm": "1.6361935"
+    },
+    {
+      "coeff": "-2.6804234e+07",
+      "dec_coeff": "2.0",
+      "dec_std": "1.0",
+      "std": "1.0834117e+07",
+      "t_stat_sm": "2.4740582"
+    }
+  ],
+  "sample_kind": "stata",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:17",
+  "sha256": "b4c8cc1c1548c8cc0422031a5e35acf562ca4fc441dfab6d52b67dc193a0db35"
+}

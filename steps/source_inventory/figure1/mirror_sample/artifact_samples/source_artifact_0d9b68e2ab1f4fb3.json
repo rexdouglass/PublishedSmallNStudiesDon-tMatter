@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_0d9b68e2ab1f4fb3",
+  "byte_size": 59698,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value"
+  ],
+  "estimated_data_rows": 561,
+  "file_name": "aer_98_4.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/aer_98_4.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "American Economic Review;98.4;2008;1370;Nicholas;1;G14. N12. N22. O30;no;other;4A;reg;1;1;yes;yes;0.0044;0.0013;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "American Economic Review;98.4;2008;1370;Nicholas;1;G14. N12. N22. O30;no;other;4A;reg;1;2;yes;yes;0.00675;0.0470;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "American Economic Review;98.4;2008;1370;Nicholas;1;G14. N12. N22. O30;no;other;4A;reg;1;3;yes;yes;-0.001;0.0006;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "American Economic Review;98.4;2008;1370;Nicholas;1;G14. N12. N22. O30;no;other;4A;reg;1;4;yes;yes;0.0216;0.0172;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;T_stat;p_value": "American Economic Review;98.4;2008;1370;Nicholas;1;G14. N12. N22. O30;no;other;4A;reg;1;5;yes;yes;0.1035;0.0400;;"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "ccc659cc068ba5ac9d7d33983800edcba5cb1f2df744323678dbd21662f9df19"
+}

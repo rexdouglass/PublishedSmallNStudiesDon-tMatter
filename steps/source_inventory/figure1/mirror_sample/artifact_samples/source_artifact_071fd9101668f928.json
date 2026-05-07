@@ -1,0 +1,423 @@
+{
+  "artifact_id": "source_artifact_071fd9101668f928",
+  "byte_size": 14356,
+  "file_name": "031_pilot_10_1016_s0140_6736_08_60839_9.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/031_pilot_10_1016_s0140_6736_08_60839_9.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/s0140-6736(08)60839-9\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Enterotoxigenic Escherichia coli (ETEC) is a major cause of travellers' diarrhoea. We investigated the rate of diarrhoea attacks, safety, and feasibility of a vaccine containing heat-labile enterotoxin (LT) from ETEC delivered to the skin by patch in travellers to Mexico and Guatemala.<h4>Methods</h4>In this phase II study, healthy adults (aged 18-64 years) who planned to travel to Mexico or Guatemala and had access to a US regional vaccination centre were eligible. A centralised randomisation code was used for allocation, which was masked to participants and site staff. Primary endpoints were to investigate the field rate of ETEC diarrhoea, and to assess the safety of heat-labile toxins from E coli (LT) delivered via patch. Secondary endpoints included vaccine efficacy against travellers' diarrhoea and ETEC. Participants were vaccinated before travel, with two patches given 2-3 weeks apart. Patches contained either 37.5 mug of LT or placebo. Participants tracked stool output on diary cards in country and provided samples for pathogen identification if diarrhoea occurred. Diarrhoea was graded by the number of loose stools in 24 h: mild (three), moderate (four or five), and severe (at least six). Analysis was per protocol. The trial is registered with ClinicalTrials.gov, number NCT00516659.<h4>Findings</h4>Recruitment closed after 201 participants were assigned patches. 178 individuals received two vaccinations and travelled and 170 were analysed. 24 (22%) of 111 placebo recipients had diarrhoea, of whom 11 (10%) had ETEC diarrhoea. The vaccine was safe and immunogenic. The 59 LT-patch recipients were protected against moderate-to-severe diarrhoea (protective efficacy [PE] 75%, p=0.0070) and severe diarrhoea (PE 84%, p=0.0332). LT-patch recipients who became ill had shorter episodes of diarrhoea (0.5 days vs 2.1 days, p=0.0006) with fewer loose stools (3.7 vs 10.5, p<0.0001) than placebo.<h4>Interpretation</h4>Travellers' diarrhoea is a common ailment, with ETEC diarrhoea illness occurring in 10% of cases. The vaccine patch is safe and feasible, with benefits to the rate and severity of travellers' diarrhoea.",
+          "affiliation": "IOMAI Corporation, Gaithersburg, MD, USA.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1275-0787"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1596-3411"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1652-7168"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3225-9079"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "IOMAI Corporation, Gaithersburg, MD, USA."
+                    }
+                  ]
+                },
+                "firstName": "Sarah A",
+                "fullName": "Frech SA",
+                "initials": "SA",
+                "lastName": "Frech"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1652-7168"
+                },
+                "firstName": "Herbert L",
+                "fullName": "Dupont HL",
+                "initials": "HL",
+                "lastName": "Dupont"
+              },
+              {
+                "firstName": "A Louis",
+                "fullName": "Bourgeois AL",
+                "initials": "AL",
+                "lastName": "Bourgeois"
+              },
+              {
+                "firstName": "Robin",
+                "fullName": "McKenzie R",
+                "initials": "R",
+                "lastName": "McKenzie"
+              },
+              {
+                "firstName": "Jaime",
+                "fullName": "Belkind-Gerson J",
+                "initials": "J",
+                "lastName": "Belkind-Gerson"
+              },
+              {
+                "firstName": "Jose F",
+                "fullName": "Figueroa JF",
+                "initials": "JF",
+                "lastName": "Figueroa"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1596-3411"
+                },
+                "firstName": "Pablo C",
+                "fullName": "Okhuysen PC",
+                "initials": "PC",
+                "lastName": "Okhuysen"
+              },
+              {
+                "firstName": "Norma H",
+                "fullName": "Guerrero NH",
+                "initials": "NH",
+                "lastName": "Guerrero"
+              },
+              {
+                "firstName": "Francisco G",
+                "fullName": "Martinez-Sandoval FG",
+                "initials": "FG",
+                "lastName": "Martinez-Sandoval"
+              },
+              {
+                "firstName": "Juan Hm",
+                "fullName": "Meléndez-Romero JH",
+                "initials": "JH",
+                "lastName": "Meléndez-Romero"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3225-9079"
+                },
+                "firstName": "Zhi-Dong",
+                "fullName": "Jiang ZD",
+                "initials": "ZD",
+                "lastName": "Jiang"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1275-0787"
+                },
+                "firstName": "Edwin J",
+                "fullName": "Asturias EJ",
+                "initials": "EJ",
+                "lastName": "Asturias"
+              },
+              {
+                "firstName": "Jane",
+                "fullName": "Halpern J",
+                "initials": "J",
+                "lastName": "Halpern"
+              },
+              {
+                "firstName": "Olga R",
+                "fullName": "Torres OR",
+                "initials": "OR",
+                "lastName": "Torres"
+              },
+              {
+                "firstName": "Ana S",
+                "fullName": "Hoffman AS",
+                "initials": "AS",
+                "lastName": "Hoffman"
+              },
+              {
+                "firstName": "Christina P",
+                "fullName": "Villar CP",
+                "initials": "CP",
+                "lastName": "Villar"
+              },
+              {
+                "firstName": "Raniya N",
+                "fullName": "Kassem RN",
+                "initials": "RN",
+                "lastName": "Kassem"
+              },
+              {
+                "firstName": "David C",
+                "fullName": "Flyer DC",
+                "initials": "DC",
+                "lastName": "Flyer"
+              },
+              {
+                "firstName": "Bo H",
+                "fullName": "Andersen BH",
+                "initials": "BH",
+                "lastName": "Andersen"
+              },
+              {
+                "firstName": "Kazem",
+                "fullName": "Kazempour K",
+                "initials": "K",
+                "lastName": "Kazempour"
+              },
+              {
+                "firstName": "Sally A",
+                "fullName": "Breisch SA",
+                "initials": "SA",
+                "lastName": "Breisch"
+              },
+              {
+                "firstName": "Gregory M",
+                "fullName": "Glenn GM",
+                "initials": "GM",
+                "lastName": "Glenn"
+              }
+            ]
+          },
+          "authorString": "Frech SA, Dupont HL, Bourgeois AL, McKenzie R, Belkind-Gerson J, Figueroa JF, Okhuysen PC, Guerrero NH, Martinez-Sandoval FG, Meléndez-Romero JH, Jiang ZD, Asturias EJ, Halpern J, Torres OR, Hoffman AS, Villar CP, Kassem RN, Flyer DC, Andersen BH, Kazempour K, Breisch SA, Glenn GM.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Escherichia coli Vaccines",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 130,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "18984180",
+                "orderIn": 1,
+                "reference": "Lancet. 2008 Nov 1;372(9649):1542; author reply 1542-3. doi: 10.1016/S0140-6736(08)61647-5.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "20065919",
+                "orderIn": 2,
+                "reference": "Rev Gastroenterol Disord. 2009 Fall;9(4):E119-20.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "recommended_reviews",
+              "wikipedia",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2008-06-26",
+          "dateOfCreation": "2008-06-17",
+          "dateOfRevision": "2025-09-11",
+          "doi": "10.1016/s0140-6736(08)60839-9",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2010-01-30",
+          "firstPublicationDate": "2008-06-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/S0140-6736(08)60839-9"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "18554712",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2008 Jun",
+            "issue": "9629",
+            "journal": {
+              "essn": "1474-547X",
+              "isoabbreviation": "Lancet",
+              "issn": "0140-6736",
+              "medlineAbbreviation": "Lancet",
+              "nlmid": "2985213R",
+              "title": "Lancet (London, England)"
+            },
+            "journalIssueId": 1536064,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2008-06-01",
+            "volume": "371",
+            "yearOfPublication": 2008
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Diarrhea",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "classification"
+                    },
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    },
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Escherichia coli Vaccines",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "administration & dosage"
+                    },
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    },
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Administration, Cutaneous",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Severity of Illness Index",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Double-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Travel",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Guatemala",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mexico",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "2019-2025",
+          "pmid": "18554712",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Clinical Trial, Phase II",
+              "Research Support, Non-U.S. Gov't",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2008",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Use of a patch containing heat-labile toxin from Escherichia coli against travellers' diarrhoea: a phase II, randomised, double-blind, placebo-controlled field trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "74a2bef0dc4ab5ca9fac29de59dcec6906cdaf36b41ff91b17ad62cabfaf6864"
+}

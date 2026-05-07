@@ -1,0 +1,54 @@
+{
+  "artifact_count": 1,
+  "artifacts": [
+    {
+      "access_status": "downloaded",
+      "artifact_id": "source_artifact_73fafbeddc2efefc",
+      "artifact_role": "data_file",
+      "blocker_codes": "needs_artifact_inspection",
+      "byte_size": "147376",
+      "candidate_parser_family": "xlsx_workbook_parser",
+      "component_path": "data/raw/replication_projects/loopr",
+      "doi": "",
+      "effect_field_evidence": "",
+      "file_name": "Replication coding and results.xlsx",
+      "file_type": "xlsx",
+      "inventory_status": "mirrored",
+      "last_seen": "2026-05-04",
+      "local_path": "data/raw/replication_projects/loopr/Replication coding and results.xlsx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "n_field_evidence": "",
+      "next_action": "inspect_table_header_and_codebook_before_parser_assignment",
+      "notes": "generated_from_inventory_task=inventory_task_86b9a31286d71f20; cluster_id=cluster_how_replicable_are_links_between_personality_traits_and_consequential_life_outco_f308cd171b71",
+      "pair_field_evidence": "",
+      "parent_corpus_database_id": "corpus_db_loopr_coding_workbook",
+      "parent_provider_id": "corpus_db_loopr_coding_workbook",
+      "provider": "github",
+      "provider_id": "data/raw/replication_projects/loopr/Replication coding and results.xlsx",
+      "publication_link_evidence": "",
+      "raw_url": "",
+      "sha256": "f856cddcfb022b260e79b054beac19bfdd867a1f4eb634b50fbdd6ef8c0abe7f",
+      "title": "Replication coding and results.xlsx",
+      "url": ""
+    }
+  ],
+  "created_at": "2026-05-04T00:17:50",
+  "local_sources": [
+    "data/raw/replication_projects/loopr/Replication coding and results.xlsx"
+  ],
+  "skipped_files": [],
+  "task": {
+    "cluster_id": "cluster_how_replicable_are_links_between_personality_traits_and_consequential_life_outco_f308cd171b71",
+    "confidence": "high",
+    "decision_receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered_recall002/cluster_how_replicable_are_links_between_personality_traits_and_consequential_life_outco_f308cd171b71.json",
+    "inventory_priority": "high",
+    "inventory_reason": "LOOPR is already an integrated live source family with a local coding workbook containing original and replication effects for personality-outcome associations. The DOI/OSF hits in this cluster are source-family aliases and bibliographic/version artifacts for that existing parent.",
+    "inventory_task_id": "inventory_task_86b9a31286d71f20",
+    "lead_level_note_count": "2",
+    "next_action": "Inventory DOI, OSF, and publication-version aliases under corpus_db_loopr_coding_workbook; keep the local Replication coding and results.xlsx workbook as the result-bearing artifact for extraction/provenance work.",
+    "parent_corpus_database_id_or_key": "corpus_db_loopr_coding_workbook",
+    "preferred_source_family_name": "Life Outcomes of Personality Replication Project (LOOPR)",
+    "route_target": "source_family_artifact_inventory",
+    "source_count": "4"
+  }
+}

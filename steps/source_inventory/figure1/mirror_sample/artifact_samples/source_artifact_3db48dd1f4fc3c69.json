@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_3db48dd1f4fc3c69",
+  "byte_size": 23030,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "paper_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "pr_stat_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 83,
+  "file_name": "Change Logs__changes_pr_data-form.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Change Logs__changes_pr_data-form.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": "No - code was not found/is not available",
+      "change_to": "Yes",
+      "col_name": "pr_code_available",
+      "date_implemented": "2023-11-16T00:00:00Z",
+      "paper_id": "Gv3O",
+      "pr_stat_version": 2,
+      "rationale": "Both data AND code are actually available for this paper, so changing to reflect that code is also available (in the same location as the original data).",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": null,
+      "change_to": "Yes - same responses",
+      "col_name": "pr_code_responses_same_as_data",
+      "date_implemented": "2023-11-16T00:00:00Z",
+      "paper_id": "Gv3O",
+      "pr_stat_version": 2,
+      "rationale": "Both data AND code are actually available for this paper, so changing to reflect that code is also available (in the same location as the original data).",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": "No",
+      "change_to": "Yes",
+      "col_name": "paper_materials_available_on_request",
+      "date_implemented": "2023-11-16T00:00:00Z",
+      "paper_id": "J3Ak",
+      "pr_stat_version": 2,
+      "rationale": "Coder made note of a statement indicating that datasets are available upon request in the 'other_notes' column, but we also want this explicitly coded as there being materials available upon request in the appropriate variables to capture this info.",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": null,
+      "change_to": "\"The datasets generated during and/or analyzed during the current study are available from the corresponding author on reasonable request.\"",
+      "col_name": "paper_materials_available_on_request_content",
+      "date_implemented": "2023-11-16T00:00:00Z",
+      "paper_id": "J3Ak",
+      "pr_stat_version": 2,
+      "rationale": "Coder made note of a statement indicating that datasets are available upon request in the 'other_notes' column, but we also want this explicitly coded as there being materials available upon request in the appropriate variables to capture this info.",
+      "reported_by": "Olivia Miske"
+    },
+    {
+      "change_from": "No",
+      "change_to": "Yes",
+      "col_name": "paper_materials_available_on_request",
+      "date_implemented": "2023-11-16T00:00:00Z",
+      "paper_id": "P3NZ",
+      "pr_stat_version": 2,
+      "rationale": "Incorporating available upon request statement into the appropriate variables.",
+      "reported_by": "Olivia Miske"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "2c6c906a8a3e2fcdf35850a78b58b239717801baf003b95192cb80725ab71f87"
+}

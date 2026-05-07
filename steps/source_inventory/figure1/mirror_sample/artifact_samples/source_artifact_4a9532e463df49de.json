@@ -1,0 +1,436 @@
+{
+  "artifact_id": "source_artifact_4a9532e463df49de",
+  "byte_size": 14096,
+  "file_name": "032_full_10_1093_jpepsy_jsz029.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/032_full_10_1093_jpepsy_jsz029.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1093/jpepsy/jsz029\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>To assess the effectiveness of behavioral parent-only (PO) and family-based (FB) interventions on child weight, dietary intake, glycated hemoglobin, and quality of life in rural settings.<h4>Methods</h4>This study was a three-armed, randomized controlled trial. Participants were children (age 8-12 years) with overweight or obesity and their parents. A FB (n = 88), a PO (n = 78) and a health education condition (HEC) (n = 83) each included 20 group contacts over 1 year. Assessment and treatment contacts occurred at Cooperative Extension Service offices. The main outcome was change in child body mass index z-score (BMIz) from baseline to year 2.<h4>Results</h4>Parents in all conditions reported high treatment satisfaction (mean of 3.5 or higher on a 4-point scale). A linear mixed model analysis of change in child BMIz from baseline to year 1 and year 2 found that there were no significant group by time differences in child BMIz (year 2 change in BMIz for FB = -0.03 [-0.1, 0.04], PO = -0.01 [-0.08, 0.06], and HEC = -0.09 [-0.15, -0.02]). While mean attendance across conditions was satisfactory during months 1-4 (69%), it dropped during the maintenance phase (42%). High attendance for the PO intervention was related to greater changes in child BMIz (p < .02). Numerous barriers to participation were reported.<h4>Conclusion</h4>Many barriers exist that inhibit regular attendance at in-person contacts for many families. Innovative delivery strategies are needed that balance treatment intensity with feasibility and acceptability to families and providers to facilitate broad dissemination in underserved rural settings.ClinicalTrials.gov Identifier: NCT01820338.",
+          "affiliation": "University of Florida.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3371-4582"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5775-0457"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8493-610X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3504-5826"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8493-610X"
+                },
+                "firstName": "David M",
+                "fullName": "Janicke DM",
+                "initials": "DM",
+                "lastName": "Janicke"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Mississippi Medical Center."
+                    }
+                  ]
+                },
+                "firstName": "Crystal S",
+                "fullName": "Lim CS",
+                "initials": "CS",
+                "lastName": "Lim"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "firstName": "Michael G",
+                "fullName": "Perri MG",
+                "initials": "MG",
+                "lastName": "Perri"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3504-5826"
+                },
+                "firstName": "Anne E",
+                "fullName": "Mathews AE",
+                "initials": "AE",
+                "lastName": "Mathews"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "firstName": "Linda B",
+                "fullName": "Bobroff LB",
+                "initials": "LB",
+                "lastName": "Bobroff"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3371-4582"
+                },
+                "firstName": "Matthew J",
+                "fullName": "Gurka MJ",
+                "initials": "MJ",
+                "lastName": "Gurka"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Duke University."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5775-0457"
+                },
+                "firstName": "Alice",
+                "fullName": "Parish A",
+                "initials": "A",
+                "lastName": "Parish"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "firstName": "Babette A",
+                "fullName": "Brumback BA",
+                "initials": "BA",
+                "lastName": "Brumback"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "firstName": "Marilyn",
+                "fullName": "Dumont-Driscoll M",
+                "initials": "M",
+                "lastName": "Dumont-Driscoll"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Florida."
+                    }
+                  ]
+                },
+                "firstName": "Janet H",
+                "fullName": "Silverstein JH",
+                "initials": "JH",
+                "lastName": "Silverstein"
+              }
+            ]
+          },
+          "authorString": "Janicke DM, Lim CS, Perri MG, Mathews AE, Bobroff LB, Gurka MJ, Parish A, Brumback BA, Dumont-Driscoll M, Silverstein JH.",
+          "citedByCount": 22,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "31361001",
+                "orderIn": 1,
+                "reference": "J Pediatr Psychol. 2019 Sep 1;44(8):902-904. doi: 10.1093/jpepsy/jsz059",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2020-06-29",
+          "dateOfCreation": "2019-05-01",
+          "dateOfRevision": "2020-09-01",
+          "doi": "10.1093/jpepsy/jsz029",
+          "embargoDate": "2020-09-01",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2019-05-01",
+          "firstPublicationDate": "2019-09-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC6705715"
+            ]
+          },
+          "fullTextReceivedDate": "2020-09-02",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://academic.oup.com/jpepsy/article-pdf/44/8/889/29201799/jsz029.pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1093/jpepsy/jsz029"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC6705715"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC6705715?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1093/jpepsy/jsz029"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "National Institute of Diabetes and Digestive and Kidney Diseases",
+                "grantId": "#R18DK082374",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DK",
+                "agency": "NIDDK NIH HHS",
+                "grantId": "R18 DK082374",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "31039250",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2019 Sep",
+            "issue": "8",
+            "journal": {
+              "essn": "1465-735X",
+              "isoabbreviation": "J Pediatr Psychol",
+              "issn": "0146-8693",
+              "medlineAbbreviation": "J Pediatr Psychol",
+              "nlmid": "7801773",
+              "title": "Journal of pediatric psychology"
+            },
+            "journalIssueId": 2850920,
+            "monthOfPublication": 9,
+            "printPublicationDate": "2019-09-01",
+            "volume": "44",
+            "yearOfPublication": 2019
+          },
+          "keywordList": {
+            "keyword": [
+              "Obesity",
+              "Children",
+              "Treatment",
+              "Rural",
+              "Randomized controlled trial"
+            ]
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Parents",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Behavior Therapy",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Family Therapy",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Health Education",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Rural Population",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Overweight",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pediatric Obesity",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Outcome Assessment, Health Care",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "889-901",
+          "pmcid": "PMC6705715",
+          "pmid": "31039250",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2019",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Featured Article: Behavior Interventions Addressing Obesity in Rural Settings: The E-FLIP for Kids Trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "323a7ecfb2002f4a14415a873ba8c4fa0ed18b6ad0550d38e537180727560800"
+}

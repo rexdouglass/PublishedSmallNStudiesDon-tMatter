@@ -1,0 +1,25 @@
+metric	value	notes
+old_pair_detail_rows	1548	data/derived/effect_inflation_dataset/plot1_replication_pair_details.csv
+current_root_pair_rows	2436	FIGURE1_REPLICATION_PAIRS.tsv
+old_pair_ids_present_in_current_native_pair_id	1548	intersection of old pair_id and current native_pair_id
+old_pair_ids_missing_from_current	0	old pair IDs not found in current native_pair_id
+current_native_pair_ids_not_in_old	888	new root pair IDs added after old pair-detail projection
+current_plot_rule_status_counts	included_by_current_figure1_dn_rule=1684; excluded_by_current_figure1_dn_rule=752	
+source_result_promotion_status_counts	needs_verbatim_source_result_support=2290; ready_for_source_result_side_promotion=138; needs_pair_alignment_to_strict_side_rows=8	
+current_source_family_counts_top20	fred_other_additions=504; score=282; other_direct_replications=222; rpcb=118; loopr=118; student_replication_projects=114; repeat_real_world_evidence_reproductions=106; osc_2015=104; fred_core=85; fred_sosci_submissions=84; fred_openmkt=82; fred_curatescience=74; coppock_2019_generalizability_corpus=50; registered_replication_reports=46; brazilian_reproducibility_initiative=45; sensory_marketing_replications=38; eprp=35; clinical_phase_ii_to_phase_iii_pairs=32; 251_rescue_projects=30; many_labs_2=28	
+old_source_dataset_counts_top20	FReD filtered pair table=685; SCORE analyst join=171; LOOPR coding workbook=104; RPP canonical OSF csv=63; Coppock 2019 generalizability corpus=35; Boyce student replication corpus=35; RPCB=33; Kerschbaumer 2020 rheumatology phase II/III=32; Communication privacy SEM paths=30; Many Labs 2 public join=28; EPRP complete data=27; Decision-market pair table=26; BRI primary t experiment table=21; Many Labs 5 overarching analyses=20; ReplicationSuccess SSRP.rda=18; 251 Rescue parsed data=17; Sports science supplemental outcomes table=16; ReplicationSuccess RProjects.rda=11; Altmejd harmonized Many Labs 1=10; Altmejd harmonized Many Labs 3=10	
+new_only_source_family_counts_top20	other_direct_replications=133; fred_other_additions=126; score=111; repeat_real_world_evidence_reproductions=106; rpcb=85; student_replication_projects=79; sensory_marketing_replications=38; osc_2015=33; brazilian_reproducibility_initiative=24; fred_sosci_submissions=23; registered_replication_reports=21; transparent_replications_by_clearer_thinking=18; coppock_2019_generalizability_corpus=15; loopr=14; experimental_asset_market_replications=14; 251_rescue_projects=13; eprp=7; eerp=7; management_science_replication_project=6; fred_curatescience=4	
+new_only_current_plot_rule_status_counts	excluded_by_current_figure1_dn_rule=752; included_by_current_figure1_dn_rule=136	
+schema_pilot_source_result_rows	300	data/derived/effect_inflation_dataset/schema_pilot/source_result_codebook_sample_300.tsv
+schema_pilot_evidence_level_counts	4=98; 5=95; 6=88; 2=19	
+schema_pilot_target_acquisition_state_counts	target_located=98; source_object_mirrored=95; text_or_data_extracted=88; target_identity_known=19	
+current_study_bibtex_map_rows	2605	steps/individual_replication_papers/figure1/pair_chase/figure1-individual-study-bibtex-map.tsv
+current_study_bibtex_mapping_status_counts	mapped_to_corpus_bibliography=2605	
+current_side_bibtex_map_rows	4872	steps/individual_replication_papers/figure1/pair_chase/figure1-side-to-bibtex-map.tsv
+current_side_bibtex_mapping_status_counts	mapped_to_corpus_bibliography=4872	
+current_pair_bibtex_map_rows	2436	steps/individual_replication_papers/figure1/pair_chase/figure1-pair-bibtex-map.tsv
+current_pair_bibtex_mapping_status_counts	mapped_to_distinct_original_and_replication_bibtex=2436	
+current_pair_identity_review_status_counts	needs_manual_identity_review=1496; identity_mapped=940	
+current_identity_disambiguation_tasks	1766	steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-worklist.tsv
+current_identity_disambiguation_priority_counts	D1=1021; D3=520; D4=94; D2=63; D0=34; D5=33; D6=1	
+current_identity_disambiguation_route_counts	title_to_real_citation_for_included_identity=1021; title_to_real_citation_for_excluded_identity=520; deferred_source_family_backfill_for_excluded_weak_identity=94; url_to_real_citation_for_included_identity=63; source_family_backfill_for_included_weak_identity=34; deferred_url_to_real_citation_for_excluded_identity=33; doi_backed_title_metadata_cleanup=1	

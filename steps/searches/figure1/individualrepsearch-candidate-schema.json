@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "batch_id": {
+      "type": "string"
+    },
+    "candidates": {
+      "items": {
+        "properties": {
+          "aggregation_level": {
+            "type": "string"
+          },
+          "blockers": {
+            "type": "array"
+          },
+          "candidate_id": {
+            "type": "string"
+          },
+          "candidate_name": {
+            "type": "string"
+          },
+          "candidate_route": {
+            "enum": [
+              "strict_figure1a",
+              "strict_d",
+              "figure1a",
+              "d_equivalent_figure1b",
+              "d_equivalent",
+              "figure1b",
+              "native_only",
+              "native_scale_subplot",
+              "coverage_only",
+              "coverage_worklist",
+              "manual_screen",
+              "seed_only",
+              "likely_exclude",
+              "reject"
+            ]
+          },
+          "candidate_unit_key": {
+            "type": "string"
+          },
+          "computational_only_flag": {
+            "type": "boolean"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "contrast": {
+            "type": "object"
+          },
+          "conversion": {
+            "type": "object"
+          },
+          "conversion_route": {
+            "type": "string"
+          },
+          "dedupe_terms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "original": {
+            "type": "object"
+          },
+          "original_doi": {
+            "type": "string"
+          },
+          "original_study_result": {
+            "type": "object"
+          },
+          "original_title": {
+            "type": "string"
+          },
+          "original_work": {
+            "type": "object"
+          },
+          "outcome": {
+            "type": "object"
+          },
+          "query_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "raw_record_paths": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "recommended_next_action": {
+            "type": "string"
+          },
+          "reject_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relation": {
+            "type": "object"
+          },
+          "relation_evidence": {
+            "type": "array"
+          },
+          "relation_evidence_strength": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "relation_evidence_type": {
+            "type": "string"
+          },
+          "relation_score": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "relationship_evidence": {
+            "type": "object"
+          },
+          "replication": {
+            "type": "object"
+          },
+          "replication_doi": {
+            "type": "string"
+          },
+          "replication_or_followup": {
+            "type": "object"
+          },
+          "replication_study_result": {
+            "type": "object"
+          },
+          "replication_title": {
+            "type": "string"
+          },
+          "replication_work": {
+            "type": "object"
+          },
+          "same_data_reanalysis_flag": {
+            "type": "boolean"
+          },
+          "screening_status": {
+            "type": "string"
+          },
+          "source_object_urls": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "source_objects_to_mirror_first": {
+            "type": "array"
+          },
+          "surfaces": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timepoint": {
+            "type": "string"
+          },
+          "value_availability": {
+            "type": "object"
+          },
+          "value_score": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "values": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "candidate_name",
+          "candidate_route"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "high_confidence_rejections": {
+      "type": "array"
+    },
+    "searches_run": {
+      "type": "array"
+    },
+    "task_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "task_id",
+    "candidates"
+  ],
+  "title": "Figure 1 individual replication search manifest",
+  "type": "object"
+}

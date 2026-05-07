@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_4916c5f03087116a",
+  "byte_size": 91125,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;num_authors;jel;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;t_stat;p_value"
+  ],
+  "estimated_data_rows": 922,
+  "file_name": "aer_99_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/aer_99_1.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;jel;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;t_stat;p_value": "American Economic Review;99.1;2009;49;Adams;3;D14. D82. D83. G21;no;other;2;MLE;1;1;no;yes;-.0002;.0002;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;jel;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;t_stat;p_value": "American Economic Review;99.1;2009;49;Adams;3;D14. D82. D83. G21;no;other;2;MLE;1;2;no;yes;-.001;.0011;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;jel;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;t_stat;p_value": "American Economic Review;99.1;2009;49;Adams;3;D14. D82. D83. G21;no;other;2;MLE;1;3;no;yes;-.0022;.0007;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;jel;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;t_stat;p_value": "American Economic Review;99.1;2009;49;Adams;3;D14. D82. D83. G21;no;other;2;MLE;1;4;no;yes;-.0032;.0006;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;jel;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;t_stat;p_value": "American Economic Review;99.1;2009;49;Adams;3;D14. D82. D83. G21;no;other;2;reg;1;5;no;yes;-.0061;.0016;;"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "50166b09f79fde3bfc0938b411a782167e5cdec9100c4601c9d5d99ce3c866df"
+}

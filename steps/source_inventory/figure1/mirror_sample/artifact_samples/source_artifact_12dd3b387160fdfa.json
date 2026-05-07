@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_12dd3b387160fdfa",
+  "byte_size": 72182,
+  "columns": [
+    "journal_id;issue;year;article_page;num_authors;first_author;second_author;jel;model;type;table_panel;type_emp;row;column;page;stars;starslevel;main;coefficient;standard_deviation;standard_deviation2;t_stat;p_value;notes;v26;v27"
+  ],
+  "estimated_data_rows": 592,
+  "file_name": "aer_101_6.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/aer_101_6.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;num_authors;first_author;second_author;jel;model;type;table_panel;type_emp;row;column;page;stars;starslevel;main;coefficient;standard_deviation;standard_deviation2;t_stat;p_value;notes;v26;v27": "American Economic Review;101.6;2011;2309;2;Carneiro;Lee;I23. J24. J31;yes;other;1.A;reg;1;1;;yes;10;yes;-0.086;0.036;;;0;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;num_authors;first_author;second_author;jel;model;type;table_panel;type_emp;row;column;page;stars;starslevel;main;coefficient;standard_deviation;standard_deviation2;t_stat;p_value;notes;v26;v27": "American Economic Review;101.6;2011;2309;2;Carneiro;Lee;I23. J24. J31;yes;other;1.A;reg;1;2;;yes;10;yes;-0.092;0.032;;;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;num_authors;first_author;second_author;jel;model;type;table_panel;type_emp;row;column;page;stars;starslevel;main;coefficient;standard_deviation;standard_deviation2;t_stat;p_value;notes;v26;v27": "American Economic Review;101.6;2011;2309;2;Carneiro;Lee;I23. J24. J31;yes;other;1.A;reg;2;2;;yes;10;yes;-0.11;0.022;;;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;num_authors;first_author;second_author;jel;model;type;table_panel;type_emp;row;column;page;stars;starslevel;main;coefficient;standard_deviation;standard_deviation2;t_stat;p_value;notes;v26;v27": "American Economic Review;101.6;2011;2309;2;Carneiro;Lee;I23. J24. J31;yes;other;1.A;reg;3;3;;yes;10;yes;-0.188;0.019;;;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;num_authors;first_author;second_author;jel;model;type;table_panel;type_emp;row;column;page;stars;starslevel;main;coefficient;standard_deviation;standard_deviation2;t_stat;p_value;notes;v26;v27": "American Economic Review;101.6;2011;2309;2;Carneiro;Lee;I23. J24. J31;yes;other;1.B;reg;1;1;;yes;10;yes;-0.032;0.022;;;;;;"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "2ae683f7d2044b7342eb473eced4ad26cea37deedf40840fb663f0eff50a6d95"
+}

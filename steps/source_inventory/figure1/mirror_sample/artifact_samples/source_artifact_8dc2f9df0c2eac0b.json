@@ -1,0 +1,425 @@
+{
+  "artifact_id": "source_artifact_8dc2f9df0c2eac0b",
+  "byte_size": 14090,
+  "file_name": "033_pilot_10_1097_CHI_0b013e31818914a1.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/033_pilot_10_1097_CHI_0b013e31818914a1.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1097/CHI.0b013e31818914a1\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>We present results of a feasibility test of a sequential treatment strategy using continuation phase cognitive-behavioral therapy (CBT) to prevent relapse in youths with major depressive disorder (MDD) who have responded to acute phase pharmacotherapy.<h4>Method</h4>Forty-six youths (ages 11-18 years) who had responded to 12 weeks of treatment with fluoxetine were randomized to receive either 6 months of continued antidepressant medication management (MM) or antidepressant MM plus relapse prevention CBT (MM+CBT). Primary outcome was time to relapse, defined as a Childhood Depression Rating Scale-Revised score of 40 or higher and 2 weeks of symptom worsening or clinical deterioration warranting alteration of treatment to prevent full relapse.<h4>Results</h4>Cox proportional hazards regression, adjusting for depression severity at randomization and for the hazard of relapsing by age across the trial, revealed that participants in the MM treatment group had a significantly greater risk for relapse than those in the MM+CBT treatment group (hazard ratio = 8.80; 95% confidence interval 1.01-76.89; chi = 3.86, p =.049) during 6 months of continuation treatment. In addition, patient satisfaction was significantly higher in the MM+CBT group. No differences were found between the two treatment groups on attrition rate, serious adverse events, and overall global functioning.<h4>Conclusions</h4>These preliminary results suggest that continuation phase CBT reduces the risk for relapse by eightfold compared with pharmacotherapy responders who received antidepressant medication alone during the 6-month continuation phase.",
+          "affiliation": "University of Texas Southwestern Medical Center, Dallas, TX 75390-8589, USA. Beth.kennard@utsouthwestern.edu",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5992-6081"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2671-8427"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "University of Texas Southwestern Medical Center, Dallas, TX 75390-8589, USA. Beth.kennard@utsouthwestern.edu"
+                    }
+                  ]
+                },
+                "firstName": "Betsy D",
+                "fullName": "Kennard BD",
+                "initials": "BD",
+                "lastName": "Kennard"
+              },
+              {
+                "firstName": "Graham J",
+                "fullName": "Emslie GJ",
+                "initials": "GJ",
+                "lastName": "Emslie"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5992-6081"
+                },
+                "firstName": "Taryn L",
+                "fullName": "Mayes TL",
+                "initials": "TL",
+                "lastName": "Mayes"
+              },
+              {
+                "firstName": "Jeanne",
+                "fullName": "Nightingale-Teresi J",
+                "initials": "J",
+                "lastName": "Nightingale-Teresi"
+              },
+              {
+                "firstName": "Paul A",
+                "fullName": "Nakonezny PA",
+                "initials": "PA",
+                "lastName": "Nakonezny"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2671-8427"
+                },
+                "firstName": "Jennifer L",
+                "fullName": "Hughes JL",
+                "initials": "JL",
+                "lastName": "Hughes"
+              },
+              {
+                "firstName": "Jessica M",
+                "fullName": "Jones JM",
+                "initials": "JM",
+                "lastName": "Jones"
+              },
+              {
+                "firstName": "Rongrong",
+                "fullName": "Tao R",
+                "initials": "R",
+                "lastName": "Tao"
+              },
+              {
+                "firstName": "Sunita M",
+                "fullName": "Stewart SM",
+                "initials": "SM",
+                "lastName": "Stewart"
+              },
+              {
+                "firstName": "Robin B",
+                "fullName": "Jarrett RB",
+                "initials": "RB",
+                "lastName": "Jarrett"
+              }
+            ]
+          },
+          "authorString": "Kennard BD, Emslie GJ, Mayes TL, Nightingale-Teresi J, Nakonezny PA, Hughes JL, Jones JM, Tao R, Stewart SM, Jarrett RB.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Antidepressive Agents, Second-Generation",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Fluoxetine",
+                "registryNumber": "01K63SUP8D"
+              }
+            ]
+          },
+          "citedByCount": 52,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "20425291",
+                "orderIn": 1,
+                "reference": "Curr Psychiatry Rep. 2010 Apr;12(2):85-7. doi: 10.1007/s11920-010-0095-9.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2009-03-23",
+          "dateOfCreation": "2008-11-04",
+          "dateOfRevision": "2026-01-28",
+          "doi": "10.1097/chi.0b013e31818914a1",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2010-09-22",
+          "firstPublicationDate": "2008-12-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC2826176"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "Unpaywall",
+                "url": "https://doi.org/10.1097/CHI.0b013e31818914a1"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "abs",
+                "site": "www.jaacap.com",
+                "url": "http://content.wkhealth.com/linkback/openurl?issn=0890-8567&volume=47&issue=12&spage=1395"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1097/CHI.0b013e31818914a1"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2826176"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2826176?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1097/chi.0b013e31818914a1"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "MH K24 01571",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "R01 MH39188",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "R34 MH072737",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "K24 MH001571",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "R01 MH039188",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "18978634",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2008 Dec",
+            "issue": "12",
+            "journal": {
+              "essn": "1527-5418",
+              "isoabbreviation": "J Am Acad Child Adolesc Psychiatry",
+              "issn": "0890-8567",
+              "medlineAbbreviation": "J Am Acad Child Adolesc Psychiatry",
+              "nlmid": "8704565",
+              "title": "Journal of the American Academy of Child and Adolescent Psychiatry"
+            },
+            "journalIssueId": 1581107,
+            "monthOfPublication": 12,
+            "printPublicationDate": "2008-12-01",
+            "volume": "47",
+            "yearOfPublication": 2008
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS174335",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Fluoxetine",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    },
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Antidepressive Agents, Second-Generation",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    },
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Combined Modality Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Proportional Hazards Models",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Personality Inventory",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "statistics & numerical data"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Psychometrics",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Family Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Secondary Prevention",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Major Depressive Disorder",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "1395-1404",
+          "pmcid": "PMC2826176",
+          "pmid": "18978634",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2008",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Cognitive-behavioral therapy to prevent relapse in pediatric responders to pharmacotherapy for major depressive disorder."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "506cf410fb9d87fab02fe885fa7cee858acf57d7198497229994b7f8e86290bf"
+}

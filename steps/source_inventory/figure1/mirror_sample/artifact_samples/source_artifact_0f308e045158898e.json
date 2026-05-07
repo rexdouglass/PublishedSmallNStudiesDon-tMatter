@@ -1,0 +1,408 @@
+{
+  "artifact_id": "source_artifact_0f308e045158898e",
+  "byte_size": 14081,
+  "file_name": "033_full_10_1176_appi_ajp_2014_13111460.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/033_full_10_1176_appi_ajp_2014_13111460.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1176/appi.ajp.2014.13111460\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>The authors evaluated a sequential treatment strategy of fluoxetine and relapse-prevention cognitive-behavioral therapy (CBT) to determine effects on remission and relapse in youths with major depressive disorder.<h4>Method</h4>Youths 8-17 years of age with major depression were treated openly with fluoxetine for 6 weeks. Those with an adequate response (defined as a reduction of 50% or more on the Children's Depression Rating Scale-Revised [CDRS-R]) were randomly assigned to receive continued medication management alone or continued medication management plus CBT for an additional 6 months. The CBT was modified to address residual symptoms and was supplemented by well-being therapy. Primary outcome measures were time to remission (with remission defined as a CDRS-R score of 28 or less) and rate of relapse (with relapse defined as either a CDRS-R score of 40 or more with a history of 2 weeks of symptom worsening, or clinical deterioration).<h4>Results</h4>Of the 200 participants enrolled in acute-phase treatment, 144 were assigned to continuation treatment with medication management alone (N=69) or medication management plus CBT (N=75). During the 30-week continuation treatment period, time to remission did not differ significantly between treatment groups (hazard ratio=1.26, 95% CI=0.87, 1.82). However, the medication management plus CBT group had a significantly lower risk of relapse than the medication management only group (hazard ratio=0.31, 95% CI=0.13, 0.75). The estimated probability of relapse by week 30 was lower with medication management plus CBT than with medication management only (9% compared with 26.5%).<h4>Conclusions</h4>Continuation-phase relapse-prevention CBT was effective in reducing the risk of relapse but not in accelerating time to remission in children and adolescents with major depressive disorder.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5992-6081"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Children’s Medical Center of Dallas"
+                    }
+                  ]
+                },
+                "firstName": "Betsy D",
+                "fullName": "Kennard BD",
+                "initials": "BD",
+                "lastName": "Kennard"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Children’s Medical Center of Dallas"
+                    }
+                  ]
+                },
+                "firstName": "Graham J",
+                "fullName": "Emslie GJ",
+                "initials": "GJ",
+                "lastName": "Emslie"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Children’s Medical Center of Dallas"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5992-6081"
+                },
+                "firstName": "Taryn L",
+                "fullName": "Mayes TL",
+                "initials": "TL",
+                "lastName": "Mayes"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Department of Clinical Sciences, Division of Biostatistics, University of Texas Southwestern Medical Center"
+                    }
+                  ]
+                },
+                "firstName": "Paul A",
+                "fullName": "Nakonezny PA",
+                "initials": "PA",
+                "lastName": "Nakonezny"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Children’s Medical Center of Dallas"
+                    }
+                  ]
+                },
+                "firstName": "Jessica M",
+                "fullName": "Jones JM",
+                "initials": "JM",
+                "lastName": "Jones"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Children’s Medical Center of Dallas"
+                    }
+                  ]
+                },
+                "firstName": "Aleksandra A",
+                "fullName": "Foxwell AA",
+                "initials": "AA",
+                "lastName": "Foxwell"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, University of Texas Southwestern Medical Center"
+                    },
+                    {
+                      "affiliation": "Children’s Medical Center of Dallas"
+                    }
+                  ]
+                },
+                "firstName": "Jessica",
+                "fullName": "King J",
+                "initials": "J",
+                "lastName": "King"
+              }
+            ]
+          },
+          "authorString": "Kennard BD, Emslie GJ, Mayes TL, Nakonezny PA, Jones JM, Foxwell AA, King J.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Fluoxetine",
+                "registryNumber": "01K63SUP8D"
+              }
+            ]
+          },
+          "citedByCount": 41,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "25272340",
+                "orderIn": 1,
+                "reference": "Am J Psychiatry. 2014 Oct;171(10):1031-3. doi: 10.1176/appi.ajp.2014.14060705.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "25854826",
+                "orderIn": 2,
+                "reference": "Evid Based Ment Health. 2015 May;18(2):63. doi: 10.1136/eb-2014-102015.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "25908690",
+                "orderIn": 3,
+                "reference": "Evid Based Ment Health. 2015 May;18(2):64. doi: 10.1136/eb-2014-102016.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2015-03-02",
+          "dateOfCreation": "2014-06-18",
+          "dateOfRevision": "2026-01-28",
+          "doi": "10.1176/appi.ajp.2014.13111460",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2014-06-18",
+          "firstPublicationDate": "2014-10-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC4182111"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1176/appi.ajp.2014.13111460"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4182111"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4182111?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1176/appi.ajp.2014.13111460"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "R01 MH39188",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "R01 MH039188",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "24935082",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2014 Oct",
+            "issue": "10",
+            "journal": {
+              "essn": "1535-7228",
+              "isoabbreviation": "Am J Psychiatry",
+              "issn": "0002-953X",
+              "medlineAbbreviation": "Am J Psychiatry",
+              "nlmid": "0370512",
+              "title": "The American journal of psychiatry"
+            },
+            "journalIssueId": 2206403,
+            "monthOfPublication": 10,
+            "printPublicationDate": "2014-10-01",
+            "volume": "171",
+            "yearOfPublication": 2014
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS613963",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Recurrence",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Fluoxetine",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Combined Modality Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Remission Induction",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Time Factors",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Major Depressive Disorder",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "1083-1090",
+          "pmcid": "PMC4182111",
+          "pmid": "24935082",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2014",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Sequential treatment with fluoxetine and relapse--prevention CBT to improve outcomes in pediatric depression."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "b3940818aa8e35b90971d8946842594777dee8b2ea84f18b568ccb1cb6a4aae5"
+}

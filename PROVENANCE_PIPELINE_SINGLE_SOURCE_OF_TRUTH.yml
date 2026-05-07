@@ -14,7 +14,7 @@
 PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
   schema_version: 0.1.0
   name: evidence_provenance_pipeline
-  updated: "2026-05-01"
+  updated: "2026-05-05"
   status: draft_registry
   
   purpose: >
@@ -75,6 +75,13 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
         Do not discard leads, sources, candidates, sidecars, comparators, or
         excluded rows. Catalog and enumerate them with status and reason, while
         keeping active build focus on the three current figures.
+    - id: rejected_for_one_use_is_not_rejected_globally
+      text: >
+        A source, corpus, dataset, paper, or row that fails a primary plot gate
+        can still be useful for a different diagnostic, sensitivity panel,
+        source-object denominator, or repair worklist. Record the failed gate
+        and route it to the most specific alternate use rather than collapsing
+        it to a generic rejection.
   
   current_figure_focus:
     active_figures:
@@ -91,11 +98,15 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
         role: current_figure
         plain_english: Eventually published preregistered, registered, PAP, or planned results with recoverable D/N.
     catalog_only_universes:
+      - plot1b_clinical_binary_d_equivalent
+      - plot1c_native_effect_retention
+      - plot1d_source_object_coverage_denominator
       - plot4_all_source_dn_dump
     catalog_policy:
       - Every discovered lead should be represented as a typed search lead, source row, candidate row, manual task, or explicit rejection.
       - Excluded, comparator, sidecar, duplicate, metadata-only, and not-yet-parseable sources stay in catalogs with a reason; they are not deleted.
       - Future plot ideas should consume cataloged sources later instead of changing the admission rules for the three active figures now.
+      - Alternate routes are context-specific memberships. Rejecting a row from Figure 1A does not delete it and does not prevent it from landing in a Figure 1B D-equivalent panel, native-scale appendix, coverage denominator, missing-N repair queue, or all-source dump.
       - The all-source D/N dump is a diagnostic catalog and future-plot seed, not an active fourth figure for the current scope.
   
   database_schema_contract:
@@ -253,6 +264,16 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
           source_access, source_file, source_result, mapping, or plot-membership
           detail rows.
         status: active_first_consolidated_table
+      - table: FIGURE1_REPLICATION_PAIRS.tsv
+        schema: FIGURE1_REPLICATION_PAIRS_SCHEMA.yml
+        grain: One original/replication result pair with D and N on both sides.
+        rule: >
+          This is the first consolidated pair-result table for Figure 1. Any
+          corpus row that passes the D/N check enters here before it is split
+          into side-level source_result, source_result_support, canonical_result,
+          and plot_membership detail rows. Rows that fail current plot gates are
+          retained with blockers instead of deleted.
+        status: active_first_pair_result_table
   
   plot_universe_criteria:
     - id: source_family_recorded
@@ -373,6 +394,132 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
         - replication_d
         - native_statistic_type
         - conversion_formula_id
+    - id: comparative_binary_d_equivalent_supported
+      gate_type: alternate_route_if_true
+      reusable_in_plot_universe_ids:
+        - plot1b_clinical_binary_d_equivalent
+        - plot4_all_source_dn_dump
+      rule: >
+        A row that is not admitted to the strict direct-D panel can still enter
+        a D-equivalent diagnostic panel when it exposes a comparative binary
+        treatment effect or all deterministic inputs needed to construct one.
+        Preferred inputs are active/control event counts and arm Ns on both the
+        original and replication/follow-up sides. Odds ratios or log odds ratios
+        may be converted using log(OR) * sqrt(3) / pi. Risk ratios or risk
+        differences require the corresponding baseline/control risk before the
+        OR-to-D-equivalent conversion. Hazard-ratio-only rows require fixed-time
+        event/survival risks or another documented policy before they can enter
+        this route.
+      accept_if:
+        - original and follow-up sides both expose active/control responder or event counts plus arm Ns
+        - original and follow-up sides both expose OR/logOR and N
+        - RR/RD rows expose a baseline/control risk source for both sides
+        - HR rows expose fixed-time event or survival probabilities sufficient to derive a risk/odds contrast
+      reject_if:
+        - one-arm response rate or objective response rate has no comparator or defensible reference rate
+        - treatment-arm-only response rates lack matched control-arm information
+        - HR-only rows lack fixed-time event or survival information
+        - the source exposes only a success/failure label or qualitative replication outcome
+      evidence_fields:
+        - effect_metric_raw
+        - effect_family
+        - original_event_count
+        - original_control_event_count
+        - original_arm_n
+        - original_control_n
+        - replication_event_count
+        - replication_control_event_count
+        - replication_arm_n
+        - replication_control_n
+        - odds_ratio
+        - log_odds_ratio
+        - risk_ratio
+        - risk_difference
+        - baseline_risk_used
+        - baseline_risk_source
+        - time_horizon
+        - d_equivalent
+        - d_equivalent_method
+        - d_equivalent_tier
+        - conversion_warning
+    - id: native_effect_pair_retained_without_common_d_axis
+      gate_type: alternate_route_if_true
+      reusable_in_plot_universe_ids:
+        - plot1c_native_effect_retention
+        - plot1d_source_object_coverage_denominator
+      rule: >
+        A row can be retained for a native-scale diagnostic when it has a
+        mapped original/follow-up pair and native values with N on both sides,
+        but no defensible conversion to the common D axis. Examples include
+        one-arm ORR, treatment-arm-only response rates, native logits of single
+        proportions, benchmark metrics, and other source-specific effect scales.
+      accept_if:
+        - original and follow-up native effect values are copied or parsed
+        - original and follow-up Ns are copied or parsed
+        - the native metric and row grain are recorded
+        - the row is explicitly marked as not comparable to Figure 1A D
+      reject_if:
+        - the source has only narrative text with no row-level native values
+        - native values are not paired to an identifiable original/follow-up relation
+      evidence_fields:
+        - native_effect_metric
+        - native_effect_original
+        - native_effect_replication
+        - original_N
+        - replication_N
+        - effect_metric_raw
+        - effect_family
+        - is_comparative_effect
+        - is_single_arm
+        - conversion_warning
+    - id: source_object_pair_roster_retained_without_values
+      gate_type: alternate_route_if_true
+      reusable_in_plot_universe_ids:
+        - plot1d_source_object_coverage_denominator
+      rule: >
+        A source object can be retained in the source-object coverage
+        denominator when it identifies original/follow-up pairs or source-family
+        rows, even if public bytes do not expose effect and N values. These rows
+        should not enter a quantitative scatter but are useful for estimating
+        the amount of the universe that is discovered but not value-bearing.
+      accept_if:
+        - source object names original and follow-up papers/studies/trials or a corpus-defined pair ID
+        - source object is locally mirrored or the access barrier is explicitly recorded
+        - missing value fields and acquisition state are recorded
+      reject_if:
+        - the object is only a topic, search hit, marketing page, or bibliographic citation with no pair/row mapping
+      evidence_fields:
+        - pair_id
+        - original_source_hint
+        - replication_source_hint
+        - source_artifact_local_path
+        - target_acquisition_state
+        - value_verification_state
+        - missing_fields
+        - access_barrier
+    - id: effect_present_but_n_missing_repair_route
+      gate_type: alternate_route_if_true
+      reusable_in_plot_universe_ids:
+        - plot1d_source_object_coverage_denominator
+      rule: >
+        A source that exposes original/follow-up effect estimates but no N fields
+        should be routed to a missing-N repair worklist rather than being
+        globally rejected. It remains out of D/N figures until N can be acquired
+        from a lawful source object, supplement, registry, report, or author
+        route.
+      accept_if:
+        - original and follow-up effect estimates or native effect values are present
+        - N is absent, ambiguous, restricted, or only recoverable from another source object
+        - the candidate repair route is recorded
+      evidence_fields:
+        - effect_metric_raw
+        - original_effect_text
+        - replication_effect_text
+        - missing_fields
+        - candidate_n_source_url
+        - candidate_n_source_local_path
+        - repair_route_status
+        - next_action
     - id: result_n_available
       gate_type: include_if_true
       rule: >
@@ -771,6 +918,157 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
       notes: >
         Selector evidence matters here: preregistration, PAP, registered report,
         registry outcome, or corpus focal-result rules must be explicit.
+    - id: plot1b_clinical_binary_d_equivalent
+      current_scope_role: diagnostic_panel_candidate
+      figure_label: Figure 1B candidate
+      result_target_kind: replication_pair_result_d_equivalent
+      eligibility:
+        publication_requirement: mixed
+        publication_policy: >
+          Figure 1B is a diagnostic companion to strict Figure 1A. It preserves
+          the original/follow-up pairing goal but admits comparative binary and
+          clinical endpoints only when a documented D-equivalent conversion is
+          supported by source fields. It does not relax provenance; it changes
+          only the effect-scale route.
+        output_unit: >
+          One original-side comparative binary or clinical result paired to one
+          replication/follow-up-side result, with D-equivalent values and
+          conversion tier recorded.
+        include_when_all:
+          - source_family_recorded
+          - candidate_artifact_or_backing_file_recorded
+          - local_result_bearing_corpus_artifact_recorded
+          - explicit_original_followup_pair_mapping
+          - comparative_binary_d_equivalent_supported
+          - result_n_available
+          - both_sides_n_at_least_10
+          - followup_n_greater_than_original_n
+        exclude_when_any:
+          - aggregate_only_without_row_level_result_excluded
+          - metadata_or_narrative_only_excluded
+        source_table_gate_columns:
+          - effect_metric_raw
+          - effect_family
+          - d_equivalent
+          - d_equivalent_method
+          - d_equivalent_tier
+          - baseline_risk_used
+          - baseline_risk_source
+          - time_horizon
+          - is_comparative_effect
+          - is_single_arm
+          - conversion_warning
+          - rows_currently_plotted
+      represented_source_kinds:
+        - original_study
+        - replication_study
+        - clinical_trial
+        - followup_study
+      evidence_object_kinds:
+        - article_fulltext
+        - source_table
+        - supplement
+        - registry_json
+        - dataset
+        - code_output
+      notes: >
+        This route is for defensible D-equivalent rows such as OR/logOR and
+        baseline-aware RR/RD conversions. One-arm ORR and treatment-arm-only
+        response rates do not enter this panel; route them to native retention.
+    - id: plot1c_native_effect_retention
+      current_scope_role: diagnostic_or_supplement
+      figure_label: Figure 1 native-scale appendix
+      result_target_kind: replication_pair_native_effect
+      eligibility:
+        publication_requirement: mixed
+        publication_policy: >
+          Native-effect retention preserves rows that are relevant to original
+          versus follow-up signal shrinkage but cannot be fairly placed on the
+          common D or D-equivalent axis. This route is explicitly not evidence
+          for the main D scatter.
+        output_unit: >
+          One original/follow-up paired row with native effect values and Ns on
+          both sides, retaining the native metric and warnings.
+        include_when_all:
+          - source_family_recorded
+          - candidate_artifact_or_backing_file_recorded
+          - local_result_bearing_corpus_artifact_recorded
+          - explicit_original_followup_pair_mapping
+          - native_effect_pair_retained_without_common_d_axis
+          - result_n_available
+        exclude_when_any:
+          - aggregate_only_without_row_level_result_excluded
+          - metadata_or_narrative_only_excluded
+        source_table_gate_columns:
+          - native_effect_metric
+          - native_effect_original
+          - native_effect_replication
+          - original_N
+          - replication_N
+          - effect_family
+          - is_comparative_effect
+          - is_single_arm
+          - conversion_warning
+      represented_source_kinds:
+        - original_study
+        - replication_study
+        - followup_study
+      evidence_object_kinds:
+        - source_table
+        - supplement
+        - registry_json
+        - dataset
+        - code_output
+      notes: >
+        This route captures one-arm ORR, treatment-arm-only response rates, and
+        similar native metrics so they are visible without being mislabeled as D.
+    - id: plot1d_source_object_coverage_denominator
+      current_scope_role: diagnostic_denominator
+      figure_label: Figure 1 coverage denominator
+      result_target_kind: source_object_or_row_coverage_record
+      eligibility:
+        publication_requirement: mixed
+        publication_policy: >
+          The coverage denominator records what we have actually found and
+          mirrored or attempted, including strict D/N rows, blocked D/N rows,
+          D-equivalent candidates, native-effect rows, roster-only pairs, and
+          effect-without-N rows. It is not a quantitative effect plot.
+        output_unit: >
+          One local row-grain source object, pair roster row, result row, or
+          missing-field repair candidate.
+        include_when_all:
+          - source_family_recorded
+          - candidate_artifact_or_backing_file_recorded
+        include_when_any:
+          - result_effect_convertible_to_common_d_axis
+          - comparative_binary_d_equivalent_supported
+          - native_effect_pair_retained_without_common_d_axis
+          - source_object_pair_roster_retained_without_values
+          - effect_present_but_n_missing_repair_route
+        exclude_when_any:
+          - metadata_or_narrative_only_excluded
+        source_table_gate_columns:
+          - diagnostic_bucket
+          - target_acquisition_state
+          - value_verification_state
+          - missing_fields
+          - access_barrier
+          - route_to_next_use
+          - route_payload
+      represented_source_kinds:
+        - any_source_family
+        - original_followup_pair_roster
+        - result_table_row
+        - acquisition_attempt
+      evidence_object_kinds:
+        - source_table
+        - source_access_attempt
+        - source_file
+        - report_or_roster
+      notes: >
+        This universe is the place to answer coverage questions such as "what
+        percent of the local row universe is strict Figure 1-ready?" It should
+        not be used to backfill Figure 1A without passing the stricter gates.
     - id: plot4_all_source_dn_dump
       current_scope_role: catalog_only_future_plot_seed
       figure_label: not_current_figure
@@ -814,6 +1112,92 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
       notes: >
         This is the broadest diagnostic universe and should expose provenance
         level, source family, and inclusion status rather than hiding uncertainty.
+
+  alternate_plot_routes:
+    purpose: >
+      Preserve useful source objects and rows after a primary plot rejection.
+      A rejection from Figure 1A is a context decision, not a global deletion.
+      Downstream scripts and review cues should choose the most specific
+      alternate route that the source can support.
+    default_policy:
+      - Record the failed primary gate, route decision, and route payload in machine-readable fields.
+      - Prefer value-bearing diagnostic routes over context-only routes when source bytes support them.
+      - Do not relax Figure 1A criteria by routing a row to an alternate panel; alternate routes get separate plot_universe IDs.
+      - Do not route request-only datasets into quantitative panels until public or user-provided bytes are mirrored and parsed.
+    routes:
+      - id: figure1a_reject_to_figure1b_d_equivalent
+        rejected_from_plot_universe_id: plot1_replication_pairs
+        route_to_plot_universe_id: plot1b_clinical_binary_d_equivalent
+        route_when_primary_blockers_include:
+          - not_direct_D_axis
+          - native_binary_comparative_effect
+          - conversion_inputs_available_but_not_strict_d
+        route_if_all:
+          - explicit_original_followup_pair_mapping
+          - comparative_binary_d_equivalent_supported
+          - result_n_available
+        route_payload_fields:
+          - conversion_route_status
+          - effect_metric_raw
+          - d_equivalent_method
+          - d_equivalent_tier
+          - baseline_risk_used
+          - baseline_risk_source
+          - time_horizon
+          - conversion_warning
+      - id: figure1a_reject_to_native_effect_retention
+        rejected_from_plot_universe_id: plot1_replication_pairs
+        route_to_plot_universe_id: plot1c_native_effect_retention
+        route_when_primary_blockers_include:
+          - one_arm_or_treatment_arm_only_response
+          - native_metric_not_comparable_to_d
+          - benchmark_metric_no_d_conversion
+        route_if_all:
+          - explicit_original_followup_pair_mapping
+          - native_effect_pair_retained_without_common_d_axis
+          - result_n_available
+        route_payload_fields:
+          - native_metric_status
+          - native_effect_metric
+          - native_effect_original
+          - native_effect_replication
+          - is_comparative_effect
+          - is_single_arm
+          - conversion_warning
+      - id: figure1a_reject_to_coverage_denominator_roster
+        rejected_from_plot_universe_id: plot1_replication_pairs
+        route_to_plot_universe_id: plot1d_source_object_coverage_denominator
+        route_when_primary_blockers_include:
+          - roster_only
+          - public_source_object_has_pair_mapping_but_no_values
+          - request_only_values_not_obtained
+          - metadata_only_after_value_search
+        route_if_any:
+          - source_object_pair_roster_retained_without_values
+          - effect_present_but_n_missing_repair_route
+        route_payload_fields:
+          - coverage_status
+          - target_acquisition_state
+          - value_verification_state
+          - missing_fields
+          - access_barrier
+          - next_action
+      - id: figure1a_reject_to_missing_n_repair
+        rejected_from_plot_universe_id: plot1_replication_pairs
+        route_to_worklist_id: missing_n_or_value_repair_worklist
+        also_catalog_under_plot_universe_id: plot1d_source_object_coverage_denominator
+        route_when_primary_blockers_include:
+          - effect_present_no_n
+          - n_missing_from_public_result_file
+          - n_requires_other_source_object
+        route_if_all:
+          - effect_present_but_n_missing_repair_route
+        route_payload_fields:
+          - missing_fields
+          - candidate_n_source_url
+          - candidate_n_source_local_path
+          - repair_route_status
+          - next_action
   
   node_types:
     - id: plot_universe
@@ -880,6 +1264,18 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
       canonical_tables:
         - source_object_candidate.tsv
         - source_access_attempt.tsv
+    - id: corpus_database
+      description: Corpus, database, source-family package, registry export, or repository collection before row-level extraction.
+      canonical_tables:
+        - CORPORA_AND_DATABASES.tsv
+        - source.tsv
+        - source_source_mapping.tsv
+    - id: source_artifact
+      description: Candidate or mirrored artifact that may contain result-bearing bytes for a source family.
+      canonical_tables:
+        - source_artifacts_proposal.tsv
+        - source_file.tsv
+        - source_access.tsv
     - id: source_file
       description: Content-addressed mirrored artifact.
       canonical_tables:
@@ -2091,6 +2487,29 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
       goal: Find replication/follow-up source families and projects, then resolve the original target and both D/N sides of each pair.
       search_direction: replication_first_then_resolve_original
       result_target_kind: replication_pair_result
+      target_file_contract:
+        target_root: steps/searches/figure1
+        rule: >
+          Individual replication searches write individualrepsearch-* manifests.
+          These are not corpus/database manifests and should not flow directly
+          into CORPORA_AND_DATABASES.tsv unless the search unexpectedly finds a
+          true multi-row source family. Each manifest preserves query routes,
+          candidate pair decisions, source-object URLs, relationship evidence,
+          value availability, blocker codes, and recommended next actions.
+        naming_convention: >
+          Use individualrepsearch-{method-or-surface}-{batch-or-query-scope}.{json|tsv}.
+          Examples: individualrepsearch-gpt-batch001.json,
+          individualrepsearch-pubmed-failed-to-replicate-effect-size.json,
+          individualrepsearch-osf-direct-replication-single-paper-packages.json.
+        target_file_policy: skip_if_exists_unless_replace
+        downstream_worklists:
+          strict_figure1a: steps/individual_replication_papers/figure1/individual-paper-worklist-from-search.tsv
+          d_equivalent_figure1b: steps/individual_replication_papers/figure1/individual-paper-worklist-d-equivalent.tsv
+          native_only: steps/individual_replication_papers/figure1/individual-paper-worklist-native-only.tsv
+          coverage_only: steps/individual_replication_papers/figure1/individual-paper-worklist-coverage-only.tsv
+          rejected_or_context: steps/individual_replication_papers/figure1/individual-paper-search-rejections.tsv
+        prompt_artifact:
+          - reports/figure1_individual_replication_search_help_prompt_2026-05-05.md
       minimum_lead_fields:
         - lead_id
         - lead_title
@@ -2177,6 +2596,198 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
             - repository search queries have saved result manifests and triage decisions
           outputs:
             - future data/derived/effect_inflation_dataset/search_leads/plot1_public_replication_project_search.tsv
+        - id: plot1_individual_gpt_assisted_pair_search
+          rank: 3
+          lead_type: individual_replication_paper
+          status: target_manifest_present
+          tools:
+            - manual_literature_review
+            - crossref_api
+            - openalex_api
+            - pubmed_europepmc
+            - osf_api
+            - dataverse_api
+            - github_code_search_or_clone
+          seed_queries:
+            - reports/figure1_individual_replication_search_help_prompt_2026-05-05.md
+            - '"failed to replicate" "effect size" "sample size"'
+            - '"direct replication" "Cohen" "original study"'
+            - '"we replicated" "sample size" "effect size"'
+            - '"high-powered replication" "original effect"'
+            - '"replication of" "original study" "sample size"'
+            - '"larger sample" "replication" "original"'
+            - '"follow-up study" "original effect" "sample size"'
+            - '"definitive trial" "pilot trial" "effect size"'
+          existing_artifacts:
+            - reports/figure1_individual_replication_search_help_prompt_2026-05-05.md
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-from-cluster-review.tsv
+            - steps/corpus_results/figure1/corpus_closure/figure1-corpus-dataset-closure-actions.tsv
+          target_glob: steps/searches/figure1/individualrepsearch-gpt-*.json
+          target_examples:
+            - steps/searches/figure1/individualrepsearch-gpt-batch001.json
+          target_file_policy: skip_if_exists_unless_replace
+          accept_if:
+            - candidate is a specific original/replication or original/follow-up pair
+            - replication/follow-up relation is explicit in title, abstract, methods, report text, registry, or source package
+            - source-object URLs exist for both represented sources or for a package/table that names both
+            - candidate records effect/N availability or the exact source objects needed to check it
+          reject_if:
+            - answer only names another corpus/database without a concrete pair
+            - later paper is merely related, citing, or conceptually adjacent with no replication/follow-up assertion
+            - one-arm outcome lacks comparator and no native-only route is justified
+            - same-data robustness/reanalysis is not labeled as reproduction or native/coverage-only
+          route_mapping:
+            strict_figure1a: individual_source_object_acquisition_and_dn_extraction
+            d_equivalent_figure1b: clinical_binary_d_equivalent_worklist
+            native_only: native_effect_retention_worklist
+            coverage_only: source_object_denominator_no_quantitative_row
+            reject: rejected_or_context_ledger
+          stop_conditions:
+            - GPT/Gemini output is saved as JSON with candidate-level source-object URLs and route decisions
+            - every high-confidence candidate has a mirror-first object list or a documented access blocker
+            - candidate pairs are deduped against FIGURE1_REPLICATION_PAIRS.tsv and known source families before extraction
+          outputs:
+            - steps/searches/figure1/individualrepsearch-gpt-batch001.json
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-from-search.tsv
+        - id: plot1_individual_bibliographic_phrase_search
+          rank: 4
+          lead_type: individual_replication_paper
+          status: target_manifest_present
+          tools:
+            - crossref_api
+            - openalex_api
+            - pubmed_europepmc
+            - paperclip_hosted_index
+          seed_queries:
+            - '"failed to replicate" "original study"'
+            - '"could not replicate" "original" "sample"'
+            - '"direct replication" "original" "participants"'
+            - '"registered replication report" "original study"'
+            - '"replication attempt" "effect size" "N"'
+            - '"high-powered" "direct replication"'
+            - '"conceptual replication" "original effect"'
+            - '"external validation" "original study" "effect size"'
+            - '"pilot" "full-scale" "same outcome" "effect size"'
+          target_glob: steps/searches/figure1/individualrepsearch-bibliographic-*.json
+          target_examples:
+            - steps/searches/figure1/individualrepsearch-bibliographic-failed-to-replicate-effect-size.json
+            - steps/searches/figure1/individualrepsearch-bibliographic-registered-replication-report-individual.json
+          target_file_policy: skip_if_exists_unless_replace
+          accept_if:
+            - bibliographic record is an individual replication/follow-up paper or report
+            - abstract or linked full text names the original study, target paper, phenomenon, or trial
+            - DOI/PMID/PMCID/open-location route can ground at least the replication/follow-up source
+          reject_if:
+            - record is a review, editorial, meta-analysis-only source, or corpus/database already covered
+            - no original target can be identified from metadata or full text
+          stop_conditions:
+            - phrase-search manifests record accepted, rejected, and duplicate candidates
+            - accepted candidates route to individual-paper source-object acquisition rather than corpus intake
+          outputs:
+            - steps/searches/figure1/individualrepsearch-bibliographic-failed-to-replicate-effect-size.json
+        - id: plot1_individual_repository_package_search
+          rank: 5
+          lead_type: repository_package
+          status: target_manifest_present
+          tools:
+            - osf_api
+            - dataverse_api
+            - zenodo_api
+            - figshare_api
+            - dryad_api
+            - github_code_search_or_clone
+          seed_queries:
+            - '"direct replication" "original study" data'
+            - '"failed replication" data "original"'
+            - '"registered replication report" "data"'
+            - '"replication package" "original study" "sample size"'
+            - '"replication" "original_n" "replication_n"'
+            - '"original effect" "replication effect"'
+            - '"replication" "supplementary data" "original effect"'
+          target_glob: steps/searches/figure1/individualrepsearch-repository-*.json
+          target_examples:
+            - steps/searches/figure1/individualrepsearch-repository-osf-dataverse-single-replication-packages.json
+            - steps/searches/figure1/individualrepsearch-repository-github-original-replication-fields.json
+          target_file_policy: skip_if_exists_unless_replace
+          accept_if:
+            - package is one paper's replication/follow-up package with source objects, data, code, or tables
+            - file inventory suggests original/replication mapping, effect/statistic fields, N fields, or conversion inputs
+            - package can be mirrored or sampled enough to decide Figure 1A/B/native/coverage route
+          reject_if:
+            - package is a corpus/database already routed through CORPORA_AND_DATABASES.tsv
+            - package contains only preregistration, manuscript PDF, or materials with no result or source-object route
+          stop_conditions:
+            - accepted one-paper packages are queued for source-object acquisition and parsing
+            - rejected repository hits include blocker_codes and relationship evidence status
+          outputs:
+            - steps/searches/figure1/individualrepsearch-repository-osf-dataverse-single-replication-packages.json
+        - id: plot1_individual_known_original_citation_forward_search
+          rank: 6
+          lead_type: individual_replication_paper
+          status: target_manifest_present
+          tools:
+            - openalex_api
+            - semantic_scholar_api
+            - crossref_api
+            - manual_literature_review
+          seed_queries:
+            - cited-by search around famous original effects not already covered by current source families
+            - citing papers whose title or abstract contains replicate, replication, reproduce, robustness, follow-up, validation, re-test, or high-powered
+            - citing papers of original effects in staged-unpromoted individual leads
+            - citation neighborhoods around request-only corpus rosters where individual public source objects may rescue rows
+          existing_artifacts:
+            - FIGURE1_REPLICATION_PAIRS.tsv
+            - steps/corpus_results/figure1/corpus_closure/figure1-corpus-dataset-closure-actions.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-from-cluster-review.tsv
+          target_glob: steps/searches/figure1/individualrepsearch-citation-*.json
+          target_examples:
+            - steps/searches/figure1/individualrepsearch-citation-known-originals-forward-replication.json
+          target_file_policy: skip_if_exists_unless_replace
+          accept_if:
+            - citing/follow-on paper self-describes a replication, validation, follow-up, or reproduction of the original
+            - original and follow-up source objects can be grounded by DOI/PMID/PMCID/URL
+            - candidate looks outside already-covered corpus rows or records its likely overlap for dedupe
+          reject_if:
+            - citing paper merely discusses, cites, extends theory, or includes the original in a literature review
+            - no result-level source-object route is visible
+          stop_conditions:
+            - known-original forward-search batches have explicit yield and duplicate/noise notes
+            - accepted pairs are queued with both source identities and mirror-first URLs
+          outputs:
+            - steps/searches/figure1/individualrepsearch-citation-known-originals-forward-replication.json
+        - id: plot1_individual_clinical_pair_rescue_search
+          rank: 7
+          lead_type: individual_replication_paper
+          status: target_manifest_present
+          tools:
+            - pubmed_europepmc
+            - paperclip_hosted_index
+            - clinicaltrials_api_v2
+            - crossref_api
+            - openalex_api
+          seed_queries:
+            - '"pilot trial" "full-scale trial" "same outcome"'
+            - '"feasibility trial" "definitive trial" "effect size"'
+            - '"phase II" "phase III" "same endpoint"'
+            - '"follow-up randomized trial" "pilot"'
+            - '"replication" "randomized trial" "original trial"'
+            - '"external validation" clinical trial original study effect'
+          target_glob: steps/searches/figure1/individualrepsearch-clinical-*.json
+          target_examples:
+            - steps/searches/figure1/individualrepsearch-clinical-pilot-definitive-public-source-objects.json
+          target_file_policy: skip_if_exists_unless_replace
+          accept_if:
+            - paper pair has same or close-enough clinical endpoint and intervention/comparator relationship
+            - original and follow-up Ns are available from trial reports, registry records, or full text
+            - effect measure is direct D/SMD, comparative binary D-equivalent, HR/RR/OR with conversion policy, or native-only with explicit route
+          reject_if:
+            - one-arm ORR lacks a comparator
+            - trial relationship is ordinary development sequence with no affirmative replication/follow-up linkage
+            - result values are request-only and no public source object exists
+          stop_conditions:
+            - clinical individual-pair candidates are separated into strict, D-equivalent, native, coverage-only, and rejected ledgers
+          outputs:
+            - steps/searches/figure1/individualrepsearch-clinical-pilot-definitive-public-source-objects.json
     - id: search_plan_plot2_published_paper_d_vs_n
       universe_id: plot2_published_paper_d_vs_n
       goal: Find published-paper result corpora that expose D/N, native statistics, or conversion inputs with paper grouping and selector metadata.
@@ -2484,6 +3095,10 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
           promote_to_corpora_and_databases: promote_to_corpora_and_databases
           route_to_result_table_worklist: route_to_result_table_worklist
           route_to_individual_replication_paper_worklist: route_to_individual_replication_paper_worklist
+          route_to_d_equivalent_diagnostic_worklist: route_to_d_equivalent_diagnostic_worklist
+          route_to_native_effect_diagnostic_worklist: route_to_native_effect_diagnostic_worklist
+          route_to_coverage_denominator_catalog: route_to_coverage_denominator_catalog
+          route_to_missing_value_repair_worklist: route_to_missing_value_repair_worklist
           keep_as_context_source: keep_as_context_source
           reject_irrelevant: reject_irrelevant
           needs_more_evidence: needs_more_evidence
@@ -2513,6 +3128,10 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
           - promote_to_corpora_and_databases
           - route_to_result_table_worklist
           - route_to_individual_replication_paper_worklist
+          - route_to_d_equivalent_diagnostic_worklist
+          - route_to_native_effect_diagnostic_worklist
+          - route_to_coverage_denominator_catalog
+          - route_to_missing_value_repair_worklist
           - keep_as_context_source
           - reject_irrelevant
           - needs_more_evidence
@@ -2548,6 +3167,68 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
               that it is itself a replication/reproduction/follow-up of an
               identifiable original. Do not route something forward because a
               later larger study might exist.
+          route_to_d_equivalent_diagnostic_worklist:
+            required_route_payload_fields:
+              - alternate_plot_universe_id
+              - conversion_route_status
+              - conversion_inputs_evidence
+            allowed_alternate_plot_universe_id:
+              - plot1b_clinical_binary_d_equivalent
+            allowed_conversion_route_status:
+              - comparative_binary_counts_available
+              - odds_ratio_or_log_or_available
+              - risk_ratio_or_risk_difference_with_baseline_risk
+              - hazard_ratio_with_fixed_time_event_risk
+              - needs_custom_policy_review
+            reject_if: >
+              The source exposes only one-arm response rates, treatment-arm-only
+              rates, HR-only values without fixed-time event/survival data, or
+              qualitative success labels. Those should route to native-effect,
+              coverage-denominator, or missing-value worklists instead.
+          route_to_native_effect_diagnostic_worklist:
+            required_route_payload_fields:
+              - alternate_plot_universe_id
+              - native_metric_status
+              - native_metric_evidence
+            allowed_alternate_plot_universe_id:
+              - plot1c_native_effect_retention
+            allowed_native_metric_status:
+              - one_arm_response_rate
+              - treatment_arm_only_response_rate
+              - native_ratio_no_common_d_conversion
+              - benchmark_metric_no_common_d_conversion
+              - mixed_native_metrics
+            reject_if: >
+              The source has no row-level native values or no original/follow-up
+              mapping. Such sources belong in context or coverage-denominator
+              routes, not native-effect diagnostics.
+          route_to_coverage_denominator_catalog:
+            required_route_payload_fields:
+              - alternate_plot_universe_id
+              - coverage_status
+              - coverage_evidence
+            allowed_alternate_plot_universe_id:
+              - plot1d_source_object_coverage_denominator
+            allowed_coverage_status:
+              - strict_dn_blocked_by_plot_rule
+              - roster_only_pair_mapping
+              - effect_values_without_n
+              - metadata_only_after_value_search
+              - request_only_values_not_obtained
+              - blocked_public_byte_route
+              - context_source_without_row_values
+          route_to_missing_value_repair_worklist:
+            required_route_payload_fields:
+              - missing_fields
+              - repair_route_status
+              - next_repair_action
+            allowed_repair_route_status:
+              - candidate_source_object_known
+              - candidate_source_object_not_found
+              - bot_blocked_or_paywalled
+              - request_only_no_public_route
+              - needs_manual_browser_or_library_route
+              - no_lawful_route_found
         machine_readable_rule: >
           Codex/GPT prose is never a pipeline input. Reviewers must write JSON
           decisions to the configured decision_json_pattern. The application
@@ -3069,6 +3750,647 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
             next work queue for mapping corpus rows to represented original
             papers/studies, replication papers/studies, result pairs, and later
             source_result/source_result_support rows.
+        - id: figure1_raw_viability_summary_step
+          kind: script_step
+          materialized_as:
+            - scripts/summarize_figure1_raw_viability.py
+            - make figure1-raw-viability-summary
+          role: >
+            Admission check over mirrored Figure 1 source-family artifacts and
+            corpus-native result rows. It does not promote rows; it asks which
+            reviewed parent source families currently have raw table rows with
+            copied effect text, N text, and original/replication or result
+            context, and which parsed tables are context/false-positive parser
+            hits.
+        - id: figure1_raw_viability_summary_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/figure1-raw-viability-summary.tsv
+            - steps/corpus_results/figure1/figure1-raw-viability-table-detail.tsv
+            - steps/corpus_results/figure1/figure1-raw-viability-summary.md
+          role: >
+            Machine-readable and human-readable Figure 1 raw-data viability
+            outputs. Parent rows summarize mirrored artifacts, parser signals,
+            parsed native rows, effect/N evidence, and next actions; table
+            rows identify candidate result tables versus parsed context tables.
+        - id: figure1_gpt_candidate_batch2_mining_step
+          kind: script_step
+          materialized_as:
+            - scripts/promote_gpt_candidate_batch2_pairs.py
+            - make figure1-gpt-candidate-batch2-mine
+          role: >
+            Bounded miner for the second GPT many-replication candidate batch.
+            It promotes only locally mirrored candidates with pair-level original
+            and replication/follow-up effect plus N fields, and records checked
+            but blocked access routes without inventing rows.
+        - id: figure1_gpt_candidate_batch2_mining_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - data/derived/replication_pairs/harvest/promoted/repeat_rwe_reproductions__promoted_pairs.csv
+            - steps/corpus_results/figure1/gpt_candidate_pair_mining/gpt_candidate_batch2_pair_mining.tsv
+            - steps/corpus_results/figure1/gpt_candidate_pair_mining/gpt_candidate_batch2_mining_status.tsv
+            - reports/figure1_gpt_candidate_batch2_mining_summary_2026-05-04.md
+          role: >
+            REPEAT Initiative promoted-pair rows and audit/status outputs from
+            the second candidate mining batch. The promoted CSV is regenerated
+            data and may be ignored by git; the script plus raw mirror ledger
+            are the reproducible route back to source bytes.
+        - id: figure1_remaining_local_mining_step
+          kind: script_step
+          materialized_as:
+            - scripts/promote_remaining_local_figure1_mining.py
+            - make figure1-remaining-local-mine
+          role: >
+            Final local-only mining pass over already mirrored Figure 1
+            candidates after the GPT candidate batches. It promotes only
+            table rows with parseable original and replication/follow-up D/N
+            and records locally checked sources that remain blocked without
+            relaxing conversion or original-benchmark rules.
+        - id: figure1_remaining_local_mining_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - data/derived/replication_pairs/harvest/promoted/transparent_replications_table_rows__promoted_pairs.csv
+            - steps/corpus_results/figure1/remaining_local_mining/transparent_replications_table_rows.tsv
+            - steps/corpus_results/figure1/remaining_local_mining/remaining-local-mining-status.tsv
+            - steps/corpus_results/figure1/remaining_local_mining/staged-unpromoted-scan.tsv
+          role: >
+            Transparent Replications promoted-pair rows and the compact local
+            mining status table for candidates checked but not promoted. The
+            promoted CSV is regenerated data; the script and mirrored HTML/PDF
+            report artifacts are the repeatable route back to source bytes.
+        - id: figure1_research_followup_mirror_step
+          kind: script_step
+          materialized_as:
+            - scripts/mirror_figure1_research_followup_candidates.py
+            - make figure1-research-followup-mirror
+          role: >
+            Mirrors public-byte URLs from the 2026-05-04 follow-up research
+            batch, including Ying/Ehrhardt pilot/full-scale leads, RGB
+            health-behavior leads, RCT-DUPLICATE, FORRT Reversals, and scale-up
+            review pages. It records blockers instead of treating landing pages
+            as value-bearing result tables.
+        - id: figure1_research_followup_mirror_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/source_inventory/figure1/research_followup_20260504/mirror-status.tsv
+          role: >
+            Compact mirror/access ledger for the follow-up research batch, with
+            working URLs, blocked URLs, local paths, content types, byte counts,
+            and checksums for successfully mirrored public artifacts.
+        - id: figure1_research_followup_triage_step
+          kind: script_step
+          materialized_as:
+            - scripts/triage_figure1_research_followup_candidates.py
+            - make figure1-research-followup-triage
+          role: >
+            Checks the mirrored follow-up research artifacts for strict Figure 1
+            mining readiness. It performs a conservative FORRT Reversals
+            narrative scan and an RCT-DUPLICATE schema scan, but does not promote
+            rows that require deduplication, request-only data, original-N
+            recovery, or relaxed endpoint conversions.
+        - id: figure1_research_followup_triage_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/research_followup_20260504/research-followup-triage.tsv
+            - steps/corpus_results/figure1/research_followup_20260504/forrt-reversals-conservative-candidate-scan.tsv
+            - steps/corpus_results/figure1/research_followup_20260504/rct-duplicate-schema-scan.tsv
+            - reports/figure1_research_followup_triage_2026-05-04.md
+          role: >
+            Triage outputs for the follow-up research batch. The current result
+            is zero promoted rows: FORRT has only narrative duplicate-risk
+            candidates, RCT-DUPLICATE lacks public N fields, Ying/RGB leads
+            appear request-only or no-master-table from public bytes, and
+            scale-up reviews remain context only under the current rule.
+        - id: figure1_corpus_dn_check_step
+          kind: script_step
+          materialized_as:
+            - scripts/check_figure1_corpus_dn.py
+            - make figure1-corpus-dn-check
+          role: >
+            Proposal-only D/N check over locally mirrored Figure 1 corpora and
+            existing project-specific local extractors. It records which
+            corpus/project labels currently produce finite original and
+            replication D/N, applies the current minimum-N and larger-replication-N
+            checks, and emits stricter verbatim-backed result-side rows where
+            native source rows are directly available. It does not promote rows
+            into source_result or canonical_result.
+        - id: figure1_corpus_dn_check_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/dn_check/figure1-corpus-dn-check-pairs.tsv
+            - steps/corpus_results/figure1/dn_check/figure1-corpus-dn-check-strict-result-sides.tsv
+            - steps/corpus_results/figure1/dn_check/figure1-corpus-dn-check-project-summary.tsv
+            - steps/corpus_results/figure1/dn_check/figure1-corpus-dn-check-summary.tsv
+            - steps/corpus_results/figure1/dn_check/figure1-corpus-dn-check.md
+          role: >
+            Machine-readable and human-readable D/N check outputs. Pair rows
+            are a fast local numeric check; strict side rows preserve copied
+            effect and N text for the corpora this stage can verify directly.
+            Downstream source-result promotion still needs field-level support
+            mapping for any rows that are only numeric-builder checked.
+        - id: figure1_replication_pairs_root_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_replication_pairs_table.py
+            - make figure1-replication-pairs-table
+          role: >
+            Builds the root-level Figure 1 replication-pair result table from
+            D/N-checked corpora. It keeps one row per original/replication pair
+            with D_original, N_original, D_replication, N_replication, current
+            plot-rule blockers, source artifact pointers, and status fields
+            needed for later source_result/source_result_support promotion.
+        - id: figure1_replication_pairs_root_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - FIGURE1_REPLICATION_PAIRS.tsv
+            - FIGURE1_REPLICATION_PAIRS_SCHEMA.yml
+            - steps/corpus_results/figure1/result_table/figure1-replication-pairs-summary.md
+          role: >
+            Obvious root pair-result table and schema, analogous to
+            CORPORA_AND_DATABASES.tsv for source-family intake. This table is
+            pair-level staging: it is not yet the long-form source_result table,
+            but it records exactly which D/N pairs are ready, excluded by
+            current plot gates, or still need verbatim support mapping.
+        - id: figure1_pair_chase_worklist_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_pair_chase_worklist.py
+            - make figure1-pair-chase-worklist
+          role: >
+            Expands every root Figure 1 D/N pair row, included and excluded,
+            into pair-specific source-object chase or no-repull dedupe tasks.
+            It creates one worklist row per root pair and one side-target row
+            per original and replication/follow-up source. This stage does not
+            promote or change root rows; it routes each dot toward source_result
+            promotion, DOI acquisition, title-pair searching, source-family
+            backfill, or deferred excluded-pair identity retention.
+        - id: figure1_pair_chase_worklist_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-pair-chase-worklist.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-pair-source-side-targets.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-pair-chase-batch001.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-pair-source-side-targets-batch001.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-pair-chase-summary.md
+          role: >
+            Machine-readable pair-specific chase lane for all 2,431 current
+            root D/N pair rows: 1,679 included by the current Figure 1 rule and
+            752 excluded but retained for no-repull dedupe. The full table
+            preserves plot identifiers, D/N values, source-family context,
+            DOI/title search queries, local corpus artifact pointers, and next
+            actions. The side table is the immediate acquisition/extraction
+            queue for represented original and replication/follow-up source
+            objects.
+        - id: figure1_individual_study_map_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_individual_study_map.py
+            - make figure1-individual-study-map
+          role: >
+            Collapses pair-chase side targets into a deduped represented
+            individual-study/source registry. The dedupe rule is DOI first, URL
+            second, normalized title third, with weak side-target fallback for
+            unusable labels. This table lets future individual-replication
+            candidates be checked against the current Figure 1 universe before
+            any extraction or row promotion.
+        - id: figure1_individual_study_map_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-individual-study-map.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-side-to-individual-study-map.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-individual-study-map-batch001.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-individual-study-map-schema.yml
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-individual-study-map-summary.md
+          role: >
+            Dedupe registry and crosswalk for represented individual source
+            objects touched by Figure 1. The study map is one row per deduped
+            DOI/URL/title/weak identity; the crosswalk preserves every original
+            and replication side target so no pair-level evidence is lost.
+            Title-only and weak identities are explicitly flagged for manual
+            identity review rather than treated as settled bibliographic
+            records.
+        - id: figure1_bibtex_dedupe_map_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_bibtex_dedupe_map.py
+            - make figure1-bibtex-dedupe-map
+          role: >
+            Joins the Figure 1 individual-study/source registry back to the
+            corpus bibliography generated by `make bibliography`. This produces
+            a stable BibTeX-key bridge for every represented original and
+            replication/follow-up side so new individual-replication candidates
+            can be deduped against existing source identities before source
+            acquisition or value extraction.
+        - id: figure1_bibtex_dedupe_map_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-individual-study-bibtex-map.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-side-to-bibtex-map.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-pair-bibtex-map.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-bibtex-dedupe-map-summary.md
+          role: >
+            Study-level, pair-side-level, and pair-level BibTeX crosswalks. The
+            study map is the deduped identity to citation-key bridge; the side
+            map preserves every original/replication side target; the pair map
+            places both represented sides on one row and flags pairs whose two
+            sides currently collapse to a shared BibTeX identity that needs
+            side-splitting review.
+        - id: figure1_identity_disambiguation_worklist_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_identity_disambiguation_worklist.py
+            - make figure1-identity-disambiguation-worklist
+          role: >
+            Routes title-only, URL-only, and weak represented Figure 1
+            source/study identities into a cite-grounding worklist. The goal is
+            to resolve local labels to real citeable records, such as DOI,
+            PMID, PMCID, stable publisher/OA URL, or authoritative source-object
+            metadata, before new individual replication pairs are chased. This
+            step does not edit root pair values; it creates explicit follow-up
+            tasks with required resolution fields and acceptance criteria.
+        - id: figure1_identity_disambiguation_worklist_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-worklist.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-batch001.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-summary.md
+          role: >
+            Machine-readable grounding queue for identities that are not yet
+            real citations. Priorities D0-D2 touch currently included Figure 1
+            pairs and should be resolved first; D3-D5 are excluded/no-repull
+            identities retained for dedupe and resolved when cheap, colliding,
+            or analytically needed.
+        - id: figure1_identity_disambiguation_resolve_step
+          kind: script_step
+          materialized_as:
+            - scripts/resolve_figure1_identity_disambiguation.py
+            - make figure1-identity-disambiguation-resolve
+          role: >
+            Performs the automatable portion of the Figure 1 identity
+            disambiguation worklist using only local source-family artifacts and
+            local bibliography tables. It resolves weak labels such as RPCB
+            paper numbers, SCORE report IDs, REPEAT internal study IDs,
+            canonical Many Labs/RPP/SSRP/RRR labels, exact titles, parsed
+            citation strings, and conservative author-year labels into proposed
+            citeable records or source-family internal identities. This step is
+            proposal-only: it does not edit root pair values, source-result
+            rows, or bibliography entries.
+        - id: figure1_identity_disambiguation_resolve_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-resolutions.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-unresolved.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-identity-disambiguation-resolution-summary.md
+          role: >
+            Machine-readable local citation-resolution proposal table and
+            residual unresolved queue. The resolved table records the exact
+            basis, local source artifact, locator, verbatim match evidence,
+            confidence, and recommended update action for each worklist row.
+            The unresolved table is the remaining manual or external-search
+            backlog before individual one-off replication papers are pursued.
+        - id: figure1_prior_pair_work_audit_step
+          kind: script_step
+          materialized_as:
+            - scripts/audit_figure1_prior_pair_work.py
+            - make figure1-prior-pair-work-audit
+          role: >
+            Compares the previous ad hoc plotted-pair projection and 300-row
+            schema pilot against the current root pair table, pair-chase
+            worklist, individual-study map, and BibTeX dedupe map. This step
+            records which prior artifacts should be reused as historical
+            subsets or schema precedents and which current artifacts supersede
+            them for full-universe dedupe.
+        - id: figure1_prior_pair_work_audit_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-prior-pair-work-artifacts.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-prior-pair-work-reconciliation.tsv
+            - steps/individual_replication_papers/figure1/pair_chase/figure1-prior-pair-work-reconciliation.md
+          role: >
+            Machine-readable and human-readable reconciliation of prior Figure 1
+            pair work. It documents that the older pair detail table is a
+            subset of the current root pair table and that the schema pilot is
+            reusable as a provenance-shape precedent rather than a complete
+            registry.
+        - id: figure1_universe_coverage_diagnostics_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_universe_coverage_diagnostics.py
+            - make figure1-universe-coverage-diagnostics
+          role: >
+            Builds alternate-use diagnostics from local Figure 1 artifacts
+            without changing the root pair table. It routes strict D/N rows,
+            D/N rows blocked by the current rule, comparative binary
+            D-equivalent rows, native response-rate rows, roster-only rows, and
+            effect-without-N rows into separate diagnostic buckets.
+        - id: figure1_universe_coverage_diagnostics_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/universe_coverage/figure1-universe-coverage-rows.tsv
+            - steps/corpus_results/figure1/universe_coverage/figure1-universe-coverage-summary.tsv
+            - steps/corpus_results/figure1/universe_coverage/figure1-universe-coverage-panels.png
+            - reports/figure1_universe_coverage_diagnostics_2026-05-04.md
+          role: >
+            Row-level and summary artifacts for the alternate routes. These are
+            current denominator diagnostics and Figure 1B/native-panel seeds,
+            not promotions into Figure 1A.
+        - id: figure1_rejected_alternate_route_recheck_step
+          kind: script_step
+          materialized_as:
+            - scripts/recheck_figure1_rejected_for_alternative_routes.py
+            - make figure1-rejected-alternate-route-recheck
+          role: >
+            Rechecks previously rejected or blocked Figure 1A records against
+            the alternate route catalog. It records whether a source or row
+            bucket should move to the D-equivalent diagnostic, native-effect
+            diagnostic, coverage denominator, missing-value repair, or remain
+            context-only/rejected.
+        - id: figure1_rejected_alternate_route_recheck_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/alternate_route_recheck/figure1-rejected-alternate-route-recheck.tsv
+            - steps/corpus_results/figure1/alternate_route_recheck/figure1-rejected-alternate-route-summary.tsv
+            - reports/figure1_rejected_alternate_route_recheck_2026-05-04.md
+          role: >
+            Source- and row-bucket-level alternate-route decisions for material
+            that does not currently land in strict Figure 1A.
+        - id: figure1_coverage_loss_accounting_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_figure1_coverage_loss_accounting.py
+            - make figure1-coverage-loss-accounting
+          role: >
+            Combines root D/N rows, alternate-route diagnostics, raw viability,
+            and corpus/source intake status into one coverage and loss account.
+            It keeps row-grain objects separate from source/corpus records so
+            the project can say what was usable for Figure 1A, Figure 1B,
+            native-scale diagnostics, denominator-only accounting, repair, or
+            context-only exclusion.
+        - id: figure1_coverage_loss_accounting_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/coverage_loss_accounting/figure1-row-disposition.tsv
+            - steps/corpus_results/figure1/coverage_loss_accounting/figure1-source-coverage-status.tsv
+            - steps/corpus_results/figure1/coverage_loss_accounting/figure1-coverage-loss-stages.tsv
+            - steps/corpus_results/figure1/coverage_loss_accounting/figure1-coverage-loss-bars.png
+            - reports/figure1_coverage_loss_accounting_2026-05-04.md
+          role: >
+            Final local accounting artifacts for where the discovered and
+            mirrored replication universe was retained, plotted, demoted,
+            repaired, or rejected. These artifacts are explanatory and do not
+            mutate source_result, canonical_result, or root plot rows.
+        - id: figure1_corpus_dataset_closure_step
+          kind: script_step
+          materialized_as:
+            - scripts/close_figure1_corpus_dataset_pass.py
+            - make figure1-corpus-dataset-closure
+          role: >
+            Closes the bounded corpus/dataset-level Figure 1 mining pass before
+            individual-paper extraction. It reconciles already represented
+            corpora, demotes parser false positives, records duplicate-risk
+            FORRT/Reversals rows, finalizes alternate subplot staging, and marks
+            request-only or missing-value public-byte sources as blocked.
+            This is an audit projection only; it does not promote rows.
+        - id: figure1_corpus_dataset_closure_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/corpus_results/figure1/corpus_closure/figure1-corpus-dataset-closure-actions.tsv
+            - steps/corpus_results/figure1/corpus_closure/figure1-corpus-dataset-closure-summary.tsv
+            - reports/figure1_corpus_dataset_closure_2026-05-05.md
+          role: >
+            Corpus-level closure ledger showing why each remaining many-row
+            source is either already represented, staged for an alternate
+            subplot, denominator-only, duplicate-risk, false-positive, or
+            blocked until a user/source-owner file appears.
+        - id: figure1_individual_replication_search_strategy_step
+          kind: script_step
+          materialized_as:
+            - scripts/build_individual_replication_search_strategy.py
+            - make figure1-individual-replication-search-strategy
+          role: >
+            Materializes the one-off individual-replication search protocol
+            after corpus/dataset saturation. It records the GPT/Gemini,
+            bibliographic, repository, citation-forward, and clinical-pair
+            search tracks; the required JSON manifest schema; and the handoff
+            instructions for saving tool outputs before intake.
+        - id: figure1_individual_replication_search_strategy_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/searches/figure1/individualrepsearch-tool-strategy.tsv
+            - steps/searches/figure1/individualrepsearch-design.yml
+            - steps/searches/figure1/individualrepsearch-vast-query-bank.tsv
+            - steps/searches/figure1/individualrepsearch-known-good-recall-probes.tsv
+            - steps/searches/figure1/individualrepsearch-relation-evidence-scale.tsv
+            - steps/searches/figure1/individualrepsearch-routing-score-rules.tsv
+            - steps/searches/figure1/individualrepsearch-query-log-schema.tsv
+            - steps/searches/figure1/individualrepsearch-vast-run-plan.md
+            - steps/searches/figure1/individualrepsearch-candidate-schema.json
+            - steps/searches/figure1/individualrepsearch-intake-readme.md
+            - reports/figure1_individual_replication_vast_search_prompt_2026-05-05.md
+          role: >
+            Machine-readable search-track, design-contract, and manifest-schema
+            files for individual one-off replication mining. The design YAML
+            records the candidate grain, core pipeline, route labels, identity
+            normalization policy, relation-before-value rule, stop/expand
+            criteria, query-log fields, generated artifacts, and make targets.
+            These artifacts define where each search surface writes candidate
+            manifests and require every candidate to preserve original source
+            identity, replication source identity, relation evidence,
+            source-object URLs, value availability, conversion route, and dedupe
+            hints. The vast query bank turns the earlier GPT lead prompt into a
+            recall-auditable
+            campaign across metadata APIs, open full text, repository packages,
+            citation-forward searches, psychology long-tail domains,
+            behavioral-economics/marketing/management, education/health/sports,
+            clinical D-equivalent follow-ups, genetics/native validations, and
+            negative filters for same-data reanalyses and computational-only
+            reproductions. The relation-evidence scale and routing-score rules
+            formalize the gate between relation discovery and value extraction:
+            a lead needs affirmative original/replication evidence before it
+            becomes a pair candidate, then value availability determines strict
+            Figure 1A, D-equivalent Figure 1B, native-only, coverage-only, or
+            reject routing. The known-good recall probes must be checked before
+            treating low long-tail yield as evidence that no leads exist, and
+            the query-log schema makes every vast-search API/web pass auditable.
+        - id: figure1_individual_replication_vast_search_batch001_step
+          kind: script_step
+          materialized_as:
+            - scripts/execute_individual_replication_vast_search.py
+            - make figure1-individual-replication-vast-search-batch001
+          role: >
+            Executes the first scriptable individual-paper metadata search batch
+            against OpenAlex, Crossref, Europe PMC, and PLOS-compatible query
+            families. It writes raw API responses, a query log, screened
+            relation hits, known-good recall-probe results, and a conservative
+            `individualrepsearch-api-batch001.json` manifest. This step is
+            discovery and recall instrumentation only: metadata hits are not
+            value-verified and should be resolved to source objects before
+            mirroring or row promotion.
+        - id: figure1_individual_replication_vast_search_batch001_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/searches/figure1/individualrepsearch_api_batch001/raw/
+            - steps/searches/figure1/individualrepsearch-query-log-batch001.tsv
+            - steps/searches/figure1/individualrepsearch-screening-hits-batch001.tsv
+            - steps/searches/figure1/individualrepsearch-recall-probe-results-batch001.tsv
+            - steps/searches/figure1/individualrepsearch-api-batch001.json
+            - reports/figure1_individual_replication_vast_search_execution_batch001_2026-05-05.md
+          role: >
+            Auditable execution outputs for the first vast-search pass. The
+            manifest can be consumed by the existing individual-replication
+            intake, while the raw API bytes and query log remain separate
+            evidence of what was searched and what was screened.
+        - id: figure1_individual_replication_search_intake_step
+          kind: script_step
+          materialized_as:
+            - scripts/triage_individual_replication_search_manifests.py
+            - make figure1-individual-replication-search-intake
+            - make figure1-individual-replication-search-batch001
+          role: >
+            Normalizes every `steps/searches/figure1/individualrepsearch-*.json`
+            manifest, dedupes candidates against `FIGURE1_REPLICATION_PAIRS.tsv`
+            and the pair/BibTeX crosswalk, and fans nonduplicate candidates into
+            strict Figure 1A, D-equivalent Figure 1B, native-only,
+            coverage-only, or rejected/duplicate ledgers. This step does not
+            mirror source objects or promote values.
+        - id: figure1_individual_replication_search_intake_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/individual-paper-search-intake-all.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-search-triage-batch001.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-from-search.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-d-equivalent.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-native-only.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-worklist-coverage-only.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-search-rejections.tsv
+            - reports/figure1_individual_replication_search_intake.md
+          role: >
+            Candidate-level intake and routing artifacts for one-off
+            replication pairs. Duplicates are retained as search-recall/no-repull
+            evidence; only nonduplicate strict/D-equivalent/native/coverage
+            worklist rows move to source-object review.
+        - id: figure1_individual_replication_source_mirror_step
+          kind: script_step
+          materialized_as:
+            - scripts/mirror_individual_replication_batch001_sources.py
+            - make figure1-individual-replication-mirror-batch001
+          role: >
+            Mirrors source-object URLs for nonduplicate strict,
+            D-equivalent, native-only, and coverage-only individual-paper
+            candidates into `data/raw/replication_projects/` and records one
+            access row per URL, including final URL, content type, byte count,
+            checksum, local path, route, worklist path, method, and
+            error/blocker. This is a batch-001 implementation of the
+            source_access/source_file pattern.
+        - id: figure1_individual_replication_source_mirror_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - data/raw/replication_projects/individual_search_batch001/
+            - steps/individual_replication_papers/figure1/individual-paper-source-mirror-batch001.tsv
+          role: >
+            Local mirrored source objects and access ledger for individual
+            one-off candidates. Metadata-only, blocked, and failed routes are
+            kept as access attempts rather than treated as value-bearing
+            mirrors.
+        - id: figure1_individual_replication_value_scan_step
+          kind: script_step
+          materialized_as:
+            - scripts/scan_individual_replication_batch001_values.py
+            - make figure1-individual-replication-value-scan-batch001
+          role: >
+            Performs a bounded value scan of mirrored batch-001 individual
+            source objects. It writes verbatim support text, parsed original
+            and replication effect/N candidates, conversion or policy notes,
+            and a scan decision. Rows that need exact N, paired-effect policy,
+            or outcome multiplicity review remain worklist material.
+        - id: figure1_individual_replication_value_scan_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/individual-paper-value-scan-batch001.tsv
+            - reports/figure1_individual_replication_batch001_value_scan_2026-05-05.md
+          role: >
+            Row-level extraction support ledger for individual one-off
+            candidates. It is closer to source_result_support than to the final
+            root table: original text, replication text, local source paths,
+            conversion notes, and promotion blockers are retained before any
+            cleaned D/N row is staged.
+        - id: figure1_individual_replication_ready_promotion_step
+          kind: script_step
+          materialized_as:
+            - scripts/promote_individual_replication_value_scan.py
+            - make figure1-individual-replication-promote-ready
+          role: >
+            Promotes only value-scan rows marked `ready_for_source_result_build`
+            into the generic harvested-pair CSV contract consumed by
+            `scripts/analyze_replication_pairs.py`. This is a guarded staging
+            step, not a blanket promotion of all one-off candidates.
+        - id: figure1_individual_replication_ready_promotion_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - data/derived/replication_pairs/harvest/promoted/individual_replication_papers__promoted_pairs.csv
+            - steps/individual_replication_papers/figure1/individual-paper-promotion-proposal.tsv
+            - reports/figure1_individual_replication_ready_promotion_2026-05-05.md
+          role: >
+            Promoted-pair staging table plus the full proposal ledger. The CSV
+            can be folded into the live replication-pair build; the proposal TSV
+            retains held rows and their blockers so future workers know why a
+            candidate was not plotted.
+        - id: figure1_individual_replication_row_disposition_step
+          kind: script_step
+          materialized_as:
+            - scripts/finalize_individual_replication_row_dispositions.py
+            - make figure1-individual-replication-row-disposition-batch001
+          role: >
+            Joins the batch-001 intake ledger, source-object mirror ledger,
+            value-scan ledger, promotion proposal, and rebuilt
+            `FIGURE1_REPLICATION_PAIRS.tsv` so every individual-replication
+            candidate gets a final row-or-not disposition. This is the closure
+            pass for the first one-off search batch: promoted rows are linked
+            to current root pair IDs, already represented pairs remain
+            no-repull dedupe evidence, held candidates retain value/policy
+            blockers, and rejected or unresolved metadata hits are explicitly
+            marked rather than silently dropped.
+        - id: figure1_individual_replication_row_disposition_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/individual-paper-row-disposition-batch001.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-result-option-disposition-batch001.tsv
+            - reports/figure1_individual_replication_row_disposition_batch001_2026-05-05.md
+          role: >
+            Candidate-level and result-option-level closure tables for
+            individual one-off replication mining. These artifacts answer
+            whether each lead is a current Figure 1 row, already present in the
+            root pair table, held for extraction/policy/source-object work, a
+            non-pair seed hit, or unresolved because the original target was
+            not yet established.
+        - id: figure1_individual_replication_batch001_closeout_step
+          kind: script_step
+          materialized_as:
+            - scripts/close_individual_replication_batch001.py
+            - make figure1-individual-replication-close-batch001
+          role: >
+            Converts the row-disposition ledger into operational closeout
+            artifacts before the next paper-level search batch. This step
+            freezes exact-pair/result dedupe keys, routes source-blocked
+            candidates to a manual acquisition task table, and emits a
+            batch-002 seed/exclusion table so new searches do not re-pull
+            already promoted, already represented, rejected, unresolved, or
+            manually blocked leads.
+        - id: figure1_individual_replication_batch001_closeout_artifacts
+          kind: generated_artifacts
+          materialized_as:
+            - steps/individual_replication_papers/figure1/individual-paper-manual-acquisition-task-batch001.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-dedupe-baseline-batch001.tsv
+            - steps/individual_replication_papers/figure1/individual-paper-batch002-dedupe-seed.tsv
+            - reports/figure1_individual_replication_batch001_closeout_2026-05-05.md
+          role: >
+            Batch-001 closure artifacts. The manual-acquisition table is the
+            only remaining work queue from the first batch; the dedupe baseline
+            records every screened candidate with its final row-or-not status;
+            and the batch-002 seed table tells the next search pass which
+            exact paper/result pairs to exclude, which ones to leave to manual
+            acquisition, and which ones are rejected under current Figure 1
+            policy.
         - id: clustered_review_worklist_fanout_step
           kind: script_step
           materialized_as:
@@ -3348,6 +4670,117 @@ PROVENANCE_PIPELINE_SINGLE_SOURCE_OF_TRUTH:
           kind: provides_local_bytes
         - from: corpus_result_extraction_step
           to: corpus_result_proposal_artifacts
+          kind: writes
+        - from: source_artifacts_proposal
+          to: figure1_raw_viability_summary_step
+          kind: input_to
+        - from: source_artifact_mirror_sample_artifacts
+          to: figure1_raw_viability_summary_step
+          kind: input_to
+        - from: source_artifact_parser_queue_artifacts
+          to: figure1_raw_viability_summary_step
+          kind: input_to
+        - from: corpus_result_proposal_artifacts
+          to: figure1_raw_viability_summary_step
+          kind: input_to
+        - from: figure1_raw_viability_summary_step
+          to: figure1_raw_viability_summary_artifacts
+          kind: writes
+        - from: corpus_result_proposal_artifacts
+          to: figure1_corpus_dn_check_step
+          kind: input_to
+        - from: figure1_raw_viability_summary_artifacts
+          to: figure1_corpus_dn_check_step
+          kind: informs
+        - from: local_seed_artifacts
+          to: figure1_corpus_dn_check_step
+          kind: input_to
+        - from: local_seed_artifacts
+          to: figure1_gpt_candidate_batch2_mining_step
+          kind: input_to
+        - from: figure1_gpt_candidate_batch2_mining_step
+          to: figure1_gpt_candidate_batch2_mining_artifacts
+          kind: writes
+        - from: figure1_gpt_candidate_batch2_mining_artifacts
+          to: figure1_corpus_dn_check_step
+          kind: input_to
+        - from: local_seed_artifacts
+          to: figure1_remaining_local_mining_step
+          kind: input_to
+        - from: figure1_remaining_local_mining_step
+          to: figure1_remaining_local_mining_artifacts
+          kind: writes
+        - from: figure1_remaining_local_mining_artifacts
+          to: figure1_corpus_dn_check_step
+          kind: input_to
+        - from: local_seed_artifacts
+          to: figure1_research_followup_mirror_step
+          kind: input_to
+        - from: figure1_research_followup_mirror_step
+          to: figure1_research_followup_mirror_artifacts
+          kind: writes
+        - from: figure1_research_followup_mirror_artifacts
+          to: figure1_research_followup_triage_step
+          kind: input_to
+        - from: figure1_research_followup_triage_step
+          to: figure1_research_followup_triage_artifacts
+          kind: writes
+        - from: figure1_corpus_dn_check_step
+          to: figure1_corpus_dn_check_artifacts
+          kind: writes
+        - from: figure1_corpus_dn_check_artifacts
+          to: figure1_replication_pairs_root_step
+          kind: input_to
+        - from: figure1_replication_pairs_root_step
+          to: figure1_replication_pairs_root_artifacts
+          kind: writes
+        - from: figure1_replication_pairs_root_artifacts
+          to: figure1_universe_coverage_diagnostics_step
+          kind: input_to
+        - from: figure1_remaining_local_mining_artifacts
+          to: figure1_universe_coverage_diagnostics_step
+          kind: input_to
+        - from: figure1_research_followup_triage_artifacts
+          to: figure1_universe_coverage_diagnostics_step
+          kind: input_to
+        - from: figure1_universe_coverage_diagnostics_step
+          to: figure1_universe_coverage_diagnostics_artifacts
+          kind: writes
+        - from: figure1_universe_coverage_diagnostics_artifacts
+          to: figure1_rejected_alternate_route_recheck_step
+          kind: input_to
+        - from: figure1_raw_viability_summary_artifacts
+          to: figure1_rejected_alternate_route_recheck_step
+          kind: input_to
+        - from: figure1_remaining_local_mining_artifacts
+          to: figure1_rejected_alternate_route_recheck_step
+          kind: input_to
+        - from: figure1_research_followup_triage_artifacts
+          to: figure1_rejected_alternate_route_recheck_step
+          kind: input_to
+        - from: review_cue_routing_table
+          to: figure1_rejected_alternate_route_recheck_step
+          kind: input_to
+        - from: figure1_rejected_alternate_route_recheck_step
+          to: figure1_rejected_alternate_route_recheck_artifacts
+          kind: writes
+        - from: figure1_replication_pairs_root_artifacts
+          to: figure1_coverage_loss_accounting_step
+          kind: input_to
+        - from: corpora_databases_master_table
+          to: figure1_coverage_loss_accounting_step
+          kind: input_to
+        - from: figure1_raw_viability_summary_artifacts
+          to: figure1_coverage_loss_accounting_step
+          kind: input_to
+        - from: figure1_universe_coverage_diagnostics_artifacts
+          to: figure1_coverage_loss_accounting_step
+          kind: input_to
+        - from: figure1_rejected_alternate_route_recheck_artifacts
+          to: figure1_coverage_loss_accounting_step
+          kind: input_to
+        - from: figure1_coverage_loss_accounting_step
+          to: figure1_coverage_loss_accounting_artifacts
           kind: writes
         - from: pipeline_spec_root_yml
           to: corpora_databases_consolidation_step

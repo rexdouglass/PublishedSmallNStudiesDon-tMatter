@@ -1,0 +1,6 @@
+candidate_key	candidate_name	decision	rows_promoted	mirrored_urls	candidate_rows_found	candidate_rows_passing_larger_n	notes
+forrt_reversals	FORRT Replications and Reversals	not_promoted_candidate_scan_only	0	1	10	8	HTML has narrative entries with some D/N-looking rows, but it overlaps heavily with FReD/current rows and needs dedupe plus field alignment before promotion.
+rct_duplicate	RCT-DUPLICATE RWE emulations	not_promoted_no_public_n_columns	0	4	0	0	Mirrored GitHub CSVs; 3 result/covariate files lack clean original and RWE sample-size columns.
+ying_pilot_full_scale	Ying/Ehrhardt pilot-to-full-scale datasets	not_promoted_request_or_access_only	0	0	0	0	DOI/JHU/JAMA routes were blocked or landing-only here; research suggests data are available on request rather than public D/N table.
+rgb_health_behavior_family	Beets/von Klinggraeff RGB pilot-vs-larger-trial family	not_promoted_no_public_master_table_mirrored	0	4	0	0	Articles/preprint pages confirm pair/effect counts, but this pass did not obtain a public master D/N workbook or CSV.
+scaleup_reviews	Physical activity and nutrition scale-up reviews	not_promoted_context_only	0	1	0	0	Scale-up comparisons are lower-yield and may violate same-estimand rules; no D/N table was promoted.

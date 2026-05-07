@@ -1,0 +1,3643 @@
+{
+  "hitCount": 23,
+  "nextCursorMark": "AoIIP2pqsigzMzYxNjUyNA==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"forest plot\" \"original study\" \"replication\" \"Cohen's d\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIP2pqsigzMzYxNjUyNA==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"forest plot\" \"original study\" \"replication\" \"Cohen's d\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "<h4>Objective</h4>To determine how often meta-analyses of effects of interventions are reproducible.<h4>Design</h4>Meta-research study.<h4>Setting</h4>Systematic reviews with meta-analyses of the effects of health, social, behavioural, or educational interventions indexed in five databases (PubMed, Science Citation Index, Social Sciences Citation Index, Scopus, and Education Collection), 2 November to 2 December 2020.<h4>Population</h4>296 reviews meeting the inclusion criteria formed the overall sample of the study. 175/296 (59%) reviews included a forest plot from Review Manager and were considered inherently reproducible. The remaining 121/296 (41%) reviews constituted the reproduction sample.<h4>Main outcome measures</h4>Original review authors were contacted to obtain meta-analysis data files, and analytic code used to generate the first reported (index) meta-analysis; if not provided, the necessary data and statistical details of the meta-analysis methods were extracted from the review. Two investigators independently reproduced each review's first reported meta-analysis using the original computational steps and analytic code. Meta-analyses were classified as fully reproducible if the difference between the original and reproduced summary estimates and 95% confidence interval (CI) widths was less than 10%. Differences in meta-analysis results were classified as meaningful if there was a change in direction of the summary effect estimate or if the 95% CI included the null, which may alter the interpretation of the results.<h4>Results</h4>22 authors provided data files or analytic code, or both. 104 meta-analyses (86%) were fully reproducible, seven (6%) were not fully reproducible, and 10 (8%) had insufficient data available to attempt reproduction. No meaningful differences were found in the reproduced meta-analytic results that might alter their interpretation (eg, changes in the direction of summary effect estimate or if the 95%\u2009CI included the null).<h4>Conclusions</h4>The findings of the study suggested that the results of meta-analyses could be reliably replicated if the original data or analytic code, or both, could be obtained, or if the necessary data were accessible in the review. Few systematic reviewers responded to requests to share data or code. Making data files and analytic code publicly available will facilitate future investigations of reproducibility.",
+        "affiliation": "Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, VIC, Australia.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8104-474X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0476-3385"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4242-7526"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5880-3792"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2434-4206"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3534-1641"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, VIC, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0476-3385"
+              },
+              "firstName": "Phi-Yen",
+              "fullName": "Nguyen PY",
+              "initials": "PY",
+              "lastName": "Nguyen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, VIC, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3534-1641"
+              },
+              "firstName": "Joanne E",
+              "fullName": "McKenzie JE",
+              "initials": "JE",
+              "lastName": "McKenzie"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, VIC, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5880-3792"
+              },
+              "firstName": "Zainab",
+              "fullName": "Alqaidoom Z",
+              "initials": "Z",
+              "lastName": "Alqaidoom"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, VIC, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8104-474X"
+              },
+              "firstName": "Daniel G",
+              "fullName": "Hamilton DG",
+              "initials": "DG",
+              "lastName": "Hamilton"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Journalology, Methodological and Implementation Research Program, Ottawa Hospital Research Institute, Ottawa, ON, Canada."
+                  },
+                  {
+                    "affiliation": "School of Epidemiology and Public Health, University of Ottawa Faculty of Medicine, Ottawa, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2434-4206"
+              },
+              "firstName": "David",
+              "fullName": "Moher D",
+              "initials": "D",
+              "lastName": "Moher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Methods in Evidence Synthesis Unit, School of Public Health and Preventive Medicine, Monash University, Melbourne, VIC, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4242-7526"
+              },
+              "firstName": "Matthew J",
+              "fullName": "Page MJ",
+              "initials": "MJ",
+              "lastName": "Page"
+            }
+          ]
+        },
+        "authorString": "Nguyen PY, McKenzie JE, Alqaidoom Z, Hamilton DG, Moher D, Page MJ.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-12-10",
+        "dateOfCreation": "2025-12-10",
+        "dateOfRevision": "2025-12-12",
+        "doi": "10.1136/bmjmed-2025-002024",
+        "electronicPublicationDate": "2025-11-30",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-11",
+        "firstPublicationDate": "2025-11-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12684188"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1136/bmjmed-2025-002024"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12684188"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12684188?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Health and Medical Research Council",
+              "grantId": "GNT2009612",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Health and Medical Research Council",
+              "grantId": "GNT2033917",
+              "orderIn": 0
+            },
+            {
+              "agency": "Australian Research Council",
+              "grantId": "DE200101618",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41368128",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "issue": "1",
+          "journal": {
+            "essn": "2754-0413",
+            "isoabbreviation": "BMJ Med",
+            "issn": "2754-0413",
+            "medlineAbbreviation": "BMJ Med",
+            "nlmid": "9918487584306676",
+            "title": "BMJ medicine"
+          },
+          "journalIssueId": 3944873,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "4",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Systematic review",
+            "Public Health"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "e002024",
+        "pmcid": "PMC12684188",
+        "pmid": "41368128",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Reproducibility of meta-analytic results in systematic reviews of interventions: meta-research study."
+      },
+      {
+        "abstractText": "<h4>Rationale</h4>Alzheimer's disease is a neurodegenerative disorder and the most common cause of dementia. Aggregated amyloid-beta protein deposits are implicated in its pathogenesis. Amyloid-beta-targeting monoclonal antibodies (sometimes represented as A\u03b2-mAbs) are potentially disease-modifying for Alzheimer's disease: through the clearance of amyloid in the brain, they may slow cognitive and functional decline.<h4>Objectives</h4>To assess the clinical benefits and harms of amyloid-beta-targeting monoclonal antibodies aducanumab, bapineuzumab, crenezumab, donanemab, gantenerumab, lecanemab, ponezumab, remternetug, and solanezumab in people with mild cognitive impairment or mild dementia due to Alzheimer's disease.<h4>Search methods</h4>We searched CENTRAL, MEDLINE (PubMed), Embase, and two clinical trials registries (Clinicaltrials.gov and WHO International Clinical Trials Registry Platform), and we undertook reference checking and citation research. The most recent search date was 7 August 2025.<h4>Eligibility criteria</h4>We included randomised controlled trials (RCTs) that lasted at least 12 months and compared amyloid-beta-targeting monoclonal antibodies with placebo or no treatment in people with mild cognitive impairment or mild dementia due to Alzheimer's disease. We included both parallel-group and cluster designs.<h4>Outcomes</h4>Our outcomes of critical importance were: cognitive function; dementia severity; functional ability; any amyloid-related imaging abnormality (ARIA), which includes oedema (E) and haemorrhage (H); any symptomatic ARIA E and H; symptomatic brain haemorrhage; serious adverse events; and any-cause mortality. We analysed data at 12, 18, 24, and over 24 months of treatment.<h4>Risk of bias</h4>We used the Cochrane risk of bias tool RoB 2 to assess the risk of bias in outcomes of critical importance.<h4>Synthesis methods</h4>We meta-analysed results for each outcome within each comparison using the inverse variance method and the random-effects model. We used GRADE to assess the certainty of evidence for each outcome as very low, low, moderate, or high.<h4>Included studies</h4>Overall, we included 17 studies with 20,342 participants. The mean age of participants in the studies ranged from 70 to 74 years. Seven studies enroled only participants with mild dementia, and one study enroled only participants with mild cognitive impairment. The remaining studies included a mixed population. The mean duration of participants' cognitive impairment ranged from 17 to 52 months. The 17 studies assessed seven different amyloid-beta-targeting monoclonal antibodies: aducanumab (n = 3), bapineuzumab (n = 4), crenezumab (n = 2), donanemab (n = 1), gantenerumab (n = 4), lecanemab (n = 1), and solanezumab (n = 2). All used placebo as a comparison. Eleven studies lasted 18 months, four lasted 24 months, and two lasted more than 24 months. All studies were funded by the pharmaceutical industry.<h4>Synthesis of results</h4>Below, we report the results of the studies at 18 months. Cognitive function Compared to placebo, amyloid-beta-targeting monoclonal antibodies probably result in little to no difference in cognitive function as measured by the ADAS-Cog (Alzheimer's Disease Assessment Scale-Cognitive) scale (standardised mean difference (SMD) -0.11, 95% confidence interval (CI) -0.16 to -0.06; 13 studies, 9895 participants; moderate certainty). Dementia severity Amyloid-beta-targeting monoclonal antibodies may result in little to no difference in dementia severity as measured by the CDR-SB (Clincal Dementia Rating Sum of Boxes) scale (SMD -0.12, 95% CI -0.24 to -0.00; 9 studies, 8053 participants; low certainty). Functional ability Amyloid-beta-targeting monoclonal antibodies probably result in little to no difference in functional ability as measured on the ADCS-ADL (Alzheimer's Disease Cooperative Study - Activities of Daily Living) scale (SMD 0.09, 95% CI 0.03 to 0.16; 3 studies, 3478 participants; moderate certainty) and may result in a small increase in functional ability if measured with the ADCS-iADL (Alzheimer's Disease Cooperative Study-Instrumental Activities of Daily Living) scale (SMD 0.21, 95% CI 0.10 to 0.32; 1 study, 1252 participants; low certainty) or ADCS-ADL-MCI (Alzheimer's Disease Cooperative Study - Activities of Daily Living for Mild Cognitive Impairment) scale (SMD 0.23, 95% CI 0.12 to 0.33; 4 studies, 2802 participants; low certainty). Adverse events Amyloid-beta-targeting monoclonal antibodies probably result in a small increase in the occurrence of any ARIA E (ARD (absolute risk difference) 107 more per 1000, 95% CI 77 more to 148 more; 11 studies, 13,595 participants; moderate certainty) and probably little to no difference in symptomatic ARIA E (ARD 29 more per 1000, 95% CI 22 more to 38 more; 2 studies, 3522 participants; moderate certainty) or symptomatic ARIA H (ARD 4 more per 1000, 95% CI 1 fewer to 31 more; 1 study, 1795 participants; moderate certainty). Three studies assessing any ARIA H showed heterogeneous results (I<sup>2</sup> = 81%), which prevented pooled analysis. At 18 months, amyloid-beta-targeting monoclonal antibodies do not increase serious adverse events (ARD 6 more events per 1000, 95% CI 10 fewer to 26 more; 9 studies, 11,904 participants; high certainty) or overall mortality (ARD 2 more events per 1000, 95% CI 3 fewer to 11 more; 7 studies, 9733 participants; high certainty). We judged the overall risk of bias as low for the outcomes of serious adverse events and mortality. We had some concerns about the overall risk of bias for efficacy outcomes, mainly due to the risk of functional unblinding (i.e. participants and investigators correctly guessing whether a participant is receiving the active drug or placebo because of noticeable side effects).<h4>Authors' conclusions</h4>The effect of amyloid-beta-targeting monoclonal antibodies on cognitive function and dementia severity at 18 months in people with mild cognitive impairment or mild dementia due to Alzheimer's disease is trivial, while on functional ability, it is small at best. Amyloid-beta-targeting monoclonal antibodies increase the risk of amyloid-related imaging abnormalities. Both desirable outcomes and adverse events were inconsistently reported in the studies included in the review. Successful removal of amyloid from the brain does not seem to be associated with clinically meaningful effects in people with mild cognitive impairment or mild dementia due to Alzheimer's disease. Future research on disease-modifying treatments for Alzheimer's disease should focus on other mechanisms of action.<h4>Funding</h4>This Cochrane review was funded in part by the Drug and Medical Devices Governance Area, Regione Emilia-Romagna, Bologna, Italy. The publication of this article was supported by \"Ricerca Corrente\" funding from the Italian Ministry of Health.<h4>Registration</h4>Protocol (2025): PROSPERO registration number CRD420251114325.",
+        "affiliation": "Unit of Epidemiology and Statistics, IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3601-6381"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0002-3210-2872"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Unit of Epidemiology and Statistics, IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3601-6381"
+              },
+              "firstName": "Francesco",
+              "fullName": "Nonino F",
+              "initials": "F",
+              "lastName": "Nonino"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Methodology of Systematic Reviews and Guidelines production, Department of Experimental Oncology, Istituto di Ricerche Farmacologiche Mario Negri IRCCS, Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Silvia",
+              "fullName": "Minozzi S",
+              "initials": "S",
+              "lastName": "Minozzi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "U.O.C. Clinica Neurologica Rete Metropolitana (NeuroMet), IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy."
+                  }
+                ]
+              },
+              "firstName": "Luisa",
+              "fullName": "Sambati L",
+              "initials": "L",
+              "lastName": "Sambati"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medical and Surgical Sciences for Children and Adults, University of Modena and Reggio Emilia, Modena, Italy."
+                  },
+                  {
+                    "affiliation": "Institute of Primary Health Care (BIHAM), University of Bern, Bern, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Cinzia",
+              "fullName": "Del Giovane C",
+              "initials": "C",
+              "lastName": "Del Giovane"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Unit of Epidemiology and Statistics, IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy."
+                  }
+                ]
+              },
+              "firstName": "Elisa",
+              "fullName": "Baldin E",
+              "initials": "E",
+              "lastName": "Baldin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Medical Library, Azienda USL - IRCCS di Reggio Emilia, Reggio Emilia, Italy."
+                  }
+                ]
+              },
+              "firstName": "Maria Chiara",
+              "fullName": "Bassi MC",
+              "initials": "MC",
+              "lastName": "Bassi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Unit of Epidemiology and Statistics, IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0002-3210-2872"
+              },
+              "firstName": "Claudia",
+              "fullName": "De Santis C",
+              "initials": "C",
+              "lastName": "De Santis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Methodology of Systematic Reviews and Guidelines production, Department of Experimental Oncology, Istituto di Ricerche Farmacologiche Mario Negri IRCCS, Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Marien",
+              "fullName": "Gonzalez-Lorenzo M",
+              "initials": "M",
+              "lastName": "Gonzalez-Lorenzo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Unit of Epidemiology and Statistics, IRCCS Istituto delle Scienze Neurologiche di Bologna, Bologna, Italy."
+                  }
+                ]
+              },
+              "firstName": "Luca",
+              "fullName": "Vignatelli L",
+              "initials": "L",
+              "lastName": "Vignatelli"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Independent Researcher, Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Graziella",
+              "fullName": "Filippini G",
+              "initials": "G",
+              "lastName": "Filippini"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, Radboud University Medical Centre, Nijmegen, Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Public & Occupational Health, Amsterdam University Medical Centre, University of Amsterdam, Amsterdam, Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Edo",
+              "fullName": "Richard E",
+              "initials": "E",
+              "lastName": "Richard"
+            }
+          ]
+        },
+        "authorString": "Nonino F, Minozzi S, Sambati L, Del Giovane C, Baldin E, Bassi MC, De Santis C, Gonzalez-Lorenzo M, Vignatelli L, Filippini G, Richard E.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Antibodies, Monoclonal",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Amyloid beta-Peptides",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antibodies, Monoclonal, Humanized",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-04-15",
+        "dateOfCreation": "2026-04-15",
+        "dateOfRevision": "2026-04-17",
+        "doi": "10.1002/14651858.cd016297",
+        "electronicPublicationDate": "2026-04-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-16",
+        "firstPublicationDate": "2026-04-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13082890"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/14651858.CD016297"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13082890"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13082890?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41985900",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "journal": {
+            "essn": "1469-493X",
+            "isoabbreviation": "Cochrane Database Syst Rev",
+            "issn": "1469-493X",
+            "medlineAbbreviation": "Cochrane Database Syst Rev",
+            "nlmid": "100909747",
+            "title": "The Cochrane database of systematic reviews"
+          },
+          "journalIssueId": 4166601,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "4",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Alzheimer Disease",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Antibodies, Monoclonal",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Amyloid beta-Peptides",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "antagonists & inhibitors"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Antibodies, Monoclonal, Humanized",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Cognitive Dysfunction",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "CD016297",
+        "pmcid": "PMC13082890",
+        "pmid": "41985900",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Meta-Analysis",
+            "Systematic Review",
+            "systematic-review",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Amyloid-beta-targeting monoclonal antibodies for people with mild cognitive impairment or mild dementia due to Alzheimer's disease."
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Parkinson's disease (PD) is becoming more prevalent, highlighting the urgency of developing treatments to minimize its effects on muscular strength and physical function. Power training (PT) is a potential approach that may improve endurance and muscular power, essential for maintaining functional ability in PD.<h4>Objective</h4>To compare the effect of PT versus control or other physical activity (PA) interventions on physical functional performance (PFP) in PD patients.<h4>Methods</h4>We searched PubMed, MEDLINE, Embase, LILACS, PEDro, Cochrane Library, and Scopus. Inclusion criteria were randomized controlled trials comparing PT to a control group or another PA intervention in PD patients. PFP was the primary outcome. Pooled effect estimates were calculated from baseline to endpoint scores.<h4>Results</h4>From 21,558 results, four studies were included in the meta-analysis due to their moderate to high methodological quality. PT showed no significant effect on PFP outcomes compared to control groups (TUG: ES, -0.281; 95% CI, -0.693 to 0.130; P = 0.180; I2:0%; PWS: ES, 0.748; 95% CI, -0.768 to 2.265; P = 0.333; I2:88%; FWS: ES, 0.420; 95% CI, -0.950 to 1.791; P = 0.548; I2:83%; SLS: ES, 0.161; 95% CI, -0.332 to 0.655; P = 0.521; I2:0%). No differences were found between PT and alternative interventions (TUG: ES, 0.132; 95% CI, -0.394 to 0.657; P = 0.623; I2:0%; BBA: ES, 0.057; 95% CI, -0.430 to 0.544; P = 0.820; I2:0%).<h4>Conclusion</h4>PT did not improve PFP compared to control or alternative interventions. More studies are needed to explore PT effects (e.g., higher volume, intensity, and combined types) in PD patients.",
+        "affiliation": "Clinical Research Unit, Hospital Universit\u00e1rio Walter Cant\u00eddio, Universidade Federal do Cear\u00e1, Fortaleza, Ceara, Brazil.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6174-1839"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6248-5590"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7698-0621"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9186-9243"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4591-727X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Unit, Hospital Universit\u00e1rio Walter Cant\u00eddio, Universidade Federal do Cear\u00e1, Fortaleza, Ceara, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6174-1839"
+              },
+              "firstName": "Samuel Brito",
+              "fullName": "de Almeida SB",
+              "initials": "SB",
+              "lastName": "de Almeida"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Unit, Hospital Universit\u00e1rio Walter Cant\u00eddio, Universidade Federal do Cear\u00e1, Fortaleza, Ceara, Brazil."
+                  }
+                ]
+              },
+              "firstName": "Emmanuelle Silva",
+              "fullName": "Tavares Sobreira ES",
+              "initials": "ES",
+              "lastName": "Tavares Sobreira"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Graduate Program in Epidemiology, University of Pelotas, Pelotas, Rio Grande do Sul, Brazil."
+                  }
+                ]
+              },
+              "firstName": "Charles Phillipe",
+              "fullName": "de Lucena Alves CP",
+              "initials": "CP",
+              "lastName": "de Lucena Alves"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Unit, Hospital Universit\u00e1rio Walter Cant\u00eddio, Universidade Federal do Cear\u00e1, Fortaleza, Ceara, Brazil."
+                  },
+                  {
+                    "affiliation": "Medical School of Universidade de Fortaleza, Universidade de Fortaleza, Fortaleza, Ceara, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4591-727X"
+              },
+              "firstName": "Danielle Pessoa",
+              "fullName": "Lima DP",
+              "initials": "DP",
+              "lastName": "Lima"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Unit, Hospital Universit\u00e1rio Walter Cant\u00eddio, Universidade Federal do Cear\u00e1, Fortaleza, Ceara, Brazil."
+                  }
+                ]
+              },
+              "firstName": "Janine",
+              "fullName": "de Carvalho Bonfadini J",
+              "initials": "J",
+              "lastName": "de Carvalho Bonfadini"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Neurology, Federal University of Cear\u00e1, Fortaleza, Ceara, Brazil."
+                  }
+                ]
+              },
+              "firstName": "Manoel Alves",
+              "fullName": "Sobreira-Neto MA",
+              "initials": "MA",
+              "lastName": "Sobreira-Neto"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry, Federal University of S\u00e3o Paulo, S\u00e3o Paulo, Brazil."
+                  }
+                ]
+              },
+              "firstName": "Thiago Holanda",
+              "fullName": "Freitas TH",
+              "initials": "TH",
+              "lastName": "Freitas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Therapy, Federal University of Ceara, Fortaleza, Cear\u00e1, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6248-5590"
+              },
+              "firstName": "Simony Lira",
+              "fullName": "do Nascimento SL",
+              "initials": "SL",
+              "lastName": "do Nascimento"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Neurology, Federal University of Cear\u00e1, Fortaleza, Ceara, Brazil."
+                  },
+                  {
+                    "affiliation": "Center of Health Sciences, State University of Cear\u00e1, Fortaleza, Cear\u00e1, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9186-9243"
+              },
+              "firstName": "Pedro",
+              "fullName": "Braga-Neto P",
+              "initials": "P",
+              "lastName": "Braga-Neto"
+            }
+          ]
+        },
+        "authorString": "de Almeida SB, Tavares Sobreira ES, de Lucena Alves CP, Lima DP, de Carvalho Bonfadini J, Sobreira-Neto MA, Freitas TH, do Nascimento SL, Braga-Neto P.",
+        "citedByCount": 2,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-02-04",
+        "dateOfCreation": "2025-02-04",
+        "dateOfRevision": "2025-06-05",
+        "doi": "10.1371/journal.pone.0314058",
+        "electronicPublicationDate": "2025-02-04",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-02-05",
+        "firstPublicationDate": "2025-02-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11793793"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0314058"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11793793"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11793793?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "39903686",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "issue": "2",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 3895917,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "20",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Parkinson Disease",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiopathology"
+                  },
+                  {
+                    "abbreviation": "RH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "rehabilitation"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Muscle Strength",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Resistance Training",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Physical Functional Performance",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0314058",
+        "pmcid": "PMC11793793",
+        "pmid": "39903686",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "Meta-Analysis",
+            "research-article",
+            "Systematic Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Effect of power training on physical functional performance of patients with Parkinson's disease: A systematic review and meta-analysis of randomized controlled trials."
+      },
+      {
+        "abstractText": "It has often been reported that mental exertion, presumably leading to mental fatigue, can negatively affect exercise performance; however, recent findings have questioned the strength of the effect. To further complicate this issue, an overlooked problem might be the presence of publication bias in studies using underpowered designs, which is known to inflate false positive report probability and effect size estimates. Altogether, the presence of bias is likely to reduce the evidential value of the published literature on this topic, although it is unknown to what extent. The purpose of the current work was to assess the evidential value of studies published to date on the effect of mental exertion on exercise performance by assessing the presence of publication bias and the observed statistical power achieved by these studies. A traditional meta-analysis revealed a Cohen's d<sub>z</sub> effect size of -\u20090.54, 95% CI [-\u20090.68, -\u20090.40], p\u2009<\u2009.001. However, when we applied methods for estimating and correcting for publication bias (based on funnel plot asymmetry and observed p-values), we found that the bias-corrected effect size became negligible with most of publication-bias methods and decreased to -\u20090.36 in the more optimistic of all the scenarios. A robust Bayesian meta-analysis found strong evidence in favor of publication bias, BF<sub>pb</sub>\u2009>\u20091000, and inconclusive evidence in favor of the effect, adjusted d<sub>z</sub>\u2009=\u20090.01, 95% CrI [-\u20090.46, 0.37], BF<sub>10</sub>\u2009=\u20090.90. Furthermore, the median observed statistical power assuming the unadjusted meta-analytic effect size (i.e., -\u20090.54) as the true effect size was 39% (min\u2009=\u200919%, max\u2009=\u200996%), indicating that, on average, these studies only had a 39% chance of observing a significant result if the true effect was Cohen's d<sub>z</sub>\u2009=\u2009-\u20090.54. If the more optimistic adjusted effect size (-\u20090.36) was assumed as the true effect, the median statistical power was just 20%. We conclude that the current literature is a useful case study for illustrating the dangers of conducting underpowered studies to detect the effect size of interest.",
+        "affiliation": "Department of Experimental Psychology, and Mind, Brain and Behavior Research Center, University of Granada, Granada, Spain. darias.holgado@unil.ch.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3211-8006"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental Psychology, and Mind, Brain and Behavior Research Center, University of Granada, Granada, Spain. darias.holgado@unil.ch."
+                  },
+                  {
+                    "affiliation": "Institute of Sport Sciences, University of Lausanne, Quartier UNIL-Centre, B\u00e2timent Synathlon, Lausanne, Switzerland. darias.holgado@unil.ch."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3211-8006"
+              },
+              "firstName": "Dar\u00edas",
+              "fullName": "Holgado D",
+              "initials": "D",
+              "lastName": "Holgado"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre of Applied Science for Health, Technological University Dublin, Tallaght, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Cristian",
+              "fullName": "Mesquida C",
+              "initials": "C",
+              "lastName": "Mesquida"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental Psychology, and Mind, Brain and Behavior Research Center, University of Granada, Granada, Spain."
+                  }
+                ]
+              },
+              "firstName": "Rafael",
+              "fullName": "Rom\u00e1n-Caballero R",
+              "initials": "R",
+              "lastName": "Rom\u00e1n-Caballero"
+            }
+          ]
+        },
+        "authorString": "Holgado D, Mesquida C, Rom\u00e1n-Caballero R.",
+        "citedByCount": 11,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2023-11-30",
+        "dateOfCreation": "2023-09-08",
+        "dateOfRevision": "2025-07-03",
+        "doi": "10.1007/s40279-023-01926-w",
+        "electronicPublicationDate": "2023-09-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-09-09",
+        "firstPublicationDate": "2023-09-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10687172"
+          ]
+        },
+        "fullTextReceivedDate": "2023-12-04",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://link.springer.com/content/pdf/10.1007/s40279-023-01926-w.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s40279-023-01926-w"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10687172"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10687172?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Ministerio de Ciencia e Innovaci\u00f3n",
+              "orderIn": 0
+            },
+            {
+              "agency": "Technological University Dublin",
+              "grantId": "PTUD2002",
+              "orderIn": 0
+            },
+            {
+              "agency": "University of Lausanne",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37682411",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2023 Dec",
+          "issue": "12",
+          "journal": {
+            "essn": "1179-2035",
+            "isoabbreviation": "Sports Med",
+            "issn": "0112-1642",
+            "medlineAbbreviation": "Sports Med",
+            "nlmid": "8412297",
+            "title": "Sports medicine (Auckland, N.Z.)"
+          },
+          "journalIssueId": 3670320,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2023-12-01",
+          "volume": "53",
+          "yearOfPublication": 2023
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Bayes Theorem",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mental Fatigue",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Publication Bias",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2293-2307",
+        "pmcid": "PMC10687172",
+        "pmid": "37682411",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Meta-Analysis",
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2023",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Assessing the Evidential Value of Mental Fatigue and Exercise Research."
+      },
+      {
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Health and Rehabilitation University College Absalon"
+                  },
+                  {
+                    "affiliation": "Center for Muscle and Joint Health, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  }
+                ]
+              },
+              "firstName": "Kasper",
+              "fullName": "B\u00fclow K",
+              "initials": "K",
+              "lastName": "B\u00fclow"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Muscle and Joint Health, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  },
+                  {
+                    "affiliation": "Research Unit for Musculoskeletal Function and Physiotherapy, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  },
+                  {
+                    "affiliation": "The Research and Implementation Unit PROgrez, Department of Physiotherapy and Occupational Therapy N\u00e6stved-Slagelse-Ringsted Hospitals"
+                  }
+                ]
+              },
+              "firstName": "Alessio",
+              "fullName": "Bricca A",
+              "initials": "A",
+              "lastName": "Bricca"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Muscle and Joint Health, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  },
+                  {
+                    "affiliation": "The Research and Implementation Unit PROgrez, Department of Physiotherapy and Occupational Therapy N\u00e6stved-Slagelse-Ringsted Hospitals"
+                  }
+                ]
+              },
+              "firstName": "S\u00f8ren T",
+              "fullName": "Skou S",
+              "initials": "S",
+              "lastName": "Skou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Muscle and Joint Health, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  },
+                  {
+                    "affiliation": "Chiropractic Knowledge Hub"
+                  }
+                ]
+              },
+              "firstName": "Jan",
+              "fullName": "Hartvigsen J",
+              "initials": "J",
+              "lastName": "Hartvigsen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Muscle and Joint Health, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  },
+                  {
+                    "affiliation": "Chiropractic Knowledge Hub"
+                  }
+                ]
+              },
+              "firstName": "Alice",
+              "fullName": "Kongsted A",
+              "initials": "A",
+              "lastName": "Kongsted"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Muscle and Joint Health, Department of Sports Science and Clinical Biomechanics University of Southern Denmark"
+                  },
+                  {
+                    "affiliation": "Department of Physiotherapy and Occupational Therapy Copenhagen University Hospital"
+                  }
+                ]
+              },
+              "firstName": "Carsten B",
+              "fullName": "Juhl C",
+              "initials": "C",
+              "lastName": "Juhl"
+            }
+          ]
+        },
+        "authorString": "B\u00fclow K, Bricca A, Skou S, Hartvigsen J, Kongsted A, Juhl C.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCreation": "2025-02-04",
+        "dateOfRevision": "2026-02-14",
+        "electronicPublicationDate": "2024-01-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-03-15",
+        "firstPublicationDate": "2024-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10929355"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-04",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10929355/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10929355/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10929355"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10929355?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC10929355",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2024 Jan",
+          "issue": "3",
+          "journal": {
+            "essn": "1469-493X",
+            "isoabbreviation": "Cochrane Database Syst Rev",
+            "issn": "1469-493X",
+            "medlineAbbreviation": "Cochrane Database Syst Rev",
+            "nlmid": "100909747",
+            "title": "The Cochrane database of systematic reviews"
+          },
+          "journalIssueId": 3733141,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2024-01-01",
+          "volume": "2024",
+          "yearOfPublication": 2024
+        },
+        "language": "eng",
+        "nihAuthMan": "N",
+        "pmcid": "PMC10929355",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "systematic-review",
+            "Review"
+          ]
+        },
+        "pubYear": "2024",
+        "source": "PMC",
+        "title": "General strengthening exercise for chronic low back pain"
+      },
+      {
+        "abstractText": "<b>Introduction:</b> Publications arguing against the null hypothesis significance testing (NHST) procedure and in favor of good statistical practices have increased. The most frequently mentioned alternatives to NHST are effect size statistics (ES), confidence intervals (CIs), and meta-analyses. A recent survey conducted in Spain found that academic psychologists have poor knowledge about effect size statistics, confidence intervals, and graphic displays for meta-analyses, which might lead to a misinterpretation of the results. In addition, it also found that, although the use of ES is becoming generalized, the same thing is not true for CIs. Finally, academics with greater knowledge about ES statistics presented a profile closer to good statistical practice and research design. Our main purpose was to analyze the extension of these results to a different geographical area through a replication study. <b>Methods:</b> For this purpose, we elaborated an on-line survey that included the same items as the original research, and we asked academic psychologists to indicate their level of knowledge about ES, their CIs, and meta-analyses, and how they use them. The sample consisted of 159 Italian academic psychologists (54.09% women, mean age of 47.65 years). The mean number of years in the position of professor was 12.90 (<i>SD</i> = 10.21). <b>Results:</b> As in the original research, the results showed that, although the use of effect size estimates is becoming generalized, an under-reporting of CIs for ES persists. The most frequent ES statistics mentioned were Cohen's <i>d</i> and R<sup>2</sup>/\u03b7<sup>2</sup>, which can have outliers or show non-normality or violate statistical assumptions. In addition, academics showed poor knowledge about meta-analytic displays (e.g., forest plot and funnel plot) and quality checklists for studies. Finally, academics with higher-level knowledge about ES statistics seem to have a profile closer to good statistical practices. <b>Conclusions:</b> Changing statistical practice is not easy.This change requires statistical training programs for academics, both graduate and undergraduate.",
+        "affiliation": "Departament de Metodologia de les Ci\u00e8ncies del Comportament, Universitat de Val\u00e8ncia, Valencia, Spain.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6839-7484"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7722-9263"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8457-6554"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4298-1313"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departament de Metodologia de les Ci\u00e8ncies del Comportament, Universitat de Val\u00e8ncia, Valencia, Spain."
+                  }
+                ]
+              },
+              "firstName": "Laura",
+              "fullName": "Badenes-Ribera L",
+              "initials": "L",
+              "lastName": "Badenes-Ribera"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departament de Metodologia de les Ci\u00e8ncies del Comportament, Universitat de Val\u00e8ncia, Valencia, Spain."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4298-1313"
+              },
+              "firstName": "Dolores",
+              "fullName": "Frias-Navarro D",
+              "initials": "D",
+              "lastName": "Frias-Navarro"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Psicologia, Universit\u00e0 degli Studi di Torino, Turin, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6839-7484"
+              },
+              "firstName": "Nathalie O",
+              "fullName": "Iotti NO",
+              "initials": "NO",
+              "lastName": "Iotti"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departament de Metodologia de les Ci\u00e8ncies del Comportament, Universitat de Val\u00e8ncia, Valencia, Spain."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7722-9263"
+              },
+              "firstName": "Amparo",
+              "fullName": "Bonilla-Campos A",
+              "initials": "A",
+              "lastName": "Bonilla-Campos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dipartimento di Psicologia, Universit\u00e0 degli Studi di Torino, Turin, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8457-6554"
+              },
+              "firstName": "Claudio",
+              "fullName": "Longobardi C",
+              "initials": "C",
+              "lastName": "Longobardi"
+            }
+          ]
+        },
+        "authorString": "Badenes-Ribera L, Frias-Navarro D, Iotti NO, Bonilla-Campos A, Longobardi C.",
+        "citedByCount": 2,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2018-07-11",
+        "dateOfRevision": "2020-10-01",
+        "doi": "10.3389/fpsyg.2018.00996",
+        "electronicPublicationDate": "2018-06-22",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2018-07-11",
+        "firstPublicationDate": "2018-06-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6024681"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-11",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fpsyg.2018.00996"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6024681"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6024681?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "29988476",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2018 ",
+          "journal": {
+            "essn": "1664-1078",
+            "isoabbreviation": "Front Psychol",
+            "issn": "1664-1078",
+            "medlineAbbreviation": "Front Psychol",
+            "nlmid": "101550902",
+            "title": "Frontiers in psychology"
+          },
+          "journalIssueId": 2645273,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2018-01-01",
+          "volume": "9",
+          "yearOfPublication": 2018
+        },
+        "keywordList": {
+          "keyword": [
+            "Confidence interval",
+            "Meta-analysis",
+            "Education",
+            "Effect Size",
+            "Survey Study"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "996",
+        "pmcid": "PMC6024681",
+        "pmid": "29988476",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2018",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Perceived Statistical Knowledge Level and Self-Reported Statistical Practice Among Academic Psychologists."
+      },
+      {
+        "affiliation": "Australian Council for Educational Research Camberwell Victoria Australia.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4034-9157"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5638-1653"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6256-7104"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8256-7013"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8414-4209"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1682-5384"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Council for Educational Research Camberwell Victoria Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1682-5384"
+              },
+              "firstName": "Kylie",
+              "fullName": "Hillman K",
+              "initials": "K",
+              "lastName": "Hillman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Council for Educational Research Adelaide South Australia Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5638-1653"
+              },
+              "firstName": "Katherine",
+              "fullName": "Dix K",
+              "initials": "K",
+              "lastName": "Dix"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Council for Educational Research Adelaide South Australia Australia."
+                  }
+                ]
+              },
+              "firstName": "Kashfee",
+              "fullName": "Ahmed K",
+              "initials": "K",
+              "lastName": "Ahmed"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Council for Educational Research Adelaide South Australia Australia."
+                  }
+                ]
+              },
+              "firstName": "Petra",
+              "fullName": "Lietz P",
+              "initials": "P",
+              "lastName": "Lietz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Council for Educational Research Camberwell Victoria Australia."
+                  }
+                ]
+              },
+              "firstName": "Jenny",
+              "fullName": "Trevitt J",
+              "initials": "J",
+              "lastName": "Trevitt"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Australian Council for Educational Research Camberwell Victoria Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8256-7013"
+              },
+              "firstName": "Elizabeth",
+              "fullName": "O'Grady E",
+              "initials": "E",
+              "lastName": "O'Grady"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Child and Adolescent Psychiatry, Stanford Autism Center, Department of Psychiatry and Behavioral Sciences, School of Medicine Stanford University Palo Alto California."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8414-4209"
+              },
+              "firstName": "Mirko",
+              "fullName": "Uljarevi\u0107 M",
+              "initials": "M",
+              "lastName": "Uljarevi\u0107"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "A. J. Drexel Autism Institute Dornsife School of Public Health, Drexel University Philadelphia Pennsylvania."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4034-9157"
+              },
+              "firstName": "Giacomo",
+              "fullName": "Vivanti G",
+              "initials": "G",
+              "lastName": "Vivanti"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Olga Tennison Autism Research Centre, School of Psychology and Public Health, College of Science, Health and Engineering LaTrobe University Bundoora Victoria Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6256-7104"
+              },
+              "firstName": "Darren",
+              "fullName": "Hedley D",
+              "initials": "D",
+              "lastName": "Hedley"
+            }
+          ]
+        },
+        "authorString": "Hillman K, Dix K, Ahmed K, Lietz P, Trevitt J, O'Grady E, Uljarevi\u0107 M, Vivanti G, Hedley D.",
+        "citedByCount": 10,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2023-05-03",
+        "dateOfRevision": "2023-12-07",
+        "doi": "10.1002/cl2.1086",
+        "electronicPublicationDate": "2020-05-05",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-05-03",
+        "firstPublicationDate": "2020-05-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8356281"
+          ]
+        },
+        "fullTextReceivedDate": "2023-05-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/cl2.1086"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8356281"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC8356281?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37131419",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2020 Jun",
+          "issue": "2",
+          "journal": {
+            "essn": "1891-1803",
+            "isoabbreviation": "Campbell Syst Rev",
+            "issn": "1891-1803",
+            "medlineAbbreviation": "Campbell Syst Rev",
+            "nlmid": "9918227275506676",
+            "title": "Campbell systematic reviews"
+          },
+          "journalIssueId": 3556507,
+          "monthOfPublication": 6,
+          "printPublicationDate": "2020-06-01",
+          "volume": "16",
+          "yearOfPublication": 2020
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "e1086",
+        "pmcid": "PMC8356281",
+        "pmid": "37131419",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2020",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Interventions for anxiety in mainstream school-aged children with autism spectrum disorder: A systematic review."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Young people who fail to develop language as expected face significant challenges in all aspects of life. Unfortunately, language disorders are common, either as a distinct condition (e.g., Developmental Language Disorder) or as a part of another neurodevelopmental condition (e.g., autism). Finding ways to attenuate language problems through intervention has the potential to yield great benefits not only for the individual but also for society as a whole.<h4>Objectives</h4>This meta-analytic review examined the effect of oral language interventions for children with neurodevelopmental disorders.<h4>Search methods</h4>The last electronic search was conducted in April 2022.<h4>Selection criteria</h4>Intervention studies had to target language skills for children from 2 to 18 years of age with Developmental Language Disorder, autism, intellectual disability, Down syndrome, Fragile X syndrome, and Williams syndrome in randomised controlled trials or quasi-experimental designs. Control groups had to include business-as-usual, waiting list, passive or active conditions. However, we excluded studies in which the active control group received a different type, delivery, or dosage of another language intervention. Eligible interventions implemented explicit and structured activities (i.e., explicit instruction of vocabulary, narrative structure or grammatical rules) and/or implicit and broad activities (i.e., shared book reading, general language stimulation). The intervention studies had to assess language skills in receptive and/or expressive modalities.<h4>Data collection and analysis</h4>The search provided 8195 records after deduplication. Records were screened by title and abstract, leading to full-text examinations of 448 records. We performed Correlated and Hierarchical Effects models and ran a retrospective power analysis via simulation. Publication bias was assessed via <i>p</i>-curve and precision-effect estimate.<h4>Main results</h4>We examined 38 studies, with 46 group comparisons and 108 effects comparing pre-/post-tests and eight studies, with 12 group comparisons and 21 effects at follow-up. The results showed a mean effect size of <i>d</i>\u2009=\u20090.27 at the post-test and <i>d</i>\u2009=\u20090.18 at follow-up. However, there was evidence of publication bias and overestimation of the mean effects. Effects from the meta-analysis were significantly related to these elements: (1) receptive vocabulary and omnibus receptive measures showed smaller effect sizes relative to expressive vocabulary, grammar, expressive and receptive discourse, and omnibus expressive tests; and (2) the length of the intervention, where longer sessions conducted over a longer period of time were more beneficial than brief sessions and short-term interventions. Neither moderators concerning participants' characteristics (children's diagnosis, diagnostic status, age, sex, and non-verbal cognitive ability and severity of language impairment), nor those regarding of the treatment components and implementation of the language interventions (intervention content, setting, delivery agent, session structure of the intervention or total number of sessions) reached significance. The same occurred to indicators of study quality. The risk of bias assessment showed that reporting quality for the studies examined in the review was poor.<h4>Authors\u2019 conclusions</h4>In sum, the current evidence base is promising but inconclusive. Pre-registration and replication of more robust and adequately powered trials, which include a wider range of diagnostic conditions, together with more long-term follow-up comparisons, are needed to drive evidence-based practice and policy.",
+        "affiliation": "CREATE University of Oslo Oslo Norway.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5060-7087"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1404-5133"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CREATE University of Oslo Oslo Norway."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5060-7087"
+              },
+              "firstName": "Enrica",
+              "fullName": "Donolato E",
+              "initials": "E",
+              "lastName": "Donolato"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of General Psychology University of Padova Padova Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1404-5133"
+              },
+              "firstName": "Enrico",
+              "fullName": "Toffalini E",
+              "initials": "E",
+              "lastName": "Toffalini"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Special Needs Education University of Oslo Oslo Norway."
+                  }
+                ]
+              },
+              "firstName": "Kristin",
+              "fullName": "Rogde K",
+              "initials": "K",
+              "lastName": "Rogde"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Education, ICT and Learning \u00d8stfold University College Halden Norway."
+                  }
+                ]
+              },
+              "firstName": "Anders",
+              "fullName": "Nordahl-Hansen A",
+              "initials": "A",
+              "lastName": "Nordahl-Hansen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CREATE University of Oslo Oslo Norway."
+                  }
+                ]
+              },
+              "firstName": "Arne",
+              "fullName": "Lerv\u00e5g A",
+              "initials": "A",
+              "lastName": "Lerv\u00e5g"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Psychology & Language Sciences University College London London UK."
+                  }
+                ]
+              },
+              "firstName": "Courtenay",
+              "fullName": "Norbury C",
+              "initials": "C",
+              "lastName": "Norbury"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Special Needs Education University of Oslo Oslo Norway."
+                  }
+                ]
+              },
+              "firstName": "Monica",
+              "fullName": "Melby-Lerv\u00e5g M",
+              "initials": "M",
+              "lastName": "Melby-Lerv\u00e5g"
+            }
+          ]
+        },
+        "authorString": "Donolato E, Toffalini E, Rogde K, Nordahl-Hansen A, Lerv\u00e5g A, Norbury C, Melby-Lerv\u00e5g M.",
+        "citedByCount": 14,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "37131855",
+              "orderIn": 1,
+              "reference": "Campbell Syst Rev. 2019 Nov 11;15(4):e1062. doi: 10.1002/cl2.1062.",
+              "source": "MED",
+              "type": "Update of"
+            },
+            {
+              "id": "38469584",
+              "orderIn": 2,
+              "reference": "Campbell Syst Rev. 2024 Mar 11;20(2):e1391. doi: 10.1002/cl2.1391.",
+              "source": "MED",
+              "type": "Erratum in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2023-11-29",
+        "dateOfRevision": "2025-05-20",
+        "doi": "10.1002/cl2.1368",
+        "electronicPublicationDate": "2023-11-27",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-11-30",
+        "firstPublicationDate": "2023-11-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10680434"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-05",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/cl2.1368"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10680434"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10680434?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "38024782",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2023 Dec",
+          "issue": "4",
+          "journal": {
+            "essn": "1891-1803",
+            "isoabbreviation": "Campbell Syst Rev",
+            "issn": "1891-1803",
+            "medlineAbbreviation": "Campbell Syst Rev",
+            "nlmid": "9918227275506676",
+            "title": "Campbell systematic reviews"
+          },
+          "journalIssueId": 3639747,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2023-12-01",
+          "volume": "19",
+          "yearOfPublication": 2023
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "e1368",
+        "pmcid": "PMC10680434",
+        "pmid": "38024782",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2023",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Oral language interventions can improve language outcomes in children with neurodevelopmental disorders: A systematic review and meta-analysis."
+      },
+      {
+        "abstractText": "This study describes an attempt to replicate experiments from the paper \"Effect of BMAP-28 Antimicrobial Peptides on Leishmania major Promastigote and Amastigote Growth: Role of Leishmanolysin in Parasite Survival,\" which was submitted to the Reproducibility Initiative for independent validation. The cathelicidin bovine myeloid antimicrobial peptide 28 (BMAP-28) and its isomers were previously shown to have potent antiparasitic activity against Leishmania major. We tested the effectiveness of L-BMAP-28 and two of its isomers, the D-amino acid form (D-BMAP-28) and the retro-inverso form (RI-BMAP-28), in both unamidated and amidated forms, as anti-leishmanial agents against Leishmania major promastigotes in vitro. We observed that L-BMAP-28, as well as its D and RI isomers, demonstrate anti-leishmanial activity against L. major promastigotes in vitro. The inhibitory effect was lower than what was seen in the original study. At 2 \u00b5M of amidated peptides, the viability was 94%, 36%, and 66% with L-, D- and RI-peptides, versus 57%, 6%, and 18% in the original study.",
+        "affiliation": "The Reproducibility Initiative, c/o Science Exchange, Palo Alto, California, United States of America.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6797-5476"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8802-635X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0060-3405"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5497-0243"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Reproducibility Initiative, c/o Science Exchange, Palo Alto, California, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Elizabeth",
+              "fullName": "Iorns E",
+              "initials": "E",
+              "lastName": "Iorns"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Reproducibility Initiative, c/o Science Exchange, Palo Alto, California, United States of America."
+                  }
+                ]
+              },
+              "firstName": "William",
+              "fullName": "Gunn W",
+              "initials": "W",
+              "lastName": "Gunn"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Anti-Infectives Screening Core Facility, Department of Microbiology, New York University School of Medicine, New York, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8802-635X"
+              },
+              "firstName": "Jessey",
+              "fullName": "Erath J",
+              "initials": "J",
+              "lastName": "Erath"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Anti-Infectives Screening Core Facility, Department of Microbiology, New York University School of Medicine, New York, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0060-3405"
+              },
+              "firstName": "Ana",
+              "fullName": "Rodriguez A",
+              "initials": "A",
+              "lastName": "Rodriguez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "LifeTein LLC, Hillsborough, New Jersey, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Jian",
+              "fullName": "Zhou J",
+              "initials": "J",
+              "lastName": "Zhou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Reproducibility Initiative, c/o Science Exchange, Palo Alto, California, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Michael",
+              "fullName": "Benzinou M",
+              "initials": "M",
+              "lastName": "Benzinou"
+            },
+            {
+              "collectiveName": "Reproducibility Initiative"
+            }
+          ]
+        },
+        "authorString": "Iorns E, Gunn W, Erath J, Rodriguez A, Zhou J, Benzinou M, Reproducibility Initiative.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Antiprotozoal Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Metalloendopeptidases",
+              "registryNumber": "EC 3.4.24.-"
+            }
+          ]
+        },
+        "citedByCount": 4,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "21655347",
+              "orderIn": 1,
+              "reference": "PLoS Negl Trop Dis. 2011;5(5):e1141. doi: 10.1371/journal.pntd.0001141",
+              "source": "MED",
+              "type": "Comment on"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2015-05-21",
+        "dateOfCreation": "2014-12-18",
+        "dateOfRevision": "2024-11-05",
+        "doi": "10.1371/journal.pone.0114614",
+        "electronicPublicationDate": "2014-12-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2015-01-01",
+        "firstPublicationDate": "2014-12-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4269415"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-10",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0114614"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4269415"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4269415?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "25517992",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "investigatorList": {
+          "investigator": [
+            {
+              "firstName": "William",
+              "fullName": "Gunn W",
+              "initials": "W",
+              "lastName": "Gunn"
+            },
+            {
+              "firstName": "Elizabeth",
+              "fullName": "Iorns E",
+              "initials": "E",
+              "lastName": "Iorns"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5497-0243"
+              },
+              "firstName": "Anita",
+              "fullName": "Bandrowski A",
+              "initials": "A",
+              "lastName": "Bandrowski"
+            },
+            {
+              "firstName": "Bruce",
+              "fullName": "Booth B",
+              "initials": "B",
+              "lastName": "Booth"
+            },
+            {
+              "firstName": "Rathnam",
+              "fullName": "Chaguturu R",
+              "initials": "R",
+              "lastName": "Chaguturu"
+            },
+            {
+              "firstName": "Matthew",
+              "fullName": "Ellis M",
+              "initials": "M",
+              "lastName": "Ellis"
+            },
+            {
+              "firstName": "Gaddy",
+              "fullName": "Getz G",
+              "initials": "G",
+              "lastName": "Getz"
+            },
+            {
+              "firstName": "Melissa",
+              "fullName": "Haendel M",
+              "initials": "M",
+              "lastName": "Haendel"
+            },
+            {
+              "firstName": "John",
+              "fullName": "Ioannidis J",
+              "initials": "J",
+              "lastName": "Ioannidis"
+            },
+            {
+              "firstName": "Jian-Liang",
+              "fullName": "Li JL",
+              "initials": "JL",
+              "lastName": "Li"
+            },
+            {
+              "firstName": "Marc",
+              "fullName": "Lippman M",
+              "initials": "M",
+              "lastName": "Lippman"
+            },
+            {
+              "firstName": "Bernard",
+              "fullName": "Munos B",
+              "initials": "B",
+              "lastName": "Munos"
+            },
+            {
+              "firstName": "Michael",
+              "fullName": "Noble M",
+              "initials": "M",
+              "lastName": "Noble"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6797-5476"
+              },
+              "firstName": "Brian",
+              "fullName": "Nosek B",
+              "initials": "B",
+              "lastName": "Nosek"
+            },
+            {
+              "firstName": "Mark",
+              "fullName": "Pegram M",
+              "initials": "M",
+              "lastName": "Pegram"
+            },
+            {
+              "firstName": "Heather",
+              "fullName": "Piwowar H",
+              "initials": "H",
+              "lastName": "Piwowar"
+            },
+            {
+              "firstName": "George",
+              "fullName": "Robertson G",
+              "initials": "G",
+              "lastName": "Robertson"
+            },
+            {
+              "firstName": "Taslimarif",
+              "fullName": "Saiyed T",
+              "initials": "T",
+              "lastName": "Saiyed"
+            },
+            {
+              "firstName": "G Sitta",
+              "fullName": "Sittampalam GS",
+              "initials": "GS",
+              "lastName": "Sittampalam"
+            },
+            {
+              "firstName": "Victoria",
+              "fullName": "Stodden V",
+              "initials": "V",
+              "lastName": "Stodden"
+            },
+            {
+              "firstName": "Cathy",
+              "fullName": "Tralau-Stewart C",
+              "initials": "C",
+              "lastName": "Tralau-Stewart"
+            },
+            {
+              "firstName": "Stan",
+              "fullName": "Young S",
+              "initials": "S",
+              "lastName": "Young"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2014 ",
+          "issue": "12",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 2245233,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2014-01-01",
+          "volume": "9",
+          "yearOfPublication": 2014
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Animals",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Leishmania major",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DE",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Metalloendopeptidases",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Proteins",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PD",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Antiprotozoal Agents",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PD",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Microbial Viability",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e114614",
+        "pmcid": "PMC4269415",
+        "pmid": "25517992",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "Comment",
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2014",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Replication attempt: \"Effect of BMAP-28 antimicrobial peptides on Leishmania major promastigote and amastigote growth: role of leishmanolysin in parasite survival\"."
+      },
+      {
+        "abstractText": "<h4>Aim</h4>We conducted a systematic review aggregate and network meta-analysis of psychological interventions for people with type 1 diabetes to assess their effectiveness in improving glycaemic levels.<h4>Methods</h4>We searched the following databases from 1 January 2003 to 1 July 2018: MEDLINE, CINAHL, PsycINFO, Embase, Cochrane Controlled Trials, Web of Science, clinicaltrials.gov, Dissertation Abstract International. We included randomized controlled trials (RCT) of psychological interventions for children and adults with type 1 diabetes reported in any language. We extracted data on publications, participant characteristics at baseline, intervention and control group, and data for the primary outcome, change in glycaemic control [HbA<sub>1c</sub> (mmol/mol/%)]. Study authors were contacted for missing data. The review was registered with international prospective register of systematic reviews registration (PROSPERO) CRD42016033619.<h4>Results</h4>Twenty-four adult RCTs and 23 of children with type 1 diabetes were included in the systematic review. In aggregate meta-analysis there was no overall effect of psychological intervention compared with control on HbA<sub>1c</sub> [adults, nine RCTs, n\u00a0=\u00a01102, pooled mean difference -0.12, 95% confidence intervals (CI) -0.27 to 0.03, I<sup>2</sup> = 29.0%, P\u00a0=\u00a00.19; children, 20 RCTs, n\u00a0=\u00a02567, -0.09, 95% CI -0.22 to 0.04, I<sup>2</sup> =54.0% P=0.002]. Network meta-analysis suggested that probability and rank-ordering of effectiveness is highest for attention control groups (b\u00a0=\u00a0-0.47, 95% CI -0.80 to -0.12) followed by cognitive behavioural therapy (CBT) (-0.26, 95% CI -0.45 to -0.06) compared with usual care for adults.<h4>Conclusions</h4>Overall psychological interventions for children and adults with type 1 diabetes do not improve glycaemic control. For adults, CBT-based interventions have the potential to be effective.",
+        "affiliation": "Florence Nightingale Faculty of Nursing, Midwifery & Palliative Care, London, UK.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5630-0115"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6084-449X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7987-6619"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0881-8654"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1025-312X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1725-6040"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2425-9565"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Florence Nightingale Faculty of Nursing, Midwifery & Palliative Care, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1725-6040"
+              },
+              "firstName": "K",
+              "fullName": "Winkley K",
+              "initials": "K",
+              "lastName": "Winkley"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychological Medicine, Institute of Psychiatry, Psychology and Neuroscience, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0881-8654"
+              },
+              "firstName": "R",
+              "fullName": "Upsher R",
+              "initials": "R",
+              "lastName": "Upsher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics, Institute of Psychiatry, King's College London, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7987-6619"
+              },
+              "firstName": "D",
+              "fullName": "Stahl D",
+              "initials": "D",
+              "lastName": "Stahl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health and Related Research, University of Sheffield, Sheffield, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5630-0115"
+              },
+              "firstName": "D",
+              "fullName": "Pollard D",
+              "initials": "D",
+              "lastName": "Pollard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health and Related Research, University of Sheffield, Sheffield, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1025-312X"
+              },
+              "firstName": "A",
+              "fullName": "Brennan A",
+              "initials": "A",
+              "lastName": "Brennan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Oncology & Metabolism, University of Sheffield School of Medicine, Sheffield, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2425-9565"
+              },
+              "firstName": "S",
+              "fullName": "Heller S",
+              "initials": "S",
+              "lastName": "Heller"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychological Medicine, Institute of Psychiatry, Psychology and Neuroscience, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6084-449X"
+              },
+              "firstName": "K",
+              "fullName": "Ismail K",
+              "initials": "K",
+              "lastName": "Ismail"
+            }
+          ]
+        },
+        "authorString": "Winkley K, Upsher R, Stahl D, Pollard D, Brennan A, Heller S, Ismail K.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "hemoglobin A1c protein, human",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Glycated Hemoglobin",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 23,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2021-09-07",
+        "dateOfCreation": "2020-02-06",
+        "dateOfRevision": "2026-01-27",
+        "doi": "10.1111/dme.14264",
+        "electronicPublicationDate": "2020-03-10",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2020-02-07",
+        "firstPublicationDate": "2020-03-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7217004"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/dme.14264"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7217004"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7217004?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "12/213/10",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "14/213/10",
+              "orderIn": 0
+            },
+            {
+              "acronym": "DH_",
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "HTA/14/213/10",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "32022290",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2020 May",
+          "issue": "5",
+          "journal": {
+            "essn": "1464-5491",
+            "isoabbreviation": "Diabet Med",
+            "issn": "0742-3071",
+            "medlineAbbreviation": "Diabet Med",
+            "nlmid": "8500858",
+            "title": "Diabetic medicine : a journal of the British Diabetic Association"
+          },
+          "journalIssueId": 2945400,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2020-05-01",
+          "volume": "37",
+          "yearOfPublication": 2020
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Diabetes Mellitus, Type 1",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Counseling",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Family Therapy",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Child",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cognitive Behavioral Therapy",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Glycemic Control",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Glycated Hemoglobin",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "735-746",
+        "pmcid": "PMC7217004",
+        "pmid": "32022290",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Systematic Review",
+            "Network Meta-Analysis",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2020",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Systematic review and meta-analysis of randomized controlled trials of psychological interventions to improve glycaemic control in children and adults with type 1 diabetes."
+      },
+      {
+        "abstractText": "According to a popular model of self-control, willpower depends on a limited resource that can be depleted when we perform a task demanding self-control. This theory has been put to the test in hundreds of experiments showing that completing a task that demands high self-control usually hinders performance in any secondary task that subsequently taxes self-control. Over the last 5 years, the reliability of the empirical evidence supporting this model has been questioned. In the present study, we reanalysed data from a large-scale study-Many Labs 3-to test whether performing a depleting task has any effect on a secondary task that also relies on self-control. Although we used a large sample of more than 2000 participants for our analyses, we did not find any significant evidence of ego depletion: persistence on an anagram-solving task (a typical measure of self-control) was not affected by previous completion of a Stroop task (a typical depleting task in this literature). Our results suggest that either ego depletion is not a real effect or, alternatively, persistence in anagram solving may not be an optimal measure to test it.",
+        "affiliation": "Departamento de Psicolog\u00eda B\u00e1sica, Universidad Aut\u00f3noma de Madrid, Madrid, Spain.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8421-816X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0706-1618"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1480-6657"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departamento de Psicolog\u00eda B\u00e1sica, Universidad Aut\u00f3noma de Madrid, Madrid, Spain."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8421-816X"
+              },
+              "firstName": "Miguel A",
+              "fullName": "Vadillo MA",
+              "initials": "MA",
+              "lastName": "Vadillo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Philosophy, University of Oxford, Oxford, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0706-1618"
+              },
+              "firstName": "Natalie",
+              "fullName": "Gold N",
+              "initials": "N",
+              "lastName": "Gold"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological and Chemical Sciences, Queen Mary University of London, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1480-6657"
+              },
+              "firstName": "Magda",
+              "fullName": "Osman M",
+              "initials": "M",
+              "lastName": "Osman"
+            }
+          ]
+        },
+        "authorString": "Vadillo MA, Gold N, Osman M.",
+        "citedByCount": 6,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR1007681",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCreation": "2018-09-19",
+        "dateOfRevision": "2020-09-30",
+        "doi": "10.1098/rsos.180390",
+        "electronicPublicationDate": "2018-08-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2018-09-19",
+        "firstPublicationDate": "2018-08-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6124090"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-09",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsos.180390"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6124090"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC6124090?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Comunidad de Madrid",
+              "grantId": "Grant 2016-T1/SOC-1395",
+              "orderIn": 0
+            },
+            {
+              "agency": "Secretar\u00eda de Estado de Investigaci\u00f3n, Desarrollo e Innovaci\u00f3n",
+              "grantId": "Grant PSI2017-85159-P",
+              "orderIn": 0
+            },
+            {
+              "agency": "European Research Council",
+              "grantId": "ERCGrant Agreement n. 283849",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "30225026",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2018 Aug",
+          "issue": "8",
+          "journal": {
+            "essn": "2054-5703",
+            "isoabbreviation": "R Soc Open Sci",
+            "issn": "2054-5703",
+            "medlineAbbreviation": "R Soc Open Sci",
+            "nlmid": "101647528",
+            "title": "Royal Society open science"
+          },
+          "journalIssueId": 2728799,
+          "monthOfPublication": 8,
+          "printPublicationDate": "2018-08-01",
+          "volume": "5",
+          "yearOfPublication": 2018
+        },
+        "keywordList": {
+          "keyword": [
+            "Persistence",
+            "Self-control",
+            "Stroop",
+            "Ego Depletion",
+            "Many Labs 3",
+            "Impossible Anagram Task"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "180390",
+        "pmcid": "PMC6124090",
+        "pmid": "30225026",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2018",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Searching for the bottom of the ego well: failure to uncover ego depletion in Many Labs 3."
+      },
+      {
+        "abstractText": "The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from \u2018Intestinal Inflammation Targets Cancer-Inducing Activity of the Microbiota\u2019 by Arthur et al. (2012), published in Science in 2012. Arthur and colleagues identified a genotoxic island in Escherichia coli NC101 that appeared to be responsible for causing neoplastic lesions in inflammation-induced IL10-/- mice treated with azoxymethane. The experiments that will be replicated are those reported in Figure 4 (Arthur et al., 2012). Arthur and colleagues inoculated IL10-/- mice with a mutated strain of E. coli NC101 lacking the genotoxic island, and showed that those mice suffered from fewer neoplastic lesions than mice inoculated with the wild type form of E. coli NC101 (Figure 4). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.",
+        "affiliation": "Germ Free Laboratory, University of Michigan Medical School, Ann Arbor, Michigan.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4959-5143"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Germ Free Laboratory, University of Michigan Medical School, Ann Arbor, Michigan."
+                  }
+                ]
+              },
+              "firstName": "Kate",
+              "fullName": "Eaton K",
+              "initials": "K",
+              "lastName": "Eaton"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "ImpeDx Diagnostics Inc., Kansas City, Missouri."
+                  }
+                ]
+              },
+              "firstName": "Wanwan",
+              "fullName": "Yang W",
+              "initials": "W",
+              "lastName": "Yang"
+            },
+            {
+              "collectiveName": "Reproducibility Project: Cancer Biology"
+            }
+          ]
+        },
+        "authorString": "Eaton K, Yang W, Reproducibility Project: Cancer Biology.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Carcinogens",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Interleukin-10",
+              "registryNumber": "130068-27-8"
+            },
+            {
+              "name": "Polyketide Synthases",
+              "registryNumber": "79956-01-7"
+            },
+            {
+              "name": "Azoxymethane",
+              "registryNumber": "MO0N1J0SEN"
+            }
+          ]
+        },
+        "citedByCount": 8,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2016-02-01",
+        "dateOfCreation": "2015-03-18",
+        "dateOfRevision": "2021-01-27",
+        "doi": "10.7554/elife.04186",
+        "electronicPublicationDate": "2015-03-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2015-03-19",
+        "firstPublicationDate": "2015-03-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4383237"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-09",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.7554/elife.04186"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.04186"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4383237"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC4383237?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Laura and John Arnold Foundation",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "25781343",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "investigatorList": {
+          "investigator": [
+            {
+              "firstName": "Elizabeth",
+              "fullName": "Iorns E",
+              "initials": "E",
+              "lastName": "Iorns"
+            },
+            {
+              "firstName": "William",
+              "fullName": "Gunn W",
+              "initials": "W",
+              "lastName": "Gunn"
+            },
+            {
+              "firstName": "Fraser",
+              "fullName": "Tan F",
+              "initials": "F",
+              "lastName": "Tan"
+            },
+            {
+              "firstName": "Joelle",
+              "fullName": "Lomax J",
+              "initials": "J",
+              "lastName": "Lomax"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4959-5143"
+              },
+              "firstName": "Timothy",
+              "fullName": "Errington T",
+              "initials": "T",
+              "lastName": "Errington"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2015 Mar",
+          "journal": {
+            "essn": "2050-084X",
+            "isoabbreviation": "Elife",
+            "issn": "2050-084X",
+            "medlineAbbreviation": "Elife",
+            "nlmid": "101579614",
+            "title": "eLife"
+          },
+          "journalIssueId": 2259749,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2015-03-01",
+          "volume": "4",
+          "yearOfPublication": 2015
+        },
+        "keywordList": {
+          "keyword": [
+            "Mouse",
+            "Microbiology",
+            "Methodology",
+            "Infectious disease",
+            "Medicine",
+            "Intestinal Inflammation",
+            "Human Biology",
+            "Reproducibility Project: Cancer Biology"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Intestines",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MI",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "microbiology"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Animals",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mice, Knockout",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Escherichia coli",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "PY",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathogenicity"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Colorectal Neoplasms",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "chemically induced"
+                  },
+                  {
+                    "abbreviation": "MI",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "microbiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Cell Transformation, Neoplastic",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Colitis",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MI",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "microbiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Azoxymethane",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "toxicity"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Polyketide Synthases",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Interleukin-10",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Carcinogens",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "toxicity"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Virulence",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Sequence Deletion",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Genomic Islands",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Mutation",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Metagenome",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Microbiota",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pmcid": "PMC4383237",
+        "pmid": "25781343",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2015",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Registered report: Intestinal inflammation targets cancer-inducing activity of the microbiota."
+      }
+    ]
+  },
+  "version": "6.9"
+}

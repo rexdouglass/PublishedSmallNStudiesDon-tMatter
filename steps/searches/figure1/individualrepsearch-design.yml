@@ -1,0 +1,470 @@
+schema_version: 0.1.0
+generated_by: scripts/build_individual_replication_search_strategy.py
+strategy_id: figure1_individual_replication_paper_level_search
+updated: '2026-05-05'
+goal: Find individual paper-to-paper replication, validation, retest, or larger follow-up
+  pairs after corpus/database saturation.
+non_goals:
+- Do not harvest broad replication corpora as final rows in this lane.
+- Do not count ordinary citations as replication relation evidence.
+- Do not promote same-data reanalyses or computational-only reproductions as independent-sample
+  Figure 1 rows.
+unit_of_work:
+  grain: original_work x replication_work x original_study_result x replication_study_result
+    x outcome x contrast_timepoint x aggregation_level
+  required_identity_parts:
+  - original_work
+  - replication_work
+  - original_study_result
+  - replication_study_result
+  - outcome
+  - contrast_timepoint
+  - aggregation_level
+  pair_key_components:
+  - normalized_original_work_id
+  - normalized_replication_work_id
+  - original_study_label
+  - replication_study_label
+  - outcome_label
+  - contrast_label
+  - timepoint_label
+  - aggregation_level
+core_pipeline:
+- order: 1
+  step: raw_hit
+  exit_artifact: raw/{surface}/{query_id}.jsonl
+- order: 2
+  step: candidate_replication_or_followup_paper
+  exit_artifact: works/work_identity.jsonl
+- order: 3
+  step: resolved_original_target
+  exit_artifact: pairs/candidate_pairs.jsonl
+- order: 4
+  step: paper_pair_candidate
+  exit_artifact: pairs/screening_queue.tsv
+- order: 5
+  step: study_outcome_level_pair
+  exit_artifact: individualrepsearch-*.json
+- order: 6
+  step: value_extraction
+  exit_artifact: individual-paper-value-scan-batch001.tsv
+- order: 7
+  step: routing_label
+  exit_artifact: individual-paper-worklist-*.tsv or rejection ledger
+search_surfaces:
+- OpenAlex
+- Crossref
+- Semantic Scholar
+- PubMed
+- Europe PMC
+- PMC full text
+- PLOS full text
+- ClinicalTrials.gov
+- OSF
+- DataCite
+- Zenodo
+- Figshare
+- Dataverse
+- Dryad
+- ICPSR
+- GitHub
+- institutional repositories
+- manual web search
+query_phases:
+- campaign_phase: 01_metadata_replication_language
+  n_queries: 15
+  surfaces:
+  - OpenAlex/Crossref/SemanticScholar
+- campaign_phase: 02_open_full_text_value_language
+  n_queries: 12
+  surfaces:
+  - PMC/PLOS/EuropePMC full text
+- campaign_phase: 03_repository_source_object_search
+  n_queries: 10
+  surfaces:
+  - OSF/Figshare/Dataverse/Zenodo/GitHub
+- campaign_phase: 04_psychology_long_tail
+  n_queries: 9
+  surfaces:
+  - OpenAlex/Crossref/PubMed/web
+- campaign_phase: 05_behavioral_econ_marketing_management
+  n_queries: 8
+  surfaces:
+  - OpenAlex/Crossref/OSF/Dataverse/web
+- campaign_phase: 06_education_health_sports
+  n_queries: 8
+  surfaces:
+  - PubMed/PMC/OpenAlex/Crossref/web
+- campaign_phase: 07_clinical_d_equivalent_followup
+  n_queries: 12
+  surfaces:
+  - PubMed/PMC/ClinicalTrials.gov/Crossref
+- campaign_phase: 08_genetics_validation_native
+  n_queries: 9
+  surfaces:
+  - PubMed/PMC/GWASCatalog/OpenAlex
+- campaign_phase: 09_citation_snowball_known_originals
+  n_queries: 4
+  surfaces:
+  - OpenAlex/SemanticScholar/Crossref cited-by
+- campaign_phase: 10_negative_filters_context
+  n_queries: 6
+  surfaces:
+  - all surfaces
+route_labels:
+  strict_figure1a:
+    include_when:
+    - independent original and replication/follow-up samples
+    - specific original result maps to specific replication/follow-up result
+    - original_N and replication_N available
+    - both effects are D/SMD-compatible or documented statistic-to-D conversions
+    - replication_N_total greater than original_N_total under current Figure 1 rule
+    - not same-data reanalysis or computational-only reproduction
+    value_route: native_d, means_sds_to_d, t_to_d, f_to_d, r_to_d only when codebook
+      policy permits
+  d_equivalent_figure1b:
+    include_when:
+    - comparative binary or clinical endpoint
+    - event counts by arm or OR/logOR/RR/RD with baseline risk sufficient for D-equivalent
+      conversion
+    - original_N and replication_N available
+    - explicit original/follow-up relation evidence
+    value_route: event_counts_to_logor_to_d, or_to_d, rr_with_baseline_to_or_to_d
+  native_only:
+    include_when:
+    - strong original/replication relation evidence
+    - native effects and N are available for both sides
+    - no defensible current D or D-equivalent route
+    value_route: retain native metric without plotting on strict D axis
+  coverage_only:
+    include_when:
+    - real original/replication or original/follow-up pair exists
+    - relation evidence is strong
+    - public values are missing, inaccessible, paywalled, or insufficient for routing
+    value_route: no-repull target ledger; do not silently drop
+  manual_screen:
+    include_when:
+    - relation_score 2-3 or conflicting source/object identity
+    - original target, outcome grain, or source-object route needs human decision
+    value_route: hold before source-object mirroring
+  seed_only:
+    include_when:
+    - ordinary citation, review statement, or repository hint points to possible primary
+      papers but does not itself establish the pair
+    value_route: use for snowballing only
+  reject:
+    include_when:
+    - same-data reanalysis
+    - computational-only reproduction
+    - review/commentary only with no primary pair resolved
+    - ordinary citing paper without affirmative relation evidence
+    - one-arm ORR or no comparator for binary route
+    - no mappable original result
+    value_route: retain reject reason for dedupe and no-repull audit
+relation_evidence:
+  minimum_pair_candidate_score: 4
+  manual_screen_score_range: 2-3
+  seed_or_reject_score_range: <=1
+  scale_artifact: steps/searches/figure1/individualrepsearch-relation-evidence-scale.tsv
+  rows:
+  - strength: '5'
+    evidence_type: title_exact_replication
+    accepted_when: title names the earlier paper/authors/result and says replication,
+      direct replication, failed replication, or equivalent
+    example_pattern: Replication of [original title] by [original authors]
+    routing_use: sufficient relation evidence for pair candidate after identity normalization
+  - strength: '5'
+    evidence_type: title_registered_replication_report
+    accepted_when: title or metadata says Registered Replication Report and names
+      the original authors/year/study
+    example_pattern: 'Registered Replication Report: Author and Author (year)'
+    routing_use: sufficient relation evidence for pair candidate; still requires study/outcome
+      grain
+  - strength: '4'
+    evidence_type: abstract_direct_replication
+    accepted_when: abstract states that the paper replicated, retested, or attempted
+      to replicate a named earlier study/result
+    example_pattern: we directly replicated Study 1 from Author et al.
+    routing_use: sufficient relation evidence for pair candidate
+  - strength: '4'
+    evidence_type: abstract_failed_replication
+    accepted_when: abstract says failed to replicate, did not replicate, or no evidence
+      for a named earlier result
+    example_pattern: failed to replicate the effect reported by Author et al.
+    routing_use: sufficient relation evidence for pair candidate
+  - strength: '4'
+    evidence_type: abstract_independent_validation
+    accepted_when: abstract identifies a discovery/original cohort or claim and an
+      independent validation/replication cohort
+    example_pattern: independent validation of the association reported in the discovery
+      cohort
+    routing_use: often native_only or d_equivalent_figure1b depending on metric
+  - strength: '4'
+    evidence_type: methods_original_study_mapping
+    accepted_when: methods identify original materials, protocol, study number, intervention,
+      or endpoint being retested
+    example_pattern: we used the original materials and procedure from Experiment
+      2
+    routing_use: sufficient relation evidence when bibliographic target can be resolved
+  - strength: '4'
+    evidence_type: clinical_confirmatory_trial
+    accepted_when: trial explicitly frames itself as larger, confirmatory, multicenter,
+      pragmatic, or phase 3 follow-up of an earlier named trial/result
+    example_pattern: a multicenter trial to confirm the benefit observed in the earlier
+      single-center trial
+    routing_use: candidate for d_equivalent_figure1b if comparative endpoint values
+      exist
+  - strength: '3'
+    evidence_type: results_original_replication_comparison
+    accepted_when: results compare original and replication effects or show original
+      effect in a forest plot/table
+    example_pattern: original d = ...; replication d = ...
+    routing_use: sufficient when paired with target identity resolution
+  - strength: '3'
+    evidence_type: table_pair_mapping
+    accepted_when: article, supplement, repository, or source table maps original
+      DOI/result to replication DOI/result
+    example_pattern: row containing original_source, replication_source, outcome,
+      effect_size
+    routing_use: sufficient when source object is mirrored or route is recorded
+  - strength: '3'
+    evidence_type: preregistration_protocol
+    accepted_when: preregistration or registered-report protocol names the earlier
+      target and planned replication outcome
+    example_pattern: preregistered direct replication of Study 1 from Author et al.
+    routing_use: sufficient relation evidence; values still need article/data/registry
+      source
+  - strength: '3'
+    evidence_type: genetics_discovery_replication_cohort
+    accepted_when: paper gives explicit discovery-vs-replication or discovery-vs-validation
+      cohort mapping for a named association
+    example_pattern: discovery cohort; replication cohort; OR/beta and N by cohort
+    routing_use: usually native_only unless a preapproved D-equivalent route exists
+  - strength: '2'
+    evidence_type: repository_readme
+    accepted_when: README/data package says it contains replication data and links
+      original and replication papers, but article relation is not yet verified
+    example_pattern: OSF project for direct replication of Author et al.
+    routing_use: manual screen or coverage_only until primary source is resolved
+  - strength: '1'
+    evidence_type: ordinary_citation_or_review_seed
+    accepted_when: review or citing paper mentions an original and possible replication
+      without primary paper/source-object evidence
+    example_pattern: a review says the result failed to replicate
+    routing_use: seed only; not enough for pair inclusion
+  - strength: '0'
+    evidence_type: no_relation_evidence
+    accepted_when: no explicit original/replication, original/follow-up, or discovery/validation
+      mapping is present
+    example_pattern: ordinary related literature discussion
+    routing_use: reject unless later evidence is found
+  - strength: '-5'
+    evidence_type: same_data_reanalysis
+    accepted_when: paper only reanalyzes, robustness-checks, or runs a multiverse
+      on the same dataset
+    example_pattern: reanalysis of the original data
+    routing_use: reject for Figure 1 independent-sample rows; keep as context if useful
+  - strength: '-5'
+    evidence_type: computational_only_reproduction
+    accepted_when: paper only reproduces code, benchmark output, or analysis workflow
+      using the same data
+    example_pattern: we reproduced the code/results
+    routing_use: reject unless a separate computational subplot is intentionally opened
+routing_scores:
+  rules_artifact: steps/searches/figure1/individualrepsearch-routing-score-rules.tsv
+  rows:
+  - score_family: relation
+    score: '+5'
+    condition: target in title or Registered Replication Report title/metadata
+    decision_use: pair candidate after identity normalization
+  - score_family: relation
+    score: '+4'
+    condition: abstract says direct replication, failed replication, independent validation,
+      or named confirmatory/follow-up trial
+    decision_use: pair candidate
+  - score_family: relation
+    score: '+4'
+    condition: methods map original study/result/materials/protocol/endpoint
+    decision_use: pair candidate if original target resolves
+  - score_family: relation
+    score: '+3'
+    condition: table, supplement, repository, preregistration, or source object maps
+      original and replication sides
+    decision_use: manual screen; candidate when source identity resolves
+  - score_family: relation
+    score: '+2'
+    condition: repository README/package evidence only
+    decision_use: manual screen or coverage_only until article/source identity resolves
+  - score_family: relation
+    score: '+1'
+    condition: ordinary citation, review statement, or broad literature context only
+    decision_use: seed_only; insufficient for pair inclusion
+  - score_family: relation
+    score: '-5'
+    condition: same-data reanalysis or computational-only reproduction
+    decision_use: reject for independent-sample Figure 1 rows
+  - score_family: relation
+    score: '-4'
+    condition: review/commentary only or no original mapping
+    decision_use: reject or seed_only
+  - score_family: relation_threshold
+    score: '>=4'
+    condition: affirmative relation evidence
+    decision_use: eligible for pair candidate and value extraction
+  - score_family: relation_threshold
+    score: 2-3
+    condition: moderate relation evidence but missing identity/source-object confirmation
+    decision_use: manual_screen or coverage_only
+  - score_family: relation_threshold
+    score: <=1
+    condition: weak or no relation evidence
+    decision_use: seed_only or reject
+  - score_family: value
+    score: '+5'
+    condition: original effect, original N, replication effect, and replication N
+      directly reported
+    decision_use: extract values from source_result rows and route by metric
+  - score_family: value
+    score: '+4'
+    condition: all values reconstructable from means/SDs, t/F/r, event counts, OR/logOR,
+      RR/RD with baseline risk, or registry result tables
+    decision_use: extract and document conversion formula
+  - score_family: value
+    score: '+3'
+    condition: effects available but split N or aggregation grain unclear
+    decision_use: hold with blocker or route coverage/native after review
+  - score_family: value
+    score: '+2'
+    condition: N available but one side effect missing
+    decision_use: coverage_only unless source object can be acquired
+  - score_family: value
+    score: '+1'
+    condition: relation exists but values are inaccessible/paywalled/missing
+    decision_use: coverage_only no-repull ledger
+  - score_family: value
+    score: '-5'
+    condition: one-arm overall response rate or no comparator for binary endpoint
+    decision_use: reject for Figure 1B
+  - score_family: route
+    score: relation>=4 and value>=4
+    condition: D/SMD-compatible inputs and independent larger replication sample
+    decision_use: strict_figure1a
+  - score_family: route
+    score: relation>=4 and value>=4
+    condition: comparative binary inputs with defensible logOR/OR/RR/RD-to-D route
+    decision_use: d_equivalent_figure1b
+  - score_family: route
+    score: relation>=4 and value>=4
+    condition: native effects/N available but no defensible D route
+    decision_use: native_only
+  - score_family: route
+    score: relation>=4 and value<=2
+    condition: real pair exists but public values/source objects are missing or inaccessible
+    decision_use: coverage_only
+identity_normalization:
+  work_key_priority:
+  - normalized DOI
+  - PMID
+  - PMCID
+  - OpenAlex work ID
+  - Semantic Scholar paperId or corpusId
+  - Crossref title-author-year fuzzy key
+  - repository DOI or OSF/Zenodo/Dataverse/Figshare stable identifier
+  doi_normalization:
+  - lowercase
+  - strip https://doi.org/ and http://dx.doi.org/
+  - 'strip doi: prefix'
+  - trim trailing punctuation
+  title_fuzzy_merge_policy:
+    auto_merge_threshold: '>=95 token-sort/token-set similarity after normalization'
+    review_threshold: 85-94
+    no_merge_threshold: <85
+value_extraction:
+  relation_before_value_rule: Do not extract/promote Figure 1 values unless relation_score
+    >= 4 or a manual review explicitly upgrades the relation.
+  source_priority:
+  - article main text/table
+  - supplementary tables
+  - repository data/code
+  - trial registry results
+  - prior meta-science table as pointer only, not final source
+  required_verbatim_fields:
+  - verbatim_effect_text
+  - verbatim_n_text
+  - verbatim_source_row_text
+  - source_locator
+  - conversion_explanation
+stop_expand_rules:
+  stop_query_family_when_all:
+  - all relevant recall probes are rediscovered
+  - two consecutive batches add fewer than 1-2 accepted relation candidates per 500
+    screened
+  - new accepted pairs are already found by at least two other surfaces
+  - citation-forward expansion yields no new unique candidates
+  expand_query_family_when_any:
+  - a recall probe is missed
+  - a domain has many seed-only review mentions but few primary papers
+  - repository hits reveal unsearched article titles or DOIs
+  - clinical/genetics candidates use confirm, validate, retest, or follow-up rather
+    than replicate language
+query_log:
+  schema_artifact: steps/searches/figure1/individualrepsearch-query-log-schema.tsv
+  fields:
+  - query_id
+  - run_id
+  - surface
+  - endpoint_or_engine
+  - query_family
+  - query_string
+  - params_json
+  - date_run
+  - cursor_or_page
+  - rank_start
+  - rank_end
+  - n_returned
+  - n_new_work_ids
+  - n_new_candidate_pairs
+  - raw_output_path
+  - notes
+recall_probes:
+  artifact: steps/searches/figure1/individualrepsearch-known-good-recall-probes.tsv
+  n_probes: 19
+  probe_ids:
+  - facial_feedback_strack_wagenmakers
+  - verbal_overshadowing_schooler_alogna
+  - ego_depletion_hagger
+  - power_posing_ranehill
+  - goal_priming_harris
+  - physical_warmth_chabris
+  - physical_warmth_lynott
+  - elderly_walking_doyen
+  - bem_ritchie
+  - analytic_religion_sanchez
+  - power_motor_cusack
+  - organic_food_moery
+  - social_distance_pashler
+  - macbeth_earp
+  - signing_kristal
+  - egdt_rivers_process
+  - nice_sugar
+  - marshmallow_watts
+  - five_httlpr_culverhouse
+generated_artifacts:
+- steps/searches/figure1/individualrepsearch-tool-strategy.tsv
+- steps/searches/figure1/individualrepsearch-vast-query-bank.tsv
+- steps/searches/figure1/individualrepsearch-known-good-recall-probes.tsv
+- steps/searches/figure1/individualrepsearch-relation-evidence-scale.tsv
+- steps/searches/figure1/individualrepsearch-routing-score-rules.tsv
+- steps/searches/figure1/individualrepsearch-query-log-schema.tsv
+- steps/searches/figure1/individualrepsearch-design.yml
+- steps/searches/figure1/individualrepsearch-vast-run-plan.md
+- steps/searches/figure1/individualrepsearch-candidate-schema.json
+- steps/searches/figure1/individualrepsearch-intake-readme.md
+- reports/figure1_individual_replication_vast_search_prompt_2026-05-05.md
+make_targets:
+- figure1-individual-replication-search-strategy
+- figure1-individual-replication-vast-search-batch001
+- figure1-individual-replication-search-intake
+- figure1-individual-replication-mirror-batch001
+- figure1-individual-replication-value-scan-batch001
+- figure1-individual-replication-promote-ready

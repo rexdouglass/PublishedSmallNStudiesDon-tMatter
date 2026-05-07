@@ -1,0 +1,1570 @@
+{
+  "artifact_id": "source_artifact_1f984580b951a709",
+  "byte_size": 49766,
+  "file_name": "004_full_10_1001_jama_2014_5616.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/004_full_10_1001_jama_2014_5616.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1001/jama.2014.5616\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Importance</h4>In older adults reduced mobility is common and is an independent risk factor for morbidity, hospitalization, disability, and mortality. Limited evidence suggests that physical activity may help prevent mobility disability; however, there are no definitive clinical trials examining whether physical activity prevents or delays mobility disability.<h4>Objective</h4>To test the hypothesis that a long-term structured physical activity program is more effective than a health education program (also referred to as a successful aging program) in reducing the risk of major mobility disability.<h4>Design, setting, and participants</h4>The Lifestyle Interventions and Independence for Elders (LIFE) study was a multicenter, randomized trial that enrolled participants between February 2010 and December 2011, who participated for an average of 2.6 years. Follow-up ended in December 2013. Outcome assessors were blinded to the intervention assignment. Participants were recruited from urban, suburban, and rural communities at 8 centers throughout the United States. We randomized a volunteer sample of 1635 sedentary men and women aged 70 to 89 years who had physical limitations, defined as a score on the Short Physical Performance Battery of 9 or below, but were able to walk 400 m.<h4>Interventions</h4>Participants were randomized to a structured, moderate-intensity physical activity program (n = 818) conducted in a center (twice/wk) and at home (3-4 times/wk) that included aerobic, resistance, and flexibility training activities or to a health education program (n = 817) consisting of workshops on topics relevant to older adults and upper extremity stretching exercises.<h4>Main outcomes and measures</h4>The primary outcome was major mobility disability objectively defined by loss of ability to walk 400 m.<h4>Results</h4>Incident major mobility disability occurred in 30.1% (246 participants) of the physical activity group and 35.5% (290 participants) of the health education group (hazard ratio [HR], 0.82 [95% CI, 0.69-0.98], P = .03).Persistent mobility disability was experienced by 120 participants (14.7%) in the physical activity group and 162 participants (19.8%) in the health education group (HR, 0.72 [95% CI, 0.57-0.91]; P = .006). Serious adverse events were reported by 404 participants (49.4%) in the physical activity group and 373 participants (45.7%) in the health education group (risk ratio, 1.08 [95% CI, 0.98-1.20]).<h4>Conclusions and relevance</h4>A structured, moderate-intensity physical activity program compared with a health education program reduced major mobility disability over 2.6 years among older adults at risk for disability. These findings suggest mobility benefit from such a program in vulnerable older adults.<h4>Trial registration</h4>clinicaltrials.gov Identifier: NCT01072500.",
+          "affiliation": "Department of Aging and Geriatric Research,University of Florida, Gainesville.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5973-2116"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0106-1150"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5970-4462"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6450-0368"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7805-9577"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7949-8811"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1270-2520"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4837-5330"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Aging and Geriatric Research,University of Florida, Gainesville."
+                    }
+                  ]
+                },
+                "firstName": "Marco",
+                "fullName": "Pahor M",
+                "initials": "M",
+                "lastName": "Pahor"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Aging and Geriatric Research,University of Florida, Gainesville2Department of Epidemiology and Public Health, University of Maryland School of Medicine, Baltimore."
+                    }
+                  ]
+                },
+                "firstName": "Jack M",
+                "fullName": "Guralnik JM",
+                "initials": "JM",
+                "lastName": "Guralnik"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "Walter T",
+                "fullName": "Ambrosius WT",
+                "initials": "WT",
+                "lastName": "Ambrosius"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Exercise Science, Arnold School of Public Health, University of South Carolina, Columbia."
+                    }
+                  ]
+                },
+                "firstName": "Steven",
+                "fullName": "Blair S",
+                "initials": "S",
+                "lastName": "Blair"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Cardiac Sciences, National Heart, Lung, and Blood Institute, Bethesda, Maryland."
+                    }
+                  ]
+                },
+                "firstName": "Denise E",
+                "fullName": "Bonds DE",
+                "initials": "DE",
+                "lastName": "Bonds"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Preventative Medicine, Pennington Biomedical Research Center, Louisiana."
+                    }
+                  ]
+                },
+                "firstName": "Timothy S",
+                "fullName": "Church TS",
+                "initials": "TS",
+                "lastName": "Church"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "Mark A",
+                "fullName": "Espeland MA",
+                "initials": "MA",
+                "lastName": "Espeland"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Jean Mayer United States Department of Agriculture Human Nutrition Research Center on Aging, Tufts University, Boston, Massachusetts."
+                    }
+                  ]
+                },
+                "firstName": "Roger A",
+                "fullName": "Fielding RA",
+                "initials": "RA",
+                "lastName": "Fielding"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Yale School of Medicine, New Haven, Connecticut."
+                    }
+                  ]
+                },
+                "firstName": "Thomas M",
+                "fullName": "Gill TM",
+                "initials": "TM",
+                "lastName": "Gill"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Veterans Affairs San Diego Healthcare System, San Diego, California10Department of Family and Preventive Medicine, University of California, San Diego, San Diego."
+                    }
+                  ]
+                },
+                "firstName": "Erik J",
+                "fullName": "Groessl EJ",
+                "initials": "EJ",
+                "lastName": "Groessl"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Health Research and Policy and Department of Medicine, Stanford University, School of Medicine, Stanford, California."
+                    }
+                  ]
+                },
+                "firstName": "Abby C",
+                "fullName": "King AC",
+                "initials": "AC",
+                "lastName": "King"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "Stephen B",
+                "fullName": "Kritchevsky SB",
+                "initials": "SB",
+                "lastName": "Kritchevsky"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Aging and Geriatric Research,University of Florida, Gainesville."
+                    }
+                  ]
+                },
+                "firstName": "Todd M",
+                "fullName": "Manini TM",
+                "initials": "TM",
+                "lastName": "Manini"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Medicine and Preventive Medicine, Northwestern University Feinberg School of Medicine, Chicago, Illinois."
+                    }
+                  ]
+                },
+                "firstName": "Mary M",
+                "fullName": "McDermott MM",
+                "initials": "MM",
+                "lastName": "McDermott"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "Michael E",
+                "fullName": "Miller ME",
+                "initials": "ME",
+                "lastName": "Miller"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Epidemiology, Graduate School of Public Health, University of Pittsburgh, Pittsburgh, Pennsylvania."
+                    }
+                  ]
+                },
+                "firstName": "Anne B",
+                "fullName": "Newman AB",
+                "initials": "AB",
+                "lastName": "Newman"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "W Jack",
+                "fullName": "Rejeski WJ",
+                "initials": "WJ",
+                "lastName": "Rejeski"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "Kaycee M",
+                "fullName": "Sink KM",
+                "initials": "KM",
+                "lastName": "Sink"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Internal Medicine, Wake Forest University and School of Medicine, Winston-Salem, North Carolina."
+                    }
+                  ]
+                },
+                "firstName": "Jeff D",
+                "fullName": "Williamson JD",
+                "initials": "JD",
+                "lastName": "Williamson"
+              },
+              {
+                "collectiveName": "LIFE study investigators"
+              }
+            ]
+          },
+          "authorString": "Pahor M, Guralnik JM, Ambrosius WT, Blair S, Bonds DE, Church TS, Espeland MA, Fielding RA, Gill TM, Groessl EJ, King AC, Kritchevsky SB, Manini TM, McDermott MM, Miller ME, Newman AB, Rejeski WJ, Sink KM, Williamson JD, LIFE study investigators.",
+          "citedByCount": 1025,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "recommended_reviews"
+            ]
+          },
+          "dateOfCompletion": "2014-06-23",
+          "dateOfCreation": "2014-05-29",
+          "dateOfRevision": "2025-01-03",
+          "doi": "10.1001/jama.2014.5616",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2014-05-30",
+          "firstPublicationDate": "2014-06-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC4266388"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/jama.2014.5616"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4266388"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4266388?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/jama.2014.5616"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "1 P30 AG028740",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30AG021342",
+                "orderIn": 0
+              },
+              {
+                "acronym": "RR",
+                "agency": "NCRR NIH HHS",
+                "grantId": "UL1 RR029890",
+                "orderIn": 0
+              },
+              {
+                "acronym": "TR",
+                "agency": "NCATS NIH HHS",
+                "grantId": "UL1 TR000064",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "K07AG3587",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "U01 AG022376",
+                "orderIn": 0
+              },
+              {
+                "acronym": "TR",
+                "agency": "NCATS NIH HHS",
+                "grantId": "UL1 TR001085",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "UO1AG22376",
+                "orderIn": 0
+              },
+              {
+                "acronym": "ImNIH",
+                "agency": "Intramural NIH HHS",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG031679",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "1 P30 AG21332",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "1P30AG031679",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "3U01AG022376-05A2S",
+                "orderIn": 0
+              },
+              {
+                "acronym": "RR",
+                "agency": "NCRR NIH HHS",
+                "grantId": "U54RR025208",
+                "orderIn": 0
+              },
+              {
+                "acronym": "TR",
+                "agency": "NCATS NIH HHS",
+                "grantId": "UL1 TR000142",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG021342",
+                "orderIn": 0
+              },
+              {
+                "acronym": "RR",
+                "agency": "NCRR NIH HHS",
+                "grantId": "UL1 RR025744",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG021332",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG024827",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "R24 HD065688",
+                "orderIn": 0
+              },
+              {
+                "acronym": "AG",
+                "agency": "NIA NIH HHS",
+                "grantId": "P30 AG028740",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "1R24HD065688-01A1",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "R01 HL121023",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "24866862",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "investigatorList": {
+            "investigator": [
+              {
+                "firstName": "Marco",
+                "fullName": "Pahor M",
+                "initials": "M",
+                "lastName": "Pahor"
+              },
+              {
+                "firstName": "Jack M",
+                "fullName": "Guralnik JM",
+                "initials": "JM",
+                "lastName": "Guralnik"
+              },
+              {
+                "firstName": "Christiaan",
+                "fullName": "Leeuwenburgh C",
+                "initials": "C",
+                "lastName": "Leeuwenburgh"
+              },
+              {
+                "firstName": "Connie",
+                "fullName": "Caudle C",
+                "initials": "C",
+                "lastName": "Caudle"
+              },
+              {
+                "firstName": "Lauren",
+                "fullName": "Crump L",
+                "initials": "L",
+                "lastName": "Crump"
+              },
+              {
+                "firstName": "Latonia",
+                "fullName": "Holmes L",
+                "initials": "L",
+                "lastName": "Holmes"
+              },
+              {
+                "firstName": "Jocelyn",
+                "fullName": "Lee J",
+                "initials": "J",
+                "lastName": "Lee"
+              },
+              {
+                "firstName": "Ching-ju",
+                "fullName": "Lu CJ",
+                "initials": "CJ",
+                "lastName": "Lu"
+              },
+              {
+                "firstName": "Michael E",
+                "fullName": "Miller ME",
+                "initials": "ME",
+                "lastName": "Miller"
+              },
+              {
+                "firstName": "Mark A",
+                "fullName": "Espeland MA",
+                "initials": "MA",
+                "lastName": "Espeland"
+              },
+              {
+                "firstName": "Walter T",
+                "fullName": "Ambrosius WT",
+                "initials": "WT",
+                "lastName": "Ambrosius"
+              },
+              {
+                "firstName": "William",
+                "fullName": "Applegate W",
+                "initials": "W",
+                "lastName": "Applegate"
+              },
+              {
+                "firstName": "Daniel P",
+                "fullName": "Beavers DP",
+                "initials": "DP",
+                "lastName": "Beavers"
+              },
+              {
+                "firstName": "Robert P",
+                "fullName": "Byington RP",
+                "initials": "RP",
+                "lastName": "Byington"
+              },
+              {
+                "firstName": "Delilah",
+                "fullName": "Cook D",
+                "initials": "D",
+                "lastName": "Cook"
+              },
+              {
+                "firstName": "Curt D",
+                "fullName": "Furberg CD",
+                "initials": "CD",
+                "lastName": "Furberg"
+              },
+              {
+                "firstName": "Lea N",
+                "fullName": "Harvin LN",
+                "initials": "LN",
+                "lastName": "Harvin"
+              },
+              {
+                "firstName": "Leora",
+                "fullName": "Henkin L",
+                "initials": "L",
+                "lastName": "Henkin"
+              },
+              {
+                "firstName": "John",
+                "fullName": "Hepler J",
+                "initials": "J",
+                "lastName": "Hepler"
+              },
+              {
+                "firstName": "Fang-Chi",
+                "fullName": "Hsu FC",
+                "initials": "FC",
+                "lastName": "Hsu"
+              },
+              {
+                "firstName": "Laura",
+                "fullName": "Lovato L",
+                "initials": "L",
+                "lastName": "Lovato"
+              },
+              {
+                "firstName": "Wesley",
+                "fullName": "Roberson W",
+                "initials": "W",
+                "lastName": "Roberson"
+              },
+              {
+                "firstName": "Julia",
+                "fullName": "Rushing J",
+                "initials": "J",
+                "lastName": "Rushing"
+              },
+              {
+                "firstName": "Scott",
+                "fullName": "Rushing S",
+                "initials": "S",
+                "lastName": "Rushing"
+              },
+              {
+                "firstName": "Cynthia L",
+                "fullName": "Stowe CL",
+                "initials": "CL",
+                "lastName": "Stowe"
+              },
+              {
+                "firstName": "Michael P",
+                "fullName": "Walkup MP",
+                "initials": "MP",
+                "lastName": "Walkup"
+              },
+              {
+                "firstName": "Don",
+                "fullName": "Hire D",
+                "initials": "D",
+                "lastName": "Hire"
+              },
+              {
+                "firstName": "W  Jack",
+                "fullName": "Rejeski W",
+                "initials": "W",
+                "lastName": "Rejeski"
+              },
+              {
+                "firstName": "Jeffrey A",
+                "fullName": "Katula JA",
+                "initials": "JA",
+                "lastName": "Katula"
+              },
+              {
+                "firstName": "Peter H",
+                "fullName": "Brubaker PH",
+                "initials": "PH",
+                "lastName": "Brubaker"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1270-2520"
+                },
+                "firstName": "Shannon L",
+                "fullName": "Mihalko SL",
+                "initials": "SL",
+                "lastName": "Mihalko"
+              },
+              {
+                "firstName": "Janine M",
+                "fullName": "Jennings JM",
+                "initials": "JM",
+                "lastName": "Jennings"
+              },
+              {
+                "firstName": "Evan C",
+                "fullName": "Hadley EC",
+                "initials": "EC",
+                "lastName": "Hadley"
+              },
+              {
+                "firstName": "Sergei",
+                "fullName": "Romashkan S",
+                "initials": "S",
+                "lastName": "Romashkan"
+              },
+              {
+                "firstName": "Kushang V",
+                "fullName": "Patel KV",
+                "initials": "KV",
+                "lastName": "Patel"
+              },
+              {
+                "firstName": "Denise",
+                "fullName": "Bonds D",
+                "initials": "D",
+                "lastName": "Bonds"
+              },
+              {
+                "firstName": "Mary M",
+                "fullName": "McDermott MM",
+                "initials": "MM",
+                "lastName": "McDermott"
+              },
+              {
+                "firstName": "Bonnie",
+                "fullName": "Spring B",
+                "initials": "B",
+                "lastName": "Spring"
+              },
+              {
+                "firstName": "Joshua",
+                "fullName": "Hauser J",
+                "initials": "J",
+                "lastName": "Hauser"
+              },
+              {
+                "firstName": "Diana",
+                "fullName": "Kerwin D",
+                "initials": "D",
+                "lastName": "Kerwin"
+              },
+              {
+                "firstName": "Kathryn",
+                "fullName": "Domanchuk K",
+                "initials": "K",
+                "lastName": "Domanchuk"
+              },
+              {
+                "firstName": "Rex",
+                "fullName": "Graff R",
+                "initials": "R",
+                "lastName": "Graff"
+              },
+              {
+                "firstName": "Alvito",
+                "fullName": "Rego A",
+                "initials": "A",
+                "lastName": "Rego"
+              },
+              {
+                "firstName": "Timothy S",
+                "fullName": "Church TS",
+                "initials": "TS",
+                "lastName": "Church"
+              },
+              {
+                "firstName": "Steven N",
+                "fullName": "Blair SN",
+                "initials": "SN",
+                "lastName": "Blair"
+              },
+              {
+                "firstName": "Valerie H",
+                "fullName": "Myers VH",
+                "initials": "VH",
+                "lastName": "Myers"
+              },
+              {
+                "firstName": "Ron",
+                "fullName": "Monce R",
+                "initials": "R",
+                "lastName": "Monce"
+              },
+              {
+                "firstName": "Nathan E",
+                "fullName": "Britt NE",
+                "initials": "NE",
+                "lastName": "Britt"
+              },
+              {
+                "firstName": "Melissa Nauta",
+                "fullName": "Harris MN",
+                "initials": "MN",
+                "lastName": "Harris"
+              },
+              {
+                "firstName": "Ami Parks",
+                "fullName": "McGucken AP",
+                "initials": "AP",
+                "lastName": "McGucken"
+              },
+              {
+                "firstName": "Ruben",
+                "fullName": "Rodarte R",
+                "initials": "R",
+                "lastName": "Rodarte"
+              },
+              {
+                "firstName": "Heidi K",
+                "fullName": "Millet HK",
+                "initials": "HK",
+                "lastName": "Millet"
+              },
+              {
+                "firstName": "Catrine",
+                "fullName": "Tudor-Locke C",
+                "initials": "C",
+                "lastName": "Tudor-Locke"
+              },
+              {
+                "firstName": "Ben P",
+                "fullName": "Butitta BP",
+                "initials": "BP",
+                "lastName": "Butitta"
+              },
+              {
+                "firstName": "Sheletta G",
+                "fullName": "Donatto SG",
+                "initials": "SG",
+                "lastName": "Donatto"
+              },
+              {
+                "firstName": "Shannon H",
+                "fullName": "Cocreham SH",
+                "initials": "SH",
+                "lastName": "Cocreham"
+              },
+              {
+                "firstName": "Abby C",
+                "fullName": "King AC",
+                "initials": "AC",
+                "lastName": "King"
+              },
+              {
+                "firstName": "Cynthia M",
+                "fullName": "Castro CM",
+                "initials": "CM",
+                "lastName": "Castro"
+              },
+              {
+                "firstName": "William L",
+                "fullName": "Haskell WL",
+                "initials": "WL",
+                "lastName": "Haskell"
+              },
+              {
+                "firstName": "Randall S",
+                "fullName": "Stafford RS",
+                "initials": "RS",
+                "lastName": "Stafford"
+              },
+              {
+                "firstName": "Leslie A",
+                "fullName": "Pruitt LA",
+                "initials": "LA",
+                "lastName": "Pruitt"
+              },
+              {
+                "firstName": "Kathy",
+                "fullName": "Berra K",
+                "initials": "K",
+                "lastName": "Berra"
+              },
+              {
+                "firstName": "Veronica",
+                "fullName": "Yank V",
+                "initials": "V",
+                "lastName": "Yank"
+              },
+              {
+                "firstName": "Roger A",
+                "fullName": "Fielding RA",
+                "initials": "RA",
+                "lastName": "Fielding"
+              },
+              {
+                "firstName": "Miriam E",
+                "fullName": "Nelson ME",
+                "initials": "ME",
+                "lastName": "Nelson"
+              },
+              {
+                "firstName": "Sara C",
+                "fullName": "Folta SC",
+                "initials": "SC",
+                "lastName": "Folta"
+              },
+              {
+                "firstName": "Edward M",
+                "fullName": "Phillips EM",
+                "initials": "EM",
+                "lastName": "Phillips"
+              },
+              {
+                "firstName": "Christine K",
+                "fullName": "Liu CK",
+                "initials": "CK",
+                "lastName": "Liu"
+              },
+              {
+                "firstName": "Erica C",
+                "fullName": "McDavitt EC",
+                "initials": "EC",
+                "lastName": "McDavitt"
+              },
+              {
+                "firstName": "Kieran F",
+                "fullName": "Reid KF",
+                "initials": "KF",
+                "lastName": "Reid"
+              },
+              {
+                "firstName": "Won S",
+                "fullName": "Kim WS",
+                "initials": "WS",
+                "lastName": "Kim"
+              },
+              {
+                "firstName": "Vince E",
+                "fullName": "Beard VE",
+                "initials": "VE",
+                "lastName": "Beard"
+              },
+              {
+                "firstName": "Todd M",
+                "fullName": "Manini TM",
+                "initials": "TM",
+                "lastName": "Manini"
+              },
+              {
+                "firstName": "Marco",
+                "fullName": "Pahor M",
+                "initials": "M",
+                "lastName": "Pahor"
+              },
+              {
+                "firstName": "Stephen D",
+                "fullName": "Anton SD",
+                "initials": "SD",
+                "lastName": "Anton"
+              },
+              {
+                "firstName": "Susan",
+                "fullName": "Nayfield S",
+                "initials": "S",
+                "lastName": "Nayfield"
+              },
+              {
+                "firstName": "Thomas W",
+                "fullName": "Buford TW",
+                "initials": "TW",
+                "lastName": "Buford"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5973-2116"
+                },
+                "firstName": "Michael",
+                "fullName": "Marsiske M",
+                "initials": "M",
+                "lastName": "Marsiske"
+              },
+              {
+                "firstName": "Bhanuprasad D",
+                "fullName": "Sandesara BD",
+                "initials": "BD",
+                "lastName": "Sandesara"
+              },
+              {
+                "firstName": "Jeffrey D",
+                "fullName": "Knaggs JD",
+                "initials": "JD",
+                "lastName": "Knaggs"
+              },
+              {
+                "firstName": "Megan S",
+                "fullName": "Lorow MS",
+                "initials": "MS",
+                "lastName": "Lorow"
+              },
+              {
+                "firstName": "William C",
+                "fullName": "Marena WC",
+                "initials": "WC",
+                "lastName": "Marena"
+              },
+              {
+                "firstName": "Irina",
+                "fullName": "Korytov I",
+                "initials": "I",
+                "lastName": "Korytov"
+              },
+              {
+                "firstName": "Holly L",
+                "fullName": "Morris HL",
+                "initials": "HL",
+                "lastName": "Morris"
+              },
+              {
+                "firstName": "Margo",
+                "fullName": "Fitch M",
+                "initials": "M",
+                "lastName": "Fitch"
+              },
+              {
+                "firstName": "Floris F",
+                "fullName": "Singletary FF",
+                "initials": "FF",
+                "lastName": "Singletary"
+              },
+              {
+                "firstName": "Jackie",
+                "fullName": "Causer J",
+                "initials": "J",
+                "lastName": "Causer"
+              },
+              {
+                "firstName": "Katie A",
+                "fullName": "Radcliff KA",
+                "initials": "KA",
+                "lastName": "Radcliff"
+              },
+              {
+                "firstName": "Anne B",
+                "fullName": "Newman AB",
+                "initials": "AB",
+                "lastName": "Newman"
+              },
+              {
+                "firstName": "Stephanie A",
+                "fullName": "Studenski SA",
+                "initials": "SA",
+                "lastName": "Studenski"
+              },
+              {
+                "firstName": "Bret H",
+                "fullName": "Goodpaster BH",
+                "initials": "BH",
+                "lastName": "Goodpaster"
+              },
+              {
+                "firstName": "Nancy W",
+                "fullName": "Glynn NW",
+                "initials": "NW",
+                "lastName": "Glynn"
+              },
+              {
+                "firstName": "Oscar",
+                "fullName": "Lopez O",
+                "initials": "O",
+                "lastName": "Lopez"
+              },
+              {
+                "firstName": "Neelesh K",
+                "fullName": "Nadkarni NK",
+                "initials": "NK",
+                "lastName": "Nadkarni"
+              },
+              {
+                "firstName": "Kathy",
+                "fullName": "Williams K",
+                "initials": "K",
+                "lastName": "Williams"
+              },
+              {
+                "firstName": "Mark A",
+                "fullName": "Newman MA",
+                "initials": "MA",
+                "lastName": "Newman"
+              },
+              {
+                "firstName": "George",
+                "fullName": "Grove G",
+                "initials": "G",
+                "lastName": "Grove"
+              },
+              {
+                "firstName": "Janet T",
+                "fullName": "Bonk JT",
+                "initials": "JT",
+                "lastName": "Bonk"
+              },
+              {
+                "firstName": "Jennifer",
+                "fullName": "Rush J",
+                "initials": "J",
+                "lastName": "Rush"
+              },
+              {
+                "firstName": "Piera",
+                "fullName": "Kost P",
+                "initials": "P",
+                "lastName": "Kost"
+              },
+              {
+                "firstName": "Diane G",
+                "fullName": "Ives DG",
+                "initials": "DG",
+                "lastName": "Ives"
+              },
+              {
+                "firstName": "Stephen B",
+                "fullName": "Kritchevsky SB",
+                "initials": "SB",
+                "lastName": "Kritchevsky"
+              },
+              {
+                "firstName": "Anthony P",
+                "fullName": "Marsh AP",
+                "initials": "AP",
+                "lastName": "Marsh"
+              },
+              {
+                "firstName": "Tina E",
+                "fullName": "Brinkley TE",
+                "initials": "TE",
+                "lastName": "Brinkley"
+              },
+              {
+                "firstName": "Jamehl S",
+                "fullName": "Demons JS",
+                "initials": "JS",
+                "lastName": "Demons"
+              },
+              {
+                "firstName": "Kaycee M",
+                "fullName": "Sink KM",
+                "initials": "KM",
+                "lastName": "Sink"
+              },
+              {
+                "firstName": "Kimberly",
+                "fullName": "Kennedy K",
+                "initials": "K",
+                "lastName": "Kennedy"
+              },
+              {
+                "firstName": "Rachel",
+                "fullName": "Shertzer-Skinner R",
+                "initials": "R",
+                "lastName": "Shertzer-Skinner"
+              },
+              {
+                "firstName": "Abbie",
+                "fullName": "Wrights A",
+                "initials": "A",
+                "lastName": "Wrights"
+              },
+              {
+                "firstName": "Rose",
+                "fullName": "Fries R",
+                "initials": "R",
+                "lastName": "Fries"
+              },
+              {
+                "firstName": "Deborah",
+                "fullName": "Barr D",
+                "initials": "D",
+                "lastName": "Barr"
+              },
+              {
+                "firstName": "Thomas M",
+                "fullName": "Gill TM",
+                "initials": "TM",
+                "lastName": "Gill"
+              },
+              {
+                "firstName": "Robert S",
+                "fullName": "Axtell RS",
+                "initials": "RS",
+                "lastName": "Axtell"
+              },
+              {
+                "firstName": "Susan S",
+                "fullName": "Kashaf SS",
+                "initials": "SS",
+                "lastName": "Kashaf"
+              },
+              {
+                "firstName": "Nathalie",
+                "fullName": "de Rekeneire N",
+                "initials": "N",
+                "lastName": "de Rekeneire"
+              },
+              {
+                "firstName": "Joanne M",
+                "fullName": "McGloin JM",
+                "initials": "JM",
+                "lastName": "McGloin"
+              },
+              {
+                "firstName": "Karen C",
+                "fullName": "Wu KC",
+                "initials": "KC",
+                "lastName": "Wu"
+              },
+              {
+                "firstName": "Denise M",
+                "fullName": "Shepard DM",
+                "initials": "DM",
+                "lastName": "Shepard"
+              },
+              {
+                "firstName": "Barbara",
+                "fullName": "Fennelly B",
+                "initials": "B",
+                "lastName": "Fennelly"
+              },
+              {
+                "firstName": "Lynne P",
+                "fullName": "Iannone LP",
+                "initials": "LP",
+                "lastName": "Iannone"
+              },
+              {
+                "firstName": "Raeleen",
+                "fullName": "Mautner R",
+                "initials": "R",
+                "lastName": "Mautner"
+              },
+              {
+                "firstName": "Theresa Sweeney",
+                "fullName": "Barnett TS",
+                "initials": "TS",
+                "lastName": "Barnett"
+              },
+              {
+                "firstName": "Sean N",
+                "fullName": "Halpin SN",
+                "initials": "SN",
+                "lastName": "Halpin"
+              },
+              {
+                "firstName": "Matthew J",
+                "fullName": "Brennan MJ",
+                "initials": "MJ",
+                "lastName": "Brennan"
+              },
+              {
+                "firstName": "Julie A",
+                "fullName": "Bugaj JA",
+                "initials": "JA",
+                "lastName": "Bugaj"
+              },
+              {
+                "firstName": "Maria A",
+                "fullName": "Zenoni MA",
+                "initials": "MA",
+                "lastName": "Zenoni"
+              },
+              {
+                "firstName": "Bridget M",
+                "fullName": "Mignosa BM",
+                "initials": "BM",
+                "lastName": "Mignosa"
+              },
+              {
+                "firstName": "Jeff",
+                "fullName": "Williamson J",
+                "initials": "J",
+                "lastName": "Williamson"
+              },
+              {
+                "firstName": "Kaycee M",
+                "fullName": "Sink KM",
+                "initials": "KM",
+                "lastName": "Sink"
+              },
+              {
+                "firstName": "Hugh C",
+                "fullName": "Hendrie HC",
+                "initials": "HC",
+                "lastName": "Hendrie"
+              },
+              {
+                "firstName": "Stephen R",
+                "fullName": "Rapp SR",
+                "initials": "SR",
+                "lastName": "Rapp"
+              },
+              {
+                "firstName": "Joe",
+                "fullName": "Verghese J",
+                "initials": "J",
+                "lastName": "Verghese"
+              },
+              {
+                "firstName": "Nancy",
+                "fullName": "Woolard N",
+                "initials": "N",
+                "lastName": "Woolard"
+              },
+              {
+                "firstName": "Mark",
+                "fullName": "Espeland M",
+                "initials": "M",
+                "lastName": "Espeland"
+              },
+              {
+                "firstName": "Janine",
+                "fullName": "Jennings J",
+                "initials": "J",
+                "lastName": "Jennings"
+              },
+              {
+                "firstName": "Carl J",
+                "fullName": "Pepine CJ",
+                "initials": "CJ",
+                "lastName": "Pepine"
+              },
+              {
+                "firstName": "Mario",
+                "fullName": "Ariet M",
+                "initials": "M",
+                "lastName": "Ariet"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7805-9577"
+                },
+                "firstName": "Eileen",
+                "fullName": "Handberg E",
+                "initials": "E",
+                "lastName": "Handberg"
+              },
+              {
+                "firstName": "Daniel",
+                "fullName": "Deluca D",
+                "initials": "D",
+                "lastName": "Deluca"
+              },
+              {
+                "firstName": "James",
+                "fullName": "Hill J",
+                "initials": "J",
+                "lastName": "Hill"
+              },
+              {
+                "firstName": "Anita",
+                "fullName": "Szady A",
+                "initials": "A",
+                "lastName": "Szady"
+              },
+              {
+                "firstName": "Geoffrey L",
+                "fullName": "Chupp GL",
+                "initials": "GL",
+                "lastName": "Chupp"
+              },
+              {
+                "firstName": "Gail M",
+                "fullName": "Flynn GM",
+                "initials": "GM",
+                "lastName": "Flynn"
+              },
+              {
+                "firstName": "Thomas M",
+                "fullName": "Gill TM",
+                "initials": "TM",
+                "lastName": "Gill"
+              },
+              {
+                "firstName": "John L",
+                "fullName": "Hankinson JL",
+                "initials": "JL",
+                "lastName": "Hankinson"
+              },
+              {
+                "firstName": "Carlos A  Vaz",
+                "fullName": "Fragoso CA",
+                "initials": "CA",
+                "lastName": "Fragoso"
+              },
+              {
+                "firstName": "Erik J",
+                "fullName": "Groessl EJ",
+                "initials": "EJ",
+                "lastName": "Groessl"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4837-5330"
+                },
+                "firstName": "Robert M",
+                "fullName": "Kaplan RM",
+                "initials": "RM",
+                "lastName": "Kaplan"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2014 Jun",
+            "issue": "23",
+            "journal": {
+              "essn": "1538-3598",
+              "isoabbreviation": "JAMA",
+              "issn": "0098-7484",
+              "medlineAbbreviation": "JAMA",
+              "nlmid": "7501160",
+              "title": "JAMA"
+            },
+            "journalIssueId": 2172061,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2014-06-01",
+            "volume": "311",
+            "yearOfPublication": 2014
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS602072",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Exercise",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Exercise Therapy",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Walking",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Risk",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Single-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Life Style",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Motor Skills Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Health Education",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged, 80 and over",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Sedentary Behavior",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Persons with Disabilities",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "2387-2396",
+          "pmcid": "PMC4266388",
+          "pmid": "24866862",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, N.I.H., Intramural",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Research Support, U.S. Gov't, Non-P.H.S.",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2014",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Effect of structured physical activity on prevention of major mobility disability in older adults: the LIFE study randomized clinical trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "c8db18df065b9e2dfca58e205143ccc86a93534b19c04ce34758b7fa8eac348b"
+}

@@ -1,0 +1,391 @@
+{
+  "artifact_id": "source_artifact_1e243ca4556ef7fc",
+  "byte_size": 12798,
+  "file_name": "018_pilot_10_1016_j_drugalcdep_2007_02_009.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/018_pilot_10_1016_j_drugalcdep_2007_02_009.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/j.drugalcdep.2007.02.009\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "The aim of this Stage I Behavioral Development Trial was to develop a manual-based 12-session Women's Recovery Group (WRG) and to pilot test this new treatment in a randomized controlled trial against a mixed-gender Group Drug Counseling (GDC), an effective manual-based treatment for substance use disorders. After initial manual development, two pre-pilot groups of WRG were conducted to determine feasibility and initial acceptability of the treatment among subjects and therapists. In the pilot stage, women were randomized to either WRG or GDC. No significant differences in substance use outcomes were found between WRG and GDC during the 12-week group treatment. However, during the 6-month post-treatment follow-up, WRG members demonstrated a pattern of continued reductions in substance use while GDC women did not. In addition, pilot WRG women with alcohol dependence had significantly greater reductions in average drinks/drinking day than GDC women 6 months post-treatment (p<.03, effect size=0.81). While satisfaction with both groups was high, women were significantly more satisfied with WRG than GDC (p<.009, effect size=1.11). In this study, the newly developed 12-session women-focused WRG was feasible with high satisfaction among participants. It was equally effective as mixed-gender GDC in reducing substance use during the 12-week in-treatment phase, but demonstrated significantly greater improvement in reductions in drug and alcohol use over the post-treatment follow-up phase compared with GDC. A women-focused single-gender group treatment may enhance longer-term clinical outcomes among women with substance use disorders.",
+          "affiliation": "Department of Psychiatry, Harvard Medical School, Boston MA 02115, USA. shelly_greenfield@hms.harvard.edu",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3011-8697"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9922-8608"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry, Harvard Medical School, Boston MA 02115, USA. shelly_greenfield@hms.harvard.edu"
+                    }
+                  ]
+                },
+                "firstName": "Shelly F",
+                "fullName": "Greenfield SF",
+                "initials": "SF",
+                "lastName": "Greenfield"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9922-8608"
+                },
+                "firstName": "Elisa M",
+                "fullName": "Trucco EM",
+                "initials": "EM",
+                "lastName": "Trucco"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3011-8697"
+                },
+                "firstName": "R Kathryn",
+                "fullName": "McHugh RK",
+                "initials": "RK",
+                "lastName": "McHugh"
+              },
+              {
+                "firstName": "Melissa",
+                "fullName": "Lincoln M",
+                "initials": "M",
+                "lastName": "Lincoln"
+              },
+              {
+                "firstName": "Robert J",
+                "fullName": "Gallop RJ",
+                "initials": "RJ",
+                "lastName": "Gallop"
+              }
+            ]
+          },
+          "authorString": "Greenfield SF, Trucco EM, McHugh RK, Lincoln M, Gallop RJ.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Central Nervous System Stimulants",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 85,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2007-10-15",
+          "dateOfCreation": "2007-04-21",
+          "dateOfRevision": "2018-12-01",
+          "doi": "10.1016/j.drugalcdep.2007.02.009",
+          "electronicPublicationDate": "2007-04-18",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2007-04-18",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3679366"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.drugalcdep.2007.02.009"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3679366"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3679366?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.drugalcdep.2007.02.009"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DA",
+                "agency": "NIDA NIH HHS",
+                "grantId": "DA 019855",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DA",
+                "agency": "NIDA NIH HHS",
+                "grantId": "K24 DA019855",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DA",
+                "agency": "NIDA NIH HHS",
+                "grantId": "R01 DA015434",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DA",
+                "agency": "NIDA NIH HHS",
+                "grantId": "DA 15434",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "17446014",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2007 Sep",
+            "issue": "1",
+            "journal": {
+              "essn": "1879-0046",
+              "isoabbreviation": "Drug Alcohol Depend",
+              "issn": "0376-8716",
+              "medlineAbbreviation": "Drug Alcohol Depend",
+              "nlmid": "7513587",
+              "title": "Drug and alcohol dependence"
+            },
+            "journalIssueId": 1402804,
+            "monthOfPublication": 9,
+            "printPublicationDate": "2007-09-01",
+            "volume": "90",
+            "yearOfPublication": 2007
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS429124",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Substance-Related Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "RH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "rehabilitation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Alcohol-Related Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "RH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "rehabilitation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cocaine-Related Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "RH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "rehabilitation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Marijuana Abuse",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "RH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "rehabilitation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Central Nervous System Stimulants",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Follow-Up Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Gender Identity",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Counseling",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Psychotherapy, Group",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Secondary Prevention",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "39-47",
+          "pmcid": "PMC3679366",
+          "pmid": "17446014",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2007",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "The Women's Recovery Group Study: a Stage I trial of women-focused group therapy for substance use disorders versus mixed-gender group drug counseling."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "f7a7c437fed84e1d9ef09038162bec8dc57d76c35f9a05712ab152dac0ecc37e"
+}

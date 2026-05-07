@@ -4,10 +4,10 @@ Every checked replication source should now be traceable through the canonical a
 
 - Canonical source-family audit rows: `107` in [replication_source_audit.csv](../data/derived/replication_pairs/replication_source_audit.csv)
 - Non-lossy evidence-surface rows: `346` in [replication_source_evidence_inventory.csv](../data/derived/replication_pairs/replication_source_evidence_inventory.csv)
-- Source datasets known to the current build: `97` in [replication_pair_source_catalog.csv](../data/derived/replication_pairs/replication_pair_source_catalog.csv)
+- Source datasets known to the current build: `103` in [replication_pair_source_catalog.csv](../data/derived/replication_pairs/replication_pair_source_catalog.csv)
 - Prioritized unresolved checked sources: `10` in [replication_source_worklist.csv](../data/derived/replication_pairs/replication_source_worklist.csv)
-- Live integrated pair rows: `2,246` in [replication_pairs_all_on_hand.csv](../data/derived/replication_pairs/replication_pairs_all_on_hand.csv)
-- Figure 2 rule-qualified rows: `1,548` in [replication_pairs_figure2_rule_subset.csv](../data/derived/replication_pairs/replication_pairs_figure2_rule_subset.csv)
+- Live integrated pair rows: `2,430` in [replication_pairs_all_on_hand.csv](../data/derived/replication_pairs/replication_pairs_all_on_hand.csv)
+- Figure 2 rule-qualified rows: `1,684` in [replication_pairs_figure2_rule_subset.csv](../data/derived/replication_pairs/replication_pairs_figure2_rule_subset.csv)
 - Audit rows with integrated live data: `70`
 - Audit rows with staged artifacts: `54`
 - Audit rows with promoted artifacts: `26`

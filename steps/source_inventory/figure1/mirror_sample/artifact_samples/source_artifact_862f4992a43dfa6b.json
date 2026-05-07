@@ -1,0 +1,58 @@
+{
+  "artifact_id": "source_artifact_862f4992a43dfa6b",
+  "byte_size": 3035,
+  "file_name": "unnamed-chunk-5_b484cf9d11ca2b6496feaefc057e83c8.RData",
+  "file_type": "rdata",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/R/main_cache/docx/unnamed-chunk-5_b484cf9d11ca2b6496feaefc057e83c8.RData",
+  "object_count": 2,
+  "objects": [
+    {
+      "columns": [
+        ".Random.seed"
+      ],
+      "name": ".Random.seed",
+      "preview_rows": [
+        {
+          ".Random.seed": 10403
+        },
+        {
+          ".Random.seed": 624
+        },
+        {
+          ".Random.seed": 1259748595
+        },
+        {
+          ".Random.seed": 2128225688
+        },
+        {
+          ".Random.seed": -835661127
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        626,
+        1
+      ]
+    },
+    {
+      "columns": [
+        ".main_cache/docx/unnamed-chunk-5_b484cf9d11ca2b6496feaefc057e83c8"
+      ],
+      "name": ".main_cache/docx/unnamed-chunk-5_b484cf9d11ca2b6496feaefc057e83c8",
+      "preview_rows": [
+        {
+          ".main_cache/docx/unnamed-chunk-5_b484cf9d11ca2b6496feaefc057e83c8": "\n```r\n# count number of outcomes per study\nd = group_by(d,study) %>% mutate(count=n(),w=1/count) \n# censor two extreme z values at, say, -100 and 100, respectively\nd$z[d$z == max(d$z)] = 100\nd$z[d$z == min(d$z)] = -100\n\ndf=mix(z=d$z,k=4,c1=0,c2=10,weights=d$w)\np=df$p\nm=df$m\nsigma=df$sigma\nround(df,2)\n```\n\n```\n##      p m sigma\n## 1 0.57 0  2.40\n## 2 0.16 0  1.00\n## 3 0.15 0  4.50\n## 4 0.11 0 10.87\n```"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1,
+        1
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "330c0f70ce9bef8f9697a2cf99a8492710b1dd8dc3b7111a63f62cdb95fac6e1"
+}

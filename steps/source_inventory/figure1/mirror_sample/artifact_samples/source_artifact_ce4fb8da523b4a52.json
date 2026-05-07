@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_ce4fb8da523b4a52",
+  "byte_size": 11678,
+  "columns": [
+    "Study",
+    "Site",
+    "Version",
+    "ES.Metric",
+    "Value",
+    "N",
+    "Reverse",
+    "Label",
+    "Figure3StudyLabel",
+    "Source"
+  ],
+  "estimated_data_rows": 121,
+  "file_name": "Summary Effect Sizes - Single Effects (including Orig and RPP).csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/Summary Effect Sizes - Single Effects (including Orig and RPP).csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "ES.Metric": "r",
+      "Figure3StudyLabel": "Albarracin et al., Study 5",
+      "Label": "Albarracin S5 Original",
+      "N": 36,
+      "Reverse": "no",
+      "Site": "Original",
+      "Source": "Original",
+      "Study": "Albarracin S5",
+      "Value": 0.38,
+      "Version": "Original"
+    },
+    {
+      "ES.Metric": "r",
+      "Figure3StudyLabel": "Albarracin et al., Study 7",
+      "Label": "Albarracin S7 Original",
+      "N": 98,
+      "Reverse": "no",
+      "Site": "Original",
+      "Source": "Original",
+      "Study": "Albarracin S7",
+      "Value": 0.21,
+      "Version": "Original"
+    },
+    {
+      "ES.Metric": "r",
+      "Figure3StudyLabel": "Crosby et al.",
+      "Label": "Crosby Original",
+      "N": 25,
+      "Reverse": "no",
+      "Site": "Original",
+      "Source": "Original",
+      "Study": "Crosby",
+      "Value": 0.25,
+      "Version": "Original"
+    },
+    {
+      "ES.Metric": "r",
+      "Figure3StudyLabel": "Forster et al.",
+      "Label": "Forster Original",
+      "N": 82,
+      "Reverse": "no",
+      "Site": "Original",
+      "Source": "Original",
+      "Study": "Forster",
+      "Value": 0.43,
+      "Version": "Original"
+    },
+    {
+      "ES.Metric": "r",
+      "Figure3StudyLabel": "LoBue & DeLoache",
+      "Label": "LoBue Original",
+      "N": 48,
+      "Reverse": "no",
+      "Site": "Original",
+      "Source": "Original",
+      "Study": "LoBue",
+      "Value": 0.48,
+      "Version": "Original"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "c8f1d303f400f9d8bf65abdfc0632d9fb847d5f990b539fe250c4319913604d8"
+}

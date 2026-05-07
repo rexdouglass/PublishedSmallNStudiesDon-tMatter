@@ -1,0 +1,45 @@
+{
+  "artifact_id": "source_artifact_0d45c92d48b1f5da",
+  "byte_size": 927,
+  "columns": [
+    "report_id",
+    "exclude_reason",
+    "rr_id"
+  ],
+  "estimated_data_rows": 19,
+  "file_name": "Analysis-ready Data__Replication and Reproduction Papers__repli_exclusions.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Analysis-ready Data__Replication and Reproduction Papers__repli_exclusions.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "exclude_reason": "Non-significant original findings",
+      "report_id": "86m96_100_19",
+      "rr_id": "86m96"
+    },
+    {
+      "exclude_reason": "Non-significant original findings",
+      "report_id": "86m96_100_20",
+      "rr_id": "86m96"
+    },
+    {
+      "exclude_reason": "Incomplete or insufficient data collection",
+      "report_id": "67z8xyQ",
+      "rr_id": "67z8"
+    },
+    {
+      "exclude_reason": "Incomplete or insufficient data collection",
+      "report_id": "9k2yj0BG",
+      "rr_id": "9k2y"
+    },
+    {
+      "exclude_reason": "Incomplete or insufficient data collection",
+      "report_id": "4z02_83_1",
+      "rr_id": "4z02"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "2df78b221a5f8563e7b8ab99f764572203641375362a6fde6787be062c67be5f"
+}

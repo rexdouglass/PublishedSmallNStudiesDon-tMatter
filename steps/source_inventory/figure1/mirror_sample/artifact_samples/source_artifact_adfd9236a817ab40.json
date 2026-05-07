@@ -1,0 +1,269 @@
+{
+  "artifact_id": "source_artifact_adfd9236a817ab40",
+  "byte_size": 8068,
+  "file_name": "013_pilot_10_1037_0022_006x_74_3_614.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/013_pilot_10_1037_0022_006x_74_3_614.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1037/0022-006x.74.3.614\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "Seventy-two clinically anxious children, aged 7 to 14 years, were randomly allocated to clinic-based, cognitive-behavior therapy, the same treatment partially delivered via the Internet, or a wait-list control (WL). Children in the clinic and clinic-plus-Internet conditions showed significantly greater reductions in anxiety from pre- to posttreatment and were more likely to be free of their anxiety diagnoses, compared with the WL group. Improvements were maintained at 12-month follow-up for both therapy conditions, with minimal difference in outcomes between interventions. The Internet treatment content was highly acceptable to families, with minimal dropout and a high level of therapy compliance.",
+          "affiliation": "School of Psychology, University of Queensland, Brisbane, Australia. sue.spence@mq.edu.au",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6734-8608"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8425-7126"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7022-6676"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Psychology, University of Queensland, Brisbane, Australia. sue.spence@mq.edu.au"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7022-6676"
+                },
+                "firstName": "Susan H",
+                "fullName": "Spence SH",
+                "initials": "SH",
+                "lastName": "Spence"
+              },
+              {
+                "firstName": "Jane M",
+                "fullName": "Holmes JM",
+                "initials": "JM",
+                "lastName": "Holmes"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8425-7126"
+                },
+                "firstName": "Sonja",
+                "fullName": "March S",
+                "initials": "S",
+                "lastName": "March"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6734-8608"
+                },
+                "firstName": "Ottmar V",
+                "fullName": "Lipp OV",
+                "initials": "OV",
+                "lastName": "Lipp"
+              }
+            ]
+          },
+          "authorString": "Spence SH, Holmes JM, March S, Lipp OV.",
+          "citedByCount": 123,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2006-09-08",
+          "dateOfCreation": "2006-07-11",
+          "dateOfRevision": "2022-03-18",
+          "doi": "10.1037/0022-006x.74.3.614",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2006-06-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1037/0022-006X.74.3.614"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "16822117",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2006 Jun",
+            "issue": "3",
+            "journal": {
+              "essn": "1939-2117",
+              "isoabbreviation": "J Consult Clin Psychol",
+              "issn": "0022-006X",
+              "medlineAbbreviation": "J Consult Clin Psychol",
+              "nlmid": "0136553",
+              "title": "Journal of consulting and clinical psychology"
+            },
+            "journalIssueId": 1333399,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2006-06-01",
+            "volume": "74",
+            "yearOfPublication": 2006
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Ambulatory Care",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Severity of Illness Index",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Anxiety Disorders",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diagnosis"
+                    },
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Internet",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "IS",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "instrumentation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "614-621",
+          "pmid": "16822117",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2006",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "The feasibility and outcome of clinic plus internet delivery of cognitive-behavior therapy for childhood anxiety."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "7e3375a6e3b79d8c3a9feff4cab8bd683985780310931e49bc28aecf970f00f7"
+}

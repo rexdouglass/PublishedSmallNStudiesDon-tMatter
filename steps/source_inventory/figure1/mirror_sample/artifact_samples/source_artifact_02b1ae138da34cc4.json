@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_02b1ae138da34cc4",
+  "byte_size": 20335,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 422,
+  "file_name": "ft140_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/ft140_1.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.5026,
+      "obs_ID": "obs001",
+      "study_ID": "Agrawal 2004",
+      "var": 0.0645,
+      "year_pub": 2004
+    },
+    {
+      "es": -0.3643,
+      "obs_ID": "obs002",
+      "study_ID": "Agrawal 2004",
+      "var": 0.0635,
+      "year_pub": 2004
+    },
+    {
+      "es": 0.408,
+      "obs_ID": "obs003",
+      "study_ID": "Agrawal 2004",
+      "var": 0.0638,
+      "year_pub": 2004
+    },
+    {
+      "es": 0.3759,
+      "obs_ID": "obs004",
+      "study_ID": "Agrawal 2004",
+      "var": 0.0636,
+      "year_pub": 2004
+    },
+    {
+      "es": 0.2473,
+      "obs_ID": "obs005",
+      "study_ID": "Agrawal 2004",
+      "var": 0.063,
+      "year_pub": 2004
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "ff728563eb3c6f6b88b9185366031ac48f163b3dee2a4e370331760620b658be"
+}

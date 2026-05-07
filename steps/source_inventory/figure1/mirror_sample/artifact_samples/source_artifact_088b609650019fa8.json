@@ -1,0 +1,521 @@
+{
+  "artifact_id": "source_artifact_088b609650019fa8",
+  "byte_size": 17775,
+  "file_name": "042_pilot_10_1056_NEJMoa0708638.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/042_pilot_10_1056_NEJMoa0708638.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1056/NEJMoa0708638\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Survival of patients with acute lung injury or the acute respiratory distress syndrome (ARDS) has been improved by ventilation with small tidal volumes and the use of positive end-expiratory pressure (PEEP); however, the optimal level of PEEP has been difficult to determine. In this pilot study, we estimated transpulmonary pressure with the use of esophageal balloon catheters. We reasoned that the use of pleural-pressure measurements, despite the technical limitations to the accuracy of such measurements, would enable us to find a PEEP value that could maintain oxygenation while preventing lung injury due to repeated alveolar collapse or overdistention.<h4>Methods</h4>We randomly assigned patients with acute lung injury or ARDS to undergo mechanical ventilation with PEEP adjusted according to measurements of esophageal pressure (the esophageal-pressure-guided group) or according to the Acute Respiratory Distress Syndrome Network standard-of-care recommendations (the control group). The primary end point was improvement in oxygenation. The secondary end points included respiratory-system compliance and patient outcomes.<h4>Results</h4>The study reached its stopping criterion and was terminated after 61 patients had been enrolled. The ratio of the partial pressure of arterial oxygen to the fraction of inspired oxygen at 72 hours was 88 mm Hg higher in the esophageal-pressure-guided group than in the control group (95% confidence interval, 78.1 to 98.3; P=0.002). This effect was persistent over the entire follow-up time (at 24, 48, and 72 hours; P=0.001 by repeated-measures analysis of variance). Respiratory-system compliance was also significantly better at 24, 48, and 72 hours in the esophageal-pressure-guided group (P=0.01 by repeated-measures analysis of variance).<h4>Conclusions</h4>As compared with the current standard of care, a ventilator strategy using esophageal pressures to estimate the transpulmonary pressure significantly improves oxygenation and compliance. Multicenter clinical trials are needed to determine whether this approach should be widely adopted. (ClinicalTrials.gov number, NCT00127491.)",
+          "affiliation": "Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Boston 02215, USA. dtalmor@bidmc.harvard.edu",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8706-9622"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7239-8068"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1788-006X"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Boston 02215, USA. dtalmor@bidmc.harvard.edu"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7239-8068"
+                },
+                "firstName": "Daniel",
+                "fullName": "Talmor D",
+                "initials": "D",
+                "lastName": "Talmor"
+              },
+              {
+                "firstName": "Todd",
+                "fullName": "Sarge T",
+                "initials": "T",
+                "lastName": "Sarge"
+              },
+              {
+                "firstName": "Atul",
+                "fullName": "Malhotra A",
+                "initials": "A",
+                "lastName": "Malhotra"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1788-006X"
+                },
+                "firstName": "Carl R",
+                "fullName": "O'Donnell CR",
+                "initials": "CR",
+                "lastName": "O'Donnell"
+              },
+              {
+                "firstName": "Ray",
+                "fullName": "Ritz R",
+                "initials": "R",
+                "lastName": "Ritz"
+              },
+              {
+                "firstName": "Alan",
+                "fullName": "Lisbon A",
+                "initials": "A",
+                "lastName": "Lisbon"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8706-9622"
+                },
+                "firstName": "Victor",
+                "fullName": "Novack V",
+                "initials": "V",
+                "lastName": "Novack"
+              },
+              {
+                "firstName": "Stephen H",
+                "fullName": "Loring SH",
+                "initials": "SH",
+                "lastName": "Loring"
+              }
+            ]
+          },
+          "authorString": "Talmor D, Sarge T, Malhotra A, O'Donnell CR, Ritz R, Lisbon A, Novack V, Loring SH.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Oxygen",
+                "registryNumber": "S88TT14065"
+              }
+            ]
+          },
+          "citedByCount": 708,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "19001506",
+                "orderIn": 1,
+                "reference": "N Engl J Med. 2008 Nov 13;359(20):2166-8. doi: 10.1056/NEJMe0806637",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "19228629",
+                "orderIn": 2,
+                "reference": "N Engl J Med. 2009 Feb 19;360(8):831; author reply 832-3. doi: 10.1056/NEJMc082492",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "19238672",
+                "orderIn": 3,
+                "reference": "N Engl J Med. 2009 Feb 19;360(8):831-2; author reply 832-3.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "19238673",
+                "orderIn": 4,
+                "reference": "N Engl J Med. 2009 Feb 19;360(8):832; author reply 832-3.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "19238674",
+                "orderIn": 5,
+                "reference": "N Engl J Med. 2009 Feb 19;360(8):832; author reply 832-3.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "21092152",
+                "orderIn": 6,
+                "reference": "Crit Care. 2010;14(6):326. doi: 10.1186/cc9314",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "recommended_reviews",
+              "wikipedia"
+            ]
+          },
+          "dateOfCompletion": "2008-11-24",
+          "dateOfCreation": "2008-11-13",
+          "dateOfRevision": "2022-03-21",
+          "doi": "10.1056/nejmoa0708638",
+          "electronicPublicationDate": "2008-11-11",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-03-03",
+          "firstPublicationDate": "2008-11-11",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3969885"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.nejm.org/doi/pdf/10.1056/NEJMoa0708638?articleTools=true"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://europepmc.org/articles/pmc3969885?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.nejm.org/doi/pdf/10.1056/NEJMoa0708638?articleTools=true"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "https://www.nejm.org/doi/pdf/10.1056/NEJMoa0708638?articleTools=true"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "pdf",
+                "site": "content.nejm.org",
+                "url": "http://content.nejm.org/cgi/reprint/359/20/2095.pdf"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "abs",
+                "site": "content.nejm.org",
+                "url": "http://content.nejm.org/cgi/content/abstract/359/20/2095"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "html",
+                "site": "content.nejm.org",
+                "url": "http://content.nejm.org/cgi/content/full/359/20/2095"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1056/NEJMoa0708638"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3969885"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3969885?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1056/nejmoa0708638"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "K24 HL093218",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "R01 HL052586",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "HL-52586",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "19001507",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2008 Nov",
+            "issue": "20",
+            "journal": {
+              "essn": "1533-4406",
+              "isoabbreviation": "N Engl J Med",
+              "issn": "0028-4793",
+              "medlineAbbreviation": "N Engl J Med",
+              "nlmid": "0255562",
+              "title": "The New England journal of medicine"
+            },
+            "journalIssueId": 1578713,
+            "monthOfPublication": 11,
+            "printPublicationDate": "2008-11-01",
+            "volume": "359",
+            "yearOfPublication": 2008
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS539284",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Esophagus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Lung",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Oxygen",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Tidal Volume",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Length of Stay",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Positive-Pressure Respiration",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Multivariate Analysis",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pressure",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Intensive Care Units",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Acute Lung Injury",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "mortality"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Respiratory Distress Syndrome",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "mortality"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "2095-2104",
+          "pmcid": "PMC3969885",
+          "pmid": "19001507",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2008",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Mechanical ventilation guided by esophageal pressure in acute lung injury.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "f40c5110c4d80041f16e158226538a4e1f0bb1efe24d3a94041dbd1b73e29948"
+}

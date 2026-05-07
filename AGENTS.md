@@ -108,6 +108,174 @@ the user returns GPT JSON, save it as the requested `reviewcue-decisions-*.json`
 artifact. A separate decision-application step should validate and apply those
 decisions later.
 
+## Figure 1 Current Handoff - 2026-05-06
+
+Meta-goal: Figure 1 is an auditable original-vs-larger-replication D/N
+dataset. The repository is not merely making a striking plot; it is building a
+defensible empirical map of how reported effects change when early findings are
+tested in larger, more rigorous follow-up studies. Every plotted point must be
+retraceable from source bytes through bibliographic identity, extraction text,
+transformations, inclusion decisions, and plot membership.
+
+Current state as of 2026-05-06:
+
+- `FIGURE1_REPLICATION_PAIRS.tsv` has 2,458 root rows.
+- The current Figure 1 D/N rule includes 1,706 plotted rows.
+- `data/derived/replication_pairs/harvest/promoted/individual_replication_papers__promoted_pairs.csv` has 27 promoted individual-replication rows.
+- The latest GPT blocker prompt has 33 unresolved candidates: 27 `needs_more_evidence`, 3 `native_only`, and 3 `reject`/second-check items.
+
+Rows promoted in the latest 2026-05-06 individual-replication pass. Do not redo
+these unless new evidence shows an error:
+
+- Approximate arithmetic training:
+  Park and Brannon (2013) Experiment 2, DOI `10.1177/0956797613482944`,
+  versus Szkudlarek, Park, and Brannon (2020) Experiment 3, DOI
+  `10.1016/j.cognition.2020.104521`. Promoted as
+  `D_original = 0.846`, `N_original = 30`, `D_replication = 0.19`,
+  `N_replication = 89`. Original D was computed from the mirrored PMC text as
+  `2.313 * sqrt(1/16 + 1/14)`. Value-bearing source paths include
+  `data/raw/replication_projects/individual_auto_mining_blockers/api_candidate_0eb40892da116803/original_attempts/park_brannon_2013_pmc3797151.html`
+  and the mirrored replication PMC HTML under the same candidate directory.
+- Status motivation and green product choice:
+  Griskevicius, Tybur, and Van den Bergh (2010) Experiment 1, DOI
+  `10.1037/a0018589`, versus Lazarevic et al. (2025) collaborative registered
+  replication, DOI `10.1525/collabra.143773`. Promoted as
+  `D_original = 0.47`, `N_original = 168`, `D_replication = 0.03`,
+  `N_replication = 3774`. The replication source reported signed internal
+  meta-analytic effect `-0.03`; Figure 1 stores the nonnegative magnitude
+  `0.03`. Value-bearing source paths include
+  `data/raw/replication_projects/individual_auto_mining_blockers/api_candidate_a939357d526cdfa3/original_attempts/griskevicius_2010_going_green_pdf.pdf`
+  and
+  `data/raw/replication_projects/individual_auto_mining_blockers/api_candidate_a939357d526cdfa3/article_attempts/osf_sfmz8_preprint.txt`.
+
+Non-negotiable Figure 1 row rules:
+
+- Do not promote metadata-only leads.
+- Do not promote from a title, abstract, DOI landing page, paywall page,
+  CAPTCHA page, access-denied page, or ordinary citation unless that object
+  itself contains the exact value-bearing text.
+- A plotted row needs affirmative replication/follow-up relationship evidence,
+  a matched original and replication outcome/contrast/timepoint, original
+  N/effect, replication N/effect, conversion notes, and local source paths.
+- D is plotted as a nonnegative magnitude. Preserve signed source values in
+  verbatim support and notes, but promote Figure 1 D as a magnitude unless a
+  future explicit policy says otherwise.
+- Do not collapse multiple outcomes, multiple target studies, multiple labs, or
+  pooled vs single-study estimates unless the aggregation level is explicit and
+  defensible.
+- Keep `needs_more_evidence`, `native_only`, `coverage_only`, and `reject`
+  decisions as artifacts. Do not silently drop failed or blocked leads.
+
+Active files for the individual-replication workstream:
+
+- GPT blocker prompt to send:
+  `reports/figure1_individual_replication_blocker_unblock_prompt_2026-05-06.md`
+- Same prompt under the work step:
+  `steps/individual_replication_papers/figure1/auto_mining/individual-paper-gpt-blocker-unblock-prompt-2026-05-06.md`
+- Raw blocker candidate payload:
+  `steps/individual_replication_papers/figure1/auto_mining/individual-paper-gpt-blocker-unblock-candidates-2026-05-06.json`
+- GPT decisions receipt from the prior auto-mining batch:
+  `steps/individual_replication_papers/figure1/auto_mining/individual-paper-gpt-decisions-after-auto-mining-2026-05-06.tsv`
+- Current value scan:
+  `steps/individual_replication_papers/figure1/individual-paper-value-scan-batch001.tsv`
+- Promotion proposal/receipt:
+  `steps/individual_replication_papers/figure1/individual-paper-promotion-proposal.tsv`
+- Promoted individual-replication pair contract:
+  `data/derived/replication_pairs/harvest/promoted/individual_replication_papers__promoted_pairs.csv`
+- Row disposition summaries:
+  `steps/individual_replication_papers/figure1/individual-paper-row-disposition-batch001.tsv`
+  and
+  `steps/individual_replication_papers/figure1/individual-paper-result-option-disposition-batch001.tsv`
+- Generator for the GPT blocker prompt:
+  `scripts/build_individual_replication_blocker_gpt_prompt.py`
+
+Fresh-session restart checklist:
+
+1. Read this `Figure 1 Current Handoff - 2026-05-06` section before touching
+   rows.
+2. Confirm current counts, because later sessions may have advanced the repo:
+
+   ```text
+   python - <<'PY'
+   import pandas as pd
+   for path in [
+       'FIGURE1_REPLICATION_PAIRS.tsv',
+       'data/derived/replication_pairs/harvest/promoted/individual_replication_papers__promoted_pairs.csv',
+       'steps/individual_replication_papers/figure1/auto_mining/individual-paper-gpt-blocker-unblock-candidates-2026-05-06.json',
+   ]:
+       sep = '\t' if path.endswith('.tsv') else ','
+       if path.endswith('.json'):
+           import json
+           data = json.load(open(path, encoding='utf-8'))
+           print(path, data.get('candidate_count', len(data.get('candidates', []))))
+       else:
+           print(path, len(pd.read_csv(path, sep=sep)))
+   PY
+   ```
+
+3. If the user wants GPT help, send the whole Markdown prompt at
+   `reports/figure1_individual_replication_blocker_unblock_prompt_2026-05-06.md`.
+   It is complete end-to-end and already contains the candidate JSON; do not
+   paste a placeholder.
+4. If the user returns GPT JSON, save it as a new dated artifact such as
+   `steps/individual_replication_papers/figure1/auto_mining/individual-paper-gpt-blocker-decisions-YYYY-MM-DD.json`.
+   There is not yet a fully automated applier for this blocker prompt; verify
+   `ready_for_row` decisions against mirrored or newly acquired bytes before
+   editing the value-scan script.
+5. Before finalizing after any row changes, run the canonical commands and
+   report both total `FIGURE1_REPLICATION_PAIRS.tsv` rows and current D/N
+   included rows from `steps/corpus_results/figure1/result_table/figure1-replication-pairs-summary.md`.
+
+Canonical commands for this workstream:
+
+```text
+python scripts/build_individual_replication_blocker_gpt_prompt.py
+python scripts/scan_individual_replication_batch001_values.py --replace
+python scripts/promote_individual_replication_value_scan.py --replace
+make figure1-corpus-dn-check figure1-replication-pairs-table
+make figure1-arrow-plot-current figure1-html-review-assets
+make figure1-individual-replication-row-disposition-batch001
+```
+
+Decision ladder for GPT/Codex/human review:
+
+- `ready_for_row`: source-backed values and mapping are good enough to promote
+  after local verification.
+- `needs_more_evidence`: relation is plausible or real, but exact source
+  object, matched values, N, or conversion route is missing.
+- `native_only`: relation is real and values may exist, but the metric is not
+  defensibly convertible to current Figure 1 D/SMD or binary d-equivalent.
+- `coverage_only`: relation is real, but public source objects or values are
+  missing/inaccessible.
+- `reject`: no valid matched row under current policy.
+
+Known failure modes to guard against:
+
+- A title says replication, but the original target is ambiguous.
+- Original and replication use different contrasts or outcomes.
+- Replication N is larger overall but smaller for the focal matched contrast.
+- A power-analysis or planning D is mistaken for the original source result.
+- DOI/landing pages are treated as full text.
+- Pooled or meta-analytic replication effects are used without clear mapping to
+  the original target and aggregation level.
+- Signed negative effects are passed into D/N checks instead of nonnegative
+  magnitudes, causing valid magnitude rows to be dropped.
+
+Next workflow after GPT returns blocker JSON:
+
+1. Save the returned JSON as a dated receipt artifact under
+   `steps/individual_replication_papers/figure1/auto_mining/`.
+2. Verify only `ready_for_row` candidates against local or newly mirrored
+   value-bearing bytes.
+3. Mirror any newly found source objects under `data/raw/` or the documented
+   workstep raw directory, with checksums when practical.
+4. Patch `scripts/scan_individual_replication_batch001_values.py` with
+   source-backed row entries or explicit held/rejected/native decisions.
+5. Run the canonical commands above to regenerate the promoted contract,
+   Figure 1 root table, D/N checks, row dispositions, and plot assets.
+6. Report the exact row-count delta and which candidates moved, held, or were
+   rejected.
+
 ## Coding Discipline
 
 When adding new rows, distinguish:

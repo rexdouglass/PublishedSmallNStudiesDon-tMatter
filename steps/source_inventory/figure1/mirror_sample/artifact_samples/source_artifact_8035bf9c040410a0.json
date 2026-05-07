@@ -1,0 +1,296 @@
+{
+  "artifact_id": "source_artifact_8035bf9c040410a0",
+  "byte_size": 9787,
+  "file_name": "019_pilot_10_1016_j_pec_2007_01_003.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/019_pilot_10_1016_j_pec_2007_01_003.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/j.pec.2007.01.003\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>To evaluate acceptability, feasibility and effectiveness of computer-tailored physical activity education among adolescents.<h4>Methods</h4>Two classes of 7th graders from 10 randomly selected schools were assigned to the intervention (computer-tailored intervention, n=139) or control (no-intervention, n=142) condition. Questionnaires were completed 1 week before and 3 months after the intervention. The computer-tailored intervention was completed during classes.<h4>Results</h4>Students had few problems with the diagnostic questions and with the use of a computer. About half of the students evaluated the advice as interesting and easy to understand and about 40% as personally relevant, easy to use and credible. Half of students evaluated the advice as too long and only 33% reported to have used the advice. The computer-tailored intervention was effective for increasing school related physical activity levels with on average 25 min per week (F=3.4, P < or = .05), but not for increasing total physical activity or leisure time physical activity.<h4>Conclusions</h4>A 1-h computer-tailored intervention offered during class-time has the potential to increase school related physical activity.<h4>Practice implications</h4>Although favourable effects of large scale implementation may be expected, some adaptations that might increase effectiveness should be investigated in the future.",
+          "affiliation": "Department of Movement and Sports Sciences, Ghent University, Gent, Belgium. Leen.Haerens@UGent.be",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5715-9520"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4445-8094"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Movement and Sports Sciences, Ghent University, Gent, Belgium. Leen.Haerens@UGent.be"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5715-9520"
+                },
+                "firstName": "Leen",
+                "fullName": "Haerens L",
+                "initials": "L",
+                "lastName": "Haerens"
+              },
+              {
+                "firstName": "Benedicte",
+                "fullName": "Deforche B",
+                "initials": "B",
+                "lastName": "Deforche"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4445-8094"
+                },
+                "firstName": "Corneel",
+                "fullName": "Vandelanotte C",
+                "initials": "C",
+                "lastName": "Vandelanotte"
+              },
+              {
+                "firstName": "Lea",
+                "fullName": "Maes L",
+                "initials": "L",
+                "lastName": "Maes"
+              },
+              {
+                "firstName": "Ilse",
+                "fullName": "De Bourdeaudhuij I",
+                "initials": "I",
+                "lastName": "De Bourdeaudhuij"
+              }
+            ]
+          },
+          "authorString": "Haerens L, Deforche B, Vandelanotte C, Maes L, De Bourdeaudhuij I.",
+          "citedByCount": 36,
+          "dateOfCompletion": "2007-08-02",
+          "dateOfCreation": "2007-02-15",
+          "dateOfRevision": "2015-11-19",
+          "doi": "10.1016/j.pec.2007.01.003",
+          "electronicPublicationDate": "2007-02-12",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2007-02-12",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.pec.2007.01.003"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "N",
+          "id": "17298873",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2007 Jun",
+            "issue": "3",
+            "journal": {
+              "essn": "1873-5134",
+              "isoabbreviation": "Patient Educ Couns",
+              "issn": "0738-3991",
+              "medlineAbbreviation": "Patient Educ Couns",
+              "nlmid": "8406280",
+              "title": "Patient education and counseling"
+            },
+            "journalIssueId": 1395927,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2007-06-01",
+            "volume": "66",
+            "yearOfPublication": 2007
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Exercise",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "psychology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Follow-Up Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Program Evaluation",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Feedback, Psychological",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Attitude to Computers",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Attitude to Health",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Life Style",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Education",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Needs Assessment",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Computer-Assisted Instruction",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Leisure Activities",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Promotion",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Nursing Assessment",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Patient Care Planning",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "OG",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "organization & administration"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Belgium",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Psychology, Adolescent",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Surveys and Questionnaires",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "303-310",
+          "pmid": "17298873",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2007",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "title": "Acceptability, feasibility and effectiveness of a computer-tailored physical activity intervention in adolescents."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "1e6b7bbb609de99c91af0e228cc113c6870f48dc5e98c4ae9a0436bbb5a3ad42"
+}

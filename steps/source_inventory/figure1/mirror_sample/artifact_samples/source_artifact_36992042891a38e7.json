@@ -1,0 +1,380 @@
+{
+  "artifact_id": "source_artifact_36992042891a38e7",
+  "byte_size": 14117,
+  "file_name": "052_pilot_10_1136_bmj_e3799.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/052_pilot_10_1136_bmj_e3799.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1136/bmj.e3799\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objectives</h4>To test whether ursodeoxycholic acid reduces pruritus in women with intrahepatic cholestasis of pregnancy, whether early term delivery does not increase the incidence of caesarean section, and the feasibility of recruiting women with intrahepatic cholestasis of pregnancy to trials of these interventions.<h4>Design</h4>First phase of a semifactorial randomised controlled trial.<h4>Setting</h4>Nine consultant led maternity units, United Kingdom.<h4>Participants</h4>125 women with intrahepatic cholestasis of pregnancy (pruritus and raised levels of serum bile acids) or pruritus and raised alanine transaminase levels (>100 IU/L) recruited after 24 weeks' gestation and followed until delivery. 56 women were randomised to ursodeoxycholic acid, 55 to placebo, 30 to early term delivery, and 32 to expectant management.<h4>Interventions</h4>Ursodeoxycholic acid 500 mg twice daily or placebo increased as necessary for symptomatic or biochemical improvement until delivery; early term delivery (induction or delivery started between 37+0 and 37+6) or expectant management (spontaneous labour awaited until 40 weeks' gestation or caesarean section undertaken by normal obstetric guidelines, usually after 39 weeks' gestation).<h4>Main outcome measures</h4>The primary outcome for ursodeoxycholic acid was maternal itch (arithmetic mean of measures (100 mm visual analogue scale) of worst itch in past 24 hours) and for the timing of delivery was caesarean section. Secondary outcomes were other maternal and perinatal outcomes and recruitment rates.<h4>Results</h4>Ursodeoxycholic acid reduced itching by -16 mm (95% confidence interval -27 mm to -6 mm), less than the 30 mm difference prespecified by clinicians and women as clinically meaningful. 32% (14/44) of women randomised to ursodeoxycholic acid experienced a reduction in worst itching by at least 30 mm compared with 16% (6/37) randomised to placebo. The difference of 16% (95% confidence interval -3 to 34); this would represent a number needed to treat of 6, but it failed to reach significance. Early term delivery did not increase caesarean sections (7/30 (23%) in the early term delivery group versus 11/32 (33%) in the expectant management group (relative risk 0.70, 95% confidence interval 0.31 to 1.57). No serious harms were noted in either trial. 22% (73/325) of eligible women participated in the drug trial and 19% (39/209) in the timing of delivery trial; both groups had a similar spectrum of disease severity to non-participants.<h4>Conclusions</h4>Ursodeoxycholic acid significantly reduces pruritus, but the size of the benefit may be too small for most doctors to recommend it, or for most women to want to take it. Women are, however, likely to differ in whether they consider the benefit to be worthwhile. Planned early term delivery seems not to increase incidence of caesarean section, although a small increase cannot be excluded. A trial to test whether ursodeoxycholic acid reduces adverse perinatal outcomes would have to be large, but is feasible. A trial to test the effect of early term delivery on adverse fetal outcomes would have to be significantly larger and may not be feasible.<h4>Trial registration</h4>Current Controlled Trials ISRCTN37730443.",
+          "affiliation": "Women's Health Academic Centre, King's Health Partners, UK.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7904-7933"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9764-6876"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6226-7611"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Women's Health Academic Centre, King's Health Partners, UK."
+                    }
+                  ]
+                },
+                "firstName": "Lucy C",
+                "fullName": "Chappell LC",
+                "initials": "LC",
+                "lastName": "Chappell"
+              },
+              {
+                "firstName": "Vinita",
+                "fullName": "Gurung V",
+                "initials": "V",
+                "lastName": "Gurung"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7904-7933"
+                },
+                "firstName": "Paul T",
+                "fullName": "Seed PT",
+                "initials": "PT",
+                "lastName": "Seed"
+              },
+              {
+                "firstName": "Jenny",
+                "fullName": "Chambers J",
+                "initials": "J",
+                "lastName": "Chambers"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6226-7611"
+                },
+                "firstName": "Catherine",
+                "fullName": "Williamson C",
+                "initials": "C",
+                "lastName": "Williamson"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9764-6876"
+                },
+                "firstName": "James G",
+                "fullName": "Thornton JG",
+                "initials": "JG",
+                "lastName": "Thornton"
+              },
+              {
+                "collectiveName": "PITCH Study Consortium"
+              }
+            ]
+          },
+          "authorString": "Chappell LC, Gurung V, Seed PT, Chambers J, Williamson C, Thornton JG, PITCH Study Consortium.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Cholagogues and Choleretics",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Ursodeoxycholic Acid",
+                "registryNumber": "724L30Y2QR"
+              }
+            ]
+          },
+          "citedByCount": 107,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2012-08-20",
+          "dateOfCreation": "2012-06-15",
+          "dateOfRevision": "2025-05-29",
+          "doi": "10.1136/bmj.e3799",
+          "electronicPublicationDate": "2012-06-13",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2012-06-18",
+          "firstPublicationDate": "2012-06-13",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3420230"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-03",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1136/bmj.e3799"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3420230"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3420230?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DH_",
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "PB-PG-0107-12037",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "22695903",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2012 Jun",
+            "journal": {
+              "essn": "1756-1833",
+              "isoabbreviation": "BMJ",
+              "issn": "0959-8138",
+              "medlineAbbreviation": "BMJ",
+              "nlmid": "8900488",
+              "title": "BMJ (Clinical research ed.)"
+            },
+            "journalIssueId": 2471207,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2012-06-01",
+            "volume": "344",
+            "yearOfPublication": 2012
+          },
+          "language": "eng",
+          "license": "cc by-nc",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cholestasis, Intrahepatic",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pregnancy Complications",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pruritus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Ursodeoxycholic Acid",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    },
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cholagogues and Choleretics",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    },
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pregnancy Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cesarean Section",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "statistics & numerical data"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Labor, Induced",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "statistics & numerical data"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Feasibility Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pregnancy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Young Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Watchful Waiting",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "e3799",
+          "pmcid": "PMC3420230",
+          "pmid": "22695903",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2012",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Ursodeoxycholic acid versus placebo, and early term delivery versus expectant management, in women with intrahepatic cholestasis of pregnancy: semifactorial randomised clinical trial."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "0bf90b6a29423881a5d0c94a3dae32c9def4833a1cfd1ba35ee1cb3aed1dfead"
+}

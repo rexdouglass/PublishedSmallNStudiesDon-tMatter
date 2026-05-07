@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_7ba497222fa1e2d6",
+  "byte_size": 1348,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 25,
+  "file_name": "ft028_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/Zr/ft028_1.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.451340166,
+      "obs_ID": "obs001",
+      "study_ID": "Bonneaud et al.",
+      "var": 0.037037037,
+      "year_pub": 2006
+    },
+    {
+      "es": 0.267181208,
+      "obs_ID": "obs002",
+      "study_ID": "Cutrera et al. ",
+      "var": 0.016129032,
+      "year_pub": 2012
+    },
+    {
+      "es": 0.095287349,
+      "obs_ID": "obs003",
+      "study_ID": "Eizaguirre et al.",
+      "var": 0.058823529,
+      "year_pub": 2009
+    },
+    {
+      "es": 0.082184534,
+      "obs_ID": "obs004",
+      "study_ID": "Griggio et al. ",
+      "var": 0.019607843,
+      "year_pub": 2011
+    },
+    {
+      "es": -0.021003088,
+      "obs_ID": "obs005",
+      "study_ID": "Huchard et al.",
+      "var": 0.034482759,
+      "year_pub": 2013
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "df500ceb29755fbea896a38d4c87a3c9f17d3b8396e23b18eb44dbc686c98291"
+}

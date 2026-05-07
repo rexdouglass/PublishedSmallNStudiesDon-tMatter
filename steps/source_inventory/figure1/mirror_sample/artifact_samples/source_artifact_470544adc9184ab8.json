@@ -1,0 +1,340 @@
+{
+  "artifact_id": "source_artifact_470544adc9184ab8",
+  "byte_size": 11782,
+  "file_name": "017_full_10_1186_1472_6882_12_19.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/017_full_10_1186_1472_6882_12_19.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1186/1472-6882-12-19\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Obesity is an urgent public health problem, yet only a few clinical trials have systematically tested the efficacy of long-term weight-loss maintenance interventions. This randomized clinical trial tested the efficacy of a novel mind and body technique for weight-loss maintenance.<h4>Methods</h4>Participants were obese adults who had completed a six-month behavioral weight-loss program prior to randomization. Those who successfully lost weight were randomized into either an experimental weight-loss maintenance intervention, Tapas Acupressure Technique (TAT®), or a control intervention comprised of social-support group meetings (SS) led by professional facilitators. TAT combines self-applied light pressure to specific acupressure points accompanied by a prescribed sequence of mental steps. Participants in both maintenance conditions attended eight group sessions over six months of active weight loss maintenance intervention, followed by an additional 6 months of no intervention. The main outcome measure was change in weight from the beginning of the weight loss maintenance intervention to 12 months later. Secondary outcomes were change in depression, stress, insomnia, and quality of life. We used analysis of covariance as the primary analysis method. Missing values were replaced using multiple imputation.<h4>Results</h4>Among 285 randomized participants, 79% were female, mean age was 56 (standard deviation (sd) = 11), mean BMI at randomization was 34 (sd = 5), and mean initial weight loss was 9.8 kg (sd = 5). In the primary outcome model, there was no significant difference in weight regain between the two arms (1.72 kg (se 0.85) weight regain for TAT and 2.96 kg (se 0.96) weight regain for SS, p < 0.097) Tests of between- arm differences for secondary outcomes were also not significant. A secondary analysis showed a significant interaction between treatment and initial weight loss (p < .036), with exploratory post hoc tests showing that greater initial weight loss was associated with more weight regain for SS but less weight regain for TAT.<h4>Conclusions</h4>The primary analysis showed no significant difference in weight regain between TAT and SS, while secondary and post hoc analyses indicate direction for future research.",
+          "affiliation": "Kaiser Permanente Center for Health Research, 3800 N, Interstate Ave,, Portland, OR 97227, USA. Charles.Elder@kpchr.org",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3307-2727"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Kaiser Permanente Center for Health Research, 3800 N, Interstate Ave,, Portland, OR 97227, USA. Charles.Elder@kpchr.org"
+                    }
+                  ]
+                },
+                "firstName": "Charles R",
+                "fullName": "Elder CR",
+                "initials": "CR",
+                "lastName": "Elder"
+              },
+              {
+                "firstName": "Christina M",
+                "fullName": "Gullion CM",
+                "initials": "CM",
+                "lastName": "Gullion"
+              },
+              {
+                "firstName": "Lynn L",
+                "fullName": "Debar LL",
+                "initials": "LL",
+                "lastName": "Debar"
+              },
+              {
+                "firstName": "Kristine L",
+                "fullName": "Funk KL",
+                "initials": "KL",
+                "lastName": "Funk"
+              },
+              {
+                "firstName": "Nangel M",
+                "fullName": "Lindberg NM",
+                "initials": "NM",
+                "lastName": "Lindberg"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3307-2727"
+                },
+                "firstName": "Cheryl",
+                "fullName": "Ritenbaugh C",
+                "initials": "C",
+                "lastName": "Ritenbaugh"
+              },
+              {
+                "firstName": "Gayle",
+                "fullName": "Meltesen G",
+                "initials": "G",
+                "lastName": "Meltesen"
+              },
+              {
+                "firstName": "Cherri",
+                "fullName": "Gallison C",
+                "initials": "C",
+                "lastName": "Gallison"
+              },
+              {
+                "firstName": "Victor J",
+                "fullName": "Stevens VJ",
+                "initials": "VJ",
+                "lastName": "Stevens"
+              }
+            ]
+          },
+          "authorString": "Elder CR, Gullion CM, Debar LL, Funk KL, Lindberg NM, Ritenbaugh C, Meltesen G, Gallison C, Stevens VJ.",
+          "citedByCount": 4,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2012-09-24",
+          "dateOfCreation": "2012-03-16",
+          "dateOfRevision": "2021-10-21",
+          "doi": "10.1186/1472-6882-12-19",
+          "electronicPublicationDate": "2012-03-15",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2012-03-16",
+          "firstPublicationDate": "2012-03-15",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3375195"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-09",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1186/1472-6882-12-19"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3375195"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3375195?pdf=render"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "AT",
+                "agency": "NCCIH NIH HHS",
+                "grantId": "5R01AT003928",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "22417316",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2012 Mar",
+            "journal": {
+              "essn": "1472-6882",
+              "isoabbreviation": "BMC Complement Altern Med",
+              "issn": "1472-6882",
+              "medlineAbbreviation": "BMC Complement Altern Med",
+              "nlmid": "101088661",
+              "title": "BMC complementary and alternative medicine"
+            },
+            "journalIssueId": 2470870,
+            "monthOfPublication": 3,
+            "printPublicationDate": "2012-03-01",
+            "volume": "12",
+            "yearOfPublication": 2012
+          },
+          "language": "eng",
+          "license": "cc by",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Sleep Initiation and Maintenance Disorders",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Obesity",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Weight Gain",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Weight Loss",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Body Mass Index",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Acupressure",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Acupuncture Points",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Self Care",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Analysis of Variance",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Depression",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Stress, Psychological",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mental Processes",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Quality of Life",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Social Support",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mind-Body Therapies",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Weight Reduction Programs",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "19",
+          "pmcid": "PMC3375195",
+          "pmid": "22417316",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2012",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Randomized trial of Tapas Acupressure Technique for weight loss maintenance.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "6d0f90b589064b03878c418a970be592ec21a7dfe6a617b1e35323d1f01c84f8"
+}

@@ -1,0 +1,254 @@
+{
+  "artifact_id": "source_artifact_15cd4bd9fcece123",
+  "byte_size": 8543,
+  "file_name": "006_pilot_10_1016_j_brat_2004_07_001.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/006_pilot_10_1016_j_brat_2004_07_001.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/j.brat.2004.07.001\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "The purpose of the present study was to examine the potential efficacy, patient acceptability, and feasibility of a novel, cognitive-behavioral therapy (CBT) for adults with attention-deficit hyperactivity disorder (ADHD) who have been stabilized on medications but still show clinically significant symptoms. Thirty-one adults with ADHD and stable psychopharmacology for ADHD were randomized to CBT plus continued psychopharmacology or continued psychopharmacology alone. Assessments included ADHD severity and associated anxiety and depression rated by an independent evaluator (IE) and by self-report. At the outcome assessment, those who were randomized to CBT had lower IE-rated ADHD symptoms (p < .01) and global severity (p < .002), as well as self-reported ADHD symptoms (p < .0001) than those randomized to continued psychopharmacology alone. Those in the CBT group also had lower IE-rated and self-report anxiety (p's < .04), lower IE-rated depression (p < .01), and a trend to have lower self-reported depression (p = .06). CBT continued to show superiority over continued psychopharmacology alone when statistically controlling levels of depression in analyses of core ADHD symptoms. There were significantly more treatment responders among patients who received CBT (56%) compared to those who did not (13%) (p < .02). These data support the hypothesis that CBT for adults with ADHD with residual symptoms is a feasible, acceptable, and potentially efficacious next-step treatment approach, worthy of further testing.",
+          "affiliation": "Massachusetts General Hospital, MGH Psychiatry, Harvard Medical School, WACC 815, 15 Parkman Street, Boston, MA 02114, USA. ssafren@partners.org",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8915-7578"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Massachusetts General Hospital, MGH Psychiatry, Harvard Medical School, WACC 815, 15 Parkman Street, Boston, MA 02114, USA. ssafren@partners.org"
+                    }
+                  ]
+                },
+                "firstName": "Steven A",
+                "fullName": "Safren SA",
+                "initials": "SA",
+                "lastName": "Safren"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8915-7578"
+                },
+                "firstName": "Michael W",
+                "fullName": "Otto MW",
+                "initials": "MW",
+                "lastName": "Otto"
+              },
+              {
+                "firstName": "Susan",
+                "fullName": "Sprich S",
+                "initials": "S",
+                "lastName": "Sprich"
+              },
+              {
+                "firstName": "Carol L",
+                "fullName": "Winett CL",
+                "initials": "CL",
+                "lastName": "Winett"
+              },
+              {
+                "firstName": "Timothy E",
+                "fullName": "Wilens TE",
+                "initials": "TE",
+                "lastName": "Wilens"
+              },
+              {
+                "firstName": "Joseph",
+                "fullName": "Biederman J",
+                "initials": "J",
+                "lastName": "Biederman"
+              }
+            ]
+          },
+          "authorString": "Safren SA, Otto MW, Sprich S, Winett CL, Wilens TE, Biederman J.",
+          "citedByCount": 236,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2005-11-01",
+          "dateOfCreation": "2005-05-18",
+          "dateOfRevision": "2022-03-21",
+          "doi": "10.1016/j.brat.2004.07.001",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2005-07-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.brat.2004.07.001"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "PHS HHS",
+                "grantId": "60940",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "15896281",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2005 Jul",
+            "issue": "7",
+            "journal": {
+              "essn": "1873-622X",
+              "isoabbreviation": "Behav Res Ther",
+              "issn": "0005-7967",
+              "medlineAbbreviation": "Behav Res Ther",
+              "nlmid": "0372477",
+              "title": "Behaviour research and therapy"
+            },
+            "journalIssueId": 1231229,
+            "monthOfPublication": 7,
+            "printPublicationDate": "2005-07-01",
+            "volume": "43",
+            "yearOfPublication": 2005
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Combined Modality Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Single-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Attention Deficit Disorder with Hyperactivity",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "drug therapy"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Psychiatric Status Rating Scales",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Patient Acceptance of Health Care",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cognitive Behavioral Therapy",
+                "majorTopic_YN": "Y"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "831-842",
+          "pmid": "15896281",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Clinical Trial",
+              "Research Support, U.S. Gov't, P.H.S.",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2005",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Cognitive-behavioral therapy for ADHD in medication-treated adults with continued symptoms."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "98f500ac0e51e6f105e9c3f0ccb01a1ffcd9be23f0b8acbf21b4f5033098e642"
+}

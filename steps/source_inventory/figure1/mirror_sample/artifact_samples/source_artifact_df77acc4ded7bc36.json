@@ -1,0 +1,237 @@
+{
+  "artifact_id": "source_artifact_df77acc4ded7bc36",
+  "byte_size": 7728,
+  "file_name": "024_full_10_1080_10409289_2013_736037.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/024_full_10_1080_10409289_2013_736037.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1080/10409289.2013.736037\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Research findings</h4>School readiness is a strong predictor of adjustment in elementary school and beyond. Children in foster care are at particular risk for academic and social difficulties in school. Limitations in self-regulatory skills and caregiver involvement among these children might contribute to a lack of school readiness. This study presents the immediate effects on school readiness of a targeted, short-term intervention designed to improve children's early literacy, prosocial, and self-regulatory skills during the summer before kindergarten entry: Kids in Transition to School (KITS). Using a randomized controlled trial design, 192 children in foster care were assigned to either an intervention or services as usual comparison condition. Multimethod, multiagent assessments were conducted immediately prior to and following the completion of the intervention. The results from structural equation modeling indicated that the intervention had significant, positive effects on early literacy and self-regulatory skills.<h4>Practice</h4>An efficacious, short-term, readily scalable, theoretically-based intervention targeted at specific vulnerabilities for children in foster care may help to improve their school readiness and eventual school adjustment.",
+          "affiliation": "Oregon Social Learning Center, 10 Shelton McMurphey Blvd., Eugene, OR 97401-4928, United States.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5399-7233"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6939-2482"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2993-2381"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Oregon Social Learning Center, 10 Shelton McMurphey Blvd., Eugene, OR 97401-4928, United States."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6939-2482"
+                },
+                "firstName": "Katherine C",
+                "fullName": "Pears KC",
+                "initials": "KC",
+                "lastName": "Pears"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5399-7233"
+                },
+                "firstName": "Philip A",
+                "fullName": "Fisher PA",
+                "initials": "PA",
+                "lastName": "Fisher"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2993-2381"
+                },
+                "firstName": "Hyoun K",
+                "fullName": "Kim HK",
+                "initials": "HK",
+                "lastName": "Kim"
+              },
+              {
+                "firstName": "Jacqueline",
+                "fullName": "Bruce J",
+                "initials": "J",
+                "lastName": "Bruce"
+              },
+              {
+                "firstName": "Cynthia V",
+                "fullName": "Healey CV",
+                "initials": "CV",
+                "lastName": "Healey"
+              },
+              {
+                "firstName": "Karen",
+                "fullName": "Yoerger K",
+                "initials": "K",
+                "lastName": "Yoerger"
+              }
+            ]
+          },
+          "authorString": "Pears KC, Fisher PA, Kim HK, Bruce J, Healey CV, Yoerger K.",
+          "citedByCount": 31,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCreation": "2013-09-10",
+          "dateOfRevision": "2022-03-11",
+          "doi": "10.1080/10409289.2013.736037",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2013-09-14",
+          "firstPublicationDate": "2013-08-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3760738"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1080/10409289.2013.736037"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3760738"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3760738?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1080/10409289.2013.736037"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DA",
+                "agency": "NIDA NIH HHS",
+                "grantId": "R01 DA021424",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DA",
+                "agency": "NIDA NIH HHS",
+                "grantId": "P30 DA023920",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "24015056",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2013 Aug",
+            "issue": "6",
+            "journal": {
+              "essn": "1556-6935",
+              "isoabbreviation": "Early Educ Dev",
+              "issn": "1040-9289",
+              "medlineAbbreviation": "Early Educ Dev",
+              "nlmid": "8918109",
+              "title": "Early education and development"
+            },
+            "journalIssueId": 2075338,
+            "monthOfPublication": 8,
+            "printPublicationDate": "2013-08-01",
+            "volume": "24",
+            "yearOfPublication": 2013
+          },
+          "keywordList": {
+            "keyword": [
+              "intervention",
+              "Self-regulation",
+              "School Readiness",
+              "Foster Children",
+              "Caregiver Involvement"
+            ]
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS477449",
+          "nihAuthMan": "Y",
+          "pageInfo": "771-791",
+          "pmcid": "PMC3760738",
+          "pmid": "24015056",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2013",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "title": "Immediate Effects of a School Readiness Intervention for Children in Foster Care."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "36628ac06ff4521fef1edf349a4a785f0c9bb83b354ef77bcce11f9511150f63"
+}

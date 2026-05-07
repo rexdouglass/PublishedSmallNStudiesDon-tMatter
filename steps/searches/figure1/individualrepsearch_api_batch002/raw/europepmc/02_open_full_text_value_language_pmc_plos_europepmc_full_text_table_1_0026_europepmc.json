@@ -1,0 +1,3017 @@
+{
+  "hitCount": 1662,
+  "nextCursorMark": "AoIIQI3pSCg1NDI2NTkzOA==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"Table 1\" \"original\" \"replication\" \"Cohen's d\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIQI3pSCg1NDI2NTkzOA==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"Table 1\" \"original\" \"replication\" \"Cohen's d\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "<h4>Background</h4>When low-power analyses yield statistically significant results, they likely overestimate the true effect. Although sample estimates are symmetrically distributed around the true value, those that are by chance very high are more likely to achieve statistical significance. The bias induced by the significance filter increases as power decreases. Here we sought to quantify the estimation bias associated with low power and to contrast it with the type M error, which assesses the same phenomenon from a different perspective.<h4>Methods</h4>We used simulations to quantify estimation bias in relation to power among statistically significant results. We computed the type M error, relative bias (ratio of the estimated mean differences and the true value), and proportions of results with various levels of over- and under-estimation.<h4>Results</h4>For a medium effect size (Cohen's d of 0.5), overestimation of the mean difference was moderate at high power (\u226580%): relative bias was <1.13, about 65% of estimates were roughly accurate (between 0.75 and 1.25 of the true value), and sign errors were virtually absent. In contrast, at low power (<30%), overestimation was strong (relative bias >1.78), and almost no estimates were roughly accurate. Sign errors became noticeably prevalent only at very low levels of power (<10%). In all situations, the relative bias had a lower magnitude than the type M error.<h4>Conclusion</h4>Low-power statistically significant results may consist entirely of magnitude errors, sign errors, and type 1 errors with high risk of strong overestimation (double effect). Readers should beware positive results from low-power analyses.",
+        "affiliation": "Clinical Research Centre, University Hospitals of Geneva, Geneva, Switzerland.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Centre, University Hospitals of Geneva, Geneva, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Cyril",
+              "fullName": "Jaksic C",
+              "initials": "C",
+              "lastName": "Jaksic"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Centre, University Hospitals of Geneva, Geneva, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Thomas",
+              "fullName": "Perneger T",
+              "initials": "T",
+              "lastName": "Perneger"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Clinical Research Centre, University Hospitals of Geneva, Geneva, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Christophe",
+              "fullName": "Combescure C",
+              "initials": "C",
+              "lastName": "Combescure"
+            }
+          ]
+        },
+        "authorString": "Jaksic C, Perneger T, Combescure C.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-02-02",
+        "dateOfCreation": "2026-02-02",
+        "dateOfRevision": "2026-02-04",
+        "doi": "10.1016/j.gloepi.2026.100250",
+        "electronicPublicationDate": "2026-01-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-06",
+        "firstPublicationDate": "2026-01-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12856849"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-31",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.gloepi.2026.100250"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12856849"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12856849?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41626127",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jun",
+          "journal": {
+            "essn": "2590-1133",
+            "isoabbreviation": "Glob Epidemiol",
+            "issn": "2590-1133",
+            "medlineAbbreviation": "Glob Epidemiol",
+            "nlmid": "101759263",
+            "title": "Global epidemiology"
+          },
+          "journalIssueId": 4080961,
+          "monthOfPublication": 6,
+          "printPublicationDate": "2026-06-01",
+          "volume": "11",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Statistical Bias",
+            "Low Power",
+            "Statistical Significance"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "100250",
+        "pmcid": "PMC12856849",
+        "pmid": "41626127",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Statistically significant results from low-power analyses: A comedy of errors."
+      },
+      {
+        "abstractText": "BackgroundTreatment resistant hypertension (TRH) is associated with increased risk of cognitive decline, which may be reduced by healthy lifestyle changes.ObjectiveTo examine the effects of a comprehensive, rehabilitation-based lifestyle hprogram on cognitive function during a one-year follow-up of participants from the TRIUMPH clinical trial.MethodsAmong the 140 TRIUMPH participants originally randomized, 91 (65%) were available for one-year assessments prior to the COVID-19 lockdown. Participants were originally randomized to a <u>C</u>ardiac rehabilitation-based <u>LIFE</u>style program (C-LIFE) or to a <u>S</u>tandardized <u>E</u>ducation and <u>P</u>hysician <u>A</u>dvice (SEPA) condition for 4-months. During their one-year follow-up, participants underwent assessments of sleep quality, body mass index, actigraphy-assessed physical activity levels, and cerebrovascular reactivity using functional near infrared spectroscopy (fNIRS). Cognitive function was assessed using a 45-min test battery incorporating tests of Executive Function/Learning, Memory, and Processing Speed. Regression-based models incorporating reliable change indices were used to assess cognitive change.ResultsParticipants included 91 individuals (mean age\u2009=\u200963.6 [SD\u2009=\u20098.6]), evenly distributed in biological sex and race/ethnicity, and tended to be college-educated. The C-LIFE group had more preserved cognitive functioning compared to SEPA (C-LIFE: z\u2009=\u2009-0.26 [-0.40, -0.12] versus SEPA: -0.60 [-0.81, -0.39]; d\u2009=\u20090.44, p\u2009=\u20090.008), with reduced PSQI sleep symptoms associating with more preserved cognitive function (B\u2009=\u2009-0.18, p\u2009=\u20090.050 per 3-points). Treatment did not improve fNIRS markers, although changes in weight and physical activity associated with fNIRS outcomes.ConclusionsLifestyle modification may help preserve cognitive functioning among individuals with resistant hypertension.",
+        "affiliation": "Department of Psychiatry, University of North Carolina at Chapel Hill, NC, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9067-185X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6374-0298"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3506-8710"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry, University of North Carolina at Chapel Hill, NC, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6374-0298"
+              },
+              "firstName": "Patrick J",
+              "fullName": "Smith PJ",
+              "initials": "PJ",
+              "lastName": "Smith"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry and Behavioral Sciences, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "James A",
+              "fullName": "Blumenthal JA",
+              "initials": "JA",
+              "lastName": "Blumenthal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry and Behavioral Sciences, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "Krista",
+              "fullName": "Ingle K",
+              "initials": "K",
+              "lastName": "Ingle"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry and Behavioral Sciences, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "Lana L",
+              "fullName": "Watkins LL",
+              "initials": "LL",
+              "lastName": "Watkins"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, University of North Carolina at Greensboro, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "Forgive",
+              "fullName": "Avorgbedor F",
+              "initials": "F",
+              "lastName": "Avorgbedor"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3506-8710"
+              },
+              "firstName": "Stephanie K",
+              "fullName": "Mabe SK",
+              "initials": "SK",
+              "lastName": "Mabe"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "William",
+              "fullName": "Kraus W",
+              "initials": "W",
+              "lastName": "Kraus"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "Crystal",
+              "fullName": "Tyson C",
+              "initials": "C",
+              "lastName": "Tyson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, University of North Carolina at Chapel Hill, NC, USA."
+                  }
+                ]
+              },
+              "firstName": "Alan",
+              "fullName": "Hinderliter A",
+              "initials": "A",
+              "lastName": "Hinderliter"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry and Behavioral Sciences, Duke University Medical Center, Durham, NC, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9067-185X"
+              },
+              "firstName": "Andrew",
+              "fullName": "Sherwood A",
+              "initials": "A",
+              "lastName": "Sherwood"
+            }
+          ]
+        },
+        "authorString": "Smith PJ, Blumenthal JA, Ingle K, Watkins LL, Avorgbedor F, Mabe SK, Kraus W, Tyson C, Hinderliter A, Sherwood A.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-02-24",
+        "dateOfCreation": "2026-01-20",
+        "dateOfRevision": "2026-02-24",
+        "doi": "10.1177/13872877251409716",
+        "electronicPublicationDate": "2026-01-20",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-20",
+        "firstPublicationDate": "2026-01-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12894428"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1177/13872877251409716"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12894428"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12894428?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "HL",
+              "agency": "NHLBI NIH HHS",
+              "grantId": "R01 HL122836",
+              "orderIn": 0
+            },
+            {
+              "acronym": "HL",
+              "agency": "NHLBI NIH HHS",
+              "grantId": "R01 HL130237",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Heart, Lung, and Blood Institute",
+              "grantId": "HL130237",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Heart, Lung, and Blood Institute",
+              "grantId": "HL122836",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "R61 AG080615",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41555820",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "4",
+          "journal": {
+            "essn": "1875-8908",
+            "isoabbreviation": "J Alzheimers Dis",
+            "issn": "1387-2877",
+            "medlineAbbreviation": "J Alzheimers Dis",
+            "nlmid": "9814863",
+            "title": "Journal of Alzheimer's disease : JAD"
+          },
+          "journalIssueId": 4130346,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "109",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Hypertension",
+            "Memory",
+            "Blood pressure",
+            "Alzheimer's disease",
+            "Cognitive function",
+            "Lifestyle",
+            "Executive Function",
+            "Sleep Quality"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Hypertension",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Follow-Up Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Life Style",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Cognition",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Actigraphy",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sleep Quality",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1748-1763",
+        "pmcid": "PMC12894428",
+        "pmid": "41555820",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Lifestyle, sleep quality, and cognitive function in resistant hypertension: One-year follow-up from the TRIUMPH trial."
+      },
+      {
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Firat University"
+                  }
+                ]
+              },
+              "firstName": "Mustafa",
+              "fullName": "G\u00fcr M",
+              "initials": "M",
+              "lastName": "G\u00fcr"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Firat University"
+                  }
+                ]
+              },
+              "firstName": "Ramazan Fazil",
+              "fullName": "Akkoc R",
+              "initials": "R",
+              "lastName": "Akkoc"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Firat University"
+                  }
+                ]
+              },
+              "firstName": "Burak",
+              "fullName": "Oz B",
+              "initials": "B",
+              "lastName": "Oz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Firat University"
+                  }
+                ]
+              },
+              "firstName": "Ahmet",
+              "fullName": "Karatas A",
+              "initials": "A",
+              "lastName": "Karatas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Firat University"
+                  }
+                ]
+              },
+              "firstName": "S\u00fcleyman Serdar",
+              "fullName": "Koca S",
+              "initials": "S",
+              "lastName": "Koca"
+            }
+          ]
+        },
+        "authorString": "G\u00fcr M, Akkoc R, Oz B, Karatas A, Koca S.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-04-11",
+        "dateOfRevision": "2026-04-11",
+        "electronicPublicationDate": "2026-04-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-11",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13066761"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-11",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13066761/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13066761/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13066761"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13066761?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC13066761",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "4",
+          "journal": {
+            "essn": "1520-6300",
+            "isoabbreviation": "Am J Hum Biol",
+            "issn": "1042-0533",
+            "medlineAbbreviation": "Am J Hum Biol",
+            "nlmid": "8915029",
+            "title": "American journal of human biology : the official journal of the Human Biology Council"
+          },
+          "journalIssueId": 4164096,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "38",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "autoimmune disease",
+            "2d:4d",
+            "Sj\u00f6gren's Syndrome",
+            "Prenatal Androgen"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pmcid": "PMC13066761",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "source": "PMC",
+        "title": "The 2D:4D Digit Ratio and Primary Sj\u00f6gren's Syndrome: A Window Into Prenatal Hormonal Influences on Exocrine Autoimmunity"
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Competitive outcomes in combat sports depend not only on functional preparation but also on athletes' ability to quickly adapt under pressure and make effective decisions in rapidly changing situations. The use of virtual reality (VR) as a tool for assessing cognitive functions has not yet been thoroughly validated in this context. The VR tasks used in this study do not measure higher-order cognitive functions such as executive function or anticipation; instead, they focus on observable performance metrics, such as reaction time, accuracy, and motor variability. The aim of the present study was to compare the level of cognitive functions in Brazilian Jiu-Jitsu (BJJ) athletes with varying levels of expertise.<h4>Methods</h4>Ten male BJJ practitioners (average age was 27.20\u2009\u00b1\u20095.63 years) were categorized into professionals (average training experience 11.00\u2009\u00b1\u20091.41 years; brown/black belts) and semi-professionals (average training experience 5.40\u2009\u00b1\u20091.14 years, blue/purple belts). VR based cognitive tests assessed reaction time, accuracy, and spatial awareness. The Mann-Whitney <i>U</i> test was applied to compare group performance.<h4>Results</h4>The professional group showed higher decision-making accuracy and slower reaction times; however, <b>these</b> patterns should be interpreted cautiously, as the study design does not allow attribution to underlying strategies or processes. The semi-professionals, on the other hand, exhibited greater variability in motor responses. Some of the differences between groups reached statistical significance (<i>p</i>\u2009<\u20090.05), although these should be interpreted cautiously due to the small sample size. The relationship between experience level and cognitive measures was inconsistent across parameters and should be considered preliminary, as the study was not powered to detect systematic associations.<h4>Conclusions</h4>Professionals appeared to score higher in accuracy-related measures and showed slower reaction times; however, these patterns should be interpreted as preliminary trends rather than evidence of differences in underlying mechanisms or strategic prioritization. Given the very small sample size and the exploratory nature of the study, no conclusions can be drawn about underlying cognitive mechanisms. The findings suggest preliminary, unstable patterns between expertise levels in selected cognitive measures; however, given the small sample size and exploratory design, no causal inferences regarding the influence of experience on cognitive functions can be drawn. The study also suggests that VR may have potential as an assessment tool, though its utility for evaluating BJJ-specific cognitive performance remains unvalidated and should be considered exploratory at this stage.",
+        "affiliation": "Faculty of Sport, University of Presov, Presov, Slovakia.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Sport, University of Presov, Presov, Slovakia."
+                  }
+                ]
+              },
+              "firstName": "Tomas",
+              "fullName": "Peric T",
+              "initials": "T",
+              "lastName": "Peric"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Physical Education and Sport, Charles University, Prague, Czechia."
+                  }
+                ]
+              },
+              "firstName": "Stanislav",
+              "fullName": "Novicichin S",
+              "initials": "S",
+              "lastName": "Novicichin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Physical Education and Sport, Institute of Sports Sciences, University of Physical Culture, Krak\u00f3w, Poland."
+                  }
+                ]
+              },
+              "firstName": "\u0141ukasz",
+              "fullName": "Rydzik \u0141",
+              "initials": "\u0141",
+              "lastName": "Rydzik"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Physical Education and Sport, Institute of Sports Sciences, University of Physical Culture, Krak\u00f3w, Poland."
+                  }
+                ]
+              },
+              "firstName": "Wojciech",
+              "fullName": "W\u0105sacz W",
+              "initials": "W",
+              "lastName": "W\u0105sacz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Physical Education and Sport, Institute of Sports Sciences, University of Physical Culture, Krak\u00f3w, Poland."
+                  }
+                ]
+              },
+              "firstName": "Tadeusz",
+              "fullName": "Ambro\u017cy T",
+              "initials": "T",
+              "lastName": "Ambro\u017cy"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Sport, University of Presov, Presov, Slovakia."
+                  }
+                ]
+              },
+              "firstName": "Pavel",
+              "fullName": "Ruzbarsky P",
+              "initials": "P",
+              "lastName": "Ruzbarsky"
+            }
+          ]
+        },
+        "authorString": "Peric T, Novicichin S, Rydzik \u0141, W\u0105sacz W, Ambro\u017cy T, Ruzbarsky P.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-01-28",
+        "dateOfCreation": "2026-01-28",
+        "dateOfRevision": "2026-01-31",
+        "doi": "10.3389/fspor.2025.1738534",
+        "electronicPublicationDate": "2026-01-12",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-29",
+        "firstPublicationDate": "2026-01-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12833417"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fspor.2025.1738534"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12833417"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12833417?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41602804",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "journal": {
+            "essn": "2624-9367",
+            "isoabbreviation": "Front Sports Act Living",
+            "issn": "2624-9367",
+            "medlineAbbreviation": "Front Sports Act Living",
+            "nlmid": "101765780",
+            "title": "Frontiers in sports and active living"
+          },
+          "journalIssueId": 3895058,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "7",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "decision-making",
+            "Combat Sports",
+            "Performance Level",
+            "Brazilian Jiu-jitsu",
+            "Virtual Reality Assessment"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1738534",
+        "pmcid": "PMC12833417",
+        "pmid": "41602804",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Cognitive functions and skill level in Brazilian Jiu-Jitsu: an exploratory study using virtual reality."
+      },
+      {
+        "abstractText": "<h4>Objectives</h4>To estimate the extent of physical activity (PA) measurement reactivity among adults ages 40-60 with risk factors for cardiovascular disease (CVD), to inform best practices for addressing reactivity in PA research and intervention.<h4>Design</h4>Coordinated secondary analysis across six datasets from studies that used 6-7\u2009days of observation following the introduction of PA measurement devices. Moderators of interest were demographic and study design characteristics.<h4>Methods</h4>We included data from participants ages 40-60 with \u22651 CVD factors who provided device-assessed PA behaviour across 6-7\u2009days (N\u2009=\u20091825). We used multilevel modelling to examine participants' PA behaviour (i.e., activity units, steps per day) across days, with decreases in activity indicating reactivity. The threshold for statistical significance was set at p\u2009<\u2009.05 and standardized effect sizes of interest were semipartial correlation coefficients (srs) \u2265.25; we also report conversions to Cohen's d and corresponding equivalence tests.<h4>Results</h4>No patterns met both criteria for significance for either main or moderation effects, including tests of study design features. Results from one small study showed a decrease in steps per day across days of observation (p\u2009=\u2009.15, sr\u2009=\u2009.26, d\u2009=\u2009.23, 90% CI: -.03, .50), though men showed an increase in steps per day (whereas women decreased).<h4>Conclusions</h4>Adults in midlife with CVD risk factors show little evidence of PA measurement reactivity. We recommend continuing to examine PA patterns in individual studies, though widespread use of burdensome procedures to prevent reactivity is not warranted in this at-risk population.",
+        "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6082-228X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7807-5913"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3655-8842"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-7827-1041"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA."
+                  },
+                  {
+                    "affiliation": "Department of Family Medicine, Rowan-Virtua School of Osteopathic Medicine, Stratford, New Jersey, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7807-5913"
+              },
+              "firstName": "Danielle",
+              "fullName": "Arigo D",
+              "initials": "D",
+              "lastName": "Arigo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA."
+                  }
+                ]
+              },
+              "firstName": "Kiri",
+              "fullName": "Baga K",
+              "initials": "K",
+              "lastName": "Baga"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA."
+                  }
+                ]
+              },
+              "firstName": "Amanda L",
+              "fullName": "Folk AL",
+              "initials": "AL",
+              "lastName": "Folk"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA."
+                  }
+                ]
+              },
+              "firstName": "Gabrielle M",
+              "fullName": "Salvatore GM",
+              "initials": "GM",
+              "lastName": "Salvatore"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA."
+                  }
+                ]
+              },
+              "firstName": "Iris",
+              "fullName": "Bercovitz I",
+              "initials": "I",
+              "lastName": "Bercovitz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Rowan University, Glassboro, New Jersey, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-7827-1041"
+              },
+              "firstName": "Ria",
+              "fullName": "Singh R",
+              "initials": "R",
+              "lastName": "Singh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Psychology, University of Vienna, Vienna, Austria."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3655-8842"
+              },
+              "firstName": "Laura M",
+              "fullName": "K\u00f6nig LM",
+              "initials": "LM",
+              "lastName": "K\u00f6nig"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Drexel University, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Meghan L",
+              "fullName": "Butryn ML",
+              "initials": "ML",
+              "lastName": "Butryn"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "RTI Health Solutions, Durham, North Carolina, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6082-228X"
+              },
+              "firstName": "Jacqueline A",
+              "fullName": "Mogle JA",
+              "initials": "JA",
+              "lastName": "Mogle"
+            }
+          ]
+        },
+        "authorString": "Arigo D, Baga K, Folk AL, Salvatore GM, Bercovitz I, Singh R, K\u00f6nig LM, Butryn ML, Mogle JA.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-07",
+        "dateOfCreation": "2026-03-06",
+        "dateOfRevision": "2026-03-08",
+        "doi": "10.1111/bjhp.70063",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-07",
+        "firstPublicationDate": "2026-05-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12963814"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/bjhp.70063"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12963814"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12963814?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "HL",
+              "agency": "NHLBI NIH HHS",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41787779",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 May",
+          "issue": "2",
+          "journal": {
+            "essn": "2044-8287",
+            "isoabbreviation": "Br J Health Psychol",
+            "issn": "1359-107X",
+            "medlineAbbreviation": "Br J Health Psychol",
+            "nlmid": "9605409",
+            "title": "British journal of health psychology"
+          },
+          "journalIssueId": 4143222,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2026-05-01",
+          "volume": "31",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Sex difference",
+            "Physical Activity",
+            "Cardiovascular Risk",
+            "Gender Difference",
+            "Midlife",
+            "Measurement Reactivity",
+            "Intensive Assessment"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cardiovascular Diseases",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Risk Factors",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Heart Disease Risk Factors",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e70063",
+        "pmcid": "PMC12963814",
+        "pmid": "41787779",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Do adults with cardiovascular disease risk show meaningful reactivity to physical activity measurement? Coordinated analysis across six studies."
+      },
+      {
+        "abstractText": "Cost-benefit decisions are ubiquitous in both human and animal behavior. Economists have developed formal models of cost-benefit decision-making by focusing on discounting behavior, the devaluation of a reward based on the costs associated with it. The phylogenetic limits of discounting behavior remain unknown. Here, we provide evidence that the nematode <i>C. elegans</i> exhibits behavior closely resembling effort discounting. Given a choice between food options that are easy or difficult to consume, worms devalue the latter in a manner predicted by economic models. We identified a plausible mechanism for this behavior based on differential rates of leaving food patches and demonstrated that this mechanism is disrupted by deficits in dopamine signaling, as in rodents. Together, these results establish <i>C. elegans</i> as a potential invertebrate model for discounting behavior and set new phylogenetic bounds on this type of cost-benefit decision-making.",
+        "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8535-7989"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States."
+                  }
+                ]
+              },
+              "firstName": "Jonathan R M",
+              "fullName": "Millet JRM",
+              "initials": "JRM",
+              "lastName": "Millet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States."
+                  }
+                ]
+              },
+              "firstName": "Serge",
+              "fullName": "Faumont S",
+              "initials": "S",
+              "lastName": "Faumont"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States."
+                  }
+                ]
+              },
+              "firstName": "Aaron B",
+              "fullName": "Schatz AB",
+              "initials": "AB",
+              "lastName": "Schatz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States."
+                  }
+                ]
+              },
+              "firstName": "Amanda M",
+              "fullName": "White AM",
+              "initials": "AM",
+              "lastName": "White"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States."
+                  }
+                ]
+              },
+              "firstName": "Kathy D",
+              "fullName": "Chicas-Cruz KD",
+              "initials": "KD",
+              "lastName": "Chicas-Cruz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Neuroscience, University of Oregon, Eugene, United States."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8535-7989"
+              },
+              "firstName": "Shawn R",
+              "fullName": "Lockery SR",
+              "initials": "SR",
+              "lastName": "Lockery"
+            }
+          ]
+        },
+        "authorString": "Millet JRM, Faumont S, Schatz AB, White AM, Chicas-Cruz KD, Lockery SR.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Dopamine",
+              "registryNumber": "VTD58H1Z2X"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "40161852",
+              "orderIn": 1,
+              "reference": "bioRxiv. 2025 Aug 19:2025.03.10.641934. doi: 10.1101/2025.03.10.641934.",
+              "source": "MED",
+              "type": "Update of"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-12-01",
+        "dateOfCreation": "2025-12-01",
+        "dateOfRevision": "2025-12-04",
+        "doi": "10.7554/elife.106792",
+        "electronicPublicationDate": "2025-12-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-01",
+        "firstPublicationDate": "2025-12-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12668669"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7554/eLife.106792"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12668669"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12668669?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "DA",
+              "agency": "NIDA NIH HHS",
+              "grantId": "R21 DA053817",
+              "orderIn": 0
+            },
+            {
+              "acronym": "DA",
+              "agency": "NIDA NIH HHS",
+              "grantId": "DA053817",
+              "orderIn": 0
+            },
+            {
+              "acronym": "GM",
+              "agency": "NIGMS NIH HHS",
+              "grantId": "GM152169",
+              "orderIn": 0
+            },
+            {
+              "acronym": "OD",
+              "agency": "NIH HHS",
+              "grantId": "P40 OD010440",
+              "orderIn": 0
+            },
+            {
+              "acronym": "GM",
+              "agency": "NIGMS NIH HHS",
+              "grantId": "R35 GM152169",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41324250",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Dec",
+          "journal": {
+            "essn": "2050-084X",
+            "isoabbreviation": "Elife",
+            "issn": "2050-084X",
+            "medlineAbbreviation": "Elife",
+            "nlmid": "101579614",
+            "title": "eLife"
+          },
+          "journalIssueId": 4059300,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2025-12-01",
+          "volume": "14",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Foraging behavior",
+            "Neuroscience",
+            "decision-making",
+            "C. Elegans",
+            "Food Choice"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Animals",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Caenorhabditis elegans",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Dopamine",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Feeding Behavior",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Food Preferences",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Reward",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Decision Making",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Choice Behavior",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "RP106792",
+        "pmcid": "PMC12668669",
+        "pmid": "41324250",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "&lt;i&gt;C. elegans&lt;/i&gt; food choice exhibits effort discounting-like behavior."
+      },
+      {
+        "abstractText": "This study is a replication and extension of previous research which demonstrated that individuals who identified as Vaxxers and Anti-vaxxers during the COVID-19 pandemic differ in several personality traits. We aimed to further explore personality trait differences between vaccine supporters and opponents. Our study recruited 219 individuals via mTurk who either strongly supported or strongly opposed being vaccinated for COVID-19. Participants completed measures of HEXACO traits honesty-humility and conscientiousness, locus of control, desirability of control, intolerance of uncertainty, generic conspiracy beliefs, and the Dark Triad. Significant differences were found between the groups on measures of generic conspiracy beliefs and intolerance of uncertainty, in the expected directions. These results suggest that vaccine supporters and opponents differ in key personality traits, highlighting the importance of psychological factors in shaping vaccination attitudes. Examining these factors can guide and inform public health interventions and contribute to greater success in vaccination efforts.",
+        "affiliation": "Mount Royal University, Calgary, Alberta, Canada.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0003-9254-4872"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Mount Royal University, Calgary, Alberta, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0003-9254-4872"
+              },
+              "firstName": "Holly A",
+              "fullName": "Kendell HA",
+              "initials": "HA",
+              "lastName": "Kendell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Mount Royal University, Calgary, Alberta, Canada."
+                  }
+                ]
+              },
+              "firstName": "Philip A",
+              "fullName": "Vernon PA",
+              "initials": "PA",
+              "lastName": "Vernon"
+            }
+          ]
+        },
+        "authorString": "Kendell HA, Vernon PA.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "COVID-19 Vaccines",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-12",
+        "dateOfCreation": "2026-03-12",
+        "dateOfRevision": "2026-03-15",
+        "doi": "10.1002/ijop.70199",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-13",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12981999"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/ijop.70199"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12981999"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12981999?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41819804",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "2",
+          "journal": {
+            "essn": "1464-066X",
+            "isoabbreviation": "Int J Psychol",
+            "issn": "0020-7594",
+            "medlineAbbreviation": "Int J Psychol",
+            "nlmid": "0107305",
+            "title": "International journal of psychology : Journal international de psychologie"
+          },
+          "journalIssueId": 4098378,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "61",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Public Health",
+            "Individual Differences",
+            "Personality Traits",
+            "Vaccination Attitudes",
+            "Covid\u201019"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Vaccination",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Attitude to Health",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Health Knowledge, Attitudes, Practice",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Personality",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "COVID-19",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "prevention & control"
+                  },
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "COVID-19 Vaccines",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e70199",
+        "pmcid": "PMC12981999",
+        "pmid": "41819804",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "brief-report",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "The Role of Personality in Vaccination Attitudes: A Replication and Extension."
+      },
+      {
+        "abstractText": "<h4>Aims</h4>We aimed to investigate the behavioral aftereffects of a novel noninvasive brain stimulation technique-transcranial pulse stimulation (TPS)-applied over the right motor cortex (rM1) in healthy adults.<h4>Methods</h4>Thirty-four healthy adults underwent a randomized, subject- and analyst- blind, crossover trial, receiving active TPS over the rM1 or control TPS over the vertex in two sessions 24\u2009h apart. Motor performance was assessed using the Nine-Hole Peg Test (NHPT) and the Simple Reaction Time Task (SRTT) before, immediately after, and every 10\u2009min for 40\u2009min after each session. A linear mixed model and post hoc analyses were applied to evaluate the effects.<h4>Results</h4>No significant interaction effect (stimulation condition \u00d7 time) was found. The left-hand NHPT performance significantly improved from 10\u2009min post-TPS onward in both conditions (ps \u2264\u20090.002).<h4>Conclusion</h4>A single session of rM1-TPS does not yield significant improvements in motor dexterity compared to vertex-TPS. Future well-powered studies with a sham control condition and multiple stimulation sessions are needed to investigate the aftereffects using a combination of neurophysiological and neuroimaging approaches.<h4>Trial registration</h4>This study was registered in ClinicalTrial.gov in April 2024 (NCT06312930).",
+        "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3892-1804"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9517-1579"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-1483-7616"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9517-1579"
+              },
+              "firstName": "Penny Ping",
+              "fullName": "Qin PP",
+              "initials": "PP",
+              "lastName": "Qin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "firstName": "Ivan Kin-Yeung",
+              "fullName": "Chak IK",
+              "initials": "IK",
+              "lastName": "Chak"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "firstName": "Rebecca Lai-Di",
+              "fullName": "Kan RL",
+              "initials": "RL",
+              "lastName": "Kan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  },
+                  {
+                    "affiliation": "Shanghai YangZhi Rehabilitation Hospital (Shanghai Sunshine Rehabilitation Center), School of Medicine, Tongji University, Shanghai, China."
+                  }
+                ]
+              },
+              "firstName": "Min-Xia",
+              "fullName": "Jin MX",
+              "initials": "MX",
+              "lastName": "Jin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "firstName": "Bella Bing-Bing",
+              "fullName": "Zhang BB",
+              "initials": "BB",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "firstName": "Adam Wei-Li",
+              "fullName": "Xia AW",
+              "initials": "AW",
+              "lastName": "Xia"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "firstName": "Tim Tian-Ze",
+              "fullName": "Lin TT",
+              "initials": "TT",
+              "lastName": "Lin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-1483-7616"
+              },
+              "firstName": "Sharie Xiao",
+              "fullName": "Wang SX",
+              "initials": "SX",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology, School of Medicine, Tongji University, Shanghai, China."
+                  }
+                ]
+              },
+              "firstName": "Jian-Hui",
+              "fullName": "Liu JH",
+              "initials": "JH",
+              "lastName": "Liu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Nursing, The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "firstName": "Teris",
+              "fullName": "Cheung T",
+              "initials": "T",
+              "lastName": "Cheung"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Sciences, The Hong Kong Polytechnic University, Hong Kong, China."
+                  },
+                  {
+                    "affiliation": "Mental Health Research Center (MHRC), The Hong Kong Polytechnic University, Hong Kong, China."
+                  },
+                  {
+                    "affiliation": "University Research Facility in Behavioral and Systems Neuroscience (UBSN), The Hong Kong Polytechnic University, Hong Kong, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3892-1804"
+              },
+              "firstName": "Georg S",
+              "fullName": "Kranz GS",
+              "initials": "GS",
+              "lastName": "Kranz"
+            }
+          ]
+        },
+        "authorString": "Qin PP, Chak IK, Kan RL, Jin MX, Zhang BB, Xia AW, Lin TT, Wang SX, Liu JH, Cheung T, Kranz GS.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-12-20",
+        "dateOfCreation": "2025-12-20",
+        "dateOfRevision": "2026-01-07",
+        "doi": "10.1002/cns.70711",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-21",
+        "firstPublicationDate": "2025-12-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12717462"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-24",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/cns.70711"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12717462"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12717462?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Hong Kong Polytechnic University",
+              "grantId": "P0040786",
+              "orderIn": 0
+            },
+            {
+              "agency": "Hong Kong Polytechnic University",
+              "grantId": "P0043155",
+              "orderIn": 0
+            },
+            {
+              "agency": "Hong Kong Polytechnic University",
+              "grantId": "P0042417",
+              "orderIn": 0
+            },
+            {
+              "agency": "Hong Kong Polytechnic University",
+              "grantId": "P0055985",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41420421",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Dec",
+          "issue": "12",
+          "journal": {
+            "essn": "1755-5949",
+            "isoabbreviation": "CNS Neurosci Ther",
+            "issn": "1755-5930",
+            "medlineAbbreviation": "CNS Neurosci Ther",
+            "nlmid": "101473265",
+            "title": "CNS neuroscience & therapeutics"
+          },
+          "journalIssueId": 4057582,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2025-12-01",
+          "volume": "31",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Motor cortex",
+            "Motor function",
+            "Noninvasive Brain Stimulation",
+            "Transcranial Pulse Stimulation"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Motor Cortex",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pilot Projects",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cross-Over Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Psychomotor Performance",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Reaction Time",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Evoked Potentials, Motor",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Transcranial Magnetic Stimulation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Healthy Volunteers",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Transcranial Direct Current Stimulation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e70711",
+        "pmcid": "PMC12717462",
+        "pmid": "41420421",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Effects of Transcranial Pulse Stimulation of the Primary Motor Cortex on Motor Performance in Healthy Adults: A Randomized Crossover Pilot Study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "affiliation": "Department of Neurosurgery, West China Hospital of Sichuan University, No. 37 Guoxue Road, Wuhou District, Chengdu, Sichuan, 610041, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, West China Hospital of Sichuan University, No. 37 Guoxue Road, Wuhou District, Chengdu, Sichuan, 610041, China."
+                  },
+                  {
+                    "affiliation": "Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University, Shanghai, China."
+                  }
+                ]
+              },
+              "firstName": "Wei",
+              "fullName": "Zhang W",
+              "initials": "W",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, West China Hospital of Sichuan University, No. 37 Guoxue Road, Wuhou District, Chengdu, Sichuan, 610041, China."
+                  },
+                  {
+                    "affiliation": "Nanhu Brain-Computer Interface Institute, Hangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Botao",
+              "fullName": "Xiong B",
+              "initials": "B",
+              "lastName": "Xiong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Mental Health Center, West China Hospital of Sichuan University, Chengdu, China."
+                  }
+                ]
+              },
+              "firstName": "Danlin",
+              "fullName": "Shen D",
+              "initials": "D",
+              "lastName": "Shen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, West China Hospital of Sichuan University, No. 37 Guoxue Road, Wuhou District, Chengdu, Sichuan, 610041, China. wcnsww@163.com."
+                  }
+                ]
+              },
+              "firstName": "Wei",
+              "fullName": "Wang W",
+              "initials": "W",
+              "lastName": "Wang"
+            }
+          ]
+        },
+        "authorString": "Zhang W, Xiong B, Shen D, Wang W.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-01-08",
+        "dateOfRevision": "2026-02-06",
+        "doi": "10.1186/s12888-025-07681-8",
+        "electronicPublicationDate": "2026-01-07",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-08",
+        "firstPublicationDate": "2026-01-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12870379"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s12888-025-07681-8"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12870379"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12870379?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41501731",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "1471-244X",
+            "isoabbreviation": "BMC Psychiatry",
+            "issn": "1471-244X",
+            "medlineAbbreviation": "BMC Psychiatry",
+            "nlmid": "100968559",
+            "title": "BMC psychiatry"
+          },
+          "journalIssueId": 4086909,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "26",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Electroencephalography",
+            "Depression",
+            "Nucleus accumbens",
+            "Internal capsule",
+            "Deep brain stimulation"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "120",
+        "pmcid": "PMC12870379",
+        "pmid": "41501731",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Characteristics of resting-state EEG after deep brain stimulation in nucleus accumbens and anterior limb of internal capsule: a pilot study."
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Genome-wide polygenic risk scores (PRSs) are useful for stratifying individuals' risk of polygenic diseases such as hypertension. However, a limitation of genome-wide PRSs is that they do not provide information about the distribution of risk burden across biological pathways. We used pathway-specific PRSs to investigate these effects of common antihypertensive therapy target pathways on disease risk in a cohort of West African individuals.<h4>Methods</h4>A total of 11 pathways, comprising 1,149 unique genes, were selected based on the targets of commonly used antihypertensive agents. Pathway-specific PRSs for hypertension [individuals with systolic blood pressure (SBP) \u2265140\u2005mmHg, diastolic blood pressure (DBP) \u226590\u2005mmHg, or taking antihypertensive medications] were calculated in a cohort of 2,295 individuals. The model was then validated and tested in independent cohorts of 1,614 and 966 individuals, respectively. All participants were recruited from the International Collaborative Study on Hypertension in Blacks.<h4>Results</h4>In the combined pathway analysis, PRSs predicted risk better than base models fitted only with sex, age, and principal components. Compared with the base models without the PRSs, incremental increases in <i>R</i> <sup>2</sup> attributable to the inclusion of PRSs in predictive models were 2.6% for SBP (<i>p</i>\u2009=\u20090.009), 1.4% for DBP (<i>p</i>\u2009=\u20090.012), and 1.1% for mean arterial pressure (MAP) (<i>p</i>\u2009=\u20090.044). PRSs from certain signaling pathways (mitogen-activated protein kinase, cAMP, and adrenergic signaling in cardiomyocytes) could stratify individuals into the top and bottom deciles of DBP risk. Adrenergic signaling in cardiomyocytes was also predictive of MAP when comparing individuals in the top and bottom deciles.<h4>Conclusions</h4>Combined pathway polygenic risk scores derived from genes in well-defined genetic pathways predict hypertension risk in individuals of African ancestry. However, the relatively low predictability of pathway-specific PRSs supports the need to explore the broader influence of genetic, environmental, and epigenetic factors that cannot be captured by pathway-specific PRSs alone.",
+        "affiliation": "Stritch School of Medicine, Loyola University Chicago, Maywood, IL, United States.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Stritch School of Medicine, Loyola University Chicago, Maywood, IL, United States."
+                  }
+                ]
+              },
+              "firstName": "Gregory",
+              "fullName": "Bormes G",
+              "initials": "G",
+              "lastName": "Bormes"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Stritch School of Medicine, Loyola University Chicago, Maywood, IL, United States."
+                  }
+                ]
+              },
+              "firstName": "Vanessa",
+              "fullName": "Robbin V",
+              "initials": "V",
+              "lastName": "Robbin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Harvard Medical School, Boston, MA, United States."
+                  },
+                  {
+                    "affiliation": "Channing Division of Network Medicine, Brigham and Women's Hospital, Boston, MA, United States."
+                  }
+                ]
+              },
+              "firstName": "Tinashe",
+              "fullName": "Chikowore T",
+              "initials": "T",
+              "lastName": "Chikowore"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Epidemiology and Public Health, University of Maryland School of Medicine, Baltimore, MD, United States."
+                  }
+                ]
+              },
+              "firstName": "Yuji",
+              "fullName": "Zhang Y",
+              "initials": "Y",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Sydney Brenner Institute for Molecular Bioscience, University of the Witwatersrand, Johannesburg, South Africa."
+                  }
+                ]
+              },
+              "firstName": "Ananyo",
+              "fullName": "Choudhury A",
+              "initials": "A",
+              "lastName": "Choudhury"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Sydney Brenner Institute for Molecular Bioscience, University of the Witwatersrand, Johannesburg, South Africa."
+                  },
+                  {
+                    "affiliation": "School of Electrical and Information Engineering, University of the Witwatersrand, Johannesburg, South Africa."
+                  }
+                ]
+              },
+              "firstName": "Scott",
+              "fullName": "Hazelhurst S",
+              "initials": "S",
+              "lastName": "Hazelhurst"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Precision Health Research, National Human Genome Research Institute, National Institutes of Health, Bethesda, MD, United States."
+                  }
+                ]
+              },
+              "firstName": "Neil A",
+              "fullName": "Hanchard NA",
+              "initials": "NA",
+              "lastName": "Hanchard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Epidemiology and Public Health, University of Maryland School of Medicine, Baltimore, MD, United States."
+                  },
+                  {
+                    "affiliation": "Greenebaum Comprehensive Cancer Center, University of Maryland School of Medicine, Baltimore, MD, United States."
+                  }
+                ]
+              },
+              "firstName": "Sally N",
+              "fullName": "Adebamowo SN",
+              "initials": "SN",
+              "lastName": "Adebamowo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Research on Genomics and Global Health, National Human Genome Research Institute, National Institutes of Health, Bethesda, MD, United States."
+                  }
+                ]
+              },
+              "firstName": "Adebowale A",
+              "fullName": "Adeyemo AA",
+              "initials": "AA",
+              "lastName": "Adeyemo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Public Health Sciences, Parkinson School of Health Sciences and Public Health, Loyola University Chicago, Maywood, IL, United States."
+                  }
+                ]
+              },
+              "firstName": "Bamidele",
+              "fullName": "Tayo B",
+              "initials": "B",
+              "lastName": "Tayo"
+            }
+          ]
+        },
+        "authorString": "Bormes G, Robbin V, Chikowore T, Zhang Y, Choudhury A, Hazelhurst S, Hanchard NA, Adebamowo SN, Adeyemo AA, Tayo B.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "40630603",
+              "orderIn": 1,
+              "reference": "medRxiv. 2025 Jul 01:2025.06.30.25330577. doi: 10.1101/2025.06.30.25330577.",
+              "source": "MED",
+              "type": "Update of"
+            },
+            {
+              "id": "PPR1044607",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-30",
+        "dateOfCreation": "2026-03-30",
+        "dateOfRevision": "2026-04-07",
+        "doi": "10.3389/fcvm.2026.1707809",
+        "electronicPublicationDate": "2026-03-13",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-30",
+        "firstPublicationDate": "2026-03-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13021488"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fcvm.2026.1707809"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13021488"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13021488?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41908051",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "2297-055X",
+            "isoabbreviation": "Front Cardiovasc Med",
+            "issn": "2297-055X",
+            "medlineAbbreviation": "Front Cardiovasc Med",
+            "nlmid": "101653388",
+            "title": "Frontiers in cardiovascular medicine"
+          },
+          "journalIssueId": 4112090,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "13",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Antihypertensive agents",
+            "Genome-wide Association Study (Gwas)",
+            "Polygenic Risk Scores",
+            "Pathway-specific",
+            "Blood Pressure Traits"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1707809",
+        "pmcid": "PMC13021488",
+        "pmid": "41908051",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Pathway-specific polygenic risk scores for blood pressure traits in a West African cohort."
+      },
+      {
+        "abstractText": "<h4>Objective</h4>The rising incidence and survival rates of breast cancer have increased the number of breast cancer survivors (BCSs) experiencing psychological distress that often overlaps with anxiety, depression, and fear of recurrence. Many existing interventions neglect the unique psychosocial contexts of BCSs, and unclear definitions of distress hinder consistent assessment and management. This systematic review evaluated recent interventions targeting psychological distress in BCSs and offers evidence-based insights.<h4>Methods</h4>Following PRISMA guidelines, six databases were searched for randomized controlled trials on distress interventions for BCSs published between 2014 and July 2025. Study quality was evaluated using Cochrane's RoB 2 tool, and data on intervention characteristics, outcomes, and measurement instruments were extracted.<h4>Results</h4>Fourteen randomized control trials involving 2447 BCSs were included. Among them, 8 (57%) report significant reductions, with six showing immediate post-intervention effects and two demonstrating effects only at follow-up (effect sizes ranged from small to large, Cohen's d = 0.44-1.54). Effective interventions included mindfulness-based approaches, virtual reality-integrated psychotherapy, and cognitive-behavioral therapy combined with hypnosis. In contrast, cognitive-focused interventions lacking experiential components and minimally structured digital programs showed non-significant results.<h4>Conclusions</h4>Effective distress management requires multimodal, theory-based interventions delivered by trained professionals, rather than cognitive-focused or minimally structured approaches. Future interventions should incorporate standardized distress assessment tools and clearly articulated theoretical frameworks, focusing on younger survivors, who remain significantly underrepresented. Although digital platforms enhance accessibility, their effectiveness depends on evidence-based content and structured implementation. Strengthening these elements will improve both the comparability and overall effectiveness of interventions for BCSs.",
+        "affiliation": "Department of Health Disparities Research, MD Anderson Cancer Center, Houston, TX, United States.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2484-2216"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health Disparities Research, MD Anderson Cancer Center, Houston, TX, United States."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2484-2216"
+              },
+              "firstName": "Haejeong",
+              "fullName": "An H",
+              "initials": "H",
+              "lastName": "An"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Nursing and Research Institute of Nursing Science, Hallym University, Chuncheon, Gangwon-do, Republic of Korea."
+                  }
+                ]
+              },
+              "firstName": "Yoonjung",
+              "fullName": "Kim Y",
+              "initials": "Y",
+              "lastName": "Kim"
+            }
+          ]
+        },
+        "authorString": "An H, Kim Y.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-01-16",
+        "dateOfCreation": "2026-01-16",
+        "dateOfRevision": "2026-01-18",
+        "doi": "10.1016/j.apjon.2025.100826",
+        "electronicPublicationDate": "2025-12-02",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-16",
+        "firstPublicationDate": "2025-12-02",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12800616"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.apjon.2025.100826"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12800616"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12800616?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Hallym University",
+              "grantId": "HRF-202508-003",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministry of Education",
+              "grantId": "RS-2024-00451448",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Research Foundation of Korea",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41541190",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Dec",
+          "journal": {
+            "essn": "2349-6673",
+            "isoabbreviation": "Asia Pac J Oncol Nurs",
+            "issn": "2347-5625",
+            "medlineAbbreviation": "Asia Pac J Oncol Nurs",
+            "nlmid": "101673157",
+            "title": "Asia-Pacific journal of oncology nursing"
+          },
+          "journalIssueId": 4092379,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2026-12-01",
+          "volume": "13",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Stress",
+            "Breast cancer",
+            "Quality of life",
+            "Psychological",
+            "Distress",
+            "Cancer Survivors"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "100826",
+        "pmcid": "PMC12800616",
+        "pmid": "41541190",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Managing psychological distress in women with breast cancer: A systematic review of intervention trends in the past decade."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Acute respiratory infections (ARI) and diarrhoea are among the leading causes of infant and under-five mortality worldwide. Zinc, the second most abundant trace element in the human body, is widely used in the treatment of both conditions. It mitigates diarrhoea by restoring mucosal integrity and enhancing enterocyte brush border enzyme activity. In ARI, zinc boosts immune function, promotes epithelial regeneration, and inhibits the replication of respiratory viruses.<h4>Aim</h4>To assess the effectiveness of prophylactic intermittent zinc supplementation in preventing acute diarrhoea and ARI in infants.<h4>Methods</h4>This open-label, randomized controlled trial with a 1:1 allocation ratio was conducted over 15 months (October 2022 to December 2023) at a tertiary care hospital in Eastern India. A total of 320 infants attending the outpatient department for routine vaccinations were enrolled and randomly assigned to intervention and control groups. The intervention group received zinc drops for two weeks, with the regimen repeated one month later and again at six months during subsequent vaccination visits. The control group received no placebo or alternative treatment. Outcomes were assessed after the final follow-up at nine months.<h4>Results</h4>The mean annual incidence of ARI and diarrhoea was significantly lower in the zinc group than in the control group [ARI: 0.25 \u00b1 0.61 <i>vs</i> 0.92 \u00b1 1.22; mean difference = -0.67 (95%CI: -0.88 to -0.45), <i>P</i> < 0.001, Cohen's <i>d</i> = -0.69] and [diarrhoea: 1.04 \u00b1 1.30 <i>vs</i> 2.07 \u00b1 2.09; mean difference = -1.03 (95%CI: -1.42 to -0.65), <i>P</i> < 0.001, Cohen's <i>d</i> = -0.59], respectively. Additionally, the zinc group showed significantly greater gains in length [10 \u00b1 0.6 cm <i>vs</i> 8.6 \u00b1 0.4 cm; mean difference = 1.4 (95%CI: 1.3-1.5), <i>P</i> < 0.001, Cohen's <i>d</i> = 2.74] and weight [3150 \u00b1 108 g <i>vs</i> 2818 \u00b1 76 g; mean difference = 332 (95%CI: 310-352), <i>P</i> < 0.001, Cohen's <i>d</i> = 3.56].<h4>Conclusion</h4>Prophylactic intermittent zinc supplementation administered alongside routine immunization substantially reduces the incidence of ARI and diarrhoea in infants and promotes improved growth. This affordable strategy holds promise for reducing infant morbidity and mortality without increasing healthcare burdens.",
+        "affiliation": "Department of Pediatrics, Hamdard Institute of Medical Sciences and Research, New Delhi 110062, Delhi, India.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pediatrics, Hamdard Institute of Medical Sciences and Research, New Delhi 110062, Delhi, India."
+                  },
+                  {
+                    "affiliation": "Department of Paediatrics, All India Institute of Medical Sciences, Patna 801507, Bih\u0101r, India."
+                  }
+                ]
+              },
+              "firstName": "Chandra Mohan",
+              "fullName": "Kumar CM",
+              "initials": "CM",
+              "lastName": "Kumar"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Paediatrics, All India Institute of Medical Sciences, Patna 801507, Bih\u0101r, India. arnabmck999@gmail.com."
+                  }
+                ]
+              },
+              "firstName": "Arnab",
+              "fullName": "Ghorui A",
+              "initials": "A",
+              "lastName": "Ghorui"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Paediatrics, All India Institute of Medical Sciences, Patna 801507, Bih\u0101r, India."
+                  }
+                ]
+              },
+              "firstName": "Karuna",
+              "fullName": "Hamsay K",
+              "initials": "K",
+              "lastName": "Hamsay"
+            }
+          ]
+        },
+        "authorString": "Kumar CM, Ghorui A, Hamsay K.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2025-11-19",
+        "dateOfCreation": "2025-11-19",
+        "dateOfRevision": "2025-12-10",
+        "doi": "10.5409/wjcp.v14.i4.109022",
+        "electronicPublicationDate": "2025-12-09",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-19",
+        "firstPublicationDate": "2025-12-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12620794"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-11",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.5409/wjcp.v14.i4.109022"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12620794"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12620794?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41255660",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Dec",
+          "issue": "4",
+          "journal": {
+            "essn": "2219-2808",
+            "isoabbreviation": "World J Clin Pediatr",
+            "issn": "2219-2808",
+            "medlineAbbreviation": "World J Clin Pediatr",
+            "nlmid": "101627548",
+            "title": "World journal of clinical pediatrics"
+          },
+          "journalIssueId": 4051191,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2025-12-01",
+          "volume": "14",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Growth",
+            "Diarrhoea",
+            "Acute respiratory infections",
+            "Routine Immunization",
+            "Prophylactic Zinc"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "109022",
+        "pmcid": "PMC12620794",
+        "pmid": "41255660",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Efficacy of prophylactic intermittent zinc supplementation for reducing acute respiratory infections and diarrhoea in infants: A randomized controlled trial."
+      }
+    ]
+  },
+  "version": "6.9"
+}

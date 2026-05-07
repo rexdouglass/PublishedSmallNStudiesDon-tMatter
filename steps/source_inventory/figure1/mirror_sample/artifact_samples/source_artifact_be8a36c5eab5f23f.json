@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_be8a36c5eab5f23f",
+  "byte_size": 29824,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "C_n",
+    "T_n",
+    "C_mean",
+    "T_mean",
+    "C_sd",
+    "T_sd"
+  ],
+  "estimated_data_rows": 534,
+  "file_name": "ft115.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/des_stat/ft115.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "C_mean": 1.847e-05,
+      "C_n": 40,
+      "C_sd": 0.008,
+      "T_mean": 0.005,
+      "T_n": 40,
+      "T_sd": 0.014,
+      "obs_ID": "obs001",
+      "study_ID": "Bibby",
+      "year_pub": 2007
+    },
+    {
+      "C_mean": 0.05,
+      "C_n": 40,
+      "C_sd": 0.058,
+      "T_mean": 0.002,
+      "T_n": 40,
+      "T_sd": 0.012,
+      "obs_ID": "obs002",
+      "study_ID": "Bibby",
+      "year_pub": 2007
+    },
+    {
+      "C_mean": 0.04,
+      "C_n": 40,
+      "C_sd": 0.045,
+      "T_mean": 0.048,
+      "T_n": 40,
+      "T_sd": 0.051,
+      "obs_ID": "obs003",
+      "study_ID": "Bibby",
+      "year_pub": 2007
+    },
+    {
+      "C_mean": 0.047,
+      "C_n": 40,
+      "C_sd": 0.049,
+      "T_mean": 0.028,
+      "T_n": 40,
+      "T_sd": 0.029,
+      "obs_ID": "obs004",
+      "study_ID": "Bibby",
+      "year_pub": 2007
+    },
+    {
+      "C_mean": 12.692,
+      "C_n": 40,
+      "C_sd": 16.549,
+      "T_mean": 7.627,
+      "T_n": 40,
+      "T_sd": 10.743,
+      "obs_ID": "obs005",
+      "study_ID": "Bibby",
+      "year_pub": 2007
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "2fca49ea028a941ca877e5763efed7ccf2c0f080a412391b2dde4924d806c5ee"
+}

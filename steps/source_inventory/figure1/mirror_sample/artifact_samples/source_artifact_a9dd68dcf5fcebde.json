@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_a9dd68dcf5fcebde",
+  "byte_size": 76607,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value"
+  ],
+  "estimated_data_rows": 758,
+  "file_name": "qje_126_4.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/qje_126_4.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;126.4;2011;2125;Almond;4;;no;other;0_1;mean_test;2126;1;no;no;;;;;;>0.3"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;126.4;2011;2125;Almond;4;;no;other;0_2;reg;2127;1;no;no;-0.0072;0.0040;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;126.4;2011;2125;Almond;4;;no;other;0_2;reg;2127;2;no;no;-0.0034;0.0013;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;126.4;2011;2125;Almond;4;;no;other;0_2;coeff test;2127;3;no;no;;;;;;0.33"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;126.4;2011;2125;Almond;4;;no;other;0_2;coeff test;2127;4;no;no;;;;;;0.35"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "9ef92a38821692594572a5ecbe9aea79a06062af2023bbe4824d2d6accab56f1"
+}

@@ -1,0 +1,4234 @@
+{
+  "hitCount": 70,
+  "nextCursorMark": "AoIIP8a+/Sg1MjA5MjcyNw==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"means and standard deviations\" \"direct replication\" \"original\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIP8a+/Sg1MjA5MjcyNw==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"means and standard deviations\" \"direct replication\" \"original\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "Data from rating scales underlie very specific restrictions: They have a lower limit, an upper limit, and they only consist of a few integers. These characteristics produce particular dependencies between means and standard deviations. A mean that is a non-integer, for example, can never be associated with zero variability, while a mean equal to one of the scale's limits can only be associated with zero variability. The relationship can be described by umbrella plots for which we present a formalization. We use that formalization to explore implications for statistical power and for the relationship between heterogeneity in unstandardized and standardized effect sizes. The analysis illustrates that power is not only affected by the mean difference and sample size, but also by the position of a mean within the respective scale. Further, the umbrella restrictions of rating scales can impede interpretability of meta-analytic heterogeneity. Estimations of relative heterogeneity can diverge between unstandardized and standardized effects, raising questions about which of the two patterns of heterogeneity we would want to explain (for example, through moderators). We reanalyze data from the Many Labs projects to illustrate the issue and finally discuss the implications of our observations as well as ways to utilize these properties of rating scales. To facilitate in-depth exploration and practical application of our formalization, we developed the Shiny Umbrellas app, which is publicly available at https://www.apps.meta-rep.lmu.de/shiny_umbrellas/ .",
+        "affiliation": "University of Erfurt, Nordh\u00e4user Str. 63, 99089, Erfurt, Germany. Jens.Fuenderich@uni-erfurt.de.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Erfurt, Nordh\u00e4user Str. 63, 99089, Erfurt, Germany. Jens.Fuenderich@uni-erfurt.de."
+                  },
+                  {
+                    "affiliation": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Munich, Germany. Jens.Fuenderich@uni-erfurt.de."
+                  }
+                ]
+              },
+              "firstName": "Jens H",
+              "fullName": "F\u00fcnderich JH",
+              "initials": "JH",
+              "lastName": "F\u00fcnderich"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Erfurt, Nordh\u00e4user Str. 63, 99089, Erfurt, Germany."
+                  }
+                ]
+              },
+              "firstName": "Lukas J",
+              "fullName": "Beinhauer LJ",
+              "initials": "LJ",
+              "lastName": "Beinhauer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Erfurt, Nordh\u00e4user Str. 63, 99089, Erfurt, Germany."
+                  }
+                ]
+              },
+              "firstName": "Frank",
+              "fullName": "Renkewitz F",
+              "initials": "F",
+              "lastName": "Renkewitz"
+            }
+          ]
+        },
+        "authorString": "F\u00fcnderich JH, Beinhauer LJ, Renkewitz F.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-11-25",
+        "dateOfCreation": "2025-11-25",
+        "dateOfRevision": "2026-02-19",
+        "doi": "10.3758/s13428-025-02879-w",
+        "electronicPublicationDate": "2025-11-24",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-25",
+        "firstPublicationDate": "2025-11-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12644166"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-23",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3758/s13428-025-02879-w"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12644166"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12644166?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Universit\u00e4t Erfurt",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41286207",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Nov",
+          "issue": "1",
+          "journal": {
+            "essn": "1554-3528",
+            "isoabbreviation": "Behav Res Methods",
+            "issn": "1554-351X",
+            "medlineAbbreviation": "Behav Res Methods",
+            "nlmid": "101244316",
+            "title": "Behavior research methods"
+          },
+          "journalIssueId": 4051773,
+          "monthOfPublication": 11,
+          "printPublicationDate": "2025-11-01",
+          "volume": "58",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Heterogeneity",
+            "Power",
+            "Error",
+            "Rating Scales",
+            "Meta-science"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Data Interpretation, Statistical",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Models, Statistical",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sample Size",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Meta-Analysis as Topic",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "5",
+        "pmcid": "PMC12644166",
+        "pmid": "41286207",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Under my umbrella: Rating scales obscure statistical power and effect size heterogeneity."
+      },
+      {
+        "abstractText": "Error Management Theory (EMT) hypothesizes that humans are functionally biased to err on the side of the least costly mistake when making judgments under uncertainty. Applying EMT to emotion perception, previous studies found that people perceive individuals holding everyday objects with potentially lethal affordances to be both higher in state anger and more anger-prone, relative to individuals holding control objects. Here, we conduct a direct replication of one such study examining these effects [13] and exploratorily test whether friends of an individual possessing a potentially lethal tool are also perceived as angrier-and hence more dangerous-in a \"reverse-halo\" effect. Participants (N = 476) were presented an image of an individual depicted as an avid cook and either holding or near a conventional kitchen knife, then asked to rate their emotional states and trait dispositions. Participants were next presented with an image of a second individual framed as a close friend of the cooking enthusiast and asked to assess their emotional states and dispositions. The results replicated prior findings that individuals depicted holding everyday objects with incidentally lethal affordances are perceived as angrier, more prone to anger, and more socially unpleasant. However, we did not find evidence for a \"reverse-halo\" effect extending to friends. Instead, all of the state and trait emotion ratings of the two individuals were significantly correlated, consistent with an inference (orthogonal to error management motivations) of homophilic similarity in the affective profiles of friends. These results are discussed as they inform prior EMT research and motivate further study of the determinants of emotion perception.",
+        "affiliation": "School of Collective Intelligence, Universit\u00e9 Mohammed VI Polytechnique, Rabat, Morocco.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5068-0740"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Collective Intelligence, Universit\u00e9 Mohammed VI Polytechnique, Rabat, Morocco."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5068-0740"
+              },
+              "firstName": "Cody",
+              "fullName": "Moser C",
+              "initials": "C",
+              "lastName": "Moser"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive and Information Sciences, University of California Merced, Merced, California, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Richard",
+              "fullName": "Ellk R",
+              "initials": "R",
+              "lastName": "Ellk"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive and Information Sciences, University of California Merced, Merced, California, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Ayonna",
+              "fullName": "Jones A",
+              "initials": "A",
+              "lastName": "Jones"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive and Information Sciences, University of California Merced, Merced, California, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Colin",
+              "fullName": "Holbrook C",
+              "initials": "C",
+              "lastName": "Holbrook"
+            }
+          ]
+        },
+        "authorString": "Moser C, Ellk R, Jones A, Holbrook C.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2025-10-17",
+        "dateOfCreation": "2025-10-17",
+        "dateOfRevision": "2025-10-20",
+        "doi": "10.1371/journal.pone.0326446",
+        "electronicPublicationDate": "2025-10-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-10-17",
+        "firstPublicationDate": "2025-10-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12533867"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0326446"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12533867"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12533867?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41105758",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "issue": "10",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 4024818,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "20",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Emotions",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Anger",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Perception",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Judgment",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Weapons",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0326446",
+        "pmcid": "PMC12533867",
+        "pmid": "41105758",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Possessing potential weapons (still) heightens anger perception: Replicating and extending a test of error management theory."
+      },
+      {
+        "abstractText": "Musical training has been reported to be associated with enhanced neural processing of sounds, as measured via the frequency following response (FFR), implying the potential for human subcortical neural plasticity. We conducted a large-scale multi-site preregistered study (n\u2009>\u2009260) to replicate and extend the findings underpinning this important relationship. We failed to replicate any of the major findings selected for replication that were published previously in smaller studies. Musical training was not associated with enhanced neural encoding strength of a speech stimulus (/da/) in babble, whether measured via the spectral or temporal representations of the FFR. Similarly, the strength of neural tracking of a speech sound with a dynamic pitch trajectory was not related to either years of musical training or age of onset of musical training. Our findings provide no evidence for associations between early auditory neural responses and either musical training or musical ability.",
+        "affiliation": "Department of Psychology, University of Minnesota, Minneapolis, MN, USA. klwhit@umich.edu.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8685-9630"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8910-8007"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2448-9088"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2627-1509"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5096-5914"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7810-1333"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8186-7241"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8712-5249"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9365-1157"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1271-4740"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2668-0238"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Minnesota, Minneapolis, MN, USA. klwhit@umich.edu."
+                  },
+                  {
+                    "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Kresge Hearing Research Institute, University of Michigan, Ann Arbor, MI, USA. klwhit@umich.edu."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2627-1509"
+              },
+              "firstName": "Kelly L",
+              "fullName": "Whiteford KL",
+              "initials": "KL",
+              "lastName": "Whiteford"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Boston University, Boston, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Lucas S",
+              "fullName": "Baltzell LS",
+              "initials": "LS",
+              "lastName": "Baltzell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Eastman School of Music, University of Rochester, Rochester, NY, USA."
+                  },
+                  {
+                    "affiliation": "Conservatory of Performing Arts, Baldwin Wallace University, Berea, OH, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8186-7241"
+              },
+              "firstName": "Matt",
+              "fullName": "Chiu M",
+              "initials": "M",
+              "lastName": "Chiu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University of Rochester, Rochester, NY, USA."
+                  }
+                ]
+              },
+              "firstName": "John K",
+              "fullName": "Cooper JK",
+              "initials": "JK",
+              "lastName": "Cooper"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University of Rochester, Rochester, NY, USA."
+                  }
+                ]
+              },
+              "firstName": "Stefanie",
+              "fullName": "Faucher S",
+              "initials": "S",
+              "lastName": "Faucher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Minnesota, Minneapolis, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Pui Yii",
+              "fullName": "Goh PY",
+              "initials": "PY",
+              "lastName": "Goh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Purdue University, West Lafayette, IN, USA."
+                  }
+                ]
+              },
+              "firstName": "Anna",
+              "fullName": "Hagedorn A",
+              "initials": "A",
+              "lastName": "Hagedorn"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Brain and Mind, University of Western Ontario, London, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, University of Western Ontario, London, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Vanessa C",
+              "fullName": "Irsik VC",
+              "initials": "VC",
+              "lastName": "Irsik"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neuroscience Institute, Carnegie Mellon University, Pittsburg, PA, USA."
+                  }
+                ]
+              },
+              "firstName": "Audra",
+              "fullName": "Irvine A",
+              "initials": "A",
+              "lastName": "Irvine"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Boston University, Boston, MA, USA."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, Binghamton University, Binghamton, NY, USA."
+                  }
+                ]
+              },
+              "firstName": "Sung-Joo",
+              "fullName": "Lim SJ",
+              "initials": "SJ",
+              "lastName": "Lim"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Minnesota, Minneapolis, MN, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1271-4740"
+              },
+              "firstName": "Juraj",
+              "fullName": "Mesik J",
+              "initials": "J",
+              "lastName": "Mesik"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Brain and Mind, University of Western Ontario, London, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8712-5249"
+              },
+              "firstName": "Bruno",
+              "fullName": "Mesquita B",
+              "initials": "B",
+              "lastName": "Mesquita"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Purdue University, West Lafayette, IN, USA."
+                  }
+                ]
+              },
+              "firstName": "Breanna",
+              "fullName": "Oakes B",
+              "initials": "B",
+              "lastName": "Oakes"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Minnesota, Minneapolis, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Neha",
+              "fullName": "Rajappa N",
+              "initials": "N",
+              "lastName": "Rajappa"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Boston University, Boston, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Elin",
+              "fullName": "Roverud E",
+              "initials": "E",
+              "lastName": "Roverud"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University of Rochester, Rochester, NY, USA."
+                  }
+                ]
+              },
+              "firstName": "Amy E",
+              "fullName": "Schrlau AE",
+              "initials": "AE",
+              "lastName": "Schrlau"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Brain and Mind, University of Western Ontario, London, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, University of Western Ontario, London, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2448-9088"
+              },
+              "firstName": "Stephen C",
+              "fullName": "Van Hedger SC",
+              "initials": "SC",
+              "lastName": "Van Hedger"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Purdue University, West Lafayette, IN, USA."
+                  },
+                  {
+                    "affiliation": "Weldon School of Biomedical Engineering, Purdue University, West Lafayette, IN, USA."
+                  },
+                  {
+                    "affiliation": "Department of Communication Science and Disorders, University of Pittsburgh, Pittsburgh, PA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8685-9630"
+              },
+              "firstName": "Hari M",
+              "fullName": "Bharadwaj HM",
+              "initials": "HM",
+              "lastName": "Bharadwaj"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Brain and Mind, University of Western Ontario, London, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, University of Western Ontario, London, ON, Canada."
+                  },
+                  {
+                    "affiliation": "School of Communication Sciences and Disorders, University of Western Ontario, London, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7810-1333"
+              },
+              "firstName": "Ingrid S",
+              "fullName": "Johnsrude IS",
+              "initials": "IS",
+              "lastName": "Johnsrude"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Boston University, Boston, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Gerald",
+              "fullName": "Kidd G Jr",
+              "initials": "G",
+              "lastName": "Kidd"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University of Rochester, Rochester, NY, USA."
+                  },
+                  {
+                    "affiliation": "Department of Neuroscience, University of Rochester, Rochester, NY, USA."
+                  }
+                ]
+              },
+              "firstName": "Anne E",
+              "fullName": "Luebke AE",
+              "initials": "AE",
+              "lastName": "Luebke"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University of Rochester, Rochester, NY, USA."
+                  },
+                  {
+                    "affiliation": "Department of Neuroscience, University of Rochester, Rochester, NY, USA."
+                  },
+                  {
+                    "affiliation": "Department of Otolaryngology-Head and Neck Surgery, Kresge Hearing Research Institute, University of Michigan, Ann Arbor, MI, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2668-0238"
+              },
+              "firstName": "Ross K",
+              "fullName": "Maddox RK",
+              "initials": "RK",
+              "lastName": "Maddox"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Eastman School of Music, University of Rochester, Rochester, NY, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8910-8007"
+              },
+              "firstName": "Elizabeth W",
+              "fullName": "Marvin EW",
+              "initials": "EW",
+              "lastName": "Marvin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Speech, Language, and Hearing Sciences, Boston University, Boston, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Tyler K",
+              "fullName": "Perrachione TK",
+              "initials": "TK",
+              "lastName": "Perrachione"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Neuroscience Institute, Carnegie Mellon University, Pittsburg, PA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5096-5914"
+              },
+              "firstName": "Barbara G",
+              "fullName": "Shinn-Cunningham BG",
+              "initials": "BG",
+              "lastName": "Shinn-Cunningham"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Minnesota, Minneapolis, MN, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9365-1157"
+              },
+              "firstName": "Andrew J",
+              "fullName": "Oxenham AJ",
+              "initials": "AJ",
+              "lastName": "Oxenham"
+            }
+          ]
+        },
+        "authorString": "Whiteford KL, Baltzell LS, Chiu M, Cooper JK, Faucher S, Goh PY, Hagedorn A, Irsik VC, Irvine A, Lim SJ, Mesik J, Mesquita B, Oakes B, Rajappa N, Roverud E, Schrlau AE, Van Hedger SC, Bharadwaj HM, Johnsrude IS, Kidd G, Luebke AE, Maddox RK, Marvin EW, Perrachione TK, Shinn-Cunningham BG, Oxenham AJ.",
+        "citedByCount": 7,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-08-08",
+        "dateOfCreation": "2025-08-08",
+        "dateOfRevision": "2025-08-23",
+        "doi": "10.1038/s41467-025-62155-5",
+        "electronicPublicationDate": "2025-08-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-08-21",
+        "firstPublicationDate": "2025-08-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12334757"
+          ]
+        },
+        "fullTextReceivedDate": "2025-08-11",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41467-025-62155-5"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12334757"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12334757?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Science Foundation (NSF)",
+              "grantId": "NSF-BCS grant 1840818",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "NSF-BCS grant 1840818",
+              "orderIn": 0
+            },
+            {
+              "acronym": "DC",
+              "agency": "NIDCD NIH HHS",
+              "grantId": "R01 DC005216",
+              "orderIn": 0
+            },
+            {
+              "agency": "U.S. Department of Health &amp; Human Services | NIH | National Institute on Deafness and Other Communication Disorders",
+              "grantId": "R01 DC005216",
+              "orderIn": 0
+            },
+            {
+              "agency": "Canada First Research Excellence Fund",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40781070",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Aug",
+          "issue": "1",
+          "journal": {
+            "essn": "2041-1723",
+            "isoabbreviation": "Nat Commun",
+            "issn": "2041-1723",
+            "medlineAbbreviation": "Nat Commun",
+            "nlmid": "101528555",
+            "title": "Nature communications"
+          },
+          "journalIssueId": 3985749,
+          "monthOfPublication": 8,
+          "printPublicationDate": "2025-08-01",
+          "volume": "16",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Auditory Cortex",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Acoustic Stimulation",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Auditory Perception",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Pitch Perception",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Speech Perception",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Neuronal Plasticity",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Sound",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Music",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "7152",
+        "pmcid": "PMC12334757",
+        "pmid": "40781070",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Multicenter Study",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Large-scale multi-site study shows no association between musical training and early auditory neural sound encoding."
+      },
+      {
+        "abstractText": "A seminal study by Triplett provided initial evidence for the social facilitation effect, and over the last century, research has demonstrated this effect across a range of settings. However, despite the importance attributed to Triplett's study, no research has replicated the original study paradigm. Furthermore, in the context of research advances and methodological rigour, some elements of the original study weaken the validity of the observed findings. We address these critical limitations and replicate the original study, employing a standardized study protocol to minimize potential confounds, such as practice effects. This research reports on 445 school-aged children (M<sub>age</sub> = 10.8, SD\u2009=\u20091.3) who completed the study. As pre-registered in our Stage 1 submission, using a purpose-built apparatus, participants turned a crank to move a marker along a string course between two pulleys. Pairs of participants completed this task four times, twice alone and twice together. Trial order was standardized and balanced to control for possible order/practice effects. In line with Triplett's original study, we show that participants completed the task faster in the together condition than in the alone condition. We also show interesting variability depending on age and gender, as well as demonstrating \"carryover\" effects. Thus, we replicate and extend this classic finding, adding to the literature on social facilitation/competitive coaction. In addition, the materials and methods developed here provide a template for future studies to further examine this phenomenon. PROTOCOL REGISTRATION: The Stage 1 protocol for this Registered Report is available at https://osf.io/vsgpq , and appears as accepted in principle by the journal on 10th August 2022.",
+        "affiliation": "Centre for Social Issues Research, Department of Psychology, University of Limerick, Limerick, Ireland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9082-2443"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3613-2844"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Social Issues Research, Department of Psychology, University of Limerick, Limerick, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Cillian",
+              "fullName": "McHugh C",
+              "initials": "C",
+              "lastName": "McHugh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Social Issues Research, Department of Psychology, University of Limerick, Limerick, Ireland. siobhan.griffin@ul.ie."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3613-2844"
+              },
+              "firstName": "Siobh\u00e1n M",
+              "fullName": "Griffin SM",
+              "initials": "SM",
+              "lastName": "Griffin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Social Issues Research, Department of Psychology, University of Limerick, Limerick, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Elaine L",
+              "fullName": "Kinsella EL",
+              "initials": "EL",
+              "lastName": "Kinsella"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Social Issues Research, Department of Psychology, University of Limerick, Limerick, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Michael",
+              "fullName": "Quayle M",
+              "initials": "M",
+              "lastName": "Quayle"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Robotics and Intelligent Systems, Department of Electronics and Computer Engineering, University of Limerick, Limerick, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Bob",
+              "fullName": "Strunz B",
+              "initials": "B",
+              "lastName": "Strunz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Social Issues Research, Department of Psychology, University of Limerick, Limerick, Ireland."
+                  },
+                  {
+                    "affiliation": "School of Psychology, Queens University of Belfast, Belfast, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9082-2443"
+              },
+              "firstName": "Orla T",
+              "fullName": "Muldoon OT",
+              "initials": "OT",
+              "lastName": "Muldoon"
+            }
+          ]
+        },
+        "authorString": "McHugh C, Griffin SM, Kinsella EL, Quayle M, Strunz B, Muldoon OT.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR1037297",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-11-19",
+        "dateOfCreation": "2025-11-18",
+        "dateOfRevision": "2025-11-21",
+        "doi": "10.1038/s41598-025-25608-x",
+        "electronicPublicationDate": "2025-11-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-19",
+        "firstPublicationDate": "2025-11-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12627428"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41598-025-25608-x"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12627428"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12627428?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41254146",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Nov",
+          "issue": "1",
+          "journal": {
+            "essn": "2045-2322",
+            "isoabbreviation": "Sci Rep",
+            "issn": "2045-2322",
+            "medlineAbbreviation": "Sci Rep",
+            "nlmid": "101563288",
+            "title": "Scientific reports"
+          },
+          "journalIssueId": 4040030,
+          "monthOfPublication": 11,
+          "printPublicationDate": "2025-11-01",
+          "volume": "15",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Replication",
+            "Performance",
+            "Social Facilitation",
+            "Triplett",
+            "Group Influence"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Social Behavior",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Child",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "40366",
+        "pmcid": "PMC12627428",
+        "pmid": "41254146",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "A replication of Triplett's 'social facilitation experiment'."
+      },
+      {
+        "abstractText": "Adult hippocampal neurogenesis persists throughout the lifespan in mammals and can be enhanced by environmental enrichment, including spatial complexity. Whilst maze-based enrichment has been suggested to increase neurogenesis in rodents, the relative complexity of different maze architectures has not been quantified, limiting translational research to human environments. This study used the Architectural Spatial Complexity Index (A-SCI), a novel tool, to compare spatial complexity across 16 rodent maze configurations, including mazes suggested to increase neurogenesis. Results confirm that the A-SCI significantly differentiates environmental enrichment from standard housing, whilst post-hoc analysis suggests no significant difference between maze-based and object-based enrichment, consistent with previous research reporting almost similar effects on cortical thickness. Comparative analysis revealed substantial variation in complexity across rodent maze architectures. Future research can use the A-SCI tool to validate the effect of maze complexity on adult hippocampal neurogenesis, while the Hampton Court maze may be a promising translational paradigm from rodents to humans.",
+        "affiliation": "Department of Architecture, University of Cambridge, Cambridge, United Kingdom.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Architecture, University of Cambridge, Cambridge, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Mohamed Hesham",
+              "fullName": "Khalil MH",
+              "initials": "MH",
+              "lastName": "Khalil"
+            }
+          ]
+        },
+        "authorString": "Khalil MH.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-27",
+        "dateOfCreation": "2026-03-27",
+        "dateOfRevision": "2026-03-27",
+        "doi": "10.3389/fnins.2026.1766823",
+        "electronicPublicationDate": "2026-03-09",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13014037"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-26",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fnins.2026.1766823"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13014037"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13014037?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41890594",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "1662-453X",
+            "isoabbreviation": "Front Neurosci",
+            "issn": "1662-4548",
+            "medlineAbbreviation": "Front Neurosci",
+            "nlmid": "101478481",
+            "title": "Frontiers in neuroscience"
+          },
+          "journalIssueId": 4112096,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "20",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Human",
+            "Mice",
+            "Hippocampus",
+            "Rat",
+            "Maze",
+            "Environmental enrichment",
+            "Adult Hippocampal Neurogenesis",
+            "Spatial Complexity"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1766823",
+        "pmcid": "PMC13014037",
+        "pmid": "41890594",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Comparative analysis of maze complexity: implications for adult hippocampal neurogenesis."
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Dementia involves the loss of memory and degradation of cognitive function. Crucially, the onset of dementia may be prevented by identifying and modifying relevant risk factors years before disease onset in midlife. Commonly described modifiable risk factors include social isolation and educational attainment. Here, we aim to understand the relationships between adult activities and their effects on cognition related to mid-life aging in terms of where and how people live.<h4>Methods</h4>We analysed data from the UK Biobank (<i>N</i>\u202f=\u202f502,165, M<sub>age</sub>\u202f=\u202f56.53, SD<sub>age</sub>\u202f=\u202f8.09, 54.40% female). In particular, our path analysis investigated the associations between years of education in childhood, education later in life, social activities in adulthood, built environment (i.e., coastal distance and percentage of greenspace), socioeconomic status (i.e., Townsend deprivation index), and cognitive functions (i.e., memory, executive function, and abstract reasoning).<h4>Results</h4>Adult education and social activities predict better cognition. Being deprived predicts attendance in adult education classes, but fewer social activities and poorer cognition. Moreover, living in areas with less greenspace and being further away from coastlines predict attendance in adult education classes; however, only greenspace predicts participation in social activities. Finally, less greenspace and further coastal distance support abstract reasoning, whereas further coastal distance predicts poorer executive function.<h4>Conclusion</h4>We demonstrate the potential utility of adult education and social activities which may offset the detrimental effects of deprivation. Accordingly, we argue for improved access to adult social programs in deprived/underserviced areas in the United Kingdom.",
+        "affiliation": "Department of Psychiatry, University of Oxford, Oxford, United Kingdom.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8238-4279"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3751-3179"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry, University of Oxford, Oxford, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Benjamin",
+              "fullName": "Tari B",
+              "initials": "B",
+              "lastName": "Tari"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry, University of Oxford, Oxford, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Morgane",
+              "fullName": "K\u00fcnzi M",
+              "initials": "M",
+              "lastName": "K\u00fcnzi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychiatry, University of Oxford, Oxford, United Kingdom."
+                  }
+                ]
+              },
+              "firstName": "Vanessa",
+              "fullName": "Raymont V",
+              "initials": "V",
+              "lastName": "Raymont"
+            }
+          ]
+        },
+        "authorString": "Tari B, K\u00fcnzi M, Raymont V.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCreation": "2025-07-03",
+        "dateOfRevision": "2025-07-04",
+        "doi": "10.3389/fpsyg.2025.1542282",
+        "electronicPublicationDate": "2025-06-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-07-09",
+        "firstPublicationDate": "2025-06-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12213766"
+          ]
+        },
+        "fullTextReceivedDate": "2025-07-04",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fpsyg.2025.1542282"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12213766"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12213766?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "MRC_",
+              "agency": "Medical Research Council",
+              "grantId": "MR/T0333771",
+              "orderIn": 0
+            },
+            {
+              "acronym": "SNSF_",
+              "agency": "Swiss National Science Foundation",
+              "grantId": "P500PS_210853",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40606890",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "journal": {
+            "essn": "1664-1078",
+            "isoabbreviation": "Front Psychol",
+            "issn": "1664-1078",
+            "medlineAbbreviation": "Front Psychol",
+            "nlmid": "101550902",
+            "title": "Frontiers in psychology"
+          },
+          "journalIssueId": 3893293,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "16",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Cognition",
+            "Socioeconomic status",
+            "Education",
+            "Built Environment",
+            "Leisure Activities",
+            "Uk Biobank"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1542282",
+        "pmcid": "PMC12213766",
+        "pmid": "40606890",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Call up the (cognitive) reserves: how adult socialisation and education influences cognition in the UK Biobank."
+      },
+      {
+        "abstractText": "We describe here a molecular therapy that uses the virus's own proteins to combat itself. In this approach, infection-sensing RNAs encoding therapeutic genes are flanked by viral promoters and packaging signals in negative-sense orientation. These therapeutic minigenome RNAs do not express the transgene and remain silent in the absence of a viral infection. In contrast, if the cell is infected, the virus acts as a helper virus, providing viral proteins <i>in trans</i> to transcribe, replicate, and package the therapeutic minigenomes. Proof of concept for this therapeutic approach is demonstrated here using Ebola virus (EBOV) minigenomes expressing two antiviral transgenes: a short-hairpin (sh) RNA targeting the EBOV viral protein VP24 and an open-reading frame expressing a host peptide from the retinoblastoma-binding protein 6 (RBBP6). By using an EBOV tetracistronic-minigenome as a virus life cycle modeling system, we show here that both therapeutic minigenomes suppressed viral RNA replication and viral protein production, and a more than 50% reduction in the reporter signal was observed when cells were challenged with EBOV transcription/replication-competent virus-like particles. These findings highlight the therapeutic potential of infection-sensing minigenome to combat EBOV and perhaps other viral pathogens.",
+        "affiliation": "Division of Infectious Diseases, Department of Medicine, Mayo Clinic, Rochester, MN, USA.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Infectious Diseases, Department of Medicine, Mayo Clinic, Rochester, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Lin",
+              "fullName": "Wang L",
+              "initials": "L",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Virology and Gene Therapy Program, Mayo Clinic Graduate School of Biomedical Sciences, Rochester, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Brady N",
+              "fullName": "Zell BN",
+              "initials": "BN",
+              "lastName": "Zell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Virology and Gene Therapy Program, Mayo Clinic Graduate School of Biomedical Sciences, Rochester, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Brian J",
+              "fullName": "Parrett BJ",
+              "initials": "BJ",
+              "lastName": "Parrett"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Infectious Diseases, Department of Medicine, Mayo Clinic, Rochester, MN, USA."
+                  },
+                  {
+                    "affiliation": "Department of Immunology, Mayo Clinic, Rochester, MN, USA."
+                  },
+                  {
+                    "affiliation": "Department of Molecular Medicine, Mayo Clinic, Rochester, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Michael A",
+              "fullName": "Barry MA",
+              "initials": "MA",
+              "lastName": "Barry"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Infectious Diseases, Department of Medicine, Mayo Clinic, Rochester, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Satoko",
+              "fullName": "Yamaoka S",
+              "initials": "S",
+              "lastName": "Yamaoka"
+            }
+          ]
+        },
+        "authorString": "Wang L, Zell BN, Parrett BJ, Barry MA, Yamaoka S.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-10-27",
+        "dateOfCreation": "2025-10-27",
+        "dateOfRevision": "2026-03-26",
+        "doi": "10.1016/j.omtn.2025.102722",
+        "electronicPublicationDate": "2025-09-22",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-10-27",
+        "firstPublicationDate": "2025-09-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12546956"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-29",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.omtn.2025.102722"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12546956"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12546956?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Institute of Allergy and Infectious Diseases",
+              "grantId": "5T32AI132165",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AI",
+              "agency": "NIAID NIH HHS",
+              "grantId": "T32 AI132165",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute of Allergy and Infectious Diseases",
+              "grantId": "R01 AI134937-01A1",
+              "orderIn": 0
+            },
+            {
+              "agency": "Mayo Clinic",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41142377",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Dec",
+          "issue": "4",
+          "journal": {
+            "essn": "2162-2531",
+            "isoabbreviation": "Mol Ther Nucleic Acids",
+            "issn": "2162-2531",
+            "medlineAbbreviation": "Mol Ther Nucleic Acids",
+            "nlmid": "101581621",
+            "title": "Molecular therapy. Nucleic acids"
+          },
+          "journalIssueId": 4019543,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2025-12-01",
+          "volume": "36",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Ebola Virus",
+            "Antiviral Therapy",
+            "Filovirus",
+            "Negative-strand",
+            "Mt: Oligonucleotides: Therapies And Applications",
+            "Positive-Strand"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "102722",
+        "pmcid": "PMC12546956",
+        "pmid": "41142377",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Infection-sensing minigenome as a novel therapeutic approach against Ebola virus."
+      },
+      {
+        "abstractText": "Measuring subjective experiences in ecological momentary assessment (EMA) studies has become pervasive in psychological science. A design choice that has to be made in all of these studies is which response scale to use. However, to date there is little guidance on this choice in the context of EMA. As a first step towards understanding the effects of different response scales, we experimentally vary the response scale and assess whether the resulting time series of subjective experiences are systematically different. We conducted a between-person experiment comparing a seven-point Likert scale ( n=63 ) with a Visual Analogue Scale (VAS; n=56 ) in an EMA study measuring affective states over 14 days. Using Bayesian multilevel models, we found that the VAS resulted in moderately higher within-person item means, lag-0 correlations, lag-1 autocorrelations, as well as lower within-person skewnesses and response frequencies of exact zeros. We found the largest difference in correlations with external criteria related to psychopathology, where correlations for the VAS were much higher. We did not observe reliable differences in within-person item variances, root mean squared successive differences, missing data, duration of measurements, and ratings about the experiences with the EMA survey. Apart from higher within-person means and higher correlations with external criteria in the VAS group, the differences were relatively small. While more research on response scales in EMA is needed, based on our results we conclude that the VAS should be preferred in studies aiming at capturing affective states relating to general psychopathology, as well as for items whose variation occurs close to scale limits. We conclude by discussing how our findings may contribute to a larger research agenda that addresses the fit of different response scales for different research aims.",
+        "affiliation": "Psychological Methods Group, University of Amsterdam, Amsterdam, The Netherlands. jonashaslbeck@protonmail.com.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2037-1808"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9935-1075"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Psychological Methods Group, University of Amsterdam, Amsterdam, The Netherlands. jonashaslbeck@protonmail.com."
+                  },
+                  {
+                    "affiliation": "Department of Clinical Psychological Science, Maastricht University, Maastricht, The Netherlands. jonashaslbeck@protonmail.com."
+                  }
+                ]
+              },
+              "firstName": "Jonas M B",
+              "fullName": "Haslbeck JMB",
+              "initials": "JMB",
+              "lastName": "Haslbeck"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Psychological Science, Maastricht University, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Alberto Jover",
+              "fullName": "Mart\u00ednez AJ",
+              "initials": "AJ",
+              "lastName": "Mart\u00ednez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Psychological Science, Maastricht University, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9935-1075"
+              },
+              "firstName": "Anne J",
+              "fullName": "Roefs AJ",
+              "initials": "AJ",
+              "lastName": "Roefs"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Leiden University, Leiden, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Eiko I",
+              "fullName": "Fried EI",
+              "initials": "EI",
+              "lastName": "Fried"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Psychological Science, Maastricht University, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2037-1808"
+              },
+              "firstName": "Lotte H J M",
+              "fullName": "Lemmens LHJM",
+              "initials": "LHJM",
+              "lastName": "Lemmens"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Psychological Science, Maastricht University, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Esmee",
+              "fullName": "Groot E",
+              "initials": "E",
+              "lastName": "Groot"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Humanities, Social and Political Sciences, ETH Zurich, Z\u00fcrich, Switzerland."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, LMU Munich, M\u00fcnchen, Germany."
+                  }
+                ]
+              },
+              "firstName": "Peter A",
+              "fullName": "Edelsbrunner PA",
+              "initials": "PA",
+              "lastName": "Edelsbrunner"
+            }
+          ]
+        },
+        "authorString": "Haslbeck JMB, Mart\u00ednez AJ, Roefs AJ, Fried EI, Lemmens LHJM, Groot E, Edelsbrunner PA.",
+        "citedByCount": 7,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR985190",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-07-03",
+        "dateOfCreation": "2025-07-02",
+        "dateOfRevision": "2025-08-06",
+        "doi": "10.3758/s13428-025-02706-2",
+        "electronicPublicationDate": "2025-07-02",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-07-07",
+        "firstPublicationDate": "2025-07-02",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12222338"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-29",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://link.springer.com/content/pdf/10.3758/s13428-025-02706-2.pdf"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3758/s13428-025-02706-2"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12222338"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12222338?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Dutch Research Council (NWO)",
+              "grantId": "024.004.016",
+              "orderIn": 0
+            },
+            {
+              "agency": "Dutch Research Council (NWO)",
+              "grantId": "24.004.016",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40603809",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Jul",
+          "issue": "8",
+          "journal": {
+            "essn": "1554-3528",
+            "isoabbreviation": "Behav Res Methods",
+            "issn": "1554-351X",
+            "medlineAbbreviation": "Behav Res Methods",
+            "nlmid": "101244316",
+            "title": "Behavior research methods"
+          },
+          "journalIssueId": 3968974,
+          "monthOfPublication": 7,
+          "printPublicationDate": "2025-07-01",
+          "volume": "57",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Measurement",
+            "Visual Analogue Scale",
+            "Ecological Momentary Assessment",
+            "Likert Scale",
+            "Response Scale"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Bayes Theorem",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Affect",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Visual Analog Scale",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Ecological Momentary Assessment",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "217",
+        "pmcid": "PMC12222338",
+        "pmid": "40603809",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Comparative Study",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Comparing Likert and visual analogue scales in ecological momentary assessment."
+      },
+      {
+        "abstractText": "Memories of repeated events are one form of memory thought to be intermediate on a proposed semantic-episodic continuum. However, it is not yet understood where repeated-event memories fall on this continuum, and which factors may be associated with greater or lesser reliance on episodic and semantic memory during recall. We investigated similarity amongst instances of repeated events as one factor which may be associated with where repeated events fall on the semantic-episodic continuum. In two preregistered studies, we asked participants to recall three repeated-event memories from their own lives (N<sub>1</sub>\u2009=\u200997 participants, 291 memories; N<sub>2</sub>\u2009=\u2009419 participants, 1,257 memories) and report on the similarity amongst instances as well as the degree to which they relied on semantic memory, a single episode, and a mix of episodes in their recall of each event. In line with our predictions, similarity was positively correlated with reliance on semantic memory in both studies. In Study 2, similarity was negatively correlated with reliance on a single episode. We also conducted exploratory latent profile analyses using our three memory reliance variables, revealing three types of repeated-event memories. In both studies, similarity of place and emotional arousal were each associated with different memory profiles. Our findings highlight the importance of considering similarity in basic and applied repeated-event memory research, as different conditions of similarity (e.g., low vs. high) can manifest in different patterns of reliance on episodic and semantic memory.",
+        "affiliation": "Department of Psychology, The University of British Columbia, Douglas T. Kenny Building, 2136 West Mall, Vancouver, BC, V6 T 1Z4, Canada.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8082-3522"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9790-6180"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0003-9208-7966"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, The University of British Columbia, Douglas T. Kenny Building, 2136 West Mall, Vancouver, BC, V6 T 1Z4, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0003-9208-7966"
+              },
+              "firstName": "Oliver R",
+              "fullName": "Bontkes OR",
+              "initials": "OR",
+              "lastName": "Bontkes"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, The University of British Columbia, Douglas T. Kenny Building, 2136 West Mall, Vancouver, BC, V6 T 1Z4, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8082-3522"
+              },
+              "firstName": "Daniela J",
+              "fullName": "Palombo DJ",
+              "initials": "DJ",
+              "lastName": "Palombo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The School of Psychology, University of Aberdeen, William Guild Building, Old Aberdeen, AB24 3\u2009FX, UK. eva.rubinova@abdn.ac.uk."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9790-6180"
+              },
+              "firstName": "Eva",
+              "fullName": "Rub\u00ednov\u00e1 E",
+              "initials": "E",
+              "lastName": "Rub\u00ednov\u00e1"
+            }
+          ]
+        },
+        "authorString": "Bontkes OR, Palombo DJ, Rub\u00ednov\u00e1 E.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-12-10",
+        "dateOfCreation": "2025-05-20",
+        "dateOfRevision": "2025-12-13",
+        "doi": "10.3758/s13421-025-01729-6",
+        "electronicPublicationDate": "2025-05-20",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-05-21",
+        "firstPublicationDate": "2025-05-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12696121"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3758/s13421-025-01729-6"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12696121"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12696121?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40394414",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Nov",
+          "issue": "8",
+          "journal": {
+            "essn": "1532-5946",
+            "isoabbreviation": "Mem Cognit",
+            "issn": "0090-502X",
+            "medlineAbbreviation": "Mem Cognit",
+            "nlmid": "0357443",
+            "title": "Memory & cognition"
+          },
+          "journalIssueId": 4068976,
+          "monthOfPublication": 11,
+          "printPublicationDate": "2025-11-01",
+          "volume": "53",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Similarity",
+            "Episodic memory",
+            "Autobiographical Memory",
+            "Semantic Memory",
+            "Repeated Events",
+            "Semantic\u2013episodic Continuum"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mental Recall",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Semantics",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Memory, Episodic",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2635-2654",
+        "pmcid": "PMC12696121",
+        "pmid": "40394414",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Similarity is associated with where repeated-event memories fall on the semantic-episodic continuum."
+      },
+      {
+        "abstractText": "Decades of research have sought to characterize how racialization affects the evaluation of faces. However, research has mostly focused on the perception of single faces. In the current project we address this gap by examining whether racialization affects crowd perception, even in the absence of perceived differences at the single-face level. In Experiments 1-2, participants viewed crowds of faces expressing different degrees of happiness or anger and different ratios of lighter-skinned faces (racialized as White) and darker-skinned faces (racialized as black). A higher proportion of Black faces led to a greater likelihood of perceiving the crowd as emotional. Experiment 3 confirmed this effect was not solely driven by the contrast between White and Black faces within a crowd, as crowds composed of entirely Black faces were more likely to be evaluated as emotional than crowds of White and Black faces. Using hierarchical drift diffusion models, we compared potential mechanisms and found that Black faces expressing emotions weighed more heavily than White faces in judging whether a crowd was emotional. These results shed light on an important way in which racialization impacts judgments of collective emotion.",
+        "affiliation": "Harvard Business School, Harvard University, Boston, USA. agoldenberg@hbs.edu.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Harvard Business School, Harvard University, Boston, USA. agoldenberg@hbs.edu."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, Harvard University, Cambridge, USA. agoldenberg@hbs.edu."
+                  },
+                  {
+                    "affiliation": "Digital, Data, and Design Institute, Harvard University, Boston, USA. agoldenberg@hbs.edu."
+                  }
+                ]
+              },
+              "firstName": "Amit",
+              "fullName": "Goldenberg A",
+              "initials": "A",
+              "lastName": "Goldenberg"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The University of Chicago, Booth School of Business, Chicago, USA."
+                  }
+                ]
+              },
+              "firstName": "Kyle",
+              "fullName": "LaFollette K",
+              "initials": "K",
+              "lastName": "LaFollette"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Harvard Business School, Harvard University, Boston, USA."
+                  }
+                ]
+              },
+              "firstName": "Zi",
+              "fullName": "Huang Z",
+              "initials": "Z",
+              "lastName": "Huang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Harvard University, Cambridge, USA."
+                  }
+                ]
+              },
+              "firstName": "Erika",
+              "fullName": "Weisz E",
+              "initials": "E",
+              "lastName": "Weisz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Harvard University, Cambridge, USA."
+                  }
+                ]
+              },
+              "firstName": "Mina",
+              "fullName": "Cikara M",
+              "initials": "M",
+              "lastName": "Cikara"
+            }
+          ]
+        },
+        "authorString": "Goldenberg A, LaFollette K, Huang Z, Weisz E, Cikara M.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR526714",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dateOfCompletion": "2025-10-08",
+        "dateOfCreation": "2025-10-08",
+        "dateOfRevision": "2025-11-19",
+        "doi": "10.1038/s41598-025-95029-3",
+        "electronicPublicationDate": "2025-10-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-10-09",
+        "firstPublicationDate": "2025-10-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12508084"
+          ]
+        },
+        "fullTextReceivedDate": "2025-10-13",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41598-025-95029-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12508084"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12508084?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41062652",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "1",
+          "journal": {
+            "essn": "2045-2322",
+            "isoabbreviation": "Sci Rep",
+            "issn": "2045-2322",
+            "medlineAbbreviation": "Sci Rep",
+            "nlmid": "101563288",
+            "title": "Scientific reports"
+          },
+          "journalIssueId": 4024128,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "15",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Face",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Facial Expression",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Emotions",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Judgment",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Racism",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Facial Recognition",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "White People",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Black People",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "35208",
+        "pmcid": "PMC12508084",
+        "pmid": "41062652",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Judgment of crowds as emotional increases with the proportion of black faces."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Parents play a key role in their child's early development but evidence that parental engagement strategies are effective is unclear. The current study evaluated a parent-delivered early language teaching programme that aimed to support children's early language and literacy skills.<h4>Methods</h4>A multisite, pupil-level randomised controlled trial was conducted with 450 3-4-year-old children and their families, recruited from 47 nurseries across Greater Manchester and Lancashire (UK). Families were randomly allocated to either the programme group (<i>N</i>\u00a0=\u00a0225) who delivered an early language teaching programme for 20-min a day, 5\u00a0days a week, for 30-weeks or to a control group (<i>N</i>\u00a0=\u00a0225) who received a box of children's books at the end of nursery. A language latent variable formed the primary outcome, which was used to assess whether the programme improved children's language and literacy skills.<h4>Results</h4>COVID-19 disrupted the trial, including delivery of the intervention and post-test data collection. Data from assessments completed 10-months after intervention showed no evidence that the children receiving language intervention had greater language skills than the control group. Similarly, no group differences were found on measures of the Home Learning Environment or school readiness.<h4>Conclusions</h4>Whilst disruptions caused by COVID-19 are likely to have impacted on the findings, this study nonetheless adds to the literature which suggests that parent-delivered interventions alone may not necessarily lead to changes in home learning or to gains in children's language skills.",
+        "affiliation": "Manchester Institute of Education University of Manchester Manchester UK.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8765-5154"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5424-1593"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9457-2020"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Manchester Institute of Education University of Manchester Manchester UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8765-5154"
+              },
+              "firstName": "Kelly",
+              "fullName": "Burgoyne K",
+              "initials": "K",
+              "lastName": "Burgoyne"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Manchester Institute of Education University of Manchester Manchester UK."
+                  }
+                ]
+              },
+              "firstName": "Stephanie",
+              "fullName": "Hargreaves S",
+              "initials": "S",
+              "lastName": "Hargreaves"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anthropology Durham University Durham UK."
+                  },
+                  {
+                    "affiliation": "School of Life and Health Sciences Teesside University Middlesbrough UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5424-1593"
+              },
+              "firstName": "Nasima",
+              "fullName": "Akhter N",
+              "initials": "N",
+              "lastName": "Akhter"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Education Durham University Durham UK."
+                  }
+                ]
+              },
+              "firstName": "Helen",
+              "fullName": "Cramman H",
+              "initials": "H",
+              "lastName": "Cramman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Education Durham University Durham UK."
+                  }
+                ]
+              },
+              "firstName": "Paivi",
+              "fullName": "Eerola P",
+              "initials": "P",
+              "lastName": "Eerola"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mathematical Sciences Durham University Durham UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9457-2020"
+              },
+              "firstName": "Jochen",
+              "fullName": "Einbeck J",
+              "initials": "J",
+              "lastName": "Einbeck"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Education Durham University Durham UK."
+                  }
+                ]
+              },
+              "firstName": "Vic",
+              "fullName": "Menzies V",
+              "initials": "V",
+              "lastName": "Menzies"
+            }
+          ]
+        },
+        "authorString": "Burgoyne K, Hargreaves S, Akhter N, Cramman H, Eerola P, Einbeck J, Menzies V.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-09-22",
+        "dateOfCreation": "2025-09-22",
+        "dateOfRevision": "2025-09-24",
+        "doi": "10.1002/jcv2.12279",
+        "electronicPublicationDate": "2024-09-14",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-09-24",
+        "firstPublicationDate": "2024-09-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12446704"
+          ]
+        },
+        "fullTextReceivedDate": "2025-09-23",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/jcv2.12279"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12446704"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12446704?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Education Endowment Foundation",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40979730",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Sep",
+          "issue": "3",
+          "journal": {
+            "essn": "2692-9384",
+            "isoabbreviation": "JCPP Adv",
+            "issn": "2692-9384",
+            "medlineAbbreviation": "JCPP Adv",
+            "nlmid": "9918250414706676",
+            "title": "JCPP advances"
+          },
+          "journalIssueId": 4019318,
+          "monthOfPublication": 9,
+          "printPublicationDate": "2025-09-01",
+          "volume": "5",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Language",
+            "Parents",
+            "Education",
+            "early intervention",
+            "School Readiness",
+            "Rct Design",
+            "Home Learning Environment"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "e12279",
+        "pmcid": "PMC12446704",
+        "pmid": "40979730",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Lack of effect of a parent-delivered early language intervention: Evidence from a randomised controlled trial completed during COVID-19."
+      },
+      {
+        "abstractText": "Replications are important for assessing the reliability of published findings. However, they are costly, and it is infeasible to replicate everything. Accurate, fast, lower-cost alternatives such as eliciting predictions could accelerate assessment for rapid policy implementation in a crisis and help guide a more efficient allocation of scarce replication resources. We elicited judgements from participants on 100 claims from preprints about an emerging area of research (COVID-19 pandemic) using an interactive structured elicitation protocol, and we conducted 29 new high-powered replications. After interacting with their peers, participant groups with lower task expertise ('beginners') updated their estimates and confidence in their judgements significantly more than groups with greater task expertise ('experienced'). For experienced individuals, the average accuracy was 0.57 (95% CI: [0.53, 0.61]) after interaction, and they correctly classified 61% of claims; beginners' average accuracy was 0.58 (95% CI: [0.54, 0.62]), correctly classifying 69% of claims. The difference in accuracy between groups was not statistically significant and their judgements on the full set of claims were correlated (r(98)\u2009=\u20090.48, P\u2009<\u20090.001). These results suggest that both beginners and more-experienced participants using a structured process have some ability to make better-than-chance predictions about the reliability of 'fast science' under conditions of high uncertainty. However, given the importance of such assessments for making evidence-based critical decisions in a crisis, more research is required to understand who the right experts in forecasting replicability are and how their judgements ought to be elicited.",
+        "affiliation": "Centre for the Study of Existential Risk, University of Cambridge, Cambridge, UK. alexandru.marcoci@gmail.com.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5063-4747"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5987-0252"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6519-6073"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6815-1399"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7605-4206"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7951-3690"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8420-6011"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8487-6648"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8759-6393"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9484-2839"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9606-0427"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0269-1744"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0592-577X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0596-7590"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0805-7752"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2686-5075"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2700-2562"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3772-8666"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4115-161X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4959-5143"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5055-3995"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5780-0805"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6162-842X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6459-8174"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7248-6092"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7707-453X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8150-9305"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9560-6499"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0135-2617"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0236-6906"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1229-9401"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2290-2323"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2443-4463"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3870-5949"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4981-0437"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for the Study of Existential Risk, University of Cambridge, Cambridge, UK. alexandru.marcoci@gmail.com."
+                  },
+                  {
+                    "affiliation": "School of Politics and International Relations, University of Nottingham, Nottingham, UK. alexandru.marcoci@gmail.com."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5780-0805"
+              },
+              "firstName": "Alexandru",
+              "fullName": "Marcoci A",
+              "initials": "A",
+              "lastName": "Marcoci"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  },
+                  {
+                    "affiliation": "QAECO, University of Melbourne, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9560-6499"
+              },
+              "firstName": "David P",
+              "fullName": "Wilkinson DP",
+              "initials": "DP",
+              "lastName": "Wilkinson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  },
+                  {
+                    "affiliation": "School of Communication and Arts, The University of Queensland, Brisbane, Queensland, Australia."
+                  },
+                  {
+                    "affiliation": "School of Population Health, Curtin University, Bentley, Western Australia, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1229-9401"
+              },
+              "firstName": "Ans",
+              "fullName": "Vercammen A",
+              "initials": "A",
+              "lastName": "Vercammen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0236-6906"
+              },
+              "firstName": "Bonnie C",
+              "fullName": "Wintle BC",
+              "initials": "BC",
+              "lastName": "Wintle"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Environmental Economics and Natural Resources Group, Wageningen University and Research, Wageningen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2686-5075"
+              },
+              "firstName": "Anna Lou",
+              "fullName": "Abatayo AL",
+              "initials": "AL",
+              "lastName": "Abatayo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Food, Pharma and Healthcare, Saint Joseph's University, Philadelphia, PA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9484-2839"
+              },
+              "firstName": "Ernest",
+              "fullName": "Baskin E",
+              "initials": "E",
+              "lastName": "Baskin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Business School, University of Auckland, Auckland, New Zealand."
+                  }
+                ]
+              },
+              "firstName": "Henk",
+              "fullName": "Berkman H",
+              "initials": "H",
+              "lastName": "Berkman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Analytics, Harrisburg University of Science and Technology, Harrisburg, PA, USA."
+                  }
+                ]
+              },
+              "firstName": "Erin M",
+              "fullName": "Buchanan EM",
+              "initials": "EM",
+              "lastName": "Buchanan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Ecology, Swedish University of Agricultural Sciences, Uppsala, Sweden."
+                  }
+                ]
+              },
+              "firstName": "Sara",
+              "fullName": "Capit\u00e1n S",
+              "initials": "S",
+              "lastName": "Capit\u00e1n"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Economics, Swedish University of Agricultural Sciences, Uppsala, Sweden."
+                  }
+                ]
+              },
+              "firstName": "Tabar\u00e9",
+              "fullName": "Capit\u00e1n T",
+              "initials": "T",
+              "lastName": "Capit\u00e1n"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rhizom Psychological Services LLC, Atlanta, GA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6162-842X"
+              },
+              "firstName": "Ginny",
+              "fullName": "Chan G",
+              "initials": "G",
+              "lastName": "Chan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Healthy Aging, The Pennsylvania State University, University Park, PA, USA."
+                  }
+                ]
+              },
+              "firstName": "Kent Jason G",
+              "fullName": "Cheng KJG",
+              "initials": "KJG",
+              "lastName": "Cheng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCMeta, University of Canterbury, Christchurch, New Zealand."
+                  }
+                ]
+              },
+              "firstName": "Tom",
+              "fullName": "Coup\u00e9 T",
+              "initials": "T",
+              "lastName": "Coup\u00e9"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Cambridge, Cambridge, UK."
+                  },
+                  {
+                    "affiliation": "Winton Centre for Risk and Evidence Communication, Department of Pure Mathematics and Mathematical Statistics, University of Cambridge, Cambridge, UK."
+                  },
+                  {
+                    "affiliation": "UCL Institute for Risk and Disaster Reduction, University College London, London, UK."
+                  }
+                ]
+              },
+              "firstName": "Sarah",
+              "fullName": "Dryhurst S",
+              "initials": "S",
+              "lastName": "Dryhurst"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Statistics New Zealand, Christchurch, New Zealand."
+                  }
+                ]
+              },
+              "firstName": "Jianhua",
+              "fullName": "Duan J",
+              "initials": "J",
+              "lastName": "Duan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rochester Institute of Technology, Rochester, NY, USA."
+                  }
+                ]
+              },
+              "firstName": "John E",
+              "fullName": "Edlund JE",
+              "initials": "JE",
+              "lastName": "Edlund"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4959-5143"
+              },
+              "firstName": "Timothy M",
+              "fullName": "Errington TM",
+              "initials": "TM",
+              "lastName": "Errington"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Independent researcher, Budapest, Hungary."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2290-2323"
+              },
+              "firstName": "Anna",
+              "fullName": "Fedor A",
+              "initials": "A",
+              "lastName": "Fedor"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2700-2562"
+              },
+              "firstName": "Fiona",
+              "fullName": "Fidler F",
+              "initials": "F",
+              "lastName": "Fidler"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Management, John Chambers School of Business and Economics, West Virginia University, Morgantown, WV, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8487-6648"
+              },
+              "firstName": "James G",
+              "fullName": "Field JG",
+              "initials": "JG",
+              "lastName": "Field"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3772-8666"
+              },
+              "firstName": "Nicholas",
+              "fullName": "Fox N",
+              "initials": "N",
+              "lastName": "Fox"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2443-4463"
+              },
+              "firstName": "Hannah",
+              "fullName": "Fraser H",
+              "initials": "H",
+              "lastName": "Fraser"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Winton Centre for Risk and Evidence Communication, Department of Pure Mathematics and Mathematical Statistics, University of Cambridge, Cambridge, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4115-161X"
+              },
+              "firstName": "Alexandra L J",
+              "fullName": "Freeman ALJ",
+              "initials": "ALJ",
+              "lastName": "Freeman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  },
+                  {
+                    "affiliation": "Centre of Excellence for Biosecurity Risk Analysis, University of Melbourne, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3870-5949"
+              },
+              "firstName": "Anca",
+              "fullName": "Hanea A",
+              "initials": "A",
+              "lastName": "Hanea"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Economics, University of Innsbruck, Innsbruck, Austria."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9606-0427"
+              },
+              "firstName": "Felix",
+              "fullName": "Holzmeister F",
+              "initials": "F",
+              "lastName": "Holzmeister"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCMeta, University of Canterbury, Christchurch, New Zealand."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0135-2617"
+              },
+              "firstName": "Sanghyun",
+              "fullName": "Hong S",
+              "initials": "S",
+              "lastName": "Hong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Analytics, Harrisburg University of Science and Technology, Harrisburg, PA, USA."
+                  }
+                ]
+              },
+              "firstName": "Raquel",
+              "fullName": "Huggins R",
+              "initials": "R",
+              "lastName": "Huggins"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Seattle University, Seattle, WA, USA."
+                  }
+                ]
+              },
+              "firstName": "Nick",
+              "fullName": "Huntington-Klein N",
+              "initials": "N",
+              "lastName": "Huntington-Klein"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Economics, Stockholm School of Economics, Stockholm, Sweden."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8759-6393"
+              },
+              "firstName": "Magnus",
+              "fullName": "Johannesson M",
+              "initials": "M",
+              "lastName": "Johannesson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Criminal Justice and Criminology, Texas State University, San Marcos, TX, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7605-4206"
+              },
+              "firstName": "Angela M",
+              "fullName": "Jones AM",
+              "initials": "AM",
+              "lastName": "Jones"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Monk Prayogshala, Mumbai, India."
+                  },
+                  {
+                    "affiliation": "Neag School of Education, University of Connecticut, Storrs, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0805-7752"
+              },
+              "firstName": "Hansika",
+              "fullName": "Kapoor H",
+              "initials": "H",
+              "lastName": "Kapoor"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Winton Centre for Risk and Evidence Communication, Department of Pure Mathematics and Mathematical Statistics, University of Cambridge, Cambridge, UK."
+                  },
+                  {
+                    "affiliation": "Department of Public Health, University of Otago, Wellington, New Zealand."
+                  }
+                ]
+              },
+              "firstName": "John",
+              "fullName": "Kerr J",
+              "initials": "J",
+              "lastName": "Kerr"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Massachusetts Institute of Technology, Cambridge, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Melissa",
+              "fullName": "Kline Struhl M",
+              "initials": "M",
+              "lastName": "Kline Struhl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Political Studies, Polish Academy of Sciences, Warszawa, Poland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4981-0437"
+              },
+              "firstName": "Marta",
+              "fullName": "Ko\u0142czy\u0144ska M",
+              "initials": "M",
+              "lastName": "Ko\u0142czy\u0144ska"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computer Science and Engineering, University of California, Santa Cruz, Santa Cruz, CA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8420-6011"
+              },
+              "firstName": "Yang",
+              "fullName": "Liu Y",
+              "initials": "Y",
+              "lastName": "Liu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5987-0252"
+              },
+              "firstName": "Zachary",
+              "fullName": "Loomas Z",
+              "initials": "Z",
+              "lastName": "Loomas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6815-1399"
+              },
+              "firstName": "Brianna",
+              "fullName": "Luis B",
+              "initials": "B",
+              "lastName": "Luis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Central Bank of Costa Rica, San Jos\u00e9, Costa Rica."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7248-6092"
+              },
+              "firstName": "Esteban",
+              "fullName": "M\u00e9ndez E",
+              "initials": "E",
+              "lastName": "M\u00e9ndez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "firstName": "Olivia",
+              "fullName": "Miske O",
+              "initials": "O",
+              "lastName": "Miske"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MetaMelb Research Initiative, University of Melbourne, Melbourne, Victoria, Australia."
+                  },
+                  {
+                    "affiliation": "History and Philosophy of Science, University of Melbourne, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0596-7590"
+              },
+              "firstName": "Fallon",
+              "fullName": "Mody F",
+              "initials": "F",
+              "lastName": "Mody"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Stavanger, School of Business and Law, Stavanger, Norway."
+                  }
+                ]
+              },
+              "firstName": "Carolin",
+              "fullName": "Nast C",
+              "initials": "C",
+              "lastName": "Nast"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  },
+                  {
+                    "affiliation": "Department of Psychology, University of Virginia, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "firstName": "Brian A",
+              "fullName": "Nosek BA",
+              "initials": "BA",
+              "lastName": "Nosek"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "firstName": "E",
+              "fullName": "Simon Parsons E",
+              "initials": "E",
+              "lastName": "Simon Parsons"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "NZ IAS, Massey University, Auckland, New Zealand."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0592-577X"
+              },
+              "firstName": "Thomas",
+              "fullName": "Pfeiffer T",
+              "initials": "T",
+              "lastName": "Pfeiffer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "UCMeta, University of Canterbury, Christchurch, New Zealand."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6459-8174"
+              },
+              "firstName": "W Robert",
+              "fullName": "Reed WR",
+              "initials": "WR",
+              "lastName": "Reed"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Cambridge, Cambridge, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8150-9305"
+              },
+              "firstName": "Jon",
+              "fullName": "Roozenbeek J",
+              "initials": "J",
+              "lastName": "Roozenbeek"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Analytics, Harrisburg University of Science and Technology, Harrisburg, PA, USA."
+                  }
+                ]
+              },
+              "firstName": "Alexa R",
+              "fullName": "Schlyfestone AR",
+              "initials": "AR",
+              "lastName": "Schlyfestone"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Cambridge, Cambridge, UK."
+                  },
+                  {
+                    "affiliation": "Winton Centre for Risk and Evidence Communication, Department of Pure Mathematics and Mathematical Statistics, University of Cambridge, Cambridge, UK."
+                  },
+                  {
+                    "affiliation": "School of Psychology, Speech and Hearing, University of Canterbury, Christchurch, New Zealand."
+                  }
+                ]
+              },
+              "firstName": "Claudia R",
+              "fullName": "Schneider CR",
+              "initials": "CR",
+              "lastName": "Schneider"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Philosophy, University of Hawaii at Manoa, Honolulu, HI, USA."
+                  }
+                ]
+              },
+              "firstName": "Andrew",
+              "fullName": "Soh A",
+              "initials": "A",
+              "lastName": "Soh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "New Zealand Institute of Economic Research (NZIER), Wellington, New Zealand."
+                  }
+                ]
+              },
+              "firstName": "Zhongchen",
+              "fullName": "Song Z",
+              "initials": "Z",
+              "lastName": "Song"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Economics, Monk Prayogshala, Mumbai, India."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7707-453X"
+              },
+              "firstName": "Anirudh",
+              "fullName": "Tagat A",
+              "initials": "A",
+              "lastName": "Tagat"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Independent researcher, Quezon City, Philippines."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7951-3690"
+              },
+              "firstName": "Melba",
+              "fullName": "Tutor M",
+              "initials": "M",
+              "lastName": "Tutor"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Open Science, Charlottesville, VA, USA."
+                  }
+                ]
+              },
+              "firstName": "Andrew H",
+              "fullName": "Tyner AH",
+              "initials": "AH",
+              "lastName": "Tyner"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Independent researcher, Sheffield, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5063-4747"
+              },
+              "firstName": "Karolina",
+              "fullName": "Urbanska K",
+              "initials": "K",
+              "lastName": "Urbanska"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, University of Cambridge, Cambridge, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0269-1744"
+              },
+              "firstName": "Sander",
+              "fullName": "van der Linden S",
+              "initials": "S",
+              "lastName": "van der Linden"
+            }
+          ]
+        },
+        "authorString": "Marcoci A, Wilkinson DP, Vercammen A, Wintle BC, Abatayo AL, Baskin E, Berkman H, Buchanan EM, Capit\u00e1n S, Capit\u00e1n T, Chan G, Cheng KJG, Coup\u00e9 T, Dryhurst S, Duan J, Edlund JE, Errington TM, Fedor A, Fidler F, Field JG, Fox N, Fraser H, Freeman ALJ, Hanea A, Holzmeister F, Hong S, Huggins R, Huntington-Klein N, Johannesson M, Jones AM, Kapoor H, Kerr J, Kline Struhl M, Ko\u0142czy\u0144ska M, Liu Y, Loomas Z, Luis B, M\u00e9ndez E, Miske O, Mody F, Nast C, Nosek BA, Simon Parsons E, Pfeiffer T, Reed WR, Roozenbeek J, Schlyfestone AR, Schneider CR, Soh A, Song Z, Tagat A, Tutor M, Tyner AH, Urbanska K, van der Linden S.",
+        "citedByCount": 3,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR941997",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-04-28",
+        "dateOfCreation": "2024-12-20",
+        "dateOfRevision": "2025-05-19",
+        "doi": "10.1038/s41562-024-01961-1",
+        "electronicPublicationDate": "2024-12-20",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-12-22",
+        "firstPublicationDate": "2024-12-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11860236"
+          ]
+        },
+        "fullTextReceivedDate": "2025-03-07",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41562-024-01961-1"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11860236"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11860236?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency (DARPA)",
+              "grantId": "HR00112020015",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency",
+              "grantId": "N66001-19-C-4014",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency (DARPA)",
+              "grantId": "N66001-19-C-4014",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency",
+              "grantId": "N660011924015",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "T32 AG049676",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency (DARPA)",
+              "grantId": "HR001118S0047",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency",
+              "grantId": "HR00112020015",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency",
+              "grantId": "HR001118S0047",
+              "orderIn": 0
+            },
+            {
+              "agency": "United States Department of Defense | Defense Advanced Research Projects Agency (DARPA)",
+              "grantId": "N660011924015",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "39706868",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Feb",
+          "issue": "2",
+          "journal": {
+            "essn": "2397-3374",
+            "isoabbreviation": "Nat Hum Behav",
+            "issn": "2397-3374",
+            "medlineAbbreviation": "Nat Hum Behav",
+            "nlmid": "101697750",
+            "title": "Nature human behaviour"
+          },
+          "journalIssueId": 3905598,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2025-02-01",
+          "volume": "9",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Judgment",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Behavioral Sciences",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Social Sciences",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "COVID-19",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "SARS-CoV-2",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "287-304",
+        "pmcid": "PMC11860236",
+        "pmid": "39706868",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Predicting the replicability of social and behavioural science claims in COVID-19 preprints."
+      }
+    ]
+  },
+  "version": "6.9"
+}

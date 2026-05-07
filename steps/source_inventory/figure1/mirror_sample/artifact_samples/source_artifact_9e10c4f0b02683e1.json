@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_9e10c4f0b02683e1",
+  "byte_size": 10816,
+  "columns": [
+    "Unnamed: 0",
+    "Study",
+    "Site",
+    "Version",
+    "ES.Metric",
+    "Value",
+    "N",
+    "Reverse",
+    "Label"
+  ],
+  "estimated_data_rows": 121,
+  "file_name": "FigureData.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/FigureData.csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 36,
+      "Reverse": "no",
+      "Site": "Ashland University",
+      "Study": "Albarracin S7",
+      "Unnamed: 0": 2,
+      "Value": 0.3345795272,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 182,
+      "Reverse": "no",
+      "Site": "Grand Valley State University",
+      "Study": "Albarracin S7",
+      "Unnamed: 0": 4,
+      "Value": 0.0306074664,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 26,
+      "Reverse": "no",
+      "Site": "McDaniel College",
+      "Study": "Albarracin S7",
+      "Unnamed: 0": 5,
+      "Value": 0.3174711955,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 352,
+      "Reverse": "no",
+      "Site": "Michigan State University",
+      "Study": "Albarracin S7",
+      "Unnamed: 0": 6,
+      "Value": 0.0694691442,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "pseudo R2",
+      "Label": "Crosby RP:P",
+      "N": 43,
+      "Reverse": "no",
+      "Site": "Edinburgh",
+      "Study": "Crosby",
+      "Unnamed: 0": 9,
+      "Value": 0.1673320053,
+      "Version": "RP:P"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "844a5c3ab9ad8fc13b070b4ff052d38288bd5016eb5cf386efaa5999a58abb03"
+}

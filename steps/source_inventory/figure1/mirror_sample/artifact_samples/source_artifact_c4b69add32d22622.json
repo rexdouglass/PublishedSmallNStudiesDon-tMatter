@@ -1,0 +1,430 @@
+{
+  "artifact_id": "source_artifact_c4b69add32d22622",
+  "byte_size": 14616,
+  "file_name": "025_full_10_1097_AOG_0b013e3181e00ff0.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/025_full_10_1097_AOG_0b013e3181e00ff0.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1097/AOG.0b013e3181e00ff0\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>To estimate the effects of chlorhexidine vaginal and baby wipes on fetal and neonatal mortality, respectively, and infection-related morbidity.<h4>Methods</h4>We performed a placebo-controlled, randomized trial of chlorhexidine vaginal and neonatal wipes to reduce neonatal sepsis and mortality in three hospitals in Pakistan. The primary study outcome was a composite of neonatal sepsis or 7-day perinatal mortality.<h4>Results</h4>From 2005 to 2008, 5,008 laboring women and their neonates were randomly assigned to receive either chlorhexidine wipes (n=2,505) or wipes with a saline placebo (n=2,503). The primary outcome was similar in the chlorhexidine and control groups (3.1% compared with 3.4%; relative risk 0.91, 95% confidence interval 0.67-1.24) as was the composite rate of neonatal sepsis or 28-day perinatal mortality (3.8% compared with 3.9%, relative risk 0.96, 95% confidence interval 0.73-1.27). At day 7, the chlorhexidine group had a lower rate of neonatal skin infection (3.3% compared with 8.2%, P<.001). With the exception of less frequent 7-day hospitalization in the chlorhexidine group, there were no significant differences in maternal outcomes between the groups.<h4>Conclusion</h4>Using maternal chlorhexidine vaginal wipes during labor and neonatal chlorhexidine wipes does not reduce maternal and perinatal mortality or neonatal sepsis. The finding of reduced superficial skin infections on day 7 without change in sepsis or mortality suggests that this difference, although statistically significant, may not be of major importance.<h4>Level of evidence</h4>I.",
+          "affiliation": "From Aga Khan University, Karachi, Pakistan; University of Alabama at Birmingham, Birmingham, Alabama; RTI International, Research Triangle Park, North Carolina; Dow University of Health Sciences, Karachi, Pakistan, Eunice Kennedy Shriver National Institute of Child and Human Development, Bethesda, Maryland; and Drexel University College of Medicine, Philadelphia, Philadelphia.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4046-3918"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "From Aga Khan University, Karachi, Pakistan; University of Alabama at Birmingham, Birmingham, Alabama; RTI International, Research Triangle Park, North Carolina; Dow University of Health Sciences, Karachi, Pakistan, Eunice Kennedy Shriver National Institute of Child and Human Development, Bethesda, Maryland; and Drexel University College of Medicine, Philadelphia, Philadelphia."
+                    }
+                  ]
+                },
+                "firstName": "Sarah",
+                "fullName": "Saleem S",
+                "initials": "S",
+                "lastName": "Saleem"
+              },
+              {
+                "firstName": "Dwight J",
+                "fullName": "Rouse DJ",
+                "initials": "DJ",
+                "lastName": "Rouse"
+              },
+              {
+                "firstName": "Elizabeth M",
+                "fullName": "McClure EM",
+                "initials": "EM",
+                "lastName": "McClure"
+              },
+              {
+                "firstName": "Anita",
+                "fullName": "Zaidi A",
+                "initials": "A",
+                "lastName": "Zaidi"
+              },
+              {
+                "firstName": "Tahira",
+                "fullName": "Reza T",
+                "initials": "T",
+                "lastName": "Reza"
+              },
+              {
+                "firstName": "Y",
+                "fullName": "Yahya Y",
+                "initials": "Y",
+                "lastName": "Yahya"
+              },
+              {
+                "firstName": "I A",
+                "fullName": "Memon IA",
+                "initials": "IA",
+                "lastName": "Memon"
+              },
+              {
+                "firstName": "N H",
+                "fullName": "Khan NH",
+                "initials": "NH",
+                "lastName": "Khan"
+              },
+              {
+                "firstName": "G",
+                "fullName": "Memon G",
+                "initials": "G",
+                "lastName": "Memon"
+              },
+              {
+                "firstName": "N",
+                "fullName": "Soomro N",
+                "initials": "N",
+                "lastName": "Soomro"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4046-3918"
+                },
+                "firstName": "Omrana",
+                "fullName": "Pasha O",
+                "initials": "O",
+                "lastName": "Pasha"
+              },
+              {
+                "firstName": "Linda L",
+                "fullName": "Wright LL",
+                "initials": "LL",
+                "lastName": "Wright"
+              },
+              {
+                "firstName": "Janet",
+                "fullName": "Moore J",
+                "initials": "J",
+                "lastName": "Moore"
+              },
+              {
+                "firstName": "Robert L",
+                "fullName": "Goldenberg RL",
+                "initials": "RL",
+                "lastName": "Goldenberg"
+              }
+            ]
+          },
+          "authorString": "Saleem S, Rouse DJ, McClure EM, Zaidi A, Reza T, Yahya Y, Memon IA, Khan NH, Memon G, Soomro N, Pasha O, Wright LL, Moore J, Goldenberg RL.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Anti-Infective Agents, Local",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Chlorhexidine",
+                "registryNumber": "R4KO0DY52L"
+              }
+            ]
+          },
+          "citedByCount": 24,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2010-07-01",
+          "dateOfCreation": "2010-05-27",
+          "dateOfRevision": "2021-10-20",
+          "doi": "10.1097/aog.0b013e3181e00ff0",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2010-07-02",
+          "firstPublicationDate": "2010-06-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3893917"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "abs",
+                "site": "intl.greenjournal.org",
+                "url": "http://intl.greenjournal.org/cgi/content/abstract/115/6/1225"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "html",
+                "site": "intl.greenjournal.org",
+                "url": "http://intl.greenjournal.org/cgi/content/full/115/6/1225"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "pdf",
+                "site": "intl.greenjournal.org",
+                "url": "http://intl.greenjournal.org/cgi/reprint/115/6/1225.pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1097/AOG.0b013e3181e00ff0"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3893917"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3893917?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1097/aog.0b013e3181e00ff0"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "U01 HD040636",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "U01 HD040607",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HD",
+                "agency": "NICHD NIH HHS",
+                "grantId": "U24 HD092094",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "20502294",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2010 Jun",
+            "issue": "6",
+            "journal": {
+              "essn": "1873-233X",
+              "isoabbreviation": "Obstet Gynecol",
+              "issn": "0029-7844",
+              "medlineAbbreviation": "Obstet Gynecol",
+              "nlmid": "0401101",
+              "title": "Obstetrics and gynecology"
+            },
+            "journalIssueId": 1733756,
+            "monthOfPublication": 6,
+            "printPublicationDate": "2010-06-01",
+            "volume": "115",
+            "yearOfPublication": 2010
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS540232",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Sepsis",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "mortality"
+                    },
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Infant, Newborn, Diseases",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MI",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "microbiology"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "mortality"
+                    },
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Chlorhexidine",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Anti-Infective Agents, Local",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "TU",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pregnancy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Developing Countries",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Infant, Newborn",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pakistan",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Young Adult",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "1225-1232",
+          "pmcid": "PMC3893917",
+          "pmid": "20502294",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2010",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Chlorhexidine vaginal and infant wipes to reduce perinatal mortality and morbidity: a randomized controlled trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "d330de779df5d764ea8c77b68515d1c8951805e0cd92397cfb909e3a26fb3e4a"
+}

@@ -1,0 +1,519 @@
+{
+  "response": {
+    "docs": [
+      {
+        "abstract": [
+          "Background: The importance of replication in the social and behavioural sciences has been emphasized for decades. Various frequentist and Bayesian approaches have been proposed to qualify a replication study as successful or unsuccessful. One of them is meta-analysis. The focus of the present study is on the way meta-analysis functions as a replication success metric. To investigate this, original and replication studies that are part of two large-scale replication projects were used. For each original study, the probability of replication success was calculated using meta-analysis under different assumptions of the underlying population effect when replication results were unknown. The accuracy of the predicted overall replication success was evaluated once replication results became available using adjusted Brier scores. Results: Our results showed that meta-analysis performed poorly when used as a replication success metric. In many cases, quantifying replication success using meta-analysis resulted in the conclusion where the replication was deemed a success regardless of the results of the replication study. Discussion: We conclude that when using meta-analysis as a replication success metric, it has a relatively high probability of finding evidence in favour of a non-zero population effect even when it is zero. This behaviour largely results from the significance of the original study. Furthermore, we argue that there are fundamental reasons against using meta-analysis as a metric for replication success. "
+        ],
+        "author_display": [
+          "Jasmine Muradchanian",
+          "Rink Hoekstra",
+          "Henk Kiers",
+          "Don van Ravenzwaaij"
+        ],
+        "id": "10.1371/journal.pone.0308495",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-12-11T00:00:00Z",
+        "title": "Evaluating meta-analysis as a replication success measure"
+      },
+      {
+        "abstract": [
+          "\nReplication is an important tool to promote high quality research and ensure policy makers can rely on studies in making guidelines or funding programs. By ensuring influential studies are replicable we provide assurance that the policies based on these studies are well-founded and the conclusions and recommendations are robust\u2014to different estimation models or different choices. In this paper, we argue that replication is not only useful but necessary to ensure that an author\u2019s choice in how to analyse data is not the only factor that determines whether an intervention is effective or not. We also show that while most research is done well and provides robust results, small differences can lead to different interpretations and these differences need to be acknowledged. This special issue highlights 5 such replication studies, which are replications of influential studies on biomedical, social, behavioural and structural interventions for HIV prevention and treatment. We reflect on their findings. Four out of five studies, which conduct push button replication and pure replication, were able to reproduce the results of the original studies with minor differences, mainly due to minor typographical errors or rounding differences. The analysis of the measurement and estimation analyses conducted in these five studies reveals that the original results are not very robust to alternative analytical approaches, especially when these results rely on a small number of observations. In these cases, the original results are weakened. Furthermore, in contrast to the original papers, two of the five included replication studies conducted a theory of change analysis\u2014to explore how or why the interventions work (or do not) not just whether the intervention works or not. These two analyses indicate that the estimated impacts of the interventions are drawn from few mediators. In addition, they demonstrate that, in some cases, a lack of effect may be related to lack of adequate exposure to the intervention rather than inefficacy of the intervention per se. However, overall, the included replication studies show that the results presented in the original papers are trustworthy and robust, especially when based on larger sample sizes. Replication studies can not only verify the results of a study, they can also provide additional insights on the published results, such as how and why an intervention was effective or less effective than expected. They can thus be a tool to inform the research community and/ or policymakers about whether and how interventions could be adopted, which need to be tested further, and which should be discontinued because of their ineffectiveness. Thus, publishing these replication studies in peer-reviewed journals makes the work public and publicized. The work advances knowledge, and publication should be encouraged, as it is for other types of research.\n"
+        ],
+        "author_display": [
+          "Eric W. Djimeu",
+          "Anna Heard"
+        ],
+        "id": "10.1371/journal.pone.0240159",
+        "journal": "PLOS ONE",
+        "publication_date": "2020-10-20T00:00:00Z",
+        "title": "Replication of influential studies on biomedical, social, behavioural and structural interventions for HIV prevention and treatment"
+      },
+      {
+        "abstract": [
+          "\nRecent large-scale replication projects (RPs) have estimated concerningly low reproducibility rates. Further, they reported substantial degrees of shrinkage of effect size, where the replication effect size was found to be, on average, much smaller than the original effect size. Within these RPs, the included original-replication study-pairs can vary with respect to aspects of study design, outcome measures, and descriptive features of both original and replication study population and study team. This often results in between-study-pair heterogeneity, i.e., variation in effect size differences across study-pairs that goes beyond expected statistical variation. When broader claims about the reproducibility of an entire field are based on such heterogeneous data, it becomes imperative to conduct a rigorous analysis of the amount and sources of shrinkage and heterogeneity within and between included study-pairs. Methodology from the meta-analysis literature provides an approach for quantifying the heterogeneity present in RPs with an additive or multiplicative parameter. Meta-regression methodology further allows for an investigation into the sources of shrinkage and heterogeneity. We propose the use of location-scale meta-regressions as a means to directly relate the identified characteristics with shrinkage (represented by the location) and heterogeneity (represented by the scale). This provides valuable insights into drivers and factors associated with high or low reproducibility rates and therefore contextualises results of RPs. The proposed methodology is illustrated using publicly available data from the Replication Project Psychology and the Replication Project Experimental Economics. All analysis scripts and data are available online.\n"
+        ],
+        "author_display": [
+          "Rachel Heyard",
+          "Leonhard Held"
+        ],
+        "id": "10.1371/journal.pone.0327799",
+        "journal": "PLOS One",
+        "publication_date": "2025-08-01T00:00:00Z",
+        "title": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects"
+      },
+      {
+        "abstract": [
+          "\nThroughout the last decade, the so-called replication crisis has stimulated many researchers to conduct large-scale replication projects. With data from four of these projects, we computed probabilistic forecasts of the replication outcomes, which we then evaluated regarding discrimination, calibration and sharpness. A novel model, which can take into account both inflation and heterogeneity of effects, was used and predicted the effect estimate of the replication study with good performance in two of the four data sets. In the other two data sets, predictive performance was still substantially improved compared to the naive model which does not consider inflation and heterogeneity of effects. The results suggest that many of the estimates from the original studies were inflated, possibly caused by publication bias or questionable research practices, and also that some degree of heterogeneity between original and replication effects should be expected. Moreover, the results indicate that the use of statistical significance as the only criterion for replication success may be questionable, since from a predictive viewpoint, non-significant replication results are often compatible with significant results from the original study. The developed statistical methods as well as the data sets are available in the R package ReplicationSuccess.\n"
+        ],
+        "author_display": [
+          "Samuel Pawel",
+          "Leonhard Held"
+        ],
+        "id": "10.1371/journal.pone.0231416",
+        "journal": "PLOS ONE",
+        "publication_date": "2020-04-22T00:00:00Z",
+        "title": "Probabilistic forecasting of replication studies"
+      },
+      {
+        "abstract": [
+          "\nConducting a replication study is a valuable way for undergraduate students to learn about the scientific process and gain research experience. By promoting the evaluation of existing studies to confirm their reliability, replications play a unique, though often underappreciated, role in the scientific enterprise. Involving students early in this process can help make replication mainstream among the new generation of scientists. Beyond their benefit to science, replications also provide an invaluable learning ground for students, from encouraging the development of critical thinking to emphasizing the importance of details and honing research skills. In this piece, we outline 10 simple rules for designing and conducting undergraduate replication projects, from conceptualization to implementation and dissemination. We hope that these guidelines can help educators provide students with a meaningful and constructive pedagogical experience, without compromising the scientific value of the replication project, therefore ensuring robust, valuable contributions to our understanding of the world.\n"
+        ],
+        "author_display": [
+          "David Moreau",
+          "Kristina Wiebels"
+        ],
+        "id": "10.1371/journal.pcbi.1010957",
+        "journal": "PLOS Computational Biology",
+        "publication_date": "2023-03-16T00:00:00Z",
+        "title": "Ten simple rules for designing and conducting undergraduate replication projects"
+      },
+      {
+        "abstract": [
+          "\nA challenge when interpreting replications is determining whether the results of a replication \u201csuccessfully\u201d replicate the original study. Looking for consistency between two studies is challenging because individual studies are susceptible to many sources of error that can cause study results to deviate from each other and the population effect in unpredictable directions and magnitudes. In the current paper, we derive methods to compute a prediction interval, a range of results that can be expected in a replication due to chance (i.e., sampling error), for means and commonly used indexes of effect size: correlations and d-values. The prediction interval is calculable based on objective study characteristics (i.e., effect size of the original study and sample sizes of the original study and planned replication) even when sample sizes across studies are unequal. The prediction interval provides an a priori method for assessing if the difference between an original and replication result is consistent with what can be expected due to sample error alone. We provide open-source software tools that allow researchers, reviewers, replicators, and editors to easily calculate prediction intervals.\n"
+        ],
+        "author_display": [
+          "Jeffrey R. Spence",
+          "David J. Stanley"
+        ],
+        "id": "10.1371/journal.pone.0162874",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-09-19T00:00:00Z",
+        "title": "Prediction Interval: What to Expect When You\u2019re Expecting \u2026 A Replication"
+      },
+      {
+        "abstract": [
+          "\nThere is vigorous debate about the reproducibility of research findings in cancer biology. Whether scientists can accurately assess which experiments will reproduce original findings is important to determining the pace at which science self-corrects. We collected forecasts from basic and preclinical cancer researchers on the first 6 replication studies conducted by the Reproducibility Project: Cancer Biology (RP:CB) to assess the accuracy of expert judgments on specific replication outcomes. On average, researchers forecasted a 75% probability of replicating the statistical significance and a 50% probability of replicating the effect size, yet none of these studies successfully replicated on either criterion (for the 5 studies with results reported). Accuracy was related to expertise: experts with higher h-indices were more accurate, whereas experts with more topic-specific expertise were less accurate. Our findings suggest that experts, especially those with specialized knowledge, were overconfident about the RP:CB replicating individual experiments within published reports; researcher optimism likely reflects a combination of overestimating the validity of original studies and underestimating the difficulties of repeating their methodologies.\nAuthor summary: Science is supposed to be self-correcting. However, the efficiency with which science self-corrects depends in part on how well scientists can anticipate whether particular findings will hold up over time. We examined whether expert researchers could accurately forecast whether mouse experiments in 6 prominent preclinical cancer studies conducted by the Reproducibility Project: Cancer Biology would reproduce original effects. Experts generally overestimated the likelihood that replication studies would reproduce the effects observed in original studies. Experts with greater publication impact (as measured by h-index) provided more accurate forecasts, but experts did not consistently perform better than trainees, and topic-specific expertise did not improve forecast skill. Our findings suggest that experts tend to overestimate the reproducibility of original studies and/or they underappreciate the difficulty of independently repeating laboratory experiments from original protocols. "
+        ],
+        "author_display": [
+          "Daniel Benjamin",
+          "David R. Mandel",
+          "Jonathan Kimmelman"
+        ],
+        "id": "10.1371/journal.pbio.2002212",
+        "journal": "PLOS Biology",
+        "publication_date": "2017-06-29T00:00:00Z",
+        "title": "Can cancer researchers accurately judge whether preclinical reports will reproduce?"
+      },
+      {
+        "abstract": [
+          "Background: Deep vein thrombosis (DVT) genetic predisposition is partially known. Objectives: This study aimed at assessing the functional impact of nine ADAMTS13 single nucleotide variants (SNVs) previously reported to be associated as a group with DVT in a burden test and the individual association of selected variants with DVT risk in two replication studies. Methods: Wild-type and mutant recombinant ADAMTS13 were transiently expressed in HEK293 cells. Antigen and activity of recombinant ADAMTS13 were measured by ELISA and FRETS-VWF73 assays, respectively. The replication studies were performed in an Italian case-control study (Milan study; 298/298 patients/controls) using a next-generation sequencing approach and in a Dutch case-control study (MEGA study; 4306/4887 patients/controls) by TaqMan assays. Results: In vitro results showed reduced ADAMTS13 activity for three SNVs (p.Val154Ile [15%; 95% confidence interval [CI] 14\u201316], p.Asp187His [19%; 95%[CI] 17\u201321], p.Arg421Cys [24%; 95%[CI] 22\u201326]) similar to reduced plasma ADAMTS13 levels of patients carriers for these SNVs. Therefore these three SNVs were interrogated for risk association. The first replication study identified 3 heterozygous carriers (2 cases, 1 control) of p.Arg421Cys (odds ratio [OR] 2, 95%[CI] 0.18\u201322.25). The second replication study identified 2 heterozygous carriers (1 case, 1 control) of p.Asp187His ([OR] 1.14, 95%[CI] 0.07\u201318.15) and 10 heterozygous carriers (4 cases, 6 controls) of p.Arg421Cys ([OR] 0.76, 95%[CI] 0.21\u20132.68). Conclusions: Three SNVs (p.Val154Ile, p.Asp187His and p.Arg421Cys) showed reduced ex vivo and in vitro ADAMTS13 levels. However, the low frequency of these variants makes it difficult to confirm their association with DVT. "
+        ],
+        "author_display": [
+          "Maria Teresa Pagliari",
+          "Luca A. Lotta",
+          "Hugoline G. de Haan",
+          "Carla Valsecchi",
+          "Gloria Casoli",
+          "Silvia Pontiggia",
+          "Ida Martinelli",
+          "Serena M. Passamonti",
+          "Frits R. Rosendaal",
+          "Flora Peyvandi"
+        ],
+        "id": "10.1371/journal.pone.0165665",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-11-01T00:00:00Z",
+        "title": "Next-Generation Sequencing and In Vitro Expression Study of ADAMTS13 Single Nucleotide Variants in Deep Vein Thrombosis"
+      },
+      {
+        "abstract": [
+          "\n        To understand how miRNAs contribute to the molecular phenotype of adipose tissues and related traits, we performed global miRNA expression profiling in subcutaneous abdominal and gluteal adipose tissue of 70 human subjects and characterised which miRNAs were differentially expressed between these tissues. We found that 12% of the miRNAs were significantly differentially expressed between abdominal and gluteal adipose tissue (FDR adjusted p<0.05) in the primary study, of which 59 replicated in a follow-up study of 40 additional subjects. Further, 14 miRNAs were found to be associated with metabolic syndrome case-control status in abdominal tissue and three of these replicated (primary study: FDR adjusted p<0.05, replication: p<0.05 and directionally consistent effect). Genome-wide genotyping was performed in the 70 subjects to enable miRNA expression quantitative trait loci (eQTL) analysis. Candidate miRNA eQTLs were followed-up in the additional 40 subjects and six significant, independent cis-located miRNA eQTLs (primary study: p<0.001; replication: p<0.05 and directionally consistent effect) were identified. Finally, global mRNA expression profiling was performed in both tissues to enable association analysis between miRNA and target mRNA expression levels. We find 22% miRNAs in abdominal and 9% miRNAs in gluteal adipose tissue with expression levels significantly associated with the expression of corresponding target mRNAs (FDR adjusted p<0.05). Taken together, our results indicate a clear difference in the miRNA molecular phenotypic profile of abdominal and gluteal adipose tissue, that the expressions of some miRNAs are influenced by cis-located genetic variants and that miRNAs are associated with expression levels of their predicted mRNA targets.\n      "
+        ],
+        "author_display": [
+          "Mattias Rantalainen",
+          "Blanca M. Herrera",
+          "George Nicholson",
+          "Rory Bowden",
+          "Quin F. Wills",
+          "Josine L. Min",
+          "Matt J. Neville",
+          "Amy Barrett",
+          "Maxine Allen",
+          "Nigel W. Rayner",
+          "Jan Fleckner",
+          "Mark I. McCarthy",
+          "Krina T. Zondervan",
+          "Fredrik Karpe",
+          "Chris C. Holmes",
+          "Cecilia M. Lindgren"
+        ],
+        "id": "10.1371/journal.pone.0027338",
+        "journal": "PLoS ONE",
+        "publication_date": "2011-11-15T00:00:00Z",
+        "title": "MicroRNA Expression in Abdominal and Gluteal Adipose Tissue Is Associated with mRNA Expression Levels and Partly Genetically Driven"
+      },
+      {
+        "abstract": [
+          "\nWe revisit the results of the recent Reproducibility Project: Psychology by the Open Science Collaboration. We compute Bayes factors\u2014a quantity that can be used to express comparative evidence for an hypothesis but also for the null hypothesis\u2014for a large subset (N = 72) of the original papers and their corresponding replication attempts. In our computation, we take into account the likely scenario that publication bias had distorted the originally published results. Overall, 75% of studies gave qualitatively similar results in terms of the amount of evidence provided. However, the evidence was often weak (i.e., Bayes factor < 10). The majority of the studies (64%) did not provide strong evidence for either the null or the alternative hypothesis in either the original or the replication, and no replication attempts provided strong evidence in favor of the null. In all cases where the original paper provided strong evidence but the replication did not (15%), the sample size in the replication was smaller than the original. Where the replication provided strong evidence but the original did not (10%), the replication sample size was larger. We conclude that the apparent failure of the Reproducibility Project to replicate many target effects can be adequately explained by overestimation of effect sizes (or overestimation of evidence against the null hypothesis) due to small sample sizes and publication bias in the psychological literature. We further conclude that traditional sample sizes are insufficient and that a more widespread adoption of Bayesian methods is desirable.\n"
+        ],
+        "author_display": [
+          "Alexander Etz",
+          "Joachim Vandekerckhove"
+        ],
+        "id": "10.1371/journal.pone.0149794",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-02-26T00:00:00Z",
+        "title": "A Bayesian Perspective on the Reproducibility Project: Psychology"
+      },
+      {
+        "abstract": [
+          "Objective: The ability to reproduce the work of others is an essential part of the scientific disciplines. Replicating observational studies using electronic health record (EHR) data can be challenging due to complexities in data access, variations in EHR systems across institutions, and the potential for unaccounted confounding variables. Our aim is to identify the barriers to methods reproducibility for replication studies using EHR data. Methods: We replicated a study that examined the risk of hospitalisation following a positive COVID-19 test in individuals with diabetes. Using EHR data from the NHS England\u2019s Secure Data Environment (SDE) covering the whole of England, UK (population 57m), we sought to replicate findings from the original study, which used data from Greater Manchester (a large urban region in the UK, population 2.9m). Both analyses were conducted in Trusted Research Environments (TREs) or SDEs, containing linked primary and secondary care data, however methods reproducibility was not straightforward. Differences between the environments that contributed to the difficulties were documented, categorized into themes, and converted into a list of recommendations for TRE/SDEs. Results: Small differences between the environments and the data sources led to several challenges in methods reproducibility. Our recommendations of TRE/SDEs should facilitate future replication studies. The recommendations include: a need for improved machine-readable metadata for EHR data; standardization of governance processes to facilitate federated analysis; mandating of code sharing; and for environments to have a support structure for data engineers and analysts. We also propose a new theme for research, \u201cdata reproducibility\u201d, as the ability to prepare, extract and clean data from a different database for a replication study. Conclusion: Even with perfect code sharing, data reproducibility remains a challenge. Our recommendations have the potential to reduce the barriers to replication studies and therefore enhance the potential of observational studies using EHR data. "
+        ],
+        "author_display": [
+          "Richard Williams",
+          "Thomas Bolton",
+          "David Jenkins",
+          "Mehrdad A. Mizani",
+          "Matthew Sperrin",
+          "Cathie Sudlow",
+          "Angela Wood",
+          "Adrian Heald",
+          "Niels Peek",
+          "on behalf of the CVD-COVID-UK/COVID-IMPACT Consortium "
+        ],
+        "id": "10.1371/journal.pone.0326335",
+        "journal": "PLOS One",
+        "publication_date": "2025-07-18T00:00:00Z",
+        "title": "The challenges of replication: A worked example of methods reproducibility using electronic health record data"
+      },
+      {
+        "abstract": [
+          "Background: Studies using quantitative susceptibility mapping (QSM) to investigate thalamic iron levels in people with multiple sclerosis (pwMS) have yielded inconsistent results. It has been speculated that cohort differences are responsible for these inconsistencies, leading to the phenomenological \u201cearly-rise late-decline\u201d hypothesis, which posits that cohort age differences explain conflicting thalamic susceptibility findings. In a recent replication study, the authors failed to reproduce elevated thalamic susceptibility in pwMS previously reported by one of the only two QSM-based studies, despite matching cohort characteristics and processing, weakening the support for the phenomenological hypothesis. Objective: To investigate if the outcome of the recent replication study is robust with respect to different QSM algorithms and analysis methodologies. Methods: Using the same MRI dataset as the previous replication study, we assessed thalamic susceptibility across 83 pwMS and 44 healthy controls. To comprehensively evaluate methodological variability, we tested combinations of three background field removal (BFR) algorithms using various regularization parameters, four dipole inversion algorithms, three reference regions, and two segmentation methods. Each unique combination of a BFR algorithm (with its specific parameter) and a dipole inversion algorithm constituted a distinct pipeline, yielding a total of 19,558 susceptibility maps across 154 different pipelines. Results: Thalamic susceptibility was lower in pwMS compared to controls independent of the chosen methodology, with differences in effect sizes primarily driven by the background field removal algorithms and their regularization parameters, reference region, and segmentation method. The impact of dipole inversion algorithms was minimal. Conclusions: Our study suggests high reproducibility of group-level clinical studies using QSM to study the thalamus in pwMS. In particular, methodological differences in processing and analysis are unlikely to explain contradicting findings of thalamic susceptibility in MS. "
+        ],
+        "author_display": [
+          "Fahad Salman",
+          "Niels Bergsland",
+          "Michael G. Dwyer",
+          "Jack A. Reeves",
+          "Abhisri Ramesh",
+          "Dejan Jakimovski",
+          "Bianca Weinstock-Guttman",
+          "Robert Zivadinov",
+          "Ferdinand Schweser"
+        ],
+        "id": "10.1371/journal.pone.0332478",
+        "journal": "PLOS One",
+        "publication_date": "2025-11-14T00:00:00Z",
+        "title": "Impact of processing and analysis methodology on thalamic susceptibility assessment in multiple sclerosis"
+      },
+      {
+        "abstract": [
+          "\nWe conducted an international cross-sectional survey of biomedical researchers\u2019 perspectives on the reproducibility of research. This study builds on a widely cited 2016 survey on reproducibility and provides a biomedical-specific and contemporary perspective on reproducibility. To sample the community, we randomly selected 400 journals indexed in MEDLINE, from which we extracted the author names and emails from all articles published between October 1, 2020 and October 1, 2021. We invited participants to complete an anonymous online survey which collected basic demographic information, perceptions about a reproducibility crisis, perceived causes of irreproducibility of research results, experience conducting reproducibility studies, and knowledge of funding and training for research on reproducibility. A total of 1,924 participants accessed our survey, of which 1,630 provided useable responses (response rate 7% of 23,234). Key findings include that 72% of participants agreed there was a reproducibility crisis in biomedicine, with 27% of participants indicating the crisis was \u201csignificant.\u201d The leading perceived cause of irreproducibility was a \u201cpressure to publish\u201d with 62% of participants indicating it \u201calways\u201d or \u201cvery often\u201d contributes. About half of the participants (54%) had run a replication of their own previously published study while slightly more (57%) had run a replication of another researcher\u2019s study. Just 16% of participants indicated their institution had established procedures to enhance the reproducibility of biomedical research and 67% felt their institution valued new research over replication studies. Participants also reported few opportunities to obtain funding to attempt to reproduce a study and 83% perceived it would be harder to do so than to get funding to do a novel study. Our results may be used to guide training and interventions to improve research reproducibility and to monitor rates of reproducibility over time. The findings are also relevant to policy makers and academic leadership looking to create incentives and research cultures that support reproducibility and value research quality.\n\nThere is growing interest in the reproducibility of research and ways to enhance transparency. This study uses an international survey of more than 1900 biomedical researchers to reveal the perceived causes of irreproducibility of research results, experience of conducting replication studies, and knowledge of relevant funding and training.\n"
+        ],
+        "author_display": [
+          "Kelly D. Cobey",
+          "Sanam Ebrahimzadeh",
+          "Matthew J. Page",
+          "Robert T. Thibault",
+          "Phi-Yen Nguyen",
+          "Farah Abu-Dalfa",
+          "David Moher"
+        ],
+        "id": "10.1371/journal.pbio.3002870",
+        "journal": "PLOS Biology",
+        "publication_date": "2024-11-05T00:00:00Z",
+        "title": "Biomedical researchers\u2019 perspectives on the reproducibility of research"
+      },
+      {
+        "abstract": [
+          "Background: Circulating concentrations of heme oxygenase-1 (HO-1) have been recently reported to be elevated in several chronic disorders. However, no study has ever examined the association between circulating HO-1 concentrations and type 2 diabetes mellitus (T2DM). Methods and Findings: 581 cases with newly-diagnosed T2DM (New-T2DM) and 611 comparison controls were recruited in this two-phase case-control study, comprising 420 cases and 429 controls collected in the first phase study and 161 cases and 182 controls in the second phase replication study. Analyses, using both separated data and combined data from the two-phase studies, show that plasma HO-1 concentrations were significantly increased in New-T2DM cases compared to controls (P<0.001). Plasma HO-1 concentrations were significantly correlated with plasma glucose concentrations, HOMA-beta and HOMA-IR (P<0.001). After adjustment for age, sex, BMI and family history of diabetes, the ORs for New-T2DM in the highest quartile of plasma HO-1 concentrations, compared with the lowest, was 8.23 (95% CI 5.55\u201312.21; P for trend <0.001). The trend remained significant after additional adjustment for fasting plasma glucose/insulin, HOMA-beta/HOMA-IR, TC/TG, smoking, drinking and history of hypertension, and even in further stratification analysis by age, sex, BMI, smoking, drinking and history of hypertension. Conclusions: Elevated plasma HO-1 concentrations are associated with higher ORs for New-T2DM, which add more knowledge regarding the important role of oxidative stress in T2DM. More consequent studies were warranted to confirm the clinical utility of plasma HO-1, especially in diagnosis and prognosis of T2DM and its complications. "
+        ],
+        "author_display": [
+          "Wei Bao",
+          "Fangfang Song",
+          "Xiangyang Li",
+          "Shuang Rong",
+          "Wei Yang",
+          "Muxun Zhang",
+          "Ping Yao",
+          "Liping Hao",
+          "Nianhong Yang",
+          "Frank B. Hu",
+          "Liegang Liu"
+        ],
+        "id": "10.1371/journal.pone.0012371",
+        "journal": "PLoS ONE",
+        "publication_date": "2010-08-25T00:00:00Z",
+        "title": "Plasma Heme Oxygenase-1 Concentration Is Elevated in Individuals with Type 2 Diabetes Mellitus"
+      },
+      {
+        "abstract": [
+          "Background: Recent epidemiological studies suggest that the maternal genome is an important contributor to spontaneous preterm delivery (PTD). There is also a significant excess of males among preterm born infants, which may imply an X-linked mode of inheritance for a subset of cases. To explore this, we examined the effect of maternal and fetal X-chromosomal single nucleotide polymorphisms (SNPs) on the risk of PTD in two independent genome-wide association studies and one replication study. Methods: Participants were recruited from the Danish National Birth Cohort and the Norwegian Mother and Child cohort studies. Data from these two populations were first analyzed independently, and then combined in a meta-analysis. Overall, we evaluated 12,211 SNPs in 1,535 case-mother dyads and 1,487 control-mother dyads. Analyses were done using a hybrid design that combines case-mother dyads and control-mother dyads, as implemented in the Haplin statistical software package. A sex-stratified analysis was performed for the fetal SNPs. In the replication study, 10 maternal and 16 fetal SNPs were analyzed using case-parent triads from independent studies of PTD in the United States, Argentina and Denmark. Results: In the meta-analysis, the G allele at the maternal SNP rs2747022 in the FERM domain containing 7 gene (FRMD7) increased the risk of spontaneous PTD by 1.2 (95% confidence interval (CI): 1.1, 1.4). Although an association with this SNP was confirmed in the replication study, it was no longer statistically significant after a Bonferroni correction for multiple testing. Conclusion: We did not find strong evidence in our data to implicate X-chromosomal SNPs in the etiology of spontaneous PTD. Although non-significant after correction for multiple testing, the mother\u2019s G allele at rs2747022 in FRMD7 increased the risk of spontaneous PTD across all populations in this study, thus warranting further investigation in other populations. "
+        ],
+        "author_display": [
+          "Solveig Myking",
+          "Heather A. Boyd",
+          "Ronny Myhre",
+          "Bjarke Feenstra",
+          "Astanand Jugessur",
+          "Aase S. Devold Pay",
+          "Ingrid H. G. \u00d8stensen",
+          "Nils-Halvdan Morken",
+          "Tamara Busch",
+          "Kelli K. Ryckman",
+          "Frank Geller",
+          "Per Magnus",
+          "H\u00e5kon K. Gjessing",
+          "Mads Melbye",
+          "Bo Jacobsson",
+          "Jeffrey C. Murray"
+        ],
+        "id": "10.1371/journal.pone.0061781",
+        "journal": "PLoS ONE",
+        "publication_date": "2013-04-16T00:00:00Z",
+        "title": "X-Chromosomal Maternal and Fetal SNPs and the Risk of Spontaneous Preterm Delivery in a Danish/Norwegian Genome-Wide Association Study"
+      },
+      {
+        "abstract": [
+          "\nSpending money on one\u2019s self, whether to solve a problem, fulfill a need, or increase enjoyment, often heightens one\u2019s sense of happiness. It is therefore both surprising and important that people can be even happier after spending money on someone else. We conducted a close replication of a key experiment from Dunn, Aknin, and Norton (2008) to verify and expand upon their findings. Participants were given money and randomly assigned to either spend it on themselves or on someone else. Although the original study (N = 46) found that the latter group was happier, when we used the same analysis in our replication (N = 133), we did not observe a significant difference. However, we report an additional analysis, focused on a more direct measure of happiness, that does show a significant effect in the direction of the original. Follow-up analyses shed new insights into people\u2019s predictions about their own and others\u2019 happiness and their actual happiness when spending money for themselves or others.\n"
+        ],
+        "author_display": [
+          "Garam Kim",
+          "Ingrid Adams",
+          "Malik Diaw",
+          "Mira Celly",
+          "Leif D. Nelson",
+          "Minah H. Jung"
+        ],
+        "id": "10.1371/journal.pone.0272434",
+        "journal": "PLOS ONE",
+        "publication_date": "2022-09-07T00:00:00Z",
+        "title": "Prosocial spending encourages happiness: A replication of the only experiment reported in Dunn, Aknin, and Norton (2008)"
+      },
+      {
+        "abstract": [
+          "\nThe Streamlining Tasks & Roles to Expand Treatment and Care for HIV (STRETCH) program was developed to increase the reach of antiretroviral therapy (ART) for HIV/AIDS patients in Sub-Saharan Africa by training nurses to prescribe, initiate, and maintain ART. Fairall and colleagues conducted a cluster-randomized trial to determine the effects/impact of STRETCH on patient health outcomes in South Africa between 2008 and 2010. The purpose of our replication study is to evaluate Fairall and colleagues\u2019 findings. We conducted push button and pure replication studies and measurement and estimation analyses (MEA). Our MEA validates the original findings: (1) overall, time to death did not differ between intervention (STRETCH) and control (ART) patients; (2) in a subgroup analysis of patients with CD4 counts of 201\u2013350 cells per \u03bcL, the intervention group patients had a 30% lower risk of death than those in the control group, when controlling for baseline characteristics; (3) in a subgroup analysis of patients with CD4 counts of \u2264200 cells per \u03bcL, time to death did not differ between the two groups; and (4) rates of viral suppression one year after enrollment did not differ between the intervention and control groups. This set of results have more caveats in the MEA. Although the intervention did not lead to improvements in the main outcomes, the effectiveness of STRETCH was proven to be similar to standard care while increasing the pool of prescribers, expanding their geographical range, and improving the quality of care for patients. Therefore, our analyses support the implementation of task shifting of antiretroviral therapy from doctors to trained nurses, which enhances confidence in the implementation of the intervention program and policymaking not only in South Africa but also in other developing countries that have similar circumstances.\n"
+        ],
+        "author_display": [
+          "Baojiang Chen",
+          "Morshed Alam"
+        ],
+        "id": "10.1371/journal.pone.0206677",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-04-08T00:00:00Z",
+        "title": "STRETCHing HIV treatment: A replication study of task shifting in South Africa"
+      },
+      {
+        "abstract": [
+          "\nAs replications of individual studies are resource intensive, techniques for predicting the replicability are required. We introduce the repliCATS (Collaborative Assessments for Trustworthy Science) process, a new method for eliciting expert predictions about the replicability of research. This process is a structured expert elicitation approach based on a modified Delphi technique applied to the evaluation of research claims in social and behavioural sciences. The utility of processes to predict replicability is their capacity to test scientific claims without the costs of full replication. Experimental data supports the validity of this process, with a validation study producing a classification accuracy of 84% and an Area Under the Curve of 0.94, meeting or exceeding the accuracy of other techniques used to predict replicability. The repliCATS process provides other benefits. It is highly scalable, able to be deployed for both rapid assessment of small numbers of claims, and assessment of high volumes of claims over an extended period through an online elicitation platform, having been used to assess 3000 research claims over an 18 month period. It is available to be implemented in a range of ways and we describe one such implementation. An important advantage of the repliCATS process is that it collects qualitative data that has the potential to provide insight in understanding the limits of generalizability of scientific claims. The primary limitation of the repliCATS process is its reliance on human-derived predictions with consequent costs in terms of participant fatigue although careful design can minimise these costs. The repliCATS process has potential applications in alternative peer review and in the allocation of effort for replication studies.\n"
+        ],
+        "author_display": [
+          "Hannah Fraser",
+          "Martin Bush",
+          "Bonnie C. Wintle",
+          "Fallon Mody",
+          "Eden T. Smith",
+          "Anca M. Hanea",
+          "Elliot Gould",
+          "Victoria Hemming",
+          "Daniel G. Hamilton",
+          "Libby Rumpff",
+          "David P. Wilkinson",
+          "Ross Pearson",
+          "Felix Singleton Thorn",
+          "Raquel Ashton",
+          "Aaron Willcox",
+          "Charles T. Gray",
+          "Andrew Head",
+          "Melissa Ross",
+          "Rebecca Groenewegen",
+          "Alexandru Marcoci",
+          "Ans Vercammen",
+          "Timothy H. Parker",
+          "Rink Hoekstra",
+          "Shinichi Nakagawa",
+          "David R. Mandel",
+          "Don van Ravenzwaaij",
+          "Marissa McBride",
+          "Richard O. Sinnott",
+          "Peter Vesk",
+          "Mark Burgman",
+          "Fiona Fidler"
+        ],
+        "id": "10.1371/journal.pone.0274429",
+        "journal": "PLOS ONE",
+        "publication_date": "2023-01-26T00:00:00Z",
+        "title": "Predicting reliability through structured expert elicitation with the repliCATS (Collaborative Assessments for Trustworthy Science) process"
+      },
+      {
+        "abstract": [
+          "\nAnimal cognition research aims to understand animal minds by using a diverse range of methods across an equally diverse range of species. Throughout its history, the field has sought to mitigate various biases that occur when studying animal minds, from experimenter effects to anthropomorphism. Recently, there has also been a focus on how common scientific practices might affect the reliability and validity of published research. Usually, these issues are discussed in the literature by a small group of scholars with a specific interest in the topics. This study aimed to survey a wider range of animal cognition researchers to ask about their attitudes towards classic and contemporary issues facing the field. Two-hundred and ten active animal cognition researchers completed our survey, and provided answers on questions relating to bias, replicability, statistics, publication, and belief in animal cognition. Collectively, researchers were wary of bias in the research field, but less so in their own work. Over 70% of researchers endorsed Morgan\u2019s canon as a useful principle but many caveated this in their free-text responses. Researchers self-reported that most of their studies had been published, however they often reported that studies went unpublished because they had negative or inconclusive results, or results that questioned \u201cpreferred\u201d theories. Researchers rarely reported having performed questionable research practices themselves\u2014however they thought that other researchers sometimes (52.7% of responses) or often (27.9% of responses) perform them. Researchers near unanimously agreed that replication studies are important but too infrequently performed in animal cognition research, 73.0% of respondents suggested areas of animal cognition research could experience a \u2018replication crisis\u2019 if replication studies were performed. Consistently, participants\u2019 free-text responses provided a nuanced picture of the challenges animal cognition research faces, which are available as part of an open dataset. However, many researchers appeared concerned with how to interpret negative results, publication bias, theoretical bias and reliability in areas of animal cognition research. Collectively, these data provide a candid overview of barriers to progress in animal cognition and can inform debates on how individual researchers, as well as organizations and journals, can facilitate robust scientific research in animal cognition.\n"
+        ],
+        "author_display": [
+          "Benjamin G. Farrar",
+          "Ljerka Ostoji\u0107",
+          "Nicola S. Clayton"
+        ],
+        "id": "10.1371/journal.pone.0256607",
+        "journal": "PLOS ONE",
+        "publication_date": "2021-08-31T00:00:00Z",
+        "title": "The hidden side of animal cognition research: Scientists\u2019 attitudes toward bias, replicability and scientific practice"
+      },
+      {
+        "abstract": [
+          "\nCo-diagnosis of HIV and tuberculosis presents a treatment dilemma. Starting both treatments at the same time can cause a flood of immune response called immune reconstitution inflammatory syndrome (IRIS) which can be lethal. But, how long to delay HIV treatment is less understood. In 2011, based on the conclusions of three separate studies, WHO recommended starting HIV treatment earlier for those with later HIV disease progression. This paper conducts a replication study of one of the three studies, by Havlir and colleagues. Using their publicly available data, we were able to replicate most of the results presented in the original paper. In our measurement and estimation analyses we use different estimation techniques to assess the robustness of the results. We find that adjusting for loss to follow-up does not affect the main results of the paper. However, an ANCOVA estimation and an instrumental variable model weaken the main result of the paper of better outcomes with early HIV treatment only for those who are sicker, reducing significance from the 5% to the 10% level. A change-point analysis also detects no changes in effect by timing of HIV treatment initiation or different thresholds of CD4 count for the primary outcome. This result suggests that the choice of start time for HIV treatment initiation should be based on other factors including potential drug interactions, overlapping side effects, a high pill burden and severity of illness rather than CD4 threshold and preset timeframes. While we caution against overgeneralizing, the result of this replication is aligned with more recent studies that show no evidence that early initiation of HIV treatment reduces mortality for any patients.\n"
+        ],
+        "author_display": [
+          "Eric W. Djimeu",
+          "Anna C. Heard"
+        ],
+        "id": "10.1371/journal.pone.0210327",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-02-01T00:00:00Z",
+        "title": "Treatment of HIV among tuberculosis patients: A replication study of timing of antiretroviral therapy for HIV-1-associated tuberculosis"
+      },
+      {
+        "abstract": [
+          "\nCannabis sativa is relatively recalcitrant to de novo regeneration, but several studies have reported shoot organogenesis or somatic embryogenesis from non-meristematic tissues. Most report infrequent regeneration rates from these tissues, but a landmark publication from 2010 achieved regeneration from leaf explants with a 96% response rate, producing an average of 12.3 shoots per explant in a single drug-type accession. Despite the importance regeneration plays in plant biotechnology and the renewed interest in this crop the aforementioned protocol has not been used in subsequent papers in the decade since it was published, raising concerns over its reproducibility. Here we attempted to replicate this important Cannabis regeneration study and expand the original scope of the study by testing it across 10 drug-type C. sativa genotypes to assess genotypic variation. In our study, callus was induced in all 10 genotypes but callus growth and appearance substantially differed among cultivars, with the most responsive genotype producing 6-fold more callus than the least responsive. The shoot induction medium failed to induce shoot organogenesis in any of the 10 cultivars tested, instead resulting in necrosis of the calli. The findings of this replication study raise concerns about the replicability of existing methods. However, some details of the protocol could not be replicated due to missing details in the original paper and regulatory issues, which could have impacted the outcome. These results highlight the importance of using multiple genotypes in such studies and providing detailed methods to facilitate replication.\n"
+        ],
+        "author_display": [
+          "Adrian S. Monthony",
+          "Sean T. Kyne",
+          "Christopher M. Grainger",
+          "Andrew Maxwell P. Jones"
+        ],
+        "id": "10.1371/journal.pone.0235525",
+        "journal": "PLOS ONE",
+        "publication_date": "2021-08-13T00:00:00Z",
+        "title": "Recalcitrance of Cannabis sativa to de novo regeneration; a multi-genotype replication study"
+      },
+      {
+        "abstract": [
+          "\nSocial psychology and related disciplines are seeing a resurgence of interest in replication, as well as actual replication efforts. But prior work suggests that even a clear demonstration that a finding is invalid often fails to shake acceptance of the finding. This threatens the full impact of these replication efforts. Here we show that the actions of two key players \u2013 journal editors and the authors of original (invalidated) research findings \u2013 are critical to the broader public\u2019s continued belief in an invalidated research conclusion. Across three experiments, we show that belief in an invalidated finding falls sharply when a critical failed replication is published in the same \u2013 versus different \u2013 journal as the original finding, and when the authors of the original finding acknowledge that the new findings invalidate their conclusions. We conclude by discussing policy implications of our key findings.\n"
+        ],
+        "author_display": [
+          "Kimmo Eriksson",
+          "Brent Simpson"
+        ],
+        "id": "10.1371/journal.pone.0073364",
+        "journal": "PLoS ONE",
+        "publication_date": "2013-09-04T00:00:00Z",
+        "title": "Editorial Decisions May Perpetuate Belief in Invalid Research Findings"
+      },
+      {
+        "abstract": [
+          "Introduction: In a digital early literacy intervention RCT, children born late preterm fell behind peers when in a control condition, but outperformed them when assigned to the intervention. Results did however not replicate previous findings. Replication is often complicated by resource quality. Gold Standard measures are generally time-intensive and costly, while they closely align with, and are more sensitive to changes in, early literacy and language performance. A planned missing data approach, leaving these gold standard measures incomplete, might aid in addressing the origin(s) of non-replication. Methods: Participants after consent were 695 p Dutch primary school pupils of normal and late preterm birth. The high-quality measures, in additional to simpler but complete measures, were intentionally administered to a random subsample of children. Five definitions of gold standard alignment were evaluated. Results: Two out of five gold standard levels improved precision compared to the original results. The lowest gold standard level did not lead to improvement: precision was actually diminished. In two gold standard definitions, an alphabetical factor and a writing-only factor the model estimates were comparable to the original results. Only the most precise definition of the gold standard level replicated the original results. Conclusion: Gold standard measures could only be used to improve model efficiency in RCT-designs under sufficiently high convergent validity. "
+        ],
+        "author_display": [
+          "Ralph C. A. Rippe",
+          "Inge Merkelbach"
+        ],
+        "id": "10.1371/journal.pone.0249175",
+        "journal": "PLOS ONE",
+        "publication_date": "2021-03-29T00:00:00Z",
+        "title": "Planned missing data in early literacy interventions: A replication study with an additional gold standard"
+      },
+      {
+        "abstract": [
+          "\nThe need for replication of initial results has been rediscovered only recently in many fields of research. In preclinical biomedical research, it is common practice to conduct exact replications with the same sample sizes as those used in the initial experiments. Such replication attempts, however, have lower probability of replication than is generally appreciated. Indeed, in the common scenario of an effect just reaching statistical significance, the statistical power of the replication experiment assuming the same effect size is approximately 50%\u2014in essence, a coin toss. Accordingly, we use the provocative analogy of \u201creplicating\u201d a neuroprotective drug animal study with a coin flip to highlight the need for larger sample sizes in replication experiments. Additionally, we provide detailed background for the probability of obtaining a significant p value in a replication experiment and discuss the variability of p values as well as pitfalls of simple binary significance testing in both initial preclinical experiments and replication studies with small sample sizes. We conclude that power analysis for determining the sample size for a replication study is obligatory within the currently dominant hypothesis testing framework. Moreover, publications should include effect size point estimates and corresponding measures of precision, e.g., confidence intervals, to allow readers to assess the magnitude and direction of reported effects and to potentially combine the results of initial and replication study later through Bayesian or meta-analytic approaches.\n\nUsing a coin toss to \u2018replicate\u2019 a neuroprotective effect of valproic acid, this study highlights the fact that exact replications of biomedical experiments are usually underpowered, often with power of approximately 50%.\n"
+        ],
+        "author_display": [
+          "Sophie K. Piper",
+          "Ulrike Grittner",
+          "Andre Rex",
+          "Nico Riedel",
+          "Felix Fischer",
+          "Robert Nadon",
+          "Bob Siegerink",
+          "Ulrich Dirnagl"
+        ],
+        "id": "10.1371/journal.pbio.3000188",
+        "journal": "PLOS Biology",
+        "publication_date": "2019-04-09T00:00:00Z",
+        "title": "Exact replication: Foundation of science or game of chance?"
+      },
+      {
+        "abstract": [
+          "\nThis study describes an attempt to replicate experiments from the paper \u201cEffect of BMAP-28 Antimicrobial Peptides on Leishmania major Promastigote and Amastigote Growth: Role of Leishmanolysin in Parasite Survival,\u201d which was submitted to the Reproducibility Initiative for independent validation. The cathelicidin bovine myeloid antimicrobial peptide 28 (BMAP-28) and its isomers were previously shown to have potent antiparasitic activity against Leishmania major. We tested the effectiveness of L-BMAP-28 and two of its isomers, the D-amino acid form (D-BMAP-28) and the retro-inverso form (RI-BMAP-28), in both unamidated and amidated forms, as anti-leishmanial agents against Leishmania major promastigotes in vitro. We observed that L-BMAP-28, as well as its D and RI isomers, demonstrate anti-leishmanial activity against L. major promastigotes in vitro. The inhibitory effect was lower than what was seen in the original study. At 2 \u00b5M of amidated peptides, the viability was 94%, 36%, and 66% with L-, D- and RI-peptides, versus 57%, 6%, and 18% in the original study.\n"
+        ],
+        "author_display": [
+          "Elizabeth Iorns",
+          "William Gunn",
+          "Jessey Erath",
+          "Ana Rodriguez",
+          "Jian Zhou",
+          "Michael Benzinou",
+          "The Reproducibility Initiative "
+        ],
+        "id": "10.1371/journal.pone.0114614",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-12-17T00:00:00Z",
+        "title": "Replication Attempt: \u201cEffect of BMAP-28 Antimicrobial Peptides on Leishmania Major Promastigote and Amastigote Growth: Role of Leishmanolysin in Parasite Survival\u201d"
+      },
+      {
+        "abstract": [
+          "\nThe attentional blink (AB) phenomenon reveals a bottleneck of human information processing: the second of two targets is often missed when they are presented in rapid succession among distractors. In our previous work, we showed that the size of the AB can be changed by applying transcranial direct current stimulation (tDCS) over the left dorsolateral prefrontal cortex (lDLPFC) (London & Slagter, Journal of Cognitive Neuroscience, 33, 756\u201368, 2021). Although AB size at the group level remained unchanged, the effects of anodal and cathodal tDCS were negatively correlated: if a given individual\u2019s AB size decreased from baseline during anodal tDCS, their AB size would increase during cathodal tDCS, and vice versa. Here, we attempted to replicate this finding. We found no group effects of tDCS, as in the original study, but we no longer found a significant negative correlation. We present a series of statistical measures of replication success, all of which confirm that both studies are not in agreement. First, the correlation here is significantly smaller than a conservative estimate of the original correlation. Second, the difference between the correlations is greater than expected due to sampling error, and our data are more consistent with a zero-effect than with the original estimate. Finally, the overall effect when combining both studies is small and not significant. Our findings thus indicate that the effects of lDPLFC-tDCS on the AB are less substantial than observed in our initial study. Although this should be quite a common scenario, null findings can be difficult to interpret and are still under-represented in the brain stimulation and cognitive neuroscience literatures. An important auxiliary goal of this paper is therefore to provide a tutorial for other researchers, to maximize the evidential value from null findings.\n"
+        ],
+        "author_display": [
+          "Leon C. Reteig",
+          "Lionel A. Newman",
+          "K. Richard Ridderinkhof",
+          "Heleen A. Slagter"
+        ],
+        "id": "10.1371/journal.pone.0262718",
+        "journal": "PLOS ONE",
+        "publication_date": "2022-01-27T00:00:00Z",
+        "title": "Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt"
+      },
+      {
+        "abstract": [
+          "Background: In event-related potentials, the N170 manifests itself especially in reaction to faces. In the healthy population, face-inversion leads to stronger negative amplitudes and prolonged latencies of the N170, effects not being present in patients with autism-spectrum-disorder (ASD). ASD has frequently been associated with differences in oxytocinergic neurotransmission. This ERP-study aimed to investigate the face-inversion effect in association with oxytocinergic candidate genes. It was expected that risk-allele-carriers of the oxytocin-receptor-gene-polymorphism (rs53576) and of CD38 (rs379863) responded similar to upright and inverted faces as persons with ASD. Additionally, reactions to different facial emotional expressions were studied. As there have been difficulties with replications of those molecular genetic association studies, we aimed to replicate our findings in a second study. Method: Seventy-two male subjects in the first-, and seventy-eight young male subjects in the replication-study conducted a face-inversion-paradigm, while recording EEG. DNA was extracted from buccal cells. Results: Results revealed stronger N170-amplitudes and longer latencies in reaction to inverted faces in comparison to upright ones. Furthermore, effects of emotion on N170 were evident. Those effects were present in the first and in the second study. Whereas we found molecular-genetic associations of oxytocinergic polymorphisms with the N170 in the first study, we failed to do so in the replication sample. Conclusion: Results indicate that a deeper theoretical understanding of this research-field is needed, in order to generate possible explanations for these findings. Results, furthermore, support the hypotheses that success of reproducibility is correlated with strength of lower original p-values and larger effect sizes in the original study. "
+        ],
+        "author_display": [
+          "Aisha J. L. Munk",
+          "Andrea Hermann",
+          "Jasmin El Shazly",
+          "Phillip Grant",
+          "J\u00fcrgen Hennig"
+        ],
+        "id": "10.1371/journal.pone.0151991",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-03-25T00:00:00Z",
+        "title": "The Idea Is Good, but\u2026: Failure to Replicate Associations of Oxytocinergic Polymorphisms with Face-Inversion in the N170"
+      },
+      {
+        "abstract": [
+          "\nThe US budget for global health funding, which was by far the largest of similar funding in the world, increased from US $1.3 billion in 2001 to more than US $10 billion in recent years. More than 54% of this funding was allocated to the Global Fund to Fight HIV/AIDS through the US President\u2019s Emergency Plan for AIDS Relief (PEPFAR) in Africa. However, recent studies indicate contradictory results regarding the effectiveness of PEPFAR. One by Bendavid, Holmes, Bhattacharya, and Miller shows positive effects of PEPFAR in reducing adult mortality in Africa, while another by Duber, Coates, Szekeras, Kaji, and Lewis finds that there are no significant differences in reducing adult mortality in countries that received PEPFAR funding vs countries that did not. Due to their potential impact on policy decisions regarding critical global health funding, we wanted to assess why the results are discrepant. To do this, we replicated the Bendavid study. The replication provides verification that the study replicable and that the analytic choices of the authors are robust to different assumptions or restrictions. This allows us to assess the different choices and data available to the two research groups and draw some conclusions about why the results may be different. Then, focusing on two of the prominently discrepant studies, i.e., the Bendavid study (1998\u20132008) and the Duber study (2000\u20132006), we establish why the two studies are in disagreement. We apply appropriate individual-level and country-level analytical methodology as used by Bendavid over the analytical time period used for the Duber study (2000\u20132006), which originally focused on nationally aggregated data and differed in some key focus countries. For our first objective, we replicated the original Bendavid study findings and our findings support their conclusion that between 1998\u20132008 all-cause mortality decreased significantly more (OR = 0.84, CI, 0.72\u20130.99) in countries that implemented PEPFAR. For our second objective (Bendavid\u2019s data and methodology applied to Duber\u2019s study period), we found reduction in all cause adult mortality to be borderline insignificant (OR = 0.87 CI, 0.75\u20131.01, p = 0.06), most possibly reflecting the abbreviated fewer number of events and sample size over a shorter period. Therefore, our overall analyses are consistent with the conclusion of positive impact of the PEPFAR program in reducing adult mortality. We believe that the discrepancy observed in the original studies mainly a reflection of shortcomings in the analytical approach necessitated by the Duber study\u2019s nationally aggregated dataset or \u201cmay reflect a lack of data quality\u201d in the Duber study (Duber, et al. 2010).\n"
+        ],
+        "author_display": [
+          "Nicholas A. Hein",
+          "Danstan S. Bagenda",
+          "Jiangtao Luo"
+        ],
+        "id": "10.1371/journal.pone.0233948",
+        "journal": "PLOS ONE",
+        "publication_date": "2020-10-26T00:00:00Z",
+        "title": "The President\u2019s Emergency Plan for AIDS Relief and adult mortality: A replication study of HIV development assistance effects in Sub-Saharan African countries"
+      },
+      {
+        "abstract": [
+          "\nThe \"magnitude effect\" refers to the phenomenon where stimuli of greater magnitude appear to last longer in duration. Previous studies have explored this effect among children using various duration assessment tasks, but the findings have been inconsistent. Moreover, no replication studies have been conducted on this topic among children thus far. The simultaneous duration assessment task, which is one method for investigating time perception, has been used only twice in children and produced the magnitude effect. Thus, we aimed to replicate these findings and validate them through an additional replicated study. For these aims, we recruited 45 Arab-speaking children aged 7\u201312 to participate in two studies. In Study 1, they were asked to perform a simultaneous duration assessment task, where they had to assess the illumination durations of lightbulbs with strong and weak intensities simultaneously. In Study 2, they were asked to perform a duration reproduction task, where they had to reproduce the durations of illumination of the same stimuli. Both studies found a magnitude effect pattern, where the children tended to report that the lightbulb with the stronger intensity was illuminated for a longer duration or had a strong tendency to not choose the lightbulb with the weaker intensity. These results are discussed in terms of possible explanations for the conflicting results found in previous literature, as well as their consistency with the pacemaker model\u2019s explanation for the effect.\n"
+        ],
+        "author_display": [
+          "Amihai Gottlieb",
+          "Dan Zakay"
+        ],
+        "id": "10.1371/journal.pone.0285564",
+        "journal": "PLOS ONE",
+        "publication_date": "2023-05-09T00:00:00Z",
+        "title": "The effect of magnitude in a simultaneous duration assessment task among children \u2013 a replication study"
+      },
+      {
+        "abstract": [
+          ""
+        ],
+        "author_display": [
+          "Mark Patterson",
+          "Lon Cardon"
+        ],
+        "id": "10.1371/journal.pbio.0030327",
+        "journal": "PLoS Biology",
+        "publication_date": "2005-09-13T00:00:00Z",
+        "title": "Replication Publication"
+      }
+    ],
+    "numFound": 272,
+    "start": 0
+  }
+}

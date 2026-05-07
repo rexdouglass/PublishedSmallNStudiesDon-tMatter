@@ -1,0 +1,381 @@
+{
+  "artifact_id": "source_artifact_9fab49e3106bdf74",
+  "byte_size": 12732,
+  "file_name": "050_pilot_10_1177_1545968308326635.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/050_pilot_10_1177_1545968308326635.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1177/1545968308326635\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Functional training and muscle strength training may improve upper limb motor recovery after stroke. Combining these as functional strength training (FST) might enhance the benefit, but it is unclear whether this is better than conventional physical therapy (CPT). Comparing FST with CPT is not straightforward.<h4>Objective</h4>This study aimed at assessing the feasibility of conducting a phase III trial comparing CPT with FST for upper limb recovery.<h4>Methods</h4>Randomized, observer-blind, phase II trial. Subjects had upper limb weakness within 3 months of anterior circulation infarction. Subjects were randomized to CPT (no extra therapy), CPT + CPT, and CPT + FST. Intervention lasted 6 weeks. Primary outcome measure was the Action Research Arm Test (ARAT). Measurements were taken before treatment began, after 6 weeks of intervention, and 12 weeks thereafter. Attrition rate was calculated and differences between groups were interpreted using descriptive statistics. ARAT data were used to inform a power calculation.<h4>Results</h4>Thirty subjects were recruited (8% of people screened). Attrition rate was 6.7% at outcome and 40% at follow-up. At outcome the CPT + FST group showed the largest increase in ARAT score and this was above the clinically important level of 5.7 points. Median (interquartile range) increases were 11.5 (21.0) for CPT; 8.0 (13.3) for CPT + CPT; and 19.5 (22.0) for CPT + FST. The estimated sample size for an adequately powered subsequent phase III trial was 279 subjects at outcome.<h4>Conclusion</h4>Further work toward a phase III clinical trial appears justifiable.",
+          "affiliation": "Clinical Development Sciences, St George's University London, London, United Kingdom.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4487-823X"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Clinical Development Sciences, St George's University London, London, United Kingdom."
+                    }
+                  ]
+                },
+                "firstName": "Catherine",
+                "fullName": "Donaldson C",
+                "initials": "C",
+                "lastName": "Donaldson"
+              },
+              {
+                "firstName": "Raymond",
+                "fullName": "Tallis R",
+                "initials": "R",
+                "lastName": "Tallis"
+              },
+              {
+                "firstName": "Simon",
+                "fullName": "Miller S",
+                "initials": "S",
+                "lastName": "Miller"
+              },
+              {
+                "firstName": "Alan",
+                "fullName": "Sunderland A",
+                "initials": "A",
+                "lastName": "Sunderland"
+              },
+              {
+                "firstName": "Roger",
+                "fullName": "Lemon R",
+                "initials": "R",
+                "lastName": "Lemon"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4487-823X"
+                },
+                "firstName": "Valerie",
+                "fullName": "Pomeroy V",
+                "initials": "V",
+                "lastName": "Pomeroy"
+              }
+            ]
+          },
+          "authorString": "Donaldson C, Tallis R, Miller S, Sunderland A, Lemon R, Pomeroy V.",
+          "citedByCount": 54,
+          "dateOfCompletion": "2009-07-16",
+          "dateOfCreation": "2008-12-26",
+          "dateOfRevision": "2022-03-16",
+          "doi": "10.1177/1545968308326635",
+          "electronicPublicationDate": "2008-12-24",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-07-30",
+          "firstPublicationDate": "2008-12-24",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "abs",
+                "site": "nnr.sagepub.com",
+                "url": "http://nnr.sagepub.com/cgi/content/abstract/23/4/389"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1177/1545968308326635"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "Wellcome Trust",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "19109444",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2009 May",
+            "issue": "4",
+            "journal": {
+              "essn": "1552-6844",
+              "isoabbreviation": "Neurorehabil Neural Repair",
+              "issn": "1545-9683",
+              "medlineAbbreviation": "Neurorehabil Neural Repair",
+              "nlmid": "100892086",
+              "title": "Neurorehabilitation and neural repair"
+            },
+            "journalIssueId": 1613820,
+            "monthOfPublication": 5,
+            "printPublicationDate": "2009-05-01",
+            "volume": "23",
+            "yearOfPublication": 2009
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Arm",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "IR",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "innervation"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Muscle, Skeletal",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "IR",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "innervation"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Muscle Weakness",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    },
+                    {
+                      "abbreviation": "RH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "rehabilitation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Paresis",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "ET",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "etiology"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    },
+                    {
+                      "abbreviation": "RH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "rehabilitation"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Single-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Recovery of Function",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged, 80 and over",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Physical Therapy Modalities",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "SN",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "statistics & numerical data"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Stroke",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Resistance Training",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "methods"
+                    },
+                    {
+                      "abbreviation": "SN",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "statistics & numerical data"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Stroke Rehabilitation",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Outcome Assessment, Health Care",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "389-397",
+          "pmid": "19109444",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Clinical Trial, Phase II",
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2009",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Effects of conventional physical therapy and functional strength training on upper limb motor recovery after stroke: a randomized phase II study."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "0a940667e1cff34ed352512a7d96d2bb47db302149911aa00aaaf599617654e3"
+}

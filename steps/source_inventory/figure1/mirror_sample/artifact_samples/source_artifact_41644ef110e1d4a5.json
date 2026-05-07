@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_41644ef110e1d4a5",
+  "byte_size": 2646,
+  "columns": [
+    "llm_category",
+    "llm_descriptive",
+    "llm_score",
+    "n_abstracts",
+    "se",
+    "llm_score_lb",
+    "llm_score_ub",
+    "llm_category2"
+  ],
+  "estimated_data_rows": 20,
+  "file_name": "Analysis-ready Data__Replication and Reproduction Papers__llm_method_data.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Analysis-ready Data__Replication and Reproduction Papers__llm_method_data.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "llm_category": "analysis_of_variance_anova",
+      "llm_category2": "Analysis of variance",
+      "llm_descriptive": "method",
+      "llm_score": 21.387283237,
+      "llm_score_lb": 15.2770578136,
+      "llm_score_ub": 27.4975086604,
+      "n_abstracts": 173,
+      "se": 3.1174619507
+    },
+    {
+      "llm_category": "causal_inference_quasi_experimental_methods",
+      "llm_category2": "Causal inference/quasi-experiment",
+      "llm_descriptive": "method",
+      "llm_score": 22.5433526012,
+      "llm_score_lb": 16.3164565001,
+      "llm_score_ub": 28.7702487022,
+      "n_abstracts": 173,
+      "se": 3.1769878067
+    },
+    {
+      "llm_category": "cognitive_behavioral_measures",
+      "llm_category2": "Cognitive/behavioral",
+      "llm_descriptive": "method",
+      "llm_score": 63.0057803468,
+      "llm_score_lb": 55.8114536958,
+      "llm_score_ub": 70.2001069978,
+      "n_abstracts": 173,
+      "se": 3.6705748219
+    },
+    {
+      "llm_category": "comparative_analysis",
+      "llm_category2": "Comparative analysis",
+      "llm_descriptive": "method",
+      "llm_score": 86.1271676301,
+      "llm_score_lb": 80.9762373481,
+      "llm_score_ub": 91.278097912,
+      "n_abstracts": 173,
+      "se": 2.628025654
+    },
+    {
+      "llm_category": "correlational_analysis",
+      "llm_category2": "Correlation",
+      "llm_descriptive": "method",
+      "llm_score": 68.2080924855,
+      "llm_score_lb": 61.2688947183,
+      "llm_score_ub": 75.1472902528,
+      "n_abstracts": 173,
+      "se": 3.5404070241
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "a00124f64116f8a3d9469697c331ad951209fef6b58b6c4791a8e167c6f57af2"
+}

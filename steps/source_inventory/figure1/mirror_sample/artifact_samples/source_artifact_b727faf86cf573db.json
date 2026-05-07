@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_b727faf86cf573db",
+  "byte_size": 3061,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 57,
+  "file_name": "ft187.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/Zr/ft187.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.562729769,
+      "obs_ID": "obs001",
+      "study_ID": "Gray & Cade 1999 1",
+      "var": 0.204124145,
+      "year_pub": 1999
+    },
+    {
+      "es": 0.20273,
+      "obs_ID": "obs002",
+      "study_ID": "Gray & Cade 1999 1",
+      "var": 0.132453236,
+      "year_pub": 1999
+    },
+    {
+      "es": -0.232,
+      "obs_ID": "obs003",
+      "study_ID": "Simmons 2004 1",
+      "var": 0.21821789,
+      "year_pub": 2004
+    },
+    {
+      "es": -0.259,
+      "obs_ID": "obs004",
+      "study_ID": "Simmons 2004 1",
+      "var": 0.333333333,
+      "year_pub": 2004
+    },
+    {
+      "es": 0.256,
+      "obs_ID": "obs005",
+      "study_ID": "Simmons 2004 1",
+      "var": 0.333333333,
+      "year_pub": 2004
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "7cfcbdce73c8a4a98b22fba4f85d14a5dd70a41078fb450c21fa119d977c2844"
+}

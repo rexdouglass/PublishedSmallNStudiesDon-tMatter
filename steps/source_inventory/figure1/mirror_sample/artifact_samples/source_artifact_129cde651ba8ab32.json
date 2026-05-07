@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_129cde651ba8ab32",
+  "byte_size": 265,
+  "file_name": "2_4_clean_vhlss.do",
+  "file_type": "do",
+  "line_preview": [
+    "clear",
+    "set more off",
+    "",
+    "* Transform the original dataset into something useful",
+    "",
+    "use \"$inputs/vhlss\", clear",
+    "",
+    "drop group_ho-tag_pro",
+    "",
+    "local i = 1",
+    "foreach var of varlist tinh_06-m06{",
+    "ren `var' v`i'",
+    "local i = `i' + 1",
+    "}",
+    "*",
+    "",
+    "compress",
+    "",
+    "save \"$temp/tmp_vhlss\""
+  ],
+  "line_preview_count": 19,
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Programs/simulations/2_4_clean_vhlss.do",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "3c9d89381822960580bd94c2246746fc5a848bc7c6e7c8eaeee3c26c2f8fb046"
+}

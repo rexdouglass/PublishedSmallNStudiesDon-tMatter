@@ -1,0 +1,5185 @@
+{
+  "hitCount": 930,
+  "nextCursorMark": "AoIIQBzsZSg1NDI0MTMyNg==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"original study\" \"replication study\" \"d =\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIQBzsZSg1NDI0MTMyNg==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"original study\" \"replication study\" \"d =\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "In the past decade, there has been considerable concern about the reproducibility of psychological research. We suggest that in-class replications are a feasible setting for the replication of psychophysiological findings and present our conceptual in-class replication of a finding by Sussman, Ritter, and Vaughan Jr. (1998). In the original study, infrequent pitch deviants (proportion: 20%) were presented either at fixed (i.e., predictable) positions or at random positions (i.e., as classic oddballs) in the auditory sequence. The authors found that deviants presented in the predictable condition did not elicit the mismatch negativity (MMN) in the event-related potential (ERP) when the tone sequence was presented at sufficiently fast stimulus onset asynchronies (SOAs) but deviants presented in the random condition elicited an MMN. We replicated a subset of the original conditions in a sample of 25 participants. Although we had changed some aspects of the original design we found frequentist and Bayesian statistical evidence in favor of ERP-differences in the predictable vs. the random condition in the MMN time window. In line with the original results deviants presented in the predictable condition did not elicit an MMN suggesting that the auditory system extracts regularly occurring patterns within fast-paced task-irrelevant acoustic input. However, sequential Bayes factor analysis showed a substantial between-participant variability in the random condition obscuring the presence of a reliable MMN. We discuss potential inter-individual differences in segregating fast-paced sound sequences into separate streams as an explanation for this phenomenon. We further discuss advantages and disadvantages of in-class replications in psychophysiological research.",
+        "affiliation": "Institut f\u00fcr Psychologie, Universit\u00e4t Kassel, Kassel, Germany.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institut f\u00fcr Psychologie, Universit\u00e4t Kassel, Kassel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Florian",
+              "fullName": "Scharf F",
+              "initials": "F",
+              "lastName": "Scharf"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Wilhelm-Wundt-Institut f\u00fcr Psychologie, Universit\u00e4t Leipzig, Leipzig, Germany. Electronic address: dagmar_mueller@uni-leipzig.de."
+                  }
+                ]
+              },
+              "firstName": "Dagmar",
+              "fullName": "M\u00fcller D",
+              "initials": "D",
+              "lastName": "M\u00fcller"
+            }
+          ]
+        },
+        "authorString": "Scharf F, M\u00fcller D.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-05",
+        "dateOfCreation": "2026-01-20",
+        "dateOfRevision": "2026-03-05",
+        "doi": "10.1016/j.ijpsycho.2026.113330",
+        "electronicPublicationDate": "2026-01-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-22",
+        "firstPublicationDate": "2026-01-18",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.ijpsycho.2026.113330"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41558583",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "journal": {
+            "essn": "1872-7697",
+            "isoabbreviation": "Int J Psychophysiol",
+            "issn": "0167-8760",
+            "medlineAbbreviation": "Int J Psychophysiol",
+            "nlmid": "8406214",
+            "title": "International journal of psychophysiology : official journal of the International Organization of Psychophysiology"
+          },
+          "journalIssueId": 4132523,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "221",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Prediction",
+            "Mismatch Negativity (Mmn)",
+            "Auditory Event-related Potential",
+            "In-class Replication",
+            "Sound Pattern Extraction"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Electroencephalography",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Acoustic Stimulation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Auditory Perception",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Reaction Time",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Contingent Negative Variation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Evoked Potentials, Auditory",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "113330",
+        "pmid": "41558583",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Predictable changes within fast-paced sound sequences do not elicit the mismatch negativity: A conceptual in-class replication study."
+      },
+      {
+        "abstractText": "Reproducibility is recognized as essential to scientific progress and integrity. Replication studies and large-scale replication projects, aiming to quantify different aspects of reproducibility, have become more common. Since no standardized approach to measuring reproducibility exists, a diverse set of metrics has emerged and a comprehensive overview is needed. We conducted a scoping review to identify large-scale replication projects that used metrics and methodological papers that proposed or discussed metrics. The project list was compiled by the authors. For the methodological papers, we searched Scopus, MedLine, PsycINFO and EconLit. Records were screened in duplicate against pre-defined inclusion criteria. Demographic information on included records and information on reproducibility metrics used, suggested or discussed was extracted. We identified 49 large-scale projects and 97 methodological papers and extracted 50 metrics. The metrics were characterized based on type (formulas and/or statistical models, frameworks, graphical representations, studies and questionnaires, algorithms), input required and appropriate application scenarios. Each metric addresses a distinct question. Our review provides a comprehensive resource in the form of a 'live', interactive table for future replication teams and meta-researchers, offering support in how to select the most appropriate metrics that are aligned with research questions and project goals.",
+        "affiliation": "Center for Reproducible Science, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5454-2508"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8927-3483"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1331-6683"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2212-1626"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2934-3010"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5871-997X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7531-4333"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8686-5325"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2779-320X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3635-3660"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4737-2349"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7531-4333"
+              },
+              "firstName": "Rachel",
+              "fullName": "Heyard R",
+              "initials": "R",
+              "lastName": "Heyard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2779-320X"
+              },
+              "firstName": "Samuel",
+              "fullName": "Pawel S",
+              "initials": "S",
+              "lastName": "Pawel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Political and Social Sciences, European University Institute, Fiesole, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5871-997X"
+              },
+              "firstName": "Joris",
+              "fullName": "Frese J",
+              "initials": "J",
+              "lastName": "Frese"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Bern, Bern, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5454-2508"
+              },
+              "firstName": "Bernhard",
+              "fullName": "Voelkl B",
+              "initials": "B",
+              "lastName": "Voelkl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Bern, Bern, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2934-3010"
+              },
+              "firstName": "Hanno",
+              "fullName": "W\u00fcrbel H",
+              "initials": "H",
+              "lastName": "W\u00fcrbel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Berlin Institute of Health at Charit\u00e9 QUEST Center for Responsible Research, Berlin, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4737-2349"
+              },
+              "firstName": "Sarah",
+              "fullName": "McCann S",
+              "initials": "S",
+              "lastName": "McCann"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, University of Zurich Institute of Epidemiology Biostatistics and Prevention, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8686-5325"
+              },
+              "firstName": "Leonhard",
+              "fullName": "Held L",
+              "initials": "L",
+              "lastName": "Held"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Departmentof Anesthesiology, Pain and Palliative Care, Radboud University Medical Center, Nijmegen, Gelderland, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3635-3660"
+              },
+              "firstName": "Kimberley E",
+              "fullName": "Wever KE",
+              "initials": "KE",
+              "lastName": "Wever"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology and Center for Translational, Neuro- and Behavioral Sciences, University Hospital Essen, Essen, Nordrhein-Westfalen, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1331-6683"
+              },
+              "firstName": "Helena",
+              "fullName": "Hartmann H",
+              "initials": "H",
+              "lastName": "Hartmann"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Research and Innovation Office, Torrens University Australia, Adelaide, South Australia, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2212-1626"
+              },
+              "firstName": "Louise",
+              "fullName": "Townsin L",
+              "initials": "L",
+              "lastName": "Townsin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Molecular Medicine Finland, University of Helsinki, Helsinki, Uusimaa, Finland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8927-3483"
+              },
+              "firstName": "Stephanie",
+              "fullName": "Zellers S",
+              "initials": "S",
+              "lastName": "Zellers"
+            }
+          ]
+        },
+        "authorString": "Heyard R, Pawel S, Frese J, Voelkl B, W\u00fcrbel H, McCann S, Held L, Wever KE, Hartmann H, Townsin L, Zellers S.",
+        "citedByCount": 1,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR946340",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-09-15",
+        "dateOfCreation": "2025-09-02",
+        "dateOfRevision": "2025-09-15",
+        "doi": "10.1098/rsos.242076",
+        "electronicPublicationDate": "2025-07-15",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-09-04",
+        "firstPublicationDate": "2025-07-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12395386"
+          ]
+        },
+        "fullTextReceivedDate": "2025-09-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1098/rsos.242076"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsos.242076"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12395386"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12395386?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "HORIZON EUROPE Framework Programme",
+              "orderIn": 0
+            },
+            {
+              "agency": "Deutsche Forschungsgemeinschaft",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40894102",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Jul",
+          "issue": "7",
+          "journal": {
+            "essn": "2054-5703",
+            "isoabbreviation": "R Soc Open Sci",
+            "issn": "2054-5703",
+            "medlineAbbreviation": "R Soc Open Sci",
+            "nlmid": "101647528",
+            "title": "Royal Society open science"
+          },
+          "journalIssueId": 3970515,
+          "monthOfPublication": 7,
+          "printPublicationDate": "2025-07-01",
+          "volume": "12",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Reproducibility",
+            "Generalizability",
+            "Replicability",
+            "Metrics",
+            "Translatability",
+            "Meta-research"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "242076",
+        "pmcid": "PMC12395386",
+        "pmid": "40894102",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "A scoping review on metrics to quantify reproducibility: a multitude of questions leads to a multitude of metrics."
+      },
+      {
+        "abstractText": "<p>Childhood maltreatment (CM) has long-lasting effects on physical and mental health with CM type specific effects being reported. Epigenetic processes, like deoxyribonucleic acid methylation (DNAm), might mediate this link, and CM types might be linked to differential alterations in DNAm. While a study by Cecil et al. (2016) suggests that different forms of CM share common but also exhibit distinct epigenetic signatures, it is unclear whether these results are generalizable to other high-risk samples. The aim of this preregistered study was to replicate the study of Cecil and colleagues (2016) in a sample of N = 116 previously out-of-home placed young adults (32% women, age mean = 26.38, SD = 3.49). Participants completed the Childhood Trauma Questionnaire - Short Form (CTQ-SF), DNA was extracted from whole blood and DNAm was assayed using the Illumina Infinium MethylationEPIC BeadChip Microarray. Using state-of the-art processing pipelines, we failed to replicate the original finding of common and shared epigenetic signatures by CM type. When using a pipeline that was closely matched to the original study, we could replicate that DNAm of cg07032930 was linked to emotional neglect, but in the reverse direction as in the original report. Overall, replication rates per CM subtype were only modest. These findings highlight challenges in independently replicating reported epigenetic associations in high-risk samples and underscore the importance of replication attempts in the field of behavioral epigenetics. Further research is needed to clarify the robustness and specificity of DNAm signatures linked to distinct CM types.</p>",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0856-1342"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1655-5479"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3507-1883"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7343-880X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1655-5479"
+              },
+              "firstName": "Maria",
+              "fullName": "Meier M",
+              "initials": "M",
+              "lastName": "Meier"
+            },
+            {
+              "firstName": "Laura",
+              "fullName": "Gurri L",
+              "initials": "L",
+              "lastName": "Gurri"
+            },
+            {
+              "firstName": "Katharina",
+              "fullName": "Beck K",
+              "initials": "K",
+              "lastName": "Beck"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7343-880X"
+              },
+              "firstName": "Delfine",
+              "fullName": "d'Huart D",
+              "initials": "D",
+              "lastName": "d'Huart"
+            },
+            {
+              "firstName": "Philippe",
+              "fullName": "Jawinski P",
+              "initials": "P",
+              "lastName": "Jawinski"
+            },
+            {
+              "firstName": "Cyril",
+              "fullName": "Boonmann C",
+              "initials": "C",
+              "lastName": "Boonmann"
+            },
+            {
+              "firstName": "Christina",
+              "fullName": "Stadler C",
+              "initials": "C",
+              "lastName": "Stadler"
+            },
+            {
+              "firstName": "Marc",
+              "fullName": "Schmid M",
+              "initials": "M",
+              "lastName": "Schmid"
+            },
+            {
+              "firstName": "David",
+              "fullName": "B\u00fcrgin D",
+              "initials": "D",
+              "lastName": "B\u00fcrgin"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3507-1883"
+              },
+              "firstName": "Eva",
+              "fullName": "Unternaehrer E",
+              "initials": "E",
+              "lastName": "Unternaehrer"
+            }
+          ]
+        },
+        "authorString": "Meier M, Gurri L, Beck K, d'Huart D, Jawinski P, Boonmann C, Stadler C, Schmid M, B\u00fcrgin D, Unternaehrer E.",
+        "bookOrReportDetails": {
+          "publisher": "PsyArXiv",
+          "yearOfPublication": 2025
+        },
+        "citedByCount": 0,
+        "dateOfCreation": "2025-08-18",
+        "doi": "10.31234/osf.io/9j2v7_v1",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-08-21",
+        "firstPublicationDate": "2025-08-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.31234/osf.io/9j2v7_v1"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.31234/osf.io/9j2v7_v1"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1067631",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pubTypeList": {
+          "pubType": [
+            "Preprint"
+          ]
+        },
+        "pubYear": "2025",
+        "source": "PPR",
+        "title": "Epigenetic signatures of different types of childhood maltreatment in a high-risk sample: a preregistered replication study"
+      },
+      {
+        "abstractText": "This review reflects on the lessons and limitations of the first large, collaborative replication project in sports and exercise science. We discuss the challenges and barriers faced, while also exploring the broader contribution of replication to the field. This project faced many practical challenges when preparing studies for replication, specifically the poor reporting of statistical information, the availability of original raw data and the prioritisation of feasibility at the risk of some bias. However, we believe these issues reflect the larger sports and exercise science field. Therefore, our research culture needs to change to minimise the active engagement in behaviours that reduce reproducibility and replicability, and enable collective evaluation of research in line with the foundations of scientific rigour. In addition, discourse with the original study authors was a challenging process as many were unwilling to engage and this indicates a problematic perception of replication. We also reflect on the contribution of replication to theory development in sports and exercise science so that this review can serve as a valuable resource for understanding replication and can aid future replication efforts.",
+        "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Road, Dublin 9, Ireland. jennymurphy1@outlook.ie.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8624-3828"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4359-8132"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4541-6283"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Road, Dublin 9, Ireland. jennymurphy1@outlook.ie."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8624-3828"
+              },
+              "firstName": "Jennifer",
+              "fullName": "Murphy J",
+              "initials": "J",
+              "lastName": "Murphy"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Community Health Innovation, University of Arkansas for Medical Sciences Northwest, Springdale, AR, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4541-6283"
+              },
+              "firstName": "Aaron R",
+              "fullName": "Caldwell AR",
+              "initials": "AR",
+              "lastName": "Caldwell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Road, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4359-8132"
+              },
+              "firstName": "Joe P",
+              "fullName": "Warne JP",
+              "initials": "JP",
+              "lastName": "Warne"
+            }
+          ]
+        },
+        "authorString": "Murphy J, Caldwell AR, Warne JP.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-10-10",
+        "dateOfCreation": "2025-06-16",
+        "dateOfRevision": "2026-04-07",
+        "doi": "10.1007/s40279-025-02200-x",
+        "electronicPublicationDate": "2025-06-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-06-16",
+        "firstPublicationDate": "2025-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12513977"
+          ]
+        },
+        "fullTextReceivedDate": "2025-10-13",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s40279-025-02200-x"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12513977"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12513977?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Irish Research Council",
+              "grantId": "GOIPG/2020/1155",
+              "orderIn": 0
+            },
+            {
+              "agency": "Technological University Dublin",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40522611",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "10",
+          "journal": {
+            "essn": "1179-2035",
+            "isoabbreviation": "Sports Med",
+            "issn": "0112-1642",
+            "medlineAbbreviation": "Sports Med",
+            "nlmid": "8412297",
+            "title": "Sports medicine (Auckland, N.Z.)"
+          },
+          "journalIssueId": 4030888,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "55",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sports Medicine",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Biomedical Research",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Research Design",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Sports",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2365-2374",
+        "pmcid": "PMC12513977",
+        "pmid": "40522611",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Reflections on Conducting a Large Replication Project in Sports and Exercise Science."
+      },
+      {
+        "abstractText": "Recent large-scale replication projects (RPs) have estimated concerningly low reproducibility rates. Further, they reported substantial degrees of shrinkage of effect size, where the replication effect size was found to be, on average, much smaller than the original effect size. Within these RPs, the included original-replication study-pairs can vary with respect to aspects of study design, outcome measures, and descriptive features of both original and replication study population and study team. This often results in between-study-pair heterogeneity, i.e., variation in effect size differences across study-pairs that goes beyond expected statistical variation. When broader claims about the reproducibility of an entire field are based on such heterogeneous data, it becomes imperative to conduct a rigorous analysis of the amount and sources of shrinkage and heterogeneity within and between included study-pairs. Methodology from the meta-analysis literature provides an approach for quantifying the heterogeneity present in RPs with an additive or multiplicative parameter. Meta-regression methodology further allows for an investigation into the sources of shrinkage and heterogeneity. We propose the use of location-scale meta-regressions as a means to directly relate the identified characteristics with shrinkage (represented by the location) and heterogeneity (represented by the scale). This provides valuable insights into drivers and factors associated with high or low reproducibility rates and therefore contextualises results of RPs. The proposed methodology is illustrated using publicly available data from the Replication Project Psychology and the Replication Project Experimental Economics. All analysis scripts and data are available online.",
+        "affiliation": "Center for Reproducible Science, Epidemiology, Biostatistic and Prevention Institute, University of Zurich, Zurich, Switzerland.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7531-4333"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, Epidemiology, Biostatistic and Prevention Institute, University of Zurich, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7531-4333"
+              },
+              "firstName": "Rachel",
+              "fullName": "Heyard R",
+              "initials": "R",
+              "lastName": "Heyard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Reproducible Science, Epidemiology, Biostatistic and Prevention Institute, University of Zurich, Zurich, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Leonhard",
+              "fullName": "Held L",
+              "initials": "L",
+              "lastName": "Held"
+            }
+          ]
+        },
+        "authorString": "Heyard R, Held L.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR982959",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-08-01",
+        "dateOfCreation": "2025-08-01",
+        "dateOfRevision": "2025-08-06",
+        "doi": "10.1371/journal.pone.0327799",
+        "electronicPublicationDate": "2025-08-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-08-04",
+        "firstPublicationDate": "2025-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12316214"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-02",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0327799"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12316214"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12316214?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40748992",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "issue": "8",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 3987016,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "20",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Regression Analysis",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Research Design",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Meta-Analysis as Topic",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0327799",
+        "pmcid": "PMC12316214",
+        "pmid": "40748992",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects."
+      },
+      {
+        "abstractText": "Studies examining the effect of mania on cognition in Bipolar Disorders (BD) have yielded contradictory results. Koenders and collaborators showed in 2014 that, among 189 adults with BD, adults with subclinical manic symptoms perform a task measuring divided attention significantly better than adults with less or more severe manic symptoms. We aimed to replicate this finding in a larger sample. We included adults from the FACE-BD cohort with a BD diagnosis based on the DSM-IV-R criteria. We excluded adults with a current characterized depressive or manic episode or with other possible sources of cognitive impairment. We assessed the associations between the YMRS score and cognitive functions involved in divided attention using linear regression models, adjusting for the same covariates as the original study. We found no significant linear or quadratic associations between the YMRS total score and attention, working memory, and executive performance in the bivariable models nor after adjusting for covariates in 2,739 adults with BD. We were unable to replicate the findings reported by Koenders and collaborators. The low variance and mean severity of manic symptoms in our sample may partly explain the absence of significant associations. Our results suggest that subclinical hypomanic symptoms neither enhance nor impair cognitive performance in adults with BD, calling into question the benefit of residual hypomanic symptoms on patients' cognitive functioning.",
+        "affiliation": "Fondation FondaMental, Cr\u00e9teil, France. nathan.vidal@ens-paris-saclay.fr.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5473-3697"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7438-8990"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8983-0315"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3784-7817"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4091-518X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5377-1488"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6519-8586"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9678-5062"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0321-4189"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0890-6715"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-1396-470X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France. nathan.vidal@ens-paris-saclay.fr."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France. nathan.vidal@ens-paris-saclay.fr."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France. nathan.vidal@ens-paris-saclay.fr."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-1396-470X"
+              },
+              "firstName": "Nathan",
+              "fullName": "Vidal N",
+              "initials": "N",
+              "lastName": "Vidal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3784-7817"
+              },
+              "firstName": "Eric",
+              "fullName": "Brunet-Gouet E",
+              "initials": "E",
+              "lastName": "Brunet-Gouet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0890-6715"
+              },
+              "firstName": "Sol\u00e8ne",
+              "fullName": "Frileux S",
+              "initials": "S",
+              "lastName": "Frileux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "CHU Montpellier, Montpellier, France."
+                  },
+                  {
+                    "affiliation": "IGF, University of Montpellier, CNRS, INSERM, Montpellier, France."
+                  }
+                ]
+              },
+              "firstName": "Raoul",
+              "fullName": "Belzeaux R",
+              "initials": "R",
+              "lastName": "Belzeaux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "IGF, University of Montpellier, CNRS, INSERM, Montpellier, France."
+                  },
+                  {
+                    "affiliation": "Department of Emergency Psychiatry and Acute Care, Lapeyronie Hospital, CHU Montpellier, Montpellier, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6519-8586"
+              },
+              "firstName": "Philippe",
+              "fullName": "Courtet P",
+              "initials": "P",
+              "lastName": "Courtet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "INSERM U1028, CNRS UMR5292, University Lyon 1, Villeurbanne, France."
+                  },
+                  {
+                    "affiliation": "Lyon Neuroscience Research Center, Psychiatric Disorders: From Resistance to Response Team, Lyon, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8983-0315"
+              },
+              "firstName": "Thierry",
+              "fullName": "D'Amato T",
+              "initials": "T",
+              "lastName": "D'Amato"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Facult\u00e9 de M\u00e9decine, Universit\u00e9 de Paris Inserm UMR1266, Sorbonne Paris Cit\u00e9, Paris, France."
+                  },
+                  {
+                    "affiliation": "AP-HP, Groupe Hospitalo-Universitaire AP-HP Nord, DMU ESPRIT, Service de Psychiatrie et Addictologie, H\u00f4pital Louis Mourier, Colombes, France."
+                  }
+                ]
+              },
+              "firstName": "Caroline",
+              "fullName": "Dubertret C",
+              "initials": "C",
+              "lastName": "Dubertret"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Paris Cit\u00e9, INSERM, Optimisation Th\u00e9rapeutique en Neuropharmacologie, OPTEN U1144, 75006, Paris, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement de Psychiatrie et de M\u00e9decine Addictologique, H\u00f4pitaux Lariboisi\u00e8re-Fernand Widal, GHU APHP.Nord - Universit\u00e9 Paris Cit\u00e9, F-75010, Paris, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5377-1488"
+              },
+              "firstName": "Bruno",
+              "fullName": "Etain B",
+              "initials": "B",
+              "lastName": "Etain"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Marie et Louis Pasteur, UMR INSERM 1322 LINC, Besan\u00e7on, France."
+                  },
+                  {
+                    "affiliation": "Service de Psychiatrie de l'adulte, CIC-1431 INSERM, CHU de Besan\u00e7on, F-25000, Besan\u00e7on, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4091-518X"
+              },
+              "firstName": "Emmanuel",
+              "fullName": "Haffen E",
+              "initials": "E",
+              "lastName": "Haffen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Sorbonne Paris Nord, 93017, Bobigny Cedex, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement de Recherche Clinique, P\u00f4le Universitaire 03 G03, EPS Ville Evrard, Neuilly sur Marne, France."
+                  }
+                ]
+              },
+              "firstName": "Dominique",
+              "fullName": "Januel D",
+              "initials": "D",
+              "lastName": "Januel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Paris Est Cr\u00e9teil (UPEC), Inserm U 955, Neuropsychiatrie Translationnelle, DMU IMPACT (AP-HP), D\u00e9partement de Psychiatrie, Fondation FondaMental, Cr\u00e9teil, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5473-3697"
+              },
+              "firstName": "Marion",
+              "fullName": "Leboyer M",
+              "initials": "M",
+              "lastName": "Leboyer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "P\u00f4le de Psychiatrie, Assistance Publique H\u00f4pitaux de Marseille, Marseille, France."
+                  },
+                  {
+                    "affiliation": "NT-UMR7289, CNRS Aix-Marseille Universit\u00e9, Marseille, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9678-5062"
+              },
+              "firstName": "Antoine",
+              "fullName": "Lefrere A",
+              "initials": "A",
+              "lastName": "Lefrere"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier et Universitaire, D\u00e9partement de Psychiatrie, Universit\u00e9 d'Auvergne, EA 7280, Clermont-Ferrand, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7438-8990"
+              },
+              "firstName": "Pierre-Michel",
+              "fullName": "Llorca PM",
+              "initials": "PM",
+              "lastName": "Llorca"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 Paris Cit\u00e9, INSERM, Optimisation Th\u00e9rapeutique en Neuropharmacologie, OPTEN U1144, 75006, Paris, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement de Psychiatrie et de M\u00e9decine Addictologique, H\u00f4pitaux Lariboisi\u00e8re-Fernand Widal, GHU APHP.Nord - Universit\u00e9 Paris Cit\u00e9, F-75010, Paris, France."
+                  }
+                ]
+              },
+              "firstName": "Emeline",
+              "fullName": "Marlinge E",
+              "initials": "E",
+              "lastName": "Marlinge"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "P\u00f4le de Psychiatrie, Centre Hospitalier Princesse Grace, Monaco, Monaco."
+                  }
+                ]
+              },
+              "firstName": "Paula",
+              "fullName": "Martinez P",
+              "initials": "P",
+              "lastName": "Martinez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier Charles Perrens, P\u00f4le de Psychiatrie G\u00e9n\u00e9rale et Universitaire, Bordeaux, France."
+                  },
+                  {
+                    "affiliation": "Univ. Bordeaux, LabPsy, UR 4139, F-33000, Bordeaux, France."
+                  }
+                ]
+              },
+              "firstName": "Katia",
+              "fullName": "M'Bailara K",
+              "initials": "K",
+              "lastName": "M'Bailara"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "IGF, University of Montpellier, CNRS, INSERM, Montpellier, France."
+                  },
+                  {
+                    "affiliation": "Department of Emergency Psychiatry and Acute Care, Lapeyronie Hospital, CHU Montpellier, Montpellier, France."
+                  }
+                ]
+              },
+              "firstName": "Emilie",
+              "fullName": "Oli\u00e9 E",
+              "initials": "E",
+              "lastName": "Oli\u00e9"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Univ. Grenoble Alpes, Inserm, U1216, CHU Grenoble Alpes, Grenoble Institut Neurosciences, Grenoble, France."
+                  }
+                ]
+              },
+              "firstName": "Mircea",
+              "fullName": "Polosan M",
+              "initials": "M",
+              "lastName": "Polosan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Universit\u00e9 de Lorraine, Centre Psychoth\u00e9rapique de Nancy, Inserm U1254, Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Raymund",
+              "fullName": "Schwan R",
+              "initials": "R",
+              "lastName": "Schwan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "Service Hospitalo-Universitaire de Psychiatrie G\u00e9n\u00e9rale et de R\u00e9habilitation Psycho Sociale 29G01 et 29G02, CHRU de Brest, H\u00f4pital de Bohars, Brest, France."
+                  }
+                ]
+              },
+              "firstName": "Michel",
+              "fullName": "Walter M",
+              "initials": "M",
+              "lastName": "Walter"
+            },
+            {
+              "collectiveName": "FACE-BD (FondaMental Academic Centers of Expertise for Bipolar Disorders) group*"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  }
+                ]
+              },
+              "firstName": "Christine",
+              "fullName": "Passerieux C",
+              "initials": "C",
+              "lastName": "Passerieux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Fondation FondaMental, Cr\u00e9teil, France."
+                  },
+                  {
+                    "affiliation": "DisAP, MOODS Team, INSERM UMR1018, CESP, Universit\u00e9 de Versailles Saint-Quentin-En-Yvelines - Universit\u00e9 Paris-Saclay, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Centre Hospitalier de Versailles, Service Universitaire de Psychiatrie d'Adultes et d'Addictologie, Le Chesnay, France."
+                  },
+                  {
+                    "affiliation": "Service de Psychiatrie du Secteur 78G18, Centre Hospitalier de Plaisir, Plaisir, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0321-4189"
+              },
+              "firstName": "Paul",
+              "fullName": "Roux P",
+              "initials": "P",
+              "lastName": "Roux"
+            }
+          ]
+        },
+        "authorString": "Vidal N, Brunet-Gouet E, Frileux S, Belzeaux R, Courtet P, D'Amato T, Dubertret C, Etain B, Haffen E, Januel D, Leboyer M, Lefrere A, Llorca PM, Marlinge E, Martinez P, M'Bailara K, Oli\u00e9 E, Polosan M, Schwan R, Walter M, FACE-BD (FondaMental Academic Centers of Expertise for Bipolar Disorders) group*, Passerieux C, Roux P.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-15",
+        "dateOfCreation": "2026-04-15",
+        "dateOfRevision": "2026-04-18",
+        "doi": "10.1186/s40345-026-00420-2",
+        "electronicPublicationDate": "2026-04-15",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-16",
+        "firstPublicationDate": "2026-04-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13083468"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-20",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s40345-026-00420-2"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13083468"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13083468?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41984351",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "investigatorList": {
+          "investigator": [
+            {
+              "firstName": "E",
+              "fullName": "Oli\u00e9 E",
+              "initials": "E",
+              "lastName": "Oli\u00e9"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Leboyer M",
+              "initials": "M",
+              "lastName": "Leboyer"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Haffen E",
+              "initials": "E",
+              "lastName": "Haffen"
+            },
+            {
+              "firstName": "P M",
+              "fullName": "Llorca PM",
+              "initials": "PM",
+              "lastName": "Llorca"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Barteau V",
+              "initials": "V",
+              "lastName": "Barteau"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Bensalem S",
+              "initials": "S",
+              "lastName": "Bensalem"
+            },
+            {
+              "firstName": "O",
+              "fullName": "Godin O",
+              "initials": "O",
+              "lastName": "Godin"
+            },
+            {
+              "firstName": "H",
+              "fullName": "Laouamri H",
+              "initials": "H",
+              "lastName": "Laouamri"
+            },
+            {
+              "firstName": "K",
+              "fullName": "Souryis K",
+              "initials": "K",
+              "lastName": "Souryis"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Hotier S",
+              "initials": "S",
+              "lastName": "Hotier"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Pelletier A",
+              "initials": "A",
+              "lastName": "Pelletier"
+            },
+            {
+              "firstName": "N",
+              "fullName": "Drancourt N",
+              "initials": "N",
+              "lastName": "Drancourt"
+            },
+            {
+              "firstName": "J P",
+              "fullName": "Sanchez JP",
+              "initials": "JP",
+              "lastName": "Sanchez"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Saliou E",
+              "initials": "E",
+              "lastName": "Saliou"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Hebbache C",
+              "initials": "C",
+              "lastName": "Hebbache"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Petrucci J",
+              "initials": "J",
+              "lastName": "Petrucci"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Willaume L",
+              "initials": "L",
+              "lastName": "Willaume"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Bourdin E",
+              "initials": "E",
+              "lastName": "Bourdin"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Bellivier F",
+              "initials": "F",
+              "lastName": "Bellivier"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Carminati M",
+              "initials": "M",
+              "lastName": "Carminati"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Marlinge E",
+              "initials": "E",
+              "lastName": "Marlinge"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Meheust J",
+              "initials": "J",
+              "lastName": "Meheust"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Hennion V",
+              "initials": "V",
+              "lastName": "Hennion"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Richard A",
+              "initials": "A",
+              "lastName": "Richard"
+            },
+            {
+              "firstName": "B",
+              "fullName": "Aouizerate B",
+              "initials": "B",
+              "lastName": "Aouizerate"
+            },
+            {
+              "firstName": "N",
+              "fullName": "Da Ros N",
+              "initials": "N",
+              "lastName": "Da Ros"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Desage A",
+              "initials": "A",
+              "lastName": "Desage"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Elkael C",
+              "initials": "C",
+              "lastName": "Elkael"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Gard S",
+              "initials": "S",
+              "lastName": "Gard"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Hoorelbeke F",
+              "initials": "F",
+              "lastName": "Hoorelbeke"
+            },
+            {
+              "firstName": "K",
+              "fullName": "M'bailara K",
+              "initials": "K",
+              "lastName": "M'bailara"
+            },
+            {
+              "firstName": "I",
+              "fullName": "Minois I",
+              "initials": "I",
+              "lastName": "Minois"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Sportich J",
+              "initials": "J",
+              "lastName": "Sportich"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Boukhobza L",
+              "initials": "L",
+              "lastName": "Boukhobza"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Benramdane M",
+              "initials": "M",
+              "lastName": "Benramdane"
+            },
+            {
+              "firstName": "P",
+              "fullName": "Courtet P",
+              "initials": "P",
+              "lastName": "Courtet"
+            },
+            {
+              "firstName": "B",
+              "fullName": "Deffinis B",
+              "initials": "B",
+              "lastName": "Deffinis"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Denat S",
+              "initials": "S",
+              "lastName": "Denat"
+            },
+            {
+              "firstName": "D",
+              "fullName": "Ducasse D",
+              "initials": "D",
+              "lastName": "Ducasse"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Gachet M",
+              "initials": "M",
+              "lastName": "Gachet"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Moli\u00e8re F",
+              "initials": "F",
+              "lastName": "Moli\u00e8re"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Nass L",
+              "initials": "L",
+              "lastName": "Nass"
+            },
+            {
+              "firstName": "G",
+              "fullName": "Tarquini G",
+              "initials": "G",
+              "lastName": "Tarquini"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Lefrere A",
+              "initials": "A",
+              "lastName": "Lefrere"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Cermolacce M",
+              "initials": "M",
+              "lastName": "Cermolacce"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Moreau E",
+              "initials": "E",
+              "lastName": "Moreau"
+            },
+            {
+              "firstName": "F",
+              "fullName": "Groppi F",
+              "initials": "F",
+              "lastName": "Groppi"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Lescalier L",
+              "initials": "L",
+              "lastName": "Lescalier"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Pastol J",
+              "initials": "J",
+              "lastName": "Pastol"
+            },
+            {
+              "firstName": "H",
+              "fullName": "Polomeni H",
+              "initials": "H",
+              "lastName": "Polomeni"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Baurberg J",
+              "initials": "J",
+              "lastName": "Baurberg"
+            },
+            {
+              "firstName": "R",
+              "fullName": "Cohen R",
+              "initials": "R",
+              "lastName": "Cohen"
+            },
+            {
+              "firstName": "G",
+              "fullName": "Gross G",
+              "initials": "G",
+              "lastName": "Gross"
+            },
+            {
+              "firstName": "R",
+              "fullName": "Schwan R",
+              "initials": "R",
+              "lastName": "Schwan"
+            },
+            {
+              "firstName": "T",
+              "fullName": "Schwitzer T",
+              "initials": "T",
+              "lastName": "Schwitzer"
+            },
+            {
+              "firstName": "O",
+              "fullName": "Wajsbrot-Elgrabli O",
+              "initials": "O",
+              "lastName": "Wajsbrot-Elgrabli"
+            },
+            {
+              "firstName": "T",
+              "fullName": "Bougerol T",
+              "initials": "T",
+              "lastName": "Bougerol"
+            },
+            {
+              "firstName": "B",
+              "fullName": "Fredembach B",
+              "initials": "B",
+              "lastName": "Fredembach"
+            },
+            {
+              "firstName": "Q",
+              "fullName": "Denoual Q",
+              "initials": "Q",
+              "lastName": "Denoual"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Bertrand A",
+              "initials": "A",
+              "lastName": "Bertrand"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Pouchon A",
+              "initials": "A",
+              "lastName": "Pouchon"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Polosan M",
+              "initials": "M",
+              "lastName": "Polosan"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Brehon L",
+              "initials": "L",
+              "lastName": "Brehon"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Durand L",
+              "initials": "L",
+              "lastName": "Durand"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Feuga V",
+              "initials": "V",
+              "lastName": "Feuga"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Frileux S",
+              "initials": "S",
+              "lastName": "Frileux"
+            },
+            {
+              "firstName": "P",
+              "fullName": "Roux P",
+              "initials": "P",
+              "lastName": "Roux"
+            },
+            {
+              "firstName": "E",
+              "fullName": "Vaux E",
+              "initials": "E",
+              "lastName": "Vaux"
+            },
+            {
+              "firstName": "V",
+              "fullName": "Aubin V",
+              "initials": "V",
+              "lastName": "Aubin"
+            },
+            {
+              "firstName": "I",
+              "fullName": "Cussac I",
+              "initials": "I",
+              "lastName": "Cussac"
+            },
+            {
+              "firstName": "M A",
+              "fullName": "Dupont MA",
+              "initials": "MA",
+              "lastName": "Dupont"
+            },
+            {
+              "firstName": "J",
+              "fullName": "Loftus J",
+              "initials": "J",
+              "lastName": "Loftus"
+            },
+            {
+              "firstName": "I",
+              "fullName": "Medecin I",
+              "initials": "I",
+              "lastName": "Medecin"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Dubertret C",
+              "initials": "C",
+              "lastName": "Dubertret"
+            },
+            {
+              "firstName": "N",
+              "fullName": "Mazer N",
+              "initials": "N",
+              "lastName": "Mazer"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Portalier C",
+              "initials": "C",
+              "lastName": "Portalier"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Scognamiglio C",
+              "initials": "C",
+              "lastName": "Scognamiglio"
+            },
+            {
+              "firstName": "A",
+              "fullName": "Bing A",
+              "initials": "A",
+              "lastName": "Bing"
+            },
+            {
+              "firstName": "P",
+              "fullName": "Laurent P",
+              "initials": "P",
+              "lastName": "Laurent"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Samalin L",
+              "initials": "L",
+              "lastName": "Samalin"
+            },
+            {
+              "firstName": "L",
+              "fullName": "Foures L",
+              "initials": "L",
+              "lastName": "Foures"
+            },
+            {
+              "firstName": "D",
+              "fullName": "Lacelle D",
+              "initials": "D",
+              "lastName": "Lacelle"
+            },
+            {
+              "firstName": "S",
+              "fullName": "Pires S",
+              "initials": "S",
+              "lastName": "Pires"
+            },
+            {
+              "firstName": "C",
+              "fullName": "Doriat C",
+              "initials": "C",
+              "lastName": "Doriat"
+            },
+            {
+              "firstName": "O",
+              "fullName": "Blanc O",
+              "initials": "O",
+              "lastName": "Blanc"
+            },
+            {
+              "firstName": "D",
+              "fullName": "Bennabi D",
+              "initials": "D",
+              "lastName": "Bennabi"
+            },
+            {
+              "firstName": "M",
+              "fullName": "Nicolier M",
+              "initials": "M",
+              "lastName": "Nicolier"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "1",
+          "journal": {
+            "essn": "2194-7511",
+            "isoabbreviation": "Int J Bipolar Disord",
+            "issn": "2194-7511",
+            "medlineAbbreviation": "Int J Bipolar Disord",
+            "nlmid": "101622983",
+            "title": "International journal of bipolar disorders"
+          },
+          "journalIssueId": 4180005,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "14",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "14",
+        "pmcid": "PMC13083468",
+        "pmid": "41984351",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Letter"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Examining the associations between manic symptoms and cognitive performance in bipolar disorders: evidence from a cross-sectional replication study in the FACE-BD cohort."
+      },
+      {
+        "abstractText": "Although motor imagery activates higher-order motor-related areas, the role of the primary motor cortex (M1) in motor imagery remains unclear. This study aimed to investigate whether motor imagery recruits a neural representation of fingers similar to that of motor execution in the hand M1. Ten healthy right-handed adults executed and kinesthetically imagined tapping using one of four fingers. Using functional magnetic resonance imaging with multi-voxel pattern analysis, we trained the decoder to classify which finger the participants were moving using brain activation during motor execution and tested whether it could predict which finger the participants were imaging to move during motor imagery (cross-classification). We also performed the classification in the reverse direction. The average accuracy of these cross-classifications (mean = 32.71%, SD = 8.31) was significantly higher than chance in the left hemisphere hand M1 (hand-M1). Analysis of the representational geometry showed that the distance of neural representations for the same fingers was statistically shorter than that for different fingers between motor execution and imagery. Furthermore, we conducted a replication study with 14 participants and found results similar to those of the original study (mean cross-classification accuracy = 37.5%, SD = 7.18). Our results suggest that the neural representation of kinesthetic motor imagery is partially similar, but not equivalent, to that of motor execution in the contralateral hand M1.",
+        "affiliation": "Department of Psychology, Graduate School of Humanities and Human Sciences, Hokkaido University, Sapporo, Japan.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1521-2351"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-6297-6775"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Graduate School of Humanities and Human Sciences, Hokkaido University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-6297-6775"
+              },
+              "firstName": "Fumihito",
+              "fullName": "Imai F",
+              "initials": "F",
+              "lastName": "Imai"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Neuroscience, Department of Physiology, School of Medicine, Sapporo Medical University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1521-2351"
+              },
+              "firstName": "Jun",
+              "fullName": "Shinozaki J",
+              "initials": "J",
+              "lastName": "Shinozaki"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Neuroscience, Department of Physiology, School of Medicine, Sapporo Medical University, Sapporo, Japan."
+                  },
+                  {
+                    "affiliation": "Department of Occupational Therapy, School of Health Sciences, Sapporo Medical University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hidekazu",
+              "fullName": "Saito H",
+              "initials": "H",
+              "lastName": "Saito"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Radioisotope Research, Biomedical Research, Education and Instrumentation Center, School of Medicine, Sapporo Medical University, Sapporo, Japan."
+                  },
+                  {
+                    "affiliation": "Division of Radiology and Nuclear Medicine, Sapporo Medical University Hospital, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hiroshi",
+              "fullName": "Nagahama H",
+              "initials": "H",
+              "lastName": "Nagahama"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Radiology and Nuclear Medicine, Sapporo Medical University Hospital, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Yuki",
+              "fullName": "Sakurai Y",
+              "initials": "Y",
+              "lastName": "Sakurai"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychology, Graduate School of Humanities and Human Sciences, Hokkaido University, Sapporo, Japan."
+                  }
+                ]
+              },
+              "firstName": "Kenji",
+              "fullName": "Ogawa K",
+              "initials": "K",
+              "lastName": "Ogawa"
+            }
+          ]
+        },
+        "authorString": "Imai F, Shinozaki J, Saito H, Nagahama H, Sakurai Y, Ogawa K.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-02-20",
+        "dateOfCreation": "2026-02-20",
+        "dateOfRevision": "2026-02-20",
+        "doi": "10.1162/imag.a.1141",
+        "electronicPublicationDate": "2026-02-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-21",
+        "firstPublicationDate": "2026-02-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12915000"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-19",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1162/IMAG.a.1141"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12915000"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12915000?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41717384",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "2837-6056",
+            "isoabbreviation": "Imaging Neurosci (Camb)",
+            "issn": "2837-6056",
+            "medlineAbbreviation": "Imaging Neurosci (Camb)",
+            "nlmid": "9918663686606676",
+            "title": "Imaging neuroscience (Cambridge, Mass.)"
+          },
+          "journalIssueId": 4088095,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "4",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Functional magnetic resonance imaging (fMRI)",
+            "Primary Motor Cortex (M1)",
+            "Kinesthetic Motor Imagery",
+            "Multi-voxel Pattern Analysis (Mvpa)"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "IMAG.a.1141",
+        "pmcid": "PMC12915000",
+        "pmid": "41717384",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Shared neural representation between motor execution and kinesthetic imagery in the primary motor cortex."
+      },
+      {
+        "abstractText": "Thomas and colleagues found in 2022 that the observation of saliva-sharing between individuals serves as an indicator of relationship thickness for children, toddlers and infants. Our study sought to replicate their crucial experiment (2B), which was conducted online and reported that 8.5- to 10-month-old infants anticipated that a crying individual would be more likely to be comforted by a person who had been observed to share saliva with her than another person who simply had played with her. With the exception of changing the testing environment from online to laboratory, and using an eye-tracker supplemented by manual video coding, we closely followed the methodology of the original study. Our replication resulted in partial success: we replicated looking-time preference for the saliva-sharer but did not replicate the tendency to look first to the saliva-sharer upon observing the puppet's distress. These findings confirm that infants rely on certain behavioural cues for mapping social relationships among third-party individuals.",
+        "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3236-4787"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7044-3056"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-2761-6222"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria."
+                  },
+                  {
+                    "affiliation": "Maastricht University, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-2761-6222"
+              },
+              "firstName": "Beyza Gokcen",
+              "fullName": "Ciftci BG",
+              "initials": "BG",
+              "lastName": "Ciftci"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3236-4787"
+              },
+              "firstName": "Jonathan Frank",
+              "fullName": "Kominsky JF",
+              "initials": "JF",
+              "lastName": "Kominsky"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cognitive Science, Central European University, Wien, Austria."
+                  },
+                  {
+                    "affiliation": "School of Psychological Sciences, Birkbeck University of London, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7044-3056"
+              },
+              "firstName": "Gergely",
+              "fullName": "Csibra G",
+              "initials": "G",
+              "lastName": "Csibra"
+            }
+          ]
+        },
+        "authorString": "Ciftci BG, Kominsky JF, Csibra G.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "recommended_reviews"
+          ]
+        },
+        "dateOfCreation": "2025-04-10",
+        "dateOfRevision": "2025-04-11",
+        "doi": "10.1098/rsos.240229",
+        "electronicPublicationDate": "2025-04-09",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-04-10",
+        "firstPublicationDate": "2025-04-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11978455"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-27",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1098/rsos.240229"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1098/rsos.240229"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11978455"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11978455?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Central European University",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40206854",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Apr",
+          "issue": "4",
+          "journal": {
+            "essn": "2054-5703",
+            "isoabbreviation": "R Soc Open Sci",
+            "issn": "2054-5703",
+            "medlineAbbreviation": "R Soc Open Sci",
+            "nlmid": "101647528",
+            "title": "Royal Society open science"
+          },
+          "journalIssueId": 3923650,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2025-04-01",
+          "volume": "12",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Replication",
+            "Social Evaluation",
+            "Infant Cognition",
+            "Saliva-sharing"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "240229",
+        "pmcid": "PMC11978455",
+        "pmid": "40206854",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Do infants use cues of saliva-sharing to infer close relationships? A replication of Thomas &lt;i&gt;et al&lt;/i&gt;. (2022)."
+      },
+      {
+        "abstractText": "<h4>Background</h4>The replicability of sports and exercise research has not been assessed previously despite concerns about scientific practices within the field.<h4>Aim</h4>This study aims to provide an initial estimate of the replicability of applied sports and exercise science research published in quartile 1 journals (SCImago journal ranking for 2019 in the\u00a0Sports\u00a0Science subject category; www.scimagojr.com ) between 2016 and 2021.<h4>Methods</h4>A formalised selection protocol for this replication project was previously published. Voluntary collaborators were recruited, and studies were allocated in a stratified and randomised manner on the basis of equipment and expertise. Original authors were contacted to provide deidentified raw data, to review preregistrations and to provide methodological clarifications. A multiple inferential strategy was employed to analyse the replication data. The same analysis (i.e. F test or t test) was used to determine whether the replication effect size was statistically significant and in the same direction as the original effect size. Z-tests were used to determine whether the original and replication effect size estimates were compatible or significantly different in magnitude.<h4>Results</h4>In total, 25 replication studies were included for analysis. Of the 25, 10 replications used paired t tests, 1 used an independent t test and 14 used an analysis of variance (ANOVA) for the statistical analyses. In all, 7 (28%) studies demonstrated robust replicability, meeting all three validation criteria: achieving statistical significance (p\u2009<\u20090.05) in the same direction as the original study and showing compatible effect size magnitudes as per the Z test (p\u2009>\u20090.05).<h4>Conclusion</h4>There was a substantial decrease in the published effect size estimate magnitudes when replicated; therefore, sports and exercise science researchers should consider effect size uncertainty when conducting subsequent power analyses. Additionally, there were many barriers to conducting the replication studies, e.g., original author communication and poor data and reporting transparency.",
+        "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland. jennymurphy1@outlook.ie.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7253-2055"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8163-693X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8236-8754"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8624-3828"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9651-0061"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9657-9448"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0291-9059"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1542-8355"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2774-2333"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3008-3738"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3714-4660"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4070-3419"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4359-8132"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4541-6283"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4603-0884"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4927-1114"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7605-4289"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9762-7429"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2149-134X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2277-0463"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0001-8799-230X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0008-2794-725X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland. jennymurphy1@outlook.ie."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8624-3828"
+              },
+              "firstName": "Jennifer",
+              "fullName": "Murphy J",
+              "initials": "J",
+              "lastName": "Murphy"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute for Community Health Innovation, University of Arkansas for Medical Sciences Northwest, Springdale, AR, 72762, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4541-6283"
+              },
+              "firstName": "Aaron R",
+              "fullName": "Caldwell AR",
+              "initials": "AR",
+              "lastName": "Caldwell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland."
+                  },
+                  {
+                    "affiliation": "Human-Technology Interaction Group, Eindhoven University of Technology, Eindhoven, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1542-8355"
+              },
+              "firstName": "Cristian",
+              "fullName": "Mesquida C",
+              "initials": "C",
+              "lastName": "Mesquida"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Physical Education, Mount Royal University, Calgary, AB, T3E 6K6, Canada."
+                  }
+                ]
+              },
+              "firstName": "Aera J M",
+              "fullName": "Ladell AJM",
+              "initials": "AJM",
+              "lastName": "Ladell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Education and Sports, Universitat de Val\u00e8ncia, Val\u00e8ncia, Spain."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2149-134X"
+              },
+              "firstName": "Alberto",
+              "fullName": "Encarnaci\u00f3n-Mart\u00ednez A",
+              "initials": "A",
+              "lastName": "Encarnaci\u00f3n-Mart\u00ednez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratoire Motricit\u00e9, Interactions, Performance, Le Mans Universit\u00e9, Le Mans, France."
+                  }
+                ]
+              },
+              "firstName": "Alexandre",
+              "fullName": "Tual A",
+              "initials": "A",
+              "lastName": "Tual"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, California State University East Bay, Hayward, CA, 94542, USA."
+                  }
+                ]
+              },
+              "firstName": "Andrew",
+              "fullName": "Denys A",
+              "initials": "A",
+              "lastName": "Denys"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Sport and Health, Solent University, Southampton, SO14 0YN, UK."
+                  }
+                ]
+              },
+              "firstName": "Bailey",
+              "fullName": "Cameron B",
+              "initials": "B",
+              "lastName": "Cameron"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nutrition and Movement Sciences, NUTRIM School for Nutrition and Translational Research in Metabolism, Maastricht University, 6211 LK, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8163-693X"
+              },
+              "firstName": "Bas",
+              "fullName": "Van Hooren B",
+              "initials": "B",
+              "lastName": "Van Hooren"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Psychology, Ulster University, Coleraine, Co., Londonderry, BT52 1SA, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0008-2794-725X"
+              },
+              "firstName": "Ben",
+              "fullName": "Parr B",
+              "initials": "B",
+              "lastName": "Parr"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Exercise Science and Athletic Training, Springfield College, Springfield, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Bianca",
+              "fullName": "DeLucia B",
+              "initials": "B",
+              "lastName": "DeLucia"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Canberra Research Institute for Sport and Exercise, University of Canberra, Bruce, ACT, 2617, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4070-3419"
+              },
+              "firstName": "Billy R J",
+              "fullName": "Mason BRJ",
+              "initials": "BRJ",
+              "lastName": "Mason"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Canberra Research Institute for Sport and Exercise, University of Canberra, Bruce, ACT, 2617, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2277-0463"
+              },
+              "firstName": "Brad",
+              "fullName": "Clark B",
+              "initials": "B",
+              "lastName": "Clark"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health and Human Performance, Dublin City University, Glasnevin, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Brendan",
+              "fullName": "Egan B",
+              "initials": "B",
+              "lastName": "Egan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Physical Activity, Sheffield Hallam University, Sheffield, UK."
+                  }
+                ]
+              },
+              "firstName": "Calum",
+              "fullName": "Brown C",
+              "initials": "C",
+              "lastName": "Brown"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, Kansas State University, Manhattan, KS, 66506, USA."
+                  }
+                ]
+              },
+              "firstName": "Carl",
+              "fullName": "Ade C",
+              "initials": "C",
+              "lastName": "Ade"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Sciences for Health, Universit\u00e0 Degli Studi Di Milano, Via Mangiagalli, 31, 20133, Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Chiarella",
+              "fullName": "Sforza C",
+              "initials": "C",
+              "lastName": "Sforza"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Therapy and Human Movement Science, Sacred Heart University, Fairfield, CT, USA."
+                  }
+                ]
+              },
+              "firstName": "Christopher B",
+              "fullName": "Taber CB",
+              "initials": "CB",
+              "lastName": "Taber"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Physical Activity, Sheffield Hallam University, Sheffield, UK."
+                  }
+                ]
+              },
+              "firstName": "Christopher",
+              "fullName": "Kirk C",
+              "initials": "C",
+              "lastName": "Kirk"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nutrition and Movement Sciences, NUTRIM School for Nutrition and Translational Research in Metabolism, Maastricht University, 6211 LK, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4927-1114"
+              },
+              "firstName": "Christopher",
+              "fullName": "McCrum C",
+              "initials": "C",
+              "lastName": "McCrum"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Cian OKeeffe",
+              "fullName": "Tighe CO",
+              "initials": "CO",
+              "lastName": "Tighe"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Ciara",
+              "fullName": "Byrne C",
+              "initials": "C",
+              "lastName": "Byrne"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Sciences for Health, Universit\u00e0 Degli Studi Di Milano, Via Mangiagalli, 31, 20133, Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Claudia",
+              "fullName": "Brunetti C",
+              "initials": "C",
+              "lastName": "Brunetti"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratoire Motricit\u00e9, Interactions, Performance, Le Mans Universit\u00e9, Le Mans, France."
+                  }
+                ]
+              },
+              "firstName": "Cyril",
+              "fullName": "Forestier C",
+              "initials": "C",
+              "lastName": "Forestier"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "firstName": "Dan",
+              "fullName": "Martin D",
+              "initials": "D",
+              "lastName": "Martin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "firstName": "Danny",
+              "fullName": "Taylor D",
+              "initials": "D",
+              "lastName": "Taylor"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health Sciences and Human Performance, Ithaca College, Ithaca, NY, 14850, USA."
+                  }
+                ]
+              },
+              "firstName": "David",
+              "fullName": "Diggin D",
+              "initials": "D",
+              "lastName": "Diggin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Human and Social Sciences, Buckinghamshire New University, High Wycombe, UK."
+                  }
+                ]
+              },
+              "firstName": "Dearbhla",
+              "fullName": "Gallagher D",
+              "initials": "D",
+              "lastName": "Gallagher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health Sciences and Human Performance, Ithaca College, Ithaca, NY, 14850, USA."
+                  }
+                ]
+              },
+              "firstName": "Deborah L",
+              "fullName": "King DL",
+              "initials": "DL",
+              "lastName": "King"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, Kansas State University, Manhattan, KS, 66506, USA."
+                  }
+                ]
+              },
+              "firstName": "Elizabeth",
+              "fullName": "Rogers E",
+              "initials": "E",
+              "lastName": "Rogers"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Physical Education, Mount Royal University, Calgary, AB, T3E 6K6, Canada."
+                  }
+                ]
+              },
+              "firstName": "Eric C",
+              "fullName": "Bennett EC",
+              "initials": "EC",
+              "lastName": "Bennett"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Therapy and Human Movement Science, Sacred Heart University, Fairfield, CT, USA."
+                  }
+                ]
+              },
+              "firstName": "Eric T",
+              "fullName": "Lopatofsky ET",
+              "initials": "ET",
+              "lastName": "Lopatofsky"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Human and Social Sciences, Buckinghamshire New University, High Wycombe, UK."
+                  }
+                ]
+              },
+              "firstName": "Gemma",
+              "fullName": "Dunn G",
+              "initials": "G",
+              "lastName": "Dunn"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Development, Adaptation, Handicap-CARE Grand Est, Universit\u00e9 de Lorraine, Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "G\u00e9rome C",
+              "fullName": "Gauchard GC",
+              "initials": "GC",
+              "lastName": "Gauchard"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Development, Adaptation, Handicap-CARE Grand Est, Universit\u00e9 de Lorraine, Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Guillaume",
+              "fullName": "Mornieux G",
+              "initials": "G",
+              "lastName": "Mornieux"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Therapy, The University of British Columbia, Vancouver, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3008-3738"
+              },
+              "firstName": "Ignacio",
+              "fullName": "Catal\u00e1-Vilaplana I",
+              "initials": "I",
+              "lastName": "Catal\u00e1-Vilaplana"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "firstName": "Ines",
+              "fullName": "Caetan I",
+              "initials": "I",
+              "lastName": "Caetan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Education and Sports, Universitat de Val\u00e8ncia, Val\u00e8ncia, Spain."
+                  }
+                ]
+              },
+              "firstName": "Inmaculada",
+              "fullName": "Aparicio-Aparicio I",
+              "initials": "I",
+              "lastName": "Aparicio-Aparicio"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Physical Activity, Sheffield Hallam University, Sheffield, UK."
+                  }
+                ]
+              },
+              "firstName": "Jack",
+              "fullName": "Barnes J",
+              "initials": "J",
+              "lastName": "Barnes"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health Sciences and Human Performance, Ithaca College, Ithaca, NY, 14850, USA."
+                  }
+                ]
+              },
+              "firstName": "Jake",
+              "fullName": "Blaisdell J",
+              "initials": "J",
+              "lastName": "Blaisdell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Sport and Health, Solent University, Southampton, SO14 0YN, UK."
+                  }
+                ]
+              },
+              "firstName": "James",
+              "fullName": "Steele J",
+              "initials": "J",
+              "lastName": "Steele"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Physical Education, Mount Royal University, Calgary, AB, T3E 6K6, Canada."
+                  }
+                ]
+              },
+              "firstName": "Jared R",
+              "fullName": "Fletcher JR",
+              "initials": "JR",
+              "lastName": "Fletcher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Exercise Science and Athletic Training, Springfield College, Springfield, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Jasmin",
+              "fullName": "Hutchinson J",
+              "initials": "J",
+              "lastName": "Hutchinson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology and Health Sciences, University of Waterloo, Waterloo, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Jason",
+              "fullName": "Au J",
+              "initials": "J",
+              "lastName": "Au"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Physical Education, Mount Royal University, Calgary, AB, T3E 6K6, Canada."
+                  }
+                ]
+              },
+              "firstName": "Jason P",
+              "fullName": "Oliemans JP",
+              "initials": "JP",
+              "lastName": "Oliemans"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Exercise Science and Athletic Training, Springfield College, Springfield, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Javad",
+              "fullName": "Bakhshinejad J",
+              "initials": "J",
+              "lastName": "Bakhshinejad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Therapy, University of Dayton, Dayton, OH, USA."
+                  }
+                ]
+              },
+              "firstName": "Joaquin",
+              "fullName": "Barrios J",
+              "initials": "J",
+              "lastName": "Barrios"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Education and Sports, Universitat de Val\u00e8ncia, Val\u00e8ncia, Spain."
+                  }
+                ]
+              },
+              "firstName": "Jose Ignacio Priego",
+              "fullName": "Quesada JIP",
+              "initials": "JIP",
+              "lastName": "Quesada"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, Kings College London, London, UK."
+                  }
+                ]
+              },
+              "firstName": "Joseph",
+              "fullName": "Rager J",
+              "initials": "J",
+              "lastName": "Rager"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Physical Education, Mount Royal University, Calgary, AB, T3E 6K6, Canada."
+                  }
+                ]
+              },
+              "firstName": "Julia B",
+              "fullName": "Capone JB",
+              "initials": "JB",
+              "lastName": "Capone"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Kinesiology, University of Calgary, Calgary, AB, T2N 1N4, Canada."
+                  }
+                ]
+              },
+              "firstName": "Julie S J",
+              "fullName": "Walton JSJ",
+              "initials": "JSJ",
+              "lastName": "Walton"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology and Health Sciences, University of Waterloo, Waterloo, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9651-0061"
+              },
+              "firstName": "Kailey",
+              "fullName": "Stevens K",
+              "initials": "K",
+              "lastName": "Stevens"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, Kansas State University, Manhattan, KS, 66506, USA."
+                  }
+                ]
+              },
+              "firstName": "Katie",
+              "fullName": "Heinrich K",
+              "initials": "K",
+              "lastName": "Heinrich"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Medicine & Rehabilitation, Northwestern University, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Kelly",
+              "fullName": "Wu K",
+              "initials": "K",
+              "lastName": "Wu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nutrition and Movement Sciences, NUTRIM School for Nutrition and Translational Research in Metabolism, Maastricht University, 6211 LK, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8236-8754"
+              },
+              "firstName": "Kenneth",
+              "fullName": "Meijer K",
+              "initials": "K",
+              "lastName": "Meijer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Human and Social Sciences, Buckinghamshire New University, High Wycombe, UK."
+                  }
+                ]
+              },
+              "firstName": "Laura",
+              "fullName": "Richards L",
+              "initials": "L",
+              "lastName": "Richards"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology and Health Sciences, University of Waterloo, Waterloo, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Lauren",
+              "fullName": "Jutlah L",
+              "initials": "L",
+              "lastName": "Jutlah"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, California State University East Bay, Hayward, CA, 94542, USA."
+                  }
+                ]
+              },
+              "firstName": "Le",
+              "fullName": "Tong L",
+              "initials": "L",
+              "lastName": "Tong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Sport and Health, Solent University, Southampton, SO14 0YN, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7605-4289"
+              },
+              "firstName": "Lee",
+              "fullName": "Bridgeman L",
+              "initials": "L",
+              "lastName": "Bridgeman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Development, Adaptation, Handicap-CARE Grand Est, Universit\u00e9 de Lorraine, Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Leo",
+              "fullName": "Banet L",
+              "initials": "L",
+              "lastName": "Banet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, Kings College London, London, UK."
+                  }
+                ]
+              },
+              "firstName": "Leonard",
+              "fullName": "Mbiyu L",
+              "initials": "L",
+              "lastName": "Mbiyu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, Kings College London, London, UK."
+                  }
+                ]
+              },
+              "firstName": "Lucy",
+              "fullName": "Sefton L",
+              "initials": "L",
+              "lastName": "Sefton"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratoire Motricit\u00e9, Interactions, Performance, Le Mans Universit\u00e9, Le Mans, France."
+                  }
+                ]
+              },
+              "firstName": "Margaux",
+              "fullName": "de Chanaleilles M",
+              "initials": "M",
+              "lastName": "de Chanaleilles"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Medicine & Rehabilitation, Northwestern University, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Maria",
+              "fullName": "Charisi M",
+              "initials": "M",
+              "lastName": "Charisi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Therapy, University of Dayton, Dayton, OH, USA."
+                  }
+                ]
+              },
+              "firstName": "Matthew",
+              "fullName": "Beerse M",
+              "initials": "M",
+              "lastName": "Beerse"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Medicine & Rehabilitation, Northwestern University, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Matthew J",
+              "fullName": "Major MJ",
+              "initials": "MJ",
+              "lastName": "Major"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Human Performance Laboratory and Motion Analysis Center, Department of Health Promotion and Clinical Practice, Barry University, Miami Shores, FL, 33161, USA."
+                  }
+                ]
+              },
+              "firstName": "Maya",
+              "fullName": "Caon M",
+              "initials": "M",
+              "lastName": "Caon"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "firstName": "Mel",
+              "fullName": "Bargh M",
+              "initials": "M",
+              "lastName": "Bargh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, California State University East Bay, Hayward, CA, 94542, USA."
+                  }
+                ]
+              },
+              "firstName": "Michael",
+              "fullName": "Rowley M",
+              "initials": "M",
+              "lastName": "Rowley"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Medicine & Rehabilitation, Northwestern University, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Miguel Vaca",
+              "fullName": "Moran MV",
+              "initials": "MV",
+              "lastName": "Moran"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Exercise Science and Athletic Training, Springfield College, Springfield, MA, USA."
+                  }
+                ]
+              },
+              "firstName": "Nicholas",
+              "fullName": "Croker N",
+              "initials": "N",
+              "lastName": "Croker"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Development, Adaptation, Handicap-CARE Grand Est, Universit\u00e9 de Lorraine, Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Nicolas C",
+              "fullName": "Hanen NC",
+              "initials": "NC",
+              "lastName": "Hanen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Nicole",
+              "fullName": "Montague N",
+              "initials": "N",
+              "lastName": "Montague"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Psychology, Ulster University, Coleraine, Co., Londonderry, BT52 1SA, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3714-4660"
+              },
+              "firstName": "Noel E",
+              "fullName": "Brick NE",
+              "initials": "NE",
+              "lastName": "Brick"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, Kings College London, London, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0291-9059"
+              },
+              "firstName": "Oliver R",
+              "fullName": "Runswick OR",
+              "initials": "OR",
+              "lastName": "Runswick"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nutrition and Movement Sciences, NUTRIM School for Nutrition and Translational Research in Metabolism, Maastricht University, 6211 LK, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Paul",
+              "fullName": "Willems P",
+              "initials": "P",
+              "lastName": "Willems"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Education and Sports, Universitat de Val\u00e8ncia, Val\u00e8ncia, Spain."
+                  }
+                ]
+              },
+              "firstName": "Pedro",
+              "fullName": "P\u00e9rez-Soriano P",
+              "initials": "P",
+              "lastName": "P\u00e9rez-Soriano"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Specialist Facilities, Solent University, Southampton, SO14 0YN, UK."
+                  }
+                ]
+              },
+              "firstName": "Rebecca",
+              "fullName": "Blake R",
+              "initials": "R",
+              "lastName": "Blake"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9657-9448"
+              },
+              "firstName": "Rebecca",
+              "fullName": "Jones R",
+              "initials": "R",
+              "lastName": "Jones"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Psychology, Ulster University, Coleraine, Co., Londonderry, BT52 1SA, UK."
+                  }
+                ]
+              },
+              "firstName": "Rebecca Louise",
+              "fullName": "Quinn RL",
+              "initials": "RL",
+              "lastName": "Quinn"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Physical Education and Sports, Universitat de Val\u00e8ncia, Val\u00e8ncia, Spain."
+                  }
+                ]
+              },
+              "firstName": "Roberto",
+              "fullName": "Sanchis-Sanchis R",
+              "initials": "R",
+              "lastName": "Sanchis-Sanchis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biomedical Sciences for Health, Universit\u00e0 Degli Studi Di Milano, Via Mangiagalli, 31, 20133, Milan, Italy."
+                  }
+                ]
+              },
+              "firstName": "Rodrigo",
+              "fullName": "Rabello R",
+              "initials": "R",
+              "lastName": "Rabello"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Psychology, Ulster University, Coleraine, Co., Londonderry, BT52 1SA, UK."
+                  }
+                ]
+              },
+              "firstName": "Roisin",
+              "fullName": "Bolger R",
+              "initials": "R",
+              "lastName": "Bolger"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Human Performance Laboratory and Motion Analysis Center, Department of Health Promotion and Clinical Practice, Barry University, Miami Shores, FL, 33161, USA."
+                  }
+                ]
+              },
+              "firstName": "Roy",
+              "fullName": "Shohat R",
+              "initials": "R",
+              "lastName": "Shohat"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Health Sciences and Human Performance, Ithaca College, Ithaca, NY, 14850, USA."
+                  }
+                ]
+              },
+              "firstName": "Sadie",
+              "fullName": "Cotton S",
+              "initials": "S",
+              "lastName": "Cotton"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Sport and Health, Solent University, Southampton, SO14 0YN, UK."
+                  }
+                ]
+              },
+              "firstName": "Samantha",
+              "fullName": "Chua S",
+              "initials": "S",
+              "lastName": "Chua"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Human Performance Laboratory and Motion Analysis Center, Department of Health Promotion and Clinical Practice, Barry University, Miami Shores, FL, 33161, USA."
+                  }
+                ]
+              },
+              "firstName": "Samuel",
+              "fullName": "Norwood S",
+              "initials": "S",
+              "lastName": "Norwood"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Human Performance Laboratory and Motion Analysis Center, Department of Health Promotion and Clinical Practice, Barry University, Miami Shores, FL, 33161, USA."
+                  }
+                ]
+              },
+              "firstName": "Samuel",
+              "fullName": "Vimeau S",
+              "initials": "S",
+              "lastName": "Vimeau"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9762-7429"
+              },
+              "firstName": "Sandro",
+              "fullName": "Dias S",
+              "initials": "S",
+              "lastName": "Dias"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nutrition and Movement Sciences, NUTRIM School for Nutrition and Translational Research in Metabolism, Maastricht University, 6211 LK, Maastricht, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Sissel",
+              "fullName": "Pedersen S",
+              "initials": "S",
+              "lastName": "Pedersen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Physical Education, Mount Royal University, Calgary, AB, T3E 6K6, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0001-8799-230X"
+              },
+              "firstName": "Spencer S",
+              "fullName": "Skaper SS",
+              "initials": "SS",
+              "lastName": "Skaper"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "firstName": "Taylor",
+              "fullName": "Coyle T",
+              "initials": "T",
+              "lastName": "Coyle"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Sport, Exercise and Health, Division of Surgery and Interventional Science, University College London, London, UK."
+                  }
+                ]
+              },
+              "firstName": "Terun",
+              "fullName": "Desai T",
+              "initials": "T",
+              "lastName": "Desai"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Exercise Science, University of Lincoln, Lincoln, LN6 7TS, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7253-2055"
+              },
+              "firstName": "Thomas I",
+              "fullName": "Gee TI",
+              "initials": "TI",
+              "lastName": "Gee"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Sport and Physical Activity, Sheffield Hallam University, Sheffield, UK."
+                  }
+                ]
+              },
+              "firstName": "Tobias",
+              "fullName": "Edwards T",
+              "initials": "T",
+              "lastName": "Edwards"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Conservative and Rehabilitative Orthopaedics, Technical University of Munich, G80992, Munich, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4603-0884"
+              },
+              "firstName": "Torsten",
+              "fullName": "Pohl T",
+              "initials": "T",
+              "lastName": "Pohl"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Kinesiology, California State University East Bay, Hayward, CA, 94542, USA."
+                  }
+                ]
+              },
+              "firstName": "Vanessa",
+              "fullName": "Yingling V",
+              "initials": "V",
+              "lastName": "Yingling"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Human Performance Laboratory and Motion Analysis Center, Department of Health Promotion and Clinical Practice, Barry University, Miami Shores, FL, 33161, USA."
+                  }
+                ]
+              },
+              "firstName": "Vinicius",
+              "fullName": "Ribeiro V",
+              "initials": "V",
+              "lastName": "Ribeiro"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Development, Adaptation, Handicap-CARE Grand Est, Universit\u00e9 de Lorraine, Nancy, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2774-2333"
+              },
+              "firstName": "Youri",
+              "fullName": "Duchene Y",
+              "initials": "Y",
+              "lastName": "Duchene"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Human Performance Laboratory and Motion Analysis Center, Department of Health Promotion and Clinical Practice, Barry University, Miami Shores, FL, 33161, USA."
+                  }
+                ]
+              },
+              "firstName": "Zacharias",
+              "fullName": "Papadakis Z",
+              "initials": "Z",
+              "lastName": "Papadakis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Biological, Health and Sport Sciences, Technological University Dublin, Tallaght Campus, Blessington Rd, Dublin 9, Ireland."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4359-8132"
+              },
+              "firstName": "Joe P",
+              "fullName": "Warne JP",
+              "initials": "JP",
+              "lastName": "Warne"
+            }
+          ]
+        },
+        "authorString": "Murphy J, Caldwell AR, Mesquida C, Ladell AJM, Encarnaci\u00f3n-Mart\u00ednez A, Tual A, Denys A, Cameron B, Van Hooren B, Parr B, DeLucia B, Mason BRJ, Clark B, Egan B, Brown C, Ade C, Sforza C, Taber CB, Kirk C, McCrum C, Tighe CO, Byrne C, Brunetti C, Forestier C, Martin D, Taylor D, Diggin D, Gallagher D, King DL, Rogers E, Bennett EC, Lopatofsky ET, Dunn G, Gauchard GC, Mornieux G, Catal\u00e1-Vilaplana I, Caetan I, Aparicio-Aparicio I, Barnes J, Blaisdell J, Steele J, Fletcher JR, Hutchinson J, Au J, Oliemans JP, Bakhshinejad J, Barrios J, Quesada JIP, Rager J, Capone JB, Walton JSJ, Stevens K, Heinrich K, Wu K, Meijer K, Richards L, Jutlah L, Tong L, Bridgeman L, Banet L, Mbiyu L, Sefton L, de Chanaleilles M, Charisi M, Beerse M, Major MJ, Caon M, Bargh M, Rowley M, Moran MV, Croker N, Hanen NC, Montague N, Brick NE, Runswick OR, Willems P, P\u00e9rez-Soriano P, Blake R, Jones R, Quinn RL, Sanchis-Sanchis R, Rabello R, Bolger R, Shohat R, Cotton S, Chua S, Norwood S, Vimeau S, Dias S, Pedersen S, Skaper SS, Coyle T, Desai T, Gee TI, Edwards T, Pohl T, Yingling V, Ribeiro V, Duchene Y, Papadakis Z, Warne JP.",
+        "citedByCount": 12,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "40932575",
+              "orderIn": 1,
+              "reference": "Sports Med. 2025 Oct;55(10):2681-2683. doi: 10.1007/s40279-025-02309-z.",
+              "source": "MED",
+              "type": "Erratum in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-10-10",
+        "dateOfCreation": "2025-06-16",
+        "dateOfRevision": "2026-04-07",
+        "doi": "10.1007/s40279-025-02201-w",
+        "electronicPublicationDate": "2025-06-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-06-16",
+        "firstPublicationDate": "2025-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12513899"
+          ]
+        },
+        "fullTextReceivedDate": "2025-10-13",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s40279-025-02201-w"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12513899"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12513899?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Irish Research Council",
+              "grantId": "GOIPG/2020/1155",
+              "orderIn": 0
+            },
+            {
+              "agency": "Technological University Dublin",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40522610",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "10",
+          "journal": {
+            "essn": "1179-2035",
+            "isoabbreviation": "Sports Med",
+            "issn": "0112-1642",
+            "medlineAbbreviation": "Sports Med",
+            "nlmid": "8412297",
+            "title": "Sports medicine (Auckland, N.Z.)"
+          },
+          "journalIssueId": 4030888,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "55",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Exercise",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sports Medicine",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Biomedical Research",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ST",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Research Design",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sports",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Periodicals as Topic",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2659-2679",
+        "pmcid": "PMC12513899",
+        "pmid": "40522610",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Estimating the Replicability of Sports and Exercise Science Research."
+      },
+      {
+        "affiliation": "Psychophysics and Neural Dynamics Lab, The Radiology Department, Lausanne University Hospital and University of Lausanne, Lausanne, Switzerland. david.pascucci@chuv.ch.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Psychophysics and Neural Dynamics Lab, The Radiology Department, Lausanne University Hospital and University of Lausanne, Lausanne, Switzerland. david.pascucci@chuv.ch."
+                  },
+                  {
+                    "affiliation": "The Sense Innovation and Research Center, Lausanne, Switzerland. david.pascucci@chuv.ch."
+                  }
+                ]
+              },
+              "firstName": "David",
+              "fullName": "Pascucci D",
+              "initials": "D",
+              "lastName": "Pascucci"
+            }
+          ]
+        },
+        "authorString": "Pascucci D.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-09-15",
+        "dateOfCreation": "2025-09-12",
+        "dateOfRevision": "2025-09-15",
+        "doi": "10.1038/s44271-025-00315-5",
+        "electronicPublicationDate": "2025-09-12",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-09-14",
+        "firstPublicationDate": "2025-09-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12432204"
+          ]
+        },
+        "fullTextReceivedDate": "2025-09-17",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s44271-025-00315-5"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12432204"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12432204?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "40940411",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Sep",
+          "issue": "1",
+          "journal": {
+            "essn": "2731-9121",
+            "isoabbreviation": "Commun Psychol",
+            "issn": "2731-9121",
+            "medlineAbbreviation": "Commun Psychol",
+            "nlmid": "9918716686206676",
+            "title": "Communications psychology"
+          },
+          "journalIssueId": 4011074,
+          "monthOfPublication": 9,
+          "printPublicationDate": "2025-09-01",
+          "volume": "3",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "136",
+        "pmcid": "PMC12432204",
+        "pmid": "40940411",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "brief-report",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Neuroscience: large-scale evidence for perceptual entrainment to auditory rhythms."
+      },
+      {
+        "abstractText": "<h4>Background</h4>The importance of replication in the social and behavioural sciences has been emphasized for decades. Various frequentist and Bayesian approaches have been proposed to qualify a replication study as successful or unsuccessful. One of them is meta-analysis. The focus of the present study is on the way meta-analysis functions as a replication success metric. To investigate this, original and replication studies that are part of two large-scale replication projects were used. For each original study, the probability of replication success was calculated using meta-analysis under different assumptions of the underlying population effect when replication results were unknown. The accuracy of the predicted overall replication success was evaluated once replication results became available using adjusted Brier scores.<h4>Results</h4>Our results showed that meta-analysis performed poorly when used as a replication success metric. In many cases, quantifying replication success using meta-analysis resulted in the conclusion where the replication was deemed a success regardless of the results of the replication study.<h4>Discussion</h4>We conclude that when using meta-analysis as a replication success metric, it has a relatively high probability of finding evidence in favour of a non-zero population effect even when it is zero. This behaviour largely results from the significance of the original study. Furthermore, we argue that there are fundamental reasons against using meta-analysis as a metric for replication success.",
+        "affiliation": "Behavioural and Social Sciences, University of Groningen, Groningen, the Netherlands.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2914-9197"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4995-9349"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5030-4091"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Behavioural and Social Sciences, University of Groningen, Groningen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2914-9197"
+              },
+              "firstName": "Jasmine",
+              "fullName": "Muradchanian J",
+              "initials": "J",
+              "lastName": "Muradchanian"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Behavioural and Social Sciences, University of Groningen, Groningen, the Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Rink",
+              "fullName": "Hoekstra R",
+              "initials": "R",
+              "lastName": "Hoekstra"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Behavioural and Social Sciences, University of Groningen, Groningen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4995-9349"
+              },
+              "firstName": "Henk",
+              "fullName": "Kiers H",
+              "initials": "H",
+              "lastName": "Kiers"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Behavioural and Social Sciences, University of Groningen, Groningen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5030-4091"
+              },
+              "firstName": "Don",
+              "fullName": "van Ravenzwaaij D",
+              "initials": "D",
+              "lastName": "van Ravenzwaaij"
+            }
+          ]
+        },
+        "authorString": "Muradchanian J, Hoekstra R, Kiers H, van Ravenzwaaij D.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR942087",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2024-12-11",
+        "dateOfCreation": "2024-12-11",
+        "dateOfRevision": "2025-07-30",
+        "doi": "10.1371/journal.pone.0308495",
+        "electronicPublicationDate": "2024-12-11",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-12-11",
+        "firstPublicationDate": "2024-12-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11633967"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-29",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0308495"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11633967"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11633967?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "39661601",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2024 ",
+          "issue": "12",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 3862973,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2024-01-01",
+          "volume": "19",
+          "yearOfPublication": 2024
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Bayes Theorem",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Reproducibility of Results",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Meta-Analysis as Topic",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0308495",
+        "pmcid": "PMC11633967",
+        "pmid": "39661601",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2024",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Evaluating meta-analysis as a replication success measure."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Studies using quantitative susceptibility mapping (QSM) to investigate thalamic iron levels in people with multiple sclerosis (pwMS) have yielded inconsistent results. It has been speculated that cohort differences are responsible for these inconsistencies, leading to the phenomenological \"early-rise late-decline\" hypothesis, which posits that cohort age differences explain conflicting thalamic susceptibility findings. In a recent replication study, the authors failed to reproduce elevated thalamic susceptibility in pwMS previously reported by one of the only two QSM-based studies, despite matching cohort characteristics and processing, weakening the support for the phenomenological hypothesis.<h4>Objective</h4>To investigate if the outcome of the recent replication study is robust with respect to different QSM algorithms and analysis methodologies.<h4>Methods</h4>Using the same MRI dataset as the previous replication study, we assessed thalamic susceptibility across 83 pwMS and 44 healthy controls. To comprehensively evaluate methodological variability, we tested combinations of three background field removal (BFR) algorithms using various regularization parameters, four dipole inversion algorithms, three reference regions, and two segmentation methods. Each unique combination of a BFR algorithm (with its specific parameter) and a dipole inversion algorithm constituted a distinct pipeline, yielding a total of 19,558 susceptibility maps across 154 different pipelines.<h4>Results</h4>Thalamic susceptibility was lower in pwMS compared to controls independent of the chosen methodology, with differences in effect sizes primarily driven by the background field removal algorithms and their regularization parameters, reference region, and segmentation method. The impact of dipole inversion algorithms was minimal.<h4>Conclusions</h4>Our study suggests high reproducibility of group-level clinical studies using QSM to study the thalamus in pwMS. In particular, methodological differences in processing and analysis are unlikely to explain contradicting findings of thalamic susceptibility in MS.",
+        "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7114-4958"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7792-0433"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0399-9211"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4684-4658"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-3873-2301"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Engineering, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-3873-2301"
+              },
+              "firstName": "Fahad",
+              "fullName": "Salman F",
+              "initials": "F",
+              "lastName": "Salman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7792-0433"
+              },
+              "firstName": "Niels",
+              "fullName": "Bergsland N",
+              "initials": "N",
+              "lastName": "Bergsland"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  },
+                  {
+                    "affiliation": "Center for Biomedical Imaging, Clinical and Translational Science Institute, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4684-4658"
+              },
+              "firstName": "Michael G",
+              "fullName": "Dwyer MG",
+              "initials": "MG",
+              "lastName": "Dwyer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Jack A",
+              "fullName": "Reeves JA",
+              "initials": "JA",
+              "lastName": "Reeves"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Abhisri",
+              "fullName": "Ramesh A",
+              "initials": "A",
+              "lastName": "Ramesh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  },
+                  {
+                    "affiliation": "Department of Imaging Sciences, Strong Memorial Hospital, University of Rochester, Rochester, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7114-4958"
+              },
+              "firstName": "Dejan",
+              "fullName": "Jakimovski D",
+              "initials": "D",
+              "lastName": "Jakimovski"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Jacobs Neurological Institute, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Bianca",
+              "fullName": "Weinstock-Guttman B",
+              "initials": "B",
+              "lastName": "Weinstock-Guttman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  },
+                  {
+                    "affiliation": "Center for Biomedical Imaging, Clinical and Translational Science Institute, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "firstName": "Robert",
+              "fullName": "Zivadinov R",
+              "initials": "R",
+              "lastName": "Zivadinov"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Buffalo Neuroimaging Analysis Center, Department of Neurology at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  },
+                  {
+                    "affiliation": "Center for Biomedical Imaging, Clinical and Translational Science Institute, University at Buffalo, The State University of New York, Buffalo, New York, United States of America."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0399-9211"
+              },
+              "firstName": "Ferdinand",
+              "fullName": "Schweser F",
+              "initials": "F",
+              "lastName": "Schweser"
+            }
+          ]
+        },
+        "authorString": "Salman F, Bergsland N, Dwyer MG, Reeves JA, Ramesh A, Jakimovski D, Weinstock-Guttman B, Zivadinov R, Schweser F.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Iron",
+              "registryNumber": "E1UOL152H7"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2025-11-14",
+        "dateOfCreation": "2025-11-14",
+        "dateOfRevision": "2025-11-17",
+        "doi": "10.1371/journal.pone.0332478",
+        "electronicPublicationDate": "2025-11-14",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-15",
+        "firstPublicationDate": "2025-11-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12617929"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pone.0332478"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12617929"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12617929?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Institute of Neurological Disorders and Stroke",
+              "grantId": "R01NS114227",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "1724891",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "S10OD024973",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41237161",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 ",
+          "issue": "11",
+          "journal": {
+            "essn": "1932-6203",
+            "isoabbreviation": "PLoS One",
+            "issn": "1932-6203",
+            "medlineAbbreviation": "PLoS One",
+            "nlmid": "101285081",
+            "title": "PloS one"
+          },
+          "journalIssueId": 4041491,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2025-01-01",
+          "volume": "20",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Thalamus",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DG",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "diagnostic imaging"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Multiple Sclerosis",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DG",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "diagnostic imaging"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Disease Susceptibility",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Iron",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Magnetic Resonance Imaging",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Brain Mapping",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Case-Control Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Algorithms",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Image Processing, Computer-Assisted",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e0332478",
+        "pmcid": "PMC12617929",
+        "pmid": "41237161",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Impact of processing and analysis methodology on thalamic susceptibility assessment in multiple sclerosis."
+      }
+    ]
+  },
+  "version": "6.9"
+}

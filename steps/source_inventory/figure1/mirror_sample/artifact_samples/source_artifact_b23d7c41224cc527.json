@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_b23d7c41224cc527",
+  "byte_size": 24277,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 387,
+  "file_name": "ft089.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/lnRR/ft089.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": -0.7376,
+      "obs_ID": "obs001",
+      "study_ID": "Stevenson PR, Castellanos MC, Pizarro JC, Garavito M",
+      "var": 0.0145,
+      "year_pub": 2002
+    },
+    {
+      "es": 0.4249,
+      "obs_ID": "obs002",
+      "study_ID": "Benitez-Malvido J, Gonz??lez-Di Pierro AM, Lombera R, Guill??n S & Estrada A",
+      "var": 0.0494,
+      "year_pub": 2014
+    },
+    {
+      "es": -1.3863,
+      "obs_ID": "obs003",
+      "study_ID": "Lapenta MJ, Proc??pio-de-Oliveira P, Kierulff MCM, Motta-Junior JC.",
+      "var": 0.0084,
+      "year_pub": 2008
+    },
+    {
+      "es": 0.4055,
+      "obs_ID": "obs004",
+      "study_ID": "Stevenson PR",
+      "var": 0.0241,
+      "year_pub": 2000
+    },
+    {
+      "es": -0.1769,
+      "obs_ID": "obs005",
+      "study_ID": "Catenacci LS, Vleeschouwer KM, Nogueira-Filho SLG",
+      "var": 0.0118,
+      "year_pub": 2009
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "58709068b1a0c7fc8a6dddafb0a1afd31ebb1aadd47b004eace0f416a16cf5e4"
+}

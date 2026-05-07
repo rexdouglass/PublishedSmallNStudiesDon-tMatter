@@ -1,0 +1,539 @@
+{
+  "artifact_id": "source_artifact_13bd4e2dbfc5a05f",
+  "byte_size": 18643,
+  "file_name": "039_full_10_1016_S0140_6736_12_61422_6.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/039_full_10_1016_S0140_6736_12_61422_6.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/S0140-6736(12)61422-6\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>The increasing prevalence of type 2 diabetes poses a major public health challenge. Population-based screening and early treatment for type 2 diabetes could reduce this growing burden. However, uncertainty persists around the benefits of screening for type 2 diabetes. We assessed the effect of a population-based stepwise screening programme on mortality.<h4>Methods</h4>In a pragmatic parallel group, cluster-randomised trial, 33 general practices in eastern England were randomly assigned by the method of minimisation in an unbalanced design to: screening followed by intensive multifactorial treatment for people diagnosed with diabetes (n=15); screening plus routine care of diabetes according to national guidelines (n=13); and a no-screening control group (n=5). The study population consisted of 20,184 individuals aged 40-69 years (mean 58 years), at high risk of prevalent undiagnosed diabetes, on the basis of a previously validated risk score. In screening practices, individuals were invited to a stepwise programme including random capillary blood glucose and glycated haemoglobin (HbA(1c)) tests, a fasting capillary blood glucose test, and a confirmatory oral glucose tolerance test. The primary outcome was all-cause mortality. All participants were flagged for mortality surveillance by the England and Wales Office of National Statistics. Analysis was by intention-to-screen and compared all-cause mortality rates between screening and control groups. This study is registered, number ISRCTN86769081.<h4>Findings</h4>Of 16,047 high-risk individuals in screening practices, 15,089 (94%) were invited for screening during 2001-06, 11,737 (73%) attended, and 466 (3%) were diagnosed with diabetes. 4137 control individuals were followed up. During 184,057 person-years of follow up (median duration 9·6 years [IQR 8·9-9·9]), there were 1532 deaths in the screening practices and 377 in control practices (mortality hazard ratio [HR] 1·06, 95% CI 0·90-1·25). We noted no significant reduction in cardiovascular (HR 1·02, 95% CI 0·75-1·38), cancer (1·08, 0·90-1·30), or diabetes-related mortality (1·26, 0·75-2·10) associated with invitation to screening.<h4>Interpretation</h4>In this large UK sample, screening for type 2 diabetes in patients at increased risk was not associated with a reduction in all-cause, cardiovascular, or diabetes-related mortality within 10 years. The benefits of screening might be smaller than expected and restricted to individuals with detectable disease.<h4>Funding</h4>Wellcome Trust; UK Medical Research Council; National Health Service research and development support; UK National Institute for Health Research; University of Aarhus, Denmark; Bio-Rad.",
+          "affiliation": "MRC Epidemiology Unit, Cambridge, UK.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2157-4797"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6188-9363"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7726-8529"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1723-0796"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2375-1440"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "MRC Epidemiology Unit, Cambridge, UK."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7726-8529"
+                },
+                "firstName": "Rebecca K",
+                "fullName": "Simmons RK",
+                "initials": "RK",
+                "lastName": "Simmons"
+              },
+              {
+                "firstName": "Justin B",
+                "fullName": "Echouffo-Tcheugui JB",
+                "initials": "JB",
+                "lastName": "Echouffo-Tcheugui"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2375-1440"
+                },
+                "firstName": "Stephen J",
+                "fullName": "Sharp SJ",
+                "initials": "SJ",
+                "lastName": "Sharp"
+              },
+              {
+                "firstName": "Lincoln A",
+                "fullName": "Sargeant LA",
+                "initials": "LA",
+                "lastName": "Sargeant"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6188-9363"
+                },
+                "firstName": "Kate M",
+                "fullName": "Williams KM",
+                "initials": "KM",
+                "lastName": "Williams"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1723-0796"
+                },
+                "firstName": "A Toby",
+                "fullName": "Prevost AT",
+                "initials": "AT",
+                "lastName": "Prevost"
+              },
+              {
+                "firstName": "Ann Louise",
+                "fullName": "Kinmonth AL",
+                "initials": "AL",
+                "lastName": "Kinmonth"
+              },
+              {
+                "firstName": "Nicholas J",
+                "fullName": "Wareham NJ",
+                "initials": "NJ",
+                "lastName": "Wareham"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2157-4797"
+                },
+                "firstName": "Simon J",
+                "fullName": "Griffin SJ",
+                "initials": "SJ",
+                "lastName": "Griffin"
+              }
+            ]
+          },
+          "authorString": "Simmons RK, Echouffo-Tcheugui JB, Sharp SJ, Sargeant LA, Williams KM, Prevost AT, Kinmonth AL, Wareham NJ, Griffin SJ.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Blood Glucose",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Glycated Hemoglobin",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 152,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "23040423",
+                "orderIn": 1,
+                "reference": "Lancet. 2012 Nov 17;380(9855):1716-8. doi: 10.1016/S0140-6736(12)61682-1.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23090207",
+                "orderIn": 2,
+                "reference": "Nat Rev Endocrinol. 2012 Dec;8(12):694. doi: 10.1038/nrendo.2012.200.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23318338",
+                "orderIn": 3,
+                "reference": "Ann Intern Med. 2013 Jan 15;158(2):JC4. doi: 10.7326/0003-4819-158-2-201301150-02004.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23435254",
+                "orderIn": 4,
+                "reference": "Evid Based Med. 2013 Oct;18(5):e44. doi: 10.1136/eb-2012-101186.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23499033",
+                "orderIn": 5,
+                "reference": "Lancet. 2013 Mar 16;381(9870):901-2. doi: 10.1016/S0140-6736(13)60665-0.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23499034",
+                "orderIn": 6,
+                "reference": "Lancet. 2013 Mar 16;381(9870):902-3. doi: 10.1016/S0140-6736(13)60667-4.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23499035",
+                "orderIn": 7,
+                "reference": "Lancet. 2013 Mar 16;381(9870):902. doi: 10.1016/S0140-6736(13)60666-2.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "23499036",
+                "orderIn": 8,
+                "reference": "Lancet. 2013 Mar 16;381(9870):903. doi: 10.1016/S0140-6736(13)60668-6.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2012-12-10",
+          "dateOfCreation": "2012-10-09",
+          "dateOfRevision": "2026-01-28",
+          "doi": "10.1016/s0140-6736(12)61422-6",
+          "electronicPublicationDate": "2012-10-04",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2012-10-10",
+          "firstPublicationDate": "2012-10-04",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3607818"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-12",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/S0140-6736(12)61422-6"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3607818"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DH_",
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "08/116/300",
+                "orderIn": 0
+              },
+              {
+                "agency": "NIHR Research funds",
+                "grantId": "RP-PG-0606-1259",
+                "orderIn": 0
+              },
+              {
+                "acronym": "WT",
+                "agency": "Wellcome Trust",
+                "grantId": "reference no: G0001164",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MRC_",
+                "agency": "Medical Research Council",
+                "grantId": "MC_U106179471",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MRC_",
+                "agency": "Medical Research Council",
+                "grantId": "MC_U106179474",
+                "orderIn": 0
+              },
+              {
+                "agency": "NIHR under the Programme Grants for Applied Research programme",
+                "grantId": "RP-PG-0606-1259",
+                "orderIn": 0
+              },
+              {
+                "acronym": "WT_",
+                "agency": "Wellcome Trust",
+                "grantId": "G061895",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MRC_",
+                "agency": "Medical Research Council",
+                "grantId": "G0200391",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DH_",
+                "agency": "National Institute for Health Research (NIHR)",
+                "grantId": "RP-PG-0606-1259",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MRC_",
+                "agency": "Medical Research Council",
+                "grantId": "G0001164",
+                "orderIn": 0
+              },
+              {
+                "acronym": "WT",
+                "agency": "Wellcome Trust",
+                "grantId": "reference No G061895",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "23040422",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2012 Nov",
+            "issue": "9855",
+            "journal": {
+              "essn": "1474-547X",
+              "isoabbreviation": "Lancet",
+              "issn": "0140-6736",
+              "medlineAbbreviation": "Lancet",
+              "nlmid": "2985213R",
+              "title": "Lancet (London, England)"
+            },
+            "journalIssueId": 1984483,
+            "monthOfPublication": 11,
+            "printPublicationDate": "2012-11-01",
+            "volume": "380",
+            "yearOfPublication": 2012
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Neoplasms",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "mortality"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cardiovascular Diseases",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "mortality"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Diabetes Mellitus, Type 2",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "DI",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "diagnosis"
+                    },
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "mortality"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Blood Glucose",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "analysis"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Glucose Tolerance Test",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mass Screening",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cluster Analysis",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Risk Factors",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Follow-Up Studies",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "England",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Glycated Hemoglobin",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "analysis"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "1741-1748",
+          "pmcid": "PMC3607818",
+          "pmid": "23040422",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2012",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Screening for type 2 diabetes and population mortality over 10 years (ADDITION-Cambridge): a cluster-randomised controlled trial."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "c3e85040c1abbe7a00448c2fc360a4c644868dd6d47f36a401ae0ffd68a92777"
+}

@@ -1,0 +1,382 @@
+{
+  "artifact_id": "source_artifact_93ddaffd818bf993",
+  "byte_size": 12794,
+  "file_name": "002_pilot_10_1053_j_ajkd_2005_11_018.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/002_pilot_10_1053_j_ajkd_2005_11_018.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1053/j.ajkd.2005.11.018\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Evaluating the effects of decreasing low-density lipoprotein (LDL) cholesterol levels requires large randomized trials. In preparation for such a trial, we assessed the biochemical efficacy, safety, and tolerability of adding ezetimibe, 10 mg/d, to simvastatin, 20 mg/d, as initial therapy for such patients.<h4>Methods</h4>Two hundred three patients (152 predialysis patients with creatinine levels > or = 1.7 mg/dL [> or = 150 micromol/L], 18 patients on peritoneal dialysis therapy, and 33 patients on hemodialysis therapy) were randomly assigned to the administration of simvastatin, 20 mg/d, plus ezetimibe, 10 mg/d; or simvastatin, 20 mg, plus placebo ezetimibe daily.<h4>Results</h4>After 6 months, allocation to simvastatin monotherapy was associated with a 31-mg/dL (0.8-mmol/L) decrease in nonfasting LDL cholesterol levels compared with baseline. Allocation to simvastatin plus ezetimibe produced an additional 18-mg/dL (0.47-mmol/L) decrease in LDL cholesterol level, representing an incremental 21% reduction over that achieved with simvastatin monotherapy (P < 0.0001). There were no statistically significant effects of the addition of ezetimibe to simvastatin on triglyceride or high-density lipoprotein cholesterol levels. Ezetimibe was not associated with an excess risk of abnormal liver function test results or of elevated creatine kinase levels and did not impair absorption of fat-soluble vitamins. There were no serious adverse events caused by study treatment.<h4>Conclusion</h4>This 6-month study shows that the addition of ezetimibe to simvastatin, 20 mg/d, as initial therapy for patients with chronic kidney disease was well tolerated and produced an additional 21% decrease in LDL cholesterol levels. The clinical efficacy and safety of combination therapy in this population are now being assessed in a large randomized trial.",
+          "affiliation": "Clinical Trial Service Unit, University of Oxford, Churchill Hospital, Oxford, UK. martin.landray@ctsu.ox.ac.uk",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6646-827X"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7410-5268"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0224-8726"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3726-3560"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Clinical Trial Service Unit, University of Oxford, Churchill Hospital, Oxford, UK. martin.landray@ctsu.ox.ac.uk"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6646-827X"
+                },
+                "firstName": "Martin",
+                "fullName": "Landray M",
+                "initials": "M",
+                "lastName": "Landray"
+              },
+              {
+                "firstName": "Colin",
+                "fullName": "Baigent C",
+                "initials": "C",
+                "lastName": "Baigent"
+              },
+              {
+                "firstName": "Craig",
+                "fullName": "Leaper C",
+                "initials": "C",
+                "lastName": "Leaper"
+              },
+              {
+                "firstName": "Dwomoa",
+                "fullName": "Adu D",
+                "initials": "D",
+                "lastName": "Adu"
+              },
+              {
+                "firstName": "Paul",
+                "fullName": "Altmann P",
+                "initials": "P",
+                "lastName": "Altmann"
+              },
+              {
+                "firstName": "Jane",
+                "fullName": "Armitage J",
+                "initials": "J",
+                "lastName": "Armitage"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7410-5268"
+                },
+                "firstName": "Simon",
+                "fullName": "Ball S",
+                "initials": "S",
+                "lastName": "Ball"
+              },
+              {
+                "firstName": "Alex",
+                "fullName": "Baxter A",
+                "initials": "A",
+                "lastName": "Baxter"
+              },
+              {
+                "firstName": "Lisa",
+                "fullName": "Blackwell L",
+                "initials": "L",
+                "lastName": "Blackwell"
+              },
+              {
+                "firstName": "Hugh S",
+                "fullName": "Cairns HS",
+                "initials": "HS",
+                "lastName": "Cairns"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-3726-3560"
+                },
+                "firstName": "Sue",
+                "fullName": "Carr S",
+                "initials": "S",
+                "lastName": "Carr"
+              },
+              {
+                "firstName": "Rory",
+                "fullName": "Collins R",
+                "initials": "R",
+                "lastName": "Collins"
+              },
+              {
+                "firstName": "Karen",
+                "fullName": "Kourellias K",
+                "initials": "K",
+                "lastName": "Kourellias"
+              },
+              {
+                "firstName": "Mary",
+                "fullName": "Rogerson M",
+                "initials": "M",
+                "lastName": "Rogerson"
+              },
+              {
+                "firstName": "John E",
+                "fullName": "Scoble JE",
+                "initials": "JE",
+                "lastName": "Scoble"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-0224-8726"
+                },
+                "firstName": "Charles R V",
+                "fullName": "Tomson CR",
+                "initials": "CR",
+                "lastName": "Tomson"
+              },
+              {
+                "firstName": "Graham",
+                "fullName": "Warwick G",
+                "initials": "G",
+                "lastName": "Warwick"
+              },
+              {
+                "firstName": "David C",
+                "fullName": "Wheeler DC",
+                "initials": "DC",
+                "lastName": "Wheeler"
+              }
+            ]
+          },
+          "authorString": "Landray M, Baigent C, Leaper C, Adu D, Altmann P, Armitage J, Ball S, Baxter A, Blackwell L, Cairns HS, Carr S, Collins R, Kourellias K, Rogerson M, Scoble JE, Tomson CR, Warwick G, Wheeler DC.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Anticholesteremic Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Azetidines",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Simvastatin",
+                "registryNumber": "AGG2FN16EV"
+              },
+              {
+                "name": "ezetimibe",
+                "registryNumber": "EOR26LQQ24"
+              }
+            ]
+          },
+          "citedByCount": 73,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2006-04-10",
+          "dateOfCreation": "2006-02-24",
+          "dateOfRevision": "2022-03-09",
+          "doi": "10.1053/j.ajkd.2005.11.018",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2006-03-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1053/j.ajkd.2005.11.018"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "16490616",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2006 Mar",
+            "issue": "3",
+            "journal": {
+              "essn": "1523-6838",
+              "isoabbreviation": "Am J Kidney Dis",
+              "issn": "0272-6386",
+              "medlineAbbreviation": "Am J Kidney Dis",
+              "nlmid": "8110075",
+              "title": "American journal of kidney diseases : the official journal of the National Kidney Foundation"
+            },
+            "journalIssueId": 1298555,
+            "monthOfPublication": 3,
+            "printPublicationDate": "2006-03-01",
+            "volume": "47",
+            "yearOfPublication": 2006
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Kidney Diseases",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "CO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "complications"
+                    },
+                    {
+                      "abbreviation": "DT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "drug therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Chronic Disease",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Azetidines",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Simvastatin",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Anticholesteremic Agents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Drug Therapy, Combination",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Ezetimibe",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "385-395",
+          "pmid": "16490616",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2006",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "The second United Kingdom Heart and Renal Protection (UK-HARP-II) Study: a randomized controlled study of the biochemical safety and efficacy of adding ezetimibe to simvastatin as initial therapy among patients with CKD."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "ee65002f48b0944db2727b247bdb9c9280af5e2fc209393992bb40412a01bef9"
+}

@@ -1,0 +1,81 @@
+{
+  "artifact_id": "source_artifact_86284e3fa1a6905c",
+  "byte_size": 14152,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "T_mean",
+    "C_mean",
+    "T_sd",
+    "C_sd",
+    "T_n",
+    "C_n"
+  ],
+  "estimated_data_rows": 213,
+  "file_name": "ft144.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/lnRR/des_stat/ft144.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "C_mean": 0.88,
+      "C_n": 8,
+      "C_sd": 0.28,
+      "T_mean": 1.08,
+      "T_n": 8,
+      "T_sd": 0.25,
+      "obs_ID": "obs001",
+      "study_ID": "Day et al. 2003 a",
+      "year_pub": 2003
+    },
+    {
+      "C_mean": 0.88,
+      "C_n": 8,
+      "C_sd": 0.28,
+      "T_mean": 1.19,
+      "T_n": 8,
+      "T_sd": 0.21,
+      "obs_ID": "obs002",
+      "study_ID": "Day et al. 2003 a",
+      "year_pub": 2003
+    },
+    {
+      "C_mean": 0.88,
+      "C_n": 8,
+      "C_sd": 0.28,
+      "T_mean": 1.18,
+      "T_n": 8,
+      "T_sd": 0.14,
+      "obs_ID": "obs003",
+      "study_ID": "Day et al. 2003 a",
+      "year_pub": 2003
+    },
+    {
+      "C_mean": 0.8,
+      "C_n": 5,
+      "C_sd": 0.11,
+      "T_mean": 2.0,
+      "T_n": 5,
+      "T_sd": 0.11,
+      "obs_ID": "obs004",
+      "study_ID": "Day et al. 2003 b",
+      "year_pub": 2003
+    },
+    {
+      "C_mean": 2.94,
+      "C_n": 5,
+      "C_sd": 0.69,
+      "T_mean": 3.17,
+      "T_n": 5,
+      "T_sd": 0.61,
+      "obs_ID": "obs005",
+      "study_ID": "Day et al. 2003 b",
+      "year_pub": 2003
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "15adc1114737f1d75f4f6f3dd32b72edfa8647d47f9f30465300d7fae2d14e52"
+}

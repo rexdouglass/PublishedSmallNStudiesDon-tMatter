@@ -1,0 +1,54 @@
+{
+  "artifact_count": 1,
+  "artifacts": [
+    {
+      "access_status": "downloaded",
+      "artifact_id": "source_artifact_3cb25fc2113d4602",
+      "artifact_role": "local_mirror",
+      "blocker_codes": "needs_artifact_inspection",
+      "byte_size": "4756",
+      "candidate_parser_family": "json_metadata_inventory",
+      "component_path": "data/raw/replication_projects/osf_probe",
+      "doi": "",
+      "effect_field_evidence": "",
+      "file_name": "sports_sfbva_node.json",
+      "file_type": "json",
+      "inventory_status": "mirrored",
+      "last_seen": "2026-05-04",
+      "local_path": "data/raw/replication_projects/osf_probe/sports_sfbva_node.json",
+      "mime_type": "application/json",
+      "n_field_evidence": "",
+      "next_action": "keep_as_context_or_assign_parser_after_review",
+      "notes": "generated_from_inventory_task=inventory_task_31ced7c6fca854ac; cluster_id=cluster_sports_sfbva_node_c21ed8767a97",
+      "pair_field_evidence": "",
+      "parent_corpus_database_id": "corpus_db_sports_science_supplemental_outcomes_table",
+      "parent_provider_id": "corpus_db_sports_science_supplemental_outcomes_table",
+      "provider": "github",
+      "provider_id": "data/raw/replication_projects/osf_probe/sports_sfbva_node.json",
+      "publication_link_evidence": "",
+      "raw_url": "",
+      "sha256": "d34b43410ad0092042a3364fad96dd0dea57f9990d0c2f4c713fd10ad13cf999",
+      "title": "sports_sfbva_node.json",
+      "url": ""
+    }
+  ],
+  "created_at": "2026-05-04T00:17:50",
+  "local_sources": [
+    "data/raw/replication_projects/osf_probe/sports_sfbva_node.json"
+  ],
+  "skipped_files": [],
+  "task": {
+    "cluster_id": "cluster_sports_sfbva_node_c21ed8767a97",
+    "confidence": "high",
+    "decision_receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered_recall002/cluster_sports_sfbva_node_c21ed8767a97.json",
+    "inventory_priority": "high",
+    "inventory_reason": "The OSF node metadata explicitly describes an analysis repository containing effect sizes from original and replication studies plus analysis code and markdown summaries. The sports-science corpus is already integrated locally from public supplemental outcome/sample-size artifacts, so this node is a child/source-family artifact to inventory rather than a new root row.",
+    "inventory_task_id": "inventory_task_31ced7c6fca854ac",
+    "lead_level_note_count": "1",
+    "next_action": "Attach OSF node sfbva and related project OSF 3VUFG as source-family access routes under corpus_db_sports_science_supplemental_outcomes_table; mirror or verify file-level effect-size/code artifacts if not already represented by the local sports supplement table and sample-size workbook.",
+    "parent_corpus_database_id_or_key": "corpus_db_sports_science_supplemental_outcomes_table",
+    "preferred_source_family_name": "Estimating the Replicability of Sport Science Research",
+    "route_target": "source_family_artifact_inventory",
+    "source_count": "3"
+  }
+}

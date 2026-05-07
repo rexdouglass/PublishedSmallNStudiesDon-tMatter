@@ -1,0 +1,4218 @@
+{
+  "hitCount": 44,
+  "nextCursorMark": "AoIIP3YXMyg0MTAxMDk0OA==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"external validation\" \"original trial\" \"odds ratio\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIP3YXMyg0MTAxMDk0OA==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"external validation\" \"original trial\" \"odds ratio\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "<h4>Introduction</h4>Renal replacement therapy (RRT) is a life-saving intervention in severe acute kidney injury (AKI). After a clinician-initiated discontinuation, the likelihood of sustained liberation remains uncertain. We aimed to identify predictors of successful RRT weaning and to develop a pragmatic bedside tool (the UNDERSCORE) to support post-discontinuation management.<h4>Methods</h4>This post-hoc analysis of two multicenter randomized trials (AKIKI and AKIKI2) included ICU patients with KDIGO stage 3 AKI managed with a conservative initiation approach. Patients were eligible if they underwent an RRT weaning attempt, defined as discontinuation for\u2009\u2265\u20093 consecutive days. The primary outcome was successful weaning, i.e., no RRT resumption within seven days. Independent predictors were identified using multivariable logistic regression, and the resulting model (UNDERSCORE) was externally validated in an independent Swiss ICU cohort.<h4>Results</h4>Among 554 patients who received RRT, 180 underwent a weaning attempt and 101 (56%) were successfully weaned. Six predictors were retained to construct the UNDERSCORE: RRT duration before the attempt, septic shock on admission, baseline serum creatinine, and three clinical variables assessed after the weaning attempt (use of vasopressors, invasive mechanical ventilation, and urine output). The score showed strong discrimination in the derivation cohort (AUC 0.86, 95% CI 0.80-0.91). In the external Swiss cohort (n\u2009=\u2009415), 338 patients (81%) were successfully weaned, with fair performance across a broader case mix (AUC 0.73, 95% CI 0.66-0.80).<h4>Conclusion</h4>The UNDERSCORE, derived from a homogeneous conservative RRT initiation cohort and validated in a diverse ICU population, provides a bedside tool to estimate the probability of sustained RRT discontinuation after an initial clinician-initiated stop.",
+        "affiliation": "D\u00e9partement de r\u00e9animation m\u00e9dico-chirurgicale, APHP H\u00f4pital Avicenne, Bobigny, France. khalil.chaibi@aphp.fr.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9106-586X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "D\u00e9partement de r\u00e9animation m\u00e9dico-chirurgicale, APHP H\u00f4pital Avicenne, Bobigny, France. khalil.chaibi@aphp.fr."
+                  },
+                  {
+                    "affiliation": "Common and Rare Kidney Diseases, Sorbonne Universit\u00e9, INSERM, UMR-S 1155, Paris, France. khalil.chaibi@aphp.fr."
+                  },
+                  {
+                    "affiliation": "Investigation Network Initiative-Cardiovascular and Renal Clinical Trialists, Bobigny, France. khalil.chaibi@aphp.fr."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical Informatics, Harvard Medical School, Boston, USA. khalil.chaibi@aphp.fr."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9106-586X"
+              },
+              "firstName": "Khalil",
+              "fullName": "Cha\u00efbi K",
+              "initials": "K",
+              "lastName": "Cha\u00efbi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "D\u00e9partement de r\u00e9animation m\u00e9dico-chirurgicale, APHP H\u00f4pital Avicenne, Bobigny, France."
+                  },
+                  {
+                    "affiliation": "Common and Rare Kidney Diseases, Sorbonne Universit\u00e9, INSERM, UMR-S 1155, Paris, France."
+                  }
+                ]
+              },
+              "firstName": "Yanis",
+              "fullName": "Akrour Y",
+              "initials": "Y",
+              "lastName": "Akrour"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "R\u00e9animation polyvalente, CHR Metz-Thionville H\u00f4pital de Mercy, Metz, France."
+                  }
+                ]
+              },
+              "firstName": "Guillaume",
+              "fullName": "Louis G",
+              "initials": "G",
+              "lastName": "Louis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "R\u00e9animation polyvalente, CHR d\u00e9partementale La Roche sur Yon, La Roche sur Yon, France."
+                  }
+                ]
+              },
+              "firstName": "Laurent Martin",
+              "fullName": "Lefevre LM",
+              "initials": "LM",
+              "lastName": "Lefevre"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "R\u00e9animation, CHU Pointe-a-Pitre/Abymes, Pointe-a-Pitre, France."
+                  }
+                ]
+              },
+              "firstName": "Bertrand",
+              "fullName": "Pons B",
+              "initials": "B",
+              "lastName": "Pons"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "R\u00e9animation polyvalente, CHG d'Avignon Henri Duffaut, Avignon, France."
+                  }
+                ]
+              },
+              "firstName": "S\u00e9bastien",
+              "fullName": "Moschietto S",
+              "initials": "S",
+              "lastName": "Moschietto"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "R\u00e9animation polyvalente, CH Ren\u00e9 Dubos, Pontoise, France."
+                  }
+                ]
+              },
+              "firstName": "Eric",
+              "fullName": "Boulet E",
+              "initials": "E",
+              "lastName": "Boulet"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Sorbonne Universit\u00e9, INSERM, Institut Pierre Louis d'Epid\u00e9miologie et de Sant\u00e9 Publique, Assistance Publique-H\u00f4pitaux de Paris, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, D\u00e9partement de Sant\u00e9 Publique, Centre de Pharmaco\u00e9pid\u00e9miologie, Paris, France."
+                  }
+                ]
+              },
+              "firstName": "David",
+              "fullName": "Hajage D",
+              "initials": "D",
+              "lastName": "Hajage"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Sorbonne Universit\u00e9, INSERM, Institut Pierre Louis d'Epid\u00e9miologie et de Sant\u00e9 Publique, Assistance Publique-H\u00f4pitaux de Paris, H\u00f4pital Piti\u00e9-Salp\u00eatri\u00e8re, D\u00e9partement de Sant\u00e9 Publique, Centre de Pharmaco\u00e9pid\u00e9miologie, Paris, France."
+                  }
+                ]
+              },
+              "firstName": "Sa\u00efd",
+              "fullName": "Lebbah S",
+              "initials": "S",
+              "lastName": "Lebbah"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Intensive Care, Fran\u00e7ois Mitterrand University Hospital, Dijon, France."
+                  },
+                  {
+                    "affiliation": "Lipness Team, INSERM Research Center LNC-UMR1231 and LabExLipSTIC, University of Burgundy, Dijon, France."
+                  }
+                ]
+              },
+              "firstName": "Jean-Pierre",
+              "fullName": "Quenot JP",
+              "initials": "JP",
+              "lastName": "Quenot"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cell Physiology and Metabolism, Faculty of Medicine, University of Geneva, Geneva, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "Frederic",
+              "fullName": "Sangla F",
+              "initials": "F",
+              "lastName": "Sangla"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Common and Rare Kidney Diseases, Sorbonne Universit\u00e9, INSERM, UMR-S 1155, Paris, France."
+                  },
+                  {
+                    "affiliation": "M\u00e9decine Intensive-R\u00e9animation, APHP, H\u00f4pital Louis Mourier, Universit\u00e9 Paris Cit\u00e9, Colombes, France."
+                  }
+                ]
+              },
+              "firstName": "Didier",
+              "fullName": "Dreyfuss D",
+              "initials": "D",
+              "lastName": "Dreyfuss"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "D\u00e9partement de r\u00e9animation m\u00e9dico-chirurgicale, APHP H\u00f4pital Avicenne, Bobigny, France."
+                  },
+                  {
+                    "affiliation": "Common and Rare Kidney Diseases, Sorbonne Universit\u00e9, INSERM, UMR-S 1155, Paris, France."
+                  },
+                  {
+                    "affiliation": "Investigation Network Initiative-Cardiovascular and Renal Clinical Trialists, Bobigny, France."
+                  },
+                  {
+                    "affiliation": "Health Care Simulation Center, UFR SMBH, Universit\u00e9 Sorbonne Paris Nord, Bobigny, France."
+                  }
+                ]
+              },
+              "firstName": "St\u00e9phane",
+              "fullName": "Gaudry S",
+              "initials": "S",
+              "lastName": "Gaudry"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cell Physiology and Metabolism, Faculty of Medicine, University of Geneva, Geneva, Switzerland."
+                  },
+                  {
+                    "affiliation": "Division of Intensive Care, Department of Anesthesiology, Pharmacology, Intensive Care and Emergency Medicine, Geneva University Hospitals, Geneva, Switzerland."
+                  }
+                ]
+              },
+              "firstName": "David",
+              "fullName": "Legouis D",
+              "initials": "D",
+              "lastName": "Legouis"
+            },
+            {
+              "collectiveName": "DOORS investigators"
+            }
+          ]
+        },
+        "authorString": "Cha\u00efbi K, Akrour Y, Louis G, Lefevre LM, Pons B, Moschietto S, Boulet E, Hajage D, Lebbah S, Quenot JP, Sangla F, Dreyfuss D, Gaudry S, Legouis D, DOORS investigators.",
+        "citedByCount": 3,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-30",
+        "dateOfCreation": "2026-03-17",
+        "dateOfRevision": "2026-04-02",
+        "doi": "10.1007/s00134-026-08357-x",
+        "electronicPublicationDate": "2026-03-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-17",
+        "firstPublicationDate": "2026-03-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13035642"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s00134-026-08357-x"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13035642"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13035642?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Swiss National Science Foundation",
+              "grantId": "233456",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41843064",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "investigatorList": {
+          "investigator": [
+            {
+              "firstName": "St\u00e9phane",
+              "fullName": "Gaudry S",
+              "initials": "S",
+              "lastName": "Gaudry"
+            },
+            {
+              "firstName": "David",
+              "fullName": "Hajage D",
+              "initials": "D",
+              "lastName": "Hajage"
+            },
+            {
+              "firstName": "Fr\u00e9d\u00e9rique",
+              "fullName": "Schortgen F",
+              "initials": "F",
+              "lastName": "Schortgen"
+            },
+            {
+              "firstName": "Laurent",
+              "fullName": "Martin-Lefevre L",
+              "initials": "L",
+              "lastName": "Martin-Lefevre"
+            },
+            {
+              "firstName": "Bertrand",
+              "fullName": "Pons B",
+              "initials": "B",
+              "lastName": "Pons"
+            },
+            {
+              "firstName": "Eric",
+              "fullName": "Boulet E",
+              "initials": "E",
+              "lastName": "Boulet"
+            },
+            {
+              "firstName": "Alexandre",
+              "fullName": "Boyer A",
+              "initials": "A",
+              "lastName": "Boyer"
+            },
+            {
+              "firstName": "Guillaume",
+              "fullName": "Chevrel G",
+              "initials": "G",
+              "lastName": "Chevrel"
+            },
+            {
+              "firstName": "Nicolas",
+              "fullName": "Lerolle N",
+              "initials": "N",
+              "lastName": "Lerolle"
+            },
+            {
+              "firstName": "Doroth\u00e9e",
+              "fullName": "Carpentier D",
+              "initials": "D",
+              "lastName": "Carpentier"
+            },
+            {
+              "firstName": "Nicolas",
+              "fullName": "de Prost N",
+              "initials": "N",
+              "lastName": "de Prost"
+            },
+            {
+              "firstName": "Alexandre",
+              "fullName": "Lautrette A",
+              "initials": "A",
+              "lastName": "Lautrette"
+            },
+            {
+              "firstName": "Anne",
+              "fullName": "Bretagnol A",
+              "initials": "A",
+              "lastName": "Bretagnol"
+            },
+            {
+              "firstName": "Julien",
+              "fullName": "Mayaux J",
+              "initials": "J",
+              "lastName": "Mayaux"
+            },
+            {
+              "firstName": "Saad",
+              "fullName": "Nseir S",
+              "initials": "S",
+              "lastName": "Nseir"
+            },
+            {
+              "firstName": "Bruno",
+              "fullName": "M\u00e9garbane B",
+              "initials": "B",
+              "lastName": "M\u00e9garbane"
+            },
+            {
+              "firstName": "Marina",
+              "fullName": "Thirion M",
+              "initials": "M",
+              "lastName": "Thirion"
+            },
+            {
+              "firstName": "Jean-Marie",
+              "fullName": "Forel JM",
+              "initials": "JM",
+              "lastName": "Forel"
+            },
+            {
+              "firstName": "Julien",
+              "fullName": "Maizel J",
+              "initials": "J",
+              "lastName": "Maizel"
+            },
+            {
+              "firstName": "Hodane",
+              "fullName": "Yonis H",
+              "initials": "H",
+              "lastName": "Yonis"
+            },
+            {
+              "firstName": "Philippe",
+              "fullName": "Markowicz P",
+              "initials": "P",
+              "lastName": "Markowicz"
+            },
+            {
+              "firstName": "Guillaume",
+              "fullName": "Thiery G",
+              "initials": "G",
+              "lastName": "Thiery"
+            },
+            {
+              "firstName": "Florence",
+              "fullName": "Tubach F",
+              "initials": "F",
+              "lastName": "Tubach"
+            },
+            {
+              "firstName": "Jean-Damien",
+              "fullName": "Ricard JD",
+              "initials": "JD",
+              "lastName": "Ricard"
+            },
+            {
+              "firstName": "Didier",
+              "fullName": "Dreyfuss D",
+              "initials": "D",
+              "lastName": "Dreyfuss"
+            },
+            {
+              "firstName": "Sa\u00efd",
+              "fullName": "Lebbah S",
+              "initials": "S",
+              "lastName": "Lebbah"
+            },
+            {
+              "firstName": "Guillaume",
+              "fullName": "Louis G",
+              "initials": "G",
+              "lastName": "Louis"
+            },
+            {
+              "firstName": "S\u00e9bastien",
+              "fullName": "Moschietto S",
+              "initials": "S",
+              "lastName": "Moschietto"
+            },
+            {
+              "firstName": "Dimitri",
+              "fullName": "Titeca-Beauport D",
+              "initials": "D",
+              "lastName": "Titeca-Beauport"
+            },
+            {
+              "firstName": "B\u00e9atrice",
+              "fullName": "La Combe B",
+              "initials": "B",
+              "lastName": "La Combe"
+            },
+            {
+              "firstName": "S\u00e9bastien",
+              "fullName": "Besset S",
+              "initials": "S",
+              "lastName": "Besset"
+            },
+            {
+              "firstName": "Alain",
+              "fullName": "Combes A",
+              "initials": "A",
+              "lastName": "Combes"
+            },
+            {
+              "firstName": "Adrien",
+              "fullName": "Robine A",
+              "initials": "A",
+              "lastName": "Robine"
+            },
+            {
+              "firstName": "Marion",
+              "fullName": "Beuzelin M",
+              "initials": "M",
+              "lastName": "Beuzelin"
+            },
+            {
+              "firstName": "Julio",
+              "fullName": "Badie J",
+              "initials": "J",
+              "lastName": "Badie"
+            },
+            {
+              "firstName": "Julien",
+              "fullName": "Boh\u00e9 J",
+              "initials": "J",
+              "lastName": "Boh\u00e9"
+            },
+            {
+              "firstName": "Elisabeth",
+              "fullName": "Coupez E",
+              "initials": "E",
+              "lastName": "Coupez"
+            },
+            {
+              "firstName": "Nicolas",
+              "fullName": "Chudeau N",
+              "initials": "N",
+              "lastName": "Chudeau"
+            },
+            {
+              "firstName": "Saber",
+              "fullName": "Barbar S",
+              "initials": "S",
+              "lastName": "Barbar"
+            },
+            {
+              "firstName": "Christophe",
+              "fullName": "Vinsonneau C",
+              "initials": "C",
+              "lastName": "Vinsonneau"
+            },
+            {
+              "firstName": "Didier",
+              "fullName": "Thevenin D",
+              "initials": "D",
+              "lastName": "Thevenin"
+            },
+            {
+              "firstName": "Karim",
+              "fullName": "Lakhal K",
+              "initials": "K",
+              "lastName": "Lakhal"
+            },
+            {
+              "firstName": "Nadia",
+              "fullName": "Aissaoui N",
+              "initials": "N",
+              "lastName": "Aissaoui"
+            },
+            {
+              "firstName": "Steven",
+              "fullName": "Grange S",
+              "initials": "S",
+              "lastName": "Grange"
+            },
+            {
+              "firstName": "Marc",
+              "fullName": "Leone M",
+              "initials": "M",
+              "lastName": "Leone"
+            },
+            {
+              "firstName": "Guillaume",
+              "fullName": "Lacave G",
+              "initials": "G",
+              "lastName": "Lacave"
+            },
+            {
+              "firstName": "Florent",
+              "fullName": "Poirson F",
+              "initials": "F",
+              "lastName": "Poirson"
+            },
+            {
+              "firstName": "Karim",
+              "fullName": "Asehnoune K",
+              "initials": "K",
+              "lastName": "Asehnoune"
+            },
+            {
+              "firstName": "Guillaume",
+              "fullName": "Geri G",
+              "initials": "G",
+              "lastName": "Geri"
+            },
+            {
+              "firstName": "Kada",
+              "fullName": "Klouche K",
+              "initials": "K",
+              "lastName": "Klouche"
+            },
+            {
+              "firstName": "Laurent",
+              "fullName": "Argaud L",
+              "initials": "L",
+              "lastName": "Argaud"
+            },
+            {
+              "firstName": "Bertrand",
+              "fullName": "Rozec B",
+              "initials": "B",
+              "lastName": "Rozec"
+            },
+            {
+              "firstName": "Cyril",
+              "fullName": "Cadoz C",
+              "initials": "C",
+              "lastName": "Cadoz"
+            },
+            {
+              "firstName": "Pascal",
+              "fullName": "Andreu P",
+              "initials": "P",
+              "lastName": "Andreu"
+            },
+            {
+              "firstName": "Jean",
+              "fullName": "Reignier J",
+              "initials": "J",
+              "lastName": "Reignier"
+            },
+            {
+              "firstName": "Jean-Pierre",
+              "fullName": "Quenot JP",
+              "initials": "JP",
+              "lastName": "Quenot"
+            },
+            {
+              "firstName": "Jean-Marie",
+              "fullName": "Forel JM",
+              "initials": "JM",
+              "lastName": "Forel"
+            },
+            {
+              "firstName": "Guillaume",
+              "fullName": "Thiery G",
+              "initials": "G",
+              "lastName": "Thiery"
+            }
+          ]
+        },
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "3",
+          "journal": {
+            "essn": "1432-1238",
+            "isoabbreviation": "Intensive Care Med",
+            "issn": "0342-4642",
+            "medlineAbbreviation": "Intensive Care Med",
+            "nlmid": "7704851",
+            "title": "Intensive care medicine"
+          },
+          "journalIssueId": 4164161,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "52",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Acute Kidney Injury",
+            "Renal Replacement Therapy",
+            "Weaning Score"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Withholding Treatment",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Renal Replacement Therapy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Intensive Care Units",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Acute Kidney Injury",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "490-499",
+        "pmcid": "PMC13035642",
+        "pmid": "41843064",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Predictive factors of successful renal replacement therapy weaning : Deciding On patients Orientations after Renal replacement therapy Stopping (The DOORS study)."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Bronchopulmonary dysplasia (BPD) is the most prevalent chronic lung disease in very preterm infants; however, conventional classifications have limited ability to predict severity before 36 weeks' postmenstrual age (PMA). A new Japanese classification, based on small for gestational age (SGA), bubbly/cystic chest radiographic findings, and chorioamnionitis (CAM), was proposed to enable earlier risk stratification. However, its validation in homogeneous cohorts is warranted.<h4>Purpose</h4>This study aimed to examine the association between this new Japanese classification and severe BPD development at 36 weeks' PMA in a secondary analysis of a randomized controlled trial (RCT).<h4>Methods</h4>A retrospective secondary analysis of a multicenter, double-blind RCT of inhaled corticosteroids in 12 tertiary neonatal intensive care units in Japan (2006-2009) was performed. Infants with a birth weight (BW)<1,000 g and requiring mechanical ventilation were enrolled. Of those 211 infants, 194 survivors were analyzed. Severe BPD was defined by National Institute of Child Health and Human Development criteria as requiring supplemental oxygen (fraction of inspired O2 >0.30) or positive pressure ventilation at 36 weeks' PMA. Logistic regression analyses were adjusted for gestational age, BW, sex, Apgar score, maternal steroid use, respiratory distress syndrome, and patent ductus arteriosus.<h4>Results</h4>Among the 194 infants, 25 were SGA, 45 had bubbly/cystic findings, and 86 had CAM. Severe BPD occurred in 80 infants. A multivariate analysis identified SGA (adjusted odds ratio [aOR], 3.32; 95% confidence interval [CI], 1.16-9.48; P=0.032) and bubbly/cystic findings (aOR, 10.88; 95% CI, 4.43-26.72; P<0.01) as independent risk factors. Compared with type II (non-CAM, no bubbly/cystic findings), type I (bubbly/cystic only: aOR, 6.21; 95% CI, 1.93-14.36) and type III (CAM plus bubbly/cystic: aOR, 15.32; 95% CI, 2.48-46.32) were significantly associated with severe BPD.<h4>Conclusion</h4>The new Japanese classification demonstrated that SGA and bubbly/cystic findings at day 28 independently predicted severe BPD. Early stratification using this classification may facilitate the early identification of high-risk infants for targeted interventions.",
+        "affiliation": "Department of Neonatology, Akita Red Cross Hospital, Akita, Japan.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8084-4451"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neonatology, Akita Red Cross Hospital, Akita, Japan."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8084-4451"
+              },
+              "firstName": "Masato",
+              "fullName": "Ito M",
+              "initials": "M",
+              "lastName": "Ito"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neonatal Medicine, Osaka Women's and Children's Hospital, Izumi, Osaka, Japan."
+                  }
+                ]
+              },
+              "firstName": "Shinya",
+              "fullName": "Hirano S",
+              "initials": "S",
+              "lastName": "Hirano"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pediatrics, Saitama Medical Center, Saitama Medical University, Kawagoe, Saitama, Japan."
+                  }
+                ]
+              },
+              "firstName": "Fumihiko",
+              "fullName": "Namba F",
+              "initials": "F",
+              "lastName": "Namba"
+            }
+          ]
+        },
+        "authorString": "Ito M, Hirano S, Namba F.",
+        "citedByCount": 1,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "41736229",
+              "orderIn": 1,
+              "reference": "Clin Exp Pediatr. 2026 Mar;69(3):211-213. doi: 10.3345/cep.2026.00143.",
+              "source": "MED",
+              "type": "Comment in"
+            }
+          ]
+        },
+        "dateOfCompletion": "2026-03-06",
+        "dateOfCreation": "2026-01-22",
+        "dateOfRevision": "2026-03-08",
+        "doi": "10.3345/cep.2025.02642",
+        "electronicPublicationDate": "2026-01-20",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-22",
+        "firstPublicationDate": "2026-01-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12963941"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3345/cep.2025.02642"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12963941"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12963941?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41566982",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "3",
+          "journal": {
+            "essn": "2713-4148",
+            "isoabbreviation": "Clin Exp Pediatr",
+            "issn": "2713-4148",
+            "medlineAbbreviation": "Clin Exp Pediatr",
+            "nlmid": "101761234",
+            "title": "Clinical and experimental pediatrics"
+          },
+          "journalIssueId": 4142823,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "69",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Chorioamnionitis",
+            "Thoracic Radiography",
+            "Bronchopulmonary Dysplasia",
+            "Very Low Birth Weight Infant",
+            "Small For Gestational Age Infant"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "274-281",
+        "pmcid": "PMC12963941",
+        "pmid": "41566982",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "title": "Validation of a new Japanese classification for predicting severe bronchopulmonary dysplasia in preterm infants."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Preoperative anxiety is common in young children and may impair cooperation during anesthesia induction. Some temperament traits have been associated with higher anxiety levels in the preoperative phase. While midazolam is widely used for anxiolysis, individual responses vary and may be influenced by underlying psychological characteristics such as temperament.<h4>Aims</h4>This study aimed to examine the association between specific temperament traits and preoperative anxiety in young children and to determine whether these associations persist after midazolam administration.<h4>Methods</h4>This secondary analysis of the ALPAKA trial examined associations between temperament and perioperative anxiety in children aged 2-8\u2009years undergoing elective surgery. Temperament was assessed using the parent-reported Integrative Child Temperament Inventory (ICTI). Anxiety was rated at two time points before (T1) and after (T2) midazolam administration using the modified Yale Preoperative Anxiety Scale-Short Form (mYPAS-SF). Additional variables included the Strengths and Difficulties Questionnaire (SDQ) scores, baseline characteristics and prior emotional distress. Spearman correlation (r<sub>s</sub>), multivariable and univariate logistic regression analyses were conducted to identify predictors of elevated anxiety (defined as mYPAS-SF\u2009>\u200930).<h4>Results</h4>Eighty-nine children were included in the final analysis. Behavioral inhibition was associated with anxiety at both T1 (r<sub>s</sub>\u2009=\u20090.35, 95% CI 0.15-0.53, p\u2009=\u20090.001) and T2 (r<sub>s</sub>\u2009=\u20090.46, 95% CI 0.28-0.62, p\u2009<\u20090.001). No significant associations were found for other IKT or SDQ subscales. Logistic regression showed that male sex (OR 3.16, 95% CI 1.36-7.19, p\u2009=\u20090.011) and prior anesthesia experience (OR 4.28, 95% CI 1.78-10.39, p\u2009=\u20090.001) were independently associated with elevated anxiety at T1. A multivariable logistic regression for behavioral inhibition adjusted by sex and prior anesthesia showed for T1 a positive association with elevated anxiety (OR 1.02, 95% CI 1.00-1.05). For T2, the corresponding model showed limited explanatory power.<h4>Conclusion</h4>Behavioral inhibition is a robust predictor of perioperative anxiety in young children, both before and after midazolam administration. Brief screening for inhibition may help identify children at increased risk and guide individualized, risk-adapted strategies in pediatric anesthesia.<h4>Trial registration</h4>German Clinical Trial Registration number: DRKS00025411. Principal investigator: Armin Sablewski (15/02/2022, https://drks.de/search/en/trial/DRKS00025411).",
+        "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2026-7629"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-3132-589X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Thorben",
+              "fullName": "Jacobi T",
+              "initials": "T",
+              "lastName": "Jacobi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Sebastian",
+              "fullName": "Walter S",
+              "initials": "S",
+              "lastName": "Walter"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neuropediatrics, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Andrea",
+              "fullName": "Pickartz A",
+              "initials": "A",
+              "lastName": "Pickartz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Georg",
+              "fullName": "Baller G",
+              "initials": "G",
+              "lastName": "Baller"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2026-7629"
+              },
+              "firstName": "Tobias",
+              "fullName": "Becher T",
+              "initials": "T",
+              "lastName": "Becher"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "firstName": "Ingmar",
+              "fullName": "Lautenschl\u00e4ger I",
+              "initials": "I",
+              "lastName": "Lautenschl\u00e4ger"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Intensive Care Medicine, University Hospital S-H, Kiel, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-3132-589X"
+              },
+              "firstName": "Armin",
+              "fullName": "Sablewski A",
+              "initials": "A",
+              "lastName": "Sablewski"
+            }
+          ]
+        },
+        "authorString": "Jacobi T, Walter S, Pickartz A, Baller G, Becher T, Lautenschl\u00e4ger I, Sablewski A.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Midazolam",
+              "registryNumber": "R60L0SM5BC"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-07",
+        "dateOfCreation": "2026-02-18",
+        "dateOfRevision": "2026-04-09",
+        "doi": "10.1002/pan.70150",
+        "electronicPublicationDate": "2026-02-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-19",
+        "firstPublicationDate": "2026-02-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13054105"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/pan.70150"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13054105"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13054105?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41706036",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 May",
+          "issue": "5",
+          "journal": {
+            "essn": "1460-9592",
+            "isoabbreviation": "Paediatr Anaesth",
+            "issn": "1155-5645",
+            "medlineAbbreviation": "Paediatr Anaesth",
+            "nlmid": "9206575",
+            "title": "Paediatric anaesthesia"
+          },
+          "journalIssueId": 4173430,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2026-05-01",
+          "volume": "36",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Midazolam",
+            "Temperament",
+            "Premedication",
+            "Personality Traits",
+            "Pediatric Anesthesia",
+            "Preoperative Anxiety",
+            "Anxiety In Children"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Midazolam",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Preoperative Care",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Risk Factors",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Anxiety",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Temperament",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Child",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Child, Preschool",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Preoperative Period",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Elective Surgical Procedures",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "540-548",
+        "pmcid": "PMC13054105",
+        "pmid": "41706036",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Child's Temperament as Risk Factor for Preoperative Anxiety-A Secondary Analysis of the ALPAKA Trial."
+      },
+      {
+        "abstractText": "<b>Objective:</b> This study assessed the efficacy of the cervical pessary combined with progesterone to prevent preterm birth in pregnant women with short cervix and previous preterm birth. <b>Methods:</b> This post hoc analysis of the randomized, multicenter P5 trial examined the efficacy of the cervical pessary associated with vaginal progesterone versus progesterone alone for preventing recurrent preterm birth in 155 pregnant women with cervical length \u226430 mm and prior spontaneous preterm birth (sPPTB) (main subgroup), and in 85 women with cervical length \u226425 mm and sPPTB (higher-risk population). The primary outcome was spontaneous preterm birth (sPTB) before 34 weeks; secondary outcomes included sPTB rates before 37, 32, and 28 weeks, analyzed using Odds Ratio (OR) and Kaplan-Meier curves. A secondary objective was to identify predictive factors for sPTB recurrence in the cohort with prior preterm birth (n = 479), irrespective of treatment allocation. <b>Results:</b> Demographic profiles were balanced between groups. The addition of a cervical pessary to progesterone did not result in a significant reduction in sPTB before 34 weeks: to cervix \u226430 mm, OR 1.169 (95% CI 0.524-2.609; <i>p</i> = 0.703) and 1.167 (95% CI 0.466-2.921; <i>p</i> = 0.742) for \u226425 mm; similar null findings were observed across all gestational age thresholds. Kaplan-Meier survival curves demonstrated no significant differences between groups (<i>p</i> > 0.05). Secondary analysis (n = 479) identified principal predictors of sPTB recurrence, regardless of the cervical length: higher education (OR 2.37; 95% CI 0.99-5.63; <i>p</i> = 0.024), previous cervical conization (OR 4.78; 95% CI 1.08-21.19; <i>p</i> = 0.039) previous low birth weight < 2.5 kg (OR 2.43; 95% CI 1.22-4.85; <i>p</i> = 0.051), prior miscarriages (OR 1.36; 95% CI 1.10-1.69; <i>p</i> = 0.005), current twin pregnancy (OR 14.86; 95% CI 4.35-50.68; <i>p</i> < 0.001) and cervical funneling (OR 3.60; 95% CI 1.79-7.24; <i>p</i> < 0.001). Predictive models achieved an AUC of 0.719, with 87.0% sensitivity and 58.8% specificity. <b>Conclusions:</b> These findings do not support the routine use of cervical pessary combined with progesterone in women with dual risk factors. In this Brazilian population, specific clinical and obstetric characteristics-including higher education, cervical funneling, prior low birth weight delivery, previous conization, current twin gestation, and prior miscarriage-could identify women at increased risk for recurrent preterm birth.",
+        "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5145-1061"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7306-533X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7882-1536"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2942-6182"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4398-9141"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5739-0009"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6145-2532"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1405-5371"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2958-1921"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-3126-891X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5145-1061"
+              },
+              "firstName": "Marcelo Santucci",
+              "fullName": "Fran\u00e7a MS",
+              "initials": "MS",
+              "lastName": "Fran\u00e7a"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-3126-891X"
+              },
+              "firstName": "Gabriela Ubeda Santucci",
+              "fullName": "Fran\u00e7a GUS",
+              "initials": "GUS",
+              "lastName": "Fran\u00e7a"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7306-533X"
+              },
+              "firstName": "Alan Roberto",
+              "fullName": "Hatanaka AR",
+              "initials": "AR",
+              "lastName": "Hatanaka"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7882-1536"
+              },
+              "firstName": "Evelyn",
+              "fullName": "Traina E",
+              "initials": "E",
+              "lastName": "Traina"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2958-1921"
+              },
+              "firstName": "Tatiana Emy Kawanami",
+              "fullName": "Hamamoto TEK",
+              "initials": "TEK",
+              "lastName": "Hamamoto"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4398-9141"
+              },
+              "firstName": "Danilo Brito",
+              "fullName": "Silva DB",
+              "initials": "DB",
+              "lastName": "Silva"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6145-2532"
+              },
+              "firstName": "Edward",
+              "fullName": "Araujo J\u00fanior E",
+              "initials": "E",
+              "lastName": "Araujo J\u00fanior"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics, Paulista School of Medicine-Federal University of S\u00e3o Paulo (EPM-UNIFESP), S\u00e3o Paulo 04023-062, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1405-5371"
+              },
+              "firstName": "Rosiane",
+              "fullName": "Mattar R",
+              "initials": "R",
+              "lastName": "Mattar"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gynecology and Obstetrics, School of Medicine, Federal University of Rio de Janeiro (UFRJ), Rio de Janeiro 22240-003, RJ, Brazil."
+                  },
+                  {
+                    "affiliation": "Department of General and Specialized Surgery, School of Medicine and Surgery, Federal University of the State of Rio de Janeiro (UNIRIO), Rio de Janeiro 20271-062, RJ, Brazil."
+                  },
+                  {
+                    "affiliation": "Postgraduate Program in Applied Health Sciences, University of Vassouras, Vassouras 27700-000, RJ, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2942-6182"
+              },
+              "firstName": "Antonio",
+              "fullName": "Braga A",
+              "initials": "A",
+              "lastName": "Braga"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Obstetrics and Gynecology, State University of Campinas (UNICAMP), Campinas 13083-859, SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5739-0009"
+              },
+              "firstName": "Rodolfo de Carvalho",
+              "fullName": "Pacagnella RC",
+              "initials": "RC",
+              "lastName": "Pacagnella"
+            }
+          ]
+        },
+        "authorString": "Fran\u00e7a MS, Fran\u00e7a GUS, Hatanaka AR, Traina E, Hamamoto TEK, Silva DB, Araujo J\u00fanior E, Mattar R, Braga A, Pacagnella RC.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-02-13",
+        "dateOfCreation": "2026-02-13",
+        "dateOfRevision": "2026-02-16",
+        "doi": "10.3390/diagnostics16030402",
+        "electronicPublicationDate": "2026-01-27",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-13",
+        "firstPublicationDate": "2026-01-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12897000"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/diagnostics16030402"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12897000"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12897000?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "GATES",
+              "agency": "Gates Foundation",
+              "grantId": "1",
+              "orderIn": 0
+            },
+            {
+              "agency": "Bill &amp; Melinda Gates Foundation",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41681719",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "issue": "3",
+          "journal": {
+            "essn": "2075-4418",
+            "isoabbreviation": "Diagnostics (Basel)",
+            "issn": "2075-4418",
+            "medlineAbbreviation": "Diagnostics (Basel)",
+            "nlmid": "101658402",
+            "title": "Diagnostics (Basel, Switzerland)"
+          },
+          "journalIssueId": 4120552,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "16",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Preterm Birth",
+            "Predictive Factors",
+            "Cervical Pessary",
+            "Vaginal Progesterone",
+            "Short Cervical Length",
+            "Previous Preterm Birth"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "402",
+        "pmcid": "PMC12897000",
+        "pmid": "41681719",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Efficacy of Combined Cervical Pessary and Progesterone in Women at High-Risk of Preterm Birth."
+      },
+      {
+        "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  },
+                  {
+                    "affiliation": "Biomedical Innovation Center, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  }
+                ]
+              },
+              "firstName": "Jiankun",
+              "fullName": "Shi J",
+              "initials": "J",
+              "lastName": "Shi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  },
+                  {
+                    "affiliation": "Biomedical Innovation Center, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  }
+                ]
+              },
+              "firstName": "Yabin",
+              "fullName": "Huang Y",
+              "initials": "Y",
+              "lastName": "Huang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  },
+                  {
+                    "affiliation": "Biomedical Innovation Center, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  }
+                ]
+              },
+              "firstName": "Jiaxin",
+              "fullName": "Han J",
+              "initials": "J",
+              "lastName": "Han"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  },
+                  {
+                    "affiliation": "Biomedical Innovation Center, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  }
+                ]
+              },
+              "firstName": "Shimin",
+              "fullName": "Zhang S",
+              "initials": "S",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  },
+                  {
+                    "affiliation": "Biomedical Innovation Center, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China."
+                  }
+                ]
+              },
+              "firstName": "Xingshan",
+              "fullName": "Cheng X",
+              "initials": "X",
+              "lastName": "Cheng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesia, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China. luotf3@mail.sysu.edu.cn."
+                  },
+                  {
+                    "affiliation": "Biomedical Innovation Center, The Sixth Affiliated Hospital, Sun Yat-Sen University, No.26 Yuancunerheng Road, Guangzhou, 510655, China. luotf3@mail.sysu.edu.cn."
+                  }
+                ]
+              },
+              "firstName": "Tongfeng",
+              "fullName": "Luo T",
+              "initials": "T",
+              "lastName": "Luo"
+            }
+          ]
+        },
+        "authorString": "Shi J, Huang Y, Han J, Zhang S, Cheng X, Luo T.",
+        "citedByCount": 1,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR1037939",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2025-10-08",
+        "dateOfRevision": "2025-10-12",
+        "doi": "10.1186/s12876-025-04330-y",
+        "electronicPublicationDate": "2025-10-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-10-09",
+        "firstPublicationDate": "2025-10-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12505985"
+          ]
+        },
+        "fullTextReceivedDate": "2025-10-10",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s12876-025-04330-y"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12505985"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12505985?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41062989",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "1",
+          "journal": {
+            "essn": "1471-230X",
+            "isoabbreviation": "BMC Gastroenterol",
+            "issn": "1471-230X",
+            "medlineAbbreviation": "BMC Gastroenterol",
+            "nlmid": "100968547",
+            "title": "BMC gastroenterology"
+          },
+          "journalIssueId": 4027518,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "25",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Prediction model",
+            "Gastrointestinal Surgery",
+            "Length Of Hospital Stay"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "703",
+        "pmcid": "PMC12505985",
+        "pmid": "41062989",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Development and validation of a machine learning-based prediction model for prolonged length of stay after laparoscopic gastrointestinal surgery: a secondary analysis of the FDP-PONV trial.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8043-6685"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  },
+                  {
+                    "affiliation": "The 81st Group Army Hospital of PLA, Zhangjiakou, Hebei, China."
+                  }
+                ]
+              },
+              "firstName": "Yuefei",
+              "fullName": "Pan Y",
+              "initials": "Y",
+              "lastName": "Pan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Mengqi",
+              "fullName": "Yuan M",
+              "initials": "M",
+              "lastName": "Yuan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Infectious Diseases, Chinese PLA General Hospital of Central Theater Command, Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Le",
+              "fullName": "Song L",
+              "initials": "L",
+              "lastName": "Song"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Life and Health Sciences, Hubei University of Technology, Wuhan, China."
+                  }
+                ]
+              },
+              "firstName": "Weiqi",
+              "fullName": "Yao W",
+              "initials": "W",
+              "lastName": "Yao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Infectious Diseases, Chinese PLA General Hospital of Central Theater Command, Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Junli",
+              "fullName": "He J",
+              "initials": "J",
+              "lastName": "He"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Infectious Diseases, Chinese PLA General Hospital of Central Theater Command, Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Qiong",
+              "fullName": "Mo Q",
+              "initials": "Q",
+              "lastName": "Mo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Infectious Diseases, Chinese PLA General Hospital of Central Theater Command, Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Ning",
+              "fullName": "Zheng N",
+              "initials": "N",
+              "lastName": "Zheng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Peking University 302 Clinical Medical School, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Ziying",
+              "fullName": "Zhang Z",
+              "initials": "Z",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Wuhan Optics Valley Zhongyuan Pharmaceutical Co. Ltd., Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Tengyun",
+              "fullName": "Dong T",
+              "initials": "T",
+              "lastName": "Dong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Kaidi",
+              "fullName": "Zhu K",
+              "initials": "K",
+              "lastName": "Zhu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Zeyi",
+              "fullName": "Zhang Z",
+              "initials": "Z",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Jiaqi",
+              "fullName": "Xiong J",
+              "initials": "J",
+              "lastName": "Xiong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiology, The Fifth Medical Center, Chinese PLA General Hospital, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Jinghui",
+              "fullName": "Dong J",
+              "initials": "J",
+              "lastName": "Dong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiology, The Fifth Medical Center, Chinese PLA General Hospital, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Jianzeng",
+              "fullName": "Zhang J",
+              "initials": "J",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiology, The Fifth Medical Center, Chinese PLA General Hospital, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Mengmeng",
+              "fullName": "Zhang M",
+              "initials": "M",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Chao",
+              "fullName": "Zhang C",
+              "initials": "C",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Yuanyuan",
+              "fullName": "Li Y",
+              "initials": "Y",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Limin",
+              "fullName": "Liu L",
+              "initials": "L",
+              "lastName": "Liu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  }
+                ]
+              },
+              "firstName": "Jing",
+              "fullName": "Li J",
+              "initials": "J",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  }
+                ]
+              },
+              "firstName": "Yunbo",
+              "fullName": "Xie Y",
+              "initials": "Y",
+              "lastName": "Xie"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Ming",
+              "fullName": "Shi M",
+              "initials": "M",
+              "lastName": "Shi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Lei",
+              "fullName": "Huang L",
+              "initials": "L",
+              "lastName": "Huang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China."
+                  }
+                ]
+              },
+              "firstName": "Zhe",
+              "fullName": "Xu Z",
+              "initials": "Z",
+              "lastName": "Xu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Wuhan Optics Valley Zhongyuan Pharmaceutical Co. Ltd., Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Yu",
+              "fullName": "Zhang Y",
+              "initials": "Y",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Infectious Diseases, Chinese PLA General Hospital of Central Theater Command, Wuhan, Hubei, China. xiabobo@sohu.com."
+                  }
+                ]
+              },
+              "firstName": "Bo",
+              "fullName": "Zhang B",
+              "initials": "B",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China. shilei302@126.com."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China. shilei302@126.com."
+                  },
+                  {
+                    "affiliation": "Peking University 302 Clinical Medical School, Beijing, China. shilei302@126.com."
+                  }
+                ]
+              },
+              "firstName": "Lei",
+              "fullName": "Shi L",
+              "initials": "L",
+              "lastName": "Shi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Senior Department of Infectious Diseases, Chinese PLA General Hospital, National Clinical Research Center for Infectious Diseases, No. 100 Western 4th Ring Road, Beijing, 100039, China. fswang302@163.com."
+                  },
+                  {
+                    "affiliation": "Medical School of Chinese PLA, Beijing, China. fswang302@163.com."
+                  },
+                  {
+                    "affiliation": "Peking University 302 Clinical Medical School, Beijing, China. fswang302@163.com."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8043-6685"
+              },
+              "firstName": "Fu-Sheng",
+              "fullName": "Wang FS",
+              "initials": "FS",
+              "lastName": "Wang"
+            }
+          ]
+        },
+        "authorString": "Pan Y, Yuan M, Song L, Yao W, He J, Mo Q, Zheng N, Zhang Z, Dong T, Zhu K, Zhang Z, Xiong J, Dong J, Zhang J, Zhang M, Zhang C, Li Y, Liu L, Li J, Xie Y, Shi M, Huang L, Xu Z, Zhang Y, Zhang B, Shi L, Wang FS.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-02-27",
+        "dateOfRevision": "2026-03-30",
+        "doi": "10.1186/s12967-026-07902-y",
+        "electronicPublicationDate": "2026-02-27",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-01",
+        "firstPublicationDate": "2026-02-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13032345"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-29",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s12967-026-07902-y"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13032345"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13032345?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41761200",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "1",
+          "journal": {
+            "essn": "1479-5876",
+            "isoabbreviation": "J Transl Med",
+            "issn": "1479-5876",
+            "medlineAbbreviation": "J Transl Med",
+            "nlmid": "101190741",
+            "title": "Journal of translational medicine"
+          },
+          "journalIssueId": 4112887,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "24",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Proteomics",
+            "Mesenchymal Stromal Cell Therapy",
+            "Post-Covid-19 Syndrome",
+            "Molecular Endotypes",
+            "Chronic Fatigue-like Syndrome"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "435",
+        "pmcid": "PMC13032345",
+        "pmid": "41761200",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Mesenchymal stromal cell therapy for post-COVID-19 syndrome: associated impact and mechanism."
+      },
+      {
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Health Sciences, Medicine, Public University of Navarre, 31009 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Mikel",
+              "fullName": "Lacalle M",
+              "initials": "M",
+              "lastName": "Lacalle"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Health Sciences, Medicine, Public University of Navarre, 31009 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Pablo",
+              "fullName": "Bazal P",
+              "initials": "P",
+              "lastName": "Bazal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Interventional Cardiology Unit, Department of Cardiology, University Hospital of Navarra, 31008 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Jara",
+              "fullName": "Garc\u00eda Ugalderbere J",
+              "initials": "J",
+              "lastName": "Garc\u00eda Ugalderbere"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Interventional Cardiology Unit, Department of Cardiology, University Hospital of Navarra, 31008 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Octavio Jim\u00e9nez",
+              "fullName": "Melo O",
+              "initials": "O",
+              "lastName": "Melo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Interventional Cardiology Unit, Department of Cardiology, University Hospital of Navarra, 31008 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Aritza",
+              "fullName": "Conty A",
+              "initials": "A",
+              "lastName": "Conty"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Interventional Cardiology Unit, Department of Cardiology, University Hospital of Navarra, 31008 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Ra\u00fal",
+              "fullName": "Ramallal R",
+              "initials": "R",
+              "lastName": "Ramallal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Interventional Cardiology Unit, Department of Cardiology, University Hospital of Navarra, 31008 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Guillermo",
+              "fullName": "S\u00e1nchez-Elvira G",
+              "initials": "G",
+              "lastName": "S\u00e1nchez-Elvira"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Interventional Cardiology Unit, Department of Cardiology, University Hospital of Navarra, 31008 Pamplona, Spain"
+                  }
+                ]
+              },
+              "firstName": "Valeriano",
+              "fullName": "Ruiz-Quevedo V",
+              "initials": "V",
+              "lastName": "Ruiz-Quevedo"
+            }
+          ]
+        },
+        "authorString": "Lacalle M, Bazal P, Garc\u00eda Ugalderbere J, Melo O, Conty A, Ramallal R, S\u00e1nchez-Elvira G, Ruiz-Quevedo V.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-03-14",
+        "dateOfRevision": "2026-03-14",
+        "electronicPublicationDate": "2026-03-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-14",
+        "firstPublicationDate": "2026-03-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12985967"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12985967/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12985967/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12985967"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12985967?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC12985967",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "5",
+          "journal": {
+            "essn": "2077-0383",
+            "isoabbreviation": "J Clin Med",
+            "issn": "2077-0383",
+            "medlineAbbreviation": "J Clin Med",
+            "nlmid": "101606588",
+            "title": "Journal of clinical medicine"
+          },
+          "journalIssueId": 4149158,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "15",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "ischemic heart disease",
+            "Percutaneous coronary intervention",
+            "Heart Failure",
+            "Coronary Artery Bypass Grafting",
+            "Coronary Revascularization",
+            "Reduced Ejection Fraction"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pmcid": "PMC12985967",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "source": "PMC",
+        "title": "Role of Coronary Revascularization in Patients with Ischemic Heart Disease and Heart Failure with Reduced Ejection Fraction"
+      },
+      {
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "London, UK"
+                  }
+                ]
+              },
+              "firstName": "Eleanor",
+              "fullName": "Van Vogt E",
+              "initials": "E",
+              "lastName": "Van Vogt"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "London, UK"
+                  }
+                ]
+              },
+              "firstName": "Anthony C.",
+              "fullName": "Gordon A",
+              "initials": "A",
+              "lastName": "Gordon"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "London, UK"
+                  }
+                ]
+              },
+              "firstName": "Karla",
+              "fullName": "Diaz-Ordaz K",
+              "initials": "K",
+              "lastName": "Diaz-Ordaz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "London, UK"
+                  }
+                ]
+              },
+              "firstName": "Suzie",
+              "fullName": "Cro S",
+              "initials": "S",
+              "lastName": "Cro"
+            }
+          ]
+        },
+        "authorString": "Van Vogt E, Gordon A, Diaz-Ordaz K, Cro S.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2025-02-27",
+        "dateOfRevision": "2025-03-04",
+        "electronicPublicationDate": "2025-01-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-02-27",
+        "firstPublicationDate": "2025-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11846376"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-27",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11846376/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11846376/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11846376"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11846376?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Wellcome Trust",
+              "grantId": "218554/Z/19/Z",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "NIHR301098",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC11846376",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "1471-2288",
+            "isoabbreviation": "BMC Med Res Methodol",
+            "issn": "1471-2288",
+            "medlineAbbreviation": "BMC Med Res Methodol",
+            "nlmid": "100968545",
+            "title": "BMC medical research methodology"
+          },
+          "journalIssueId": 3879739,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2025-01-01",
+          "volume": "25",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Critical Care",
+            "Causal Inference",
+            "Subgroup Analysis",
+            "Randomised Controlled Trial",
+            "Treatment Effect Heterogeneity",
+            "Causal Machine Learning"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pmcid": "PMC11846376",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "source": "PMC",
+        "title": "Application of causal forests to randomised controlled trial data to identify heterogeneous treatment effects: a case study"
+      },
+      {
+        "abstractText": "<h4>Objective</h4>The 1991\u00a0Medical Research Council (MRC) Study compared seizure relapse for seizure-free patients randomized to withdraw vs continue of antiseizure medications (ASMs). We re-analyzed this trial to account for crossover between arms using contamination-adjusted intention to treat (CA ITT) methods, to explore dose-response curves, and to validate predictions against external data. ITT assesses the effect of being randomized to withdraw, as-treated analysis assesses the confounded effect of withdrawing, but CA ITT assesses the unconfounded effect of actually withdrawing.<h4>Methods</h4>CA ITT involves two stages. First, we used randomized arm to predict whether patients withdrew their ASM (logistic) or total daily ASM dose (linear). Second, we used those values to predict seizure occurrence (logistic).<h4>Results</h4>The trial randomized 503 patients to withdraw and 501 patients to continue ASMs. We found that 316 of 376 patients (88%) who were randomized to withdraw decreased their dose at every pre-seizure visit, compared with 35 of 424 (8%) who were randomized to continue (p\u00a0<\u00a0.01). Adjusted odds ratios of a 2-year seizure for those who withdrew vs those who did not was 1.3 (95% confidence interval [CI] 0.9-1.9) in the as-treated analysis, 2.5 (95% CI 1.9-3.4) comparing those randomized to withdraw vs continue for ITT, and 3.1 (95% CI 2.1-4.5) for CA ITT. Probabilities (withdrawal vs continue) were 28% vs 24% (as-treated), 40% vs 22% (ITT), and 43% vs 21% (CA ITT). Differences between ITT and CA ITT were greater when varying the predictor (reaching zero ASMs) or outcome (1-year seizures). As-treated dose-response curves demonstrated little to no effects, but larger effects in CA ITT analysis. MRC data overpredicted risk in Lossius data, with moderate discrimination (areas under the curve ~0.70).<h4>Significance</h4>CA ITT results (the effect of actually withdrawing ASMs on seizures) were slightly greater than ITT effects (the effect of recommend withdrawing ASMs on seizures). How these findings affect clinical practice must be individualized.",
+        "affiliation": "Department of Neurology, University of Michigan, Ann Arbor, Michigan, USA.",
+        "authMan": "Y",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6179-9467"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6861-8806"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6981-9212"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1511-6834"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, University of Michigan, Ann Arbor, Michigan, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6179-9467"
+              },
+              "firstName": "Samuel W",
+              "fullName": "Terman SW",
+              "initials": "SW",
+              "lastName": "Terman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics, School of Public Health, University of Michigan, Ann Arbor, Michigan, USA."
+                  }
+                ]
+              },
+              "firstName": "Chang",
+              "fullName": "Wang C",
+              "initials": "C",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics, School of Public Health, University of Michigan, Ann Arbor, Michigan, USA."
+                  }
+                ]
+              },
+              "firstName": "Lu",
+              "fullName": "Wang L",
+              "initials": "L",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Child Neurology, University Medical Center Utrecht, Utrecht University, Utrecht, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Kees P J",
+              "fullName": "Braun KPJ",
+              "initials": "KPJ",
+              "lastName": "Braun"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Child Neurology, University Medical Center Utrecht, Utrecht University, Utrecht, The Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1511-6834"
+              },
+              "firstName": "Willem M",
+              "fullName": "Otte WM",
+              "initials": "WM",
+              "lastName": "Otte"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Child Neurology, University Medical Center Utrecht, Utrecht University, Utrecht, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Geertruida",
+              "fullName": "Slinger G",
+              "initials": "G",
+              "lastName": "Slinger"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, University of Michigan, Ann Arbor, Michigan, USA."
+                  }
+                ]
+              },
+              "firstName": "Wesley T",
+              "fullName": "Kerr WT",
+              "initials": "WT",
+              "lastName": "Kerr"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "National Center for Epilepsy, Oslo University Hospital, Oslo, Norway."
+                  },
+                  {
+                    "affiliation": "Institute of Clinical Medicine, University of Oslo, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Morten I",
+              "fullName": "Lossius MI",
+              "initials": "MI",
+              "lastName": "Lossius"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health Data Science, University of Liverpool, Liverpool, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6981-9212"
+              },
+              "firstName": "Laura",
+              "fullName": "Bonnett L",
+              "initials": "L",
+              "lastName": "Bonnett"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, The Ohio State University, Columbus, Ohio, USA."
+                  }
+                ]
+              },
+              "firstName": "James F",
+              "fullName": "Burke JF",
+              "initials": "JF",
+              "lastName": "Burke"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pharmacology and Therapeutics, University of Liverpool, Liverpool, UK."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6861-8806"
+              },
+              "firstName": "Anthony",
+              "fullName": "Marson A",
+              "initials": "A",
+              "lastName": "Marson"
+            }
+          ]
+        },
+        "authorString": "Terman SW, Wang C, Wang L, Braun KPJ, Otte WM, Slinger G, Kerr WT, Lossius MI, Bonnett L, Burke JF, Marson A.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Anticonvulsants",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 9,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2022-07-14",
+        "dateOfCreation": "2022-05-01",
+        "dateOfRevision": "2023-05-19",
+        "doi": "10.1111/epi.17273",
+        "electronicPublicationDate": "2022-05-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2022-05-03",
+        "firstPublicationDate": "2022-05-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9283317"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-04",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/epi.17273"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9283317"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9283317?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/epi.17273"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "R24 AG064025",
+              "orderIn": 0
+            },
+            {
+              "agency": "American Epilepsy Society",
+              "orderIn": 0
+            },
+            {
+              "agency": "Michigan Institute for Clinical and Health Research",
+              "grantId": "UL1TR002240",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NS",
+              "agency": "NINDS NIH HHS",
+              "grantId": "R25 NS065723",
+              "orderIn": 0
+            },
+            {
+              "acronym": "TR",
+              "agency": "NCATS NIH HHS",
+              "grantId": "UL1 TR002240",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institute for Health Research (NIHR)",
+              "grantId": "PDF-2015-08-044",
+              "orderIn": 0
+            },
+            {
+              "acronym": "MD",
+              "agency": "NIMHD NIH HHS",
+              "grantId": "R01 MD008879",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "35490396",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2022 Jul",
+          "issue": "7",
+          "journal": {
+            "essn": "1528-1167",
+            "isoabbreviation": "Epilepsia",
+            "issn": "0013-9580",
+            "medlineAbbreviation": "Epilepsia",
+            "nlmid": "2983306R",
+            "title": "Epilepsia"
+          },
+          "journalIssueId": 3390106,
+          "monthOfPublication": 7,
+          "printPublicationDate": "2022-07-01",
+          "volume": "63",
+          "yearOfPublication": 2022
+        },
+        "keywordList": {
+          "keyword": [
+            "Epilepsy",
+            "Clinical Trials",
+            "Risk Prediction",
+            "Drug Withdrawal",
+            "Antiseizure Medication"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "manuscriptId": "NIHMS1810884",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Epilepsies, Partial",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Seizures",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "chemically induced"
+                  },
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Substance Withdrawal Syndrome",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Anticonvulsants",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Biomedical Research",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "Y",
+        "pageInfo": "1724-1735",
+        "pmcid": "PMC9283317",
+        "pmid": "35490396",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "pubYear": "2022",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Reappraisal of the Medical Research Council Antiepileptic Drug Withdrawal Study: Contamination-adjusted and dose-response re-analysis."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Musculoskeletal disorders are an extensive burden to society, yet few studies have explored and replicated modifiable prognostic factors associated with high societal costs. This study aimed to replicate previously identified associations between nine modifiable prognostic factors and high societal costs among people on sick leave due to musculoskeletal disorders.<h4>Methods</h4>Pooled data from a three-arm randomised controlled trial with 6 months of follow-up were used, including 509 participants on sick leave due to musculoskeletal disorders in Norway. Consistent with the identification study, the primary outcome was societal costs dichotomised as high (top 25th percentile) or low. Societal costs included healthcare utilization (primary, secondary, and tertiary care) and productivity loss (absenteeism, work assessment allowance and disability benefits) collected from public records. Binary unadjusted and adjusted logistic regression analyses were used to replicate previously identified associations between each modifiable prognostic factor and having high costs.<h4>Results</h4>Adjusted for selected covariates, a lower degree of return-to-work expectancy was associated with high societal costs in both the identification and replication sample. Depressive symptoms and health literacy showed no prognostic value in both the identification and replication sample. There were inconsistent results with regards to statistical significance across the identification and replication sample for pain severity, self-perceived health, sleep quality, work satisfaction, disability, and long-lasting disorder expectation. Similar results were found when high costs were related to separately healthcare utilization and productivity loss.<h4>Conclusion</h4>This study successfully replicated the association between return-to-work expectancy and high societal costs among people on sick leave due to musculoskeletal disorders. Other factors showed no prognostic value or inconsistent results.<h4>Trial registration</h4>ClinicalTrials.gov NCT03871712, 12th of March 2019.",
+        "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway. rikke@oslomet.no.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway. rikke@oslomet.no."
+                  }
+                ]
+              },
+              "firstName": "Rikke Munk",
+              "fullName": "Killingmo RM",
+              "initials": "RM",
+              "lastName": "Killingmo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Tarjei",
+              "fullName": "Rysstad T",
+              "initials": "T",
+              "lastName": "Rysstad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health Sciences, Faculty of Science, Vrije University Amsterdam, Amsterdam, The Netherlands."
+                  },
+                  {
+                    "affiliation": "The Amsterdam Movement Sciences Research Institute, Amsterdam, The Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Esther",
+              "fullName": "Maas E",
+              "initials": "E",
+              "lastName": "Maas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway."
+                  },
+                  {
+                    "affiliation": "Oslo Centre of Biostatistics and Epidemiology Research Support Services, Oslo University Hospital, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Are Hugo",
+              "fullName": "Pripp AH",
+              "initials": "AH",
+              "lastName": "Pripp"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "National Institute of Occupational Health, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Fiona",
+              "fullName": "Aanesen F",
+              "initials": "F",
+              "lastName": "Aanesen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Norwegian Medicines Agency, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Alexander",
+              "fullName": "Tingulstad A",
+              "initials": "A",
+              "lastName": "Tingulstad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway."
+                  },
+                  {
+                    "affiliation": "Center for Treatment of Rheumatic and Musculoskeletal Diseases (REMEDY), Diakonhjemmet Hospital, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Anne Therese",
+              "fullName": "Tveter AT",
+              "initials": "AT",
+              "lastName": "Tveter"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Britt Elin",
+              "fullName": "\u00d8iestad BE",
+              "initials": "BE",
+              "lastName": "\u00d8iestad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation Science and Health Technology, Oslo Metropolitan University, Oslo, Norway."
+                  },
+                  {
+                    "affiliation": "Department of Research and Innovation, Division of Clinical Neuroscience, Oslo University Hospital, Oslo, Norway."
+                  }
+                ]
+              },
+              "firstName": "Margreth",
+              "fullName": "Grotle M",
+              "initials": "M",
+              "lastName": "Grotle"
+            }
+          ]
+        },
+        "authorString": "Killingmo RM, Rysstad T, Maas E, Pripp AH, Aanesen F, Tingulstad A, Tveter AT, \u00d8iestad BE, Grotle M.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2024-12-04",
+        "dateOfCreation": "2024-12-03",
+        "dateOfRevision": "2024-12-12",
+        "doi": "10.1186/s12891-024-08132-3",
+        "electronicPublicationDate": "2024-12-03",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-12-05",
+        "firstPublicationDate": "2024-12-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11613927"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-05",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s12891-024-08132-3"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11613927"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11613927?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Norges Forskningsr\u00e5d",
+              "grantId": "280431",
+              "orderIn": 0
+            },
+            {
+              "agency": "Norwegian Fund for Post-Graduate Training in Physiotherapy",
+              "grantId": "285503",
+              "orderIn": 0
+            },
+            {
+              "agency": "Oslo Metropolitan University",
+              "orderIn": 0
+            },
+            {
+              "agency": "OsloMet - Oslo Metropolitan University",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "39627785",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2024 Dec",
+          "issue": "1",
+          "journal": {
+            "essn": "1471-2474",
+            "isoabbreviation": "BMC Musculoskelet Disord",
+            "issn": "1471-2474",
+            "medlineAbbreviation": "BMC Musculoskelet Disord",
+            "nlmid": "100968565",
+            "title": "BMC musculoskeletal disorders"
+          },
+          "journalIssueId": 3863257,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2024-12-01",
+          "volume": "25",
+          "yearOfPublication": 2024
+        },
+        "keywordList": {
+          "keyword": [
+            "Costs",
+            "Musculoskeletal Disorders",
+            "Productivity Loss",
+            "Healthcare Utilization",
+            "Prognostic Factor Research"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Musculoskeletal Diseases",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "diagnosis"
+                  },
+                  {
+                    "abbreviation": "EC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "economics"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Prognosis",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Follow-Up Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Absenteeism",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Cost of Illness",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sick Leave",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "EC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "economics"
+                  },
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Health Care Costs",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Norway",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Return to Work",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "EC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "economics"
+                  },
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "990",
+        "pmcid": "PMC11613927",
+        "pmid": "39627785",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2024",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Modifiable prognostic factors of high societal costs among people on sick leave due to musculoskeletal disorders: a replication study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Background</h4>Models to predict colectomy in ulcerative colitis (UC) are valuable for identification, clinical management, and follow-up of high-risk patients. Our aim was to develop a clinical predictive model based on admission data for one-year colectomy in adults hospitalized for severe UC.<h4>Methods</h4>We performed a retrospective analysis of patients hospitalized at a tertiary academic center for management of severe UC from 1/2013 to 4/2018. Multivariate regression was performed to identify individual predictors of one-year colectomy. Outcome probabilities of colectomy based on the prognostic score were estimated using a bootstrapping technique.<h4>Results</h4>Two hundred twenty-nine individuals were included in the final analytic cohort. Four independent variables were associated with one-year colectomy which were incorporated into a point scoring system: (+) 1 for single class biologic exposure prior to admission; (+) 2 for multiple classes of biologic exposure; (+) 1 for inpatient salvage therapy with cyclosporine or a TNF-alpha inhibitor; (+) 1 for age <40. The risk probabilities of colectomy within one year in patients assigned scores 1, 2, 3, and 4 were 9.4% (95% CI, 1.7-17.2), 33.7% (95% CI, 23.9-43.5), 58.5% (95% CI, 42.9-74.1), 75.0% (95% CI, 50.5-99.5). An assigned score of zero was a perfect predictor of no colectomy.<h4>Conclusion</h4>Risk factors most associated with one-year colectomy for severe UC included: prior biologic exposure, need for inpatient salvage therapy, and younger age. We developed a simple scoring system using these variables to identify and stratify patients during their index hospitalization.",
+        "affiliation": "Department of Internal Medicine, University of Chicago Medicine, Chicago, IL, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5647-1723"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9513-4225"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2519-6129"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2864-1670"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9513-4225"
+              },
+              "firstName": "Maryam",
+              "fullName": "Zafer M",
+              "initials": "M",
+              "lastName": "Zafer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health and the Social Sciences, University of Chicago, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Hui",
+              "fullName": "Zhang H",
+              "initials": "H",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Sujaata",
+              "fullName": "Dwadasi S",
+              "initials": "S",
+              "lastName": "Dwadasi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Donald",
+              "fullName": "Goens D",
+              "initials": "D",
+              "lastName": "Goens"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Raghavendra",
+              "fullName": "Paknikar R",
+              "initials": "R",
+              "lastName": "Paknikar"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Sushila",
+              "fullName": "Dalal S",
+              "initials": "S",
+              "lastName": "Dalal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Russell D",
+              "fullName": "Cohen RD",
+              "initials": "RD",
+              "lastName": "Cohen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "firstName": "Joel",
+              "fullName": "Pekow J",
+              "initials": "J",
+              "lastName": "Pekow"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5647-1723"
+              },
+              "firstName": "David T",
+              "fullName": "Rubin DT",
+              "initials": "DT",
+              "lastName": "Rubin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2519-6129"
+              },
+              "firstName": "Atsushi",
+              "fullName": "Sakuraba A",
+              "initials": "A",
+              "lastName": "Sakuraba"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Section of Gastroenterology, Hepatology and Nutrition, University of Chicago Medicine, Chicago, IL, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2864-1670"
+              },
+              "firstName": "Dejan",
+              "fullName": "Micic D",
+              "initials": "D",
+              "lastName": "Micic"
+            }
+          ]
+        },
+        "authorString": "Zafer M, Zhang H, Dwadasi S, Goens D, Paknikar R, Dalal S, Cohen RD, Pekow J, Rubin DT, Sakuraba A, Micic D.",
+        "citedByCount": 8,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2023-02-13",
+        "dateOfRevision": "2023-02-14",
+        "doi": "10.1093/crocol/otab082",
+        "electronicPublicationDate": "2021-12-21",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-02-14",
+        "firstPublicationDate": "2021-12-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9802419"
+          ]
+        },
+        "fullTextReceivedDate": "2023-02-13",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/crocol/otab082"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9802419"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9802419?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Gastrointestinal Research Foundation",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "36777555",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2022 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "2631-827X",
+            "isoabbreviation": "Crohns Colitis 360",
+            "issn": "2631-827X",
+            "medlineAbbreviation": "Crohns Colitis 360",
+            "nlmid": "101752188",
+            "title": "Crohn's & colitis 360"
+          },
+          "journalIssueId": 3330706,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2022-01-01",
+          "volume": "4",
+          "yearOfPublication": 2022
+        },
+        "keywordList": {
+          "keyword": [
+            "Severe Ulcerative Colitis",
+            "Clinical Predictive Score",
+            "Colectomy Risk Factors",
+            "One-Year Colectomy"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "otab082",
+        "pmcid": "PMC9802419",
+        "pmid": "36777555",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2022",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "A Clinical Predictive Model for One-year Colectomy in Adults Hospitalized for Severe Ulcerative Colitis."
+      },
+      {
+        "abstractText": "The heterogeneity of traumatic brain injury (TBI) remains a core challenge for the success of interventional clinical trials. Data-driven approaches for patient stratification may help to identify TBI patient phenotypes during the acute injury period as well as facilitate targeted trial patient enrollment and analysis of treatment efficacy. In this study, we implemented an unsupervised machine learning approach to identify TBI subpopulations at injury baseline using data from 1213 TBI patients who participated in the Citicoline Brain Injury Treatment Trial (COBRIT) Trial. A wrapper framework utilizing generalized low-rank models automatically selected relevant clinical features that were subsequently used to cluster patients using a partitioning around medoids clustering algorithm. Using this approach, we identified three patient phenotypes with unique clinical injury profiles based on a subset of acute injury features. Phenotype-specific differences in long-term functional outcome trajectories were respectively observed at 3 and 6 months after injury. In comparison, when patients were grouped by baseline Glasgow Coma Scale (GCS), no differences in baseline clinical feature profiles or long-term outcomes were observed. To test phenotype reproducibility in an external validation data set, we used a K-nearest neighbors algorithm to classify subjects in the Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI) Pilot data set into corresponding phenotypes, then measured the Gower's dissimilarities between TRACK-TBI and COBRIT subjects in each phenotype. No significant differences were found between trial subjects within two phenotypes, suggesting that these phenotypes may be generalizable within a broad range of TBI severity. Further, Extended Glasgow Outcome Scale (GOS-E) outcomes in the TRACK-TBI data set similarly demonstrated phenotype-specific differences in long-term outcomes. Our results suggest that unsupervised machine learning is a promising and effective approach for discovery of novel injury subpopulations over the conventional GCS-based method, and may improve patient selection in future TBI clinical trials.",
+        "affiliation": "Department of Anesthesiology and Critical Care Medicine, and Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2684-0548"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Critical Care Medicine, and Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Kaitlin A",
+              "fullName": "Folweiler KA",
+              "initials": "KA",
+              "lastName": "Folweiler"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology and University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Danielle K",
+              "fullName": "Sandsmark DK",
+              "initials": "DK",
+              "lastName": "Sandsmark"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology and University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Ramon",
+              "fullName": "Diaz-Arrastia R",
+              "initials": "R",
+              "lastName": "Diaz-Arrastia"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Critical Care Medicine, and Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Anesthesiology and Critical Care Medicine, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Akiva S",
+              "fullName": "Cohen AS",
+              "initials": "AS",
+              "lastName": "Cohen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Anesthesiology and Critical Care Medicine, and Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Anesthesiology and Critical Care Medicine, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2684-0548"
+              },
+              "firstName": "Aaron J",
+              "fullName": "Masino AJ",
+              "initials": "AJ",
+              "lastName": "Masino"
+            }
+          ]
+        },
+        "authorString": "Folweiler KA, Sandsmark DK, Diaz-Arrastia R, Cohen AS, Masino AJ.",
+        "citedByCount": 40,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "37470833",
+              "orderIn": 1,
+              "reference": "Intensive Care Med. 2023 Sep;49(9):1107-1109. doi: 10.1007/s00134-023-07156-y.",
+              "source": "MED",
+              "type": "Comment in"
+            },
+            {
+              "id": "37756375",
+              "orderIn": 2,
+              "reference": "J Neurotrauma. 2024 Jan;41(1-2):292-293. doi: 10.1089/neu.2023.0396.",
+              "source": "MED",
+              "type": "Comment in"
+            },
+            {
+              "id": "37776180",
+              "orderIn": 3,
+              "reference": "J Neurotrauma. 2024 Feb;41(3-4):539. doi: 10.1089/neu.2023.0478.",
+              "source": "MED",
+              "type": "Comment in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2021-10-07",
+        "dateOfCreation": "2020-02-04",
+        "dateOfRevision": "2026-03-03",
+        "doi": "10.1089/neu.2019.6705",
+        "electronicPublicationDate": "2020-03-11",
+        "embargoDate": "2021-06-15",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2020-02-07",
+        "firstPublicationDate": "2020-03-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7249479"
+          ]
+        },
+        "fullTextReceivedDate": "2021-06-17",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Unpaywall",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7249479"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1089/neu.2019.6705"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7249479"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7249479?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1089/neu.2019.6705"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "HD",
+              "agency": "NICHD NIH HHS",
+              "grantId": "R37 HD059288",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NS",
+              "agency": "NINDS NIH HHS",
+              "grantId": "K23 NS104239",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "32008422",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2020 Jun",
+          "issue": "12",
+          "journal": {
+            "essn": "1557-9042",
+            "isoabbreviation": "J Neurotrauma",
+            "issn": "0897-7151",
+            "medlineAbbreviation": "J Neurotrauma",
+            "nlmid": "8811626",
+            "title": "Journal of neurotrauma"
+          },
+          "journalIssueId": 2959364,
+          "monthOfPublication": 6,
+          "printPublicationDate": "2020-06-01",
+          "volume": "37",
+          "yearOfPublication": 2020
+        },
+        "keywordList": {
+          "keyword": [
+            "Clinical Trial",
+            "Machine Learning",
+            "Tbi",
+            "Gcs",
+            "Unsupervised Clustering"
+          ]
+        },
+        "language": "eng",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Phenotype",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Time Factors",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adolescent",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Clinical Trials, Phase III as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Observational Studies as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Unsupervised Machine Learning",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Brain Injuries, Traumatic",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DG",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "diagnostic imaging"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1431-1444",
+        "pmcid": "PMC7249479",
+        "pmid": "32008422",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "pubYear": "2020",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Unsupervised Machine Learning Reveals Novel Traumatic Brain Injury Patient Phenotypes with Distinct Acute Injury Profiles and Long-Term Outcomes.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

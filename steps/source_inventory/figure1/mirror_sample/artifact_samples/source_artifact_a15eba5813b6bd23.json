@@ -1,0 +1,833 @@
+{
+  "artifact_id": "source_artifact_a15eba5813b6bd23",
+  "byte_size": 25592,
+  "file_name": "003_full_10_1056_NEJMoa1209120.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/003_full_10_1056_NEJMoa1209120.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1056/NEJMoa1209120\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Lung cancer is the largest contributor to mortality from cancer. The National Lung Screening Trial (NLST) showed that screening with low-dose helical computed tomography (CT) rather than with chest radiography reduced mortality from lung cancer. We describe the screening, diagnosis, and limited treatment results from the initial round of screening in the NLST to inform and improve lung-cancer-screening programs.<h4>Methods</h4>At 33 U.S. centers, from August 2002 through April 2004, we enrolled asymptomatic participants, 55 to 74 years of age, with a history of at least 30 pack-years of smoking. The participants were randomly assigned to undergo annual screening, with the use of either low-dose CT or chest radiography, for 3 years. Nodules or other suspicious findings were classified as positive results. This article reports findings from the initial screening examination.<h4>Results</h4>A total of 53,439 eligible participants were randomly assigned to a study group (26,715 to low-dose CT and 26,724 to chest radiography); 26,309 participants (98.5%) and 26,035 (97.4%), respectively, underwent screening. A total of 7191 participants (27.3%) in the low-dose CT group and 2387 (9.2%) in the radiography group had a positive screening result; in the respective groups, 6369 participants (90.4%) and 2176 (92.7%) had at least one follow-up diagnostic procedure, including imaging in 5717 (81.1%) and 2010 (85.6%) and surgery in 297 (4.2%) and 121 (5.2%). Lung cancer was diagnosed in 292 participants (1.1%) in the low-dose CT group versus 190 (0.7%) in the radiography group (stage 1 in 158 vs. 70 participants and stage IIB to IV in 120 vs. 112). Sensitivity and specificity were 93.8% and 73.4% for low-dose CT and 73.5% and 91.3% for chest radiography, respectively.<h4>Conclusions</h4>The NLST initial screening results are consistent with the existing literature on screening by means of low-dose CT and chest radiography, suggesting that a reduction in mortality from lung cancer is achievable at U.S. screening centers that have staff experienced in chest CT. (Funded by the National Cancer Institute; NLST ClinicalTrials.gov number, NCT00047385.).",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0457-5595"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-0632-0983"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8858-3401"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-3292-5035"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "collectiveName": "National Lung Screening Trial Research Team"
+              },
+              {
+                "firstName": "Timothy R",
+                "fullName": "Church TR",
+                "initials": "TR",
+                "lastName": "Church"
+              },
+              {
+                "firstName": "William C",
+                "fullName": "Black WC",
+                "initials": "WC",
+                "lastName": "Black"
+              },
+              {
+                "firstName": "Denise R",
+                "fullName": "Aberle DR",
+                "initials": "DR",
+                "lastName": "Aberle"
+              },
+              {
+                "firstName": "Christine D",
+                "fullName": "Berg CD",
+                "initials": "CD",
+                "lastName": "Berg"
+              },
+              {
+                "firstName": "Kathy L",
+                "fullName": "Clingan KL",
+                "initials": "KL",
+                "lastName": "Clingan"
+              },
+              {
+                "firstName": "Fenghai",
+                "fullName": "Duan F",
+                "initials": "F",
+                "lastName": "Duan"
+              },
+              {
+                "firstName": "Richard M",
+                "fullName": "Fagerstrom RM",
+                "initials": "RM",
+                "lastName": "Fagerstrom"
+              },
+              {
+                "firstName": "Ilana F",
+                "fullName": "Gareen IF",
+                "initials": "IF",
+                "lastName": "Gareen"
+              },
+              {
+                "firstName": "David S",
+                "fullName": "Gierada DS",
+                "initials": "DS",
+                "lastName": "Gierada"
+              },
+              {
+                "firstName": "Gordon C",
+                "fullName": "Jones GC",
+                "initials": "GC",
+                "lastName": "Jones"
+              },
+              {
+                "firstName": "Irene",
+                "fullName": "Mahon I",
+                "initials": "I",
+                "lastName": "Mahon"
+              },
+              {
+                "firstName": "Pamela M",
+                "fullName": "Marcus PM",
+                "initials": "PM",
+                "lastName": "Marcus"
+              },
+              {
+                "firstName": "JoRean D",
+                "fullName": "Sicks JD",
+                "initials": "JD",
+                "lastName": "Sicks"
+              },
+              {
+                "firstName": "Amanda",
+                "fullName": "Jain A",
+                "initials": "A",
+                "lastName": "Jain"
+              },
+              {
+                "firstName": "Sarah",
+                "fullName": "Baum S",
+                "initials": "S",
+                "lastName": "Baum"
+              }
+            ]
+          },
+          "authorString": "National Lung Screening Trial Research Team, Church TR, Black WC, Aberle DR, Berg CD, Clingan KL, Duan F, Fagerstrom RM, Gareen IF, Gierada DS, Jones GC, Mahon I, Marcus PM, Sicks JD, Jain A, Baum S.",
+          "citedByCount": 787,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "23752727",
+                "orderIn": 1,
+                "reference": "Nat Rev Clin Oncol. 2013 Jul;10(7):367. doi: 10.1038/nrclinonc.2013.99.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "24236740",
+                "orderIn": 2,
+                "reference": "J Comp Eff Res. 2013 Sep;2(5):433-6. doi: 10.2217/cer.13.57.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "24511605",
+                "orderIn": 3,
+                "reference": "Rofo. 2014 Jan;186(1):14.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2013-05-29",
+          "dateOfCreation": "2013-05-24",
+          "dateOfRevision": "2025-05-29",
+          "doi": "10.1056/nejmoa1209120",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2013-05-25",
+          "firstPublicationDate": "2013-05-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3762603"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "Unpaywall",
+                "url": "https://doi.org/10.1056/nejmoa1209120"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1056/NEJMoa1209120"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3762603"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3762603?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1056/nejmoa1209120"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025518",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025522",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025512",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25514",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25518",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25522",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025513",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025516",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025524",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN075022",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U01 CA079778",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U01 CA080098",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U01-CA-80098",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025514",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25512",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25511",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25515",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25524",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N02 CN063300",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N02-CN-63300",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25476",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-75022",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025515",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25513",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "P30 CA023108",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U01-CA-79778",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025476",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01 CN025511",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CN",
+                "agency": "NCI NIH HHS",
+                "grantId": "N01-CN-25516",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U10 CA080098",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "23697514",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "investigatorList": {
+            "investigator": [
+              {
+                "firstName": "Timothy R",
+                "fullName": "Church TR",
+                "initials": "TR",
+                "lastName": "Church"
+              },
+              {
+                "firstName": "William C",
+                "fullName": "Black WC",
+                "initials": "WC",
+                "lastName": "Black"
+              },
+              {
+                "firstName": "Denise R",
+                "fullName": "Aberle DR",
+                "initials": "DR",
+                "lastName": "Aberle"
+              },
+              {
+                "firstName": "Christine D",
+                "fullName": "Berg CD",
+                "initials": "CD",
+                "lastName": "Berg"
+              },
+              {
+                "firstName": "Kathy L",
+                "fullName": "Clingan KL",
+                "initials": "KL",
+                "lastName": "Clingan"
+              },
+              {
+                "firstName": "Fenghai",
+                "fullName": "Duan F",
+                "initials": "F",
+                "lastName": "Duan"
+              },
+              {
+                "firstName": "Richard M",
+                "fullName": "Fagerstrom RM",
+                "initials": "RM",
+                "lastName": "Fagerstrom"
+              },
+              {
+                "firstName": "Ilana F",
+                "fullName": "Gareen IF",
+                "initials": "IF",
+                "lastName": "Gareen"
+              },
+              {
+                "firstName": "David S",
+                "fullName": "Gierada DS",
+                "initials": "DS",
+                "lastName": "Gierada"
+              },
+              {
+                "firstName": "Gordon C",
+                "fullName": "Jones GC",
+                "initials": "GC",
+                "lastName": "Jones"
+              },
+              {
+                "firstName": "Irene",
+                "fullName": "Mahon I",
+                "initials": "I",
+                "lastName": "Mahon"
+              },
+              {
+                "firstName": "Pamela M",
+                "fullName": "Marcus PM",
+                "initials": "PM",
+                "lastName": "Marcus"
+              },
+              {
+                "firstName": "JoRean D",
+                "fullName": "Sicks JD",
+                "initials": "JD",
+                "lastName": "Sicks"
+              },
+              {
+                "firstName": "Amanda",
+                "fullName": "Jain A",
+                "initials": "A",
+                "lastName": "Jain"
+              },
+              {
+                "firstName": "Sarah",
+                "fullName": "Baum S",
+                "initials": "S",
+                "lastName": "Baum"
+              },
+              {
+                "firstName": "Edward A",
+                "fullName": "Sausville EA",
+                "initials": "EA",
+                "lastName": "Sausville"
+              },
+              {
+                "firstName": "Wylie",
+                "fullName": "Burke W",
+                "initials": "W",
+                "lastName": "Burke"
+              },
+              {
+                "firstName": "Gene",
+                "fullName": "Colice G",
+                "initials": "G",
+                "lastName": "Colice"
+              },
+              {
+                "firstName": "Brenda",
+                "fullName": "Edwards B",
+                "initials": "B",
+                "lastName": "Edwards"
+              },
+              {
+                "firstName": "Scott",
+                "fullName": "Emerson S",
+                "initials": "S",
+                "lastName": "Emerson"
+              },
+              {
+                "firstName": "Russell",
+                "fullName": "Harris R",
+                "initials": "R",
+                "lastName": "Harris"
+              },
+              {
+                "firstName": "David",
+                "fullName": "Johnstone D",
+                "initials": "D",
+                "lastName": "Johnstone"
+              },
+              {
+                "firstName": "Jeffrey S",
+                "fullName": "Klein JS",
+                "initials": "JS",
+                "lastName": "Klein"
+              },
+              {
+                "firstName": "Edward L",
+                "fullName": "Korn EL",
+                "initials": "EL",
+                "lastName": "Korn"
+              },
+              {
+                "firstName": "Robert",
+                "fullName": "Mayer R",
+                "initials": "R",
+                "lastName": "Mayer"
+              },
+              {
+                "firstName": "Joe V",
+                "fullName": "Selby JV",
+                "initials": "JV",
+                "lastName": "Selby"
+              },
+              {
+                "firstName": "David W",
+                "fullName": "Sturges DW",
+                "initials": "DW",
+                "lastName": "Sturges"
+              },
+              {
+                "firstName": "Bruce W",
+                "fullName": "Turnbull BW",
+                "initials": "BW",
+                "lastName": "Turnbull"
+              },
+              {
+                "firstName": "Thomas J",
+                "fullName": "Watson TJ",
+                "initials": "TJ",
+                "lastName": "Watson"
+              },
+              {
+                "firstName": "John",
+                "fullName": "Fletcher J",
+                "initials": "J",
+                "lastName": "Fletcher"
+              },
+              {
+                "firstName": "Sylvan",
+                "fullName": "Green S",
+                "initials": "S",
+                "lastName": "Green"
+              },
+              {
+                "firstName": "Anthony B",
+                "fullName": "Miller AB",
+                "initials": "AB",
+                "lastName": "Miller"
+              },
+              {
+                "firstName": "Martin J",
+                "fullName": "Edelman MJ",
+                "initials": "MJ",
+                "lastName": "Edelman"
+              },
+              {
+                "firstName": "William K",
+                "fullName": "Evans WK",
+                "initials": "WK",
+                "lastName": "Evans"
+              },
+              {
+                "firstName": "Robert S",
+                "fullName": "Fontana RS",
+                "initials": "RS",
+                "lastName": "Fontana"
+              },
+              {
+                "firstName": "Mitchell",
+                "fullName": "Machtay M",
+                "initials": "M",
+                "lastName": "Machtay"
+              },
+              {
+                "firstName": "Robert C",
+                "fullName": "Young RC",
+                "initials": "RC",
+                "lastName": "Young"
+              },
+              {
+                "firstName": "David",
+                "fullName": "Alberts D",
+                "initials": "D",
+                "lastName": "Alberts"
+              },
+              {
+                "firstName": "David",
+                "fullName": "DeMets D",
+                "initials": "D",
+                "lastName": "DeMets"
+              },
+              {
+                "firstName": "Peter",
+                "fullName": "Greenwald P",
+                "initials": "P",
+                "lastName": "Greenwald"
+              },
+              {
+                "firstName": "Paula",
+                "fullName": "Jacobs P",
+                "initials": "P",
+                "lastName": "Jacobs"
+              },
+              {
+                "firstName": "Theresa C",
+                "fullName": "McLoud TC",
+                "initials": "TC",
+                "lastName": "McLoud"
+              },
+              {
+                "firstName": "David P",
+                "fullName": "Naidich DP",
+                "initials": "DP",
+                "lastName": "Naidich"
+              },
+              {
+                "firstName": "James",
+                "fullName": "Tatum J",
+                "initials": "J",
+                "lastName": "Tatum"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2013 May",
+            "issue": "21",
+            "journal": {
+              "essn": "1533-4406",
+              "isoabbreviation": "N Engl J Med",
+              "issn": "0028-4793",
+              "medlineAbbreviation": "N Engl J Med",
+              "nlmid": "0255562",
+              "title": "The New England journal of medicine"
+            },
+            "journalIssueId": 2041307,
+            "monthOfPublication": 5,
+            "printPublicationDate": "2013-05-01",
+            "volume": "368",
+            "yearOfPublication": 2013
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS491916",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Lung Neoplasms",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "DG",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "diagnostic imaging"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Tomography, X-Ray Computed",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Radiography, Thoracic",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Sensitivity and Specificity",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Radiation Dosage",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Smoking",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Early Detection of Cancer",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "1980-1991",
+          "pmcid": "PMC3762603",
+          "pmid": "23697514",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2013",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Results of initial low-dose computed tomographic screening for lung cancer.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "1b3bb5077c06b1a6083b7f244e12e32a6e7ba5c9e53222b621d2b26e9e2cdbb6"
+}

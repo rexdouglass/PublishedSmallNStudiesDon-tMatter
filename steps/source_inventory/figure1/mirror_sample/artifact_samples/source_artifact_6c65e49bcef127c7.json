@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_6c65e49bcef127c7",
+  "byte_size": 56613,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 666,
+  "file_name": "ft107_1.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/SMD/ft107_1.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": -0.365148371,
+      "obs_ID": "obs001",
+      "study_ID": "Fox, C., Waddell, K., & Mousseau, T. 1995",
+      "var": 0.067816092,
+      "year_pub": 1995
+    },
+    {
+      "es": 0.608580619,
+      "obs_ID": "obs002",
+      "study_ID": "Fox, C., Waddell, K., & Mousseau, T. 1995",
+      "var": 0.069859515,
+      "year_pub": 1995
+    },
+    {
+      "es": -0.182574186,
+      "obs_ID": "obs003",
+      "study_ID": "Fox, C., Waddell, K., & Mousseau, T. 1995",
+      "var": 0.066954023,
+      "year_pub": 1995
+    },
+    {
+      "es": 1.549193338,
+      "obs_ID": "obs004",
+      "study_ID": "Fox, C., Waddell, K., & Mousseau, T. 1995",
+      "var": 0.087356322,
+      "year_pub": 1995
+    },
+    {
+      "es": -0.365148371,
+      "obs_ID": "obs005",
+      "study_ID": "Fox, C., Waddell, K., & Mousseau, T. 1995",
+      "var": 0.067816092,
+      "year_pub": 1995
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "d8ba2859275b65d415328c00fd1831f663501e47c7ae2cadc99554ce1ab427d9"
+}

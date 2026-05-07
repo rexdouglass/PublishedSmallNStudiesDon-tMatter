@@ -1,0 +1,33 @@
+{
+  "artifact_id": "source_artifact_bfd95f83c56b651f",
+  "byte_size": 52857,
+  "columns": [
+    "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value"
+  ],
+  "estimated_data_rows": 507,
+  "file_name": "qje_125_2.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Source/raw/qje_125_2.csv",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;125.2;2010;591;Almond;4;;no;other;1a;local linear model;1;1;yes;yes;-0.0121;0.0023;;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;125.2;2010;591;Almond;4;;no;other;1a;ols;1;2;yes;yes;-0.0095;0.0022;0.0048;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;125.2;2010;591;Almond;4;;no;other;1a;ols;1;3;yes;yes;-0.0067;0.0022;0.0040;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;125.2;2010;591;Almond;4;;no;other;1a;ols;1;4;yes;yes;-0.0072;0.0022;0.0040;;;"
+    },
+    {
+      "journal_id;issue;year;article_page;first_author;num_authors;JEL;model;type;table_panel;type_emp;row;column;stars;main;coefficient;standard_deviation;standard_deviation_2;standard_deviation_3;T_stat;p_value": "Quarterly Journal of Economics;125.2;2010;591;Almond;4;;no;other;1a;local linear model;1;5;yes;yes;-0.00107;0.0019;;;;"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:16",
+  "sha256": "9b911e79c32106fae420d56532479f59cb56d14dca064a6a3126cf0a8bd08c40"
+}

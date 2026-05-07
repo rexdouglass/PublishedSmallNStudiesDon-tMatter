@@ -1,0 +1,81 @@
+purpose: "Deduped represented individual-study/source registry for current root Figure 1 pairs, including excluded no-repull targets."
+table: figure1-individual-study-map.tsv
+grain: "One deduped represented individual source/study identity touched by at least one Figure 1 pair side."
+dedupe_rule: "DOI first, represented/source URL second, normalized title third, weak side-target fallback only when no useful identifier exists."
+columns:
+- name: figure1_individual_study_id
+  definition: "Stable ID for the deduped represented individual study/source row."
+- name: study_dedupe_key
+  definition: "Machine key used to group side targets. DOI keys are preferred, then URL, then normalized title."
+- name: study_dedupe_method
+  definition: "Dedupe method: doi, url, title, or weak_side_target."
+- name: dedupe_confidence
+  definition: "High for DOI, medium for URL, low for title-only, very_low for weak fallback."
+- name: represented_title_canonical
+  definition: "Most useful nonblank title/label for this represented source identity."
+- name: represented_doi_canonical
+  definition: "Canonical normalized DOI when any side target in the group has a DOI."
+- name: represented_url_canonical
+  definition: "Canonical URL seed when available from DOI, source URL, or represented URL label."
+- name: doi_url
+  definition: "https://doi.org URL for the canonical DOI."
+- name: is_url_title
+  definition: "True when any side target used a URL as its represented title/label."
+- name: roles_observed
+  definition: "Pipe-delimited observed roles among original and replication."
+- name: n_side_targets
+  definition: "Number of side-target rows collapsed into this study/source row."
+- name: n_distinct_pairs
+  definition: "Number of distinct plotted Figure 1 pairs touching this study/source row."
+- name: n_included_pairs
+  definition: "Number of distinct pair rows touching this study/source that are included under the current Figure 1 rule."
+- name: n_excluded_pairs
+  definition: "Number of distinct pair rows touching this study/source that are excluded under the current Figure 1 rule but retained for dedupe."
+- name: n_original_side_targets
+  definition: "Count of original-side target rows in this group."
+- name: n_replication_side_targets
+  definition: "Count of replication/follow-up-side target rows in this group."
+- name: current_plot_rule_statuses
+  definition: "Pipe-delimited current plot-rule statuses observed among pair sides touching this study/source."
+- name: current_plot_rule_blockers
+  definition: "Pipe-delimited plot-rule blockers observed for excluded pairs touching this study/source."
+- name: source_family_keys
+  definition: "Pipe-delimited source families that asserted rows touching this study/source."
+- name: source_family_labels
+  definition: "Pipe-delimited source-family labels."
+- name: pair_chase_priorities
+  definition: "Pipe-delimited pair-chase priority codes observed for this study/source."
+- name: pair_chase_routes
+  definition: "Pipe-delimited pair-chase routes observed for this study/source."
+- name: side_source_object_routes
+  definition: "Pipe-delimited side-level acquisition/search routes."
+- name: side_source_object_priorities
+  definition: "Pipe-delimited side-level acquisition/search priorities."
+- name: D_min
+  definition: "Minimum represented D value among side targets in this group."
+- name: D_max
+  definition: "Maximum represented D value among side targets in this group."
+- name: N_min
+  definition: "Minimum represented N value among side targets in this group."
+- name: N_max
+  definition: "Maximum represented N value among side targets in this group."
+- name: side_target_ids_json
+  definition: "JSON array of source_side_target_id values collapsed into this row."
+- name: figure1_replication_pair_ids_json
+  definition: "JSON array of plotted pair IDs touching this study/source."
+- name: pair_chase_task_ids_json
+  definition: "JSON array of pair-chase task IDs touching this study/source."
+- name: source_object_seed_urls_json
+  definition: "JSON array of DOI/source URL seeds to try for local mirroring."
+- name: side_search_queries_json
+  definition: "JSON array of side-specific search queries."
+- name: pair_relation_search_queries_json
+  definition: "JSON array of pair-relation search queries."
+- name: needs_manual_identity_review
+  definition: "True when the dedupe identity is title-only/weak or otherwise likely ambiguous."
+- name: identity_review_reason
+  definition: "Compact reason for manual identity review."
+- name: next_action
+  definition: "Recommended next source-object/value-verification action for this study/source."
+- name: created_at
+  definition: "Generation timestamp for this deterministic artifact."

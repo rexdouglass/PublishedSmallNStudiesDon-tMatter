@@ -1,0 +1,137 @@
+{
+  "artifact_id": "source_artifact_a2580beea21198a6",
+  "byte_size": 947220,
+  "file_name": "index.html",
+  "file_type": "html",
+  "line_preview": [
+    "A large-scale in silico replication project of ecological and evolutionary studies",
+    "A large-scale in silico replication project",
+    "of ecological and evolutionary studies",
+    "Yefeng Yang, Erik van Zwet, Nikolaos Ignatiadis,",
+    "Shinichi Nakagawa",
+    "Packages",
+    "Data",
+    "Modelling",
+    "z-statistic",
+    "SNR",
+    "Joint",
+    "distribution",
+    "Estimates",
+    "Power",
+    "Replication",
+    "Sample size multiplier",
+    "Packages",
+    "#knitr::opts_chunk$set(fig.height = 8, fig.width = 10)",
+    "set.seed(2024)",
+    "suppressPackageStartupMessages({",
+    "library(dplyr)",
+    "library(readr)",
+    "library(tidyr)",
+    "library(ggplot2)",
+    "library(aplot)",
+    "library(ggplotify)",
+    "library(here)",
+    "library(patchwork)",
+    "library(plot3D)",
+    "})",
+    "# functions",
+    "source(here(\"func\",\"func.R\"))",
+    "Data",
+    "The database comprised 466 meta-analytic datasets and 88,218",
+    "observations of ecological and evolutionary effects, curated by Costello",
+    "and Fox. These datasets were obtained through a systematic search of",
+    "meta-analysis papers indexed in Web of Science categories relevant to",
+    "ecology and evolutionary biology. We eliminated effect size estimates",
+    "with zero and missing sampling variances.",
+    "The 466 meta-analytic datasets encompassed diverse research topics",
+    "within ecology and evolutionary biology. However, it is important to",
+    "realize that the trials in our dataset are not a random sample of all",
+    "the trials in the research field, and may therefore not be entirely",
+    "representative.",
+    "Furthermore, it is well known that trials that do not reach",
+    "statistical significance have a lower chance of publication. We do not",
+    "know the extent of this “publication bias” and we do not take it into",
+    "account.",
+    "Import the main data (the",
+    ".csv",
+    "file named",
+    "main_dat.csv",
+    ").",
+    "dat_all <- read.csv(here(\"data/main\",\"main_dat_processed.csv\"))",
+    "head(dat_all)",
+    "# make a copy",
+    "d <- dat_all",
+    "nrow(d) # number of estimates",
+    "## [1] 88218",
+    "length(unique(d$study2)) # number of unique studies",
+    "## [1] 12927",
+    "length(unique(d$meta.analysis.id)) # number of meta-analyses",
+    "## [1] 466",
+    "We plot the",
+    "\\(z\\)",
+    "-statistics",
+    "distribution:",
+    "Modelling",
+    "For each observation in the database, let",
+    "\\(ES\\)",
+    "denote the (unobservable!) true or",
+    "population effect size, and",
+    "\\(\\overline{ES}\\)",
+    "be the observed effect",
+    "size. We assume that",
+    "\\(\\overline{ES}\\)",
+    "a normally distributed, unbiased estimate of the true effect",
+    "\\(ES\\)",
+    "with a known sampling standard",
+    "deviation (aka standard error)"
+  ],
+  "line_preview_count": 80,
+  "link_count": 10,
+  "links_preview": [
+    {
+      "href": "#packages",
+      "text": "Packages"
+    },
+    {
+      "href": "#data",
+      "text": "Data"
+    },
+    {
+      "href": "#modelling",
+      "text": "Modelling"
+    },
+    {
+      "href": "#z-statistic",
+      "text": "z-statistic"
+    },
+    {
+      "href": "#snr",
+      "text": "SNR"
+    },
+    {
+      "href": "#joint-distribution",
+      "text": "Joint distribution"
+    },
+    {
+      "href": "#estimates",
+      "text": "Estimates"
+    },
+    {
+      "href": "#power",
+      "text": "Power"
+    },
+    {
+      "href": "#replication",
+      "text": "Replication"
+    },
+    {
+      "href": "#sample-size-multiplier",
+      "text": "Sample size multiplier"
+    }
+  ],
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/index.html",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "sample_kind": "html_text",
+  "sampled_at": "2026-05-04T00:20:28",
+  "sha256": "1be61430e4d3962f73090dec04a75d48bf62eaeda3cc03c246c4937de22b4143"
+}

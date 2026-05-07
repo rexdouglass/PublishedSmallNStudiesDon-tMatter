@@ -113,6 +113,7 @@ INTRO_EXAMPLES = ROOT / "data" / "derived" / "paper_assets" / "figure1_intro_exa
 
 REPLICATION_FIG = ROOT / "reports" / "corpus_candidates" / "figure2_replication_pairs_draft.png"
 REPLICATION_CSV = ROOT / "data" / "derived" / "replication_pairs" / "replication_pairs_figure2_rule_subset.csv"
+FIGURE1_ROOT_TABLE = ROOT / "FIGURE1_REPLICATION_PAIRS.tsv"
 REPLICATION_ALL = ROOT / "data" / "derived" / "replication_pairs" / "replication_pairs_all_on_hand.csv"
 REPLICATION_SOURCE_AUDIT = ROOT / "data" / "derived" / "replication_pairs" / "replication_source_audit.csv"
 REPLICATION_SOURCE_WORKLIST = ROOT / "data" / "derived" / "replication_pairs" / "replication_source_worklist.csv"
@@ -2136,8 +2137,16 @@ def fit_loglog(df: pd.DataFrame, d_col: str, n_col: str) -> tuple[float, float]:
     return float(slope), float(intercept)
 
 
+def load_replication_stats_table() -> pd.DataFrame:
+    if FIGURE1_ROOT_TABLE.exists():
+        df = pd.read_csv(FIGURE1_ROOT_TABLE, sep="\t")
+        df = df.loc[df["current_plot_rule_status"].eq("included_by_current_figure1_dn_rule")].copy()
+        return df
+    return pd.read_csv(REPLICATION_CSV)
+
+
 def replication_stats() -> dict[str, float | int]:
-    df = pd.read_csv(REPLICATION_CSV)
+    df = load_replication_stats_table()
     counts = df["category"].value_counts()
     all_n = np.concatenate([df["N_original"].to_numpy(dtype=float), df["N_replication"].to_numpy(dtype=float)])
     all_d = np.concatenate([df["D_original"].to_numpy(dtype=float), df["D_replication"].to_numpy(dtype=float)])

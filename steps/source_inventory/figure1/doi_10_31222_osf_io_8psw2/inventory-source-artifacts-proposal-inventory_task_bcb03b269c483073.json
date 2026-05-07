@@ -1,0 +1,21 @@
+{
+  "artifact_count": 0,
+  "artifacts": [],
+  "created_at": "2026-05-04T00:17:50",
+  "local_sources": [],
+  "skipped_files": [],
+  "task": {
+    "cluster_id": "cluster_successes_and_failures_of_replications_a_meta_analysis_of_independent_replicatio_48eb11098644",
+    "confidence": "medium",
+    "decision_receipt_path": "steps/review_cue/figure1_search_leads/cluster_receipts/clustered_recall002/cluster_successes_and_failures_of_replications_a_meta_analysis_of_independent_replicatio_48eb11098644.json",
+    "inventory_priority": "medium",
+    "inventory_reason": "The article/preprint describes a meta-analysis of independent replication studies registered on OSF and points to open data/code, including an OSF project and dataset. It may be a reusable source object, but its rows need inventory because only a subset appear to contain comparable original and replication effect sizes.",
+    "inventory_task_id": "inventory_task_bcb03b269c483073",
+    "lead_level_note_count": "2",
+    "next_action": "Keep as a source-family candidate and inventory OSF project 9r62x plus dataset sfdq4/code scripts; route only confirmed original/replication effect-size rows to result-table extraction.",
+    "parent_corpus_database_id_or_key": "doi:10.31222/osf.io/8psw2",
+    "preferred_source_family_name": "Successes and Failures of Replications based on OSF Registries",
+    "route_target": "corpora_update_proposal_then_source_family_inventory",
+    "source_count": "4"
+  }
+}

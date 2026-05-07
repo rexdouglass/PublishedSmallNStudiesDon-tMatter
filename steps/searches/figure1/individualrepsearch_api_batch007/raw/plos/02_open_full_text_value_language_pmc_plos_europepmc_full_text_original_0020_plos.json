@@ -1,0 +1,149 @@
+{
+  "response": {
+    "docs": [
+      {
+        "abstract": [
+          "Background: The importance of replication in the social and behavioural sciences has been emphasized for decades. Various frequentist and Bayesian approaches have been proposed to qualify a replication study as successful or unsuccessful. One of them is meta-analysis. The focus of the present study is on the way meta-analysis functions as a replication success metric. To investigate this, original and replication studies that are part of two large-scale replication projects were used. For each original study, the probability of replication success was calculated using meta-analysis under different assumptions of the underlying population effect when replication results were unknown. The accuracy of the predicted overall replication success was evaluated once replication results became available using adjusted Brier scores. Results: Our results showed that meta-analysis performed poorly when used as a replication success metric. In many cases, quantifying replication success using meta-analysis resulted in the conclusion where the replication was deemed a success regardless of the results of the replication study. Discussion: We conclude that when using meta-analysis as a replication success metric, it has a relatively high probability of finding evidence in favour of a non-zero population effect even when it is zero. This behaviour largely results from the significance of the original study. Furthermore, we argue that there are fundamental reasons against using meta-analysis as a metric for replication success. "
+        ],
+        "author_display": [
+          "Jasmine Muradchanian",
+          "Rink Hoekstra",
+          "Henk Kiers",
+          "Don van Ravenzwaaij"
+        ],
+        "id": "10.1371/journal.pone.0308495",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-12-11T00:00:00Z",
+        "title": "Evaluating meta-analysis as a replication success measure"
+      },
+      {
+        "abstract": [
+          "\nThe vast majority of published results in the literature is statistically significant, which raises concerns about their reliability. The Reproducibility Project Psychology (RPP) and Experimental Economics Replication Project (EE-RP) both replicated a large number of published studies in psychology and economics. The original study and replication were statistically significant in 36.1% in RPP and 68.8% in EE-RP suggesting many null effects among the replicated studies. However, evidence in favor of the null hypothesis cannot be examined with null hypothesis significance testing. We developed a Bayesian meta-analysis method called snapshot hybrid that is easy to use and understand and quantifies the amount of evidence in favor of a zero, small, medium and large effect. The method computes posterior model probabilities for a zero, small, medium, and large effect and adjusts for publication bias by taking into account that the original study is statistically significant. We first analytically approximate the methods performance, and demonstrate the necessity to control for the original study\u2019s significance to enable the accumulation of evidence for a true zero effect. Then we applied the method to the data of RPP and EE-RP, showing that the underlying effect sizes of the included studies in EE-RP are generally larger than in RPP, but that the sample sizes of especially the included studies in RPP are often too small to draw definite conclusions about the true effect size. We also illustrate how snapshot hybrid can be used to determine the required sample size of the replication akin to power analysis in null hypothesis significance testing and present an easy to use web application (https://rvanaert.shinyapps.io/snapshot/) and R code for applying the method.\n"
+        ],
+        "author_display": [
+          "Robbie C. M. van Aert",
+          "Marcel A. L. M. van Assen"
+        ],
+        "id": "10.1371/journal.pone.0175302",
+        "journal": "PLOS ONE",
+        "publication_date": "2017-04-07T00:00:00Z",
+        "title": "Bayesian evaluation of effect size after replicating an original study"
+      },
+      {
+        "abstract": [
+          "\nRecent large-scale replication projects (RPs) have estimated concerningly low reproducibility rates. Further, they reported substantial degrees of shrinkage of effect size, where the replication effect size was found to be, on average, much smaller than the original effect size. Within these RPs, the included original-replication study-pairs can vary with respect to aspects of study design, outcome measures, and descriptive features of both original and replication study population and study team. This often results in between-study-pair heterogeneity, i.e., variation in effect size differences across study-pairs that goes beyond expected statistical variation. When broader claims about the reproducibility of an entire field are based on such heterogeneous data, it becomes imperative to conduct a rigorous analysis of the amount and sources of shrinkage and heterogeneity within and between included study-pairs. Methodology from the meta-analysis literature provides an approach for quantifying the heterogeneity present in RPs with an additive or multiplicative parameter. Meta-regression methodology further allows for an investigation into the sources of shrinkage and heterogeneity. We propose the use of location-scale meta-regressions as a means to directly relate the identified characteristics with shrinkage (represented by the location) and heterogeneity (represented by the scale). This provides valuable insights into drivers and factors associated with high or low reproducibility rates and therefore contextualises results of RPs. The proposed methodology is illustrated using publicly available data from the Replication Project Psychology and the Replication Project Experimental Economics. All analysis scripts and data are available online.\n"
+        ],
+        "author_display": [
+          "Rachel Heyard",
+          "Leonhard Held"
+        ],
+        "id": "10.1371/journal.pone.0327799",
+        "journal": "PLOS One",
+        "publication_date": "2025-08-01T00:00:00Z",
+        "title": "Meta-regression to explain shrinkage and heterogeneity in large-scale replication projects"
+      },
+      {
+        "abstract": [
+          "\nWe measure how accurately replication of experimental results can be predicted by black-box statistical models. With data from four large-scale replication projects in experimental psychology and economics, and techniques from machine learning, we train predictive models and study which variables drive predictable replication. The models predicts binary replication with a cross-validated accuracy rate of 70% (AUC of 0.77) and estimates of relative effect sizes with a Spearman \u03c1 of 0.38. The accuracy level is similar to market-aggregated beliefs of peer scientists [1, 2]. The predictive power is validated in a pre-registered out of sample test of the outcome of [3], where 71% (AUC of 0.73) of replications are predicted correctly and effect size correlations amount to \u03c1 = 0.25. Basic features such as the sample and effect sizes in original papers, and whether reported effects are single-variable main effects or two-variable interactions, are predictive of successful replication. The models presented in this paper are simple tools to produce cheap, prognostic replicability metrics. These models could be useful in institutionalizing the process of evaluation of new findings and guiding resources to those direct replications that are likely to be most informative.\n"
+        ],
+        "author_display": [
+          "Adam Altmejd",
+          "Anna Dreber",
+          "Eskil Forsell",
+          "Juergen Huber",
+          "Taisuke Imai",
+          "Magnus Johannesson",
+          "Michael Kirchler",
+          "Gideon Nave",
+          "Colin Camerer"
+        ],
+        "id": "10.1371/journal.pone.0225826",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-12-05T00:00:00Z",
+        "title": "Predicting the replicability of social science lab experiments"
+      },
+      {
+        "abstract": [
+          "\nGenome-wide association studies (GWAS) are commonly used to identify genomic variants that are associated with complex traits, and estimate the magnitude of this association for each variant. However, it has been widely observed that the association estimates of variants tend to be lower in a replication study than in the study that discovered those associations. A phenomenon known as Winner\u2019s Curse is responsible for this upward bias present in association estimates of significant variants in the discovery study. We review existing Winner\u2019s Curse correction methods which require only GWAS summary statistics in order to make adjustments. In addition, we propose modifications to improve existing methods and propose a novel approach which uses the parametric bootstrap. We evaluate and compare methods, first using a wide variety of simulated data sets and then, using real data sets for three different traits. The metric, estimated mean squared error (MSE) over significant SNPs, was primarily used for method assessment. Our results indicate that widely used conditional likelihood based methods tend to perform poorly. The other considered methods behave much more similarly, with our proposed bootstrap method demonstrating very competitive performance. To complement this review, we have developed an R package, \u2018winnerscurse\u2019 which can be used to implement these various Winner\u2019s Curse adjustment methods to GWAS summary statistics.\nAuthor summary: A genome-wide association study is designed to analyse many common genetic variants in thousands of samples and identify which variants are associated with a trait of interest. It provides estimates of association strength for each variant and variants are classified as associated if their test statistics obtained in the study pass a chosen significance threshold. However, due to a phenomenon known as Winner\u2019s Curse, the association estimates of these significant variants tend to be upward biased and greater in magnitude than their true values. Naturally, this bias has adverse consequences for downstream statistical techniques which use these estimates. In this paper, we look at current methods which have been designed to combat Winner\u2019s Curse and propose modifications to these methods in order to improve performance. Using a wide variety of simulated data sets as well as real data, we perform a thorough evaluation of these methods. We use a metric which allows us to identify which methods, on average, produce adjusted estimates for significant variants that are closest to the true values. To accompany our work, we have created an R package, \u2018winnerscurse\u2019, which allows users to easily apply Winner\u2019s Curse correction methods to their data sets. "
+        ],
+        "author_display": [
+          "Amanda Forde",
+          "Gibran Hemani",
+          "John Ferguson"
+        ],
+        "id": "10.1371/journal.pgen.1010546",
+        "journal": "PLOS Genetics",
+        "publication_date": "2023-09-18T00:00:00Z",
+        "title": "Review and further developments in statistical corrections for Winner\u2019s Curse in genetic association studies"
+      },
+      {
+        "abstract": [
+          "\nA challenge when interpreting replications is determining whether the results of a replication \u201csuccessfully\u201d replicate the original study. Looking for consistency between two studies is challenging because individual studies are susceptible to many sources of error that can cause study results to deviate from each other and the population effect in unpredictable directions and magnitudes. In the current paper, we derive methods to compute a prediction interval, a range of results that can be expected in a replication due to chance (i.e., sampling error), for means and commonly used indexes of effect size: correlations and d-values. The prediction interval is calculable based on objective study characteristics (i.e., effect size of the original study and sample sizes of the original study and planned replication) even when sample sizes across studies are unequal. The prediction interval provides an a priori method for assessing if the difference between an original and replication result is consistent with what can be expected due to sample error alone. We provide open-source software tools that allow researchers, reviewers, replicators, and editors to easily calculate prediction intervals.\n"
+        ],
+        "author_display": [
+          "Jeffrey R. Spence",
+          "David J. Stanley"
+        ],
+        "id": "10.1371/journal.pone.0162874",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-09-19T00:00:00Z",
+        "title": "Prediction Interval: What to Expect When You\u2019re Expecting \u2026 A Replication"
+      },
+      {
+        "abstract": [
+          "\nThere is vigorous debate about the reproducibility of research findings in cancer biology. Whether scientists can accurately assess which experiments will reproduce original findings is important to determining the pace at which science self-corrects. We collected forecasts from basic and preclinical cancer researchers on the first 6 replication studies conducted by the Reproducibility Project: Cancer Biology (RP:CB) to assess the accuracy of expert judgments on specific replication outcomes. On average, researchers forecasted a 75% probability of replicating the statistical significance and a 50% probability of replicating the effect size, yet none of these studies successfully replicated on either criterion (for the 5 studies with results reported). Accuracy was related to expertise: experts with higher h-indices were more accurate, whereas experts with more topic-specific expertise were less accurate. Our findings suggest that experts, especially those with specialized knowledge, were overconfident about the RP:CB replicating individual experiments within published reports; researcher optimism likely reflects a combination of overestimating the validity of original studies and underestimating the difficulties of repeating their methodologies.\nAuthor summary: Science is supposed to be self-correcting. However, the efficiency with which science self-corrects depends in part on how well scientists can anticipate whether particular findings will hold up over time. We examined whether expert researchers could accurately forecast whether mouse experiments in 6 prominent preclinical cancer studies conducted by the Reproducibility Project: Cancer Biology would reproduce original effects. Experts generally overestimated the likelihood that replication studies would reproduce the effects observed in original studies. Experts with greater publication impact (as measured by h-index) provided more accurate forecasts, but experts did not consistently perform better than trainees, and topic-specific expertise did not improve forecast skill. Our findings suggest that experts tend to overestimate the reproducibility of original studies and/or they underappreciate the difficulty of independently repeating laboratory experiments from original protocols. "
+        ],
+        "author_display": [
+          "Daniel Benjamin",
+          "David R. Mandel",
+          "Jonathan Kimmelman"
+        ],
+        "id": "10.1371/journal.pbio.2002212",
+        "journal": "PLOS Biology",
+        "publication_date": "2017-06-29T00:00:00Z",
+        "title": "Can cancer researchers accurately judge whether preclinical reports will reproduce?"
+      },
+      {
+        "abstract": [
+          "\nThe reproducibility of studies involving insect species is an underexplored area in the broader discussion about poor reproducibility in science. Our study addresses this gap by conducting a systematic multi-laboratory investigation into the reproducibility of ecological studies on insect behavior. We implemented a 3 \u00d7 3 experimental design, incorporating three study sites, and three independent experiments on three insect species from different orders: the turnip sawfly (Athalia rosae, Hymenoptera), the meadow grasshopper (Pseudochorthippus parallelus, Orthoptera), and the red flour beetle (Tribolium castaneum, Coleoptera). Using random-effect meta-analysis, we compared the consistency and accuracy of treatment effects on insect behavioral traits across replicate experiments. We successfully reproduced the overall statistical treatment effect in 83% of the replicate experiments, but overall effect size replication was achieved in only 66% of the replicates. Thus, though demonstrating sufficient reproducibility in some measures, this study also provides the first experimental evidence for cases of poor reproducibility in insect experiments. Our findings further show that reasons causing poor reproducibility established in rodent research also hold for other study organisms and research questions. We believe that a rethinking of current best practices is required to face reproducibility issues in insect studies but also across disciplines. Specifically, we advocate for adopting open research practices and the implementation of methodological strategies that reduce bias and problems arising from over-standardization. With respect to the latter, the introduction of systematic variation through multi-laboratory or heterogenized designs may contribute to improved reproducibility in studies involving any living organisms.\n\nInsect studies, like other research fields, can face challenges with reproducibility. Using a 3x3 experimental design across three laboratory sites, three insect species, and three independent experiments, this study reveals cases of both sufficient and poor reproducibility, highlighting critical opportunities for improving experimental rigor in insect research.\n"
+        ],
+        "author_display": [
+          "Carolin Mundinger",
+          "Nora K. E. Schulz",
+          "Pragya Singh",
+          "Steven Janz",
+          "Maximilian Schurig",
+          "Jacob Seidemann",
+          "Joachim Kurtz",
+          "Caroline M\u00fcller",
+          "Holger Schielzeth",
+          "Vanessa T. von Kortzfleisch",
+          "S. Helene Richter"
+        ],
+        "id": "10.1371/journal.pbio.3003019",
+        "journal": "PLOS Biology",
+        "publication_date": "2025-04-22T00:00:00Z",
+        "title": "Testing the reproducibility of ecological studies on insect behavior in a multi-laboratory setting identifies opportunities for improving experimental rigor"
+      },
+      {
+        "abstract": [
+          "\nSharing research data allows the scientific community to verify and build upon published work. However, data sharing is not common practice yet. The reasons for not sharing data are myriad: Some are practical, others are more fear-related. One particular fear is that a reanalysis may expose errors. For this explanation, it would be interesting to know whether authors that do not share data genuinely made more errors than authors who do share data. (Wicherts, Bakker and Molenaar 2011) examined errors that can be discovered based on the published manuscript only, because it is impossible to reanalyze unavailable data. They found a higher prevalence of such errors in papers for which the data were not shared. However, (Nuijten et al. 2017) did not find support for this finding in three large studies. To shed more light on this relation, we conducted a replication of the study by (Wicherts et al. 2011). Our study consisted of two parts. In the first part, we reproduced the analyses from (Wicherts et al. 2011) to verify the results, and we carried out several alternative analytical approaches to evaluate the robustness of the results against other analytical decisions. In the second part, we used a unique and larger data set that originated from (Vanpaemel et al. 2015) on data sharing upon request for reanalysis, to replicate the findings in (Wicherts et al. 2011). We applied statcheck for the detection of consistency errors in all included papers and manually corrected false positives. Finally, we again assessed the robustness of the replication results against other analytical decisions. Everything taken together, we found no robust empirical evidence for the claim that not sharing research data for reanalysis is associated with consistency errors.\n"
+        ],
+        "author_display": [
+          "Aline Claesen",
+          "Wolf Vanpaemel",
+          "Anne-Sofie Maerten",
+          "Thomas Verliefde",
+          "Francis Tuerlinckx",
+          "Tom Heyman"
+        ],
+        "id": "10.1371/journal.pone.0284243",
+        "journal": "PLOS ONE",
+        "publication_date": "2023-04-13T00:00:00Z",
+        "title": "Data sharing upon request and statistical consistency errors in psychology: A replication of Wicherts, Bakker and Molenaar (2011)"
+      }
+    ],
+    "numFound": 9,
+    "start": 0
+  }
+}

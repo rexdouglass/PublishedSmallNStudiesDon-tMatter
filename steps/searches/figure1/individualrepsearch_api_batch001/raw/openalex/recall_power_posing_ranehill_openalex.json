@@ -1,0 +1,5486 @@
+{
+  "group_by": [],
+  "meta": {
+    "cost_usd": 0.001,
+    "count": 126,
+    "db_response_time_ms": 364,
+    "groups_count": null,
+    "page": 1,
+    "per_page": 8
+  },
+  "results": [
+    {
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "Faculty of Business and Economics, University of Lausanne, Switzerland"
+            }
+          ],
+          "author": {
+            "display_name": "John Antonakis",
+            "id": "https://openalex.org/A5057243565",
+            "orcid": "https://orcid.org/0000-0001-8811-5117"
+          },
+          "author_position": "first",
+          "countries": [
+            "CH"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "University of Lausanne",
+              "id": "https://openalex.org/I97565354",
+              "lineage": [
+                "https://openalex.org/I97565354"
+              ],
+              "ror": "https://ror.org/019whta54",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Faculty of Business and Economics, University of Lausanne, Switzerland"
+          ],
+          "raw_author_name": "John Antonakis",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 470,
+      "display_name": "On doing better science: From thrill of discovery to policy implications",
+      "doi": "https://doi.org/10.1016/j.leaqua.2017.01.006",
+      "id": "https://openalex.org/W2581942536",
+      "locations": [
+        {
+          "id": "doi:10.1016/j.leaqua.2017.01.006",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.leaqua.2017.01.006",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "The Leadership Quarterly",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "The Leadership Quarterly",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S152304618",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "1048-9843",
+              "1873-3409"
+            ],
+            "issn_l": "1048-9843",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:iris.unil.ch:iris/201432",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://iris.unil.ch/handle/iris/201432",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://iris.unil.ch/bitstreams/dc36a1f2-a067-44ba-b694-3af89461357c/download",
+          "raw_source_name": null,
+          "raw_type": "journal article",
+          "source": {
+            "display_name": "IRIS",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S7407055444",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:serval.unil.ch:BIB_8EF01CB80A64",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://serval.unil.ch/notice/serval:BIB_8EF01CB80A64",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "The Leadership Quarterly, vol. 28, no. 1, pp. 5-21",
+          "raw_type": "info:eu-repo/semantics/submittedVersion",
+          "source": {
+            "display_name": "SERVAL (Universit\u00e9 de Lausanne)",
+            "host_organization": "https://openalex.org/I4210093590",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210093590"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Swiss School of Archaeology in Greece",
+            "id": "https://openalex.org/S4306401797",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:zenodo.org:895299",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://zenodo.org/record/895299",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article",
+          "source": {
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "European Organization for Nuclear Research",
+            "id": "https://openalex.org/S4306400562",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1016/j.leaqua.2017.01.006",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1016/j.leaqua.2017.01.006",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "The Leadership Quarterly",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "The Leadership Quarterly",
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "host_organization_name": "Elsevier BV",
+          "id": "https://openalex.org/S152304618",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "1048-9843",
+            "1873-3409"
+          ],
+          "issn_l": "1048-9843",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2017,
+      "title": "On doing better science: From thrill of discovery to policy implications",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "(e.g.,": [
+          50
+        ],
+        "(i.e.,": [
+          77,
+          156
+        ],
+        "258": [
+          101
+        ],
+        "468": [
+          97
+        ],
+        "Abstract": [
+          0
+        ],
+        "Although": [
+          1
+        ],
+        "Finally,": [
+          182
+        ],
+        "In": [
+          20
+        ],
+        "Our": [
+          137
+        ],
+        "Thereafter,": [
+          82
+        ],
+        "We": [
+          59,
+          107,
+          163
+        ],
+        "a": [
+          93,
+          194
+        ],
+        "allow": [
+          211
+        ],
+        "and": [
+          35,
+          40,
+          66,
+          79,
+          118,
+          144,
+          170,
+          173,
+          209
+        ],
+        "are": [
+          3,
+          186,
+          203
+        ],
+        "article,": [
+          22
+        ],
+        "articles": [
+          102
+        ],
+        "articles.": [
+          181
+        ],
+        "as": [
+          43,
+          45
+        ],
+        "authors": [
+          145
+        ],
+        "average\u2014markers": [
+          166
+        ],
+        "be": [
+          152
+        ],
+        "begun": [
+          131
+        ],
+        "best\u2010practice": [
+          153
+        ],
+        "brief": [
+          195
+        ],
+        "bring": [
+          67
+        ],
+        "by": [
+          179
+        ],
+        "can": [
+          12
+        ],
+        "causal": [
+          213
+        ],
+        "causality,": [
+          9
+        ],
+        "cell,": [
+          55
+        ],
+        "citations": [
+          177
+        ],
+        "claims": [
+          214
+        ],
+        "commandments\u201d": [
+          159
+        ],
+        "compare": [
+          108
+        ],
+        "comparisons,": [
+          42
+        ],
+        "concerning": [
+          47
+        ],
+        "conclude": [
+          192
+        ],
+        "consequential": [
+          33
+        ],
+        "correctly).": [
+          58
+        ],
+        "counterfactuals": [
+          208
+        ],
+        "deception,": [
+          37
+        ],
+        "decisions": [
+          34
+        ],
+        "demand": [
+          38
+        ],
+        "designs,": [
+          201
+        ],
+        "discuss": [
+          25
+        ],
+        "each": [
+          61
+        ],
+        "ecological": [
+          80
+        ],
+        "economics,": [
+          119
+        ],
+        "effects": [
+          39
+        ],
+        "establishing": [
+          8
+        ],
+        "estimating": [
+          56
+        ],
+        "experimental": [
+          18,
+          123,
+          135,
+          161
+        ],
+        "experiments": [
+          2,
+          99,
+          185
+        ],
+        "expose": [
+          60
+        ],
+        "external": [
+          78
+        ],
+        "field.": [
+          217
+        ],
+        "fields": [
+          113
+        ],
+        "findings": [
+          76
+        ],
+        "findings.": [
+          19
+        ],
+        "first": [
+          24
+        ],
+        "follow": [
+          147
+        ],
+        "for": [
+          7,
+          142,
+          205
+        ],
+        "fore": [
+          70
+        ],
+        "from": [
+          100
+        ],
+        "generalizability": [
+          171
+        ],
+        "generating": [
+          206
+        ],
+        "given": [
+          183
+        ],
+        "gold": [
+          5
+        ],
+        "has": [
+          128
+        ],
+        "hence": [
+          210
+        ],
+        "identify": [
+          150
+        ],
+        "importance": [
+          141
+        ],
+        "in": [
+          104,
+          111,
+          188,
+          215
+        ],
+        "include": [
+          29
+        ],
+        "infeasible": [
+          187
+        ],
+        "internal": [
+          15
+        ],
+        "issues": [
+          46,
+          71
+        ],
+        "journals": [
+          143
+        ],
+        "journals.": [
+          106
+        ],
+        "lack": [
+          31
+        ],
+        "making": [
+          212
+        ],
+        "management,": [
+          126
+        ],
+        "methodological": [
+          154,
+          168
+        ],
+        "minimum": [
+          51
+        ],
+        "more": [
+          129
+        ],
+        "of": [
+          17,
+          32,
+          72,
+          74,
+          86,
+          96,
+          114,
+          160,
+          167,
+          197
+        ],
+        "often": [
+          198
+        ],
+        "operations": [
+          125
+        ],
+        "outcomes,": [
+          36
+        ],
+        "overlooked": [
+          199
+        ],
+        "paradigm.": [
+          136
+        ],
+        "per": [
+          54
+        ],
+        "positively": [
+          172
+        ],
+        "potential": [
+          64
+        ],
+        "practices": [
+          110
+        ],
+        "predict": [
+          175
+        ],
+        "problem,": [
+          62
+        ],
+        "psychology,": [
+          117
+        ],
+        "published": [
+          103,
+          180
+        ],
+        "quasi\u2010experimental": [
+          200
+        ],
+        "received": [
+          178
+        ],
+        "recent": [
+          98
+        ],
+        "recently": [
+          130
+        ],
+        "regarding": [
+          89
+        ],
+        "regularly": [
+          121
+        ],
+        "relevance": [
+          73
+        ],
+        "representative": [
+          94
+        ],
+        "research": [
+          109
+        ],
+        "research).": [
+          162
+        ],
+        "research\u2014to": [
+          124
+        ],
+        "results": [
+          138
+        ],
+        "review": [
+          196
+        ],
+        "rigor": [
+          169
+        ],
+        "sample": [
+          52,
+          95
+        ],
+        "settings,": [
+          190
+        ],
+        "several": [
+          10
+        ],
+        "show": [
+          63,
+          164
+        ],
+        "significantly": [
+          174
+        ],
+        "size": [
+          53
+        ],
+        "social": [
+          116
+        ],
+        "solutions,": [
+          65
+        ],
+        "some": [
+          189
+        ],
+        "standard": [
+          6
+        ],
+        "state\u2010of\u2010the\u2010science": [
+          88
+        ],
+        "statistical": [
+          48
+        ],
+        "stock": [
+          85
+        ],
+        "strong": [
+          207
+        ],
+        "study\u2014management,": [
+          115
+        ],
+        "suggestions": [
+          155
+        ],
+        "take": [
+          84
+        ],
+        "that": [
+          184
+        ],
+        "that\u2014on": [
+          165
+        ],
+        "the": [
+          4,
+          14,
+          30,
+          69,
+          75,
+          87,
+          134,
+          140,
+          157,
+          176,
+          216
+        ],
+        "these": [
+          26
+        ],
+        "this": [
+          21
+        ],
+        "threats": [
+          11,
+          91
+        ],
+        "threats,": [
+          27
+        ],
+        "three": [
+          112
+        ],
+        "to": [
+          68,
+          132,
+          146,
+          151
+        ],
+        "top\u2010tier": [
+          105
+        ],
+        "undermine": [
+          13
+        ],
+        "underscore": [
+          139
+        ],
+        "unfair": [
+          41
+        ],
+        "use": [
+          122,
+          133
+        ],
+        "useful": [
+          204
+        ],
+        "using": [
+          92
+        ],
+        "validity": [
+          16,
+          49,
+          90
+        ],
+        "validity).": [
+          81
+        ],
+        "variance": [
+          57
+        ],
+        "we": [
+          23,
+          83,
+          149,
+          191
+        ],
+        "well": [
+          44
+        ],
+        "what": [
+          148
+        ],
+        "which": [
+          28,
+          120,
+          127,
+          202
+        ],
+        "with": [
+          193
+        ],
+        "\u201cten": [
+          158
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "University of Lausanne, Faculty of Business and Economics, Department of Organizational Behavior, CH-1015, Lausanne, Chamberonne, Switzerland"
+            }
+          ],
+          "author": {
+            "display_name": "Sirio Lonati",
+            "id": "https://openalex.org/A5045242476",
+            "orcid": "https://orcid.org/0000-0003-0216-2313"
+          },
+          "author_position": "first",
+          "countries": [
+            "CH"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "University of Lausanne",
+              "id": "https://openalex.org/I97565354",
+              "lineage": [
+                "https://openalex.org/I97565354"
+              ],
+              "ror": "https://ror.org/019whta54",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "University of Lausanne, Faculty of Business and Economics, Department of Organizational Behavior, CH-1015, Lausanne, Chamberonne, Switzerland"
+          ],
+          "raw_author_name": "Sirio Lonati",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I162148367"
+              ],
+              "raw_affiliation_string": "Pontificia Universidad Cato\u0301lica de Chile, School of Management, Campus San Joaqui\u0301n, Av. Vicun\u0303a Mackenna, 4860, Macul, Santiago, RM, Chile"
+            }
+          ],
+          "author": {
+            "display_name": "Bernardo F. Quiroga",
+            "id": "https://openalex.org/A5036585308",
+            "orcid": "https://orcid.org/0000-0002-0465-0460"
+          },
+          "author_position": "middle",
+          "countries": [
+            "CL"
+          ],
+          "institutions": [
+            {
+              "country_code": "CL",
+              "display_name": "Pontificia Universidad Cat\u00f3lica de Chile",
+              "id": "https://openalex.org/I162148367",
+              "lineage": [
+                "https://openalex.org/I162148367"
+              ],
+              "ror": "https://ror.org/04teye511",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Pontificia Universidad Cato\u0301lica de Chile, School of Management, Campus San Joaqui\u0301n, Av. Vicun\u0303a Mackenna, 4860, Macul, Santiago, RM, Chile"
+          ],
+          "raw_author_name": "Bernardo F. Quiroga",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "University of Lausanne, Faculty of Business and Economics, Department of Organizational Behavior, CH-1015, Lausanne, Chamberonne, Switzerland"
+            }
+          ],
+          "author": {
+            "display_name": "Christian Zehnder",
+            "id": "https://openalex.org/A5038055176",
+            "orcid": "https://orcid.org/0000-0001-6199-4975"
+          },
+          "author_position": "middle",
+          "countries": [
+            "CH"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "University of Lausanne",
+              "id": "https://openalex.org/I97565354",
+              "lineage": [
+                "https://openalex.org/I97565354"
+              ],
+              "ror": "https://ror.org/019whta54",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "University of Lausanne, Faculty of Business and Economics, Department of Organizational Behavior, CH-1015, Lausanne, Chamberonne, Switzerland"
+          ],
+          "raw_author_name": "Christian Zehnder",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "University of Lausanne, Faculty of Business and Economics, Department of Organizational Behavior, CH-1015, Lausanne, Chamberonne, Switzerland"
+            }
+          ],
+          "author": {
+            "display_name": "John Antonakis",
+            "id": "https://openalex.org/A5057243565",
+            "orcid": "https://orcid.org/0000-0001-8811-5117"
+          },
+          "author_position": "last",
+          "countries": [
+            "CH"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "University of Lausanne",
+              "id": "https://openalex.org/I97565354",
+              "lineage": [
+                "https://openalex.org/I97565354"
+              ],
+              "ror": "https://ror.org/019whta54",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "University of Lausanne, Faculty of Business and Economics, Department of Organizational Behavior, CH-1015, Lausanne, Chamberonne, Switzerland"
+          ],
+          "raw_author_name": "John Antonakis",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 335,
+      "display_name": "On doing relevant and rigorous experiments: Review and recommendations",
+      "doi": "https://doi.org/10.1016/j.jom.2018.10.003",
+      "id": "https://openalex.org/W2910905828",
+      "locations": [
+        {
+          "id": "doi:10.1016/j.jom.2018.10.003",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.jom.2018.10.003",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Journal of Operations Management",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Operations Management",
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "host_organization_name": "Wiley",
+            "id": "https://openalex.org/S142306484",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0272-6963",
+              "1873-1317"
+            ],
+            "issn_l": "0272-6963",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:serval.unil.ch:BIB_C55BB4D70D11",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://serval.unil.ch/notice/serval:BIB_C55BB4D70D11",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "Journal of Operations Management, vol. 64, no. 1, pp. 19-40",
+          "raw_type": "info:eu-repo/semantics/submittedVersion",
+          "source": {
+            "display_name": "SERVAL (Universit\u00e9 de Lausanne)",
+            "host_organization": "https://openalex.org/I4210093590",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210093590"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Swiss School of Archaeology in Greece",
+            "id": "https://openalex.org/S4306401797",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:iris.unil.ch:iris/179106",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://iris.unil.ch/handle/iris/179106",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://iris.unil.ch/bitstreams/007b5279-96a9-4964-a449-5430e91fcce0/download",
+          "raw_source_name": null,
+          "raw_type": "journal article",
+          "source": {
+            "display_name": "IRIS",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S7407055444",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1016/j.jom.2018.10.003",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1016/j.jom.2018.10.003",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Journal of Operations Management",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Journal of Operations Management",
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "host_organization_name": "Wiley",
+          "id": "https://openalex.org/S142306484",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0272-6963",
+            "1873-1317"
+          ],
+          "issn_l": "0272-6963",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2018,
+      "title": "On doing relevant and rigorous experiments: Review and recommendations",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "Bayesian": [
+          56,
+          101,
+          119
+        ],
+        "Earlier": [
+          0
+        ],
+        "First": [
+          86
+        ],
+        "For": [
+          189
+        ],
+        "Fourth,": [
+          139
+        ],
+        "Here,": [
+          52
+        ],
+        "However,": [
+          41,
+          215
+        ],
+        "Our": [
+          76,
+          200
+        ],
+        "Second,": [
+          99
+        ],
+        "Third,": [
+          116
+        ],
+        "This": [
+          159
+        ],
+        "a": [
+          30,
+          55,
+          132,
+          136,
+          142,
+          166,
+          194
+        ],
+        "about": [
+          96
+        ],
+        "account": [
+          122
+        ],
+        "adopted": [
+          9,
+          16
+        ],
+        "alternative": [
+          111
+        ],
+        "an": [
+          25,
+          36,
+          147,
+          197,
+          207
+        ],
+        "analysis": [
+          77,
+          218
+        ],
+        "and": [
+          29,
+          34,
+          87,
+          112,
+          196
+        ],
+        "approach": [
+          102
+        ],
+        "as": [
+          165
+        ],
+        "based": [
+          140
+        ],
+        "between-study": [
+          154
+        ],
+        "bias.": [
+          98
+        ],
+        "body": [
+          11,
+          18
+        ],
+        "both": [
+          109
+        ],
+        "but": [
+          179
+        ],
+        "can": [
+          163
+        ],
+        "choice": [
+          130,
+          168
+        ],
+        "classical": [
+          81
+        ],
+        "come": [
+          48
+        ],
+        "compared": [
+          5
+        ],
+        "concerns": [
+          95
+        ],
+        "considerable": [
+          50
+        ],
+        "considered": [
+          90,
+          193
+        ],
+        "constrictive": [
+          10
+        ],
+        "cortisol,": [
+          33
+        ],
+        "decrease": [
+          31
+        ],
+        "default": [
+          167,
+          195
+        ],
+        "displayed": [
+          35
+        ],
+        "distribution": [
+          151
+        ],
+        "effect": [
+          69,
+          157,
+          178,
+          190,
+          208
+        ],
+        "effect,": [
+          226
+        ],
+        "effects": [
+          45,
+          181
+        ],
+        "eliminating": [
+          94
+        ],
+        "empirically": [
+          148,
+          160
+        ],
+        "enables": [
+          103
+        ],
+        "evidence": [
+          107,
+          205,
+          230
+        ],
+        "expansive": [
+          17
+        ],
+        "feeling": [
+          21
+        ],
+        "felt": [
+          74,
+          213
+        ],
+        "field": [
+          184
+        ],
+        "fixed-effect": [
+          133
+        ],
+        "focusing": [
+          66
+        ],
+        "for": [
+          39,
+          108,
+          123,
+          131,
+          152,
+          171,
+          180,
+          206
+        ],
+        "foremost,": [
+          88
+        ],
+        "found": [
+          2
+        ],
+        "from": [
+          62
+        ],
+        "generally.": [
+          188
+        ],
+        "have": [
+          46
+        ],
+        "heterogeneity": [
+          155
+        ],
+        "hypothesis.": [
+          115
+        ],
+        "improves": [
+          78
+        ],
+        "in": [
+          27,
+          32,
+          83,
+          182
+        ],
+        "increase": [
+          26
+        ],
+        "increased": [
+          37
+        ],
+        "informed": [
+          149,
+          161,
+          198
+        ],
+        "investigation": [
+          173
+        ],
+        "is": [
+          219,
+          232
+        ],
+        "issue,": [
+          65
+        ],
+        "literature": [
+          143
+        ],
+        "meta-analyses": [
+          82
+        ],
+        "meta-analysis": [
+          57,
+          201,
+          228
+        ],
+        "model": [
+          134
+        ],
+        "model-averaging": [
+          120
+        ],
+        "model.": [
+          138
+        ],
+        "moderate.": [
+          234
+        ],
+        "more": [
+          22,
+          187
+        ],
+        "not": [
+          169
+        ],
+        "null": [
+          114
+        ],
+        "obtained": [
+          146
+        ],
+        "of": [
+          58,
+          70,
+          156,
+          174,
+          185,
+          209
+        ],
+        "on": [
+          67,
+          73,
+          79,
+          141,
+          212
+        ],
+        "only": [
+          91,
+          170,
+          233
+        ],
+        "or": [
+          135
+        ],
+        "participants": [
+          7,
+          14,
+          222
+        ],
+        "pose": [
+          44,
+          177
+        ],
+        "posing": [
+          72,
+          211
+        ],
+        "postures": [
+          12,
+          19
+        ],
+        "power": [
+          43,
+          71,
+          176,
+          210
+        ],
+        "power.": [
+          75,
+          214
+        ],
+        "powerful,": [
+          23
+        ],
+        "preregistered": [
+          60,
+          92
+        ],
+        "present": [
+          54
+        ],
+        "prior": [
+          150,
+          162
+        ],
+        "prior.": [
+          199
+        ],
+        "psychology": [
+          186
+        ],
+        "publication": [
+          97
+        ],
+        "quantify": [
+          106
+        ],
+        "random-effect": [
+          137
+        ],
+        "recently": [
+          47
+        ],
+        "reported": [
+          20
+        ],
+        "respect": [
+          127
+        ],
+        "restricted": [
+          220
+        ],
+        "review,": [
+          144
+        ],
+        "risk.": [
+          40
+        ],
+        "scrutiny.": [
+          51
+        ],
+        "serve": [
+          164
+        ],
+        "several": [
+          84
+        ],
+        "showed": [
+          24
+        ],
+        "six": [
+          59
+        ],
+        "size,": [
+          191
+        ],
+        "sizes.": [
+          158
+        ],
+        "special": [
+          64
+        ],
+        "standard": [
+          80
+        ],
+        "strong": [
+          204
+        ],
+        "studies": [
+          61
+        ],
+        "studies,": [
+          93
+        ],
+        "testosterone": [
+          28
+        ],
+        "that": [
+          3,
+          231
+        ],
+        "the": [
+          68,
+          100,
+          110,
+          113,
+          124,
+          129,
+          153,
+          172,
+          175,
+          183,
+          217,
+          225,
+          227
+        ],
+        "these": [
+          42
+        ],
+        "this": [
+          63
+        ],
+        "to": [
+          6,
+          105,
+          121,
+          128,
+          221
+        ],
+        "tolerance": [
+          38
+        ],
+        "uncertainty": [
+          125
+        ],
+        "under": [
+          49
+        ],
+        "unfamiliar": [
+          223
+        ],
+        "us": [
+          104
+        ],
+        "use": [
+          118
+        ],
+        "very": [
+          203
+        ],
+        "ways.": [
+          85
+        ],
+        "we": [
+          53,
+          89,
+          117,
+          145,
+          192
+        ],
+        "when": [
+          216
+        ],
+        "who": [
+          8,
+          15
+        ],
+        "with": [
+          126,
+          224
+        ],
+        "work": [
+          1
+        ],
+        "yields": [
+          202,
+          229
+        ],
+        "\u2013": [
+          4,
+          13
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Amsterdam , The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Quentin F. Gronau",
+            "id": "https://openalex.org/A5090294872",
+            "orcid": "https://orcid.org/0000-0001-5510-6943"
+          },
+          "author_position": "first",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Amsterdam , The Netherlands"
+          ],
+          "raw_author_name": "Quentin F. Gronau"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I193700539"
+              ],
+              "raw_affiliation_string": "Tilburg School of Social and Behavioral Sciences, Tilburg University, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Sara van Erp",
+            "id": "https://openalex.org/A5038831264",
+            "orcid": "https://orcid.org/0000-0001-6698-1284"
+          },
+          "author_position": "middle",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "Tilburg University",
+              "id": "https://openalex.org/I193700539",
+              "lineage": [
+                "https://openalex.org/I193700539"
+              ],
+              "ror": "https://ror.org/04b8v1s79",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Tilburg School of Social and Behavioral Sciences, Tilburg University, The Netherlands"
+          ],
+          "raw_author_name": "Sara Van Erp"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I177802217"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Mannheim, Germany"
+            }
+          ],
+          "author": {
+            "display_name": "Daniel W. Heck",
+            "id": "https://openalex.org/A5032213499",
+            "orcid": "https://orcid.org/0000-0002-6302-9252"
+          },
+          "author_position": "middle",
+          "countries": [
+            "DE"
+          ],
+          "institutions": [
+            {
+              "country_code": "DE",
+              "display_name": "University of Mannheim",
+              "id": "https://openalex.org/I177802217",
+              "lineage": [
+                "https://openalex.org/I177802217"
+              ],
+              "ror": "https://ror.org/031bsb921",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Mannheim, Germany"
+          ],
+          "raw_author_name": "Daniel W. Heck"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I87216513"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Michigan State University, United States"
+            }
+          ],
+          "author": {
+            "display_name": "Joseph Cesario",
+            "id": "https://openalex.org/A5082604173",
+            "orcid": "https://orcid.org/0000-0002-1892-4485"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Michigan State University",
+              "id": "https://openalex.org/I87216513",
+              "lineage": [
+                "https://openalex.org/I87216513"
+              ],
+              "ror": "https://ror.org/05hs6h993",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Michigan State University, United States"
+          ],
+          "raw_author_name": "Joseph Cesario"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I34352273"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Maastricht University, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Kai J. Jonas",
+            "id": "https://openalex.org/A5049602140",
+            "orcid": "https://orcid.org/0000-0001-6607-1993"
+          },
+          "author_position": "middle",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "Maastricht University",
+              "id": "https://openalex.org/I34352273",
+              "lineage": [
+                "https://openalex.org/I34352273"
+              ],
+              "ror": "https://ror.org/02jz4aj89",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Maastricht University, The Netherlands"
+          ],
+          "raw_author_name": "Kai J. Jonas"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Amsterdam , The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Eric\u2010Jan Wagenmakers",
+            "id": "https://openalex.org/A5063079579",
+            "orcid": "https://orcid.org/0000-0003-1596-1034"
+          },
+          "author_position": "last",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Amsterdam , The Netherlands"
+          ],
+          "raw_author_name": "Eric-Jan Wagenmakers"
+        }
+      ],
+      "cited_by_count": 178,
+      "display_name": "A Bayesian model-averaged meta-analysis of the power pose effect with informed and default priors: the case of felt power",
+      "doi": "https://doi.org/10.1080/23743603.2017.1326760",
+      "id": "https://openalex.org/W2729207627",
+      "locations": [
+        {
+          "id": "doi:10.1080/23743603.2017.1326760",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1080/23743603.2017.1326760",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Comprehensive Results in Social Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Comprehensive Results in Social Psychology",
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "host_organization_name": "Taylor & Francis",
+            "id": "https://openalex.org/S4210196576",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2374-3603",
+              "2374-3611"
+            ],
+            "issn_l": "2374-3603",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:cris.maastrichtuniversity.nl:openaire_cris_publications/1f72f3b8-19e6-4532-8360-37c7d1475518",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://cris.maastrichtuniversity.nl/en/publications/1f72f3b8-19e6-4532-8360-37c7d1475518",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Gronau, Q F, van Erp, S, Heck, D W, Cesario, J, Jonas, K J & Wagenmakers, E-J 2017, 'A Bayesian model-averaged meta-analysis of the power pose effect with informed and default priors : the case of felt power', Comprehensive Results in Social Psychology, vol. 2, no. 1, pp. 123-138. https://doi.org/10.1080/23743603.2017.1326760",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "Research Publications (Maastricht University)",
+            "host_organization": "https://openalex.org/I34352273",
+            "host_organization_lineage": [
+              "https://openalex.org/I34352273"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Maastricht University",
+            "id": "https://openalex.org/S4306402616",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:dare.uva.nl:openaire_cris_publications/b33d4563-22c0-468c-b12b-504fb61519b5",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://handle.uba.uva.nl/personal/pure/en/publications/a-bayesian-modelaveraged-metaanalysis-of-the-power-pose-effect-with-informed-and-default-priors-the-case-of-felt-power(b33d4563-22c0-468c-b12b-504fb61519b5).html",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Gronau, Q F, Van Erp, S, Heck, D W, Cesario, J, Jonas, K J & Wagenmakers, E-J 2017, 'A Bayesian model-averaged meta-analysis of the power pose effect with informed and default priors: the case of felt power', Comprehensive Results in Social Psychology, vol. 2, no. 1, pp. 123-138. https://doi.org/10.1080/23743603.2017.1326760",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "UvA-DARE (University of Amsterdam)",
+            "host_organization": "https://openalex.org/I887064364",
+            "host_organization_lineage": [
+              "https://openalex.org/I887064364"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Amsterdam",
+            "id": "https://openalex.org/S4306400088",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:uvt:oai:tilburguniversity.edu:publications/73d320ed-13e3-49d1-b8da-e74f94ee5fe1",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://research.tilburguniversity.edu/en/publications/73d320ed-13e3-49d1-b8da-e74f94ee5fe1",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://research.tilburguniversity.edu/en/publications/73d320ed-13e3-49d1-b8da-e74f94ee5fe1",
+          "raw_source_name": "Comprehensive Results in Social Psychology, 2(1), 123 - 138. Taylor &amp; Francis",
+          "raw_type": "info:eu-repo/semantics/article",
+          "source": {
+            "display_name": "Data Archiving and Networked Services (DANS)",
+            "host_organization": "https://openalex.org/I1322597698",
+            "host_organization_lineage": [
+              "https://openalex.org/I1322597698"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+            "id": "https://openalex.org/S4306401843",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:share.osf.io:460A0-62D-3C3",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "http://api.osf.io/v2/nodes/k5avt/",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "",
+          "raw_type": "project",
+          "source": {
+            "display_name": "OSF Preprints (OSF Preprints)",
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Center for Open Science",
+            "id": "https://openalex.org/S4306401127",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:share.osf.io:461BC-B61-93C",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "http://api.osf.io/v2/nodes/r2cds/",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "",
+          "raw_type": "project",
+          "source": {
+            "display_name": "OSF Preprints (OSF Preprints)",
+            "host_organization": "https://openalex.org/I2799848540",
+            "host_organization_lineage": [
+              "https://openalex.org/I2799848540"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Center for Open Science",
+            "id": "https://openalex.org/S4306401127",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:ub-madoc.bib.uni-mannheim.de:42816",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "http://www.tandfonline.com/doi/abs/10.1080/23743603.2017.1326760",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "",
+          "raw_type": "Zeitschriftenartikel",
+          "source": {
+            "display_name": "MADOC (University of Mannheim)",
+            "host_organization": "https://openalex.org/I177802217",
+            "host_organization_lineage": [
+              "https://openalex.org/I177802217"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Mannheim",
+            "id": "https://openalex.org/S4377196315",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:uvapub:oai:dare.uva.nl:publications/b33d4563-22c0-468c-b12b-504fb61519b5",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/a-bayesian-modelaveraged-metaanalysis-of-the-power-pose-effect-with-informed-and-default-priors-the-case-of-felt-power(b33d4563-22c0-468c-b12b-504fb61519b5).html",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Comprehensive Results in Social Psychology, 2(1), 123 - 138. Routledge",
+          "raw_type": "info:eu-repo/semantics/article",
+          "source": {
+            "display_name": "Data Archiving and Networked Services (DANS)",
+            "host_organization": "https://openalex.org/I1322597698",
+            "host_organization_lineage": [
+              "https://openalex.org/I1322597698"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+            "id": "https://openalex.org/S4306401843",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1080/23743603.2017.1326760",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1080/23743603.2017.1326760",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Comprehensive Results in Social Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Comprehensive Results in Social Psychology",
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "host_organization_name": "Taylor & Francis",
+          "id": "https://openalex.org/S4210196576",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "2374-3603",
+            "2374-3611"
+          ],
+          "issn_l": "2374-3603",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2017,
+      "title": "A Bayesian model-averaged meta-analysis of the power pose effect with informed and default priors: the case of felt power",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "(January": [
+          7
+        ],
+        "118,": [
+          4
+        ],
+        "2013": [
+          11
+        ],
+        "2013):": [
+          8
+        ],
+        "4": [
+          6
+        ],
+        "980-1022.": [
+          9
+        ],
+        "??": [
+          10
+        ],
+        "All": [
+          17
+        ],
+        "American": [
+          0
+        ],
+        "Chicago.": [
+          16
+        ],
+        "Journal": [
+          1
+        ],
+        "Sociology": [
+          3
+        ],
+        "The": [
+          13
+        ],
+        "University": [
+          14
+        ],
+        "by": [
+          12
+        ],
+        "no.": [
+          5
+        ],
+        "of": [
+          2,
+          15
+        ],
+        "reserved.": [
+          19
+        ],
+        "rights": [
+          18
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ],
+              "raw_affiliation_string": "University of California (Berkeley, CA, US)"
+            }
+          ],
+          "author": {
+            "display_name": "Robb Willer",
+            "id": "https://openalex.org/A5014466973",
+            "orcid": "https://orcid.org/0000-0003-3404-6472"
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "University of California, Berkeley",
+              "id": "https://openalex.org/I95457486",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ],
+              "ror": "https://ror.org/01an7q238",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "University of California (Berkeley, CA, US)"
+          ],
+          "raw_author_name": "Robb Willer",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I117015748"
+              ],
+              "raw_affiliation_string": "Purdue University, North Central, Westville, IN, US"
+            }
+          ],
+          "author": {
+            "display_name": "Christabel L. Rogalin",
+            "id": "https://openalex.org/A5024510387",
+            "orcid": "https://orcid.org/0000-0003-3969-2529"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Purdue University Northwest",
+              "id": "https://openalex.org/I117015748",
+              "lineage": [
+                "https://openalex.org/I117015748"
+              ],
+              "ror": "https://ror.org/04keq6987",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Purdue University, North Central, Westville, IN, US"
+          ],
+          "raw_author_name": "Christabel L. Rogalin",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I67328108"
+              ],
+              "raw_affiliation_string": "California State University, Fresno, CA, US"
+            }
+          ],
+          "author": {
+            "display_name": "Bridget Conlon",
+            "id": "https://openalex.org/A5046338519",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "California State University, Fresno",
+              "id": "https://openalex.org/I67328108",
+              "lineage": [
+                "https://openalex.org/I67328108"
+              ],
+              "ror": "https://ror.org/03enmdz06",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "California State University, Fresno, CA, US"
+          ],
+          "raw_author_name": "Bridget Conlon",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I201448701"
+              ],
+              "raw_affiliation_string": "University of Washington , Seattle , WA , US"
+            }
+          ],
+          "author": {
+            "display_name": "Michael Wojnowicz",
+            "id": "https://openalex.org/A5112457644",
+            "orcid": null
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "University of Washington",
+              "id": "https://openalex.org/I201448701",
+              "lineage": [
+                "https://openalex.org/I201448701"
+              ],
+              "ror": "https://ror.org/00cvxb145",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Washington , Seattle , WA , US"
+          ],
+          "raw_author_name": "Michael T. Wojnowicz",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 348,
+      "display_name": "Overdoing Gender: A Test of the Masculine Overcompensation Thesis",
+      "doi": "https://doi.org/10.1086/668417",
+      "id": "https://openalex.org/W1555651838",
+      "locations": [
+        {
+          "id": "doi:10.1086/668417",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1086/668417",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "American Journal of Sociology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "American Journal of Sociology",
+            "host_organization": "https://openalex.org/P4310315672",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315672",
+              "https://openalex.org/P4310315690"
+            ],
+            "host_organization_lineage_names": [
+              "University of Chicago Press",
+              "University of Chicago"
+            ],
+            "host_organization_name": "University of Chicago Press",
+            "id": "https://openalex.org/S122471516",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0002-9602",
+              "1537-5390"
+            ],
+            "issn_l": "0002-9602",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:scholarworks.calstate.edu:10211.3/200410",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://hdl.handle.net/10211.3/200410",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "http://scholarworks.calstate.edu/downloads/6d56zx65m",
+          "raw_source_name": "",
+          "raw_type": "Text",
+          "source": {
+            "display_name": "John Spoor Broome Library Institutional Repository (California State University)",
+            "host_organization": "https://openalex.org/I142934699",
+            "host_organization_lineage": [
+              "https://openalex.org/I142934699"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "California State University, Fullerton",
+            "id": "https://openalex.org/S4306400189",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.204.8118",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.204.8118",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "http://www.gsb.stanford.edu/facseminars/events/ob/documents/ob_04_11_willer.pdf",
+          "raw_type": "text",
+          "source": null,
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1086/668417",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1086/668417",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "American Journal of Sociology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "American Journal of Sociology",
+          "host_organization": "https://openalex.org/P4310315672",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315672",
+            "https://openalex.org/P4310315690"
+          ],
+          "host_organization_lineage_names": [
+            "University of Chicago Press",
+            "University of Chicago"
+          ],
+          "host_organization_name": "University of Chicago Press",
+          "id": "https://openalex.org/S122471516",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0002-9602",
+            "1537-5390"
+          ],
+          "issn_l": "0002-9602",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2013,
+      "title": "Overdoing Gender: A Test of the Masculine Overcompensation Thesis",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "Although": [
+          16
+        ],
+        "In": [
+          117
+        ],
+        "Our": [
+          169
+        ],
+        "Power": [
+          0
+        ],
+        "Specifically,": [
+          73
+        ],
+        "The": [
+          49
+        ],
+        "We": [
+          152
+        ],
+        "a": [
+          2,
+          65,
+          76,
+          135,
+          174,
+          192
+        ],
+        "account": [
+          83,
+          178
+        ],
+        "actions": [
+          108
+        ],
+        "addition,": [
+          118
+        ],
+        "also": [
+          153
+        ],
+        "an": [
+          185
+        ],
+        "and": [
+          8,
+          40,
+          58,
+          70,
+          90,
+          107,
+          114,
+          125,
+          143,
+          150,
+          160,
+          176
+        ],
+        "antisocial": [
+          115
+        ],
+        "as": [
+          188,
+          190,
+          199
+        ],
+        "be": [
+          132
+        ],
+        "both": [
+          109
+        ],
+        "build": [
+          197
+        ],
+        "by": [
+          139,
+          166
+        ],
+        "can": [
+          25,
+          131,
+          196
+        ],
+        "capabilities": [
+          39
+        ],
+        "change": [
+          26
+        ],
+        "characteristics\u2014having": [
+          87
+        ],
+        "consequences": [
+          35
+        ],
+        "consequential": [
+          204
+        ],
+        "context,": [
+          187
+        ],
+        "continue": [
+          201
+        ],
+        "contributions": [
+          205
+        ],
+        "critique": [
+          59
+        ],
+        "decision-making": [
+          38
+        ],
+        "defining": [
+          86
+        ],
+        "definition": [
+          77
+        ],
+        "describe": [
+          126
+        ],
+        "desire": [
+          170
+        ],
+        "directions": [
+          157
+        ],
+        "discretion": [
+          89
+        ],
+        "emotions,": [
+          106
+        ],
+        "enforce": [
+          93
+        ],
+        "examining": [
+          140
+        ],
+        "extant": [
+          98
+        ],
+        "extent": [
+          32
+        ],
+        "focus": [
+          66
+        ],
+        "force": [
+          4
+        ],
+        "foundation": [
+          193
+        ],
+        "full": [
+          31
+        ],
+        "fully": [
+          47
+        ],
+        "fundamental": [
+          3
+        ],
+        "future": [
+          155
+        ],
+        "goal": [
+          50
+        ],
+        "guide": [
+          161
+        ],
+        "has": [
+          18
+        ],
+        "highlight": [
+          120
+        ],
+        "holder,": [
+          29
+        ],
+        "how": [
+          101
+        ],
+        "implications.": [
+          72
+        ],
+        "important": [
+          121
+        ],
+        "in": [
+          5,
+          110,
+          128,
+          134
+        ],
+        "individuals": [
+          183
+        ],
+        "individuals\u2019": [
+          37,
+          104
+        ],
+        "influence": [
+          181
+        ],
+        "influences": [
+          103
+        ],
+        "interactions": [
+          42
+        ],
+        "interactions.": [
+          15
+        ],
+        "into": [
+          82
+        ],
+        "is": [
+          1,
+          9,
+          45,
+          54,
+          171
+        ],
+        "issues": [
+          142
+        ],
+        "it": [
+          130
+        ],
+        "its": [
+          68,
+          84,
+          148
+        ],
+        "literature": [
+          61,
+          99
+        ],
+        "make": [
+          203
+        ],
+        "management": [
+          167
+        ],
+        "managerial": [
+          71
+        ],
+        "manipulation.": [
+          151
+        ],
+        "manner": [
+          138
+        ],
+        "means": [
+          91
+        ],
+        "measurement": [
+          149
+        ],
+        "methodological": [
+          141
+        ],
+        "moderators": [
+          122
+        ],
+        "more": [
+          136
+        ],
+        "motivate": [
+          159
+        ],
+        "not": [
+          46
+        ],
+        "of": [
+          14,
+          23,
+          33,
+          51,
+          78,
+          112,
+          123,
+          164,
+          179,
+          209
+        ],
+        "on": [
+          36,
+          62,
+          67,
+          100,
+          182
+        ],
+        "one\u2019s": [
+          94
+        ],
+        "organizational": [
+          69,
+          186
+        ],
+        "organizations": [
+          44
+        ],
+        "outcomes.": [
+          116
+        ],
+        "paper": [
+          53
+        ],
+        "parsimonious": [
+          177
+        ],
+        "pervasive": [
+          10
+        ],
+        "pitfalls": [
+          144
+        ],
+        "possession": [
+          22
+        ],
+        "power": [
+          24,
+          28,
+          63,
+          79,
+          102,
+          124,
+          165
+        ],
+        "power.": [
+          210
+        ],
+        "power\u2019s": [
+          34,
+          180
+        ],
+        "present": [
+          173
+        ],
+        "propose": [
+          75
+        ],
+        "prosocial": [
+          113
+        ],
+        "provide": [
+          154,
+          191
+        ],
+        "regard": [
+          146
+        ],
+        "relationships": [
+          7
+        ],
+        "research": [
+          17,
+          156
+        ],
+        "review,": [
+          56
+        ],
+        "rigorous": [
+          137
+        ],
+        "scholars": [
+          195
+        ],
+        "scholars.": [
+          168
+        ],
+        "shown": [
+          19
+        ],
+        "social": [
+          6,
+          41
+        ],
+        "studied": [
+          133
+        ],
+        "study": [
+          163,
+          208
+        ],
+        "summarize": [
+          96
+        ],
+        "synthesize,": [
+          57
+        ],
+        "takes": [
+          81
+        ],
+        "terms": [
+          111
+        ],
+        "that": [
+          20,
+          80,
+          194
+        ],
+        "the": [
+          21,
+          27,
+          30,
+          60,
+          88,
+          97,
+          162,
+          207
+        ],
+        "they": [
+          200
+        ],
+        "this": [
+          52
+        ],
+        "thorough": [
+          175
+        ],
+        "thoughts,": [
+          105
+        ],
+        "three": [
+          85
+        ],
+        "throughout": [
+          11
+        ],
+        "to": [
+          55,
+          92,
+          147,
+          158,
+          172,
+          202,
+          206
+        ],
+        "types": [
+          13
+        ],
+        "understood.": [
+          48
+        ],
+        "upon": [
+          198
+        ],
+        "various": [
+          12
+        ],
+        "ways": [
+          127
+        ],
+        "we": [
+          74,
+          119
+        ],
+        "well": [
+          189
+        ],
+        "which": [
+          129
+        ],
+        "will\u2014and": [
+          95
+        ],
+        "with": [
+          64,
+          145
+        ],
+        "within": [
+          43,
+          184
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "University of Lausanne"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I19648265"
+              ],
+              "raw_affiliation_string": "Wright State University"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I19648265"
+              ],
+              "raw_affiliation_string": "Wright State University;"
+            }
+          ],
+          "author": {
+            "display_name": "Rachel E. Sturm",
+            "id": "https://openalex.org/A5059410335",
+            "orcid": "https://orcid.org/0000-0003-2473-1708"
+          },
+          "author_position": "first",
+          "countries": [
+            "CH",
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Wright State University",
+              "id": "https://openalex.org/I19648265",
+              "lineage": [
+                "https://openalex.org/I19648265"
+              ],
+              "ror": "https://ror.org/04qk6pt94",
+              "type": "education"
+            },
+            {
+              "country_code": "CH",
+              "display_name": "University of Lausanne",
+              "id": "https://openalex.org/I97565354",
+              "lineage": [
+                "https://openalex.org/I97565354"
+              ],
+              "ror": "https://ror.org/019whta54",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "University of Lausanne",
+            "Wright State University",
+            "Wright State University;"
+          ],
+          "raw_author_name": "Rachel E. Sturm",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "University of Lausanne"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I97565354"
+              ],
+              "raw_affiliation_string": "University of Lausanne , Switzerland"
+            }
+          ],
+          "author": {
+            "display_name": "John Antonakis",
+            "id": "https://openalex.org/A5057243565",
+            "orcid": "https://orcid.org/0000-0001-8811-5117"
+          },
+          "author_position": "last",
+          "countries": [
+            "CH"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "University of Lausanne",
+              "id": "https://openalex.org/I97565354",
+              "lineage": [
+                "https://openalex.org/I97565354"
+              ],
+              "ror": "https://ror.org/019whta54",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Lausanne",
+            "University of Lausanne , Switzerland"
+          ],
+          "raw_author_name": "John Antonakis",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 257,
+      "display_name": "Interpersonal Power",
+      "doi": "https://doi.org/10.1177/0149206314555769",
+      "id": "https://openalex.org/W2065442777",
+      "locations": [
+        {
+          "id": "doi:10.1177/0149206314555769",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1177/0149206314555769",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Journal of Management",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Management",
+            "host_organization": "https://openalex.org/P4310320017",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320017"
+            ],
+            "host_organization_lineage_names": [
+              "SAGE Publishing"
+            ],
+            "host_organization_name": "SAGE Publishing",
+            "id": "https://openalex.org/S122767448",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0149-2063",
+              "1557-1211"
+            ],
+            "issn_l": "0149-2063",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:iris.unil.ch:iris/114566",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://iris.unil.ch/handle/iris/114566",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://iris.unil.ch/bitstreams/fc1767ce-9a5c-4c29-aafd-1bf130db0b7e/download",
+          "raw_source_name": null,
+          "raw_type": "journal article",
+          "source": {
+            "display_name": "IRIS",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S7407055444",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:corescholar.libraries.wright.edu:management-1098",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://corescholar.libraries.wright.edu/management/99",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "Management and International Business Faculty Publications",
+          "raw_type": "text",
+          "source": {
+            "display_name": "Journal of Bioresource Management",
+            "host_organization": "https://openalex.org/P4310316536",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310316536"
+            ],
+            "host_organization_lineage_names": [
+              "Bioresource Research Center (BRC), Islamabad"
+            ],
+            "host_organization_name": "Bioresource Research Center (BRC), Islamabad",
+            "id": "https://openalex.org/S2737205702",
+            "is_core": false,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2309-3854"
+            ],
+            "issn_l": "2309-3854",
+            "type": "journal"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:serval.unil.ch:BIB_1F6C29A616C0",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://serval.unil.ch/notice/serval:BIB_1F6C29A616C0",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "Journal of Management, vol. 41, no. 1, pp. 136-163",
+          "raw_type": "info:eu-repo/semantics/submittedVersion",
+          "source": {
+            "display_name": "SERVAL (Universit\u00e9 de Lausanne)",
+            "host_organization": "https://openalex.org/I4210093590",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210093590"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Swiss School of Archaeology in Greece",
+            "id": "https://openalex.org/S4306401797",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1177/0149206314555769",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1177/0149206314555769",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Journal of Management",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Journal of Management",
+          "host_organization": "https://openalex.org/P4310320017",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320017"
+          ],
+          "host_organization_lineage_names": [
+            "SAGE Publishing"
+          ],
+          "host_organization_name": "SAGE Publishing",
+          "id": "https://openalex.org/S122767448",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0149-2063",
+            "1557-1211"
+          ],
+          "issn_l": "0149-2063",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2014,
+      "title": "Interpersonal Power",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "\"sex": [
+          217
+        ],
+        "(stereotyped": [
+          87,
+          102
+        ],
+        "(trained": [
+          67
+        ],
+        "(wielding": [
+          75
+        ],
+        "A": [
+          209
+        ],
+        "Accordingly,": [
+          175
+        ],
+        "Competition": [
+          19
+        ],
+        "H1": [
+          86,
+          143
+        ],
+        "H2": [
+          101
+        ],
+        "H2:": [
+          145
+        ],
+        "Our": [
+          164,
+          221
+        ],
+        "Results": [
+          141
+        ],
+        "Testosterone": [
+          0
+        ],
+        "These": [
+          153
+        ],
+        "Using": [
+          61
+        ],
+        "We": [
+          42,
+          83,
+          116
+        ],
+        "a": [
+          62,
+          70,
+          127,
+          168
+        ],
+        "actors)": [
+          68
+        ],
+        "addition": [
+          193
+        ],
+        "also": [
+          12,
+          29,
+          155
+        ],
+        "although": [
+          10
+        ],
+        "an": [
+          44
+        ],
+        "and": [
+          8,
+          24,
+          35,
+          183,
+          237
+        ],
+        "as": [
+          17,
+          54
+        ],
+        "avoid": [
+          186
+        ],
+        "be": [
+          202
+        ],
+        "behavior": [
+          147
+        ],
+        "behavior)": [
+          88
+        ],
+        "behavior.": [
+          174
+        ],
+        "behaviors": [
+          15
+        ],
+        "biology.": [
+          243
+        ],
+        "but": [
+          28,
+          110,
+          148
+        ],
+        "by": [
+          56,
+          172
+        ],
+        "compared": [
+          125
+        ],
+        "competition": [
+          74,
+          159
+        ],
+        "competition.": [
+          18
+        ],
+        "competitive": [
+          173
+        ],
+        "conducted": [
+          43
+        ],
+        "contribute": [
+          5,
+          215
+        ],
+        "control,": [
+          128
+        ],
+        "could": [
+          214
+        ],
+        "crucial": [
+          21
+        ],
+        "cultural": [
+          176
+        ],
+        "design,": [
+          65
+        ],
+        "differences\"": [
+          218
+        ],
+        "discouraged": [
+          32
+        ],
+        "doing": [
+          187
+        ],
+        "effects": [
+          238
+        ],
+        "encouraged": [
+          36
+        ],
+        "evolution": [
+          23
+        ],
+        "examining": [
+          234
+        ],
+        "experiment": [
+          45,
+          222
+        ],
+        "experimental": [
+          64
+        ],
+        "explain,": [
+          191
+        ],
+        "factors,": [
+          196
+        ],
+        "feminine": [
+          81,
+          112,
+          139
+        ],
+        "findings": [
+          165
+        ],
+        "for": [
+          33,
+          37,
+          178
+        ],
+        "found": [
+          117
+        ],
+        "gender": [
+          40,
+          49,
+          212
+        ],
+        "gender-stereotyped": [
+          136
+        ],
+        "gender\u2192testosterone": [
+          59,
+          169,
+          228
+        ],
+        "heritable": [
+          195
+        ],
+        "higher": [
+          203
+        ],
+        "highlighting": [
+          230
+        ],
+        "how": [
+          48,
+          96
+        ],
+        "human": [
+          242
+        ],
+        "hypothesized": [
+          84
+        ],
+        "in": [
+          77,
+          85,
+          108,
+          123,
+          135,
+          192,
+          204,
+          207,
+          219
+        ],
+        "increase": [
+          26
+        ],
+        "increased": [
+          121
+        ],
+        "increases": [
+          92,
+          114
+        ],
+        "interactions": [
+          236
+        ],
+        "is": [
+          1,
+          20,
+          30,
+          98
+        ],
+        "it": [
+          11,
+          97,
+          132
+        ],
+        "levels": [
+          199
+        ],
+        "lifetime": [
+          210
+        ],
+        "maleness": [
+          7
+        ],
+        "masculine": [
+          79,
+          109,
+          137
+        ],
+        "masculinity,": [
+          9
+        ],
+        "masculinity.": [
+          163
+        ],
+        "may": [
+          25,
+          189
+        ],
+        "mediated": [
+          55,
+          171
+        ],
+        "men": [
+          38,
+          179,
+          205
+        ],
+        "might": [
+          51
+        ],
+        "modulate": [
+          52
+        ],
+        "modulated": [
+          151
+        ],
+        "modulates": [
+          160
+        ],
+        "nature/nurture": [
+          235
+        ],
+        "new": [
+          225
+        ],
+        "norms": [
+          50
+        ],
+        "norms.": [
+          41
+        ],
+        "not": [
+          111,
+          149
+        ],
+        "novel": [
+          63
+        ],
+        "of": [
+          73,
+          95,
+          130,
+          211,
+          227,
+          233,
+          239
+        ],
+        "on": [
+          241
+        ],
+        "opens": [
+          223
+        ],
+        "or": [
+          138
+        ],
+        "over": [
+          144,
+          162
+        ],
+        "partially": [
+          190
+        ],
+        "participants": [
+          66
+        ],
+        "pathway": [
+          170
+        ],
+        "pathways,": [
+          229
+        ],
+        "pathways.": [
+          60
+        ],
+        "performance": [
+          150
+        ],
+        "performance),": [
+          103
+        ],
+        "performed": [
+          69,
+          107,
+          134
+        ],
+        "performed,": [
+          99
+        ],
+        "possible": [
+          58
+        ],
+        "potential": [
+          232
+        ],
+        "power": [
+          91,
+          106,
+          120,
+          182
+        ],
+        "power)": [
+          76
+        ],
+        "pushes": [
+          177
+        ],
+        "questions": [
+          226
+        ],
+        "regardless": [
+          94,
+          129
+        ],
+        "responds": [
+          13
+        ],
+        "results": [
+          154
+        ],
+        "selectively": [
+          31
+        ],
+        "so": [
+          188
+        ],
+        "socialization": [
+          213,
+          240
+        ],
+        "specific": [
+          71
+        ],
+        "stereotyped": [
+          146
+        ],
+        "stereotypically": [
+          78
+        ],
+        "such": [
+          16
+        ],
+        "support": [
+          167
+        ],
+        "supported": [
+          142,
+          156
+        ],
+        "tend": [
+          200
+        ],
+        "test": [
+          47
+        ],
+        "testosterone": [
+          27,
+          53,
+          93,
+          122,
+          161,
+          198
+        ],
+        "testosterone.": [
+          115,
+          152,
+          220
+        ],
+        "than": [
+          206
+        ],
+        "that": [
+          89,
+          104,
+          118,
+          158
+        ],
+        "the": [
+          231
+        ],
+        "theory": [
+          157
+        ],
+        "thus": [
+          166
+        ],
+        "to": [
+          4,
+          6,
+          14,
+          22,
+          46,
+          180,
+          185,
+          194,
+          201,
+          216
+        ],
+        "two": [
+          57
+        ],
+        "type": [
+          72
+        ],
+        "typically": [
+          2
+        ],
+        "understood": [
+          3
+        ],
+        "up": [
+          224
+        ],
+        "via": [
+          39
+        ],
+        "vs.": [
+          80,
+          100
+        ],
+        "was": [
+          133
+        ],
+        "ways": [
+          113
+        ],
+        "ways.": [
+          82,
+          140
+        ],
+        "whether": [
+          131
+        ],
+        "why": [
+          197
+        ],
+        "wield": [
+          181
+        ],
+        "wielding": [
+          90,
+          105,
+          119
+        ],
+        "with": [
+          126
+        ],
+        "women": [
+          34,
+          124,
+          184
+        ],
+        "women:": [
+          208
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ],
+              "raw_affiliation_string": "Departments of Psychology and Women\u2019s Studies, Program in Neuroscience, Reproductive Sciences and Science, Technology, and Society Programs, and Biosocial Methods Collaborative, University of Michigan, Ann Arbor, MI 48109;"
+            }
+          ],
+          "author": {
+            "display_name": "Sari M. van Anders",
+            "id": "https://openalex.org/A5018327351",
+            "orcid": "https://orcid.org/0000-0001-5343-2059"
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "University of Michigan\u2013Ann Arbor",
+              "id": "https://openalex.org/I27837315",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ],
+              "ror": "https://ror.org/00jmfr291",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Departments of Psychology and Women\u2019s Studies, Program in Neuroscience, Reproductive Sciences and Science, Technology, and Society Programs, and Biosocial Methods Collaborative, University of Michigan, Ann Arbor, MI 48109;"
+          ],
+          "raw_author_name": "Sari M. van Anders"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ],
+              "raw_affiliation_string": "Center for Research on Learning and Teaching Players Theatre Program, University of Michigan, Ann Arbor, MI 48109;"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I193531525"
+              ],
+              "raw_affiliation_string": "The New Theater of Medicine, The George Washington University School of Medicine &amp; Health Sciences, Washington, DC 20052;"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ],
+              "raw_affiliation_string": "cCenter for Research on Learning and Teaching Players Theatre Program, University of Michigan, Ann Arbor, MI 48109;"
+            }
+          ],
+          "author": {
+            "display_name": "Jeffrey Steiger",
+            "id": "https://openalex.org/A5008191740",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "University of Michigan\u2013Ann Arbor",
+              "id": "https://openalex.org/I27837315",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ],
+              "ror": "https://ror.org/00jmfr291",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "George Washington University",
+              "id": "https://openalex.org/I193531525",
+              "lineage": [
+                "https://openalex.org/I193531525"
+              ],
+              "ror": "https://ror.org/00y4zzh67",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Center for Research on Learning and Teaching Players Theatre Program, University of Michigan, Ann Arbor, MI 48109;",
+            "The New Theater of Medicine, The George Washington University School of Medicine &amp; Health Sciences, Washington, DC 20052;",
+            "cCenter for Research on Learning and Teaching Players Theatre Program, University of Michigan, Ann Arbor, MI 48109;"
+          ],
+          "raw_author_name": "Jeffrey Steiger"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Michigan, Ann Arbor, MI 48109"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I27837315"
+              ],
+              "raw_affiliation_string": "dDepartment of Psychology, University of Michigan, Ann Arbor, MI 48109"
+            }
+          ],
+          "author": {
+            "display_name": "Katherine L. Goldey",
+            "id": "https://openalex.org/A5018450656",
+            "orcid": "https://orcid.org/0000-0002-9010-9733"
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "University of Michigan\u2013Ann Arbor",
+              "id": "https://openalex.org/I27837315",
+              "lineage": [
+                "https://openalex.org/I27837315"
+              ],
+              "ror": "https://ror.org/00jmfr291",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Michigan, Ann Arbor, MI 48109",
+            "dDepartment of Psychology, University of Michigan, Ann Arbor, MI 48109"
+          ],
+          "raw_author_name": "Katherine L. Goldey"
+        }
+      ],
+      "cited_by_count": 140,
+      "display_name": "Effects of gendered behavior on testosterone in women and men",
+      "doi": "https://doi.org/10.1073/pnas.1509591112",
+      "id": "https://openalex.org/W1831614167",
+      "locations": [
+        {
+          "id": "doi:10.1073/pnas.1509591112",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1073/pnas.1509591112",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://www.pnas.org/content/pnas/112/45/13805.full.pdf",
+          "raw_source_name": "Proceedings of the National Academy of Sciences",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Proceedings of the National Academy of Sciences",
+            "host_organization": "https://openalex.org/P4310320052",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320052"
+            ],
+            "host_organization_lineage_names": [
+              "National Academy of Sciences"
+            ],
+            "host_organization_name": "National Academy of Sciences",
+            "id": "https://openalex.org/S125754415",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0027-8424",
+              "1091-6490"
+            ],
+            "issn_l": "0027-8424",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmid:26504229",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/26504229",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Proceedings of the National Academy of Sciences of the United States of America",
+          "raw_type": null,
+          "source": {
+            "display_name": "PubMed",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S4306525036",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:europepmc.org:3828625",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4653185",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "Text",
+          "source": {
+            "display_name": "Europe PMC (PubMed Central)",
+            "host_organization": "https://openalex.org/I1303153112",
+            "host_organization_lineage": [
+              "https://openalex.org/I1303153112"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "European Bioinformatics Institute",
+            "id": "https://openalex.org/S4306400806",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1073/pnas.1509591112",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1073/pnas.1509591112",
+        "license": null,
+        "license_id": null,
+        "pdf_url": "https://www.pnas.org/content/pnas/112/45/13805.full.pdf",
+        "raw_source_name": "Proceedings of the National Academy of Sciences",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Proceedings of the National Academy of Sciences",
+          "host_organization": "https://openalex.org/P4310320052",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320052"
+          ],
+          "host_organization_lineage_names": [
+            "National Academy of Sciences"
+          ],
+          "host_organization_name": "National Academy of Sciences",
+          "id": "https://openalex.org/S125754415",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0027-8424",
+            "1091-6490"
+          ],
+          "issn_l": "0027-8424",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2015,
+      "title": "Effects of gendered behavior on testosterone in women and men",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "\"agency": [
+          33
+        ],
+        "\"other\";": [
+          170
+        ],
+        "(112": [
+          149
+        ],
+        "(141": [
+          214
+        ],
+        "(276": [
+          188
+        ],
+        "(Heilman,": [
+          13
+        ],
+        "(Livingston": [
+          71
+        ],
+        "(Rudman,": [
+          41
+        ],
+        "(Studies": [
+          130
+        ],
+        "(Study": [
+          137
+        ],
+        "1": [
+          140,
+          153
+        ],
+        "1,": [
+          131
+        ],
+        "11": [
+          160
+        ],
+        "11.4).": [
+          177
+        ],
+        "11.66).": [
+          225
+        ],
+        "12.21).": [
+          203
+        ],
+        "150": [
+          216
+        ],
+        "160": [
+          156
+        ],
+        "19": [
+          158
+        ],
+        "1983,": [
+          14
+        ],
+        "1998;": [
+          42
+        ],
+        "1999,": [
+          46
+        ],
+        "2": [
+          179
+        ],
+        "2).": [
+          138
+        ],
+        "2,": [
+          132
+        ],
+        "200": [
+          147
+        ],
+        "2001;": [
+          15,
+          47
+        ],
+        "2002;": [
+          51
+        ],
+        "2004;": [
+          55
+        ],
+        "2007).": [
+          19
+        ],
+        "2008;": [
+          59
+        ],
+        "2012).": [
+          63,
+          74
+        ],
+        "234": [
+          190
+        ],
+        "254": [
+          194
+        ],
+        "256": [
+          192
+        ],
+        "291": [
+          212
+        ],
+        "3": [
+          166,
+          205
+        ],
+        "3)": [
+          134
+        ],
+        "35.5,": [
+          174
+        ],
+        "41.25": [
+          199
+        ],
+        "47.5": [
+          221
+        ],
+        "510": [
+          186
+        ],
+        "7": [
+          162
+        ],
+        "87": [
+          151
+        ],
+        "=": [
+          173,
+          176,
+          198,
+          202,
+          220,
+          224
+        ],
+        "Afrocentric": [
+          104,
+          244
+        ],
+        "Americans": [
+          164
+        ],
+        "Asian": [
+          163
+        ],
+        "Black": [
+          86,
+          92,
+          99,
+          238
+        ],
+        "Black,": [
+          227
+        ],
+        "Blacks,": [
+          159,
+          193,
+          215
+        ],
+        "Brescoll": [
+          56
+        ],
+        "Carli,": [
+          18
+        ],
+        "DESIGN/METHODOLOGY/APPROACH:": [
+          108
+        ],
+        "Eagly": [
+          16,
+          48
+        ],
+        "Eurocentric": [
+          106,
+          246
+        ],
+        "FINDINGS:": [
+          226
+        ],
+        "Fairchild,": [
+          54
+        ],
+        "For": [
+          20
+        ],
+        "Glick,": [
+          45
+        ],
+        "IMPLICATIONS:": [
+          256
+        ],
+        "Karau,": [
+          50
+        ],
+        "Latinos,": [
+          161
+        ],
+        "Livingston": [
+          60
+        ],
+        "M": [
+          171,
+          196,
+          218
+        ],
+        "PURPOSE:": [
+          0
+        ],
+        "Rudman": [
+          43,
+          52
+        ],
+        "SD": [
+          175,
+          201,
+          223
+        ],
+        "Study": [
+          139,
+          178,
+          204
+        ],
+        "The": [
+          257
+        ],
+        "Uhlmann,": [
+          58
+        ],
+        "We": [
+          75,
+          109
+        ],
+        "White": [
+          84
+        ],
+        "White,": [
+          231
+        ],
+        "Whites,": [
+          157,
+          217
+        ],
+        "Whites;": [
+          195
+        ],
+        "Women": [
+          1
+        ],
+        "Yet,": [
+          64
+        ],
+        "a": [
+          10,
+          77
+        ],
+        "age": [
+          172,
+          197,
+          219
+        ],
+        "agency": [
+          235
+        ],
+        "agency,": [
+          275
+        ],
+        "agentic": [
+          29
+        ],
+        "al.,": [
+          62,
+          73
+        ],
+        "all": [
+          65
+        ],
+        "an": [
+          32,
+          142,
+          181,
+          207
+        ],
+        "and": [
+          17,
+          44,
+          49,
+          53,
+          57,
+          85,
+          121,
+          133,
+          135,
+          165,
+          253,
+          267,
+          276
+        ],
+        "anger,": [
+          37
+        ],
+        "are": [
+          2,
+          24,
+          67
+        ],
+        "as": [
+          169,
+          228,
+          250
+        ],
+        "assertiveness": [
+          40
+        ],
+        "be": [
+          28
+        ],
+        "because": [
+          22
+        ],
+        "behave": [
+          8
+        ],
+        "both": [
+          83,
+          265
+        ],
+        "by": [
+          80
+        ],
+        "candidates": [
+          240
+        ],
+        "case,": [
+          97
+        ],
+        "choose": [
+          101
+        ],
+        "compared": [
+          229
+        ],
+        "conducted": [
+          110
+        ],
+        "considering": [
+          264
+        ],
+        "contribution": [
+          79
+        ],
+        "displays": [
+          90
+        ],
+        "do": [
+          6
+        ],
+        "dominance": [
+          38,
+          136
+        ],
+        "dominance,": [
+          94,
+          278
+        ],
+        "dominant": [
+          252
+        ],
+        "donned": [
+          243
+        ],
+        "employment": [
+          239
+        ],
+        "equally": [
+          69
+        ],
+        "et": [
+          61,
+          72
+        ],
+        "evaluator": [
+          268
+        ],
+        "evaluators": [
+          87,
+          232
+        ],
+        "examine": [
+          115
+        ],
+        "examining": [
+          81,
+          271
+        ],
+        "example,": [
+          21
+        ],
+        "expected": [
+          26
+        ],
+        "experimental": [
+          112,
+          144,
+          183,
+          209
+        ],
+        "expressing": [
+          36
+        ],
+        "females,": [
+          150
+        ],
+        "for": [
+          35
+        ],
+        "gave": [
+          233
+        ],
+        "gender;": [
+          155
+        ],
+        "hair,": [
+          247
+        ],
+        "hairstyle": [
+          120
+        ],
+        "hairstyles.": [
+          107
+        ],
+        "higher": [
+          234
+        ],
+        "how": [
+          82
+        ],
+        "identify": [
+          168
+        ],
+        "if": [
+          4
+        ],
+        "illustrates": [
+          260
+        ],
+        "in": [
+          9,
+          95
+        ],
+        "incur": [
+          31
+        ],
+        "influence": [
+          117,
+          273
+        ],
+        "less": [
+          254
+        ],
+        "make": [
+          76
+        ],
+        "males,": [
+          152
+        ],
+        "males;": [
+          191
+        ],
+        "manner": [
+          12
+        ],
+        "missing": [
+          154
+        ],
+        "more": [
+          251
+        ],
+        "not": [
+          7,
+          25,
+          68
+        ],
+        "novel": [
+          78
+        ],
+        "of": [
+          91,
+          118,
+          126,
+          263,
+          274,
+          281
+        ],
+        "on": [
+          124,
+          279
+        ],
+        "online": [
+          143,
+          182,
+          208
+        ],
+        "or": [
+          39,
+          105
+        ],
+        "participant": [
+          122
+        ],
+        "participants": [
+          148,
+          187,
+          213
+        ],
+        "penalized": [
+          3,
+          70
+        ],
+        "penalties": [
+          236
+        ],
+        "penalty\"": [
+          34
+        ],
+        "present": [
+          258
+        ],
+        "professional.": [
+          255
+        ],
+        "professionalism": [
+          129
+        ],
+        "professionalism.": [
+          282
+        ],
+        "race": [
+          123,
+          269
+        ],
+        "rating": [
+          248
+        ],
+        "ratings": [
+          125,
+          280
+        ],
+        "research": [
+          259
+        ],
+        "respond": [
+          88
+        ],
+        "significance": [
+          262
+        ],
+        "specifically": [
+          277
+        ],
+        "stereotype-congruent": [
+          11
+        ],
+        "studies": [
+          113
+        ],
+        "study": [
+          145,
+          184,
+          210
+        ],
+        "target": [
+          119,
+          266
+        ],
+        "target's": [
+          128
+        ],
+        "the": [
+          116,
+          127,
+          261,
+          272
+        ],
+        "them": [
+          249
+        ],
+        "they": [
+          5,
+          30,
+          242
+        ],
+        "this": [
+          96
+        ],
+        "three": [
+          111
+        ],
+        "to": [
+          27,
+          89,
+          102,
+          114,
+          230,
+          237
+        ],
+        "versus": [
+          245
+        ],
+        "was": [
+          141,
+          180,
+          206
+        ],
+        "wear": [
+          103
+        ],
+        "when": [
+          241,
+          270
+        ],
+        "whether": [
+          98
+        ],
+        "who": [
+          167
+        ],
+        "with": [
+          146,
+          185,
+          211
+        ],
+        "women": [
+          23,
+          66,
+          100
+        ],
+        "women's": [
+          93
+        ],
+        "women,": [
+          189
+        ],
+        "years,": [
+          200,
+          222
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I96062909"
+              ],
+              "raw_affiliation_string": "Management Division, Babson College, Babson Park MA, USA"
+            }
+          ],
+          "author": {
+            "display_name": "Tina Opie",
+            "id": "https://openalex.org/A5073458201",
+            "orcid": "https://orcid.org/0000-0001-9512-0993"
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Babson College",
+              "id": "https://openalex.org/I96062909",
+              "lineage": [
+                "https://openalex.org/I96062909"
+              ],
+              "ror": "https://ror.org/01f0syq13",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Management Division, Babson College, Babson Park MA, USA"
+          ],
+          "raw_author_name": "Tina R. Opie",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I78577930"
+              ],
+              "raw_affiliation_string": "Management Division, Columbia Business School, New York NY, USA"
+            }
+          ],
+          "author": {
+            "display_name": "Katherine W. Phillips",
+            "id": "https://openalex.org/A5017859217",
+            "orcid": "https://orcid.org/0000-0003-0674-605X"
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Columbia University",
+              "id": "https://openalex.org/I78577930",
+              "lineage": [
+                "https://openalex.org/I78577930"
+              ],
+              "ror": "https://ror.org/00hj8s172",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Management Division, Columbia Business School, New York NY, USA"
+          ],
+          "raw_author_name": "Katherine W. Phillips",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 129,
+      "display_name": "Hair penalties: the negative influence of Afrocentric hair on ratings of Black women\u2019s dominance and professionalism",
+      "doi": "https://doi.org/10.3389/fpsyg.2015.01311",
+      "id": "https://openalex.org/W2111530628",
+      "locations": [
+        {
+          "id": "doi:10.3389/fpsyg.2015.01311",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.3389/fpsyg.2015.01311",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01311/pdf",
+          "raw_source_name": "Frontiers in Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Frontiers in Psychology",
+            "host_organization": "https://openalex.org/P4310320527",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320527"
+            ],
+            "host_organization_lineage_names": [
+              "Frontiers Media"
+            ],
+            "host_organization_name": "Frontiers Media",
+            "id": "https://openalex.org/S9692511",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "1664-1078"
+            ],
+            "issn_l": "1664-1078",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmid:26379612",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/26379612",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Frontiers in psychology",
+          "raw_type": null,
+          "source": {
+            "display_name": "PubMed",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S4306525036",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:f56df32cece74b85ae2d2203cad50da2",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://doaj.org/article/f56df32cece74b85ae2d2203cad50da2",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Frontiers in Psychology, Vol 6 (2015)",
+          "raw_type": "article",
+          "source": {
+            "display_name": "SHILAP Revista de lepidopterolog\u00eda",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S112646816",
+            "is_core": false,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "issn_l": "0300-5267",
+            "type": "journal"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:4553896",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4553896",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": null,
+          "raw_source_name": "Front Psychol",
+          "raw_type": "Text",
+          "source": {
+            "display_name": "PubMed Central",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S2764455111",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.3389/fpsyg.2015.01311",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.3389/fpsyg.2015.01311",
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "pdf_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01311/pdf",
+        "raw_source_name": "Frontiers in Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Frontiers in Psychology",
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "host_organization_name": "Frontiers Media",
+          "id": "https://openalex.org/S9692511",
+          "is_core": true,
+          "is_in_doaj": true,
+          "is_oa": true,
+          "issn": [
+            "1664-1078"
+          ],
+          "issn_l": "1664-1078",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2015,
+      "title": "Hair penalties: the negative influence of Afrocentric hair on ratings of Black women\u2019s dominance and professionalism",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "&amp;": [
+          150
+        ],
+        "(Studies": [
+          41
+        ],
+        "(serial": [
+          110
+        ],
+        "1": [
+          42
+        ],
+        "2).": [
+          44
+        ],
+        "2,": [
+          47
+        ],
+        "2013": [
+          147
+        ],
+        "Abstract": [
+          0
+        ],
+        "Copyright": [
+          145
+        ],
+        "In": [
+          45
+        ],
+        "John": [
+          148
+        ],
+        "Ltd.": [
+          152
+        ],
+        "Our": [
+          66
+        ],
+        "Simply": [
+          112
+        ],
+        "Sons,": [
+          151
+        ],
+        "Study": [
+          46
+        ],
+        "The": [
+          89
+        ],
+        "We": [
+          1,
+          20
+        ],
+        "Wiley": [
+          149
+        ],
+        "a": [
+          38,
+          62,
+          124
+        ],
+        "about": [
+          26,
+          54
+        ],
+        "also": [
+          49
+        ],
+        "an": [
+          127
+        ],
+        "and": [
+          11,
+          22,
+          34,
+          43,
+          138
+        ],
+        "arousal": [
+          36
+        ],
+        "be": [
+          106
+        ],
+        "behavioral": [
+          99
+        ],
+        "better": [
+          60
+        ],
+        "can": [
+          117
+        ],
+        "caused": [
+          102
+        ],
+        "confirmed": [
+          68
+        ],
+        "consequences": [
+          122
+        ],
+        "during": [
+          37
+        ],
+        "evaluated": [
+          107
+        ],
+        "evaluated.": [
+          144
+        ],
+        "evaluation": [
+          15,
+          18,
+          33,
+          64,
+          94,
+          128
+        ],
+        "evaluation.": [
+          88
+        ],
+        "explaining": [
+          74
+        ],
+        "fear": [
+          30,
+          85,
+          91
+        ],
+        "feels": [
+          137
+        ],
+        "felt": [
+          83
+        ],
+        "fewer": [
+          96
+        ],
+        "for": [
+          123
+        ],
+        "found": [
+          23
+        ],
+        "generated": [
+          95
+        ],
+        "have": [
+          119
+        ],
+        "having": [
+          27,
+          55,
+          115
+        ],
+        "he": [
+          134,
+          140
+        ],
+        "high": [
+          80
+        ],
+        "how": [
+          133,
+          139
+        ],
+        "hypotheses": [
+          70
+        ],
+        "hypothesized": [
+          21
+        ],
+        "important": [
+          120
+        ],
+        "in": [
+          16,
+          61,
+          126,
+          130
+        ],
+        "increases": [
+          13
+        ],
+        "individuals": [
+          58
+        ],
+        "is": [
+          143
+        ],
+        "less": [
+          84
+        ],
+        "link": [
+          77
+        ],
+        "made": [
+          57
+        ],
+        "mechanism": [
+          73
+        ],
+        "mediation).": [
+          111
+        ],
+        "more": [
+          108
+        ],
+        "negative": [
+          32,
+          87,
+          93
+        ],
+        "nervousness,": [
+          100
+        ],
+        "of": [
+          31,
+          86,
+          92,
+          98,
+          114,
+          132
+        ],
+        "or": [
+          135,
+          141
+        ],
+        "our": [
+          69
+        ],
+        "participants": [
+          82
+        ],
+        "perform": [
+          59
+        ],
+        "performance": [
+          14,
+          104
+        ],
+        "person": [
+          125
+        ],
+        "physiological": [
+          35
+        ],
+        "positive": [
+          121
+        ],
+        "positively": [
+          109
+        ],
+        "power": [
+          4,
+          28,
+          56,
+          81,
+          116
+        ],
+        "power\u2013performance": [
+          76
+        ],
+        "reduced": [
+          29,
+          90
+        ],
+        "reduces": [
+          5
+        ],
+        "related": [
+          7
+        ],
+        "responses": [
+          6
+        ],
+        "results": [
+          67
+        ],
+        "self\u2010presentation": [
+          39
+        ],
+        "she": [
+          136,
+          142
+        ],
+        "showed": [
+          50
+        ],
+        "signs": [
+          97
+        ],
+        "simply": [
+          52
+        ],
+        "situation": [
+          129
+        ],
+        "situation.": [
+          65
+        ],
+        "situations.": [
+          19
+        ],
+        "social": [
+          9,
+          17,
+          63
+        ],
+        "stress": [
+          10
+        ],
+        "task": [
+          40
+        ],
+        "terms": [
+          131
+        ],
+        "tested": [
+          2
+        ],
+        "that": [
+          24,
+          51,
+          71,
+          79
+        ],
+        "the": [
+          72
+        ],
+        "their": [
+          103
+        ],
+        "therefore": [
+          118
+        ],
+        "thinking": [
+          25,
+          53,
+          113
+        ],
+        "this": [
+          75
+        ],
+        "thus": [
+          12
+        ],
+        "to": [
+          8,
+          105
+        ],
+        "was": [
+          78
+        ],
+        "we": [
+          48
+        ],
+        "whether": [
+          3
+        ],
+        "which": [
+          101
+        ],
+        "\u00a9": [
+          146
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I57825437",
+                "https://openalex.org/I4210137805"
+              ],
+              "raw_affiliation_string": "Department of Work and Organizational Psychology University of Neuchatel  Neuchatel Switzerland"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I57206974"
+              ],
+              "raw_affiliation_string": "Psychology Department New York University  New York USA"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I57825437"
+              ],
+              "raw_affiliation_string": "Department of Work and Organizational Psychology University of Neuchatel Neuchatel Switzerland"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I57206974"
+              ],
+              "raw_affiliation_string": "Psychology Department, New York University, New York, USA"
+            }
+          ],
+          "author": {
+            "display_name": "Petra C. Schmid",
+            "id": "https://openalex.org/A5017026712",
+            "orcid": "https://orcid.org/0000-0002-9990-5445"
+          },
+          "author_position": "first",
+          "countries": [
+            "CH",
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "University of Neuch\u00e2tel",
+              "id": "https://openalex.org/I57825437",
+              "lineage": [
+                "https://openalex.org/I57825437"
+              ],
+              "ror": "https://ror.org/00vasag41",
+              "type": "education"
+            },
+            {
+              "country_code": "CH",
+              "display_name": "Victoria School of Management",
+              "id": "https://openalex.org/I4210137805",
+              "lineage": [
+                "https://openalex.org/I4210137805"
+              ],
+              "ror": "https://ror.org/03yvdgx21",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "New York University",
+              "id": "https://openalex.org/I57206974",
+              "lineage": [
+                "https://openalex.org/I57206974"
+              ],
+              "ror": "https://ror.org/0190ak572",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Department of Work and Organizational Psychology University of Neuchatel  Neuchatel Switzerland",
+            "Psychology Department New York University  New York USA",
+            "Department of Work and Organizational Psychology University of Neuchatel Neuchatel Switzerland",
+            "Psychology Department, New York University, New York, USA"
+          ],
+          "raw_author_name": "Petra C. Schmid"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I57825437",
+                "https://openalex.org/I4210137805"
+              ],
+              "raw_affiliation_string": "Department of Work and Organizational Psychology University of Neuchatel  Neuchatel Switzerland"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I57825437"
+              ],
+              "raw_affiliation_string": "Department of Work and Organizational Psychology; University of Neuchatel; Neuchatel; Switzerland"
+            }
+          ],
+          "author": {
+            "display_name": "Marianne Schmid Mast",
+            "id": "https://openalex.org/A5111936599",
+            "orcid": null
+          },
+          "author_position": "last",
+          "countries": [
+            "CH"
+          ],
+          "institutions": [
+            {
+              "country_code": "CH",
+              "display_name": "Victoria School of Management",
+              "id": "https://openalex.org/I4210137805",
+              "lineage": [
+                "https://openalex.org/I4210137805"
+              ],
+              "ror": "https://ror.org/03yvdgx21",
+              "type": "education"
+            },
+            {
+              "country_code": "CH",
+              "display_name": "University of Neuch\u00e2tel",
+              "id": "https://openalex.org/I57825437",
+              "lineage": [
+                "https://openalex.org/I57825437"
+              ],
+              "ror": "https://ror.org/00vasag41",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Work and Organizational Psychology University of Neuchatel  Neuchatel Switzerland",
+            "Department of Work and Organizational Psychology; University of Neuchatel; Neuchatel; Switzerland"
+          ],
+          "raw_author_name": "Marianne Schmid Mast"
+        }
+      ],
+      "cited_by_count": 72,
+      "display_name": "Power increases performance in a social evaluation situation as a result of decreased stress responses",
+      "doi": "https://doi.org/10.1002/ejsp.1937",
+      "id": "https://openalex.org/W2112736250",
+      "locations": [
+        {
+          "id": "doi:10.1002/ejsp.1937",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1002/ejsp.1937",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejsp.1937",
+          "raw_source_name": "European Journal of Social Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "European Journal of Social Psychology",
+            "host_organization": "https://openalex.org/P4310320595",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320595"
+            ],
+            "host_organization_lineage_names": [
+              "Wiley"
+            ],
+            "host_organization_name": "Wiley",
+            "id": "https://openalex.org/S10288104",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0046-2772",
+              "1099-0992"
+            ],
+            "issn_l": "0046-2772",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:unige.ch:unige:101545",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://archive-ouverte.unige.ch/unige:101545",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "ISSN: 0046-2772",
+          "raw_type": "Text",
+          "source": {
+            "display_name": "Archive ouverte UNIGE (University of Geneva)",
+            "host_organization": "https://openalex.org/I114457229",
+            "host_organization_lineage": [
+              "https://openalex.org/I114457229"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Geneva",
+            "id": "https://openalex.org/S4306402259",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1002/ejsp.1937",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1002/ejsp.1937",
+        "license": null,
+        "license_id": null,
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejsp.1937",
+        "raw_source_name": "European Journal of Social Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "European Journal of Social Psychology",
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "host_organization_name": "Wiley",
+          "id": "https://openalex.org/S10288104",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0046-2772",
+            "1099-0992"
+          ],
+          "issn_l": "0046-2772",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2013,
+      "title": "Power increases performance in a social evaluation situation as a result of decreased stress responses",
+      "type": "article"
+    }
+  ]
+}

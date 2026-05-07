@@ -1,0 +1,350 @@
+{
+  "artifact_id": "source_artifact_d312c8c3dbef4a34",
+  "byte_size": 11986,
+  "file_name": "037_pilot_10_5694_j_1326_5377_2008_tb01932_x.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/037_pilot_10_5694_j_1326_5377_2008_tb01932_x.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.5694/j.1326-5377.2008.tb01932.x\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Aim</h4>To determine the feasibility of performing a large clinical trial of the use of aspirin for the primary prevention of cardiovascular disease in older participants--the ASPirin in Reducing Events in the Elderly (ASPREE) trial.<h4>Design and participants</h4>A randomised double-blind placebo-controlled pilot trial of 100 mg of enteric-coated aspirin tablets daily, in men and women aged 70 years and over who did not have overt cardiovascular disease, and who were followed for 12 months. Participants were identified from the computer databases of general practitioners who were co-investigators in a previous trial.<h4>Setting</h4>The Melbourne metropolitan area between March 2003 and June 2005.<h4>Main outcome measures</h4>The level of response to participation by GPs; the level of response from potential trial participants; the screening-to-randomisation rate to ensure the recruitment target could be achieved; and the retention of participants in the trial after 12 months.<h4>Results</h4>Forty-two GPs (23% of 180 mailed) expressed interest in participating in the pilot trial. Nineteen became co-investigators, of whom six were not required to meet recruitment targets. Letters were sent to 2614 patients, of whom 243 were screened and 209 (86%) were randomly allocated to receive aspirin or placebo. At 12 months,192 (92%) returned for follow-up, and 153 of these (80%) were still taking trial medication. There was a significant reduction in mean haemoglobin level in those taking aspirin.<h4>Conclusions</h4>The recruitment strategy for ASPREE, based on methods developed for the conduct of a previous large-scale trial conducted in general practice, was successfully redeployed in this pilot study, with improved efficiency resulting from computerised database searching, telephone pre-screening, a simpler run-in phase and participant familiarity with the trial drug. We conclude that conducting ASPREE in Australian general practice with 18 000 participants is feasible.<h4>Trial registration</h4>International Standard Randomised Controlled Trial Number Register ISRCTN83772183.",
+          "affiliation": "Menzies Research Institute, University of Tasmania, Hobart, TAS, Australia. Mark.Nelson@utas.edu.au",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-9173-3944"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2126-1045"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1249-6149"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1423-4484"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Menzies Research Institute, University of Tasmania, Hobart, TAS, Australia. Mark.Nelson@utas.edu.au"
+                    }
+                  ]
+                },
+                "firstName": "Mark R",
+                "fullName": "Nelson MR",
+                "initials": "MR",
+                "lastName": "Nelson"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-9173-3944"
+                },
+                "firstName": "Christopher M",
+                "fullName": "Reid CM",
+                "initials": "CM",
+                "lastName": "Reid"
+              },
+              {
+                "firstName": "David A",
+                "fullName": "Ames DA",
+                "initials": "DA",
+                "lastName": "Ames"
+              },
+              {
+                "firstName": "Lawrence J",
+                "fullName": "Beilin LJ",
+                "initials": "LJ",
+                "lastName": "Beilin"
+              },
+              {
+                "firstName": "Geoffrey A",
+                "fullName": "Donnan GA",
+                "initials": "GA",
+                "lastName": "Donnan"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1423-4484"
+                },
+                "firstName": "Peter",
+                "fullName": "Gibbs P",
+                "initials": "P",
+                "lastName": "Gibbs"
+              },
+              {
+                "firstName": "Colin I",
+                "fullName": "Johnston CI",
+                "initials": "CI",
+                "lastName": "Johnston"
+              },
+              {
+                "firstName": "Henry",
+                "fullName": "Krum H",
+                "initials": "H",
+                "lastName": "Krum"
+              },
+              {
+                "firstName": "Elsdon",
+                "fullName": "Storey E",
+                "initials": "E",
+                "lastName": "Storey"
+              },
+              {
+                "firstName": "Andrew",
+                "fullName": "Tonkin A",
+                "initials": "A",
+                "lastName": "Tonkin"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-2126-1045"
+                },
+                "firstName": "Rory",
+                "fullName": "Wolfe R",
+                "initials": "R",
+                "lastName": "Wolfe"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1249-6149"
+                },
+                "firstName": "Robyn",
+                "fullName": "Woods R",
+                "initials": "R",
+                "lastName": "Woods"
+              },
+              {
+                "firstName": "John J",
+                "fullName": "McNeil JJ",
+                "initials": "JJ",
+                "lastName": "McNeil"
+              }
+            ]
+          },
+          "authorString": "Nelson MR, Reid CM, Ames DA, Beilin LJ, Donnan GA, Gibbs P, Johnston CI, Krum H, Storey E, Tonkin A, Wolfe R, Woods R, McNeil JJ.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Anti-Inflammatory Agents, Non-Steroidal",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Aspirin",
+                "registryNumber": "R16CO5Y76E"
+              }
+            ]
+          },
+          "citedByCount": 52,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2008-10-01",
+          "dateOfCreation": "2008-07-22",
+          "dateOfRevision": "2020-12-30",
+          "doi": "10.5694/j.1326-5377.2008.tb01932.x",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-10-06",
+          "firstPublicationDate": "2008-07-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.5694/j.1326-5377.2008.tb01932.x"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "National Health and Medical Research Council",
+                "orderIn": 0
+              },
+              {
+                "agency": "National Heart Foundation of Australia",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "18637782",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2008 Jul",
+            "issue": "2",
+            "journal": {
+              "essn": "1326-5377",
+              "isoabbreviation": "Med J Aust",
+              "issn": "0025-729X",
+              "medlineAbbreviation": "Med J Aust",
+              "nlmid": "0400714",
+              "title": "The Medical journal of Australia"
+            },
+            "journalIssueId": 1543696,
+            "monthOfPublication": 7,
+            "printPublicationDate": "2008-07-01",
+            "volume": "189",
+            "yearOfPublication": 2008
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cardiovascular Diseases",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "EP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "epidemiology"
+                    },
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Aspirin",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Anti-Inflammatory Agents, Non-Steroidal",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Behavior",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Primary Prevention",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged, 80 and over",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Randomized Controlled Trials as Topic",
+                "majorTopic_YN": "Y"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "105-109",
+          "pmid": "18637782",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2008",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Feasibility of conducting a primary prevention trial of low-dose aspirin for major adverse cardiovascular events in older people in Australia: results from the ASPirin in Reducing Events in the Elderly (ASPREE) pilot study."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "f2e2d752f0d42213ca98c21cce361d1a869ee2594d07fe1f445332eb90905e06"
+}

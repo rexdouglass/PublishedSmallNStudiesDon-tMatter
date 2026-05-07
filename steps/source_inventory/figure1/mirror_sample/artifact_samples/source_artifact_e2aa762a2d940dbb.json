@@ -1,0 +1,35 @@
+{
+  "artifact_id": "source_artifact_e2aa762a2d940dbb",
+  "byte_size": 244,
+  "columns": [
+    "reported_by",
+    "date_implemented",
+    "rr_id",
+    "col_name",
+    "change_to",
+    "change_from",
+    "status_version",
+    "rationale"
+  ],
+  "estimated_data_rows": 1,
+  "file_name": "Change Logs__changes_score_rr_status.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Change Logs__changes_score_rr_status.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "change_from": "qy62r",
+      "change_to": "ksu8x",
+      "col_name": "project_guid",
+      "date_implemented": "2026-03-31",
+      "rationale": "The manylabs project is more appropriate here, which draws from osf.io/qy62r and osf.io/s2x3c",
+      "reported_by": "Andrew Tyner",
+      "rr_id": "2wgy9",
+      "status_version": 2
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 1,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "a3f5db5d35d4d506d6598d66e1e6c1022aeb8aa5623d361a83d33fefbfc566a3"
+}

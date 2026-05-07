@@ -1,0 +1,469 @@
+{
+  "artifact_id": "source_artifact_b52816e83ffb3643",
+  "byte_size": 15194,
+  "file_name": "045_full_10_1002_cncr_28355.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/045_full_10_1002_cncr_28355.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1002/cncr.28355\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>To reduce the risk of adjustment problems associated with hematopoietic stem cell transplant (HSCT) for adolescents/young adults (AYAs), we examined efficacy of a therapeutic music video (TMV) intervention delivered during the acute phase of HSCT to: 1) increase protective factors of spiritual perspective, social integration, family environment, courageous coping, and hope-derived meaning; 2) decrease risk factors of illness-related distress and defensive coping; and 3) increase outcomes of self-transcendence and resilience.<h4>Methods</h4>This was a multisite randomized, controlled trial (COG-ANUR0631) conducted at 8 Children's Oncology Group sites involving 113 AYAs aged 11-24 years undergoing myeloablative HSCT. Participants, randomized to the TMV or low-dose control (audiobooks) group, completed 6 sessions over 3 weeks with a board-certified music therapist. Variables were based on Haase's Resilience in Illness Model (RIM). Participants completed measures related to latent variables of illness-related distress, social integration, spiritual perspective, family environment, coping, hope-derived meaning, and resilience at baseline (T1), postintervention (T2), and 100 days posttransplant (T3).<h4>Results</h4>At T2, the TMV group reported significantly better courageous coping (Effect Size [ES], 0.505; P = .030). At T3, the TMV group reported significantly better social integration (ES, 0.543; P = .028) and family environment (ES, 0.663; P = .008), as well as moderate nonsignificant effect sizes for spiritual perspective (ES, 0.450; P = .071) and self-transcendence (ES, 0.424; P = .088).<h4>Conclusions</h4>The TMV intervention improves positive health outcomes of courageous coping, social integration, and family environment during a high-risk cancer treatment. We recommend the TMV be examined in a broader population of AYAs with high-risk cancers.",
+          "affiliation": "Indiana University School of Nursing, Indianapolis, Indiana.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8499-0934"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0045-5446"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Indiana University School of Nursing, Indianapolis, Indiana."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8499-0934"
+                },
+                "firstName": "Sheri L",
+                "fullName": "Robb SL",
+                "initials": "SL",
+                "lastName": "Robb"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0045-5446"
+                },
+                "firstName": "Debra S",
+                "fullName": "Burns DS",
+                "initials": "DS",
+                "lastName": "Burns"
+              },
+              {
+                "firstName": "Kristin A",
+                "fullName": "Stegenga KA",
+                "initials": "KA",
+                "lastName": "Stegenga"
+              },
+              {
+                "firstName": "Paul R",
+                "fullName": "Haut PR",
+                "initials": "PR",
+                "lastName": "Haut"
+              },
+              {
+                "firstName": "Patrick O",
+                "fullName": "Monahan PO",
+                "initials": "PO",
+                "lastName": "Monahan"
+              },
+              {
+                "firstName": "Jane",
+                "fullName": "Meza J",
+                "initials": "J",
+                "lastName": "Meza"
+              },
+              {
+                "firstName": "Timothy E",
+                "fullName": "Stump TE",
+                "initials": "TE",
+                "lastName": "Stump"
+              },
+              {
+                "firstName": "Brooke O",
+                "fullName": "Cherven BO",
+                "initials": "BO",
+                "lastName": "Cherven"
+              },
+              {
+                "firstName": "Sharron L",
+                "fullName": "Docherty SL",
+                "initials": "SL",
+                "lastName": "Docherty"
+              },
+              {
+                "firstName": "Verna L",
+                "fullName": "Hendricks-Ferguson VL",
+                "initials": "VL",
+                "lastName": "Hendricks-Ferguson"
+              },
+              {
+                "firstName": "Eileen K",
+                "fullName": "Kintner EK",
+                "initials": "EK",
+                "lastName": "Kintner"
+              },
+              {
+                "firstName": "Ann E",
+                "fullName": "Haight AE",
+                "initials": "AE",
+                "lastName": "Haight"
+              },
+              {
+                "firstName": "Donna A",
+                "fullName": "Wall DA",
+                "initials": "DA",
+                "lastName": "Wall"
+              },
+              {
+                "firstName": "Joan E",
+                "fullName": "Haase JE",
+                "initials": "JE",
+                "lastName": "Haase"
+              }
+            ]
+          },
+          "authorString": "Robb SL, Burns DS, Stegenga KA, Haut PR, Monahan PO, Meza J, Stump TE, Cherven BO, Docherty SL, Hendricks-Ferguson VL, Kintner EK, Haight AE, Wall DA, Haase JE.",
+          "citedByCount": 103,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2014-05-12",
+          "dateOfCreation": "2014-01-29",
+          "dateOfRevision": "2022-03-18",
+          "doi": "10.1002/cncr.28355",
+          "electronicPublicationDate": "2014-01-27",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2014-01-29",
+          "firstPublicationDate": "2014-01-27",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3947727"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1002/cncr.28355"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3947727"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3947727?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1002/cncr.28355"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U10 CA180886",
+                "orderIn": 0
+              },
+              {
+                "acronym": "NR",
+                "agency": "NINR NIH HHS",
+                "grantId": "R01NR008583",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U10CA095861",
+                "orderIn": 0
+              },
+              {
+                "acronym": "TR",
+                "agency": "NCATS NIH HHS",
+                "grantId": "UL1 TR001108",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "P30 CA082709",
+                "orderIn": 0
+              },
+              {
+                "acronym": "NR",
+                "agency": "NINR NIH HHS",
+                "grantId": "R01 NR008583",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U10 CA095861",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "R01 CA162181",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U10 CA098543",
+                "orderIn": 0
+              },
+              {
+                "acronym": "CA",
+                "agency": "NCI NIH HHS",
+                "grantId": "U10CA098543",
+                "orderIn": 0
+              },
+              {
+                "acronym": "NR",
+                "agency": "NINR NIH HHS",
+                "grantId": "T32 NR007066",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "24469862",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2014 Mar",
+            "issue": "6",
+            "journal": {
+              "essn": "1097-0142",
+              "isoabbreviation": "Cancer",
+              "issn": "0008-543X",
+              "medlineAbbreviation": "Cancer",
+              "nlmid": "0374236",
+              "title": "Cancer"
+            },
+            "journalIssueId": 2135505,
+            "monthOfPublication": 3,
+            "printPublicationDate": "2014-03-01",
+            "volume": "120",
+            "yearOfPublication": 2014
+          },
+          "keywordList": {
+            "keyword": [
+              "Cancer",
+              "Resilience",
+              "music",
+              "Adolescents",
+              "Social Environment",
+              "Young Adult",
+              "Music Therapy",
+              "Family Relations",
+              "Self-transcendence",
+              "Courageous Coping"
+            ]
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS517539",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Hematopoietic Stem Cells",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Music Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Hematopoietic Stem Cell Transplantation",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "psychology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Adaptation, Psychological",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Stress, Psychological",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Social Isolation",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Anxiety",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Family Relations",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Social Support",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Child",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Resilience, Psychological",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Young Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Hope",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "909-917",
+          "pmcid": "PMC3947727",
+          "pmid": "24469862",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2014",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Randomized clinical trial of therapeutic music video intervention for resilience outcomes in adolescents/young adults undergoing hematopoietic stem cell transplant: a report from the Children's Oncology Group."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "76cf1412f52b14f8c4712254c090a6ac2c24df3b34f98eaab634250ebe1451e8"
+}

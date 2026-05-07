@@ -1,0 +1,270 @@
+{
+  "artifact_id": "source_artifact_f5d5a4fb60866908",
+  "byte_size": 9325,
+  "file_name": "055_pilot_10_1016_j_ejogrb_2008_09_004.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/055_pilot_10_1016_j_ejogrb_2008_09_004.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/j.ejogrb.2008.09.004\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>To compare the blood loss at elective lower segment caesarean section with administration of oxytocin 5IU bolus versus oxytocin 5IU bolus and oxytocin 30IU infusion and to establish whether a large multi-centre trial is feasible.<h4>Study design</h4>Women booked for an elective caesarean section were recruited to a pilot randomised controlled trial and randomised to either oxytocin 5IU bolus and placebo infusion or oxytocin 5IU bolus and oxytocin 30IU infusion. We wished to establish whether the study design was feasible and acceptable and to establish sample size estimates for a definitive multi-centre trial. The outcome measures were total estimated blood loss at caesarean section and in the immediate postpartum period and the need for an additional uterotonic agent.<h4>Results</h4>A total of 115 women were randomised and 110 were suitable for analysis (5 protocol violations). Despite strict exclusion criteria 84% of the target population were considered eligible for study participation and of those approached only 15% declined to participate and 11% delivered prior to the planned date. The total mean estimated blood loss was lower in the oxytocin infusion arm compared to placebo (567 ml versus 624 ml) and fewer women had a major haemorrhage (>1000 ml, 14% versus 17%) or required an additional uterotonic agent (5% versus 11%). A sample size of 1500 in each arm would be required to demonstrate a 3% absolute reduction in major haemorrhage (from baseline 10%) with >80% power.<h4>Conclusion</h4>An additional oxytocin infusion at elective caesarean section may reduce blood loss and warrants evaluation in a large multi-centre trial.",
+          "affiliation": "Academic Department of Obstetrics & Gynaecology, Coombe Women's Hospital & Trinity College, University of Dublin, Dublin 8, Ireland. deirdre.j.murphy@tcd.ie",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-5931-1362"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6074-6718"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Academic Department of Obstetrics & Gynaecology, Coombe Women's Hospital & Trinity College, University of Dublin, Dublin 8, Ireland. deirdre.j.murphy@tcd.ie"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6074-6718"
+                },
+                "firstName": "Deirdre J",
+                "fullName": "Murphy DJ",
+                "initials": "DJ",
+                "lastName": "Murphy"
+              },
+              {
+                "firstName": "Honor",
+                "fullName": "MacGregor H",
+                "initials": "H",
+                "lastName": "MacGregor"
+              },
+              {
+                "firstName": "Bhagya",
+                "fullName": "Munishankar B",
+                "initials": "B",
+                "lastName": "Munishankar"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-5931-1362"
+                },
+                "firstName": "Graeme",
+                "fullName": "McLeod G",
+                "initials": "G",
+                "lastName": "McLeod"
+              }
+            ]
+          },
+          "authorString": "Murphy DJ, MacGregor H, Munishankar B, McLeod G.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Oxytocin",
+                "registryNumber": "50-56-6"
+              },
+              {
+                "name": "Placebos",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 31,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2009-03-27",
+          "dateOfCreation": "2008-11-04",
+          "dateOfRevision": "2008-12-22",
+          "doi": "10.1016/j.ejogrb.2008.09.004",
+          "electronicPublicationDate": "2008-11-05",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2009-03-29",
+          "firstPublicationDate": "2008-11-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.ejogrb.2008.09.004"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "18977579",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2009 Jan",
+            "issue": "1",
+            "journal": {
+              "essn": "1872-7654",
+              "isoabbreviation": "Eur J Obstet Gynecol Reprod Biol",
+              "issn": "0301-2115",
+              "medlineAbbreviation": "Eur J Obstet Gynecol Reprod Biol",
+              "nlmid": "0375672",
+              "title": "European journal of obstetrics, gynecology, and reproductive biology"
+            },
+            "journalIssueId": 1586932,
+            "monthOfPublication": 1,
+            "printPublicationDate": "2009-01-01",
+            "volume": "142",
+            "yearOfPublication": 2009
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Postpartum Hemorrhage",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Blood Loss, Surgical",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Oxytocin",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Placebos",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cesarean Section",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pregnancy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Research Design",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "30-33",
+          "pmid": "18977579",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2009",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "A randomised controlled trial of oxytocin 5IU and placebo infusion versus oxytocin 5IU and 30IU infusion for the control of blood loss at elective caesarean section--pilot study. ISRCTN 40302163."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "7dc36d475c9acbe965896222985110bbf9252bf9aad994cbed72ef73a90b1db4"
+}

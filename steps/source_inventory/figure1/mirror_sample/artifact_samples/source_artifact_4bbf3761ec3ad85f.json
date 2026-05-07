@@ -1,0 +1,391 @@
+{
+  "artifact_id": "source_artifact_4bbf3761ec3ad85f",
+  "byte_size": 12575,
+  "file_name": "046_pilot_10_1016_j_jneb_2010_01_010.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/046_pilot_10_1016_j_jneb_2010_01_010.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/j.jneb.2010.01.010\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objective</h4>This paper describes the design and findings of a pilot Mothers In Motion (P-MIM) program.<h4>Design</h4>A randomized controlled trial that collected data via telephone interviews and finger stick at 3 time points: baseline and 2 and 8 months post-intervention.<h4>Setting</h4>Three Special Supplemental Nutrition Program for Women, Infants, and Children (WIC) sites in southern Michigan.<h4>Participants</h4>One hundred and twenty nine overweight and obese African-American and white mothers, 18-34 years old.<h4>Intervention</h4>The 10-week, theory-based, culturally sensitive intervention messages were delivered via a series of 5 chapters on a DVD and complemented by 5 peer support group teleconferences.<h4>Main outcome measures</h4>Dietary fat, fruit, and vegetable intake; physical activity; stress; feelings; body weight; and blood glucose.<h4>Analysis</h4>General linear mixed model was applied to assess treatment effects across 2 and 8 months post-intervention.<h4>Results</h4>No significant effect sizes were found in primary and secondary outcome variables at 2 and 8 months post-intervention. However, changes in body weight and blood glucose showed apparent trends consistent with the study's hypotheses.<h4>Conclusions and implications</h4>The P-MIM showed promise for preventing weight gain in low-income overweight and obese women. However, a larger experimental trial is warranted to determine the effectiveness of this intervention.",
+          "affiliation": "College of Nursing, Michigan State University, East Lansing, MI 48824, USA. changme@msu.edu",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7819-6096"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "College of Nursing, Michigan State University, East Lansing, MI 48824, USA. changme@msu.edu"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7819-6096"
+                },
+                "firstName": "Mei-Wei",
+                "fullName": "Chang MW",
+                "initials": "MW",
+                "lastName": "Chang"
+              },
+              {
+                "firstName": "Susan",
+                "fullName": "Nitzke S",
+                "initials": "S",
+                "lastName": "Nitzke"
+              },
+              {
+                "firstName": "Roger",
+                "fullName": "Brown R",
+                "initials": "R",
+                "lastName": "Brown"
+              }
+            ]
+          },
+          "authorString": "Chang MW, Nitzke S, Brown R.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Blood Glucose",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 47,
+          "dateOfCompletion": "2010-08-10",
+          "dateOfCreation": "2010-04-20",
+          "dateOfRevision": "2025-05-29",
+          "doi": "10.1016/j.jneb.2010.01.010",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2010-08-11",
+          "firstPublicationDate": "2010-05-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC2862238"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-05",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "http://www.jneb.org/article/S1499404610000436/pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.jneb.2010.01.010"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2862238"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC2862238?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.jneb.2010.01.010"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "DK",
+                "agency": "NIDDK NIH HHS",
+                "grantId": "R34 DK074511",
+                "orderIn": 0
+              },
+              {
+                "acronym": "DK",
+                "agency": "NIDDK NIH HHS",
+                "grantId": "R18 DK083934",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "N",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "20399404",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2010 May-Jun",
+            "issue": "3 Suppl",
+            "journal": {
+              "essn": "1878-2620",
+              "isoabbreviation": "J Nutr Educ Behav",
+              "issn": "1499-4046",
+              "medlineAbbreviation": "J Nutr Educ Behav",
+              "nlmid": "101132622",
+              "title": "Journal of nutrition education and behavior"
+            },
+            "journalIssueId": 1726413,
+            "monthOfPublication": 0,
+            "printPublicationDate": "2010-05-01",
+            "volume": "42",
+            "yearOfPublication": 2010
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS176256",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Obesity",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    },
+                    {
+                      "abbreviation": "DH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diet therapy"
+                    },
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Body Weight",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Blood Glucose",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AN",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "analysis"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Diet",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pilot Projects",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Knowledge, Attitudes, Practice",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Stress, Psychological",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Motor Activity",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Self Efficacy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Mothers",
+                "majorTopic_YN": "Y",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Peer Group",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Time Factors",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Poverty",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Maternal-Child Health Centers",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Health Promotion",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Overweight",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "BL",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "blood"
+                    },
+                    {
+                      "abbreviation": "DH",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "diet therapy"
+                    },
+                    {
+                      "abbreviation": "PX",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "psychology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Young Adult",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "S11-21",
+          "pmcid": "PMC2862238",
+          "pmid": "20399404",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2010",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Design and outcomes of a Mothers In Motion behavioral intervention pilot study."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "4ba2668f4a56d65d41e637aa924d8ff21ee66fe09088bb367c84071223ee1c02"
+}

@@ -1,0 +1,530 @@
+{
+  "response": {
+    "docs": [
+      {
+        "abstract": [
+          "\nLarge sample size (N) is seen as a key criterion in judging the replicability of psychological research, a phenomenon we refer to as the N-Heuristic. This heuristic has led to the incentivization of fast, online, non-behavioral studies\u2014to the potential detriment of psychological science. While large N should in principle increase statistical power and thus the replicability of effects, in practice it may not. Large-N studies may have other attributes that undercut their power or validity. Consolidating data from all systematic, large-scale attempts at replication (N = 307 original-replication study pairs), we find that the original study\u2019s sample size did not predict its likelihood of being replicated (rs = -0.02, p = 0.741), even with study design and research area controlled. By contrast, effect size emerged as a substantial predictor (rs = 0.21, p < 0.001), which held regardless of the study\u2019s sample size. N may be a poor predictor of replicability because studies with larger N investigated smaller effects (rs = -0.49, p < 0.001). Contrary to these results, a survey of 215 professional psychologists, presenting them with a comprehensive list of methodological criteria, found sample size to be rated as the most important criterion in judging a study\u2019s replicability. Our findings strike a cautionary note with respect to the prioritization of large N in judging the replicability of psychological science.\n"
+        ],
+        "author_display": [
+          "Xingyu Li",
+          "Jiting Liu",
+          "Weijia Gao",
+          "Geoffrey L. Cohen"
+        ],
+        "id": "10.1371/journal.pone.0306911",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-08-23T00:00:00Z",
+        "title": "Challenging the N-Heuristic: Effect size, not sample size, predicts the replicability of psychological science"
+      },
+      {
+        "abstract": [
+          "\nThe vast majority of published results in the literature is statistically significant, which raises concerns about their reliability. The Reproducibility Project Psychology (RPP) and Experimental Economics Replication Project (EE-RP) both replicated a large number of published studies in psychology and economics. The original study and replication were statistically significant in 36.1% in RPP and 68.8% in EE-RP suggesting many null effects among the replicated studies. However, evidence in favor of the null hypothesis cannot be examined with null hypothesis significance testing. We developed a Bayesian meta-analysis method called snapshot hybrid that is easy to use and understand and quantifies the amount of evidence in favor of a zero, small, medium and large effect. The method computes posterior model probabilities for a zero, small, medium, and large effect and adjusts for publication bias by taking into account that the original study is statistically significant. We first analytically approximate the methods performance, and demonstrate the necessity to control for the original study\u2019s significance to enable the accumulation of evidence for a true zero effect. Then we applied the method to the data of RPP and EE-RP, showing that the underlying effect sizes of the included studies in EE-RP are generally larger than in RPP, but that the sample sizes of especially the included studies in RPP are often too small to draw definite conclusions about the true effect size. We also illustrate how snapshot hybrid can be used to determine the required sample size of the replication akin to power analysis in null hypothesis significance testing and present an easy to use web application (https://rvanaert.shinyapps.io/snapshot/) and R code for applying the method.\n"
+        ],
+        "author_display": [
+          "Robbie C. M. van Aert",
+          "Marcel A. L. M. van Assen"
+        ],
+        "id": "10.1371/journal.pone.0175302",
+        "journal": "PLOS ONE",
+        "publication_date": "2017-04-07T00:00:00Z",
+        "title": "Bayesian evaluation of effect size after replicating an original study"
+      },
+      {
+        "abstract": [
+          "Background: The importance of replication in the social and behavioural sciences has been emphasized for decades. Various frequentist and Bayesian approaches have been proposed to qualify a replication study as successful or unsuccessful. One of them is meta-analysis. The focus of the present study is on the way meta-analysis functions as a replication success metric. To investigate this, original and replication studies that are part of two large-scale replication projects were used. For each original study, the probability of replication success was calculated using meta-analysis under different assumptions of the underlying population effect when replication results were unknown. The accuracy of the predicted overall replication success was evaluated once replication results became available using adjusted Brier scores. Results: Our results showed that meta-analysis performed poorly when used as a replication success metric. In many cases, quantifying replication success using meta-analysis resulted in the conclusion where the replication was deemed a success regardless of the results of the replication study. Discussion: We conclude that when using meta-analysis as a replication success metric, it has a relatively high probability of finding evidence in favour of a non-zero population effect even when it is zero. This behaviour largely results from the significance of the original study. Furthermore, we argue that there are fundamental reasons against using meta-analysis as a metric for replication success. "
+        ],
+        "author_display": [
+          "Jasmine Muradchanian",
+          "Rink Hoekstra",
+          "Henk Kiers",
+          "Don van Ravenzwaaij"
+        ],
+        "id": "10.1371/journal.pone.0308495",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-12-11T00:00:00Z",
+        "title": "Evaluating meta-analysis as a replication success measure"
+      },
+      {
+        "abstract": [
+          "\nThe need for replication of initial results has been rediscovered only recently in many fields of research. In preclinical biomedical research, it is common practice to conduct exact replications with the same sample sizes as those used in the initial experiments. Such replication attempts, however, have lower probability of replication than is generally appreciated. Indeed, in the common scenario of an effect just reaching statistical significance, the statistical power of the replication experiment assuming the same effect size is approximately 50%\u2014in essence, a coin toss. Accordingly, we use the provocative analogy of \u201creplicating\u201d a neuroprotective drug animal study with a coin flip to highlight the need for larger sample sizes in replication experiments. Additionally, we provide detailed background for the probability of obtaining a significant p value in a replication experiment and discuss the variability of p values as well as pitfalls of simple binary significance testing in both initial preclinical experiments and replication studies with small sample sizes. We conclude that power analysis for determining the sample size for a replication study is obligatory within the currently dominant hypothesis testing framework. Moreover, publications should include effect size point estimates and corresponding measures of precision, e.g., confidence intervals, to allow readers to assess the magnitude and direction of reported effects and to potentially combine the results of initial and replication study later through Bayesian or meta-analytic approaches.\n\nUsing a coin toss to \u2018replicate\u2019 a neuroprotective effect of valproic acid, this study highlights the fact that exact replications of biomedical experiments are usually underpowered, often with power of approximately 50%.\n"
+        ],
+        "author_display": [
+          "Sophie K. Piper",
+          "Ulrike Grittner",
+          "Andre Rex",
+          "Nico Riedel",
+          "Felix Fischer",
+          "Robert Nadon",
+          "Bob Siegerink",
+          "Ulrich Dirnagl"
+        ],
+        "id": "10.1371/journal.pbio.3000188",
+        "journal": "PLOS Biology",
+        "publication_date": "2019-04-09T00:00:00Z",
+        "title": "Exact replication: Foundation of science or game of chance?"
+      },
+      {
+        "abstract": [
+          "\nPreviously observed negative correlations between sample size and effect size (n-ES correlation) in psychological research have been interpreted as evidence for publication bias and related undesirable biases. Here, we present two studies aimed at better understanding to what extent negative n-ES correlations reflect such biases or might be explained by unproblematic adjustments of sample size to expected effect sizes. In Study 1, we analysed n-ES correlations in 150 meta-analyses from cognitive, organizational, and social psychology and in 57 multiple replications, which are free from relevant biases. In Study 2, we used a random sample of 160 psychology papers to compare the n-ES correlation for effects that are central to these papers and effects selected at random from these papers. n-ES correlations proved inconspicuous in meta-analyses. In line with previous research, they do not suggest that publication bias and related biases have a strong impact on meta-analyses in psychology. A much higher n-ES correlation emerged for publications\u2019 focal effects. To what extent this should be attributed to publication bias and related biases remains unclear.\n"
+        ],
+        "author_display": [
+          "Audrey Helen Linden",
+          "Thomas V. Pollet",
+          "Johannes H\u00f6nekopp"
+        ],
+        "id": "10.1371/journal.pone.0297075",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-02-15T00:00:00Z",
+        "title": "Publication bias in psychology: A closer look at the correlation between sample size and effect size"
+      },
+      {
+        "abstract": [
+          "\nCharacterizing the distribution of effects from genome-wide genotyping data is crucial for understanding important aspects of the genetic architecture of complex traits, such as number or proportion of non-null loci, average proportion of phenotypic variance explained per non-null effect, power for discovery, and polygenic risk prediction. To this end, previous work has used effect-size models based on various distributions, including the normal and normal mixture distributions, among others. In this paper we propose a scale mixture of two normals model for effect size distributions of genome-wide association study (GWAS) test statistics. Test statistics corresponding to null associations are modeled as random draws from a normal distribution with zero mean; test statistics corresponding to non-null associations are also modeled as normal with zero mean, but with larger variance. The model is fit via minimizing discrepancies between the parametric mixture model and resampling-based nonparametric estimates of replication effect sizes and variances. We describe in detail the implications of this model for estimation of the non-null proportion, the probability of replication in de novo samples, the local false discovery rate, and power for discovery of a specified proportion of phenotypic variance explained from additive effects of loci surpassing a given significance threshold. We also examine the crucial issue of the impact of linkage disequilibrium (LD) on effect sizes and parameter estimates, both analytically and in simulations. We apply this approach to meta-analysis test statistics from two large GWAS, one for Crohn\u2019s disease (CD) and the other for schizophrenia (SZ). A scale mixture of two normals distribution provides an excellent fit to the SZ nonparametric replication effect size estimates. While capturing the general behavior of the data, this mixture model underestimates the tails of the CD effect size distribution. We discuss the implications of pervasive small but replicating effects in CD and SZ on genomic control and power. Finally, we conclude that, despite having very similar estimates of variance explained by genotyped SNPs, CD and SZ have a broadly dissimilar genetic architecture, due to differing mean effect size and proportion of non-null loci.\nAuthor Summary: We describe in detail the implications of a particular mixture model (a scale mixture of two normals) for effect size distributions from genome-wide genotyping data. Parameters from this model can be used for estimation of the non-null proportion, the probability of replication in de novo samples, the local false discovery rate, power for detecting non-null loci, and proportion of variance explained from additive effects. Here, we fit this model by minimizing discrepancies with nonparametric estimates from a resampling-based algorithm. We examine the effects of linkage disequilibrium (LD) on effect sizes and parameter estimates, both analytically and in simulations. We validate this approach using meta-analysis test statistics (\u201cz-scores\u201d) from two large GWAS, one for Crohn\u2019s disease and the other for schizophrenia. We demonstrate that for these studies a scale mixture of two normal distributions generally fits empirical replication effect sizes well, providing an excellent fit for the schizophrenia effect sizes but underestimating the tails of the distribution for Crohn\u2019s disease. "
+        ],
+        "author_display": [
+          "Wesley K. Thompson",
+          "Yunpeng Wang",
+          "Andrew J. Schork",
+          "Aree Witoelar",
+          "Verena Zuber",
+          "Shujing Xu",
+          "Thomas Werge",
+          "Dominic Holland",
+          "Schizophrenia Working Group of the Psychiatric Genomics Consortium ",
+          "Ole A. Andreassen",
+          "Anders M. Dale"
+        ],
+        "id": "10.1371/journal.pgen.1005717",
+        "journal": "PLOS Genetics",
+        "publication_date": "2015-12-29T00:00:00Z",
+        "title": "An Empirical Bayes Mixture Model for Effect Size Distributions in Genome-Wide Association Studies"
+      },
+      {
+        "abstract": [
+          "Introduction: Previous studies about the replicability of clinical research based on the published literature have suggested that highly cited articles are often contradicted or found to have inflated effects. Nevertheless, there are no recent updates of such efforts, and this situation may have changed over time. Methods: We searched the Web of Science database for articles studying medical interventions with more than 2000 citations, published between 2004 and 2018 in high-impact medical journals. We then searched for replications of these studies in PubMed using the PICO (Population, Intervention, Comparator and Outcome) framework. Replication success was evaluated by the presence of a statistically significant effect in the same direction and by overlap of the replication\u2019s effect size confidence interval (CIs) with that of the original study. Evidence of effect size inflation and potential predictors of replicability were also analyzed. Results: A total of 89 eligible studies, of which 24 had valid replications (17 meta-analyses and 7 primary studies) were found. Of these, 21 (88%) had effect sizes with overlapping CIs. Of 15 highly cited studies with a statistically significant difference in the primary outcome, 13 (87%) had a significant effect in the replication as well. When both criteria were considered together, the replicability rate in our sample was of 20 out of 24 (83%). There was no evidence of systematic inflation in these highly cited studies, with a mean effect size ratio of 1.03 [95% CI (0.88, 1.21)] between initial and subsequent effects. Due to the small number of contradicted results, our analysis had low statistical power to detect predictors of replicability. Conclusion: Although most studies did not have eligible replications, the replicability rate of highly cited clinical studies in our sample was higher than in previous estimates, with little evidence of systematic effect size inflation. This estimate is based on a very select sample of studies and may not be generalizable to clinical research in general. "
+        ],
+        "author_display": [
+          "Gabriel Gon\u00e7alves da Costa",
+          "Kleber Neves",
+          "Olavo Amaral"
+        ],
+        "id": "10.1371/journal.pone.0307145",
+        "journal": "PLOS ONE",
+        "publication_date": "2024-08-07T00:00:00Z",
+        "title": "Estimating the replicability of highly cited clinical research (2004\u20132018)"
+      },
+      {
+        "abstract": [
+          "\nWe revisit the results of the recent Reproducibility Project: Psychology by the Open Science Collaboration. We compute Bayes factors\u2014a quantity that can be used to express comparative evidence for an hypothesis but also for the null hypothesis\u2014for a large subset (N = 72) of the original papers and their corresponding replication attempts. In our computation, we take into account the likely scenario that publication bias had distorted the originally published results. Overall, 75% of studies gave qualitatively similar results in terms of the amount of evidence provided. However, the evidence was often weak (i.e., Bayes factor < 10). The majority of the studies (64%) did not provide strong evidence for either the null or the alternative hypothesis in either the original or the replication, and no replication attempts provided strong evidence in favor of the null. In all cases where the original paper provided strong evidence but the replication did not (15%), the sample size in the replication was smaller than the original. Where the replication provided strong evidence but the original did not (10%), the replication sample size was larger. We conclude that the apparent failure of the Reproducibility Project to replicate many target effects can be adequately explained by overestimation of effect sizes (or overestimation of evidence against the null hypothesis) due to small sample sizes and publication bias in the psychological literature. We further conclude that traditional sample sizes are insufficient and that a more widespread adoption of Bayesian methods is desirable.\n"
+        ],
+        "author_display": [
+          "Alexander Etz",
+          "Joachim Vandekerckhove"
+        ],
+        "id": "10.1371/journal.pone.0149794",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-02-26T00:00:00Z",
+        "title": "A Bayesian Perspective on the Reproducibility Project: Psychology"
+      },
+      {
+        "abstract": [
+          "\nA challenge when interpreting replications is determining whether the results of a replication \u201csuccessfully\u201d replicate the original study. Looking for consistency between two studies is challenging because individual studies are susceptible to many sources of error that can cause study results to deviate from each other and the population effect in unpredictable directions and magnitudes. In the current paper, we derive methods to compute a prediction interval, a range of results that can be expected in a replication due to chance (i.e., sampling error), for means and commonly used indexes of effect size: correlations and d-values. The prediction interval is calculable based on objective study characteristics (i.e., effect size of the original study and sample sizes of the original study and planned replication) even when sample sizes across studies are unequal. The prediction interval provides an a priori method for assessing if the difference between an original and replication result is consistent with what can be expected due to sample error alone. We provide open-source software tools that allow researchers, reviewers, replicators, and editors to easily calculate prediction intervals.\n"
+        ],
+        "author_display": [
+          "Jeffrey R. Spence",
+          "David J. Stanley"
+        ],
+        "id": "10.1371/journal.pone.0162874",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-09-19T00:00:00Z",
+        "title": "Prediction Interval: What to Expect When You\u2019re Expecting \u2026 A Replication"
+      },
+      {
+        "abstract": [
+          "\nWe measure how accurately replication of experimental results can be predicted by black-box statistical models. With data from four large-scale replication projects in experimental psychology and economics, and techniques from machine learning, we train predictive models and study which variables drive predictable replication. The models predicts binary replication with a cross-validated accuracy rate of 70% (AUC of 0.77) and estimates of relative effect sizes with a Spearman \u03c1 of 0.38. The accuracy level is similar to market-aggregated beliefs of peer scientists [1, 2]. The predictive power is validated in a pre-registered out of sample test of the outcome of [3], where 71% (AUC of 0.73) of replications are predicted correctly and effect size correlations amount to \u03c1 = 0.25. Basic features such as the sample and effect sizes in original papers, and whether reported effects are single-variable main effects or two-variable interactions, are predictive of successful replication. The models presented in this paper are simple tools to produce cheap, prognostic replicability metrics. These models could be useful in institutionalizing the process of evaluation of new findings and guiding resources to those direct replications that are likely to be most informative.\n"
+        ],
+        "author_display": [
+          "Adam Altmejd",
+          "Anna Dreber",
+          "Eskil Forsell",
+          "Juergen Huber",
+          "Taisuke Imai",
+          "Magnus Johannesson",
+          "Michael Kirchler",
+          "Gideon Nave",
+          "Colin Camerer"
+        ],
+        "id": "10.1371/journal.pone.0225826",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-12-05T00:00:00Z",
+        "title": "Predicting the replicability of social science lab experiments"
+      },
+      {
+        "abstract": [
+          "\nThe authors evaluate the quality of research reported in major journals in social-personality psychology by ranking those journals with respect to their N-pact Factors (NF)\u2014the statistical power of the empirical studies they publish to detect typical effect sizes. Power is a particularly important attribute for evaluating research quality because, relative to studies that have low power, studies that have high power are more likely to (a) to provide accurate estimates of effects, (b) to produce literatures with low false positive rates, and (c) to lead to replicable findings. The authors show that the average sample size in social-personality research is 104 and that the power to detect the typical effect size in the field is approximately 50%. Moreover, they show that there is considerable variation among journals in sample sizes and power of the studies they publish, with some journals consistently publishing higher power studies than others. The authors hope that these rankings will be of use to authors who are choosing where to submit their best work, provide hiring and promotion committees with a superior way of quantifying journal quality, and encourage competition among journals to improve their NF rankings.\n"
+        ],
+        "author_display": [
+          "R. Chris Fraley",
+          "Simine Vazire"
+        ],
+        "id": "10.1371/journal.pone.0109019",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-10-08T00:00:00Z",
+        "title": "The N-Pact Factor: Evaluating the Quality of Empirical Journals with Respect to Sample Size and Statistical Power"
+      },
+      {
+        "abstract": [
+          "Context: There are growing concerns about effect size inflation and replication validity of association studies, but few observational investigations have explored the extent of these problems. Objective: Using meta-analyses to measure the reliability of initial studies and explore whether this varies across biomedical domains and study types (cognitive/behavioral, brain imaging, genetic and \u201cothers\u201d). Methods: We analyzed 663 meta-analyses describing associations between markers or risk factors and 12 pathologies within three biomedical domains (psychiatry, neurology and four somatic diseases). We collected the effect size, sample size, publication year and Impact Factor of initial studies, largest studies (i.e., with the largest sample size) and the corresponding meta-analyses. Initial studies were considered as replicated if they were in nominal agreement with meta-analyses and if their effect size inflation was below 100%. Results: Nominal agreement between initial studies and meta-analyses regarding the presence of a significant effect was not better than chance in psychiatry, whereas it was somewhat better in neurology and somatic diseases. Whereas effect sizes reported by largest studies and meta-analyses were similar, most of those reported by initial studies were inflated. Among the 256 initial studies reporting a significant effect (p<0.05) and paired with significant meta-analyses, 97 effect sizes were inflated by more than 100%. Nominal agreement and effect size inflation varied with the biomedical domain and study type. Indeed, the replication rate of initial studies reporting a significant effect ranged from 6.3% for genetic studies in psychiatry to 86.4% for cognitive/behavioral studies. Comparison between eight subgroups shows that replication rate decreases with sample size and \u201ctrue\u201d effect size. We observed no evidence of association between replication rate and publication year or Impact Factor. Conclusion: The differences in reliability between biological psychiatry, neurology and somatic diseases suggest that there is room for improvement, at least in some subdomains. "
+        ],
+        "author_display": [
+          "Estelle Dumas-Mallet",
+          "Katherine Button",
+          "Thomas Boraud",
+          "Marcus Munafo",
+          "Fran\u00e7ois Gonon"
+        ],
+        "id": "10.1371/journal.pone.0158064",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-06-23T00:00:00Z",
+        "title": "Replication Validity of Initial Association Studies: A Comparison between Psychiatry, Neurology and Four Somatic Diseases"
+      },
+      {
+        "abstract": [
+          "\nGenome-wide association studies (GWAS) have detected many disease associations. However, the reported variants tend to explain small fractions of risk, and there are doubts about issues such as the portability of findings over different ethnic groups or the relative roles of rare versus common variants in the genetic architecture of complex disease. Studying the degree of sharing of disease-associated variants across populations can help in solving these issues. We present a comprehensive survey of GWAS replicability across 28 diseases. Most loci and SNPs discovered in Europeans for these conditions have been extensively replicated using peoples of European and East Asian ancestry, while the replication with individuals of African ancestry is much less common. We found a strong and significant correlation of Odds Ratios across Europeans and East Asians, indicating that underlying causal variants are common and shared between the two ancestries. Moreover, SNPs that failed to replicate in East Asians map into genomic regions where Linkage Disequilibrium patterns differ significantly between populations. Finally, we observed that GWAS with larger sample sizes have detected variants with weaker effects rather than with lower frequencies. Our results indicate that most GWAS results are due to common variants. In addition, the sharing of disease alleles and the high correlation in their effect sizes suggest that most of the underlying causal variants are shared between Europeans and East Asians and that they tend to map close to the associated marker SNPs.\nAuthor Summary: Describing and identifying the genetic variants that increase risk for complex diseases remains a central focus of human genetics and is fundamental for the emergent field of personalized medicine. Over the last six years, GWAS have revolutionized the field, discovering hundreds of disease loci. However, with only a handful of exceptions, the causal variants that generate the associations unveiled by GWAS have not been identified, and their frequency and degree of sharing across populations remains unknown. Here, we present a comprehensive comparison of GWAS results designed to try to understand the nature of causal variants. By examining the results of GWAS for 28 diseases that have been performed with peoples of European, East Asian, and African ancestries, we conclude that a large fraction of associations are caused by common causal variants that should map relatively close to the associated markers. Our results indicate that many of the disease risk variants discovered by GWAS are shared across Eurasians. "
+        ],
+        "author_display": [
+          "Urko M. Marigorta",
+          "Arcadi Navarro"
+        ],
+        "id": "10.1371/journal.pgen.1003566",
+        "journal": "PLoS Genetics",
+        "publication_date": "2013-06-13T00:00:00Z",
+        "title": "High Trans-ethnic Replicability of GWAS Results Implies Common Causal Variants"
+      },
+      {
+        "abstract": [
+          "\nFor at least four decades, researchers have studied the effectiveness of interventions designed to increase well-being. These interventions have become known as positive psychology interventions (PPIs). Two highly cited meta-analyses examined the effectiveness of PPIs on well-being and depression: Sin and Lyubomirsky (2009) and Bolier et al. (2013). Sin and Lyubomirsky reported larger effects of PPIs on well-being (r = .29) and depression (r = .31) than Bolier et al. reported for subjective well-being (r = .17), psychological well-being (r = .10), and depression (r = .11). A detailed examination of the two meta-analyses reveals that the authors employed different approaches, used different inclusion and exclusion criteria, analyzed different sets of studies, described their methods with insufficient detail to compare them clearly, and did not report or properly account for significant small sample size bias. The first objective of the current study was to reanalyze the studies selected in each of the published meta-analyses, while taking into account small sample size bias. The second objective was to replicate each meta-analysis by extracting relevant effect sizes directly from the primary studies included in the meta-analyses. The present study revealed three key findings: (1) many of the primary studies used a small sample size; (2) small sample size bias was pronounced in many of the analyses; and (3) when small sample size bias was taken into account, the effect of PPIs on well-being were small but significant (approximately r = .10), whereas the effect of PPIs on depression were variable, dependent on outliers, and generally not statistically significant. Future PPI research needs to focus on increasing sample sizes. A future meta-analyses of this research needs to assess cumulative effects from a comprehensive collection of primary studies while being mindful of issues such as small sample size bias.\n"
+        ],
+        "author_display": [
+          "Carmela A. White",
+          "Bob Uttl",
+          "Mark D. Holder"
+        ],
+        "id": "10.1371/journal.pone.0216588",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-05-29T00:00:00Z",
+        "title": "Meta-analyses of positive psychology interventions: The effects are much smaller than previously reported"
+      },
+      {
+        "abstract": [
+          "\nGenetic association studies routinely involve massive numbers of statistical tests accompanied by P-values. Whole genome sequencing technologies increased the potential number of tested variants to tens of millions. The more tests are performed, the smaller P-value is required to be deemed significant. However, a small P-value is not equivalent to small chances of a spurious finding and significance thresholds may fail to serve as efficient filters against false results. While the Bayesian approach can provide a direct assessment of the probability that a finding is spurious, its adoption in association studies has been slow, due in part to the ubiquity of P-values and the automated way they are, as a rule, produced by software packages. Attempts to design simple ways to convert an association P-value into the probability that a finding is spurious have been met with difficulties. The False Positive Report Probability (FPRP) method has gained increasing popularity. However, FPRP is not designed to estimate the probability for a particular finding, because it is defined for an entire region of hypothetical findings with P-values at least as small as the one observed for that finding. Here we propose a method that lets researchers extract probability that a finding is spurious directly from a P-value. Considering the counterpart of that probability, we term this method POFIG: the Probability that a Finding is Genuine. Our approach shares FPRP's simplicity, but gives a valid probability that a finding is spurious given a P-value. In addition to straightforward interpretation, POFIG has desirable statistical properties. The POFIG average across a set of tentative associations provides an estimated proportion of false discoveries in that set. POFIGs are easily combined across studies and are immune to multiple testing and selection bias. We illustrate an application of POFIG method via analysis of GWAS associations with Crohn's disease.\n"
+        ],
+        "author_display": [
+          "Chia-Ling Kuo",
+          "Olga A. Vsevolozhskaya",
+          "Dmitri V. Zaykin"
+        ],
+        "id": "10.1371/journal.pone.0124107",
+        "journal": "PLOS ONE",
+        "publication_date": "2015-05-08T00:00:00Z",
+        "title": "Assessing the Probability that a Finding Is Genuine for Large-Scale Genetic Association Studies"
+      },
+      {
+        "abstract": [
+          "\nPower analysis currently dominates sample size determination for experiments, particularly in grant and ethics applications. Yet, this focus could paradoxically result in suboptimal study design because publication biases towards studies with the largest effects can lead to the overestimation of effect sizes. In this Essay, we propose a paradigm shift towards better study designs that focus less on statistical power. We also advocate for (pre)registration and obligatory reporting of all results (regardless of statistical significance), better facilitation of team science and multi-institutional collaboration that incorporates heterogenization, and the use of prospective and living meta-analyses to generate generalizable results. Such changes could make science more effective and, potentially, more equitable, helping to cultivate better collaborations.\n\nStatistical power analysis currently dominates experimental design. In this Essay, the authors argue that we should move away from the current focus on power analysis and instead encourage smaller scale studies and collaborative projects.\n"
+        ],
+        "author_display": [
+          "Shinichi Nakagawa",
+          "Malgorzata Lagisz",
+          "Yefeng Yang",
+          "Szymon M. Drobniak"
+        ],
+        "id": "10.1371/journal.pbio.3002423",
+        "journal": "PLOS Biology",
+        "publication_date": "2024-01-08T00:00:00Z",
+        "title": "Finding the right power balance: Better study design and collaboration can reduce dependence on statistical power"
+      },
+      {
+        "abstract": [
+          "\nThroughout the last decade, the so-called replication crisis has stimulated many researchers to conduct large-scale replication projects. With data from four of these projects, we computed probabilistic forecasts of the replication outcomes, which we then evaluated regarding discrimination, calibration and sharpness. A novel model, which can take into account both inflation and heterogeneity of effects, was used and predicted the effect estimate of the replication study with good performance in two of the four data sets. In the other two data sets, predictive performance was still substantially improved compared to the naive model which does not consider inflation and heterogeneity of effects. The results suggest that many of the estimates from the original studies were inflated, possibly caused by publication bias or questionable research practices, and also that some degree of heterogeneity between original and replication effects should be expected. Moreover, the results indicate that the use of statistical significance as the only criterion for replication success may be questionable, since from a predictive viewpoint, non-significant replication results are often compatible with significant results from the original study. The developed statistical methods as well as the data sets are available in the R package ReplicationSuccess.\n"
+        ],
+        "author_display": [
+          "Samuel Pawel",
+          "Leonhard Held"
+        ],
+        "id": "10.1371/journal.pone.0231416",
+        "journal": "PLOS ONE",
+        "publication_date": "2020-04-22T00:00:00Z",
+        "title": "Probabilistic forecasting of replication studies"
+      },
+      {
+        "abstract": [
+          "\nTo date, genome-wide association studies have focused almost exclusively on populations of European ancestry. These studies continue with the advent of next-generation sequencing, designed to systematically catalog and test low-frequency variation for a role in disease. A complementary approach would be to focus further efforts on cohorts of multiple ethnicities. This leverages the idea that population genetic drift may have elevated some variants to higher allele frequency in different populations, boosting statistical power to detect an association. Based on empirical allele frequency distributions from eleven populations represented in HapMap Phase 3 and the 1000 Genomes Project, we simulate a range of genetic models to quantify the power of association studies in multiple ethnicities relative to studies that exclusively focus on samples of European ancestry. In each of these simulations, a first phase of GWAS in exclusively European samples is followed by a second GWAS phase in any of the other populations (including a multiethnic design). We find that nontrivial power gains can be achieved by conducting future whole-genome studies in worldwide populations, where, in particular, African populations contribute the largest relative power gains for low-frequency alleles (<5%) of moderate effect that suffer from low power in samples of European descent. Our results emphasize the importance of broadening genetic studies to worldwide populations to ensure efficient discovery of genetic loci contributing to phenotypic trait variability, especially for those traits for which large numbers of samples of European ancestry have already been collected and tested.\n"
+        ],
+        "author_display": [
+          "Sara L. Pulit",
+          "Benjamin F. Voight",
+          "Paul I. W. de Bakker"
+        ],
+        "id": "10.1371/journal.pone.0012600",
+        "journal": "PLoS ONE",
+        "publication_date": "2010-09-08T00:00:00Z",
+        "title": "Multiethnic Genetic Association Studies Improve Power for Locus Discovery"
+      },
+      {
+        "abstract": [
+          "\nGenome-wide association studies (GWAS) have identified hundreds of SNPs responsible for variation in human quantitative traits. However, genome-wide-significant associations often fail to replicate across independent cohorts, in apparent inconsistency with their apparent strong effects in discovery cohorts. This limited success of replication raises pervasive questions about the utility of the GWAS field. We identify all 332 studies of quantitative traits from the NHGRI-EBI GWAS Database with attempted replication. We find that the majority of studies provide insufficient data to evaluate replication rates. The remaining papers replicate significantly worse than expected (p < 10\u221214), even when adjusting for regression-to-the-mean of effect size between discovery- and replication-cohorts termed the Winner\u2019s Curse (p < 10\u221216). We show this is due in part to misreporting replication cohort-size as a maximum number, rather than per-locus one. In 39 studies accurately reporting per-locus cohort-size for attempted replication of 707 loci in samples with similar ancestry, replication rate matched expectation (predicted 458, observed 457, p = 0.94). In contrast, ancestry differences between replication and discovery (13 studies, 385 loci) cause the most highly-powered decile of loci to replicate worse than expected, due to difference in linkage disequilibrium.\nAuthor summary: The majority of associations between common genetic variation and human traits come from genome-wide association studies, which have analyzed millions of single-nucleotide polymorphisms in millions of samples. These kinds of studies pose serious statistical challenges to discovering new associations. Finite resources restrict the number of candidate associations that can brought forward into validation samples, introducing the need for a significance threshold. This threshold creates a phenomenon called the Winner\u2019s Curse, in which candidate associations close to the discovery threshold are more likely to have biased overestimates of the variant\u2019s true association in the sampled population. We survey all human quantitative trait association studies that validated at least one signal. We find the majority of these studies do not publish sufficient information to actually support their claims of replication. For studies that did, we computationally correct the Winner\u2019s Curse and evaluate replication performance. While all variants combined replicate significantly less than expected, we find that the subset of studies that (1) perform both discovery and replication in samples of the same ancestry; and (2) report accurate per-variant sample sizes, replicate as expected. This study provides strong, rigorous evidence for the broad reliability of genome-wide association studies. We furthermore provide a model for more efficient selection of variants as candidates for replication, as selecting variants using cursed discovery data enriches for variants with little real evidence for trait association. "
+        ],
+        "author_display": [
+          "Cameron Palmer",
+          "Itsik Pe\u2019er"
+        ],
+        "id": "10.1371/journal.pgen.1006916",
+        "journal": "PLOS Genetics",
+        "publication_date": "2017-07-17T00:00:00Z",
+        "title": "Statistical correction of the Winner\u2019s Curse explains replication variability in quantitative trait genome-wide association studies"
+      },
+      {
+        "abstract": [
+          "\nSingle-laboratory studies conducted under highly standardized conditions are the gold standard in preclinical animal research. Using simulations based on 440 preclinical studies across 13 different interventions in animal models of stroke, myocardial infarction, and breast cancer, we compared the accuracy of effect size estimates between single-laboratory and multi-laboratory study designs. Single-laboratory studies generally failed to predict effect size accurately, and larger sample sizes rendered effect size estimates even less accurate. By contrast, multi-laboratory designs including as few as 2 to 4 laboratories increased coverage probability by up to 42 percentage points without a need for larger sample sizes. These findings demonstrate that within-study standardization is a major cause of poor reproducibility. More representative study samples are required to improve the external validity and reproducibility of preclinical animal research and to prevent wasting animals and resources for inconclusive research.\nAuthor summary: Preclinical animal research is mostly based on studies conducted in a single laboratory and under highly standardized conditions. This entails the risk that the study results may only be valid under the specific conditions of the test laboratory, which may explain the poor reproducibility of preclinical animal research. To test this hypothesis, we used simulations based on 440 preclinical studies across 13 different interventions in animal models of stroke, myocardial infarction, and breast cancer and compared the reproducibility of results between single-laboratory and multi-laboratory studies. To simulate multi-laboratory studies, we combined data from multiple studies, as if several collaborating laboratories had conducted them in parallel. We found that single-laboratory studies produced large variation between study results. By contrast, multi-laboratory studies including as few as 2 to 4 laboratories produced much more consistent results, thereby increasing reproducibility without a need for larger sample sizes. Our findings demonstrate that excessive standardization is a source of poor reproducibility because it ignores biologically meaningful variation. We conclude that multi-laboratory studies\u2014and potentially other ways of creating more heterogeneous study samples\u2014provide an effective means of improving the reproducibility of study results, which is crucial to prevent wasting animals and resources for inconclusive research. "
+        ],
+        "author_display": [
+          "Bernhard Voelkl",
+          "Lucile Vogt",
+          "Emily S. Sena",
+          "Hanno W\u00fcrbel"
+        ],
+        "id": "10.1371/journal.pbio.2003693",
+        "journal": "PLOS Biology",
+        "publication_date": "2018-02-22T00:00:00Z",
+        "title": "Reproducibility of preclinical animal research improves with heterogeneity of study samples"
+      },
+      {
+        "abstract": [
+          "\nIn genetic association studies of rare variants, low statistical power and potential violations of established estimator properties are among the main challenges of association tests. Multi-marker tests (MMTs) have been proposed to target these challenges, but any comparison with single-marker tests (SMTs) has to consider that their aim is to identify causal genomic regions instead of variants. Valid power comparisons have been performed for the analysis of binary traits indicating that MMTs have higher power, but there is a lack of conclusive studies for quantitative traits. The aim of our study was therefore to fairly compare SMTs and MMTs in their empirical power to identify the same causal loci associated with a quantitative trait. The results of extensive simulation studies indicate that previous results for binary traits cannot be generalized. First, we show that for the analysis of quantitative traits, conventional estimation methods and test statistics of single-marker approaches have valid properties yielding association tests with valid type I error, even when investigating singletons or doubletons. Furthermore, SMTs lead to more powerful association tests for identifying causal genes than MMTs when the effect sizes of causal variants are large, and less powerful tests when causal variants have small effect sizes. For moderate effect sizes, whether SMTs or MMTs have higher power depends on the sample size and percentage of causal SNVs. For a more complete picture, we also compare the power in studies of quantitative and binary traits, and the power to identify causal genes with the power to identify causal rare variants. In a genetic association analysis of systolic blood pressure in the Genetic Analysis Workshop 19 data, SMTs yielded smaller p-values compared to MMTs for most of the investigated blood pressure genes, and were least influenced by the definition of gene regions.\n"
+        ],
+        "author_display": [
+          "Stefan Konigorski",
+          "Yildiz E. Yilmaz",
+          "Tobias Pischon"
+        ],
+        "id": "10.1371/journal.pone.0178504",
+        "journal": "PLOS ONE",
+        "publication_date": "2017-05-31T00:00:00Z",
+        "title": "Comparison of single-marker and multi-marker tests in rare variant association studies of quantitative traits"
+      },
+      {
+        "abstract": [
+          "\nMost of the genetic architecture of schizophrenia (SCZ) has not yet been identified. Here, we apply a novel statistical algorithm called Covariate-Modulated Mixture Modeling (CM3), which incorporates auxiliary information (heterozygosity, total linkage disequilibrium, genomic annotations, pleiotropy) for each single nucleotide polymorphism (SNP) to enable more accurate estimation of replication probabilities, conditional on the observed test statistic (\u201cz-score\u201d) of the SNP. We use a multiple logistic regression on z-scores to combine information from auxiliary information to derive a \u201crelative enrichment score\u201d for each SNP. For each stratum of these relative enrichment scores, we obtain nonparametric estimates of posterior expected test statistics and replication probabilities as a function of discovery z-scores, using a resampling-based approach that repeatedly and randomly partitions meta-analysis sub-studies into training and replication samples. We fit a scale mixture of two Gaussians model to each stratum, obtaining parameter estimates that minimize the sum of squared differences of the scale-mixture model with the stratified nonparametric estimates. We apply this approach to the recent genome-wide association study (GWAS) of SCZ (n = 82,315), obtaining a good fit between the model-based and observed effect sizes and replication probabilities. We observed that SNPs with low enrichment scores replicate with a lower probability than SNPs with high enrichment scores even when both they are genome-wide significant (p < 5x10-8). There were 693 and 219 independent loci with model-based replication rates \u226580% and \u226590%, respectively. Compared to analyses not incorporating relative enrichment scores, CM3 increased out-of-sample yield for SNPs that replicate at a given rate. This demonstrates that replication probabilities can be more accurately estimated using prior enrichment information with CM3.\nAuthor Summary: Genome-wide association studies (GWAS) have thus far identified only a small fraction of the heritability of common complex disorders, such as schizophrenia. Here, we demonstrate that by using auxiliary information we can improve estimates of replication probabilities from GWAS summary statistics. The proposed Covariate-Modulated Mixture Model (CM3) incorporates auxiliary information to construct an \u201cenrichment score\u201d for each single nucleotide polymorphism (SNP). We show that a scale mixture of two Gaussians provides a good fit to the observed effect size distribution stratified by the predicted enrichment score when applied the method to a recent genome-wide association study (GWAS) of SCZ (n = 82,315). Compared to estimates performed not using auxiliary information, the CM3 more accurately models the observed replication rates by stratifying on covariate-modulated enrichment scores. We observed that SNPs with low enrichment scores replicate with a lower probability compared to SNPs with high enrichment scores, even when both are genome-wide significant (p < 5x10-8). At model-based replication rates \u226580% and \u226590% there were 693 and 219 independent loci, respectively. Increased out-of-sample yield for SNPs ranked according to CM3 demonstrate the utility of incorporating auxiliary information via CM3. "
+        ],
+        "author_display": [
+          "Yunpeng Wang",
+          "Wesley K. Thompson",
+          "Andrew J. Schork",
+          "Dominic Holland",
+          "Chi-Hua Chen",
+          "Francesco Bettella",
+          "Rahul S. Desikan",
+          "Wen Li",
+          "Aree Witoelar",
+          "Verena Zuber",
+          "Anna Devor",
+          "Bipolar Disorder and Schizophrenia Working Group of the Psychiatric Genomics Consortium ",
+          "Enhancing Neuro Imaging Genetics through Meta Analysis Consortium ",
+          "Markus M. N\u00f6then",
+          "Marcella Rietschel",
+          "Qiang Chen",
+          "Thomas Werge",
+          "Sven Cichon",
+          "Daniel R. Weinberger",
+          "Srdjan Djurovic",
+          "Michael O\u2019Donovan",
+          "Peter M. Visscher",
+          "Ole A. Andreassen",
+          "Anders M. Dale"
+        ],
+        "id": "10.1371/journal.pgen.1005803",
+        "journal": "PLOS Genetics",
+        "publication_date": "2016-01-25T00:00:00Z",
+        "title": "Leveraging Genomic Annotations and Pleiotropic Enrichment for Improved Replication Rates in Schizophrenia GWAS"
+      },
+      {
+        "abstract": [
+          "\nResearchers who analyze data within the framework of null hypothesis significance testing must choose a critical \u201calpha\u201d level, \u03b1, to use as a cutoff for deciding whether a given set of data demonstrates the presence of a particular effect. In most fields, \u03b1 = 0.05 has traditionally been used as the standard cutoff. Many researchers have recently argued for a change to a more stringent evidence cutoff such as \u03b1 = 0.01, 0.005, or 0.001, noting that this change would tend to reduce the rate of false positives, which are of growing concern in many research areas. Other researchers oppose this proposed change, however, because it would correspondingly tend to increase the rate of false negatives. We show how a simple statistical model can be used to explore the quantitative tradeoff between reducing false positives and increasing false negatives. In particular, the model shows how the optimal \u03b1 level depends on numerous characteristics of the research area, and it reveals that although \u03b1 = 0.05 would indeed be approximately the optimal value in some realistic situations, the optimal \u03b1 could actually be substantially larger or smaller in other situations. The importance of the model lies in making it clear what characteristics of the research area have to be specified to make a principled argument for using one \u03b1 level rather than another, and the model thereby provides a blueprint for researchers seeking to justify a particular \u03b1 level.\n"
+        ],
+        "author_display": [
+          "Jeff Miller",
+          "Rolf Ulrich"
+        ],
+        "id": "10.1371/journal.pone.0208631",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-01-02T00:00:00Z",
+        "title": "The quest for an optimal alpha"
+      },
+      {
+        "abstract": [
+          "\nGenetic association studies of many heritable traits resulting from physiological testing often have modest sample sizes due to the cost and burden of the required phenotyping. This reduces statistical power and limits discovery of multiple genetic associations. We present a strategy to leverage pleiotropy between traits to both discover new loci and to provide mechanistic hypotheses of the underlying pathophysiology. Specifically, we combine a colocalization test with a locus-level test of pleiotropy. In simulations, we show that this approach is highly selective for identifying true pleiotropy driven by the same causative variant, thereby improves the chance to replicate the associations in underpowered validation cohorts and leads to higher interpretability. Here, as an exemplar, we use Obstructive Sleep Apnea (OSA), a common disorder diagnosed using overnight multi-channel physiological testing. We leverage pleiotropy with relevant cellular and cardio-metabolic phenotypes and gene expression traits to map new risk loci in an underpowered OSA GWAS. We identify several pleiotropic loci harboring suggestive associations to OSA and genome-wide significant associations to other traits, and show that their OSA association replicates in independent cohorts of diverse ancestries. By investigating pleiotropic loci, our strategy allows proposing new hypotheses about OSA pathobiology across many physiological layers. For example, we identify and replicate the pleiotropy across the plateletcrit, OSA and an eQTL of DNA primase subunit 1 (PRIM1) in immune cells. We find suggestive links between OSA, a measure of lung function (FEV1/FVC), and an eQTL of matrix metallopeptidase 15 (MMP15) in lung tissue. We also link a previously known genome-wide significant peak for OSA in the hexokinase 1 (HK1) locus to hematocrit and other red blood cell related traits. Thus, the analysis of pleiotropic associations has the potential to assemble diverse phenotypes into a chain of mechanistic hypotheses that provide insight into the pathogenesis of complex human diseases.\nAuthor summary: Large genetic studies with hundreds of thousands of patients have been successful at finding genetic variants that associate with disease traits in humans. However, smaller-scale studies can often have inadequate power to discover new genetic associations. Here, we use a small genetic study of Obstructive Sleep Apnea (OSA), to introduce a strategy that both helps find genetic associations and proposes biological hypotheses for the mechanisms behind those associations. To achieve this, we use large genetic studies carried out on traits that are related to OSA, and look for genetic variants that affect both OSA in our small study and the trait in question in the large study. By linking two or more traits at select loci, we were able to, among other results, find a locus that affects the expression of a gene in immune cells (DNA primase subunit 1), a marker of thrombotic and inflammatory processes (plateletcrit) and OSA. This results in a novel genetic association to OSA and a corresponding biological hypothesis behind its effect on OSA. "
+        ],
+        "author_display": [
+          "Sung Chun",
+          "Sebastian Akle",
+          "Athanasios Teodosiadis",
+          "Brian E. Cade",
+          "Heming Wang",
+          "Tamar Sofer",
+          "Daniel S. Evans",
+          "Katie L. Stone",
+          "Sina A. Gharib",
+          "Sutapa Mukherjee",
+          "Lyle J. Palmer",
+          "David Hillman",
+          "Jerome I. Rotter",
+          "Craig L. Hanis",
+          "John A. Stamatoyannopoulos",
+          "Susan Redline",
+          "Chris Cotsapas",
+          "Shamil R. Sunyaev"
+        ],
+        "id": "10.1371/journal.pgen.1010557",
+        "journal": "PLOS Genetics",
+        "publication_date": "2022-12-27T00:00:00Z",
+        "title": "Leveraging pleiotropy to discover and interpret GWAS results for sleep-associated traits"
+      },
+      {
+        "abstract": [
+          "\nThe attentional blink (AB) phenomenon reveals a bottleneck of human information processing: the second of two targets is often missed when they are presented in rapid succession among distractors. In our previous work, we showed that the size of the AB can be changed by applying transcranial direct current stimulation (tDCS) over the left dorsolateral prefrontal cortex (lDLPFC) (London & Slagter, Journal of Cognitive Neuroscience, 33, 756\u201368, 2021). Although AB size at the group level remained unchanged, the effects of anodal and cathodal tDCS were negatively correlated: if a given individual\u2019s AB size decreased from baseline during anodal tDCS, their AB size would increase during cathodal tDCS, and vice versa. Here, we attempted to replicate this finding. We found no group effects of tDCS, as in the original study, but we no longer found a significant negative correlation. We present a series of statistical measures of replication success, all of which confirm that both studies are not in agreement. First, the correlation here is significantly smaller than a conservative estimate of the original correlation. Second, the difference between the correlations is greater than expected due to sampling error, and our data are more consistent with a zero-effect than with the original estimate. Finally, the overall effect when combining both studies is small and not significant. Our findings thus indicate that the effects of lDPLFC-tDCS on the AB are less substantial than observed in our initial study. Although this should be quite a common scenario, null findings can be difficult to interpret and are still under-represented in the brain stimulation and cognitive neuroscience literatures. An important auxiliary goal of this paper is therefore to provide a tutorial for other researchers, to maximize the evidential value from null findings.\n"
+        ],
+        "author_display": [
+          "Leon C. Reteig",
+          "Lionel A. Newman",
+          "K. Richard Ridderinkhof",
+          "Heleen A. Slagter"
+        ],
+        "id": "10.1371/journal.pone.0262718",
+        "journal": "PLOS ONE",
+        "publication_date": "2022-01-27T00:00:00Z",
+        "title": "Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt"
+      },
+      {
+        "abstract": [
+          "\nWith the advent of genome-wide association (GWA) studies, researchers are hoping that reliable genetic association of common human complex diseases/traits can be detected. Currently, there is an increasing enthusiasm about GWA and a number of GWA studies have been published. In the field a common practice is that replication should be used as the gold standard to validate an association finding. In this article, based on empirical and theoretical data, we emphasize that replication of GWA findings can be quite difficult, and should not always be expected, even when true variants are identified. The probability of replication becomes smaller with the increasing number of independent GWA studies if the power of individual replication studies is less than 100% (which is usually the case), and even a finding that is replicated may not necessarily be true. We argue that the field may have unreasonably high expectations on success of replication. We also wish to raise the question whether it is sufficient or necessary to treat replication as the ultimate and gold standard for defining true variants. We finally discuss the usefulness of integrating evidence from multiple levels/sources such as genetic epidemiological studies (at the DNA level), gene expression studies (at the RNA level), proteomics (at the protein level), and follow-up molecular and cellular studies for eventual validation and illumination of the functional relevance of the genes uncovered.\n"
+        ],
+        "author_display": [
+          "Yong-Jun Liu",
+          "Christopher J. Papasian",
+          "Jian-Feng Liu",
+          "James Hamilton",
+          "Hong-Wen Deng"
+        ],
+        "id": "10.1371/journal.pone.0004037",
+        "journal": "PLoS ONE",
+        "publication_date": "2008-12-29T00:00:00Z",
+        "title": "Is Replication the Gold Standard for Validating Genome-Wide Association Findings?"
+      },
+      {
+        "abstract": [
+          "\nThe reproducibility of studies involving insect species is an underexplored area in the broader discussion about poor reproducibility in science. Our study addresses this gap by conducting a systematic multi-laboratory investigation into the reproducibility of ecological studies on insect behavior. We implemented a 3 \u00d7 3 experimental design, incorporating three study sites, and three independent experiments on three insect species from different orders: the turnip sawfly (Athalia rosae, Hymenoptera), the meadow grasshopper (Pseudochorthippus parallelus, Orthoptera), and the red flour beetle (Tribolium castaneum, Coleoptera). Using random-effect meta-analysis, we compared the consistency and accuracy of treatment effects on insect behavioral traits across replicate experiments. We successfully reproduced the overall statistical treatment effect in 83% of the replicate experiments, but overall effect size replication was achieved in only 66% of the replicates. Thus, though demonstrating sufficient reproducibility in some measures, this study also provides the first experimental evidence for cases of poor reproducibility in insect experiments. Our findings further show that reasons causing poor reproducibility established in rodent research also hold for other study organisms and research questions. We believe that a rethinking of current best practices is required to face reproducibility issues in insect studies but also across disciplines. Specifically, we advocate for adopting open research practices and the implementation of methodological strategies that reduce bias and problems arising from over-standardization. With respect to the latter, the introduction of systematic variation through multi-laboratory or heterogenized designs may contribute to improved reproducibility in studies involving any living organisms.\n\nInsect studies, like other research fields, can face challenges with reproducibility. Using a 3x3 experimental design across three laboratory sites, three insect species, and three independent experiments, this study reveals cases of both sufficient and poor reproducibility, highlighting critical opportunities for improving experimental rigor in insect research.\n"
+        ],
+        "author_display": [
+          "Carolin Mundinger",
+          "Nora K. E. Schulz",
+          "Pragya Singh",
+          "Steven Janz",
+          "Maximilian Schurig",
+          "Jacob Seidemann",
+          "Joachim Kurtz",
+          "Caroline M\u00fcller",
+          "Holger Schielzeth",
+          "Vanessa T. von Kortzfleisch",
+          "S. Helene Richter"
+        ],
+        "id": "10.1371/journal.pbio.3003019",
+        "journal": "PLOS Biology",
+        "publication_date": "2025-04-22T00:00:00Z",
+        "title": "Testing the reproducibility of ecological studies on insect behavior in a multi-laboratory setting identifies opportunities for improving experimental rigor"
+      },
+      {
+        "abstract": [
+          "\n        Although a highly heritable and disabling disease, bipolar disorder's (BD) genetic variants have been challenging to identify. We present new genotype data for 1,190 cases and 401 controls and perform a genome-wide association study including additional samples for a total of 2,191 cases and 1,434 controls. We do not detect genome-wide significant associations for individual loci; however, across all SNPs, we show an association between the power to detect effects calculated from a previous genome-wide association study and evidence for replication (P\u200a=\u200a1.5\u00d710\u22127). To demonstrate that this result is not likely to be a false positive, we analyze replication rates in a large meta-analysis of height and show that, in a large enough study, associations replicate as a function of power, approaching a linear relationship. Within BD, SNPs near exons exhibit a greater probability of replication, supporting an enrichment of reproducible associations near functional regions of genes. These results indicate that there is likely common genetic variation associated with BD near exons (\u00b110 kb) that could be identified in larger studies and, further, provide a framework for assessing the potential for replication when combining results from multiple studies.\n      Author Summary: Bipolar disorder (BD) is a highly heritable disease that has been difficult to characterize genetically. We have genotyped 1,190 BD cases and 401 controls to find regions of the genome associated with BD. After combining these data with previously existing genotyped samples, we did not find any genome-wide significant associations. However, when we used an additional study to prioritize loci for replication and meta-analysis purposes, we found that we were more likely to see an association in our sample with variants for which we had the highest power. We quantified this effect using logistic regression and saw a strong association between power to detect an effect based on an initial study's results and replication P-value in a second study (P\u200a=\u200a1.5\u00d710\u22127), supporting the presence of shared genetic risk factors across the studies. Moreover, this association was stronger when we restricted analysis to SNPs near coding regions, and it was further enriched when SNPs had the same direction of effect in both studies. This result supports the presence of genetic factors underlying BD near exons whose collective effect results in a detectable signal and provides a framework for assessing the potential for replication when combining results from multiple studies. "
+        ],
+        "author_display": [
+          "Erin N. Smith",
+          "Daniel L. Koller",
+          "Corrie Panganiban",
+          "Szabolcs Szelinger",
+          "Peng Zhang",
+          "Judith A. Badner",
+          "Thomas B. Barrett",
+          "Wade H. Berrettini",
+          "Cinnamon S. Bloss",
+          "William Byerley",
+          "William Coryell",
+          "Howard J. Edenberg",
+          "Tatiana Foroud",
+          "Elliot S. Gershon",
+          "Tiffany A. Greenwood",
+          "Yiran Guo",
+          "Maria Hipolito",
+          "Brendan J. Keating",
+          "William B. Lawson",
+          "Chunyu Liu",
+          "Pamela B. Mahon",
+          "Melvin G. McInnis",
+          "Francis J. McMahon",
+          "Rebecca McKinney",
+          "Sarah S. Murray",
+          "Caroline M. Nievergelt",
+          "John I. Nurnberger Jr.",
+          "Evaristus A. Nwulia",
+          "James B. Potash",
+          "John Rice",
+          "Thomas G. Schulze",
+          "William A. Scheftner",
+          "Paul D. Shilling",
+          "Peter P. Zandi",
+          "Sebastian Z\u00f6llner",
+          "David W. Craig",
+          "Nicholas J. Schork",
+          "John R. Kelsoe"
+        ],
+        "id": "10.1371/journal.pgen.1002134",
+        "journal": "PLoS Genetics",
+        "publication_date": "2011-06-30T00:00:00Z",
+        "title": "Genome-Wide Association of Bipolar Disorder Suggests an Enrichment of Replicable Associations in Regions near Genes"
+      },
+      {
+        "abstract": [
+          "\nAccording to GLOMOsys (the GLObal versus LOcal processing MOdel, a systems account), an important distinction is that between a local and a global processing system: The former processes information in parts, the latter processes it globally. These systems can be activated by perceptual processing and carry over to subsequent conceptual processing, in particular to analytical and creative thought. A conceptual and a high-powered close replication of previously reported studies test predictions of GLOMOsys for analytical thought and for analytical and creative thought, respectively. The present studies found no evidence that processing style primed via the Navon letter task has an impact on creative or analytic thought.\n"
+        ],
+        "author_display": [
+          "Karl Christoph Klauer",
+          "Henrik Singmann"
+        ],
+        "id": "10.1371/journal.pone.0132885",
+        "journal": "PLOS ONE",
+        "publication_date": "2015-10-15T00:00:00Z",
+        "title": "Does Global and Local Vision Have an Impact on Creative and Analytic Thought? Two Failed Replications"
+      },
+      {
+        "abstract": [
+          "\nRecent genetic association studies have implicated several candidate susceptibility variants for schizophrenia among general populations. Rs1344706, an intronic SNP within ZNF804A, was identified as one of the most compelling candidate risk SNPs for schizophrenia in Europeans through genome-wide association studies (GWASs) and replications as well as large-scale meta-analyses. However, in Han Chinese, the results for rs1344706 are inconsistent, and whether rs1344706 is an authentic risk SNP for schizophrenia in Han Chinese is inconclusive. Here, we conducted a systematic meta-analysis of rs1344706 with schizophrenia in Chinese population by combining all available case-control samples (N\u200a=\u200a12), including a total of 8,982 cases and 12,342 controls. The results of our meta-analysis were not able to confirm an association of rs1344706 A-allele with schizophrenia (p\u200a=\u200a0.10, odds ratio\u200a=\u200a1.06, 95% confidence interval\u200a=\u200a0.99\u20131.13). Such absence of association was further confirmed by the non-superiority test (p\u200a=\u200a0.0003), suggesting that rs1344706 is not a risk SNP for schizophrenia in Han Chinese. Detailed examinations of individual samples revealed potential sampling bias in previous replication studies in Han Chinese. The absence of rs1344706 association in Han Chinese suggest a potential genetic heterogeneity in the susceptibility of schizophrenia on this locus and also demonstrate the difficulties in replicating genome-wide association findings of schizophrenia across different ethnic populations.\n"
+        ],
+        "author_display": [
+          "Ming Li",
+          "Hui Zhang",
+          "Xiong-jian Luo",
+          "Lei Gao",
+          "Xue-bin Qi",
+          "Pierre-Antoine Gourraud",
+          "Bing Su"
+        ],
+        "id": "10.1371/journal.pone.0065780",
+        "journal": "PLoS ONE",
+        "publication_date": "2013-06-12T00:00:00Z",
+        "title": "Meta-Analysis Indicates That the European GWAS-Identified Risk SNP rs1344706 within ZNF804A Is Not Associated with Schizophrenia in Han Chinese Population"
+      }
+    ],
+    "numFound": 7459,
+    "start": 0
+  }
+}

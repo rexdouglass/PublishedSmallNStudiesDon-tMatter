@@ -1,0 +1,27 @@
+{
+  "artifact_id": "source_artifact_07c60eae0e043ae1",
+  "byte_size": 212329,
+  "file_name": "README.pdf",
+  "file_type": "pdf",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/README.pdf",
+  "page_count": 3,
+  "pages_preview": [
+    {
+      "page_number": 1,
+      "text_preview": "Star Wars: The Empirics Strike Back Replication files Abel Brodeur∗ Mathias Lé† Marc Sangnier‡ Yanos Zylberberg§ June 2015 Thisdocumentpresentsdatasetsandprogramsusedtoproduceempiricalevidencepresented in the article and the Online Appendix. Codes for this paper were tested in Stata 12. Data folder The Data folder contains source data and transformed data. • The Source/inputs sub-folder contains original PSID, QOG, VHLSS, and WDI datasets usedtoconstructtheempiricalinputs. TheSource/rawsub-foldercontainshand-collected test statistics. The Source/additional_data_list_full.xls spreadsheet contains ar- ticles and authors meta-data. • The Temp sub-folder contains temporary files created during data construction and data analysis. • The Final sub-folder contains the final dataset (final_stars_supp.dta) and output tables presented in the paper. Please see below for more information about data in final_stars_supp.dta. Figures folder The Figures folder contains figures presented in the paper. ∗University of Ottawa †Paris School of Economics and ACPR ‡Aix-Marseille Univ. (Aix-Marseille School of Economics), CNRS & EHESS §School of Economics Finance and Management, University of Bristol 1"
+    },
+    {
+      "page_number": 2,
+      "text_preview": "Programs folder The Programs folder contains all programs. • 0_master.do defines the working directory and describes all the programs. Here is a brief description of the programs. – 1_import_stats.do and 2_import_meta_data.do import raw collected data. – 3_final.docreates“Data/Final/final_stars_supp.dta”—thewell-organizeddataset from which all operations will be performed. – 4_export.docreatesintermediarydatasetsoverwhichparametricandnon-parametric estimations are performed. – 5_1_estimation_non_param.R is a R program performing non-parametric estima- tions. – 5_2_estimation_param.do performs parametric estimations. – benford.do produces data for Online Appendix’ table A4. – reg_discontinuity.do produces data for Online Appendix’ table A3. – Files labeled as graph_XXXX.do produce various figures presented in the paper and the Online Appendix. – Files labeled as summary_XXXX.do produce various tables presented in the paper and the Online Appendix. • The simulations sub-folder contains do-files used to construct empirical inputs. Description of final data final_stars_supp.dta contains the final dataset from which estimations will be performed. • See table A1 in the Online Appendix for the description of year, journal_id, issue, article_page,first_author,num_authors,model,table_panel,type,type_emp,row, column, eye_catcher, main, data_availability, codes_availability, ras, thanks, field, field_2, negative_result. • editor_d and editor_d_before denote the shares of editors among an article’s authors at time of publication and before publication. tenured_x and non_tenured_x denote the shares of tenured and non-tenured authors x years before publication. phd_age is the average PhD-age of the article’s authors. • coefficient,p_value,standard_deviation,standard_deviation_2,standard_deviation_3, t_stat, t_stat_2, and t_stat_3 are the captured data as they appear in the published article. They are stored as text. • For each of variable among coefficient etc., variable_num is the numerical version of variable. 2"
+    },
+    {
+      "page_number": 3,
+      "text_preview": "• For each of variable among coefficient etc., variable_num_sm is de-rounded numerical version of variable. See the main text and 3_final.do for the de-rounding method. • t_stat_raw is the test statistic of interest created from the numerical version of captured variables. • t_stat_sm is the test statistic of interest created from the de-rounded numerical version of captured variables. • For each of variable among coefficient etc., precision_variable is the precision of variable. precision is the precision associated with the test statistic. See the main text and 3_final.do for more information. • Variables obs_by_article, obs_by_table, tab_by_article are intermediary variables usedtoconstructweight_articleandweight_table. Seethemaintextand3_final.do for more information about weights. weight_table_round and weight_article_round are weights transformed into integers. • Variables starting with D_ are dummy variables used to construct sub-samples. They are created in 3_final.do. 3"
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "sample_kind": "pdf_text",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sampled_page_count": 3,
+  "sha256": "0c4914412e9d0fcc89449fd0d46696bc0d3a527dd44c71f08222ce16ea0121f9"
+}

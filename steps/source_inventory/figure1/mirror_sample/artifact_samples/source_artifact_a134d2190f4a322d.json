@@ -1,0 +1,734 @@
+{
+  "artifact_id": "source_artifact_a134d2190f4a322d",
+  "byte_size": 24644193,
+  "file_name": "raw__trolleyMultilabReplication-master.zip",
+  "file_type": "zip",
+  "local_path": "data/raw/replication_projects/lead_harvest/psa_006_trolley/raw__trolleyMultilabReplication-master.zip",
+  "member_count": 120,
+  "members_preview": [
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/"
+    },
+    {
+      "compress_size": 46,
+      "file_size": 53,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/.Rbuildignore"
+    },
+    {
+      "compress_size": 66,
+      "file_size": 72,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/.gitignore"
+    },
+    {
+      "compress_size": 672,
+      "file_size": 1448,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/DESCRIPTION"
+    },
+    {
+      "compress_size": 325,
+      "file_size": 979,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/NAMESPACE"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/R/"
+    },
+    {
+      "compress_size": 367,
+      "file_size": 1026,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/add_ind_col_scale.R"
+    },
+    {
+      "compress_size": 419,
+      "file_size": 1043,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/aggregate_inferences.R"
+    },
+    {
+      "compress_size": 402,
+      "file_size": 864,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_additional_table.R"
+    },
+    {
+      "compress_size": 1017,
+      "file_size": 3860,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_contact_stat.R"
+    },
+    {
+      "compress_size": 1132,
+      "file_size": 3211,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_culture_utilitarianism.R"
+    },
+    {
+      "compress_size": 1718,
+      "file_size": 9453,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_intention_stats.R"
+    },
+    {
+      "compress_size": 1424,
+      "file_size": 4942,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_interaction_stats.R"
+    },
+    {
+      "compress_size": 1038,
+      "file_size": 3739,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_study1_stat.R"
+    },
+    {
+      "compress_size": 1287,
+      "file_size": 5100,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/calculate_study2_stat.R"
+    },
+    {
+      "compress_size": 468,
+      "file_size": 1037,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/create_plot_country.R"
+    },
+    {
+      "compress_size": 572,
+      "file_size": 1456,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/create_plot_country_utilitarianism.R"
+    },
+    {
+      "compress_size": 441,
+      "file_size": 927,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/create_plot_ind_col.R"
+    },
+    {
+      "compress_size": 761,
+      "file_size": 2218,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/create_plot_study1.R"
+    },
+    {
+      "compress_size": 741,
+      "file_size": 1987,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/create_plot_study2.R"
+    },
+    {
+      "compress_size": 435,
+      "file_size": 1034,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/draw_values.R"
+    },
+    {
+      "compress_size": 486,
+      "file_size": 1254,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/generate_dataset.R"
+    },
+    {
+      "compress_size": 996,
+      "file_size": 2383,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/geom_flat_violin.R"
+    },
+    {
+      "compress_size": 560,
+      "file_size": 1819,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/get_lmbf_inference.R"
+    },
+    {
+      "compress_size": 600,
+      "file_size": 1719,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/get_ttestbf_inference.R"
+    },
+    {
+      "compress_size": 254,
+      "file_size": 406,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/my_bf_extractor.R"
+    },
+    {
+      "compress_size": 698,
+      "file_size": 1938,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/prepare_plot_data_country.R"
+    },
+    {
+      "compress_size": 592,
+      "file_size": 1474,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/prepare_plot_data_country_means.R"
+    },
+    {
+      "compress_size": 501,
+      "file_size": 1186,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/prepare_plot_data_study1.R"
+    },
+    {
+      "compress_size": 527,
+      "file_size": 1284,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/prepare_plot_data_study2.R"
+    },
+    {
+      "compress_size": 1085,
+      "file_size": 4920,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/simulate.R"
+    },
+    {
+      "compress_size": 240,
+      "file_size": 524,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/summarise_plot_data.R"
+    },
+    {
+      "compress_size": 317,
+      "file_size": 624,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/summarise_study.R"
+    },
+    {
+      "compress_size": 655,
+      "file_size": 655,
+      "file_type": "rda",
+      "filename": "trolleyMultilabReplication-master/R/sysdata.rda"
+    },
+    {
+      "compress_size": 200,
+      "file_size": 553,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/theme_trolley.R"
+    },
+    {
+      "compress_size": 340,
+      "file_size": 1519,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/tidy_culture_utilitarianism.R"
+    },
+    {
+      "compress_size": 461,
+      "file_size": 2070,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/tidy_interaction_stats.R"
+    },
+    {
+      "compress_size": 3494,
+      "file_size": 16445,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/trolley.R"
+    },
+    {
+      "compress_size": 149,
+      "file_size": 207,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/utils-pipe.R"
+    },
+    {
+      "compress_size": 68,
+      "file_size": 68,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/R/utils.R"
+    },
+    {
+      "compress_size": 1207,
+      "file_size": 3022,
+      "file_type": "rmd",
+      "filename": "trolleyMultilabReplication-master/README.Rmd"
+    },
+    {
+      "compress_size": 1139,
+      "file_size": 2874,
+      "file_type": "md",
+      "filename": "trolleyMultilabReplication-master/README.md"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/data-raw/"
+    },
+    {
+      "compress_size": 197628,
+      "file_size": 463207,
+      "file_type": "csv",
+      "filename": "trolleyMultilabReplication-master/data-raw/collectivism_similarity_matrix-from_culturaldistance.com.csv"
+    },
+    {
+      "compress_size": 545,
+      "file_size": 1070,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/data-raw/cultural_distance.R"
+    },
+    {
+      "compress_size": 1702,
+      "file_size": 7112,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/data-raw/trolley.R"
+    },
+    {
+      "compress_size": 587,
+      "file_size": 1405,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/data-raw/trolley_infosheet.R"
+    },
+    {
+      "compress_size": 549,
+      "file_size": 1061,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/data-raw/trolley_preprocessed.R"
+    },
+    {
+      "compress_size": 614,
+      "file_size": 1349,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/data-raw/trolley_raw.R"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/data/"
+    },
+    {
+      "compress_size": 2158,
+      "file_size": 2158,
+      "file_type": "rda",
+      "filename": "trolleyMultilabReplication-master/data/cultural_distance.rda"
+    },
+    {
+      "compress_size": 2651072,
+      "file_size": 2662822,
+      "file_type": "rda",
+      "filename": "trolleyMultilabReplication-master/data/trolley.rda"
+    },
+    {
+      "compress_size": 2530981,
+      "file_size": 2541944,
+      "file_type": "rda",
+      "filename": "trolleyMultilabReplication-master/data/trolley_preprocessed.rda"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/dev/"
+    },
+    {
+      "compress_size": 795,
+      "file_size": 3080,
+      "file_type": "r",
+      "filename": "trolleyMultilabReplication-master/dev/dev.R"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/inst/"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/inst/extdata/"
+    },
+    {
+      "compress_size": 12252,
+      "file_size": 61036,
+      "file_type": "csv",
+      "filename": "trolleyMultilabReplication-master/inst/extdata/trolley_infosheet.csv"
+    },
+    {
+      "compress_size": 7403354,
+      "file_size": 74648113,
+      "file_type": "csv",
+      "filename": "trolleyMultilabReplication-master/inst/extdata/trolley_raw.csv"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/man/"
+    },
+    {
+      "compress_size": 314,
+      "file_size": 615,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/add_ind_col_scale.Rd"
+    },
+    {
+      "compress_size": 301,
+      "file_size": 564,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/aggregate_inferences.Rd"
+    },
+    {
+      "compress_size": 233,
+      "file_size": 439,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_additional_table.Rd"
+    },
+    {
+      "compress_size": 370,
+      "file_size": 710,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_contact_stat.Rd"
+    },
+    {
+      "compress_size": 328,
+      "file_size": 655,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_culture_utilitarianism.Rd"
+    },
+    {
+      "compress_size": 367,
+      "file_size": 712,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_intention_stat.Rd"
+    },
+    {
+      "compress_size": 490,
+      "file_size": 1079,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_interaction_stats.Rd"
+    },
+    {
+      "compress_size": 380,
+      "file_size": 751,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_study1_stat.Rd"
+    },
+    {
+      "compress_size": 369,
+      "file_size": 724,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/calculate_study2_stat.Rd"
+    },
+    {
+      "compress_size": 237,
+      "file_size": 405,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/create_plot_country.Rd"
+    },
+    {
+      "compress_size": 258,
+      "file_size": 488,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/create_plot_country_utilitarianism.Rd"
+    },
+    {
+      "compress_size": 256,
+      "file_size": 430,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/create_plot_ind_col.Rd"
+    },
+    {
+      "compress_size": 251,
+      "file_size": 461,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/create_plot_study1.Rd"
+    },
+    {
+      "compress_size": 253,
+      "file_size": 459,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/create_plot_study2.Rd"
+    },
+    {
+      "compress_size": 393,
+      "file_size": 749,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/draw_values.Rd"
+    },
+    {
+      "compress_size": 343,
+      "file_size": 682,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/generate_dataset.Rd"
+    },
+    {
+      "compress_size": 385,
+      "file_size": 638,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/geom_flat_violin.Rd"
+    },
+    {
+      "compress_size": 311,
+      "file_size": 536,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/get_lmbf_inference.Rd"
+    },
+    {
+      "compress_size": 374,
+      "file_size": 711,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/get_ttestbf_inference.Rd"
+    },
+    {
+      "compress_size": 236,
+      "file_size": 387,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/my_bf_extractor.Rd"
+    },
+    {
+      "compress_size": 186,
+      "file_size": 261,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/pipe.Rd"
+    },
+    {
+      "compress_size": 283,
+      "file_size": 534,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/prepare_plot_data_country.Rd"
+    },
+    {
+      "compress_size": 292,
+      "file_size": 563,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/prepare_plot_data_country_means.Rd"
+    },
+    {
+      "compress_size": 317,
+      "file_size": 642,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/prepare_plot_data_study1.Rd"
+    },
+    {
+      "compress_size": 318,
+      "file_size": 642,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/prepare_plot_data_study2.Rd"
+    },
+    {
+      "compress_size": 222,
+      "file_size": 418,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/summarise_plot_data.Rd"
+    },
+    {
+      "compress_size": 263,
+      "file_size": 457,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/summarise_study.Rd"
+    },
+    {
+      "compress_size": 218,
+      "file_size": 415,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/tidy_culture_utilitarianism.Rd"
+    },
+    {
+      "compress_size": 210,
+      "file_size": 387,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/tidy_interaction_stats.Rd"
+    },
+    {
+      "compress_size": 3566,
+      "file_size": 16279,
+      "file_type": "rd",
+      "filename": "trolleyMultilabReplication-master/man/trolley.Rd"
+    },
+    {
+      "compress_size": 235,
+      "file_size": 356,
+      "file_type": "rproj",
+      "filename": "trolleyMultilabReplication-master/trolleyMultilabReplication.Rproj"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/vignettes/"
+    },
+    {
+      "compress_size": 11,
+      "file_size": 11,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/vignettes/.gitignore"
+    },
+    {
+      "compress_size": 1931,
+      "file_size": 9405,
+      "file_type": "rmd",
+      "filename": "trolleyMultilabReplication-master/vignettes/additional_analysis_R1.Rmd"
+    },
+    {
+      "compress_size": 124896,
+      "file_size": 130502,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/additional_analysis_R1.pdf"
+    },
+    {
+      "compress_size": 0,
+      "file_size": 0,
+      "file_type": "unknown",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/"
+    },
+    {
+      "compress_size": 2354573,
+      "file_size": 2425281,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig10.pdf"
+    },
+    {
+      "compress_size": 10085,
+      "file_size": 10932,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig11.pdf"
+    },
+    {
+      "compress_size": 4499,
+      "file_size": 5042,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig12.pdf"
+    },
+    {
+      "compress_size": 651398,
+      "file_size": 669765,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig1_2.pdf"
+    },
+    {
+      "compress_size": 1734315,
+      "file_size": 1806567,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig3_4.pdf"
+    },
+    {
+      "compress_size": 10325,
+      "file_size": 11006,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig5.pdf"
+    },
+    {
+      "compress_size": 4497,
+      "file_size": 5042,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig6.pdf"
+    },
+    {
+      "compress_size": 10149,
+      "file_size": 10813,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig7.pdf"
+    },
+    {
+      "compress_size": 4507,
+      "file_size": 5050,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig8.pdf"
+    },
+    {
+      "compress_size": 906896,
+      "file_size": 937815,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/fig9.pdf"
+    },
+    {
+      "compress_size": 4411,
+      "file_size": 4955,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs1.pdf"
+    },
+    {
+      "compress_size": 7411,
+      "file_size": 8018,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs2.pdf"
+    },
+    {
+      "compress_size": 3952,
+      "file_size": 4395,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs3.pdf"
+    },
+    {
+      "compress_size": 7516,
+      "file_size": 8125,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs4.pdf"
+    },
+    {
+      "compress_size": 3980,
+      "file_size": 4429,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs5.pdf"
+    },
+    {
+      "compress_size": 7566,
+      "file_size": 8186,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs6.pdf"
+    },
+    {
+      "compress_size": 3969,
+      "file_size": 4414,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs7.pdf"
+    },
+    {
+      "compress_size": 7571,
+      "file_size": 8168,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs8.pdf"
+    },
+    {
+      "compress_size": 3991,
+      "file_size": 4437,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/figures/figs9.pdf"
+    },
+    {
+      "compress_size": 6363,
+      "file_size": 40083,
+      "file_type": "rmd",
+      "filename": "trolleyMultilabReplication-master/vignettes/manuscript.Rmd"
+    },
+    {
+      "compress_size": 9382,
+      "file_size": 42490,
+      "file_type": "log",
+      "filename": "trolleyMultilabReplication-master/vignettes/manuscript.log"
+    },
+    {
+      "compress_size": 5681494,
+      "file_size": 5909269,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/manuscript.pdf"
+    },
+    {
+      "compress_size": 6639,
+      "file_size": 31776,
+      "file_type": "rmd",
+      "filename": "trolleyMultilabReplication-master/vignettes/supplementary_materials.Rmd"
+    },
+    {
+      "compress_size": 203940,
+      "file_size": 231636,
+      "file_type": "pdf",
+      "filename": "trolleyMultilabReplication-master/vignettes/supplementary_materials.pdf"
+    }
+  ],
+  "parent_corpus_database_id": "lead_harvest:psa_006_trolley",
+  "sample_kind": "zip_inventory",
+  "sampled_at": "2026-05-04T00:17:59",
+  "sha256": "15478ced6d24f1062695555ba257a6156691b277e504c4e89bb8fb24423b700a"
+}

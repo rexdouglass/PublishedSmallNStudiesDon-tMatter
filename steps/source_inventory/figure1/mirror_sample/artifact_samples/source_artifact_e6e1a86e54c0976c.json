@@ -1,0 +1,87 @@
+{
+  "artifact_id": "source_artifact_e6e1a86e54c0976c",
+  "byte_size": 20776,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "T_n",
+    "T_mean",
+    "T_sd",
+    "C_n",
+    "C_mean",
+    "C_sd",
+    "original_es_in_MA"
+  ],
+  "estimated_data_rows": 308,
+  "file_name": "ft155.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/lnRR/des_stat/ft155.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "C_mean": 442.0,
+      "C_n": 6,
+      "C_sd": 211.0,
+      "T_mean": 188.0,
+      "T_n": 6,
+      "T_sd": 128.0,
+      "obs_ID": "obs001",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Bolte et al. (2013)",
+      "year_pub": 2013
+    },
+    {
+      "C_mean": 442.0,
+      "C_n": 6,
+      "C_sd": 211.0,
+      "T_mean": 424.0,
+      "T_n": 6,
+      "T_sd": 267.0,
+      "obs_ID": "obs002",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Bolte et al. (2013)",
+      "year_pub": 2013
+    },
+    {
+      "C_mean": 351.0,
+      "C_n": 24,
+      "C_sd": 135.42,
+      "T_mean": 206.0,
+      "T_n": 45,
+      "T_sd": 104.0,
+      "obs_ID": "obs003",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Bolte and Villanueva (2006)",
+      "year_pub": 2006
+    },
+    {
+      "C_mean": 125.06,
+      "C_n": 3,
+      "C_sd": 43.56,
+      "T_mean": 212.95,
+      "T_n": 3,
+      "T_sd": 29.9,
+      "obs_ID": "obs004",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Brassard et al. (2011)",
+      "year_pub": 2011
+    },
+    {
+      "C_mean": 126.1,
+      "C_n": 3,
+      "C_sd": 11.9,
+      "T_mean": 138.66,
+      "T_n": 3,
+      "T_sd": 28.15,
+      "obs_ID": "obs005",
+      "original_es_in_MA": "lnRR",
+      "study_ID": "Brassard et al. (2011)",
+      "year_pub": 2011
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "ed120518c79ee7f252484d3cde39d0a61d48d160d1864815bf9826d969ad45be"
+}

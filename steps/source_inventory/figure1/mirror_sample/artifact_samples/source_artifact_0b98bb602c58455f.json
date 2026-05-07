@@ -1,0 +1,431 @@
+{
+  "artifact_id": "source_artifact_0b98bb602c58455f",
+  "byte_size": 14224,
+  "file_name": "005_pilot_10_1200_jco_2005_01_072.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/005_pilot_10_1200_jco_2005_01_072.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1200/jco.2005.01.072\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Purpose</h4>To select one of two chemoradiotherapy regimens for locally advanced squamous cell carcinoma (SCC) of the head and neck as the experimental arm for the next Trans-Tasman Radiation Oncology Group phase III trial.<h4>Patients and methods</h4>One hundred twenty-two previously untreated patients with stage III/IV SCC of the head and neck were randomized to receive definitive radiotherapy (70 Gy in 7 weeks) concurrently with either cisplatin (75 mg/m(2)) plus tirapazamine (290 mg/m(2)/d) on day 2 of weeks 1, 4, and 7, and tirapazamine alone (160 mg/m(2)/d) on days 1, 3, and 5 of weeks 2 and 3 (TPZ/CIS), or cisplatin (50 mg/m(2)) on day 1 and infusional fluorouracil (360 mg/m(2)/d) on days 1 through 5 of weeks 6 and 7 (chemoboost).<h4>Results</h4>Three-year failure-free survival rates were 55% with TPZ/CIS (95% CI, 39% to 70%) and 44% with chemoboost (95% CI, 30% to 60%; log-rank P = .16). Three-year locoregional failure-free rates were 84% in the TPZ/CIS arm (95% CI, 71% to 92%) and 66% in the chemoboost arm (95% CI, 51% to 79%; P = .069). More febrile neutropenia and grade 3 or 4 late mucous membrane toxicity were observed with TPZ/CIS, while acute skin radiation reaction was more severe and prolonged with chemoboost. Compliance with protocol treatment was satisfactory on both arms.<h4>Conclusion</h4>Both regimens are feasible and are associated with significant but acceptable toxicity profiles in the cooperative group setting. Based on the promising efficacy seen in this trial, TPZ/CIS is being evaluated in a large phase III trial.",
+          "affiliation": "Division of Haematology and Medical Oncology, University of Melbourne, Peter MacCallum Cancer Centre, Locked Bag No. 1, A'Beckett St, Melbourne 8006, Australia. Danny.Rischin@petermac.org",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8010-0789"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4177-9503"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7556-0542"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Haematology and Medical Oncology, University of Melbourne, Peter MacCallum Cancer Centre, Locked Bag No. 1, A'Beckett St, Melbourne 8006, Australia. Danny.Rischin@petermac.org"
+                    }
+                  ]
+                },
+                "firstName": "Danny",
+                "fullName": "Rischin D",
+                "initials": "D",
+                "lastName": "Rischin"
+              },
+              {
+                "firstName": "Lester",
+                "fullName": "Peters L",
+                "initials": "L",
+                "lastName": "Peters"
+              },
+              {
+                "firstName": "Richard",
+                "fullName": "Fisher R",
+                "initials": "R",
+                "lastName": "Fisher"
+              },
+              {
+                "firstName": "Andrew",
+                "fullName": "Macann A",
+                "initials": "A",
+                "lastName": "Macann"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4177-9503"
+                },
+                "firstName": "Jim",
+                "fullName": "Denham J",
+                "initials": "J",
+                "lastName": "Denham"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Poulsen M",
+                "initials": "M",
+                "lastName": "Poulsen"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Jackson M",
+                "initials": "M",
+                "lastName": "Jackson"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7556-0542"
+                },
+                "firstName": "Lizbeth",
+                "fullName": "Kenny L",
+                "initials": "L",
+                "lastName": "Kenny"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Penniment M",
+                "initials": "M",
+                "lastName": "Penniment"
+              },
+              {
+                "firstName": "June",
+                "fullName": "Corry J",
+                "initials": "J",
+                "lastName": "Corry"
+              },
+              {
+                "firstName": "David",
+                "fullName": "Lamb D",
+                "initials": "D",
+                "lastName": "Lamb"
+              },
+              {
+                "firstName": "Bev",
+                "fullName": "McClure B",
+                "initials": "B",
+                "lastName": "McClure"
+              }
+            ]
+          },
+          "authorString": "Rischin D, Peters L, Fisher R, Macann A, Denham J, Poulsen M, Jackson M, Kenny L, Penniment M, Corry J, Lamb D, McClure B.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Antineoplastic Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Triazines",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Antimetabolites, Antineoplastic",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Fluorouracil",
+                "registryNumber": "U3P01618RT"
+              },
+              {
+                "name": "Cisplatin",
+                "registryNumber": "Q20Q21Q62J"
+              },
+              {
+                "name": "tirapazamine",
+                "registryNumber": "1UD32YR59G"
+              }
+            ]
+          },
+          "citedByCount": 177,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2005-01-28",
+          "dateOfCreation": "2004-12-31",
+          "dateOfRevision": "2022-04-08",
+          "doi": "10.1200/jco.2005.01.072",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2008-01-29",
+          "firstPublicationDate": "2005-01-01",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1200/JCO.2005.01.072"
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "15625362",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2005 Jan",
+            "issue": "1",
+            "journal": {
+              "essn": "1527-7755",
+              "isoabbreviation": "J Clin Oncol",
+              "issn": "0732-183X",
+              "medlineAbbreviation": "J Clin Oncol",
+              "nlmid": "8309333",
+              "title": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+            },
+            "journalIssueId": 1213546,
+            "monthOfPublication": 1,
+            "printPublicationDate": "2005-01-01",
+            "volume": "23",
+            "yearOfPublication": 2005
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Carcinoma, Squamous Cell",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "RT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "radiotherapy"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Head and Neck Neoplasms",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "RT",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "radiotherapy"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Cisplatin",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Fluorouracil",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Triazines",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    },
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Antineoplastic Agents",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Antimetabolites, Antineoplastic",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Antineoplastic Combined Chemotherapy Protocols",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Combined Modality Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Radiotherapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AE",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "adverse effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Survival Rate",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Patient Compliance",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Tirapazamine",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "79-87",
+          "pmid": "15625362",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Clinical Trial, Phase II",
+              "Clinical Trial",
+              "Research Support, Non-U.S. Gov't",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2005",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Tirapazamine, Cisplatin, and Radiation versus Fluorouracil, Cisplatin, and Radiation in patients with locally advanced head and neck cancer: a randomized phase II trial of the Trans-Tasman Radiation Oncology Group (TROG 98.02)."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "a822a7be8d6cd3ea529babddfc674ce722090fa2d31458f4656116d41c58b101"
+}

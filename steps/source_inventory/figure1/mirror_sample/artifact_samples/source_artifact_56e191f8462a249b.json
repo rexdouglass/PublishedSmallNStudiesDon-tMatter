@@ -1,0 +1,352 @@
+{
+  "artifact_id": "source_artifact_56e191f8462a249b",
+  "byte_size": 11942,
+  "file_name": "055_full_10_1136_bmj_d4661.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/055_full_10_1136_bmj_d4661.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1136/bmj.d4661\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objectives</h4>To determine the effects of adding an oxytocin infusion to bolus oxytocin on blood loss at elective caesarean section.<h4>Design</h4>Double blind, placebo controlled, randomised trial, conducted from February 2008 to June 2010.<h4>Setting</h4>Five maternity hospitals in the Republic of Ireland.<h4>Participants</h4>2069 women booked for elective caesarean section at term with a singleton pregnancy. We excluded women with placenta praevia, thrombocytopenia, coagulopathies, previous major obstetric haemorrhage (>1000 mL), or known fibroids; women receiving anticoagulant treatment; those who did not understand English; and those who were younger than 18 years.<h4>Intervention</h4>Intervention group: intravenous slow 5 IU oxytocin bolus over 1 minute and additional 40 IU oxytocin infusion in 500 mL of 0.9% saline solution over 4 hours (bolus and infusion). Placebo group: 5 IU oxytocin bolus over 1 minute and 500 mL of 0.9% saline solution over 4 hours (placebo infusion) (bolus only). Main outcomes Major obstetric haemorrhage (blood loss >1000 mL) and need for an additional uterotonic agent.<h4>Results</h4>We found no difference in the occurrence of major obstetric haemorrhage between the groups (bolus and infusion 15.7% (158/1007) v bolus only 16.0% (159/994), adjusted odds ratio 0.98, 95% confidence intervals 0.77 to 1.25, P=0.86). The need for an additional uterotonic agent in the bolus and infusion group was lower than that in the bolus only group (12.2% (126/1033) v 18.4% (189/1025), 0.61, 0.48 to 0.78, P<0.001). Women were less likely to have a major obstetric haemorrhage in the bolus and infusion group than in the bolus only group if the obstetrician was junior rather than senior (0.57, 0.35 to 0.92, P=0.02).<h4>Conclusion</h4>The addition of an oxytocin infusion after caesarean delivery reduces the need for additional uterotonic agents but does not affect the overall occurrence of major obstetric haemorrhage. Trial Registration Current Controlled Trials ISRCTN17813715.",
+          "affiliation": "Academic Department of Obstetrics and Gynaecology, Trinity College Dublin, Coombe Women and Infants University Hospital, Dublin 8, Ireland.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6074-6718"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3477-6494"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-5100-1981"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0450-1606"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Academic Department of Obstetrics and Gynaecology, Trinity College Dublin, Coombe Women and Infants University Hospital, Dublin 8, Ireland."
+                    }
+                  ]
+                },
+                "firstName": "Sharon R",
+                "fullName": "Sheehan SR",
+                "initials": "SR",
+                "lastName": "Sheehan"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0450-1606"
+                },
+                "firstName": "Alan A",
+                "fullName": "Montgomery AA",
+                "initials": "AA",
+                "lastName": "Montgomery"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Carey M",
+                "initials": "M",
+                "lastName": "Carey"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3477-6494"
+                },
+                "firstName": "Fionnuala M",
+                "fullName": "McAuliffe FM",
+                "initials": "FM",
+                "lastName": "McAuliffe"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-5100-1981"
+                },
+                "firstName": "Maeve",
+                "fullName": "Eogan M",
+                "initials": "M",
+                "lastName": "Eogan"
+              },
+              {
+                "firstName": "Ronan",
+                "fullName": "Gleeson R",
+                "initials": "R",
+                "lastName": "Gleeson"
+              },
+              {
+                "firstName": "Michael",
+                "fullName": "Geary M",
+                "initials": "M",
+                "lastName": "Geary"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6074-6718"
+                },
+                "firstName": "Deirdre J",
+                "fullName": "Murphy DJ",
+                "initials": "DJ",
+                "lastName": "Murphy"
+              },
+              {
+                "collectiveName": "ECSSIT Study Group"
+              }
+            ]
+          },
+          "authorString": "Sheehan SR, Montgomery AA, Carey M, McAuliffe FM, Eogan M, Gleeson R, Geary M, Murphy DJ, ECSSIT Study Group.",
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Oxytocin",
+                "registryNumber": "50-56-6"
+              },
+              {
+                "name": "Oxytocics",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "citedByCount": 60,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "dateOfCompletion": "2012-02-27",
+          "dateOfCreation": "2011-08-03",
+          "dateOfRevision": "2025-05-29",
+          "doi": "10.1136/bmj.d4661",
+          "electronicPublicationDate": "2011-08-01",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2011-08-05",
+          "firstPublicationDate": "2011-08-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3148015"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-08",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1136/bmj.d4661"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3148015"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MRC_",
+                "agency": "Medical Research Council",
+                "grantId": "G0800800",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "21807773",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2011 Aug",
+            "journal": {
+              "essn": "1756-1833",
+              "isoabbreviation": "BMJ",
+              "issn": "0959-8138",
+              "medlineAbbreviation": "BMJ",
+              "nlmid": "8900488",
+              "title": "BMJ (Clinical research ed.)"
+            },
+            "journalIssueId": 2470043,
+            "monthOfPublication": 8,
+            "printPublicationDate": "2011-08-01",
+            "volume": "343",
+            "yearOfPublication": 2011
+          },
+          "language": "eng",
+          "license": "cc by-nc",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Postpartum Hemorrhage",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Blood Loss, Surgical",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PC",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "prevention & control"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Oxytocin",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Oxytocics",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "AD",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "administration & dosage"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Drug Therapy, Combination",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cesarean Section",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Infusions, Intravenous",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Double-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Pregnancy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Elective Surgical Procedures",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "d4661",
+          "pmcid": "PMC3148015",
+          "pmid": "21807773",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Comparative Study",
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2011",
+          "publicationStatus": "epublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Oxytocin bolus versus oxytocin bolus and infusion for control of blood loss at elective caesarean section: double blind, placebo controlled, randomised trial."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "84b6129a15735e55c792844299c7efc7257921d220f836c0f6e97020a751c553"
+}

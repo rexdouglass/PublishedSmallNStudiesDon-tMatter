@@ -1,0 +1,3688 @@
+{
+  "hitCount": 97,
+  "nextCursorMark": "AoIIP+h8YSg0NzUzNDk4Mg==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"single-center\" \"multicenter\" \"failed to confirm\" \"randomized trial\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIP+h8YSg0NzUzNDk4Mg==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"single-center\" \"multicenter\" \"failed to confirm\" \"randomized trial\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "Postoperative pancreatic fistula (POPF) is the defining complication following pancreatectomy. The incidence of POPF after pancreatic resection remains high even at experienced centers, with associated patient morbidity, increased healthcare costs, and poorer oncologic outcomes. There is evidence that POPF is more frequent after distal pancreatectomy. On the basis of the premise that reduction in pancreatic exocrine secretion reduces the risk of fistula formation, somatostatin analogs (SSA) to prevent POPF and its sequelae have been studied for more than 30\u00a0years. However, evidence regarding their efficacy remains mixed. Early multicenter randomized control trials demonstrated a benefit of octreotide in reducing POPF, although subsequent single-center studies failed to confirm these results. Despite additional studies demonstrating a significant reduction in POPF with the use of newer SSAs including pasireotide and lanreotide, surgical practices in the use of somatostatin analogs in preventing POPF are highly variable. Herein, we review three decades of available data on SSA for POPF prophylaxis and highlight the need for pragmatic, focused, and data-driven design for future trials with modern agents.",
+        "affiliation": "Department of Surgery, University of Washington, Seattle, WA, USA. goodsk@uw.edu.",
+        "authMan": "Y",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Surgery, University of Washington, Seattle, WA, USA. goodsk@uw.edu."
+                  }
+                ]
+              },
+              "firstName": "Kristin E",
+              "fullName": "Goodsell KE",
+              "initials": "KE",
+              "lastName": "Goodsell"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Surgery, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              },
+              "firstName": "Sardar Shahmir B",
+              "fullName": "Chauhan SSB",
+              "initials": "SSB",
+              "lastName": "Chauhan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Surgery, University of Washington, Seattle, WA, USA."
+                  }
+                ]
+              },
+              "firstName": "Venu G",
+              "fullName": "Pillarisetty VG",
+              "initials": "VG",
+              "lastName": "Pillarisetty"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Surgery, University of Washington, Seattle, WA, USA."
+                  },
+                  {
+                    "affiliation": "Surgical Outcomes Research Center, University of Washington, Seattle, WA, USA."
+                  },
+                  {
+                    "affiliation": "Fred Hutchinson Cancer Center, Seattle, WA, USA."
+                  }
+                ]
+              },
+              "firstName": "Jonathan G",
+              "fullName": "Sham JG",
+              "initials": "JG",
+              "lastName": "Sham"
+            }
+          ]
+        },
+        "authorString": "Goodsell KE, Chauhan SSB, Pillarisetty VG, Sham JG.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Somatostatin",
+              "registryNumber": "51110-01-1"
+            },
+            {
+              "name": "Peptides, Cyclic",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Octreotide",
+              "registryNumber": "RWM8CCW8GP"
+            },
+            {
+              "name": "pasireotide",
+              "registryNumber": "98H1T17066"
+            },
+            {
+              "name": "lanreotide",
+              "registryNumber": "0G3DE8943Y"
+            }
+          ]
+        },
+        "citedByCount": 2,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2025-09-23",
+        "dateOfCreation": "2025-06-27",
+        "dateOfRevision": "2026-04-03",
+        "doi": "10.1245/s10434-025-17660-8",
+        "electronicPublicationDate": "2025-06-27",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-06-28",
+        "firstPublicationDate": "2025-06-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13046395"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-03",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1245/s10434-025-17660-8"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13046395"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13046395?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1245/s10434-025-17660-8"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "AI",
+              "agency": "NIAID NIH HHS",
+              "grantId": "R38 AI181011",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40576898",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "10",
+          "journal": {
+            "essn": "1534-4681",
+            "isoabbreviation": "Ann Surg Oncol",
+            "issn": "1068-9265",
+            "medlineAbbreviation": "Ann Surg Oncol",
+            "nlmid": "9420840",
+            "title": "Annals of surgical oncology"
+          },
+          "journalIssueId": 4020439,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "32",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "manuscriptId": "NIHMS2128360",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pancreatic Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "surgery"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Pancreatic Fistula",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  },
+                  {
+                    "abbreviation": "PC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Postoperative Complications",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Peptides, Cyclic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Octreotide",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Somatostatin",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "analogs & derivatives"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Pancreatectomy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "Y",
+        "pageInfo": "7382-7392",
+        "pmcid": "PMC13046395",
+        "pmid": "40576898",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Somatostatin Analogs for Preventing Postoperative Pancreatic Fistula: Past Evidence Reveals New Opportunities."
+      },
+      {
+        "abstractText": "Background Abdominoperineal resection (APR) is a common surgical approach for low rectal cancer (RC). With advancements in minimally invasive techniques, laparoscopic APR (LAPR) has gained popularity. However, comparative data on early postoperative complications between laparoscopic and open APR (OAPR) remain limited at Jinnah Postgraduate Medical Centre (JPMC), Karachi. Objective The primary endpoint of the study was to evaluate any 30-day postoperative complications. Secondary endpoints included surgical site infection (SSI), pulmonary complications, intraoperative blood loss, operative time, and length of hospital stay. The study aimed to compare these outcomes between laparoscopic and OAPR in patients with low RC. It was hypothesized that patients undergoing LAPR would have fewer early postoperative complications than those undergoing OAPR. Methodology This prospective, comparative observational study was conducted at JPMC, Karachi, from January 2024 to January 2025. A total of 90 patients diagnosed with low rectal adenocarcinoma were enrolled and divided equally into two groups: LAPR (Group A) and OAPR (Group B). Standardized surgical techniques were employed in both groups. Patients were monitored for 30 days postoperatively for complications such as SSIs, pulmonary issues, ileus, and reoperations. Statistical analysis was performed using IBM SPSS Statistics for Windows, Version 26.0 (Released 2018; IBM Corp., Armonk, NY, USA), with significance set at p < 0.05. Results The laparoscopic group had a longer mean operative time than the open group (195.2 \u00b1 23.4 vs. 158.7 \u00b1 20.1 minutes, p < 0.001) but showed reduced intraoperative blood loss (120.5 \u00b1 40.8 vs. 285.3 \u00b1 60.2 mL, p < 0.001), shorter hospital stay (6.2 \u00b1 1.4 vs. 9.3 \u00b1 2.1 days, p < 0.001), and fewer overall complications (20% vs. 51.1%, relative risk 0.39, p = 0.002). SSIs (8.9% vs. 24.4%, RR 0.37, p = 0.047) and pulmonary complications (2.2% vs. 13.3%, RR 0.17, p = 0.048) were also significantly lower in the laparoscopic group. Conclusions In this single-center prospective cohort, LAPR was associated with fewer early postoperative complications, lower blood loss, and shorter hospital stays than OAPR, despite longer operative time. These findings suggest that LAPR may be a reasonable option in appropriately selected patients, but confirmation in multicenter randomized studies with long-term oncologic outcomes is warranted.",
+        "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Sarkhail A",
+              "fullName": "Sayar SA",
+              "initials": "SA",
+              "lastName": "Sayar"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General Surgery, IIMCT-Pakistan Railway Hospital, Rawalpindi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Rehan",
+              "fullName": "Ahmed R",
+              "initials": "R",
+              "lastName": "Ahmed"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Syed",
+              "fullName": "Shafqatullah S",
+              "initials": "S",
+              "lastName": "Shafqatullah"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Surgery, Riphah International University, Rawalpindi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Muhammad",
+              "fullName": "Asad M",
+              "initials": "M",
+              "lastName": "Asad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Muhammad Osama",
+              "fullName": "Iqbal MO",
+              "initials": "MO",
+              "lastName": "Iqbal"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Resham",
+              "fullName": "Ali R",
+              "initials": "R",
+              "lastName": "Ali"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Raja",
+              "fullName": "Jawad R",
+              "initials": "R",
+              "lastName": "Jawad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Mukkaram",
+              "fullName": "Khan M",
+              "initials": "M",
+              "lastName": "Khan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Amna",
+              "fullName": "Fareed A",
+              "initials": "A",
+              "lastName": "Fareed"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "General and Colorectal Surgery, Jinnah Postgraduate Medical Centre, Karachi, PAK."
+                  }
+                ]
+              },
+              "firstName": "Uroosa",
+              "fullName": "Shadani U",
+              "initials": "U",
+              "lastName": "Shadani"
+            }
+          ]
+        },
+        "authorString": "Sayar SA, Ahmed R, Shafqatullah S, Asad M, Iqbal MO, Ali R, Jawad R, Khan M, Fareed A, Shadani U.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2025-11-17",
+        "dateOfCreation": "2025-11-17",
+        "dateOfRevision": "2025-11-20",
+        "doi": "10.7759/cureus.94533",
+        "electronicPublicationDate": "2025-10-14",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-17",
+        "firstPublicationDate": "2025-10-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12612777"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-15",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.7759/cureus.94533"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12612777"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12612777?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41246776",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "10",
+          "journal": {
+            "essn": "2168-8184",
+            "isoabbreviation": "Cureus",
+            "issn": "2168-8184",
+            "medlineAbbreviation": "Cureus",
+            "nlmid": "101596737",
+            "title": "Cureus"
+          },
+          "journalIssueId": 4026302,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "17",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Postoperative complications",
+            "Rectal cancer",
+            "minimally invasive surgery",
+            "Laparoscopic Abdominoperineal Resection",
+            "Open Abdominoperineal Resection"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "e94533",
+        "pmcid": "PMC12612777",
+        "pmid": "41246776",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Early Complication Differences Between Laparoscopic and Open Abdominoperineal Resection."
+      },
+      {
+        "abstractText": "Intravenous fluids and vasoactive medications represent the foundation of hemodynamic resuscitation for septic shock. Based on current evidence, initial fluid resuscitation of roughly 30 mL/kg with balanced crystalloids is reasonable for most patients. Carefully monitored peripheral vein administration of the first-line vasopressor, norepinephrine, appears safe. Ongoing multimodal assessment and therapy titration integrating blood pressure, lactate clearance, capillary refill time, and dynamic measures of fluid responsiveness yields outcomes equivalent to protocolized goal-directed resuscitation. However, better evidence is urgently needed for many common septic shock management issues.",
+        "affiliation": "Department of Pulmonary and Critical Care Medicine, Shock Trauma Intensive Care Unit (T5), Intermountain Medical Center, 5121 South Cottonwood Street, Salt Lake City, UT 84107, USA.",
+        "authMan": "Y",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pulmonary and Critical Care Medicine, Shock Trauma Intensive Care Unit (T5), Intermountain Medical Center, 5121 South Cottonwood Street, Salt Lake City, UT 84107, USA."
+                  }
+                ]
+              },
+              "firstName": "Jeffrey D",
+              "fullName": "Graham JD",
+              "initials": "JD",
+              "lastName": "Graham"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pulmonary and Critical Care Medicine, Shock Trauma Intensive Care Unit (T5), Intermountain Medical Center, 5121 South Cottonwood Street, Salt Lake City, UT 84107, USA."
+                  }
+                ]
+              },
+              "firstName": "Michael J",
+              "fullName": "Lanspa MJ",
+              "initials": "MJ",
+              "lastName": "Lanspa"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Pulmonary and Critical Care Medicine, Shock Trauma Intensive Care Unit (T5), Intermountain Medical Center, 5121 South Cottonwood Street, Salt Lake City, UT 84107, USA. Electronic address: ithan.peltan@imail.org."
+                  }
+                ]
+              },
+              "firstName": "Ithan D",
+              "fullName": "Peltan ID",
+              "initials": "ID",
+              "lastName": "Peltan"
+            }
+          ]
+        },
+        "authorString": "Graham JD, Lanspa MJ, Peltan ID.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Vasoconstrictor Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Norepinephrine",
+              "registryNumber": "X4W3ENH1CV"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-02-06",
+        "dateOfCreation": "2026-02-06",
+        "dateOfRevision": "2026-03-02",
+        "doi": "10.1016/j.ccm.2025.10.003",
+        "electronicPublicationDate": "2025-11-27",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-10",
+        "firstPublicationDate": "2025-11-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12917878"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.ccm.2025.10.003"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12917878"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12917878?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.ccm.2025.10.003"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "GM",
+              "agency": "NIGMS NIH HHS",
+              "grantId": "R35 GM151147",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R35GM151147",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41651598",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "1",
+          "journal": {
+            "essn": "1557-8216",
+            "isoabbreviation": "Clin Chest Med",
+            "issn": "0272-5231",
+            "medlineAbbreviation": "Clin Chest Med",
+            "nlmid": "7907612",
+            "title": "Clinics in chest medicine"
+          },
+          "journalIssueId": 4118515,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "47",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Septic shock",
+            "Capillary Refill Time",
+            "Balanced Crystalloids",
+            "Peripheral Vasopressors",
+            "Vasopressor Selection",
+            "Intravenous Fluid Resuscitation",
+            "Dynamic Fluid Responsiveness Assessment",
+            "Resuscitation Targets"
+          ]
+        },
+        "language": "eng",
+        "manuscriptId": "NIHMS2146889",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Shock, Septic",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiopathology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Norepinephrine",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Vasoconstrictor Agents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Fluid Therapy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Resuscitation",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "Y",
+        "pageInfo": "33-43",
+        "pmcid": "PMC12917878",
+        "pmid": "41651598",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Resuscitation Targets, Fluids, and Vasoactives in Septic Shock."
+      },
+      {
+        "abstractText": "Spinal cord injury (SCI) remains one of the most devastating neurological conditions with poor prognosis and limited therapeutic options. Early surgical decompression has been established as the cornerstone of acute management, yet multiple pharmacologic strategies have been extensively investigated to improve neurological outcomes. High-dose methylprednisolone sodium succinate, once widely adopted, ultimately failed to demonstrate consistent efficacy, underscoring the challenges of translating preclinical promise into clinical benefit. Advances in understanding the sequential pathophysiology of SCI, including excitotoxicity, oxidative stress, inflammation, apoptosis, glial scarring, and chronic inhibitory signaling, have broadened therapeutic targets across temporal phases of injury. In this narrative review, we revisit historical pharmacologic therapies such as corticosteroids, and highlight current and emerging candidates including riluzole, minocycline, granulocyte colony-stimulating factor, and biologics targeting the Rho/ROCK pathway (Cethrin, anti-Nogo-A, and anti-repulsive guidance molecule A antibodies). Although compelling preclinical evidence exists, most clinical trials have been limited by patient heterogeneity, narrow therapeutic time windows, and outcome assessment challenges, preventing any drug from achieving guideline-level endorsement. Future success will likely depend on tailored multimodal regimens according to patient stratification, optimized therapeutic timing and delivery, and integration with surgical decompression, hemodynamic management, rehabilitative interventions, and novel bioengineered strategies. Continued efforts in these directions remain essential to establish pharmacologic therapy as a critical component of multimodal SCI care.",
+        "affiliation": "Department of Neurosurgery, Hallym University Dongtan Sacred Heart Hospital, Hwaseong, Korea.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2489-506X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4833-5534"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0120-6564"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-4429-7015"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-4021-1194"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, Hallym University Dongtan Sacred Heart Hospital, Hwaseong, Korea."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-4021-1194"
+              },
+              "firstName": "Kyeong Deuk",
+              "fullName": "An KD",
+              "initials": "KD",
+              "lastName": "An"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, Hallym University Dongtan Sacred Heart Hospital, Hwaseong, Korea."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2489-506X"
+              },
+              "firstName": "Chan Yang",
+              "fullName": "Noh CY",
+              "initials": "CY",
+              "lastName": "Noh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, Hallym University Dongtan Sacred Heart Hospital, Hwaseong, Korea."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-4429-7015"
+              },
+              "firstName": "Junsoo",
+              "fullName": "Jang J",
+              "initials": "J",
+              "lastName": "Jang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, Hallym University Dongtan Sacred Heart Hospital, Hwaseong, Korea."
+                  },
+                  {
+                    "affiliation": "Center for Spine Surgery, Davos Hospital, Yongin, Korea."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4833-5534"
+              },
+              "firstName": "Woon Tak",
+              "fullName": "Yuh WT",
+              "initials": "WT",
+              "lastName": "Yuh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, Hallym University Dongtan Sacred Heart Hospital, Hwaseong, Korea."
+                  },
+                  {
+                    "affiliation": "Department of Neurosurgery, Hallym University College of Medicine, Chuncheon, Korea."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0120-6564"
+              },
+              "firstName": "Il",
+              "fullName": "Choi I",
+              "initials": "I",
+              "lastName": "Choi"
+            }
+          ]
+        },
+        "authorString": "An KD, Noh CY, Jang J, Yuh WT, Choi I.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-11-12",
+        "dateOfCreation": "2025-11-12",
+        "dateOfRevision": "2025-11-14",
+        "doi": "10.13004/kjnt.2025.21.e35",
+        "electronicPublicationDate": "2025-10-24",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-12",
+        "firstPublicationDate": "2025-10-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12599439"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-12",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.13004/kjnt.2025.21.e35"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12599439"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12599439?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41220890",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "4",
+          "journal": {
+            "essn": "2288-2243",
+            "isoabbreviation": "Korean J Neurotrauma",
+            "issn": "2234-8999",
+            "medlineAbbreviation": "Korean J Neurotrauma",
+            "nlmid": "101584658",
+            "title": "Korean journal of neurotrauma"
+          },
+          "journalIssueId": 4047282,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "21",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Drug therapy",
+            "Spinal cord injuries",
+            "Spinal cord regeneration",
+            "neuroprotection",
+            "Clinical Trials",
+            "Multimodal Approach"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "237-254",
+        "pmcid": "PMC12599439",
+        "pmid": "41220890",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Potential Pharmacologic Treatments in Spinal Cord Injury: A Narrative Review.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Purpose of review</h4>This review aims to provide a comprehensive overview of mavacamten in the management of obstructive hypertrophic cardiomyopathy (oHCM), from its molecular mechanism of action to clinical trial outcomes and real-world application. It explores the efficacy, safety, and practical considerations of mavacamten use, while highlighting evolving indications and future directions.<h4>Recent findings</h4>Randomized trials have shown that mavacamten significantly reduces left ventricular outflow tract gradients, improves symptoms and exercise capacity, and induces structural reverse remodeling with a favorable safety profile. Real-world data confirm these benefits in broader patient populations. Pharmacogenetic variability, titration protocols, and cost-effectiveness analyses have further refined its clinical use. Mavacamten represents a paradigm shift in oHCM treatment by targeting disease at its sarcomeric origin. Its integration into routine care is expanding, supported by real-world evidence. Ongoing studies will clarify its role in non-obstructive HCM, heart failure with preserved ejection fraction, pediatric populations, and early-stage disease.",
+        "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy. giorgia.panichella@gmail.com.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6830-4292"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy. giorgia.panichella@gmail.com."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy. giorgia.panichella@gmail.com."
+                  }
+                ]
+              },
+              "firstName": "Giorgia",
+              "fullName": "Panichella G",
+              "initials": "G",
+              "lastName": "Panichella"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  }
+                ]
+              },
+              "firstName": "Manuel",
+              "fullName": "Garofalo M",
+              "initials": "M",
+              "lastName": "Garofalo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  }
+                ]
+              },
+              "firstName": "Maddalena",
+              "fullName": "Ragagnin M",
+              "initials": "M",
+              "lastName": "Ragagnin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  }
+                ]
+              },
+              "firstName": "Angela Ilaria",
+              "fullName": "Fanizzi AI",
+              "initials": "AI",
+              "lastName": "Fanizzi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Cardiology, Meyer Children's Hospital, Florence, Italy."
+                  }
+                ]
+              },
+              "firstName": "Mattia",
+              "fullName": "Zampieri M",
+              "initials": "M",
+              "lastName": "Zampieri"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  }
+                ]
+              },
+              "firstName": "Annamaria",
+              "fullName": "Del Franco A",
+              "initials": "A",
+              "lastName": "Del Franco"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  }
+                ]
+              },
+              "firstName": "Francesco",
+              "fullName": "Cappelli F",
+              "initials": "F",
+              "lastName": "Cappelli"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6830-4292"
+              },
+              "firstName": "Maurizio",
+              "fullName": "Pieroni M",
+              "initials": "M",
+              "lastName": "Pieroni"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Experimental and Clinical Medicine, University of Florence, Florence, Italy."
+                  },
+                  {
+                    "affiliation": "Cardiomyopathy Unit, Careggi University Hospital, Largo Brambilla, 3 , Florence , 50134 Firenze, Italy."
+                  },
+                  {
+                    "affiliation": "Pediatric Cardiology, Meyer Children's Hospital, Florence, Italy."
+                  }
+                ]
+              },
+              "firstName": "Iacopo",
+              "fullName": "Olivotto I",
+              "initials": "I",
+              "lastName": "Olivotto"
+            }
+          ]
+        },
+        "authorString": "Panichella G, Garofalo M, Ragagnin M, Fanizzi AI, Zampieri M, Del Franco A, Cappelli F, Pieroni M, Olivotto I.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Benzylamines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Uracil",
+              "registryNumber": "56HH86ZVCT"
+            },
+            {
+              "name": "MYK-461",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-12-01",
+        "dateOfCreation": "2025-12-01",
+        "dateOfRevision": "2026-02-28",
+        "doi": "10.1007/s11886-025-02316-6",
+        "electronicPublicationDate": "2025-12-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-01",
+        "firstPublicationDate": "2025-12-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12669318"
+          ]
+        },
+        "fullTextReceivedDate": "2025-12-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s11886-025-02316-6"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12669318"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12669318?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Universit\u00e0 degli Studi di Firenze",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41324783",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Dec",
+          "issue": "1",
+          "journal": {
+            "essn": "1534-3170",
+            "isoabbreviation": "Curr Cardiol Rep",
+            "issn": "1523-3782",
+            "medlineAbbreviation": "Curr Cardiol Rep",
+            "nlmid": "100888969",
+            "title": "Current cardiology reports"
+          },
+          "journalIssueId": 4059659,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2025-12-01",
+          "volume": "27",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Cost-effectiveness",
+            "Symptom Burden",
+            "Lvot Obstruction",
+            "Reverse Remodeling",
+            "Genotype-guided Therapy",
+            "Cardiac Myosin Inhibitors"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cardiomyopathy, Hypertrophic",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "PP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiopathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Benzylamines",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Uracil",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "analogs & derivatives"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Ventricular Remodeling",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug effects"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "169",
+        "pmcid": "PMC12669318",
+        "pmid": "41324783",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Mavacamten in the Treatment of Obstructive Hypertrophic Cardiomyopathy: from Pathophysiology To Real World Data.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "Pancreatic ductal adenocarcinoma (PDAC) remains one of the most lethal forms of cancer, with a dismal survival rate. Therapeutic options are restricted in surgery for patients with resectable disease and in chemotherapy for those with unresectable disease. The potential benefits of radiotherapy (RT) or chemoradiotherapy (CRT) have been extensively investigated in both neoadjuvant and adjuvant settings in the management of patients with PDAC. Nevertheless, a substantial number of clinical trials have yielded conflicting findings, thereby rendering the impact of RT on patient survival and margin-negative (R0) resection inconclusive. A comprehensive examination of the historical evolution of RT in PDAC, encompassing the identification of both constraints and opportunities for advancement, is essential to establish RT as a promising therapeutic avenue for patients with PDAC. The aim of this review is to provide a synthesis of past clinical trials and future studies to elucidate the evolving role of RT in the management of PDAC as adjuvant and neoadjuvant CRT across different stages of the disease.",
+        "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France. Electronic address: j.dardare@nancy.unicancer.fr.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1131-5193"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-8986-698X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France. Electronic address: j.dardare@nancy.unicancer.fr."
+                  }
+                ]
+              },
+              "firstName": "Julie",
+              "fullName": "Dardare J",
+              "initials": "J",
+              "lastName": "Dardare"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Academic Department of Radiation Therapy & Brachytherapy, Institut de Canc\u00e9rologie de Lorraine, Vandoeuvre Les Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Nicolas",
+              "fullName": "Martz N",
+              "initials": "N",
+              "lastName": "Martz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1131-5193"
+              },
+              "firstName": "Andr\u00e9a",
+              "fullName": "Witz A",
+              "initials": "A",
+              "lastName": "Witz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Margaux",
+              "fullName": "Betz M",
+              "initials": "M",
+              "lastName": "Betz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-8986-698X"
+              },
+              "firstName": "Cassandra",
+              "fullName": "Michel C",
+              "initials": "C",
+              "lastName": "Michel"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Pauline",
+              "fullName": "Gilson P",
+              "initials": "P",
+              "lastName": "Gilson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Jean-Louis",
+              "fullName": "Merlin JL",
+              "initials": "JL",
+              "lastName": "Merlin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Aur\u00e9lien",
+              "fullName": "Lambert A",
+              "initials": "A",
+              "lastName": "Lambert"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Service de M\u00e9decine de Pr\u00e9cision et Recherche Translationnelle, Institut de Canc\u00e9rologie de Lorraine, Vand\u0153uvre-l\u00e8s-Nancy, France; Universit\u00e9 de Lorraine, Centre National de la Recherche Scientifique (CNRS), Unit\u00e9 Mixte de Recherche (UMR) 7039 Centre de Recherche en Automatique de Nancy (CRAN), Nancy, France."
+                  }
+                ]
+              },
+              "firstName": "Alexandre",
+              "fullName": "Harle A",
+              "initials": "A",
+              "lastName": "Harle"
+            }
+          ]
+        },
+        "authorString": "Dardare J, Martz N, Witz A, Betz M, Michel C, Gilson P, Merlin JL, Lambert A, Harle A.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-12-15",
+        "dateOfCreation": "2025-12-09",
+        "dateOfRevision": "2025-12-29",
+        "doi": "10.1016/j.tranon.2025.102632",
+        "electronicPublicationDate": "2025-12-08",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-10",
+        "firstPublicationDate": "2025-12-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12741417"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.tranon.2025.102632"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12741417"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12741417?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41365129",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "journal": {
+            "essn": "1936-5233",
+            "isoabbreviation": "Transl Oncol",
+            "issn": "1936-5233",
+            "medlineAbbreviation": "Transl Oncol",
+            "nlmid": "101472619",
+            "title": "Translational oncology"
+          },
+          "journalIssueId": 4073245,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "63",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Radiotherapy",
+            "Pancreatic Ductal Adenocarcinoma",
+            "Clinical Trials",
+            "Chemoradiotherapy"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "102632",
+        "pmcid": "PMC12741417",
+        "pmid": "41365129",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "title": "Radiotherapy in the management of PDAC, from past to present.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Objective</h4>To determine whether Aquacel Ag Hydrofiber dressings containing ionic silver are superior to film dressings for preventing superficial surgical site infections (SSI) in patients undergoing elective gastrointestinal surgery.<h4>Background</h4>Multiple clinical trials have assessed the effectiveness of silver-containing wound dressings; however, systematic reviews failed to find any advantages of these dressings and concluded that there was insufficient evidence to indicate that they prevented wound infections. This study aimed to evaluate the efficacy of Aquacel Ag Hydrofiber dressings for preventing superficial SSIs in patients undergoing gastrointestinal surgery.<h4>Methods</h4>Patients undergoing elective gastrointestinal surgery were randomly assigned to receive either Aquacel Ag Hydrofiber (study group) or film dressings (control group). The primary end point was superficial SSI within 30 days after surgery (UMIN Clinical Trials Registry ID: 000043081).<h4>Results</h4>A total of 865 patients (427 study group, 438 control group) were qualified for primary end-point analysis. The overall rate of superficial SSIs was significantly lower in the study group than in the control group (6.8% vs 11.4%, <i>P</i> = 0.019). There was no significant difference in superficial SSI rates between the groups in patients undergoing upper gastrointestinal surgery; however, the rate was significantly lower in the study group in patients undergoing lower gastrointestinal surgery (<i>P</i> = 0.042). Multivariate analysis identified Aquacel Ag Hydrofiber dressings as an independent factor for reducing superficial SSIs (odds ratio, 0.602; 95% confidence interval, 0.367-0.986; <i>P</i> = 0.044).<h4>Conclusions</h4>Aquacel Ag Hydrofiber dressings can reduce superficial SSIs compared to film dressings in patients undergoing elective gastrointestinal surgery, especially lower gastrointestinal surgery.",
+        "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Chihiro",
+              "fullName": "Kosugi C",
+              "initials": "C",
+              "lastName": "Kosugi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Keiji",
+              "fullName": "Koda K",
+              "initials": "K",
+              "lastName": "Koda"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hiroaki",
+              "fullName": "Shimizu H",
+              "initials": "H",
+              "lastName": "Shimizu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Masato",
+              "fullName": "Yamazaki M",
+              "initials": "M",
+              "lastName": "Yamazaki"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Kiyohiko",
+              "fullName": "Shuto K",
+              "initials": "K",
+              "lastName": "Shuto"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Mikito",
+              "fullName": "Mori M",
+              "initials": "M",
+              "lastName": "Mori"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Akihiro",
+              "fullName": "Usui A",
+              "initials": "A",
+              "lastName": "Usui"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hiroyuki",
+              "fullName": "Nojima H",
+              "initials": "H",
+              "lastName": "Nojima"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Satoshi",
+              "fullName": "Endo S",
+              "initials": "S",
+              "lastName": "Endo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hiroo",
+              "fullName": "Yanagibashi H",
+              "initials": "H",
+              "lastName": "Yanagibashi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hidehito",
+              "fullName": "Arimitsu H",
+              "initials": "H",
+              "lastName": "Arimitsu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Toru",
+              "fullName": "Tochigi T",
+              "initials": "T",
+              "lastName": "Tochigi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Tetsutaro",
+              "fullName": "Sazuka T",
+              "initials": "T",
+              "lastName": "Sazuka"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Mihono",
+              "fullName": "Hirota M",
+              "initials": "M",
+              "lastName": "Hirota"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "From the Department of Surgery, Teikyo University Chiba Medical Center, Ichihara, Chiba, Japan."
+                  }
+                ]
+              },
+              "firstName": "Hideyuki",
+              "fullName": "Kuboki H",
+              "initials": "H",
+              "lastName": "Kuboki"
+            }
+          ]
+        },
+        "authorString": "Kosugi C, Koda K, Shimizu H, Yamazaki M, Shuto K, Mori M, Usui A, Nojima H, Endo S, Yanagibashi H, Arimitsu H, Tochigi T, Sazuka T, Hirota M, Kuboki H.",
+        "citedByCount": 5,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2024-06-17",
+        "dateOfRevision": "2025-02-04",
+        "doi": "10.1097/as9.0000000000000402",
+        "electronicPublicationDate": "2024-03-14",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-06-17",
+        "firstPublicationDate": "2024-03-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11175960"
+          ]
+        },
+        "fullTextReceivedDate": "2024-06-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1097/AS9.0000000000000402"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11175960"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11175960?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "38883952",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2024 Mar",
+          "issue": "1",
+          "journal": {
+            "essn": "2691-3593",
+            "isoabbreviation": "Ann Surg Open",
+            "issn": "2691-3593",
+            "medlineAbbreviation": "Ann Surg Open",
+            "nlmid": "101769928",
+            "title": "Annals of surgery open : perspectives of surgical history, education, and clinical approaches"
+          },
+          "journalIssueId": 3787100,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2024-03-01",
+          "volume": "5",
+          "yearOfPublication": 2024
+        },
+        "keywordList": {
+          "keyword": [
+            "Surgical Site Infection",
+            "Gastrointestinal Surgery",
+            "Aquacel Ag Hydrofiber"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "e402",
+        "pmcid": "PMC11175960",
+        "pmid": "38883952",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2024",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "A Randomized Trial of Ionic Silver Dressing to Reduce Surgical Site Infection After Gastrointestinal Surgery."
+      },
+      {
+        "abstractText": "<h4>Opinion statement</h4>The introduction of total mesorectal excision into the radical surgery of rectal cancer has significantly improved the oncological outcome with longer survival and lower local recurrence. Traditional treatment modalities of distal rectal cancer, relying on radical surgery, while effective, take their own set of risks, including surgical complications, potential damage to the anus, and surrounding structure owing to the pursuit of thorough resection. The progress of operating methods as well as the integration of systemic therapies and radiotherapy into the peri-operative period, particularly the exciting clinical complete response of patients after neoadjuvant treatment, have paved the way for organ preservation strategy. The non-inferiority oncological outcome of \"watch and wait\" compared with radical surgery underscores the potential of organ preservation not only to control local recurrence but also to reduce the need for treatments followed by structure destruction, hopefully improving the long-term quality of life. Radical radiotherapy provides another treatment option for patients unwilling or unable to undergo surgery. Organ preservation points out the direction of treatment for distal rectal cancer, while additional researches are needed to answer remaining questions about its optimal use.",
+        "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China."
+                  }
+                ]
+              },
+              "firstName": "Chen",
+              "fullName": "Wang C",
+              "initials": "C",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China."
+                  }
+                ]
+              },
+              "firstName": "Xiaoliang",
+              "fullName": "Liu X",
+              "initials": "X",
+              "lastName": "Liu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China."
+                  }
+                ]
+              },
+              "firstName": "Weiping",
+              "fullName": "Wang W",
+              "initials": "W",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China."
+                  }
+                ]
+              },
+              "firstName": "Zheng",
+              "fullName": "Miao Z",
+              "initials": "Z",
+              "lastName": "Miao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China."
+                  }
+                ]
+              },
+              "firstName": "Xiaoyan",
+              "fullName": "Li X",
+              "initials": "X",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China."
+                  }
+                ]
+              },
+              "firstName": "Dingchao",
+              "fullName": "Liu D",
+              "initials": "D",
+              "lastName": "Liu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Radiation Oncology, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences & Peking Union Medical College, NO.1 Shuaifuyuan Wangfujing, Dongcheng District, Beijing, 100730, China. huke8000@126.com."
+                  }
+                ]
+              },
+              "firstName": "Ke",
+              "fullName": "Hu K",
+              "initials": "K",
+              "lastName": "Hu"
+            }
+          ]
+        },
+        "authorString": "Wang C, Liu X, Wang W, Miao Z, Li X, Liu D, Hu K.",
+        "citedByCount": 1,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2024-04-08",
+        "dateOfCreation": "2024-03-22",
+        "dateOfRevision": "2024-06-05",
+        "doi": "10.1007/s11864-024-01194-4",
+        "electronicPublicationDate": "2024-03-22",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-03-23",
+        "firstPublicationDate": "2024-03-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10997725"
+          ]
+        },
+        "fullTextReceivedDate": "2024-04-09",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s11864-024-01194-4"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10997725"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10997725?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "National Natural Science Foundation of China",
+              "grantId": "U19A2064",
+              "orderIn": 0
+            },
+            {
+              "agency": "Clinical and Translational Medicine Research Foundation of Chinese Academy of Medical Sciences",
+              "grantId": "2020-I2M-C&amp;T-B-036",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "38517596",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2024 Apr",
+          "issue": "4",
+          "journal": {
+            "essn": "1534-6277",
+            "isoabbreviation": "Curr Treat Options Oncol",
+            "issn": "1527-2729",
+            "medlineAbbreviation": "Curr Treat Options Oncol",
+            "nlmid": "100900946",
+            "title": "Current treatment options in oncology"
+          },
+          "journalIssueId": 3751827,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2024-04-01",
+          "volume": "25",
+          "yearOfPublication": 2024
+        },
+        "keywordList": {
+          "keyword": [
+            "organ preservation",
+            "Adjuvant Chemotherapy",
+            "Adjuvant Radiotherapy",
+            "Distal Rectal Cancer",
+            "Radical Radiotherapy",
+            "Watch And Wait"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Rectal Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "surgery"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Neoplasm Recurrence, Local",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Organ Preservation",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Neoadjuvant Therapy",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Quality of Life",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Watchful Waiting",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Chemoradiotherapy",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "434-452",
+        "pmcid": "PMC10997725",
+        "pmid": "38517596",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2024",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Treatment Options for Distal Rectal Cancer in the Era of Organ Preservation."
+      },
+      {
+        "abstractText": "Crohn's disease (CD) imposes a substantial burden on patients due to its chronic, relapsing nature, often necessitating surgical intervention. However, surgery is not curative, and post-operative recurrence (POR) remains a major clinical challenge, with up to 80% of patients developing endoscopic recurrence within one year if left untreated. The pathophysiology of POR is multifactorial, involving dysregulated immune responses, gut microbiota alterations, and mucosal healing impairment, highlighting the need for targeted therapeutic strategies. This review aims to explore the current landscape of POR management, focusing on biologic therapies and emerging advanced treatments. Conventional management relies on early prophylactic therapy with anti-TNF agents such as infliximab and adalimumab, which have demonstrated efficacy in reducing endoscopic and clinical recurrence. However, newer biologics, including IL-23 inhibitors (risankizumab) and Janus kinase (JAK) inhibitors (upadacitinib), have shown promise in CD management, though their role in POR remains underexplored. The lack of direct clinical evidence for advanced biologics in POR prevention, combined with inter-individual variability in treatment response, underscores the need for further research. Future directions should focus on optimizing therapeutic strategies through personalized medicine, identifying predictive biomarkers, and conducting robust trials to establish the efficacy of novel agents in POR prevention. A tailored, evidence-driven approach is essential to improving long-term outcomes and minimizing disease recurrence in post-operative CD patients.",
+        "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Ministry of Health of Kuwait-Farwaniya Hospital, Sabah Al-Nasser 92426, Kuwait.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0003-3846-9605"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Ministry of Health of Kuwait-Farwaniya Hospital, Sabah Al-Nasser 92426, Kuwait."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0003-3846-9605"
+              },
+              "firstName": "Reem",
+              "fullName": "Aljabri R",
+              "initials": "R",
+              "lastName": "Aljabri"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Ministry of Health of Kuwait-Farwaniya Hospital, Sabah Al-Nasser 92426, Kuwait."
+                  }
+                ]
+              },
+              "firstName": "Saqer",
+              "fullName": "Al-Saraie S",
+              "initials": "S",
+              "lastName": "Al-Saraie"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Ministry of Health of Kuwait-Farwaniya Hospital, Sabah Al-Nasser 92426, Kuwait."
+                  }
+                ]
+              },
+              "firstName": "Ahmed",
+              "fullName": "Alhouti A",
+              "initials": "A",
+              "lastName": "Alhouti"
+            }
+          ]
+        },
+        "authorString": "Aljabri R, Al-Saraie S, Alhouti A.",
+        "citedByCount": 2,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR987964",
+              "note": "CrossRef Pre-print loader",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dateOfCreation": "2025-05-28",
+        "dateOfRevision": "2025-05-31",
+        "doi": "10.3390/biomedicines13051232",
+        "electronicPublicationDate": "2025-05-19",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-05-28",
+        "firstPublicationDate": "2025-05-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12108690"
+          ]
+        },
+        "fullTextReceivedDate": "2025-05-30",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.3390/biomedicines13051232"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/biomedicines13051232"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12108690"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12108690?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40427059",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 May",
+          "issue": "5",
+          "journal": {
+            "essn": "2227-9059",
+            "isoabbreviation": "Biomedicines",
+            "issn": "2227-9059",
+            "medlineAbbreviation": "Biomedicines",
+            "nlmid": "101691304",
+            "title": "Biomedicines"
+          },
+          "journalIssueId": 3948062,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2025-05-01",
+          "volume": "13",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Biologic Therapy",
+            "Crohn\u2019s Disease",
+            "Post-operative Recurrence",
+            "Jak Inhibitors",
+            "Il-23 Inhibitors"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1232",
+        "pmcid": "PMC12108690",
+        "pmid": "40427059",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Optimizing Biologic Therapy for the Prevention of Post-Operative Recurrence in Crohn's Disease: Current Evidence and Future Perspectives."
+      },
+      {
+        "abstractText": "Achilles mid-portion tendinopathy is defined as a painful thickening of the tendon, identified also on different imagistic examinations, occurring in sport people as well in inactively middle-aged individuals. The chronic and/or relapsing evolution interfere with daily living and alter the quality of life. Eccentric physical exercise is a cornerstone in her management and several injectable agents are used in clinical settings to reduce pain and improve function. According to the presumed pathogenic mechanisms, many classes of agents are in use: corticosteroids, protease inhibitors, sclerosing agents, pro-inflammatory agents, autologous products. The modalities of administration, either intra- or peritendon, the timing and number of sessions are displayed. Practical approach of chronic mid-portion Achilles tendinopathy consists of rest, tendon protection, eccentric exercise and therapeutical injections. The clinicians must choose between a spectrum of agents active on different pathogenic mechanisms, with benefits in the short and medium term. Future research may be focused on comparison between the different agents and on long term evolution.",
+        "affiliation": "Rehabilitation Department, Carol Davila University of Medicine and Pharmacy, 050474 Bucharest, Romania.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6216-6688"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4135-5695"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0003-5801-5416"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-9687-9761"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabilitation Department, Carol Davila University of Medicine and Pharmacy, 050474 Bucharest, Romania."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4135-5695"
+              },
+              "firstName": "Daniela",
+              "fullName": "Poenaru D",
+              "initials": "D",
+              "lastName": "Poenaru"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabilitation Department, Carol Davila University of Medicine and Pharmacy, 050474 Bucharest, Romania."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0003-5801-5416"
+              },
+              "firstName": "Claudia Gabriela",
+              "fullName": "Potcovaru CG",
+              "initials": "CG",
+              "lastName": "Potcovaru"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabilitation Department, Carol Davila University of Medicine and Pharmacy, 050474 Bucharest, Romania."
+                  }
+                ]
+              },
+              "firstName": "Miruna Ioana",
+              "fullName": "Sandulescu MI",
+              "initials": "MI",
+              "lastName": "Sandulescu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabilitation Department, Carol Davila University of Medicine and Pharmacy, 050474 Bucharest, Romania."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-9687-9761"
+              },
+              "firstName": "Mariana",
+              "fullName": "Constantinovici M",
+              "initials": "M",
+              "lastName": "Constantinovici"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabilitation Department, Carol Davila University of Medicine and Pharmacy, 050474 Bucharest, Romania."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6216-6688"
+              },
+              "firstName": "Delia",
+              "fullName": "Cinteza D",
+              "initials": "D",
+              "lastName": "Cinteza"
+            }
+          ]
+        },
+        "authorString": "Poenaru D, Potcovaru CG, Sandulescu MI, Constantinovici M, Cinteza D.",
+        "citedByCount": 1,
+        "dateOfCreation": "2025-05-28",
+        "dateOfRevision": "2025-05-31",
+        "doi": "10.3390/life15050824",
+        "electronicPublicationDate": "2025-05-21",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-05-28",
+        "firstPublicationDate": "2025-05-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12113072"
+          ]
+        },
+        "fullTextReceivedDate": "2025-05-30",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/life15050824"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12113072"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12113072?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "University of Medicine and Pharmacy Carol Davila",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40430250",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 May",
+          "issue": "5",
+          "journal": {
+            "essn": "2075-1729",
+            "isoabbreviation": "Life (Basel)",
+            "issn": "2075-1729",
+            "medlineAbbreviation": "Life (Basel)",
+            "nlmid": "101580444",
+            "title": "Life (Basel, Switzerland)"
+          },
+          "journalIssueId": 3948199,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2025-05-01",
+          "volume": "15",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "injection",
+            "Mid-portion Achilles Tendinopathy",
+            "Intra Tendon",
+            "Peri Tendon"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "824",
+        "pmcid": "PMC12113072",
+        "pmid": "40430250",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Injectables in the Therapy of Mid-Portion Achilles Tendinopathy, a Descriptive Review."
+      },
+      {
+        "abstractText": "The treatment of Parkinson's disease (PD) is a challenge, especially because it is considered highly individualized. The Brazilian Academy of Neurology (ABN) has identified the need to disseminate knowledge about its management, adapting the best evidence to the Brazilian population. The present article aims to report the recommendations for the treatment of non-motor symptoms of PD, developed by a group of specialists in movement disorders from the ABN's scientific department. In 2021, the first part, referring to the motor symptoms of PD, was published. The main non-motor symptoms were addressed-among them neuropsychiatric symptoms, such as depression, anxiety, cognitive alteration, and psychosis-as well as the possible recommended therapies and medications used to control pain, sleep disorders, and dysautonomia.",
+        "affiliation": "Universidade Federal de Minas Gerais, Hospital das Cl\u00ednicas, Departamento de Neurologia, Belo Horizonte MG, Brazil.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6305-3327"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7032-5300"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7548-2313"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7819-4499"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9321-5710"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1119-9807"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1191-2078"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3368-8492"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3565-5328"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4786-6990"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5298-1686"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5721-1525"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6556-8145"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6694-4595"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7098-0775"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0273-3104"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0808-0116"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1476-2105"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2150-9300"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2402-2709"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3089-2911"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4312-3994"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4590-2983"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-4615-7360"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0009-9380-238X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de Minas Gerais, Hospital das Cl\u00ednicas, Departamento de Neurologia, Belo Horizonte MG, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3089-2911"
+              },
+              "firstName": "D\u00e9bora Palma",
+              "fullName": "Maia DP",
+              "initials": "DP",
+              "lastName": "Maia"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Faculdade de Medicina, Departamento de Neurologia, Centro de Dist\u00farbios do Movimento, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6305-3327"
+              },
+              "firstName": "Rubens Gisbert",
+              "fullName": "Cury RG",
+              "initials": "RG",
+              "lastName": "Cury"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hospital S\u00edrio Liban\u00eas, Bras\u00edlia DF, Brazil."
+                  },
+                  {
+                    "affiliation": "Universidade de Bras\u00edlia, Hospital da Universidade de Bras\u00edlia, Bras\u00edlia DF, Brazil."
+                  },
+                  {
+                    "affiliation": "Cl\u00ednica Neurol\u00f3gica, Departamento de Sa\u00fade, Congresso Nacional, Bras\u00edlia DF, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1191-2078"
+              },
+              "firstName": "Pedro Renato P",
+              "fullName": "Brand\u00e3o PRP",
+              "initials": "PRP",
+              "lastName": "Brand\u00e3o"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de Minas Gerais, Faculdade de Medicina, Departamento de Cl\u00ednica M\u00e9dica/Neurologia, Belo Horizonte MG, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0808-0116"
+              },
+              "firstName": "Francisco E C",
+              "fullName": "Cardoso FEC",
+              "initials": "FEC",
+              "lastName": "Cardoso"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Hospital das Cl\u00ednicas, Departamento de Neurologia, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2150-9300"
+              },
+              "firstName": "Ana Paula",
+              "fullName": "Bertholo AP",
+              "initials": "AP",
+              "lastName": "Bertholo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hospital Israelita Albert Einstein, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4590-2983"
+              },
+              "firstName": "Andr\u00e9 Carvalho",
+              "fullName": "Felicio AC",
+              "initials": "AC",
+              "lastName": "Felicio"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hospital S\u00e3o Jos\u00e9, Porto Alegre RS, Brazil."
+                  },
+                  {
+                    "affiliation": "Universidade Federal de Ci\u00eancias da Sa\u00fade de Porto Alegre, Porto Alegre RS, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1476-2105"
+              },
+              "firstName": "Arlete",
+              "fullName": "Hilbig A",
+              "initials": "A",
+              "lastName": "Hilbig"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal do Par\u00e1, Laborat\u00f3rio de Neuropatologia Experimental, Bel\u00e9m PA, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9321-5710"
+              },
+              "firstName": "Bruno Lopes Santos",
+              "fullName": "Lobato BLS",
+              "initials": "BLS",
+              "lastName": "Lobato"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Cl\u00ednica Neurol\u00f3gica, Departamento de Sa\u00fade, Congresso Nacional, Bras\u00edlia DF, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7098-0775"
+              },
+              "firstName": "Eline Roz\u00e1ria F",
+              "fullName": "Barbosa ERF",
+              "initials": "ERF",
+              "lastName": "Barbosa"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal do Par\u00e1, Laborat\u00f3rio de Neuropatologia Experimental, Bel\u00e9m PA, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0009-9380-238X"
+              },
+              "firstName": "Elizabeth Maria A B",
+              "fullName": "Quagliato EMAB",
+              "initials": "EMAB",
+              "lastName": "Quagliato"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hospital de Base do Distrito Federal, Bras\u00edlia DF, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6694-4595"
+              },
+              "firstName": "Gustavo H C",
+              "fullName": "Sousa GHC",
+              "initials": "GHC",
+              "lastName": "Sousa"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Hospital das Cl\u00ednicas, Departamento de Neurologia, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3565-5328"
+              },
+              "firstName": "Jacy Bezerra",
+              "fullName": "Parmera JB",
+              "initials": "JB",
+              "lastName": "Parmera"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Hospital das Cl\u00ednicas, Departamento de Neurologia, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7819-4499"
+              },
+              "firstName": "M\u00e1rcia",
+              "fullName": "R\u00fabia M",
+              "initials": "M",
+              "lastName": "R\u00fabia"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade do Estado do Amazonas, Departamento de Neurologia, Escola Superior de Ci\u00eancias da Sa\u00fade, Manaus AM, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3368-8492"
+              },
+              "firstName": "Marcus Vin\u00edcius Della",
+              "fullName": "Coletta MVD",
+              "initials": "MVD",
+              "lastName": "Coletta"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hospital Santa Marcelina, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4312-3994"
+              },
+              "firstName": "Maria Sheila Guimar\u00e3es",
+              "fullName": "Rocha MSG",
+              "initials": "MSG",
+              "lastName": "Rocha"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade do Estado do Rio de Janeiro, Departamento de Neurologia, Rio de Janeiro RJ, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7548-2313"
+              },
+              "firstName": "Mariana",
+              "fullName": "Spitz M",
+              "initials": "M",
+              "lastName": "Spitz"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Hospital das Cl\u00ednicas, Departamento de Neurologia, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5298-1686"
+              },
+              "firstName": "M\u00f4nica",
+              "fullName": "Haddad M",
+              "initials": "M",
+              "lastName": "Haddad"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de Minas Gerais, Hospital das Cl\u00ednicas, Departamento de Neurologia, Belo Horizonte MG, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-4615-7360"
+              },
+              "firstName": "Nina Rosa A F",
+              "fullName": "Murta NRAF",
+              "initials": "NRAF",
+              "lastName": "Murta"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de Minas Gerais, Faculdade de Medicina, Departamento de Cl\u00ednica M\u00e9dica/Neurologia, Belo Horizonte MG, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4786-6990"
+              },
+              "firstName": "Paulo",
+              "fullName": "Caramelli P",
+              "initials": "P",
+              "lastName": "Caramelli"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Unidade de Sono de Bras\u00edlia, Bras\u00edlia DF, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1119-9807"
+              },
+              "firstName": "Raimundo N D",
+              "fullName": "Rodrigues RND",
+              "initials": "RND",
+              "lastName": "Rodrigues"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Hospital das Cl\u00ednicas, Departamento de Neurologia, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5721-1525"
+              },
+              "firstName": "Ricardo",
+              "fullName": "Nitrini R",
+              "initials": "R",
+              "lastName": "Nitrini"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de Sergipe, Faculdade de Medicina, Aracaju SE, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0273-3104"
+              },
+              "firstName": "Roberto",
+              "fullName": "Prado R",
+              "initials": "R",
+              "lastName": "Prado"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade de S\u00e3o Paulo, Faculdade de Medicina de Ribeir\u00e3o Preto, Departamento de Neurologia, Ribeir\u00e3o Preto SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2402-2709"
+              },
+              "firstName": "Vitor",
+              "fullName": "Tumas V",
+              "initials": "V",
+              "lastName": "Tumas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de Santa Catarina, Faculdade de Medicina, Departamento de Neurologia, Florian\u00f3polis SC, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7032-5300"
+              },
+              "firstName": "Ylmar",
+              "fullName": "Corr\u00eaa Neto Y",
+              "initials": "Y",
+              "lastName": "Corr\u00eaa Neto"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universidade Federal de S\u00e3o Paulo, Departamento de Neurologia, Setor de Transtornos do Movimento, S\u00e3o Paulo SP, Brazil."
+                  },
+                  {
+                    "affiliation": "Hospital do Servidor P\u00fablico Estadual de S\u00e3o Paulo, Servi\u00e7o de Neurologia, Setor de Transtornos do Movimento, S\u00e3o Paulo SP, Brazil."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6556-8145"
+              },
+              "firstName": "Roberta Arb",
+              "fullName": "Saba RA",
+              "initials": "RA",
+              "lastName": "Saba"
+            }
+          ]
+        },
+        "authorString": "Maia DP, Cury RG, Brand\u00e3o PRP, Cardoso FEC, Bertholo AP, Felicio AC, Hilbig A, Lobato BLS, Barbosa ERF, Quagliato EMAB, Sousa GHC, Parmera JB, R\u00fabia M, Coletta MVD, Rocha MSG, Spitz M, Haddad M, Murta NRAF, Caramelli P, Rodrigues RND, Nitrini R, Prado R, Tumas V, Corr\u00eaa Neto Y, Saba RA.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "41173036",
+              "orderIn": 1,
+              "reference": "Arq Neuropsiquiatr. 2025 Sep;83(9):1. doi: 10.1055/s-0045-1811960.",
+              "source": "MED",
+              "type": "Erratum in"
+            }
+          ]
+        },
+        "dateOfCompletion": "2025-02-24",
+        "dateOfCreation": "2025-02-24",
+        "dateOfRevision": "2026-01-27",
+        "doi": "10.1055/s-0045-1802962",
+        "electronicPublicationDate": "2025-02-24",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-02-25",
+        "firstPublicationDate": "2025-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11850083"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-07",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1055/s-0045-1802962"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1055/s-0045-1802962"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11850083"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11850083?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "39993447",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "1678-4227",
+            "isoabbreviation": "Arq Neuropsiquiatr",
+            "issn": "0004-282X",
+            "medlineAbbreviation": "Arq Neuropsiquiatr",
+            "nlmid": "0125444",
+            "title": "Arquivos de neuro-psiquiatria"
+          },
+          "journalIssueId": 3887496,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2025-01-01",
+          "volume": "83",
+          "yearOfPublication": 2025
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Parkinson Disease",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Consensus",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Neurology",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  },
+                  {
+                    "abbreviation": "ST",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Academies and Institutes",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ST",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "standards"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Brazil",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Sleep Wake Disorders",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1-15",
+        "pmcid": "PMC11850083",
+        "pmid": "39993447",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Practice Guideline",
+            "Consensus Statement",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Guidelines for Parkinson's disease management part II: consensus from the movement disorders scientific department of the Brazilian Academy of Neurology - non-motor symptoms."
+      },
+      {
+        "abstractText": "<h4>Background</h4>The pylorus plays a key role in the control of gastric content outflow. Impairment of pyloric physiology has been observed in gastroparesis, particularly when associated with diabetes mellitus or opioid intake or after antireflux surgery. New tools have been developed to identify pyloric dysfunction in routine care, including functional luminal impedance planimetry (FLIP). As such, a new therapeutic strategy targeting the pylorus, namely endoscopic pyloromyotomy (G-POEM), has received increasing attention and emerged as a promising treatment for gastroparesis.<h4>Purpose</h4>The present review details the involvement of the pyloric pathophysiology in gastroparesis, as well as clinical results of G-POEM according to the current literature.",
+        "affiliation": "Physiology Department, INSERM UMR 1073, CIC-CRB 1404, Centre Hospitalo-Universitaire de Rouen, Rouen, France.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8220-9155"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1644-7272"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiology Department, INSERM UMR 1073, CIC-CRB 1404, Centre Hospitalo-Universitaire de Rouen, Rouen, France."
+                  },
+                  {
+                    "affiliation": "D\u00e9partement d'H\u00e9pato-Gastro-Ent\u00e9rologie, H\u00f4pital Louis Mourier, AP-HP Nord, Universit\u00e9 de Paris Cit\u00e9, Colombes, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1644-7272"
+              },
+              "firstName": "Heithem",
+              "fullName": "Soliman H",
+              "initials": "H",
+              "lastName": "Soliman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Physiology Department, INSERM UMR 1073, CIC-CRB 1404, Centre Hospitalo-Universitaire de Rouen, Rouen, France."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8220-9155"
+              },
+              "firstName": "Guillaume",
+              "fullName": "Gourcerol G",
+              "initials": "G",
+              "lastName": "Gourcerol"
+            }
+          ]
+        },
+        "authorString": "Soliman H, Gourcerol G.",
+        "citedByCount": 20,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2023-02-01",
+        "dateOfCreation": "2023-01-03",
+        "dateOfRevision": "2023-04-11",
+        "doi": "10.1111/nmo.14529",
+        "electronicPublicationDate": "2023-01-03",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2023-01-03",
+        "firstPublicationDate": "2023-01-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10077918"
+          ]
+        },
+        "fullTextReceivedDate": "2023-04-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1111/nmo.14529"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/nmo.14529"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10077918"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC10077918?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "36594414",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2023 Feb",
+          "issue": "2",
+          "journal": {
+            "essn": "1365-2982",
+            "isoabbreviation": "Neurogastroenterol Motil",
+            "issn": "1350-1925",
+            "medlineAbbreviation": "Neurogastroenterol Motil",
+            "nlmid": "9432572",
+            "title": "Neurogastroenterology and motility"
+          },
+          "journalIssueId": 3497499,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2023-02-01",
+          "volume": "35",
+          "yearOfPublication": 2023
+        },
+        "keywordList": {
+          "keyword": [
+            "Gastric motility",
+            "Pylorospasm",
+            "Gastroparesis",
+            "G-poem",
+            "Pyloromyotomy",
+            "Endoflip"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Pylorus",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "surgery"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Gastroparesis",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "surgery"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Gastroscopy",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Gastric Emptying",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Pyloromyotomy",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e14529",
+        "pmcid": "PMC10077918",
+        "pmid": "36594414",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2023",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Targeting the pylorus in gastroparesis: From physiology to endoscopic pyloromyotomy.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

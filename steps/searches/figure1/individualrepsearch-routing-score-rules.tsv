@@ -1,0 +1,22 @@
+score_family	score	condition	decision_use
+relation	+5	target in title or Registered Replication Report title/metadata	pair candidate after identity normalization
+relation	+4	abstract says direct replication, failed replication, independent validation, or named confirmatory/follow-up trial	pair candidate
+relation	+4	methods map original study/result/materials/protocol/endpoint	pair candidate if original target resolves
+relation	+3	table, supplement, repository, preregistration, or source object maps original and replication sides	manual screen; candidate when source identity resolves
+relation	+2	repository README/package evidence only	manual screen or coverage_only until article/source identity resolves
+relation	+1	ordinary citation, review statement, or broad literature context only	seed_only; insufficient for pair inclusion
+relation	-5	same-data reanalysis or computational-only reproduction	reject for independent-sample Figure 1 rows
+relation	-4	review/commentary only or no original mapping	reject or seed_only
+relation_threshold	>=4	affirmative relation evidence	eligible for pair candidate and value extraction
+relation_threshold	2-3	moderate relation evidence but missing identity/source-object confirmation	manual_screen or coverage_only
+relation_threshold	<=1	weak or no relation evidence	seed_only or reject
+value	+5	original effect, original N, replication effect, and replication N directly reported	extract values from source_result rows and route by metric
+value	+4	all values reconstructable from means/SDs, t/F/r, event counts, OR/logOR, RR/RD with baseline risk, or registry result tables	extract and document conversion formula
+value	+3	effects available but split N or aggregation grain unclear	hold with blocker or route coverage/native after review
+value	+2	N available but one side effect missing	coverage_only unless source object can be acquired
+value	+1	relation exists but values are inaccessible/paywalled/missing	coverage_only no-repull ledger
+value	-5	one-arm overall response rate or no comparator for binary endpoint	reject for Figure 1B
+route	relation>=4 and value>=4	D/SMD-compatible inputs and independent larger replication sample	strict_figure1a
+route	relation>=4 and value>=4	comparative binary inputs with defensible logOR/OR/RR/RD-to-D route	d_equivalent_figure1b
+route	relation>=4 and value>=4	native effects/N available but no defensible D route	native_only
+route	relation>=4 and value<=2	real pair exists but public values/source objects are missing or inaccessible	coverage_only

@@ -1,0 +1,75 @@
+{
+  "task_id": "agent_file_acquisition_007",
+  "received_at": "2026-05-04",
+  "source_agent": "user_supplied_gpt_or_gemini_response",
+  "verdict": "conversion_supported_only_with_separate_lane",
+  "confidence": "medium",
+  "method_sources": [
+    {
+      "url": "https://datamethods.org/t/converting-responder-proportions-to-cohens-d",
+      "citation": "agent_report_placeholder_citation_0",
+      "relevant_method": "Probit transformation for two responder proportions",
+      "formula_or_rule": "d = Phi^-1(p2) - Phi^-1(p1), where Phi^-1 is the standard normal quantile function.",
+      "quoted_or_paraphrased_support": "The agent report states that when a continuous outcome is dichotomized, the difference in probit-transformed responder proportions equals the standardized mean difference only when both treatment and control proportions are known.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/Tests/One-Sample_Proportion_Tests_and_Confidence_Intervals.pdf",
+      "citation": "agent_report_placeholder_citation_2",
+      "relevant_method": "Cohen's h for comparing two proportions or one proportion to a historical/reference proportion",
+      "formula_or_rule": "h = 2 * arcsin(sqrt(p1)) - 2 * arcsin(sqrt(p0)), where p1 is the study proportion and p0 is a historical or hypothesized control/reference proportion.",
+      "quoted_or_paraphrased_support": "The agent report states that Cohen's h is defined by the difference between arcsine-square-root transformed proportions and can compare a study proportion to a historical control proportion.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://rpsychologist.com/correlation/one-sample-test-proportion",
+      "citation": "agent_report_placeholder_citation_4",
+      "relevant_method": "One-sample Cohen's h",
+      "formula_or_rule": "h = 2 * arcsin(sqrt(p)) - 2 * arcsin(sqrt(p0)), treating p0 as a hypothesized/reference proportion.",
+      "quoted_or_paraphrased_support": "The agent report states that Cohen's h can be computed for a single sample proportion compared with a hypothesized value, but this again requires an explicit reference proportion.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://www.smr.jsexample/arcine-limitations",
+      "citation": "agent_report_placeholder_citation_6",
+      "relevant_method": "Arcsine-based transformations for meta-analysis of single proportions",
+      "formula_or_rule": "Freeman-Tukey double-arcsine and related transformations stabilize variance for pooling single-arm proportions.",
+      "quoted_or_paraphrased_support": "The agent report attributes cautions to Lin and Xu 2020, including lack of interpretability and possible misleading conclusions for arcsine-based transformations.",
+      "citation_verification_state": "invalid_or_suspect_url_needs_replacement"
+    },
+    {
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-methodological-questions-related-comparative-efficacy-effectiveness-evaluation_en.pdf",
+      "citation": "agent_report_placeholder_citation_8",
+      "relevant_method": "Regulatory caution for single-arm trial interpretation",
+      "formula_or_rule": "No conversion formula. The report states that single-arm interpretation requires a clearly defined counterfactual/reference condition.",
+      "quoted_or_paraphrased_support": "The agent report states that EMA guidance emphasizes the need for a clearly defined counterfactual and warns that comparisons to external thresholds can lead to erroneous conclusions.",
+      "citation_verification_state": "needs_formal_verification"
+    }
+  ],
+  "minimum_required_fields": [
+    "Number of responders and total participants in the single arm",
+    "A clearly defined reference proportion or null benchmark with consistent endpoint and follow-up window",
+    "Sample size or variance for the reference proportion if the reference is estimated from observed data",
+    "Explicitly matched endpoint definitions",
+    "A documented rationale for using the reference as the counterfactual"
+  ],
+  "risks_or_cautions": [
+    "All identified conversions require a comparator/reference proportion; a single-arm ORR alone cannot be mapped to a D-like scale.",
+    "Choice of reference proportion can be arbitrary and can materially change the effect estimate.",
+    "Cohen's h is not the same scale as Cohen's d and should not be pooled with two-arm standardized mean differences without a separate-lane decision.",
+    "Single-arm outcomes lack randomized comparators and can be biased by disease history, selection, follow-up timing, and external-control differences.",
+    "Arcsine transformations for single proportions are variance-stabilizing tools, not direct evidence that one-arm ORR is comparable to two-arm treatment effects."
+  ],
+  "recommendation_for_current_project": "Do not convert one-arm ORR/proportion endpoints into the main D-like Figure 1 lane. Keep these rows excluded from the main D/N gate or stage them in native proportion format. If a clinically justified reference proportion exists, Cohen's h or a probit-based contrast could be computed only in a separate lane with full documentation of the comparator/reference.",
+  "would_change_existing_rows": {
+    "clinical_highly_cited_orr_rows": "keep_excluded",
+    "other_single_arm_orr_or_proportion_rows": "stage_native_only",
+    "notes": "The existing highly cited ORR rows lack a defined comparator/reference proportion. Converting them would require arbitrary historical response rates, so they remain excluded from the main Figure 1 D-like lane."
+  },
+  "codex_local_followup": {
+    "rows_promotable_now": 0,
+    "policy_effect": "Confirms current exclusion policy for one-arm ORR/proportion rows under the main Figure 1 D/N rule.",
+    "citation_quality_note": "The pasted report included contentReference placeholders and one suspect example URL. Treat this as a scope decision record, not a citation-ready methods review. Formal source verification is needed before citing the methods in a manuscript."
+  },
+  "recommended_next_action": "Leave the clinical highly cited ORR rows excluded from the main Figure 1 table. If native clinical endpoint staging is later desired, create a separate native-proportion lane with responders, total N, endpoint, follow-up window, and any external reference proportion recorded explicitly."
+}

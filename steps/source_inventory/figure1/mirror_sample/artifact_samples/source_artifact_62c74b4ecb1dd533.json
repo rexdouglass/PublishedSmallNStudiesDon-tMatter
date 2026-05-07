@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_62c74b4ecb1dd533",
+  "byte_size": 6579,
+  "columns": [
+    "z",
+    "point_estimate",
+    "lower_ci",
+    "upper_ci"
+  ],
+  "estimated_data_rows": 101,
+  "file_name": "CI_marginal_density.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/data/model/CI_marginal_density.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "lower_ci": 0.2950549082,
+      "point_estimate": 0.3565646112,
+      "upper_ci": 0.3873615644,
+      "z": 0.0
+    },
+    {
+      "lower_ci": 0.2948125419,
+      "point_estimate": 0.3557143688,
+      "upper_ci": 0.3861530084,
+      "z": 0.1
+    },
+    {
+      "lower_ci": 0.2940866631,
+      "point_estimate": 0.3531851041,
+      "upper_ci": 0.3825614825,
+      "z": 0.2
+    },
+    {
+      "lower_ci": 0.2928809218,
+      "point_estimate": 0.3490401702,
+      "upper_ci": 0.3766877299,
+      "z": 0.3
+    },
+    {
+      "lower_ci": 0.2912013676,
+      "point_estimate": 0.3433817811,
+      "upper_ci": 0.3686941616,
+      "z": 0.4
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "44e73d45b6c09a8a31844d29c84ca1574b431be4fcaadfe310b6acf97f9f7f15"
+}

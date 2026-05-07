@@ -1,0 +1,348 @@
+{
+  "artifact_id": "source_artifact_dfc4c54edd366741",
+  "byte_size": 12136,
+  "file_name": "051_full_10_1016_S0140_6736_11_60701_0.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/051_full_10_1016_S0140_6736_11_60701_0.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1016/S0140-6736(11)60701-0\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Background</h4>Smoking cessation programmes delivered via mobile phone text messaging show increases in self-reported quitting in the short term. We assessed the effect of an automated smoking cessation programme delivered via mobile phone text messaging on continuous abstinence, which was biochemically verified at 6 months.<h4>Methods</h4>In this single-blind, randomised trial, undertaken in the UK, smokers willing to make a quit attempt were randomly allocated, using an independent telephone randomisation system, to a mobile phone text messaging smoking cessation programme (txt2stop), comprising motivational messages and behavioural-change support, or to a control group that received text messages unrelated to quitting. The system automatically generated intervention or control group texts according to the allocation. Outcome assessors were masked to treatment allocation. The primary outcome was self-reported continuous smoking abstinence, biochemically verified at 6 months. All analyses were by intention to treat. This study is registered, number ISRCTN 80978588.<h4>Findings</h4>We assessed 11,914 participants for eligibility. 5800 participants were randomised, of whom 2915 smokers were allocated to the txt2stop intervention and 2885 were allocated to the control group; eight were excluded because they were randomised more than once. Primary outcome data were available for 5524 (95%) participants. Biochemically verified continuous abstinence at 6 months was significantly increased in the txt2stop group (10·7% txt2stop vs 4·9% control, relative risk [RR] 2·20, 95% CI 1·80-2·68; p<0·0001). Similar results were obtained when participants that were lost to follow-up were treated as smokers (268 [9%] of 2911 txt2stop vs 124 [4%] of 2881 control [RR 2·14, 95% CI 1·74-2·63; p<0·0001]), and when they were excluded (268 [10%] of 2735 txt2stop vs 124 [4%] of 2789 control [2·20, 1·79-2·71; p<0·0001]). No significant heterogeneity was shown in any of the prespecified subgroups.<h4>Interpretation</h4>The txt2stop smoking cessation programme significantly improved smoking cessation rates at 6 months and should be considered for inclusion in smoking cessation services.<h4>Funding</h4>UK Medical Research Council, Primary Care Research Networks.",
+          "affiliation": "Clinical Trials Research Unit, London School of Hygiene and Tropical Medicine, UK. caroline.free@lshtm.ac.uk",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6136-9624"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1282-1896"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1711-0006"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-4431-8822"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Clinical Trials Research Unit, London School of Hygiene and Tropical Medicine, UK. caroline.free@lshtm.ac.uk"
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1711-0006"
+                },
+                "firstName": "Caroline",
+                "fullName": "Free C",
+                "initials": "C",
+                "lastName": "Free"
+              },
+              {
+                "firstName": "Rosemary",
+                "fullName": "Knight R",
+                "initials": "R",
+                "lastName": "Knight"
+              },
+              {
+                "firstName": "Steven",
+                "fullName": "Robertson S",
+                "initials": "S",
+                "lastName": "Robertson"
+              },
+              {
+                "firstName": "Robyn",
+                "fullName": "Whittaker R",
+                "initials": "R",
+                "lastName": "Whittaker"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-4431-8822"
+                },
+                "firstName": "Phil",
+                "fullName": "Edwards P",
+                "initials": "P",
+                "lastName": "Edwards"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6136-9624"
+                },
+                "firstName": "Weiwei",
+                "fullName": "Zhou W",
+                "initials": "W",
+                "lastName": "Zhou"
+              },
+              {
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1282-1896"
+                },
+                "firstName": "Anthony",
+                "fullName": "Rodgers A",
+                "initials": "A",
+                "lastName": "Rodgers"
+              },
+              {
+                "firstName": "John",
+                "fullName": "Cairns J",
+                "initials": "J",
+                "lastName": "Cairns"
+              },
+              {
+                "firstName": "Michael G",
+                "fullName": "Kenward MG",
+                "initials": "MG",
+                "lastName": "Kenward"
+              },
+              {
+                "firstName": "Ian",
+                "fullName": "Roberts I",
+                "initials": "I",
+                "lastName": "Roberts"
+              }
+            ]
+          },
+          "authorString": "Free C, Knight R, Robertson S, Whittaker R, Edwards P, Zhou W, Rodgers A, Cairns J, Kenward MG, Roberts I.",
+          "citedByCount": 511,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "21722951",
+                "orderIn": 1,
+                "reference": "Lancet. 2011 Jul 2;378(9785):6-7. doi: 10.1016/S0140-6736(11)60882-9.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "22007063",
+                "orderIn": 2,
+                "reference": "Ann Intern Med. 2011 Oct 18;155(8):JC4-4. doi: 10.7326/0003-4819-155-8-201110180-02004.",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "22048915",
+                "orderIn": 3,
+                "reference": "Praxis (Bern 1994). 2011 Nov 2;100(22):1375-6. doi: 10.1024/1661-8157/a000717.",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "wikipedia"
+            ]
+          },
+          "dateOfCompletion": "2011-08-11",
+          "dateOfCreation": "2011-07-05",
+          "dateOfRevision": "2025-05-29",
+          "doi": "10.1016/s0140-6736(11)60701-0",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2011-07-05",
+          "firstPublicationDate": "2011-07-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC3143315"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-10",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "http://www.thelancet.com/article/S0140673611607010/pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/S0140-6736(11)60701-0"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC3143315"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MRC_",
+                "agency": "Medical Research Council",
+                "grantId": "G0601639",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "N",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "N",
+          "hasReferences": "Y",
+          "hasSuppl": "N",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "21722952",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "Y",
+          "journalInfo": {
+            "dateOfPublication": "2011 Jul",
+            "issue": "9785",
+            "journal": {
+              "essn": "1474-547X",
+              "isoabbreviation": "Lancet",
+              "issn": "0140-6736",
+              "medlineAbbreviation": "Lancet",
+              "nlmid": "2985213R",
+              "title": "Lancet (London, England)"
+            },
+            "journalIssueId": 1844654,
+            "monthOfPublication": 7,
+            "printPublicationDate": "2011-07-01",
+            "volume": "378",
+            "yearOfPublication": 2011
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Single-Blind Method",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Smoking Cessation",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Motivation",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Behavior Therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adolescent",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Educational Status",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Employment",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Young Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Cell Phone",
+                "majorTopic_YN": "Y"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "49-55",
+          "pmcid": "PMC3143315",
+          "pmid": "21722952",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article"
+            ]
+          },
+          "pubYear": "2011",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Smoking cessation support delivered via mobile phone text messaging (txt2stop): a single-blind, randomised trial."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "323871b437ae3f3e2c203d07f5f25f2b6f0c9d35416af74b70401d80249e23bd"
+}

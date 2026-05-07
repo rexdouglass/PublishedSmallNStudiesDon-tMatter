@@ -52,6 +52,14 @@ CANDIDATE_STUDIES = ROOT / "data" / "derived" / "corpus_candidates" / "candidate
 PEER_REVIEWED_SOURCE_LIST = ROOT / "data" / "derived" / "corpus_candidates" / "current_peer_reviewed_journal_d_n_list.csv"
 REPLICATION_PAIRS = ROOT / "data" / "derived" / "replication_pairs" / "replication_pairs_figure2_draft.csv"
 REPLICATION_ALL = ROOT / "data" / "derived" / "replication_pairs" / "replication_pairs_all_on_hand.csv"
+FIGURE1_INDIVIDUAL_STUDY_MAP = (
+    ROOT
+    / "steps"
+    / "individual_replication_papers"
+    / "figure1"
+    / "pair_chase"
+    / "figure1-individual-study-map.tsv"
+)
 PACKAGE_REFERENCE_SOURCES = ROOT / "data" / "derived" / "package_reference_sources.csv"
 CLINIFACT_FULLTEXT = ROOT / "data" / "derived" / "publication_bias_direct" / "clinifact_pmc_fulltext_extract.csv"
 FRED_FLORA = ROOT / "data" / "raw" / "corpus_candidates" / "fred" / "flora.csv"
@@ -3185,6 +3193,69 @@ def corpus_from_replication_pairs(entries: dict[str, BibEntry], audit: list[dict
     audit.append({"source": "replication_pairs", "input_rows": input_rows, "candidate_entries": candidate_entries})
 
 
+def corpus_from_figure1_individual_study_map(entries: dict[str, BibEntry], audit: list[dict[str, object]]) -> None:
+    if not FIGURE1_INDIVIDUAL_STUDY_MAP.exists():
+        return
+    df = pd.read_csv(FIGURE1_INDIVIDUAL_STUDY_MAP, sep="\t", dtype=str).fillna("")
+    before = len(entries)
+    doi_rows = 0
+    url_rows = 0
+    title_rows = 0
+    placeholder_rows = 0
+    for row in df.itertuples(index=False):
+        study_id = clean_text(getattr(row, "figure1_individual_study_id", ""))
+        title_raw = clean_text(getattr(row, "represented_title_canonical", ""))
+        doi = extract_doi(getattr(row, "represented_doi_canonical", ""))
+        url = clean_text(getattr(row, "represented_url_canonical", "")) or (f"https://doi.org/{doi}" if doi else "")
+        if not title_raw and not doi and not url:
+            continue
+        title_for_parse = title_raw or doi or url
+        authors, year, parsed_title, journal = parse_citation_like_title(title_for_parse)
+        title = parsed_title or title_raw or doi or url
+        method = clean_text(getattr(row, "study_dedupe_method", ""))
+        confidence = clean_text(getattr(row, "dedupe_confidence", ""))
+        included_pairs = clean_text(getattr(row, "n_included_pairs", ""))
+        excluded_pairs = clean_text(getattr(row, "n_excluded_pairs", ""))
+        source_families = clean_text(getattr(row, "source_family_keys", ""))
+        if doi:
+            doi_rows += 1
+        elif url:
+            url_rows += 1
+        elif title_raw:
+            title_rows += 1
+        if method == "weak_side_target" or not title_raw:
+            placeholder_rows += 1
+        entry = BibEntry(
+            key=local_entry_key("fig1study", doi or method or "study", study_id, title[:40]),
+            entry_type="article" if doi or journal or year else "misc",
+            title=title,
+            authors=authors,
+            year=year,
+            journal=journal,
+            doi=doi,
+            url=url,
+            note=(
+                f"Figure 1 individual-study/source dedupe row: {study_id}; "
+                f"method={method}; confidence={confidence}; included_pairs={included_pairs}; "
+                f"excluded_pairs={excluded_pairs}; source_families={source_families}"
+            ),
+            metadata_source="local_placeholder" if method == "weak_side_target" or not title_raw else "local",
+            source_rows={f"{FIGURE1_INDIVIDUAL_STUDY_MAP.relative_to(ROOT)}:{study_id}"},
+        )
+        add_entry(entries, entry)
+    audit.append(
+        {
+            "source": "figure1_individual_study_map",
+            "input_rows": len(df),
+            "candidate_entries": len(entries) - before,
+            "doi_rows": doi_rows,
+            "url_rows_without_doi": url_rows,
+            "title_only_rows": title_rows,
+            "placeholder_rows": placeholder_rows,
+        }
+    )
+
+
 def corpus_from_package_reference_sources(entries: dict[str, BibEntry], audit: list[dict[str, object]]) -> None:
     if not PACKAGE_REFERENCE_SOURCES.exists():
         return
@@ -3467,6 +3538,7 @@ def build_corpus_bibliography(refresh: bool = False) -> tuple[list[BibEntry], li
     corpus_from_candidate_papers(entries, audit)
     corpus_from_candidate_studies(entries, audit)
     corpus_from_replication_pairs(entries, audit)
+    corpus_from_figure1_individual_study_map(entries, audit)
     corpus_from_package_reference_sources(entries, audit)
     corpus_from_clinifact(entries, audit)
     corpus_from_fred(entries, audit)
@@ -3577,6 +3649,7 @@ def build_corpus_coverage(entries: list[BibEntry], harvest_audit: list[dict[str,
 
     extra_counts = {
         "replication_pairs": sum(1 for entry in entries if source_row_membership(entry, [str(REPLICATION_PAIRS.relative_to(ROOT)), str(REPLICATION_ALL.relative_to(ROOT))])),
+        "figure1_individual_study_map": sum(1 for entry in entries if source_row_membership(entry, [str(FIGURE1_INDIVIDUAL_STUDY_MAP.relative_to(ROOT))])),
         "package_reference_sources": sum(1 for entry in entries if source_row_membership(entry, ["package_reference_sources"])),
         "clinifact_pmc_fulltext_extract": sum(1 for entry in entries if source_row_membership(entry, ["clinifact_pmc_fulltext_extract"])),
         "fred_flora": sum(1 for entry in entries if source_row_membership(entry, ["fred_flora"])),

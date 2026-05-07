@@ -1,0 +1,75 @@
+{
+  "artifact_id": "source_artifact_3dd183ce1ea97756",
+  "byte_size": 7066,
+  "columns": [
+    "Study",
+    "Site",
+    "Version",
+    "ES.Metric",
+    "Value",
+    "N",
+    "Reverse",
+    "Label"
+  ],
+  "estimated_data_rows": 101,
+  "file_name": "Summary Effect Sizes - Single Effects.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/replication_projects/ml5/Summary Effect Sizes - Single Effects.csv",
+  "parent_corpus_database_id": "corpus_db_many_labs_5_overarching_analyses",
+  "preview_rows": [
+    {
+      "ES.Metric": "r",
+      "Label": "Albarracin S5 RP:P",
+      "N": 580,
+      "Reverse": "no",
+      "Site": "MTurk",
+      "Study": "Albarracin S5",
+      "Value": 0.04,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 36,
+      "Reverse": "no",
+      "Site": "Ashland University",
+      "Study": "Albarracin S7",
+      "Value": 0.11194346,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 51,
+      "Reverse": "yes",
+      "Site": "Brigham Young University",
+      "Study": "Albarracin S7",
+      "Value": 0.13331504,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 182,
+      "Reverse": "no",
+      "Site": "Grand Valley State University",
+      "Study": "Albarracin S7",
+      "Value": 0.000936817,
+      "Version": "RP:P"
+    },
+    {
+      "ES.Metric": "eta sq",
+      "Label": "Albarracin S7 RP:P",
+      "N": 26,
+      "Reverse": "no",
+      "Site": "McDaniel College",
+      "Study": "Albarracin S7",
+      "Value": 0.10078796,
+      "Version": "RP:P"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "0c28b30f26398a88164f80bcc747e64169685a6c3412578cfef280eeab1a1d7f"
+}

@@ -1,0 +1,51 @@
+{
+  "artifact_id": "source_artifact_1da08ab75b96f5e2",
+  "byte_size": 2829,
+  "columns": [
+    "claim_id",
+    "r",
+    "r_lb",
+    "r_ub"
+  ],
+  "estimated_data_rows": 43,
+  "file_name": "Raw Data__Original Studies__orig_effect-size.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Raw Data__Original Studies__orig_effect-size.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "claim_id": "1VeW_single-trace",
+      "r": 0.6574119803,
+      "r_lb": 0.3291884919,
+      "r_ub": 0.8129978782
+    },
+    {
+      "claim_id": "Vpgm_single-trace",
+      "r": -0.22,
+      "r_lb": -0.33,
+      "r_ub": -0.11
+    },
+    {
+      "claim_id": "1574_single-trace",
+      "r": 0.5735463486,
+      "r_lb": 0.444583116,
+      "r_ub": 0.7025095812
+    },
+    {
+      "claim_id": "xvrb_single-trace",
+      "r": 0.4804134693,
+      "r_lb": 0.3765647258,
+      "r_ub": 0.5842622127
+    },
+    {
+      "claim_id": "EQxa_single-trace",
+      "r": 0.2871658058,
+      "r_lb": 0.178139423,
+      "r_ub": 0.3775639963
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "44a787c1f47c01ad0caa6b3ff3425a2e80a6950a3e44444e6583df1792a606bb"
+}

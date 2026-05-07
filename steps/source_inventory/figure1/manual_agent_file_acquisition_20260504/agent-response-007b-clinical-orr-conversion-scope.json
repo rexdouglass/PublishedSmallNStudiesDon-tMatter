@@ -1,0 +1,73 @@
+{
+  "task_id": "agent_file_acquisition_007",
+  "received_at": "2026-05-04",
+  "source_agent": "user_supplied_gpt_or_gemini_response_second_pass",
+  "verdict": "conversion_not_supported",
+  "confidence": "high",
+  "method_sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9895126/",
+      "citation": "agent_report_placeholder_citation_0_1",
+      "relevant_method": "Logistic-based conversion of log odds ratio to standardized mean difference",
+      "formula_or_rule": "Under assumptions about underlying logistic distributions with common scale, SMD can be approximated from log OR using SMD = log(OR) / 1.81, or equivalently multiplying log OR by approximately 0.55.",
+      "quoted_or_paraphrased_support": "The agent report states that conventional log-OR-to-SMD conversion assumes logistic distributions for the underlying continuous outcomes in both groups and requires an odds-ratio contrast.",
+      "citation_verification_state": "needs_formal_verification",
+      "codex_local_check": "paperclip lookup pmc PMC9895126 returned no local document in this environment"
+    },
+    {
+      "url": "https://ww2.amstat.org/meetings/proceedings/2012/data/assets/pdf/304111_72486.pdf",
+      "citation": "agent_report_placeholder_citation_4",
+      "relevant_method": "Probit transformation effect size for two dichotomized outcome proportions",
+      "formula_or_rule": "d_probit = Phi^-1(p_E) - Phi^-1(p_C), where p_E and p_C are experimental and control success probabilities.",
+      "quoted_or_paraphrased_support": "The agent report states that probit-transformation effect size requires both experimental and control success proportions.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://zief0002.github.io/epsy-5261/07-05-standardized-effects-props.html",
+      "citation": "agent_report_placeholder_citation_6",
+      "relevant_method": "Cohen's h for proportions",
+      "formula_or_rule": "h = 2 * (asin(sqrt(p1)) - asin(sqrt(p2))). For a one-sample test, p2 is a hypothesized/reference proportion.",
+      "quoted_or_paraphrased_support": "The agent report states that Cohen's h can compare two proportions or a single sample proportion to a hypothesized proportion.",
+      "citation_verification_state": "needs_formal_verification"
+    },
+    {
+      "url": "https://eprints.soton.ac.uk/456820/1/Mixed_arm_MA_no_varR1.pdf",
+      "citation": "agent_report_placeholder_citation_8",
+      "relevant_method": "Mixed one- and two-arm meta-analysis assumptions",
+      "formula_or_rule": "Including one-arm studies in mean-difference meta-analysis requires strong assumptions, including common standard deviation, treatment-only heterogeneity, and one-arm information behaving like two-arm information.",
+      "quoted_or_paraphrased_support": "The agent report states that mixed one- and two-arm meta-analysis requires strong assumptions that may not hold for clinical response rates.",
+      "citation_verification_state": "needs_formal_verification"
+    }
+  ],
+  "minimum_required_fields": [
+    "Responders or number of successes",
+    "Non-responders or total sample size",
+    "Comparator, control, hypothesized, or benchmark proportion to define a contrast",
+    "Explicit endpoint definition to ensure comparable measurement",
+    "Endpoint follow-up window",
+    "Reference proportion sample size or variance if the reference is based on observed data"
+  ],
+  "risks_or_cautions": [
+    "Logistic conversion from log OR to SMD applies to binary contrasts and assumes an underlying logistic distribution; it is not defined for a single-arm proportion without a comparator.",
+    "Probit and logistic conversions require event counts or success probabilities for both treatment and control groups.",
+    "Cohen's h can compare a single proportion to a hypothesized/reference proportion, but the selected benchmark drives the result and may be arbitrary.",
+    "Mixed one- and two-arm methods require strong assumptions, including common variance and comparable behavior of one-arm and two-arm information.",
+    "Converting one-arm ORR to a D-like value without a comparator can hide disease-context heterogeneity and misrepresent comparability with two-arm contrasts."
+  ],
+  "recommendation_for_current_project": "There is no widely accepted method to convert single-arm ORR or single-arm proportions to the main D-like Figure 1 scale without specifying a comparator. Accepted conversions require a binary contrast, a hypothesized/reference proportion, or strong mixed-arm assumptions. Keep one-arm ORR rows excluded from the main Figure 1 D/N lane. Stage native responder/total proportions separately only if useful.",
+  "would_change_existing_rows": {
+    "clinical_highly_cited_orr_rows": "keep_excluded",
+    "other_single_arm_orr_or_proportion_rows": "stage_native_only",
+    "notes": "The existing ORR rows lack a defined comparator/reference proportion. A D-like conversion would require arbitrary assumptions, so the current exclusion rule should remain in place."
+  },
+  "codex_local_followup": {
+    "rows_promotable_now": 0,
+    "policy_effect": "Supersedes the earlier weaker separate-lane response for main Figure 1 purposes: one-arm ORR/proportion conversion is not supported for the main D-like lane.",
+    "paperclip_lookup": {
+      "pmc": "PMC9895126",
+      "result": "No documents found"
+    },
+    "citation_quality_note": "The pasted response still contains contentReference placeholders. Treat this as a project-scope decision record. Verify and replace method citations before manuscript use."
+  },
+  "recommended_next_action": "Keep clinical highly cited ORR rows excluded from the main Figure 1 table. If desired later, add a separate native clinical proportion staging table with responders, total N, endpoint, follow-up window, and any explicit external comparator/reference."
+}

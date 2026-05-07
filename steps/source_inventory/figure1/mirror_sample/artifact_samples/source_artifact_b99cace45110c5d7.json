@@ -1,0 +1,63 @@
+{
+  "artifact_id": "source_artifact_b99cace45110c5d7",
+  "byte_size": 19618,
+  "columns": [
+    "paper_id",
+    "COS_pub_category",
+    "dr_plausible",
+    "dr_reason",
+    "dar_plausible",
+    "dar_reason"
+  ],
+  "estimated_data_rows": 380,
+  "file_name": "Raw Data__Project Management__score_rr-projects_not-sourced.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Raw Data__Project Management__score_rr-projects_not-sourced.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "COS_pub_category": "criminology",
+      "dar_plausible": "no",
+      "dar_reason": "panel",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "1zWE"
+    },
+    {
+      "COS_pub_category": "criminology",
+      "dar_plausible": "no",
+      "dar_reason": "administrative data",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "G4DD"
+    },
+    {
+      "COS_pub_category": "criminology",
+      "dar_plausible": "no",
+      "dar_reason": "administrative data",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "VNxX"
+    },
+    {
+      "COS_pub_category": "criminology",
+      "dar_plausible": "no",
+      "dar_reason": "own data collection",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "OReL"
+    },
+    {
+      "COS_pub_category": "criminology",
+      "dar_plausible": "no",
+      "dar_reason": "administrative data",
+      "dr_plausible": "no",
+      "dr_reason": "sensitive population",
+      "paper_id": "gwrg"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "e7b0eb2d6224520084be2b7a77be0e7f1cdc00b7b550a055b19ab69af61726ac"
+}

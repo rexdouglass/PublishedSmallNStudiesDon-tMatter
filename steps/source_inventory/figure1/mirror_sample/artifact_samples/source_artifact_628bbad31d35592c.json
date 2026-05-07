@@ -1,0 +1,63 @@
+{
+  "artifact_id": "source_artifact_628bbad31d35592c",
+  "byte_size": 11257,
+  "columns": [
+    "rr_id",
+    "project_guid",
+    "type",
+    "started",
+    "reg_date",
+    "completed"
+  ],
+  "estimated_data_rows": 211,
+  "file_name": "Analysis-ready Data__Replication and Reproduction Papers__rr_project_dates.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/score/Analysis-ready Data__Replication and Reproduction Papers__rr_project_dates.csv",
+  "parent_corpus_database_id": "score",
+  "preview_rows": [
+    {
+      "completed": "2020-11-11",
+      "project_guid": "qczeu",
+      "reg_date": "2020-10-26",
+      "rr_id": "05g8",
+      "started": "2020-06-02",
+      "type": "secondary_p1"
+    },
+    {
+      "completed": "2021-05-19",
+      "project_guid": "g9v87",
+      "reg_date": "2020-06-26",
+      "rr_id": "0y38",
+      "started": "2020-05-26",
+      "type": "secondary_p1"
+    },
+    {
+      "completed": "2022-09-14",
+      "project_guid": "9u2n4",
+      "reg_date": "2020-11-05",
+      "rr_id": "10g2",
+      "started": "2020-10-05",
+      "type": "secondary_p1"
+    },
+    {
+      "completed": "2021-12-02",
+      "project_guid": "s2x3c",
+      "reg_date": "2021-08-19",
+      "rr_id": "128g6",
+      "started": "2021-06-16",
+      "type": "new_p2"
+    },
+    {
+      "completed": "2020-12-08",
+      "project_guid": "afznv",
+      "reg_date": "2020-09-24",
+      "rr_id": "1554",
+      "started": "2020-04-30",
+      "type": "new_p1"
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:26:46",
+  "sha256": "cede2a6a422048a29f0c25cacc0e5338c5e3a4a49b41450bc1817c730cf7e717"
+}

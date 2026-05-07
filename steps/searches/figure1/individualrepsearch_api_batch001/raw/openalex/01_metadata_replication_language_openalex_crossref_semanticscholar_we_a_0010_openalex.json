@@ -1,0 +1,5258 @@
+{
+  "group_by": [],
+  "meta": {
+    "cost_usd": 0.001,
+    "count": 283,
+    "db_response_time_ms": 3623,
+    "groups_count": null,
+    "page": 1,
+    "per_page": 8
+  },
+  "results": [
+    {
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I55106644",
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam, Amsterdam, The Netherlands. Electronic address: W.E.Boekel@uva.nl"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam, Amsterdam, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Wouter Boekel",
+            "id": "https://openalex.org/A5026558743",
+            "orcid": "https://orcid.org/0000-0003-1155-9726"
+          },
+          "author_position": "first",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "Amsterdam University of Applied Sciences",
+              "id": "https://openalex.org/I55106644",
+              "lineage": [
+                "https://openalex.org/I55106644"
+              ],
+              "ror": "https://ror.org/00y2z2s03",
+              "type": "education"
+            },
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "University of Amsterdam, Amsterdam, The Netherlands. Electronic address: W.E.Boekel@uva.nl",
+            "University of Amsterdam, Amsterdam, The Netherlands"
+          ],
+          "raw_author_name": "Wouter Boekel",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam, Amsterdam, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Eric\u2010Jan Wagenmakers",
+            "id": "https://openalex.org/A5063079579",
+            "orcid": "https://orcid.org/0000-0003-1596-1034"
+          },
+          "author_position": "middle",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Amsterdam, Amsterdam, The Netherlands"
+          ],
+          "raw_author_name": "Eric-Jan Wagenmakers",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam, Amsterdam, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Luam Belay",
+            "id": "https://openalex.org/A5083286557",
+            "orcid": "https://orcid.org/0000-0002-3529-6193"
+          },
+          "author_position": "middle",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Amsterdam, Amsterdam, The Netherlands"
+          ],
+          "raw_author_name": "Luam Belay",
+          "raw_orcid": "https://orcid.org/0000-0002-3529-6193"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam, Amsterdam, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Josine Verhagen",
+            "id": "https://openalex.org/A5053496122",
+            "orcid": "https://orcid.org/0000-0002-1558-2117"
+          },
+          "author_position": "middle",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Amsterdam, Amsterdam, The Netherlands"
+          ],
+          "raw_author_name": "Josine Verhagen",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I78757542"
+              ],
+              "raw_affiliation_string": "University of Newcastle, Australia"
+            }
+          ],
+          "author": {
+            "display_name": "Scott Brown",
+            "id": "https://openalex.org/A5074709577",
+            "orcid": "https://orcid.org/0000-0002-9060-6756"
+          },
+          "author_position": "middle",
+          "countries": [
+            "AU"
+          ],
+          "institutions": [
+            {
+              "country_code": "AU",
+              "display_name": "University of Newcastle Australia",
+              "id": "https://openalex.org/I78757542",
+              "lineage": [
+                "https://openalex.org/I78757542"
+              ],
+              "ror": "https://ror.org/00eae9z71",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Newcastle, Australia"
+          ],
+          "raw_author_name": "Scott Brown",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam, Amsterdam, The Netherlands"
+            }
+          ],
+          "author": {
+            "display_name": "Birte U. Forstmann",
+            "id": "https://openalex.org/A5032945266",
+            "orcid": "https://orcid.org/0000-0002-1005-1675"
+          },
+          "author_position": "last",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Amsterdam, Amsterdam, The Netherlands"
+          ],
+          "raw_author_name": "Birte U. Forstmann",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 186,
+      "display_name": "A purely confirmatory replication study of structural brain-behavior correlations",
+      "doi": "https://doi.org/10.1016/j.cortex.2014.11.019",
+      "id": "https://openalex.org/W2147543945",
+      "locations": [
+        {
+          "id": "doi:10.1016/j.cortex.2014.11.019",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.cortex.2014.11.019",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Cortex",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Cortex",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S116196263",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0010-9452",
+              "1973-8102"
+            ],
+            "issn_l": "0010-9452",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmid:25684445",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/25684445",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Cortex; a journal devoted to the study of the nervous system and behavior",
+          "raw_type": null,
+          "source": {
+            "display_name": "PubMed",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S4306525036",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:dare.uva.nl:openaire/8d58acc6-5946-47ba-83b0-05cf2215b4b1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://handle.uba.uva.nl/personal/pure/en/publications/a-purely-confirmatory-replication-study-of-structural-brainbehavior-correlations(8d58acc6-5946-47ba-83b0-05cf2215b4b1).html",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "Boekel, W, Wagenmakers, E-J, Belay, L, Verhagen, J, Brown, S & Forstmann, B U 2015, 'A purely confirmatory replication study of structural brain-behavior correlations', Cortex, vol. 66, pp. 115-133. https://doi.org/10.1016/j.cortex.2014.11.019",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "UvA-DARE (University of Amsterdam)",
+            "host_organization": "https://openalex.org/I887064364",
+            "host_organization_lineage": [
+              "https://openalex.org/I887064364"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Amsterdam",
+            "id": "https://openalex.org/S4306400088",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:dare.uva.nl:openaire_cris_publications/8d58acc6-5946-47ba-83b0-05cf2215b4b1",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/a-purely-confirmatory-replication-study-of-structural-brainbehavior-correlations(8d58acc6-5946-47ba-83b0-05cf2215b4b1).html",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "Boekel, W, Wagenmakers, E-J, Belay, L, Verhagen, J, Brown, S & Forstmann, B U 2015, 'A purely confirmatory replication study of structural brain-behavior correlations', Cortex, vol. 66, pp. 115-133. https://doi.org/10.1016/j.cortex.2014.11.019",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "UvA-DARE (University of Amsterdam)",
+            "host_organization": "https://openalex.org/I887064364",
+            "host_organization_lineage": [
+              "https://openalex.org/I887064364"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Amsterdam",
+            "id": "https://openalex.org/S4306400088",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:uon:24685",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "http://hdl.handle.net/1959.13/1322901",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "journal article",
+          "source": {
+            "display_name": "NOVA (University of Newcastle Australia)",
+            "host_organization": "https://openalex.org/I78757542",
+            "host_organization_lineage": [
+              "https://openalex.org/I78757542"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Newcastle Australia",
+            "id": "https://openalex.org/S4377196471",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1016/j.cortex.2014.11.019",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1016/j.cortex.2014.11.019",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Cortex",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Cortex",
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "host_organization_name": "Elsevier BV",
+          "id": "https://openalex.org/S116196263",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0010-9452",
+            "1973-8102"
+          ],
+          "issn_l": "0010-9452",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2015,
+      "title": "A purely confirmatory replication study of structural brain-behavior correlations",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "(2007b)": [
+          24
+        ],
+        "(PsycINFO": [
+          120
+        ],
+        "1": [
+          63
+        ],
+        "4": [
+          60
+        ],
+        "5": [
+          58
+        ],
+        "Aggregating": [
+          71
+        ],
+        "Database": [
+          121
+        ],
+        "Does": [
+          0
+        ],
+        "In": [
+          57
+        ],
+        "Record": [
+          122
+        ],
+        "Tenenbaum": [
+          23
+        ],
+        "We": [
+          95
+        ],
+        "When": [
+          34
+        ],
+        "Xu": [
+          21
+        ],
+        "a": [
+          4,
+          26,
+          35,
+          41,
+          88
+        ],
+        "about": [
+          104
+        ],
+        "across": [
+          72
+        ],
+        "an": [
+          54
+        ],
+        "and": [
+          22,
+          62
+        ],
+        "as": [
+          108,
+          110
+        ],
+        "attempted": [
+          66
+        ],
+        "but": [
+          86
+        ],
+        "by": [
+          9,
+          40
+        ],
+        "category": [
+          36
+        ],
+        "concerns": [
+          103
+        ],
+        "context": [
+          101
+        ],
+        "data-the": [
+          7
+        ],
+        "discuss": [
+          96
+        ],
+        "draw": [
+          18
+        ],
+        "effect": [
+          28,
+          90
+        ],
+        "effects": [
+          116
+        ],
+        "exemplar": [
+          37
+        ],
+        "experiments,": [
+          59
+        ],
+        "experiments.": [
+          119
+        ],
+        "finding": [
+          79
+        ],
+        "findings": [
+          98
+        ],
+        "from": [
+          19,
+          53
+        ],
+        "generalized": [
+          45
+        ],
+        "generally,": [
+          107
+        ],
+        "in": [
+          99,
+          117
+        ],
+        "in-person,": [
+          64
+        ],
+        "inferences": [
+          15
+        ],
+        "is": [
+          12
+        ],
+        "it": [
+          11,
+          50
+        ],
+        "it?": [
+          20
+        ],
+        "knowledgeable": [
+          42
+        ],
+        "large": [
+          27
+        ],
+        "learners": [
+          44
+        ],
+        "learning:": [
+          33
+        ],
+        "more": [
+          46,
+          106
+        ],
+        "narrowly": [
+          47
+        ],
+        "of": [
+          3,
+          6,
+          29,
+          80,
+          102,
+          114
+        ],
+        "on": [
+          32
+        ],
+        "online": [
+          61
+        ],
+        "original": [
+          78
+        ],
+        "original.": [
+          94
+        ],
+        "our": [
+          73
+        ],
+        "piece": [
+          5
+        ],
+        "practical": [
+          112
+        ],
+        "presented": [
+          39,
+          52
+        ],
+        "process": [
+          8,
+          31
+        ],
+        "process,": [
+          85
+        ],
+        "psychological": [
+          118
+        ],
+        "relevance": [
+          113
+        ],
+        "replicability": [
+          105
+        ],
+        "replicate": [
+          68
+        ],
+        "replicated": [
+          76
+        ],
+        "reported": [
+          25
+        ],
+        "result.": [
+          70
+        ],
+        "sampled-influence": [
+          13
+        ],
+        "sampling": [
+          30,
+          84,
+          115
+        ],
+        "sensitivity": [
+          81
+        ],
+        "size": [
+          91
+        ],
+        "smaller": [
+          89
+        ],
+        "source": [
+          2
+        ],
+        "source.": [
+          56
+        ],
+        "studies,": [
+          74
+        ],
+        "teacher,": [
+          43
+        ],
+        "than": [
+          48,
+          92
+        ],
+        "that": [
+          16
+        ],
+        "the": [
+          1,
+          14,
+          77,
+          83,
+          93,
+          100,
+          111
+        ],
+        "these": [
+          97
+        ],
+        "this": [
+          69
+        ],
+        "to": [
+          67,
+          82
+        ],
+        "unknowledgeable": [
+          55
+        ],
+        "was": [
+          38,
+          51
+        ],
+        "we": [
+          17,
+          65,
+          75
+        ],
+        "well": [
+          109
+        ],
+        "when": [
+          49
+        ],
+        "which": [
+          10
+        ],
+        "with": [
+          87
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Stanford University"
+            }
+          ],
+          "author": {
+            "display_name": "Molly Lewis",
+            "id": "https://openalex.org/A5027661896",
+            "orcid": "https://orcid.org/0000-0003-0897-1621"
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Stanford University",
+              "id": "https://openalex.org/I97018004",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ],
+              "ror": "https://ror.org/00f54p054",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Stanford University"
+          ],
+          "raw_author_name": "Molly L. Lewis",
+          "raw_orcid": "https://orcid.org/0000-0003-0897-1621"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Stanford University"
+            }
+          ],
+          "author": {
+            "display_name": "Michael C. Frank",
+            "id": "https://openalex.org/A5103234894",
+            "orcid": "https://orcid.org/0000-0002-7551-4378"
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Stanford University",
+              "id": "https://openalex.org/I97018004",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ],
+              "ror": "https://ror.org/00f54p054",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Stanford University"
+          ],
+          "raw_author_name": "Michael C. Frank",
+          "raw_orcid": "https://orcid.org/0000-0002-7551-4378"
+        }
+      ],
+      "cited_by_count": 15,
+      "display_name": "Understanding the effect of social context on learning: A replication of Xu and Tenenbaum (2007b).",
+      "doi": "https://doi.org/10.1037/xge0000203",
+      "id": "https://openalex.org/W2518063274",
+      "locations": [
+        {
+          "id": "doi:10.1037/xge0000203",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "http://doi.org/10.1037/xge0000203",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Journal of Experimental Psychology: General",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Experimental Psychology General",
+            "host_organization": "https://openalex.org/P4310320262",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320262"
+            ],
+            "host_organization_lineage_names": [
+              "American Psychological Association"
+            ],
+            "host_organization_name": "American Psychological Association",
+            "id": "https://openalex.org/S62013203",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0096-3445",
+              "1939-2222"
+            ],
+            "issn_l": "0096-3445",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmid:27560856",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/27560856",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Journal of experimental psychology. General",
+          "raw_type": null,
+          "source": {
+            "display_name": "PubMed",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S4306525036",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1037/xge0000203",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "http://doi.org/10.1037/xge0000203",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Journal of Experimental Psychology: General",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Journal of Experimental Psychology General",
+          "host_organization": "https://openalex.org/P4310320262",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320262"
+          ],
+          "host_organization_lineage_names": [
+            "American Psychological Association"
+          ],
+          "host_organization_name": "American Psychological Association",
+          "id": "https://openalex.org/S62013203",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0096-3445",
+            "1939-2222"
+          ],
+          "issn_l": "0096-3445",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2016,
+      "title": "Understanding the effect of social context on learning: A replication of Xu and Tenenbaum (2007b).",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "(N": [
+          89
+        ],
+        "(acting": [
+          14
+        ],
+        "(and": [
+          43
+        ],
+        "(not": [
+          24
+        ],
+        "156)": [
+          91
+        ],
+        "=": [
+          90
+        ],
+        "Accordingly,": [
+          59
+        ],
+        "Our": [
+          87
+        ],
+        "Promotion": [
+          10
+        ],
+        "The": [
+          103
+        ],
+        "We": [
+          0,
+          77
+        ],
+        "When": [
+          29
+        ],
+        "a": [
+          75
+        ],
+        "acting,": [
+          25
+        ],
+        "advance),": [
+          18
+        ],
+        "and": [
+          54,
+          67,
+          97,
+          108
+        ],
+        "approaching": [
+          33
+        ],
+        "as": [
+          34,
+          38
+        ],
+        "attempt": [
+          78
+        ],
+        "buyers": [
+          37
+        ],
+        "cases": [
+          114
+        ],
+        "constructive": [
+          79
+        ],
+        "context.": [
+          76
+        ],
+        "counterproductive.": [
+          58
+        ],
+        "eagerness": [
+          13
+        ],
+        "effect": [
+          117
+        ],
+        "else),": [
+          45
+        ],
+        "field": [
+          3
+        ],
+        "findings": [
+          83,
+          107
+        ],
+        "focus": [
+          6,
+          11,
+          21,
+          47,
+          56,
+          65,
+          69,
+          95,
+          99
+        ],
+        "for": [
+          40,
+          51
+        ],
+        "found": [
+          62
+        ],
+        "in": [
+          73,
+          112
+        ],
+        "involves": [
+          32
+        ],
+        "is": [
+          48,
+          57
+        ],
+        "little": [
+          44
+        ],
+        "maintain": [
+          27
+        ],
+        "many": [
+          35
+        ],
+        "marketers\u2019": [
+          4
+        ],
+        "methodology.": [
+          86
+        ],
+        "most": [
+          113
+        ],
+        "negatively,": [
+          70,
+          100
+        ],
+        "new": [
+          36
+        ],
+        "of": [
+          81
+        ],
+        "on": [
+          15
+        ],
+        "opportunity,": [
+          16
+        ],
+        "original": [
+          121
+        ],
+        "performance": [
+          72
+        ],
+        "performance,": [
+          53
+        ],
+        "performance.": [
+          9,
+          102
+        ],
+        "positively,": [
+          66,
+          96
+        ],
+        "possible": [
+          39
+        ],
+        "predicted": [
+          7,
+          101
+        ],
+        "predicts": [
+          71
+        ],
+        "prevention": [
+          20,
+          55,
+          68,
+          98
+        ],
+        "previous": [
+          106
+        ],
+        "prior": [
+          60
+        ],
+        "promotion": [
+          46,
+          64,
+          94
+        ],
+        "regulatory": [
+          5
+        ],
+        "replicated": [
+          105
+        ],
+        "replication": [
+          80
+        ],
+        "research": [
+          61
+        ],
+        "sales": [
+          30,
+          52
+        ],
+        "security).": [
+          28
+        ],
+        "showed": [
+          92,
+          109
+        ],
+        "similar,": [
+          110
+        ],
+        "single": [
+          41
+        ],
+        "sizes": [
+          118
+        ],
+        "slightly": [
+          115
+        ],
+        "smaller,": [
+          116
+        ],
+        "spurs": [
+          12,
+          22
+        ],
+        "stronger": [
+          85
+        ],
+        "study": [
+          88,
+          104
+        ],
+        "study.": [
+          122
+        ],
+        "such": [
+          74
+        ],
+        "suited": [
+          50
+        ],
+        "tested": [
+          1
+        ],
+        "than": [
+          119
+        ],
+        "that": [
+          63,
+          93
+        ],
+        "the": [
+          120
+        ],
+        "their": [
+          8
+        ],
+        "these": [
+          82
+        ],
+        "though": [
+          111
+        ],
+        "to": [
+          17,
+          26
+        ],
+        "transactions": [
+          42
+        ],
+        "using": [
+          84
+        ],
+        "vigilance": [
+          23
+        ],
+        "well": [
+          49
+        ],
+        "whereas": [
+          19
+        ],
+        "whether": [
+          2
+        ],
+        "work": [
+          31
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I34352273"
+              ],
+              "raw_affiliation_string": "Maastricht University;"
+            }
+          ],
+          "author": {
+            "display_name": "Melvyn R. W. Hamstra",
+            "id": "https://openalex.org/A5081262381",
+            "orcid": "https://orcid.org/0000-0002-0552-2006"
+          },
+          "author_position": "first",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "Maastricht University",
+              "id": "https://openalex.org/I34352273",
+              "lineage": [
+                "https://openalex.org/I34352273"
+              ],
+              "ror": "https://ror.org/02jz4aj89",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Maastricht University;"
+          ],
+          "raw_author_name": "Melvyn R. W. Hamstra",
+          "raw_orcid": "https://orcid.org/0000-0002-0552-2006"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I200719446"
+              ],
+              "raw_affiliation_string": "Vanderbilt University;"
+            }
+          ],
+          "author": {
+            "display_name": "Kira O. McCabe",
+            "id": "https://openalex.org/A5081584698",
+            "orcid": "https://orcid.org/0000-0001-7716-6808"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Vanderbilt University",
+              "id": "https://openalex.org/I200719446",
+              "lineage": [
+                "https://openalex.org/I200719446"
+              ],
+              "ror": "https://ror.org/02vm5rt34",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Vanderbilt University;"
+          ],
+          "raw_author_name": "Kira O. McCabe",
+          "raw_orcid": "https://orcid.org/0000-0001-7716-6808"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I887064364"
+              ],
+              "raw_affiliation_string": "University of Amsterdam;"
+            }
+          ],
+          "author": {
+            "display_name": "Bruno Klekamp",
+            "id": "https://openalex.org/A5046640544",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Amsterdam",
+              "id": "https://openalex.org/I887064364",
+              "lineage": [
+                "https://openalex.org/I887064364"
+              ],
+              "ror": "https://ror.org/04dkp9463",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Amsterdam;"
+          ],
+          "raw_author_name": "Bruno Klekamp",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I169381384"
+              ],
+              "raw_affiliation_string": "University of Groningen"
+            }
+          ],
+          "author": {
+            "display_name": "Eric F. Rietzschel",
+            "id": "https://openalex.org/A5015344813",
+            "orcid": "https://orcid.org/0000-0003-2805-4935"
+          },
+          "author_position": "last",
+          "countries": [
+            "NL"
+          ],
+          "institutions": [
+            {
+              "country_code": "NL",
+              "display_name": "University of Groningen",
+              "id": "https://openalex.org/I169381384",
+              "lineage": [
+                "https://openalex.org/I169381384"
+              ],
+              "ror": "https://ror.org/012p63287",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "University of Groningen"
+          ],
+          "raw_author_name": "Eric F. Rietzschel",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 14,
+      "display_name": "Regulatory Focus and Individual Sales Performance of Field Marketers: A Constructive Replication",
+      "doi": "https://doi.org/10.1080/01973533.2018.1526086",
+      "id": "https://openalex.org/W2902438068",
+      "locations": [
+        {
+          "id": "doi:10.1080/01973533.2018.1526086",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1080/01973533.2018.1526086",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/01973533.2018.1526086?needAccess=true",
+          "raw_source_name": "Basic and Applied Social Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Basic and Applied Social Psychology",
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "host_organization_name": "Taylor & Francis",
+            "id": "https://openalex.org/S207100277",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0197-3533",
+              "1532-4834"
+            ],
+            "issn_l": "0197-3533",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:cris.maastrichtuniversity.nl:openaire/3ca1b5e9-4494-4cdb-a37a-3a12315b793d",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://cris.maastrichtuniversity.nl/en/publications/3ca1b5e9-4494-4cdb-a37a-3a12315b793d",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Hamstra, M R W, McCabe, K O, Klekamp, B & Rietzschel, E F 2018, 'Regulatory Focus and Individual Sales Performance of Field Marketers : A Constructive Replication', Basic and Applied Social Psychology, vol. 40, no. 6, pp. 414-420. https://doi.org/10.1080/01973533.2018.1526086",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "Research Publications (Maastricht University)",
+            "host_organization": "https://openalex.org/I34352273",
+            "host_organization_lineage": [
+              "https://openalex.org/I34352273"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Maastricht University",
+            "id": "https://openalex.org/S4306402616",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:pure.rug.nl:publications/93c1284c-9ce5-4205-85d3-d6c29a401d19",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://research.rug.nl/en/publications/93c1284c-9ce5-4205-85d3-d6c29a401d19",
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "pdf_url": "https://pure.rug.nl/ws/files/75407430/2_5_2019_Regulatory.pdf",
+          "raw_source_name": "Hamstra, M R W, McCabe, K O, Klekamp, B & Rietzschel, E F 2018, 'Regulatory Focus and Individual Sales Performance of Field Marketers : A Constructive Replication', Basic and Applied Social Psychology, vol. 40, no. 6, pp. 414-420. https://doi.org/10.1080/01973533.2018.1526086",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+            "host_organization": "https://openalex.org/I169381384",
+            "host_organization_lineage": [
+              "https://openalex.org/I169381384"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Groningen",
+            "id": "https://openalex.org/S4306400420",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1080/01973533.2018.1526086",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1080/01973533.2018.1526086",
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/01973533.2018.1526086?needAccess=true",
+        "raw_source_name": "Basic and Applied Social Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Basic and Applied Social Psychology",
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "host_organization_name": "Taylor & Francis",
+          "id": "https://openalex.org/S207100277",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0197-3533",
+            "1532-4834"
+          ],
+          "issn_l": "0197-3533",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2018,
+      "title": "Regulatory Focus and Individual Sales Performance of Field Marketers: A Constructive Replication",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "&": [
+          58
+        ],
+        "(2012)": [
+          24,
+          169
+        ],
+        "(Bargh": [
+          57
+        ],
+        "(N": [
+          243
+        ],
+        "(as": [
+          211
+        ],
+        "(in": [
+          32,
+          50
+        ],
+        "(particularly": [
+          267
+        ],
+        "(vs.": [
+          330
+        ],
+        "1": [
+          281
+        ],
+        "1996)": [
+          223
+        ],
+        "2,": [
+          191
+        ],
+        "2012).": [
+          60
+        ],
+        "260).": [
+          244
+        ],
+        "5": [
+          81
+        ],
+        "A": [
+          164
+        ],
+        "BSTRACT": [
+          165
+        ],
+        "Bargh": [
+          21,
+          166
+        ],
+        "Big": [
+          249
+        ],
+        "Five": [
+          250
+        ],
+        "Holding": [
+          122
+        ],
+        "In": [
+          0,
+          188
+        ],
+        "Loneliness": [
+          220
+        ],
+        "Our": [
+          269
+        ],
+        "Overall,": [
+          140
+        ],
+        "People": [
+          102
+        ],
+        "Russell,": [
+          222
+        ],
+        "SCIENTIFIC": [
+          163
+        ],
+        "Scale;": [
+          221
+        ],
+        "Shalev": [
+          23,
+          168
+        ],
+        "Shalev,": [
+          59
+        ],
+        "Study": [
+          190
+        ],
+        "The": [
+          299,
+          336
+        ],
+        "There": [
+          322
+        ],
+        "UCLA": [
+          219
+        ],
+        "Using": [
+          61
+        ],
+        "We": [
+          230,
+          245
+        ],
+        "a": [
+          36,
+          54,
+          74,
+          93,
+          105,
+          119,
+          123,
+          127,
+          155,
+          204,
+          214,
+          240,
+          274
+        ],
+        "about": [
+          310
+        ],
+        "abstract": [
+          13
+        ],
+        "accepted.": [
+          356
+        ],
+        "after": [
+          303
+        ],
+        "agreeableness).": [
+          268
+        ],
+        "also": [
+          130,
+          246,
+          324
+        ],
+        "an": [
+          134,
+          194,
+          293
+        ],
+        "and": [
+          22,
+          73,
+          160,
+          167,
+          317,
+          347
+        ],
+        "any": [
+          308
+        ],
+        "assessed": [
+          247
+        ],
+        "attempted": [
+          231
+        ],
+        "be": [
+          16,
+          147,
+          355
+        ],
+        "become": [
+          5
+        ],
+        "before": [
+          352
+        ],
+        "between": [
+          91,
+          157,
+          313,
+          342
+        ],
+        "by": [
+          213
+        ],
+        "can": [
+          15,
+          354
+        ],
+        "changes": [
+          262
+        ],
+        "cold": [
+          37,
+          106,
+          124,
+          205,
+          278,
+          329
+        ],
+        "coldness": [
+          31,
+          174,
+          258,
+          346
+        ],
+        "concepts": [
+          14
+        ],
+        "condition.": [
+          229
+        ],
+        "conditions,": [
+          92
+        ],
+        "conducted": [
+          193
+        ],
+        "connection": [
+          156,
+          312,
+          341
+        ],
+        "demonstrated": [
+          25
+        ],
+        "determine": [
+          151,
+          254
+        ],
+        "did": [
+          108,
+          131
+        ],
+        "difference": [
+          90
+        ],
+        "effect": [
+          135,
+          285,
+          294,
+          300
+        ],
+        "effects": [
+          326
+        ],
+        "essentially": [
+          297
+        ],
+        "excluding": [
+          304
+        ],
+        "experienced": [
+          29,
+          47,
+          185
+        ],
+        "experiences.": [
+          20
+        ],
+        "experiencing": [
+          172
+        ],
+        "experiment": [
+          195
+        ],
+        "extent": [
+          10
+        ],
+        "failed": [
+          96
+        ],
+        "finding": [
+          94,
+          238
+        ],
+        "for": [
+          280
+        ],
+        "form": [
+          34,
+          52,
+          216
+        ],
+        "found": [
+          85
+        ],
+        "further": [
+          148,
+          350
+        ],
+        "greater": [
+          180
+        ],
+        "had": [
+          283
+        ],
+        "hand": [
+          55,
+          275
+        ],
+        "have": [
+          4,
+          133
+        ],
+        "held": [
+          104,
+          118,
+          203
+        ],
+        "high-powered": [
+          241
+        ],
+        "higher": [
+          208
+        ],
+        "holding": [
+          273
+        ],
+        "hypothesized": [
+          170
+        ],
+        "if": [
+          152,
+          183,
+          255
+        ],
+        "important": [
+          237
+        ],
+        "in": [
+          8,
+          18,
+          69,
+          196,
+          226,
+          239,
+          263,
+          289
+        ],
+        "increasingly": [
+          6
+        ],
+        "individuals": [
+          27,
+          45,
+          177
+        ],
+        "interested": [
+          7
+        ],
+        "interpersonal": [
+          161
+        ],
+        "is": [
+          154
+        ],
+        "it": [
+          353
+        ],
+        "larger,": [
+          83
+        ],
+        "lead": [
+          176,
+          260
+        ],
+        "lonelier": [
+          43,
+          114
+        ],
+        "loneliness": [
+          181,
+          210,
+          288,
+          348
+        ],
+        "loneliness.": [
+          321
+        ],
+        "manipulation": [
+          316
+        ],
+        "measure": [
+          319
+        ],
+        "measured": [
+          212
+        ],
+        "might": [
+          259
+        ],
+        "min": [
+          282
+        ],
+        "more": [
+          79
+        ],
+        "needs": [
+          145
+        ],
+        "no": [
+          89,
+          284,
+          325
+        ],
+        "nonsignificant": [
+          302
+        ],
+        "not": [
+          109,
+          132
+        ],
+        "of": [
+          35,
+          53,
+          217,
+          296,
+          320,
+          327,
+          338
+        ],
+        "on": [
+          136,
+          286,
+          333
+        ],
+        "or": [
+          257,
+          277,
+          345
+        ],
+        "original": [
+          71,
+          100
+        ],
+        "our": [
+          290
+        ],
+        "pack": [
+          107,
+          125,
+          129,
+          206,
+          279
+        ],
+        "pack)": [
+          38
+        ],
+        "pack.": [
+          121
+        ],
+        "packs": [
+          332
+        ],
+        "participants": [
+          201,
+          225,
+          305
+        ],
+        "people": [
+          116
+        ],
+        "people\u2019s": [
+          137
+        ],
+        "personality": [
+          138,
+          251,
+          265,
+          334
+        ],
+        "physical": [
+          19,
+          30,
+          48,
+          158,
+          173,
+          186,
+          343
+        ],
+        "potential": [
+          340
+        ],
+        "potentially": [
+          235
+        ],
+        "practically": [
+          236
+        ],
+        "procedures": [
+          62
+        ],
+        "psychologists": [
+          3
+        ],
+        "question": [
+          337
+        ],
+        "recent": [
+          1
+        ],
+        "remained": [
+          301
+        ],
+        "replicate": [
+          98,
+          233
+        ],
+        "report": [
+          110,
+          179
+        ],
+        "reported": [
+          39,
+          207,
+          307
+        ],
+        "research": [
+          149,
+          351
+        ],
+        "results": [
+          270
+        ],
+        "sample": [
+          75
+        ],
+        "self-reported": [
+          264
+        ],
+        "short": [
+          215
+        ],
+        "showed": [
+          199,
+          271
+        ],
+        "similar": [
+          66
+        ],
+        "size": [
+          76,
+          295
+        ],
+        "study": [
+          72,
+          242
+        ],
+        "study,": [
+          291
+        ],
+        "study.": [
+          101
+        ],
+        "suggest": [
+          142
+        ],
+        "suspicion": [
+          309
+        ],
+        "than": [
+          44,
+          80,
+          115,
+          182,
+          224
+        ],
+        "that": [
+          26,
+          40,
+          63,
+          77,
+          86,
+          95,
+          111,
+          143,
+          171,
+          200,
+          272
+        ],
+        "the": [
+          9,
+          33,
+          51,
+          70,
+          99,
+          218,
+          227,
+          248,
+          311,
+          314,
+          318,
+          328,
+          339
+        ],
+        "their": [
+          189
+        ],
+        "there": [
+          87,
+          144,
+          153
+        ],
+        "they": [
+          41,
+          112,
+          184,
+          192,
+          198
+        ],
+        "this": [
+          234
+        ],
+        "those": [
+          68
+        ],
+        "times": [
+          82
+        ],
+        "to": [
+          11,
+          67,
+          97,
+          146,
+          150,
+          178,
+          232,
+          253,
+          261
+        ],
+        "trait": [
+          209,
+          287
+        ],
+        "traits": [
+          252,
+          266
+        ],
+        "traits.": [
+          139,
+          335
+        ],
+        "versus": [
+          126
+        ],
+        "very": [
+          65
+        ],
+        "warm": [
+          120,
+          128,
+          228
+        ],
+        "warm)": [
+          331
+        ],
+        "warmer": [
+          276
+        ],
+        "warmer)": [
+          56
+        ],
+        "warmth": [
+          49,
+          159,
+          256,
+          344
+        ],
+        "warmth-coldness": [
+          315
+        ],
+        "warmth.": [
+          162,
+          187
+        ],
+        "warrants": [
+          349
+        ],
+        "was": [
+          78,
+          88
+        ],
+        "we": [
+          84,
+          141
+        ],
+        "were": [
+          42,
+          64,
+          113,
+          323
+        ],
+        "which": [
+          12,
+          197
+        ],
+        "who": [
+          28,
+          46,
+          103,
+          117,
+          202,
+          306
+        ],
+        "will": [
+          175
+        ],
+        "with": [
+          292
+        ],
+        "years,": [
+          2
+        ],
+        "zero.": [
+          298
+        ],
+        "\u201cembodied\u201d": [
+          17
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I87216513"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Michigan State University, East Lansing, MI, US"
+            }
+          ],
+          "author": {
+            "display_name": "Jessica Wortman",
+            "id": "https://openalex.org/A5109916827",
+            "orcid": null
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Michigan State University",
+              "id": "https://openalex.org/I87216513",
+              "lineage": [
+                "https://openalex.org/I87216513"
+              ],
+              "ror": "https://ror.org/05hs6h993",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Michigan State University, East Lansing, MI, US"
+          ],
+          "raw_author_name": "Jessica Wortman"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I87216513"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Michigan State University, East Lansing, MI, US"
+            }
+          ],
+          "author": {
+            "display_name": "M. Brent Donnellan",
+            "id": "https://openalex.org/A5009108933",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Michigan State University",
+              "id": "https://openalex.org/I87216513",
+              "lineage": [
+                "https://openalex.org/I87216513"
+              ],
+              "ror": "https://ror.org/05hs6h993",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Michigan State University, East Lansing, MI, US"
+          ],
+          "raw_author_name": "M. Brent Donnellan"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I87216513"
+              ],
+              "raw_affiliation_string": "Department of Psychology, Michigan State University, East Lansing, MI, US"
+            }
+          ],
+          "author": {
+            "display_name": "Richard E. Lucas",
+            "id": "https://openalex.org/A5051404063",
+            "orcid": "https://orcid.org/0000-0002-7995-3319"
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Michigan State University",
+              "id": "https://openalex.org/I87216513",
+              "lineage": [
+                "https://openalex.org/I87216513"
+              ],
+              "ror": "https://ror.org/05hs6h993",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, Michigan State University, East Lansing, MI, US"
+          ],
+          "raw_author_name": "Richard E. Lucas"
+        }
+      ],
+      "cited_by_count": 18,
+      "display_name": "Can physical warmth (or coldness) predict trait loneliness? A replication of Bargh and Shalev (2012).",
+      "doi": "https://doi.org/10.1037/arc0000007",
+      "id": "https://openalex.org/W2085254914",
+      "locations": [
+        {
+          "id": "doi:10.1037/arc0000007",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1037/arc0000007",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": "Archives of Scientific Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Archives of Scientific Psychology",
+            "host_organization": "https://openalex.org/P4310320262",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320262"
+            ],
+            "host_organization_lineage_names": [
+              "American Psychological Association"
+            ],
+            "host_organization_name": "American Psychological Association",
+            "id": "https://openalex.org/S181516231",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": [
+              "2169-3269"
+            ],
+            "issn_l": "2169-3269",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1037/arc0000007",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1037/arc0000007",
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "pdf_url": null,
+        "raw_source_name": "Archives of Scientific Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Archives of Scientific Psychology",
+          "host_organization": "https://openalex.org/P4310320262",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320262"
+          ],
+          "host_organization_lineage_names": [
+            "American Psychological Association"
+          ],
+          "host_organization_name": "American Psychological Association",
+          "id": "https://openalex.org/S181516231",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": true,
+          "issn": [
+            "2169-3269"
+          ],
+          "issn_l": "2169-3269",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2014,
+      "title": "Can physical warmth (or coldness) predict trait loneliness? A replication of Bargh and Shalev (2012).",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "(MTurk)": [
+          33
+        ],
+        "(N": [
+          35
+        ],
+        "1,001),": [
+          39
+        ],
+        "1.": [
+          60
+        ],
+        "2,": [
+          82,
+          141
+        ],
+        "=": [
+          38
+        ],
+        "All": [
+          203
+        ],
+        "Amazon": [
+          30
+        ],
+        "Extending": [
+          136
+        ],
+        "In": [
+          24,
+          94
+        ],
+        "Mechanical": [
+          31
+        ],
+        "Study": [
+          59,
+          81,
+          140
+        ],
+        "The": [
+          0,
+          61
+        ],
+        "Turk": [
+          32
+        ],
+        "We": [
+          51,
+          75,
+          115,
+          160,
+          184
+        ],
+        "a": [
+          21,
+          85,
+          120,
+          154
+        ],
+        "addition,": [
+          95
+        ],
+        "adequate": [
+          130
+        ],
+        "after": [
+          36
+        ],
+        "again": [
+          161
+        ],
+        "an": [
+          8,
+          29,
+          165
+        ],
+        "analysis": [
+          207
+        ],
+        "and": [
+          15,
+          70,
+          194,
+          206
+        ],
+        "are": [
+          209
+        ],
+        "as": [
+          157,
+          198,
+          200
+        ],
+        "at": [
+          211
+        ],
+        "attempted": [
+          41
+        ],
+        "available": [
+          210
+        ],
+        "be": [
+          178
+        ],
+        "between": [
+          191
+        ],
+        "can": [
+          152
+        ],
+        "central": [
+          102
+        ],
+        "choice": [
+          18
+        ],
+        "codes": [
+          208
+        ],
+        "concluded": [
+          97
+        ],
+        "data,": [
+          205
+        ],
+        "decisions": [
+          151
+        ],
+        "decoy": [
+          1,
+          48,
+          78,
+          113
+        ],
+        "detect": [
+          133
+        ],
+        "detected": [
+          179
+        ],
+        "did": [
+          127
+        ],
+        "difference.": [
+          135
+        ],
+        "direction,": [
+          69,
+          170
+        ],
+        "discrepancies": [
+          190
+        ],
+        "discuss": [
+          185
+        ],
+        "effect": [
+          2,
+          49,
+          79,
+          88,
+          166,
+          173
+        ],
+        "effect.": [
+          114
+        ],
+        "effects": [
+          63
+        ],
+        "evidence": [
+          99
+        ],
+        "exclusion": [
+          37
+        ],
+        "experiments": [
+          27,
+          45
+        ],
+        "failed": [
+          52
+        ],
+        "for": [
+          100,
+          119,
+          164,
+          188
+        ],
+        "found": [
+          116,
+          162
+        ],
+        "from": [
+          46
+        ],
+        "given": [
+          180
+        ],
+        "have": [
+          153
+        ],
+        "https://osf.io/vsbzk.": [
+          212
+        ],
+        "hypothesis": [
+          103
+        ],
+        "impact": [
+          156
+        ],
+        "implications.": [
+          202
+        ],
+        "in": [
+          58,
+          66,
+          80,
+          91,
+          139,
+          167
+        ],
+        "inconclusive": [
+          98
+        ],
+        "increases": [
+          16
+        ],
+        "indication": [
+          118,
+          163
+        ],
+        "inferior,": [
+          9
+        ],
+        "literature.": [
+          50
+        ],
+        "low": [
+          148
+        ],
+        "making": [
+          145
+        ],
+        "materials,": [
+          204
+        ],
+        "much": [
+          86
+        ],
+        "not": [
+          65,
+          128
+        ],
+        "observed": [
+          62
+        ],
+        "of": [
+          20,
+          104,
+          150
+        ],
+        "option": [
+          11
+        ],
+        "option.": [
+          23
+        ],
+        "original": [
+          56,
+          106,
+          193
+        ],
+        "original.": [
+          93
+        ],
+        "our": [
+          124,
+          181
+        ],
+        "people\u2019s": [
+          13
+        ],
+        "phenomenon": [
+          6
+        ],
+        "potential": [
+          186
+        ],
+        "power": [
+          131
+        ],
+        "pre-registered": [
+          26
+        ],
+        "predicted": [
+          68,
+          169
+        ],
+        "preferences": [
+          14
+        ],
+        "provide": [
+          129
+        ],
+        "reasons": [
+          187
+        ],
+        "reduction,": [
+          122
+        ],
+        "refers": [
+          3
+        ],
+        "regret": [
+          109,
+          158
+        ],
+        "replicate": [
+          43,
+          54
+        ],
+        "replicated": [
+          76
+        ],
+        "replication": [
+          138,
+          196
+        ],
+        "results": [
+          57
+        ],
+        "results,": [
+          197
+        ],
+        "reverses": [
+          12
+        ],
+        "reversibility": [
+          149
+        ],
+        "salience": [
+          110
+        ],
+        "salience.": [
+          159
+        ],
+        "salient": [
+          146
+        ],
+        "sample": [
+          34,
+          125,
+          182
+        ],
+        "share": [
+          19
+        ],
+        "similar": [
+          155
+        ],
+        "size": [
+          89,
+          126
+        ],
+        "size.": [
+          183
+        ],
+        "sizes": [
+          72
+        ],
+        "smaller": [
+          87
+        ],
+        "some": [
+          117
+        ],
+        "study": [
+          107
+        ],
+        "targeted": [
+          22
+        ],
+        "tested": [
+          143
+        ],
+        "than": [
+          90
+        ],
+        "that": [
+          108
+        ],
+        "the": [
+          5,
+          17,
+          47,
+          55,
+          67,
+          77,
+          92,
+          101,
+          105,
+          112,
+          137,
+          147,
+          168,
+          172,
+          189,
+          192,
+          195,
+          201
+        ],
+        "their": [
+          71
+        ],
+        "this": [
+          134
+        ],
+        "to": [
+          4,
+          42,
+          53,
+          132,
+          177
+        ],
+        "too": [
+          175
+        ],
+        "trivial.": [
+          74
+        ],
+        "two": [
+          25,
+          44
+        ],
+        "unpreferable": [
+          10
+        ],
+        "was": [
+          174
+        ],
+        "we": [
+          40,
+          96,
+          142
+        ],
+        "weak": [
+          121,
+          176
+        ],
+        "weakens": [
+          111
+        ],
+        "well": [
+          199
+        ],
+        "were": [
+          64,
+          73
+        ],
+        "whereby": [
+          7
+        ],
+        "whether": [
+          144
+        ],
+        "with": [
+          28,
+          84
+        ],
+        "yet": [
+          83,
+          123,
+          171
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Qinyu Xiao",
+            "id": "https://openalex.org/A5024535600",
+            "orcid": "https://orcid.org/0000-0002-9824-9247"
+          },
+          "author_position": "first",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Qinyu Xiao",
+          "raw_orcid": "https://orcid.org/0000-0002-9824-9247"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Shiyuan Zeng",
+            "id": "https://openalex.org/A5031980315",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Shiyuan Zeng",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Gilad Feldman",
+            "id": "https://openalex.org/A5082116663",
+            "orcid": "https://orcid.org/0000-0003-2812-6599"
+          },
+          "author_position": "last",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Gilad Feldman",
+          "raw_orcid": "https://orcid.org/0000-0003-2812-6599"
+        }
+      ],
+      "cited_by_count": 6,
+      "display_name": "Revisiting the decoy effect: replication and extension of Ariely and Wallsten (1995) and Connolly, Reb, and Kausel (2013)",
+      "doi": "https://doi.org/10.1080/23743603.2021.1878340",
+      "id": "https://openalex.org/W3138016342",
+      "locations": [
+        {
+          "id": "doi:10.1080/23743603.2021.1878340",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1080/23743603.2021.1878340",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Comprehensive Results in Social Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Comprehensive Results in Social Psychology",
+            "host_organization": "https://openalex.org/P4310320547",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320547"
+            ],
+            "host_organization_lineage_names": [
+              "Taylor & Francis"
+            ],
+            "host_organization_name": "Taylor & Francis",
+            "id": "https://openalex.org/S4210196576",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "2374-3603",
+              "2374-3611"
+            ],
+            "issn_l": "2374-3603",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1080/23743603.2021.1878340",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1080/23743603.2021.1878340",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Comprehensive Results in Social Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Comprehensive Results in Social Psychology",
+          "host_organization": "https://openalex.org/P4310320547",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320547"
+          ],
+          "host_organization_lineage_names": [
+            "Taylor & Francis"
+          ],
+          "host_organization_name": "Taylor & Francis",
+          "id": "https://openalex.org/S4210196576",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "2374-3603",
+            "2374-3611"
+          ],
+          "issn_l": "2374-3603",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2020,
+      "title": "Revisiting the decoy effect: replication and extension of Ariely and Wallsten (1995) and Connolly, Reb, and Kausel (2013)",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I68666633"
+              ],
+              "raw_affiliation_string": "Marketing Department, Grenoble Ecole de Management, F-38000 Grenoble, France"
+            }
+          ],
+          "author": {
+            "display_name": "Ignazio Ziano",
+            "id": "https://openalex.org/A5034635677",
+            "orcid": "https://orcid.org/0000-0002-4957-3614"
+          },
+          "author_position": "first",
+          "countries": [
+            "FR"
+          ],
+          "institutions": [
+            {
+              "country_code": "FR",
+              "display_name": "Grenoble Ecole de Management",
+              "id": "https://openalex.org/I68666633",
+              "lineage": [
+                "https://openalex.org/I68666633"
+              ],
+              "ror": "https://ror.org/01h4fxd96",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Marketing Department, Grenoble Ecole de Management, F-38000 Grenoble, France"
+          ],
+          "raw_author_name": "Ignazio Ziano"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Qinyu Xiao",
+            "id": "https://openalex.org/A5024535600",
+            "orcid": "https://orcid.org/0000-0002-9824-9247"
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Qinyu Xiao"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Siu Kit Yeung",
+            "id": "https://openalex.org/A5036918378",
+            "orcid": "https://orcid.org/0000-0002-5835-0981"
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Siu Kit Yeung"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Cho Yan Wong",
+            "id": "https://openalex.org/A5024698405",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Cho Yan Wong"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Mei Yee Cheung",
+            "id": "https://openalex.org/A5066613039",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Mei Yee Cheung"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Chung Yi Joey Lo",
+            "id": "https://openalex.org/A5003916791",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Chung Yi Joey Lo"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Ho Ching Yan",
+            "id": "https://openalex.org/A5053131263",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Ho Ching Yan"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Gregorius Ivan Narendra",
+            "id": "https://openalex.org/A5068623381",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Gregorius Ivan Narendra"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Li Wing Kwan",
+            "id": "https://openalex.org/A5065914025",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Li Wing Kwan"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Ching Sum Chow",
+            "id": "https://openalex.org/A5004256532",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Ching Sum Chow"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Chak Yam Man",
+            "id": "https://openalex.org/A5015146238",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Chak Yam Man"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I889458895"
+              ],
+              "raw_affiliation_string": "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+            }
+          ],
+          "author": {
+            "display_name": "Gilad Feldman",
+            "id": "https://openalex.org/A5082116663",
+            "orcid": "https://orcid.org/0000-0003-2812-6599"
+          },
+          "author_position": "last",
+          "countries": [
+            "HK"
+          ],
+          "institutions": [
+            {
+              "country_code": "HK",
+              "display_name": "University of Hong Kong",
+              "id": "https://openalex.org/I889458895",
+              "lineage": [
+                "https://openalex.org/I889458895"
+              ],
+              "ror": "https://ror.org/02zhqgq86",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Department of Psychology, University of Hong Kong, Hong Kong SAR"
+          ],
+          "raw_author_name": "Gilad Feldman"
+        }
+      ],
+      "cited_by_count": 8,
+      "display_name": "Numbing or sensitization? Replications and extensions of Fetherstonhaugh et al. (1997)'s \u201cInsensitivity to the Value of Human Life\u201d",
+      "doi": "https://doi.org/10.1016/j.jesp.2021.104222",
+      "id": "https://openalex.org/W3198223862",
+      "locations": [
+        {
+          "id": "doi:10.1016/j.jesp.2021.104222",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1016/j.jesp.2021.104222",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Journal of Experimental Social Psychology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Journal of Experimental Social Psychology",
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "host_organization_name": "Elsevier BV",
+            "id": "https://openalex.org/S12410666",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0022-1031",
+              "1096-0465"
+            ],
+            "issn_l": "0022-1031",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1016/j.jesp.2021.104222",
+        "is_accepted": true,
+        "is_oa": false,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1016/j.jesp.2021.104222",
+        "license": null,
+        "license_id": null,
+        "pdf_url": null,
+        "raw_source_name": "Journal of Experimental Social Psychology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Journal of Experimental Social Psychology",
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "host_organization_name": "Elsevier BV",
+          "id": "https://openalex.org/S12410666",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0022-1031",
+            "1096-0465"
+          ],
+          "issn_l": "0022-1031",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2021,
+      "title": "Numbing or sensitization? Replications and extensions of Fetherstonhaugh et al. (1997)'s \u201cInsensitivity to the Value of Human Life\u201d",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": {
+        "&gt;": [
+          205
+        ],
+        "&lt;": [
+          174
+        ],
+        "(2021).": [
+          56
+        ],
+        "(Mage": [
+          64,
+          83
+        ],
+        "(NON-PREF)": [
+          37
+        ],
+        "(PREF)": [
+          34
+        ],
+        "(RTF).": [
+          109
+        ],
+        "(more": [
+          230
+        ],
+        "(n": [
+          75
+        ],
+        "(p": [
+          123,
+          154,
+          204,
+          214,
+          219,
+          252
+        ],
+        "(z": [
+          139,
+          170,
+          237
+        ],
+        "-1.88,": [
+          141
+        ],
+        "-3.11,": [
+          239
+        ],
+        "-4.44,": [
+          172
+        ],
+        "0.00).": [
+          257
+        ],
+        "0.001).": [
+          175
+        ],
+        "0.002),": [
+          242
+        ],
+        "0.015)": [
+          216
+        ],
+        "0.025)": [
+          221
+        ],
+        "0.036).": [
+          144
+        ],
+        "0.05).": [
+          206
+        ],
+        "0.084,": [
+          156
+        ],
+        "0.12),": [
+          129
+        ],
+        "0.34)": [
+          159
+        ],
+        "0.545,": [
+          125
+        ],
+        "1.00,": [
+          254
+        ],
+        "1.5),": [
+          70
+        ],
+        "1.5).": [
+          89
+        ],
+        "20.5": [
+          66
+        ],
+        "20.6": [
+          85
+        ],
+        "28": [
+          61
+        ],
+        "47)": [
+          77
+        ],
+        "=": [
+          65,
+          69,
+          76,
+          84,
+          88,
+          124,
+          128,
+          140,
+          143,
+          155,
+          158,
+          171,
+          215,
+          220,
+          238,
+          241,
+          253,
+          256
+        ],
+        "ANOVA": [
+          190
+        ],
+        "Athletes,": [
+          277
+        ],
+        "Ballmann": [
+          53
+        ],
+        "Cohen\u2019s": [
+          126
+        ],
+        "Concerning": [
+          110
+        ],
+        "For": [
+          145
+        ],
+        "In": [
+          18,
+          184,
+          224
+        ],
+        "NON-PREF": [
+          95,
+          235
+        ],
+        "PREF": [
+          93,
+          233
+        ],
+        "Participants": [
+          90
+        ],
+        "RTF": [
+          122,
+          203
+        ],
+        "Replication": [
+          0
+        ],
+        "Results": [
+          258
+        ],
+        "SD": [
+          68,
+          87
+        ],
+        "The": [
+          57
+        ],
+        "There": [
+          207
+        ],
+        "Thus,": [
+          176
+        ],
+        "a": [
+          2,
+          46,
+          50,
+          98,
+          188,
+          266
+        ],
+        "addition,": [
+          225
+        ],
+        "al.": [
+          55
+        ],
+        "and": [
+          16,
+          25,
+          43,
+          81,
+          94,
+          130,
+          133,
+          160,
+          199,
+          217,
+          273,
+          279
+        ],
+        "are": [
+          281
+        ],
+        "aspect": [
+          4
+        ],
+        "associated": [
+          274
+        ],
+        "attempt": [
+          22
+        ],
+        "attempt,": [
+          113
+        ],
+        "attentional": [
+          226
+        ],
+        "been": [
+          12
+        ],
+        "bench": [
+          40,
+          104,
+          270
+        ],
+        "between": [
+          118,
+          151,
+          249
+        ],
+        "but": [
+          243
+        ],
+        "by": [
+          52
+        ],
+        "close": [
+          47
+        ],
+        "complements": [
+          287
+        ],
+        "completing": [
+          103
+        ],
+        "comprised": [
+          78
+        ],
+        "conditioning.": [
+          17
+        ],
+        "conditions": [
+          120,
+          153,
+          251
+        ],
+        "conducted": [
+          13
+        ],
+        "considering": [
+          292
+        ],
+        "counterbalanced": [
+          100
+        ],
+        "design,": [
+          101
+        ],
+        "did": [
+          246
+        ],
+        "differ": [
+          248
+        ],
+        "difference": [
+          117,
+          150
+        ],
+        "different": [
+          229
+        ],
+        "dissociative)": [
+          231
+        ],
+        "does": [
+          263
+        ],
+        "dz": [
+          127,
+          157,
+          255
+        ],
+        "effect": [
+          135,
+          162,
+          268
+        ],
+        "effects": [
+          31,
+          196,
+          211
+        ],
+        "encouraged": [
+          282
+        ],
+        "estimate": [
+          164
+        ],
+        "et": [
+          54
+        ],
+        "exercisers,": [
+          278
+        ],
+        "exertion": [
+          245
+        ],
+        "extend": [
+          26
+        ],
+        "extension": [
+          73,
+          186
+        ],
+        "factors.": [
+          276
+        ],
+        "failure": [
+          108
+        ],
+        "few": [
+          9
+        ],
+        "findings": [
+          180
+        ],
+        "focus": [
+          227
+        ],
+        "for": [
+          121,
+          232
+        ],
+        "found": [
+          115
+        ],
+        "fundamental": [
+          3
+        ],
+        "genre": [
+          201,
+          218,
+          293
+        ],
+        "have": [
+          11,
+          265
+        ],
+        "however,": [
+          209
+        ],
+        "in": [
+          97
+        ],
+        "included": [
+          60
+        ],
+        "incompatible": [
+          138,
+          166
+        ],
+        "indicate": [
+          259
+        ],
+        "interaction": [
+          193
+        ],
+        "is": [
+          1
+        ],
+        "listened": [
+          91
+        ],
+        "main": [
+          195,
+          210
+        ],
+        "men": [
+          63,
+          80
+        ],
+        "motivation": [
+          44,
+          146
+        ],
+        "motivation.": [
+          223
+        ],
+        "music": [
+          38,
+          96,
+          119,
+          152,
+          200,
+          236,
+          250,
+          261,
+          285
+        ],
+        "no": [
+          116,
+          149,
+          192
+        ],
+        "nonpreferred": [
+          36
+        ],
+        "not": [
+          182,
+          247,
+          264
+        ],
+        "of": [
+          5,
+          32,
+          49,
+          197,
+          212
+        ],
+        "on": [
+          29,
+          39,
+          202,
+          222,
+          269
+        ],
+        "or": [
+          194
+        ],
+        "original": [
+          134,
+          169,
+          178
+        ],
+        "p": [
+          142,
+          173,
+          240
+        ],
+        "paper": [
+          20
+        ],
+        "perceived": [
+          244
+        ],
+        "performance": [
+          42,
+          272
+        ],
+        "practitioners": [
+          280
+        ],
+        "preference": [
+          262
+        ],
+        "preference.": [
+          294
+        ],
+        "preferred": [
+          33
+        ],
+        "press": [
+          41,
+          105,
+          271
+        ],
+        "previous": [
+          27
+        ],
+        "psychological": [
+          275
+        ],
+        "rather": [
+          290
+        ],
+        "repeated-measures": [
+          99
+        ],
+        "repetitions": [
+          106
+        ],
+        "replicate": [
+          24
+        ],
+        "replicated.": [
+          183
+        ],
+        "replication": [
+          48,
+          58,
+          112,
+          132
+        ],
+        "replications": [
+          10
+        ],
+        "research": [
+          28
+        ],
+        "research,": [
+          7
+        ],
+        "resistance-trained": [
+          62,
+          79
+        ],
+        "robust": [
+          267
+        ],
+        "sample": [
+          59,
+          74
+        ],
+        "scientific": [
+          6
+        ],
+        "sex": [
+          198,
+          213
+        ],
+        "showed": [
+          191
+        ],
+        "size": [
+          163
+        ],
+        "sizes": [
+          136
+        ],
+        "strength": [
+          15
+        ],
+        "study": [
+          51,
+          179
+        ],
+        "study,": [
+          187
+        ],
+        "task": [
+          289
+        ],
+        "than": [
+          291
+        ],
+        "that": [
+          260,
+          286
+        ],
+        "the": [
+          30,
+          72,
+          111,
+          131,
+          161,
+          168,
+          177,
+          185,
+          288
+        ],
+        "there": [
+          147
+        ],
+        "this": [
+          19
+        ],
+        "to": [
+          23,
+          92,
+          107,
+          283
+        ],
+        "two-way": [
+          189
+        ],
+        "using": [
+          45
+        ],
+        "utilize": [
+          284
+        ],
+        "vs.": [
+          35,
+          234
+        ],
+        "was": [
+          148,
+          165,
+          228
+        ],
+        "we": [
+          21,
+          114
+        ],
+        "were": [
+          137,
+          181
+        ],
+        "were,": [
+          208
+        ],
+        "while": [
+          71,
+          102
+        ],
+        "with": [
+          167
+        ],
+        "within": [
+          14
+        ],
+        "women": [
+          82
+        ],
+        "years,": [
+          67,
+          86
+        ],
+        "yet": [
+          8
+        ]
+      },
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Jasmin Hutchinson",
+            "id": "https://openalex.org/A5056540500",
+            "orcid": "https://orcid.org/0000-0001-5813-0789"
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Jasmin C. Hutchinson",
+          "raw_orcid": "https://orcid.org/0000-0001-5813-0789"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I4210144925"
+              ],
+              "raw_affiliation_string": "Technological University of Dublin"
+            }
+          ],
+          "author": {
+            "display_name": "Jennifer Murphy",
+            "id": "https://openalex.org/A5102968199",
+            "orcid": "https://orcid.org/0000-0001-8624-3828"
+          },
+          "author_position": "middle",
+          "countries": [
+            "IE"
+          ],
+          "institutions": [
+            {
+              "country_code": "IE",
+              "display_name": "Technological University Dublin",
+              "id": "https://openalex.org/I4210144925",
+              "lineage": [
+                "https://openalex.org/I4210144925"
+              ],
+              "ror": "https://ror.org/04t0qbt32",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Technological University of Dublin"
+          ],
+          "raw_author_name": "Jennifer Murphy",
+          "raw_orcid": "https://orcid.org/0000-0001-8624-3828"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Bianca De Lucia",
+            "id": "https://openalex.org/A5000251210",
+            "orcid": "https://orcid.org/0009-0005-7581-1689"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Bianca De Lucia",
+          "raw_orcid": "https://orcid.org/0009-0005-7581-1689"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Elizabeth O\u2019Neill",
+            "id": "https://openalex.org/A5078559734",
+            "orcid": null
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Elizabeth O'Neill",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Diana Curtis",
+            "id": "https://openalex.org/A5102914057",
+            "orcid": "https://orcid.org/0000-0002-7267-6670"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Diana Curtis",
+          "raw_orcid": "https://orcid.org/0000-0002-7267-6670"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Kathleen Mellano",
+            "id": "https://openalex.org/A5046941539",
+            "orcid": "https://orcid.org/0000-0002-5648-5727"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Kathleen T. Mellano",
+          "raw_orcid": "https://orcid.org/0000-0002-5648-5727"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Luke M. Pelton",
+            "id": "https://openalex.org/A5014769748",
+            "orcid": "https://orcid.org/0000-0002-4954-854X"
+          },
+          "author_position": "middle",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Luke Pelton",
+          "raw_orcid": "https://orcid.org/0000-0002-4954-854X"
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I95144958",
+                "https://openalex.org/I888934510"
+              ],
+              "raw_affiliation_string": "Springfield College"
+            }
+          ],
+          "author": {
+            "display_name": "Nicholas A. Coker",
+            "id": "https://openalex.org/A5064534471",
+            "orcid": "https://orcid.org/0000-0002-5704-9329"
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Springfield College",
+              "id": "https://openalex.org/I888934510",
+              "lineage": [
+                "https://openalex.org/I888934510"
+              ],
+              "ror": "https://ror.org/02ak1t432",
+              "type": "education"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Drury University",
+              "id": "https://openalex.org/I95144958",
+              "lineage": [
+                "https://openalex.org/I95144958"
+              ],
+              "ror": "https://ror.org/03ntw4c66",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Springfield College"
+          ],
+          "raw_author_name": "Nicholas Coker",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 2,
+      "display_name": "Effects of Preferred versus Nonpreferred Music on Bench Press Performance",
+      "doi": "https://doi.org/10.51224/cik.2024.60",
+      "id": "https://openalex.org/W4390732818",
+      "locations": [
+        {
+          "id": "doi:10.51224/cik.2024.60",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.51224/cik.2024.60",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "pdf_url": "https://storkjournals.org/index.php/cik/article/download/60/111",
+          "raw_source_name": "Communications in Kinesiology",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Communications in Kinesiology",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4210202141",
+            "is_core": true,
+            "is_in_doaj": true,
+            "is_oa": true,
+            "issn": [
+              "2767-0732"
+            ],
+            "issn_l": "2767-0732",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.51224/cik.2024.60",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.51224/cik.2024.60",
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "pdf_url": "https://storkjournals.org/index.php/cik/article/download/60/111",
+        "raw_source_name": "Communications in Kinesiology",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Communications in Kinesiology",
+          "host_organization": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "host_organization_name": null,
+          "id": "https://openalex.org/S4210202141",
+          "is_core": true,
+          "is_in_doaj": true,
+          "is_oa": true,
+          "issn": [
+            "2767-0732"
+          ],
+          "issn_l": "2767-0732",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2024,
+      "title": "Effects of Preferred versus Nonpreferred Music on Bench Press Performance",
+      "type": "article"
+    },
+    {
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "affiliations": [
+            {
+              "institution_ids": [],
+              "raw_affiliation_string": "Center for Human Genetic Research, Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts 02114, USA"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I107606265"
+              ],
+              "raw_affiliation_string": "Broad Institute, Cambridge, United States"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I2801851002"
+              ],
+              "raw_affiliation_string": "Harvard University, Cambridge, United States"
+            }
+          ],
+          "author": {
+            "display_name": "Lauren A. Weiss",
+            "id": "https://openalex.org/A5056862358",
+            "orcid": "https://orcid.org/0000-0002-5700-135X"
+          },
+          "author_position": "first",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Broad Institute",
+              "id": "https://openalex.org/I107606265",
+              "lineage": [
+                "https://openalex.org/I107606265"
+              ],
+              "ror": "https://ror.org/05a0ya142",
+              "type": "funder"
+            },
+            {
+              "country_code": "US",
+              "display_name": "Harvard University Press",
+              "id": "https://openalex.org/I2801851002",
+              "lineage": [
+                "https://openalex.org/I136199984",
+                "https://openalex.org/I2801851002"
+              ],
+              "ror": "https://ror.org/006v7bf86",
+              "type": "other"
+            }
+          ],
+          "is_corresponding": true,
+          "raw_affiliation_strings": [
+            "Center for Human Genetic Research, Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts 02114, USA",
+            "Broad Institute, Cambridge, United States",
+            "Harvard University, Cambridge, United States"
+          ],
+          "raw_author_name": "Lauren A. Weiss",
+          "raw_orcid": null
+        },
+        {
+          "affiliations": [
+            {
+              "institution_ids": [
+                "https://openalex.org/I145311948"
+              ],
+              "raw_affiliation_string": "Center for Complex Disease Genomics, McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University, Baltimore, Maryland 21205, USA.,"
+            },
+            {
+              "institution_ids": [
+                "https://openalex.org/I145311948"
+              ],
+              "raw_affiliation_string": "Johns Hopkins University, Baltimore, United States"
+            }
+          ],
+          "author": {
+            "display_name": "Dan E. Arking",
+            "id": "https://openalex.org/A5051837355",
+            "orcid": "https://orcid.org/0000-0001-8980-8695"
+          },
+          "author_position": "last",
+          "countries": [
+            "US"
+          ],
+          "institutions": [
+            {
+              "country_code": "US",
+              "display_name": "Johns Hopkins University",
+              "id": "https://openalex.org/I145311948",
+              "lineage": [
+                "https://openalex.org/I145311948"
+              ],
+              "ror": "https://ror.org/00za53h95",
+              "type": "education"
+            }
+          ],
+          "is_corresponding": false,
+          "raw_affiliation_strings": [
+            "Center for Complex Disease Genomics, McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University, Baltimore, Maryland 21205, USA.,",
+            "Johns Hopkins University, Baltimore, United States"
+          ],
+          "raw_author_name": "Dan E. Arking",
+          "raw_orcid": null
+        }
+      ],
+      "cited_by_count": 620,
+      "display_name": "A genome-wide linkage and association scan reveals novel loci for autism",
+      "doi": "https://doi.org/10.1038/nature08490",
+      "id": "https://openalex.org/W2109529720",
+      "locations": [
+        {
+          "id": "doi:10.1038/nature08490",
+          "is_accepted": true,
+          "is_oa": true,
+          "is_published": true,
+          "landing_page_url": "https://doi.org/10.1038/nature08490",
+          "license": null,
+          "license_id": null,
+          "pdf_url": "https://www.nature.com/articles/nature08490.pdf",
+          "raw_source_name": "Nature",
+          "raw_type": "journal-article",
+          "source": {
+            "display_name": "Nature",
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "host_organization_name": "Nature Portfolio",
+            "id": "https://openalex.org/S137773608",
+            "is_core": true,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": [
+              "0028-0836",
+              "1476-4687"
+            ],
+            "issn_l": "0028-0836",
+            "type": "journal"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmid:19812673",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/19812673",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Nature",
+          "raw_type": null,
+          "source": {
+            "display_name": "PubMed",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S4306525036",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:pure.atira.dk:openaire_cris_publications/9dd8b634-c6f8-435c-bf91-eb25d25ab41a",
+          "is_accepted": true,
+          "is_oa": false,
+          "is_published": true,
+          "landing_page_url": "https://research.manchester.ac.uk/en/publications/9dd8b634-c6f8-435c-bf91-eb25d25ab41a",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Weiss, L A, Arking, D E, Daly, M J, Chakravarti, A, Brune, C W, West, K, O'Connor, A, Hilton, G, Tomlinson, R L, West, A B, Cook, E H, Green, T, Chang, S C, Gabriel, S, Gates, C, Hanson, E M, Kirby, A, Korn, J, Kuruvilla, F, McCarroll, S, Morrow, E M, Neale, B, Purcell, S, Sasanfar, R, Sougnez, C, Stevens, C, Altshuler, D, Gusella, J, Santangelo, S L, Sklar, P, Tanzi, R, Anney, R, Bailey, A J, Baird, G, Battaglia, A, Berney, T, Betancur, C, B\u00f6lte, S, Bolton, P F, Brian, J, Bryson, S E, Buxbaum, J D, Cabrito, I, Cai, G, Cantor, R M, Coon, H, Conroy, J, Correia, C, Corsello, C, Crawford, E L, Cuccaro, M L, Dawson, G, De Jonge, M, Devlin, B, Duketis, E, Ennis, S, Estes, A, Farrar, P, Fombonne, E, Freitag, C M, Gallagher, L, Geschwind, D H, Gilbert, J, Gill, M, Gillberg, C, Goldberg, J, Green, A, Green, J, Guter, S J, Haines, J L, Hallmayer, J F, Hus, V, Klauck, S M, Korvatska, O, Lamb, J A, Laskawiec, M, Leboyer, M, Le Couteur, A, Leventha, B L, Liu, X Q, Lord, C, Lotspeich, L J, Maestrini, E, Magalhaes, T, Mahoney, W, Mantoulan, C, McConachie, H, McDougle, C J, McMahon, W M, Marshall, C R, Miller, J, Minshew, N J, Monaco, A P, Munson, J, Nurnberger, J I, Oliveira, G, Pagnamenta, A, Papanikolaou, K, Parr, J R, Paterson, A D, Pericak-Vance, M A, Pickles, A, Pinto, D, Piven, J, Posey, D J, Poustka, A, Poustka, F, Regan, R, Reichert, J, Renshaw, K, Roberts, W, Roge, B, Rutter, M L, Salt, J, Schellenberg, G D, Scherer, S W, Sheffield, V, Sutcliffe, J S, Szatmari, P, Tansey, K, Thompson, A P, Tsiantis, J, Van Engeland, H, Vicente, A M, Vieland, V J, Volkmar, F, Wallace, S, Wassink, T H, Wijsman, E M, Wing, K, Wittemeyer, K, Yaspan, B L, Zwaigenbaum, L, Yoo, S Y, Hill, R S, Mukaddes, N M, Balkhy, S, Gascon, G, Al-Saad, S, Hashmi, A, Ware, J, Joseph, R M, LeClair, E, Partlow, J N, Barry, B, Walsh, C A, Pauls, D, Moilanen, I, Ebeling, H, Mattila, M L, Kuusikko, S, Jussila, K, Ignatius, J, Tolouei, A, Ghadami, M, Rostami, M, Hosseinipour, A, Valujerdi, M, Andresen, K, Winkloski, B, Haddad, S, Kunkel, L, Kohane, Z, Tran, T, Won Kong, S, O'Neil, S B, Hundley, R, Holm, I, Peters, H, Baroni, E, Cangialose, A, Jackson, L, Albers, L, Becker, R, Bridgemohan, C, Friedman, S, Munir, K, Nazir, R, Palfrey, J, Schonwald, A, Simmons, E, Rappaport, L A, Gauthier, J, Mottron, L, Joober, R, Rouleau, G, Rehnstrom, K, Von Wendt, L & Peltonen, L 2009, 'A genome-wide linkage and association scan reveals novel loci for autism', Nature, vol. 461, no. 7265, pp. 802-808. https://doi.org/10.1038/nature08490",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "Research Explorer (The University of Manchester)",
+            "host_organization": "https://openalex.org/I28407311",
+            "host_organization_lineage": [
+              "https://openalex.org/I28407311"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Manchester",
+            "id": "https://openalex.org/S4306400662",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "publishedVersion"
+        },
+        {
+          "id": "pmh:oai:HAL:inserm-03135302v1",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://inserm.hal.science/inserm-03135302",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Nature, 2009, 461 (7265), pp.802-808. &#x27E8;10.1038/nature08490&#x27E9;",
+          "raw_type": "Journal articles",
+          "source": {
+            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+            "host_organization": "https://openalex.org/I1294671590",
+            "host_organization_lineage": [
+              "https://openalex.org/I1294671590"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Centre National de la Recherche Scientifique",
+            "id": "https://openalex.org/S4306402512",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:RePEc:nat:nature:v:461:y:2009:i:7265:d:10.1038_nature08490",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://www.nature.com/articles/nature08490",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "article",
+          "source": {
+            "display_name": "RePEc: Research Papers in Economics",
+            "host_organization": "https://openalex.org/I77793887",
+            "host_organization_lineage": [
+              "https://openalex.org/I77793887"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Federal Reserve Bank of St. Louis",
+            "id": "https://openalex.org/S4306401271",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:cris.unibo.it:11585/78948",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "http://hdl.handle.net/11585/78948",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article",
+          "source": {
+            "display_name": "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)",
+            "host_organization": "https://openalex.org/I4210117483",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210117483"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "Istituto di Ematologia di Bologna",
+            "id": "https://openalex.org/S4306402579",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:escholarship.org/ark:/13030/qt3719t9v1",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://escholarship.org/uc/item/3719t9v1",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Nature, vol 461, iss 7265",
+          "raw_type": "article",
+          "source": {
+            "display_name": "eScholarship (California Digital Library)",
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "California Digital Library",
+            "id": "https://openalex.org/S4306400115",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:kclpure.kcl.ac.uk:publications/6e9bf181-f5c1-434c-b381-f0eeeecc2f8a",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://kclpure.kcl.ac.uk/portal/en/publications/6e9bf181-f5c1-434c-b381-f0eeeecc2f8a",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Weiss, L A, Arking, D E 2009, 'A genome-wide linkage and association scan reveals novel loci for autism', NATURE, vol. 461, no. 7265, pp. 802-808. https://doi.org/10.1038/nature08490",
+          "raw_type": "info:eu-repo/semantics/publishedVersion",
+          "source": {
+            "display_name": "Research Portal (King's College London)",
+            "host_organization": "https://openalex.org/I183935753",
+            "host_organization_lineage": [
+              "https://openalex.org/I183935753"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "King's College London",
+            "id": "https://openalex.org/S4306400216",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:ora.ox.ac.uk:uuid:d3907de3-c1b2-4589-a480-81ff2c248b1a",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://ora.ox.ac.uk/objects/uuid:d3907de3-c1b2-4589-a480-81ff2c248b1a",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Symplectic Elements at Oxford",
+          "raw_type": "Journal article",
+          "source": {
+            "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
+            "host_organization": "https://openalex.org/I40120149",
+            "host_organization_lineage": [
+              "https://openalex.org/I40120149"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Oxford",
+            "id": "https://openalex.org/S4306402636",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:2772655",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2772655",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Nature",
+          "raw_type": "Text",
+          "source": {
+            "display_name": "PubMed Central",
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "National Institutes of Health",
+            "id": "https://openalex.org/S2764455111",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": true,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:pure.atira.dk:openaire_cris_publications/684b8bea-8edf-4a28-b7a1-c583fa898079",
+          "is_accepted": false,
+          "is_oa": false,
+          "is_published": false,
+          "landing_page_url": "https://research.birmingham.ac.uk/en/publications/684b8bea-8edf-4a28-b7a1-c583fa898079",
+          "license": null,
+          "license_id": null,
+          "pdf_url": null,
+          "raw_source_name": "Laren, LA, Arking, DE, Daly, M, Wittemeyer, K, Chakravarti, A & The Gene Discovery Project of Johns Hopkins and Autism Consortium 2009, 'A genome-wide linkage and association scan reveals novel loci for autism', Nature, vol. 461, no. 7265, pp. 802-808. https://doi.org/10.1038/nature08490",
+          "raw_type": "article",
+          "source": {
+            "display_name": "University of Birmingham Research Portal (University of Birmingham)",
+            "host_organization": "https://openalex.org/I79619799",
+            "host_organization_lineage": [
+              "https://openalex.org/I79619799"
+            ],
+            "host_organization_lineage_names": [],
+            "host_organization_name": "University of Birmingham",
+            "id": "https://openalex.org/S4306402634",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:repositorio.insa.pt:10400.18/247",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://hdl.handle.net/10400.18/247",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "journal article",
+          "source": {
+            "display_name": "Portuguese National Funding Agency for Science, Research and Technology (RCAAP Project by FCT)",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4306402433",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        },
+        {
+          "id": "pmh:oai:rihuc.huc.min-saude.pt:10400.4/1380",
+          "is_accepted": false,
+          "is_oa": true,
+          "is_published": false,
+          "landing_page_url": "http://hdl.handle.net/10400.4/1380",
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "pdf_url": null,
+          "raw_source_name": null,
+          "raw_type": "journal article",
+          "source": {
+            "display_name": "Portuguese National Funding Agency for Science, Research and Technology (RCAAP Project by FCT)",
+            "host_organization": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "host_organization_name": null,
+            "id": "https://openalex.org/S4306402433",
+            "is_core": false,
+            "is_in_doaj": false,
+            "is_oa": false,
+            "issn": null,
+            "issn_l": null,
+            "type": "repository"
+          },
+          "version": "submittedVersion"
+        }
+      ],
+      "primary_location": {
+        "id": "doi:10.1038/nature08490",
+        "is_accepted": true,
+        "is_oa": true,
+        "is_published": true,
+        "landing_page_url": "https://doi.org/10.1038/nature08490",
+        "license": null,
+        "license_id": null,
+        "pdf_url": "https://www.nature.com/articles/nature08490.pdf",
+        "raw_source_name": "Nature",
+        "raw_type": "journal-article",
+        "source": {
+          "display_name": "Nature",
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "host_organization_name": "Nature Portfolio",
+          "id": "https://openalex.org/S137773608",
+          "is_core": true,
+          "is_in_doaj": false,
+          "is_oa": false,
+          "issn": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "issn_l": "0028-0836",
+          "type": "journal"
+        },
+        "version": "publishedVersion"
+      },
+      "publication_year": 2009,
+      "title": "A genome-wide linkage and association scan reveals novel loci for autism",
+      "type": "article"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "artifact_id": "source_artifact_3de464aa5fa28fd5",
+  "byte_size": 8551,
+  "columns": [
+    "sample",
+    "t_max_param",
+    "S_max_param",
+    "t_max_nonparam",
+    "S_max_nonparam"
+  ],
+  "file_name": "summary_residuals.dta",
+  "file_type": "dta",
+  "local_path": "data/raw/corpus_candidates/brodeur_star_wars_openicpsr/full_project/brodeur_le_sangnier_zylberberg_replication/Data/Final/summary_residuals.dta",
+  "parent_corpus_database_id": "raw_corpus:brodeur_star_wars_openicpsr",
+  "preview_rows": [
+    {
+      "S_max_nonparam": "0.011",
+      "S_max_param": "0.016",
+      "sample": "all_cauchy",
+      "t_max_nonparam": "3.99",
+      "t_max_param": "3.98"
+    },
+    {
+      "S_max_nonparam": "0.014",
+      "S_max_param": "0.023",
+      "sample": "all_psid",
+      "t_max_nonparam": "3.86",
+      "t_max_param": "3.85"
+    },
+    {
+      "S_max_nonparam": "0.014",
+      "S_max_param": "0.02",
+      "sample": "all_qog",
+      "t_max_nonparam": "3.95",
+      "t_max_param": "3.94"
+    },
+    {
+      "S_max_nonparam": "0.027",
+      "S_max_param": "0.03",
+      "sample": "all_real",
+      "t_max_nonparam": "3.95",
+      "t_max_param": "3.94"
+    },
+    {
+      "S_max_nonparam": "0.017",
+      "S_max_param": "0.025",
+      "sample": "all_student",
+      "t_max_nonparam": "3.95",
+      "t_max_param": "3.94"
+    }
+  ],
+  "sample_kind": "stata",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:12",
+  "sha256": "cc87cf47a53e4dd5720028e1128285c7ad21e0081fffeda0dc1565dee2f041d0"
+}

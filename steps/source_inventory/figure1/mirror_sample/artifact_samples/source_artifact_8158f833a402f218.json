@@ -1,0 +1,58 @@
+{
+  "artifact_id": "source_artifact_8158f833a402f218",
+  "byte_size": 2759,
+  "file_name": "unnamed-chunk-13_6e111607dd9eaabcb6091c5b52e319ac.RData",
+  "file_type": "rdata",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/R/main_cache/docx/unnamed-chunk-13_6e111607dd9eaabcb6091c5b52e319ac.RData",
+  "object_count": 2,
+  "objects": [
+    {
+      "columns": [
+        ".Random.seed"
+      ],
+      "name": ".Random.seed",
+      "preview_rows": [
+        {
+          ".Random.seed": 10403
+        },
+        {
+          ".Random.seed": 228
+        },
+        {
+          ".Random.seed": -771942172
+        },
+        {
+          ".Random.seed": -1168021412
+        },
+        {
+          ".Random.seed": -2102160986
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        626,
+        1
+      ]
+    },
+    {
+      "columns": [
+        ".main_cache/docx/unnamed-chunk-13_6e111607dd9eaabcb6091c5b52e319ac"
+      ],
+      "name": ".main_cache/docx/unnamed-chunk-13_6e111607dd9eaabcb6091c5b52e319ac",
+      "preview_rows": [
+        {
+          ".main_cache/docx/unnamed-chunk-13_6e111607dd9eaabcb6091c5b52e319ac": "\n```r\nreplicate=sapply(d$z,replcalc,p=p,m=m,s=sqrt(sigma^2-1))\n```"
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        1,
+        1
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "4a34eab6b7f7c1427322ef6c100f0e24bb48c81ee750255b35b9ea5e263ff9e9"
+}

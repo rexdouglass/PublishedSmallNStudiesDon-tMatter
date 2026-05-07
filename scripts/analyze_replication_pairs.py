@@ -2215,6 +2215,36 @@ def build_verified_manual_pairs() -> pd.DataFrame:
             "match_author": "Bargh elderly priming",
         },
         {
+            "source_dataset": "FORRT Reversals source-object extraction (manual)",
+            "project": "Other direct replications",
+            "pair_id": "manual_forrt_eye_movements_false_memories_van_schie_2019",
+            "original_title": "Houben lateral eye movements false memories",
+            "replication_title": "van Schie and Leer 2019 direct replication",
+            "outcome": "Misinformation answers",
+            "D_original": 0.7669097512387202,
+            "N_original": 82.0,
+            "D_replication": 0.063,
+            "N_replication": 206.0,
+            "raw_file": str(
+                RAW_REPL
+                / "lead_harvest"
+                / "forrt_reversals_source_objects_20260504"
+                / "eye_movements_false_memories"
+                / "van_schie_leer_2019_repub.pdf"
+            )
+            + " ; "
+            + str(RAW_REPL / "lead_harvest" / "awesome_emdr_misinfo" / "github_01__original_clean.csv")
+            + " ; "
+            + str(
+                RAW_REPL
+                / "lead_harvest"
+                / "forrt_reversals_source_objects_20260504"
+                / "eye_movements_false_memories"
+                / "van_schie_leer_results.jasp"
+            ),
+            "match_author": "Houben van Schie Leer eye movements false memories",
+        },
+        {
             "source_dataset": "RRR Wagenmakers 2016 (manual)",
             "project": "Registered Replication Reports",
             "pair_id": "manual_rrr_strack_pen_in_teeth_wagenmakers_2016",

@@ -1,0 +1,45 @@
+## Working Figure 1 Review {.unnumbered}
+
+This temporary review block is generated from local TSV/PNG artifacts so the plotted routes can be checked in the HTML before any manuscript wording is hardened.
+
+- Strict Figure 1A direct D/N rows: **1,736**.
+- Additional binary clinical D-equivalent diagnostic rows: **88**.
+- Native response/logit rows retained off the D axis: **88**.
+- D/N rows currently blocked from Figure 1A by a rule gate: **752**.
+- Local row universe shown in the subplot buckets: **3,032**.
+- Full accounting denominator including parser-repair and duplicate-risk rows: **3,316**.
+
+<figure class="working-figure-review">
+<img src="_generated/figures/figure1a_strict_current_d_pairs.png" alt="Working strict Figure 1A direct D panel" style="width:100%; max-width:980px; display:block; margin:auto;">
+<figcaption>Working Figure 1A: strict direct-D panel. Axes use a symmetric log scale so zero-effect rows remain visible. The dashed line marks equality between original and follow-up effect magnitudes.</figcaption>
+</figure>
+
+<figure class="working-figure-review">
+<img src="_generated/figures/figure1a_original_ci_replication_density_standalone.png" alt="Standalone original confidence interval and replication compatibility density diagnostic" style="width:100%; max-width:1180px; display:block; margin:auto;">
+<figcaption>Standalone original-CI / replication compatibility density diagnostic. Replication point estimates are expressed in original-CI half-width units: -1 to +1 is the modeled original 95% interval and 0 is the original point estimate. The blue curve is the empirical observed density and the orange curve is the compatibility-implied predictive density from the modeled original and replication uncertainty; shaded orange regions mark the implied 2.5% tails, and blue shading marks observed excess density beyond the lower implied 95% cutoff. The inset shows the strict Figure 1A D/N scatter. These are not extracted source-reported confidence intervals.</figcaption>
+</figure>
+
+<figure class="working-figure-review">
+<img src="_generated/figures/figure1bc_alternative_route_subplots.png" alt="Working additional Figure 1 route panels" style="width:100%; max-width:1180px; display:block; margin:auto;">
+<figcaption>Additional Figure 1 route panels. Panel B keeps comparative binary endpoints on a D-equivalent axis; Panel C keeps response-rate rows on a native logit axis; Panel D shows local row buckets.</figcaption>
+</figure>
+
+<figure class="working-figure-review">
+<img src="_generated/figures/figure1_coverage_loss_bars.png" alt="Working Figure 1 coverage-loss accounting bars" style="width:100%; max-width:980px; display:block; margin:auto;">
+<figcaption>Coverage-loss accounting across strict Figure 1A, alternate diagnostic routes, repair queues, and denominator-only rows.</figcaption>
+</figure>
+
+### Working Route Table {.unnumbered}
+
+| disposition_label | row_count | usable_for | has_effect | has_n | has_common_axis |
+| --- | --- | --- | --- | --- | --- |
+| Strict Figure 1A direct D/N rows | 1684 | main Figure 1A | yes | yes | yes |
+| D/N rows blocked by current Figure 1A rule | 752 | denominator, rule audit, robustness checks | yes | yes | yes, but not current-rule eligible |
+| Comparative binary rows with D-equivalent conversion | 88 | Figure 1B diagnostic | yes | yes | D-equivalent tier, not direct D |
+| Native-effect rows not on D axis | 91 | native-scale diagnostic, not common-D plot | yes | yes | no |
+| Pair roster only, public values unavailable | 248 | coverage denominator only | no | no | no |
+| Effect present, N missing | 172 | repair queue and denominator | yes | no | not until N is recovered |
+| Parsed row grain, no copied effect/N evidence | 271 | denominator with parser caveat | no | no | no |
+| D/N-looking rows with duplicate risk | 10 | coverage denominator until deduped | yes | yes | likely, but not validated |
+
+<hr>

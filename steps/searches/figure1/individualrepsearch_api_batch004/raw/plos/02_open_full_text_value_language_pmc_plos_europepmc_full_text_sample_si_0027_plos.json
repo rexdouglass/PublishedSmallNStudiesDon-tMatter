@@ -1,0 +1,730 @@
+{
+  "response": {
+    "docs": [
+      {
+        "abstract": [
+          "\nGenetic association studies of many heritable traits resulting from physiological testing often have modest sample sizes due to the cost and burden of the required phenotyping. This reduces statistical power and limits discovery of multiple genetic associations. We present a strategy to leverage pleiotropy between traits to both discover new loci and to provide mechanistic hypotheses of the underlying pathophysiology. Specifically, we combine a colocalization test with a locus-level test of pleiotropy. In simulations, we show that this approach is highly selective for identifying true pleiotropy driven by the same causative variant, thereby improves the chance to replicate the associations in underpowered validation cohorts and leads to higher interpretability. Here, as an exemplar, we use Obstructive Sleep Apnea (OSA), a common disorder diagnosed using overnight multi-channel physiological testing. We leverage pleiotropy with relevant cellular and cardio-metabolic phenotypes and gene expression traits to map new risk loci in an underpowered OSA GWAS. We identify several pleiotropic loci harboring suggestive associations to OSA and genome-wide significant associations to other traits, and show that their OSA association replicates in independent cohorts of diverse ancestries. By investigating pleiotropic loci, our strategy allows proposing new hypotheses about OSA pathobiology across many physiological layers. For example, we identify and replicate the pleiotropy across the plateletcrit, OSA and an eQTL of DNA primase subunit 1 (PRIM1) in immune cells. We find suggestive links between OSA, a measure of lung function (FEV1/FVC), and an eQTL of matrix metallopeptidase 15 (MMP15) in lung tissue. We also link a previously known genome-wide significant peak for OSA in the hexokinase 1 (HK1) locus to hematocrit and other red blood cell related traits. Thus, the analysis of pleiotropic associations has the potential to assemble diverse phenotypes into a chain of mechanistic hypotheses that provide insight into the pathogenesis of complex human diseases.\nAuthor summary: Large genetic studies with hundreds of thousands of patients have been successful at finding genetic variants that associate with disease traits in humans. However, smaller-scale studies can often have inadequate power to discover new genetic associations. Here, we use a small genetic study of Obstructive Sleep Apnea (OSA), to introduce a strategy that both helps find genetic associations and proposes biological hypotheses for the mechanisms behind those associations. To achieve this, we use large genetic studies carried out on traits that are related to OSA, and look for genetic variants that affect both OSA in our small study and the trait in question in the large study. By linking two or more traits at select loci, we were able to, among other results, find a locus that affects the expression of a gene in immune cells (DNA primase subunit 1), a marker of thrombotic and inflammatory processes (plateletcrit) and OSA. This results in a novel genetic association to OSA and a corresponding biological hypothesis behind its effect on OSA. "
+        ],
+        "author_display": [
+          "Sung Chun",
+          "Sebastian Akle",
+          "Athanasios Teodosiadis",
+          "Brian E. Cade",
+          "Heming Wang",
+          "Tamar Sofer",
+          "Daniel S. Evans",
+          "Katie L. Stone",
+          "Sina A. Gharib",
+          "Sutapa Mukherjee",
+          "Lyle J. Palmer",
+          "David Hillman",
+          "Jerome I. Rotter",
+          "Craig L. Hanis",
+          "John A. Stamatoyannopoulos",
+          "Susan Redline",
+          "Chris Cotsapas",
+          "Shamil R. Sunyaev"
+        ],
+        "id": "10.1371/journal.pgen.1010557",
+        "journal": "PLOS Genetics",
+        "publication_date": "2022-12-27T00:00:00Z",
+        "title": "Leveraging pleiotropy to discover and interpret GWAS results for sleep-associated traits"
+      },
+      {
+        "abstract": [
+          "\nThe olfactory system combines input from multiple receptor types to represent odor information, but there are few explicit examples relating olfactory receptor (OR) activity patterns to odor perception. To uncover these relationships, we performed genome-wide scans on odor-perception phenotypes for ten odors in 1000 Han Chinese and validated results for six of these odors in an ethnically diverse population (n = 364). In both populations, consistent with previous studies, we replicated three previously reported associations (\u03b2-ionone/OR5A1, androstenone/OR7D4, cis-3-hexen-1-ol/OR2J3 LD-band), but not for odors containing aldehydes, suggesting that olfactory phenotype/genotype studies are robust across populations. Two novel associations between an OR and odor perception contribute to our understanding of olfactory coding. First, we found a SNP in OR51B2 that associated with trans-3-methyl-2-hexenoic acid, a key component of human underarm odor. Second, we found two linked SNPs associated with the musk Galaxolide in a novel musk receptor, OR4D6, which is also the first human OR shown to drive specific anosmia to a musk compound. We noticed that SNPs detected for odor intensity were enriched with amino acid substitutions, implying functional changes of odor receptors. Furthermore, we also found that the derived alleles of the SNPs tend to be associated with reduced odor intensity, supporting the hypothesis that the primate olfactory gene repertoire has degenerated over time. This study provides information about coding for human body odor, and gives us insight into broader mechanisms of olfactory coding, such as how differential OR activation can converge on a similar percept.\nAuthor summary: Although genetic diversity in the olfactory receptor repertoire contributes to variation in odor perception, we have few explicit predictions relating variation in a specific OR to perception. Here, we performed genome-wide scans on odor-perception phenotypes for ten odors in 1000 Han Chinese and validated results for six of these odors in an ethnically diverse population (n = 364). We identified novel receptors for musk and human body odor that have implications for how structurally different molecules can have similar odors. Summarizing all the published genetic variation that associates with odor perception, we found that individuals with ancestral versions of the receptors tend to rate the corresponding odor as more intense, supporting the hypothesis that the primate olfactory gene repertoire has degenerated over time. This study of olfactory genetic and perceptual variation will improve our understanding of how the olfactory system encodes odor properties. "
+        ],
+        "author_display": [
+          "Bingjie Li",
+          "Marissa L. Kamarck",
+          "Qianqian Peng",
+          "Fei-Ling Lim",
+          "Andreas Keller",
+          "Monique A. M. Smeets",
+          "Joel D. Mainland",
+          "Sijia Wang"
+        ],
+        "id": "10.1371/journal.pgen.1009564",
+        "journal": "PLOS Genetics",
+        "publication_date": "2022-02-03T00:00:00Z",
+        "title": "From musk to body odor: Decoding olfaction through genetic variation"
+      },
+      {
+        "abstract": [
+          "Background: MicroRNAs (miRNAs) are a class of small regulatory RNAs around 21\u201325 nucleotides in length which govern many aspects of immunity including the host innate and adaptive responses to infection. RT-qPCR studies of select microRNAs show that vaccination alters the expression circulating microRNAs but the effect of vaccination on the global microRNA population (i.e. micronome) has never been studied. Aim: To describe vaccine associated changes in the expression of microRNAs 21 days after vaccination in children receiving a pandemic influenza (H1N1) vaccination. Method: Serum samples were obtained from children aged 6 months to 12 years enrolled in an open label randomised control trial of two pandemic influenza (H1N1) vaccines, in which participants received either ASO3B adjuvanted split virion or a whole virion non-adjuvanted vaccine. MicroRNA expression was profiled in a discovery cohort of participants prior to, and 21 days after vaccination using an Agilent microarray platform. Findings were followed up by RT-qPCR in the original discovery cohort and then in a validation cohort of participants taken from the same study. Results: 44 samples from 22 children were assayed in a discovery cohort. The microarray results revealed 19 microRNAs were differentially expressed after vaccination after adjustment for multiple testing. The microarray detected ubiquitous expression of several microRNAs which could not be validated by RT-qPCR, many of which have little evidence of existence in publicly available RNA sequencing data. Real time PCR (RT-qPCR) confirmed downregulation of miR-142-3p in the discovery cohort. These findings were not replicated in the subsequent validation cohort (n = 22). Conclusion: This study is the first study to profile microRNA expression after vaccination. An important feature of this study is many of the differentially expressed microRNAs could not be detected and validated by RT-qPCR. This study highlights the care that should be taken when interpreting omics biomarker discovery, highlighting the need for supplementary methods to validate microRNA microarray findings, and emphasises the importance of validation cohorts. Data from similar studies which do not meet these requirements should be interpreted with caution. "
+        ],
+        "author_display": [
+          "Ruth Elizabeth Drury",
+          "Andrew John Pollard",
+          "Daniel O\u2019Connor"
+        ],
+        "id": "10.1371/journal.pone.0221143",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-08-20T00:00:00Z",
+        "title": "The effect of H1N1 vaccination on serum miRNA expression in children: A tale of caution for microRNA microarray studies"
+      },
+      {
+        "abstract": [
+          "\nMood disorders consist of two etiologically related, but distinctly treated illnesses, major depressive disorder (MDD) and bipolar disorder (BPD). These disorders share similarities in their clinical presentation, and thus show high rates of misdiagnosis. Recent research has revealed significant transcriptional differences within the inflammatory cytokine pathway between MDD patients and controls, and between BPD patients and controls, suggesting this pathway may possess important biomarker properties. This exploratory study attempts to identify disorder-specific transcriptional biomarkers within the inflammatory cytokine pathway, which can distinguish between control subjects, MDD patients and BPD patients. This is achieved using RNA extracted from subject blood and applying synthesized complementary DNA to quantitative PCR arrays containing primers for 87 inflammation-related genes. Initially, we use ANOVA to test for transcriptional differences in a \u2018discovery cohort\u2019 (total n\u200a=\u200a90) and then we use t-tests to assess the reliability of any identified transcriptional differences in a \u2018validation cohort\u2019 (total n\u200a=\u200a35). The two most robust and reliable biomarkers identified across both the discovery and validation cohort were Chemokine (C-C motif) ligand 24 (CCL24) which was consistently transcribed higher amongst MDD patients relative to controls and BPD patients, and C-C chemokine receptor type 6 (CCR6) which was consistently more lowly transcribed amongst MDD patients relative to controls. Results detailed here provide preliminary evidence that transcriptional measures within inflammation-related genes might be useful in aiding clinical diagnostic decision-making processes. Future research should aim to replicate findings detailed in this exploratory study in a larger medication-free sample and examine whether identified biomarkers could be used prospectively to aid clinical diagnosis.\n"
+        ],
+        "author_display": [
+          "Timothy R. Powell",
+          "Peter McGuffin",
+          "Ursula M. D'Souza",
+          "Sarah Cohen-Woods",
+          "Georgina M. Hosang",
+          "Charlotte Martin",
+          "Keith Matthews",
+          "Richard K. Day",
+          "Anne E. Farmer",
+          "Katherine E. Tansey",
+          "Leonard C. Schalkwyk"
+        ],
+        "id": "10.1371/journal.pone.0091076",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-03-11T00:00:00Z",
+        "title": "Putative Transcriptomic Biomarkers in the Inflammatory Cytokine Pathway Differentiate Major Depressive Disorder Patients from Control Subjects and Bipolar Disorder Patients"
+      },
+      {
+        "abstract": [
+          "\nWe tested for germline variants showing association to colon cancer metastasis using a genome-wide association study that compared Ashkenazi Jewish individuals with stage IV metastatic colon cancers versus those with stage I or II non-metastatic colon cancers. In a two-stage study design, we demonstrated significant association to developing metastatic disease for rs60745952, that in Ashkenazi discovery and validation cohorts, respectively, showed an odds ratio (OR) = 2.3 (P = 2.73E-06) and OR = 1.89 (P = 8.05E-04) (exceeding validation threshold of 0.0044). Significant association to metastatic colon cancer was further confirmed by a meta-analysis of rs60745952 in these datasets plus an additional Ashkenazi validation cohort (OR = 1.92; 95% CI: 1.28\u20132.87), and by a permutation test that demonstrated a significantly longer haplotype surrounding rs60745952 in the stage IV samples. rs60745952, located in an intergenic region on chromosome 4q31.1, and not previously associated with cancer, is, thus, a germline genetic marker for susceptibility to developing colon cancer metastases among Ashkenazi Jews.\n"
+        ],
+        "author_display": [
+          "Sanford D. Markowitz",
+          "Nora L. Nock",
+          "Stephanie L. Schmit",
+          "Zsofia K. Stadler",
+          "Vijai Joseph",
+          "Lu Zhang",
+          "Joseph E. Willis",
+          "Peter Scacheri",
+          "Martina Veigl",
+          "Mark D. Adams",
+          "Leon Raskin",
+          "John F. Sullivan",
+          "Kelly Stratton",
+          "Jinru Shia",
+          "Nathan Ellis",
+          "Hedy S. Rennert",
+          "Christopher Manschreck",
+          "Li Li",
+          "Kenneth Offit",
+          "Robert C. Elston",
+          "Gadi Rennert",
+          "Stephen B. Gruber"
+        ],
+        "id": "10.1371/journal.pone.0146435",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-01-11T00:00:00Z",
+        "title": "A Germline Variant on Chromosome 4q31.1 Associates with Susceptibility to Developing Colon Cancer Metastasis"
+      },
+      {
+        "abstract": [
+          "Introduction: In this study, 27 genetic polymorphisms that were previously reported to be associated with clinical outcomes in colorectal cancer patients were investigated in relation to overall survival (OS) and disease free survival (DFS) in colorectal cancer patients from Newfoundland. Methods: The discovery and validation cohorts comprised of 532 and 252 patients, respectively. Genotypes of 27 polymorphisms were first obtained in the discovery cohort and survival analyses were performed assuming the co-dominant genetic model. Polymorphisms associated with disease outcomes in the discovery cohort were then investigated in the validation cohort. Results: When adjusted for sex, age, tumor stage and microsatellite instability (MSI) status, four polymorphisms were independent predictors of OS in the discovery cohort MTHFR Glu429Ala (HR: 1.72, 95%CI: 1.04\u20132.84, p\u200a=\u200a0.036), ERCC5 His46His (HR: 1.78, 95%CI: 1.15\u20132.76, p\u200a=\u200a0.01), SERPINE1 \u2212675indelG (HR: 0.52, 95%CI: 0.32\u20130.84, p\u200a=\u200a0.008), and the homozygous deletion of GSTM1 gene (HR: 1.4, 95%CI: 1.03\u20131.92, p\u200a=\u200a0.033). In the validation cohort, the MTHFR Glu429Ala polymorphism was associated with shorter OS (HR: 1.71, 95%CI: 1.18\u20132.49, p\u200a=\u200a0.005), although with a different genotype than the discovery cohort (CC genotype in the discovery cohort and AC genotype in the validation cohort). When stratified based on treatment with 5-Fluorouracil (5-FU)-based regimens, this polymorphism was associated with reduced OS only in patients not treated with 5-FU. In the DFS analysis, when adjusted for other variables, the TT genotype of the ERCC5 His46His polymorphism was associated with shorter DFS in both cohorts (discovery cohort: HR: 1.54, 95%CI: 1.04\u20132.29, p\u200a=\u200a0.032 and replication cohort: HR: 1.81, 95%CI: 1.11\u20132.94, p\u200a=\u200a0.018). Conclusions: In this study, associations of the MTHFR Glu429Ala polymorphism with OS and the ERCC5 His46His polymorphism with DFS were identified in two colorectal cancer patient cohorts. Our results also suggest that the MTHFR Glu429Ala polymorphism may be an adverse prognostic marker in patients not treated with 5-FU. "
+        ],
+        "author_display": [
+          "Amit A. Negandhi",
+          "Angela Hyde",
+          "Elizabeth Dicks",
+          "William Pollett",
+          "Banfield H. Younghusband",
+          "Patrick Parfrey",
+          "Roger C. Green",
+          "Sevtap Savas"
+        ],
+        "id": "10.1371/journal.pone.0061469",
+        "journal": "PLoS ONE",
+        "publication_date": "2013-04-23T00:00:00Z",
+        "title": "MTHFR Glu429Ala and ERCC5 His46His Polymorphisms Are Associated with Prognosis in Colorectal Cancer Patients: Analysis of Two Independent Cohorts from Newfoundland"
+      },
+      {
+        "abstract": [
+          "Background: The emerging relationship between microRNAs (miRNA) and viral-control is a topic of interest in the field of HIV. Host-genome might play an important role in the control of viremia. The aim of this study was to assess the specific miRNA profile that could contribute to the control of HIV replication in Elite Controllers Results: After adequate normalization, expression profile of 286 human miRNAs (hsa-miR) was evaluated in phytohaemagglutinin-stimulated PBMCs from 29 individuals classified in 4 groups: 8 elite controllers (EC; viral load <50 cp/ml without treatment), 8 viremic progressors (VP; VL>5000 cp/ml without treatment), 8 patients under antiretroviral treatment (ART; VL<200 cp/ml) and 5 uninfected individuals (HIV-) through TaqMan Array Human microRNA Cards v3.0. A differential expression pattern consisting of 23 miRNAs became significantly different when comparing EC and VP. Profiling analysis segregated the population in two different blocks: while EC and HIV- clustered together in the same block (EC/HIV-_block 1), VP and ART individuals clustered together in a second block (VP/ART_block 2). Two inversely expressed miRNA patterns were determined within those two blocks: a set of 4 miRNAs (hsa-miR-221, -27a, -27b and -29b) was up-expressed in EC/HIV-_block and down-expressed in VP/ART_block while 19 miRNAs were down-expressed in block 1 and up-expressed in block 2. Differential miRNAs were successfully validated through individual RT-qPCR assays. Conclusions: Profile in EC resembled HIV- and differentially clusters with VP and ART. Therefore, differential clustering does not rely on undetectable viremia. "
+        ],
+        "author_display": [
+          "Lander Ega\u00f1a-Gorro\u00f1o",
+          "Tuixent Escrib\u00e0",
+          "Nicolas Boulanger",
+          "Alberto Crespo Guardo",
+          "Agathe Le\u00f3n",
+          "Manel Enric Bargall\u00f3",
+          "Felipe Garcia",
+          "Jos\u00e9 Mar\u00eda Gatell",
+          "Montserrat Plana",
+          "Mireia Arnedo",
+          "HIV Controllers Consortium of the AIDS Spanish Network "
+        ],
+        "id": "10.1371/journal.pone.0106360",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-09-16T00:00:00Z",
+        "title": "Differential MicroRNA Expression Profile between Stimulated PBMCs from HIV-1 Infected Elite Controllers and Viremic Progressors"
+      },
+      {
+        "abstract": [
+          "\nAccurate prediction of disease risk based on genetic factors is an important goal in human genetics research and precision medicine. Advanced prediction models will lead to more effective disease prevention and treatment strategies. Despite the identification of thousands of disease-associated genetic variants through genome-wide association studies (GWAS) in the past decade, accuracy of genetic risk prediction remains moderate for most diseases, which is largely due to the challenges in both identifying all the functionally relevant variants and accurately estimating their effect sizes. In this work, we introduce PleioPred, a principled framework that leverages pleiotropy and functional annotations in genetic risk prediction for complex diseases. PleioPred uses GWAS summary statistics as its input, and jointly models multiple genetically correlated diseases and a variety of external information including linkage disequilibrium and diverse functional annotations to increase the accuracy of risk prediction. Through comprehensive simulations and real data analyses on Crohn\u2019s disease, celiac disease and type-II diabetes, we demonstrate that our approach can substantially increase the accuracy of polygenic risk prediction and risk population stratification, i.e. PleioPred can significantly better separate type-II diabetes patients with early and late onset ages, illustrating its potential clinical application. Furthermore, we show that the increment in prediction accuracy is significantly correlated with the genetic correlation between the predicted and jointly modeled diseases.\nAuthor summary: Genetic risk prediction plays a significant role in precision medicine. Accurate prediction models could have great impact on disease prevention and treatment strategies. However, prediction accuracies for most complex diseases remain moderate mainly due to the challenges in identifying and quantifying the effects of genetic variants from millions of markers, limited access to individual-level genotype data, and lack of efficient computational methods. Up to now, most methods have been focused on predicting disease risk using data from a single trait. With the discovery of genetic correlations among many complex diseases, incorporating data of genetically correlated diseases could have the potential to increase prediction accuracy. Current statistical methods are not able to fully exploit the richness of these kinds of data to take into account the shared genetic architecture. To make use of commonly available GWAS summary statistics, we propose a novel method to address these challenges by jointly modeling genetically correlated diseases and integrating genomic functional annotations. We demonstrate the substantial improvement in accuracy in both extensive simulation studies and real data analysis of Crohn\u2019s disease, celiac disease and type-II diabetes. Furthermore, we show that the increment in prediction accuracy is significantly correlated with the genetic correlation between the predicted and jointly modeled diseases. "
+        ],
+        "author_display": [
+          "Yiming Hu",
+          "Qiongshi Lu",
+          "Wei Liu",
+          "Yuhua Zhang",
+          "Mo Li",
+          "Hongyu Zhao"
+        ],
+        "id": "10.1371/journal.pgen.1006836",
+        "journal": "PLOS Genetics",
+        "publication_date": "2017-06-09T00:00:00Z",
+        "title": "Joint modeling of genetically correlated diseases and functional annotations increases accuracy of polygenic risk prediction"
+      },
+      {
+        "abstract": [
+          "Introduction: Red blood cell (RBC) transfusion is associated with poor clinical outcome in critically ill patients. We investigated the predictive value of biomarkers on intensive care units (ICU) admission for RBC transfusion within 28 days. Methods: Critically ill patients (n = 175) who admitted to our ICU with organ dysfunction and an expected stay of \u2265 48 hours, without hemorrhage, were prospectively studied (derivation cohort, n = 121; validation cohort, n = 54). Serum levels of 12 biomarkers (hemoglobin, creatinine, albumin, interleukin-6 [IL-6], erythropoietin, Fe, total iron binding capacity [TIBC], transferrin, ferritin, transferrin saturation, folate, and vitamin B12) were measured upon ICU admission, days 7, 14, 21 and 28. Results: Among the 12 biomarkers measured upon ICU admission, levels of hemoglobin, albumin, IL-6, TIBC, transferrin and ferritin were statistically different between transfusion and non-transfusion group. Of 6 biomarkers, TIBC upon ICU admission had the highest area under the curve value (0.835 [95% confidence interval] = 0.765\u20130.906) for predicting RBC transfusion (cut-off value = 234.5 \u03bcg/dL; sensitivity = 0.906, specificity = 0.632). This result was confirmed in validation cohort, whose sensitivity and specificity were 0.888 and 0.694, respectively. Measurement of these biomarkers every seven days revealed that albumin, TIBC and transferrin were statistically different between groups throughout hospitalization until 28 days. In validation cohort, patients in the transfusion group had significantly higher serum hepcidin levels than those in the non-transfusion group (P = 0.004). In addition, joint analysis across derivation and validation cohorts revealed that the serum IL-6 levels were higher in the transfusion group (P = 0.0014). Conclusion: Decreased TIBC upon ICU admission has high predictive value for RBC transfusion unrelated to hemorrhage within 28 days. "
+        ],
+        "author_display": [
+          "Taro Imaeda",
+          "Taka-aki Nakada",
+          "Ryuzo Abe",
+          "Shigeto Oda"
+        ],
+        "id": "10.1371/journal.pone.0210067",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-01-23T00:00:00Z",
+        "title": "Decreased total iron binding capacity upon intensive care unit admission predicts red blood cell transfusion in critically ill patients"
+      },
+      {
+        "abstract": [
+          "\n        The TNF-related apoptosis inducing ligand (TRAIL)/TRAIL receptor system participates in crucial steps in immune cell activation or differentiation. It is able to inhibit proliferation and activation of T cells and to induce apoptosis of neurons and oligodendrocytes, and seems to be implicated in autoimmune diseases. Thus, TRAIL and TRAIL receptor genes are potential candidates for involvement in susceptibility to multiple sclerosis (MS). To test whether single-nucleotide polymorphisms (SNPs) in the human genes encoding TRAIL, TRAILR-1, TRAILR-2, TRAILR-3 and TRAILR-4 are associated with MS susceptibility, we performed a candidate gene case-control study in the Spanish population. 59 SNPs in the TRAIL and TRAIL receptor genes were analysed in 628 MS patients and 660 controls, and validated in an additional cohort of 295 MS patients and 233 controls. Despite none of the SNPs withstood the highly conservative Bonferroni correction, three SNPs showing uncorrected p values<0.05 were successfully replicated: rs4894559 in TRAIL gene, p\u200a=\u200a9.8\u00d710\u22124, OR\u200a=\u200a1.34; rs4872077, in TRAILR-1 gene, p\u200a=\u200a0.005, OR\u200a=\u200a1.72; and rs1001793 in TRAILR-2 gene, p\u200a=\u200a0.012, OR\u200a=\u200a0.84. The combination of the alleles G/T/A in these SNPs appears to be associated with a reduced risk of developing MS (p\u200a=\u200a2.12\u00d710\u22125, OR\u200a=\u200a0.59). These results suggest that genes of the TRAIL/TRAIL receptor system exerts a genetic influence on MS.\n      "
+        ],
+        "author_display": [
+          "Carlos L\u00f3pez-G\u00f3mez",
+          "\u00d3scar Fern\u00e1ndez",
+          "Juan Antonio Garc\u00eda-Le\u00f3n",
+          "Mar\u00eda Jes\u00fas Pinto-Medel",
+          "Bego\u00f1a Oliver-Martos",
+          "Jes\u00fas Ortega-Pinazo",
+          "Margarita Suard\u00edaz",
+          "Luc\u00eda Garc\u00eda-Trujillo",
+          "Cristina Guijarro-Castro",
+          "Juli\u00e1n Benito-Le\u00f3n",
+          "Isidro Prat",
+          "Jezabel Varad\u00e9",
+          "Roberto \u00c1lvarez-Lafuente",
+          "Elena Urcelay",
+          "Laura Leyva"
+        ],
+        "id": "10.1371/journal.pone.0021766",
+        "journal": "PLoS ONE",
+        "publication_date": "2011-07-21T00:00:00Z",
+        "title": "TRAIL/TRAIL Receptor System and Susceptibility to Multiple Sclerosis"
+      },
+      {
+        "abstract": [
+          "\n        OX40L is an important costimulatory molecule that plays a crucial role in the regulation of T-cell-mediated immunity. The interaction of OX40-OX40L is involved in the pathogenesis of multiple autoimmune and inflammatory diseases such as systemic lupus erythematosus (SLE), carotid artery disease and cancer. The genetic variants of OX40L can increase the risk of SLE, atherosclerosis, systemic sclerosis and show gender-specific effects in some studies. Accordingly, we performed a case-control study including 557 breast cancer patients and 580 age- and sex-matched healthy controls to investigate whether single nucleotide polymorphisms (SNPs) in the OX40L gene are associated with sporadic breast cancer susceptibility and progression in Chinese Han women. Seven SNPs of OX40L (rs6661173, rs1234313, rs3850641, rs1234315, rs12039904, rs844648 and rs10912580) were genotyped with the method of polymerase chain reaction-restriction fragment length polymorphism (PCR-RFLP). The results indicated that rs3850641G allele could increase the susceptibility to breast cancer (P\u200a=\u200a0.009662), even in the validation study (P\u200a=\u200a0.0001515). A significant association between rs3850641 and breast cancer risk was observed under the additive model and dominant model (P\u200a=\u200a0.01042 and 0.01942, respectively). The haplotype analysis showed that haplotype Ars844648Ars10912580 was significantly associated with breast cancer, even after 10,000 permutations for haplotypes in block only (P\u200a=\u200a0.0003). In clinicopathologic features analysis, the association between rs1234315 and C-erbB2 status was significant (P\u200a=\u200a0.02541). Our data primarily indicates that rs3850641 of OX40L gene contributes to sporadic breast carcinogenesis in a northeast Chinese Han population.\n      "
+        ],
+        "author_display": [
+          "Yuan Weiguang",
+          "Li Dalin",
+          "Xu Lidan",
+          "Cai Yonggang",
+          "Chen Shuang",
+          "Liu Yanhong",
+          "Xu Fengyan",
+          "Fu Zhenkun",
+          "Pang Da",
+          "Li Dianjun"
+        ],
+        "id": "10.1371/journal.pone.0041277",
+        "publication_date": "2012-08-03T00:00:00Z",
+        "title": "Association of OX40L Polymorphisms with Sporadic Breast Cancer in Northeast Chinese Han Population"
+      },
+      {
+        "abstract": [
+          "Background: Since screening programs identify only a small proportion of the population as eligible for an intervention, genomic prediction of heritable risk factors could decrease the number needing to be screened by removing individuals at low genetic risk. We therefore tested whether a polygenic risk score for heel quantitative ultrasound speed of sound (SOS)\u2014a heritable risk factor for osteoporotic fracture\u2014can identify low-risk individuals who can safely be excluded from a fracture risk screening program. Methods and findings: A polygenic risk score for SOS was trained and selected in 2 separate subsets of UK Biobank (comprising 341,449 and 5,335 individuals). The top-performing prediction model was termed \u201cgSOS\u201d, and its utility in fracture risk screening was tested in 5 validation cohorts using the National Osteoporosis Guideline Group clinical guidelines (N = 10,522 eligible participants). All individuals were genome-wide genotyped and had measured fracture risk factors. Across the 5 cohorts, the average age ranged from 57 to 75 years, and 54% of studied individuals were women. The main outcomes were the sensitivity and specificity to correctly identify individuals requiring treatment with and without genetic prescreening. The reference standard was a bone mineral density (BMD)\u2013based Fracture Risk Assessment Tool (FRAX) score. The secondary outcomes were the proportions of the screened population requiring clinical-risk-factor-based FRAX (CRF-FRAX) screening and BMD-based FRAX (BMD-FRAX) screening. gSOS was strongly correlated with measured SOS (r2 = 23.2%, 95% CI 22.7% to 23.7%). Without genetic prescreening, guideline recommendations achieved a sensitivity and specificity for correct treatment assignment of 99.6% and 97.1%, respectively, in the validation cohorts. However, 81% of the population required CRF-FRAX tests, and 37% required BMD-FRAX tests to achieve this accuracy. Using gSOS in prescreening and limiting further assessment to those with a low gSOS resulted in small changes to the sensitivity and specificity (93.4% and 98.5%, respectively), but the proportions of individuals requiring CRF-FRAX tests and BMD-FRAX tests were reduced by 37% and 41%, respectively. Study limitations include a reliance on cohorts of predominantly European ethnicity and use of a proxy of fracture risk. Conclusions: Our results suggest that the use of a polygenic risk score in fracture risk screening could decrease the number of individuals requiring screening tests, including BMD measurement, while maintaining a high sensitivity and specificity to identify individuals who should be recommended an intervention. \nVincenzo Forgetta and colleagues investigate possible utility of genetic information in assessing fracture risk.\nWhy was this study done?:  What did the researchers do and find?:  What do these findings mean?:  "
+        ],
+        "author_display": [
+          "Vincenzo Forgetta",
+          "Julyan Keller-Baruch",
+          "Marie Forest",
+          "Audrey Durand",
+          "Sahir Bhatnagar",
+          "John P. Kemp",
+          "Maria Nethander",
+          "Daniel Evans",
+          "John A. Morris",
+          "Douglas P. Kiel",
+          "Fernando Rivadeneira",
+          "Helena Johansson",
+          "Nicholas C. Harvey",
+          "Dan Mellstr\u00f6m",
+          "Magnus Karlsson",
+          "Cyrus Cooper",
+          "David M. Evans",
+          "Robert Clarke",
+          "John A. Kanis",
+          "Eric Orwoll",
+          "Eugene V. McCloskey",
+          "Claes Ohlsson",
+          "Joelle Pineau",
+          "William D. Leslie",
+          "Celia M. T. Greenwood",
+          "J. Brent Richards"
+        ],
+        "id": "10.1371/journal.pmed.1003152",
+        "journal": "PLOS Medicine",
+        "publication_date": "2020-07-02T00:00:00Z",
+        "title": "Development of a polygenic risk score to improve screening for fracture risk: A genetic risk prediction study"
+      },
+      {
+        "abstract": [
+          "Background: Most existing risk stratification systems predicting mortality in emergency departments or admission units are complex in clinical use or have not been validated to a level where use is considered appropriate. We aimed to develop and validate a simple system that predicts seven-day mortality of acutely admitted medical patients using routinely collected variables obtained within the first minutes after arrival. Methods and Findings: This observational prospective cohort study used three independent cohorts at the medical admission units at a regional teaching hospital and a tertiary university hospital and included all adult (\u226515 years) patients. Multivariable logistic regression analysis was used to identify the clinical variables that best predicted the endpoint. From this, we developed a simplified model that can be calculated without specialized tools or loss of predictive ability. The outcome was defined as seven-day all-cause mortality. 76 patients (2.5%) met the endpoint in the development cohort, 57 (2.0%) in the first validation cohort, and 111 (4.3%) in the second. Systolic blood Pressure, Age, Respiratory rate, loss of Independence, and peripheral oxygen Saturation were associated with the endpoint (full model). Based on this, we developed a simple score (range 0\u20135), ie, the PARIS score, by dichotomizing the variables. The ability to identify patients at increased risk (discriminatory power and calibration) was excellent for all three cohorts using both models. For patients with a PARIS score \u22653, sensitivity was 62.5\u201374.0%, specificity 85.9\u201391.1%, positive predictive value 11.2\u201317.5%, and negative predictive value 98.3\u201399.3%. Patients with a score \u22641 had a low mortality (\u22641%); with 2, intermediate mortality (2\u20135%); and \u22653, high mortality (\u226510%). Conclusions: Seven-day mortality can be predicted upon admission with high sensitivity and specificity and excellent negative predictive values. "
+        ],
+        "author_display": [
+          "Mikkel Brabrand",
+          "Annmarie Touborg Lassen",
+          "Torben Knudsen",
+          "Jesper Hallas"
+        ],
+        "id": "10.1371/journal.pone.0122480",
+        "journal": "PLOS ONE",
+        "publication_date": "2015-04-13T00:00:00Z",
+        "title": "Seven-Day Mortality Can Be Predicted in Medical Patients by Blood Pressure, Age, Respiratory Rate, Loss of Independence, and Peripheral Oxygen Saturation (the PARIS Score): A Prospective Cohort Study with External Validation"
+      },
+      {
+        "abstract": [
+          "Background: Early illness course correlates with long-term outcome in psychosis. Accurate prediction could allow more focused intervention. Earlier intervention corresponds to significantly better symptomatic and functional outcomes. Our study objective is to use routinely collected baseline demographic and clinical characteristics to predict employment, education or training (EET) status, and symptom remission in patients with first episode psychosis (FEP) at one-year. Methods and findings: 83 FEP patients were recruited from National Health Service (NHS) Glasgow between 2011 and 2014 to a 24-month prospective cohort study with regular assessment of demographic and psychometric measures. An external independent cohort of 79 FEP patients were recruited from NHS Glasgow and Edinburgh during a 12-month study between 2006 and 2009. Elastic net regularised logistic regression models were built to predict binary EET status, period and point remission outcomes at one-year on 83 Glasgow patients (training dataset). Models were externally validated on an independent dataset of 79 patients from Glasgow and Edinburgh (validation dataset). Only baseline predictors shared across both cohorts were made available for model training and validation. After excluding participants with missing outcomes, models were built on the training dataset for EET status, period and point remission outcomes and externally validated on the validation dataset. Models predicted EET status, period and point remission with receiver operating curve (ROC) area under the curve (AUC) performances of 0.876 (95%CI: 0.864, 0.887), 0.630 (95%CI: 0.612, 0.647) and 0.652 (95%CI: 0.635, 0.670) respectively. Positive predictors of EET included baseline EET and living with spouse/children. Negative predictors included higher PANSS suspiciousness, hostility and delusions scores. Positive predictors for symptom remission included living with spouse/children, and affective symptoms on the Positive and Negative Syndrome Scale (PANSS). Negative predictors of remission included passive social withdrawal symptoms on PANSS. A key limitation of this study is the small sample size (n) relative to the number of predictors (p), whereby p approaches n. The use of elastic net regularised regression rather than ordinary least squares regression helped circumvent this difficulty. Further, we did not have information for biological and additional social variables, such as nicotine dependence, which observational studies have linked to outcomes in psychosis. Conclusions and relevance: Using advanced statistical machine learning techniques, we provide the first externally validated evidence, in a temporally and geographically independent cohort, for the ability to predict one-year EET status and symptom remission in individual FEP patients. "
+        ],
+        "author_display": [
+          "Samuel P. Leighton",
+          "Rajeev Krishnadas",
+          "Kelly Chung",
+          "Alison Blair",
+          "Susie Brown",
+          "Suzy Clark",
+          "Kathryn Sowerbutts",
+          "Matthias Schwannauer",
+          "Jonathan Cavanagh",
+          "Andrew I. Gumley"
+        ],
+        "id": "10.1371/journal.pone.0212846",
+        "journal": "PLOS ONE",
+        "publication_date": "2019-03-07T00:00:00Z",
+        "title": "Predicting one-year outcome in first episode psychosis using machine learning"
+      },
+      {
+        "abstract": [
+          "Background: The prevalence of diabetes is increasing in all industrialized countries and its prevention has become a public health priority. However, the predictors of diabetes risk are insufficiently understood. We evaluated, whether 31 novel biomarkers could help to predict the risk of incident diabetes. Methods and Findings: The biomarkers were evaluated primarily in the FINRISK97 cohort (n\u200a=\u200a7,827; 417 cases of clinically incident diabetes during the follow-up). The findings were replicated in the Health 2000 cohort (n\u200a=\u200a4,977; 179 cases of clinically incident diabetes during the follow-up). We used Cox proportional hazards models to calculate the relative risk of diabetes, after adjusting for the classic risk factors, separately for each biomarker. Next, we assessed the discriminatory ability of single biomarkers using receiver operating characteristic curves and C-statistics, integrated discrimination improvement (IDI) and net reclassification improvement (NRI). Finally, we derived a biomarker score in the FINRISK97 cohort and validated it in the Health 2000 cohort. A score consisting of adiponectin, apolipoprotein B, C-reactive protein and ferritin almost doubled the relative risk of diabetes in the validation cohort (HR per one standard deviation increase 1.88, p\u200a=\u200a2.8 e-5). It also improved discrimination of the model (IDI\u200a=\u200a0.0149, p<0.0001) and reclassification of diabetes risk (NRI\u200a=\u200a11.8%, p\u200a=\u200a0.006). Gender-specific analyses suggested that the best score differed between men and women. Among men, the best results were obtained with the score of four biomarkers: adiponectin, apolipoprotein B, ferritin and interleukin-1 receptor antagonist, which gave an NRI of 25.4% (p<0.0001). Among women, the best score included adiponectin, apolipoprotein B, C-reactive protein and insulin. It gave an NRI of 13.6% (p\u200a=\u200a0.041). Conclusions: We identified novel biomarkers that were associated with the risk of clinically incident diabetes over and above the classic risk factors. This gives new insights into the pathogenesis of diabetes and may help with targeting prevention and treatment. "
+        ],
+        "author_display": [
+          "Veikko Salomaa",
+          "Aki Havulinna",
+          "Olli Saarela",
+          "Tanja Zeller",
+          "Pekka Jousilahti",
+          "Antti Jula",
+          "Thomas Muenzel",
+          "Arpo Aromaa",
+          "Alun Evans",
+          "Kari Kuulasmaa",
+          "Stefan Blankenberg"
+        ],
+        "id": "10.1371/journal.pone.0010100",
+        "journal": "PLoS ONE",
+        "publication_date": "2010-04-09T00:00:00Z",
+        "title": "Thirty-One Novel Biomarkers as Predictors for Clinically Incident Diabetes"
+      },
+      {
+        "abstract": [
+          "\nPatients with HBV-acute-on-chronic liver failure (HBV-ACLF) have high mortality and frequently require liver transplantation; few reliable prognostic markers are available. As a class of functional lipids, sphingolipids are extensively involved in the process of HBV infection. However, their role in chronic HBV infection remains unknown. The aim of this study was to determine the serum sphingolipid profile in a population of patients with chronic HBV infection, paying special attention to exploring novel prognostic markers in HBV-ACLF. High performance liquid chromatography tandem mass spectrometry was used to examine the levels of 41 sphingolipids in 156 serum samples prospectively collected from two independent cohorts. The training and validation cohorts comprised 20 and 28 healthy controls (CTRL), 29 and 23 patients with chronic hepatitis B (CHB), and 30 and 26 patients with HBV-ACLF, respectively. Biometric analysis was used to evaluate the association between sphingolipid levels and disease stages. Multivariate analysis revealed difference of sphingolipid profiles between CHB and HBV-ACLF was more drastic than that between CTRL and CHB, which indicated that serum sphingolipid levels were more likely to associate with the progression HBV-ACLF rather than CHB. Furthermore, a 3-month mortality evaluation of HBV-ACLF patients showed that dhCer(d18\u22360/24\u22360) was significantly higher in survivors than in non-survivors (including deceased patients and those undergoing liver transplantation, p<0.05), and showed a prognostic performance similar to that of the MELD score. The serum sphingolipid composition varies between CTRL and chronic HBV infection patients. In addition, dhCer(d18\u22360/24\u22360) may be a useful prognostic indicator for the early prediction of HBV-ACLF.\n"
+        ],
+        "author_display": [
+          "Feng Qu",
+          "Su-Jun Zheng",
+          "Shuang Liu",
+          "Cai-Sheng Wu",
+          "Zhong-Ping Duan",
+          "Jin-Lan Zhang"
+        ],
+        "id": "10.1371/journal.pone.0104988",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-08-19T00:00:00Z",
+        "title": "Serum Sphingolipids Reflect the Severity of Chronic HBV Infection and Predict the Mortality of HBV-Acute-on-Chronic Liver Failure"
+      },
+      {
+        "abstract": [
+          "\nSeptic shock is a major medical problem with high morbidity and mortality and incompletely understood biology. Integration of multiple data sets into a single analysis framework empowers discovery of new knowledge about the condition that may have been missed by individual analysis of each of these datasets. Electronic search was performed on medical literature and gene expression databases for selection of transcriptomic studies done in circulating leukocytes from human subjects suffering from septic shock. Gene-level meta-analysis was conducted on the six selected studies to identify the genes consistently differentially expressed in septic shock. This was followed by pathway-level analysis using three different algorithms (ORA, GSEA, SPIA). The identified up-regulated pathway, Osteoclast differentiation pathway (hsa04380) was validated in two independent cohorts. Of the pathway, 25 key genes were selected that serve as an expression signature of Septic Shock.\n"
+        ],
+        "author_display": [
+          "Samanwoy Mukhopadhyay",
+          "Pravat K. Thatoi",
+          "Abhay D. Pandey",
+          "Bidyut K. Das",
+          "Balachandran Ravindran",
+          "Samsiddhi Bhattacharjee",
+          "Saroj K. Mohapatra"
+        ],
+        "id": "10.1371/journal.pone.0171689",
+        "journal": "PLOS ONE",
+        "publication_date": "2017-02-15T00:00:00Z",
+        "title": "Transcriptomic meta-analysis reveals up-regulation of gene expression functional in osteoclast differentiation in human septic shock"
+      },
+      {
+        "abstract": [
+          "Background: Severe fever with thrombocytopenia syndrome (SFTS) is an emerging infectious disease with high mortality. Neurological symptoms are increasingly recognized as critical predictors of poor outcomevs, but their mechanisms remain unclear. This study aims to explore relevant mechanisms and identify biomarkers. Methods: This study utilized three distinct SFTS patient cohorts. First, 15 hospitalized patients from April 21 to August 2, 2024 were prospectively enrolled, with blood samples collected during hospitalization for RNA sequencing of peripheral blood mononuclear cells (PBMCs) to identify differentially expressed genes (DEGs). Second, we established a single-center retrospective cohort comprising 103 SFTS patients (admitted 2021\u20132024) to analyze clinical data pertaining to central nervous system (CNS) symptoms and patient outcomes. Third, to quantitatively assess serum matrix metalloproteinase-8 (MMP8) levels, we analyzed a total of 151 serum samples obtained from patients across two independent centers using enzyme-linked immunosorbent assay (ELISA). Results: RNA sequencing analysis between the recovered group and deceased group revealed significant alterations in central nervous system (CNS)-related pathways. Clinical data from 103 SFTS patients showed the deceased group had significantly higher rates of neurological symptoms vs the recovered group over the full course: consciousness disorders (88.89% vs 23.53%, P\u2009<\u20090.001) and convulsions (27.78% vs 3.53%, P\u2009=\u20090.003). Patients with these symptoms had both upregulated MMP8 gene expression and elevated serum MMP8 levels. Elevated serum MMP8 strongly correlated with fatal outcomes (AUC\u2009=\u20090.821, 95% CI: 0.681-0.962; P\u2009=\u20090.008). Multivariate Cox analysis confirmed MMP8 as an independent mortality predictor (HR\u2009=\u20091.060, 95% CI: 1.010-1.112). The MMP8-incorporated multivariable Cox model showed good discriminative ability in the external validation cohort (AUC\u2009=\u20090.843, 95% CI: 0.723-0.962). Conclusions: Neurological symptoms during the early stages of SFTS are strongly associated with patient outcomes. MMP8 may serve as a potential biomarker for SFTS prognosis. The integration of clinical neurological symptoms and MMP8 measurement offers a novel framework for improving prognostic accuracy and guiding personalized management strategies in SFTS patients. Author summary: This study investigates the relationship between severe fever with thrombocytopenia syndrome (SFTS) patients\u2019 outcome, neurological symptoms, and transcriptome changes, addressing critical knowledge gaps in this emerging infectious disease. Patients were categorized into deceased group and recovered group based on their clinical outcomes. By comparing gene expression profiles and clinical neurological symptoms between these groups, we identified matrix metalloproteinase-8 (MMP8) as a potential biomarker for predicting poor prognosis in SFTS patients. Furthermore, our results indicated that among the various neurological manifestations in SFTS patients, the presence of consciousness disorder and convulsion may serve as markers of poor prognoses. These findings advance the understanding of the neurological and molecular factors underpinning SFTS. We aim to assist clinicians in identifying SFTS patients with poor prognosis early, and providing timely supportive treatment for these high-risk patients to improve their survival outcomes. "
+        ],
+        "author_display": [
+          "Qi Xia",
+          "Ziling Cheng",
+          "Yi Zhang",
+          "Haolin Song",
+          "Bei Jia",
+          "Lingtong Huang",
+          "Qiuhong Liu",
+          "Qing Zhao",
+          "Jie Li",
+          "Jie Wang",
+          "Wei Wu"
+        ],
+        "id": "10.1371/journal.pntd.0013875",
+        "journal": "PLOS Neglected Tropical Diseases",
+        "publication_date": "2025-12-26T00:00:00Z",
+        "title": "Neurological manifestations and MMP8 as a prognostic biomarker in severe fever with thrombocytopenia syndrome"
+      },
+      {
+        "abstract": [
+          "Aim: The addition of maternal age to fasting plasma glucose (FPG) at 24\u201328 gestational weeks improves the performance of GDM screening as maternal age increases. However, this method delays the diagnosis of GDM. Since FPG at the first prenatal visit (FPV) is a screening option for pre-existing diabetes, we evaluated the performance of age plus FPG at the FPV to reduce the need for the OGTT. Methods: Pregnant women were recruited consecutively in 2013\u20132018 (the training cohort) and 2019 (the validation cohort). We excluded women with twin pregnancies, unavailable FPG at the FPV or OGTT data, pre-pregnancy diabetes, or a history of GDM. All participants underwent FPG and haemoglobin A1c (HbA1c) at the FPV and received 75-g OGTT at 24\u201328 gestational weeks if FPG at the FPV was <92 mg/dL. GDM was diagnosed by the IADPSG criteria. Two algorithms were developed with the cutoffs determined when the percentage requiring OGTT (OGTT%) was the lowest and the sensitivity was \u226590%. Results: The incidence of GDM increased with age. The \u201cFPG at the FPV\u201d algorithm reduced OGTT% to 68.8% with the FPG cutoff at 79 mg/dl. The \"age plus FPG at the FPV\" algorithm, with the cutoff of 114, further reduced OGTT% to 58.3%, with the sensitivity of 90.7% (9.3% GDM missed) and the specificity of 100%. These findings were replicated in the validation cohort. Conclusions: Screening GDM by maternal age plus FPG at the FPV can reduce OGTT%, especially in populations with a significant proportion of pregnant women with advanced ages. "
+        ],
+        "author_display": [
+          "Yi-Yun Tai",
+          "Chien-Nan Lee",
+          "Chun-Heng Kuo",
+          "Ming-Wei Lin",
+          "Kuan-Yu Chen",
+          "Shin-Yu Lin",
+          "Hung-Yuan Li"
+        ],
+        "id": "10.1371/journal.pone.0237224",
+        "journal": "PLOS ONE",
+        "publication_date": "2020-08-20T00:00:00Z",
+        "title": "Simplifying the screening of gestational diabetes by maternal age plus fasting plasma glucose at first prenatal visit: A prospective cohort study"
+      },
+      {
+        "abstract": [
+          "\nPatients hospitalized with COVID-19 infection are at a high general risk for in-hospital mortality. A simple and easy-to-use model for predicting mortality based on data readily available to clinicians in the first 24 hours of hospital admission might be useful in directing scarce medical and personnel resources toward those patients at greater risk of dying. With this goal in mind, we evaluated factors predictive of in-hospital mortality in a random sample of 100 patients (derivation cohort) hospitalized for COVID-19 at our institution in April and May, 2020 and created potential models to test in a second random sample of 148 patients (validation cohort) hospitalized for the same disease over the same time period in the same institution. Two models (Model A: two variables, presence of pneumonia and ischemia); (Model B: three variables, age > 65 years, supplemental oxygen \u2265 4 L/min, and C-reactive protein (CRP) > 10 mg/L) were selected and tested in the validation cohort. Model B appeared the better of the two, with an AUC in receiver operating characteristic curve analysis of 0.74 versus 0.65 in Model A, but the AUC differences were not significant (p = 0.24. Model B also appeared to have a more robust separation of mortality between the lowest (none of the three variables present) and highest (all three variables present) scores at 0% and 71%, respectively. These brief scoring systems may prove to be useful to clinicians in assigning mortality risk in hospitalized patients.\n"
+        ],
+        "author_display": [
+          "Nasheena Jiwa",
+          "Rahul Mutneja",
+          "Lucie Henry",
+          "Garrett Fiscus",
+          "Richard Zu Wallack"
+        ],
+        "id": "10.1371/journal.pone.0254580",
+        "journal": "PLOS ONE",
+        "publication_date": "2021-07-16T00:00:00Z",
+        "title": "Development of a brief scoring system to predict any-cause mortality in patients hospitalized with COVID-19 infection"
+      },
+      {
+        "abstract": [
+          "\nDiscovery and validation of genetic variants that influence disease severity in children with sickle cell anemia (SCA) could lead to early identification of high-risk patients, better screening strategies, and intervention with targeted and preventive therapy. We hypothesized that newly identified genetic risk factors for the general African American population could also impact laboratory biomarkers known to contribute to the clinical disease expression of SCA, including variants influencing the white blood cell count and the development of albuminuria and abnormal glomerular filtration rate. We first investigated candidate genetic polymorphisms in well-characterized SCA pediatric cohorts from three prospective NHLBI-supported clinical trials: HUSTLE, SWiTCH, and TWiTCH. We also performed whole exome sequencing to identify novel genetic variants, using both a discovery and a validation cohort. Among candidate genes, DARC rs2814778 polymorphism regulating Duffy antigen expression had a clear influence with significantly increased WBC and neutrophil counts, but did not affect the maximum tolerated dose of hydroxyurea therapy. The APOL1 G1 polymorphism, an identified risk factor for non-diabetic renal disease, was associated with albuminuria. Whole exome sequencing discovered several novel variants that maintained significance in the validation cohorts, including ZFHX4 polymorphisms affecting both the leukocyte and neutrophil counts, as well as AGGF1, CYP4B1, CUBN, TOR2A, PKD1L2, and CD163 variants affecting the glomerular filtration rate. The identification of robust, reliable, and reproducible genetic markers for disease severity in SCA remains elusive, but new genetic variants provide avenues for further validation and investigation.\n"
+        ],
+        "author_display": [
+          "Beverly A. Schaefer",
+          "Jonathan M. Flanagan",
+          "Ofelia A. Alvarez",
+          "Stephen C. Nelson",
+          "Banu Aygun",
+          "Kerri A. Nottage",
+          "Alex George",
+          "Carla W. Roberts",
+          "Connie M. Piccone",
+          "Thad A. Howard",
+          "Barry R. Davis",
+          "Russell E. Ware"
+        ],
+        "id": "10.1371/journal.pone.0164364",
+        "journal": "PLOS ONE",
+        "publication_date": "2016-10-06T00:00:00Z",
+        "title": "Genetic Modifiers of White Blood Cell Count, Albuminuria and Glomerular Filtration Rate in Children with Sickle Cell Anemia"
+      },
+      {
+        "abstract": [
+          "Objective: The objective was to predict insufficient response to 3 months methotrexate (MTX) in DMARD na\u00efve rheumatoid arthritis patients. Methods: A Multivariable logistic regression model of rheumatoid arthritis patients starting MTX was developed in a derivation cohort with 285 patients starting MTX in a clinical multicentre, stratified single-blinded trial, performed in seven secondary care clinics and a tertiary care clinic. The model was validated in a validation cohort with 102 patients starting MTX at a tertiary care clinic. Outcome was insufficient response (disease activity score (DAS)28 >3.2) after 3 months of MTX treatment. Clinical characteristics, lifestyle variables, genetic and metabolic biomarkers were determined at baseline in both cohorts. These variables were dichotomized and used to construct a multivariable prediction model with backward logistic regression analysis. Results: The prediction model for insufficient response in the derivation cohort, included: DAS28>5.1, Health Assessment Questionnaire>0.6, current smoking, BMI>25 kg/m2, ABCB1 rs1045642 genotype, ABCC3 rs4793665 genotype, and erythrocyte-folate<750 nmol/L. In the derivation cohort, AUC of ROC curve was 0.80 (95%CI: 0.73\u20130.86), and 0.80 (95%CI: 0.69\u20130.91) in the validation cohort. Betas of the prediction model were transformed into total risk score (range 0\u20138). At cutoff of \u22654, probability for insufficient response was 44%. Sensitivity was 71%, specificity 72%, with positive and negative predictive value of 72% and 71%. Conclusions: A prognostics prediction model for insufficient response to MTX in 2 prospective RA cohorts by combining genetic, metabolic, clinical and lifestyle variables was developed and validated. This model satisfactorily identified RA patients with high risk of insufficient response to MTX. "
+        ],
+        "author_display": [
+          "Maurits C. F. J. de Rotte",
+          "Saskia M. F. Pluijm",
+          "Pascal H. P. de Jong",
+          "Maja Bulatovi\u0107 \u0106alasan",
+          "Nico M. Wulffraat",
+          "Angelique E. A. M. Weel",
+          "Jan Lindemans",
+          "J. M. W. Hazes",
+          "Robert de Jonge"
+        ],
+        "id": "10.1371/journal.pone.0208534",
+        "journal": "PLOS ONE",
+        "publication_date": "2018-12-10T00:00:00Z",
+        "title": "Development and validation of a prognostic multivariable model to predict insufficient clinical response to methotrexate in rheumatoid arthritis"
+      },
+      {
+        "abstract": [
+          "Background: Urinary tract infections (UTIs) are common globally, and are developing increased antibiotic resistance. Despite being the diagnostic \u201cgold standard,\u201d urine culture is limited by slow results and a high rate of false negative findings, leading to treatment delays, higher costs, and overuse of empirical antibiotics. Our study aims to develop a rapid and reliable model to predict clinical outcomes. Methods: From January 1st to October 31st, 2023, we enrolled patients with symptoms suggesting UTI from the Outpatient Department of our hospital. Inclusion criteria were patients aged \u226518, initially diagnosed with UTI, available urinalysis, flow cytometry, and urinary culture. Exclusion criteria included failed sample collection and cultures, and pregnant women. A case-control study was conducted, with UTI cases defined as\u2009\u2265\u200910^5 CFU/\u2009\u00b5\u2009L and controls as\u2009<\u200910^5 CFU/\u2009\u00b5\u2009L, matched for age and sex in a 1:1 ratio. For validation, retrospective cases from July to December 2022 were selected with matching controls. Using urine culture as the gold standard, the predictive model was developed with backward stepwise logistic regression. Model discrimination was assessed using area under the curve (AUC). Results: In our discovery cohort, we included 1,335 UTI cases and 1,282 non-UTI controls, with mean ages of 52.9\u2009\u00b1\u200917.1 years and 51.9\u2009\u00b1\u200916.4 years, and females of 76.9% and 77.7%. Using 100 cells/uL as a threshold, bacterial counts demonstrated a sensitivity of 91.0% and specificity of 45.7%. Our novel UTIRisk score, developed from urinalysis and flow cytometry parameters, showed strong discrimination for UTI, with a AUC of 0.82 (95% CI: 0.81\u20130.84). In the validation cohort, the AUC was 0.77 (95% CI: 0.74\u20130.80). The UTIRisk score exhibited excellent specificity (96.5%) and high positive predictive value (92.6%). The score performed strongly across subgroups, particularly in males and patients aged \u226565. Conclusions: Our UTIRisk score can improve diagnosis, reduce unnecessary urine cultures, optimize antibiotic use, and help control antibiotic resistance in LMICs. Multicenter, and intervention-based studies are warranted before clinical implementation. "
+        ],
+        "author_display": [
+          "Vo Anh Vinh Trang",
+          "Thien Tan Tri Tai Truyen",
+          "Minh Thuan Nguyen",
+          "Huu Phong Mai",
+          "Tri Cuong Phan",
+          "Son Hoang Phan",
+          "Han My Le Nguyen",
+          "Huong-Dung Thi Nguyen",
+          "Nguyen Hai Dang Le",
+          "Man Nhi Tu",
+          "Vo Thanh Vi Huynh",
+          "Hoang Tram Anh Nguyen",
+          "Dac Bao Han Ho",
+          "Ngoc Thuy Uyen Tran",
+          "Nguyen Ha Uyen Tran",
+          "Bich-Nhat Thi Le",
+          "Duc Tuan Doan",
+          "Huu Doan Pham",
+          "Truong Bao Phan",
+          "Phu Phat Pham",
+          "Tuan Vinh Nguyen",
+          "Phuc Cam Hoang Nguyen"
+        ],
+        "id": "10.1371/journal.pone.0323664",
+        "journal": "PLOS One",
+        "publication_date": "2025-05-14T00:00:00Z",
+        "title": "Development of a novel risk score for diagnosing urinary tract infections: Integrating Sysmex UF-5000i urine fluorescence flow cytometry with urinalysis"
+      },
+      {
+        "abstract": [
+          "\nLung adenocarcinoma (LUAD) is a deadly tumor with dynamic evolutionary process. Although much endeavors have been made in identifying the temporal patterns of cancer progression, it remains challenging to infer and interpret the molecular alterations associated with cancer development and progression. To this end, we developed a computational approach to infer the progression trajectory based on cross-sectional transcriptomic data. Analysis of the LUAD data using our approach revealed a linear trajectory with three different branches for malignant progression, and the results showed consistency in three independent cohorts. We used the progression model to elucidate the potential molecular events in LUAD progression. Further analysis showed that overexpression of BUB1B, BUB1 and BUB3 promoted tumor cell proliferation and metastases by disturbing the spindle assembly checkpoint (SAC) in the mitosis. Aberrant mitotic spindle checkpoint signaling appeared to be one of the key factors promoting LUAD progression. We found the inferred cancer trajectory allows to identify LUAD susceptibility genetic variations using genome-wide association analysis. This result shows the opportunity for combining analysis of candidate genetic factors with disease progression. Furthermore, the trajectory showed clear evident mutation accumulation and clonal expansion along with the LUAD progression. Understanding how tumors evolve and identifying mutated genes will help guide cancer management. We investigated the clonal architectures and identified distinct clones and subclones in different LUAD branches. Validation of the model in multiple independent data sets and correlation analysis with clinical results demonstrate that our method is effective and unbiased.\nAuthor summary: Lung adenocarcinoma (LUAD) is a deadly tumor that remains approximately 15% survival rate in 5 years. The diverse reasons that made cancer progression and metastasis include genetic mutation, gene expression alteration, and so on. Understanding this dynamic process and identifying pivotal molecular events driving tumor progression is essential for improving LUAD diagnosis and treatment. Studying time-series data can simulate cancer evolution and determine the temporal patterns of molecular alterations. Unfortunately, it is difficult to collect complete time-series data from individual patients due to various reasons. In this study, we developed a trajectory model based on gene expression of LUAD patients and identified distinct progression branches. Moreover, we found a key gene BUB1B that could lead to aberrant spindle assembly checkpoint (SAC) signaling, and this appeared to be one of the key factors promoting LUAD progression. The trajectory shows clear evident mutation accumulation and clonal expansion along with the LUAD progression. We also investigated the clonal architectures and identified distinct clones and subclones in different LUAD branches. This clones and subclones can be used to identify combination therapy for LUAD. Our results demonstrate the biological utility and clinical application prospects of this progression model. "
+        ],
+        "author_display": [
+          "Kexin Huang",
+          "Yun Zhang",
+          "Haoran Gong",
+          "Zhengzheng Qiao",
+          "Tiangang Wang",
+          "Weiling Zhao",
+          "Liyu Huang",
+          "Xiaobo Zhou"
+        ],
+        "id": "10.1371/journal.pcbi.1011122",
+        "journal": "PLOS Computational Biology",
+        "publication_date": "2023-05-25T00:00:00Z",
+        "title": "Inferring evolutionary trajectories from cross-sectional transcriptomic data to mirror lung adenocarcinoma progression"
+      },
+      {
+        "abstract": [
+          "\nTRAIL and TRAIL Receptor genes have been implicated in Multiple Sclerosis pathology as well as in the response to IFN beta therapy. The objective of our study was to evaluate the association of these genes in relation to the age at disease onset (AAO) and to the clinical response upon IFN beta treatment in Spanish MS patients. We carried out a candidate gene study of TRAIL, TRAILR-1, TRAILR-2, TRAILR-3 and TRAILR-4 genes. A total of 54 SNPs were analysed in 509 MS patients under IFN beta treatment, and an additional cohort of 226 MS patients was used to validate the results. Associations of rs1047275 in TRAILR-2 and rs7011559 in TRAILR-4 genes with AAO under an additive model did not withstand Bonferroni correction. In contrast, patients with the TRAILR-1 rs20576-CC genotype showed a better clinical response to IFN beta therapy compared with patients carrying the A-allele (recessive model: p\u200a=\u200a8.88\u00d710\u22124, pc\u200a=\u200a0.048, OR\u200a=\u200a0.30). This SNP resulted in a non synonymous substitution of Glutamic acid to Alanine in position 228 (E228A), a change previously associated with susceptibility to different cancer types and risk of metastases, suggesting a lack of functionality of TRAILR-1. In order to unravel how this amino acid change in TRAILR-1 would affect to death signal, we performed a molecular modelling with both alleles. Neither TRAIL binding sites in the receptor nor the expression levels of TRAILR-1 in peripheral blood mononuclear cell subsets (monocytes, CD4+ and CD8+ T cells) were modified, suggesting that this SNP may be altering the death signal by some other mechanism. These findings show a role for TRAILR-1 gene variations in the clinical outcome of IFN beta therapy that might have relevance as a biomarker to predict the response to IFN beta in MS.\n"
+        ],
+        "author_display": [
+          "Carlos L\u00f3pez-G\u00f3mez",
+          "Almudena Pino-\u00c1ngeles",
+          "Teresa \u00d3rpez-Zafra",
+          "Mar\u00eda Jes\u00fas Pinto-Medel",
+          "Bego\u00f1a Oliver-Martos",
+          "Jes\u00fas Ortega-Pinazo",
+          "Carlos Arn\u00e1iz",
+          "Cristina Guijarro-Castro",
+          "Jezabel Varad\u00e9",
+          "Roberto \u00c1lvarez-Lafuente",
+          "Elena Urcelay",
+          "Francisca S\u00e1nchez-Jim\u00e9nez",
+          "\u00d3scar Fern\u00e1ndez",
+          "Laura Leyva"
+        ],
+        "id": "10.1371/journal.pone.0062540",
+        "journal": "PLoS ONE",
+        "publication_date": "2013-04-29T00:00:00Z",
+        "title": "Candidate Gene Study of TRAIL and TRAIL Receptors: Association with Response to Interferon Beta Therapy in Multiple Sclerosis Patients"
+      },
+      {
+        "abstract": [
+          "Introduction: MicroRNAs (miRNAs, miRs) are a class of small, non-coding RNA molecules with relevance as regulators of gene expression thereby affecting crucial processes in cancer development. MiRNAs offer great potential as biomarkers for cancer detection due to their remarkable stability in blood and their characteristic expression in many different diseases. We investigated whether microarray-based miRNA profiling on whole blood could discriminate between early stage breast cancer patients and healthy controls. Methods: We performed microarray-based miRNA profiling on whole blood of 48 early stage breast cancer patients at diagnosis along with 57 healthy individuals as controls. This was followed by a real-time semi-quantitative Polymerase Chain Reaction (RT-qPCR) validation in a separate cohort of 24 early stage breast cancer patients from a breast cancer screening unit and 24 age matched controls using two differentially expressed miRNAs (miR-202, miR-718). Results: Using the significance level of p<0.05, we found that 59 miRNAs were differentially expressed in whole blood of early stage breast cancer patients compared to healthy controls. 13 significantly up-regulated miRNAs and 46 significantly down-regulated miRNAs in our microarray panel of 1100 miRNAs and miRNA star sequences could be detected. A set of 240 miRNAs that was evaluated by radial basis function kernel support vector machines and 10-fold cross validation yielded a specificity of 78.8%, and a sensitivity of 92.5%, as well as an accuracy of 85.6%. Two miRNAs were validated by RT-qPCR in an independent cohort. The relative fold changes of the RT-qPCR validation were in line with the microarray data for both miRNAs, and statistically significant differences in miRNA-expression were found for miR-202. Conclusions: MiRNA profiling in whole blood has potential as a novel method for early stage breast cancer detection, but there are still challenges that need to be addressed to establish these new biomarkers in clinical use. "
+        ],
+        "author_display": [
+          "Michael G. Schrauder",
+          "Reiner Strick",
+          "R\u00fcdiger Schulz-Wendtland",
+          "Pamela L. Strissel",
+          "Laura Kahmann",
+          "Christian R. Loehberg",
+          "Michael P. Lux",
+          "Sebastian M. Jud",
+          "Arndt Hartmann",
+          "Alexander Hein",
+          "Christian M. Bayer",
+          "Mayada R. Bani",
+          "Swetlana Richter",
+          "Boris R. Adamietz",
+          "Evelyn Wenkel",
+          "Claudia Rauh",
+          "Matthias W. Beckmann",
+          "Peter A. Fasching"
+        ],
+        "id": "10.1371/journal.pone.0029770",
+        "journal": "PLoS ONE",
+        "publication_date": "2012-01-05T00:00:00Z",
+        "title": "Circulating Micro-RNAs as Potential Blood-Based Markers for Early Stage Breast Cancer Detection"
+      },
+      {
+        "abstract": [
+          "Background: A novel non-invasive asthma prediction tool from the Leicester Cohort, UK, forecasts asthma at age 8 years based on 10 predictors assessed in early childhood, including current respiratory symptoms, eczema, and parental history of asthma. Objective: We aimed to externally validate the proposed asthma prediction method in a German birth cohort. Methods: The MAS-90 study (Multicentre Allergy Study) recorded details on allergic diseases prospectively in about yearly follow-up assessments up to age 20 years in a cohort of 1,314 children born 1990. We replicated the scoring method from the Leicester cohort and assessed prediction, performance and discrimination. The primary outcome was defined as the combination of parent-reported wheeze and asthma drugs (both in last 12 months) at age 8. Sensitivity analyses assessed model performance for outcomes related to asthma up to age 20 years. Results: For 140 children parents reported current wheeze or cough at age 3 years. Score distribution and frequencies of later asthma resembled the Leicester cohort: 9% vs. 16% (MAS-90 vs. Leicester) of children at low risk at 3 years had asthma at 8 years, at medium risk 45% vs. 48%. Performance of the asthma prediction tool in the MAS-90 cohort was similar (Brier score 0.22 vs. 0.23) and discrimination slightly better than in the original cohort (area under the curve, AUC 0.83 vs. 0.78). Prediction and discrimination were robust against changes of inclusion criteria, scoring and outcome definitions. The secondary outcome \u2018physicians\u2019 diagnosed asthma at 20 years' showed the highest discrimination (AUC 0.89). Conclusion: The novel asthma prediction tool from the Leicester cohort, UK, performed well in another population, a German birth cohort, supporting its use and further development as a simple aid to predict asthma risk in clinical settings. "
+        ],
+        "author_display": [
+          "Linus B. Grabenhenrich",
+          "Andreas Reich",
+          "Felix Fischer",
+          "Fred Zepp",
+          "Johannes Forster",
+          "Antje Schuster",
+          "Carl-Peter Bauer",
+          "Renate L. Bergmann",
+          "Karl E. Bergmann",
+          "Ulrich Wahn",
+          "Thomas Keil",
+          "Susanne Lau"
+        ],
+        "id": "10.1371/journal.pone.0115852",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-12-23T00:00:00Z",
+        "title": "The Novel 10-Item Asthma Prediction Tool: External Validation in the German MAS Birth Cohort"
+      },
+      {
+        "abstract": [
+          "\nHydroxyurea has proven efficacy in children and adults with sickle cell anemia (SCA), but with considerable inter-individual variability in the amount of fetal hemoglobin (HbF) produced. Sibling and twin studies indicate that some of that drug response variation is heritable. To test the hypothesis that genetic modifiers influence pharmacological induction of HbF, we investigated phenotype-genotype associations using whole exome sequencing of children with SCA treated prospectively with hydroxyurea to maximum tolerated dose (MTD). We analyzed 171 unrelated patients enrolled in two prospective clinical trials, all treated with dose escalation to MTD. We examined two MTD drug response phenotypes: HbF (final %HbF minus baseline %HbF), and final %HbF. Analyzing individual genetic variants, we identified multiple low frequency and common variants associated with HbF induction by hydroxyurea. A validation cohort of 130 pediatric sickle cell patients treated to MTD with hydroxyurea was genotyped for 13 non-synonymous variants with the strongest association with HbF response to hydroxyurea in the discovery cohort. A coding variant in Spalt-like transcription factor, or SALL2, was associated with higher final HbF in this second independent replication sample and SALL2 represents an outstanding novel candidate gene for further investigation. These findings may help focus future functional studies and provide new insights into the pharmacological HbF upregulation by hydroxyurea in patients with SCA.\n"
+        ],
+        "author_display": [
+          "Vivien A. Sheehan",
+          "Jacy R. Crosby",
+          "Aniko Sabo",
+          "Nicole A. Mortier",
+          "Thad A. Howard",
+          "Donna M. Muzny",
+          "Shannon Dugan-Perez",
+          "Banu Aygun",
+          "Kerri A. Nottage",
+          "Eric Boerwinkle",
+          "Richard A. Gibbs",
+          "Russell E. Ware",
+          "Jonathan M. Flanagan"
+        ],
+        "id": "10.1371/journal.pone.0110740",
+        "journal": "PLoS ONE",
+        "publication_date": "2014-10-31T00:00:00Z",
+        "title": "Whole Exome Sequencing Identifies Novel Genes for Fetal Hemoglobin Response to Hydroxyurea in Children with Sickle Cell Anemia"
+      },
+      {
+        "abstract": [
+          "\nHypertension is a heritable and major contributor to the global burden of disease. The sum of rare and common genetic variants robustly identified so far explain only 1%\u20132% of the population variation in BP and hypertension. This suggests the existence of more undiscovered common variants. We conducted a genome-wide association study in 1,621 hypertensive cases and 1,699 controls and follow-up validation analyses in 19,845 cases and 16,541 controls using an extreme case-control design. We identified a locus on chromosome 16 in the 5\u2032 region of Uromodulin (UMOD; rs13333226, combined P value of 3.6\u00d710\u221211). The minor G allele is associated with a lower risk of hypertension (OR [95%CI]: 0.87 [0.84\u20130.91]), reduced urinary uromodulin excretion, better renal function; and each copy of the G allele is associated with a 7.7% reduction in risk of CVD events after adjusting for age, sex, BMI, and smoking status (H.R.\u200a=\u200a0.923, 95% CI 0.860\u20130.991; p\u200a=\u200a0.027). In a subset of 13,446 individuals with estimated glomerular filtration rate (eGFR) measurements, we show that rs13333226 is independently associated with hypertension (unadjusted for eGFR: 0.89 [0.83\u20130.96], p\u200a=\u200a0.004; after eGFR adjustment: 0.89 [0.83\u20130.96], p\u200a=\u200a0.003). In clinical functional studies, we also consistently show the minor G allele is associated with lower urinary uromodulin excretion. The exclusive expression of uromodulin in the thick portion of the ascending limb of Henle suggests a putative role of this variant in hypertension through an effect on sodium homeostasis. The newly discovered UMOD locus for hypertension has the potential to give new insights into the role of uromodulin in BP regulation and to identify novel drugable targets for reducing cardiovascular risk.\nAuthor Summary: Hypertension is the leading contributor to global mortality with a global prevalence of 26.4% in 2000, projected to increase to 29.2% by 2025. While 50%\u201360% of population variation in blood pressure can be attributable to additive genetic factors, all the genetic variants robustly identified so far explain only 1%\u20132% of the population variance indicating the presence of additional undiscovered risk variants. Using an extreme case-control strategy, we have discovered a SNP in the promoter region of the uromodulin gene (UMOD) to be associated with hypertension (minor allele protective against hypertension). We then validated this association using large-scale population and case-control studies, where similar extreme criteria for selection of cases and controls have been used (21,466 cases and 18,240 controls). As the locus was related to uromodulin, a protein exclusively expressed in the kidneys, we show that the association is independent of renal dysfunction. We also show preliminary evidence that the SNP allele which is protective against hypertension is also protective against cardiovascular events in 26,654 Swedish subjects followed-up for 12 years. The newly discovered UMOD locus for hypertension has the potential to give unique insights into the role of uromodulin in BP regulation and to identify novel drugable targets. "
+        ],
+        "author_display": [
+          "Sandosh Padmanabhan",
+          "Olle Melander",
+          "Toby Johnson",
+          "Anna Maria Di Blasio",
+          "Wai K. Lee",
+          "Davide Gentilini",
+          "Claire E. Hastie",
+          "Cristina Menni",
+          "Maria Cristina Monti",
+          "Christian Delles",
+          "Stewart Laing",
+          "Barbara Corso",
+          "Gerjan Navis",
+          "Arjan J. Kwakernaak",
+          "Pim van der Harst",
+          "Murielle Bochud",
+          "Marc Maillard",
+          "Michel Burnier",
+          "Thomas Hedner",
+          "Sverre Kjeldsen",
+          "Bj\u00f6rn Wahlstrand",
+          "Marketa Sj\u00f6gren",
+          "Cristiano Fava",
+          "Martina Montagnana",
+          "Elisa Danese",
+          "Ole Torffvit",
+          "Bo Hedblad",
+          "Harold Snieder",
+          "John M. C. Connell",
+          "Morris Brown",
+          "Nilesh J. Samani",
+          "Martin Farrall",
+          "Giancarlo Cesana",
+          "Giuseppe Mancia",
+          "Stefano Signorini",
+          "Guido Grassi",
+          "Susana Eyheramendy",
+          "H. Erich Wichmann",
+          "Maris Laan",
+          "David P. Strachan",
+          "Peter Sever",
+          "Denis Colm Shields",
+          "Alice Stanton",
+          "Peter Vollenweider",
+          "Alexander Teumer",
+          "Henry V\u00f6lzke",
+          "Rainer Rettig",
+          "Christopher Newton-Cheh",
+          "Pankaj Arora",
+          "Feng Zhang",
+          "Nicole Soranzo",
+          "Timothy D. Spector",
+          "Gavin Lucas",
+          "Sekar Kathiresan",
+          "David S. Siscovick",
+          "Jian'an Luan",
+          "Ruth J. F. Loos",
+          "Nicholas J. Wareham",
+          "Brenda W. Penninx",
+          "Ilja M. Nolte",
+          "Martin McBride",
+          "William H. Miller",
+          "Stuart A. Nicklin",
+          "Andrew H. Baker",
+          "Delyth Graham",
+          "Robert A. McDonald",
+          "Jill P. Pell",
+          "Naveed Sattar",
+          "Paul Welsh",
+          "Global BPgen Consortium ",
+          "Patricia Munroe",
+          "Mark J. Caulfield",
+          "Alberto Zanchetti",
+          "Anna F. Dominiczak"
+        ],
+        "id": "10.1371/journal.pgen.1001177",
+        "journal": "PLoS Genetics",
+        "publication_date": "2010-10-28T00:00:00Z",
+        "title": "Genome-Wide Association Study of Blood Pressure Extremes Identifies Variant near UMOD Associated with Hypertension"
+      },
+      {
+        "abstract": [
+          "\nGenetic risk prediction is an important goal in human genetics research and precision medicine. Accurate prediction models will have great impacts on both disease prevention and early treatment strategies. Despite the identification of thousands of disease-associated genetic variants through genome wide association studies (GWAS), genetic risk prediction accuracy remains moderate for most diseases, which is largely due to the challenges in both identifying all the functionally relevant variants and accurately estimating their effect sizes in the presence of linkage disequilibrium. In this paper, we introduce AnnoPred, a principled framework that leverages diverse types of genomic and epigenomic functional annotations in genetic risk prediction for complex diseases. AnnoPred is trained using GWAS summary statistics in a Bayesian framework in which we explicitly model various functional annotations and allow for linkage disequilibrium estimated from reference genotype data. Compared with state-of-the-art risk prediction methods, AnnoPred achieves consistently improved prediction accuracy in both extensive simulations and real data.\nAuthor summary: Genetic risk prediction plays a significant role in precision medicine. Accurate prediction models could have great impact on disease prevention and early treatment strategies. For example, mutations in BRCA1 and BRCA2 have been used to evaluate women\u2019s breast cancer risk and as a guideline for early screening. However, genetic risk prediction models also present important challenges, including extreme high-dimensionality, limited access to and efficient computational methods for individual-level genotype data. To make use of rich GWAS summary statistics, we propose a novel method to address these challenges by integrating genomic functional annotations, which have been successfully applied in GWAS to generate biological insights. We demonstrate the improvement in accuracy in both extensive simulation studies and real data analysis of breast cancer, Crohn\u2019s disease, celiac disease, rheumatoid arthritis and type-II diabetes. "
+        ],
+        "author_display": [
+          "Yiming Hu",
+          "Qiongshi Lu",
+          "Ryan Powles",
+          "Xinwei Yao",
+          "Can Yang",
+          "Fang Fang",
+          "Xinran Xu",
+          "Hongyu Zhao"
+        ],
+        "id": "10.1371/journal.pcbi.1005589",
+        "journal": "PLOS Computational Biology",
+        "publication_date": "2017-06-08T00:00:00Z",
+        "title": "Leveraging functional annotations in genetic risk prediction for human complex diseases"
+      }
+    ],
+    "numFound": 288,
+    "start": 0
+  }
+}

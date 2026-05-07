@@ -1,0 +1,49 @@
+{
+  "artifact_id": "source_artifact_cd0611a699f9a267",
+  "byte_size": 201,
+  "file_name": "df.rds",
+  "file_type": "rds",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/replication_EcoEvo_git/data/model/df.rds",
+  "object_count": 1,
+  "objects": [
+    {
+      "columns": [
+        "p",
+        "m",
+        "sigma"
+      ],
+      "name": "value",
+      "preview_rows": [
+        {
+          "m": 0.0,
+          "p": 0.568634784,
+          "sigma": 2.4044519383
+        },
+        {
+          "m": 0.0,
+          "p": 0.1647392957,
+          "sigma": 1.0000001469
+        },
+        {
+          "m": 0.0,
+          "p": 0.15303745,
+          "sigma": 4.50402165
+        },
+        {
+          "m": 0.0,
+          "p": 0.1135884702,
+          "sigma": 10.8670422079
+        }
+      ],
+      "python_type": "DataFrame",
+      "shape": [
+        4,
+        3
+      ]
+    }
+  ],
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "sample_kind": "r_data",
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "ab58916baaeac7e7182c9967e9c4b59d8a1c0e2b4f6ebf29d015ac1b4f602bde"
+}

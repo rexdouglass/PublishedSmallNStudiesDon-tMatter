@@ -1,0 +1,3689 @@
+{
+  "hitCount": 2030,
+  "nextCursorMark": "AoIIQHqT3Cg1NDg3Mjc5Ng==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"sample size\" \"original\" \"replication\" \"validation cohort\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIQHqT3Cg1NDg3Mjc5Ng==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"sample size\" \"original\" \"replication\" \"validation cohort\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "abstractText": "Predicting neoadjuvant chemotherapy response in breast cancer remains critical for optimizing treatment strategies, yet robust predictive biomarkers are lacking. This study implemented an ensemble machine learning approach to identify a gene expression signature predicting pathological complete response (pCR) versus residual disease (RD) using bulk RNA-sequencing data from GSE163882 (138 RD, 80 pCR). We employed TMM normalization with differential expression analysis (250 genes, FDR < 0.05, |log2FC| \u2265 1), ensemble feature selection across five classifiers (Random Forest, Gradient Boosting, SVM, k-NN, and Neural Network) with 10-fold repeated cross-validation, and stacked ensemble development. Consensus selection identified a 17-gene signature consistently ranked across algorithms. The stacked ensemble achieved 0.97 AUC post-testing on hold-out test data. External validation on the independent GSE240671 cohort (37 pCR, 25 RD) following ComBat batch correction achieved ROC AUC of 0.78 and PR AUC of 0.85 with isotonic calibration, demonstrating balanced accuracy of 0.71 and 0.86 sensitivity for pCR detection. Pathway enrichment revealed associations with cell cycle regulation (E2F3, MKI67), DNA repair (BRCA2), and transcriptional control (MED1), with six priority genes (MED1, BRCA2, E2F3, PITPNB, H1-1, and FARP2) showing established breast cancer relevance. This externally validated 17-gene signature provides a biologically grounded tool for NAC response prediction in precision oncology.",
+        "affiliation": "AnaBioSi-Data Ltd., Athalassas Ave 176-MyOffice 204, Strovolos 2025, Cyprus.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8479-0289"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3093-1696"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3172-9489"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "AnaBioSi-Data Ltd., Athalassas Ave 176-MyOffice 204, Strovolos 2025, Cyprus."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8479-0289"
+              },
+              "firstName": "Stelios",
+              "fullName": "Lamprou S",
+              "initials": "S",
+              "lastName": "Lamprou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "AnaBioSi-Data Ltd., Athalassas Ave 176-MyOffice 204, Strovolos 2025, Cyprus."
+                  }
+                ]
+              },
+              "firstName": "Styliana",
+              "fullName": "Georgiou S",
+              "initials": "S",
+              "lastName": "Georgiou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Cancer Biophysics Lab., Department of Mechanical Engineering, University of Cyprus, P.O. Box 20537, Nicosia 1678, Cyprus."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3093-1696"
+              },
+              "firstName": "Triantafyllos",
+              "fullName": "Stylianopoulos T",
+              "initials": "T",
+              "lastName": "Stylianopoulos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "AnaBioSi-Data Ltd., Athalassas Ave 176-MyOffice 204, Strovolos 2025, Cyprus."
+                  },
+                  {
+                    "affiliation": "Cancer Biophysics Lab., Department of Mechanical Engineering, University of Cyprus, P.O. Box 20537, Nicosia 1678, Cyprus."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3172-9489"
+              },
+              "firstName": "Chrysovalantis",
+              "fullName": "Voutouri C",
+              "initials": "C",
+              "lastName": "Voutouri"
+            }
+          ]
+        },
+        "authorString": "Lamprou S, Georgiou S, Stylianopoulos T, Voutouri C.",
+        "citedByCount": 1,
+        "dateOfCompletion": "2026-01-30",
+        "dateOfCreation": "2026-01-30",
+        "dateOfRevision": "2026-02-03",
+        "doi": "10.3390/cimb48010094",
+        "electronicPublicationDate": "2026-01-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-06",
+        "firstPublicationDate": "2026-01-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12840044"
+          ]
+        },
+        "fullTextReceivedDate": "2026-01-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/cimb48010094"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12840044"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12840044?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41614924",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "1467-3045",
+            "isoabbreviation": "Curr Issues Mol Biol",
+            "issn": "1467-3037",
+            "medlineAbbreviation": "Curr Issues Mol Biol",
+            "nlmid": "100931761",
+            "title": "Current issues in molecular biology"
+          },
+          "journalIssueId": 4103715,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "48",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Breast cancer",
+            "Biomarkers",
+            "Digital Pathology",
+            "Precision Medicine",
+            "Precision Oncology"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "94",
+        "pmcid": "PMC12840044",
+        "pmid": "41614924",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Ensemble Machine Learning on Bulk RNA-Seq Identifies 17-Gene Signature Predicting Neoadjuvant Chemotherapy Response in Breast Cancer."
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Tumour necrosis factor inhibitors (anti-TNF agents) are a milestone in rheumatoid arthritis (RA) management, although 20-40% of RA patients do not achieve clinical remission. Identifying reliable biomarkers to predict the therapeutic response to anti-TNF agents remains an unmet clinical need.<h4>Methods</h4>This study aimed to identify and validate plasma microRNAs (miRNAs) as biomarkers of response to anti-TNF treatment. A two-stage prospective observational (discovery and validation) study was performed. The study population comprised anti-TNF-na\u00efve RA patients and sex- and age-matched healthy controls (HC). Whole miRNA expression was assessed using the Illumina NextSeq 550 platform, followed by bioinformatic analysis. Differentially expressed miRNAs identified in the discovery phase were quantified using real-time quantitative PCR in the validation cohort. Logistic regression analysis assessed associations between miRNA expression and response to anti-TNF treatment.<h4>Results</h4>A total of 94 participants were included: 70 anti-TNF-na\u00efve RA patients (discovery n = 28; validation n = 42) and 24 healthy controls (14 and 10, respectively). Clinical response at week 24 was defined as DAS28-CRP < 3.2 (responders) versus DAS28-CRP \u2265 3.2 (non-responders). Non-responders were characterised by higher inflammatory activity, poorer HAQ scores, and a higher prevalence of smoking. Forty-five miRNAs were differentially expressed between RA patients and HC, and 9 were expressed between responders and non-responders (<i>p</i> < 0.05). In the validation cohort, miR-134-5p differed between responders and non-responders (\u0394Ct<sub>Responders</sub> = 4.088(\u00b11.266); \u0394Ct<sub>Non-Responders</sub> = 5.640(\u00b12.872); \u0394\u0394Ct<sub>RespondersVsNon-Responders</sub> = -1.552; Fold-Change = 2.932; <i>p</i> = 0.024). Logistic regression adjusted for age and sex showed higher miR-134-5p expression to be associated with lack of response to anti-TNF therapy (OR, 1.74; 95% CI: 1.02-2.93; <i>p</i> = 0.039).<h4>Conclusion</h4>miR-134-5p may serve as a predictive biomarker of poor response to anti-TNF therapy in RA.",
+        "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Arkaitz",
+              "fullName": "Mucientes A",
+              "initials": "A",
+              "lastName": "Mucientes"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "Departamento de Medicina, Universidad de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Jos\u00e9 Manuel",
+              "fullName": "Lisbona-Monta\u00f1ez JM",
+              "initials": "JM",
+              "lastName": "Lisbona-Monta\u00f1ez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "Unidad de Gesti\u00f3n Cl\u00ednica de Endocrinolog\u00eda y Nutrici\u00f3n, Hospital Cl\u00ednico Virgen de la Victoria, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "CIBER Fisiopatolog\u00eda de la Obesidad y Nutrici\u00f3n (CIBEROBN), Instituto de Salud Carlos III, Madrid,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Patricia",
+              "fullName": "Ruiz-Lim\u00f3n P",
+              "initials": "P",
+              "lastName": "Ruiz-Lim\u00f3n"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Unidad de Bioinform\u00e1tica, Centro de Supercomputaci\u00f3n y Bioinnovaci\u00f3n (SCBI), Universidad de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Roc\u00edo",
+              "fullName": "Bautista R",
+              "initials": "R",
+              "lastName": "Bautista"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Servicios Centrales de Apoyo a la Investigaci\u00f3n (SCAI), Universidad de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Diego",
+              "fullName": "Lozano-Peral D",
+              "initials": "D",
+              "lastName": "Lozano-Peral"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "Departamento de Medicina, Universidad de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Sara",
+              "fullName": "Manrique-Arija S",
+              "initials": "S",
+              "lastName": "Manrique-Arija"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Aimara",
+              "fullName": "Garc\u00eda-Studer A",
+              "initials": "A",
+              "lastName": "Garc\u00eda-Studer"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "Departamento de Medicina, Universidad de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Fernando",
+              "fullName": "Ortiz-M\u00e1rquez F",
+              "initials": "F",
+              "lastName": "Ortiz-M\u00e1rquez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Natalia",
+              "fullName": "Mena-V\u00e1zquez N",
+              "initials": "N",
+              "lastName": "Mena-V\u00e1zquez"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Instituto de Investigaci\u00f3n Biom\u00e9dica de M\u00e1laga y Plataforma en Nanomedicina-IBIMA Plataforma, BIONAND, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "UGC de Reumatolog\u00eda, Hospital Regional Universitario de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  },
+                  {
+                    "affiliation": "Departamento de Medicina, Universidad de M\u00e1laga, M\u00e1laga,\u00a0Spain."
+                  }
+                ]
+              },
+              "firstName": "Antonio",
+              "fullName": "Fern\u00e1ndez-Nebro A",
+              "initials": "A",
+              "lastName": "Fern\u00e1ndez-Nebro"
+            }
+          ]
+        },
+        "authorString": "Mucientes A, Lisbona-Monta\u00f1ez JM, Ruiz-Lim\u00f3n P, Bautista R, Lozano-Peral D, Manrique-Arija S, Garc\u00eda-Studer A, Ortiz-M\u00e1rquez F, Mena-V\u00e1zquez N, Fern\u00e1ndez-Nebro A.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Antirheumatic Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Tumor Necrosis Factor-alpha",
+              "registryNumber": "0"
+            },
+            {
+              "name": "MicroRNAs",
+              "registryNumber": "0"
+            },
+            {
+              "name": "MIRN134 microRNA, human",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Biomarkers",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Tumor Necrosis Factor Inhibitors",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2026-04-02",
+        "dateOfCreation": "2026-04-02",
+        "dateOfRevision": "2026-04-02",
+        "doi": "10.3389/fimmu.2026.1783026",
+        "electronicPublicationDate": "2026-03-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-03",
+        "firstPublicationDate": "2026-03-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13036163"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-01",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fimmu.2026.1783026"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13036163"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13036163?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41924283",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "1664-3224",
+            "isoabbreviation": "Front Immunol",
+            "issn": "1664-3224",
+            "medlineAbbreviation": "Front Immunol",
+            "nlmid": "101560960",
+            "title": "Frontiers in immunology"
+          },
+          "journalIssueId": 4103356,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "17",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Rheumatoid arthritis",
+            "Biomarker",
+            "miRNA",
+            "Anti-tnf",
+            "Inflammatory Activity"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Arthritis, Rheumatoid",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "abbreviation": "DI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "diagnosis"
+                  },
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Tumor Necrosis Factor-alpha",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "antagonists & inhibitors"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "MicroRNAs",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Antirheumatic Agents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Case-Control Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Prospective Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Biomarkers",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Tumor Necrosis Factor Inhibitors",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1783026",
+        "pmcid": "PMC13036163",
+        "pmid": "41924283",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article",
+            "Observational Study"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Plasma miR-134-5p: a candidate biomarker for predicting non-response to anti-TNF therapy in rheumatoid arthritis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "uniprot"
+          ]
+        }
+      },
+      {
+        "abstractText": "Machine learning and deep learning tools have been proposed to improve survival prediction in acute myeloid leukemia (AML), but comparative benchmarks remain unclear. PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) 2020 searches of PubMed, Scopus, and Web of Science (January 2018 to March 2025) identified studies developing or externally validating artificial intelligence (AI)-based models for overall or relapse-free survival reporting area under the receiver operating characteristic (ROC) area under the curve (AUC). Two reviewers extracted design, population, features, algorithms, and training/validation AUCs and assessed risk of bias using Prediction model Risk of Bias Assessment Tool (PROBAST). Random-effects meta-analysis (DerSimonian-Laird) pooled validation AUCs overall and by horizon (1/2/3/5 years) and feature category (gene-centric vs nongenetic). Optimism bias was the training-validation AUC difference. We included 24 predominantly retrospective studies (137 model cohorts; \u223c51\u2009055 patients). Of 120 PROBAST domain ratings, 74% were low risk, 25% unclear, and <1% high; statistical analysis was the weakest domain. Across 73 independent validation cohorts, the pooled AUC was 0.769 (95% confidence interval [CI], 0.742-0.795) with substantial between-study variability (<i>I</i> <sup>2</sup> = 95.7%; meaning most of the spread reflects real differences across cohorts rather than chance). Validation AUCs increased with longer horizons (1-year, 0.748; 2-year, 0.760; 3-year, 0.760; 5-year, 0.833). Pooled development AUC was 0.801 vs 0.749 in matched validation sets (\u0394AUC, 0.052; 95% CI, 0.041-0.063). Nongenetic models achieved a pooled validation AUC of 0.776 vs 0.741 for gene-centric models (\u0394AUC, 0.035; <i>P</i> = .085). AML AI prognostic models show moderate discrimination with modest optimism but substantial heterogeneity and limited prospective validation, supporting standardized reporting and rigorous external evaluation.",
+        "affiliation": "Department of Medicine, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY."
+                  }
+                ]
+              },
+              "firstName": "Xiaoyi",
+              "fullName": "Zhang X",
+              "initials": "X",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Nursing and Rehabilitation, Shandong University, Jinan, China."
+                  }
+                ]
+              },
+              "firstName": "Na",
+              "fullName": "Xiao N",
+              "initials": "N",
+              "lastName": "Xiao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY."
+                  }
+                ]
+              },
+              "firstName": "Simo",
+              "fullName": "Du S",
+              "initials": "S",
+              "lastName": "Du"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY."
+                  }
+                ]
+              },
+              "firstName": "Manasa",
+              "fullName": "Anipindi M",
+              "initials": "M",
+              "lastName": "Anipindi"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hematology/Oncology, Tri-Service General Hospital, National Defense Medical Center, Taipei, Taiwan."
+                  }
+                ]
+              },
+              "firstName": "Cho-Hao",
+              "fullName": "Lee CH",
+              "initials": "CH",
+              "lastName": "Lee"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY."
+                  }
+                ]
+              },
+              "firstName": "Toru",
+              "fullName": "Yoshino T",
+              "initials": "T",
+              "lastName": "Yoshino"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY."
+                  }
+                ]
+              },
+              "firstName": "Aditya",
+              "fullName": "Anand A",
+              "initials": "A",
+              "lastName": "Anand"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Cyber Science and Engineering, Huazhong University of Science and Technology, Wuhan, China."
+                  }
+                ]
+              },
+              "firstName": "Lisha",
+              "fullName": "Xiao L",
+              "initials": "L",
+              "lastName": "Xiao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hematology/Oncology, Jacobi Medical Center, Albert Einstein College of Medicine, Bronx, NY."
+                  }
+                ]
+              },
+              "firstName": "Abhishek",
+              "fullName": "Kumar A",
+              "initials": "A",
+              "lastName": "Kumar"
+            }
+          ]
+        },
+        "authorString": "Zhang X, Xiao N, Du S, Anipindi M, Lee CH, Yoshino T, Anand A, Xiao L, Kumar A.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-20",
+        "dateOfCreation": "2026-04-20",
+        "dateOfRevision": "2026-04-20",
+        "doi": "10.1016/j.bneo.2026.100217",
+        "electronicPublicationDate": "2026-03-10",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-20",
+        "firstPublicationDate": "2026-03-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13091435"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.bneo.2026.100217"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13091435"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13091435?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42007253",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 May",
+          "issue": "2",
+          "journal": {
+            "essn": "2950-3280",
+            "isoabbreviation": "Blood Neoplasia",
+            "issn": "2950-3280",
+            "medlineAbbreviation": "Blood Neoplasia",
+            "nlmid": "9918841988906676",
+            "title": "Blood neoplasia"
+          },
+          "journalIssueId": 4145447,
+          "monthOfPublication": 5,
+          "printPublicationDate": "2026-05-01",
+          "volume": "3",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "100217",
+        "pmcid": "PMC13091435",
+        "pmid": "42007253",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Artificial intelligence-based prognostic models in acute myeloid leukemia: systematic review and meta-analysis."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Epilepsy imposes a substantial global burden, and drug-resistant epilepsy (DRE) accounts for a disproportionate share of morbidity due to persistent seizures and limited treatment options. Although MRI studies have reported gray-matter (GM) atrophy in DRE, its spatial specificity, accompanying changes in morphometric similarity network (MSN) connectivity strength, and the performance of an MRI-only supportive screening model for identifying DRE remain incompletely understood. We therefore tested whether GM atrophy clusters non-randomly in territories with high neurotransmitter-receptor, cellular, and mitochondrial distributions, whether MSNs are altered, and evaluated the feasibility of an MRI-only model to support DRE identification.<h4>Methods</h4>This study first used voxel-based morphometry (VBM) to map group GM atrophy, then constructed MSN from structural MRI features to analyze global, regional, and graph-theoretic metrics; we next tested the spatial correlation of the GM atrophy map with neurotransmitter receptor and cellular/mitochondrial distributions under family-wise FDR control. Finally, we trained classifiers using LASSO-selected MRI features to develop an MRI-based screening/support tool. All analyses were performed separately in two independent cohorts.<h4>Results</h4>Both cohorts showed temporo-limbic-anchored GM atrophy, with discovery-cohort stratification indicating broader thalamo-ventral temporal involvement in TLE and more focal cerebellar effects in non-TLE. MSNs showed preserved global indices with focal regional meanMS reductions (isthmus cingulate/medial orbitofrontal/pars triangularis), reproduced in TLE but not other subtype contrasts. The atrophy map co-localized with 5-HT1B and mGluR5 and with mitochondrial Complex I/IV (plus respiratory capacity and a neuronal subtype map) in discovery, while validation showed no FDR-significant correspondences and opposite directions for mGluR5 and respiratory capacity. The MRI-only panel achieved moderate external AUC (~0.75), consistent with a supportive screening application rather than diagnostic replacement.<h4>Conclusion</h4>GM atrophy in DRE aligns with neurotransmitter and mitochondrial distributions and coincides with regional meanMS reductions; an MRI-only model aids DRE identification, though causality and clinical utility await validation in larger longitudinal/interventional studies.",
+        "affiliation": "Department of Neurosurgery, The Affiliated Hospital of Southwest Medical University, Luzhou, Sichuan, People's Republic of China.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1023-1331"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0004-6883-2070"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-7904-0986"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The Affiliated Hospital of Southwest Medical University, Luzhou, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "firstName": "Jiaxi",
+              "fullName": "Zhao J",
+              "initials": "J",
+              "lastName": "Zhao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "College of Medicine, Southwest Jiaotong University, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-7904-0986"
+              },
+              "firstName": "Mingjun",
+              "fullName": "Gao M",
+              "initials": "M",
+              "lastName": "Gao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "College of Medicine, Southwest Jiaotong University, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "firstName": "Lanling",
+              "fullName": "Zhou L",
+              "initials": "L",
+              "lastName": "Zhou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The Affiliated Hospital of Southwest Medical University, Luzhou, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "firstName": "Shiming",
+              "fullName": "Wan S",
+              "initials": "S",
+              "lastName": "Wan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "firstName": "Nianshun",
+              "fullName": "Liao N",
+              "initials": "N",
+              "lastName": "Liao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The Affiliated Hospital of Southwest Medical University, Luzhou, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "College of Medicine, Southwest Jiaotong University, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1023-1331"
+              },
+              "firstName": "Sixun",
+              "fullName": "Yu S",
+              "initials": "S",
+              "lastName": "Yu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "College of Medicine, Southwest Jiaotong University, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0004-6883-2070"
+              },
+              "firstName": "Xin",
+              "fullName": "Chen X",
+              "initials": "X",
+              "lastName": "Chen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosurgery, The Affiliated Hospital of Southwest Medical University, Luzhou, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "Department of Neurosurgery, The General Hospital of Western Theater Command PLA, Chengdu, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "College of Medicine, Southwest Jiaotong University, Chengdu, Sichuan, People's Republic of China."
+                  },
+                  {
+                    "affiliation": "T18-Issue Stress Injury and Functional Repair Key Laboratory of Sichuan Province, Chengdu, Sichuan, People's Republic of China."
+                  }
+                ]
+              },
+              "firstName": "Haifeng",
+              "fullName": "Shu H",
+              "initials": "H",
+              "lastName": "Shu"
+            }
+          ]
+        },
+        "authorString": "Zhao J, Gao M, Zhou L, Wan S, Liao N, Yu S, Chen X, Shu H.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-31",
+        "dateOfCreation": "2026-03-31",
+        "dateOfRevision": "2026-03-31",
+        "doi": "10.2147/ndt.s582833",
+        "electronicPublicationDate": "2026-03-24",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-31",
+        "firstPublicationDate": "2026-03-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13033203"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-30",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.2147/NDT.S582833"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13033203"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13033203?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41913786",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "1178-2021",
+            "isoabbreviation": "Neuropsychiatr Dis Treat",
+            "issn": "1176-6328",
+            "medlineAbbreviation": "Neuropsychiatr Dis Treat",
+            "nlmid": "101240304",
+            "title": "Neuropsychiatric disease and treatment"
+          },
+          "journalIssueId": 4091844,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "22",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Voxel-based Morphometry",
+            "Clinical Prediction Model",
+            "Morphometric Similarity Networks",
+            "Juspace"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "582833",
+        "pmcid": "PMC13033203",
+        "pmid": "41913786",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Morphometric Similarity Loss and Gray Matter Atrophy Align with Neurotransmitter and Mitochondrial Maps in Drug-Resistant Epilepsy."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Helicobacter pylori (H. pylori) infection is a major pathogen associated with gastric cancer. However, the causal relationship between H. pylori infection and extra-gastric tumors has not been fully elucidated.<h4>Methods</h4>A two-sample Mendelian randomization (MR) study was conducted using genome-wide association study (GWAS) data on serum H. pylori IgG levels as the exposure variable and GWAS data on 268 benign and malignant tumors as the outcome variable. Single nucleotide polymorphisms (SNPs) associated with the exposure were identified from the OpenGWAS and GWAS Catalog databases, while those linked to the outcome were sourced from the FinnGen database. Independent MR analyses were performed on the discovery and validation cohorts. Sensitivity analyses, including heterogeneity and pleiotropy assessments, were conducted to ensure the robustness of the results. Meta-analysis was used to integrate significant findings from both cohorts.<h4>Results</h4>Our findings demonstrated negative causal effects of H. pylori infection on benign neoplasms of cranial nerves and extrahepatic bile ducts in both discovery and validation cohorts. Moreover, we found a potentially positive causal link between H. pylori infection and certain malignancies of the hypopharynx, kidney, lip, brain, pancreas, and neuroendocrine system, as well as malignant immunoproliferative diseases and leukemia, although these results were only observed in a single cohort. Sensitivity analyses showed no significant heterogeneity or horizontal pleiotropy in the significant MR directions, supporting the reliability of the results. Meta-analysis further confirmed the protective effect of H. pylori infection on benign cranial nerve and extrahepatic bile duct tumors.<h4>Conclusion</h4>This study revealed that H. pylori infection is causally associated with extra-gastric tumors, suggesting a potential protective role of H. pylori infection in certain benign tumors.",
+        "affiliation": "Department of Gastroenterology, Qilu Hospital (Qingdao) of Shandong University, Hefei Road, Qingdao, 266000, Shandong, China. liujianwei567@163.com.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastroenterology, Qilu Hospital (Qingdao) of Shandong University, Hefei Road, Qingdao, 266000, Shandong, China. liujianwei567@163.com."
+                  }
+                ]
+              },
+              "firstName": "Jianwei",
+              "fullName": "Liu J",
+              "initials": "J",
+              "lastName": "Liu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Medicine, Wuhan University of Science and Technology, Wuhan, Hubei, China."
+                  }
+                ]
+              },
+              "firstName": "Haiqiang",
+              "fullName": "Cheng H",
+              "initials": "H",
+              "lastName": "Cheng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hematology, Qilu Hospital of Shandong University, Wenhuaxi Road, Jinan, 250012, Shandong, China. gegefeng0407@163.com."
+                  }
+                ]
+              },
+              "firstName": "Gege",
+              "fullName": "Feng G",
+              "initials": "G",
+              "lastName": "Feng"
+            }
+          ]
+        },
+        "authorString": "Liu J, Cheng H, Feng G.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2026-02-02",
+        "dateOfCreation": "2026-01-03",
+        "dateOfRevision": "2026-02-05",
+        "doi": "10.1007/s12672-025-04178-4",
+        "electronicPublicationDate": "2026-01-02",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-04",
+        "firstPublicationDate": "2026-01-02",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12864573"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-06",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1007/s12672-025-04178-4"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12864573"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12864573?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Natural Science Foundation of Shandong Province",
+              "grantId": "ZR2023QH070",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41483426",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "issue": "1",
+          "journal": {
+            "essn": "2730-6011",
+            "isoabbreviation": "Discov Oncol",
+            "issn": "2730-6011",
+            "medlineAbbreviation": "Discov Oncol",
+            "nlmid": "101775142",
+            "title": "Discover oncology"
+          },
+          "journalIssueId": 4085163,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "17",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Helicobacter Pylori",
+            "Mendelian Randomization",
+            "Extra-gastric Tumors"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "nihAuthMan": "N",
+        "pageInfo": "211",
+        "pmcid": "PMC12864573",
+        "pmid": "41483426",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Helicobacter pylori infection is causally associated with extra-gastric tumors: a Mendelian randomization study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gwas"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Motivation</h4>Traditional genome-wide association studies (GWAS) aim to uncover the genetic variants associated with a single phenotype of interest (typically a disease), and to elucidate its genotypic architecture. However, many of today's GWAS simultaneously measure multiple related phenotypes, leading to the possibility of pursuing the reverse aim of elucidating the \"phenotypic architecture\" of a single genetic variant. In other words, we may ask what combination of measured phenotypes is associated with a given genotypic variant. ReverseGWAS is an algorithmic platform for answering such questions in the context of large-scale multi-phenotype GWAS.<h4>Results</h4>We demonstrate the effectiveness of ReverseGWAS on simulated data, showing its ability to identify logical combinations of phenotypes with a reasonable amount of noise. We then apply it to a selection of combined phenotypes from the UK Biobank, obtaining 719 candidate associations using autoimmune diseases and 205 using common ICD10 codes. We find that the majority of these associations (546/719 and 111/205, respectively) successfully replicate in an independent cohort, FinnGen.<h4>Availability and implementation</h4>The source code of ReverseGWAS is freely available to non-commercial users as an installable R package at https://github.com/Leonardini/rgwas.",
+        "affiliation": "MRC Centre for Global Infectious Disease Analysis, School of Public Health, Imperial College, London W2 1NY, United Kingdom.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6619-6013"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "MRC Centre for Global Infectious Disease Analysis, School of Public Health, Imperial College, London W2 1NY, United Kingdom."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6619-6013"
+              },
+              "firstName": "Leonid",
+              "fullName": "Chindelevitch L",
+              "initials": "L",
+              "lastName": "Chindelevitch"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inflammation and Immunology, Pfizer Research and Development, Cambridge, MA 02139, United States."
+                  }
+                ]
+              },
+              "firstName": "\u00c5sa K",
+              "fullName": "Hedman \u00c5K",
+              "initials": "\u00c5K",
+              "lastName": "Hedman"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inflammation and Immunology, Pfizer Research and Development, Cambridge, MA 02139, United States."
+                  }
+                ]
+              },
+              "firstName": "Dmitri",
+              "fullName": "Bichko D",
+              "initials": "D",
+              "lastName": "Bichko"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Inflammation and Immunology, Pfizer Research and Development, Cambridge, MA 02139, United States."
+                  }
+                ]
+              },
+              "firstName": "Daniel",
+              "fullName": "Ziemek D",
+              "initials": "D",
+              "lastName": "Ziemek"
+            }
+          ]
+        },
+        "authorString": "Chindelevitch L, Hedman \u00c5K, Bichko D, Ziemek D.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-20",
+        "dateOfCreation": "2026-02-17",
+        "dateOfRevision": "2026-03-22",
+        "doi": "10.1093/bioinformatics/btag079",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-18",
+        "firstPublicationDate": "2026-02-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13003317"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-22",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/bioinformatics/btag079"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13003317"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13003317?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41702378",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "3",
+          "journal": {
+            "essn": "1367-4811",
+            "isoabbreviation": "Bioinformatics",
+            "issn": "1367-4803",
+            "medlineAbbreviation": "Bioinformatics",
+            "nlmid": "9808944",
+            "title": "Bioinformatics (Oxford, England)"
+          },
+          "journalIssueId": 4134919,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "42",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Autoimmune Diseases",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Genotype",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Phenotype",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Polymorphism, Single Nucleotide",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Algorithms",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Software",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Genome-Wide Association Study",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "btag079",
+        "pmcid": "PMC13003317",
+        "pmid": "41702378",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "ReverseGWAS identifies combined phenotypes associated with a genotype in GWA studies."
+      },
+      {
+        "abstractText": "Myasthenia gravis (MG), an autoimmune condition known for impairing neuromuscular signaling, has increasingly been implicated in broader neurological dysfunctions. Recent studies point toward a possible connection between autoimmune and neurodegenerative processes. However, whether MG contributes causally to the onset of major neurodegenerative disorders such as Alzheimer disease (AD), Parkinson disease (PD), and amyotrophic lateral sclerosis (ALS) remains unclear. This study utilizes Mendelian randomization (MR) to explore the potential causal influence of MG on these disorders from a genetic standpoint. A univariable Mendelian randomization (UVMR) framework was employed using summary-level data from genome-wide association studies (GWAS) to evaluate the effect of MG on the risk of AD, PD, and ALS. To confirm the robustness of the association between MG and AD, 2 independent AD GWAS datasets were incorporated for external replication, followed by a meta-analysis to combine the evidence. Additionally, multivariable Mendelian randomization (MVMR) was conducted to adjust for smoking behavior as a potential confounding factor. The UVMR analysis revealed a statistically significant causal relationship between MG and increased susceptibility to AD (odds ratio (OR): 1.037; 95% confidence interval (CI): 1.007-1.068; P\u2005=\u2005.016). No significant causal effects were observed for PD (OR: 1.019; 95% CI: 0.964-1.077; P\u2005=\u2005.509) or ALS (OR: 1.055; 95% CI: 0.977-1.140; P\u2005=\u2005.171). The association between MG and AD was consistently validated in 2 independent datasets (ieu-a-297: OR\u2005=\u20051.084; 95% CI: 1.017-1.156; P\u2005=\u2005.013; ieu-b-2: OR\u2005=\u20051.054; 95% CI: 1.006-1.104; P\u2005=\u2005.027). Meta-analysis reinforced the evidence supporting MG as a risk factor for AD (OR: 1.047; 95% CI: 1.023-1.072; P\u2005<\u2005.001). Furthermore, MVMR adjusting for smoking confirmed that MG independently contributes to AD risk (OR: 1.037; 95% CI: 1.006-1.069; P\u2005=\u2005.020). This study provides robust genetic evidence suggesting that MG is a causal and independent risk factor for AD. These findings highlight a novel link between autoimmunity and neurodegeneration, offering new directions for mechanistic and therapeutic research.",
+        "affiliation": "Department of Cardiothoracic Surgery, The First Hospital of Nanchang, Nanchang, China.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0004-8065-9653"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiothoracic Surgery, The First Hospital of Nanchang, Nanchang, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0004-8065-9653"
+              },
+              "firstName": "Xingwang",
+              "fullName": "Huang X",
+              "initials": "X",
+              "lastName": "Huang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiovascular Surgery, The Second Affiliated Hospital, Jiangxi Medical College, Nanchang University, Nanchang, China."
+                  }
+                ]
+              },
+              "firstName": "Xiuqi",
+              "fullName": "Wang X",
+              "initials": "X",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Thoracic Surgery, The First Affiliated Hospital, Jiangxi Medical College, Nanchang University, Nanchang, China."
+                  }
+                ]
+              },
+              "firstName": "Yi",
+              "fullName": "Yang Y",
+              "initials": "Y",
+              "lastName": "Yang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiothoracic Surgery, The First Hospital of Nanchang, Nanchang, China."
+                  }
+                ]
+              },
+              "firstName": "Hua",
+              "fullName": "Chen H",
+              "initials": "H",
+              "lastName": "Chen"
+            }
+          ]
+        },
+        "authorString": "Huang X, Wang X, Yang Y, Chen H.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2025-11-20",
+        "dateOfCreation": "2025-11-20",
+        "dateOfRevision": "2026-02-05",
+        "doi": "10.1097/md.0000000000045340",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-11-20",
+        "firstPublicationDate": "2025-10-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12582702"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-05",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1097/MD.0000000000045340"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12582702"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12582702?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41261682",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2025 Oct",
+          "issue": "44",
+          "journal": {
+            "essn": "1536-5964",
+            "isoabbreviation": "Medicine (Baltimore)",
+            "issn": "0304-5412",
+            "medlineAbbreviation": "Medicine (Baltimore)",
+            "nlmid": "2985248R",
+            "title": "Medicine"
+          },
+          "journalIssueId": 4042749,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2025-10-01",
+          "volume": "104",
+          "yearOfPublication": 2025
+        },
+        "keywordList": {
+          "keyword": [
+            "Myasthenia gravis",
+            "Alzheimer disease",
+            "Parkinson disease",
+            "Amyotrophic Lateral Sclerosis",
+            "Mendelian Randomization"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Myasthenia Gravis",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Parkinson Disease",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Alzheimer Disease",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Amyotrophic Lateral Sclerosis",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Neurodegenerative Diseases",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Genetic Predisposition to Disease",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Risk Factors",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Genome-Wide Association Study",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mendelian Randomization Analysis",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e45340",
+        "pmcid": "PMC12582702",
+        "pmid": "41261682",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Meta-Analysis",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2025",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Assessing the potential causal influence of myasthenia gravis on neurodegenerative diseases via multivariable Mendelian randomization.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gwas",
+            "refsnp"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Aims</h4>Nearly, 40% of patients undergoing elective invasive coronary angiography (ICA) are diagnosed with non-obstructive coronary artery disease (CAD) or normal coronary anatomy, resulting in unnecessary risk exposure and increased costs to the healthcare system. In this study, we externally validate an artificial intelligence model for optimizing patient selection for ICA vs. coronary computed tomography angiography (CCTA) to reduce unnecessary ICAs.<h4>Methods and results</h4>The model was trained on data from outpatients undergoing elective ICA at two cardiac centres in Ontario, Canada between 2008 and 2019. It uses 42 predictors including demographic characteristics, risk factors, and medical history (including ECG stress testing and/or functional imaging) to predict the probability of obstructive CAD. Geographical validation assessed the discrimination performance on patients seen at the other 20 cardiac centres in Ontario, Canada during the same period. Temporal validation evaluated the model's performance on outpatients receiving ICA at the original centres between 2020 and 2023. Reclassification analysis was employed to estimate health system impact. Subgroup analysis was used to assess model fairness. Following external validation, the model was updated on data from the entire outpatient population (<i>N</i> = 319 012) receiving ICA from 2008 to 2023. As expected, performance of the local model was lower on the geographical validation cohort (AUROC = 0.714 [95% CI: 0.714, 0.714], Sensitivity = 0.73, Specificity = 0.57) than on the local test set. However, following updating, performance recovered (AUROC = 0.794 [95% CI: 0.794, 0.795], Sensitivity = 0.708, Specificity = 0.699). Analysis of health system impact indicates that 27 of every 39 unnecessary ICAs could be avoided through use of the model.<h4>Conclusion</h4>Use of the model could result in an absolute reduction of 27% in the proportion of ICAs that result in a diagnosis of normal/non-obstructive disease. This could contribute to a reduction in complications from ICA and more efficient utilization of cardiac catheterization lab capacity for higher-value cardiac interventions such as revascularization and structural procedures. Additionally, use of the model would create significant efficiencies for payors, given the much lower cost of CCTA compared with ICA. If implemented within clinical practice, the model has the potential to improve the patient experience and reduce existing health inequities.",
+        "affiliation": "Centre for Data Science and Digital Health, Hamilton Health Sciences, Hamilton, ON, Canada.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4127-4660"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1614-1046"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Data Science and Digital Health, Hamilton Health Sciences, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Institute for Health Policy, Management and Evaluation, University of Toronto, Toronto, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Division of Cardiology, McMaster University, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Hamilton Health Sciences, Population Health Research Institute, Hamilton, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1614-1046"
+              },
+              "firstName": "Jeremy",
+              "fullName": "Petch J",
+              "initials": "J",
+              "lastName": "Petch"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Data Science and Digital Health, Hamilton Health Sciences, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Dalla Lana School of Public Health, University of Toronto, Toronto, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Shuang",
+              "fullName": "Di S",
+              "initials": "S",
+              "lastName": "Di"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dalla Lana School of Public Health, University of Toronto, Toronto, ON, Canada."
+                  },
+                  {
+                    "affiliation": "ICES, Toronto, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Tristan",
+              "fullName": "Watson T",
+              "initials": "T",
+              "lastName": "Watson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Centre for Data Science and Digital Health, Hamilton Health Sciences, Hamilton, ON, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4127-4660"
+              },
+              "firstName": "Maria P",
+              "fullName": "Becerra MP",
+              "initials": "MP",
+              "lastName": "Becerra"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Dalla Lana School of Public Health, University of Toronto, Toronto, ON, Canada."
+                  },
+                  {
+                    "affiliation": "ICES, Toronto, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Institute for Better Health, Trillium Health Partners, Mississauga, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Department of Laboratory Medicine and Pathology, Temerty Faculty of Medicine, University of Toronto, Toronto, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Laura C",
+              "fullName": "Rosella LC",
+              "initials": "LC",
+              "lastName": "Rosella"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Cardiology, McMaster University, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Hamilton Health Sciences, Population Health Research Institute, Hamilton, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Madhu K",
+              "fullName": "Natarajan MK",
+              "initials": "MK",
+              "lastName": "Natarajan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Cardiology, McMaster University, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Hamilton Health Sciences, Population Health Research Institute, Hamilton, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Tej",
+              "fullName": "Sheth T",
+              "initials": "T",
+              "lastName": "Sheth"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Cardiology, McMaster University, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Hamilton Health Sciences, Population Health Research Institute, Hamilton, ON, Canada."
+                  },
+                  {
+                    "affiliation": "Centre for Evidence-Based Implementation, Hamilton Health Sciences, Hamilton, ON, Canada."
+                  }
+                ]
+              },
+              "firstName": "Jon-David",
+              "fullName": "Schwalm JD",
+              "initials": "JD",
+              "lastName": "Schwalm"
+            }
+          ]
+        },
+        "authorString": "Petch J, Di S, Watson T, Becerra MP, Rosella LC, Natarajan MK, Sheth T, Schwalm JD.",
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-03-19",
+        "dateOfCreation": "2026-03-19",
+        "dateOfRevision": "2026-03-19",
+        "doi": "10.1093/ehjdh/ztag040",
+        "electronicPublicationDate": "2026-03-04",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-20",
+        "firstPublicationDate": "2026-03-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12994141"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-18",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/ehjdh/ztag040"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12994141"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12994141?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41853638",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "3",
+          "journal": {
+            "essn": "2634-3916",
+            "isoabbreviation": "Eur Heart J Digit Health",
+            "issn": "2634-3916",
+            "medlineAbbreviation": "Eur Heart J Digit Health",
+            "nlmid": "101778323",
+            "title": "European heart journal. Digital health"
+          },
+          "journalIssueId": 4143256,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "7",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Artificial intelligence",
+            "coronary artery disease",
+            "Machine Learning",
+            "Invasive Coronary Angiography"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc",
+        "nihAuthMan": "N",
+        "pageInfo": "ztag040",
+        "pmcid": "PMC12994141",
+        "pmid": "41853638",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "An artificial intelligence prediction model for optimizing patient selection for cardiac imaging for the investigation of suspected coronary artery disease."
+      },
+      {
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Xinhui",
+              "fullName": "Yu X",
+              "initials": "X",
+              "lastName": "Yu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Laboratory, The First Hospital of Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Shichao",
+              "fullName": "Gao S",
+              "initials": "S",
+              "lastName": "Gao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Laboratory, The First Hospital of Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Yaomeng",
+              "fullName": "Huang Y",
+              "initials": "Y",
+              "lastName": "Huang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Xiaotong",
+              "fullName": "Shen X",
+              "initials": "X",
+              "lastName": "Shen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Laboratory, The First Hospital of Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Shuai",
+              "fullName": "Zhao S",
+              "initials": "S",
+              "lastName": "Zhao"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Laboratory, The First Hospital of Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Jing",
+              "fullName": "Chen J",
+              "initials": "J",
+              "lastName": "Chen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Laboratory, The First Hospital of Hebei Medical University , , ,"
+                  }
+                ]
+              },
+              "firstName": "Jingna",
+              "fullName": "Sun J",
+              "initials": "J",
+              "lastName": "Sun"
+            }
+          ]
+        },
+        "authorString": "Yu X, Gao S, Huang Y, Shen X, Zhao S, Chen J, Sun J.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-04-11",
+        "dateOfRevision": "2026-04-11",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-11",
+        "firstPublicationDate": "2026-04-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13065507"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-11",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13065507/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13065507/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13065507"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13065507?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC13065507",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": " ",
+          "journal": {
+            "essn": "1664-2295",
+            "isoabbreviation": "Front Neurol",
+            "issn": "1664-2295",
+            "medlineAbbreviation": "Front Neurol",
+            "nlmid": "101546899",
+            "title": "Frontiers in neurology"
+          },
+          "journalIssueId": 4177882,
+          "monthOfPublication": 0,
+          "volume": "17",
+          "yearOfPublication": 0
+        },
+        "keywordList": {
+          "keyword": [
+            "Cerebrospinal fluid",
+            "Biomarker",
+            "Predictive model",
+            "Viral encephalitis",
+            "Inflammatory cytokines",
+            "Nomogram"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pmcid": "PMC13065507",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "source": "PMC",
+        "title": "A nomogram for predicting viral encephalitis based on cerebrospinal fluid biomarkers"
+      },
+      {
+        "abstractText": "<h4>Background</h4>Early identification of disability risk in community-dwelling older adults has emerged as a critical public health priority. An increasing number of studies have focused on developing predictive models for disability risk among community-dwelling older adults. The quality, risk of bias and applicability of these models remain unclear.<h4>Objectives</h4>To systematically review and critically assess the existing disability risk prediction models in community-dwelling older adults.<h4>Methods</h4>PubMed, Cumulative Index to Nursing and Allied Health Literature (CINAHL), Cochrane Library, Embase, Web of Science, China National Knowledge Infrastructure (CNKI), China Science and Technology Journal Database (VIP) Database and Wanfang Database were searched from inception to February 28, 2025. Two reviewers independently identified eligible articles and extracted data using the Checklist for Critical Appraisal and Data Extraction for Systematic Reviews of Prediction Modeling Studies (CHARMS). The methodological quality, risk of bias, and applicability of the included studies were assessed with the updated Prediction Model Risk of Bias Assessment Tool integrated with artificial intelligence (PROBAST\u2009+\u2009AI).<h4>Results</h4>A total of 19 studies involving 19 prediction models were included. 19 models evaluated model discrimination, with the AUC or c-index ranging from 0.620 to 0.853 in the model development section and from 0.650 to 0.804 in the model validation section. And the most common predictors included age, physical function, cognitive function, cardiovascular disease, and sex. According to the PROBAST\u2009+\u2009AI, eighteen models were rated as high quality concerns in the development section and sixteen models were rated as high risk of bias in the evaluation section, alongside fifteen models were rated as high concerns of applicability.<h4>Conclusions</h4>Current disability risk prediction models for community-dwelling older adults demonstrate good discriminatory performance but are characterized by significant methodological limitations and high risk of bias. Future research should rigorously adhere to reporting standards for risk prediction models in both developing and evaluating such models for older community populations, with further validation of their clinical applicability in practice.<h4>Trial registration</h4>PROSPERO registration number: CRD420251001479.",
+        "affiliation": "Department of Nursing, Naval Medical University, 800 Xiangyin Road, Yangpu District, Shanghai, 200433, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nursing, Naval Medical University, 800 Xiangyin Road, Yangpu District, Shanghai, 200433, China."
+                  },
+                  {
+                    "affiliation": "Key Laboratory of Geriatric Long-Term Care, Ministry of Education, Naval Medical University, Shanghai, 200433, China."
+                  }
+                ]
+              },
+              "firstName": "Zhilin",
+              "fullName": "Zhang Z",
+              "initials": "Z",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nursing, Naval Medical University, 800 Xiangyin Road, Yangpu District, Shanghai, 200433, China."
+                  },
+                  {
+                    "affiliation": "Key Laboratory of Geriatric Long-Term Care, Ministry of Education, Naval Medical University, Shanghai, 200433, China."
+                  }
+                ]
+              },
+              "firstName": "Qiuyi",
+              "fullName": "Wang Q",
+              "initials": "Q",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nursing, Naval Medical University, 800 Xiangyin Road, Yangpu District, Shanghai, 200433, China."
+                  },
+                  {
+                    "affiliation": "Key Laboratory of Geriatric Long-Term Care, Ministry of Education, Naval Medical University, Shanghai, 200433, China."
+                  }
+                ]
+              },
+              "firstName": "Yijia",
+              "fullName": "Li Y",
+              "initials": "Y",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Nursing, Naval Medical University, 800 Xiangyin Road, Yangpu District, Shanghai, 200433, China. zhoulanshu@hotmail.com."
+                  },
+                  {
+                    "affiliation": "Key Laboratory of Geriatric Long-Term Care, Ministry of Education, Naval Medical University, Shanghai, 200433, China. zhoulanshu@hotmail.com."
+                  }
+                ]
+              },
+              "firstName": "Lanshu",
+              "fullName": "Zhou L",
+              "initials": "L",
+              "lastName": "Zhou"
+            }
+          ]
+        },
+        "authorString": "Zhang Z, Wang Q, Li Y, Zhou L.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-14",
+        "dateOfCreation": "2026-02-09",
+        "dateOfRevision": "2026-03-15",
+        "doi": "10.1186/s12877-026-07129-y",
+        "electronicPublicationDate": "2026-02-09",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-10",
+        "firstPublicationDate": "2026-02-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12983498"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1186/s12877-026-07129-y"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12983498"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12983498?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Social Science Cultivation Project of Naval Medical University",
+              "grantId": "2023SK026",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Social Science Fund of China",
+              "grantId": "24CRK009",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41663979",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "1",
+          "journal": {
+            "essn": "1471-2318",
+            "isoabbreviation": "BMC Geriatr",
+            "issn": "1471-2318",
+            "medlineAbbreviation": "BMC Geriatr",
+            "nlmid": "100968548",
+            "title": "BMC geriatrics"
+          },
+          "journalIssueId": 4120040,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "26",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Systematic review",
+            "Disability",
+            "Risk Prediction Models",
+            "Community-dwelling Older Adults"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Disability Evaluation",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Geriatric Assessment",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Risk Assessment",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged, 80 and over",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Independent Living",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Persons with Disabilities",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "338",
+        "pmcid": "PMC12983498",
+        "pmid": "41663979",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Systematic Review",
+            "review-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Disability risk prediction models in community-dwelling older adults: a systematic review."
+      },
+      {
+        "abstractText": "CMV seropositivity contributes to medical complications in people living with HIV (PLHIV). This study provides a comprehensive evaluation of how CMV seropositivity shapes the immune system of 1,887 PLHIV, by utilizing multi-omics and deep immune phenotyping datasets. The study measured the immune cell profiles from whole blood, and the cytokine production of PBMCs exposed to various ex-vivo stimuli. We observed an increase in pro-inflammatory cytokine production of circulating immune cells and differences in phenotype of innate-like lymphocyte populations associated with CMV seropositivity. This study also measured 5-omics layers, including genomics, DNA methylation, transcriptomics, and plasma protein and metabolites. The DNA methylome and transcriptome demonstrated prominent CMV-induced signatures related to immune functions in PLHIV. Particularly, high FCRL6 expression is a promising biomarker for immune activation, underlined by the demethylation of FCRL6 and up-regulation of gene expression and plasma protein concentrations in CMV-seropositive PLHIV. Host genetics-driven elevation in both gene and protein expression of FCRL6 was also associated with latent CMV infection. A significant CMV-seroprevalence locus was associated with cytokine production capacity and protein abundance. Mendelian randomization analyses demonstrated a causal relationship between elevated FCRL6 expression and CMV seropositivity.",
+        "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5390-946X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6166-9830"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8720-1195"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1781-7127"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2072-2532"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5852-6801"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1486-3045"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1833-3391"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2242-8342"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2421-6052"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3512-3150"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4022-7341"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-7860-4335"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0007-8432-8597"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8720-1195"
+              },
+              "firstName": "Nhan",
+              "fullName": "Nguyen N",
+              "initials": "N",
+              "lastName": "Nguyen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "Center for Cell Lineage Atlas, Guangzhou Institutes of Biomedicine and Health, Chinese Academy of Sciences, Guangzhou, China."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1781-7127"
+              },
+              "firstName": "Zhenhua",
+              "fullName": "Zhang Z",
+              "initials": "Z",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5390-946X"
+              },
+              "firstName": "Xun",
+              "fullName": "Jiang X",
+              "initials": "X",
+              "lastName": "Jiang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-8432-8597"
+              },
+              "firstName": "Nienke",
+              "fullName": "van Unen N",
+              "initials": "N",
+              "lastName": "van Unen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "firstName": "J\u00e9ssica C",
+              "fullName": "Dos Santos JC",
+              "initials": "JC",
+              "lastName": "Dos Santos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-7860-4335"
+              },
+              "firstName": "Liang",
+              "fullName": "Zhou L",
+              "initials": "L",
+              "lastName": "Zhou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5852-6801"
+              },
+              "firstName": "Vasiliki",
+              "fullName": "Matzaraki V",
+              "initials": "V",
+              "lastName": "Matzaraki"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3512-3150"
+              },
+              "firstName": "Javier",
+              "fullName": "Botey-Bataller J",
+              "initials": "J",
+              "lastName": "Botey-Bataller"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Marc",
+              "fullName": "Blaauw M",
+              "initials": "M",
+              "lastName": "Blaauw"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Internal Medicine, OLVG Hospital, Amsterdam, the Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Wilhelm A J W",
+              "fullName": "Vos WAJW",
+              "initials": "WAJW",
+              "lastName": "Vos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Louise",
+              "fullName": "van Eekeren L",
+              "initials": "L",
+              "lastName": "van Eekeren"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Erasmus Medical Center, Rotterdam, the Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Medical Microbiology and Infectious diseases, Erasmus Medical Center, Rotterdam, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2242-8342"
+              },
+              "firstName": "Annelies",
+              "fullName": "Verbon A",
+              "initials": "A",
+              "lastName": "Verbon"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Internal Medicine, Erasmus Medical Center, Rotterdam, the Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Medical Microbiology and Infectious diseases, Erasmus Medical Center, Rotterdam, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2072-2532"
+              },
+              "firstName": "Albert L",
+              "fullName": "Groenendijk AL",
+              "initials": "AL",
+              "lastName": "Groenendijk"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, OLVG Hospital, Amsterdam, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1486-3045"
+              },
+              "firstName": "Janneke E",
+              "fullName": "Stalenhoef JE",
+              "initials": "JE",
+              "lastName": "Stalenhoef"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine, Elisabeth-Tweesteden Hospital, Tilburg, the Netherlands."
+                  }
+                ]
+              },
+              "firstName": "Marvin A H",
+              "fullName": "Berrevoets MAH",
+              "initials": "MAH",
+              "lastName": "Berrevoets"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6166-9830"
+              },
+              "firstName": "Leo A B",
+              "fullName": "Joosten LAB",
+              "initials": "LAB",
+              "lastName": "Joosten"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2421-6052"
+              },
+              "firstName": "Mihai G",
+              "fullName": "Netea MG",
+              "initials": "MG",
+              "lastName": "Netea"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany."
+                  }
+                ]
+              },
+              "firstName": "Cheng-Jian",
+              "fullName": "Xu CJ",
+              "initials": "CJ",
+              "lastName": "Xu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1833-3391"
+              },
+              "firstName": "Andr\u00e9 J A M",
+              "fullName": "van der Ven AJAM",
+              "initials": "AJAM",
+              "lastName": "van der Ven"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computational Biology for Individualised Infection Medicine, Centre for Individualised Infection Medicine, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research(HZI), Hannover, Germany. yang.li@helmholtz-hzi.de."
+                  },
+                  {
+                    "affiliation": "TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School (MHH) and the Helmholtz Centre for Infection Research (HZI), Hannover, Germany. yang.li@helmholtz-hzi.de."
+                  },
+                  {
+                    "affiliation": "Department of Internal Medicine and Radboudumc Community for Infectious Diseases (RCI), Radboud University Medical Center, Nijmegen, the Netherlands. yang.li@helmholtz-hzi.de."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4022-7341"
+              },
+              "firstName": "Yang",
+              "fullName": "Li Y",
+              "initials": "Y",
+              "lastName": "Li"
+            }
+          ]
+        },
+        "authorString": "Nguyen N, Zhang Z, Jiang X, van Unen N, Dos Santos JC, Zhou L, Matzaraki V, Botey-Bataller J, Blaauw M, Vos WAJW, van Eekeren L, Verbon A, Groenendijk AL, Stalenhoef JE, Berrevoets MAH, Joosten LAB, Netea MG, Xu CJ, van der Ven AJAM, Li Y.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Cytokines",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Biomarkers",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-03-27",
+        "dateOfCreation": "2026-03-26",
+        "dateOfRevision": "2026-03-29",
+        "doi": "10.1038/s41467-026-70889-z",
+        "electronicPublicationDate": "2026-03-25",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-25",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13022287"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-28",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41467-026-70889-z"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13022287"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13022287?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "European Research Council",
+              "grantId": "948207",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41881997",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "1",
+          "journal": {
+            "essn": "2041-1723",
+            "isoabbreviation": "Nat Commun",
+            "issn": "2041-1723",
+            "medlineAbbreviation": "Nat Commun",
+            "nlmid": "101528555",
+            "title": "Nature communications"
+          },
+          "journalIssueId": 4138066,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "17",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Leukocytes, Mononuclear",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cytomegalovirus",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Cytomegalovirus Infections",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "VI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "virology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "HIV Infections",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "VI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "virology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Cytokines",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "DNA Methylation",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Mendelian Randomization Analysis",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Transcriptome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Biomarkers",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Latent Infection",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "VI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "virology"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "2871",
+        "pmcid": "PMC13022287",
+        "pmid": "41881997",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Molecular signatures and causal factors underlying latent cytomegalovirus infection among people living with HIV (PLHIV)."
+      },
+      {
+        "abstractText": "<h4>Introduction</h4>Gastric cancer (GC) is one of the most prevalent and lethal gastrointestinal malignancies. MutS homolog 2 (MSH2), a DNA mismatch repair protein, has emerged as a promising prognostic biomarker. However, traditional histopathological evaluation is limited by restricted fields compared with whole-slide imaging. This study aimed to investigate whether machine learning-derived digital pathomics features could predict MSH2 expression and clinical outcomes in GC.<h4>Methods</h4>Hematoxylin and eosin-stained whole-slide images from 234 patients were analyzed to extract quantitative pathological features. A pathomics score (PS) was developed to estimate MSH2 expression. The association between PS and overall survival (OS) was assessed using univariate and multivariate Cox regression. Survival differences between high-PS and low-PS groups were evaluated using Kaplan-Meier analysis. Functional enrichment and immune infiltration analyses were performed to explore potential biological mechanisms.<h4>Results</h4>Digital image analysis identified pathomics features associated with MSH2 expression. The PS served as a surrogate marker for MSH2 and effectively stratified patients into prognostic subgroups with significant different OS. High PS was associated with features suggestive of a stronger antitumor immune response, whereas low PS was linked to an immunosuppressive microenvironment.<h4>Discussion</h4>The machine learning-derived pathomics signature shows potential in predicting MSH2 expression. It can serve as a complementary research tool and provide clinically meaningful prognostic information for GC.",
+        "affiliation": "Department of Hepatobiliary and Pancreatic Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hepatobiliary and Pancreatic Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China."
+                  },
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Zheng-Rong",
+              "fullName": "Zhang ZR",
+              "initials": "ZR",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Yu",
+              "fullName": "Wang Y",
+              "initials": "Y",
+              "lastName": "Wang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Wen-Wu",
+              "fullName": "Yan WW",
+              "initials": "WW",
+              "lastName": "Yan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Hao-Ran",
+              "fullName": "Li HR",
+              "initials": "HR",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Zheng-Wu",
+              "fullName": "Cheng ZW",
+              "initials": "ZW",
+              "lastName": "Cheng"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Ting",
+              "fullName": "Han T",
+              "initials": "T",
+              "lastName": "Han"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hepatobiliary and Pancreatic Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China."
+                  }
+                ]
+              },
+              "firstName": "Chao",
+              "fullName": "Zhang C",
+              "initials": "C",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Hepatobiliary and Pancreatic Surgery, The First Affiliated Hospital of Anhui Medical University, Hefei, China."
+                  },
+                  {
+                    "affiliation": "Department of Gastrointestinal Surgery, The First Affiliated Hospital of Wannan Medical College (Yijishan Hospital of Wannan Medical College), Wuhu, China ."
+                  }
+                ]
+              },
+              "firstName": "Xiao-Ming",
+              "fullName": "Wang XM",
+              "initials": "XM",
+              "lastName": "Wang"
+            }
+          ]
+        },
+        "authorString": "Zhang ZR, Wang Y, Yan WW, Li HR, Cheng ZW, Han T, Zhang C, Wang XM.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "MutS Homolog 2 Protein",
+              "registryNumber": "EC 3.6.1.3"
+            },
+            {
+              "name": "MSH2 protein, human",
+              "registryNumber": "EC 3.6.1.3"
+            },
+            {
+              "name": "Biomarkers, Tumor",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-24",
+        "dateOfCreation": "2026-02-06",
+        "dateOfRevision": "2026-04-24",
+        "doi": "10.14309/ctg.0000000000000985",
+        "electronicPublicationDate": "2026-04-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-10",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13102418"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-23",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.14309/ctg.0000000000000985"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13102418"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13102418?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Shanghai Pujiang Program",
+              "grantId": "23PJ140900",
+              "orderIn": 0
+            },
+            {
+              "agency": "Anhui Province University Teaching Quality and Teaching Reform Project General Project",
+              "grantId": "2023jyxm1224",
+              "orderIn": 0
+            },
+            {
+              "agency": "Scientific Research Project (Natural Science) of Anhui Province",
+              "grantId": "2023AH040254",
+              "orderIn": 0
+            },
+            {
+              "agency": "Key Research Project (Natural Science) of Wannan Medical College",
+              "grantId": "WK2023ZZD19",
+              "orderIn": 0
+            },
+            {
+              "agency": "Teaching Quality and Teaching Reform Project of Wannan Medical College General Project",
+              "grantId": "2022kcszsfc14",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41649179",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Apr",
+          "issue": "4",
+          "journal": {
+            "essn": "2155-384X",
+            "isoabbreviation": "Clin Transl Gastroenterol",
+            "issn": "2155-384X",
+            "medlineAbbreviation": "Clin Transl Gastroenterol",
+            "nlmid": "101532142",
+            "title": "Clinical and translational gastroenterology"
+          },
+          "journalIssueId": 4185314,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2026-04-01",
+          "volume": "17",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Gastric cancer",
+            "Prognosis",
+            "MSH2",
+            "Machine Learning Algorithm",
+            "Pathomics Signature"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by-nc-nd",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Stomach",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Stomach Neoplasms",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "diagnosis"
+                  },
+                  {
+                    "abbreviation": "GE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  },
+                  {
+                    "abbreviation": "MO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "mortality"
+                  },
+                  {
+                    "abbreviation": "PA",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "pathology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Prognosis",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "MutS Homolog 2 Protein",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "analysis"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Kaplan-Meier Estimate",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Tumor Microenvironment",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Machine Learning",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Biomarkers, Tumor",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "analysis"
+                  },
+                  {
+                    "abbreviation": "ME",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e00985",
+        "pmcid": "PMC13102418",
+        "pmid": "41649179",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Machine Learning-Based Pathomics Signature in Predicting MSH2 Expression and Prognosis in Gastric Cancer."
+      }
+    ]
+  },
+  "version": "6.9"
+}

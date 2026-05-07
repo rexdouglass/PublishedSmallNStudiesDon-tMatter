@@ -1,0 +1,470 @@
+{
+  "artifact_id": "source_artifact_d8cacb3212222015",
+  "byte_size": 17597,
+  "file_name": "042_full_10_1001_jama_2019_0555.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/042_full_10_1001_jama_2019_0555.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1001/jama.2019.0555\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Importance</h4>Adjusting positive end-expiratory pressure (PEEP) to offset pleural pressure might attenuate lung injury and improve patient outcomes in acute respiratory distress syndrome (ARDS).<h4>Objective</h4>To determine whether PEEP titration guided by esophageal pressure (PES), an estimate of pleural pressure, was more effective than empirical high PEEP-fraction of inspired oxygen (Fio2) in moderate to severe ARDS.<h4>Design, setting, and participants</h4>Phase 2 randomized clinical trial conducted at 14 hospitals in North America. Two hundred mechanically ventilated patients aged 16 years and older with moderate to severe ARDS (Pao2:Fio2 ≤200 mm Hg) were enrolled between October 31, 2012, and September 14, 2017; long-term follow-up was completed July 30, 2018.<h4>Interventions</h4>Participants were randomized to PES-guided PEEP (n = 102) or empirical high PEEP-Fio2 (n = 98). All participants received low tidal volumes.<h4>Main outcomes and measures</h4>The primary outcome was a ranked composite score incorporating death and days free from mechanical ventilation among survivors through day 28. Prespecified secondary outcomes included 28-day mortality, days free from mechanical ventilation among survivors, and need for rescue therapy.<h4>Results</h4>Two hundred patients were enrolled (mean [SD] age, 56 [16] years; 46% female) and completed 28-day follow-up. The primary composite end point was not significantly different between treatment groups (probability of more favorable outcome with PES-guided PEEP: 49.6% [95% CI, 41.7% to 57.5%]; P = .92). At 28 days, 33 of 102 patients (32.4%) assigned to PES-guided PEEP and 30 of 98 patients (30.6%) assigned to empirical PEEP-Fio2 died (risk difference, 1.7% [95% CI, -11.1% to 14.6%]; P = .88). Days free from mechanical ventilation among survivors was not significantly different (median [interquartile range]: 22 [15-24] vs 21 [16.5-24] days; median difference, 0 [95% CI, -1 to 2] days; P = .85). Patients assigned to PES-guided PEEP were significantly less likely to receive rescue therapy (4/102 [3.9%] vs 12/98 [12.2%]; risk difference, -8.3% [95% CI, -15.8% to -0.8%]; P = .04). None of the 7 other prespecified secondary clinical end points were significantly different. Adverse events included gross barotrauma, which occurred in 6 patients with PES-guided PEEP and 5 patients with empirical PEEP-Fio2.<h4>Conclusions and relevance</h4>Among patients with moderate to severe ARDS, PES-guided PEEP, compared with empirical high PEEP-Fio2, resulted in no significant difference in death and days free from mechanical ventilation. These findings do not support PES-guided PEEP titration in ARDS.<h4>Trial registration</h4>ClinicalTrials.gov Identifier NCT01681225.",
+          "affiliation": "Center for Acute Respiratory Failure and Division of Pulmonary, Allergy, and Critical Care Medicine, Columbia University College of Physicians & Surgeons, New York, New York.",
+          "authMan": "Y",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-8706-9622"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-2078-2578"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7239-8068"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7644-2521"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0797-2374"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Center for Acute Respiratory Failure and Division of Pulmonary, Allergy, and Critical Care Medicine, Columbia University College of Physicians & Surgeons, New York, New York."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0797-2374"
+                },
+                "firstName": "Jeremy R",
+                "fullName": "Beitler JR",
+                "initials": "JR",
+                "lastName": "Beitler"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, Massachusetts."
+                    }
+                  ]
+                },
+                "firstName": "Todd",
+                "fullName": "Sarge T",
+                "initials": "T",
+                "lastName": "Sarge"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, Massachusetts."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7644-2521"
+                },
+                "firstName": "Valerie M",
+                "fullName": "Banner-Goodspeed VM",
+                "initials": "VM",
+                "lastName": "Banner-Goodspeed"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Division of Critical Care Medicine, Montefiore Medical Center, Albert Einstein College of Medicine, Bronx, New York."
+                    }
+                  ]
+                },
+                "firstName": "Michelle N",
+                "fullName": "Gong MN",
+                "initials": "MN",
+                "lastName": "Gong"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Medicine, St Joseph's Hospital and McMaster University, Hamilton, Ontario, Canada."
+                    }
+                  ]
+                },
+                "firstName": "Deborah",
+                "fullName": "Cook D",
+                "initials": "D",
+                "lastName": "Cook"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Soroka Clinical Research Center, Soroka University Medical Center, Beer-Sheva, Israel."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-8706-9622"
+                },
+                "firstName": "Victor",
+                "fullName": "Novack V",
+                "initials": "V",
+                "lastName": "Novack"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, Massachusetts."
+                    }
+                  ]
+                },
+                "firstName": "Stephen H",
+                "fullName": "Loring SH",
+                "initials": "SH",
+                "lastName": "Loring"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, Massachusetts."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7239-8068"
+                },
+                "firstName": "Daniel",
+                "fullName": "Talmor D",
+                "initials": "D",
+                "lastName": "Talmor"
+              },
+              {
+                "collectiveName": "EPVent-2 Study Group"
+              }
+            ]
+          },
+          "authorString": "Beitler JR, Sarge T, Banner-Goodspeed VM, Gong MN, Cook D, Novack V, Loring SH, Talmor D, EPVent-2 Study Group.",
+          "citedByCount": 305,
+          "commentCorrectionList": {
+            "commentCorrection": [
+              {
+                "id": "30776293",
+                "orderIn": 1,
+                "reference": "JAMA. 2019 Mar 5;321(9):839-841. doi: 10.1001/jama.2019.0267",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "31408129",
+                "orderIn": 2,
+                "reference": "JAMA. 2019 Aug 13;322(6):581. doi: 10.1001/jama.2019.7876",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "31408130",
+                "orderIn": 3,
+                "reference": "JAMA. 2019 Aug 13;322(6):580-582. doi: 10.1001/jama.2019.7880",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "31408131",
+                "orderIn": 4,
+                "reference": "JAMA. 2019 Aug 13;322(6):581. doi: 10.1001/jama.2019.7884",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "31632797",
+                "orderIn": 5,
+                "reference": "J Thorac Dis. 2019 Sep;11(Suppl 15):S1957-S1962. doi: 10.21037/jtd.2019.08.03",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "31632813",
+                "orderIn": 6,
+                "reference": "J Thorac Dis. 2019 Sep;11(Suppl 15):S2012-S2017. doi: 10.21037/jtd.2019.06.34",
+                "source": "MED",
+                "type": "Comment in"
+              },
+              {
+                "id": "34192505",
+                "orderIn": 7,
+                "reference": "Am J Respir Crit Care Med. 2021 Aug 15;204(4):473-475. doi: 10.1164/rccm.202009-3722RR",
+                "source": "MED",
+                "type": "Comment in"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "recommended_reviews"
+            ]
+          },
+          "dateOfCompletion": "2019-08-14",
+          "dateOfCreation": "2019-02-19",
+          "dateOfRevision": "2022-09-29",
+          "doi": "10.1001/jama.2019.0555",
+          "embargoDate": "2019-08-18",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2019-02-19",
+          "firstPublicationDate": "2019-03-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC6439595"
+            ]
+          },
+          "fullTextReceivedDate": "2025-02-03",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/jama.2019.0555"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC6439595"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC6439595?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1001/jama.2019.0555"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "L30 HL129438",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "K23 HL133489",
+                "orderIn": 0
+              },
+              {
+                "acronym": "HL",
+                "agency": "NHLBI NIH HHS",
+                "grantId": "UM1 HL108724",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "Y",
+          "hasTextMinedTerms": "Y",
+          "id": "30776290",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2019 Mar",
+            "issue": "9",
+            "journal": {
+              "essn": "1538-3598",
+              "isoabbreviation": "JAMA",
+              "issn": "0098-7484",
+              "medlineAbbreviation": "JAMA",
+              "nlmid": "7501160",
+              "title": "JAMA"
+            },
+            "journalIssueId": 2789885,
+            "monthOfPublication": 3,
+            "printPublicationDate": "2019-03-01",
+            "volume": "321",
+            "yearOfPublication": 2019
+          },
+          "language": "eng",
+          "manuscriptId": "NIHMS1023741",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Esophagus",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Positive-Pressure Respiration",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Pressure",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Adult",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Respiratory Physiological Phenomena",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Respiratory Distress Syndrome",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MO",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "mortality"
+                    },
+                    {
+                      "abbreviation": "PP",
+                      "majorTopic_YN": "N",
+                      "qualifierName": "physiopathology"
+                    },
+                    {
+                      "abbreviation": "TH",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "therapy"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "nihAuthMan": "Y",
+          "pageInfo": "846-857",
+          "pmcid": "PMC6439595",
+          "pmid": "30776290",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Clinical Trial, Phase II",
+              "Comparative Study",
+              "research-article",
+              "Multicenter Study",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2019",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "Effect of Titrating Positive End-Expiratory Pressure (PEEP) With an Esophageal Pressure-Guided Strategy vs an Empirical High PEEP-Fio2 Strategy on Death and Days Free From Mechanical Ventilation Among Patients With Acute Respiratory Distress Syndrome: A Randomized Clinical Trial.",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "nct"
+            ]
+          }
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "8bb72f52e674aa97074ea6bfbb990ebd76f99d4367a5ec63d58e190d748b95f0"
+}

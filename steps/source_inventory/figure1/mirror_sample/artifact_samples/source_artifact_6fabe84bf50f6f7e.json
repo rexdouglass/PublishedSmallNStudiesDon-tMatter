@@ -1,0 +1,57 @@
+{
+  "artifact_id": "source_artifact_6fabe84bf50f6f7e",
+  "byte_size": 2373,
+  "columns": [
+    "obs_ID",
+    "study_ID",
+    "year_pub",
+    "es",
+    "var"
+  ],
+  "estimated_data_rows": 61,
+  "file_name": "ft125.csv",
+  "file_type": "csv",
+  "local_path": "data/raw/corpus_candidates/nakagawa_yang/EcoEvo_PB/dataset/lnRR/ft125.csv",
+  "parent_corpus_database_id": "raw_corpus:nakagawa_yang",
+  "preview_rows": [
+    {
+      "es": 0.841894061,
+      "obs_ID": "obs001",
+      "study_ID": "Almofti",
+      "var": 0.577350269,
+      "year_pub": 2011
+    },
+    {
+      "es": 0.999,
+      "obs_ID": "obs002",
+      "study_ID": "Castaneda",
+      "var": 0.316227766,
+      "year_pub": 2009
+    },
+    {
+      "es": 0.864,
+      "obs_ID": "obs003",
+      "study_ID": "Reynolds",
+      "var": 0.333333333,
+      "year_pub": 2000
+    },
+    {
+      "es": 0.67,
+      "obs_ID": "obs004",
+      "study_ID": "Mariam",
+      "var": 0.577350269,
+      "year_pub": 2004
+    },
+    {
+      "es": 0.8,
+      "obs_ID": "obs005",
+      "study_ID": "Billington",
+      "var": 0.333333333,
+      "year_pub": 1999
+    }
+  ],
+  "sample_kind": "delimited_table",
+  "sample_row_count": 5,
+  "sampled_at": "2026-05-04T00:20:23",
+  "sha256": "330b014cfc4c18cdb28a79d1eb450c52fc9035bfedbd59fe929efe5e6cda41cd"
+}

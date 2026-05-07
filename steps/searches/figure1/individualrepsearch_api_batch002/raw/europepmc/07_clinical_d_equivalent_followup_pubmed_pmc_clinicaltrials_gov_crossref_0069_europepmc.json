@@ -1,0 +1,3563 @@
+{
+  "hitCount": 16,
+  "nextCursorMark": "AoIIPmIb3SgzMDE5NzA3NQ==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=(\"randomized trial\" \"replication\" \"event counts\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]&cursorMark=AoIIPmIb3SgzMDE5NzA3NQ==&resultType=core&pageSize=12&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 12,
+    "queryString": "(\"randomized trial\" \"replication\" \"event counts\") AND FIRST_PDATE:[1990-01-01 TO 2026-12-31]",
+    "resultType": "core",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "affiliation": "Temerty Faculty of Medicine, University of Toronto, Toronto, ON M5S 3K3, Canada.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6195-8624"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3782-4463"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Temerty Faculty of Medicine, University of Toronto, Toronto, ON M5S 3K3, Canada."
+                  },
+                  {
+                    "affiliation": "Verspeeten Family Cancer Centre, University of Western Ontario, London, ON N6A 5W9, Canada."
+                  },
+                  {
+                    "affiliation": "Centre for Evidence-Based Medicine, University of Oxford, Oxford, OX2 6HT, United Kingdom."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6195-8624"
+              },
+              "firstName": "Ronald",
+              "fullName": "Chow R",
+              "initials": "R",
+              "lastName": "Chow"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Temerty Faculty of Medicine, University of Toronto, Toronto, ON M5S 3K3, Canada."
+                  }
+                ]
+              },
+              "firstName": "Amanda",
+              "fullName": "Hird A",
+              "initials": "A",
+              "lastName": "Hird"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Verspeeten Family Cancer Centre, University of Western Ontario, London, ON N6A 5W9, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3782-4463"
+              },
+              "firstName": "Michael",
+              "fullName": "Lock M",
+              "initials": "M",
+              "lastName": "Lock"
+            }
+          ]
+        },
+        "authorString": "Chow R, Hird A, Lock M.",
+        "citedByCount": 0,
+        "dateOfCreation": "2026-01-28",
+        "dateOfRevision": "2026-02-22",
+        "doi": "10.1093/oncolo/oyag004",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-01-29",
+        "firstPublicationDate": "2026-02-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12923149"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-21",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1093/oncolo/oyag004"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12923149"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12923149?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41604311",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Feb",
+          "issue": "3",
+          "journal": {
+            "essn": "1549-490X",
+            "isoabbreviation": "Oncologist",
+            "issn": "1083-7159",
+            "medlineAbbreviation": "Oncologist",
+            "nlmid": "9607837",
+            "title": "The oncologist"
+          },
+          "journalIssueId": 4117636,
+          "monthOfPublication": 2,
+          "printPublicationDate": "2026-02-01",
+          "volume": "31",
+          "yearOfPublication": 2026
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "oyag004",
+        "pmcid": "PMC12923149",
+        "pmid": "41604311",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "article-commentary",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Oral relugolix for the treatment of advanced prostate cancer."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Chronic kidney disease (CKD) is a significant comorbidity in cardiovascular treatments, increasing the likelihood of adverse outcomes. Choosing between drug-eluting balloons (DEB) and drug-eluting stents (DES) in patients with CKD requires careful consideration of efficacy and safety. To address this gap, we conducted a systematic review of DEB and DES in CKD patients, focusing on mortality, MACE, TLR, and stent thrombosis.<h4>Methods</h4>This systematic review followed the PRISMA guidelines. Comprehensive searches were performed in PubMed, Cochrane Library, Scopus, Web of Science, and ScienceDirect until September 2025. Randomized controlled trials (RCTs) and cohort study comparing DEB and DES in CKD patients were included. Four reviewers independently screened and extracted data on mortality, MACE, target lesion revascularization (TLR), and stent thrombosis, and conflicts were resolved through discussion.<h4>Results</h4>Five studies (four retrospective cohorts, one RCT) met inclusion criteria after screening 4,093 records, involving CKD/ESRD patients undergoing PCI with DEB (paclitaxel-coated) versus contemporary DES. MACE rates were equivalent: 17% in both arms (Funayama et al., ESRD dialysis cohort) and 10% in both arms (Jeger et al., RCT; HR 0.99, 95% CI 0.38-2.57). Target lesion revascularization (TLR) and target vessel failure (TVF) showed heterogeneity: DES favored in some (e.g., Waha et al., aHR 0.20, 95% CI 0.06-0.69), DEB numerically in others (e.g., Joh et al., 2-year TVF 14.3% DEB vs. 27.8% DES), with no meta-analysis due to clinical/methodological differences; thrombosis was low and sparse (0% DEB vs. 2.2% DES in Funayama).<h4>Conclusion</h4>In CKD/ESRD patients, DEB and DES yield equivalent MACE, though TLR/TVF results vary by study design, CKD severity, and procedural factors. No clear superiority emerged, supporting individualized strategy selection based on lesion characteristics, bleeding risk, and expertise. Prospective RCTs with standardized CKD subgroups and DEB optimization are needed for definitive guidance.PROSPERO registration ID: CRD420251039001 (05/15/2025).",
+        "affiliation": "Department of Cardiology and Vascular medicine, Universitas Airlangga Departemen Kardiologi dan Kedokteran Vaskular, Surabaya, East Java, Indonesia.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9965-778X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2350-2789"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiology and Vascular medicine, Universitas Airlangga Departemen Kardiologi dan Kedokteran Vaskular, Surabaya, East Java, Indonesia."
+                  }
+                ]
+              },
+              "firstName": "Isnaini",
+              "fullName": "Isnaini I",
+              "initials": "I",
+              "lastName": "Isnaini"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics Epidemiology and Population Health, Gadjah Mada University Department of Biostatistics Epidemiology and Population Health, Yogyakarta, Special Region of Yogyakarta, Indonesia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9965-778X"
+              },
+              "firstName": "Bayu Satria",
+              "fullName": "Wiratama BS",
+              "initials": "BS",
+              "lastName": "Wiratama"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health Information and Services, Universitas Gadjah Mada Vocational College, Yogyakarta City, Special Region of Yogyakarta, Indonesia."
+                  }
+                ]
+              },
+              "firstName": "Muhammad",
+              "fullName": "Syairaji M",
+              "initials": "M",
+              "lastName": "Syairaji"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics Epidemiology and Population Health, Gadjah Mada University Department of Biostatistics Epidemiology and Population Health, Yogyakarta, Special Region of Yogyakarta, Indonesia."
+                  }
+                ]
+              },
+              "firstName": "Soraya Isfandiary",
+              "fullName": "Iskandar SI",
+              "initials": "SI",
+              "lastName": "Iskandar"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Biostatistics Epidemiology and Population Health, Gadjah Mada University Department of Biostatistics Epidemiology and Population Health, Yogyakarta, Special Region of Yogyakarta, Indonesia."
+                  }
+                ]
+              },
+              "firstName": "Alya Nur",
+              "fullName": "Fadhilah AN",
+              "initials": "AN",
+              "lastName": "Fadhilah"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiology and Vascular medicine, Universitas Airlangga Departemen Kardiologi dan Kedokteran Vaskular, Surabaya, East Java, Indonesia."
+                  }
+                ]
+              },
+              "firstName": "I Gde Rurus",
+              "fullName": "Suryawan IGR",
+              "initials": "IGR",
+              "lastName": "Suryawan"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Cardiology and Vascular medicine, Universitas Airlangga Departemen Kardiologi dan Kedokteran Vaskular, Surabaya, East Java, Indonesia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2350-2789"
+              },
+              "firstName": "Yudi Her",
+              "fullName": "Oktaviono YH",
+              "initials": "YH",
+              "lastName": "Oktaviono"
+            }
+          ]
+        },
+        "authorString": "Isnaini I, Wiratama BS, Syairaji M, Iskandar SI, Fadhilah AN, Suryawan IGR, Oktaviono YH.",
+        "citedByCount": 0,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "PPR1156237",
+              "note": "Link created based on a title-first author match",
+              "orderIn": 10002,
+              "source": "PPR",
+              "type": "Preprint in"
+            }
+          ]
+        },
+        "dateOfCompletion": "2026-03-09",
+        "dateOfCreation": "2026-03-09",
+        "dateOfRevision": "2026-03-09",
+        "doi": "10.12688/f1000research.177235.1",
+        "electronicPublicationDate": "2026-02-18",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-03-10",
+        "firstPublicationDate": "2026-02-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12966798"
+          ]
+        },
+        "fullTextReceivedDate": "2026-03-08",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.12688/f1000research.177235.1"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12966798"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12966798?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41800219",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "2046-1402",
+            "isoabbreviation": "F1000Res",
+            "issn": "2046-1402",
+            "medlineAbbreviation": "F1000Res",
+            "nlmid": "101594320",
+            "title": "F1000Research"
+          },
+          "journalIssueId": 4095621,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "15",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Chronic Kidney Disease; Percutaneous Coronary Intervention; Drug-Eluting Stents; Drug-Eluting Balloons; Coronary Artery Disease; Cohort Study"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Renal Insufficiency, Chronic",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Drug-Eluting Stents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "287",
+        "pmcid": "PMC12966798",
+        "pmid": "41800219",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "Comparative Study",
+            "Systematic Review",
+            "systematic-review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Comparative Outcomes of Drug-Eluting Stents Versus Drug-Eluting Balloons in Patients with Chronic Kidney Disease: A Systematic Review of Current Evidence."
+      },
+      {
+        "abstractText": "<h4>Background</h4>This study aims to investigate the associations between genetically proxied JAK inhibition and various disease outcomes and adverse effects, providing insights into therapeutic efficacy and potential side effects for immune-mediated skin diseases (IMIDs).<h4>Methods</h4>Using Mendelian Randomization (MR), we analyzed genetic proxies for JAK1, JAK2, JAK3, and TYK2 inhibition. Data from the UK Biobank (N = 361,194) and FinnGen (N = 453,733) were utilized to explore associations with nine autoimmune skin diseases, and twelve adverse outcomes, including tuberculosis, non-melanoma skin cancer, lung cancer, and pulmonary embolism. A systematic review of randomized controlled trials (RCTs) on JAK inhibitors in IMIDs was performed to complement the genetic evidence, focusing on safety outcomes.<h4>Results</h4>Summary-data-based MR (SMR) analysis revealed that genetically proxied loss of function mutation of TYK2 was linked to psoriasis (OR = 0.673, 95% CI = 0.512-0.884, p = 0.004), aligning with clinical evidence. Safety analyses yielded genetically supported, hypothesis-generating signals with effect sizes close to unity, including associations between JAK2 inhibition and pulmonary embolism (OR = 0.998, p = 0.035) and tuberculosis (OR = 1.004, p = 0.013), as well as TYK2 inhibition and malignant non-melanoma skin cancer (OR = 1.006, p = 0.047), and lung cancer (OR = 1.002, p = 0.029). These findings should be interpreted cautiously and do not constitute definitive evidence of drug-induced adverse effects. The systematic review partially confirmed the safety of JAK inhibitors in IMIDs.<h4>Conclusion</h4>This study supports TYK2 inhibition as a targeted therapy for psoriasis and provides hypothesis-generating genetic evidence for additional target-disease and target-safety associations that warrant further validation.",
+        "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China.",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Yuping",
+              "fullName": "Zhang Y",
+              "initials": "Y",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Yuan",
+              "fullName": "Qu Y",
+              "initials": "Y",
+              "lastName": "Qu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Qundi",
+              "fullName": "Luo Q",
+              "initials": "Q",
+              "lastName": "Luo"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Bibo",
+              "fullName": "Liang B",
+              "initials": "B",
+              "lastName": "Liang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Qiaomu",
+              "fullName": "Jiang Q",
+              "initials": "Q",
+              "lastName": "Jiang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Xiaotong",
+              "fullName": "Zhu X",
+              "initials": "X",
+              "lastName": "Zhu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Jing",
+              "fullName": "Wu J",
+              "initials": "J",
+              "lastName": "Wu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rheumatology and Clinical Immunology, Zhujiang Hospital, Southern Medical University, Guangzhou, China."
+                  }
+                ]
+              },
+              "firstName": "Weijia",
+              "fullName": "Bao W",
+              "initials": "W",
+              "lastName": "Bao"
+            }
+          ]
+        },
+        "authorString": "Zhang Y, Qu Y, Luo Q, Liang B, Jiang Q, Zhu X, Wu J, Bao W.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-04-06",
+        "dateOfCreation": "2026-04-06",
+        "dateOfRevision": "2026-04-06",
+        "doi": "10.3389/fphar.2026.1738089",
+        "electronicPublicationDate": "2026-03-19",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-04-07",
+        "firstPublicationDate": "2026-03-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13044065"
+          ]
+        },
+        "fullTextReceivedDate": "2026-04-03",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3389/fphar.2026.1738089"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13044065"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC13044065?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41939841",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 ",
+          "journal": {
+            "essn": "1663-9812",
+            "isoabbreviation": "Front Pharmacol",
+            "issn": "1663-9812",
+            "medlineAbbreviation": "Front Pharmacol",
+            "nlmid": "101548923",
+            "title": "Frontiers in pharmacology"
+          },
+          "journalIssueId": 4103377,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2026-01-01",
+          "volume": "17",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Janus Kinase (Jak) Inhibitors",
+            "Immune-mediated Inflammatory Skin Diseases",
+            "Summary-data-based Mendelian Randomization (Smr)",
+            "Genetic Pharmacoepidemiology",
+            "Pharmacovigilance And Drug Safety"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "1738089",
+        "pmcid": "PMC13044065",
+        "pmid": "41939841",
+        "pubModel": "Electronic-eCollection",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Genetic pharmacoepidemiology of JAK inhibitors in chronic immune-mediated skin diseases: implications for precision therapy and medication safety."
+      },
+      {
+        "abstractText": "Longitudinal clinical trials for which recurrent events endpoints are of interest are commonly subject to missing event data. Primary analyses in such trials are often performed assuming events are missing at random, and sensitivity analyses are necessary to assess robustness of primary analysis conclusions to missing data assumptions. Control-based imputation is an attractive approach in superiority trials for imposing conservative assumptions on how data may be missing not at random. A popular approach to implementing control-based assumptions for recurrent events is multiple imputation (MI), but Rubin's variance estimator is often biased for the true sampling variability of the point estimator in the control-based setting. We propose distributional imputation (DI) with corresponding wild bootstrap variance estimation procedure for control-based sensitivity analyses of recurrent events. We apply control-based DI to a type I diabetes trial. In the application and simulation studies, DI produced more reasonable standard error estimates than MI with Rubin's combining rules in control-based sensitivity analyses of recurrent events.",
+        "affiliation": "Department of Statistics, North Carolina State University, Raleigh, North Carolina, USA.",
+        "authMan": "Y",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7703-707X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0000-0124-2165"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Statistics, North Carolina State University, Raleigh, North Carolina, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0000-0124-2165"
+              },
+              "firstName": "Sarah R",
+              "fullName": "Fairfax SR",
+              "initials": "SR",
+              "lastName": "Fairfax"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Statistics, North Carolina State University, Raleigh, North Carolina, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7703-707X"
+              },
+              "firstName": "Shu",
+              "fullName": "Yang S",
+              "initials": "S",
+              "lastName": "Yang"
+            }
+          ]
+        },
+        "authorString": "Fairfax SR, Yang S.",
+        "citedByCount": 1,
+        "dateOfCompletion": "2024-05-23",
+        "dateOfCreation": "2024-04-29",
+        "dateOfRevision": "2025-07-03",
+        "doi": "10.1002/sim.10087",
+        "electronicPublicationDate": "2024-04-29",
+        "embargoDate": "2025-06-15",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-04-30",
+        "firstPublicationDate": "2024-04-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11327775"
+          ]
+        },
+        "fullTextReceivedDate": "2025-11-27",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1002/sim.10087"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/sim.10087"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11327775"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11327775?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1002/sim.10087"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "ES",
+              "agency": "NIEHS NIH HHS",
+              "grantId": "R01 ES031651",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "1R01AG066883",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "R01 AG066883",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "1R01AG066883",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "1R01ES031651",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation",
+              "grantId": "SES 2242776",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "1R01ES031651",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "38684331",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2024 Jun",
+          "issue": "13",
+          "journal": {
+            "essn": "1097-0258",
+            "isoabbreviation": "Stat Med",
+            "issn": "0277-6715",
+            "medlineAbbreviation": "Stat Med",
+            "nlmid": "8215016",
+            "title": "Statistics in medicine"
+          },
+          "journalIssueId": 3774543,
+          "monthOfPublication": 6,
+          "printPublicationDate": "2024-06-01",
+          "volume": "43",
+          "yearOfPublication": 2024
+        },
+        "keywordList": {
+          "keyword": [
+            "Sensitivity analysis",
+            "Recurrent Events",
+            "Intercurrent Events",
+            "Distributional Imputation",
+            "Control\u2010based Imputation"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "manuscriptId": "NIHMS1986832",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Diabetes Mellitus, Type 1",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Recurrence",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Data Interpretation, Statistical",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Models, Statistical",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Longitudinal Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Computer Simulation",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Clinical Trials as Topic",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Randomized Controlled Trials as Topic",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  },
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Bias",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "Y",
+        "pageInfo": "2622-2640",
+        "pmcid": "PMC11327775",
+        "pmid": "38684331",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "pubYear": "2024",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Distributional imputation for the analysis of censored recurrent events."
+      },
+      {
+        "abstractText": "Psychological stress is increasingly investigated as a potentially modifiable factor in male infertility, in part through oxidative stress. This narrative review synthesizes mechanistic and translational evidence linking stress-related neuroendocrine activation and coping behaviors with redox imbalance in the male reproductive tract. Chronic activation of the hypothalamic-pituitary-adrenal axis and sympathetic outflow elevates glucocorticoids and catecholamines. In controlled animal stress paradigms, this is accompanied by suppression of the hypothalamic-pituitary-gonadal axis and by immune and metabolic changes that favor reactive oxygen species generation. The resulting oxidative stress may reduce Leydig cell steroidogenesis, impair testicular and epididymal function, and induce lipid peroxidation, mitochondrial dysfunction, and sperm DNA fragmentation. In such models, these lesions, together with apoptosis of germ and supporting cells, are associated with lower sperm concentration, reduced motility, compromised viability, and diminished fertilizing potential. Overall, preclinical animal studies using defined stress paradigms provide experimental evidence consistent with causal effects of stress on oxidative injury and reproductive impairment in preclinical settings. Human studies linking perceived stress, anxiety/depression, and disturbed sleep to adverse semen parameters and oxidative biomarkers are summarized. However, the human evidence is predominantly associative, and the available studies are cross sectional and remain vulnerable to residual confounding and reverse causality. Potential effect modifiers, including smoking, alcohol use, and circadian disruption, are also discussed as contributors to heterogeneity across clinical studies. Standardized assessment of stress biology and redox status, longitudinal designs aligned with spermatogenic timing, and well-powered intervention trials are needed to define dose-response relationships and support individualized prevention and care.",
+        "affiliation": "Third Department of Urology, Attikon University Hospital, School of Medicine, National and Kapodistrian University of Athens, 12462 Athens, Greece.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8333-5134"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1198-9144"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4651-312X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Third Department of Urology, Attikon University Hospital, School of Medicine, National and Kapodistrian University of Athens, 12462 Athens, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4651-312X"
+              },
+              "firstName": "Aris",
+              "fullName": "Kaltsas A",
+              "initials": "A",
+              "lastName": "Kaltsas"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Andrology Laboratory and Sperm Bank, 54622 Thessaloniki, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8333-5134"
+              },
+              "firstName": "Stamatis",
+              "fullName": "Papaharitou S",
+              "initials": "S",
+              "lastName": "Papaharitou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Urology, Faculty of Medicine, School of Health Sciences, Aristotle University of Thessaloniki, 54124 Thessaloniki, Greece."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1198-9144"
+              },
+              "firstName": "Fotios",
+              "fullName": "Dimitriadis F",
+              "initials": "F",
+              "lastName": "Dimitriadis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Third Department of Urology, Attikon University Hospital, School of Medicine, National and Kapodistrian University of Athens, 12462 Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Michael",
+              "fullName": "Chrisofos M",
+              "initials": "M",
+              "lastName": "Chrisofos"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Laboratory of Spermatology, Department of Urology, Faculty of Medicine, School of Health Sciences, University of Ioannina, 45110 Ioannina, Greece."
+                  }
+                ]
+              },
+              "firstName": "Nikolaos",
+              "fullName": "Sofikitis N",
+              "initials": "N",
+              "lastName": "Sofikitis"
+            }
+          ]
+        },
+        "authorString": "Kaltsas A, Papaharitou S, Dimitriadis F, Chrisofos M, Sofikitis N.",
+        "citedByCount": 0,
+        "dateOfCompletion": "2026-02-27",
+        "dateOfCreation": "2026-02-27",
+        "dateOfRevision": "2026-03-01",
+        "doi": "10.3390/biomedicines14020259",
+        "electronicPublicationDate": "2026-01-23",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2026-02-27",
+        "firstPublicationDate": "2026-01-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12938247"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-27",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.3390/biomedicines14020259"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12938247"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12938247?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41751158",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Jan",
+          "issue": "2",
+          "journal": {
+            "essn": "2227-9059",
+            "isoabbreviation": "Biomedicines",
+            "issn": "2227-9059",
+            "medlineAbbreviation": "Biomedicines",
+            "nlmid": "101691304",
+            "title": "Biomedicines"
+          },
+          "journalIssueId": 4132813,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2026-01-01",
+          "volume": "14",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Reactive oxygen species",
+            "Oxidative stress",
+            "Inflammation",
+            "Male infertility",
+            "Psychological stress",
+            "Lifestyle Factors",
+            "Sperm Dna Damage"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "nihAuthMan": "N",
+        "pageInfo": "259",
+        "pmcid": "PMC12938247",
+        "pmid": "41751158",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "review-article",
+            "Review",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "title": "Psychological Stress and Male Infertility: Oxidative Stress as the Common Downstream Pathway."
+      },
+      {
+        "abstractText": "<h4>Aim</h4>Type 2 diabetes (T2D) is associated with increased dementia risk, but comparative data across newer glucose-lowering therapies remain limited. We examined whether the initiation of GLP-1 receptor agonists (GLP-1 RAs) was associated with incident dementia compared with DPP4 inhibitors (DPP4is) and SGLT2 inhibitors (SGLT2is) in older adults with T2D.<h4>Materials and methods</h4>We conducted a retrospective cohort study emulating a target trial using electronic health records from the University of Pennsylvania Health System (2019-2024), with external validation in the TriNetX U.S. Collaborative Network. Adults aged \u226550 with T2D, no prior dementia, and no GLP-1 RA, DPP4i, or SGLT2i use in the previous year were eligible. New GLP-1 RA users were propensity-score matched (1:1) to DPP4i users (n\u2009=\u20096677 pairs) and SGLT2i users (n\u2009=\u20098434 pairs). The outcome was incident dementia, defined by ICD-10-CM codes. Cox proportional hazards models estimated hazard ratios (HRs), with multiple sensitivity and subgroup analyses performed.<h4>Results</h4>Over a median follow-up of 3.0\u2009years (GLP-1 RA vs. DPP4i) and 2.4\u2009years (GLP-1 RA vs. SGLT2i), GLP-1 RA use was associated with a lower dementia risk versus DPP4is (109 vs. 148 events; HR 0.76, 95% CI 0.59-0.97), but a higher risk versus SGLT2is (127 vs. 64 events; HR 1.53, 95% CI 1.13-2.07). Findings were consistent across sensitivity and subgroup analyses. External validation confirmed reduced dementia risk versus DPP4is but not versus SGLT2is.<h4>Conclusions</h4>In this large real-world cohort, GLP-1 RAs were associated with lower dementia risk than DPP4is but higher risk than SGLT2is. Prospective, biomarker-informed studies are needed to clarify mechanisms and inform treatment choices in older adults with T2D.",
+        "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5814-6657"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-7970-286X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3392-2979"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0006-9094-7012"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, Epidemiology, and Informatics, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3392-2979"
+              },
+              "firstName": "Ting",
+              "fullName": "Zhou T",
+              "initials": "T",
+              "lastName": "Zhou"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, Epidemiology, and Informatics, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5814-6657"
+              },
+              "firstName": "Huilin",
+              "fullName": "Tang H",
+              "initials": "H",
+              "lastName": "Tang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "The Graduate Group in Applied Mathematics and Computational Science, School of Arts and Sciences, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Bingyu",
+              "fullName": "Zhang B",
+              "initials": "B",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, Epidemiology, and Informatics, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Dazheng",
+              "fullName": "Zhang D",
+              "initials": "D",
+              "lastName": "Zhang"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "The Graduate Group in Applied Mathematics and Computational Science, School of Arts and Sciences, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Yiwen",
+              "fullName": "Lu Y",
+              "initials": "Y",
+              "lastName": "Lu"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "The Graduate Group in Applied Mathematics and Computational Science, School of Arts and Sciences, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Lu",
+              "fullName": "Li L",
+              "initials": "L",
+              "lastName": "Li"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, Epidemiology, and Informatics, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Jiajie",
+              "fullName": "Chen J",
+              "initials": "J",
+              "lastName": "Chen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pfizer, New York City, New York, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0006-9094-7012"
+              },
+              "firstName": "Yong",
+              "fullName": "Chen Y",
+              "initials": "Y",
+              "lastName": "Chen"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Leonard Davis Institute of Health Economics, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Division of General Internal Medicine, Department of Medicine, Perelman School of Medicine, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-7970-286X"
+              },
+              "firstName": "David A",
+              "fullName": "Asch DA",
+              "initials": "DA",
+              "lastName": "Asch"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "The Center for Health AI and Synthesis of Evidence (CHASE), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Department of Biostatistics, Epidemiology, and Informatics, University of Pennsylvania Perelman School of Medicine, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "The Graduate Group in Applied Mathematics and Computational Science, School of Arts and Sciences, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Leonard Davis Institute of Health Economics, University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Penn Medicine Center for Evidence-Based Practice (CEP), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  },
+                  {
+                    "affiliation": "Penn Institute for Biomedical Informatics (IBI), University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+                  }
+                ]
+              },
+              "firstName": "Yong",
+              "fullName": "Chen Y",
+              "initials": "Y",
+              "lastName": "Chen"
+            }
+          ]
+        },
+        "authorString": "Zhou T, Tang H, Zhang B, Zhang D, Lu Y, Li L, Chen J, Chen Y, Asch DA, Chen Y.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Hypoglycemic Agents",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Dipeptidyl-Peptidase IV Inhibitors",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Sodium-Glucose Transporter 2 Inhibitors",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Glucagon-Like Peptide-1 Receptor Agonists",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 3,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "dateOfCompletion": "2026-02-10",
+        "dateOfCreation": "2025-12-22",
+        "dateOfRevision": "2026-02-14",
+        "doi": "10.1111/dom.70384",
+        "electronicPublicationDate": "2025-12-22",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2025-12-22",
+        "firstPublicationDate": "2025-12-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12890729"
+          ]
+        },
+        "fullTextReceivedDate": "2026-02-14",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1111/dom.70384"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12890729"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC12890729?pdf=render"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "R01AG073435",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "R01DK128237",
+              "orderIn": 0
+            },
+            {
+              "acronym": "EY",
+              "agency": "NEI NIH HHS",
+              "grantId": "R21 EY034179",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "R21AI167418",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R21EY034179",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "RF1 AG077820",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "R21EY034179",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "R56AG074604",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "RF1AG077820",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "R01 AG073435",
+              "orderIn": 0
+            },
+            {
+              "acronym": "DK",
+              "agency": "NIDDK NIH HHS",
+              "grantId": "R01 DK128237",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "R01LM013519",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R01LM013519",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AI",
+              "agency": "NIAID NIH HHS",
+              "grantId": "R21 AI167418",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AG",
+              "agency": "NIA NIH HHS",
+              "grantId": "R56 AG074604",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "U24MH136069",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "U01TR003709",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "U01TR003709",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R01AG073435",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R21AI167418",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R56AG074604",
+              "orderIn": 0
+            },
+            {
+              "acronym": "TR",
+              "agency": "NCATS NIH HHS",
+              "grantId": "U01 TR003709",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "R01DK128237",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Institutes of Health",
+              "grantId": "U24MH136069",
+              "orderIn": 0
+            },
+            {
+              "acronym": "LM",
+              "agency": "NLM NIH HHS",
+              "grantId": "R01 LM013519",
+              "orderIn": 0
+            },
+            {
+              "acronym": "NH",
+              "agency": "NIH HHS",
+              "grantId": "RF1AG077820",
+              "orderIn": 0
+            },
+            {
+              "acronym": "MH",
+              "agency": "NIMH NIH HHS",
+              "grantId": "U24 MH136069",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41424236",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2026 Mar",
+          "issue": "3",
+          "journal": {
+            "essn": "1463-1326",
+            "isoabbreviation": "Diabetes Obes Metab",
+            "issn": "1462-8902",
+            "medlineAbbreviation": "Diabetes Obes Metab",
+            "nlmid": "100883645",
+            "title": "Diabetes, obesity & metabolism"
+          },
+          "journalIssueId": 4119815,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2026-03-01",
+          "volume": "28",
+          "yearOfPublication": 2026
+        },
+        "keywordList": {
+          "keyword": [
+            "Elderly",
+            "Cohort study",
+            "Antidiabetic Drug",
+            "Real\u2010world Evidence",
+            "Glp\u20101 Analogue",
+            "Pharmaco\u2010epidemiology"
+          ]
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Dementia",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CI",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "chemically induced"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Diabetes Mellitus, Type 2",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Hypoglycemic Agents",
+              "majorTopic_YN": "Y",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Incidence",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Risk Factors",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Retrospective Studies",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged, 80 and over",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Dipeptidyl-Peptidase IV Inhibitors",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Sodium-Glucose Transporter 2 Inhibitors",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Glucagon-Like Peptide-1 Receptor Agonists",
+              "majorTopic_YN": "Y"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1984-1996",
+        "pmcid": "PMC12890729",
+        "pmid": "41424236",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2026",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Association between glucagon-like peptide-1 receptor agonists and risk of dementia in older adults with type 2 diabetes: A target trial emulation."
+      },
+      {
+        "abstractText": "<h4>Background</h4>Immediate initiation of antiretroviral therapy (ART) in asymptomatic adults with CD4 counts higher than 500 cells per \u03bcL, as recommended, might not always be possible in resource-limited settings. We aimed to identify subgroups of individuals who would benefit most from immediate treatment.<h4>Methods</h4>The START trial was a randomised controlled trial in asymptomatic, HIV-positive adults previously untreated with ART. Participants with CD4 counts higher than 500 cells per \u03bcL were randomly assigned to receive immediate ART or to defer ART until CD4 counts were lower than 350 cells per \u03bcL. The primary endpoint of the study was serious AIDS-defining illnesses or death from AIDS and serious non-AIDS illnesses or non-AIDS-related death. In this post-hoc analysis, we estimated event rates and absolute risk reduction with immediate versus deferred ART, overall and by subgroup. Subgroups were prespecified in the study protocol or formed post hoc on the basis of baseline characteristics associated with morbidity and mortality in people with HIV. For continuous characteristics, approximate terciles were chosen as subgroup cutoff points, unless different cutoffs were clinically meaningful (eg, age \u226550 years). We estimated the number needed to treat immediately with ART for 1 year to prevent one primary event. Heterogeneity in the absolute risk reduction between subgroups was assessed with bootstrap tests. The START trial is registered with ClinicalTrials.gov, number NCT00867048.<h4>Findings</h4>Between April 15, 2009, and Dec 23, 2013, we enrolled 4684 participants from 35 countries across five continents, of whom 2325 were assigned to immediate ART and 2359 were assigned to deferred ART. The primary endpoint occurred in 42 participants in the immediate ART group (0\u00b758 events per 100 person-years) and 100 participants in the deferred ART group (1\u00b737 events per 100 person-years). The absolute risk reduction was 0\u00b780 (95% CI 0\u00b748-1\u00b713) per 100 person-years with immediate treatment, and the number needed to treat immediately to prevent one event was 126 (95% CI 89-208). Significant heterogeneity in absolute risk reduction with immediate ART was found across subgroups according to age (p=0\u00b70022), CD4 to CD8 ratio (p=0\u00b70007), and plasma HIV RNA viral load (p=0\u00b7033) at baseline. The highest absolute risk reductions and the lowest numbers needed to treat were found in participants aged 50 years or older, those with CD4 to CD8 ratios of less than 0\u00b75, and those with plasma HIV RNA viral loads of 50\u2008000 copies per mL or higher.<h4>Interpretation</h4>Asymptomatic, ART-naive adults with CD4 counts higher than 500 cells per \u03bcL who are older, have a low CD4 to CD8 ratio, or a high plasma HIV RNA viral load benefit most from immediate initiation of ART and should be prioritised for treatment.<h4>Funding</h4>US National Institute of Allergy and Infectious Diseases.",
+        "affiliation": "University of Paris Diderot, Sorbonne Paris Cit\u00e9, Saint-Louis Hospital, Assistance Publique H\u00f4pitaux de Paris, Agence Nationale de Recherches sur le SIDA et les H\u00e9patites Virales (ANRS), Paris, France. Electronic address: jean-michel.molina@aphp.fr.",
+        "authMan": "Y",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8684-2214"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8901-7850"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3540-8837"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8189-6149"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0698-9385"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Paris Diderot, Sorbonne Paris Cit\u00e9, Saint-Louis Hospital, Assistance Publique H\u00f4pitaux de Paris, Agence Nationale de Recherches sur le SIDA et les H\u00e9patites Virales (ANRS), Paris, France. Electronic address: jean-michel.molina@aphp.fr."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8684-2214"
+              },
+              "firstName": "Jean-Michel",
+              "fullName": "Molina JM",
+              "initials": "JM",
+              "lastName": "Molina"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Statistics, University of Minnesota, Minneapolis, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "Birgit",
+              "fullName": "Grund B",
+              "initials": "B",
+              "lastName": "Grund"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Washington Veterans Affairs Medical Center, George Washington University, Washington, DC, USA."
+                  }
+                ]
+              },
+              "firstName": "Fred",
+              "fullName": "Gordin F",
+              "initials": "F",
+              "lastName": "Gordin"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University College London Medical School, London, UK."
+                  }
+                ]
+              },
+              "firstName": "Ian",
+              "fullName": "Williams I",
+              "initials": "I",
+              "lastName": "Williams"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Projeto Pra\u00e7a Onze, Universidade Federal do Rio de Janeiro, Brazil."
+                  }
+                ]
+              },
+              "firstName": "Mauro",
+              "fullName": "Schechter M",
+              "initials": "M",
+              "lastName": "Schechter"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hospital General de Agudos JM Ramos, Buenos Aeres, Argentina."
+                  }
+                ]
+              },
+              "firstName": "Marcello",
+              "fullName": "Losso M",
+              "initials": "M",
+              "lastName": "Losso"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Kirby Institute, University of New South Wales, Sydney, NSW, Australia."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3540-8837"
+              },
+              "firstName": "Matthew",
+              "fullName": "Law M",
+              "initials": "M",
+              "lastName": "Law"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Human Virology, Abuja, Nigeria."
+                  }
+                ]
+              },
+              "firstName": "Ernest",
+              "fullName": "Ekong E",
+              "initials": "E",
+              "lastName": "Ekong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, University of Witwatersrand, Johannesburg, South Africa."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8189-6149"
+              },
+              "firstName": "Noluthando",
+              "fullName": "Mwelase N",
+              "initials": "N",
+              "lastName": "Mwelase"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Evanlegismos General Hospital, Athens, Greece."
+                  }
+                ]
+              },
+              "firstName": "Athanasios",
+              "fullName": "Skoutelis A",
+              "initials": "A",
+              "lastName": "Skoutelis"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Leicester Royal Infirmary, Leicester, UK."
+                  }
+                ]
+              },
+              "firstName": "Martin J",
+              "fullName": "Wiselka MJ",
+              "initials": "MJ",
+              "lastName": "Wiselka"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Universitaire Ziekenhuizen Gent, Ghent, Belgium."
+                  }
+                ]
+              },
+              "firstName": "Linos",
+              "fullName": "Vandekerckhove L",
+              "initials": "L",
+              "lastName": "Vandekerckhove"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Hvidovre Hospital, University of Copenhagen, Copenhagen, Denmark."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0698-9385"
+              },
+              "firstName": "Thomas",
+              "fullName": "Benfield T",
+              "initials": "T",
+              "lastName": "Benfield"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Slidell, LA, USA."
+                  }
+                ]
+              },
+              "firstName": "David",
+              "fullName": "Munroe D",
+              "initials": "D",
+              "lastName": "Munroe"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rigshospitalet, University of Copenhagen, Copenhagen, Denmark."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8901-7850"
+              },
+              "firstName": "Jens D",
+              "fullName": "Lundgren JD",
+              "initials": "JD",
+              "lastName": "Lundgren"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Public Health, University of Minnesota, Minneapolis, MN, USA."
+                  }
+                ]
+              },
+              "firstName": "James D",
+              "fullName": "Neaton JD",
+              "initials": "JD",
+              "lastName": "Neaton"
+            },
+            {
+              "collectiveName": "INSIGHT START study group"
+            }
+          ]
+        },
+        "authorString": "Molina JM, Grund B, Gordin F, Williams I, Schechter M, Losso M, Law M, Ekong E, Mwelase N, Skoutelis A, Wiselka MJ, Vandekerckhove L, Benfield T, Munroe D, Lundgren JD, Neaton JD, INSIGHT START study group.",
+        "citedByCount": 30,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "29352724",
+              "orderIn": 1,
+              "reference": "Lancet HIV. 2018 Apr;5(4):e157-e158. doi: 10.1016/S2352-3018(18)30004-3.",
+              "source": "MED",
+              "type": "Comment in"
+            },
+            {
+              "id": "29739694",
+              "orderIn": 2,
+              "reference": "Lancet HIV. 2018 May;5(5):e206. doi: 10.1016/S2352-3018(18)30060-2.",
+              "source": "MED",
+              "type": "Comment in"
+            },
+            {
+              "id": "29739695",
+              "orderIn": 3,
+              "reference": "Lancet HIV. 2018 May;5(5):e206. doi: 10.1016/S2352-3018(18)30058-4.",
+              "source": "MED",
+              "type": "Comment in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2018-09-19",
+        "dateOfCreation": "2018-01-21",
+        "dateOfRevision": "2025-05-30",
+        "doi": "10.1016/s2352-3018(18)30003-1",
+        "electronicPublicationDate": "2018-01-16",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2018-01-21",
+        "firstPublicationDate": "2018-01-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9287840"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-04",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Unpaywall",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9287840"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/S2352-3018(18)30003-1"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9287840"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9287840?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/s2352-3018(18)30003-1"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "MRC_",
+              "agency": "Medical Research Council",
+              "grantId": "MC_UU_12023/23",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AI",
+              "agency": "NIAID NIH HHS",
+              "grantId": "UM1 AI120197",
+              "orderIn": 0
+            },
+            {
+              "acronym": "AI",
+              "agency": "NIAID NIH HHS",
+              "grantId": "UM1 AI068641",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "29352723",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2018 Apr",
+          "issue": "4",
+          "journal": {
+            "essn": "2352-3018",
+            "isoabbreviation": "Lancet HIV",
+            "issn": "2405-4704",
+            "medlineAbbreviation": "Lancet HIV",
+            "nlmid": "101645355",
+            "title": "The lancet. HIV"
+          },
+          "journalIssueId": 2669986,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2018-04-01",
+          "volume": "5",
+          "yearOfPublication": 2018
+        },
+        "language": "eng",
+        "manuscriptId": "NIHMS1013012",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "HIV-1",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "HIV Infections",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "drug therapy"
+                  },
+                  {
+                    "abbreviation": "IM",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "immunology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "CD4 Lymphocyte Count",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Treatment Outcome",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Antiretroviral Therapy, Highly Active",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Viral Load",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Young Adult",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "Y",
+        "pageInfo": "e172-e180",
+        "pmcid": "PMC9287840",
+        "pmid": "29352723",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Comparative Study",
+            "research-article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "pubYear": "2018",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Which HIV-infected adults with high CD4 T-cell counts benefit most from immediate initiation of antiretroviral therapy? A post-hoc subgroup analysis of the START trial.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Importance</h4>Bromodomain and extraterminal proteins are epigenetic regulators of gene transcription. Apabetalone is a selective bromodomain and extraterminal protein inhibitor targeting bromodomain 2 and is hypothesized to have potentially favorable effects on pathways related to atherothrombosis. Pooled phase 2 data suggest favorable effects on clinical outcomes.<h4>Objective</h4>To test whether apabetalone significantly reduces major adverse cardiovascular events.<h4>Design, setting, and participants</h4>A randomized, double-blind, placebo-controlled trial, conducted at 190 sites in 13 countries. Patients with an acute coronary syndrome in the preceding 7 to 90 days, type 2 diabetes, and low high-density lipoprotein cholesterol levels were eligible for enrollment, which started November 11, 2015, and ended July 4, 2018, with end of follow-up on July 3, 2019.<h4>Interventions</h4>Patients were randomized (1:1) to receive apabetalone, 100 mg orally twice daily (n\u2009=\u20091215), or matching placebo (n\u2009=\u20091210) in addition to standard care.<h4>Main outcomes and measures</h4>The primary outcome was a composite of time to the first occurrence of cardiovascular death, nonfatal myocardial infarction, or stroke.<h4>Results</h4>Among 2425 patients who were randomized (mean age, 62 years; 618 women [25.6%]), 2320 (95.7%) had full ascertainment of the primary outcome. During a median follow-up of 26.5 months, 274 primary end points occurred: 125 (10.3%) in apabetalone-treated patients and 149 (12.4%) in placebo-treated patients (hazard ratio, 0.82 [95% CI, 0.65-1.04]; P\u2009=\u2009.11). More patients allocated to apabetalone than placebo discontinued study drug (114 [9.4%] vs 69 [5.7%]) for reasons including elevations of liver enzyme levels (35 [2.9%] vs 11 [0.9%]).<h4>Conclusions and relevance</h4>Among patients with recent acute coronary syndrome, type 2 diabetes, and low high-density lipoprotein cholesterol levels, the selective bromodomain and extraterminal protein inhibitor apabetalone added to standard therapy did not significantly reduce the risk of major adverse cardiovascular events.<h4>Trial registration</h4>ClinicalTrials.gov Identifier: NCT02586155.",
+        "affiliation": "Imperial Centre for Cardiovascular Disease Prevention, Imperial College London, United Kingdom.",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3576-2748"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-8666-0725"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0508-0954"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Imperial Centre for Cardiovascular Disease Prevention, Imperial College London, United Kingdom."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0508-0954"
+              },
+              "firstName": "Kausik K",
+              "fullName": "Ray KK",
+              "initials": "KK",
+              "lastName": "Ray"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Monash Cardiovascular Research Centre, Monash University, Melbourne, Victoria, Australia."
+                  }
+                ]
+              },
+              "firstName": "Stephen J",
+              "fullName": "Nicholls SJ",
+              "initials": "SJ",
+              "lastName": "Nicholls"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Statistical Data Analysis Center, University of Wisconsin-Madison."
+                  }
+                ]
+              },
+              "firstName": "Kevin A",
+              "fullName": "Buhr KA",
+              "initials": "KA",
+              "lastName": "Buhr"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Irving Institute for Clinical and Translational Research, Columbia University, New York, New York."
+                  }
+                ]
+              },
+              "firstName": "Henry N",
+              "fullName": "Ginsberg HN",
+              "initials": "HN",
+              "lastName": "Ginsberg"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Resverlogix Corporation, Calgary, Alberta, Canada."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3576-2748"
+              },
+              "firstName": "Jan O",
+              "fullName": "Johansson JO",
+              "initials": "JO",
+              "lastName": "Johansson"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Nephrology and Hypertension, University of California-Irvine."
+                  }
+                ]
+              },
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-8666-0725"
+              },
+              "firstName": "Kamyar",
+              "fullName": "Kalantar-Zadeh K",
+              "initials": "K",
+              "lastName": "Kalantar-Zadeh"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Resverlogix Corporation, Calgary, Alberta, Canada."
+                  }
+                ]
+              },
+              "firstName": "Ewelina",
+              "fullName": "Kulikowski E",
+              "initials": "E",
+              "lastName": "Kulikowski"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CGH Medical Center, Sterling, Illinois, and Cicarrone Center for the Prevention of Cardiovascular Disease, Johns Hopkins University School of Medicine, Baltimore, Maryland."
+                  }
+                ]
+              },
+              "firstName": "Peter P",
+              "fullName": "Toth PP",
+              "initials": "PP",
+              "lastName": "Toth"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Resverlogix Corporation, Calgary, Alberta, Canada."
+                  }
+                ]
+              },
+              "firstName": "Norman",
+              "fullName": "Wong N",
+              "initials": "N",
+              "lastName": "Wong"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Resverlogix Corporation, Calgary, Alberta, Canada."
+                  }
+                ]
+              },
+              "firstName": "Michael",
+              "fullName": "Sweeney M",
+              "initials": "M",
+              "lastName": "Sweeney"
+            },
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Cardiology, University of Colorado School of Medicine, Aurora."
+                  }
+                ]
+              },
+              "firstName": "Gregory G",
+              "fullName": "Schwartz GG",
+              "initials": "GG",
+              "lastName": "Schwartz"
+            },
+            {
+              "collectiveName": "BETonMACE Investigators and Committees"
+            }
+          ]
+        },
+        "authorString": "Ray KK, Nicholls SJ, Buhr KA, Ginsberg HN, Johansson JO, Kalantar-Zadeh K, Kulikowski E, Toth PP, Wong N, Sweeney M, Schwartz GG, BETonMACE Investigators and Committees.",
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Proteins",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cholesterol, HDL",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Quinazolinones",
+              "registryNumber": "0"
+            },
+            {
+              "name": "bromodomain and extra-terminal domain protein, human",
+              "registryNumber": "0"
+            },
+            {
+              "name": "apabetalone",
+              "registryNumber": "8R4A7GDZ1D"
+            },
+            {
+              "name": "Bromodomain Containing Proteins",
+              "registryNumber": "0"
+            }
+          ]
+        },
+        "citedByCount": 119,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "32219361",
+              "orderIn": 1,
+              "reference": "JAMA. 2020 Apr 28;323(16):1557-1558. doi: 10.1001/jama.2020.3298.",
+              "source": "MED",
+              "type": "Comment in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2020-10-15",
+        "dateOfCreation": "2020-03-29",
+        "dateOfRevision": "2026-01-27",
+        "doi": "10.1001/jama.2020.3308",
+        "embargoDate": "2020-09-27",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2020-03-29",
+        "firstPublicationDate": "2020-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7101505"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-03",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Unpaywall",
+              "url": "https://escholarship.org/uc/item/7h82412p"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1001/jama.2020.3308"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC7101505"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1001/jama.2020.3308"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "32219359",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2020 Apr",
+          "issue": "16",
+          "journal": {
+            "essn": "1538-3598",
+            "isoabbreviation": "JAMA",
+            "issn": "0098-7484",
+            "medlineAbbreviation": "JAMA",
+            "nlmid": "7501160",
+            "title": "JAMA"
+          },
+          "journalIssueId": 2947531,
+          "monthOfPublication": 4,
+          "printPublicationDate": "2020-04-01",
+          "volume": "323",
+          "yearOfPublication": 2020
+        },
+        "language": "eng",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cardiovascular Diseases",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "mortality"
+                  },
+                  {
+                    "abbreviation": "PC",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "prevention & control"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Myocardial Infarction",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Diabetes Mellitus, Type 2",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Proteins",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AI",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "antagonists & inhibitors"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Blood Chemical Analysis",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Double-Blind Method",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Cholesterol, HDL",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "BL",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "blood"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Quinazolinones",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "AE",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "adverse effects"
+                  },
+                  {
+                    "abbreviation": "TU",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "therapeutic use"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Stroke",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ET",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "etiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Acute Coronary Syndrome",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  },
+                  {
+                    "abbreviation": "DT",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "drug therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Kaplan-Meier Estimate",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Bromodomain Containing Proteins",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "1565-1573",
+        "pmcid": "PMC7101505",
+        "pmid": "32219359",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Clinical Trial, Phase III",
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2020",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Effect of Apabetalone Added to Standard Therapy on Major Adverse Cardiovascular Events in Patients With Recent Acute Coronary Syndrome and Type 2 Diabetes: A Randomized Clinical Trial.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Background</h4>Participant engagement influences treatment effectiveness, but it is unknown which intervention design features increase treatment engagement for online smoking cessation programs.<h4>Objective</h4>We explored the effects of 4 design features (ie, factors) on early engagement with an Internet-based, motivational smoking cessation program.<h4>Methods</h4>Smokers (N=1865) were recruited from a large health care organization to participate in an online intervention study, regardless of their interest in quitting smoking. The program was intended to answer smokers' questions about quitting in an effort to motivate and support cessation. Consistent with the screening phase in the multiphase optimization strategy (MOST), we used a 2-level, full-factorial design. Each person was randomized to 1 of 2 levels of each factor, including message tone (prescriptive vs motivational), navigation autonomy (dictated vs not), proactive email reminders (yes vs no), and inclusion of personally tailored testimonials (yes vs no). The effects of each factor level on program engagement during the first 2 months of enrollment were compared, including number of visits to the website resulting in intervention content views (as opposed to supplemental content views), number of intervention content areas viewed, number of intervention content pages viewed, and duration of time spent viewing this content, as applicable to each factor.<h4>Results</h4>Adjusting for baseline readiness to quit, persons who received content written in a prescriptive tone made the same number of visits to the website as persons receiving content in a motivational tone, but viewed 1.17 times as many content areas (95% CI 1.08-1.28; P<.001) and 1.15 times as many pages (95% CI 1.04-1.28; P=.009). Time spent viewing materials did not differ among groups (P=.06). Persons required to view content in a dictated order based on their initial readiness to quit made the same number of visits as people able to freely navigate the site, but viewed fewer content areas (ratio of means 0.80, 95% CI 0.74-0.87; P<.001), 1.17 times as many pages (95% CI 1.06-1.31; P=.003), and spent 1.37 times more minutes online (95% CI 1.17-1.59; P<.001). Persons receiving proactive email reminders made 1.20 times as many visits (95% CI 1.09-1.33; P<.001), viewed a similar number of content areas as persons receiving no reminders, viewed 1.58 times as many pages (95% CI 1.48-1.68; P<.001), and spent 1.51 times as many minutes online (95% CI 1.29-1.77; P<.001) as those who did not receive proactive emails. Tailored testimonials did not significantly affect engagement.<h4>Conclusions</h4>Using a prescriptive message tone, dictating content viewing order, and sending reminder emails each resulted in greater program engagement relative to the contrasting level of each experimental factor. The results require replication, but suggest that a more directive interaction style may be preferable for online cessation programs.<h4>Trial registration</h4>clinicaltrials.gov NCT00992264; http://clinicaltrials.gov/ct2/show/NCT00992264 (Archived by WebCite at http://www.webcitation.org/6F7H7lr3P).",
+        "affiliation": "Group Health Research Institute, Seattle, WA 98101, USA. McClure.J@ghc.org",
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-7918-601X"
+            }
+          ]
+        },
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Group Health Research Institute, Seattle, WA 98101, USA. McClure.J@ghc.org"
+                  }
+                ]
+              },
+              "firstName": "Jennifer B",
+              "fullName": "McClure JB",
+              "initials": "JB",
+              "lastName": "McClure"
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-7918-601X"
+              },
+              "firstName": "Susan M",
+              "fullName": "Shortreed SM",
+              "initials": "SM",
+              "lastName": "Shortreed"
+            },
+            {
+              "firstName": "Andy",
+              "fullName": "Bogart A",
+              "initials": "A",
+              "lastName": "Bogart"
+            },
+            {
+              "firstName": "Holly",
+              "fullName": "Derry H",
+              "initials": "H",
+              "lastName": "Derry"
+            },
+            {
+              "firstName": "Karin",
+              "fullName": "Riggs K",
+              "initials": "K",
+              "lastName": "Riggs"
+            },
+            {
+              "firstName": "Jackie",
+              "fullName": "St John J",
+              "initials": "J",
+              "lastName": "St John"
+            },
+            {
+              "firstName": "Vijay",
+              "fullName": "Nair V",
+              "initials": "V",
+              "lastName": "Nair"
+            },
+            {
+              "firstName": "Larry",
+              "fullName": "An L",
+              "initials": "L",
+              "lastName": "An"
+            }
+          ]
+        },
+        "authorString": "McClure JB, Shortreed SM, Bogart A, Derry H, Riggs K, St John J, Nair V, An L.",
+        "citedByCount": 57,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2013-08-16",
+        "dateOfCreation": "2013-03-27",
+        "dateOfRevision": "2024-03-18",
+        "doi": "10.2196/jmir.2508",
+        "electronicPublicationDate": "2013-03-25",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2013-04-02",
+        "firstPublicationDate": "2013-03-25",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3636802"
+          ]
+        },
+        "fullTextReceivedDate": "2020-07-12",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://www.jmir.org/2013/3/e69/PDF"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.2196/jmir.2508"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC3636802"
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "acronym": "CA",
+              "agency": "NCI NIH HHS",
+              "grantId": "R01 CA138598",
+              "orderIn": 0
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "23529377",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2013 Mar",
+          "issue": "3",
+          "journal": {
+            "essn": "1438-8871",
+            "isoabbreviation": "J Med Internet Res",
+            "issn": "1439-4456",
+            "medlineAbbreviation": "J Med Internet Res",
+            "nlmid": "100959882",
+            "title": "Journal of medical Internet research"
+          },
+          "journalIssueId": 2472064,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2013-03-01",
+          "volume": "15",
+          "yearOfPublication": 2013
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Smoking Cessation",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Research Design",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "Internet",
+              "majorTopic_YN": "Y"
+            },
+            {
+              "descriptorName": "User-Computer Interface",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Middle Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e69",
+        "pmcid": "PMC3636802",
+        "pmid": "23529377",
+        "pubModel": "Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article",
+            "Research Support, N.I.H., Extramural"
+          ]
+        },
+        "pubYear": "2013",
+        "publicationStatus": "epublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "The effect of program design on engagement with an internet-based smoking intervention: randomized factorial trial.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      },
+      {
+        "authMan": "N",
+        "citedByCount": 0,
+        "dateOfCreation": "2024-10-31",
+        "dateOfRevision": "2024-10-31",
+        "electronicPublicationDate": "2024-10-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2024-10-31",
+        "firstPublicationDate": "2024-10-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11471002"
+          ]
+        },
+        "fullTextReceivedDate": "2024-10-31",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11471002/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11471002/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11471002"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC11471002?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "N",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "PMC11471002",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalInfo": {
+          "dateOfPublication": "2024 Oct",
+          "issue": "Suppl 8",
+          "journal": {
+            "essn": "2050-6414",
+            "isoabbreviation": "United European Gastroenterol J",
+            "issn": "2050-6406",
+            "medlineAbbreviation": "United European Gastroenterol J",
+            "nlmid": "101606807",
+            "title": "United European gastroenterology journal"
+          },
+          "journalIssueId": 3843913,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2024-10-01",
+          "volume": "12",
+          "yearOfPublication": 2024
+        },
+        "language": "eng",
+        "nihAuthMan": "N",
+        "pageInfo": "201-664",
+        "pmcid": "PMC11471002",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "Abstract"
+          ]
+        },
+        "pubYear": "2024",
+        "source": "PMC",
+        "title": "UEG Week 2024 Moderated Posters"
+      },
+      {
+        "authMan": "N",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5759-1636"
+            }
+          ]
+        },
+        "citedByCount": 0,
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCreation": "2022-06-10",
+        "dateOfRevision": "2024-08-26",
+        "electronicPublicationDate": "2022-01-01",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2022-06-30",
+        "firstPublicationDate": "2022-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9170876"
+          ]
+        },
+        "fullTextReceivedDate": "2022-06-10",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9170876/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "PubMedCentral",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9170876/pdf/?tool=EBI"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9170876"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC9170876?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC9170876",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2022 Jan",
+          "issue": "Suppl 1",
+          "journal": {
+            "essn": "1432-1041",
+            "isoabbreviation": "Eur J Clin Pharmacol",
+            "issn": "0031-6970",
+            "medlineAbbreviation": "Eur J Clin Pharmacol",
+            "nlmid": "1256165",
+            "title": "European journal of clinical pharmacology"
+          },
+          "journalIssueId": 3383671,
+          "monthOfPublication": 1,
+          "printPublicationDate": "2022-01-01",
+          "volume": "78",
+          "yearOfPublication": 2022
+        },
+        "language": "eng",
+        "nihAuthMan": "N",
+        "pageInfo": "1-163",
+        "pmcid": "PMC9170876",
+        "pubModel": "Undetermined",
+        "pubTypeList": {
+          "pubType": [
+            "Abstract"
+          ]
+        },
+        "pubYear": "2022",
+        "source": "PMC",
+        "title": "15th Congress of the European Association for Clinical Pharmacology and Therapeutics (EACPT)",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "bioproject",
+            "refsnp",
+            "eudract",
+            "nct"
+          ]
+        }
+      },
+      {
+        "abstractText": "<h4>Background</h4>Improving the health of chronically ill older adults is a major challenge facing modern health care systems. A community-based nursing intervention developed by Health Quality Partners (HQP) was one of 15 different models of care coordination tested in randomized controlled trials within the Medicare Coordinated Care Demonstration (MCCD), a national US study. Evaluation of the HQP program began in 2002. The study reported here was designed to evaluate the survival impact of the HQP program versus usual care up to five years post-enrollment.<h4>Methods and findings</h4>HQP enrolled 1,736 adults aged 65 and over, with one or more eligible chronic conditions (coronary artery disease, heart failure, diabetes, asthma, hypertension, or hyperlipidemia) during the first six years of the study. The intervention group (n = 873) was offered a comprehensive, integrated, and tightly managed system of care coordination, disease management, and preventive services provided by community-based nurse care managers working collaboratively with primary care providers. The control group (n = 863) received usual care. Overall, a 25% lower relative risk of death (hazard ratio [HR] 0.75 [95% CI 0.57-1.00], p = 0.047) was observed among intervention participants with 86 (9.9%) deaths in the intervention group and 111 (12.9%) deaths in the control group during a mean follow-up of 4.2 years. When covariates for sex, age group, primary diagnosis, perceived health, number of medications taken, hospital stays in the past 6 months, and tobacco use were included, the adjusted HR was 0.73 (95% CI 0.55-0.98, p = 0.033). Subgroup analyses did not demonstrate statistically significant interaction effects for any subgroup. No suspected program-related adverse events were identified.<h4>Conclusions</h4>The HQP model of community-based nurse care management appeared to reduce all-cause mortality in chronically ill older adults. Limitations of the study are that few low-income and non-white individuals were enrolled and implementation was in a single geographic region of the US. Additional research to confirm these findings and determine the model's scalability and generalizability is warranted.<h4>Trial registration</h4>ClinicalTrials.gov NCT01071967. Please see later in the article for the Editors' Summary.",
+        "affiliation": "Health Quality Partners, Doylestown, Pennsylvania, United States of America. coburn@hqp.org",
+        "authMan": "N",
+        "authorList": {
+          "author": [
+            {
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Health Quality Partners, Doylestown, Pennsylvania, United States of America. coburn@hqp.org"
+                  }
+                ]
+              },
+              "firstName": "Kenneth D",
+              "fullName": "Coburn KD",
+              "initials": "KD",
+              "lastName": "Coburn"
+            },
+            {
+              "firstName": "Sherry",
+              "fullName": "Marcantonio S",
+              "initials": "S",
+              "lastName": "Marcantonio"
+            },
+            {
+              "firstName": "Robert",
+              "fullName": "Lazansky R",
+              "initials": "R",
+              "lastName": "Lazansky"
+            },
+            {
+              "firstName": "Maryellen",
+              "fullName": "Keller M",
+              "initials": "M",
+              "lastName": "Keller"
+            },
+            {
+              "firstName": "Nancy",
+              "fullName": "Davis N",
+              "initials": "N",
+              "lastName": "Davis"
+            }
+          ]
+        },
+        "authorString": "Coburn KD, Marcantonio S, Lazansky R, Keller M, Davis N.",
+        "citedByCount": 46,
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "22815655",
+              "orderIn": 1,
+              "reference": "PLoS Med. 2012;9(7):e1001267. doi: 10.1371/journal.pmed.1001267",
+              "source": "MED",
+              "type": "Comment in"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "dateOfCompletion": "2012-11-16",
+        "dateOfCreation": "2012-07-21",
+        "dateOfRevision": "2022-03-21",
+        "doi": "10.1371/journal.pmed.1001265",
+        "electronicPublicationDate": "2012-07-17",
+        "epmcAuthMan": "N",
+        "firstIndexDate": "2012-07-21",
+        "firstPublicationDate": "2012-07-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3398966"
+          ]
+        },
+        "fullTextReceivedDate": "2025-02-05",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1371/journal.pmed.1001265"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC3398966"
+            },
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC3398966?pdf=render"
+            }
+          ]
+        },
+        "hasBook": "N",
+        "hasData": "Y",
+        "hasDbCrossReferences": "N",
+        "hasEvaluations": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "22815653",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalInfo": {
+          "dateOfPublication": "2012 ",
+          "issue": "7",
+          "journal": {
+            "essn": "1549-1676",
+            "isoabbreviation": "PLoS Med",
+            "issn": "1549-1277",
+            "medlineAbbreviation": "PLoS Med",
+            "nlmid": "101231360",
+            "title": "PLoS medicine"
+          },
+          "journalIssueId": 1972871,
+          "monthOfPublication": 0,
+          "printPublicationDate": "2012-01-01",
+          "volume": "9",
+          "yearOfPublication": 2012
+        },
+        "language": "eng",
+        "license": "cc by",
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "descriptorName": "Humans",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Chronic Disease",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MO",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "mortality"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Community Health Nursing",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ST",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "Y",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Adult",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Aged",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Medicare",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Quality of Health Care",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ST",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "United States",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "EP",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "epidemiology"
+                  }
+                ]
+              }
+            },
+            {
+              "descriptorName": "Female",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Male",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Kaplan-Meier Estimate",
+              "majorTopic_YN": "N"
+            },
+            {
+              "descriptorName": "Outcome Assessment, Health Care",
+              "majorTopic_YN": "N",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "ST",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "standards"
+                  },
+                  {
+                    "abbreviation": "SN",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "statistics & numerical data"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "pageInfo": "e1001265",
+        "pmcid": "PMC3398966",
+        "pmid": "22815653",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "pubYear": "2012",
+        "publicationStatus": "ppublish",
+        "source": "MED",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "title": "Effect of a community-based nursing intervention on mortality in chronically ill older adults: a randomized controlled trial.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

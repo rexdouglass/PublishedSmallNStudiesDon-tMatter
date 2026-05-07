@@ -39,11 +39,20 @@ def n_from_df(series: pd.Series) -> int:
     return int(round((vals + 2).sum()))
 
 
+def n_support_from_df(series: pd.Series) -> tuple[int, str]:
+    vals = pd.to_numeric(series, errors="coerce").dropna()
+    n = int(round((vals + 2).sum()))
+    df_values = ";".join(str(float(v)).rstrip("0").rstrip(".") for v in vals)
+    return n, f"N=sum(df+2) over component standardized model rows; df_values={df_values}; N={n}"
+
+
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
 
 
-def rows_from_est(df: pd.DataFrame, detail_col: str, detail_map: dict[str, str]) -> list[tuple[str, int, int]]:
+def rows_from_est(
+    df: pd.DataFrame, detail_col: str, detail_map: dict[str, str], source_file: str
+) -> list[dict[str, str | int]]:
     out = []
     df = df.copy()
     df["detail_key"] = df[detail_col].map(clean_text)
@@ -51,9 +60,18 @@ def rows_from_est(df: pd.DataFrame, detail_col: str, detail_map: dict[str, str])
         df = df.loc[df["estimate_type"] == "Standardized"].copy()
     for detail_key, detail_name in detail_map.items():
         sub = df.loc[df["detail_key"] == detail_key].copy()
-        orig_n = n_from_df(sub.loc[sub["study"] == "Pre-COVID", "df"])
-        rep_n = n_from_df(sub.loc[sub["study"] == "Replication", "df"])
-        out.append((detail_name, orig_n, rep_n))
+        orig_n, orig_text = n_support_from_df(sub.loc[sub["study"] == "Pre-COVID", "df"])
+        rep_n, rep_text = n_support_from_df(sub.loc[sub["study"] == "Replication", "df"])
+        out.append(
+            {
+                "detail": detail_name,
+                "orig_n": orig_n,
+                "rep_n": rep_n,
+                "n_source_file": source_file,
+                "original_n_text": orig_text,
+                "replication_n_text": rep_text,
+            }
+        )
     return out
 
 
@@ -62,7 +80,7 @@ def build_rows() -> list[dict]:
     summary_df["study_group_detail"] = summary_df["study_group_detail"].map(clean_text)
     summary_df["study_group"] = summary_df["study_group"].map(clean_text)
 
-    n_pairs: list[tuple[str, int, int]] = []
+    n_pairs: list[dict[str, str | int]] = []
 
     # Studies 1-4, 6-7 are one-row summaries.
     one_row_map = {
@@ -77,12 +95,17 @@ def build_rows() -> list[dict]:
         df = read_rds(BASE / filename)
         if "estimate_type" in df.columns:
             df = df.loc[df["estimate_type"] == "Standardized"].copy()
+        orig_n, orig_text = n_support_from_df(df.loc[df["study"] == "Pre-COVID", "df"])
+        rep_n, rep_text = n_support_from_df(df.loc[df["study"] == "Replication", "df"])
         n_pairs.append(
-            (
-                detail,
-                n_from_df(df.loc[df["study"] == "Pre-COVID", "df"]),
-                n_from_df(df.loc[df["study"] == "Replication", "df"]),
-            )
+            {
+                "detail": detail,
+                "orig_n": orig_n,
+                "rep_n": rep_n,
+                "n_source_file": filename,
+                "original_n_text": orig_text,
+                "replication_n_text": rep_text,
+            }
         )
 
     # Study 5
@@ -96,6 +119,7 @@ def build_rows() -> list[dict]:
                 "Democrats' Program": "Democrats' Program",
                 "Program A": "Program A",
             },
+            "est_study_5.rds",
         )
     )
 
@@ -110,12 +134,17 @@ def build_rows() -> list[dict]:
         "Prefer Nuclear Use | 90/70": "Prefer Nukes (90/70)",
     }.items():
         sub = est8a.loc[est8a["detail_key"] == key].copy()
+        orig_n, orig_text = n_support_from_df(sub.loc[sub["study"] == "Pre-COVID", "df"])
+        rep_n, rep_text = n_support_from_df(sub.loc[sub["study"] == "Replication", "df"])
         n_pairs.append(
-            (
-                detail,
-                n_from_df(sub.loc[sub["study"] == "Pre-COVID", "df"]),
-                n_from_df(sub.loc[sub["study"] == "Replication", "df"]),
-            )
+            {
+                "detail": detail,
+                "orig_n": orig_n,
+                "rep_n": rep_n,
+                "n_source_file": "est_study_8a.rds",
+                "original_n_text": orig_text,
+                "replication_n_text": rep_text,
+            }
         )
 
     # Study 8b
@@ -124,11 +153,12 @@ def build_rows() -> list[dict]:
     n_pairs.extend(
         rows_from_est(
             est8b,
-            "outcome_group",
+            "outcome",
             {
-                "Approve Strike": "Approve Strike (Nuclear)",
-                "Ethical Strike": "Ethical Strike (Nuclear)",
+                "psv_retrospective_approve_binary_s": "Approve Strike (Nuclear)",
+                "psv_retrospective_ethical_binary_s": "Ethical Strike (Nuclear)",
             },
+            "est_study_8b.rds",
         )
     )
 
@@ -146,6 +176,7 @@ def build_rows() -> list[dict]:
                 "President Trump orders crackdown on sex trafficking": "Sex trafficking",
                 "President Obama fakes birth certificate": "Obama Birtherism",
             },
+            "est_study_10.rds",
         )
     )
 
@@ -162,6 +193,7 @@ def build_rows() -> list[dict]:
                 "Institutional Trust": "Institutional Trust",
                 "Economic System Justification": "Economic System Justification",
             },
+            "est_study_11.rds",
         )
     )
 
@@ -175,11 +207,14 @@ def build_rows() -> list[dict]:
                 "Trust in Government": "Trust in Government",
                 "Support for Redistribution": "Redistribution",
             },
+            "est_study_12.rds",
         )
     )
 
     rows = []
-    for detail, orig_n, rep_n in n_pairs:
+    for n_pair in n_pairs:
+        detail = str(n_pair["detail"])
+        n_source_path = BASE / str(n_pair["n_source_file"])
         d_orig, d_rep = summary_pair(summary_df, detail)
         study_group = summary_df.loc[summary_df["study_group_detail"] == detail, "study_group"].iloc[0]
         rows.append(
@@ -193,10 +228,18 @@ def build_rows() -> list[dict]:
                 "replication_doi": "",
                 "outcome": detail,
                 "D_original": d_orig,
-                "N_original": orig_n,
+                "N_original": n_pair["orig_n"],
                 "D_replication": d_rep,
-                "N_replication": rep_n,
+                "N_replication": n_pair["rep_n"],
                 "raw_file": str(BASE / "summary_dat_export.rds"),
+                "n_source_file": str(n_source_path),
+                "verbatim_n_text_original": n_pair["original_n_text"],
+                "verbatim_n_text_replication": n_pair["replication_n_text"],
+                "d_n_transformation_note": (
+                    "D values are absolute pre-COVID and YCLS summary standardized estimates from "
+                    "summary_dat_export.rds. N values are reconstructed from the component estimate-table df "
+                    "columns as sum(df+2), matching the one-treatment-contrast model rows used by the project scripts."
+                ),
                 "match_author": "covid_online_ycls",
             }
         )

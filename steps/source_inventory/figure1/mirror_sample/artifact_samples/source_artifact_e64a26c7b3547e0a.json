@@ -1,0 +1,298 @@
+{
+  "artifact_id": "source_artifact_e64a26c7b3547e0a",
+  "byte_size": 10016,
+  "file_name": "035_full_10_1093_geronb_gbu026.json",
+  "file_type": "json",
+  "keys": [
+    "version",
+    "hitCount",
+    "request",
+    "resultList"
+  ],
+  "local_path": "data/raw/replication_projects/lead_harvest/ying_2023/epmc_abstracts/035_full_10_1093_geronb_gbu026.json",
+  "parent_corpus_database_id": "family::ying_2023_pilot_full_scale_trials",
+  "preview": {
+    "hitCount": 1,
+    "request": {
+      "cursorMark": "*",
+      "pageSize": 1,
+      "queryString": "DOI:\"10.1093/geronb/gbu026\"",
+      "resultType": "core",
+      "sort": "",
+      "synonym": false
+    },
+    "resultList": {
+      "result": [
+        {
+          "abstractText": "<h4>Objectives</h4>To report the primary outcomes of a cluster randomized clinical trial of Behavioral Activities Intervention (BE-ACTIV), a behavioral intervention for depression in nursing homes.<h4>Method</h4>Twenty-three nursing homes randomized to BE-ACTIV or treatment as usual (TAU); 82 depressed long-term care residents recruited from these nursing homes. BE-ACTIV participants received 10 weeks of individual therapy after a 2-week baseline. TAU participants received weekly research visits. Follow-up assessments occurred at 3- and 6-month posttreatment.<h4>Results</h4>BE-ACTIV group participants showed better diagnostic recovery at posttreatment in intent-to-treat analyses adjusted for clustering. They were more likely to be remitted than TAU participants at posttreatment and at 3-month posttreatment but not at 6 months. Self-reported depressive symptoms and functioning improved in both groups, but there were no significant treatment by time interactions in these variables.<h4>Discussion</h4>BE-ACTIV was superior to TAU in moving residents to full remission from depression. The treatment was well received by nursing home staff and accepted by residents. A large proportion of participants remained symptomatic at posttreatment, despite taking one or more antidepressants. The results illustrate the potential power of an attentional intervention to improve self-reported mood and functioning, but also the difficulties related to both studying and implementing effective treatments in nursing homes.",
+          "affiliation": "Department of Psychological and Brain Sciences, University of Louisville, Kentucky. smeeks@louisville.edu.",
+          "authMan": "N",
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-3727-1336"
+              }
+            ]
+          },
+          "authorList": {
+            "author": [
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychological and Brain Sciences, University of Louisville, Kentucky. smeeks@louisville.edu."
+                    }
+                  ]
+                },
+                "firstName": "Suzanne",
+                "fullName": "Meeks S",
+                "initials": "S",
+                "lastName": "Meeks"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Polisher Research Institute, Abramson Center for Jewish Life, North Wales, Pennsylvania."
+                    }
+                  ]
+                },
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-3727-1336"
+                },
+                "firstName": "Kimberly",
+                "fullName": "Van Haitsma K",
+                "initials": "K",
+                "lastName": "Van Haitsma"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Psychiatry and Behavioral Science, University of Louisville, Kentucky."
+                    }
+                  ]
+                },
+                "firstName": "Ben",
+                "fullName": "Schoenbachler B",
+                "initials": "B",
+                "lastName": "Schoenbachler"
+              },
+              {
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biostatistics and Epidemiology, Georgia Regents University, Augusta."
+                    }
+                  ]
+                },
+                "firstName": "Stephen W",
+                "fullName": "Looney SW",
+                "initials": "SW",
+                "lastName": "Looney"
+              }
+            ]
+          },
+          "authorString": "Meeks S, Van Haitsma K, Schoenbachler B, Looney SW.",
+          "citedByCount": 35,
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data"
+            ]
+          },
+          "dateOfCompletion": "2015-03-05",
+          "dateOfCreation": "2014-04-03",
+          "dateOfRevision": "2022-03-16",
+          "doi": "10.1093/geronb/gbu026",
+          "electronicPublicationDate": "2014-04-01",
+          "epmcAuthMan": "N",
+          "firstIndexDate": "2014-04-03",
+          "firstPublicationDate": "2014-04-01",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC4342721"
+            ]
+          },
+          "fullTextReceivedDate": "2020-07-11",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1093/geronb/gbu026"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4342721"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4342721?pdf=render"
+              },
+              {
+                "availability": "Free",
+                "availabilityCode": "F",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1093/geronb/gbu026"
+              }
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "1 R01 MH074865",
+                "orderIn": 0
+              },
+              {
+                "acronym": "MH",
+                "agency": "NIMH NIH HHS",
+                "grantId": "R01 MH074865",
+                "orderIn": 0
+              }
+            ]
+          },
+          "hasBook": "N",
+          "hasData": "Y",
+          "hasDbCrossReferences": "N",
+          "hasEvaluations": "N",
+          "hasLabsLinks": "Y",
+          "hasPDF": "Y",
+          "hasReferences": "Y",
+          "hasSuppl": "Y",
+          "hasTMAccessionNumbers": "N",
+          "hasTextMinedTerms": "Y",
+          "id": "24691156",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "isOpenAccess": "N",
+          "journalInfo": {
+            "dateOfPublication": "2015 Jan",
+            "issue": "1",
+            "journal": {
+              "essn": "1758-5368",
+              "isoabbreviation": "J Gerontol B Psychol Sci Soc Sci",
+              "issn": "1079-5014",
+              "medlineAbbreviation": "J Gerontol B Psychol Sci Soc Sci",
+              "nlmid": "9508483",
+              "title": "The journals of gerontology. Series B, Psychological sciences and social sciences"
+            },
+            "journalIssueId": 2236613,
+            "monthOfPublication": 1,
+            "printPublicationDate": "2015-01-01",
+            "volume": "70",
+            "yearOfPublication": 2015
+          },
+          "keywordList": {
+            "keyword": [
+              "Depression",
+              "intervention",
+              "Nursing Homes",
+              "Clinical Trial."
+            ]
+          },
+          "language": "eng",
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "descriptorName": "Humans",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Treatment Outcome",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Remission Induction",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Behavior Therapy",
+                "majorTopic_YN": "N",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "abbreviation": "MT",
+                      "majorTopic_YN": "Y",
+                      "qualifierName": "methods"
+                    }
+                  ]
+                }
+              },
+              {
+                "descriptorName": "Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Aged, 80 and over",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Middle Aged",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Homes for the Aged",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Nursing Homes",
+                "majorTopic_YN": "Y"
+              },
+              {
+                "descriptorName": "Female",
+                "majorTopic_YN": "N"
+              },
+              {
+                "descriptorName": "Male",
+                "majorTopic_YN": "N"
+              }
+            ]
+          },
+          "nihAuthMan": "N",
+          "pageInfo": "13-23",
+          "pmcid": "PMC4342721",
+          "pmid": "24691156",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Randomized Controlled Trial",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "pubYear": "2015",
+          "publicationStatus": "ppublish",
+          "source": "MED",
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "title": "BE-ACTIV for depression in nursing homes: primary outcomes of a randomized clinical trial."
+        }
+      ]
+    },
+    "version": "6.9"
+  },
+  "sample_kind": "json_object",
+  "sampled_at": "2026-05-04T00:17:51",
+  "sha256": "feaa3b0f61a2f3027ebf7fed01d83d55708d89d701fd524277d56c2af224b8f8"
+}
